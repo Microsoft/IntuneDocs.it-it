@@ -1,27 +1,29 @@
 ---
 title: Elaborare un piano di comunicazione per l'implementazione
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo facilita lo sviluppo di un piano di comunicazione per l'implementazione della distribuzione di Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513291"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Elaborare un piano di comunicazione per l'implementazione
 
@@ -55,7 +57,7 @@ Può risultare utile questa [guida alla registrazione per l'utente finale](https
 
 Esistono diversi metodi di recapito che è possibile usare per comunicare le informazioni relative all'implementazione di Intune ai gruppi e agli utenti dell'organizzazione interessati. L'elenco seguente illustra alcuni esempi e indica la fase durante la quale è possibile usare il metodo:
 
--   Riunioni di persona o con Skype a livello di organizzazione, per la fase di preparazione
+-   Riunioni di persona o con Microsoft Teams a livello di organizzazione, per la fase di preparazione
 
 -   Posta elettronica, usata per le fasi di pre-registrazione, registrazione e post-registrazione
 

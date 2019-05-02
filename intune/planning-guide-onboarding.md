@@ -1,27 +1,29 @@
 ---
 title: Processo di onboarding di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo illustra tutti i dettagli che devono essere presi in considerazione durante l'onboarding di una soluzione Microsoft Intune in configurazione solo cloud nel proprio ambiente.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513971"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementare il piano di Microsoft Intune
 
@@ -52,19 +54,19 @@ I requisiti principali per la configurazione autonoma di Intune sono:
 
 Sono state identificate 13 attività discrete per l'implementazione di una distribuzione di Intune. A seconda dei requisiti aziendali, dell'infrastruttura esistente e della strategia di gestione dei dispositivi, alcune di queste attività potrebbero essere già state completate. Altre potrebbero non essere applicabili al piano.
 
-### <a name="task-1-get-an-intune-subscription"></a>Attività 1: Ottenere una sottoscrizione a Intune
+### <a name="task-1-get-an-intune-subscription"></a>Attività 1: Ottenere una sottoscrizione di Intune
 
 Come indicato in precedenza nella sezione relativa ai requisiti per Intune, è necessaria una sottoscrizione a EMS o Intune. Se l'organizzazione non dispone di una sottoscrizione, contattare Microsoft o il team dell'account Microsoft e comunicare il proprio interesse per l'acquisto di Enterprise Mobility + Security (EMS) o Intune.
 
 -   Altre informazioni su [come acquistare Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
-### <a name="task-2-add-office-365-subscription"></a>Attività 2: Aggiungere la sottoscrizione Office 365
+### <a name="task-2-add-office-365-subscription"></a>Attività 2: Aggiungere l'abbonamento a Office 365
 
 Questo passaggio è facoltativo. Se si prevede di usare Exchange Online e di gestire app Office Mobile con i criteri di protezione delle app, è necessaria una sottoscrizione Office 365. Se l'organizzazione non dispone di una sottoscrizione Office 365, contattare Microsoft o il team dell'account Microsoft e comunicare il proprio interesse per l'acquisto di Office 365.
 
 -   Altre informazioni su [come acquistare Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
-### <a name="task-3-add-users-groups-in-azure-ad"></a>Attività 3: Aggiungere i gruppi di utenti in Azure AD
+### <a name="task-3-add-users-groups-in-azure-ad"></a>Attività 3: Aggiungere gruppi di utenti in Azure AD
 
 Potrebbe essere necessario aggiungere utenti o gruppi di sicurezza in Active Directory o Azure Active Directory, in base agli scenari per i casi d'uso e ai requisiti della distribuzione di Intune. Esaminare gli utenti e i gruppi di sicurezza correnti in Active Directory o Azure Active Directory e stabilire se soddisfano pienamente le proprie esigenze. Quando si aggiungono nuovi utenti e gruppi di sicurezza, è consigliabile aggiungerli in Active Directory ed eseguire la sincronizzazione con Azure Active Directory tramite Azure AD Connect.
 
@@ -74,13 +76,13 @@ Potrebbe essere necessario aggiungere utenti o gruppi di sicurezza in Active Dir
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Attività 4: Assegnare le licenze utente di Intune e Office 365
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Attività 4: Assegnare licenze utente di Intune e Office 365
 
-A tutti gli utenti interessati dalla distribuzione di Office 365 ed EMS/Intune deve essere assegnata una licenza. È possibile assegnare le licenze di EMS/Intune e Office 365 nel portale dell'interfaccia di amministrazione di Office 365.
+A tutti gli utenti interessati dalla distribuzione di Office 365 ed EMS/Intune deve essere assegnata una licenza. È possibile assegnare licenze di EMS/Intune e Office 365 nell'interfaccia di amministrazione di Microsoft 365.
 
 -   Altre informazioni su [come assegnare le licenze di Intune](licenses-assign.md).
 
-### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Attività 5: Impostare l'autorità di gestione dei dispositivi mobili su Intune
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Attività 5: Impostare l'autorità di gestione di dispositivi mobili su Intune
 
 Prima di iniziare a impostare, configurare, gestire e registrare i dispositivi con Intune, è necessario impostare l'autorità di gestione dei dispositivi su Intune.
 
@@ -92,31 +94,31 @@ Per impostazione predefinita, è abilitata la maggior parte delle piattaforme pe
 
 -   Altre informazioni su [come abilitare i dispositivi Apple per la registrazione](apple-mdm-push-certificate-get.md).
 
-### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Attività 7: Aggiungere e distribuire i criteri di termini e condizioni
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Attività 7: Aggiungere e distribuire criteri di termini e condizioni
 
 Intune supporta criteri di termini e condizioni. Aggiungere i criteri di termini e condizioni a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 -   Altre informazioni su [come aggiungere e distribuire i criteri di termini e condizioni](terms-and-conditions-create.md).
 
-### <a name="task-8-add-and-deploy-configuration-policies"></a>Attività 8: Aggiungere e distribuire i criteri di configurazione
+### <a name="task-8-add-and-deploy-configuration-policies"></a>Attività 8: Aggiungere e distribuire criteri di configurazione
 
 Intune supporta due tipi di criteri di configurazione: generali e personalizzati. Aggiungere i criteri di configurazione a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 -   Altre informazioni su [come aggiungere e distribuire i criteri di configurazione](device-profiles.md).
 
-### <a name="task-9-add-and-deploy-resource-profiles"></a>Attività 9: Aggiungere e distribuire i profili delle risorse
+### <a name="task-9-add-and-deploy-resource-profiles"></a>Attività 9: Aggiungere e distribuire profili delle risorse
 
 Intune supporta i profili di posta elettronica, Wi-Fi e VPN. Aggiungere questi profili a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 -   Altre informazioni su [come abilitare l'accesso alle risorse aziendali con Intune](device-profiles.md).
 
-### <a name="task-10-add-and-deploy-apps"></a>Attività 10: Aggiungere e distribuire le app
+### <a name="task-10-add-and-deploy-apps"></a>Attività 10: Aggiungere e distribuire app
 
 Intune supporta la distribuzione di app Web, line-of-business e di Store pubblici. È anche possibile gestire app in cui è integrato Intune SDK, associandole con i criteri di protezione delle app. Aggiungere le app a seconda delle esigenze e distribuirle ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 -   Altre informazioni su [come aggiungere e distribuire app](app-management.md).
 
-### <a name="task-11-add-and-deploy-compliance-policies"></a>Attività 11: Aggiungere e distribuire i criteri di conformità
+### <a name="task-11-add-and-deploy-compliance-policies"></a>Attività 11: Aggiungere e distribuire criteri di conformità
 
 Intune supporta i criteri di conformità. Aggiungere i criteri di conformità a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 

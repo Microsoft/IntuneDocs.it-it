@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76e0c411afe1fb4e32b26c6ad669cb91b6cd3336
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512806"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Controllare, esportare o eliminare i dati personali in Intune
 
@@ -79,6 +80,9 @@ In presenza di un ambiente MDM ibrido (Intune integrato con Configuration Manage
 1. Eliminare l'utente dal servizio Active Directory (AD) locale. In questo modo l'utente non verrà più sincronizzato in Azure AD e non verrà più incluso nell'individuazione di Configuration Manager. 
 2. Eliminare l'utente dalla console di Configuration Manager per rimuovere l'utente e i dati associati da Configuration Manager. Nella console passare ad **Asset e conformità** > **Utenti**, fare clic con il pulsante destro del mouse sull'utente da eliminare e quindi scegliere **Elimina**.
 3. [Eliminare l'utente da AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad), operazione che rimuove contemporaneamente l'utente e i dati associati sia da Azure Active Directory che da Intune. Quando l'utente viene eliminato da AAD (eliminazione definitiva), Intune riceve il segnale di eliminazione da AAD e quindi avvia automaticamente l'eliminazione di tutti i dati personali dell'utente dal servizio Intune. Le informazioni dell'utente verranno eliminate dal servizio Intune entro 30 giorni dall'azione di rimozione.
+
+> [!Important]
+>l'onboarding di nuovi clienti di MDM con configurazione ibrida è deprecato. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

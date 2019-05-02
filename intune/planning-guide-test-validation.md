@@ -1,27 +1,28 @@
 ---
 title: Test e convalida di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Come testare e convalidare la soluzione Intune solo cloud nell'ambiente in uso.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512870"
 ---
 # <a name="intune-testing-and-validation"></a>Test e convalida di Intune
 
@@ -43,7 +44,7 @@ Se un componente di progettazione non è presente in almeno un criterio di test 
 
 -   **Dispositivi:** dispositivi di test di cui è possibile eseguire la cancellazione dei dati o il ripristino delle impostazioni predefinite.
 
--   **Componenti di integrazione:** tutti i componenti di integrazione (connettore di certificati, Intune Service to Service Connector per Exchange ospitato e Intune On-premises Exchange Connector) devono essere installati e configurati, se necessario.
+-   **Componenti di integrazione:** tutti i componenti di integrazione (connettori di certificati e Intune Exchange Connector locale) devono essere installati e configurati, se necessario.
 
 Possono essere necessarie modifiche di progettazione per far fronte a difficoltà impreviste. Inoltre, tutte le modifiche di progettazione devono essere completamente documentate con il motivo per ogni modifica. Ecco un esempio per illustrare una possibile modifica:
 

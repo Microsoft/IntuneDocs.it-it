@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490569"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
@@ -109,12 +110,12 @@ I criteri di conformità determinano un livello di rischio accettabile per un di
 2. Selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
 3. Immettere un **nome** e una **descrizione**.
 4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
-5. Nelle impostazioni di **Windows Defender ATP** impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito:
+5. Nelle impostazioni di **Windows Defender ATP** impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito. Le classificazioni dei livelli delle minacce vengono [determinate da Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Cancella**: questo livello è il più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme.
-  - **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. I dispositivi con un livello di minaccia medio o alto non sono conformi.
-  - **Medio**: il dispositivo è conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene determinato come non conforme.
-  - **Alto**: questo livello è il meno sicuro e consente tutti i livelli di minaccia. Sono quindi considerati conformi i dispositivi con un livello di minaccia alto, medio o basso.
+   - **Cancella**: questo livello è il più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme. Per gli utenti di Windows Defender ATP il valore è *Sicuro*.
+   - **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. I dispositivi con un livello di minaccia medio o alto non sono conformi.
+   - **Medio**: il dispositivo è conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene determinato come non conforme.
+   - **Alto**: questo livello è il meno sicuro e consente tutti i livelli di minaccia. Sono quindi considerati conformi i dispositivi con un livello di minaccia alto, medio o basso.
 
 6. Scegliere **OK** e **Crea** per salvare le modifiche e creare i criteri.
 
@@ -126,10 +127,13 @@ I criteri di conformità determinano un livello di rischio accettabile per un di
 4. Includere o escludere i gruppi di Azure AD per assegnare loro i criteri.
 5. Per distribuire i criteri ai gruppi, scegliere **Salva**. I dispositivi degli utenti a cui sono destinati i criteri vengono valutati per la conformità.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Creare un criterio di accesso condizionale di Azure AD
-Il criterio di accesso condizionale blocca l'accesso alle risorse *se* il dispositivo non è conforme. Se quindi un dispositivo supera il livello di minaccia, è possibile bloccare l'accesso alle risorse aziendali, come SharePoint o Exchange Online.
+## <a name="create-a-conditional-access-policy"></a>Creare criteri di accesso condizionale
+Il criterio di accesso condizionale blocca l'accesso alle risorse *se* il dispositivo non è conforme. Se quindi un dispositivo supera il livello di minaccia, è possibile bloccare l'accesso alle risorse aziendali, come SharePoint o Exchange Online.  
 
-1. Nel [portale di Azure](https://portal.azure.com) aprire **Azure Active Directory** > **Accesso condizionale** > **Nuovo criterio**.
+> [!TIP]  
+> L'accesso condizionale è una tecnologia di Azure Active Directory (Azure AD). Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
+
+1. Nel [portale di Azure](https://portal.azure.com) aprire **Intune** > **Accesso condizionale** > **Nuovi criteri**.
 2. Immettere un **nome** per il criterio e selezionare **Utenti e gruppi**. Usare l'opzione Includi o Escludi per aggiungere i gruppi per il criterio e selezionare **Fatto**.
 3. Selezionare **App cloud** e scegliere le app da proteggere. Ad esempio, scegliere **Seleziona le app** e quindi selezionare **Office 365 SharePoint Online**e **Office 365 Exchange Online**.
 

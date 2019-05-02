@@ -1,5 +1,6 @@
 ---
-title: Dati inviati da JAMF Pro a Intune | Microsoft Intune
+title: Dati inviati da Jamf Pro a Intune
+titleSuffix: Microsoft Intune
 description: Elenco di dati che Jamf Pro Invia a Microsoft Intune
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: elocholi
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22d81c768fb7f80498da483421f8b358d59ab8c2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 452d6fafccc2d53d2f6940197ef4a1aa19febfc2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509535"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dati inviati da Jamf Pro a Intune
 
@@ -47,7 +49,7 @@ Quando si usa [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli 
 * ROM di avvio
 * Velocità del bus
 * Dimensione cache (%):
-* Nome periferica
+* Nome dispositivo
 * Aggiunta al dominio
 * ID Jamf
 * Indirizzo MAC
@@ -64,7 +66,7 @@ Quando si usa [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli 
 * Indirizzo MAC secondario
 * Numero di serie
 * Versione SMC
-* RAM totale
+* Totale RAM
 * UDID
 * Indirizzo di posta elettronica dell'utente
 

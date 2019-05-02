@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506815"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -62,7 +63,7 @@ Qualsiasi app integrata con [Intune App SDK](/intune/app-sdk) o di cui è stato 
 
 - L'utente finale deve avere una licenza per Microsoft Intune assegnata all'account Azure Active Directory. Per informazioni su come assegnare le licenze di Intune agli utenti finali, vedere [Gestire le licenze di Intune](/intune/licenses-assign).
 
-- L'utente finale deve appartenere a un gruppo di sicurezza che è la destinazione dei criteri di protezione dell'app. Gli stessi criteri di protezione devono avere come destinazione l'app specifica in uso. I criteri di protezione delle app possono essere creati e distribuiti nella console di Intune nel [portale di Azure](https://portal.azure.com). È ora possibile creare gruppi di sicurezza nel [portale di Office](https://portal.office.com).
+- L'utente finale deve appartenere a un gruppo di sicurezza che è la destinazione dei criteri di protezione dell'app. Gli stessi criteri di protezione devono avere come destinazione l'app specifica in uso. I criteri di protezione delle app possono essere creati e distribuiti nella console di Intune nel [portale di Azure](https://portal.azure.com). È possibile creare gruppi di sicurezza simultaneamente nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
 
 - L'utente finale deve accedere all'app usando il proprio account AAD.
 
@@ -77,7 +78,7 @@ Qualsiasi app integrata con [Intune App SDK](/intune/app-sdk) o di cui è stato 
 
 **Quali sono i requisiti aggiuntivi per usare le app [Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-- L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare le licenze di Office 365 nel [portale di Office](https://portal.office.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare licenze di Office 365 nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - L'utente finale deve aver configurato un percorso gestito usando la funzionalità Salva con nome granulare nell'impostazione dei criteri di protezione delle applicazioni "Impedisci Salva con nome". Se il percorso gestito è OneDrive, ad esempio, l'app [OneDrive](https://onedrive.live.com/about/) deve essere configurata nell'app Word, Excel o PowerPoint dell'utente finale.
 
@@ -170,6 +171,27 @@ I criteri di protezione delle app di Intune relativi all'accesso vengono applica
 
 Quando si usano tipi diversi di impostazioni, un requisito di versione app ha la precedenza, seguito dal requisito di versione del sistema operativo Android e dal requisito relativo alla versione della patch di Android. Quindi, vengono controllati tutti gli avvisi per tutti i tipi di impostazioni nello stesso ordine.
 
+**I criteri di protezione delle app di Intune permettono agli amministratori di richiedere che i dispositivi degli utenti finali ottengano l'attestazione SafetyNet di Google per dispositivi Android. Con quale frequenza viene inviato un nuovo risultato dell'attestazione SafetyNet al servizio?** <br><br> Una nuova determinazione del servizio Google Play verrà segnalata all'amministratore IT a un intervallo definito dal servizio Intune. La frequenza con cui viene effettuata la chiamata del servizio è limitata a causa del carico e di conseguenza questo valore viene gestito internamente e non può essere configurato. Qualsiasi azione configurata dall'amministratore IT per l'impostazione dell'attestazione SafetyNet di Google viene adottata in base all'ultimo risultato segnalato al servizio Intune al momento dell'avvio condizionale. Se non sono presenti dati, l'accesso verrà consentito se nessun altro controllo dell'avvio condizionale non riesce e viene avviato nel back-end un "round trip" di Google Play Service per determinare i risultati di attestazione, indicando all'utente in modo sincrono se il dispositivo non ha superato il controllo. In caso di dati non aggiornati, l'accesso verrà bloccato o consentito a seconda dell'ultimo risultato segnalato e, analogamente, verrà avviato un "round trip" di Google Play Service per determinare i risultati di attestazione, indicando all'utente in modo asincrono se il dispositivo non ha superato il controllo.
+
+**I criteri di protezione delle app di Intune permettono agli amministratori di richiedere ai dispositivi degli utenti finali di inviare segnali tramite l'API di verifica delle app di Google per dispositivi Android. In che modo un utente finale può attivare l'analisi delle app in modo che l'accesso non venga bloccato per questo motivo?**<br><br> Le istruzioni su come eseguire questa operazione variano leggermente a seconda del dispositivo. Il processo generale consiste nel passare a Google Play Store, fare clic su **Le mie app e i miei giochi** e quindi fare clic sul risultato dell'ultima analisi delle app, che permette di accedere al menu Play Protect. Verificare che l'interruttore per **Cerca minacce alla sicurezza** sia attivato.
+
+**Che cosa controlla effettivamente l'API di attestazione SafetyNet di Google nei dispositivi Android? Qual è la differenza tra i valori configurabili "Verifica l'integrità di base" e "Verifica l'integrità di base e i dispositivi certificati"?** <br><br>
+Intune sfrutta le API SafetyNet di Google Play Protect per potenziare i controlli di rilevamento dei dispositivi rooted esistenti per i dispositivi non registrati. Google ha sviluppato e gestito questo set di API per app per Android da adottare se non si vuole che le app vengano eseguite su dispositivi rooted. L'app Android Pay, ad esempio, ha integrato questa funzionalità. Mentre Google non condivide pubblicamente l'interezza dei controlli di rilevamento dei dispositivi rooted eseguiti, queste API dovrebbero rilevare gli utenti che hanno eseguito accesso root ai propri dispositivi. Sarà quindi possibile impedire a questi utenti di accedere oppure cancellarne gli account aziendali dalle app con i criteri abilitati. L'opzione "Verifica l'integrità di base" fornisce informazioni sull'integrità generale del dispositivo. Dispositivi rooted, emulatori, dispositivi virtuali e dispositivi con segni di manomissione non superano la verifica dell'integrità di base. "Verifica l'integrità di base e i dispositivi certificati" fornisce informazioni sulla compatibilità del dispositivo con i servizi di Google. Solo i dispositivi non modificati che hanno ottenuto la certificazione di Google possono superare questo controllo. I dispositivi che non superano il controllo includono i seguenti:
+* Dispositivi che non soddisfano l'integrità di base
+* Dispositivi con bootloader sbloccato
+* Dispositivi con ROM/immagine del sistema personalizzata
+* Dispositivi per cui il produttore non ha richiesto o non ha soddisfatto la certificazione Google 
+* Dispositivi con un'immagine del sistema creata direttamente da file del codice sorgente Android Open Source Program
+* Dispositivi con un'immagine del sistema beta/di anteprima per sviluppatori
+
+Per informazioni tecniche, vedere la [documentazione di Google sull'attestazione SafetyNet](https://developer.android.com/training/safetynet/attestation).
+
+**Nella sezione Avvio condizionale sono disponibili due controlli simili quando si creano criteri di protezione delle app di Intune per dispositivi Android. È necessario scegliere l'impostazione "Attestazione del dispositivo SafetyNet" o l'impostazione "Dispositivi jailbroken/rooted"?** <br><br>
+I controlli delle API SafetyNet di Google Play Protect richiedono che l'utente finale sia online, almeno per l'intera durata dell'esecuzione del "round trip" per determinare i risultati di attestazione. Se l'utente finale è offline, l'amministratore IT può comunque aspettarsi l'applicazione di un risultato dall'impostazione "Dispositivi jailbroken/rooted". In ogni caso, se l'utente finale è rimasto offline per troppo tempo, entra in gioco il valore "Periodo di prova offline" e l'intero accesso ai dati aziendali o dell'istituto di istruzione viene bloccato una volta raggiunto il valore del timer, finché non è disponibile accesso di rete. L'attivazione di entrambe le impostazioni permette un approccio a più livelli per mantenere integri i dispositivi degli utenti finali, un aspetto importante quando questi accedono a dati aziendali o dell'istituto di istruzione su un dispositivo mobile. 
+
+**Le impostazioni dei criteri di protezione delle app che sfruttano le API di Google Play Protect richiedono il funzionamento di Google Play Services. Che cosa succede se Google Play Services non è consentito nella località in cui può trovarsi l'utente finale?**<br><br>
+Le impostazioni "Attestazione dispositivo SafetyNet" e "Analisi delle minacce nelle app" richiedono entrambe una versione determinata da Google di Google Play Services per funzionare correttamente. Poiché si tratta di impostazioni che rientrano nell'ambito della sicurezza, l'utente finale verrà bloccato se sono state assegnate queste impostazioni e l'utente non soddisfa i requisiti per la versione appropriata di Google Play Services o non ha accesso a Google Play Services. 
+
 ## <a name="app-experience-on-ios"></a>Esperienza dell'app in iOS
 **Cosa accade se si aggiunge o si rimuove un'impronta digitale o un viso dal dispositivo?**
 I criteri di Protezione app di Intune consentono l'accesso alle app solo all'utente dotato di licenza per Intune. Uno dei modi per controllare l'accesso alle app consiste nel richiedere Apple Touch ID o Face ID per i dispositivi supportati. Intune implementa un comportamento in base al quale, se viene apportata una modifica al database di biometria del dispositivo e viene raggiunto il valore del timeout di inattività successivo, viene richiesto un PIN. Esempi di modifiche ai dati biometrici sono l'aggiunta o la rimozione di un'impronta digitale o di un viso. Se in Intune non è impostato un PIN, l'utente viene indirizzato alla configurazione di un PIN di Intune.
@@ -184,20 +206,13 @@ I criteri di protezione delle app di Intune relativi all'accesso vengono applica
 
 Quando si usano tipi diversi di impostazioni, un requisito di versione di Intune App SDK ha la precedenza, seguito dal requisito di versione dell'app e dal requisito relativo alla versione del sistema operativo iOS. Quindi, vengono controllati tutti gli avvisi per tutti i tipi di impostazioni nello stesso ordine. Si consiglia di configurare il requisito di versione di Intune App SDK solo attenendosi alle istruzioni del team del prodotto Intune per gli scenari di blocco essenziali.
 
-## <a name="app-protection-policies---policy-refresh"></a>Criteri di protezione delle app - Aggiornamento dei criteri
-- Le app accedono al servizio APP ogni 30 minuti.
-- La soglia di 30 minuti si basa su un timer.
-    - Se allo scadere dei 30 minuti l'app è attiva, effettua l'accesso.
-    - Se allo scadere dei 30 minuti l'app è inattiva, effettua l'accesso quando torna allo stato attivo.
-- Se a un utente non sono assegnati criteri, l'accesso avviene ogni otto ore.
-- Se non è assegnata alcuna licenza di Intune, l'accesso avviene ogni 24 ore.
-
 
 ## <a name="see-also"></a>Vedere anche
 - [Implementare il piano di Intune](planning-guide-onboarding.md)
 - [Test e convalida di Intune](planning-guide-test-validation.md)
 - [Impostazioni dei criteri di gestione delle app per dispositivi mobili Android in Microsoft Intune](app-protection-policy-settings-android.md)
 - [Impostazioni dei criteri di gestione delle app per dispositivi mobili per iOS](app-protection-policy-settings-ios.md)
-- [Convalidare i criteri di protezione delle app](app-protection-policies-validate.md)
+- [Criteri di protezione delle app - Aggiornamento dei criteri](app-protection-policy-delivery.md)
+- [Convalidare i criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](app-configuration-policies-managed-app.md)
 - [Come ottenere supporto per Microsoft Intune](get-support.md)

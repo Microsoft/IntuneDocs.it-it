@@ -1,27 +1,29 @@
 ---
 title: Aggiungere app predefinite nei dispositivi mobili con Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Informazioni su come usare Intune per rendere più semplice l'installazione di app predefinite nei dispositivi mobili.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f46cd1295c9ecf593765cf26f4c8685eccbffa0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506832"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Aggiungere app predefinite in Microsoft Intune
 
@@ -55,16 +57,16 @@ Per aggiungere un'app predefinita alle app disponibili in Microsoft Intune, segu
 3. Selezionare l'opzione **Configura** per modificare le informazioni sull'app predefinita.
 4. Nel riquadro **Informazioni sull'app** è possibile modificare le informazioni seguenti:
     - **Nome**: immettere il nome dell'app predefinita che viene visualizzato nel portale aziendale. Verificare che tutti i nomi usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
-    - **Descrizione**: immettere una descrizione per l'app. 
-    - **Autore**: immettere il nome dell'autore dell'app.
-    - **Categoria**: selezionare una o più categorie dell'app predefinita (facoltativo). L'impostazione di questa opzione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, *Reparto risorse umane* (facoltativo).
+    - **Description**: Immettere una descrizione per l'app. 
+    - **Autore**: Immettere il nome dell'autore dell'app.
+    - **Categoria**: facoltativamente, selezionare una o più categorie dell'app predefinita. L'impostazione di questa opzione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: facoltativamente, immettere un nome per il proprietario dell'app, ad esempio *Reparto risorse umane*.
     - **Note**: immettere eventuali note da associare a questa app.
-    - **Carica icona**: caricare un'icona visualizzata con l'app dagli utenti nel portale aziendale.
+    - **Carica l'icona**: caricare un'icona visualizzata con l'app quando gli utenti esplorano il portale aziendale.
 4. Selezionare **OK**.
 5. Nel riquadro **Proprietà** selezionare **Salva**.
 

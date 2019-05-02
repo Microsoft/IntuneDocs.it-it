@@ -10,6 +10,7 @@ ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9b0cb07e6dcf192aa25c13e8637934c46d6799
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513108"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -30,7 +31,7 @@ Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La comp
 
 ## <a name="prerequisites"></a>Prerequisiti
 - [La registrazione automatica di Windows deve essere abilitata](windows-enroll.md#enable-windows-10-automatic-enrollment)
-- [sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Come ottenere il file con estensione csv da importare in Intune
 
@@ -102,6 +103,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
 2. Nel pannello del profilo specifico, scegliere **Assegnazioni**. 
 3. Scegliere **Selezione gruppi**, quindi nel pannello **Selezione gruppi** scegliere il o i gruppi di utenti ai quali assegnare il profilo e scegliere **Seleziona**.
 
+
 > [!NOTE]
 > Intune verificherà periodicamente la presenza di nuovi dispositivi nei gruppi assegnati e quindi avvierà il processo di assegnazione dei profili a quei dispositivi. Questo processo può richiedere alcuni minuti. Prima di distribuire un dispositivo, assicurarsi che questo processo sia stato completato.  In **Registrazione del dispositivo** > **Registrazione di Windows ** > **Dispositivi** è possibile verificare che lo stato del profilo passi da "Non assegnato" ad "Assegnazione" e infine ad "Assegnato".
 
@@ -117,7 +119,7 @@ Dopo aver creato un profilo di distribuzione di AutoPilot, è possibile modifica
 > [!NOTE]
 > Le modifiche al profilo vengono applicate ai dispositivi assegnati al profilo. Il profilo aggiornato non verrà tuttavia applicato a un dispositivo già registrato in Intune finché non saranno state completate la reimpostazione e la nuova registrazione del dispositivo.
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Avvisi per dispositivi non assegnati Windows AutoPilot <!-- 163236 -->  
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Avvisi per dispositivi non assegnati Windows AutoPilot  <!-- 163236 -->  
 
 Gli avvisi indicheranno quanti dispositivi con il programma Autopilot non hanno profili di distribuzione di Autopilot. Usare le informazioni contenute nell'avviso per creare i profili e assegnarli ai dispositivi non assegnati. Selezionando l'avviso, verrà visualizzato un elenco completo di dispositivi Windows AutoPilot e le relative informazioni dettagliate.
 

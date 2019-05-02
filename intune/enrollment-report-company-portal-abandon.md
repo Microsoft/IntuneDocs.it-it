@@ -1,48 +1,50 @@
 ---
-title: Abbandono delle registrazioni nel portale aziendale in Intune
-titlesuffix: Microsoft Intune
-description: Informazioni sul report Abbandono del portale aziendale.
+title: Report Registrazioni utente incomplete in Intune
+titleSuffix: Microsoft Intune
+description: Informazioni sul report Registrazioni utente incomplete.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 78d55ef2baf0608d22af53bf0803634700e01eb3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505863"
 ---
-# <a name="company-portal-abandonment-report"></a>Report Abbandono del portale aziendale
+# <a name="incomplete-user-enrollments-report"></a>Report Registrazioni utente incomplete
 
-Questo report indica in quale fase della registrazione nel portale aziendale gli utenti abbandonano il processo di registrazione.
+Questo report indica in quale fase del processo di registrazione nel portale aziendale gli utenti non completano il processo di registrazione.
 
-Per visualizzare il report, scegliere **Intune** > **Registrazione del dispositivo** > **Abbandono del Portale aziendale**.
+Per visualizzare il report, scegliere **Intune** > **Registrazione del dispositivo** > **Registrazioni utente incomplete**.
 
-Mediante queste informazioni relative all'abbandono è possibile aggiornare i documenti di onboarding, per assistere gli utenti nel completamento della registrazione. Se ad esempio molti utenti abbandonano il processo quando visualizzano le Condizioni per l'utilizzo, è possibile investigare quest'area e renderla più intuitiva per gli utenti.
+Usando queste informazioni, è possibile aggiornare i documenti di onboarding per aiutare gli utenti a completare la registrazione. Se ad esempio molti utenti abbandonano il processo quando visualizzano le Condizioni per l'utilizzo, è possibile investigare quest'area e renderla più intuitiva per gli utenti.
 
-## <a name="what-is-abandonment"></a>Che cos'è l'abbandono?
+## <a name="what-is-an-incomplete-enrollment"></a>Cos'è una registrazione incompleta?
 
-L'abbandono si verifica quando un utente esegue una delle operazioni seguenti:
+Una registrazione incompleta si verifica quando un utente esegue una delle operazioni seguenti:
 
 -   Sceglie in modo esplicito un'azione per interrompere la registrazione
 -   Chiude il portale aziendale durante la registrazione
 -   Impiega oltre 30 minuti per passare da una sezione della registrazione all'altra
 
-Se un utente sceglie di arrestare e riavviare la registrazione più volte, queste azioni vengono conteggiate come più tentativi e più abbandoni. Se un utente attende 30 minuti tra diverse schermate di registrazione, questa azione viene considerata come più abbandoni.
+Se un utente sceglie di arrestare e riavviare la registrazione più volte, queste azioni vengono conteggiate come più tentativi e più registrazioni incomplete. Se un utente attende 30 minuti tra schermate di registrazione diverse, questa azione viene considerata come più registrazioni incomplete.
 
 ## <a name="what-does-the-report-show"></a>Che cosa visualizza il report?
 
-I report di registrazione includono i dati per i dispositivi iOS e Android.
+Il report include i dati per i dispositivi iOS e Android.
 
 I report visualizzano i dati delle ultime due settimane, ma è possibile filtrare il report in modo da visualizzare qualsiasi periodo entro gli ultimi 30 giorni.
 
@@ -50,15 +52,15 @@ I report visualizzano i dati delle ultime due settimane, ma è possibile filtrar
 
 ### <a name="number-and-percentage-tiles"></a>Riquadri Numero e Percentuale
 
-Nella parte superiore del report è possibile visualizzare il numero e la percentuale di report abbandonati rispetto al totale delle registrazioni.
+Nella parte superiore del report è possibile vedere il numero e la percentuale di registrazioni incomplete rispetto al totale delle registrazioni.
 
--   Registrazioni avviate: numero di registrazioni avviate.
--   Registrazioni abbandonate: numero di registrazioni avviate ma che non hanno restituito come risultato un dispositivo registrato e conforme.
--   Abandonment rate (Frequenza di abbandono): percentuale di tentativi di registrazione abbandonati (Registrazioni abbandonate/Registrazioni iniziate).
+-   Registrazioni avviate: numero di tentativi di registrazione.
+-   Registrazioni incomplete: numero di tentativi di registrazione che non hanno restituito come risultato un dispositivo registrato e conforme.
+-   Incomplete rate (Percentuale registrazioni incomplete): percentuale di tentativi di registrazione abbandonati (Registrazioni abbandonate/Registrazioni avviate).
 
 ### <a name="line-graph"></a>Grafico a linee
 
-Il grafico a linee visualizza gli abbandoni giornalieri in corrispondenza delle quattro sezioni principali della registrazione:
+Il grafico a linee visualizza le registrazioni incomplete giornaliere per ognuna delle quattro sezioni principali della registrazione:
 
 -   Elenco di controllo per l'installazione
 -   Schermate della piattaforma
@@ -67,12 +69,12 @@ Il grafico a linee visualizza gli abbandoni giornalieri in corrispondenza delle 
 
 ### <a name="user-abandonment-actions"></a>Azioni di abbandono degli utenti
 
-Le tabelle seguenti illustrano l'elenco delle azioni degli che sono considerate come abbandono. Per esempi di schermate di registrazione, guardare i video relativi alla registrazione per [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) e [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
+Le tabelle seguenti illustrano l'elenco delle azioni utente che vengono considerate come registrazione incompleta. Per esempi di schermate di registrazione, guardare i video relativi alla registrazione per [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) e [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
 
 
 #### <a name="setup-checklist-section"></a>Sezione Elenco di controllo per l'installazione
 
-| Nome abbandono | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Azione |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Richiesta di apertura di una pagina nel Portale aziendale | iOS/Android | **Annulla** |
 | EnrollmentWrapUp | Schermata Registrazione del dispositivo in corso fino al completamento di **Caricamento delle risorse aziendali** | iOS/Android | Tempo richiesto > 30 minuti |
@@ -82,7 +84,7 @@ Le tabelle seguenti illustrano l'elenco delle azioni degli che sono considerate 
 
 #### <a name="platform-screens-section"></a>Sezione Schermate della piattaforma
 
-| Nome abbandono | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Azione |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Richiesta di visualizzazione di un profilo di configurazione | iOS | **Ignora** |
 | iOSProfileLaunch | Schermata Installa profilo | iOS | **Annulla** |
@@ -95,14 +97,14 @@ Le tabelle seguenti illustrano l'elenco delle azioni degli che sono considerate 
 
 #### <a name="terms-of-use-section"></a>Sezione Condizioni per l'utilizzo
 
-| Nome abbandono | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Azione |
 | ---- |---- |---- |---- |
 | TermsofUse | Condizioni per l'utilizzo (se configurate dall'amministratore) | iOS/Android | **Rifiuta tutto** |
 | TermsofUse | Condizioni per l'utilizzo fino a **Accetta tutto** | iOS/Android | Tempo richiesto > 30 minuti |
 
 #### <a name="complianceactivation-section"></a>Sezione Conformità/Attivazione
 
-| Nome abbandono | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Azione |
 | ---- |---- |---- |---- |
 | Conformità | Conformità del dispositivo (se configurata dall'amministratore) appare con un colore diverso dal verde al momento della configurazione dell'accesso dopo la registrazione| iOS/Android | **Rimanda** |
 | Conformità | Conformità del dispositivo appare con un colore diverso dal verde fino a quando non viene aggiornata e diventa verde | iOS/Android | Tempo richiesto > 30 minuti |
@@ -111,4 +113,4 @@ Le tabelle seguenti illustrano l'elenco delle azioni degli che sono considerate 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo avere verificato le frequenze di abbandono, è possibile esaminare le [opzioni di registrazione](enrollment-options.md) per valutare se apportare eventuali modifiche per migliorare le percentuali di registrazione.
+Dopo aver verificato le percentuali di registrazioni incomplete, è possibile esaminare le [opzioni di registrazione](enrollment-options.md) per valutare se apportare modifiche per migliorare la registrazione.

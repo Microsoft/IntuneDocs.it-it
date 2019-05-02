@@ -1,6 +1,6 @@
 ---
 title: Registrare i dispositivi usando un account del manager di registrazione dispositivi
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Usare l'account del manager di registrazione dispositivi per registrare i dispositivi in Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a12d162b9877bbbc73ecbcc7bb2ed2f1e0095b9e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509809"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi in Intune usando un account del manager di registrazione dispositivi
 
@@ -32,12 +33,14 @@ ms.locfileid: "57228291"
 
 Gli account utente di tipo manager di registrazione dispositivi e i dispositivi registrati con un account di tale tipo presentano le seguenti limitazioni:
 
+  - All'utente dell'account di manager di registrazione dispositivi deve essere assegnata una licenza di Intune.
   - La cancellazione non può essere eseguita dal portale aziendale. La cancellazione di un dispositivo registrato da un account di manager di registrazione dispositivi può essere eseguita da Intune nel portale di Azure.
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Gli account utente di manager di registrazione dispositivi non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente VPP Apple poiché è necessario un ID Apple per utente per la gestione delle app.
   - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo VPP Apple.
   - I dispositivi sono bloccati per l'accesso condizionale ad eccezione di Windows 10 1803+
-  - Ogni dispositivo registrato con un account manager di registrazione dispositivi deve avere la propria licenza dispositivo Intune.
+  - Tutti i dispositivi registrati con gli account di manager di registrazione dispositivi devono avere le licenze appropriate per la gestione da Intune. La licenza può essere una licenza utente di Intune o una licenza dispositivo di Intune.
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi

@@ -1,32 +1,34 @@
 ---
 title: Risolvere i problemi di registrazione dei dispositivi
-description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
+titleSuffix: Microsoft Intune
+description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi in Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509228"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Microsoft Intune
 
-Questo articolo contiene suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi. Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](get-support.md) per trovare altri modi per ottenere assistenza.
+Questo articolo contiene suggerimenti per la risoluzione dei problemi di [registrazione dei dispositivi](device-enrollment.md). Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](get-support.md) per trovare altri modi per ottenere assistenza.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Procedure iniziali per la risoluzione dei problemi
@@ -100,7 +102,7 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 
 1.  Verificare che l'autorità MDM sia stata [impostata in modo appropriato](mdm-authority-set.md).
     
-2.  Verificare che le credenziali dell'utente siano sincronizzate correttamente con Azure Active Directory. È possibile verificare che il nome dell'entità utente corrisponda alle informazioni di Active Directory nel portale di Office 365.
+2.  Verificare che le credenziali dell'utente siano sincronizzate correttamente con Azure Active Directory. È possibile verificare che il nome dell'UPN dell'utente corrisponda alle informazioni di Active Directory nell'interfaccia di amministrazione di Microsoft 365.
     Se il nome dell'entità utente non corrisponde alle informazioni di Active Directory:
 
     1.  Disattivare DirSync sul server locale.
@@ -131,7 +133,7 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Non è possibile creare criteri o registrare dispositivi se il nome della società contiene caratteri speciali
 **Problema:** non è possibile creare criteri o registrare dispositivi.
 
-**Risoluzione:** nell'[interfaccia di amministrazione di Office 365](https://portal.office.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
+**Risoluzione:** nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Non è possibile accedere o registrare dispositivi quando si hanno più domini verificati
 **Problema:** questo problema può verificarsi quando si aggiunge un secondo dominio verificato ad AD FS. Gli utenti con il suffisso del nome dell'entità utente (UPN) del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
@@ -225,7 +227,7 @@ Se la soluzione 2 non funziona, chiedere agli utenti di eseguire questa procedur
 
 **Soluzione 1**:
 
-L'utente potrebbe essere in grado di recuperare il certificato mancante seguendo le istruzioni in [Manca un certificato necessario per il dispositivo](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se l'errore persiste, provare la soluzione 2.
+L'utente potrebbe essere in grado di recuperare il certificato mancante seguendo le istruzioni in [Manca un certificato necessario per il dispositivo](/intune-user-help/your-device-is-missing-a-required-certificate-android). Se l'errore persiste, provare la soluzione 2.
 
 **Soluzione 2**:
 

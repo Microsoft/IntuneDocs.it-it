@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511303"
 ---
 # <a name="data-collection-in-intune"></a>Raccolta di dati in Intune
 
@@ -39,7 +41,7 @@ I dati più personali raccolti da Intune sono i dati identificati. Questi dati s
 
 I dati identificati raccolti da Intune possono includere, a titolo di esempio: 
 
-- Informazioni utente
+- Informazioni sull'utente
     - Nome del proprietario/nome visualizzato dell'utente (il nome registrato in Azure dell'utente identificato con l'ID utente di Azure)
     - Nome dell'entità utente o indirizzo di posta elettronica
     - Identificatore dell'utente di terze parti (ad esempio ID Apple)
@@ -77,9 +79,9 @@ I dati identificati raccolti da Intune possono includere, a titolo di esempio:
     - Chiave di sottoscrizione
 - Inventario delle applicazioni, ad esempio
     - nome dell'app
-    - Versione di
+    - Versione
     - ID dell'app
-    - size
+    - dimensioni
     - percorso di installazione
     - I dati di inventario dell'applicazione vengono raccolti solo quando contrassegnati dall'amministratore come dispositivo aziendale o quando è attivata la funzionalità per le app conformi.  
 - ID tenant di terze parti del cliente, ad esempio l'ID Apple. 
@@ -128,8 +130,8 @@ I dati aggregati raccolti da Intune possono includere, a titolo di esempio:
     - Numero di piattaforme per dispositivi identificate  
     - Numero di dispositivi installati
     - installedDeviceCount: numero di dispositivi in cui è installata l'applicazione.
-    - notApplicableDeviceCount: numero di dispositivi per cui l'applicazione non è applicabile.
-    - notInstalledDeviceCount: numero di dispositivi per cui l'applicazione è applicabile ma non è installata.
+    - notApplicableDeviceCount: numero di dispositivi per cui è l'applicazione non è applicabile.
+    - notInstalledDeviceCount: numero di dispositivi per cui l'applicazione è applicabile, ma non è installata.
     - pendingInstallDeviceCount: numero di dispositivi per cui l'applicazione è applicabile e l'installazione è in sospeso.
     
 ## <a name="next-steps"></a>Passaggi successivi

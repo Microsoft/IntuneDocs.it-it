@@ -1,26 +1,28 @@
 ---
 title: Guida alla migrazione alla gestione dei dispositivi mobili di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questa guida presenta in dettaglio i diversi aspetti correlati alla migrazione da un provider MDM di terze parti a Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512976"
 ---
 # <a name="intune-migration-guide"></a>Guida alla migrazione a Intune
 
@@ -34,7 +36,7 @@ Questa guida presenta in dettaglio i diversi aspetti correlati alla migrazione d
 
 La guida suddivide la migrazione in due fasi, che includono entrambe attività, strategie e indicazioni tattiche utili per eseguire passo-passo il processo completo per la migrazione all'ambiente MDM di Intune.
 
--   [Fase 1: Preparare Intune per la gestione dei dispositivi mobili](migration-guide-prepare.md)
+-   [Fase 1: Preparare Intune per la gestione di dispositivi mobili](migration-guide-prepare.md)
 
     -   [Valutare i requisiti per la gestione dei dispositivi mobili](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -70,4 +72,4 @@ La guida suddivide la migrazione in due fasi, che includono entrambe attività, 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Fase 1: Preparare Intune per la gestione dei dispositivi mobili](migration-guide-prepare.md)
+[Fase 1: Preparare Intune per la gestione di dispositivi mobili](migration-guide-prepare.md)

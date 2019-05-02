@@ -1,39 +1,40 @@
 ---
 title: Impostazioni relative all'ottimizzazione recapito per Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Configurare la modalità di recapito degli aggiornamenti software ai dispositivi tramite i servizi cloud di ottimizzazione recapito disponibili per i dispositivi con Windows 10 e versioni successive. In Intune, creare un profilo di configurazione del dispositivo per installare gli aggiornamenti da Internet. Vedere anche come sostituire gli anelli di aggiornamento esistenti con un profilo di ottimizzazione recapito.
+description: Configurare l'uso dell'ottimizzazione recapito nei dispositivi Windows 10 gestiti con Intune. In Intune, creare un profilo di configurazione del dispositivo per installare gli aggiornamenti da Internet. Vedere anche come sostituire gli anelli di aggiornamento esistenti con un profilo di ottimizzazione recapito.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2018
-ms.topic: article
+ms.date: 03/12/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f335c8acf9e979366fe75d1a3da2318b7ec46400
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.reviewer: kerimh
+ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510198"
 ---
-# <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Impostazioni di ottimizzazione recapito per Windows 10 (e versioni successive) in Microsoft Intune
+# <a name="delivery-optimization-settings-in-microsoft-intune"></a>Impostazioni di ottimizzazione recapito in Microsoft Intune
+
+Con Intune, è possibile usare le impostazioni di ottimizzazione recapito per i dispositivi Windows 10 per ridurre il consumo di larghezza di banda quando tali dispositivi scaricano aggiornamenti e applicazioni. L'ottimizzazione recapito viene impostata come parte dei profili di configurazione dei dispositivi.  
+
+Questo articolo descrive come configurare le impostazioni di ottimizzazione recapito come parte di un profilo di configurazione del dispositivo. Dopo aver creato un profilo, lo si assegna o distribuisce ai dispositivi Windows 10. 
+
+Per un elenco delle impostazioni di ottimizzazione recapito supportate da Intune, vedere [Impostazioni di ottimizzazione recapito per Intune](delivery-optimization-settings.md).  
+
+Per informazioni sull'ottimizzazione recapito in Windows 10, vedere [Ottimizzazione recapito per gli aggiornamenti](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) nella documentazione di Windows.  
+
 
 > [!NOTE]
-> Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10** vengono sostituite dalle impostazioni di **Ottimizzazione recapito**. È possibile modificare gli anelli di aggiornamento esistenti in modo da usare le impostazioni di **Ottimizzazione recapito**. La sezione [Passare anelli di aggiornamento esistenti all'ottimizzazione recapito](#move-existing-update-rings-to-delivery-optimization) (in questo articolo) elenca i passaggi. 
-
-
-Questa funzionalità si applica alla piattaforma seguente:
-
-- Windows 10 e versioni successive
-
-Questo articolo elenca e descrive tutte le impostazioni di ottimizzazione recapito che è possibile configurare per i dispositivi Windows 10. Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo e quindi assegnate o distribuite ai dispositivi con Microsoft Intune.
-
-[Ottimizzazione recapito per gli aggiornamenti](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) è una risorsa eccellente per ottenere informazioni sull'ottimizzazione del recapito in Windows 10.
-
+> Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10** vengono sostituite dalle impostazioni di **Ottimizzazione recapito**. È possibile modificare gli anelli di aggiornamento esistenti in modo da usare le impostazioni di **Ottimizzazione recapito**. [Passare anelli di aggiornamento esistenti all'ottimizzazione recapito](#move-existing-update-rings-to-delivery-optimization) (in questo articolo) 
 ## <a name="create-the-profile"></a>Creare il profilo
 
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
@@ -49,23 +50,15 @@ Questo articolo elenca e descrive tutte le impostazioni di ottimizzazione recapi
         - **Windows 10 e versioni successive**
 
     - **Tipo di profilo**: selezionare **Ottimizzazione recapito**.
-    - **Impostazioni**: scegliere come si vogliono scaricare gli aggiornamenti. Le opzioni disponibili sono: 
-
-        - **Non configurata**: gli utenti finali aggiornano i propri dispositivi usando il metodo prescelto, che può essere usare **Windows Update** o le impostazioni di **Ottimizzazione recapito** disponibili con il sistema operativo.
-        - **Solo HTTP, senza peering**: ottenere gli aggiornamenti solo da Internet. Non è consentito ottenere aggiornamenti da altri computer nella rete (operazione nota come peering o peer-to-peer).
-        - **HTTP misto con peering nella stessa NAT**: ottenere gli aggiornamenti da Internet e da altri computer nella rete. 
-        - **HTTP misto con peering in un gruppo privato**: Il peering si verifica per i dispositivi nello stesso sito di Active Directory (se presente) o nello stesso dominio. Quando questa opzione è selezionata, il peering attraversa gli indirizzi IP di NAT (Network Address Translation).
-        - **HTTP misto con peering Internet**: ottenere gli aggiornamenti da Internet e da altri computer nella rete.
-        - **Modalità di download semplice senza peering**: ottenere gli aggiornamenti da Internet, direttamente dal proprietario dell'aggiornamento, ad esempio Microsoft. Non vengono contattati i servizi cloud di ottimizzazione recapito.
-        - **Modalità Bypass**: usare BITS (Background Intelligent Transfer Service) per ottenere gli aggiornamenti. Non usare ottimizzazione recapito.
+    - **Impostazioni**: Configurare le impostazioni che definiscono come scaricare aggiornamenti e app. Per informazioni sulle impostazioni disponibili, vedere [Impostazioni di ottimizzazione recapito per Intune](delivery-optimization-settings.md).
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
-Il profilo viene creato e visualizzato nell'elenco. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
+Il profilo viene creato e visualizzato nell'elenco. [Assegnare il profilo](device-profile-assign.md) e quindi [monitorarne lo stato](device-profile-monitor.md).
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>Passare anelli di aggiornamento esistenti all'ottimizzazione recapito
 
-Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10** vengono sostituite dalle impostazioni di **Ottimizzazione recapito**. Gli anelli di aggiornamento esistenti possono essere facilmente modificati per usare le impostazioni di **Ottimizzazione recapito**. Passaggi:
+Le impostazioni di **Ottimizzazione recapito** sostituiscono **Aggiornamenti software - Anelli di aggiornamento di Windows 10**. Gli anelli di aggiornamento esistenti possono essere facilmente modificati per usare le impostazioni di **Ottimizzazione recapito**. Per mantenere le stesse impostazioni quando si crea un profilo di ottimizzazione recapito, usare la stessa impostazione per *Modalità di download con ottimizzazione recapito* e quindi configurare le stesse impostazioni già in uso. È tuttavia possibile scegliere di riconfigurare le impostazioni di ottimizzazione recapito per sfruttare la gamma completa di impostazioni aggiuntive che il profilo di ottimizzazione recapito può gestire.
 
 1. Creare un profilo di configurazione di ottimizzazione recapito:
 
@@ -76,7 +69,7 @@ Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10
         - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
         - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
         - **Tipo di profilo**: selezionare **Ottimizzazione recapito**.
-        - **Impostazioni**: Per **Modalità di download con ottimizzazione recapito**, scegliere la stessa modalità usata dall'anello di aggiornamento software esistente. Le opzioni disponibili sono:
+        - **Impostazioni**: Per **Modalità di download con ottimizzazione recapito**, scegliere la stessa modalità usata dall'anello di aggiornamento software esistente, a meno che non si voglia cambiare le impostazioni applicate ai dispositivi. Le opzioni disponibili sono:
             - **Non configurato**
             - **Solo HTTP, senza peering**
             - **HTTP misto con peering nella stessa NAT**
@@ -84,8 +77,8 @@ Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10
             - **HTTP misto con peering Internet**
             - **Modalità di download semplice senza peering**
             - **Modalità Bypass**
-
-2. Assegnare questo nuovo profilo agli stessi dispositivi e utenti dell'anello di aggiornamento software esistente. La procedura è descritta in [Assegnare un profilo di dispositivo](device-profile-assign.md).
+    3. Configurare eventuali impostazioni aggiuntive da gestire.
+1. Assegnare questo nuovo profilo agli stessi dispositivi e utenti dell'anello di aggiornamento software esistente. La procedura è descritta in [Assegnare un profilo di dispositivo](device-profile-assign.md).
 
 3. Annullare la configurazione dell'anello di aggiornamento software esistente:
     1. In Intune, passare ad **Aggiornamenti software** > Anelli di aggiornamento di Windows 10.
@@ -95,4 +88,5 @@ Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
+[Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).  
+Visualizzare le [impostazioni di ottimizzazione recapito](delivery-optimization-settings.md) per Intune.

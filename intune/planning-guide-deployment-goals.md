@@ -1,27 +1,29 @@
 ---
 title: Determinare scopi, obiettivi e sfide per la distribuzione
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo consente di determinare gli scopi, gli obiettivi e le sfide per la distribuzione di un'implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512679"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinare scopi, obiettivi e sfide per la distribuzione
 
@@ -33,27 +35,27 @@ Gli scopi della distribuzione sono i traguardi a lungo termine che si intende ra
 
 -   **Assicurare l'integrazione con Office 365 e supportare l'uso delle app di Office Mobile**
 
-    -   **Descrizione:** fornire una stretta integrazione con Office 365 e l'uso delle app di Office Mobile con la protezione delle app.
+    -   **Descrizione:** fornire una stretta integrazione con Office 365 e l'uso di app di Office per dispositivi mobili con protezione delle app.
 
-    -   **Valore aziendale:** esperienza utente sicura e migliorata, consentendo agli utenti di usare le app che già conoscono.
+    -   **Valore per l'azienda:** esperienza utente sicura e migliorata che permette agli utenti di usare app con cui hanno già familiarità e che preferiscono.
 
 -   **Abilitare l'accesso ai servizi aziendali interni nei dispositivi mobili**
 
-    -   **Descrizione:** consentire ai dipendenti di essere produttivi ovunque si trovino e con qualsiasi dispositivo. Questo progetto deve puntare ad abilitare la produttività da dispositivi mobili e l'accesso ai dati aziendali in modo sicuro.
+    -   **Descrizione:** permettere ai dipendenti di essere produttivi ovunque si trovino e con il dispositivo più appropriato per ognuno. Questo progetto deve puntare ad abilitare la produttività da dispositivi mobili e l'accesso ai dati aziendali in modo sicuro.
 
-    -   **Valore aziendale:** consentire ai dipendenti di essere agili e di lavorare ovunque si trovino aumenta la competitività dell'azienda e fornisce un ambiente di lavoro più gratificante.
+    -   **Valore per l'azienda:** la capacità di permettere ai dipendenti di essere agili e di lavorare ovunque si trovino aumenta la competitività dell'azienda e offre un ambiente di lavoro più gratificante.
 
 -   **Garantire la protezione dei dati nei dispositivi mobili**
 
-    -   **Descrizione:** quando si archiviano dati in un dispositivo mobile, è essenziale proteggere le informazioni per evitare che vadano perse o che vengano condivise in modo intenzionale o accidentale.
+    -   **Descrizione:** quando si archiviano dati in un dispositivo mobile, è essenziale proteggerli per evitare che vadano persi o vengano condivisi in modo intenzionale o accidentale.
 
-    -   **Valore aziendale:** la protezione dei dati è fondamentale per garantire che l'organizzazione rimanga competitiva e che i clienti e i relativi dati vengano gestiti nel modo più appropriato.
+    -   **Valore per l'azienda:** la protezione dei dati è fondamentale per garantire che l'organizzazione resti competitiva e che i clienti e i rispettivi dati vengano gestiti nel modo più appropriato.
 
 -   **Ridurre i costi**
 
-    -   **Descrizione:** quando possibile, il progetto mira a ridurre i costi di distribuzione e operativi.
+    -   **Descrizione:** quando possibile, il progetto riduce i costi operativi e di distribuzione.
 
-    -    **Valore aziendale:** l'uso efficiente delle risorse consente all'azienda di investire in altre aree, competere in modo più efficace e offrire un servizio migliore ai clienti.
+    -    **Valore per l'azienda:** l'uso efficiente delle risorse permette all'azienda di investire in altre aree, essere più competitiva e offrire un servizio migliore ai clienti.
 
 ## <a name="deployment-objectives"></a>Obiettivi della distribuzione
 
@@ -61,7 +63,7 @@ Gli obiettivi della distribuzione sono le azioni che l'organizzazione può intra
 
 -   **Ridurre il numero delle soluzioni di gestione dei dispositivi**
 
-    -   **Implementazione:** eseguire il consolidamento su una singola soluzione di gestione dei dispositivi mobili, Microsoft Intune per la protezione dei dati aziendali di app e dispositivi.
+    -   **Implementazione:** consolidamento in un'unica soluzione di gestione di dispositivi mobili: Microsoft Intune per la protezione dei dati aziendali di app e dispositivi.
 
 -   **Fornire un accesso sicuro a Exchange e SharePoint Online**
 
@@ -69,11 +71,11 @@ Gli obiettivi della distribuzione sono le azioni che l'organizzazione può intra
 
 -   **Impedire che i dati aziendali vengano archiviati o inoltrati a servizi non aziendali sui dispositivi mobili**
 
-    -   **Implementazione:** applicare i criteri di protezione delle app di Intune per le app Microsoft Office e line-of-business.
+    -   **Implementazione:** applicare criteri di protezione delle app di Intune per le app di Microsoft Office e line-of-business.
 
 -   **Fornire funzionalità per la cancellazione dei dati aziendali dal dispositivo**
 
-    -   **Implementazione:** registrare i dispositivi in Intune. Questo offre la possibilità di eseguire una cancellazione remota dei dati e delle risorse aziendali, quando appropriato.
+    -   **Implementazione:** registrare dispositivi in Intune. Questo offre la possibilità di eseguire una cancellazione remota dei dati e delle risorse aziendali, quando appropriato.
 
 ## <a name="deployment-challenges"></a>Sfide della distribuzione
 
@@ -81,16 +83,16 @@ Le sfide della distribuzione sono i problemi più importanti per un'organizzazio
 
 -   La preparazione per il supporto e l'esperienza utente finale non sono incluse nell'ambito del progetto iniziale. Questo comporta un'adozione limitata da parte degli utenti finali e problemi per l'organizzazione di supporto.
 
-    -   **Strategia di riduzione del rischio:** incorporare la formazione per il supporto. Convalidare l'esperienza dell'utente finale con metriche di successo nel piano di distribuzione.
+    -   **Prevenzione:** integrare la formazione per il supporto. Convalidare l'esperienza dell'utente finale con metriche di successo nel piano di distribuzione.
 
 -   La mancanza di metriche di successo e obiettivi chiaramente definiti comporta risultati indeterminati. Può inoltre portare l'organizzazione a intervenire in modo reattivo quando si verificano problemi.
 
-    -   **Strategia di riduzione del rischio:** definire obiettivi e metriche di successo nelle fasi iniziali di definizione dell'ambito e usare questi dati per approfondire le altre fasi dell'implementazione. Assicurarsi che gli obiettivi siano specifici, misurabili, realizzabili, realistici e tempestivi. Pianificare la verifica degli obiettivi in ogni fase e garantire che il progetto di implementazione sia conforme.
+    -   **Prevenzione:** definire obiettivi e metriche di successo nelle fasi iniziali della definizione dell'ambito del progetto e usare questi punti dati per approfondire le altre fasi dell'implementazione. Assicurarsi che gli obiettivi siano specifici, misurabili, realizzabili, realistici e tempestivi. Pianificare la verifica degli obiettivi in ogni fase e garantire che il progetto di implementazione sia conforme.
 
 -   Si trascura di creare, convalidare e condividere sistematicamente una proposta di valore ben definita adatta alle esigenze dell'organizzazione. Questo spesso comporta un'adozione limitata e una mancanza del ritorno sugli investimenti (ROI).
 
-    -   **Strategia di riduzione del rischio:** prima di passare all'implementazione del progetto, assicurarsi di aver chiaramente definito gli scopi e gli obiettivi. Includere questi scopi e obiettivi in tutte le attività di formazione e sensibilizzazione per garantire agli utenti un'adeguata comprensione del motivo per cui l'organizzazione ha adottato Intune.
+    -   **Prevenzione:** prima di passare all'implementazione del progetto, assicurarsi di aver chiaramente definito gli scopi e gli obiettivi. Includere questi scopi e obiettivi in tutte le attività di formazione e sensibilizzazione per garantire agli utenti un'adeguata comprensione del motivo per cui l'organizzazione ha adottato Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo avere identificato gli scopi, gli obiettivi e le potenziali sfide della distribuzione, possiamo passare alla sezione successiva: [Identificare gli scenari per i casi d'uso](planning-guide-scenarios.md).
+Dopo avere identificato gli scopi, gli obiettivi e le potenziali sfide della distribuzione, è possibile passare alla sezione successiva: [Identificare gli scenari per i casi d'uso](planning-guide-scenarios.md).

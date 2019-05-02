@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504317"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
 Una soluzione pratica per gestire i dispositivi di un'organizzazione è creare un gruppo di impostazioni da applicare a gruppi di dispositivi diversi. Supponiamo ad esempio di avere vari gruppi di dispositivi. A GruppoA si vuole assegnare un set di impostazioni specifico. A GruppoB si vuole assegnare un set di impostazioni diverso. Si vuole anche disporre di una visualizzazione semplice delle impostazioni che è possibile configurare.
 
-Per completare questa attività, è possibile usare **Modelli amministrativi** in Microsoft Intune. I modelli amministrativi includono centinaia di impostazioni che controllano le funzionalità per Internet Explorer, le applicazioni Microsoft Office, il desktop remoto, l'accesso a OneDrive, l'uso di una password grafica o di un PIN per accedere e altro ancora. Questi modelli sono simili alle impostazioni dei Criteri di gruppo in Active Directory (AD) e sono [impostazioni basate su ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) che usano il linguaggio XML. I modelli di Intune sono però completamente basati sul cloud. Offrono un modo più semplice e immediato di configurare le impostazioni e trovare quelle che interessano.
+Per completare questa attività, è possibile usare **Modelli amministrativi** in Microsoft Intune. I modelli amministrativi includono centinaia di impostazioni che controllano le funzionalità per Internet Explorer, le applicazioni Microsoft Office, il desktop remoto, l'accesso a OneDrive, l'uso di una password grafica o di un PIN per accedere e altro ancora. Questi modelli sono simili alle impostazioni di Criteri di gruppo in Active Directory (AD) e sono [impostazioni basate su ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (il collegamento apre un altro sito Docs) che usano il linguaggio XML. I modelli di Intune sono però completamente basati sul cloud. Offrono un modo più semplice e immediato di configurare le impostazioni e trovare quelle che interessano.
 
 La funzionalità **Modelli amministrativi** è incorporata in Intune e non richiede alcuna personalizzazione, incluso l'uso di OMA-URI. Usare queste impostazioni dei modelli nella propria soluzione di gestione di dispositivi mobili (MDM) per gestire i dispositivi Windows 10 da una posizione centralizzata.
 
 Questo articolo illustra i passaggi da eseguire per creare un modello per dispositivi Windows 10 e mostra come filtrare tutte le impostazioni disponibili in Microsoft Intune. Con la creazione del modello viene creato un profilo di configurazione del dispositivo. È quindi possibile assegnare o distribuire questo profilo ai dispositivi Windows 10 dell'organizzazione.
-
-> [!NOTE]
-> I modelli amministrativi sono supportati per i dispositivi autonomi. Attualmente non sono supportati per i dispositivi in co-gestione con System Center Configuration Manager (SCCM).
 
 ## <a name="create-a-template"></a>Creare un modello
 
@@ -75,6 +73,8 @@ In questi modelli sono disponibili centinaia di impostazioni. Per trovare più f
   ![Fare clic su Percorso per elencare le impostazioni in ordine alfabetico](./media/administrative-templates-windows/search-copy-settings.png)
 
   In un altro esempio cercare `microsoft word`. Vengono visualizzate tutte le impostazioni che è possibile configurare per l'applicazione Microsoft Word. Cercare `explorer` per visualizzare tutte le impostazioni di Internet Explorer che è possibile aggiungere al modello.
+
+Questa funzionalità usa [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (il collegamento apre un altro sito Docs). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (il collegamento apre un altro sito Docs).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

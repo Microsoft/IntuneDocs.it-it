@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508485"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Aggiungere un'autorità di certificazione partner in Intune tramite SCEP
 
@@ -69,7 +71,7 @@ Per consentire a un server SCEP di terze parti di eseguire la convalida della ri
 
 Assicurarsi di avere le autorizzazioni necessarie per registrare un'app di Azure AD. In [Autorizzazioni necessarie](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) sono elencati i passaggi.
 
-**Passaggio 1: Creare un'applicazione Azure AD** 
+**Passaggio 1: Creare un'applicazione Azure AD**
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Azure Active Directory** > **Registrazioni per l'app** > **Registrazione nuova applicazione**.
@@ -78,7 +80,7 @@ Assicurarsi di avere le autorizzazioni necessarie per registrare un'app di Azure
 
 [Integrate applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) (Integrare applicazioni con Azure Active Directory) include materiale sussidiario sulla creazione di un'app,con suggerimenti per l'URL e il nome.
 
-**Passaggio 2: Concedere autorizzazioni**
+**Passaggio 2: Concedere le autorizzazioni**
 
 Dopo aver creato l'applicazione, concedere all'API Microsoft Intune le autorizzazioni necessarie:
 

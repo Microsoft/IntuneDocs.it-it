@@ -1,33 +1,34 @@
 ---
 title: Configurare l'accesso condizionale basato su dispositivo con Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come creare criteri di accesso condizionale basato su dispositivo usando i criteri di gestione delle app mobili e di conformità dei dispositivi di Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508650"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
-Con Intune, è possibile migliorare l'accesso condizionale in Azure Active Directory aggiungendo i criteri di conformità dei dispositivi mobili ai controlli di accesso. Dopo aver creato in Intune i criteri che definiscono i requisiti di conformità dei dispositivi, è possibile usare lo stato di conformità di un dispositivo per consentire o bloccare l'accesso ad app e servizi. A tale scopo è possibile creare criteri di accesso condizionale con l'impostazione **Richiedi che i dispositivi siano contrassegnati come conformi**. 
+Con Intune, è possibile migliorare l'accesso condizionale in Azure Active Directory aggiungendo i criteri di conformità dei dispositivi mobili ai controlli di accesso. Dopo aver creato in Intune i criteri che definiscono i requisiti di conformità dei dispositivi, è possibile usare lo stato di conformità di un dispositivo per consentire o bloccare l'accesso ad app e servizi. A tale scopo è possibile creare criteri di accesso condizionale con l'impostazione **Richiedi che i dispositivi siano contrassegnati come conformi**.  
 
-I criteri di accesso condizionale specificano le app o i servizi da proteggere, le condizioni di accessibilità alle app o ai servizi e gli utenti a cui si applicano i criteri. L'accesso condizionale è una funzionalità di Azure AD Premium che è possibile configurare in Azure Active Directory, ma questi stessi criteri possono essere configurati dal portale di Intune. 
+I criteri di accesso condizionale specificano le app o i servizi da proteggere, le condizioni di accessibilità alle app o ai servizi e gli utenti a cui si applicano i criteri. L'accesso condizionale è una funzionalità di Azure AD Premium che è possibile configurare in Azure Active Directory, ma questi stessi criteri possono essere configurati dal portale di Intune. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
 
 > [!IMPORTANT]
 > Prima dell'accesso condizionale, è necessario configurare i criteri di conformità dei dispositivi di Intune per valutare i dispositivi in base alla capacità di soddisfare requisiti specifici. Vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).

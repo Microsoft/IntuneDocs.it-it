@@ -1,15 +1,16 @@
 ---
 title: Creare una progettazione di Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo semplifica la creazione di una progettazione per un'implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512719"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -108,7 +109,11 @@ Per sviluppare il piano della progettazione di Intune, è possibile [scaricare u
 
 ## <a name="choose-an-intune-deployment-option"></a>Scegliere un'opzione di distribuzione per Intune
 
-Intune offre due opzioni di distribuzione: versione autonoma e configurazione ibrida. La versione autonoma si riferisce al servizio Intune in esecuzione nel cloud, mentre la configurazione ibrida si riferisce all'integrazione di Intune con System Center Configuration Manager. Questa guida è destinata principalmente all'uso della versione autonoma. [Decidere quale opzione è più adatta per i requisiti aziendali](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Intune offre due opzioni di distribuzione: versione autonoma e configurazione ibrida. Per versione autonoma si intende il servizio Intune in esecuzione nel cloud, mentre il termine configurazione ibrida fa riferimento all'integrazione di Intune con System Center Configuration Manager. Questa guida è destinata principalmente all'uso della versione autonoma. [Decidere quale opzione è più adatta per i requisiti aziendali](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+
+> [!Important]
+>l'onboarding di nuovi clienti di MDM con configurazione ibrida è deprecato. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
+
 
 ## <a name="intune-tenant-location"></a>Posizione del tenant Intune
 
@@ -133,7 +138,7 @@ Le dipendenze esterne sono servizi e prodotti distinti da Intune, ma che rappres
 
 -   Infrastruttura a chiave pubblica (PKI)
 
-Queste dipendenze esterne comuni sono illustrate più in dettaglio di seguito
+Di seguito verranno esplorate più dettagliatamente queste dipendenze esterne comuni.
 
 ### <a name="identity"></a>Identità
 
@@ -399,11 +404,9 @@ Di seguito è riportato un esempio di come progettare i criteri di conformità:
 Per determinare le esigenze specifiche a livello di criteri di conformità, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
-L'accesso condizionale viene usato per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ad altre risorse aziendali. Intune interagisce con Enterprise Mobility + Security (EMS) per controllare l'accesso alle risorse aziendali. È necessario decidere se è richiesto l'accesso condizionale e quali elementi devono essere protetti. Altre informazioni sull'[accesso condizionale](conditional-access.md).
+L'accesso condizionale viene usato per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ad altre risorse aziendali. Intune interagisce con Enterprise Mobility + Security (EMS) per controllare l'accesso alle risorse aziendali. È necessario stabilire se è richiesto l'accesso condizionale e quali elementi devono essere protetti. Altre informazioni sull'[accesso condizionale](conditional-access.md).
 
-Per l'accesso online, decidere le piattaforme e i gruppi di utenti a cui saranno destinati i criteri di accesso condizionale. Stabilire inoltre se è necessario installare o configurare Intune Service to Service Connector per Exchange Online o Exchange locale. Altre informazioni su come installare e configurare i connettori Service to Service Connector di Intune: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Per l'accesso online, definire le piattaforme e i gruppi di utenti cui saranno destinati i criteri di accesso condizionale. Stabilire inoltre se è necessario installare o configurare il connettore di Intune per Exchange in locale: 
 
 -   [Exchange locale](exchange-connector-install.md)
 

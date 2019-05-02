@@ -1,14 +1,15 @@
 ---
-title: Usare certificati a chiave pubblica e privata in Microsoft Intune - Azure | Micrososft Docs
-description: Aggiungere o creare certificati PKCS (Public Key Cryptography Standards) con Microsoft Intune, inclusi i passaggi per esportare un certificato radice, configurare il modello di certificato, scaricare e installare il connettore di certificati di Microsoft Intune (NDES), creare un profilo di configurazione del dispositivo, creare un profilo certificato PKCS in Azure e nell'autorità di certificazione.
+title: Usare certificati con chiave pubblica e privata in Microsoft Intune - Azure | Microsoft Docs
+description: Aggiungere o creare certificati PKCS (Public Key Cryptography Standards) con Microsoft Intune, inclusi i passaggi per esportare un certificato radice, configurare il modello di certificato, scaricare e installare il connettore di certificati di Intune (servizio Registrazione dispositivi di rete), creare un profilo di configurazione del dispositivo e creare un profilo certificato PKCS in Azure e nell'autorità di certificazione.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 04/03/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: lacranda
@@ -16,65 +17,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7f7f77914b899b7173b8bfacb82cd0c50c6e7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508584"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS con Intune
 
-I certificati consentono di autenticare e proteggere l'accesso alle risorse aziendali, ad esempio una rete VPN o Wi-Fi. I certificati che usano una coppia di chiave pubblica e chiave privata, noti anche come certificati PKCS, sono usati in numerose organizzazioni. Microsoft Intune include impostazioni predefinite per utilizzare i certificati PKCS per l’accesso e l’autenticazione delle risorse dell’organizzazione. Per queste impostazioni viene eseguito il push o la distribuzione nei dispositivi che usano i profili di configurazione dei dispositivi in Intune.
+Intune supporta l'uso di certificati con coppia di chiavi pubblica e privata (PKCS). Questo articolo fornisce informazioni utili per configurare l'infrastruttura necessaria, ad esempio i connettori di certificati locali, esportare un certificato PKCS e quindi aggiungere il certificato a un profilo di configurazione del dispositivo in Intune.
 
-In questo articolo sono elencati i requisiti necessari per usare i certificati PKCS, viene descritto come esportare un certificato PKCS e aggiungere il certificato a un profilo di configurazione del dispositivo in Intune.
+Microsoft Intune include impostazioni predefinite per utilizzare i certificati PKCS per l’accesso e l’autenticazione delle risorse dell’organizzazione. I certificati consentono di autenticare e proteggere l'accesso alle risorse aziendali, ad esempio una rete VPN o Wi-Fi. Queste impostazioni vengono distribuite nei dispositivi usando i profili di configurazione dei dispositivi in Intune.
+
 
 ## <a name="requirements"></a>Requisiti
 
-Per usare i certificati PKCS con Intune, verificare se è disponibile l'infrastruttura seguente:
+Per usare i certificati PKCS con Intune, è necessaria l'infrastruttura seguente:
 
-- **Dominio di Active Directory**: tutti i server elencati in questa sezione devono essere aggiunti al dominio di Active Directory.
+- **Dominio di Active Directory**:  
+  tutti i server elencati in questa sezione devono essere aggiunti al dominio di Active Directory.
 
-  Per altre informazioni sull'installazione e la configurazione di Active Directory Domain Services, vedere l'articolo relativo a [progettazione e pianificazione di AD DS](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
+  Per altre informazioni sull'installazione e sulla configurazione di Active Directory Domain Services, vedere [Pianificazione e progettazione di Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
-- **Autorità di certificazione** (CA): un'autorità di certificazione globale (CA)
+- **Autorità di certificazione**:  
+   Un'autorità di certificazione globale (enterprise).
 
-  Per altre informazioni sull'installazione e la configurazione di Servizi certificati Active Directory (AD CS), vedere la [guida dettagliata di AD CS](https://technet.microsoft.com/library/cc772393).
+  Per altre informazioni sull'installazione e sulla configurazione di Servizi certificati Active Directory (AD CS), vedere [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393) (Guida dettagliata di Servizi certificati Active Directory).
 
-  > [!WARNING]
+  > [!WARNING]  
   > Intune richiede l'esecuzione di Servizi certificati Active Directory con un'autorità di certificazione globale (enterprise), non con un'autorità di certificazione autonoma (Standalone).
 
-- **Un client**: per la connessione all'autorità di certificazione globale (enterprise)
+- **Un client**:  
+  Per la connessione alla CA globale (enterprise).
 
-- **Certificato radice**: una copia del certificato radice esportato dall'autorità di certificazione globale (enterprise).
+- **Certificato radice**:  
+  Una copia del certificato radice esportato dall'autorità di certificazione globale (enterprise).
 
-- **Connettore di certificati di Microsoft Intune**: usare il portale di Azure per scaricare il programma di installazione di **Connettore di certificati** (**NDESConnectorSetup.exe**). 
+- **Connettore di certificati di Intune** (anche detto *connettore di certificati del servizio Registrazione dispositivi di rete*):  
+  Nel portale di Intune passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per PKCS #12*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione del connettore di certificati **NDESConnectorSetup.exe**.  
 
   Il connettore elabora le richieste di certificati PKCS usati per l'autenticazione o la firma S/MIME della posta elettronica.
 
   Il connettore di certificati del servizio Registrazione dispositivi di rete supporta anche la modalità FIPS (Federal Information Processing Standard). FIPS non è obbligatorio, ma è possibile emettere e revocare i certificati quando è abilitato.
 
-- **Connettore di certificati PFX per Microsoft Intune**: se si prevede di usare la crittografia S/MIME per la posta elettronica, scaricare dal portale di Azure il programma di installazione del **connettore di certificati PFX per Microsoft Intune** ( **PfxCertificateConnectorBootstrapper.exe**). Il connettore gestisce le richieste di file PFX importati in Intune per la crittografia S/MIME della posta elettronica per un utente specifico.
+- **Connettore di certificati PFX per Microsoft Intune**:  
+   Se si prevede di usare la crittografia S/MIME per la posta elettronica, usare il portale di Intune per scaricare il connettore per i *certificati PFX importati*.  Passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per certificati PFX importati*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione **PfxCertificateConnectorBootstrapper.exe**. 
 
-- **Windows Server**: Ospita quanto segue:
+  Questo connettore gestisce le richieste per i file PFX importati in Intune per la crittografia S/MIME della posta elettronica per un utente specifico.  
 
-  - Connettore di certificati di Microsoft Intune (NDESConnectorSetup.exe) per gli scenari di autenticazione e firma S/MIME della posta elettronica
-  - Connettore di certificati PFX per Microsoft Intune (PfxCertificateConnectorBootstrapper.exe) per gli scenari di crittografia S/MIME della posta elettronica.
+  Questo connettore consente l'aggiornamento automatico quando diventano disponibili nuove versioni. Per usare la funzionalità di aggiornamento, è necessario:
+  - Installare il connettore di certificati PFX per Microsoft Intune nel server.
+  - Per ricevere automaticamente gli aggiornamenti importanti, assicurarsi che i firewall siano aperti per consentire al connettore di contattare **autoupdate.msappproxy.net** sulla porta **443**.  
 
-  È possibile eseguire entrambi i connettori (**il connettore di certificati di Microsoft Intune** e **il connettore di certificati PFX per Microsoft Intune**) nello stesso server.
+
+- **Windows Server**:  
+  Si usa un server Windows per ospitare:
+
+  - Connettore di certificati di Microsoft Intune: per scenari di autenticazione e firma S/MIME della posta elettronica
+  - Connettore di certificati PFX per Microsoft Intune: per scenari di crittografia S/MIME della posta elettronica.
+
+  È possibile installare entrambi i connettori (*connettore di certificati di Microsoft Intune* e *connettore di certificati PFX*) nello stesso server.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Esportare il certificato radice dall'autorità di certificazione globale (enterprise)
 
-Per l'autenticazione con una VPN, una rete Wi-Fi e altre risorse, è necessario un certificato della CA radice o intermedio per ogni dispositivo. La procedura seguente illustra come ottenere il certificato richiesto dall'autorità di certificazione globale (enterprise).
+Per l'autenticazione di un dispositivo con una VPN, una rete Wi-Fi o altre risorse, un dispositivo richiede un certificato della CA radice o intermedio. La procedura seguente illustra come ottenere il certificato richiesto dall'autorità di certificazione globale (enterprise).
 
-1. Accedere all'autorità di certificazione globale (enterprise) con un account che abbia privilegi amministrativi.
-2. Aprire un prompt dei comandi come amministratore.
-3. Esportare il certificato CA radice (estensione CER) in un percorso a cui è possibile accedere in un secondo momento.
-4. Al termine della procedura guidata, prima di chiuderla, fare clic su **Avvia l'interfaccia utente di Connettore di certificati**.
+**Usare una riga di comando**:  
+1. Accedere al server dell'autorità di certificazione radice con l'account amministratore.
+ 
+2. Passare a **Start** > **Esegui** e quindi immettere **Cmd** per aprire il prompt dei comandi. 
+    
+3. Specificare **certutil -ca.cert ca_name.cer** per esportare il certificato radice come file denominato *ca_name.cer*.
 
-   `certutil -ca.cert certnew.cer`
 
-   Per altre informazioni, vedere [Operazioni certutil per la gestione dei certificati](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>Configurare i modelli di certificato nella CA
 
@@ -118,14 +134,15 @@ Per l'autenticazione con una VPN, una rete Wi-Fi e altre risorse, è necessario 
 
 ### <a name="microsoft-intune-certificate-connector"></a>Connettore di certificati di Microsoft Intune
 
-> [!IMPORTANT] 
-> Connettore di certificati di Microsoft Intune **deve** essere installato in un server Windows separato. Non può essere installato nell'Autorità di certificazione (CA) emittente.
+> [!IMPORTANT]  
+> Il connettore di certificati di Microsoft Intune non può essere installato nell'autorità di certificazione (CA) emittente, ma deve invece essere istallato in un server Windows distinto.  
 
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
-2. Selezionare **Configurazione del dispositivo** > **Autorità di certificazione** > **Aggiungi**.
-3. Scaricare e salvare il file del connettore. Salvarlo in una posizione accessibile dal server in cui si intende installare il connettore.
+2. Selezionare **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi**.
+3. Scaricare e salvare il file del connettore in un percorso a cui è possibile accedere dal server in cui si installa il connettore.
 
-    ![ConnectorDownload][ConnectorDownload]
+    ![Download del connettore del servizio Registrazione dispositivi di rete](media/certificates-pfx-configure/download-ndes-connector.png)
+ 
 
 4. Al termine del download, accedere al server. Quindi:
 
@@ -136,32 +153,31 @@ Per l'autenticazione con una VPN, una rete Wi-Fi e altre risorse, è necessario 
 5. NDES Connector apre la scheda **Registrazione**. Per abilitare la connessione a Intune, selezionare **Accedi** e specificare un account con autorizzazioni amministrative globali.
 6. Nella scheda **Avanzate** è consigliabile lasciare selezionata l'opzione **Usa l'account di sistema del computer (impostazione predefinita)**.
 7. **Applica** > **Chiudi**
-8. Tornare al portale di Azure (**Intune** > **Configurazione dispositivo** > **Autorità di certificazione**). Dopo alcuni istanti, viene visualizzato un segno di spunta verde e lo **stato della connessione** è **attivo**. Il server del connettore ora può comunicare con Intune.
+8. Tornare al portale di Intune (**Intune** > **Configurazione dispositivo** > **Connettori di certificati**). Dopo alcuni istanti, viene visualizzato un segno di spunta verde e lo **stato della connessione** è **attivo**. Il server del connettore ora può comunicare con Intune.
 9. Se si ha un proxy web nel proprio ambiente di rete, possono essere necessarie operazioni di configurazione aggiuntive per abilitare il funzionamento del connettore. Per altre informazioni, vedere [Usare server proxy locali esistenti](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) nella documentazione di Azure Active Directory.
 
-> [!NOTE]
-> Il supporto di TLS 1.2 è incluso con il connettore di certificati di Microsoft Intune. Se pertanto il server in cui è installato il connettore di certificati di Microsoft Intune supporta TLS 1.2, viene usato questo protocollo. Se il server non supporta TLS 1.2, viene usato TLS 1.1. Attualmente, TLS 1.1 viene usato per l'autenticazione tra i dispositivi e il server.
+> [!NOTE]  
+> Il connettore di certificati di Microsoft Intune supporta TLS 1.2. Se TLS 1.2 è installato nel server che ospita il connettore, il connettore usa TLS 1.2. In caso contrario, viene usato TLS 1.1. Attualmente, TLS 1.1 viene usato per l'autenticazione tra i dispositivi e il server.
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Connettore di certificati PFX per Microsoft Intune
 
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Selezionare **Configurazione del dispositivo** > **Autorità di certificazione** > **Aggiungi**
+2. Selezionare **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi**
 3. Scaricare e salvare il connettore di certificati PFX per Microsoft Intune. Salvarlo in una posizione accessibile dal server in cui si intende installare il connettore.
 4. Al termine del download, accedere al server. Quindi:
 
     1. Assicurarsi che sia installato.NET Framework 4.6 o versione successiva, perché è richiesto dal connettore di certificati PFX per Microsoft Intune. Se .NET Framework 4.6 non è installato, il programma di installazione lo installa automaticamente.
-    2. Eseguire il programma di installazione (PfxCertificateConnectorBootstrapper.exe) e accettare il percorso predefinito. Il connettore viene installato in `Program Files\Microsoft Intune\PFXCertificateConnector`.
+    2. Eseguire il programma di installazione (PfxCertificateConnectorBootstrapper.exe) e accettare il percorso predefinito, che installa il connettore in `Program Files\Microsoft Intune\PFXCertificateConnector`.
     3. Il servizio Connector viene eseguito con l'account di sistema locale. Se è necessario un proxy per l'accesso a Internet, verificare che l'account del servizio locale possa accedere alle impostazioni del proxy nel server.
 
 5. Dopo l'installazione, il connettore di certificati PFX per Microsoft Intune consente di aprire la scheda **Registrazione**. Per abilitare la connessione a Intune, selezionare **Accedi** e specificare un account con autorizzazioni di amministratore globale o di amministratore di Intune.
 6. Chiudere la finestra.
-7. Tornare al portale di Azure (**Intune** > **Configurazione dispositivo** > **Autorità di certificazione**). Dopo alcuni istanti, viene visualizzato un segno di spunta verde e lo **stato della connessione** è **attivo**. Il server del connettore ora può comunicare con Intune.
+7. Tornare al portale di Azure (**Intune** > **Configurazione dispositivo** > **Connettori di certificati**). Dopo alcuni istanti, viene visualizzato un segno di spunta verde e lo **stato della connessione** è **attivo**. Il server del connettore ora può comunicare con Intune.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Creare un profilo certificato attendibile
 
 1. Nel [portale di Azure](https://portal.azure.com) passare a **Intune** > **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
-
-   ![NavigateIntune][NavigateIntune]
+    ![Passare a Intune e creare un nuovo profilo per un certificato attendibile](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Immettere le proprietà seguenti:
 
@@ -175,7 +191,7 @@ Per l'autenticazione con una VPN, una rete Wi-Fi e altre risorse, è necessario 
    > [!NOTE]
    > In base alla piattaforma selezionata nel **passaggio 3**, si può avere la possibilità di scegliere l'**archivio di destinazione** per il certificato.
 
-   ![ProfileSettings][ProfileSettings]
+   ![Creare un profilo e caricare un certificato attendibile](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
 4. Selezionare **OK** > **Crea** per salvare il profilo.
 5. Per assegnare il nuovo profilo a uno o più dispositivi, vedere [Assegnare profili di dispositivo in Microsoft Intune](device-profile-assign.md).
@@ -228,6 +244,26 @@ Dopo aver importato i certificati in Intune, creare un profilo **certificato PKC
 
 4. Selezionare **OK** > **Crea** per salvare il profilo.
 5. Per assegnare il nuovo profilo a uno o più dispositivi, vedere [Assegnare profili di dispositivo in Microsoft Intune](device-profile-assign.md).
+
+## <a name="whats-new-for-connectors"></a>Novità dei connettori
+Periodicamente vengono rilasciati aggiornamenti per i due connettori di certificati. Quando un connettore viene aggiornato, le modifiche vengono illustrate qui. 
+
+Il *connettore di certificati PFX* [supporta gli aggiornamenti automatici](#requirements), mentre il connettore di certificati di Intune viene aggiornato manualmente.
+ 
+### <a name="april-2-2019"></a>2 aprile 2019
+- **Connettore di certificati del servizio Registrazione dispositivi di rete - versione 6.1904.1.0**  
+  Modifiche in questa versione:  
+  - È stato risolto un problema a causa del quale può verificarsi un errore di registrazione in Intune dopo avere eseguito l'accesso al connettore con un account amministratore globale.  
+  - Include correzioni relative all'affidabilità della revoca dei certificati.  
+  - Include correzioni relative alle prestazioni per aumentare la velocità di elaborazione delle richieste di certificati PKCS.  
+
+- **Connettore di certificati PFX - versione 6.1904.0.401**
+  > [!NOTE]  
+  > L'aggiornamento automatico per questa versione del connettore PFX sarà disponibile dopo l'11 aprile 2019.  
+
+  Modifiche in questa versione:  
+  - È stato risolto un problema a causa del quale può verificarsi un errore di registrazione in Intune dopo avere eseguito l'accesso al connettore con un account amministratore globale.  
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

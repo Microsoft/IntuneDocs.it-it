@@ -1,26 +1,29 @@
 ---
-title: Gestire il trasferimento di dati tra app iOS | Microsoft Intune
+title: Gestire il trasferimento di dati tra app iOS
+titleSuffix: Microsoft Intune
 description: Informazioni su come usare i criteri di gestione delle app per dispositivi mobili in Microsoft Intune per gestire i trasferimenti di dati tra app.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509514"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 
@@ -49,11 +52,15 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire tramite Intune o la soluzione MDM di terze parti usando la procedura generalizzata descritta di seguito. Questa esperienza è illustrata anche dall'*esempio 1*.
 
-3.  Distribuire l'app con le impostazioni di configurazione seguenti:
+3.  Distribuire l'app con le impostazioni di configurazione seguenti nel dispositivo gestito:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Esempio: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > In Intune i criteri di configurazione dell'app devono essere per il tipo di registrazione "Dispositivi gestiti".
+       > L'app deve inoltre essere installata dal Portale aziendale Intune se è impostata come disponibile oppure deve essere eseguito il push come richiesto nel dispositivo. 
 
 4.  Distribuire i criteri di **gestione Apri in** tramite Intune o il provider MDM di terze parti in uso nei dispositivi registrati.
 

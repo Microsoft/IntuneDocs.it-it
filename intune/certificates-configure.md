@@ -2,25 +2,27 @@
 title: Creare profili certificato in Microsoft Intune - Azure | Microsoft Docs
 description: Per i dispositivi, aggiungere o creare un profilo certificato configurando l'ambiente di certificato SCEP o PKCS, esportare il certificato pubblico, creare il profilo nel portale di Azure e quindi assegnare SCEP o PKCS ai profili certificato in Microsoft Intune nel portale di Azure
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/23/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
-ms.reviewer: heenamac
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508273"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
@@ -33,33 +35,37 @@ ms.locfileid: "52180562"
 
 Ognuno di questi tipi di certificato ha prerequisiti e requisiti di infrastruttura specifici.
 
+
 ## <a name="overview"></a>Panoramica
 
 1. Assicurarsi che sia configurata l'infrastruttura di certificazione corretta. È possibile usare [certificati SCEP](certificates-scep-configure.md) e [certificati PKCS](certficates-pfx-configure.md).
 
-2. Installare un certificato radice o un certificato dell'autorità di certificazione (CA) intermedio in ogni dispositivo, in modo che il dispositivo riconosca la legittimità dell'autorità di certificazione. A tale scopo, creare e assegnare un **profilo certificato attendibile**. Quando si assegna questo profilo, i dispositivi gestiti da Intune richiedono e ricevono il certificato radice. È necessario creare un profilo separato per ogni piattaforma. I profili certificato attendibili sono disponibili per le piattaforme seguenti:
+2. Installare un certificato radice o un certificato dell'autorità di certificazione (CA) intermedio in ogni dispositivo, in modo che il dispositivo riconosca la legittimità dell'autorità di certificazione. Per installare il certificato, creare e assegnare un **profilo certificato attendibile** a ogni dispositivo. Quando si assegna questo profilo, i dispositivi gestiti da Intune richiedono e ricevono il certificato radice. È necessario creare un profilo separato per ogni piattaforma. I profili certificato attendibili sono disponibili per le piattaforme seguenti:
 
     - iOS 8.0 e versioni successive
     - macOS 10.11 e versioni successive
     - Android 4.0 e versioni successive
-    - Profilo di lavoro Android
+    - Android Enterprise  
     - Windows 8.1 e versioni successive
     - Windows Phone 8.1 e versioni successive
     - Windows 10 e versioni successive
 
-3. Creare i profili certificato in modo che i dispositivi richiedano un certificato da usare per l'autenticazione dell'accesso a VPN, Wi-Fi e posta elettronica. È possibile creare e assegnare un profilo certificato **PKCS** o **SCEP** per i dispositivi che eseguono le piattaforme seguenti:
+    > [!NOTE]  
+    > I profili dei certificati non sono supportati nei dispositivi che eseguono *Android Enterprise per dispositivi dedicati*.
 
-   - iOS 8.0 e versioni successive
-   - Android 4.0 e versioni successive
-   - Profilo di lavoro Android
-   - Windows 10 (per dispositivi desktop e mobili) e versioni successive
+3. Creare i profili certificato in modo che i dispositivi richiedano un certificato da usare per l'autenticazione dell'accesso a VPN, Wi-Fi e posta elettronica. I tipi di profili seguenti sono disponibili per piattaforme diverse:  
 
-   È possibile usare un profilo certificato **SCEP** solo per i dispositivi che eseguono le piattaforme seguenti:
+   | Piattaforma     |Certificato PKCS|Certificato SCEP| Certificato importato PKCS | 
+   |--------------|----------------|----------------|-------------------|
+   | Android                | Sì    | Sì    | Sì    |
+   | Android Enterprise     | Sì    | Sì    | Sì    |
+   | iOS                    | Sì    | Sì    | Sì    |
+   | macOS                  |        | Sì    | Sì    |
+   | Windows Phone 8.1      |        | Sì    | Sì    |
+   | Windows 8.1 e versioni successive  |        | Sì    |        |
+   | Windows 10 e versioni successive   | Sì    | Sì    | Sì    |
 
-   - macOS 10.9 e versioni successive
-   - Windows Phone 8.1 e versioni successive
-
-Assicurarsi di creare un profilo separato per ogni piattaforma dei dispositivi. Quando si crea il profilo, questo viene associato al profilo del certificato radice attendibile già creato.
+   Assicurarsi di creare un profilo separato per ogni piattaforma dei dispositivi. Quando si crea il profilo, questo viene associato al profilo del certificato radice attendibile già creato.
 
 ### <a name="further-considerations"></a>Altre considerazioni
 
@@ -68,21 +74,21 @@ Assicurarsi di creare un profilo separato per ogni piattaforma dei dispositivi. 
 - Se si prevede di usare i profili SCEP o PKCS, è necessario scaricare e configurare il Connettore di certificati di Microsoft Intune
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>Passaggio 1: configurare l'infrastruttura di certificazione
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Passaggio 1: Configurare l'infrastruttura dei certificati
 
-Vedere uno degli argomenti seguenti per informazioni sulla configurazione dell'infrastruttura per i diversi tipi di profilo del certificato:
+Vedere uno degli articoli seguenti per informazioni sulla configurazione dell'infrastruttura per ogni tipo di profilo certificato:
 
 - [Configurare e gestire i certificati SCEP con Intune](certificates-scep-configure.md)
 - [Configurare e gestire i certificati PKCS con Intune](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Passaggio 2: esportare il certificato CA radice attendibile
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Passaggio 2: Esportare il certificato CA radice attendibile
 
 Esportare il certificato dell'Autorità di certificazione radice disponibile nell'elenco locale (CA) come certificato pubblico con estensione cer dalla CA emittente o da qualsiasi dispositivo che consideri attendibile la CA emittente. Non esportare la chiave privata (con estensione pfx).
 
 Il certificato viene importato quando si configura un profilo certificato attendibile.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>Passaggio 3: creare profili certificato attendibile
+## <a name="step-3-create-trusted-certificate-profiles"></a>Passaggio 3: Creare profili di certificati attendibili
 Creare un profilo certificato attendibile prima di creare un profilo certificato SCEP o PKCS. Sono necessari un profilo certificato attendibile e un profilo SCEP o PKCS per ogni piattaforma del dispositivo. La procedura per la creazione di certificati attendibili è simile per tutte le piattaforme dei dispositivi.
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
@@ -100,7 +106,7 @@ Creare un profilo certificato attendibile prima di creare un profilo certificato
     - **Windows 10 e versioni successive**
 
 6. Dall'elenco a discesa **Tipo di profilo** scegliere **Certificato attendibile**.
-7. Passare al certificato salvato nell'attività 1 e quindi fare clic su **OK**.
+7. Passare al certificato salvato in [Passaggio 2: Esportare il certificato CA radice attendibile](#step-2-export-your-trusted-root-ca-certificate) e quindi selezionare **OK**.
 8. Solo per i dispositivi Windows 8.1 e Windows 10, selezionare l'**Archivio di destinazione** per il certificato attendibile da:
 
     - **Archivio certificati computer - Radice**
@@ -111,11 +117,12 @@ Creare un profilo certificato attendibile prima di creare un profilo certificato
 
 Il profilo viene creato e quindi visualizzato nell'elenco. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md).
 
-È possibile che nei dispositivi Android venga visualizzato un messaggio che indica che un certificato attendibile è stato installato da terze parti.
+   >[!NOTE]
+   > È possibile che nei dispositivi Android venga visualizzato un messaggio che indica che un certificato attendibile è stato installato da terze parti.
 
-## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Passaggio 4: creare profili certificato SCEP o PKCS
+## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Passaggio 4: Creare profili di certificati SCEP o PKCS
 
-Per informazioni sulla configurazione e l'assegnazione dei diversi tipi di profilo del certificato, vedere uno degli argomenti seguenti:
+Vedere uno degli articoli seguenti per informazioni sulla configurazione e sull'assegnazione di ogni tipo di profilo certificato:
 
 - [Configurare e gestire i certificati SCEP con Intune](certificates-scep-configure.md)
 - [Configurare e gestire i certificati PKCS con Intune](certficates-pfx-configure.md)

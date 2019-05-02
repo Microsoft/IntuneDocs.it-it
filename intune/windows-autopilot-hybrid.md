@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515509"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Azure Active Directory ibrido. A tale scopo, eseguire i passaggi descritti in questo articolo.
@@ -36,6 +37,7 @@ I dispositivi da registrare devono anche:
 - Avere accesso a Internet.
 - Avere accesso ad Active Directory (la connessione VPN non è supportata).
 - Eseguire la Configurazione guidata.
+- Essere in grado di effettuare il ping del controller di dominio del dominio cui si sta tentando di aggiungere il dispositivo.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurare la registrazione automatica di Windows 10
 
@@ -119,7 +121,7 @@ Il connettore di Intune per Active Directory deve essere installato in un comput
 
 ### <a name="configure-web-proxy-settings"></a>Configurare le impostazioni del proxy Web
 
-Se nell'ambiente di rete è presente un proxy Web, vedere [Usare server proxy locali esistenti](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) per garantire il corretto funzionamento del connettore di Intune per Active Directory.
+Se nell'ambiente di rete è presente un proxy Web, vedere [Usare server proxy locali esistenti](autopilot-hybrid-connector-proxy.md) per garantire il corretto funzionamento del connettore di Intune per Active Directory.
 
 
 ## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
@@ -210,6 +212,9 @@ Il passaggio dello stato del profilo del dispositivo da *Non assegnato* ad *Asse
 1. Selezionare **OK** > **Crea**.  
     Il profilo viene creato e visualizzato nell'elenco.
 1. Per assegnare il profilo, seguire i passaggi indicati in [Assegnare un profilo di dispositivo](device-profile-assign.md#assign-a-device-profile). 
+
+> [!NOTE]
+> Le funzionalità di denominazione per Windows Autopilot per l'aggiunta ad Azure AD ibrido non supportano le variabili, ad esempio %SERIAL%, e supportano solo i prefissi per il nome del computer.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

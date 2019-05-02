@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501372"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni di configurazione per un'app iOS o Android. Queste impostazioni di configurazione consentono di personalizzare un'app. Questi criteri di configurazione non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
+Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni di configurazione per un'app iOS o Android. Queste impostazioni di configurazione consentono di personalizzare un'app. Questi criteri di configurazione non vengono assegnati direttamente agli utenti o ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
 È possibile assegnare un criterio di configurazione dell'app a un gruppo di utenti e dispositivi tramite una combinazione di assegnazioni di inclusione ed esclusione. Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi** e **Tutti gli utenti + Tutti i dispositivi**.
 
-Ad esempio, un'app potrebbe richiedere di specificare i dettagli seguenti:
+Ad esempio, un'impostazione di configurazione dell'app potrebbe richiedere di specificare i dettagli seguenti:
 
 - Un numero di porta personalizzato
 - Impostazione della lingua
 - Impostazioni di sicurezza
 - Impostazioni di personalizzazione, ad esempio il logo aziendale
 
-Se gli utenti immettono queste impostazioni in modo non corretto, si può verificare un aumento del carico dell'help desk e un rallentamento nell'adozione di nuove app.
+Se invece gli utenti dovessero immettere manualmente queste impostazioni, potrebbero farlo in modo non corretto, con il conseguente aumento del carico di lavoro dell'help desk e un rallentamento nell'adozione di nuove app.
 
-I criteri di configurazione delle app permettono di evitare questi problemi consentendo di assegnare tali impostazioni agli utenti in un criterio prima dell'esecuzione dell'app. Le impostazioni vengono quindi specificate automaticamente e gli utenti non devono eseguire alcuna azione.
+I criteri di configurazione delle app consentono di evitare i problemi di configurazione delle app, permettendo di assegnare le impostazioni di configurazione a criteri assegnati agli utenti prima dell'esecuzione dell'app. Le impostazioni vengono quindi specificate automaticamente e gli utenti non devono eseguire alcuna azione.
 
 Le impostazioni di configurazione vengono usate ogni volta che l'app controlla se sono presenti. In genere, un'app controlla se sono presenti impostazioni di configurazione quando viene eseguita per la prima volta dall'utente.
 

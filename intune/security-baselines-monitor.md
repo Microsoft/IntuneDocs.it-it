@@ -1,71 +1,85 @@
 ---
 title: Controllare l'esito positivo o negativo delle baseline di sicurezza in Microsoft Intune - Azure | Microsoft Docs
-description: Controllare lo stato di errore, conflitto ed esito positivo quando si distribuiscono le baseline di sicurezza a utenti e dispositivi in Microsoft Intune MDM. Informazioni su come risolvere i problemi mediante i log del client e le funzionalità di report in Intune.
+description: Controllare lo stato di errore, conflitto ed esito positivo quando si distribuiscono baseline di sicurezza a utenti e dispositivi in Microsoft Intune MDM. Informazioni su come risolvere i problemi mediante i log del client e le funzionalità di report in Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507061"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e il profilo in Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e i profili in Microsoft Intune  
 
-Esistono diverse opzioni di monitoraggio quando si usano le baseline di sicurezza. È possibile monitorare il profilo delle baseline di sicurezza che si applica a utenti e dispositivi. È anche possibile monitorare la baseline effettiva e tutti i dispositivi corrispondenti (o non corrispondenti) ai valori consigliati.
+Intune offre diverse opzioni per monitorare le baseline di sicurezza. È possibile monitorare il profilo delle baseline di sicurezza che si applica a utenti e dispositivi. È anche possibile monitorare la baseline effettiva e tutti i dispositivi corrispondenti (o non corrispondenti) ai valori consigliati.
 
 Questo articolo illustra entrambe le opzioni di monitoraggio.
 
 In [Baseline di sicurezza in Intune](security-baselines.md) sono disponibili maggiori dettagli sulla funzionalità delle baseline di sicurezza in Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Monitorare la baseline e i dispositivi
+## <a name="monitor-the-baseline-and-your-devices"></a>Monitorare la baseline e i dispositivi  
 
-Con il monitoraggio della baseline si ottengono informazioni dettagliate sullo stato di sicurezza dei dispositivi in base alle raccomandazioni di Microsoft.
+Quando si monitora una baseline, si ottengono informazioni dettagliate sullo stato di sicurezza dei dispositivi in base ai consigli di Microsoft. È possibile visualizzare queste informazioni dettagliate nel riquadro Panoramica della baseline di sicurezza nella console di Intune.  Sono necessarie fino a 24 ore prima che i dati vengano visualizzati dopo che si assegna per la prima volta una baseline. La visualizzazione delle modifiche apportate successivamente può richiedere fino a sei ore.  
 
-> [!NOTE]
-> Dopo l'assegnazione iniziale di una baseline, possono essere richieste fino a 24 ore per l'aggiornamento dei report. Successivamente, per l'aggiornamento possono essere necessarie fino a 6 ore.
+Per visualizzare i dati di monitoraggio per la baseline e i dispositivi, accedere al [portale di Intune](https://aka.ms/intuneportal). Selezionare quindi **Baseline di sicurezza (anteprima)**, selezionare una baseline e visualizzare il riquadro **Panoramica**.
 
-1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
-2. Selezionare **Baseline di sicurezza (anteprima)** > selezionare una baseline.
-3. In **Panoramica** il grafico mostra il numero di dispositivi interessati dalla baseline scelta e i diversi stati:
+Il riquadro **Panoramica** offre due metodi per monitorare lo stato:
+- **Visualizzazione dispositivo**: riepilogo del numero di dispositivi inclusi in ogni categoria di stato per la baseline.  
+- **Per categoria**: visualizzazione che mostra ogni categoria nella baseline e include la percentuale di dispositivi per ogni gruppo di stati per ciascuna categoria di baseline. 
 
-    ![Controllare lo stato dei dispositivi](./media/security-baselines-monitor/overview.png)
+Ogni dispositivo è rappresentato da uno degli stati seguenti, usati nelle visualizzazioni *dispositivo* e *per categoria*:  
+- **Matches baseline** (Corrisponde alla baseline): tutte le impostazioni nella baseline corrispondono a quelle consigliate.
+- **Does not match baseline** (Non corrisponde alla baseline): almeno un'impostazione nella baseline non corrisponde a quelle consigliate.
+- **Configurazione non valida**: almeno un'impostazione non è configurata correttamente. Questo stato indica che l'impostazione si trova in uno stato di conflitto, errore o in sospeso.
+- **Non applicabile**: almeno un'impostazione non è applicabile e non viene applicata.
 
-    Sono disponibili gli stati seguenti:
 
-    - **Matches baseline** (Corrispondente alla baseline): tutte le impostazioni nella baseline corrispondono alle impostazioni consigliate.
-    - **Does not match baseline** (Non corrispondente alla baseline): almeno un'impostazione nella baseline non corrisponde alle impostazioni consigliate.
-    - **Configurazione non valida**: almeno un'impostazione non è configurata correttamente. Questo stato indica che l'impostazione si trova in uno stato di conflitto, errore o in sospeso.
-    - **Non applicabile**: almeno un'impostazione non è applicabile e non viene applicata.
+### <a name="device-view"></a>Visualizzazione dispositivi
+Il riquadro Panoramica mostra un riepilogo basato su grafico del numero di dispositivi che hanno uno stato specifico per la baseline: **Security baseline posture for assigned Windows 10 devices** (Comportamento delle baseline di sicurezza per dispositivi Windows 10 assegnati).  
 
-4. Selezionare uno degli stati per cui sono elencati dispositivi. Ad esempio, selezionare lo stato **Configurazione non valida**.
+![Controllare lo stato dei dispositivi](./media/security-baselines-monitor/overview.png)
 
-5. Viene visualizzato un elenco di tutti i dispositivi con tale stato. Selezionare un dispositivo specifico per ottenere altri dettagli. 
+Quando un dispositivo ha uno stato diverso in base a diverse categorie nella baseline, il dispositivo è rappresentato da un unico stato. Lo stato che rappresenta il dispositivo viene ottenuto dall'ordine di precedenza seguente: **Configurazione non valida**, **Does not match baseline** (Non corrisponde alla baseline), **Non applicabile**, **Matches baseline** (Corrisponde alla baseline).  
 
-    Nell'esempio seguente, selezionare **Configurazione del dispositivo** > selezionare il profilo con uno stato di errore:
+Ad esempio, se un dispositivo ha un'impostazione classificata come *Configurazione non valida* e una o più impostazioni classificate come *Does not match baseline* (Non corrisponde alla baseline), il dispositivo è classificato come *Configurazione non valida*.  
 
-    ![Controllare lo stato dei dispositivi](./media/security-baselines-monitor/device-configuration-profile-list.png)
+È possibile fare clic sul grafico per eseguire il drill-through e visualizzare un elenco di dispositivi con stati diversi. È quindi possibile selezionare singoli dispositivi dall'elenco per visualizzare i dettagli su ogni dispositivo. Ad esempio:
+- Selezionare **Configurazione dispositivo** > selezionare il profilo con uno stato di errore:
 
-    Selezionare il profilo di errore. Viene visualizzato un elenco di tutte le impostazioni nel profilo e il relativo stato. A questo punto è possibile scorrere per individuare l'impostazione che causa l'errore:
+  ![Controllare lo stato dei dispositivi](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Visualizzare l'impostazione che causa l'errore](./media/security-baselines-monitor/profile-with-error-status.png)
+- Selezionare il profilo di errore. Viene visualizzato un elenco di tutte le impostazioni nel profilo e il relativo stato. A questo punto è possibile scorrere per individuare l'impostazione che causa l'errore:
+
+  ![Visualizzare l'impostazione che causa l'errore](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Usare queste informazioni di report per individuare le eventuali impostazioni in un profilo che causano un problema. È anche possibile ottenere altri dettagli sui criteri e i profili distribuiti nei dispositivi.
 
 > [!NOTE]
 > Quando una proprietà è impostata su **Non configurato** nella baseline, l'impostazione viene ignorata e non vengono applicate restrizioni. La proprietà non viene visualizzata in alcun report.
+
+### <a name="per-category-view"></a>Visualizzazione per categorie
+Il riquadro Panoramica mostra un grafico per categorie per la baseline, **Security baseline posture by category** (Comportamento baseline di sicurezza per categoria).  La visualizzazione mostra ogni categoria della baseline e identifica la percentuale di dispositivi che rientrano in una classificazione di stato per ognuna delle categorie. 
+ 
+![Visualizzazione per categoria di stato](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Lo stato per **Matches baseline** (Corrisponde alla baseline) non viene visualizzato finché il 100% dei dispositivi non indica lo stato per la categoria.   
+
+È possibile ordinare la visualizzazione per categoria in base a ogni colonna, facendo clic sull'icona di freccia verso l'alto o verso il basso nella parte superiore della colonna.  
+
 
 ## <a name="monitor-the-profile"></a>Monitorare il profilo
 
