@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566387"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423595"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ Intune App SDK supporta scenari simili in iOS e Android ed è progettato per off
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Se l'app è interna all'organizzazione e non sarà disponibile pubblicamente:
 
-_**Non è necessario**_ registrare l'app. Per interni [le app line-of-business (LOB)](apps-add.md#app-types-in-microsoft-intune) che sono stati scritti da o per l'azienda, l'amministratore IT distribuirà l'app internamente. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare i criteri di protezione delle app. È possibile passare alla sezione [Abilitare un'app iOS o Android per i criteri di protezione delle app](#enable-your-iOS-or-Android-app-for-app-protection-policy).
+_**Non è necessario**_ registrare l'app. Per interni [le app line-of-business (LOB)](apps-add.md#app-types-in-microsoft-intune) che sono stati scritti da o per l'azienda, l'amministratore IT distribuirà l'app internamente. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare i criteri di protezione delle app. È possibile passare alla sezione [Abilitare un'app iOS o Android per i criteri di protezione delle app](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se l'app verrà rilasciata a un app store pubblico, ad esempio l'App Store Apple o Google Play:
 

@@ -1,6 +1,6 @@
 ---
 title: Novità dei mesi precedenti in Microsoft Intune - Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Rileggere gli annunci precedenti dalla pagina delle novità di Intune
 keywords: ''
 author: ErikjeMS
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceefcfbcdf48cf8d450f5a74274bc1beea951cc5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461550"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423714"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novità di Microsoft Intune - mesi precedenti
 
@@ -316,7 +316,7 @@ In **Conformità del dispositivo** > **Criteri** > selezionare un criterio > **P
 - non applicabile Viene visualizzata anche un'immagine che illustra il conteggio dei dispositivi di un'altra piattaforma. Ad esempio, se si sta consultando un profilo iOS, il nuovo riquadro indica il numero di dispositivi non iOS assegnati a questo profilo. Vedere [Criteri di conformità dei dispositivi](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>La conformità del dispositivo supporta soluzioni antivirus di terze parti <!-- 2325484 -->
-Quando si creano criteri di conformità del dispositivo in **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Piattaforma: Windows 10 e versioni successive** > **Impostazioni** > **Sicurezza del sistema** sono disponibili nuove opzioni in **[Sicurezza del dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
+Quando si creano criteri di conformità del dispositivo in **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Piattaforma: Windows 10 e versioni successive** > **Impostazioni** > **Sicurezza del sistema** sono disponibili nuove opzioni in **[Sicurezza del dispositivo](compliance-policy-create-windows.md)**: 
 - **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
 - **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
 
@@ -785,7 +785,7 @@ Dopo aver abilitato l'impostazione del firewall, configurare il firewall utilizz
 
 Nella configurazione del dispositivo sono disponibili per la visualizzazione più messaggi di errore e codici di errore dettagliati. Con questo miglioramento della creazione di report, vengono visualizzati le impostazioni, lo stato delle impostazioni e i dettagli sulla risoluzione dei problemi.
 
-##### <a name="more-information"></a>Altre informazioni
+##### <a name="more-information"></a>Ulteriori informazioni
 
 - Bloccare tutte le connessioni in ingresso
 
@@ -1264,7 +1264,7 @@ In tutti i casi, viene mantenuto il regolamento previsto. Per mantenere l'autori
 Con il rilascio di Android Oreo, Google introduce un gruppo di funzionalità di sicurezza denominato Google Play Protect che consente a utenti e organizzazioni di eseguire app e immagini Android sicure. Intune ora supporta le funzionalità di Google Play Protect, inclusa l'attestazione remota SafetyNet. Gli amministratori possono impostare requisiti per i criteri di conformità che richiedono la configurazione e l'integrità di Google Play Protect.
 L'**attestazione dispositivo SafetyNet** richiede che il dispositivo si connetta a un servizio Google per verificare che il dispositivo sia integro e non compromesso. Gli amministratori possono anche definire un'impostazione del profilo di configurazione per far sì che Android for Work richieda la verifica delle app installate da parte di Google Play Services. Se un dispositivo non è conforme ai requisiti di Google Play Protect, l'accesso condizionale può impedire agli utenti di accedere alle risorse aziendali.
 
-- Informazioni su [come creare un criterio di conformità del dispositivo per abilitare Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+- Informazioni su [come creare un criterio di conformità del dispositivo per abilitare Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-android).
 
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Protocollo di testo consentito dalle app gestite <!-- 1414050  -->
 
@@ -1565,7 +1565,7 @@ Le app aziendali rese disponibili con o senza registrazione nell'app Portale azi
 ### <a name="windows-autopilot-deployment-program-support-in-microsoft-intune----747617---"></a>Supporto del programma Windows AutoPilot Deployment in Microsoft Intune  <!-- 747617  -->
 Ora è possibile usare Microsoft Intune con il programma AutoPilot Deployment di Windows per consentire agli utenti di attivare e gestire i dispositivi aziendali senza interventi del personale IT. È possibile personalizzare la Configurazione guidata con informazioni che consentono agli utenti di aggiungere il dispositivo ad Azure AD e di registrarlo in Intune. Microsoft Intune e AutoPilot di Windows eseguiti insieme eliminano la necessità di distribuire, gestire e aggiornare le immagini del sistema operativo. Per informazioni dettagliate, vedere [Enroll Windows devices using Windows AutoPilot Deployment Program](https://docs.microsoft.com/intune/enrollment-autopilot) (Registrare dispositivi Windows con il programma AutoPilot Deployment).
 
-### <a name="quick-start-for-device-enrollment----1425655---"></a>Avvio rapido per la registrazione del dispositivo  <!-- 1425655 --> 
+### <a name="quickstart-for-device-enrollment----1425655---"></a>Avvio rapido per la registrazione del dispositivo  <!-- 1425655 --> 
 In **Registrazione del dispositivo** ora è disponibile una sezione di avvio rapido che include una tabella di riferimenti per la gestione delle piattaforme e la configurazione del processo di registrazione. L'esecuzione delle fasi iniziali della registrazione è facilitata mediante una breve descrizione di ciascun elemento e collegamenti ad argomenti di documentazione con procedure dettagliate.
 
 ### <a name="device-categorization----1427491---"></a>Categorizzazione dei dispositivi <!-- 1427491 -->
@@ -1925,7 +1925,7 @@ In questa versione sono stati aggiunte nuove impostazioni per il profilo di rest
 -  Rete cellulare e connettività
 -  Esperienza della schermata bloccata
 -  Privacy
--  Cerca
+-  Ricerca
 -  Contenuti in evidenza di Windows
 -  Browser Microsoft Edge
 

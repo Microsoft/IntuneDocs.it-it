@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395001"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423697"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -138,7 +138,10 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Finestra di dialogo di errore per la scheda SIM (solo dispositivi mobili)**: blocca la visualizzazione di un messaggio di errore nel dispositivo se non viene rilevata alcuna scheda SIM.
 - **Area Ink**: impedisce agli utenti l'accesso all'area di lavoro Windows Ink. **Non configurata** attiva l'area Ink e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
-- **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo (solo Windows Insider)**: scegliere **Rendi obbligatorio** per fare in modo che il dispositivo si connetta a una rete prima di poter procedere oltre la pagina Rete durante l'installazione di Windows 10. Quando questa funzionalità è disponibile in anteprima, è necessaria una build 1809 o successiva di Windows Insider per usare questa impostazione.
+- **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo (solo Windows Insider)**: scegliere **Rendi obbligatorio** per fare in modo che il dispositivo si connetta a una rete prima di poter procedere oltre la pagina Rete durante l'installazione di Windows 10.
+
+  L'impostazione diventa effettiva al successivo il dispositivo viene cancellato o reimpostare. Come qualsiasi altra configurazione di Intune, il dispositivo deve essere registrato e gestito da Intune per ricevere le impostazioni di configurazione. Tuttavia, una volta la registrazione e ricevono i criteri, quindi provare a reimpostare il dispositivo applica l'impostazione durante l'installazione di Windows successiva.
+
 - **Accesso diretto alla memoria (DMA)**: **Blocca** consente di impedire l'accesso diretto alla memoria (DMA) per tutte le porte downstream PCI collegabili a caldo finché un utente non accede a Windows. **Abilitato** (impostazione predefinita) consente l'accesso diretto alla memoria, anche quando un utente non è connesso.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -236,7 +239,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Limita le modifiche ai Preferiti**: **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. **Non configurata** usa l'impostazione predefinita del sistema operativo, che potrebbe consentire agli utenti di modificare l'elenco.
 - **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: **Rendi obbligatorio** impone la sincronizzazione dei Preferiti tra Microsoft Edge e Internet Explorer in Windows. Le aggiunte, le eliminazioni, le modifiche e le variazioni dell'ordine dei Preferiti vengono condivise tra i browser.  **Non configurata** usa l'impostazione predefinita del sistema operativo, che può consentire agli utenti di scegliere di sincronizzare i Preferiti tra i browser.
 - **Motore di ricerca predefinito**: scegliere il motore di ricerca predefinito nel dispositivo. Gli utenti finali possono modificare questo valore in qualsiasi momento. Le opzioni disponibili sono:
-  - Predefinito
+  - Valore predefinito
   - Bing
   - Google
   - Yahoo
@@ -305,6 +308,29 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   - **Impedisci riutilizzo delle password precedenti**: specifica il numero di password usate in precedenza che il dispositivo deve ricordare.
   - **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo Mobile)**: specifica che l'utente deve immettere una password per sbloccare il dispositivo (solo Windows 10 Mobile).
   - **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
+- **La crittografia automatica durante AADJ**: **blocco** impedisce la crittografia dispositivo BitLocker automatica quando il dispositivo viene preparato per il primo utilizzo, quando il dispositivo è aggiunto ad Azure AD. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che possa abilitare la crittografia. Altre informazioni su [crittografia dispositivo BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Sicurezza/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Criteri Federal Information Processing Standard (FIPS)**: **Consenti** Usa i criteri Federal Information Processing Standard (FIPS), ovvero un governo degli Stati Uniti standard per la crittografia, hash e firma. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che non usa FIPS.
+
+  [Crittografia/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Autenticazione del dispositivo Windows Hello**: **Consenti** agli utenti di usare un Windows Hello dispositivo complementare, ad esempio un telefono, fuori banda adeguatezza o un dispositivo IoT, per accedere a un computer Windows 10. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che potrebbe impedire l'autenticazione con Windows che i dispositivi Windows Hello complementare.
+
+  [Autenticazione/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Accesso Web**: Windows consente l'accesso supporto per provider federato non ad FS (Active Directory Federation Services), ad esempio Security Assertion Markup Language (SAML). SAML Usa i token sicuri che forniscono l'esperienza di browser un single sign-on (SSO). Le opzioni disponibili sono:
+
+  - **Non configurato** (impostazione predefinita): Usa il valore predefinito del sistema operativo nel dispositivo.
+  - **Abilitato**: il Provider di credenziali Web è abilitato per l'accesso.
+  - **Disabilitato**: il Provider di credenziali Web è disabilitato per l'accesso.
+
+  [Autenticazione/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Preferito dominio del tenant di Azure AD**: immettere un nome di dominio dell'organizzazione di Azure AD. All'accesso degli utenti in questo dominio, non dovranno digitare il nome di dominio. Immettere ad esempio `contoso.com`. Gli utenti di `contoso.com` dominio possa accedere usando il proprio nome utente, ad esempio "abby", invece di "abby@contoso.com".
+
+  [Autenticazione/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Eccezioni alla privacy per app
 
@@ -386,7 +412,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   - Sicurezza
   - Basic
   - Avanzato
-  - Completo
+  - Tutti
 - **Invia i dati di esplorazione di Microsoft Edge a Microsoft 365 Analytics**: per usare questa funzionalità, impostare l'opzione **Condividi i dati di utilizzo** su **Avanzato** o **Completo**. Questa funzionalità consente di controllare quali dati Microsoft Edge invia a Microsoft 365 Analytics per i dispositivi aziendali con un ID commerciale configurato. Le opzioni disponibili sono:
   - **Non configurata**: usa l'impostazione predefinita del sistema operativo, che potrebbe non inviare dati della cronologia esplorazioni
   - **Invia solo dati Intranet**: consente all'amministratore di inviare la cronologia dei dati Intranet
@@ -402,12 +428,12 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   FQDN: www.contoso.com:345
   ```
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 
 - **Ricerca sicura (solo dispositivi mobili)**: controlla come Cortana filtra il contenuto per adulti nei risultati della ricerca. È possibile selezionare **Strict**, **Moderate** o consentire all'utente finale di scegliere le proprie impostazioni.
 - **Visualizza i risultati Web nella ricerca**: blocca o consente la visualizzazione dei risultati Web nelle ricerche eseguite nel dispositivo.
 
-## <a name="start"></a>Avvia
+## <a name="start"></a>Avviare
 
 - **Layout del menu Start**: per personalizzare il menu Start nei dispositivi desktop, è possibile caricare un file XML che include le personalizzazioni, tra cui l'ordine in cui sono elencate le app e altro ancora. Gli utenti non possono modificare il layout del menu Start immesso.
 - **Aggiungi i siti Web ai riquadri nel menu Start**: consente di importare immagini da Microsoft Edge che vengono visualizzate come collegamenti nel menu Start di Windows per i dispositivi desktop.

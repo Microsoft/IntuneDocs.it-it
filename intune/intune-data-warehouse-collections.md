@@ -1,12 +1,12 @@
 ---
 title: Raccolte del data warehouse di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Le raccolte del data warehouse di Intune forniscono dettagli relativi all'API Data Warehouse.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358318"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429225"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Raccolte del data warehouse di Intune
 
@@ -37,8 +37,8 @@ L'entità **appRevision** elenca tutte le versioni di un'app.
 | AppKey                     | Identificatore univoco dell'app.                                                         | 123                                  |
 | ApplicationId              | Identificatore univoco dell'app, simile ad AppKey, ma è una chiave naturale.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revisione                   | La versione indicata dall'amministratore durante il caricamento del file binario.                   | 2                                    |
-| Titolo                      | Titolo dell'app.                                                                     | Excel                                |
-| Pubblicazione                  | Autore della pubblicazione dell'app.                                                                 | Microsoft                            |
+| Title                      | Titolo dell'app.                                                                     | Excel                                |
+| Autore                  | Autore della pubblicazione dell'app.                                                                 | Microsoft                            |
 | UploadState                | Stato di caricamento dell'app.                                                              | 1                                    |
 | AppTypeKey                 | Riferimento ad AppType descritto nella sezione seguente.                            | 1                                    |
 | VppProgramTypeKey          | Riferimento a VppProgramType descritto di seguito.                                        | 30876                                |
@@ -61,7 +61,7 @@ L'entità **appType** elenca l'origine dell'installazione di un'app.
 
 ### <a name="example"></a>Esempio
 
-| AppTypeID |                Name               |                     Descrizione                     |
+| AppTypeID |                Nome               |                     Descrizione                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | App di Android Store               | Un'app di Android Store.                             |
 | 1         | App LOB Android                 | Un'app line-of-business Android.                  |
@@ -83,12 +83,12 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 |    Proprietà   |                                                                                      Descrizione                                                                                     |  Esempio |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey       | Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.                                                                                                                   | 20161204 |
-| Sconosciuto       | Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.                                                                           | 5        |
+| Unknown       | Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.                                                                           | 5        |
 | NotApplicable | Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.                                                                                     | 201      |
 | Conforme     | Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore.                                                                        | 4083     |
 | InGracePeriod | Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore.                                                                                  | 57       |
 | NonCompliant  | Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore. | 43       |
-|    Errore      |    Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore.                                                                          |    3     |
+|    Errore di      |    Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore.                                                                          |    3     |
 
 ## <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities
 La tabella seguente contiene un riepilogo dello stato di assegnazione dei criteri di conformità ai dispositivi in base a ciascun criterio e al tipo di criterio. La tabella elenca il numero di dispositivi trovati in ogni stato di conformità per ogni criterio di conformità assegnato.
@@ -98,12 +98,12 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 | DateKey           | Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.                                                                                                                   | 20161219 |
 | PolicyKey         | Chiave per il criterio di conformità per cui è stato creato il riepilogo.                                                                                                                   | 10178    |
 | PolicyPlatformKey | Chiave per il tipo di piattaforma del criterio di conformità per cui è stato creato il riepilogo.                                                                                            | 5        |
-| Sconosciuto           | Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.                                                                           | 13       |
+| Unknown           | Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.                                                                           | 13       |
 | NotApplicable     | Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.                                                                                     | 3        |
 | Conforme         | Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore.                                                                        | 45       |
 | InGracePeriod     | Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore.                                                                                  | 3        |
 | NonCompliant      | Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore. | 7        |
-| Errore             | Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore.                                                                             | 3        |
+| Errore di             | Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore.                                                                             | 3        |
 ## <a name="compliancestates"></a>complianceStates
 
 |      Proprietà      |                       Descrizione                      |
@@ -116,11 +116,11 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 
 |  complianceStatus  |                       Descrizione                      |
 |:------------------:|:------------------------------------------------------:|
-|    Sconosciuto         |    sconosciuta.                                                                        |
+|    Unknown         |    sconosciuta.                                                                        |
 |    Conforme       |    Conforme.                                                                      |
 |    Non conforme    |       Il dispositivo non è conforme e l'accesso alle risorse aziendali è bloccato.             |
 |    Conflitto        |    Conflitto con altre regole.                                                      |
-|    Errore           |       Errore.                                                                       |
+|    Errore di           |       Errore.                                                                       |
 |    ConfigManager   |    Gestito da Configuration Manager.                                                      |
 |    InGracePeriod   |       Il dispositivo non è conforme ma può comunque accedere alle risorse aziendali          |
 
@@ -164,8 +164,8 @@ L'entità **DeviceConfigurationProfileDeviceActivity** elenca il numero di dispo
 | DateKey   | Chiave della data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. | 20160703 |
 | Pending   | Numero di dispositivi univoci in sospeso.                                                    | 123      |
 | Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12       |
-| Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10       |
-| Operazione non riuscita    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2        |
+| Errore di     | Numero di dispositivi univoci in stato di errore.                                                      | 10       |
+| Failed    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
 L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti con stato completato, in sospeso, non riuscito o di errore per ogni giorno. Il numero rispecchia i profili di configurazione dispositivo assegnati all'entità. Ad esempio, se un utente è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno con stato completato e l'altro con stato di errore, viene considerato l'utente con lo stato di errore. L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti in ogni stato diverso in un giorno specifico degli ultimi 30 giorni. 
@@ -175,8 +175,8 @@ L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti 
 | DateKey  | Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.  | 20160703  |
 | Pending  | Numero di utenti univoci in sospeso.  | 123  |
 | Operazione completata  | Numero di utenti univoci in stato completato.  | 12  |
-| Errore  | Numero di utenti univoci in stato di errore.  | 10  |
-| Operazione non riuscita  | Numero di utenti univoci in stato non riuscito.  | 2  |
+| Errore di  | Numero di utenti univoci in stato di errore.  | 10  |
+| Failed  | Numero di utenti univoci in stato non riuscito.  | 2  |
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
 
@@ -208,9 +208,9 @@ L'entità **DeviceRegistrationState** rappresenta il tipo di registrazione a cui
 |    ApprovalPending                   |    Approvazione in sospeso                                                                                                                                                                |
 |    CertificateReset                  |    Reimpostazione certificato                                                                                                                                                               |
 |    NotRegisteredPendingEnrollment    |    Non registrato con registrazione in sospeso                                                                                                                                               |
-|    Sconosciuto                           |    Stato sconosciuto                                                                                                                                                                   |
+|    Unknown                           |    Stato sconosciuto                                                                                                                                                                   |
 
-## <a name="devices"></a>devices
+## <a name="devices"></a>dispositivi
 L'entità **device** elenca tutti i dispositivi registrati in gestione e le proprietà corrispondenti.
 
 |          Proprietà          |                                                                                       Descrizione                                                                                      |
@@ -263,7 +263,7 @@ L'entità **deviceType** rappresenta il tipo di dispositivo a cui fanno riferime
 
 ### <a name="example"></a>Esempio
 
-| deviceTypeID |        Name       |                      Descrizione                      |
+| deviceTypeID |        Nome       |                      Descrizione                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | Non disponibile   | Il tipo di dispositivo non è disponibile.                     |
 | 0            | Desktop           | Dispositivo Windows Desktop                              |
@@ -287,7 +287,7 @@ L'entità **deviceType** rappresenta il tipo di dispositivo a cui fanno riferime
 | 18           | AndroidEnterprise | Dispositivo Android Enterprise.                          |
 | 100          | Blackberry        | Dispositivo BlackBerry                                   |
 | 101          | Palm              | Dispositivo palmare                                         |
-| 255          | Sconosciuto           | Tipo di dispositivo sconosciuto                                 |
+| 255          | Unknown           | Tipo di dispositivo sconosciuto                                 |
 
 ## <a name="deviceenrollmenttypes"></a>deviceEnrollmentTypes
 L'entità **deviceEnrollmentType** indica in che modo è stato registrato un dispositivo. Il tipo di registrazione acquisisce il metodo di registrazione. Gli esempi elencano i diversi tipi di registrazione e il relativo significato.
@@ -300,9 +300,9 @@ L'entità **deviceEnrollmentType** indica in che modo è stato registrato un dis
 
 ### <a name="example"></a>Esempio
 
-| enrollmentTypeID |                Name                |                                        Descrizione                                       |
+| enrollmentTypeID |                Nome                |                                        Descrizione                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
-| 0                | Sconosciuto                            | Il tipo di registrazione non è stato raccolto                                                      |
+| 0                | Unknown                            | Il tipo di registrazione non è stato raccolto                                                      |
 | 1                | UserEnrollment                     | Registrazione basata sull'utente tramite il canale BYOD.                                           |
 | 2                | DeviceEnrollmentManager            | Registrazione dell'utente con un account del manager di registrazione dispositivi.                              |
 | 3                | AppleBulkWithUser                  | Registrazione in blocco Apple con verifica utente. (DEP, Apple Configurator)                   |
@@ -341,7 +341,7 @@ L'entità **EnrollmentEventStatus** indica il risultato di una registrazione del
 | enrollmentEventStatusName  | Descrizione                            |
 |----------------------------|----------------------------------------|
 | Operazione completata                    | Registrazione del dispositivo riuscita         |
-| Operazione non riuscita                     | Registrazione del dispositivo non riuscita             |
+| Failed                     | Registrazione del dispositivo non riuscita             |
 | Non disponibile              | Lo stato di registrazione non è disponibile.  |
 
 ## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
@@ -358,9 +358,9 @@ L'entità **EnrollmentFailureCategory** indica perché la registrazione di un di
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Non applicabile                  | La categoria di errore della registrazione non è applicabile.                                                            |
 | Non disponibile                   | La categoria di errore della registrazione non è disponibile.                                                             |
-| Sconosciuto                         | Errore sconosciuto.                                                                                                |
+| Unknown                         | Errore sconosciuto.                                                                                                |
 | Autenticazione                  | Autenticazione non riuscita.                                                                                        |
-| Autorizzazione                   | La chiamata è stata autenticata, ma non autorizzata alla registrazione.                                                         |
+| Authorization                   | La chiamata è stata autenticata, ma non autorizzata alla registrazione.                                                         |
 | AccountValidation               | Non è stato possibile convalidare l'account per la registrazione (account bloccato, registrazione non abilitata).                      |
 | UserValidation                  | Non è stato possibile convalidare l'utente (utente inesistente, licenza mancante).                                           |
 | DeviceNotSupported              | Il dispositivo non è supportato per la gestione di dispositivi mobili.                                                         |
@@ -385,7 +385,7 @@ L'entità **EnrollmentFailureReason** indica un motivo più dettagliato per un e
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Non applicabile                   | La categoria di errore di registrazione non è applicabile.                                                                                                                                                       |
 | Non disponibile                    | La categoria di errore di registrazione non è disponibile.                                                                                                                                                        |
-| Sconosciuto                          | Errore sconosciuto.                                                                                                                                                                                         |
+| Unknown                          | Errore sconosciuto.                                                                                                                                                                                         |
 | UserNotLicensed                  | L'utente non è stato trovato in Intune o non ha una licenza valida.                                                                                                                                     |
 | UserUnknown                      | L'utente non è noto a Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Un solo utente può registrare un dispositivo. Questo dispositivo è stato registrato in precedenza da un altro utente.                                                                                                                |
@@ -428,6 +428,85 @@ L'entità **IntuneManagementExtensionVersion** elenca tutte le versioni usate da
 | ExtensionVersionKey | Identificatore univoco della versione di IntuneManagementExtension. | 1       |
 | ExtensionVersion    | Numero della versione a 4 cifre.                                   | 1.0.2.0 |
 
+## <a name="mamapplications"></a>MamApplications
+
+L'entità **MamApplication** elenca le app Line-of-Business (LOB) gestite attraverso Gestione delle app mobili (MAM) senza la registrazione aziendale.
+
+| Proprietà | Descrizione | Esempio |
+|---------|------------|--------|
+| mamApplicationKey |Identificatore univoco dell'applicazione MAM. | 432 |
+| mamApplicationName |Nome dell'applicazione di MAM. |Nome di esempio dell'applicazione di MAM |
+| mamApplicationId |ID applicazione dell'app MAM. | 123 |
+| IsDeleted |Indica se il record dell'app MAM è stato aggiornato. <br>True: l'app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa app MAM. |True/False |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
+| DeletedDateUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+L'entità **MamApplicationInstance** elenca le app Gestione delle app mobili (MAM) come istanze individuali per ogni utente di ciascun dispositivo. Tutti gli utenti e i dispositivi elencati nell'entità sono protetti, cioè hanno almeno un criterio MAM assegnato.
+
+
+|          Proprietà          |                                                                                                  Descrizione                                                                                                  |               Esempio                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Identificatore univoco dell'istanza dell'app MAM nel data warehouse, chiave surrogata.                                                                |                 123                  |
+|           UserId           |                                                                              ID dell'utente che ha installato l'app MAM.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Identificatore univoco dell'istanza dell'app MAM, simile ad ApplicationInstanceKey, ma l'identificatore è una chiave naturale.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Id applicazione dell'applicazione Mam per cui è stata creata questa istanza di applicazione di Mam.   | 23/11/2016 12.00.00   |
+|     ApplicationVersion     |                                                                                     Versione dell'applicazione dell'app MAM.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Data di creazione del record dell'istanza di app MAM. Il valore può essere Null.                                                                 |        23/11/2016 12.00.00        |
+|          Piattaforma          |                                                                          Piattaforma del dispositivo in cui è installata l'app MAM.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Versione della piattaforma del dispositivo in cui è installata l'app MAM.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            Versione dell'SDK MAM con cui è stato eseguito il wrapping dell'app MAM.                                                                            |                 3.2                  |
+| mamDeviceId | Id dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
+| mamDeviceType | Tipo di dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
+| mamDeviceName | Nome del dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
+|         IsDeleted          | Indica se il record dell'istanza di app MAM è stato aggiornato. <br>True: quest'istanza di app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa istanza di app MAM. |              True/False              |
+|   StartDateInclusiveUTC    |                                                              Data e ora in formato UTC della creazione dell'istanza dell'app MAM nel data warehouse.                                                               |        23/11/2016 12.00.00        |
+|       DeletedDateUtc       |                                                                             Data e ora in formato UTC in cui IsDeleted è stato impostato su True.                                                                              |        23/11/2016 12.00.00        |
+| RowLastModifiedDateTimeUtc |                                                           Data e ora in formato UTC dell'ultima modifica apportata all'istanza dell'app MAM nel data warehouse.                                                            |        23/11/2016 12.00.00        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+L'entità **MamCheckin** rappresenta i dati raccolti quando un'istanza di app Gestione di applicazioni mobili (MAM) è stata archiviata con il servizio Intune. 
+
+> [!Note]  
+> Quando un'istanza di app viene archiviata più volte al giorno, il data warehouse la memorizza come archiviazione unica.
+
+| Proprietà | Descrizione | Esempio |
+|---------|------------|--------|
+| DateKey |Chiave data in cui l'archiviazione dell'app MAM è stata registrata nel data warehouse. | 20160703 |
+| ApplicationInstanceKey |Chiave dell'istanza dell'app associata all'archiviazione dell'app MAM. | 123 |
+| UserKey |Chiave dell'utente associata all'archiviazione dell'app MAM. | 4323 |
+| mamApplicationKey |Chiave dell'applicazione associato al controllo dell'applicazione di MAM in. | 432 |
+| DeviceHealthKey |Chiave di DeviceHealth associata all'archiviazione dell'app MAM. | 321 |
+| PlatformKey |Rappresenta la piattaforma del dispositivo associato all'archiviazione dell'app MAM. |123 |
+| LastCheckInDate |Data e ora dell'ultima archiviazione di questa app MAM. Il valore può essere Null. |23/11/2016 12.00.00 |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+L'entità **MamDeviceHealth** rappresenta i dispositivi in cui sono stati distribuiti i criteri di Gestione per applicazioni mobili (MAM) anche se sono jailbroken.
+
+| Proprietà | Descrizione | Esempio |
+|---------|------------|--------|
+| DeviceHealthKey |Identificatore univoco del dispositivo e integrità associata nel data warehouse, chiave surrogata. |123 |
+| DeviceHealth |Identificatore univoco del dispositivo e integrità associata, simile a DeviceHealthKey ma l'identificatore è una chiave naturale. |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |Rappresenta lo stato del dispositivo. <br>Non disponibile- nessuna informazione su questo dispositivo. <br>Integro - dispositivo non jailbroken. <br>Non integro - dispositivo jailbroken. |Non disponibile Integro Non integro |
+| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'integrità del dispositivo MAM specifico nel data warehouse. |23/11/2016 12.00.00 |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+L'entità **MamPlatform** elenca i nomi e i tipi di piattaforma in cui è stata installata l'app di Gestione di applicazioni mobili (MAM).
+
+
+|          Proprietà          |                                    Descrizione                                    |                         Esempio                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Identificatore univoco della piattaforma nel data warehouse, chiave surrogata.      |                           123                           |
+|          Piattaforma          | Identificatore univoco della piattaforma, simile a PlatformKey ma è una chiave naturale. |                           123                           |
+|        PlatformName        |                                   Nome della piattaforma                                   | Non disponibile <br>Nessuno <br>Windows <br>iOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Data e ora in formato UTC dell'ultima modifica della piattaforma nel data warehouse.  |                 23/11/2016 12.00.00                  |
+
 ## <a name="managementagenttypes"></a>managementAgentTypes
 L'entità **managementAgentType** rappresenta gli agenti usati per gestire un dispositivo.
 
@@ -439,7 +518,7 @@ L'entità **managementAgentType** rappresenta gli agenti usati per gestire un di
 
 ### <a name="example"></a>Esempio
 
-| ManagementAgentTypeID |                Name               |                                  Descrizione                                 |
+| ManagementAgentTypeID |                Nome               |                                  Descrizione                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
 | 1                     | EAS                               | Il dispositivo è gestito tramite Exchange Active Sync                         |
 | 2                     | MDM                               | Il dispositivo è gestito tramite un agente MDM                                   |
@@ -449,7 +528,7 @@ L'entità **managementAgentType** rappresenta gli agenti usati per gestire un di
 | 8                     | ConfigManagerClient               | Il dispositivo è gestito dall'agente System Center Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | Il dispositivo è gestito da Configuration Manager e MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | Il dispositivo è gestito da Configuration Manager e MDM con Exchange Active Sync.               |
-| 16                    | Sconosciuto                           | Tipo di agente di gestione sconosciuto                                              |
+| 16                    | Unknown                           | Tipo di agente di gestione sconosciuto                                              |
 | 32                    | Jamf                              | Gli attributi del dispositivo vengono recuperati da Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Il dispositivo è gestito da CloudDPC di Google.                                 |
 
@@ -464,7 +543,7 @@ L'entità **ManagementState** fornisce informazioni dettagliate sullo stato del 
 
 ### <a name="example"></a>Esempio
 
-| managementStateID |      Name      |                                                   Descrizione                                                   |
+| managementStateID |      Nome      |                                                   Descrizione                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | Gestiti        | Gestito senza azioni remote in sospeso.                                                                       |
 | 1                 | RetirePending  | C'è un comando di ritiro in sospeso per il dispositivo.                                                             |
@@ -535,8 +614,8 @@ La tabella seguente elenca il numero di dispositivi con stato completato, in sos
 | Pending   | Numero di dispositivi univoci in stato sospeso.                                                    | 123                   |
 | Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12                    |
 | PolicyKey | Chiave dei criteri, può essere unita a Policy per ottenere policyName.                                  | Baseline Windows 10 |
-| Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10                    |
-| Operazione non riuscita    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                     |
+| Errore di     | Numero di dispositivi univoci in stato di errore.                                                      | 10                    |
+| Failed    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                     |
 
 ## <a name="policyplatformtypes"></a>policyPlatformTypes
 
@@ -556,8 +635,8 @@ L'entità **PolicyTypeActivity** elenca il numero cumulativo di dispositivi nell
 | PolicyTypeKey | Tipo di chiave dei criteri, può essere unita al tipo di criterio per ottenere il nome del tipo di criterio.             | Criteri di conformità di Windows 10 |
 | Pending       | Numero di dispositivi univoci in sospeso.                                                    | 123                         |
 | Operazione completata     | Numero di dispositivi univoci in stato completato.                                                    | 12                          |
-| Errore         | Numero di dispositivi univoci in stato di errore.                                                      | 10                          |
-| Operazione non riuscita        | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                           |
+| Errore di         | Numero di dispositivi univoci in stato di errore.                                                      | 10                          |
+| Failed        | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                           |
 
 ## <a name="policytypes"></a>policyTypes
 L'entità **PolicyType** elenca i tipi di profilo di configurazione del dispositivo, profili di configurazione dell'app e criteri di conformità. È possibile assegnare i criteri con Gestione dispositivi mobili (MDM) a un gruppo nell'organizzazione.
@@ -577,7 +656,7 @@ La tabella seguente elenca il numero di utenti con stato completato, in sospeso,
 | Pending   | Numero di dispositivi univoci in sospeso.                                                    | 123                 |
 | Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12                  |
 | PolicyKey | Chiave dei criteri, può essere unita a Policy per ottenere policyName.                                | Windows 10 baseline |
-| Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10                  |
+| Errore di     | Numero di dispositivi univoci in stato di errore.                                                      | 10                  |
 
 ## <a name="termsandconditions"></a>termsAndConditions
 L'entità **termsAndConditions** rappresenta i metadati e il contenuto di un criterio Termini e condizioni specificato. Il contenuto dei criteri Termini e condizioni viene presentato agli utenti in occasione del primo tentativo di registrazione in Intune e successivamente in caso di modifiche per le quali un amministratore richiede di accettarli nuovamente. Consentono agli amministratori di comunicare le condizioni che un utente deve accettare per poter registrare il dispositivo in Intune.
@@ -599,7 +678,7 @@ L'entità **termsAndConditions** rappresenta i metadati e il contenuto di un cri
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 L'entità **UserDeviceAssociation** contiene le associazioni utente-dispositivo presenti nell'organizzazione.
 
-|        Name        |                                             Descrizione                                            |     Esempio     |
+|        Nome        |                                             Descrizione                                            |     Esempio     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Identificatore univoco dell'utente nel data warehouse   (chiave sostitutiva).                            | 123             |
 | DeviceKey          | Identificatore univoco del dispositivo nel data warehouse.                                             | 123             |
@@ -645,7 +724,7 @@ L'entità **vppProgramType** elenca i tipi di programma VPP possibili per un'app
 
 ### <a name="example"></a>Esempio
 
-|             VppProgramID             |         Name        | Descrizione                |
+|             VppProgramID             |         Nome        | Descrizione                |
 |:------------------------------------:|:-------------------:|----------------------------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft           | Programma VPP Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Non ancora disponibile | Valore predefinito, nessun VPP.   |

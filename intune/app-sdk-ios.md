@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566778"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533610"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -86,7 +86,7 @@ Per abilitare Intune App SDK, seguire questa procedura:
 1. **Opzione 1 (consigliata)**: collegare `IntuneMAM.framework` al progetto. Trascinare `IntuneMAM.framework` nell'elenco **Embedded Binaries** (File binari incorporati) della destinazione del progetto.
 
    > [!NOTE]
-   > Se si usa il framework, prima di inviare l'app all'App Store, è necessario eliminare manualmente le architetture del simulatore dal framework universale. Per altri dettagli, vedere [Inviare l'app all'App Store](#Submit-your-app-to-the-App-Store).
+   > Se si usa il framework, prima di inviare l'app all'App Store, è necessario eliminare manualmente le architetture del simulatore dal framework universale. Per altri dettagli, vedere [Inviare l'app all'App Store](#submit-your-app-to-the-app-store).
 
    **Opzione 2**: eseguire il collegamento alla libreria `libIntuneMAM.a`. Trascinare la libreria `libIntuneMAM.a` e rilasciarla nell'elenco **Linked Frameworks and Libraries** (Framework e librerie collegate) della destinazione del progetto.
 
@@ -179,7 +179,7 @@ Seguire questa procedura per collegare l'app ai file binari di ADAL:
 
 3. Se per l'app non sono definiti gruppi di accesso a Keychain, aggiungere l'ID bundle dell'app come primo gruppo.
 
-4. Abilitare Single Sign-On (SSO) di ADAL aggiungendo `com.microsoft.adalcache` e `com.microsoft.workplacejoin` ai gruppi di accesso al keychain.
+4. Abilitare Single Sign-On (SSO) di ADAL aggiungendo `com.microsoft.adalcache` ai gruppi di accesso al keychain.
 
 5. Nel caso in cui si stia impostando in modo esplicito il gruppo Keychain della cache condivisa, assicurarsi di impostarlo su `<appidprefix>.com.microsoft.adalcache`. ADAL eseguirà questa operazione per conto dell'utente se quest'ultimo non esegue la sostituzione. Se si vuole specificare un gruppo Keychain personalizzato per sostituire `com.microsoft.adalcache`, specificarlo nel file Info.plist in IntuneMAMSettings usando la chiave `ADALCacheKeychainGroupOverride`.
 
@@ -233,8 +233,8 @@ ContainingAppBundleId | Stringa | Specifica l'ID bundle dell'applicazione che co
 DebugSettingsEnabled| Boolean | Se impostata su Sì, è possibile applicare i criteri di test nell'ambito del bundle delle impostazioni. Le applicazioni *non* dovrebbero essere inviate con questa impostazione abilitata. | Facoltativo. L'impostazione predefinita è No.|
 MainNibFile <br> MainNibFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file NIB principale dell'applicazione.  | È obbligatoria se l'applicazione definisce MainNibFile in Info.plist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file di storyboard principale dell'applicazione. | È obbligatoria se l'applicazione definisce UIMainStoryboardFile in Info.plist. |
-MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se l'app non ha i criteri APP di Intune. L'impostazione predefinita è NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. | Facoltativo. L'impostazione predefinita è No.|
-MAMPolicyWarnAbsent | Boolean| Specifica se l'app avvisa l'utente durante l'avvio se non ha i criteri APP di Intune. <br><br> Nota: gli utenti potranno ancora usare l'app senza criterio dopo aver ignorato l'avviso. | Facoltativo. L'impostazione predefinita è No. |
+MAMPolicyRequired| Booleano| Specifica se viene impedito l'avvio dell'app se l'app non ha i criteri APP di Intune. Predefinito a NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. | Facoltativo. L'impostazione predefinita è No.|
+MAMPolicyWarnAbsent | Booleano| Specifica se l'app avvisa l'utente durante l'avvio se non ha i criteri APP di Intune. <br><br> Nota: gli utenti potranno ancora usare l'app senza criterio dopo aver ignorato l'avviso. | Facoltativo. L'impostazione predefinita è No. |
 MultiIdentity | Boolean| Specifica se l'app è compatibile con identità multiple. | Facoltativo. L'impostazione predefinita è No. |
 SplashIconFile <br> SplashIconFile~ipad | Stringa  | Specifica il file dell'icona per la schermata iniziale (avvio) di Intune. | Facoltativo |
 SplashDuration | Numero | Quantità minima di tempo, in secondi, per la visualizzazione della schermata iniziale di Intune all'avvio dell'applicazione. Il valore predefinito è 1,5. | Facoltativo |
@@ -242,9 +242,9 @@ BackgroundColor| Stringa| Specifica il colore di sfondo per le schermate di avvi
 ForegroundColor| Stringa| Specifica il colore di primo piano per le schermate di avvio e PIN, come colore del testo. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.  | Facoltativo L'impostazione predefinita è nero. |
 AccentColor | Stringa| Specifica il colore principale della schermata del PIN, ad esempio il colore del testo del pulsante e il colore di evidenziazione della casella. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.| Facoltativo L'impostazione predefinita è blu. |
 MAMTelemetryDisabled| Boolean| Specifica se l'SDK non invierà i dati di telemetria al relativo back-end.| Facoltativo. L'impostazione predefinita è No. |
-MAMTelemetryUsePPE | Boolean | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
-MaxFileProtectionLevel | Stringa | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Boolean | Impostare su YES per le estensioni Open In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
+MAMTelemetryUsePPE | Booleano | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
+MaxFileProtectionLevel | String | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+OpenInActionExtension | Booleano | Impostare su YES per le estensioni Open In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
 WebViewHandledURLSchemes | Matrice di stringhe | Specifica gli schemi URL gestiti dalla visualizzazione Web dell'app. | Obbligatoria se l'app usa una WebView che gestisce gli URL tramite collegamenti e/o JavaScript. |
 
 ## <a name="receive-app-protection-policy"></a>Ricevere i criteri di protezione delle app
@@ -267,7 +267,7 @@ Le app che usano già ADAL devono chiamare il metodo `registerAndEnrollAccount` 
 (void)registerAndEnrollAccount:(NSString *)identity;
 ```
 
-Chiamando il metodo `registerAndEnrollAccount`, l'SDK registra l'account utente e prova a registrare l'app per conto di questo account. Se la registrazione non riesce per qualsiasi motivo, l'SDK riproverà automaticamente la registrazione dopo 24 ore. A scopo di debug, l'app può ricevere [notifiche](#Status-result-and-debug-notifications) sui risultati di tutte le richieste di registrazione attraverso un delegato.
+Chiamando il metodo `registerAndEnrollAccount`, l'SDK registra l'account utente e prova a registrare l'app per conto di questo account. Se la registrazione non riesce per qualsiasi motivo, l'SDK riproverà automaticamente la registrazione dopo 24 ore. A scopo di debug, l'app può ricevere [notifiche](#status-result-and-debug-notifications) sui risultati di tutte le richieste di registrazione attraverso un delegato.
 
 Dopo aver richiamato l'API, l'app può continuare a funzionare normalmente. Se la registrazione riesce, l'SDK notificherà all'utente che è necessario un riavvio dell'app. A questo punto, l'utente può riavviare l'app.
 
@@ -291,7 +291,7 @@ Le app che non eseguono l'accesso utente con ADAL possono comunque ricevere i cr
 
 Chiamando questo metodo, l'SDK chiederà le credenziali dell'utente se non viene trovato alcun token esistente. L'SDK proverà quindi a registrare l'app nel servizio MAM di Intune per conto dell'account utente specificato. Il metodo può essere chiamato con l'identità "nil". In questo caso l'SDK eseguirà la registrazione con l'utente gestito esistente nel dispositivo (nel caso di MDM) o chiederà di specificare un nome se non trova utenti esistenti.
 
-Se la registrazione ha esito negativo, l'app deve prendere in considerazione la necessità di chiamare l'API in un secondo momento, a seconda dei dettagli dell'errore. L'app può ricevere le [notifiche](#Status-result-and-debug-notifications) sui risultati delle richieste di registrazione attraverso un delegato.
+Se la registrazione ha esito negativo, l'app deve prendere in considerazione la necessità di chiamare l'API in un secondo momento, a seconda dei dettagli dell'errore. L'app può ricevere le [notifiche](#status-result-and-debug-notifications) sui risultati delle richieste di registrazione attraverso un delegato.
 
 Dopo aver chiamato l'API, l'app può continuare a funzionare normalmente. Se la registrazione riesce, l'SDK notificherà all'utente che è necessario un riavvio dell'app.
 
@@ -306,8 +306,8 @@ Se si desidera che Intune SDK gestisca tutte le attività di registrazione e aut
 
 Impostazione  | Tipo  | Definizione |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Boolean| Specifica se l'app deve tentare di registrarsi automaticamente all'avvio se viene rilevata un'identità gestita esistente e se tale operazione non è ancora stata compiuta. L'impostazione predefinita è NO. <br><br> Nota: se non viene trovata alcuna identità gestita o non è disponibile alcun token valido per l'identità nella cache ADAL, il tentativo di registrazione avrà esito negativo senza chiedere le credenziali, a meno che l'app non abbia configurato anche MAMPolicyRequired su YES. |
-MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se non ha i criteri di protezione delle app di Intune. L'impostazione predefinita è NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. Quando si imposta MAMPolicyRequired su YES, anche AutoEnrollOnLaunch deve essere impostato su YES. |
+AutoEnrollOnLaunch| Boolean| Specifica se l'app deve tentare di registrarsi automaticamente all'avvio se viene rilevata un'identità gestita esistente e se tale operazione non è ancora stata compiuta. Predefinito a NO. <br><br> Nota: se non viene trovata alcuna identità gestita o non è disponibile alcun token valido per l'identità nella cache ADAL, il tentativo di registrazione avrà esito negativo senza chiedere le credenziali, a meno che l'app non abbia configurato anche MAMPolicyRequired su YES. |
+MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se non ha i criteri di protezione delle app di Intune. Predefinito a NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. Quando si imposta MAMPolicyRequired su YES, anche AutoEnrollOnLaunch deve essere impostato su YES. |
 
 Se si sceglie questa opzione per l'app, non sarà necessario riavviare l'app dopo la registrazione.
 

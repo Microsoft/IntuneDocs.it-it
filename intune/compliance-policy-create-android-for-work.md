@@ -1,67 +1,46 @@
 ---
-title: Creare criteri di conformità per Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
-description: Creare o configurare criteri di conformità Microsoft Intune per dispositivi Android Enterprise o di profili di lavoro. Scegliere di consentire i dispositivi jailbroken, impostare il livello di minaccia accettabile, verificare la presenza di Google Play, immettere la versione minima e massima del sistema operativo, scegliere i requisiti delle password e consentire il sideload delle applicazioni.
+title: Impostazioni dei dispositivi Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione di conformità per i dispositivi aziendali Android in Microsoft Intune. Impostare le regole di password, scegliere una versione del sistema operativo minimo o massimo, limitare l'App specifiche, impediscono viene riutilizzata la password e altro ancora.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566234"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423561"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Aggiungere criteri di conformità per dispositivi Android Enterprise in Intune
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Android Enterprise per contrassegnare i dispositivi come conformi oppure non conformi con Intune
 
-I criteri di conformità dei dispositivi sono una funzionalità fondamentale quando si usa Intune per proteggere le risorse dell'organizzazione. In Intune è possibile creare regole e impostazioni che i dispositivi devono soddisfare per essere considerati conformi, ad esempio la lunghezza della password. Se il dispositivo non è conforme, è possibile bloccare l'accesso ai dati e alle risorse tramite l'[accesso condizionale](conditional-access.md). 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-È anche possibile ottenere report per i dispositivi e, in caso di mancata conformità, eseguire azioni specifiche, ad esempio inviare una notifica tramite posta elettronica all'utente. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+Questo articolo elenca e descrive le impostazioni di conformità diversi che è possibile configurare nei dispositivi aziendali Android in Intune. Come parte della soluzione mobile device management (MDM), usare queste impostazioni per contrassegnare i dispositivi rooted (jailbroken) come non conforme, impostare un livello di minaccia consentita, abilitare Google Play Protect e altro ancora.
 
-Questo articolo elenca le impostazioni che è possibile usare all'interno di criteri di conformità per dispositivi che eseguono Android Enterprise.
+Questa funzionalità si applica a:
 
-## <a name="non-compliance-and-conditional-access"></a>Mancata conformità e accesso condizionale
+- Android Enterprise
 
-La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
+Come amministratore di Intune, usare queste impostazioni di conformità consentono di proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
---------------------------
+## <a name="before-you-begin"></a>Prima di iniziare
 
-|**impostazione di criteri**| **Profilo Android Enterprise** |
-| --- | --- |
-| **Configurazione di PIN o password** |  In quarantena |
-| **Crittografia dispositivo** |  In quarantena |
-| **Dispositivo jailbroken o rooted** | In quarantena (non è un'impostazione) |
-| **Profilo di posta elettronica** | Non applicabile |
-| **Versione minima del sistema operativo** | In quarantena |
-| **Versione massima del sistema operativo** | In quarantena |
-| **Attestazione dell'integrità di Windows** |Non applicabile |
+[Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). Per **Piattaforma** selezionare **Android Enterprise**.
 
-**Con correzione** = il sistema operativo del dispositivo impone la conformità. Ad esempio, l'utente è obbligato a impostare un PIN.
-
-**In quarantena** = il sistema operativo del dispositivo non impone la conformità. ad esempio, l'utente di dispositivi Android non è obbligato a crittografare il dispositivo. Se il dispositivo non è conforme, vengono eseguite le azioni seguenti:
-
-  - Se all'utente si applica un criterio di accesso condizionale, il dispositivo viene bloccato.
-  - Il portale aziendale segnala all'utente eventuali problemi di conformità.
-
-## <a name="create-a-device-compliance-policy"></a>Creare criteri di conformità dei dispositivi
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Per **Piattaforma** selezionare **Android Enterprise**. 
-5. Scegliere **Impostazioni Configura**. Immettere le impostazioni **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema** come descritto in questo articolo.
-
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Integrità del dispositivo
 
 - **Dispositivi rooted**: scegliere **Blocca** per contrassegnare i dispositivi rooted (jailbroken) come non conformi. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità. Per usare questa impostazione, scegliere il livello di minaccia consentito:
@@ -69,6 +48,9 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
   - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
   - **Alta**: questa opzione è la meno sicura, perché consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+
+### <a name="google-play-protect"></a>Protezione di Google Play
+
 - **Google Play Services è configurata**: **richiede** che l'app Google Play Services sia installata e abilitata. Google Play Services consente gli aggiornamenti della sicurezza e rappresenta una dipendenza di base per molte funzionalità di sicurezza nei dispositivi Google certificati. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Provider di sicurezza aggiornato**: **richiede** un provider di sicurezza aggiornato in grado di proteggere un dispositivo dalle vulnerabilità note. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Attestazione del dispositivo SafetyNet**: immettere il livello di [attestazione di SafetyNet](https://developer.android.com/training/safetynet/attestation.html) che deve essere raggiunto. Le opzioni disponibili sono:
@@ -76,9 +58,8 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
   - **Verifica l'integrità di base**
   - **Verifica l'integrità di base e i dispositivi certificati**
 
-#### <a name="threat-scan-on-apps"></a>Analisi delle minacce nelle app
-
-Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle app** è un criterio di configurazione. Vedere [Impostazioni relative alle restrizioni dei dispositivi Android Enterprise](device-restrictions-android-for-work.md).
+> [!NOTE]
+> Nei dispositivi Android Enterprise **analisi delle minacce nelle app** è un criterio di configurazione del dispositivo. Usando un criterio di configurazione, gli amministratori possono abilitare l'impostazione in un dispositivo. Vedere [Impostazioni relative alle restrizioni dei dispositivi Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Impostazioni delle proprietà dei dispositivi
 
@@ -104,7 +85,7 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
-### <a name="encryption"></a>Crittografia
+### <a name="encryption"></a>Encryption
 
 - **Crittografia dell'archivio dati nel dispositivo**: scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità. 
 
@@ -136,31 +117,10 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
 
 - **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato *AAAA-MM-GG*.
 
-Al termine, selezionare **OK** > **OK** per salvare le modifiche.
-
-## <a name="actions-for-noncompliance"></a>Azioni per la mancata conformità
-
-Selezionare **Azioni per la mancata conformità**. L'azione predefinita contrassegna immediatamente il dispositivo come non conforme.
-
-Se il dispositivo è contrassegnato come non conforme, è possibile modificare la pianificazione, ad esempio dopo un giorno. È anche possibile configurare una seconda azione con cui inviare un messaggio di posta elettronica all'utente se il dispositivo risulta non conforme.
-
-[Aggiungere azioni per dispositivi non conformi](actions-for-noncompliance.md) offre altre informazioni, tra cui come creare un messaggio di posta elettronica di notifica per gli utenti.
-
-## <a name="scope-tags"></a>Tag di ambito
-
-I tag di ambito sono un metodo molto efficiente per assegnare criteri a gruppi specifici, ad esempio ai reparti Vendite, Ufficio tecnico, Risorse umane e così via. È possibile aggiungere tag di ambito a criteri di conformità. Vedere [Usare i tag di ambito per filtrare i criteri](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
-
-Dopo aver creato un criterio, questo non esegue alcuna operazione finché non viene assegnato. Per assegnare il criterio: 
-
-1. Scegliere un criterio configurato. I criteri esistenti sono in **Conformità del dispositivo** > **Criteri**.
-2. Selezionare il criterio e scegliere **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
-3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e scegliere **Salva** per distribuire il criterio agli utenti.
-
-Il criterio è stato applicato agli utenti. Verrà eseguita la valutazione della conformità dei dispositivi usati dagli utenti a cui il criterio è destinato.
+Selezionare **OK** > **Crea** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md)  
-[Monitorare i criteri di conformità dei dispositivi Intune](compliance-policy-monitor.md)  
-[Impostazioni dei criteri di conformità per Android](compliance-policy-create-android.md)
+
+- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [usare i tag di ambito per i criteri di filtro](scope-tags.md).
+- [Monitorare i criteri di conformità](compliance-policy-monitor.md).
+- [Impostazioni dei criteri di conformità per i dispositivi Android](compliance-policy-create-android.md)

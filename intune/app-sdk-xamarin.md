@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566200"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292351"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -54,7 +54,7 @@ Le app Xamarin compilate con i binding Xamarin per Intune App SDK possono ora ri
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Leggere le [condizioni di licenza](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando i binding Xamarin per Intune App SDK, l'utente accetta tali condizioni di licenza. Se non vengono accettate, non usare il software.
+Leggere le [condizioni di licenza](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando i binding Xamarin per Intune App SDK, l'utente accetta tali condizioni di licenza. Qualora l'utente non le accetti, non potrà usare il software.
 
 L'SDK si basa su [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) per gli scenari di [autenticazione](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) e avvio condizionale, che richiedono la configurazione delle app con [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
@@ -110,6 +110,8 @@ L'app è necessario definire un' `Android.App.Application` classe che eredita da
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> Un problema con i binding Xamarin MAM può causare arresti anomali quando vengono distribuiti in modalità di Debug. In alternativa, il `Debuggable=false` attributo deve essere aggiunto al `Application` classe e il `android:debuggable="true"` flag deve essere rimossi dal manifesto se è stato impostato manualmente.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Abilitare le funzionalità che richiedono la partecipazione dell'app](app-sdk-android.md#enable-features-that-require-app-participation)
 Esempio: determinare se è necessario il PIN per l'app
@@ -172,5 +174,5 @@ Se non vengono apportate le sostituzioni è possibile riscontrare gli errori di 
 > [!NOTE]
 > Il Remapper riscrive una dipendenza utilizzata da Visual Studio per il completamento automatico IntelliSense. Di conseguenza, potrebbe essere necessario ricaricare e ricompilare il progetto quando viene aggiunto il Remapper per IntelliSense riconoscere correttamente le modifiche.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Supporto
 Se l'organizzazione è un cliente Intune, contattare il rappresentante del supporto tecnico Microsoft per aprire un ticket di supporto e creare una richiesta [nella pagina Github relativa ai problemi](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). Il supporto verrà fornito tempestivamente. 

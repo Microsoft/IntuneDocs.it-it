@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566625"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799266"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>impostazioni del dispositivo iOS a usare le funzionalità comuni di iOS in Intune
 
@@ -96,6 +96,9 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
 
       3. Scegliere **Aggiungi**. È possibile aggiungere fino a **20** pagine per il dock del dispositivo.
       4. Selezionare **OK** per salvare le modifiche.
+
+> [!NOTE]
+> Quando si aggiungono icone utilizzando le impostazioni di ancoraggio, le icone nella schermata Home e di pagine sono bloccate e non possono essere spostate. È possibile per impostazione predefinita con iOS e i criteri MDM di Apple.
 
 #### <a name="example"></a>Esempio
 

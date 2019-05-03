@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566455"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788488"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Impostazioni di Windows 10 e versioni successive per la gestione dei dispositivi condivisi con Intune
 
@@ -60,6 +60,9 @@ Per altre informazioni su questa funzionalità in Intune, vedere [Controllare l'
 - **Criteri per la formazione**: scegliere **Abilitati** per usare le impostazioni consigliate per i dispositivi usati negli istituti di istruzione, più restrittive. Scegliere **Disabilitati** perché i criteri per la formazione predefiniti e consigliati non vengano usati. **Non configurati** (impostazione predefinita) lascia questa impostazione non gestita da Intune e non esegue il push di alcun criterio al dispositivo per controllare questa impostazione.
 
   Per altre informazioni sulla funzione dei criteri per la formazione, vedere [Consigli sulla configurazione di Windows 10 per i clienti del settore istruzione](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+> [!TIP]
+> [Configurare un computer condiviso o guest](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (si apre un altro sito web di documentazione) è un'ottima risorsa su questa funzionalità di Windows 10, inclusi concetti e i criteri di gruppo che possono essere impostati in modalità condivisa.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

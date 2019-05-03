@@ -1,12 +1,12 @@
 ---
 title: In fase di sviluppo - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Funzionalità di Microsoft Intune in fase di sviluppo
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675443"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587383"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>In fase di sviluppo per Microsoft Intune - aprile 2019
 
 Per facilitare la conformità e la pianificazione, questa pagina gli elenchi di UI Intune Aggiorna e a funzionalità che in fase di sviluppo ma non ancora rilasciato. Inoltre:
 
-- Se si prevede che è necessario intervenire prima di una modifica, è possibile pubblicare un post di centro messaggi di Office gratuito.
+- Se si prevede che è necessario intervenire prima di una modifica, è possibile pubblicare un post di centro messaggi di Office complemento.
 - Quando una funzionalità viene avviata nell'ambiente di produzione, come un'anteprima o disponibili a livello generale, la descrizione della funzionalità passerà oltre questa pagina e al [pagina delle novità](whats-new.md).
 - Questa pagina e il [pagina delle novità](whats-new.md) vengono aggiornate periodicamente. Consultarla a intervalli regolari per ulteriori aggiornamenti.
 - Vedere il [M365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) per sequenze temporali e gli obiettivi strategici.
@@ -60,18 +60,6 @@ Presto sarà possibile usare Intune per gestire le regole del firewall personali
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Richiedono l'accesso condizionale di protezione App  <!--1634317 -->
 È possibile usare *dei criteri di protezione delle App richiedono*, che conferma dei criteri viene applicato a un'app dell'utente prima del completamento di accesso per impedire agli utenti di accedere ai dati protetti con l'accesso condizionale. Mentre assurance criteri potrebbe rallentare l'esperienza di uso prima, aiuta a proteggersi da problemi di rete, errori di configurazione amministrativi o intenzionali sforzi per contrastare i criteri di protezione dell'applicazione. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Distribuzione di app Microsoft Store per le aziende con licenza online <!-- 16726660 -->
-Sarà possibile assegnare le app Microsoft Store per le aziende con licenza online richieste nel contesto del dispositivo. Questo tipo di distribuzione di app Microsoft Store per le aziende consentirà di installare le app per tutti gli utenti nel dispositivo. Questa opzione è disponibile solo per i dispositivi desktop Windows 10 RS4 e versioni successive. L'opzione di installazione nel contesto del dispositivo è disponibile nella pagina di assegnazione di App Client per le app con licenza online MSFB.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Includere ed escludere combinazione di gruppi di utenti e gruppi di dispositivi quando si assegnano i criteri e profili <!-- 1807547 -->
-Quando si assegnano i criteri di conformità o i profili di configurazione, è possibile assegnarli ai gruppi di sicurezza con gli utenti o dispositivi. Attualmente, è possibile includere ed escludere solo gruppi di utenti, *o* includere ed escludere solo gruppi di dispositivi. Non è possibile includere ed escludere una combinazione di gruppi, includono, ad esempio i gruppi di utenti *e* escludere un gruppo di dispositivi.
-
-È possibile includere ed escludere una combinazione di gruppi di utenti e gruppi di dispositivi. È possibile includere un gruppo di utenti ed escludere un gruppo di dispositivi. Ad esempio, è possibile assegnare o distribuire un profilo di configurazione del dispositivo in un gruppo di utenti, ma escludere i dispositivi personali.
-
-[Assegnare i profili di configurazione dispositivo](device-profile-assign.md) include altre informazioni sull'assegnazione dei profili per i gruppi di utenti e gruppi di dispositivi.
-
-Si applica a: tutte le piattaforme
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Ritirare i dispositivi non conformi <!-- 1827291 -->
 Dobbiamo aggiungere una nuova azione di conformità per ritirare un dispositivo non conforme. Ritiro di un dispositivo non conforme rimuove tutti i dati aziendali da essa e rimuove anche il dispositivo che vengano gestiti da Intune. Questa azione viene eseguita quando viene raggiunto il valore configurato in giorni. Il valore minimo è 30 giorni. 
@@ -142,7 +130,7 @@ Si applica a: dispositivi completamente gestiti di Android Enterprise
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Verificare la presenza di un chipset TPM in un criterio di conformità del dispositivo Windows 10 <!-- 3617671 -->
 Molti di Windows 10 e versioni successive hanno chipset modulo TPM (Trusted Platform). Una nuova impostazione di conformità controllerà se TPM è presente nel dispositivo.
 
-[Windows 10 e versioni successive impostazioni dei criteri di conformità](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) sono elencate le impostazioni correnti.
+[Windows 10 e versioni successive impostazioni dei criteri di conformità](compliance-policy-create-windows.md) sono elencate le impostazioni correnti.
 
 Si applica a: 
 - Windows 10 e versioni successive
@@ -177,15 +165,6 @@ Stiamo aggiungendo una nuova impostazione di anello di aggiornamento Windows che
 
 ### <a name="windows-update-notifications----3316782---"></a>Notifiche di aggiornamento di Windows <!-- 3316782 -->
 Stiamo aggiungendo il supporto per le configurazioni di anello di aggiornamento di Windows in modo sarà possibile configurare le notifiche di aggiornamento di Windows che gli utenti visualizzano. Questa impostazione non sarà disponibile in all'interno del portale, ma può essere configurata tramite l'API Graph di Intune.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Modifiche alla registrazione di portale aziendale per gli utenti dei dispositivi iOS 12 <!--3448635 --> 
-Portale aziendale per iOS aggiornerà le schermate di registrazione di app e i passaggi per la compatibilità con le modifiche di registrazione MDM rilasciate in Apple iOS 12.2. Il flusso di lavoro aggiornata verrà ora richiesto agli utenti di:
-
-- Consenti Safari aprire il sito Web portale aziendale (tramite Safari) e scaricare il profilo di gestione prima di tornare all'app portale aziendale.
-- Aprire l'app impostazioni e installare il profilo di gestione sul proprio dispositivo.
-- Tornare all'app portale aziendale per completare la registrazione.
-
-Per altre informazioni su come preparare le modifiche, vedere la [post di Microsoft Tech Community](https://aka.ms/CP_changes_iOS12). Nel frattempo, per supportare le nuove registrazioni di iOS nel portale aziendale, sono state aggiornate la procedura descritta in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Queste modifiche doc sarà attivate dopo il rilascio di Apple iOS versione 12.2. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Semplificare l'accesso alle impostazioni di diagnostica <!-- 3804627 -->
 Stiamo aggiungendo una nuova opzione per la **log di controllo** Pannello di ogni carico di lavoro di Log di controllo nella console di Intune che è possibile usare per aprire direttamente la *le impostazioni di diagnostica* pagina.

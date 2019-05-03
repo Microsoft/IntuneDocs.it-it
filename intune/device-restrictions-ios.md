@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490727"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871472"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -195,7 +195,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **Blocca** impedisce l'uso del browser Safari nel dispositivo. **Non configurata** consente agli utenti di usare il browser Safari.
+- **Safari (solo con supervisione)**: **Blocca** per impedire l'uso del browser Safari nel dispositivo. **Non configurata** consente agli utenti di usare il browser Safari.
 - **Riempimento automatico**: **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurata** consente agli utenti di modificare le impostazioni di completamento automatico nel browser.
 - **Cookie**: scegliere come vengono gestiti i cookie nel dispositivo. Le opzioni disponibili sono:
   - Consenti
@@ -290,7 +290,7 @@ Per aggiungere app a questi elenchi, è possibile:
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
 - **Backup in iCloud**: **Non configurata** consente all'utente di eseguire il backup del dispositivo in iCloud. **Blocca** impedisce all'utente di eseguire il backup del dispositivo in iCloud.
-- **Block iCloud Document sync** (Blocca sincronizzazione dei documenti in iCloud): **Non configurato** consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud. **Blocca** impedisce a iCloud di sincronizzare documenti e dati.
+- **Sincronizzazione dei documenti in iCloud (solo con supervisione)**: **Non configurata** consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud. **Blocca** impedisce a iCloud di sincronizzare documenti e dati.
 - **Sincronizzazione dello streaming foto in iCloud**: **Non configurata** consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto** per sincronizzare le foto in iCloud in modo che siano disponibili in tutti i dispositivi degli utenti. **Blocca** impedisce la sincronizzazione dello streaming foto in iCloud.
 - **Backup crittografato**: **Rendi obbligatorio** in modo che i backup del dispositivo debbano essere crittografati.
 - **Libreria foto di iCloud**: impostare su **Blocca** per disabilitare l'uso della libreria foto di iCloud per archiviare foto e video nel cloud. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo. **Non configurata** consente l'uso della libreria foto iCloud.
