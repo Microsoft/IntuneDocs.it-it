@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bbad42e478fadcb40f35d621e805367e60944a00
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MTE75
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490476"
+---
   > [!NOTE]
   > Mantenere aggiornato il dispositivo consente di accedere alle funzionalità più recenti e anche di assicurarsi che il dispositivo abbia la versione più sicura del relativo sistema operativo. Microsoft e la maggior parte dei principali fornitori in genere consigliano di installare le versioni più recenti del software disponibili, sia nei dispositivi personali che in quelli aziendali.
 
