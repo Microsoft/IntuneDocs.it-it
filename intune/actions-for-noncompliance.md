@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504206"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135231"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi in Intune
 
@@ -103,9 +103,6 @@ Quando si crea un criterio di conformità del dispositivo, Intune crea automatic
          - Immettere eventuali **destinatari aggiuntivi** selezionando i gruppi
     
     - **Blocca in remoto il dispositivo non conforme**: quando il dispositivo non è conforme, bloccare il dispositivo. Questa azione obbliga l'utente a immettere un PIN o un passcode per sbloccare il dispositivo. 
-
-    - **Retire the noncompliant device** (Ritira dispositivo non conforme): quando il dispositivo non è conforme, rimuovere tutti i dati aziendali dal dispositivo e rimuovere il dispositivo dalla gestione di Intune. Per impedire la cancellazione accidentale di un dispositivo, questa azione supporta una pianificazione minima di **30** giorni.  
-
     
 5. Configurare i valori per l'opzione **Pianifica**: immettere il numero di giorni (da 0 a 365) dal rilevamento della non conformità, dopo cui attivare l'azione nei dispositivi degli utenti. Dopo questo periodo di tolleranza, è possibile applicare un criterio di accesso condizionale. Se si immette **0** (zero) come numero di giorni, l'accesso condizionale viene applicato **immediatamente**. È ad esempio possibile bloccare immediatamente l'accesso alle risorse aziendali se un dispositivo risulta non conforme.
 

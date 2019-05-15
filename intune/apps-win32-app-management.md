@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426154"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135127"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -142,8 +142,8 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     Se, ad esempio, il nome file dell'app è **MyApp123**, aggiungere quanto segue:<br>
     `msiexec /p “MyApp123.msp”`<p>
     E, se l'applicazione è `ApplicationName.exe`, il comando sarà il nome dell'applicazione seguito dagli argomenti di comando (opzioni) supportati dal pacchetto. <br>Ad esempio:<br>
-    `ApplicationName.exe /quite`<br>
-    Nel comando precedente il pacchetto `ApplicaitonName.exe` supporta l'argomento di comando `/quite`.<p> Per gli argomenti specifici supportati dal pacchetto dell'applicazione, contattare il fornitore dell'applicazione.
+    `ApplicationName.exe /quiet`<br>
+    Nel comando precedente il pacchetto `ApplicationName.exe` supporta l'argomento di comando `/quiet`.<p> Per gli argomenti specifici supportati dal pacchetto dell'applicazione, contattare il fornitore dell'applicazione.
 
 3.  Aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
 
@@ -282,9 +282,6 @@ A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 
 ## <a name="app-dependencies"></a>Dipendenze dell'app
 
 Le dipendenze dell'app sono applicazioni che devono essere installate prima di poter installare l'app Win32. È possibile richiedere che altre app vengano installate come dipendenze. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. È previsto un massimo di 100 dipendenze, che include le dipendenze specificate e l'app stessa. È possibile aggiungere le dipendenze di un'app Win32 solo dopo aver aggiunto e caricato l'app Win32 in Intune. Una volta aggiunta l'app Win32, verrà visualizzata l'opzione **Dipendenze** nel pannello dell'app Win32. 
-
-> [!NOTE]
-> La funzionalità di dipendenza tra app è disponibile solo dopo che l'agente di gestione di Intune è stato aggiornato alla versione 1904 (superiore alla 1.18.120.0), il che potrebbe richiedere una o due settimane aggiuntive dopo l'aggiornamento del servizio alla versione 1904.
 
 Quando si aggiunge una dipendenza tra app, è possibile eseguire ricerche in base al nome dell'app e all'editore. Inoltre, è possibile ordinare le dipendenze aggiunte in base al nome dell'app e all'editore. Le dipendenze dell'app aggiunte in precedenza non possono essere selezionate nell'elenco di dipendenze tra app aggiunte. 
 
