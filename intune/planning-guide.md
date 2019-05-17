@@ -1,27 +1,29 @@
 ---
 title: Introduzione alla pianificazione e progettazione di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo è un'introduzione a tutte le sezioni dedicate alla pianificazione, progettazione e implementazione di Microsoft Intune. Strumenti che consentono di determinare gli obiettivi, gli scenari dei casi d'uso e i requisiti, creare piani di implementazione e di comunicazione, supporto, test e piani di convalida.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185781"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568635"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guida alla pianificazione, progettazione e implementazione della distribuzione di Intune
 
@@ -63,4 +65,4 @@ Questa guida offre anche informazioni tecniche aggiuntive e modelli di tabella u
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per iniziare, procedere con la prima sezione: [Determinare scopi, obiettivi e sfide per la distribuzione](planning-guide-deployment-goals.md).
+Iniziamo con la prima sezione: [Determinare scopi, obiettivi e sfide per la distribuzione](planning-guide-deployment-goals.md).

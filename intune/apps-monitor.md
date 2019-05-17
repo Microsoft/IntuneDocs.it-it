@@ -1,27 +1,29 @@
 ---
 title: Monitorare le informazioni sulle app e le assegnazioni
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dopo avere assegnato un'app agli utenti o ai dispositivi, usare queste informazioni per monitorare lo stato dell'app.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325178"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567231"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -49,7 +51,7 @@ La sezione **Informazioni di base** contiene le seguenti informazioni sull'app:
 |------------------------|------------------------------------------------------------------|
 | **Autore**          | Autore della pubblicazione dell'app.                                            |
 | **Sistema operativo**   | Sistema operativo dell'app (Windows, iOS, Android e così via). |
-| **Creato**             | Data e ora di creazione della revisione.                         |
+| **Creato**             | Data e ora di creazione della revisione. <b>**Nota**: questo valore di data viene aggiornato quando un amministratore IT modifica i metadati dell'app, ad esempio cambiando la categoria o la descrizione dell'app.                        |
 | **Assegnato**           | Indica se l'app è stata assegnata (**Sì** o **No**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Grafici dello stato utente e dispositivo
@@ -80,7 +82,7 @@ Quando si seleziona **Stato dell'installazione del dispositivo** nella sezione *
 | **Nome dispositivo**      | Nome del dispositivo su piattaforme che consentono la denominazione di un dispositivo. Su altre piattaforme, Intune crea un nome da altre proprietà. Questo attributo non è disponibile per altri dispositivi.                                                                       |
 | **Nome utente**        | Nome dell'utente.                                                                                                                                                                                                                                      |
 | **Piattaforma**         | Sistema operativo del dispositivo (Windows, iOS, Android e così via).                                                                                                                                                                                           |
-| **Versione**          | Numero di versione dell'app. Per le app line-of-business, viene visualizzato il numero di versione completo dell'app. Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800). |
+| **Versione**          | Numero di versione dell'app. Per le app line-of-business viene visualizzato il numero di versione completo dell'app. Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800). Per le app dello Store la versione non viene visualizzata. |
 | **Stato**           | Stato dell'app.                                                                                                                                                                                                                                     |
 | **Dettagli stato**   | Dettagli dello stato.                                                                                                                                                                                                                                     |
 | **Ultima archiviazione**    | Data dell'ultima sincronizzazione del dispositivo con Intune.                                                                                                                                                                                                                  |

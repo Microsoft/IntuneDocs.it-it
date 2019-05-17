@@ -1,35 +1,36 @@
 ---
-title: Gestire le app da Microsoft Store per le aziende
-titlesuffix: Microsoft Intune
-description: Informazioni su come sincronizzare le app in Intune da Microsoft Store per le aziende, assegnarle e tenerne traccia.
+title: Gestire le app acquistate con Volume Purchase Program o ottenute gratuitamente da Microsoft Store per le aziende
+titleSuffix: Microsoft Intune
+description: Informazioni su come sincronizzare le app acquistate (o gratuite) in Intune da Microsoft Store per le aziende.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234933"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587502"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate con Volume Purchase Program (o ottenute gratuitamente) da Microsoft Store per le aziende con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In [Microsoft Store per le aziende](https://www.microsoft.com/business-store) è possibile trovare e acquistare app per l'organizzazione, singolarmente o con Volume Purchase Program. Collegando lo Store a Microsoft Intune è possibile gestire dal portale di Azure le app acquistate con Volume Purchase Program. Ad esempio:
-* È possibile sincronizzare l'elenco di app acquistate dallo Store con Intune.
+* È possibile sincronizzare l'elenco di app acquistate (o ottenute gratuitamente) dallo Store con Intune.
 * Le app sincronizzate vengono visualizzate nella console di amministrazione di Intune ed è possibile assegnarle come qualsiasi altra app.
 * È possibile tenere traccia del numero di licenze disponibili e del numero di licenze in uso nella console di amministrazione di Intune.
 * Intune blocca l'assegnazione e l'installazione di app se non sono disponibili licenze sufficienti.
@@ -80,7 +81,7 @@ Prima di abilitare la sincronizzazione nella console di Intune, è necessario co
 
 ## <a name="assign-apps"></a>Assegnare le app
 
-Le app assegnate dallo Store vengono assegnate allo stesso modo di qualsiasi altra app di Intune. Per altre informazioni, vedere [Come assegnare app ai gruppi con Microsoft Intune](apps-deploy.md). Tuttavia, invece di assegnare le app dalla pagina **Tutte le app**, è necessario assegnarle dalla pagina **App con licenza**.
+Le app assegnate dallo Store vengono assegnate allo stesso modo di qualsiasi altra app di Intune. Per altre informazioni, vedere [Come assegnare app ai gruppi con Microsoft Intune](apps-deploy.md). 
 
 Le app offline possono essere assegnate a gruppi di utenti, gruppi di dispositivi o gruppi composti da utenti e dispositivi.
 Le app offline possono essere installate in un dispositivo per un utente specifico o per tutti gli utenti. 

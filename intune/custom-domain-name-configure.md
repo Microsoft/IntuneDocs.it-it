@@ -1,6 +1,6 @@
 ---
 title: Configurare un nome di dominio personalizzato
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Aggiungere un nome di dominio personalizzato per la sottoscrizione di Microsoft Intune
 keywords: ''
 author: dougeby
@@ -10,18 +10,20 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181497"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567244"
 ---
 # <a name="configure-a-custom-domain-name"></a>Configurare un nome di dominio personalizzato
 
@@ -42,14 +44,14 @@ Non è possibile rinominare o rimuovere il nome di dominio onmicrosoft.com inizi
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>Per aggiungere e verificare il dominio personalizzato
 
-1. Passare al [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx) e accedere con l'account amministratore.
+1. Passare all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) e accedere all'account amministratore.
 
 2. Nel riquadro di spostamento scegliere **Impostazioni** &gt; **Domini**.
 
 3. Scegliere **Aggiungi dominio** e digitare il nome di dominio personalizzato. Selezionare **Avanti**.
-   ![Screenshot dell'interfaccia di amministrazione di Office 365 con selezione di Impostazioni > Domini e aggiunta di un nuovo nome di dominio](./media/domain-custom-add.png)
+   ![Screenshot dell'interfaccia di amministrazione di Microsoft 365 con selezione di Impostazioni > Domini e aggiunta di un nuovo nome di dominio](./media/domain-custom-add.png)
 4. Verrà visualizzata la finestra di dialogo **Verifica dominio** con i valori necessari per creare il record TXT nel provider di hosting DNS.
-    - **Utenti di GoDaddy**: il portale di gestione di Office 365 reindirizza l'utente alla pagina di accesso di GoDaddy. Dopo l'immissione delle credenziali e l'accettazione dell'accordo di autorizzazione alla modifica del dominio, il record TXT viene creato automaticamente. In alternativa è possibile [creare il record TXT](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Utenti di GoDaddy**: l'interfaccia di amministrazione di Microsoft 365 reindirizza gli utenti alla pagina di accesso di GoDaddy. Dopo l'immissione delle credenziali e l'accettazione dell'accordo di autorizzazione alla modifica del dominio, il record TXT viene creato automaticamente. In alternativa è possibile [creare il record TXT](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
     - **Utenti di Register.com**: seguire le [istruzioni dettagliate](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) per creare il record TXT.
 
 I passaggi per aggiungere e verificare un dominio personalizzato possono essere anche [eseguiti in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).

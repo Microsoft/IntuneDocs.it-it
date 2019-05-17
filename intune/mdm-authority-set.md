@@ -1,6 +1,6 @@
 ---
 title: Impostare l'autorità di gestione dei dispositivi mobili
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Impostare l'autorità di gestione dei dispositivi mobili in Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231911"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567478"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Impostare l'autorità di gestione dei dispositivi mobili
 
@@ -34,12 +35,12 @@ Le configurazioni possibili sono:
 
 - **Intune autonomo**: gestione solo cloud, che viene configurata tramite il portale di Azure. Include il set completo di funzionalità offerte da Intune. [Impostare l'autorità MDM nella console di Intune](#set-mdm-authority-to-intune).
 
-- **Intune ibrido**: integrazione della soluzione cloud di Intune con System Center Configuration Manager. Intune viene configurato tramite la console di Configuration Manager. [Impostare l'autorità MDM in Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Co-gestione di Intune**: integrazione della soluzione cloud di Intune con System Center Configuration Manager per dispositivi Windows 10. Intune viene configurato tramite la console di Configuration Manager. [Configurare la registrazione automatica dei dispositivi in Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >L'onboarding di nuovi clienti MDM ibridi verrà disattivato in una versione futura. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
+    >l'onboarding di nuovi clienti di MDM con configurazione ibrida è deprecato. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
 
-- **Gestione dei dispositivi mobili per Office 365**: integrazione di Office 365 con la soluzione cloud di Intune. Intune viene configurato dall'interfaccia di amministrazione di Office 365. Include un sottoinsieme delle funzionalità disponibili con Intune autonomo. Impostare l'autorità MDM nell'interfaccia di amministrazione di Office 365.
+- **Gestione dei dispositivi mobili per Office 365**: integrazione di Office 365 con la soluzione cloud di Intune. Intune viene configurato dall'interfaccia di amministrazione di Microsoft 365. Include un sottoinsieme delle funzionalità disponibili con Intune autonomo. Impostare l'autorità MDM nell'interfaccia di amministrazione di Microsoft 365.
 
 > [!IMPORTANT]
 > In Configuration Manager versione 1610 o successiva e Microsoft Intune versione 1705 è possibile modificare l'autorità MDM senza dover contattare il supporto Microsoft e senza che sia necessario annullare la registrazione dei dispositivi gestiti esistenti e quindi eseguirla di nuovo. Per altre informazioni, vedere [Preparare il passaggio all'autorità MDM in Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).

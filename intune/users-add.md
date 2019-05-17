@@ -1,6 +1,6 @@
 ---
 title: Aggiungere utenti e concedere le autorizzazioni
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Sincronizzare gli utenti locali con Azure AD e concedere autorizzazioni di amministratore per la sottoscrizione di Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846316"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568310"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Aggiungere utenti e concedere autorizzazioni amministrative a Intune
 
@@ -31,10 +32,10 @@ ms.locfileid: "55846316"
 Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti da Active Directory locale. Una volta aggiunti, gli utenti possono registrare i dispositivi e accedere alle risorse aziendali. È anche possibile assegnare agli utenti autorizzazioni aggiuntive, tra cui *amministratore globale* e *amministratore del servizio*.
 
 ## <a name="add-users-to-intune"></a>Aggiungere utenti a Intune
-È possibile aggiungere manualmente utenti alla sottoscrizione di Intune attraverso il [portale di Office 365](https://www.office.com/signin) o il [portale di Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Un amministratore può modificare gli account utente per assegnare le licenze di Intune. È possibile assegnare le licenze dal portale di Office 365 o dal portale di Azure Intune. Per altre informazioni sull'uso del portale di Office 365, vedere [Aggiungere utenti singolarmente o in blocco al portale di Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+È possibile aggiungere manualmente utenti alla sottoscrizione di Intune tramite l'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) o il [portale di Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Un amministratore può modificare gli account utente per assegnare le licenze di Intune. È possibile assegnare le licenze dall'interfaccia di amministrazione di Microsoft 365 o dal portale di Azure per Intune. Per altre informazioni sull'uso dell'interfaccia di amministrazione di Microsoft 365, vedere [Add users individually or in bulk to the Microsoft 365 admin center](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) (Aggiungere utenti singolarmente o in blocco all'interfaccia di amministrazione di Microsoft 365).
 
-### <a name="add-intune-users-in-the-office-365-admin-center"></a>Aggiungere gli utenti di Intune nell'interfaccia di amministrazione di Office 365
-1. Accedere al [portale di Office 365](https://www.office.com/signin) con un account di amministratore globale o amministratore Gestione utenti.
+### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Aggiungere gli utenti di Intune nell'interfaccia di amministrazione di Microsoft 365
+1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) con un account di amministratore globale o amministratore Gestione utenti.
 2. Nel menu di Office 365 selezionare **Amministratore**.
 3. Nell'interfaccia di amministrazione selezionare **Aggiungi un utente**.
 
@@ -77,7 +78,7 @@ Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti
 Dopo aver aggiunto altri utenti alla sottoscrizione di Intune, è consigliabile concedere le autorizzazioni di amministratore ad alcuni utenti.  Per concedere le autorizzazioni di amministratore, seguire questa procedura:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Assegnare le autorizzazioni di amministratore in Office 365
-1. Accedere al [portale di Office 365](https://www.office.com/signin) con un account di amministratore globale.
+1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) con un account di amministratore globale.
 2. Nel menu di Office 365 selezionare **Amministratore**.
 3. Nell'interfaccia di amministrazione scegliere **Utenti attivi** e quindi scegliere l'utente a cui concedere le autorizzazioni di amministratore.
 
@@ -90,7 +91,7 @@ Dopo aver aggiunto altri utenti alla sottoscrizione di Intune, è consigliabile 
 6. Scegliere **Salva**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Assegnare le autorizzazioni di amministratore nel portale di Azure
-1. Accedere al [portale di Azure](https://www.office.com/signin) con un account di amministratore globale.
+1. Accedere al [portale di Azure](https://portal.azure.com) con un account di amministratore globale.
 2. Nel portale di Azure scegliere **Utente** e quindi scegliere l'utente a cui concedere le autorizzazioni di amministratore.
 3. Selezionare **Ruolo della directory** e quindi selezionare l'autorizzazione.
   ![Screenshot di Ruolo della directory](./media/add-intune-directory-role.png)
@@ -98,7 +99,7 @@ Dopo aver aggiunto altri utenti alla sottoscrizione di Intune, è consigliabile 
 
 ### <a name="types-of-administrators"></a>Tipi di amministratori
 
-Assegnare agli utenti una o più autorizzazioni di amministratore. Queste autorizzazioni definiscono l'ambito amministrativo per gli utenti e le attività che possono gestire. Le autorizzazioni di amministratore sono comuni tra i vari servizi cloud di Microsoft e alcuni servizi potrebbero non supportare alcune autorizzazioni. Sia nel portale di Azure che in quello di Office 365 sono elencati ruoli di amministratore limitati che non vengono usati da Intune. Le opzioni disponibili per le autorizzazioni di amministratore di Intune sono le seguenti:
+Assegnare agli utenti una o più autorizzazioni di amministratore. Queste autorizzazioni definiscono l'ambito amministrativo per gli utenti e le attività che possono gestire. Le autorizzazioni di amministratore sono comuni tra i vari servizi cloud di Microsoft e alcuni servizi potrebbero non supportare alcune autorizzazioni. Sia nel portale di Azure che nell'interfaccia di amministrazione di Microsoft 365 sono elencati ruoli di amministratore limitati che non vengono usati da Intune. Le opzioni disponibili per le autorizzazioni di amministratore di Intune sono le seguenti:
 
 - **Amministratore globale**: (Office 365 e Intune) accede a tutte le funzionalità amministrative in Intune. Per impostazione predefinita, la persona che si registra a Intune diventa un amministratore globale. Gli amministratori globali sono gli unici amministratori che possono assegnare altri ruoli di amministratore. Nell'organizzazione vi possono essere più amministratori globali. Come procedura consigliata, solo alcuni utenti dell'azienda dovrebbero avere questo ruolo per ridurre il rischio per l'azienda.
 - **Amministratore password**: (Office 365 e Intune) reimposta le password, gestisce le richieste di servizio ed esegue il monitoraggio dell'integrità dei servizi. Gli amministratori password sono limitati alla reimpostazione delle password per gli utenti.
@@ -109,7 +110,7 @@ Assegnare agli utenti una o più autorizzazioni di amministratore. Queste autori
 
 L'account usato per creare la sottoscrizione di Microsoft Intune è un amministratore globale. È consigliabile non usare un amministratore globale per attività di gestione quotidiane. Un amministratore non deve avere necessariamente una licenza per Intune per accedere al portale di Azure, ma per poter eseguire determinate attività di gestione come l'impostazione del connettore del servizio Exchange, la licenza di Intune è necessaria.
 
-Per accedere al portale di Office 365, per l'account deve essere impostato lo stato **Utenti con accesso consentito**. Nel portale di Azure in **Profilo** impostare **Blocca l'accesso** su **No** per consentire l'accesso. Questo stato non equivale a ricevere una licenza per la sottoscrizione. Per impostazione predefinita, tutti gli account utente hanno lo stato **Consentito**. Gli utenti senza privilegi di amministratore possono usare il portale di Office 365 per reimpostare le password di Intune.
+Per accedere all'interfaccia di amministrazione di Microsoft 365, per l'account deve essere impostato **Accesso consentito**. Nel portale di Azure in **Profilo** impostare **Blocca l'accesso** su **No** per consentire l'accesso. Questo stato non equivale a ricevere una licenza per la sottoscrizione. Per impostazione predefinita, tutti gli account utente hanno lo stato **Consentito**. Gli utenti senza privilegi di amministratore possono usare l'interfaccia di amministrazione di Microsoft 365 per reimpostare le password di Intune.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizzare Active Directory e aggiungere utenti a Intune
 È possibile configurare la sincronizzazione delle directory per importare account utente dall'istanza locale di Active Directory a Microsoft Azure Active Directory (Azure AD) che include gli utenti di Intune. La connessione del servizio locale Active Directory con tutti i servizi basati su Azure Active Directory consente di semplificare notevolmente la gestione delle identità utente. È anche possibile configurare le funzionalità SSO (Single Sign-On) per semplificare ulteriormente l'autenticazione per tutti gli utenti. Collegando lo stesso [tenant di Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) con più servizi, gli account utente già sincronizzati sono disponibili a tutti i servizi basati su cloud.

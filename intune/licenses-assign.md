@@ -9,6 +9,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834485"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459901"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Assegnare licenze agli utenti in modo che possano registrare i dispositivi in Intune
 
@@ -29,17 +30,17 @@ ms.locfileid: "55834485"
 
 Indipendentemente dal fatto che si decida di aggiungere gli utenti manualmente o di sincronizzarli da Active Directory locale, è necessario assegnare una licenza di Intune a ogni utente prima che gli utenti possano registrare i propri dispositivi in Intune. Per un elenco di licenze, vedere [Licenze che includono Intune](licenses.md).
 
-## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Assegnare una licenza di Intune nell'interfaccia di amministrazione di Office 365
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Assegnare una licenza di Intune nell'interfaccia di amministrazione di Microsoft 365
 
-È possibile usare il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) per aggiungere manualmente gli utenti basati su cloud e assegnare licenze sia ad account utente basati su cloud che ad account sincronizzati con Azure AD da Active Directory locale.
+È possibile usare l'[interfaccia di amministrazione di Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) per aggiungere manualmente gli utenti basati sul cloud e assegnare licenze sia ad account utente basati sul cloud che ad account sincronizzati con Azure AD da Active Directory locale.
 
-1. Accedere al [portale di gestione di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) usando le credenziali di amministratore tenant e quindi scegliere **Utenti** > **Utenti attivi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) usando le credenziali di amministratore tenant e quindi scegliere **Utenti** > **Utenti attivi**.
 
 2. Selezionare l'account utente a cui si vuole assegnare una licenza utente di Intune e quindi scegliere **Licenze di prodotto** > **Modifica**.
 
 3. Impostare sulla posizione **Attivato** l'interruttore per **Intune** o **Enterprise Mobility + Security** e scegliere **Salva**.
 
-   ![Screenshot della sezione delle licenze dei prodotti nel portale di Office 365.](./media/office-assign-license.png)
+   ![Screenshot della sezione Licenze di prodotto dell'interfaccia di amministrazione di Microsoft 365.](./media/office-assign-license.png)
 
 4. L'account utente dispone ora delle autorizzazioni necessarie per usare il servizio e registrare dispositivi nella gestione.
 

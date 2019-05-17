@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188093"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396863"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurare un servizio di gestione delle spese per telecomunicazioni in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

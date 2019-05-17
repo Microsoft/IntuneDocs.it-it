@@ -1,6 +1,6 @@
 ---
 title: Messaggi dell'app Portale aziendale visualizzati dagli utenti nei dispositivi
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni sui diversi messaggi che possono vedere gli utenti finali nell'app Portale aziendale.
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233161"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569129"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Consentire agli utenti finali di comprendere i messaggi dell'app Portale aziendale
 
@@ -110,6 +111,34 @@ Se l'app Portale aziendale non è stata aggiunta all'elenco **App consentite** o
 ### <a name="what-it-means"></a>Che cosa significa
 
 Aggiungere il Portale aziendale all'elenco **App consentite** o **Escludi le app** tra i criteri di protezione delle app di Windows Information Protection (WIP). Per altre informazioni, vedere [Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Approvare un'app aziendale iOS (app line-of-business) nel dispositivo iOS 
+
+### <a name="where-it-appears"></a>Dove viene visualizzato
+Le app iOS sviluppate dall'organizzazione e non disponibili nell'App Store non sono considerate attendibili dal dispositivo per impostazione predefinita. Quando si installa un'app di questo tipo usando il portale aziendale e la si avvia, viene visualizzato il messaggio seguente:
+
+![Messaggio dell'app iOS - Sviluppatore interno non attendibile](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Che cosa significa
+Questo messaggio indica che è necessario modificare le impostazioni del dispositivo iOS per approvare e installare un'app sviluppata dall'azienda nel dispositivo iOS.
+
+Quando si installa un'app di questo tipo usando il portale aziendale e la si avvia, seguire questa procedura per approvare l'app dopo il download:
+
+1. Dopo l'avvio di un'app aziendale (app line-of-business app) installata, viene visualizzato il messaggio "Sviluppatore interno non attendibile". <br>
+   Premere **CANC**.
+2. Passare a **Impostazioni** > **Generale** > **Gestione dei dispositivi**.
+
+   ![Interfaccia utente del dispositivo iOS - Gestione dei dispositivi](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Selezionare **Gestione profilo** > **App aziendale**.
+4. Selezionare il nome dello sviluppatore.
+5. Selezionare **Considera attendibile _nome sviluppatore_**.
+6. Confermare l'app selezionando **Considera attendibile** nel messaggio popup di installazione dell'app.
+
+   ![Interfaccia utente del dispositivo iOS - Messaggio di attendibilità dell'app](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Ora dovrebbe essere possibile avviare e usare l'app aziendale.
+
 
 ### <a name="see-also"></a>Vedere anche
 [Informazioni sull'uso di Intune per gli utenti finali](end-user-educate.md)

@@ -1,27 +1,29 @@
 ---
 title: Creare e distribuire i criteri di protezione delle app
 titleSuffix: Microsoft Intune
-description: Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune.
+description: Questo argomento illustra come creare e assegnare criteri di protezione delle app di Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297367"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569792"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -52,7 +54,7 @@ Per informazioni sull'aggiunta di app line-of-business (LOB) dell'organizzazione
 6. Nel pannello **Aggiungi criteri** selezionare **Configura le impostazioni obbligatorie** per aprire **Impostazioni**.
 
    Sono tre le categorie di impostazioni dei criteri:
-   - **Rilocazione dei dati**: questo gruppo include i controlli di prevenzione della perdita dei dati, ad esempio le restrizioni relative alle operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano la modalità con cui gli utenti interagiscono con i dati nelle app.
+   - **Protezione dei dati**: questo gruppo include i controlli di prevenzione della perdita dei dati, ad esempio le restrizioni relative alle operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano la modalità con cui gli utenti interagiscono con i dati nelle app.
    - **Requisiti di accesso**: questo gruppo contiene le opzioni PIN per ogni app che determinano in che modo l'utente finale accede alle app in un contesto aziendale.  
    - **Avvio condizionale**: questo gruppo contiene impostazioni come le impostazioni minime del sistema operativo, il rilevamento di jailbreak e dispositivi rooted e i periodi di prova offline.
 

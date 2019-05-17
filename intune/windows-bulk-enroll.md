@@ -1,6 +1,6 @@
 ---
 title: Registrazione in blocco per Windows 10
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Creare un pacchetto di registrazione in blocco per Microsoft Intune
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236807"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568167"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236807"
 
 L'amministratore può aggiungere un numero elevato di nuovi dispositivi Windows ad Azure Active Directory e Intune. Per eseguire la registrazione in blocco dei dispositivi per il tenant di Azure AD, è necessario creare un pacchetto di provisioning con l'Applicazione immagine e configurazione di Windows. Quando si applica il pacchetto di provisioning ai dispositivi aziendali, questi vengono aggiunti al tenant di Azure AD e vengono registrati per la gestione di Intune. Una volta applicato il pacchetto, gli utenti di Azure AD possono eseguire l'accesso.
 
-Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono conformarsi a criteri di Intune assegnati e applicazioni obbligatorie. Al momento non sono supportati scenari self-service o con il portale aziendale.
+Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono conformarsi a criteri di Intune assegnati e applicazioni obbligatorie. I dispositivi Windows registrati in Intune tramite la registrazione in blocco di Windows possono usare l'app Portale aziendale per installare le app disponibili. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Prerequisiti per la registrazione in blocco di dispositivi Windows
 

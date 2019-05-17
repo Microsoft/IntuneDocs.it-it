@@ -1,6 +1,6 @@
 ---
 title: Configurare la registrazione per i dispositivi macOS
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come impostare la registrazione per i dispositivi macOS in Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 08/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d23d03169cdbf3c88be257cafe6aa84dc8c5257f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236761"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568323"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurare la registrazione per i dispositivi macOS in Intune
 
@@ -40,7 +41,7 @@ Completare i prerequisiti seguenti prima di impostare la registrazione di dispos
 - [Impostare l'autorità MDM](mdm-authority-set.md)
 - [Creare i gruppi](groups-add.md)
 - [Configurare il Portale aziendale](company-portal-app.md)
-- Assegnare licenze utente nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Assegnare licenze utente nell'[interfaccia di amministrazione di Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Ottenere un certificato push MDM Apple](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Dispositivi macOS di proprietà dell'utente (BYOD)

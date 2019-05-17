@@ -1,14 +1,15 @@
 ---
 title: Funzionalità e impostazioni dei dispositivi in Microsoft Intune - Azure | Microsoft Docs
-description: Panoramica dei diversi profili di dispositivo di Microsoft Intune, che include funzionalità, restrizioni, posta elettronica, Wi-Fi, VPN, Education, certificati, aggiornamento a Windows 10, BitLocker e Windows Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali.
+description: Panoramica dei diversi profili di dispositivo di Microsoft Intune. Informazioni su funzionalità, restrizioni, posta elettronica, Wi-Fi, VPN, formazione, certificati, aggiornamento a Windows 10, BitLocker e Windows Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,18 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845092"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570351"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare le impostazioni delle funzionalità nei dispositivi usando i profili dei dispositivi in Microsoft Intune
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare funzionalità e impostazioni nei dispositivi usando i profili dei dispositivi in Microsoft Intune
 
-Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono aggiunte ai "profili di configurazione". È possibile creare profili per dispositivi diversi e piattaforme diverse, tra cui iOS, Android e Windows, e quindi usare Intune per applicare il profilo ai dispositivi nell'organizzazione.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Di seguito sono riportati alcuni esempi di profili:
+Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono aggiunte ai "profili di configurazione". È possibile creare i profili per diversi dispositivi e diverse piattaforme, tra cui iOS, Android e Windows. Usare quindi Intune per applicare o "assegnare" il profilo ai dispositivi.
+
+Nell'ambito della soluzione di gestione di dispositivi mobili (MDM), usare questi profili di configurazione per completare diverse attività. Di seguito sono riportati alcuni esempi di profili:
 
 - Nei dispositivi Windows 10 usare un modello di profilo che blocca i controlli ActiveX in Internet Explorer.
 - Nei dispositivi iOS e macOS consentire agli utenti di usare stampanti AirPrint nell'organizzazione.
@@ -36,70 +39,13 @@ Di seguito sono riportati alcuni esempi di profili:
 - Gestire gli aggiornamenti software, incluso quando installarli.
 - Eseguire un dispositivo Android come dispositivo in modalità tutto schermo dedicato che può eseguire una o più app.
 
-Questo articolo elenca i passaggi per creare un profilo e offre una panoramica dei diversi tipi di profili che è possibile creare. Usare questi profili per autorizzare o bloccare determinate funzionalità nei dispositivi.
-
-## <a name="create-the-profile"></a>Creare il profilo
-
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
-
-2. Selezionare **Configurazione del dispositivo**. Sono disponibili le seguenti opzioni:
-
-    - **Panoramica**: elenca lo stato dei profili e offre dettagli aggiuntivi sui profili assegnati a utenti e dispositivi.
-    - **Gestione**: consente di creare profili di dispositivo, caricare [script di PowerShell](intune-management-extension.md) personalizzati da eseguire all'interno del profilo e di aggiungere piani dati ai dispositivi che usano [eSIM](esim-device-configuration.md).
-    - **Monitoraggio**: consente di verificare lo stato di un profilo e le operazioni riuscite e non riuscite, nonché di visualizzare i log per i profili.
-    - **Configurazione**: aggiungere un'autorità di certificazione SCEP o PFX o abilitare [Gestione delle spese per telecomunicazioni](telecom-expenses-monitor.md) nel profilo.
-
-3. Selezionare **Profili** > **Crea profilo**. Immettere le proprietà seguenti:
-
-   - **Nome**: immettere un nome descrittivo per il profilo.
-   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
-   - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:  
-
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 e versioni successive**
-       - **Windows 10 e versioni successive**
-
-   - **Tipo di profilo**: selezionare il tipo di impostazioni da creare. L'elenco visualizzato dipende dalla **piattaforma** scelta:
-
-       - [Modelli amministrativi](administrative-templates-windows.md)
-       - [Personalizzato](custom-settings-configure.md)
-       - [Ottimizzazione recapito](delivery-optimization-windows.md)
-       - [Funzionalità dei dispositivi](device-features-configure.md)
-       - [Restrizioni dei dispositivi](device-restrictions-configure.md)
-       - [Aggiornamento dell'edizione e cambio di modalità](edition-upgrade-configure-windows-10.md)
-       - [Istruzione](education-settings-configure.md)
-       - [Posta elettronica](email-settings-configure.md)
-       - [Endpoint Protection](endpoint-protection-configure.md)
-       - [Protezione dell'identità](identity-protection-configure.md)  
-       - [Modalità tutto schermo](kiosk-settings.md)
-       - [Certificato PKCS](certficates-pfx-configure.md)
-       - [Certificato SCEP](certificates-scep-configure.md)
-       - [Certificato attendibile](certificates-configure.md)
-       - [Criteri di aggiornamento](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Information Protection](windows-information-protection-configure.md)
-
-     Se ad esempio si seleziona **iOS** come piattaforma, le opzioni del tipo di profilo sono simili alle seguenti:
-
-     ![Creare un profilo iOS in Intune](./media/create-device-profile.png)
-
-4. Selezionare **Impostazioni**. Le impostazioni sono organizzate per categoria. Selezionare una categoria per visualizzare un elenco di tutte le impostazioni che è possibile configurare.
-
-5. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
-
-Per altre informazioni sui diversi tipi di profilo, vedere le sezioni successive di questo articolo.
+Questo articolo offre una panoramica dei diversi tipi di profili che è possibile creare. Usare questi profili per autorizzare o bloccare determinate funzionalità nei dispositivi.
 
 ## <a name="administrative-templates-preview"></a>Modelli amministrativi (anteprima)
 
-La funzionalità [Modelli amministrativi](administrative-templates-windows.md) include centinaia di impostazioni che è possibile configurare per Internet Explorer, OneDrive, Desktop remoto, Word, Excel e altri programmi Office e molto altro.
+La funzionalità [Modelli amministrativi](administrative-templates-windows.md) include centinaia di impostazioni che è possibile configurare per Internet Explorer, OneDrive, Desktop remoto, Word, Excel e altre applicazioni di Office.
 
-Questi modelli offrono agli amministratori una visualizzazione estremamente semplice delle impostazioni simile a quella dei criteri di gruppo, ma basata sul cloud al 100%. 
+Questi modelli offrono agli amministratori una visualizzazione semplificata delle impostazioni, simile a quella dei criteri di gruppo ma completamente basata sul cloud.
 
 Questa funzionalità supporta:
 
@@ -164,7 +110,7 @@ Questa funzionalità supporta:
 
 - Windows 10 e versioni successive
 
-Impostazioni per la modalità tutto schermo disponibili anche come restrizioni del dispositivo per [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), e [iOS](device-restrictions-ios.md#kiosk-supervised-only).
+Impostazioni per la modalità tutto schermo disponibili anche come restrizioni del dispositivo per [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), e [iOS](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>Posta elettronica
 
@@ -173,6 +119,7 @@ Il profilo [Impostazioni di posta elettronica](email-settings-configure.md) cons
 Questa funzionalità supporta: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 10 e versioni successive
@@ -186,6 +133,7 @@ Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla re
 Questa funzionalità supporta: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ Questa funzionalità supporta:
 Questa funzionalità supporta: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 (solo importazione)
@@ -211,7 +160,7 @@ La funzionalità [Profili cellulare eSIM](esim-device-configuration.md) consente
 Questa funzionalità supporta:
 - Windows 10 Fall Creators Update e versioni successive
 
-## <a name="education"></a>Istruzione
+## <a name="education"></a>Education
 
 Le [impostazioni di Education - Windows 10](education-settings-configure.md) consentono di configurare le opzioni per l'[app Test ed esami di Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
 
@@ -235,12 +184,14 @@ Questa funzionalità supporta:
 
 ## <a name="certificates"></a>Certificati
 
-Il profilo [Certificati](certificates-configure.md) consente di configurare certificati attendibili, SCEP e PKCS, assegnati ai dispositivi e usati per autenticare i profili Wi-Fi, VPN e di posta elettronica.
+Vengono configurati [certificati](certificates-configure.md) attendibili SCEP e PKCS che vengono assegnati ai dispositivi. Questi certificati autenticano i profili Wi-Fi, VPN e di posta elettronica.
 
 Questa funzionalità supporta: 
 
 - Android
+- Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 e versioni successive
@@ -255,7 +206,7 @@ Questa funzionalità supporta:
 
 ## <a name="shared-multi-user-device"></a>Dispositivo multiutente condiviso
 
-[Windows 10](shared-user-device-settings-windows.md) e [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includono le impostazioni per gestire i dispositivi con più utenti, noti anche come dispositivi condivisi o PC condivisi. Quando un utente accede al dispositivo, si sceglie se l'utente può modificare le opzioni di sospensione o salvare i file nel dispositivo. In un altro esempio è possibile creare un criterio che consente di eliminare le credenziali inattive dai dispositivi Windows HoloLens per risparmiare spazio.
+[Windows 10](shared-user-device-settings-windows.md) e [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includono le impostazioni per gestire i dispositivi con più utenti, noti anche come dispositivi condivisi o PC condivisi. Quando un utente accede al dispositivo, si sceglie se l'utente può modificare le opzioni di sospensione o salvare i file nel dispositivo. In un altro esempio è possibile creare un criterio che elimina le credenziali inattive dai dispositivi Windows HoloLens per risparmiare spazio.
 
 Queste impostazioni del dispositivo multiutente condiviso consentono agli amministratori di controllare alcune delle funzionalità del dispositivo e di gestire questi dispositivi condivisi con Intune.
 
@@ -264,21 +215,30 @@ Questa funzionalità supporta:
 - Windows 10 e versioni successive
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>Profilo personalizzato
+## <a name="zebra-mobility-extensions-mx"></a>Estensioni di mobilità nei dispositivi Zebra
 
-[Impostazioni personalizzate](custom-settings-configure.md) consente agli amministratori di assegnare impostazioni dei dispositivi non incluse in Intune. Ad esempio, nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator. 
+Le [estensioni di mobilità nei dispositivi Zebra](android-zebra-mx-overview.md) consentono agli amministratori di usare e gestire dispositivi Zebra in Intune. Occorre creare profili StageNow con le proprie impostazioni e quindi usare Intune per assegnare e distribuire questi profili ai dispositivi Zebra. L'articolo [Log di StageNow e problemi comuni](android-zebra-mx-logs-troubleshoot.md) è un'ottima risorsa per la risoluzione dei problemi relativi ai profili e per informazioni su alcuni problemi potenziali che possono verificarsi durante l'uso di StageNow.
 
 Questa funzionalità supporta:
 
 - Android
+
+## <a name="custom-profile"></a>Profilo personalizzato
+
+Le [impostazioni personalizzate](custom-settings-configure.md) consentono agli amministratori di assegnare impostazioni dei dispositivi non incluse in Intune. Nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator.
+
+Questa funzionalità supporta:
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Monitorare e risolvere problemi
 
-[Gestire i profili](device-profile-monitor.md) per controllare lo stato dei dispositivi e i profili assegnati. Ciò agevola anche la risoluzione dei conflitti grazie alla visualizzazione delle impostazioni che causano conflitto e dei profili che le contengono. La funzionalità relativa a [problemi comuni e soluzioni](device-profile-troubleshoot.md) offre un elenco di domande e risposte per aiutare a usare i profili, tra cui cosa accade quando viene eliminato un profilo, cosa fa sì che vengano inviate notifiche ai dispositivi e altro ancora.
+[Gestire i profili](device-profile-monitor.md) per controllare lo stato dei dispositivi e i profili assegnati. Ciò agevola anche la risoluzione dei conflitti grazie alla visualizzazione delle impostazioni che causano conflitto e dei profili che le contengono. [Problemi e risoluzioni comuni](device-profile-troubleshoot.md) è una risorsa utile per gli amministratori che devono gestire i profili. Descrive cosa accade quando si elimina un profilo, cosa causa l'invio di notifiche ai dispositivi e altro ancora.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Scegliere la piattaforma e iniziare a usare:
 
+Scegliere la piattaforma e iniziare.

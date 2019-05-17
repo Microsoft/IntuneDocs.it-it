@@ -1,15 +1,16 @@
 ---
 title: Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app del profilo di lavoro Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840417"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567426"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 
@@ -44,13 +45,13 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 6. Selezionare **Android** per **Piattaforma**.
 7. Selezionare **App associata** per scegliere l'app per cui definire un criterio di configurazione dell'app. Selezionare dall'elenco di app del profilo di lavoro Android che sono state approvate e sincronizzate con Intune.
 8. Selezionare **Autorizzazioni**. È possibile impostare le configurazioni usando quanto segue:
-    - [Progettazione configurazione](#Use-the-configuration-designer)
-    - [Editor JSON](#Enter-the-JSON-editor)
+    - [Progettazione configurazione](#use-the-configuration-designer)
+    - [Editor JSON](#enter-the-json-editor)
 9. Scegliere **OK** e quindi **Aggiungi**.
 
 ## <a name="use-the-configuration-designer"></a>Usare la finestra di progettazione della configurazione
 
-È possibile usare la progettazione configurazione per le app Android che supportano la configurazione. La configurazione verrà applicata ai dispositivi registrati in Intune. La progettazione consente di configurare i valori di configurazione specifici per le impostazioni esposte da un'app.
+È possibile usare la progettazione configurazione per le app Android che sono state progettate per supportare le impostazioni di configurazione. La configurazione verrà applicata ai dispositivi registrati in Intune. La progettazione consente di configurare i valori di configurazione specifici per le impostazioni esposte da un'app.
 
 Selezionare **Aggiungi** per selezionare l'elenco delle impostazioni di configurazione che si vuole specificare per l'app.  
 Per ogni chiave e valore nella configurazione, impostare:

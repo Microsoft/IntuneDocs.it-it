@@ -1,45 +1,45 @@
 ---
 title: Criteri di conformità dei dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Requisiti per l'utilizzo dei criteri di conformità, panoramica dei livelli di stato e gravità, utilizzo dello stato InGracePeriod, utilizzo dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
+description: Informazioni introduttive sull'utilizzo dei criteri di conformità, panoramica dei livelli di stato e gravità, uso dello stato Periodo di tolleranza, utilizzo dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fbed6185abe7656c3269805d1d5ed09eccbaf05e
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850003"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570429"
 ---
-# <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
+# <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Impostare regole sui dispositivi per consentire l'accesso alle risorse dell'organizzazione tramite Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Molte soluzioni di gestione di dispositivi mobili (MDM, Mobile Device Management) consentono di proteggere i dati dell'organizzazione richiedendo agli utenti e ai dispositivi di soddisfare alcuni requisiti. In Intune, questa funzionalità è detta "criteri di conformità". I criteri di conformità definiscono le regole e le impostazioni che gli utenti e i dispositivi devono soddisfare per adeguarsi ai criteri stessi. Combinando questi criteri con l'accesso condizionale, gli amministratori possono bloccare gli utenti e i dispositivi che non rispettano le regole. Un amministratore di Intune può, ad esempio, richiedere:
+Molte soluzioni di gestione di dispositivi mobili (MDM, Mobile Device Management) consentono di proteggere i dati dell'organizzazione richiedendo agli utenti e ai dispositivi di soddisfare alcuni requisiti. In Intune, questa funzionalità è detta "criteri di conformità". I criteri di conformità definiscono le regole e le impostazioni che gli utenti e i dispositivi devono soddisfare per adeguarsi ai criteri stessi. Combinando questi criteri con l'accesso condizionale, gli amministratori possono bloccare gli utenti e i dispositivi che non rispettano le regole.
+
+Un amministratore di Intune può, ad esempio, richiedere:
 
 - L'uso di una password da parte degli utenti finali per accedere ai dati dell'organizzazione nei dispositivi mobili
-
 - L'uso di un dispositivo non manomesso con jailbreak e senza accesso root
-
 - Una versione massima o minima del sistema operativo per il dispositivo
-
 - Un livello di minaccia del dispositivo corrispondente o inferiore a un certo livello
 
-È anche possibile monitorare lo stato di conformità dei dispositivi tramite criteri di conformità.
+Si può usare questa funzionalità anche per monitorare lo stato di conformità dei dispositivi dell'organizzazione.
 
 > [!IMPORTANT]
-> Intune segue la pianificazione in base alla quale il dispositivo contatta il servizio per tutte le valutazioni di conformità sul dispositivo. [Altre informazioni su questa pianificazione](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> Intune segue la pianificazione in base alla quale il dispositivo contatta il servizio per tutte le valutazioni di conformità sul dispositivo. [Altre informazioni su questa pianificazione](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -64,121 +64,74 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità del dispositivo con Azure AD
 
-Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
+Intune usa l'[accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) (apre un altro sito Web di documenti) di Azure Active Directory (AD) per applicare la conformità. Al momento della registrazione di un dispositivo in Intune, viene avviato il processo di registrazione di Azure AD e le informazioni sul dispositivo vengono aggiornate in Azure AD. Un'informazione chiave è lo stato di conformità del dispositivo. Questo stato di conformità viene usato dai criteri di accesso condizionale per bloccare o consentire l'accesso alla posta elettronica e ad altre risorse dell'organizzazione.
 
-- Uso delle sottoscrizioni seguenti:
+- Per sapere perché e in che modo i dispositivi vengono registrati in Azure AD, vedere [Informazioni sulla gestione dei dispositivi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
-  - Intune
-  - Azure Active Directory (AD) Premium
-
-- Uso di una piattaforma supportata:
-
-  - Android
-  - iOS
-  - macOS (anteprima)
-  - Windows 8.1
-  - Windows Phone 8.1
-  - Windows 10
-
-- Registrazione dei dispositivi in Intune per visualizzarne lo stato di conformità
-
-- Registrazione dei dispositivi per un solo utente o senza un utente primario. Non sono supportati dispositivi registrati per più utenti.
-
-## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità del dispositivo con Azure AD
-
-Al momento della registrazione in Intune viene avviato il processo di registrazione di Azure AD durante il quale gli attributi del dispositivo vengono aggiornati in Azure AD. Un'informazione chiave è lo stato di conformità del dispositivo. Lo stato di conformità che viene usato dai criteri di accesso condizionale per bloccare o consentire l'accesso alla posta elettronica e ad altre risorse aziendali.
-
-In [processo di registrazione di AD Azure](https://docs.microsoft.com/azure/active-directory/device-management-introduction) vengono fornite ulteriori informazioni.
-
-## <a name="refresh-cycle-times"></a>Frequenza dei cicli di aggiornamento
-
-Durante il controllo della conformità, Intune usa lo stesso ciclo di aggiornamento dei profili di configurazione. In genere, la frequenza è la seguente:
-
-- iOS: ogni sei ore
-- macOS: ogni sei ore
-- Android: ogni otto ore
-- PC Windows 10 registrati come dispositivi: ogni otto ore
-- Windows Phone: ogni otto ore
-- Windows 8.1: ogni otto ore
-
-Il controllo di conformità si verifica più di frequente immediatamente dopo che un dispositivo è stato registrato.
-
-### <a name="assign-an-ingraceperiod-status"></a>Assegnare uno stato InGracePeriod
-
-Lo stato InGracePeriod è un valore dei criteri di conformità. Questo valore è determinato dalla combinazione del periodo di tolleranza del dispositivo e dello stato effettivo del dispositivo per tale criterio di conformità.
-
-In particolare, se un dispositivo presenta uno stato NonCompliant per un criterio di conformità assegnato e:
-
-- al dispositivo non è stato assegnato alcun periodo di tolleranza, quindi il valore assegnato per il criterio di conformità è NonCompliant
-- il dispositivo ha un periodo di tolleranza scaduto, quindi il valore assegnato per il criterio di conformità è NonCompliant
-- il dispositivo ha un periodo di tolleranza futuro, quindi il valore assegnato per il criterio di conformità è InGracePeriod
-
-Nella tabella seguente sono riassunte le varie situazioni:
-
-|Stato di conformità attuale|Valore del periodo di tolleranza assegnato|Stato di conformità effettivo|
-|---------|---------|---------|
-|NonCompliant |Nessun periodo di tolleranza assegnato |NonCompliant |
-|NonCompliant |Data trascorsa|NonCompliant|
-|NonCompliant |Data futura|InGracePeriod|
-
-Per altre informazioni sul monitoraggio dei criteri di conformità dei dispositivi, vedere [Monitorare i criteri di conformità dei dispositivi di Intune](compliance-policy-monitor.md).
-
-### <a name="assign-a-resulting-compliance-policy-status"></a>Assegnare uno stato dei criteri di conformità risultante
-
-Se un dispositivo ha più criteri di conformità e il dispositivo presenta stati di conformità diversi per due o più dei criteri di conformità assegnati, verrà assegnato un unico stato di conformità risultante. Questa assegnazione si basa su un livello di gravità concettuale assegnato a ogni stato di conformità. I livelli di gravità di ogni stato di conformità sono i seguenti:
-
-|Stato  |Gravità  |
-|---------|---------|
-|Sconosciuto     |1|
-|NotApplicable     |2|
-|Conforme|3|
-|InGracePeriod|4|
-|NonCompliant|5|
-|Errore|6|
-
-Quando un dispositivo ha più criteri di conformità, viene assegnato il livello di gravità massimo di tutti i criteri per quel dispositivo.
-
-Si osservi ad esempio il caso di un dispositivo con tre criteri di conformità: uno con stato sconosciuto (gravità = 1), uno con stato conforme (gravità = 3) e uno con stato periodo di tolleranza (gravità = 4). Lo stato InGracePeriod ha il livello di gravità più alto quindi, a tutti e tre i criteri viene assegnato lo stato di conformità InGracePeriod.
+- Gli articoli [Che cos'è l'accesso condizionale?](conditional-access.md) e [Quali sono i modi comuni per usare l'accesso condizionale con Intune?](conditional-access-intune-common-ways-use.md) descrivono questa funzionalità in relazione a Intune.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Modi per usare i criteri di conformità del dispositivo
 
 #### <a name="with-conditional-access"></a>Con l'accesso condizionale
-Ai dispositivi conformi alle regole dei criteri è possibile consentire l'accesso alla posta elettronica e ad altre risorse aziendali. Se non sono conformi alle regole dei criteri, i dispositivi non ricevono l'accesso alle risorse aziendali. Questo è l'accesso condizionale.
+
+Ai dispositivi conformi alle regole dei criteri è possibile consentire l'accesso alla posta elettronica e ad altre risorse dell'organizzazione. Se non sono conformi alle regole dei criteri, i dispositivi non ottengono l'accesso alle risorse dell'organizzazione. Questo è l'accesso condizionale.
 
 #### <a name="without-conditional-access"></a>Senza l'accesso condizionale
+
 È anche possibile usare i criteri di conformità dei dispositivi senza accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile ottenere un report del numero dei dispositivi non crittografati o dei dispositivi manomessi con jailbreak o con accesso root. Quando si usano criteri di conformità senza accesso condizionale, non vengono applicate limitazioni per l'accesso alle risorse dell'organizzazione.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Modi per distribuire i criteri di conformità dei dispositivi
+
 È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente. In Windows 10 versione 1803 e nei dispositivi più recenti è consigliabile eseguire la distribuzione ai gruppi di dispositivi *se* l'utente primario non ha registrato il dispositivo. L'uso di gruppi di dispositivi in questo scenario è utile per la creazione di report di conformità.
 
-In tutti i dispositivi registrati in Intune viene valutato un set di impostazioni dei criteri di conformità predefinite (**Intune** > **Conformità del dispositivo**), tra cui:
+Intune include anche un set di impostazioni dei criteri di conformità predefiniti. I criteri predefiniti seguenti vengono valutati in tutti i dispositivi registrati in Intune:
 
 - **Contrassegna i dispositivi senza criteri di conformità assegnati come**: questa proprietà ha due valori:
 
   - **Conforme**: la funzione di sicurezza non è attiva
   - **Non conforme** (impostazione predefinita): la funzione di sicurezza è attiva
 
-  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Non conforme**. Se si usa l'accesso condizionale, è consigliabile cambiare l'impostazione in **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato alcun criterio, il Portale aziendale visualizza `No compliance policies have been assigned`.
+  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Non conforme**. Se si usa l'accesso condizionale, è consigliabile cambiare l'impostazione in **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato alcun criterio, nell'[app Portale aziendale](company-portal-app.md) viene visualizzato `No compliance policies have been assigned`.
 
 - **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva un'archiviazione più frequente dei dispositivi iOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
 
   Per l'abilitazione di questa impostazione è necessario che:
-  - Nei dispositivi siano abilitati i servizi di posizione a livello di sistema operativo
-  - I dispositivi consentano al portale aziendale di utilizzare servizi di posizione
+  - Nei dispositivi siano abilitati i servizi di posizione a livello di sistema operativo.
+  - I dispositivi consentano al portale aziendale di usare servizi di posizione.
   - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri. Se il dispositivo non si sposta di 500 metri entro 72 ore, l'utente deve aprire l'app Portale aziendale per la valutazione avanzata dello stato jailbreak.
 
 - **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 
-Tutti i dispositivi hanno un **criterio di conformità del dispositivo predefinito** (portale di Azure > Conformità del dispositivo > Conformità dei criteri). Usare questo criterio predefinito per monitorare queste impostazioni.
+È possibile usare i criteri predefiniti per monitorare queste impostazioni. Intune inoltre [aggiorna o verifica la presenza di aggiornamenti](create-compliance-policy.md#refresh-cycle-times) a diversi intervalli, a seconda della piattaforma del dispositivo. Per altre informazioni, vedere [Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune](device-profile-troubleshoot.md).
 
-Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere [Risolvere i problemi relativi ai profili dei dispositivi](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+I report di conformità sono un ottimo modo per controllare lo stato dei dispositivi. Per altre indicazioni, vedere [Monitorare i criteri di conformità](compliance-policy-monitor.md).
 
-I report di conformità sono un ottimo modo per controllare lo stato dei dispositivi. Vedere [Monitorare i criteri di conformità](compliance-policy-monitor.md) per informazioni aggiuntive.
+## <a name="non-compliance-and-conditional-access-on-the-different-platforms"></a>Mancata conformità e accesso condizionale sulle diverse piattaforme
 
-### <a name="actions-for-noncompliance"></a>Azioni per la mancata conformità
-È possibile configurare una sequenza temporale di azioni da applicare ai dispositivi che non soddisfano i criteri di conformità. Queste azioni per la non conformità possono essere automatizzate, come descritto in [Automatizzare azioni per la non conformità](actions-for-noncompliance.md).
+La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
+
+---------------------------
+
+|**Impostazione di criteri**| **Piattaforma** |
+| --- | ----|
+| **Configurazione di PIN o password** | - **Android 4.0 e versioni successive**: In quarantena</br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena</br>- **Android Enterprise**: In quarantena</br></br>- **iOS 8.0 e versioni successive**: Corretto</br>- **macOS 10.11 e versioni successive**: Corretto</br></br>- **Windows 8.1 e versioni successive**: Corretto</br>- **Windows Phone 8.1 e versioni successive**: Corretto|
+| **Crittografia dispositivo** | - **Android 4.0 e versioni successive**: In quarantena</br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena</br>- **Android Enterprise**: In quarantena</br></br>- **iOS 8.0 e versioni successive**: Corretto (impostando il PIN)</br>- **macOS 10.11 e versioni successive**: Corretto (impostando il PIN)</br></br>- **Windows 8.1 e versioni successive**: Non applicabile</br>- **Windows Phone 8.1 e versioni successive**: Corretto |
+| **Dispositivo jailbroken o rooted** | - **Android 4.0 e versioni successive**: In quarantena (non è un'impostazione)</br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena (non è un'impostazione)</br>- **Android Enterprise**: In quarantena (non è un'impostazione)</br></br>- **iOS 8.0 e versioni successive**: In quarantena (non è un'impostazione)</br>- **macOS 10.11 e versioni successive**: Non applicabile</br></br>- **Windows 8.1 e versioni successive**: Non applicabile</br>- **Windows Phone 8.1 e versioni successive**: Non applicabile |
+| **Profilo di posta elettronica** | - **Android 4.0 e versioni successive**: Non applicabile</br>- **Samsung KNOX Standard 4.0 e versioni successive**: Non applicabile</br>- **Android Enterprise**: Non applicabile</br></br>- **iOS 8.0 e versioni successive**: In quarantena</br>- **macOS 10.11 e versioni successive**: In quarantena</br></br>- **Windows 8.1 e versioni successive**: Non applicabile</br>- **Windows Phone 8.1 e versioni successive**: Non applicabile |
+| **Versione minima del sistema operativo** | - **Android 4.0 e versioni successive**: In quarantena</br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena</br>- **Android Enterprise**: In quarantena</br></br>- **iOS 8.0 e versioni successive**: In quarantena</br>- **macOS 10.11 e versioni successive**: In quarantena</br></br>- **Windows 8.1 e versioni successive**: In quarantena</br>- **Windows Phone 8.1 e versioni successive**: In quarantena |
+| **Versione massima del sistema operativo** | - **Android 4.0 e versioni successive**: In quarantena</br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena</br>- **Android Enterprise**: In quarantena</br></br>- **iOS 8.0 e versioni successive**: In quarantena</br>- **macOS 10.11 e versioni successive**: In quarantena</br></br>- **Windows 8.1 e versioni successive**: In quarantena</br>- **Windows Phone 8.1 e versioni successive**: In quarantena |
+| **Attestazione dell'integrità di Windows** | - **Android 4.0 e versioni successive**: Non applicabile</br>- **Samsung KNOX Standard 4.0 e versioni successive**: Non applicabile</br>- **Android Enterprise**: Non applicabile</br></br>- **iOS 8.0 e versioni successive**: Non applicabile</br>- **macOS 10.11 e versioni successive**: Non applicabile</br></br>- **Windows 10 e Windows 10 Mobile**: In quarantena</br>- **Windows 8.1 e versioni successive**: In quarantena</br>- **Windows Phone 8.1 e versioni successive**: Non applicabile |
+
+---------------------------
+
+**Con correzione**: il sistema operativo del dispositivo impone la conformità. Ad esempio, l'utente è obbligato a impostare un PIN.
+
+**In quarantena**: il sistema operativo del dispositivo non impone la conformità. Ad esempio, l'utente di dispositivi Android e Android Enterprise non è obbligato a crittografare il dispositivo. Se il dispositivo non è conforme, vengono eseguite le azioni seguenti:
+
+  - Se all'utente si applica un criterio di accesso condizionale, il dispositivo viene bloccato.
+  - L'app Portale aziendale segnala all'utente eventuali problemi di conformità.
 
 ## <a name="azure-classic-portal-vs-azure-portal"></a>Differenze tra portale di Azure classico e Portale di Azure
 
@@ -187,11 +140,9 @@ La differenza principale rispetto all'uso dei criteri di conformità dei disposi
 - Nel portale di Azure i criteri di conformità vengono creati separatamente per ogni piattaforma supportata
 - Nel portale di Azure classico un criterio di conformità è comune a tutte le piattaforme supportate
 
-<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>Criteri di conformità dei dispositivi nel portale classico e nel portale di Azure
 
 I criteri di conformità dei dispositivi creati nel [portale classico](https://manage.microsoft.com) non compaiono nel [portale di Azure](https://portal.azure.com). Tali criteri sono tuttavia destinati agli utenti e gestibili tramite il portale di classico.
 
@@ -199,12 +150,14 @@ Per usare le funzionalità relative alla conformità dei dispositivi nel portale
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
+- [Creare un criterio](create-compliance-policy.md) e visualizzare i prerequisiti.
+- Vedere le impostazioni di conformità per le diverse piattaforme per dispositivi:
 
   - [Android](compliance-policy-create-android.md)
-  - [Profilo di lavoro Android](compliance-policy-create-android-for-work.md)
+  - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows](compliance-policy-create-windows.md)
+  - [Windows 10 e versioni successive](compliance-policy-create-windows.md)
+  - [Windows 8.1 e Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
 
 - Per informazioni sulle entità del criterio Data warehouse di Intune, vedere [Informazioni di riferimento per le entità della categoria Policy](reports-ref-policy.md).

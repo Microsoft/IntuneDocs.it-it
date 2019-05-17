@@ -1,26 +1,28 @@
 ---
-title: Scenari di accesso condizionale | Microsoft Intune
+title: Scenari di accesso condizionale
+titleSuffix: Microsoft Intune
 description: Informazioni su come l'accesso condizionale di Intune viene usato comunemente per l'accesso condizionale basato su dispositivo e basato su app.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842763"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569376"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono i modi comuni per usare l'accesso condizionale con Intune?
 
@@ -31,7 +33,7 @@ Esistono due tipi di accesso condizionale con Intune: l'accesso condizionale bas
 Le informazioni seguenti consentono di comprendere come usare le funzionalità per la conformità dei *dispositivi* mobili di Intune e le funzionalità di gestione delle *applicazioni* per dispositivi mobili (MAM) di Intune. 
 
 > [!NOTE]
-> L'accesso condizionale è una funzionalità di Azure Active Directory inclusa con una licenza di Azure Active Directory Premium. Intune contribuisce a migliorare questa funzionalità aggiungendo la conformità dei dispositivi mobili e la gestione delle app per dispositivi mobili alla soluzione.
+> L'accesso condizionale è una funzionalità di Azure Active Directory inclusa con una licenza di Azure Active Directory Premium. Intune contribuisce a migliorare questa funzionalità aggiungendo la conformità dei dispositivi mobili e la gestione delle app per dispositivi mobili alla soluzione. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
 
 ## <a name="device-based-conditional-access"></a>Accesso condizionale basato su dispositivo
 
@@ -71,13 +73,13 @@ Se i dispositivi non soddisfano le condizioni previste, l'utente viene guidato n
 
 Intune Exchange Connector effettua il pull di tutti i record di Exchange Active Sync (EAS) presenti nel server Exchange, per consentire a Intune di acquisire questi record EAS e associarli ai record dei dispositivi di Intune. Tali record sono i dispositivi registrati e riconosciuti da Intune. Questo processo consente o blocca l'accesso alla posta elettronica.
 
-Se il record EAS è nuovo e Intune non lo riconosce, Intune invia un cmdlet che blocca l'accesso alla posta elettronica. Ecco altri dettagli sul funzionamento di questo processo:
+Se il record EAS è nuovo e Intune non lo riconosce, Intune invia un cmdlet (si pronuncia "command-let") che blocca l'accesso alla posta elettronica. Ecco altri dettagli sul funzionamento di questo processo:
 
 ![Diagramma di flusso di Exchange locale con autorità di certificazione](./media/ca-intune-common-ways-1.png)
 
 1.  L'utente tenta di accedere alla posta elettronica aziendale, ospitata in Exchange locale 2010 SP1 o versione successiva.
 
-2.  Se il dispositivo non è gestito da Intune, l'accesso alla posta elettronica sarà bloccato. Intune invia una notifica di blocco al client EAS.
+2.  Se il dispositivo non è gestito da Intune, l'accesso alla posta elettronica viene bloccato. Intune invia una notifica di blocco al client EAS.
 
 3.  EAS riceve la notifica di blocco, mette il dispositivo in quarantena e invia il messaggio di posta elettronica di quarantena con i passaggi correttivi che contengono collegamenti per consentire agli utenti di registrare i dispositivi.
 
@@ -104,7 +106,7 @@ Intune valuta e gestisce lo stato del dispositivo.
 Il server Exchange fornisce l'API e l'infrastruttura per mettere i dispositivi in quarantena.
 
 > [!IMPORTANT]
-> Tenere presente che l'utente che usa il dispositivo deve disporre di un profilo di conformità assegnato, in modo che venga valutata la conformità del dispositivo. Se all'utente non viene distribuito alcun criterio di conformità, il dispositivo viene considerato conforme e non vengono applicate restrizioni di accesso.
+> Tenere presente che all'utente che usa il dispositivo deve essere assegnato un profilo di conformità, in modo che possa essere valutata la conformità del dispositivo. Se all'utente non viene distribuito alcun criterio di conformità, il dispositivo viene considerato conforme e non vengono applicate restrizioni di accesso.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Accesso condizionale basato sul controllo di accesso alla rete
 
@@ -136,7 +138,7 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 
 -   **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è generalmente associato agli scenari CYOD (Choose Your Own Device) e con portatili roaming in cui i dispositivi si connettono raramente alla rete aziendale. Il dispositivo viene aggiunto ad Azure AD ed è registrato in Intune, che rimuove qualsiasi dipendenza da Active Directory locale e controller di dominio. Può essere usato come criterio di accesso condizionale durante l'accesso alle risorse aziendali.
 
--   **Aggiunta a un dominio AD e System Center Configuration Manager:** a partire dalla versione Current Branch, System Center Configuration Manager fornisce funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta di un PC a un dominio:
+-   **Aggiunta a un dominio AD e System Center Configuration Manager:** a partire dalla versione Current Branch, System Center Configuration Manager fornisce funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta del PC a un dominio:
 
     -   Il PC è crittografato?
 

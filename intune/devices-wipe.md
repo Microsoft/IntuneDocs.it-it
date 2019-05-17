@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846826"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570546"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Usando le azioni **Disattiva** o **Cancella**, è possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
+Usando le azioni **Disattiva** o **Cancella**, è possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi registrati in Intune.
 
 > [!NOTE]
 > Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Cancella** o **Disattiva** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non potrà più disattivare o cancellare tali dispositivi.
@@ -130,7 +131,7 @@ I dispositivi in modalità tutto schermo possono solo essere cancellati. Non è 
 
 |Tipo di dati|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|App aziendali e dati associati installati da Intune|Le chiavi vengono revocate per i file protetti da EFS. L'utente non può aprire i file.|Le app aziendali non vengono rimosse.|Vengono disinstallate le app installate inizialmente attraverso il portale aziendale e vengono rimossi i dati dell'app aziendale.|Le app vengono disinstallate Le chiavi di trasferimento locale vengono rimosse.<br>Per Windows 10 versione 1703 (Creators Update) e versioni successive, le app di Office 365 ProPlus non vengono rimosse.|
+|App aziendali e dati associati installati da Intune|Le chiavi vengono revocate per i file protetti da EFS. L'utente non può aprire i file.|Le app aziendali non vengono rimosse.|Vengono disinstallate le app installate inizialmente attraverso il portale aziendale e vengono rimossi i dati dell'app aziendale.|Le app vengono disinstallate Le chiavi di trasferimento locale vengono rimosse.<br>Per Windows 10 versione 1703 (Creators Update) e versioni successive, le app di Office 365 ProPlus non vengono rimosse. Le app Win32 installate dall'estensione di gestione di Intune non verranno disinstallate nei dispositivi di cui è stata annullata la registrazione. Gli amministratori possono sfruttare l'esclusione di assegnazione per non offrire l'app Win32 ai dispositivi BYOD.|
 |Impostazioni|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|Non supportata.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|Certificati rimossi e revocati.|Non supportata.|Certificati rimossi e revocati.|
@@ -166,7 +167,7 @@ Per rimuovere i dispositivi dal portale di Intune, è possibile eliminarli dal r
 
 A causa di problemi di comunicazione o dispositivi mancanti può essere necessario eliminare dispositivi da Azure AD. È possibile usare l'azione **Elimina** per rimuovere dal portale di Azure i record dei dispositivi che sono sicuramente irraggiungibili e che molto probabilmente non comunicheranno più con Azure. L'azione **Elimina** non rimuove un dispositivo dalla gestione.
 
-1.  Accedere ad [Azure Active Directory nel portale di Azure](http://aka.ms/accessaad) usando le proprie credenziali di amministratore. È anche possibile accedere al [portale di Office 365](https://portal.office.com). Nel menu selezionare **Interfacce di amministrazione** > **Azure AD**.
+1.  Accedere ad [Azure Active Directory nel portale di Azure](http://aka.ms/accessaad) usando le proprie credenziali di amministratore. È anche possibile accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Nel menu selezionare **Interfacce di amministrazione** > **Azure AD**.
 2.  Creare una sottoscrizione di Azure, se non se ne possiede una. Se si ha un account a pagamento, per questa operazione non è necessario usare una carta di credito o effettuare un pagamento. Selezionare il collegamento per la sottoscrizione relativo alla **registrazione gratuita di Azure Active Directory**.
 3.  Selezionare **Azure Active Directory** e quindi l'organizzazione.
 4.  Selezionare la scheda **Utenti**.

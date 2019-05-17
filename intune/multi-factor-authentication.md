@@ -1,27 +1,28 @@
 ---
 title: Richiedere l'autenticazione a più fattori per la registrazione di dispositivi Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Come richiedere l'autenticazione a più fattori in Azure AD per la registrazione di dispositivi Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834093"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568791"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Richiedere l'autenticazione a più fattori per le registrazioni di dispositivi Intune
 
@@ -50,11 +51,10 @@ Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, segu
 >Non configurare le **regole di accesso in base al dispositivo** per la registrazione di Microsoft Intune.
 
 1. Accedere al [portale di Microsoft Azure](https://portal.azure.com) con le credenziali personali.
-2. Nel portale passare ad **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. In **Azure Active Directory** in Sicurezza, scegliere **[Accesso condizionale](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. Nel portale passare a **Intune** e scegliere **Accesso condizionale**. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.
 4. Scegliere **Nuovo criterio**.
 5. In **Nuovo** criterio digitare un nome descrittivo per il criterio.
-6. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**.
+6. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**. 
 7. In **Utenti e gruppi** scegliere **Selezionare utenti o gruppi** e selezionare **Utenti e gruppi**. Quindi selezionare gli utenti e/o i gruppi che riceveranno questi criteri e scegliere **Fine**.
 8. Nella sezione **Assegnazioni** scegliere **App cloud**.
 9. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**.

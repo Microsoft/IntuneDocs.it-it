@@ -1,27 +1,29 @@
 ---
 title: Rilasciare certificati PKCS Symantec con Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Installare e configurare Connettore di certificati di Intune per rilasciare certificati PKCS dal servizio Web PKI Manager di Symantec ai dispositivi gestiti da Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da57b14f8196251ee8c77de3ffcd48f5b586a12f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186869"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567712"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configurare Connettore di certificati di Intune per il servizio Web PKI Manager di Symantec
 
@@ -64,7 +66,7 @@ Se si usa già Connettore di certificati di Intune per una CA Microsoft esistent
 
 Usare la procedura seguente per ottenere il certificato di registrazione dell'autorità (RA) dalla CA Symantec. Per ottenere il certificato RA, è necessaria una sottoscrizione attiva per la CA Symantec.
 
-1. Salvare il frammento di codice seguente come file denominato **certreq.ini** e aggiornarlo in base alle esigenze. Ad esempio: sostituire *Subject name in CN format* (Nome soggetto in formato CN).
+1. Salvare il frammento di codice seguente come file denominato **certreq.ini** e aggiornarlo in base alle esigenze. Ad esempio: *Nome soggetto in formato CN*.
 
    ```
     [Version] 
@@ -313,7 +315,7 @@ Sono disponibili log del servizio Connettore di certificati di Intune in `%Progr
 | NDES Connector - IssuePfx -Eccezione generica: <br> System.NullReferenceException: Riferimento oggetto non impostato su un'istanza di un oggetto. | Questo errore è temporaneo. Riavviare Connettore del servizio Intune. <br><br> 1. Aprire services.msc <br> 2. Selezionare **Servizio Intune Connector** <br> 3. Fare clic con il pulsante destro del mouse e scegliere **Riavvia**. |
 | Provider Symantec: Impossibile ottenere i criteri Symantec "Timeout dell'operazione" | Connettore di certificati di Intune ha ricevuto l'errore di timeout dell'operazione durante la comunicazione con la CA Symantec. Se l'errore persiste, aumentare il valore di timeout di connessione e riprovare. <br><br> Per aumentare il timeout della connessione: <br> 1. Passare al computer NDES Connector. <br>2. Aprire il file `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` nel Blocco note. <br> 3. Aumentare il valore di timeout per il parametro seguente: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Riavviare il servizio Intune Connector. <br><br> Se il problema persiste, contattare il supporto tecnico clienti Symantec. |
 | Provider Symantec: Impossibile ottenere il certificato client | Connettore di certificati di Intune non è riuscito a recuperare il certificato RA dall'archivio certificati Computer locale-Personale. Per risolvere questo problema, assicurarsi di installare il certificato RA nell'archivio certificati Computer locale-Personale insieme alla relativa chiave privata. <br><br> **Nota:** il certificato RA deve essere ottenuto dalla CA Symantec. Per altri dettagli, contattare il supporto tecnico clienti Symantec. | 
-| Provider Symantec: Impossibile ottenere i criteri Symantec "Richiesta interrotta: Impossibile creare il canale sicuro SSL/TLS." | Questo errore si verifica negli scenari seguenti: <br><br> 1. Il servizio Connettore di certificati di Intune non dispone di autorizzazioni sufficienti per leggere il certificato RA insieme alla relativa chiave privata dall'archivio certificati Computer locale-Personale. Per risolvere questo problema, controllare l'account del contesto di esecuzione del servizio Connettore in services.msc. Il servizio Connettore deve essere eseguito nel contesto di NT AUTHORITY\SYSTEM. <br><br> 2. Il profilo certificato PKCS nel portale di amministrazione di Intune potrebbe essere configurato con nome di dominio completo del servizio di base della CA Symantec. Il nome di dominio completo è simile a `pki-ws.symauth.com`. Per risolvere questo problema, rivolgersi al supporto tecnico clienti Symantec per verificare se l'URL è corretto per la sottoscrizione. <br><br> 3. Connettore di certificati di Intune non riesce a eseguire l'autenticazione con la CA Symantec usando il certificato RA perché non è in grado di recuperare la chiave privata. Per risolvere questo problema, assicurarsi di installare il certificato RA nell'archivio e la relativa chiave privata nell'archivio certificati Computer locale-Personale. <br><br> Se il problema persiste, contattare il supporto tecnico clienti Symantec. |
+| Provider Symantec: Impossibile ottenere i criteri Symantec "Richiesta terminata: Impossibile creare un canale sicuro SSL/TLS". | Questo errore si verifica negli scenari seguenti: <br><br> 1. Il servizio Connettore di certificati di Intune non dispone di autorizzazioni sufficienti per leggere il certificato RA insieme alla relativa chiave privata dall'archivio certificati Computer locale-Personale. Per risolvere questo problema, controllare l'account del contesto di esecuzione del servizio Connettore in services.msc. Il servizio Connettore deve essere eseguito nel contesto di NT AUTHORITY\SYSTEM. <br><br> 2. Il profilo certificato PKCS nel portale di amministrazione di Intune potrebbe essere configurato con nome di dominio completo del servizio di base della CA Symantec. Il nome di dominio completo è simile a `pki-ws.symauth.com`. Per risolvere questo problema, rivolgersi al supporto tecnico clienti Symantec per verificare se l'URL è corretto per la sottoscrizione. <br><br> 3. Connettore di certificati di Intune non riesce a eseguire l'autenticazione con la CA Symantec usando il certificato RA perché non è in grado di recuperare la chiave privata. Per risolvere questo problema, assicurarsi di installare il certificato RA nell'archivio e la relativa chiave privata nell'archivio certificati Computer locale-Personale. <br><br> Se il problema persiste, contattare il supporto tecnico clienti Symantec. |
 | Provider Symantec: Impossibile ottenere i criteri Symantec "Un elemento della richiesta non è comprensibile." | Connettore di certificati di Intune non è riuscito a ottenere il modello di profilo certificato di Symantec, perché l'OID del profilo client non corrisponde al profilo del certificato di Intune. In un altro caso, Connettore di certificati di Intune non riesce a trovare il modello di profilo certificato associato all'OID di profilo client specificato nella CA Symantec. <br><br> Per risolvere questo problema, assicurarsi di ottenere l'OID di profilo client corretto dal modello di certificato Symantec nella CA Symantec. Aggiornare quindi il profilo del certificato PKCS nel portale di amministrazione di Intune. <br><br> Ottenere l'OID del profilo client dalla CA Symantec: <br> 1. Accedere al portale di amministrazione della CA Symantec. <br> 2. Fare clic su Manage Certificate Profiles (Gestisci profili certificato). <br> 3. Selezionare il profilo certificato che si vuole usare. <br> 4. Ottenere l'OID del profilo certificato. Questo ID è simile al seguente: <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> Aggiornare il profilo certificato PKCS con l'OID del profilo certificato corretto: <br>1. Accedere al portale di amministrazione di Intune. <br> 2. Passare al profilo certificato PKCS e fare clic su **Modifica**. <br> 3. Aggiornare l'OID del profilo certificato nel campo Nome modello di certificato. <br> 4. Salvare il profilo certificato PKCS. |
 | Provider Symantec: Verifica dei criteri non riuscita. <br><br> L'attributo non rientra nell'elenco degli attributi per i modelli di certificato supportati di Symantec | La CA Symantec mostra questo messaggio quando è presente una discrepanza tra il modello di profilo certificato Symantec e il profilo certificato di Intune. Questo problema si è verificato probabilmente a causa di attributi non corrispondenti in SubjectName o SubjectAltName. <br><br> Per risolvere questo problema, assicurarsi di selezionare attributi supportati da Intune per SubjectName e SubjectAltName nel modello di profilo certificato di Symantec. Per altre informazioni, vedere gli attributi supportati da Intune nella sezione relativi ai parametri del certificato. |
 | Alcuni dispositivi utente non ricevono certificati PKCS dalla CA Symantec. | Questo problema si verifica quando il nome dell'entità utente contiene caratteri speciali come il carattere di sottolineatura, ad esempio: `global_admin@intune.onmicrosoft.com`. <br><br> La CA Symantec non supporta caratteri speciali in mail_firstname e mail_lastname. <br><br> La procedura seguente consente di risolvere il problema: <br><br> 1.   Accedere al portale di amministrazione della CA Symantec. <br> 2. Passare a Manage Certificate Profiles (Gestisci profili certificato). <br> 3.   Fare clic sul profilo di certificato usato per Intune. <br> 4.  Fare clic sul collegamento Customize options (Opzioni di personalizzazione). <br> 5.   Fare clic sul pulsante Advanced options (Opzioni avanzate). <br> 6.  In Certificate fields – Subject DN (Campi certificato - DN soggetto) aggiungere il campo Common Name (CN) (Nome comune - CN) ed eliminare il campo esistente Common Name (CN) (Nome comune - CN). L'aggiunta e l'eliminazione devono essere eseguite insieme. <br> 7.    Fare clic su Save (Salva). <br><br> Con la modifica precedente, il profilo certificato di Symantec richiede "CN =<upn>" anziché mail_firstname e mail_lastname. |

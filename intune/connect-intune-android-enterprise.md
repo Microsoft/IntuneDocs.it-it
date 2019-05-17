@@ -1,15 +1,16 @@
 ---
-title: Connettere l'account di Intune all'account Android Enterprise
-titlesuffix: Microsoft Intune
-description: Informazioni su come connettere l'account di Intune all'account Android Enterprise.
+title: Connettere l'account di Intune all'account di Google Play gestito.
+titleSuffix: Microsoft Intune
+description: Informazioni su come connettere l'account di Intune all'account di Google Play gestito.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838259"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567387"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Connettere l'account di Intune all'account Android Enterprise
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Connettere l'account di Intune all'account di Google Play gestito
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Per supportare [il profilo di lavoro Android](android-work-profile-enroll.md) e i [dispositivi Android completamente gestiti](android-fully-managed-enroll.md) e [dedicati](android-kiosk-enroll.md), è necessario connettere l'account del tenant di Intune all'account Android Enterprise.  
+Per supportare il [profilo di lavoro Android Enterprise](android-work-profile-enroll.md) e i [dispositivi Android Enterprise completamente gestiti](android-fully-managed-enroll.md) e [dedicati](android-kiosk-enroll.md), è necessario connettere l'account del tenant di Intune all'account di Google Play gestito.  
 
 > [!NOTE]
 > A causa dell'interazione tra i domini Google e Microsoft, questa procedura potrebbe richiedere la modifica delle impostazioni del browser.  Verificare che "portal.azure.com" e "play.google.com" si trovino nella stessa area di sicurezza del browser.
@@ -53,7 +54,7 @@ Per supportare [il profilo di lavoro Android](android-work-profile-enroll.md) e 
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Disconnettere l'account amministrativo di Android Enterprise
 
-È possibile disattivare la registrazione e la gestione di Android Enterprise. A tale scopo, è prima necessario ritirare tutti i dispositivi del profilo di lavoro Android registrati. Scegliere quindi **Disconnetti** nella console di amministrazione di Intune per annullare la registrazione di tutti i dispositivi del profilo di lavoro Android e dei dispositivi in modalità tutto schermo registrati. L'operazione rimuove anche la relazione tra l'account Android Enterprise e Intune.
+È possibile disattivare la registrazione e la gestione di Android Enterprise. A tale scopo occorre prima ritirare tutti i dispositivi con profilo di lavoro Android Enterprise registrati. Scegliere quindi **Disconnetti** nella console di amministrazione di Intune per annullare la registrazione di tutti i dispositivi con profilo di lavoro Android Enterprise e dei dispositivi dedicati registrati. L'operazione rimuove anche la relazione tra l'account di Google Play gestito e Intune.
 
 1. Come amministratore di Intune, nel [portale di Azure](https://portal.azure.com) scegliere **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**.
 2. Scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Google Play gestito** > **Disconnetti**.
@@ -61,4 +62,4 @@ Per supportare [il profilo di lavoro Android](android-work-profile-enroll.md) e 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo la connessione all'account di Android Enterprise, è possibile [configurare i dispositivi del profilo di lavoro Android](android-work-profile-enroll.md) e [configurare i dispositivi Android in modalità tutto schermo](android-kiosk-enroll.md).
+Dopo la connessione all'account di Google Play gestito, è possibile [configurare i dispositivi con profilo di lavoro Android Enterprise](android-work-profile-enroll.md) e [configurare i dispositivi Android Enterprise dedicati](android-kiosk-enroll.md).

@@ -1,15 +1,16 @@
 ---
 title: Impostare restrizioni di registrazione in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Limitare la registrazione dalla piattaforma e impostare un limite di registrazione dei dispositivi in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839672"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569116"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -42,10 +43,11 @@ Le restrizioni di registrazione specifiche che è possibile creare includono:
   - iOS
   - macOS
   - Windows
-- Versione del sistema operativo della piattaforma per iOS, Android, profilo di lavoro Android e Windows. (È possibile usare solo le versioni di Windows 10. Lasciare questo campo vuoto se è consentito Windows 8.1.)
+  - Windows Mobile
+- Versione del sistema operativo della piattaforma per iOS, Android, profilo di lavoro Android, Windows e Windows Mobile. (È possibile usare solo le versioni di Windows 10. Lasciare questo campo vuoto se è consentito Windows 8.1.)
   - Versione minima.
   - Versione massima.
-- Limitare i dispositivi personali (solo iOS, Android, profilo di lavoro Android, macOS e Windows).
+- Limitare i dispositivi personali (solo iOS, Android, profilo di lavoro Android, macOS, Windows e Windows Mobile).
 
 ## <a name="default-restrictions"></a>Restrizioni predefinite
 
@@ -73,7 +75,7 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 1. Accedere al portale di Azure.
 2. Selezionare **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
 3. Selezionare **Registrazione del dispositivo** > **Restrizioni registrazione**.
-4. In **Restrizioni sul tipo di dispositivi** > scegliere la restrizione che si vuole impostare > **Proprietà** > **Seleziona le piattaforme**. Scegliere **Consenti** o **Blocca** per ogni piattaforma elencata.
+4. In **Restrizioni dei tipi di dispositivo** scegliere la restrizione che si vuole impostare > **Proprietà** > **Seleziona le piattaforme**. Scegliere **Consenti** o **Blocca** per ogni piattaforma elencata.
     ![Acquisizione schermo per consentire o bloccare una piattaforma](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Scegliere **OK**.
 6. Scegliere **Configura piattaforme**.
@@ -98,12 +100,12 @@ Se si blocca la registrazione dei dispositivi Windows personali, Intune verifica
 I metodi seguenti si qualificano per essere autorizzati come registrazione aziendale Windows:
  - L'utente che esegue la registrazione usa un [account del manager di registrazione dispositivi]( device-enrollment-manager-enroll.md).
 - Il dispositivo viene registrato tramite [Windows AutoPilot](enrollment-autopilot.md).
-- Il dispositivo viene registrato con Windows Autopilot ma non è un'opzione solo registrazione al software MDM dalle impostazioni di Windows.
+- Il dispositivo viene registrato con Windows Autopilot ma non è un'opzione di sola registrazione MDM dalle impostazioni di Windows.
 - Il numero IMEI del dispositivo è indicato in **Registrazione del dispositivo** > **[Identificatori dei dispositivi aziendali](corporate-identifiers-add.md)**. (Funzionalità non supportata per Windows Phone 8.1.)
 - Il dispositivo viene registrato tramite un [pacchetto di provisioning in blocco](windows-bulk-enroll.md).
 - Il dispositivo viene registrato tramite un oggetto Criteri di gruppo o la [registrazione automatica da SCCM per la co-gestione](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
-Le registrazioni seguenti sono contrassegnate come aziendali da Intune, ma dal momento che non offrono all'amministratore di Intune il controllo per ogni dispositivo, verranno bloccate:
+Le registrazioni seguenti sono contrassegnate come aziendali da Intune, ma dal momento che non offrono all'amministratore di Intune il controllo per ogni dispositivo, vengono bloccate:
  - La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con l'[aggiunta ad Azure Active Directory durante la configurazione di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [aggiunta ad Azure Active Directory dalle impostazioni di Windows](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -126,9 +128,20 @@ Verranno bloccati anche i seguenti metodi di registrazione personale:
 6. Selezionare **Salva**.
 
 
-Durante le registrazioni BYOD viene visualizzata una notifica che informa gli utenti quando raggiungono il limite di dispositivi registrati. Ad esempio, in iOS la notifica è simile alla seguente:
+Durante le registrazioni BYOD viene visualizzata una notifica che informa gli utenti quando raggiungono il limite di dispositivi registrati. Ad esempio, in iOS:
 
 ![notifica iOS per il limite di dispositivi](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> Le restrizioni sul limite di dispositivi non vengono applicate ai tipi di registrazione di Windows seguenti:
+> - Registrazioni con co-gestione
+> - Registrazioni di oggetti Criteri di gruppo
+> - Registrazioni aggiunte ad Azure Active Directory
+> - Registrazioni in blocco aggiunte ad Azure Active Directory
+> - Registrazioni di AutoPilot
+>
+> Le restrizioni sul limite di dispositivi non vengono applicate a questi tipi di registrazione perché sono considerati scenari di dispositivi condivisi.
+> È possibile impostare limiti rigidi per questi tipi di registrazione [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## <a name="change-enrollment-restriction-priority"></a>Modificare la priorità delle restrizioni di registrazione
 

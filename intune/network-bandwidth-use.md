@@ -1,15 +1,16 @@
 ---
 title: Requisiti e dettagli della larghezza di banda di rete per Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Requisiti di configurazione e dettagli della larghezza di banda di rete per Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
+ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840944"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570793"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Requisiti di configurazione di rete di Intune e larghezza di banda
 
@@ -67,11 +68,16 @@ Di seguito vengono riportate alcune impostazioni tipiche da usare per un server 
 |         Dimensione della cache         |             da 5 a 30 GB             | Il valore varia in base al numero di computer client della rete e alle configurazioni usate. Per evitare che i file vengano eliminati troppo presto, regolare le dimensioni della cache per l'ambiente. |
 | Dimensione del file nella singola cache |                950 MB                 |                                                                     L'impostazione potrebbe non essere disponibile in tutti i server proxy per la memorizzazione nella cache.                                                                     |
 |   Tipi di oggetto da memorizzare nella cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               I pacchetti Intune sono file CAB recuperati tramite download del Servizio trasferimento intelligente in Background (BITS) su HTTP.                                               |
+> [!NOTE]
+> Se si usa un server proxy per memorizzare nella cache le richieste di contenuti, la comunicazione viene crittografata solo tra il client e il proxy e dal proxy a Intune. La connessione dal client a Intune non viene crittografata end-to-end.
 
 Per informazioni sull'utilizzo di un server proxy per memorizzare contenuto nella cache, vedere la documentazione per la soluzione server proxy in uso.
 
-### <a name="use-background-intelligent-transfer-service-on-computers"></a>Usare Servizio trasferimento intelligente in background sui computer
-Intune supporta l'uso di Servizio trasferimento intelligente in background (BITS) in un computer Windows per diminuire l'uso di larghezza di banda di rete durante le ore configurate. È possibile configurare i criteri per BITS nella pagina **Larghezza di banda di rete** del criterio Agente di Intune.
+### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Usare Servizio trasferimento intelligente in background (BITS) nei computer
+Durante gli orari configurati è possibile usare BITS in un computer Windows per ridurre la larghezza di banda della rete. È possibile configurare i criteri BITS nella pagina **Larghezza di banda di rete** del criterio Agente di Intune.
+
+> [!NOTE]
+> Per la gestione di dispositivi mobili in Windows, solo l'interfaccia di gestione del sistema operativo per il tipo di app MobileMSI usa BITS per il download. AppX e MsiX usano il proprio stack di download non BITS e le app Win32 tramite l'agente di Intune usano Ottimizzazione recapito invece di BITS.
 
 Per altre informazioni su BITS e sui computer Windows, vedere [Servizio trasferimento intelligente in background](http://technet.microsoft.com/library/bb968799.aspx) nella libreria TechNet.
 
@@ -85,22 +91,22 @@ I client di Intune possono usare BranchCache per ridurre il traffico WAN. I sist
 
 Per usarlo nel computer client, BranchCache deve essere abilitato e configurato per la **modalità cache distribuita**.
 
-Per impostazione predefinita, BranchCache e la modalità cache distribuita vengono abilitati nei computer quando viene installato il client di Intune. Tuttavia, se i criteri di gruppo hanno disabilitato BranchCache, Intune non ignora i criteri e BranchCache rimane disabilitato.
+Quando il client di Intune è installato nei computer, BranchCache e la modalità cache distribuita sono abilitati per impostazione predefinita. Tuttavia, se i criteri di gruppo hanno disabilitato BranchCache, Intune non esegue l'override dei criteri e BranchCache rimane disabilitato.
 
 Se si usa BranchCache, collaborare con gli altri amministratori dell'organizzazione per la gestione dei criteri di gruppo e dei criteri firewall di Intune. Assicurarsi che non distribuiscano criteri che disabilitano BranchCache o le eccezioni del firewall. Per altre informazioni su BranchCache, vedere [Panoramica di BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Requisiti per le comunicazioni di rete
 
-Abilitare le comunicazioni di rete tra i dispositivi gestiti e i siti Web richiesti per i servizi basati su cloud.
+Abilitare le comunicazioni di rete tra i dispositivi gestiti e gli endpoint necessari per i servizi basati sul cloud.
 
-Intune non usa alcuna infrastruttura locale (come server che eseguono il software Intune), ma esistono delle opzioni per usare l'infrastruttura locale, tra cui gli strumenti di sincronizzazione di Exchange e Active Directory.
+Essendo un servizio basato solo sul cloud, Intune non ha bisogno di un'infrastruttura locale come server o gateway.
 
-Per gestire i computer protetti da firewall e i server proxy, è necessario abilitare le comunicazioni per Intune.
+Per gestire i dispositivi protetti da firewall e i server proxy, è necessario abilitare le comunicazioni per Intune.
 
--   Il server proxy deve supportare sia **HTTP (80)** che **HTTPS (443)** perché i client di Intune usano entrambi i protocolli
--   Intune richiede l'accesso del server proxy non autenticato a manage.microsoft.com per alcune operazioni, ad esempio il download di software e aggiornamenti
+- Il server proxy deve supportare sia **HTTP (80)** che **HTTPS (443)** perché i client di Intune usano entrambi i protocolli
+- Per alcune attività, ad esempio il download di aggiornamenti software, Intune richiede l'accesso del server proxy non autenticato a manage.microsoft.com
 
-È possibile modificare le impostazioni del server proxy per i singoli computer client o usare le impostazioni di Criteri di gruppo per modificare le impostazioni di tutti i computer client protetti da uno specifico server proxy.
+È possibile modificare le impostazioni del server proxy nei singoli computer client. È anche possibile usare le impostazioni di Criteri di gruppo per modificare le impostazioni di tutti i computer client protetti da un server proxy specificato.
 
 
 <!--
@@ -113,41 +119,12 @@ Nelle tabelle seguenti sono elencati i servizi e le porte a cui accede il client
 |**Domini**|**Indirizzo IP**|
 |---------------------|-----------|
 |login.microsoftonline.com | Altre informazioni sono disponibili in [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
-|portal.manage.microsoft.com<br> m.manage.microsoft.com |40.86.181.86<br>13.82.59.78<br>13.74.184.100<br>40.68.188.2<br>13.75.42.6<br>52.230.25.184 |
+|portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
-|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 <br>52.234.146.75 |
-|portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com |13.64.196.170|
-|fei.msua01.manage.microsoft.com<br> portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com |40.71.34.120 |
-|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com |13.64.198.190|
-|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br> m.fei.msua02.manage.microsoft.com |  13.64.198.190|
-|fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |13.64.188.173|
-|fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |40.71.32.174|
-|fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com |13.64.197.181 |
-|fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com |40.71.38.205|
-|fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com |13.64.191.182 |
-|fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com |40.71.37.51 |
-|fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com |40.118.250.246 |
-|fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com |13.90.142.194 |
-|fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com |13.64.250.226 |
-|fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com |13.90.151.142 |
-|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com |52.169.155.165 |
-|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com |52.174.188.97 |
-|fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com |52.178.190.24 |
-|fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com |52.174.16.215 |
-|fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com |40.69.69.27 |
-|fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com |52.166.196.199 |
-|fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com |40.69.71.164 |
-|fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com |52.174.182.102 |
-|fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com |40.69.78.145 |
-|fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com |52.174.192.105 |
-|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com |13.94.46.250|
-|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com |52.163.119.15 |
-|fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com |13.75.124.145 |
-|fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com |52.163.119.5|
-|fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.175.35.226|
-|fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
-|fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
-|fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
+|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 40.83.123.72<br>13.76.177.110<br>52.169.9.87<br>52.174.26.23<br>104.40.82.191<br>13.82.96.212|
+|fei.msua01.manage.microsoft.com<br>portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com<br>fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com<br>fei.msua04.manage.microsoft.com<br>portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com<br>fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com<br>fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com<br>fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com<br>fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com<br>fei.amsua0202.manage.microsoft.com <br>portal.fei.amsua0202.manage.microsoft.com <br>m.fei.amsua0202.manage.microsoft.com<br>fei.amsua0402.manage.microsoft.com <br>portal.fei.amsua0402.manage.microsoft.com <br>m.fei.amsua0402.manage.microsoft.com|52.160.70.20<br>52.168.54.64 |
+|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com<br>fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com<br>fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com<br>fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com<br>fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com<br>fei.amsub0202.manage.microsoft.com <br>portal.fei.amsub0202.manage.microsoft.com <br>m.fei.amsub0202.manage.microsoft.com<br>fei.amsub0302.manage.microsoft.com <br>portal.fei.amsub0302.manage.microsoft.com <br>m.fei.amsub0302.manage.microsoft.com|52.138.193.149<br>51.144.161.187|
+|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com<br>fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com<br>fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com<br>fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com|52.175.12.209<br>20.188.107.228|
 |fef.msua01.manage.microsoft.com|138.91.243.97|
 |fef.msua02.manage.microsoft.com|52.177.194.236|
 |fef.msua04.manage.microsoft.com|23.96.112.28|
@@ -156,25 +133,38 @@ Nelle tabelle seguenti sono elencati i servizi e le porte a cui accede il client
 |fef.msua07.manage.microsoft.com|52.175.208.218|
 |fef.msub01.manage.microsoft.com|137.135.128.214|
 |fef.msub02.manage.microsoft.com|137.135.130.29|
-|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub03.manage.microsoft.com|52.169.82.238|
 |fef.msub05.manage.microsoft.com|23.97.166.52|
 |fef.msuc01.manage.microsoft.com|52.230.19.86|
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+|fef.amsua0202.manage.microsoft.com|52.165.165.17|
+|fef.amsua0402.manage.microsoft.com|40.69.157.122|
+|fef.amsua0502.manage.microsoft.com|13.85.68.142|
+|fef.amsua0602.manage.microsoft.com|52.161.28.64|
+|fef.amsub0102.manage.microsoft.com|40.118.98.207|
+|fef.amsub0202.manage.microsoft.com|40.69.208.122|
+|fef.amsub0302.manage.microsoft.com|13.74.145.65|
 |enterpriseregistration.windows.net|52.175.211.189|
+|Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
+|wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
+|mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
+
+
+
+
+
 
 ### <a name="apple-device-network-information"></a>Informazioni di rete dei dispositivi Apple
 
-|         HostName         |                                        URL (indirizzo IP/subnet)                                        |  Protocollo  |     Porta     |                          Dispositivo                           |
-|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
-|      Console di amministrazione       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS e macOS                    |
-|      Console di amministrazione       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS e macOS                    |
-|      Console di amministrazione       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS e macOS                    |
-|        Server PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Per messaggi cloud di Apple iOS e macOS.          |
-|     Servizi per dispositivi      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
-|     Servizi per dispositivi      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
-|     Servizi per dispositivi      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
-| Dispositivi (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 e 443 | Solo Apple. &#39;#&#39; è un numero casuale compreso tra 0 e 200. |
-| Dispositivi (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 o 443   |                        Solo Apple                         |
 
+|Utilizzato per|Nome host (indirizzo IP/subnet)|Protocollo|Porta|
+|-----|--------|------|-------|
+|Ricezione di notifiche push dal servizio Intune tramite Apple Push Notification Service (APNS). Vedere la documentazione di Apple [qui](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
+|Invio di feedback al servizio Intune tramite Apple Push Notification Service (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
+|Recupero e visualizzazione di contenuto dai server Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
+|Comunicazioni con i server del servizio APN|#-courier.push.apple.com (17.0.0.0/8)<br>'#' è un numero casuale compreso tra 0 e 50.|    TCP     |  5223 e 443  |
+|Varie funzionalità tra cui l'acceso al World Wide Web, iTunes Store, App Store macOS, messaggistica e così via. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 o 443   |
+
+Per altre informazioni, vedere gli articoli di Apple [Porte TCP e UDP usate dai prodotti software Apple](https://support.apple.com/en-us/HT202944), [Informazioni sui processi in background e le connessioni host ai server macOS, iOS e iTunes](https://support.apple.com/en-us/HT201999) e [Se i tuoi client macOS e iOS non ricevono le notifiche push di Apple](https://support.apple.com/en-us/HT203609).

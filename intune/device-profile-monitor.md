@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186597"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391717"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorare i profili di dispositivo in Microsoft Intune
 
@@ -66,8 +68,8 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
 5. Selezionare un profilo specifico nell'elenco **Profili**. È anche possibile modificare le proprietà esistenti:
   - **Proprietà**: modificare il nome o aggiornare le impostazioni esistenti.
   - **Assegnazioni**: includere o escludere i dispositivi a cui applicare i criteri. Scegliere **Gruppi selezionati** per scegliere gruppi specifici.
-  - **Stato del dispositivo**: sono elencati i dispositivi assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. È possibile selezionare un dispositivo specifico per ottenere altri dettagli, incluse le app installate.
-  - **Stato dell'utente**: elenca i nomi degli utenti con i dispositivi interessati da questo profilo e indica se il profilo è stato distribuito correttamente. È possibile selezionare un utente specifico per ottenere altri dettagli.
+  - **Stato dispositivo**: Sono elencati i dispositivi assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. È possibile selezionare un dispositivo specifico per ottenere altri dettagli, incluse le app installate.
+  - **Stato dell'utente**: elenca i nomi degli utenti con dispositivi interessati da questo profilo e indica se il profilo è stato distribuito correttamente. È possibile selezionare un utente specifico per ottenere altri dettagli.
   - **Stato per singola impostazione**: filtra l'output visualizzando le singole impostazioni nel profilo e indica se l'impostazione è stata applicata correttamente.
 
 ## <a name="view-conflicts"></a>Visualizzare i conflitti

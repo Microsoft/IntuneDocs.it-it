@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 04/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c379c8db-788a-454e-9098-665ea3bc7b56
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a0678e562ab7b63c99f10c455837cf03ee30da21
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89d6b21fd5bbc690d533695ead0b5b207ddeb6c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178780"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57392266"
 ---
 # <a name="data-google-sends-to-intune"></a>Dati inviati da Google a Intune
 
@@ -35,8 +37,8 @@ Nella tabella seguente sono elencati i dati che Google invia a Intune quando la 
 | Dati inviati da Google a Intune | Dettagli | Utilizzato per | Esempio |
 |:---:|:---:|:---:|:---:|
 | Dati aziendali | Identificatori aziendali del cliente in Google. | Collegare le informazioni del cliente tra Intune e Google. | Esempio di **enterpriseId**: LC04eik8a6.<br>**Nome**. Nome dell'amministratore immesso durante la configurazione di Android Enterprise. Esempio: Joe Smith.<br>**Posta elettronica amministratore**. YourAdmin@gmail.com usato durante la configurazione di Android Enterprise. |
-| Dati delle applicazioni | Dati per le applicazioni gestite di Play Store. | Destinare l'applicazione a utenti o dispositivi come disponibile o obbligatoria. | Esempio di **nome applicazione**: Contoso Warehouse Inventory Application.<br>Esempio di **identificatore univoco per rappresentare l'applicazione**: app:com.Contoso.Warehouse.InventoryTracking |
-| Account di servizio | Account del servizio Google interno univoco da usare con le chiamate di clienti specifici. | Usato per effettuare chiamate a Google per conto dei clienti (per visualizzare app, dispositivi e altro ancora) | Esempio di **nome**: InternalAccount@InternalService.com.<br>Esempio di **chiavi**: ServiceAccountPassword |
+| Dati delle applicazioni | Dati per le applicazioni gestite di Play Store. | Destinare l'applicazione a utenti o dispositivi come disponibile o obbligatoria. | Esempio di **Nome applicazione**: Contoso Warehouse Inventory Application.<br>Esempio di **identificatore univoco per rappresentare l'applicazione**: app:com.Contoso.Warehouse.InventoryTracking |
+| Account di servizio | Account del servizio Google interno univoco da usare con le chiamate di clienti specifici. | Usato per effettuare chiamate a Google per conto dei clienti (per visualizzare app, dispositivi e altro ancora) | Esempio di **nome**: InternalAccount@InternalService.com.<br>Esempio di **Chiavi**: ServiceAccountPassword |
 
 
 Per interrompere l'uso della gestione dispositivi aziendali Android con Microsoft Intune ed eliminare i dati è necessario disabilitare la gestione dispositivi aziendali Android di Microsoft Intune ed eliminare l'account Google. Per informazioni sulla gestione account, vedere l'account Google.

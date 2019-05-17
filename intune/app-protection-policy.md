@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836354"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569415"
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
@@ -50,7 +51,7 @@ I criteri di protezione delle app possono essere configurati per app in esecuzio
 > [!IMPORTANT]
 > È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. È anche possibile proteggere l'accesso alle cassette postali locali di Exchange creando i criteri di protezione delle app di Intune per Outlook per iOS e Android abilitati con l'autenticazione moderna ibrida. Prima di usare questa funzionalità, assicurarsi che siano soddisfatti i [requisiti di Outlook per iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). I criteri di protezione delle app non sono supportati per le altre app che si connettono ai servizi locali di Exchange o SharePoint.
 
-**I vantaggi più rilevanti dell'uso dei criteri di protezione delle app sono i seguenti:**
+**I vantaggi più rilevanti dell'uso dei criteri di protezione delle app sono i seguenti**:
 
 -   Proteggere i dati aziendali a livello di app. Dal momento che la gestione delle app per dispositivi mobili non richiede la gestione dei dispositivi, è possibile proteggere i dati aziendali su dispositivi sia gestiti sia non gestiti. La gestione dei dati è incentrata sull'identità dell'utente che elimina il requisito della gestione dei dispositivi.
 
@@ -69,8 +70,8 @@ L'uso di soluzioni MDM con criteri di protezione delle app comporta vantaggi agg
 ### <a name="supported-platforms-for-app-protection-policies"></a>Piattaforme supportate per i criteri di protezione delle app
 Il supporto della piattaforma dei criteri di protezione delle app di Intune è allineato al supporto della piattaforma delle applicazioni per dispositivi mobili di Office per dispositivi Android e iOS. Per informazioni dettagliate, vedere la sezione **App per dispositivi mobili** in [Requisiti di sistema per Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-I dispositivi Windows non sono attualmente supportati. Tuttavia, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-
+> [!IMPORTANT]
+> Il portale aziendale di Intune deve essere presente nel dispositivo per ricevere i criteri di protezione delle app in Android. Per altre informazioni, vedere [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Come i criteri di protezione delle app proteggono i dati dell'app
 

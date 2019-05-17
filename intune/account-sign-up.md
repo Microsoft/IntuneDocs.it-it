@@ -9,6 +9,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97a1ab3327f8d76f1623d51fe80289a8f15d7ff1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235226"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459952"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Iscriversi o accedere a Microsoft Intune
 
@@ -38,7 +39,7 @@ Se si ha già un account aziendale o dell'istituto di istruzione, **eseguire l'a
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Come iscriversi o accedere a Intune
 
-1. Visitare la pagina di [iscrizione a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Visitare la pagina di [iscrizione a Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
    ![Screenshot della pagina Web di iscrizione per l'account di prova Microsoft Intune](./media/account-sign-up-site.png)
 
@@ -47,4 +48,4 @@ Se si ha già un account aziendale o dell'istituto di istruzione, **eseguire l'a
 ## <a name="post-sign-up-considerations"></a>Considerazioni successive all'iscrizione
 Dopo avere eseguito l'iscrizione per una nuova sottoscrizione, all'indirizzo di posta elettronica specificato in fase di iscrizione viene inviato un messaggio contenente le informazioni sul proprio account. Questo messaggio conferma che la sottoscrizione è attiva.
 
-Dopo aver completato il processo di iscrizione, si viene indirizzati all'interfaccia di amministrazione di Office 365, usata per aggiungere utenti e assegnare loro licenze. Se si hanno esclusivamente account basati su cloud che usano il nome di dominio onmicrosoft.com predefinito, è quindi possibile proseguire per aggiungere utenti e assegnare loro licenze. Tuttavia, se si prevede di usare il [nome di dominio personalizzato](custom-domain-name-configure.md) dell'organizzazione o di [sincronizzare le informazioni sull'account utente](users-add.md#sync-active-directory-and-add-users-to-intune) da Active Directory locale, è possibile chiudere la finestra del browser.
+Dopo aver completato il processo di iscrizione, si viene indirizzati all'interfaccia di amministrazione di Microsoft 365, usata per aggiungere utenti e assegnare loro licenze. Se si hanno esclusivamente account basati su cloud che usano il nome di dominio onmicrosoft.com predefinito, è quindi possibile proseguire per aggiungere utenti e assegnare loro licenze. Tuttavia, se si prevede di usare il [nome di dominio personalizzato](custom-domain-name-configure.md) dell'organizzazione o di [sincronizzare le informazioni sull'account utente](users-add.md#sync-active-directory-and-add-users-to-intune) da Active Directory locale, è possibile chiudere la finestra del browser.

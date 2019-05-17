@@ -1,27 +1,28 @@
 ---
-title: Creare criteri di accesso condizionale per Exchange |Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Creare criteri di accesso condizionale per Exchange
+titleSuffix: Microsoft Intune
 description: Configurare l'accesso condizionale per Exchange locale ed Exchange Online dedicato legacy in Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840400"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571740"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
 
@@ -79,52 +80,54 @@ L'applicazione **Mail** nativa in Windows 8.1 e versioni successive (se registra
 
 1. Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
-1. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
+2. Passare a **Intune** > **Accesso ad Exchange** e quindi selezionare **Accesso locale a Exchange**. 
 
-1. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+3. Nel riquadro **Accesso locale a Exchange** scegliere **Sì** per attivare l'opzione *Abilita il controllo di accesso locale per Exchange*.
 
-1. Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
+4. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-1. Scegliere **Accesso locale**. Il riquadro **Accesso locale** visualizza lo stato dei criteri di accesso condizionale e i dispositivi da esso interessati.
+5. Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
-1. In **Gestisci** scegliere **Accesso locale a Exchange**.
+6. Scegliere **Accesso locale**. Il riquadro **Accesso locale** visualizza lo stato dei criteri di accesso condizionale e i dispositivi da esso interessati.
 
-1. Nel riquadro **Accesso locale a Exchange** scegliere **Sì** per consentire il controllo dell'accesso locale a Exchange.
+7. In **Gestisci** scegliere **Accesso locale a Exchange**.
+
+8. Nel riquadro **Accesso locale a Exchange** scegliere **Sì** per consentire il controllo dell'accesso locale a Exchange.
 
     > [!NOTE]
     > Se Exchange Active Sync On-Premises Connector non è stato configurato, questa opzione è disabilitata.  Prima installare e configurare almeno un connettore, quindi abilitare l'accesso condizionale a Exchange locale. Per altri dettagli, vedere [Installare Intune On-premises Exchange Connector](exchange-connector-install.md)
 
-1. In **Assegnazione** scegliere **Gruppi inclusi**.  Usare il gruppo di utenti di sicurezza a cui applicare l'accesso condizionale. Questa azione richiede agli utenti di registrare i propri dispositivi in Intune e renderli conformi ai profili di conformità.
+9. In **Assegnazione** scegliere **Gruppi inclusi**.  Usare il gruppo di utenti di sicurezza a cui applicare l'accesso condizionale. Questa azione richiede agli utenti di registrare i propri dispositivi in Intune e renderli conformi ai profili di conformità.
 
-1. Se si vogliono escludere determinati gruppi di utenti, è possibile farlo scegliendo **Gruppi esclusi** e selezionando un gruppo di utenti da escludere dalla richiesta di registrazione del dispositivo e di conformità.
+10. Se si vogliono escludere determinati gruppi di utenti, è possibile farlo scegliendo **Gruppi esclusi** e selezionando un gruppo di utenti da escludere dalla richiesta di registrazione del dispositivo e di conformità.
 
-1. In **impostazioni** scegliere **Notifiche utente** per modificare il messaggio di posta elettronica predefinito. Questo messaggio viene inviato agli utenti se il dispositivo non è conforme e desiderano accedere a Exchange locale. Il modello di messaggio usa il linguaggio di markup.  Mentre si digita è anche possibile visualizzare l'anteprima dell'aspetto del messaggio.
+11. In **impostazioni** scegliere **Notifiche utente** per modificare il messaggio di posta elettronica predefinito. Questo messaggio viene inviato agli utenti se il dispositivo non è conforme e desiderano accedere a Exchange locale. Il modello di messaggio usa il linguaggio di markup.  Mentre si digita è anche possibile visualizzare l'anteprima dell'aspetto del messaggio.
     > [!TIP]
     > Per altre informazioni sul linguaggio di markup, vedere questo [articolo](https://en.wikipedia.org/wiki/Markup_language) di Wikipedia.
 
-1. Nel riquadro **Advanced Exchange Active Sync access settings** (Impostazioni di accesso a Exchange Active Sync avanzate) impostare la regola predefinita globale per l'accesso da dispositivi non gestiti da Intune e per le regole a livello di piattaforma come descritto nei prossimi due passaggi.
+12. Nel riquadro **Advanced Exchange Active Sync access settings** (Impostazioni di accesso a Exchange Active Sync avanzate) impostare la regola predefinita globale per l'accesso da dispositivi non gestiti da Intune e per le regole a livello di piattaforma come descritto nei prossimi due passaggi. Per accedere al riquadro delle impostazioni avanzate, nella visualizzazione *Accesso ad Exchange - Accesso locale a Exchange* selezionare *Exchange ActiveSync - connettore locale*.
 
-1. Per un dispositivo non soggetto ad accesso condizionale e a nessun'altra regola, è possibile scegliere di consentire l'accesso a Exchange o bloccarlo.
+13. Per un dispositivo non soggetto ad accesso condizionale e a nessun'altra regola, è possibile scegliere di consentire l'accesso a Exchange o bloccarlo.
 
    - Quando si imposta questa opzione per consentire l'accesso, tutti i dispositivi sono in grado di accedere immediatamente a Exchange locale.  I dispositivi che appartengono agli utenti nei **Gruppi inclusi** vengono bloccati se in un secondo momento sono ritenuti non conformi ai criteri di conformità o non registrati in Intune.
    - Quando si imposta questa opzione per bloccare l'accesso, inizialmente viene bloccato l'accesso di tutti i dispositivi a Exchange locale.  I dispositivi che appartengono agli utenti in **Gruppi inclusi** hanno l'accesso dopo che il dispositivo viene registrato in Intune e ritenuto conforme. I dispositivi Android che non eseguono Samsung Knox Standard sono sempre bloccati perché non supportano questa impostazione.
 
-1. In **Eccezioni della piattaforma del dispositivo** scegliere **Aggiungi** per specificare le piattaforme. Se l'opzione **Accesso al dispositivo non gestito** è impostata su **Bloccato**, i dispositivi conformi e registrati possono accedere anche se è presente un'eccezione che blocca la piattaforma. Scegliere **OK** per salvare le impostazioni.
+14. In **Eccezioni della piattaforma del dispositivo** scegliere **Aggiungi** per specificare le piattaforme. Se l'opzione **Accesso al dispositivo non gestito** è impostata su **Bloccato**, i dispositivi conformi e registrati possono accedere anche se è presente un'eccezione che blocca la piattaforma. Scegliere **OK** per salvare le impostazioni.
 
-1. Nel riquadro **Locale** fare clic su **Salva** per salvare il criterio di accesso condizionale.
+15. Nel riquadro **Locale** fare clic su **Salva** per salvare il criterio di accesso condizionale.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Creare criteri di accesso condizionale di Azure AD in Intune
 
-A partire dalla versione 1704 di Intune, gli amministratori possono creare criteri di accesso condizionale di Azure AD dal portale di Intune di Azure, una soluzione che non richiede di spostarsi tra i carichi di lavoro Azure e Intune.
+L'accesso condizionale è una tecnologia di Azure Active Directory (Azure AD). Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
 
 > [!IMPORTANT]
 > È necessario avere una licenza di Azure AD Premium per creare criteri di accesso condizionale di Azure AD dal portale di Intune di Azure.
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Per creare criteri di accesso condizionale di Azure AD
+### <a name="to-create-a-conditional-access-policy"></a>Per creare criteri di accesso condizionale
 
-1. Nel **dashboard di Intune** scegliere **Accesso condizionale**.
+1. Nel **dashboard di Intune** selezionare **Accesso condizionale**.
 
-2. Nel riquadro **Criteri** scegliere **Nuovi criteri** per creare i nuovi criteri di accesso condizionale di Azure AD.
+2. Nel riquadro **Criteri** selezionare **Nuovi criteri** per creare i nuovi criteri di accesso condizionale di Azure AD.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237198"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567270"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -33,7 +34,7 @@ Il portale aziendale di Microsoft Intune è il punto in cui gli utenti possono a
 > [!Tip]        
 > Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale. Si noti che gli utenti devono avere una licenza di Intune assegnata per accedere al sito Web del portale aziendale.
 
-La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, dal carico di lavoro **App client** scegliere **Installazione** > **Personalizzazione del portale aziendale** e configurare le impostazioni richieste.  
+Con la personalizzazione del Portale aziendale si offrirà agli utenti finali un'esperienza familiare e utile. A questo scopo, nel portale di Intune selezionare **App client** > **Personalizzazione** e quindi configurare le impostazioni necessarie. 
 
 > [!Note]       
 > Se si usa Azure per enti pubblici, l'utente finale riceve i log delle app per prendere decisioni in merito alla condivisione quando avvia il processo per visualizzare la Guida per un problema. Se tuttavia non si usa Azure per enti pubblici, il portale aziendale per Windows 10 invierà i log delle app direttamente a Microsoft quando l'utente avvia il processo per visualizzare la Guida per un problema. Inviando i log delle app a Microsoft sarà più semplice risolvere i problemi. 
@@ -90,7 +91,7 @@ Visualizzare un'immagine del marchio che rifletta il marchio della società. Dop
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p>*Nota*: l'immagine potrebbe essere visualizzata in modo diverso per piattaforme diverse.<p><ul><li>Larghezza dell'immagine consigliata: Meno di 1125 px ma non meno di 640 px</li><li>Dimensioni massime dell'immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
+|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione consente di visualizzare un'immagine del marchio. Nell'app Portale aziendale iOS viene visualizzata come immagine di sfondo nella pagina del profilo dell'utente.<p><ul><li>Larghezza dell'immagine consigliata: Meno di 1125 px ma non meno di 640 px</li><li>Dimensioni massime dell'immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
 
 L'immagine del marchio può migliorare la fiducia dell'utente nel portale aziendale presentando un forte senso di marchio della società. Di seguito sono riportati alcuni suggerimenti che è possibile prendere in considerazione per l'acquisizione, la scelta e l'ottimizzazione dell'immagine per il portale aziendale. 
 
@@ -122,7 +123,7 @@ I tasti di scelta rapida seguenti sono disponibili nell'app Portale aziendale di
 
 | Area | Descrizione | Tasti di scelta rapida |
 |:------------------:|:--------------:|:-----------------:|
-| Menu di spostamento | Navigazione | ALT+M |
+| Menu di spostamento | Spostamento | ALT+M |
 |  | Home | ALT+H |
 |  | Tutte le app | ALT+A |
 |  | App installate | ALT+I |

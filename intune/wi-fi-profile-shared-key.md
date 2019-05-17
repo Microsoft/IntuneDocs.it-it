@@ -5,10 +5,11 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71a70d12ad699dcc3af02610241473071645906
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7bf859075e675ef0205b24e0575fca5ab74f312c
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234903"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "59566984"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,10 +76,12 @@ L'esempio seguente include il codice XML per un profilo Wi-Fi Android o Windows.
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` deve essere impostato su **false**. Se **true**, il dispositivo potrebbe aspettarsi una password crittografata e quindi tentare di decrittografarla, con potenziale esito negativo della connessione.
+> - `<protected>false</protected>` deve essere impostato su **false**. Se **true**, il dispositivo potrebbe aspettarsi una password crittografata e quindi tentare di decrittografarla, con potenziale esito negativo della connessione.
 >
->  `<hex>53534944</hex>` deve essere impostato sul valore esadecimale di `<name><SSID of wifi profile></name>`.
+> - `<hex>53534944</hex>` deve essere impostato sul valore esadecimale di `<name><SSID of wifi profile></name>`.
 >  I dispositivi Windows 10 possono restituire un errore *0x87D1FDE8 Correzione non riuscita* falso, ma il dispositivo contiene comunque il profilo.
+>
+> - Il codice XML contiene caratteri speciali, come la e commerciale (`&`). L'uso di caratteri speciali può impedire al codice XML di funzionare nel modo previsto. 
 
 ```
 <!--
@@ -112,9 +115,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
         <useOneX>false</useOneX>
       </authEncryption>
       <sharedKey>
-        <keyType>networkKey</keyType>
+        <keyType>passPhrase</keyType>
         <protected>false</protected>
-        <keyMaterial>MyPassword</keyMaterial>
+        <keyMaterial>password</keyMaterial>
       </sharedKey>
       <keyIndex>0</keyIndex>
     </security>

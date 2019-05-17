@@ -1,15 +1,16 @@
 ---
 title: Aggiungere un'app line-of-business per Windows a Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Informazioni su come aggiungere un'app line-of-business (LOB) per Windows usando Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238779"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570767"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -92,4 +93,4 @@ Questa funzionalità consente di evitare una race condition. Ad esempio, può ve
 
 - Altre informazioni sulle modalità in cui è possibile monitorare le proprietà e l'assegnazione dell'app. Vedere [Come monitorare le informazioni sulle app e le assegnazioni](apps-monitor.md).
 
-- Altre informazioni sul contesto dell'app in Intune. Vedere [Panoramica dei cicli di vita del dispositivo e dell'app](introduction-device-app-lifecycles.md).
+- Altre informazioni sul contesto dell'app in Intune. Vedere [Panoramica del ciclo di vita dell'app in Microsoft Intune](app-lifecycle.md).

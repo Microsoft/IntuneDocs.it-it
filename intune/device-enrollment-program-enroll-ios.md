@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849251"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566506"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -102,8 +103,13 @@ Nel portale di Azure in Intune specificare l'ID Apple per riferimenti futuri.
 
 ![Screenshot della specifica dell'ID Apple usato per creare il token DEP e passare al token DEP.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Passaggio 4. Caricare il token.
-Nella casella **Token Apple** passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi scegliere **Crea**. Con il certificato push, Intune può registrare e gestire i dispositivi iOS eseguendo il push dei criteri nei dispositivi mobili registrati. Intune si sincronizza automaticamente con Apple per verificare l'account DEP.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Passaggio 4. Caricare il token e scegliere i tag di ambito.
+
+1. Nella casella **Token Apple** passare al file del certificato (con estensione pem) e scegliere **Apri**.
+2. Per applicare [tag di ambito](scope-tags.md) a questo token DEP, scegliere **Ambito (tag)** e selezionare i tag di ambito desiderati. I tag di ambito applicati a un token verranno ereditati dai profili e dai dispositivi aggiunti a questo token.
+3. Scegliere **Crea**.
+
+Con il certificato push, Intune può registrare e gestire i dispositivi iOS eseguendo il push dei criteri nei dispositivi mobili registrati. Intune si sincronizza automaticamente con Apple per verificare l'account DEP.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Creare un profilo di registrazione di Apple
 
@@ -145,6 +151,8 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
 7. Se si era scelto un token per **Installa il Portale aziendale con VPP**, è possibile bloccare il dispositivo in modalità applicazione singola, in particolare, l'app Portale aziendale, subito dopo l'Assistente configurazione. Scegliere **Sì** per **Run Company Portal in Single App Mode until authentication** (Esegui il portale aziendale in modalità app singola fino all'autenticazione) per impostare l'opzione. Per poter usare il dispositivo, l'utente deve prima autenticarsi effettuando l'accesso tramite il portale aziendale.
     Questa funzionalità è supportata solo per iOS 11.3.1 e versioni successive.
+
+   ![Screenshot della modalità applicazione singola.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. Scegliere **Impostazioni di gestione dei dispositivi** e specificare se si vogliono includere i dispositivi con questo profilo nella supervisione.
 
