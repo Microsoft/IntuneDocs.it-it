@@ -50,7 +50,7 @@ L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferim
 
 ### <a name="example"></a>Esempio
 
-| deviceTypeID  | Nome | Descrizione |
+| deviceTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Desktop |Dispositivo Windows Desktop |
 | 1 |WindowsRT |Dispositivo WindowsRT |
@@ -71,7 +71,7 @@ L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferim
 | 17 |AndroidForWork |Dispositivo Android gestito con il profilo proprietario Android |
 | 100 |Blackberry |Dispositivo BlackBerry |
 | 101 |Palm |Dispositivo palmare |
-| 255 |Unknown |Tipo di dispositivo sconosciuto |
+| 255 |Sconosciuto |Tipo di dispositivo sconosciuto |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
 L'entità **EnrollmentActivity** indica l'attività di una registrazione del dispositivo.
@@ -100,7 +100,7 @@ L'entità **EnrollmentEventStatus** indica il risultato di una registrazione del
 | enrollmentEventStatusName  | Descrizione                            |
 |----------------------------|----------------------------------------|
 | Operazione completata                    | Registrazione del dispositivo riuscita         |
-| Failed                     | Registrazione del dispositivo non riuscita             |
+| Operazione non riuscita                     | Registrazione del dispositivo non riuscita             |
 | Non disponibile              | Lo stato di registrazione non è disponibile.  |
 
 ## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
@@ -117,9 +117,9 @@ L'entità **EnrollmentFailureCategory** indica perché la registrazione di un di
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Non applicabile                  | La categoria di errore della registrazione non è applicabile.                                                            |
 | Non disponibile                   | La categoria di errore della registrazione non è disponibile.                                                             |
-| Unknown                         | Errore sconosciuto.                                                                                                |
+| Sconosciuto                         | Errore sconosciuto.                                                                                                |
 | Autenticazione                  | Autenticazione non riuscita.                                                                                        |
-| Authorization                   | La chiamata è stata autenticata, ma non autorizzata alla registrazione.                                                         |
+| Autorizzazione                   | La chiamata è stata autenticata, ma non autorizzata alla registrazione.                                                         |
 | AccountValidation               | Non è stato possibile convalidare l'account per la registrazione (account bloccato, registrazione non abilitata).                      |
 | UserValidation                  | Non è stato possibile convalidare l'utente (utente inesistente, licenza mancante).                                           |
 | DeviceNotSupported              | Il dispositivo non è supportato per la gestione di dispositivi mobili.                                                         |
@@ -144,7 +144,7 @@ L'entità **EnrollmentFailureReason** indica un motivo più dettagliato per un e
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Non applicabile                   | La categoria di errore di registrazione non è applicabile.                                                                                                                                                       |
 | Non disponibile                    | La categoria di errore di registrazione non è disponibile.                                                                                                                                                        |
-| Unknown                          | Errore sconosciuto.                                                                                                                                                                                         |
+| Sconosciuto                          | Errore sconosciuto.                                                                                                                                                                                         |
 | UserNotLicensed                  | L'utente non è stato trovato in Intune o non ha una licenza valida.                                                                                                                                     |
 | UserUnknown                      | L'utente non è noto a Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Un solo utente può registrare un dispositivo. Questo dispositivo è stato registrato in precedenza da un altro utente.                                                                                                                |
@@ -167,10 +167,10 @@ L'entità **EnrollmentTypes** indica se un dispositivo è aziendale, personale o
 |---------|------------|--------|
 | ownerTypeID |Identificatore univoco del tipo di proprietario. | |
 | ownerTypeKey |Identificatore univoco del tipo di proprietario nel data warehouse, chiave surrogata. | |
-| ownerTypeName |Rappresenta il tipo di proprietario dei dispositivi:  <br>Aziendale - dispositivo è di proprietà aziendale. <br>Personal - il dispositivo è di proprietà personale (BYOD).  <br>Unknown - nessuna informazione su questo dispositivo. |Unknown personale aziendale |
+| ownerTypeName |Rappresenta il tipo di proprietario dei dispositivi:  <br>Corporate - il dispositivo è di proprietà dell'azienda. <br>Personal - il dispositivo è di proprietà personale (BYOD).  <br>Unknown - nessuna informazione su questo dispositivo. |Corporate Personal Unknown |
 
 > [!Note]  
-> Per il `ownerTypeName` in Azure ad durante la creazione di gruppi dinamici per i dispositivi, è necessario impostare il valore del filtro `deviceOwnership` come `Company`. Per altre informazioni, vedere [regole per i dispositivi](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Per la creazione di gruppi dinamici per i dispositivi in AzureAD, per `ownerTypeName` è necessario impostare il valore filtro `deviceOwnership` su `Company`. Per altre informazioni, vedere [Regole per i dispositivi](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -184,7 +184,7 @@ L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del
 
 ### <a name="example"></a>Esempio
 
-| managementStateID  | Nome | Descrizione |
+| managementStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Gestiti | Gestito senza azioni remote in sospeso. |
 | 1 |RetirePending | C'è un comando di disattivazione in sospeso per il dispositivo. |
@@ -211,7 +211,7 @@ L'entità **ManagementAgentTypes** rappresenta gli agenti usati per gestire un d
 
 ### <a name="example"></a>Esempio
 
-| ManagementAgentTypeID  | Nome | Descrizione |
+| ManagementAgentTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 1 |EAS | Il dispositivo è gestito tramite Exchange Active Sync |
 | 2 |MDM | Il dispositivo è gestito tramite un agente MDM |

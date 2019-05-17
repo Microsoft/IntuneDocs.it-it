@@ -34,7 +34,7 @@ Intune App SDK supporta scenari simili in iOS e Android ed è progettato per off
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Se l'app è interna all'organizzazione e non sarà disponibile pubblicamente:
 
-_**Non è necessario**_ registrare l'app. Per interni [le app line-of-business (LOB)](apps-add.md#app-types-in-microsoft-intune) che sono stati scritti da o per l'azienda, l'amministratore IT distribuirà l'app internamente. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare i criteri di protezione delle app. È possibile passare alla sezione [Abilitare un'app iOS o Android per i criteri di protezione delle app](#enable-your-ios-or-android-app-for-app-protection-policy).
+_**Non è necessario**_ registrare l'app. Per le [app line-of-business](apps-add.md#app-types-in-microsoft-intune) compilate per o dalla società, l'amministratore IT distribuirà l'app internamente. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare i criteri di protezione delle app. È possibile passare alla sezione [Abilitare un'app iOS o Android per i criteri di protezione delle app](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se l'app verrà rilasciata a un app store pubblico, ad esempio l'App Store Apple o Google Play:
 

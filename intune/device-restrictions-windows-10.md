@@ -29,7 +29,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo in Intune e quindi assegnate o distribuite ai dispositivi Windows 10.
 
 > [!Note]
-> Non tutte le opzioni sono disponibili in tutte le edizioni di Windows. Per visualizzare le edizioni supportate, vedere la [criteri CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (si apre un altro sito web Microsoft).
+> Non tutte le opzioni sono disponibili in tutte le edizioni di Windows. Per informazioni sulle edizioni supportate, vedere [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Provider di servizi di configurazione dei criteri) (viene aperto un altro sito Web Microsoft).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -138,15 +138,15 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Finestra di dialogo di errore per la scheda SIM (solo dispositivi mobili)**: blocca la visualizzazione di un messaggio di errore nel dispositivo se non viene rilevata alcuna scheda SIM.
 - **Area Ink**: impedisce agli utenti l'accesso all'area di lavoro Windows Ink. **Non configurata** attiva l'area Ink e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
-- **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo (solo Windows Insider)**: scegliere **Rendi obbligatorio** per fare in modo che il dispositivo si connetta a una rete prima di poter procedere oltre la pagina Rete durante l'installazione di Windows 10.
+- **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo**: scegliere **Rendi obbligatorio** per fare in modo che il dispositivo si connetta a una rete prima di procedere oltre la pagina Rete durante l'installazione di Windows 10.
 
-  L'impostazione diventa effettiva al successivo il dispositivo viene cancellato o reimpostare. Come qualsiasi altra configurazione di Intune, il dispositivo deve essere registrato e gestito da Intune per ricevere le impostazioni di configurazione. Tuttavia, una volta la registrazione e ricevono i criteri, quindi provare a reimpostare il dispositivo applica l'impostazione durante l'installazione di Windows successiva.
+  L'impostazione diventa effettiva alla successiva cancellazione o reimpostazione del dispositivo. Come per qualsiasi altra configurazione di Intune, è necessario che il dispositivo sia registrato e gestito da Intune al fine di ricevere le impostazioni di configurazione. Ma dopo che è stato registrato e che riceve i criteri, la reimpostazione del dispositivo determina l'applicazione dell'impostazione durante l'installazione di Windows successiva.
 
 - **Accesso diretto alla memoria (DMA)**: **Blocca** consente di impedire l'accesso diretto alla memoria (DMA) per tutte le porte downstream PCI collegabili a caldo finché un utente non accede a Windows. **Abilitato** (impostazione predefinita) consente l'accesso diretto alla memoria, anche quando un utente non è connesso.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **Terminare i processi da Gestione attività**: questa impostazione determina se utenti non amministratori possono utilizzare Gestione attività alle attività di fine. **Blocca** impedisce agli utenti standard (non amministratori) di usare Gestione attività per terminare un processo o un'attività nel dispositivo. **Non configurata** (impostazione predefinita) consente agli utenti standard di terminare un processo o un'attività usando Gestione attività.
+- **Termina processi da Gestione attività**: questa impostazione determina se gli utenti non amministratori possono usare Gestione attività per terminare le attività. **Blocca** impedisce agli utenti standard (non amministratori) di usare Gestione attività per terminare un processo o un'attività nel dispositivo. **Non configurata** (impostazione predefinita) consente agli utenti standard di terminare un processo o un'attività usando Gestione attività.
 
 ## <a name="locked-screen-experience"></a>Esperienza della schermata bloccata
 
@@ -165,28 +165,28 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
-### <a name="use-microsoft-edge-kiosk-mode"></a>Usare la modalità tutto schermo di Microsoft Edge
+### <a name="use-microsoft-edge-kiosk-mode"></a>Usa la modalità tutto schermo di Microsoft Edge
 
-Le impostazioni disponibili variano a seconda di ciò che si sceglie. Le opzioni disponibili sono:
+Le impostazioni disponibili variano a seconda delle scelte effettuate. Le opzioni disponibili sono:
 
-- **Non** (impostazione predefinita): Microsoft Edge non è in esecuzione in modalità tutto schermo. Sono disponibili per poter modificare e configurare tutte le impostazioni di Microsoft Edge.
-- **/ Interactive digital signage (solo app per chiosco multimediale)**: le impostazioni di Microsoft Edge i filtri che sono applicabili per la modalità tutto schermo di Microsoft Edge signage Digital/interattivo per l'uso solo in Windows 10 singola app chiosco. Scegliere questa impostazione per aprire un URL a schermo intero e visualizzare solo il contenuto in tale sito Web. [Impostare i cartelli digitali](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vengono fornite ulteriori informazioni su questa funzionalità.
-- **InPrivate browsing pubblico (solo app per chiosco multimediale)**: impostazioni di filtri Microsoft Edge che sono applicabili per la modalità InPrivate Browsing Microsoft Edge chiosco pubblico per l'utilizzo in chioschi multimediali singolo-app di Windows 10. Esegue una versione multi-scheda di Microsoft Edge.
-- **Modalità normale (multi-app per chiosco multimediale)**: impostazioni di Microsoft Edge di filtri che sono applicabili per la modalità tutto schermo di normale Microsoft Edge. Esegue una versione completa di Microsoft Edge con tutte le funzionalità di esplorazione.
-- **Pubblica esplorazione (multi-app per chiosco multimediale)**: le impostazioni di Microsoft Edge i filtri che sono applicabili per l'esplorazione pubblica a schermo intero più app di Windows 10.  Esegue una versione multi-scheda di InPrivate di Microsoft Edge.
+- **No** (impostazione predefinita): Microsoft Edge non viene eseguito in modalità tutto schermo. È possibile modificare e configurare tutte le impostazioni di Microsoft Edge.
+- **Insegna digitale o schermo interattivo (app singola in modalità tutto schermo)**: filtra le impostazioni di Microsoft Edge applicabili alla modalità tutto schermo di Microsoft Edge Insegna digitale o schermo interattivo per l'uso solo in app singole in modalità tutto schermo Windows 10. Scegliere questa impostazione per aprire un URL a tutto schermo e visualizzare solo il contenuto di quel sito Web. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) (Configurare insegne digitali) offre altre informazioni su questa funzionalità.
+- **Esplorazione pubblica InPrivate (app singola in modalità tutto schermo)**: filtra le impostazioni di Microsoft Edge applicabili alla modalità tutto schermo di Microsoft Edge Esplorazione pubblica InPrivate per l'uso in app singole in modalità tutto schermo Windows 10. Esegue una versione a schede multiple di Microsoft Edge.
+- **Modalità normale (più app in modalità tutto schermo)**: filtra le impostazioni di Microsoft Edge applicabili alla modalità tutto schermo di Microsoft Edge normale. Esegue una versione completa di Microsoft Edge con tutte le funzionalità di esplorazione.
+- **Esplorazione pubblica (più app in modalità tutto schermo)**: filtra le impostazioni di Microsoft Edge applicabili all'esplorazione pubblica in più app in modalità tutto schermo Windows 10.  Esegue una versione a schede multiple di Microsoft Edge InPrivate.
 
 > [!TIP]
-> Per altre informazioni sulle funzionalità di queste opzioni, vedere [tipi di configurazione modalità tutto schermo di Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+> Per altre informazioni su queste opzioni, vedere [Microsoft Edge kiosk mode configuration types](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types) (Tipi di configurazione della modalità tutto schermo di Microsoft Edge).
 
-Questo profilo di restrizione è direttamente correlato al profilo per chiosco multimediale è creare usando il [delle impostazioni di Windows per chiosco multimediale](kiosk-settings-windows.md). Per concludere:
+Questo profilo di restrizioni per i dispositivi è direttamente correlato al profilo in modalità tutto schermo creato usando le [impostazioni della modalità tutto schermo di Windows](kiosk-settings-windows.md). Per concludere:
 
-1. Creare il [delle impostazioni di Windows per chiosco multimediale](kiosk-settings-windows.md) profilo per l'esecuzione del dispositivo in modalità tutto schermo. Selezionare Microsoft Edge come l'applicazione e impostare la modalità tutto schermo di Microsoft Edge nel profilo di chiosco multimediale.
-2. Creare il profilo di restrizione descritto in questo articolo e configurare le impostazioni consentite in Microsoft Edge e le funzionalità specifiche. Assicurarsi di scegliere lo stesso tipo di modalità per chiosco multimediale di Microsoft Edge come selezionati nel profilo per chiosco multimediale ([delle impostazioni di Windows per chiosco multimediale](kiosk-settings-windows.md)). 
+1. Creare il profilo con le [impostazioni della modalità tutto schermo di Windows](kiosk-settings-windows.md) per eseguire il dispositivo in modalità tutto schermo. Selezionare Microsoft Edge come applicazione e impostare la modalità tutto schermo di Microsoft Edge nel profilo in modalità tutto schermo.
+2. Creare il profilo di restrizioni per i dispositivi descritto in questo articolo e configurare funzionalità e impostazioni specifiche consentite in Microsoft Edge. Assicurarsi di scegliere lo stesso tipo di modalità tutto schermo di Microsoft Edge di quello selezionato nel profilo in modalità tutto schermo ([impostazioni della modalità tutto schermo di Windows](kiosk-settings-windows.md)). 
 
-    [Le impostazioni della modalità tutto schermo supportata](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) è un'ottima risorsa.
+    [Supported kiosk mode settings](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) (Impostazioni supportate per la modalità tutto schermo) è un'ottima risorsa.
 
 > [!IMPORTANT] 
-> Assicurarsi di assegnare il profilo di Microsoft Edge per gli stessi dispositivi di profilo per chiosco multimediale ([delle impostazioni di Windows per chiosco multimediale](kiosk-settings-windows.md)).
+> Assicurarsi di assegnare questo profilo di Microsoft Edge agli stessi dispositivi del profilo in modalità tutto schermo ([impostazioni della modalità tutto schermo di Windows](kiosk-settings-windows.md)).
 
 [CSP ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
@@ -208,9 +208,9 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **L'utente può modificare il pulsante Pagina iniziale**: **Consenti** consente agli utenti di modificare il pulsante Pagina iniziale. Le modifiche dell'utente sostituiscono eventuali impostazioni dell'amministratore per il pulsante Pagina iniziale. **Non configurata** usa il comportamento predefinito del sistema operativo nel dispositivo, che potrebbe impedire agli utenti di modificare la configurazione dell'amministratore per il pulsante Pagina iniziale.
 - **Mostra la pagina del completamento dell'installazione**: **Blocca** impedisce la visualizzazione della pagina introduttiva quando si esegue Microsoft Edge per la prima volta. Questa funzionalità consente alle aziende, ad esempio le organizzazioni registrate in configurazioni a zero emissioni, di bloccare questa pagina. **Non configurata** mostra la pagina introduttiva.
   - **URL di completamento dell'installazione**: immettere l'URL della pagina visualizzata alla prima esecuzione di Microsoft Edge (solo Windows 10 Mobile).
-- **Aggiornare i browser dopo il tempo di inattività**: immettere il numero di minuti di inattività fino a quando non viene aggiornato il browser, da 0 a 1440 minuti. Il valore predefinito è `5` minuti. Se impostato su `0` (zero), il browser non viene aggiornato dopo un periodo di inattività.
+- **Aggiorna il browser dopo il tempo di inattività**: immettere il numero di minuti di inattività trascorsi i quali il browser viene aggiornato, da 0 a 1440 minuti. L'impostazione predefinita è `5` minuti. Se impostata su `0` (zero), il browser non viene aggiornato dopo essere stato inattivo.
 
-  Questa impostazione è disponibile solo quando si esegue [pubblica InPrivate browsing (applicazione singola per chiosco multimediale)](#use-microsoft-edge-kiosk-mode).
+  Questa impostazione è disponibile solo in modalità [Esplorazione pubblica InPrivate (app singola in modalità tutto schermo)](#use-microsoft-edge-kiosk-mode).
 
   CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
@@ -239,15 +239,15 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Limita le modifiche ai Preferiti**: **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. **Non configurata** usa l'impostazione predefinita del sistema operativo, che potrebbe consentire agli utenti di modificare l'elenco.
 - **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: **Rendi obbligatorio** impone la sincronizzazione dei Preferiti tra Microsoft Edge e Internet Explorer in Windows. Le aggiunte, le eliminazioni, le modifiche e le variazioni dell'ordine dei Preferiti vengono condivise tra i browser.  **Non configurata** usa l'impostazione predefinita del sistema operativo, che può consentire agli utenti di scegliere di sincronizzare i Preferiti tra i browser.
 - **Motore di ricerca predefinito**: scegliere il motore di ricerca predefinito nel dispositivo. Gli utenti finali possono modificare questo valore in qualsiasi momento. Le opzioni disponibili sono:
-  - Valore predefinito
+  - Predefinito
   - Bing
   - Google
   - Yahoo
   - Valore personalizzato
 - **Suggerimenti per la ricerca**: **Non configurata** consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca nella barra degli indirizzi. **Blocca** impedisce questa funzionalità.
-- **Consenti le modifiche al motore di ricerca**: **Sì** (impostazione predefinita) consente agli utenti di aggiungere nuovi motori di ricerca o modificare il motore di ricerca predefinito in Microsoft Edge. Scegli **No** impedire agli utenti di personalizzare il motore di ricerca.
+- **Consenti modifiche al motore di ricerca**: **Sì** (impostazione predefinita) consente agli utenti di aggiungere nuovi motori di ricerca o di cambiare quello predefinito in Microsoft Edge. Scegliere **No** per impedire agli utenti di personalizzare il motore di ricerca.
 
-  Questa impostazione è disponibile solo quando si esegue [modalità normale (multi-app per chiosco multimediale)](#use-microsoft-edge-kiosk-mode).
+  Questa impostazione è disponibile solo in [Modalità normale (più app in modalità tutto schermo)](#use-microsoft-edge-kiosk-mode).
 
   CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
@@ -308,29 +308,29 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   - **Impedisci riutilizzo delle password precedenti**: specifica il numero di password usate in precedenza che il dispositivo deve ricordare.
   - **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo Mobile)**: specifica che l'utente deve immettere una password per sbloccare il dispositivo (solo Windows 10 Mobile).
   - **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
-- **La crittografia automatica durante AADJ**: **blocco** impedisce la crittografia dispositivo BitLocker automatica quando il dispositivo viene preparato per il primo utilizzo, quando il dispositivo è aggiunto ad Azure AD. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che possa abilitare la crittografia. Altre informazioni su [crittografia dispositivo BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Crittografia automatica durante l'aggiunta ad AAD**: **Blocca** impedisce la crittografia automatica BitLocker del dispositivo quando quest'ultimo viene preparato per il primo uso, nei casi in cui è aggiunto ad Azure AD. **Non configurata** (impostazione predefinita) usa l'impostazione predefinita del sistema operativo, che può abilitare la crittografia. Altre informazioni sulla [crittografia BitLocker per dispositivi](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
-  [Sicurezza/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+  [CSP Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Criteri Federal Information Processing Standard (FIPS)**: **Consenti** Usa i criteri Federal Information Processing Standard (FIPS), ovvero un governo degli Stati Uniti standard per la crittografia, hash e firma. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che non usa FIPS.
+- **Criteri FIPS (Federal Information Processing Standard)**: se si sceglie **Consenti** vengono usati i criteri FIPS (Federal Information Processing Standard), ovvero uno standard del governo degli Stati Uniti per crittografia, hash e firma. **Non configurata** (impostazione predefinita) usa l'impostazione predefinita del sistema operativo, che non usa FIPS.
 
-  [Crittografia/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+  [CSP Cryptography/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Autenticazione del dispositivo Windows Hello**: **Consenti** agli utenti di usare un Windows Hello dispositivo complementare, ad esempio un telefono, fuori banda adeguatezza o un dispositivo IoT, per accedere a un computer Windows 10. **Non configurato** (impostazione predefinita) viene utilizzata l'impostazione predefinita del sistema operativo, che potrebbe impedire l'autenticazione con Windows che i dispositivi Windows Hello complementare.
+- **Autenticazione del dispositivo Windows Hello**: **Consenti** permette agli utenti di usare un dispositivo complementare Windows Hello, ad esempio un telefono, un bracciale per il fitness o un dispositivo IoT per accedere a un computer Windows 10. **Non configurata** (impostazione predefinita) usa l'impostazione predefinita del sistema operativo che può impedire al dispositivo complementare Windows Hello di eseguire l'autenticazione in Windows.
 
-  [Autenticazione/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+  [CSP Authentication/AllowSecondaryAuthenticationDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Accesso Web**: Windows consente l'accesso supporto per provider federato non ad FS (Active Directory Federation Services), ad esempio Security Assertion Markup Language (SAML). SAML Usa i token sicuri che forniscono l'esperienza di browser un single sign-on (SSO). Le opzioni disponibili sono:
+- **Accesso Web**: abilita il supporto di accesso Windows per i provider federati non ADFS (Active Directory Federation Services), ad esempio Security Assertion Markup Language (SAML). SAML usa token di sicurezza che consentono ai Web browser l'esperienza di accesso Single Sign-On (SSO). Le opzioni disponibili sono:
 
-  - **Non configurato** (impostazione predefinita): Usa il valore predefinito del sistema operativo nel dispositivo.
-  - **Abilitato**: il Provider di credenziali Web è abilitato per l'accesso.
-  - **Disabilitato**: il Provider di credenziali Web è disabilitato per l'accesso.
+  - **Non configurata** (impostazione predefinita): usa l'impostazione predefinita del sistema operativo nel dispositivo.
+  - **Abilitato**: il provider di credenziali Web è abilitato per l'accesso.
+  - **Disabilitato**: il provider di credenziali Web è disabilitato per l'accesso.
 
-  [Autenticazione/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [CSP Authentication/EnableWebSignIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Preferito dominio del tenant di Azure AD**: immettere un nome di dominio dell'organizzazione di Azure AD. All'accesso degli utenti in questo dominio, non dovranno digitare il nome di dominio. Immettere ad esempio `contoso.com`. Gli utenti di `contoso.com` dominio possa accedere usando il proprio nome utente, ad esempio "abby", invece di "abby@contoso.com".
+- **Dominio preferito del tenant di Azure AD**: immettere un nome di dominio esistente nell'organizzazione Azure AD. Gli utenti di questo dominio non dovranno digitare il nome di dominio all'accesso. Immettere ad esempio `contoso.com`. Gli utenti inclusi nel dominio `contoso.com` possono accedere usando il proprio nome utente, ad esempio "abby", anziché "abby@contoso.com".
 
-  [Autenticazione/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+  [CSP Authentication/PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Eccezioni alla privacy per app
 
@@ -356,7 +356,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Telefono**: specificare se l'app può accedere al telefono.
 - **Radio**: alcune app usano le radio nel dispositivo, ad esempio Bluetooth, per inviare e ricevere i dati e devono attivare o disattivare queste radio. Specificare se l'app può controllare queste radio.
 - **Attività**: specificare se l'app può accedere alle attività personali.
-- **Dispositivi attendibili**: scegliere se questa app può usare dispositivi attendibili. I dispositivi attendibili sono hardware già connesso o hardware incluso nel dispositivo. Ad esempio, usare TV, proiettori e così via come dispositivi attendibili.
+- **Dispositivi attendibili**: specificare se l'app può usare dispositivi attendibili. I dispositivi attendibili sono hardware già connesso o hardware incluso nel dispositivo. Ad esempio, usare TV, proiettori e così via come dispositivi attendibili.
 - **Commenti e diagnostica**: specificare se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi**: specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito al dispositivo.
 
@@ -396,7 +396,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Telefono**: specificare se l'app può accedere al telefono.
 - **Radio**: alcune app usano le radio nel dispositivo, ad esempio Bluetooth, per inviare e ricevere i dati e devono attivare o disattivare queste radio. Specificare se l'app può controllare queste radio.
 - **Attività**: specificare se l'app può accedere alle attività personali.
-- **Dispositivi attendibili**: scegliere se questa app può usare dispositivi attendibili. I dispositivi attendibili sono hardware già connesso o hardware incluso nel dispositivo. Ad esempio, usare TV, proiettori e così via come dispositivi attendibili.
+- **Dispositivi attendibili**: specificare se l'app può usare dispositivi attendibili. I dispositivi attendibili sono hardware già connesso o hardware incluso nel dispositivo. Ad esempio, usare TV, proiettori e così via come dispositivi attendibili.
 - **Commenti e diagnostica**: specificare se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi** - Specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito a questo PC, tablet o telefono.
 
@@ -412,7 +412,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   - Sicurezza
   - Basic
   - Avanzato
-  - Tutti
+  - Completo
 - **Invia i dati di esplorazione di Microsoft Edge a Microsoft 365 Analytics**: per usare questa funzionalità, impostare l'opzione **Condividi i dati di utilizzo** su **Avanzato** o **Completo**. Questa funzionalità consente di controllare quali dati Microsoft Edge invia a Microsoft 365 Analytics per i dispositivi aziendali con un ID commerciale configurato. Le opzioni disponibili sono:
   - **Non configurata**: usa l'impostazione predefinita del sistema operativo, che potrebbe non inviare dati della cronologia esplorazioni
   - **Invia solo dati Intranet**: consente all'amministratore di inviare la cronologia dei dati Intranet
@@ -428,12 +428,12 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
   FQDN: www.contoso.com:345
   ```
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 - **Ricerca sicura (solo dispositivi mobili)**: controlla come Cortana filtra il contenuto per adulti nei risultati della ricerca. È possibile selezionare **Strict**, **Moderate** o consentire all'utente finale di scegliere le proprie impostazioni.
 - **Visualizza i risultati Web nella ricerca**: blocca o consente la visualizzazione dei risultati Web nelle ricerche eseguite nel dispositivo.
 
-## <a name="start"></a>Avviare
+## <a name="start"></a>Avvia
 
 - **Layout del menu Start**: per personalizzare il menu Start nei dispositivi desktop, è possibile caricare un file XML che include le personalizzazioni, tra cui l'ordine in cui sono elencate le app e altro ancora. Gli utenti non possono modificare il layout del menu Start immesso.
 - **Aggiungi i siti Web ai riquadri nel menu Start**: consente di importare immagini da Microsoft Edge che vengono visualizzate come collegamenti nel menu Start di Windows per i dispositivi desktop.
@@ -494,7 +494,7 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Accesso dell'utente finale a Defender**: controlla se l'interfaccia utente di Windows Defender è nascosta agli utenti finali. Quando questa impostazione viene modificata, ha effetto dal successivo avvio del PC dell'utente finale.
 - **Intervallo di aggiornamento della firma (in ore)**: immettere l'intervallo con il quale Defender controllerà i nuovi file di firma.
 - **Monitora l'attività di file e programmi**: consente a Defender di monitorare l'attività di file e programmi nei dispositivi.
-- **Giorni prima dell'eliminazione di malware in quarantena**: continuare a monitorarla malware risolto per il numero di giorni immesso in modo da controllare manualmente i dispositivi colpiti in precedenza. Se si imposta il numero di giorni su **0**, il malware rimane nella cartella della quarantena e non viene rimosso automaticamente.
+- **Giorni di attesa prima dell'eliminazione di malware in quarantena**: continua a monitorare il malware risolto per il numero di giorni immesso, in modo che sia possibile controllare manualmente i dispositivi colpiti in precedenza. Se si imposta il numero di giorni su **0**, il malware rimane nella cartella della quarantena e non viene rimosso automaticamente.
 - **Limite di utilizzo della CPU durante un'analisi**: limitare la quantità di CPU di cui è consentito l'uso per le analisi, da **1** a **100**.
 - **Analizza file di archivio**: consente a Defender di analizzare i file archiviati come i file con estensione.zip o cab.
 - **Analizza i messaggi di posta in arrivo**: consente a Defender di analizzare i messaggi di posta elettronica non appena arrivano sul dispositivo.
@@ -502,31 +502,31 @@ Questo profilo di restrizione è direttamente correlato al profilo per chiosco m
 - **Analizza le unità di rete mappate durante un'analisi completa**: consente a Defender di analizzare i file nelle unità di rete mappate.
   Se i file nell'unità sono di sola lettura, Defender non può rimuovere il malware rilevato in tali file.
 - **Analizza file aperti da cartelle di rete**: consente a Defender di analizzare i file nelle unità di rete condivise, ad esempio i file a cui si accede da un percorso UNC. Se i file nell'unità sono di sola lettura, Defender non può rimuovere il malware rilevato in tali file.
-- **Protezione cloud**: consente o blocca la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. Queste informazioni consente di migliorare il servizio in futuro.
+- **Protezione cloud**: consente o blocca la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. Queste informazioni migliorano il servizio in futuro.
 - **Richiedi conferma all'utente prima dell'invio di campioni**: determina se i file potenzialmente dannosi che potrebbero richiedere ulteriore analisi vengono inviati automaticamente a Microsoft.
-- **Tempo per eseguire un'analisi veloce giornaliera**: scegliere l'ora per eseguire un'analisi veloce giornaliera. **Non configurato** non viene eseguita un'analisi giornaliera. Se si desidera personalizzare ulteriormente, configurare il **tipo di analisi di sistema per eseguire** impostazione.
+- **Ora di esecuzione di un'analisi veloce giornaliera**: scegliere l'ora in cui eseguire un'analisi veloce giornaliera. Se **Non configurata**, l'analisi giornaliera non viene eseguita. Per un'ulteriore personalizzazione, configurare l'impostazione **Tipo di analisi di sistema da eseguire**.
 
-  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **Tipo di analisi di sistema per eseguire**: pianifica un'analisi del sistema, incluso il livello di analisi e il giorno e il tempo necessario per eseguire l'analisi. Le opzioni disponibili sono:
-  - **Non configurato**: non pianifica un'analisi di sistema nel dispositivo. Gli utenti finali possono eseguire manualmente le analisi secondo le esigenze o desiderato nei propri dispositivi.
-  - **Disabilitare**: disabilita qualsiasi analisi sul dispositivo di sistema. Scegliere questa opzione se si usa una soluzione dei partner antivirus che analizza i dispositivi.
-  - **Analisi veloce**: analizza i percorsi comuni in dove è possibile che malware registrati, ad esempio le chiavi del Registro di sistema e le cartelle di avvio di Windows note.
+  [CSP Defender/ScheduleQuickScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Tipo di analisi di sistema da eseguire**: consente di pianificare un'analisi di sistema, inclusi il livello di analisi e il giorno e l'ora in cui eseguire l'analisi. Le opzioni disponibili sono:
+  - **Non configurata**: l'analisi di sistema non è pianificata nel dispositivo. Gli utenti finali possono eseguire manualmente le analisi nei dispositivi in base alle proprie esigenze.
+  - **Disabilita**: disabilita qualsiasi analisi di sistema presente nel dispositivo. Scegliere questa opzione se si usa una soluzione antivirus partner che analizza i dispositivi.
+  - **Analisi veloce**: esamina i percorsi comuni in cui potrebbe essere presente malware registrato, ad esempio chiavi del Registro di sistema e cartelle di avvio Windows note.
     - **Giorno pianificato**: scegliere il giorno in cui eseguire l'analisi.
-    - **Ora pianificata**: scegliere l'ora di eseguire l'analisi.
-  - **Analisi completa**: analizza i percorsi comuni in dove è possibile che malware registrati e inoltre analizza tutti i file e cartella nel dispositivo.
+    - **Ora pianificata**: scegliere l'ora in cui eseguire l'analisi.
+  - **Analisi completa**: esamina i percorsi comuni in cui potrebbe essere presente malware registrato e analizza anche ogni file e cartella presente nel dispositivo.
     - **Giorno pianificato**: scegliere il giorno in cui eseguire l'analisi.
-    - **Ora pianificata**: scegliere l'ora di eseguire l'analisi.
+    - **Ora pianificata**: scegliere l'ora in cui eseguire l'analisi.
 
-  Questa impostazione sia in conflitto con il **tempo per eseguire un'analisi veloce giornaliera** impostazione. Alcuni consigli:
+  Questa impostazione potrebbe essere in conflitto con l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**. Alcuni consigli:
 
-  - Per eseguire un'analisi veloce giornaliera, configurare il **tempo per eseguire un'analisi veloce giornaliera** impostazione.
-  - Per eseguire un'analisi veloce giornaliera e un'analisi completa ogni settimana, quindi configurare le **tempo per eseguire un'analisi veloce giornaliera**e impostare **tipo di analisi di sistema per eseguire** per un'analisi completa con il giorno e ora.
-  - Non si configura il **tempo per eseguire un'analisi veloce giornaliera** impostazione simultaneamente con la **tipo di analisi di sistema per eseguire** impostata su **analisi veloce**. Queste impostazioni potrebbero essere in conflitto e potrebbe non essere eseguita un'analisi.
-  - Per eseguire un'analisi rapida ogni martedì alle 6:00, configurare il **tipo di analisi di sistema per eseguire** impostazione.
+  - Per eseguire un'analisi veloce giornaliera, configurare l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**.
+  - Per eseguire un'analisi veloce giornaliera e un'analisi completa ogni settimana, configurare **Ora di esecuzione di un'analisi veloce giornaliera** e impostare **Tipo di analisi di sistema da eseguire** su un'analisi completa con il giorno e l'ora.
+  - Non configurare l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera** contemporaneamente a **Tipo di analisi di sistema da eseguire** impostato su **Analisi veloce**. Queste impostazioni possono essere in conflitto e l'analisi potrebbe non essere eseguita.
+  - Per eseguire un'analisi veloce ogni martedì alle 6, configurare l'impostazione **Tipo di analisi di sistema da eseguire**.
 
-  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
-  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
-  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+  [CSP Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [CSP Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [CSP Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Rileva applicazioni potenzialmente indesiderate**: scegliere il livello di protezione quando Windows rileva applicazioni potenzialmente indesiderate:
   - **Bloccato**

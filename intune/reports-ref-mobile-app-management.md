@@ -44,8 +44,8 @@ L'entità **MamApplication** elenca le app Line-of-Business (LOB) gestite attrav
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
 | mamApplicationKey |Identificatore univoco dell'applicazione MAM. | 432 |
-| mamApplicationName |Nome dell'applicazione di MAM. |Nome di esempio dell'applicazione di MAM |
-| mamApplicationId |ID applicazione dell'app MAM. | 123 |
+| mamApplicationName |Nome dell'applicazione MAM. |Esempio di nome dell'applicazione MAM |
+| mamApplicationId |ID applicazione dell'applicazione MAM. | 123 |
 | IsDeleted |Indica se il record dell'app MAM è stato aggiornato. <br>True: l'app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa app MAM. |True/False |
 | StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
 | DeletedDateUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
@@ -62,15 +62,15 @@ L'entità **MamApplicationInstance** elenca le app Gestione delle app mobili (MA
 |   ApplicationInstanceKey   |                                                               Identificatore univoco dell'istanza dell'app MAM nel data warehouse, chiave surrogata.                                                                |                 123                  |
 |           UserId           |                                                                              ID dell'utente che ha installato l'app MAM.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              Identificatore univoco dell'istanza dell'app MAM, simile ad ApplicationInstanceKey, ma l'identificatore è una chiave naturale.                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Id applicazione dell'applicazione Mam per cui è stata creata questa istanza di applicazione di Mam.   | 23/11/2016 12.00.00   |
+| mamApplicationId | ID dell'applicazione MAM per cui è stata creata questa istanza di applicazione MAM.   | 23/11/2016 12.00.00   |
 |     ApplicationVersion     |                                                                                     Versione dell'applicazione dell'app MAM.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 Data di creazione del record dell'istanza di app MAM. Il valore può essere Null.                                                                 |        23/11/2016 12.00.00        |
 |          Piattaforma          |                                                                          Piattaforma del dispositivo in cui è installata l'app MAM.                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      Versione della piattaforma del dispositivo in cui è installata l'app MAM.                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            Versione dell'SDK MAM con cui è stato eseguito il wrapping dell'app MAM.                                                                            |                 3.2                  |
-| mamDeviceId | Id dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
-| mamDeviceType | Tipo di dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
-| mamDeviceName | Nome del dispositivo del dispositivo con il quale istanza di applicazione MAM è associata.   | 23/11/2016 12.00.00   |
+| mamDeviceId | ID dispositivo a cui è associata l'istanza di applicazione MAM.   | 23/11/2016 12.00.00   |
+| mamDeviceType | Tipo di dispositivo a cui è associata l'istanza di applicazione MAM.   | 23/11/2016 12.00.00   |
+| mamDeviceName | Nome del dispositivo a cui è associata l'istanza di applicazione MAM.   | 23/11/2016 12.00.00   |
 |         IsDeleted          | Indica se il record dell'istanza di app MAM è stato aggiornato. <br>True: quest'istanza di app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa istanza di app MAM. |              True/False              |
 |   StartDateInclusiveUTC    |                                                              Data e ora in formato UTC della creazione dell'istanza dell'app MAM nel data warehouse.                                                               |        23/11/2016 12.00.00        |
 |       DeletedDateUtc       |                                                                             Data e ora in formato UTC in cui IsDeleted è stato impostato su True.                                                                              |        23/11/2016 12.00.00        |
@@ -89,7 +89,7 @@ L'entità **MamCheckin** rappresenta i dati raccolti quando un'istanza di app Ge
 | DateKey |Chiave data in cui l'archiviazione dell'app MAM è stata registrata nel data warehouse. | 20160703 |
 | ApplicationInstanceKey |Chiave dell'istanza dell'app associata all'archiviazione dell'app MAM. | 123 |
 | UserKey |Chiave dell'utente associata all'archiviazione dell'app MAM. | 4323 |
-| mamApplicationKey |Chiave dell'applicazione associato al controllo dell'applicazione di MAM in. | 432 |
+| mamApplicationKey |Chiave applicazione associato all'archiviazione dell'applicazione MAM. | 432 |
 | DeviceHealthKey |Chiave di DeviceHealth associata all'archiviazione dell'app MAM. | 321 |
 | PlatformKey |Rappresenta la piattaforma del dispositivo associato all'archiviazione dell'app MAM. |123 |
 | EffectiveAppliedPolicyKey |Rappresenta il criterio valido applicato, associato a questa archiviazione dell'app MAM. Un criterio valido applicato risulta dall'unione di tutti i criteri pertinenti a una particolare app e utente. | 322 |

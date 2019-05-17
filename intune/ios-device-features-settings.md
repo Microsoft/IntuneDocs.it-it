@@ -23,11 +23,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/01/2019
 ms.locfileid: "58799266"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>impostazioni del dispositivo iOS a usare le funzionalità comuni di iOS in Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Impostazioni dei dispositivi iOS per usare le funzionalità iOS comuni in Intune
 
 Intune include alcune impostazioni predefinite per consentire agli utenti di iOS di usare diverse funzionalità di Apple nei dispositivi. Gli amministratori, ad esempio, possono controllare come gli utenti di iOS usano le stampanti AirPrint, aggiungere app e cartelle al dock e alle pagine nella schermata iniziale, visualizzare le notifiche delle app, visualizzare i dettagli dei tag degli asset nella schermata di blocco, usare l'autenticazione Single Sign-On e autenticare gli utenti con i certificati.
 
-Usare queste funzionalità per controllare i dispositivi iOS come parte della soluzione mobile device management (MDM).
+Usare queste funzionalità per controllare i dispositivi iOS nella soluzione di gestione di dispositivi mobili (MDM).
 
 L'articolo elenca queste impostazioni e descrive la funzione di ogni impostazione.
 
@@ -78,7 +78,7 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
 
     - **Aggiungi un'app**: scegliere questa opzione per aggiungere le app al dock nella schermata. Immettere
 
-      - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+      - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
       - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       Selezionare **OK** per salvare le modifiche.
@@ -90,15 +90,15 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
       1. Specificare un **nome di cartella**. Questo nome viene visualizzato nel dispositivo degli utenti.
       2. Scegliere **Aggiungi** e immettere le proprietà seguenti:
 
-          - **Nome della pagina**: immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome pagina** : immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
           - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       3. Scegliere **Aggiungi**. È possibile aggiungere fino a **20** pagine per il dock del dispositivo.
       4. Selezionare **OK** per salvare le modifiche.
 
 > [!NOTE]
-> Quando si aggiungono icone utilizzando le impostazioni di ancoraggio, le icone nella schermata Home e di pagine sono bloccate e non possono essere spostate. È possibile per impostazione predefinita con iOS e i criteri MDM di Apple.
+> Quando si aggiungono icone usando le impostazioni del Dock, le icone nella schermata iniziale e le pagine vengono bloccate e non possono essere spostate. Può essere previsto da iOS e dai criteri MAM di Apple.
 
 #### <a name="example"></a>Esempio
 
@@ -126,7 +126,7 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
 
     - **Aggiungi un'app**: scegliere questa opzione per aggiungere le app a una pagina nella schermata. Immettere
 
-      - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+      - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
       - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       Selezionare **OK** per salvare le modifiche.
@@ -138,8 +138,8 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
       1. Specificare un **nome di cartella**. Questo nome viene visualizzato nel dispositivo degli utenti.
       2. Scegliere **Aggiungi** e immettere le proprietà seguenti:
 
-          - **Nome della pagina**: immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome pagina** : immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
           - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       3. Scegliere **Aggiungi**.
@@ -175,7 +175,7 @@ Scegliere la modalità in cui le app installate nei dispositivi iOS devono invia
          - **Nessuno**: non vengono visualizzate notifiche.
          - **Banner**: viene brevemente visualizzato un banner con la notifica.
          - **Modale**: la notifica viene visualizzata e l'utente deve chiuderla manualmente prima di continuare a usare il dispositivo.
-       - **Badge sull'icona di app**: selezionare **abilitare** per aggiungere un badge all'icona dell'app. Il badge indica che l'app ha inviato una notifica.
+       - **Badge sull'icona dell'app**: selezionare **Abilita** per aggiungere un badge all'icona dell'app. Il badge indica che l'app ha inviato una notifica.
        - **Suoni**: selezionare **Abilita** per riprodurre un suono quando viene recapitata una notifica.
 
 3. Selezionare **OK** per salvare le modifiche. Continuare ad aggiungere le app desiderate. Al termine, selezionare **OK**.
@@ -269,7 +269,7 @@ Queste impostazioni controllano l'accesso all'URL del browser nei dispositivi iO
 
     - **Configura gli URL**: usare il filtro Web predefinito di Apple che cerca termini per adulti, incluso un linguaggio volgare e sessualmente esplicito. Questa funzionalità valuta ogni pagina Web quando viene caricata e identifica e blocca i contenuti non appropriati. È anche possibile aggiungere gli URL che si preferisce non vengano controllati dal filtro oppure bloccare URL specifici, indipendentemente dalle impostazioni di filtro di Apple.
 
-      - **URL autorizzati**: **Add** gli URL si vuole consentire. Questi URL ignorano il filtro Web di Apple.
+      - **URL autorizzati**: **aggiungere** gli URL che si vuole consentire. Questi URL ignorano il filtro Web di Apple.
 
         > [!NOTE]
         > Gli URL immessi sono quelli che non devono essere valutati dal filtro Web di Apple. Questi URL non sono un elenco di siti Web consentiti. Per creare un elenco di siti Web consentiti, impostare **Tipo filtro** su **Solo siti Web specifici**.
@@ -296,11 +296,11 @@ Aggiungere un'immagine PNG, JPG o JPEG personalizzata ai dispositivi iOS con sup
 
 Può verificarsi un comportamento imprevisto quando un profilo senza immagine viene assegnato a dispositivi con un'immagine esistente. Ad esempio, si crea un profilo senza un'immagine. Il profilo viene assegnato a dispositivi che dispongono già di un'immagine. In questo scenario è possibile che l'immagine assuma il valore predefinito del dispositivo o che l'immagine originale rimanga nel dispositivo. Questo comportamento è controllato e limitato dalla piattaforma MDM di Apple.
 
-- **Dello sfondo di visualizzazione Location**: scegliere un percorso nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
-  - **Non configurato**: un'immagine personalizzata non è aggiunto al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.
-  - **Schermata di blocco**: aggiunge l'immagine nella schermata di blocco.
+- **Posizione di visualizzazione dello sfondo**: scegliere una posizione nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
+  - **Non configurata**: un'immagine personalizzata non viene aggiunta al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.
+  - **Schermata di blocco**: aggiunge l'immagine alla schermata di blocco.
   - **Schermata iniziale**: aggiunge l'immagine alla schermata iniziale.
-  - **Schermata di blocco e nella schermata iniziale**: Usa la stessa immagine per la schermata di blocco mentre schermata iniziale.
+  - **Schermata di blocco e schermata iniziale**: usa la stessa immagine nella schermata di blocco e nella schermata iniziale.
 - **Immagine di sfondo**: caricare un'immagine PNG, JPG o JPEG esistente che si vuole usare. Assicurarsi che le dimensioni del file siano inferiori a 750 KB. È anche possibile **rimuovere** un'immagine aggiunta.
 
 > [!TIP]

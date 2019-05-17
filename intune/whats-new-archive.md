@@ -465,7 +465,7 @@ Per visualizzare le informazioni UDID (Unique Device Identifier) per i dispositi
 Nei dispositivi gestiti da MDM di Microsoft Intune le installazioni di applicazioni in alcuni casi possono non riuscire. Quando le installazioni di queste app hanno esito negativo, può essere difficile capire il motivo dell'errore o risolvere il problema. È in corso la distribuzione di un'anteprima pubblica delle funzionalità di risoluzione dei problemi delle app. Sotto ogni singolo dispositivo si noterà un nuovo nodo denominato **App gestite**, che elenca le app distribuite tramite MDM di Intune. Nel nodo è visibile un elenco di stati di installazione delle app. Se si seleziona una singola app, si noterà la visualizzazione relativa alla risoluzione dei problemi per l'app specifica. In tale visualizzazione è presente il ciclo di vita end-to-end dell'app, ad esempio quando l'app è stata creata, modificata, specificata come destinazione e distribuita in un dispositivo. Se l'installazione dell'app non è riuscita, saranno anche disponibili il codice di errore e un messaggio sulla causa dell'errore. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Criteri di protezione delle app di Intune e Microsoft Edge <!-- 1818968 -->
-Il browser Microsoft Edge per dispositivi mobili (iOS e Android) ora supporta i criteri di protezione delle app di Microsoft Intune. Gli utenti di dispositivi iOS e Android che accedono con gli account Azure AD aziendali nell'applicazione Edge saranno protetti da Intune. Nei dispositivi iOS il criterio **Require managed browser for web content** (Richiedi Managed Browser per contenuti Web) consentirà agli utenti di aprire i collegamenti in Microsoft Edge quando è gestito.
+Il browser Microsoft Edge per dispositivi mobili (iOS e Android) ora supporta i criteri di protezione delle app di Microsoft Intune. Gli utenti di dispositivi iOS e Android che accedono con gli account Azure AD aziendali nell'applicazione Microsoft Edge saranno protetti da Intune. Nei dispositivi iOS il criterio **Require managed browser for web content** (Richiedi Managed Browser per contenuti Web) consentirà agli utenti di aprire i collegamenti in Microsoft Edge quando è gestito.
 
 <!-- ########################## -->
 ## <a name="may-2018"></a>Maggio 2018
@@ -785,7 +785,7 @@ Dopo aver abilitato l'impostazione del firewall, configurare il firewall utilizz
 
 Nella configurazione del dispositivo sono disponibili per la visualizzazione più messaggi di errore e codici di errore dettagliati. Con questo miglioramento della creazione di report, vengono visualizzati le impostazioni, lo stato delle impostazioni e i dettagli sulla risoluzione dei problemi.
 
-##### <a name="more-information"></a>Ulteriori informazioni
+##### <a name="more-information"></a>Altre informazioni
 
 - Bloccare tutte le connessioni in ingresso
 
@@ -1369,7 +1369,7 @@ L'app Microsoft Planner per iOS e Android fa ora parte delle app approvate in ba
 Gli amministratori possono ora rimuovere i requisiti di VPN per app relativi alle app installate in dispositivi iOS; i dispositivi interessati verranno aggiornati dopo la successiva archiviazione di Intune, che si verifica in genere entro 15 minuti.  
 
 ### <a name="support-for-system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>Supporto per Management Pack di System Center Operations Manager per Exchange Connector <!-- 885457 -->
-È ora disponibile il Management Pack di System Center Operations Manager (SCOM) per Exchange Connector per agevolare l'analisi dei log di Exchange Connector. Questa funzionalità consente di eseguire il monitoraggio del servizio in diversi modi quando è necessario risolvere un problema.
+È ora disponibile il Management Pack di System Center Operations Manager per Exchange Connector per agevolare l'analisi dei log di Exchange Connector. Questa funzionalità consente di eseguire il monitoraggio del servizio in diversi modi quando è necessario risolvere un problema.
 
 ### <a name="co-management-for-windows-10-devices-----1243445---"></a>Co-gestione per dispositivi Windows 10  <!-- 1243445 -->
 La co-gestione è una soluzione che rappresenta un ponte tra la gestione tradizionale e quella moderna e consente di effettuare la transizione con un approccio graduale. La co-gestione è fondamentalmente una soluzione in cui i dispositivi Windows 10 vengono gestiti contemporaneamente da Configuration Manager e Microsoft Intune e aggiunti ad Active Directory (AD) e Azure Active Directory (Azure AD).  Questa configurazione offre la possibilità di effettuare una modernizzazione graduale con un ritmo adatto alla propria organizzazione nei casi in cui una transizione immediata non è possibile.  
@@ -1925,7 +1925,7 @@ In questa versione sono stati aggiunte nuove impostazioni per il profilo di rest
 -  Rete cellulare e connettività
 -  Esperienza della schermata bloccata
 -  Privacy
--  Ricerca
+-  Cerca
 -  Contenuti in evidenza di Windows
 -  Browser Microsoft Edge
 
@@ -2125,7 +2125,7 @@ Da un profilo di restrizione del dispositivo iOS è ora possibile configurare le
 I dispositivi che eseguono Samsung Knox Standard sono ora supportati per la [gestione multiutente](android-enroll.md) in Intune. Questo vuol dire che gli utenti finali possono accedere e disconnettersi dal dispositivo con le loro credenziali di Azure Active Directory e il dispositivo è gestito centralmente indipendentemente dal fatto che sia o meno in uso.  Dopo aver eseguito l'accesso gli utenti finali possono accedere alle app e implementare i criteri loro assegnati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
 
 ### <a name="additional-windows-device-restriction-settings----818566---"></a>Altre impostazioni relative alle restrizioni dei dispositivi per Windows <!-- 818566 -->
-Sono ora supportate altre [impostazioni di restrizione dei dispositivi per Windows](device-restrictions-windows-10.md) come maggiore supporto per il browser Microsoft Edge, personalizzazione della schermata di blocco del dispositivo, personalizzazioni del menu Start, sfondo per la ricerca Windows Spotlight e impostazione del proxy.
+Sono ora supportate altre [impostazioni di restrizione dei dispositivi per Windows](device-restrictions-windows-10.md), ad esempio maggiore supporto per il browser Microsoft Edge, personalizzazione della schermata di blocco del dispositivo, personalizzazioni del menu Start, sfondo per la ricerca Windows Spotlight e impostazione del proxy.
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Supporto multiutente per Windows 10 Creators Update <!-- 822547 -->
 È stato aggiunto il supporto per la [gestione multiutente](windows-enroll.md) per i dispositivi che eseguono Windows 10 Creators Update e sono aggiunti al dominio di Azure Active Directory. Ciò significa che quando utenti standard diversi accedono al dispositivo con le credenziali di Azure AD ricevono tutte le app e i criteri assegnati al loro nome utente. Gli utenti non possono attualmente usare il portale aziendale per scenari self-service, ad esempio l'installazione di app.

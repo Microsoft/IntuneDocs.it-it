@@ -233,8 +233,8 @@ ContainingAppBundleId | Stringa | Specifica l'ID bundle dell'applicazione che co
 DebugSettingsEnabled| Boolean | Se impostata su Sì, è possibile applicare i criteri di test nell'ambito del bundle delle impostazioni. Le applicazioni *non* dovrebbero essere inviate con questa impostazione abilitata. | Facoltativo. L'impostazione predefinita è No.|
 MainNibFile <br> MainNibFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file NIB principale dell'applicazione.  | È obbligatoria se l'applicazione definisce MainNibFile in Info.plist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file di storyboard principale dell'applicazione. | È obbligatoria se l'applicazione definisce UIMainStoryboardFile in Info.plist. |
-MAMPolicyRequired| Booleano| Specifica se viene impedito l'avvio dell'app se l'app non ha i criteri APP di Intune. Predefinito a NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. | Facoltativo. L'impostazione predefinita è No.|
-MAMPolicyWarnAbsent | Booleano| Specifica se l'app avvisa l'utente durante l'avvio se non ha i criteri APP di Intune. <br><br> Nota: gli utenti potranno ancora usare l'app senza criterio dopo aver ignorato l'avviso. | Facoltativo. L'impostazione predefinita è No. |
+MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se l'app non ha i criteri APP di Intune. L'impostazione predefinita è NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. | Facoltativo. L'impostazione predefinita è No.|
+MAMPolicyWarnAbsent | Boolean| Specifica se l'app avvisa l'utente durante l'avvio se non ha i criteri APP di Intune. <br><br> Nota: gli utenti potranno ancora usare l'app senza criterio dopo aver ignorato l'avviso. | Facoltativo. L'impostazione predefinita è No. |
 MultiIdentity | Boolean| Specifica se l'app è compatibile con identità multiple. | Facoltativo. L'impostazione predefinita è No. |
 SplashIconFile <br> SplashIconFile~ipad | Stringa  | Specifica il file dell'icona per la schermata iniziale (avvio) di Intune. | Facoltativo |
 SplashDuration | Numero | Quantità minima di tempo, in secondi, per la visualizzazione della schermata iniziale di Intune all'avvio dell'applicazione. Il valore predefinito è 1,5. | Facoltativo |
@@ -242,9 +242,9 @@ BackgroundColor| Stringa| Specifica il colore di sfondo per le schermate di avvi
 ForegroundColor| Stringa| Specifica il colore di primo piano per le schermate di avvio e PIN, come colore del testo. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.  | Facoltativo L'impostazione predefinita è nero. |
 AccentColor | Stringa| Specifica il colore principale della schermata del PIN, ad esempio il colore del testo del pulsante e il colore di evidenziazione della casella. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.| Facoltativo L'impostazione predefinita è blu. |
 MAMTelemetryDisabled| Boolean| Specifica se l'SDK non invierà i dati di telemetria al relativo back-end.| Facoltativo. L'impostazione predefinita è No. |
-MAMTelemetryUsePPE | Booleano | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
-MaxFileProtectionLevel | String | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Booleano | Impostare su YES per le estensioni Open In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
+MAMTelemetryUsePPE | Boolean | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
+MaxFileProtectionLevel | Stringa | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+OpenInActionExtension | Boolean | Impostare su YES per le estensioni Open In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
 WebViewHandledURLSchemes | Matrice di stringhe | Specifica gli schemi URL gestiti dalla visualizzazione Web dell'app. | Obbligatoria se l'app usa una WebView che gestisce gli URL tramite collegamenti e/o JavaScript. |
 
 ## <a name="receive-app-protection-policy"></a>Ricevere i criteri di protezione delle app
@@ -306,8 +306,8 @@ Se si desidera che Intune SDK gestisca tutte le attività di registrazione e aut
 
 Impostazione  | Tipo  | Definizione |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Boolean| Specifica se l'app deve tentare di registrarsi automaticamente all'avvio se viene rilevata un'identità gestita esistente e se tale operazione non è ancora stata compiuta. Predefinito a NO. <br><br> Nota: se non viene trovata alcuna identità gestita o non è disponibile alcun token valido per l'identità nella cache ADAL, il tentativo di registrazione avrà esito negativo senza chiedere le credenziali, a meno che l'app non abbia configurato anche MAMPolicyRequired su YES. |
-MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se non ha i criteri di protezione delle app di Intune. Predefinito a NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. Quando si imposta MAMPolicyRequired su YES, anche AutoEnrollOnLaunch deve essere impostato su YES. |
+AutoEnrollOnLaunch| Boolean| Specifica se l'app deve tentare di registrarsi automaticamente all'avvio se viene rilevata un'identità gestita esistente e se tale operazione non è ancora stata compiuta. L'impostazione predefinita è NO. <br><br> Nota: se non viene trovata alcuna identità gestita o non è disponibile alcun token valido per l'identità nella cache ADAL, il tentativo di registrazione avrà esito negativo senza chiedere le credenziali, a meno che l'app non abbia configurato anche MAMPolicyRequired su YES. |
+MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se non ha i criteri di protezione delle app di Intune. L'impostazione predefinita è NO. <br><br> Nota: le app non possono essere inviate all'App Store se MAMPolicyRequired è impostato su YES. Quando si imposta MAMPolicyRequired su YES, anche AutoEnrollOnLaunch deve essere impostato su YES. |
 
 Se si sceglie questa opzione per l'app, non sarà necessario riavviare l'app dopo la registrazione.
 
@@ -432,7 +432,7 @@ Il valore restituito da questo metodo indica all'SDK se l'applicazione deve gest
 
 Intune App SDK include varie API che è possibile chiamare per ottenere informazioni sui criteri APP di Intune distribuiti all'app. È possibile usare questi dati per personalizzare il comportamento dell'app. La tabella seguente contiene informazioni su alcune classi Intune essenziali che verranno usate.
 
-Classe | Descrizione
+Class | Descrizione
 ----- | -----------
 IntuneMAMPolicyManager.h | La classe IntuneMAMPolicyManager espone i criteri APP di Intune distribuiti all'applicazione. In particolare, espone le API utili per l'[abilitazione di identità multiple](app-sdk-ios.md#enable-multi-identity-optional). |
 IntuneMAMPolicy.h | La classe IntuneMAMPolicy espone alcune impostazioni dei criteri MAM applicati all'app. Queste impostazioni dei criteri vengono esposte per consentire la personalizzazione dell'interfaccia utente dell'app. La maggior parte delle impostazioni dei criteri vengono applicate dall'SDK e non dall'app. L'unica impostazione che deve implementare l'app è il controllo di salvataggio. Questa classe espone alcune API necessarie per implementare il controllo di salvataggio. |
@@ -604,7 +604,7 @@ L'app deve impostare le identità in modo appropriato, indipendentemente dal fat
 
 In qualsiasi momento, ogni thread ha un'identità effettiva per le attività dell'interfaccia utente e le attività di file. Si tratta dell'identità usata per determinare i criteri da applicare, se presenti. Se l'identità non esiste o l'utente non è gestito, non verrà applicato alcun criterio. I diagrammi seguenti mostrano come vengono determinate le identità effettive.
 
-  ![Intune App SDK iOS: processo di determinazione dell'identità](./media/ios-thread-identities.png)
+  ![Intune App SDK per iOS: processo di determinazione delle identità](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Code di thread
 

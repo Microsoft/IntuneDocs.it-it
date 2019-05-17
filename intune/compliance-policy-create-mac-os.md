@@ -1,11 +1,11 @@
 ---
-title: Creare criteri di conformità per i dispositivi macOS in Microsoft Intune - Azure | Microsoft Docs
-description: Creare o configurare criteri di conformità per i dispositivi macOS in Microsoft Intune per usare la protezione dell'integrità del sistema, impostare la versione minima e massima del sistema operativo, scegliere i requisiti delle password e crittografare l'archivio dati.
+title: Impostazioni di conformità di macOS in Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione della conformità per i dispositivi macOS in Microsoft Intune. Richiedere la protezione dell'integrità del sistema di Apple, impostare le restrizioni relative alla password, richiedere un firewall, consentire un gatekeeper e così via.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566608"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423646"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Aggiungere criteri di conformità per i dispositivi macOS con Intune
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di macOS per contrassegnare un dispositivo come conforme o non conforme in Intune
 
-I criteri di conformità per i dispositivi macOS in Intune specificano le regole e le impostazioni che i dispositivi macOS devono soddisfare per essere conformi. Tramite i criteri di conformità del dispositivo con accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi possono essere creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-La tabella seguente descrive come vengono gestite le impostazioni non conformi quando si usano criteri di conformità con criteri di accesso condizionale:
+Questo articolo elenca e descrive le diverse impostazioni di conformità che è possibile configurare nei dispositivi macOS in Intune. Nella soluzione di gestione di dispositivi mobili (MDM), usare queste impostazioni per impostare una versione minima o massima del sistema operativo, impostare la scadenza delle password e così via.
 
----------------------------
+Questa funzionalità si applica a:
 
-| Impostazione criterio | macOS 10.11 e versioni successive |
-| --- | --- |
-| **Configurazione di PIN o password** | Corretto |   
-| **Crittografia dispositivo** | Corretto (impostando il PIN) |
-| **Profilo di posta elettronica** | In quarantena |
-|**Versione minima del sistema operativo** | In quarantena |
-| **Versione massima del sistema operativo** | In quarantena |
+- macOS
 
----------------------------
+Come amministratore di Intune, usare queste impostazioni di conformità per proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sul loro funzionamento, vedere [Introduzione ai criteri di conformità dei dispositivi](device-compliance-get-started.md).
 
-**Con correzione** = il sistema operativo del dispositivo impone la conformità. Ad esempio, l'utente è obbligato a impostare un PIN.
+## <a name="before-you-begin"></a>Prima di iniziare
 
-**In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:
-
-- Il dispositivo viene bloccato se un criterio di accesso condizionale si applica all'utente.
-- Il portale aziendale segnala all'utente eventuali problemi di conformità.
-
-## <a name="create-a-device-compliance-policy"></a>Creare criteri di conformità dei dispositivi
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Per **Piattaforma**, selezionare **macOS**. 
-5. Scegliere **Impostazioni Configura** e immettere le impostazioni **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema** descritte in questo argomento. Al termine, fare clic su **OK** e su **Crea**.
+[Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). Per **Piattaforma**, selezionare **macOS**.
 
 ## <a name="device-health"></a>Integrità del dispositivo
 
-- **Richiedi la protezione dell'integrità del sistema**: **rendere obbligatorio** per i dispositivi macOS che la [protezione dell'integrità del sistema](https://support.apple.com/HT204899) sia abilitata.
+- **Richiedi la protezione dell'integrità del sistema**: **rendere obbligatorio** per i dispositivi macOS che la [protezione dell'integrità del sistema](https://support.apple.com/HT204899) sia abilitata. Si aprirà il sito Web di Apple. Quando si imposta **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
@@ -73,7 +58,7 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 - **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.
 - **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password.
 - **Tipo di password**: scegliere se una password deve avere solo caratteri **numerici** oppure una combinazione di numeri e altri caratteri (**alfanumerici**).
-- **Numero di caratteri non alfanumerici nella password**: immettere il numero minimo di simboli o caratteri speciali (&, #, %, ! e così via), che è necessario includere nella password.
+- **Numero di caratteri non alfanumerici nella password**: immettere il numero minimo di caratteri speciali, ad esempio `&`, `#`, `%`, `!` e così via, che devono essere inclusi nella password.
 
     Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
 
@@ -89,13 +74,16 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 - **Crittografia dell'archivio dati nel dispositivo**: scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi.
 
 ### <a name="device-security"></a>Sicurezza del dispositivo
+
 L'impostazione Firewall protegge i dispositivi da accessi alla rete non autorizzati. È possibile usare Firewall per controllare le connessioni applicazione per applicazione. 
 
 - **Firewall**: selezionare **Abilita** per proteggere i dispositivi da accessi non autorizzati. Abilitando questa funzionalità è possibile gestire le connessioni Internet in ingresso e usare la modalità mascheramento. L'opzione **Non configurato** (impostazione predefinita) lascia disattivato il firewall e consente il traffico di rete (non bloccato).
-- **Connessioni in ingresso**: **blocca** tutte le connessioni di rete in ingresso tranne quelle necessarie per i servizi Internet di base, ad esempio DHCP, Bonjour e IPSec. Questa impostazione blocca anche tutti i servizi di condivisione, ad esempio la condivisione dello schermo, l'accesso remoto e il servizio di condivisione di musica di iTunes. L'opzione **Non configurato** (impostazione predefinita) consente le connessioni in ingresso e i servizi di condivisione. 
-- **Modalità mascheramento**: selezionare **Abilita** per impedire che il dispositivo risponda alle richieste di probe, che possono avere origine da utenti malintenzionati. Se l'impostazione è abilitata, il dispositivo continua a rispondere alle richieste in ingresso provenienti da applicazioni autorizzate. L'opzione **Non configurato** (impostazione predefinita) lascia disattivata la modalità mascheramento.
+- **Connessioni in ingresso**: **bloccare** tutte le connessioni di rete in ingresso tranne le connessioni necessarie per i servizi Internet base, ad esempio DHCP, Bonjour e IPSec. Questa impostazione blocca anche tutti i servizi di condivisione, inclusi la condivisione dello schermo, l'accesso remoto e il servizio di condivisione di musica di iTunes e così via. L'opzione **Non configurato** (impostazione predefinita) consente le connessioni in ingresso e i servizi di condivisione.
+- **Modalità mascheramento**: **abilitare** la modalità mascheramento per impedire che i dispositivi rispondano alle richieste di probe, che possono avere origine da utenti malintenzionati. Se l'impostazione è abilitata, il dispositivo continua a rispondere alle richieste in ingresso provenienti da applicazioni autorizzate. L'opzione **Non configurato** (impostazione predefinita) lascia disattivata la modalità mascheramento.
 
 ### <a name="gatekeeper"></a>Gatekeeper
+
+Per altre informazioni, vedere [Gatekeeper in macOS](https://support.apple.com/HT202491). Si aprirà il sito Web di Apple.
 
 **Consenti le app scaricate da queste posizioni**: consente l'installazione nei dispositivi delle applicazioni supportate da posizioni diverse. Opzioni relative alla posizione:
 
@@ -104,19 +92,10 @@ L'impostazione Firewall protegge i dispositivi da accessi alla rete non autorizz
 - **Mac App Store e sviluppatori identificati**: consente di installare app da Mac App Store e sviluppatori identificati. macOS controlla l'identità degli sviluppatori ed esegue alcuni altri controlli per verificare l'integrità dell'app. Se si imposta Gatekeeper per l'installazione di app al di fuori di queste opzioni, il dispositivo viene considerato non conforme.
 - **Ovunque**: consente di installare le app da qualsiasi posizione e sviluppatore. Questa opzione è la meno sicura.
 
-Per altri dettagli nella documentazione Apple, vedere [Gatekeeper in macOS](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
-
-1. Scegliere un criterio configurato. I criteri esistenti sono in **Conformità del dispositivo** > **Criteri**.
-2. Selezionare il criterio e scegliere **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
-3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e scegliere **Salva** per distribuire il criterio agli utenti.
-
-> [!TIP]
-> Per impostazione predefinita, i dispositivi verificano la conformità ogni otto ore, ma gli utenti possono forzare il processo tramite l'app Portale aziendale Intune.
-
-Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
+Selezionare **OK** > **Crea** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md)  
-[Monitorare i criteri di conformità dei dispositivi Intune](compliance-policy-monitor.md)
+
+- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [Usare i tag di ambito per filtrare i criteri](scope-tags.md).
+- [Monitorare i criteri di conformità](compliance-policy-monitor.md).
+- Vedere [Impostazioni dei criteri di conformità per i dispositivi iOS](compliance-policy-create-ios.md).

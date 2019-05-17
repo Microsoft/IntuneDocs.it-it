@@ -1,6 +1,6 @@
 ---
-title: Impostazioni Istruzione di Windows 8.1 in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione di conformità per i dispositivi Windows 8.1 e Windows Phone 8.1 in Microsoft Intune. Controlla conformità nel minima e massima sistema operativo, impostare le restrizioni di password e la lunghezza, abilitare la crittografia in archiviazione di dati e altro ancora.
+title: Impostazioni di conformità di Windows 8.1 in Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione della conformità per i dispositivi Windows 8.1 e Windows Phone 8.1 in Microsoft Intune. Verificare la conformità nella versione minima e massima del sistema operativo, impostare le restrizioni relative alla password e la lunghezza, abilitare la crittografia nell'archiviazione dati e così via.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,27 +22,27 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424942"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Windows 8.1 per contrassegnare i dispositivi come conformi oppure non conformi con Intune
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Windows 8.1 per contrassegnare un dispositivo come conforme o non conforme in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo articolo elenca e descrive le impostazioni di conformità diversi che è possibile configurare nei dispositivi Windows 8.1 in Intune. Come parte della soluzione mobile device management (MDM), usare queste impostazioni per bloccare le password semplici, impostare il minimo e massimo di versione del sistema operativo e altro ancora.
+Questo articolo elenca e descrive le diverse impostazioni di conformità che è possibile configurare nei dispositivi Windows 8.1 in Intune. Nella soluzione di gestione di dispositivi mobili (MDM), usare queste impostazioni per bloccare le password semplice, impostare una versione minima e massima del sistema operativo e così via.
 
 Questa funzionalità si applica a:
 
 - Windows Phone 8.1
 - Windows 8.1 e versioni successive
 
-Come amministratore di Intune, usare queste impostazioni di conformità consentono di proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+Come amministratore di Intune, usare queste impostazioni di conformità per proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sul loro funzionamento, vedere [Introduzione ai criteri di conformità dei dispositivi](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-[Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). Per la **piattaforma**, selezionare **Windows Phone 8.1** oppure **Windows 8.1 e versioni successive**.
+[Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). Per **Piattaforma** selezionare **Windows Phone 8.1** o **Windows 8.1 e versioni successive**.
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
-- **Richiesta del sistema operativo minimo**: immettere la versione minima consentita. quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e quindi ottenere l'accesso alle risorse aziendali.
-- **Versione del sistema operativo massima**: immettere la versione massima consentita. quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché non viene modificata la regola per consentire la versione del sistema operativo.
+- **Versione minima del sistema operativo**: immettere la versione minima consentita. Quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e quindi ottenere l'accesso alle risorse aziendali.
+- **Versione massima consentita del sistema operativo**: immettere la versione massima consentita. quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché non viene modificata la regola per consentire la versione del sistema operativo.
 
 I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione del sistema operativo è impostata su Windows 8.1 per Windows, il dispositivo risulta non conforme anche se il sistema operativo installato è Windows 8.1.
 
@@ -75,7 +75,7 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
-### <a name="encryption"></a>Encryption
+### <a name="encryption"></a>Crittografia
 
 - **Richiedi crittografia sui dispositivi mobili**: **richiedere** la crittografia del dispositivo per la connessione alle risorse di archiviazione dati.
 
@@ -83,6 +83,6 @@ Selezionare **OK** > **Crea** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [usare i tag di ambito per i criteri di filtro](scope-tags.md).
+- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [Usare i tag di ambito per filtrare i criteri](scope-tags.md).
 - [Monitorare i criteri di conformità](compliance-policy-monitor.md).
-- Vedere le [le impostazioni dei criteri di conformità per Windows 10 e versioni successive](compliance-policy-create-windows.md) dispositivi.
+- Vedere [Impostazioni dei criteri di conformità per i dispositivi Windows 10 e versioni successive](compliance-policy-create-windows.md).

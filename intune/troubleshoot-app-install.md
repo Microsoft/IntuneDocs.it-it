@@ -28,7 +28,7 @@ ms.locfileid: "58799502"
 
 Nei dispositivi gestiti da MDM di Microsoft Intune le installazioni di applicazioni in alcuni casi possono non riuscire. Quando le installazioni di queste app hanno esito negativo, può essere difficile capire il motivo dell'errore o risolvere il problema. Microsoft Intune offre dettagli sugli errori di installazione delle app che consentono agli operatori di help desk e agli amministratori di Intune di visualizzare informazioni sulle app in per rispondere alle richieste degli utenti. Il riquadro di risoluzione dei problemi all'interno di Intune fornisce dettagli sull'errore, incluse informazioni dettagliate sulle app gestite nel dispositivo dell'utente. Per ogni singolo dispositivo sono disponibili informazioni dettagliate sul ciclo di vita completo di un'app nel riquadro **App gestite**. È possibile visualizzare i problemi di installazione, ad esempio quando l'app è stato creata, modificata, assegnata e recapitata a un dispositivo. 
 
-## <a name="app-troubleshooting-details"></a>Dettagli dell'App per la risoluzione dei problemi
+## <a name="app-troubleshooting-details"></a>Informazioni dettagliate per la risoluzione dei problemi delle app
 
 Intune offre informazioni dettagliate per la risoluzione dei problemi delle app in base alle app installate nel dispositivo di un utente specifico.
 
@@ -53,46 +53,46 @@ I dettagli dell'errore di installazione dell'app indicheranno il problema. È po
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
-## <a name="win32-app-installation-troubleshooting"></a>Risoluzione dei problemi di installazione di Win32 app
+## <a name="win32-app-installation-troubleshooting"></a>Risoluzione dei problemi di installazione delle app Win32
 
-Selezionare l'app di Win32 che è stata distribuita usando l'estensione di gestione di Intune. È possibile selezionare i **raccogliere log** durante l'installazione dell'app Win32 ha esito negativo. 
+Selezionare l'app Win32 distribuita usando l'estensione di gestione di Intune. È possibile selezionare l'opzione **Raccogli i log** se l'installazione dell'app Win32 ha esito negativo. 
 
 > [!IMPORTANT]
-> Il **raccogliere log** opzione non verrà attivato quando l'app di Win32 è stato installato nel dispositivo.<p>Per poter raccogliere informazioni sul log di app di Win32, l'estensione di gestione di Intune deve essere installato nel client Windows. L'estensione di gestione di Intune viene installata quando uno script di PowerShell o un'app Win32 viene distribuita in un gruppo di sicurezza dispositivi o utente. Per altre informazioni, vedere [estensione di gestione di Intune - prerequisiti](intune-management-extension.md#prerequisites).
+> L'opzione **Raccogli i log** non viene infatti attivata se l'app Win32 è stata installata nel dispositivo.<p>Per poter raccogliere i log dell'app Win32, è necessario che l'estensione di gestione di Intune sia stata installata nel client Windows. L'estensione di gestione di Intune viene installata quando uno script di PowerShell o un'app Win32 viene distribuita in un gruppo di sicurezza dispositivi o utente. Per altre informazioni, vedere i [Prerequisiti dell'estensione di gestione di Intune](intune-management-extension.md#prerequisites).
 
 ### <a name="collect-log-file"></a>Raccogliere i file di log
 
-Per raccogliere i log di installazione di app di Win32, prima di tutto seguire le istruzioni riportate nella sezione [App i dettagli sulla risoluzione](troubleshoot-app-install.md#app-troubleshooting-details). Continuare quindi con i passaggi seguenti:
+Per raccogliere i log di installazione dell'app Win32, prima di tutto seguire le istruzioni riportate nella sezione [Informazioni dettagliate per la risoluzione dei problemi delle app](troubleshoot-app-install.md#app-troubleshooting-details). Quindi, continuare con la seguente procedura:
 
-1. Fare clic sui **raccogliere i log** opzione il **dettagli installazione** pannello.
+1. Fare clic sull'opzione **Raccogli i log** nel pannello **Dettagli installazione**.
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. Specificare i percorsi dei file con log nomi di file per iniziare il processo di raccolta di file di log e fare clic su **OK**.
+2. Specificare i percorsi dei file e i nomi di file dei log per iniziare il processo di raccolta, quindi fare clic su **OK**.
     
     > [!NOTE]
-    > Raccolta di log richiederà meno di due ore. Tipi di file supportati: *. log,. txt, con estensione dmp, con estensione cab, con estensione zip, con estensione XML, evtx ed .evtl*. Un massimo di 25 percorsi dei file sono consentiti.
+    > La raccolta dei log richiederà meno di due ore. Sono supportati i tipi di file con estensione *log, txt, dmp, cab, zip, xml, evtx ed evtl*. Sono consentiti fino a 25 percorsi di file.
 
-3. Dopo essere stati raccolti i file di log, è possibile selezionare i **registri** collegamento per scaricare i file di log.
+3. Dopo aver raccolto i file di log, selezionare il collegamento **log** per scaricarli.
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
     > [!NOTE]
-    > Verrà visualizzata una notifica che indica l'esito positivo della raccolta di log di app.
+    > Verrà visualizzata una notifica per indicare l'esito positivo della raccolta dei log dell'app.
 
-#### <a name="win32-log-collection-requirements"></a>Requisiti di raccolta log di Win32
+#### <a name="win32-log-collection-requirements"></a>Requisiti per la raccolta di log di Win32
 
-Esistono requisiti specifici che devono essere seguiti per raccogliere i file di log:
+Esistono regole specifiche da seguire per raccogliere i file di log:
 
-- È necessario specificare il percorso del file di log completo. 
-- È possibile specificare le variabili di ambiente per la raccolta di log, ad esempio il seguente:<br>
-  *% PROGRAMFILES %, % PROGRAMDATA % % % PUBBLICO, % WINDIR %, % TEMP %, % TMP %*
-- Solo le estensioni di file esatto sono consentite, ad esempio:<br>
+- È necessario specificare il percorso completo dei file di log. 
+- È possibile specificare variabili di ambiente per la raccolta dei log, ad esempio:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Sono ammesse solo estensioni di file esatte, ad esempio:<br>
   *.log, .txt, .dmp, .cab, .zip, .xml*
-- Il numero massimo file di log da caricare è 60 MB o 25 file, a seconda di quale si verifica per primo. 
-- Raccolta di log di installazione di app Win32 è abilitata per le app che rispettano i necessari disponibili e la disinstallazione con finalità di assegnazione di app.
-- I log archiviati vengono crittografati per proteggere informazioni personali contenute nei log.
-- Anche se i ticket di supporto di apertura per gli errori delle app di Win32, allegare i log di errore correlati usando la procedura riportata sopra.
+- Il limite per il caricamento è 60 MB o 25 file, a seconda di quale condizione si verifica per prima. 
+- La raccolta dei log di installazione dell'app Win32 è abilitata per le app che rispettano la finalità di assegnazione obbligatoria, disponibile e disinstallazione dell'app.
+- I log archiviati sono crittografati per proteggere le informazioni personali che contengono.
+- Quando si aprono dei ticket di supporto per gli errori che si verificano nelle app Win32, allegare i relativi log di errore usando la procedura riportata sopra.
 
 ## <a name="app-installation-errors"></a>Errori di installazione delle app
 
@@ -114,7 +114,7 @@ I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di 
 
 ### <a name="ios-errors"></a>Errori iOS
 
-| Messaggio di errore/codice | Suggerimenti e risoluzione dei problemi descrizione |
+| Messaggio di errore/codice | Descrizione/Suggerimenti per la risoluzione dei problemi |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | (0x87D12906) | L'agente MDM di Apple ha segnalato che il comando di installazione ha avuto esito negativo. |
 | (0x87D1313C) | Si è persa la connessione di rete mentre l'URL aggiornato del servizio di download veniva inviato al dispositivo. In particolare, non è stato possibile trovare un server con il nome host specificato. |
@@ -126,15 +126,15 @@ I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di 
 | L'utente ha rifiutato l'offerta di installazione dell'app. (0x87D13B62) | Durante l'installazione iniziale dell'app, l'utente ha fatto clic su Annulla. |
 | L'utente ha rifiutato l'offerta di aggiornamento dell'app. (0x87D13B63) | L'utente finale ha fatto clic su Annulla durante il processo di aggiornamento. |
 | Errore sconosciuto (0x87D103E8) | Si è verificato un errore sconosciuto durante l'installazione dell'app. Si tratta dell'errore che si verifica quando non si sono verificati altri errori. |
-| Possibile installare solo le app VPP in modalità iPad condiviso (-2016330861). | Le app devono essere ottenute tramite Volume Purchase Program di Apple per installare in un iPad condiviso. |
-| Non è possibile installare le app quando l'App Store è disabilitato (-2016330860).  | Store l'App deve essere abilitata per l'utente di installare l'app. |
-| Impossibile trovare la licenza VPP per app (-2016330859).  | Revoca try e sulla riassegnazione di licenza dell'app. |
-| Non è possibile installare le app di sistema con il provider MDM (-2016330858). | Installazione di App che vengono pre-installate per il sistema operativo iOS non è uno scenario supportato. |
-| Non è possibile installare le app quando il dispositivo è in modalità di dispositivo perso (-2016330857). | Qualsiasi uso del dispositivo è bloccato in modalità di dispositivo perso.   Disabilitare la modalità di dispositivo perso per installare le app. |
-| Non è possibile installare le app quando il dispositivo è in modalità tutto schermo (-2016330856). | Provare ad aggiungere questo dispositivo a un gruppo di esclusione dei criteri di configurazione in modalità tutto schermo per installare le app. |
-| Non è possibile installare le app a 32 bit su questo dispositivo (-2016330852). | Il dispositivo non supporta l'installazione di App a 32 bit. Provare a distribuire la versione a 64 bit dell'app. |
-| Utente deve accedere per l'App Store (-2016330855). | L'utente deve eseguire l'accesso a Store l'App prima di poter installare l'app. |
-| Problema sconosciuto. Riprovare (-2016330854). | L'installazione dell'app non è riuscita a causa di un motivo sconosciuto.   Riprovare. |
+| È possibile installare le app VPP solo in modalità iPad condiviso (-2016330861). | È necessario ottenere le app tramite Volume Purchase Program di Apple per installare in un iPad condiviso. |
+| Non è possibile installare le app quando l'App Store è disabilitato (-2016330860).  | Affinché l'app possa essere installata, l'App Store deve essere abilitato. |
+| Licenza VPP per l'app non trovata (-2016330859).  | Provare a revocare la licenza dell'app e a riassegnarla. |
+| Impossibile installare le app di sistema con il provider MDM (-2016330858). | L'installazione di app che vengono pre-installate dal sistema operativo iOS non è supportata. |
+| Impossibile installare le app quando il dispositivo è in modalità di dispositivo perso (-2016330857). | In modalità di dispositivo perso, si blocca qualsiasi uso del dispositivo.   Disabilitare la modalità di dispositivo perso per installare le app. |
+| Impossibile installare le app quando il dispositivo è in modalità tutto schermo (-2016330856). | Provare ad aggiungere questo dispositivo a un gruppo di esclusione dei criteri di configurazione per la modalità tutto schermo per installare le app. |
+| Impossibile installare app a 32 bit su questo dispositivo (-2016330852). | Il dispositivo non supporta l'installazione di app a 32 bit. Provare a distribuire la versione a 64 bit dell'app. |
+| L'utente deve eseguire l'accesso all'App Store (-2016330855). | L'utente deve eseguire l'accesso all'App Store prima di poter installare l'app. |
+| Processo sconosciuto. Riprovare (-2016330854). | L'installazione dell'app non è riuscita a causa di un motivo sconosciuto.   Riprovare. |
 | L'installazione dell'app non è riuscita. Intune proverà nuovamente alla successiva sincronizzazione del dispositivo (-2016330853). | L'installazione dell'app ha rilevato un errore di dispositivo. Sincronizzare il dispositivo per provare a installare nuovamente l'app. |
 
 ### <a name="other-installation-errors"></a>Altri errori di installazione

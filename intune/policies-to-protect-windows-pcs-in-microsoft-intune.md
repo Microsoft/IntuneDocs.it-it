@@ -46,4 +46,4 @@ Come amministratore IT, [mantenere i PC Windows gestiti privi di virus e malware
 
 ## <a name="see-also"></a>Vedere anche
 
-[Domande, problemi comuni e soluzioni con i criteri dei dispositivi e i profili](device-profile-troubleshoot.md)
+[Domande frequenti, problemi e soluzioni con i criteri e i profili dei dispositivi](device-profile-troubleshoot.md)

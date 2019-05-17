@@ -33,34 +33,34 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-[Creare un profilo di configurazione dispositivo restrizioni](device-restrictions-configure.md#create-the-profile).
+[Creare un profilo di configurazione delle restrizioni del dispositivo](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Generale
 
 - **Condividi i dati di utilizzo**: scegliere **Blocca** per impedire al dispositivo di inviare dati di diagnostica e di utilizzo ad Apple. **Non configurato** (impostazione predefinita) consente l'invio di questi dati.
-  - **Modifica impostazioni di invio dei dati di diagnostica (solo con supervisionata)**: **Block** impedisce all'utente di modificare la presentazione e app analitica le impostazioni di diagnostica in **diagnostica e utilizzo**(impostazioni del dispositivo). **Non configurato** (impostazione predefinita) consente all'utente di modificare queste impostazioni del dispositivo.
+  - **Modifica delle impostazioni di invio dei dati di diagnostica (solo con supervisione)** : **Blocca** impedisce all'utente di modificare le impostazioni di invio dei dati di diagnostica e di analisi delle app in **Diagnostica e utilizzo** (Impostazioni del dispositivo). **Non configurato** (impostazione predefinita) consente all'utente di modificare queste impostazioni del dispositivo.
 
     Questa funzionalità si applica a:  
     - iOS 9.3.2 e versioni successive
 
-- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. In iOS 9.0 e versioni successive, include anche le registrazioni dello schermo di blocco. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine o come video.
+- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. In iOS 9.0 e versioni successive ciò include anche il blocco delle registrazioni dello schermo. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine o come video.
   - **Osservazione dello schermo remoto da parte dell'app Classroom (solo con supervisione)**: scegliere **Blocca** per impedire all'app Classroom di visualizzare lo schermo del dispositivo da remoto. **Non configurato** (impostazione predefinita) consente all'app Classroom di Apple di visualizzare lo schermo.
 
     Questa funzionalità si applica a:  
     - iOS 9.3 e versioni successive
 
-  - **Osservazione dello schermo non richiesta da parte dell'app Classroom (solo con supervisione)**: se impostata su **Consenti**, gli insegnanti possono osservare lo schermo dei dispositivi iOS degli studenti con l'app Classroom senza che questi ne siano a conoscenza. I dispositivi degli studenti registrati in una classe con l'app Classroom concedono automaticamente l'autorizzazione al docente del corso. **Non configurato** (impostazione predefinita) impedisce questa funzionalità.
+  - **Osservazione dello schermo non richiesta da parte dell'app Classroom (solo con supervisione)**: se impostata su **Consenti**, gli insegnanti possono osservare lo schermo dei dispositivi iOS degli studenti con l'app Classroom senza che questi ne siano a conoscenza. I dispositivi degli studenti registrati in una classe con l'app Classroom concedono automaticamente l'autorizzazione al docente del corso. **Non configurato** (impostazione predefinita) impedisce l'uso di questa funzionalità.
 - **Certificati TLS non attendibili**: scegliere **Blocca** per non consentire certificati TLS (Transport Layer Security) non attendibili nel dispositivo. **Non configurato** (impostazione predefinita) consente i certificati TLS.
 - **Attendibilità dell'app aziendale**: scegliere **Blocca** per rimuovere il pulsante **Attendibilità di Enterprise Developer** in Impostazioni > Generale > Gestione di profili e dispositivi nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di scegliere di considerare attendibili le app che non vengono scaricate da App Store.
 - **Modifica dell'account (solo con supervisione)**: se impostata su **Blocca**, l'utente non può aggiornare le impostazioni specifiche del dispositivo dall'app delle impostazioni iOS. Ad esempio, l'utente non può creare nuovi account di dispositivo o modificare il nome utente o la password. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
 
   Questa funzionalità si applica anche alle impostazioni accessibili dall'app delle impostazioni iOS, ad esempio Posta elettronica, Contatti, Calendario, Twitter e altro ancora. Non si applica alle app con impostazioni dell'account non configurabili dall'app delle impostazioni iOS, ad esempio Microsoft Outlook.
-- **Schermata di tempo (solo con supervisionato)**: scegliere **blocco** impedire agli utenti di impostare le proprie restrizioni nel tempo dello schermo (impostazioni di dispositivo). **Non configurato** consente all'utente di configurare restrizioni (ad esempio controllo genitori o contenuto e le restrizioni sulla privacy) nel dispositivo.
+- **Orario schermo (solo con supervisione)**: scegliere **Blocca** per impedire agli utenti di impostare le proprie restrizioni in Orario schermo (impostazioni del dispositivo). **Non configurato** consente all'utente di configurare restrizioni nel dispositivo, ad esempio il controllo genitori o le restrizioni relative a contenuti e privacy.
 
-  Questa impostazione, è stata rinominata **abilitazione delle restrizioni nelle impostazioni del dispositivo**. Impatto della modifica:  
+  Questa impostazione è stata rinominata da **Abilitazione delle restrizioni nelle impostazioni del dispositivo**. Impatto della modifica:  
   
-  - iOS 11.4.1 e versioni precedenti: **Blocca** impedisce agli utenti finali di impostare le proprie restrizioni nelle impostazioni del dispositivo. Questa è la stessa. e non sono presenti modifiche per gli utenti finali.
-  - iOS 12.0 e versioni successive: **blocco** impedisce agli utenti finali di impostano le loro **schermata ora** nelle impostazioni del dispositivo (Impostazioni > generali > dello schermo ora), incluse le restrizioni di contenuto e la privacy. Dispositivi aggiornati a iOS 12.0 non verranno visualizzata la scheda restrizioni nelle impostazioni del dispositivo più (Impostazioni > generali > Gestione dispositivo > profilo di gestione > restrizioni). Queste impostazioni sono in **Orario schermo**.
+  - iOS 11.4.1 e versioni precedenti: **Blocca** impedisce agli utenti finali di impostare le proprie restrizioni nelle impostazioni del dispositivo. Rimane invariato. Nessun cambiamento per gli utenti finali.
+  - iOS 12.0 e versioni successive: **Blocca** impedisce agli utenti finali di impostare un **Orario schermo** personalizzato nelle impostazioni del dispositivo (Impostazioni > Generale > Orario schermo), incluse restrizioni relative a contenuti e privacy. Nei dispositivi aggiornati a iOS 12.0 non verrà più visualizzata la scheda delle restrizioni nelle impostazioni del dispositivo (Impostazioni > Generale > Gestione dei dispositivi > Profilo di gestione > Restrizioni). Queste impostazioni sono in **Orario schermo**.
   
 - **Uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo (solo con supervisione)**: scegliere **Blocca** in modo che gli utenti non possano usare l'opzione per cancellare tutto il contenuto e tutte le impostazioni nel dispositivo (solo con supervisione). **Non configurato** (impostazione predefinita) consente agli utenti di accedere a queste impostazioni.
 - **Modifica del nome dispositivo (solo con supervisione)**: scegliere **Blocca** in modo che il nome del dispositivo non possa essere modificato. **Non configurato** (impostazione predefinita) consente all'utente di modificare il nome del dispositivo.
@@ -77,31 +77,31 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   Questa funzionalità si applica a:  
   - iOS 11.3 e versioni successive
 
-- **Consenti Classroom bloccare a un'app e bloccare il dispositivo senza chiedere conferma (solo con supervisione)**: **abilitare** consente a docenti bloccare le app o bloccare il dispositivo con l'app Classroom senza chiedere conferma dello studente. Blocco significa che le app di dispositivo può solo le app specificate per docenti l'accesso. **Non configurato** (impostazione predefinita) impedisce ai docenti di blocco app o dispositivo con l'app Classroom senza chiedere conferma dello studente. 
+- **Consenti a Classroom di bloccare un'app e bloccare il dispositivo senza prompt (solo con supervisione)**: **Abilita** consente al docente di bloccare le app o il dispositivo usando l'app Classroom senza chiedere conferma allo studente. Con il blocco delle app, il dispositivo può accedere solo alle app specificate dal docente. **Non configurato** (impostazione predefinita) impedisce ai docenti di bloccare app o dispositivi usando l'app Classroom senza chiedere conferma allo studente. 
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
 
-- **Creare un join automatico Classroom dell'utente senza chiedere conferma (solo con supervisione)**: **abilitare** automaticamente consente agli studenti di partecipare a una classe che si trova nell'app Classroom senza chiedere conferma docente. **Non configurato** (impostazione predefinita) richiede l'insegnante che gli studenti da unire in join di una classe che è l'app Classroom.
+- **Partecipa automaticamente alle lezioni di Classroom senza prompt (solo con supervisione)**: **Abilita** consente automaticamente agli studenti di partecipare a una lezione nell'app Classroom senza chiedere conferma al docente. **Non configurato** (impostazione predefinita) chiede conferma al docente quando gli studenti vogliono partecipare a una lezione nell'app Classroom.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
 
 - **Consenti gli aggiornamenti PKI in modalità wireless**: **Consenti** consente agli utenti di ricevere gli aggiornamenti software senza dover connettere i propri dispositivi a un computer.
-- **Limita il rilevamento annunci**: scegliere **Limita** per disabilitare l'identificatore di annunci pubblicitari del dispositivo. **Non configurato** (impostazione predefinita) mantiene sia abilitato.
+- **Limita il rilevamento annunci**: scegliere **Limita** per disabilitare l'identificatore di annunci pubblicitari del dispositivo. **Non configurato** (impostazione predefinita) lo mantiene abilitato.
 - **Blocca la creazione di VPN (solo con supervisione)**: **Blocca** impedisce agli utenti di creare le impostazioni di configurazione VPN. **Non configurato** (impostazione predefinita) consente agli utenti di creare VPN nel dispositivo.
-- **Modifica delle impostazioni di eSIM (solo con supervisionate)**: **blocco** impedisce agli utenti di rimozione o aggiunta di un piano cellulare di eSIM nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
+- **Modifica delle impostazioni di eSIM (solo con supervisione)**: **Blocca** impedisce agli utenti di rimuovere o aggiungere un piano per telefoni cellulari alla eSIM presente nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
 
   Questa funzionalità si applica a:  
   - iOS 12.1 e versioni successive
 
-- **Rinvia gli aggiornamenti software (solo con supervisionati)**: se impostata su **non configurata** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena vengono rilasciati da Apple. Ad esempio, se ottiene rilasciato un aggiornamento di iOS di Apple in una data specifica, quindi tale aggiornamento naturalmente viene visualizzato nel dispositivo attorno alla data di rilascio.
+- **Posticipa gli aggiornamenti software (solo con supervisione)**: se impostato su **Non configurato** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena rilasciati da Apple. Ad esempio, se un aggiornamento iOS viene rilasciato da Apple in una data specifica, questo viene normalmente visualizzato nel dispositivo in prossimità della data di rilascio.
 
-  **Abilitare** consente all'utente per il ritardo quando vengono visualizzati gli aggiornamenti software nei dispositivi, da 0 a 90 giorni. Questa impostazione non controlla gli aggiornamenti o quando non sono installati. 
+  **Abilita** consente di posticipare la visualizzazione degli aggiornamenti software nei dispositivi, da 0 a 90 giorni. Questa impostazione non controlla quando gli aggiornamenti vengono installati o meno. 
 
-  - **Ritardare la visibilità degli aggiornamenti software**: immettere un valore da 0 a 90 giorni. Quando l'intervallo di ritardo scade, gli utenti ricevono una notifica per l'aggiornamento alla versione del sistema operativo meno recente disponibile quando è stato attivato il ritardo.
+  - **Posticipa la visibilità degli aggiornamenti software**: immettere un valore compreso tra 0 e 90 giorni. Quando l'intervallo di ritardo scade, gli utenti ricevono una notifica per l'aggiornamento alla versione del sistema operativo meno recente disponibile quando è stato attivato il ritardo.
 
-    Ad esempio, se iOS 12.a è disponibile nel **il 1 ° gennaio**, e **ritardare la visibilità** è impostata su **5 giorni**, quindi iOS 12.a non viene visualizzata come un aggiornamento disponibile nei dispositivi degli utenti finali. Nel **sesto giorno** successivi al rilascio, che è disponibile un aggiornamento e gli utenti finali possono eseguirne l'installazione.
+    Ad esempio, se iOS 12.a è disponibile il **1° gennaio** e **Posticipa la visibilità** è impostato su **5 giorni**, iOS 12.a non viene visualizzato come aggiornamento disponibile nei dispositivi degli utenti finali. Il **sesto giorno** dopo il rilascio, l'aggiornamento sarà disponibile e gli utenti finali possono installarlo.
 
     Questa impostazione si applica a:  
     - iOS 11.3 e versioni successive
@@ -135,7 +135,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Blocca le richieste di prossimità password (solo con supervisione)**: scegliere **Blocca** in modo che il dispositivo di un utente non richieda password dai dispositivi nelle vicinanze. **Non configurato** (impostazione predefinita) consente queste richieste di password.
 - **Blocca la condivisione delle password (solo con supervisione)**: **Blocca** impedisce la condivisione delle password tra i dispositivi tramite AirDrop. **Non configurato** (impostazione predefinita) consente di condividere le password.
-- **Richiedere l'autenticazione di Touch ID oppure Face ID per le informazioni di carta di credito o password riempimento automatico (solo con supervisionato)**: se impostata su **richiedono**, gli utenti devono autenticarsi usando touch ID oppure FaceID prima le password o carta di credito le informazioni possono essere compilato in Safari e altre App automaticamente. **Non configurato** (impostazione predefinita) consente agli utenti di controllare questa funzionalità nelle impostazioni del dispositivo.
+- **Richiedi l'autenticazione con Touch ID o Face ID per il riempimento automatico di password o informazioni della carta di credito (solo con supervisione)**: se impostato su **Rendi obbligatorio**, gli utenti devono autenticarsi tramite TouchID o FaceID prima che le password o le informazioni della carta di credito possano essere immesse automaticamente in Safari e altre app. **Non configurato** (impostazione predefinita) consente agli utenti di controllare questa funzionalità nelle impostazioni del dispositivo.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
@@ -159,12 +159,12 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Musica di iTunes, podcast o notizie con contenuti espliciti (solo con supervisione)**: scegliere **Blocca** per impedire musica di iTunes, podcast o notizie con contenuti espliciti. **Non configurata** consente al dispositivo di accedere ai contenuti classificati come per adulti dallo Store.
 - **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'**: scegliere **Blocca** per impedire agli utenti di scaricare contenuti multimediali da iBook Store contrassegnati come erotici. **Non configurata** consente all'utente di scaricare libri della categoria "Erotici".
 - **Visualizzazione dei documenti aziendali nelle app non gestite**: **Blocca** impedisce la visualizzazione di documenti aziendali nelle app non gestite. **Non configurata** consente di visualizzare documenti aziendali in qualsiasi app. Ad esempio, può essere necessario impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Configurare questa impostazione come **Blocca**. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consente più il salvataggio.
-  - **Consentire alle App gestite di scrivere contatti contatti non gestito e account**: se impostata su **Consenti**, gli utenti possono aggiungere o sincronizzare informazioni di contatto Outlook qualsiasi persona, inclusi a business e i contatti aziendali, il app dei contatti predefinite nel dispositivo. Quando è impostata su **Non configurata**, gli utenti non possono aggiungere contatti di Outlook all'app Contatti incorporata nel dispositivo.
+  - **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: quando è impostata su **Consenti**, gli utenti possono aggiungere o sincronizzare le informazioni dei contatti Outlook di qualsiasi persona, inclusi i contatti commerciali e aziendali, con l'app Contatti predefinita del dispositivo. Quando è impostata su **Non configurata**, gli utenti non possono aggiungere contatti di Outlook all'app Contatti incorporata nel dispositivo.
   
     Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
   
 - **Visualizzazione di documenti non aziendali nelle app aziendali**: **Blocca** impedisce la visualizzazione di documenti non aziendali nelle app aziendali. **Non configurata** consente di visualizzare qualsiasi documento nelle app aziendali gestite.
-  - **Consentire alle App non gestite per la lettura dagli account gestito contatti**: se impostata su **Consenti**, gli utenti possono aggiungere iContacts app le informazioni di contatto qualsiasi persona in Outlook. **Non configurata** impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.
+  - **Consenti alle app non gestite di leggere da contatti in account di contatti gestiti**: quando è impostata su **Consenti**, gli utenti possono aggiungere le informazioni dei contatti dell'app iContacts di qualsiasi persona a Outlook. **Non configurata** impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.
   
     Per usare questa impostazione, impostare **Visualizzazione di documenti non aziendali nelle app aziendali** su **Blocca**.
   
@@ -250,12 +250,12 @@ Per aggiungere app a questi elenchi, è possibile:
 - **Chiamata vocale**: scegliere **Blocca** per impedire agli utenti di usare la funzionalità di chiamata vocale nel dispositivo. **Non configurato** (impostazione predefinita) consente la chiamata vocale nel dispositivo.
 - **Roaming vocale**: scegliere **Blocca** per impedire il roaming vocale nella rete cellulare. **Non configurato** (impostazione predefinita) consente il roaming vocale quando il dispositivo si trova in una rete cellulare.
 - **Modifiche alle impostazioni dell'utilizzo della rete dati dell'app (solo con supervisione)**: scegliere **Blocca** per impedire modifiche alle impostazioni per l'utilizzo della rete dati dell'app. **Non configurato** (impostazione predefinita) consente all'utente di controllare le app che possono usare la rete dati.
-- **Le modifiche alle impostazioni di piano cellulare (solo con supervisionate)**: **blocco** impedisce agli utenti di modificare le impostazioni nel piano di cellulare. **Non configurato** (impostazione predefinita) consente agli utenti di apportare modifiche.
+- **Modifiche alle impostazioni del piano per telefoni cellulari (solo con supervisione)**: **Blocca** impedisce agli utenti di modificare le impostazioni del piano per telefoni cellulari. **Non configurato** (impostazione predefinita) consente agli utenti di apportare modifiche.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
 
-- **Hotspot personale**: **blocco** consente di disattivare l'hotspot personale nel dispositivo degli utenti con ogni sincronizzazione del dispositivo. Questa impostazione potrebbe non essere compatibile con alcuni gestori. **Non configurato** (impostazione predefinita) mantiene la configurazione hotspot personale come impostazione predefinita impostata dall'utente.
+- **Hotspot personale**: **Blocca** disattiva l'hotspot personale nel dispositivo dell'utente a ogni sincronizzazione del dispositivo. Questa impostazione potrebbe non essere compatibile con alcuni gestori. **Non configurato** (impostazione predefinita) mantiene la configurazione dell'hotspot personale come quella predefinita impostata dall'utente.
 - **Aggiungi reti Wi-Fi solo tramite profili di configurazione (solo con supervisione)**: **Rendi obbligatorio** impone al dispositivo l'uso esclusivo delle reti Wi-Fi impostate tramite profili di configurazione di Intune. **Non configurato** (impostazione predefinita) consente al dispositivo di usare altre reti Wi-Fi.
 - **Regole di utilizzo della rete cellulare (solo app gestite)**: definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Le opzioni disponibili sono:
   - **Blocca l'uso della rete dati**: bloccare l'uso della rete dati per **Tutte le app gestite** oppure **Scegliere app specifiche**.
@@ -273,7 +273,7 @@ Per aggiungere app a questi elenchi, è possibile:
   - **Impedisci l'archiviazione di credenziali AirPrint in Keychain (solo con supervisione)**: **Blocca** impedisce l'uso dell'archiviazione Keychain per nome utente e password nel dispositivo. **Non configurato** (impostazione predefinita) consente l'archiviazione di nome utente e password per AirPrint nell'app Keychain.
   - **Richiedi un certificato TLS attendibile per AirPrint (solo con supervisione)**: **Rendi obbligatorio** impone al dispositivo l'uso di certificati attendibili per le comunicazioni di stampa TLS.
   - **Impedisci l'individuazione iBeacon delle stampanti AirPrint (solo con supervisione)**: **Blocca** impedisce il phishing del traffico di rete tramite beacon AirPrint Bluetooth dannosi. **Non configurato** (impostazione predefinita) consente l'annuncio delle stampanti AirPrint nel dispositivo.
-- **Bloccare l'impostazione di nuovi vicino i dispositivi (solo con supervisionati)**: **blocco** disabilita il prompt per impostare i nuovi dispositivi vicini. **Non configurato** (impostazione predefinita) consente istruzioni agli utenti di connettersi ad altri dispositivi di Apple nelle vicinanze.
+- **Blocca la configurazione di nuovi dispositivi vicini (solo con supervisione)**: **Blocca** disabilita la richiesta per la configurazione di nuovi dispositivi che si trovano nelle vicinanze. **Non configurato** (impostazione predefinita) consente le richieste che gli utenti possono usare per connettersi ad altri dispositivi Apple nelle vicinanze.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
@@ -290,7 +290,7 @@ Per aggiungere app a questi elenchi, è possibile:
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
 - **Backup in iCloud**: **Non configurata** consente all'utente di eseguire il backup del dispositivo in iCloud. **Blocca** impedisce all'utente di eseguire il backup del dispositivo in iCloud.
-- **Sincronizzazione dei documenti in iCloud (solo con supervisione)**: **Non configurata** consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud. **Blocca** impedisce a iCloud di sincronizzare documenti e dati.
+- **Block iCloud Document sync (supervised only)** (Blocca la sincronizzazione di documenti in iCloud - solo con supervisione): **Non configurato** consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud. **Blocca** impedisce a iCloud di sincronizzare documenti e dati.
 - **Sincronizzazione dello streaming foto in iCloud**: **Non configurata** consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto** per sincronizzare le foto in iCloud in modo che siano disponibili in tutti i dispositivi degli utenti. **Blocca** impedisce la sincronizzazione dello streaming foto in iCloud.
 - **Backup crittografato**: **Rendi obbligatorio** in modo che i backup del dispositivo debbano essere crittografati.
 - **Libreria foto di iCloud**: impostare su **Blocca** per disabilitare l'uso della libreria foto di iCloud per archiviare foto e video nel cloud. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo. **Non configurata** consente l'uso della libreria foto iCloud.
@@ -313,10 +313,10 @@ Per aggiungere le app, è possibile:
 ## <a name="kiosk-supervised-only"></a>Modalità tutto schermo (solo con supervisione)
 
 - **App da eseguire in modalità tutto schermo**: scegliere il tipo di app da eseguire in modalità tutto schermo. Le opzioni disponibili sono:
-  - **Non configurato**: non vengono applicate le impostazioni modalità tutto schermo. Il dispositivo non viene eseguita in modalità tutto schermo.
+  - **Non configurato**: le impostazioni della modalità tutto schermo non vengono applicate. Il dispositivo non viene eseguito in modalità tutto schermo.
   - **App Store**: immettere l'URL di un'app in iTunes App Store.
   - **App gestita**: scegliere un'app aggiunta a Intune.
-  - **App predefinita**: immettere il [ID bundle](#bundle-ids-for-built-in-ios-apps) (in questo articolo) dell'app predefinita.
+  - **App predefinita**: immettere l'[ID bundle](#bundle-ids-for-built-in-ios-apps) (in questo articolo) dell'app predefinita.
 
 - **Tocco per l'accesso facilitato**: **Rendi obbligatorio** per richiedere la presenza dell'impostazione di accessibilità Tocco per l'accesso facilitato nel dispositivo. Questa funzionalità offre supporto agli utenti per i movimenti sullo schermo che potrebbero risultare difficili. **Non configurata** non consente di eseguire o abilitare questa funzionalità in modalità tutto schermo.
 - **Inverti colori**: **Rendi obbligatorio** consente di rendere disponibile l'impostazione di accessibilità Inverti colori in modo che gli utenti con problemi visivi possano modificare quanto visualizzato sullo schermo. **Non configurata** non consente di eseguire o abilitare questa funzionalità in modalità tutto schermo.
@@ -341,11 +341,11 @@ Per aggiungere le app, è possibile:
 
 ## <a name="domains"></a>Domains
 
-- **Domini di posta elettronica non contrassegnati** > **URL di dominio di posta elettronica**: aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli immessi, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
+- **Domini di posta elettronica non contrassegnati** > **URL del dominio di posta elettronica**: aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli immessi, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
 
-- **Domini web gestiti** > **URL del dominio Web**; Aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dai domini immessi, sono considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
+- **Domini Web gestiti** > **URL del dominio Web**: aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dai domini immessi, sono considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
 
-- **Domini riempimento automatico della password di Safari** > **URL del dominio**: aggiungere uno o più URL all'elenco. Gli utenti possono salvare solo le password Web dagli URL in questo elenco. Questa impostazione si applica solo al browser Safari e ai dispositivi iOS 9.3 e versioni successive in modalità con supervisione. Se non si specifica nessun URL, è possibile salvare le password da tutti i siti web.
+- **Domini con compilazione automatica della password di Safari** > **URL di dominio**: aggiungere uno o più URL all'elenco. Gli utenti possono salvare solo le password Web dagli URL in questo elenco. Questa impostazione si applica solo al browser Safari e ai dispositivi iOS 9.3 e versioni successive in modalità con supervisione. Se non si specifica nessun URL, è possibile salvare le password da tutti i siti web.
 
 ## <a name="bundle-ids-for-built-in-ios-apps"></a>ID bundle per le app iOS predefinite
 
@@ -398,7 +398,7 @@ L'elenco seguente include l'ID bundle di alcune app comuni iOS predefinite. Per 
 | com.apple.Bridge            | Video        | Apple     |
 | com.apple.weather           | Weather      | Apple     |
 
-## <a name="settings-that-require-supervised-mode"></a>Le impostazioni che richiedono la modalità di supervisione
+## <a name="settings-that-require-supervised-mode"></a>Impostazioni che richiedono la modalità di supervisione
 
 La modalità con supervisione iOS può essere abilitata solo durante l'installazione iniziale del dispositivo tramite Device Enrollment Program di Apple o Apple Configurator. Dopo aver abilitato la modalità di supervisione, Intune può configurare un dispositivo con le funzionalità seguenti:
 
@@ -450,4 +450,4 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 
 [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-È inoltre possibile limitare le funzionalità del dispositivo e le impostazioni sul [macOS](device-restrictions-macos.md) dispositivi.
+È possibile limitare funzionalità e impostazioni anche in dispositivi [macOS](device-restrictions-macos.md).

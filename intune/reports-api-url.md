@@ -64,7 +64,7 @@ L'URL contiene gli elementi seguenti:
 
 ## <a name="odata-query-options"></a>Opzioni di query OData
 
-La versione corrente supporta i seguenti parametri di query OData: `$filter`, `$select`, `$skip,` e `$top`. Nelle `$filter`, solo `DateKey` o `RowLastModifiedDateTimeUTC` potrebbero essere supportati quando sono applicabili le colonne e altre proprietà comportava l'attivazione di una richiesta non valida.
+La versione corrente supporta i seguenti parametri di query OData: `$filter`, `$select`, `$skip,` e `$top`. In `$filter`, solo `DateKey` o `RowLastModifiedDateTimeUTC` possono essere supportati quando le colonne sono applicabili, mentre altre proprietà comporterebbero l'attivazione di una richiesta non valida.
 
 ## <a name="datekey-range-filters"></a>Filtri di intervallo DateKey
 
@@ -84,4 +84,4 @@ I filtri di intervallo `DateKey` possono essere usati per limitare la quantità 
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Restituisce dati con `DateKey` uguale a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Restituisce dati con `DateKey` tra 20180214 e 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Restituisce dati con `DateKey` uguale a 20180214. `maxhistorydays` viene ignorato.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Restituire i dati con `RowLastModifiedDateTimeUTC` è maggiore o uguale a `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Restituisce dati con `RowLastModifiedDateTimeUTC` maggiore o uguale a `2018-02-21T23:18:51.3277273Z`                             |

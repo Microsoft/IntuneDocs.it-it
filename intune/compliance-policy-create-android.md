@@ -1,6 +1,6 @@
 ---
-title: Creare criteri di conformità per i dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione di conformità dei dispositivi Android in Microsoft Intune. Impostare le regole di password, scegliere una versione del sistema operativo minimo o massimo, limitare l'App specifiche, impediscono viene riutilizzata la password e altro ancora.
+title: Impostazioni di conformità di Android in Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione della conformità per i dispositivi Android in Microsoft Intune. Impostare le regole delle password, scegliere una versione minima o massima del sistema operativo, creare restrizioni per app specifiche, impedire il riutilizzo della password e così via.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,23 +24,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423578"
 ---
-# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni Android per contrassegnare i dispositivi come conformi oppure non conformi con Intune
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Android per contrassegnare un dispositivo come conforme o non conforme in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo articolo elenca e descrive le impostazioni di conformità diversi che è possibile configurare nei dispositivi Android in Intune. Come parte della soluzione mobile device management (MDM), usare queste impostazioni per contrassegnare i dispositivi rooted (jailbroken) come non conforme, impostare un livello di minaccia consentita, abilitare Google Play Protect e altro ancora.
+Questo articolo elenca e descrive le diverse impostazioni di conformità che è possibile configurare nei dispositivi Android in Intune. Nella soluzione di gestione di dispositivi mobili (MDM), usare queste impostazioni per contrassegnare i dispositivi rooted (Jailbroken) come non conformi, impostare un livello di rischio consentito, abilitare Protezione di Google Play e così via.
 
 Questa funzionalità si applica a:
 
 - Android
 
-Come amministratore di Intune, usare queste impostazioni di conformità consentono di proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+Come amministratore di Intune, usare queste impostazioni di conformità per proteggere le risorse dell'organizzazione. Per altre informazioni sui criteri di conformità e sul loro funzionamento, vedere [Introduzione ai criteri di conformità dei dispositivi](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 [Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). Per **Piattaforma**, selezionare **Android**.
 
-## <a name="device-health"></a>Integrità del dispositivo
+## <a name="device-health"></a>Device health
 
 - **Dispositivi rooted**: scegliere **Blocca** per contrassegnare i dispositivi rooted (jailbroken) come non conformi. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità. Per usare questa impostazione, scegliere il livello di minaccia consentito:
@@ -64,7 +64,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità consento
   - **Verifica l'integrità di base e i dispositivi certificati**
 
 > [!NOTE]
-> Per configurare le impostazioni di Google Play Protect con criteri di protezione delle app, vedere [impostazioni dei criteri di protezione app di Intune](app-protection-policy-settings-android.md#conditional-launch) in Android.
+> Per configurare Protezione di Google Play con i criteri di protezione delle app, vedere [Impostazioni dei criteri di protezione delle app di Android in Intune](app-protection-policy-settings-android.md#conditional-launch).
 
 ## <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 
@@ -90,7 +90,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità consento
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, l'utente deve crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
-### <a name="encryption"></a>Encryption
+### <a name="encryption"></a>Crittografia
 
 - **Crittografia dell'archivio dati nel dispositivo** (Android 4.0 e versioni successive o KNOX 4.0 e versioni successive): scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 
@@ -120,14 +120,14 @@ Selezionare **OK** > **Crea** per salvare le modifiche.
 
 ## <a name="locations"></a>Percorsi
 
-Nei criteri, è possibile forzare di conformità per la posizione del dispositivo. Scegliere tra posizioni esistenti. Se non si ha ancora una posizione, vedere l'articolo che spiega come [usare i percorsi (isolamento rete) in Intune](use-network-locations.md) per conoscere alcune linee guida.
+Nei criteri è possibile forzare la conformità in base al percorso del dispositivo. Scegliere un percorso esistente. Se non si ha ancora una posizione, Vedere [Usare percorsi (limite della rete)](use-network-locations.md) in Intune per alcuni indicazioni.
 
-1. Scegli **posizioni** > **Seleziona percorsi**.
-2. Dall'elenco, verificare il percorso > **seleziona**.
+1. Scegliere **Percorsi** > **Select locations** (Seleziona percorsi).
+2. Selezionare il percorso nell'elenco e scegliere **Seleziona**.
 3. **Salvare** il criterio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [usare i tag di ambito per i criteri di filtro](scope-tags.md).
+- [Aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md) e [Usare i tag di ambito per filtrare i criteri](scope-tags.md).
 - [Monitorare i criteri di conformità](compliance-policy-monitor.md).
-- [Impostazioni dei criteri di conformità per Android Enterprise](compliance-policy-create-android-for-work.md)
+- Vedere [Impostazioni dei criteri di conformità peri dispositivi Android Enterprise](compliance-policy-create-android-for-work.md).
