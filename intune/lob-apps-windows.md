@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570767"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764717"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -63,7 +63,7 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
     - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
-    - **Argomenti della riga di comando**: immettere gli argomenti della riga di comando da applicare per l'esecuzione del file con estensione msi (facoltativo). Un esempio è **/q**.
+    - **Argomenti della riga di comando**: immettere gli argomenti della riga di comando da applicare per l'esecuzione del file con estensione msi (facoltativo).  Un esempio è **/q**. Non includere il comando msiexec o gli argomenti, ad esempio **/i** oppure **/x**, perché vengono usati automaticamente. Per altre informazioni, vedere [Opzioni della riga di comando](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
     - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
     - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
