@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507061"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135084"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e i profili in Microsoft Intune  
 
@@ -35,7 +35,7 @@ In [Baseline di sicurezza in Intune](security-baselines.md) sono disponibili mag
 
 Quando si monitora una baseline, si ottengono informazioni dettagliate sullo stato di sicurezza dei dispositivi in base ai consigli di Microsoft. È possibile visualizzare queste informazioni dettagliate nel riquadro Panoramica della baseline di sicurezza nella console di Intune.  Sono necessarie fino a 24 ore prima che i dati vengano visualizzati dopo che si assegna per la prima volta una baseline. La visualizzazione delle modifiche apportate successivamente può richiedere fino a sei ore.  
 
-Per visualizzare i dati di monitoraggio per la baseline e i dispositivi, accedere al [portale di Intune](https://aka.ms/intuneportal). Selezionare quindi **Baseline di sicurezza (anteprima)**, selezionare una baseline e visualizzare il riquadro **Panoramica**.
+Per visualizzare i dati di monitoraggio per la baseline e i dispositivi, accedere al [portale di Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Selezionare quindi **Sicurezza dei dispositivi** > **Baseline di sicurezza (anteprima)**, selezionare una baseline e visualizzare il riquadro **Panoramica**.
 
 Il riquadro **Panoramica** offre due metodi per monitorare lo stato:
 - **Visualizzazione dispositivo**: riepilogo del numero di dispositivi inclusi in ogni categoria di stato per la baseline.  

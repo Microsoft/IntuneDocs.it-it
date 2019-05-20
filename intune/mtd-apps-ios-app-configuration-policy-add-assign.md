@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 108b9fb0eb227e9f046919efc6ef4d04b0903c40
+ms.sourcegitcommit: d259c0986d356135e626a30468971e32f8103f4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513444"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65442965"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Aggiungere e assegnare app Mobile Threat Defense (MTD) con Intune
 
@@ -59,6 +59,7 @@ Scegliere la sezione corrispondente al provider MTD:
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Configurare app Lookout for Work
 
@@ -142,7 +143,18 @@ Scegliere la sezione corrispondente al provider MTD:
 
     - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](store-apps-ios.md). Usare questo [URL dell'App Store di ActiveShield](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) nel **passaggio 12** nella sezione **Configurare le informazioni sull'app**.
 
+
+### <a name="configure-sophos-apps"></a>Configurare le app Sophos  
+- **Android**
+
+    - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](store-apps-android.md). Usare questo [URL dello store di app Sophos](https://play.google.com/store/apps/details?id=com.sophos.smsec) nel **passaggio 7**.
+
+ - **iOS**
+
+    - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](store-apps-ios.md). Usare questo [URL dell'App Store di ActiveShield](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) nel **passaggio 12** nella sezione **Configurare le informazioni sull'app**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Configurare le app MTD con criteri di configurazione di app iOS
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Criteri di configurazione delle app Lookout for Work
 
@@ -163,7 +175,7 @@ Scegliere la sezione corrispondente al provider MTD:
 
     - Al **passaggio 8** usare l'opzione **Immettere i dati XML**, copiare il contenuto del file ***.plist** e incollarlo nel corpo dei criteri di configurazione.
 
-> [!NOTE]
+> [!NOTE]  
 > Se non è possibile recuperare i file, contattare il [supporto aziendale per Symantec Endpoint Protection Mobile](https://support.symantec.com/en_US/contact-support.html).
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Criteri di configurazione delle app Check Point SandBlast Mobile
@@ -192,6 +204,9 @@ Scegliere la sezione corrispondente al provider MTD:
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Criteri di configurazione delle app Pradeo
+Pradeo non supporta i criteri di configurazione delle applicazioni in iOS.  In alternativa, per ottenere un'app configurata, collaborare con Pradeo per implementare file IPA o APK personalizzati e preconfigurati con le impostazioni desiderate.
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Criteri di configurazione delle app Better Mobile
 
@@ -208,6 +223,9 @@ Scegliere la sezione corrispondente al provider MTD:
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Criteri di configurazione delle app Sophos Mobile
+Creare i criteri di configurazione delle app iOS come descritto nell'articolo relativo all'[uso dei criteri di configurazione delle app per iOS](app-configuration-policies-use-ios.md).
 
 ## <a name="assign-apps-to-groups"></a>Assegnare app ai gruppi
 

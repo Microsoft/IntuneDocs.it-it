@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 92216550ee53c220beb3dc325be02c28b5eeb0c5
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513350"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135198"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
@@ -67,7 +67,7 @@ Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati c
 - **Numero di giorni dopo i quali il partner risulta non reattivo**: numero di giorni di inattività prima che Intune consideri il partner non reattivo a causa della perdita della connessione. Intune ignora lo stato di conformità per i partner MTD non reattivi.
 
 > [!IMPORTANT] 
-> È necessario aggiungere e assegnare le app MTD prima di creare le regole di conformità del dispositivo e dei criteri di accesso condizionale. Ciò garantisce che l'app MTD sia pronta e disponibile in modo che gli utenti finali possano installarla prima di ottenere l'accesso alla posta elettronica o ad altre risorse aziendali.
+> Se possibile, è consigliabile aggiungere e assegnare le app MTD prima di creare le regole di conformità del dispositivo e dei criteri di accesso condizionale. Ciò garantisce che l'app MTD sia pronta e disponibile in modo che gli utenti finali possano installarla prima di ottenere l'accesso alla posta elettronica o ad altre risorse aziendali.
 
 > [!TIP]
 > Nel riquadro Mobile Threat Defence sono visualizzati lo **Stato connessione** e l'ora dell'**Ultima sincronizzazione** tra Intune e il partner MTD.

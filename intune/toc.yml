@@ -442,11 +442,16 @@
                       items:
                         - name: Integrazione di Sophos Mobile e Intune
                           href: sophos-mtd-connector-integration.md
-            - name: Windows Defender ATP
-              href: advanced-threat-protection.md
-            - name: Baseline di sicurezza
-              href: security-baselines.md
+            - name: Microsoft Defender
               items:
+                - name: Microsoft Defender ATP
+                  href: advanced-threat-protection.md
+                - name: Attività relative alla sicurezza
+                  href: atp-manage-vulnerabilities.md
+            - name: Baseline di sicurezza
+              items:
+                - name: Baseline di sicurezza
+                  href: security-baselines.md
                 - name: Monitorare le baseline
                   href: security-baselines-monitor.md
             - name: Endpoint Protection
@@ -552,7 +557,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivi gestiti
               href: app-configuration-policies-use-android.md
-            - name: App Managed Home Screen per Android Enterprise
+            - name: Configurare l'app Managed Home Screen
               href: app-configuration-managed-home-screen-app.md
             - name: App gestite
               href: app-configuration-policies-managed-app.md
@@ -770,8 +775,12 @@
                   href: shared-user-device-settings-windows.md
                 - name: Personalizzato
                   href: custom-settings-windows-10.md
-            - name: Impostazioni di base per la sicurezza
-              href: security-baseline-settings-windows.md
+            - name: Baseline di sicurezza
+              items:
+                - name: Impostazioni delle baseline di Windows 10
+                  href: security-baseline-settings-windows.md
+                - name: Impostazioni delle baseline di Microsoft Defender ATP
+                  href: security-baseline-settings-defender-atp.md
             - name: Impostazioni aggiornamento di Windows
               href: windows-update-settings.md
         - name: Windows Holographic for Business

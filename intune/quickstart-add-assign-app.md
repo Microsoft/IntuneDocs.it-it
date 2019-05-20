@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798744"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764784"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guida introduttiva: Aggiungere e assegnare un'app client
 

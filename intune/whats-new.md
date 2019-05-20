@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426231"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135177"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -46,6 +46,25 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>Settimana del 6 maggio 2019 
+
+### <a name="device-configuration"></a>Configurazione del dispositivo
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>Supporto del controllo di accesso alla rete per F5 Access per dispositivi iOS <!-- 4500808 -->
+
+F5 ha rilasciato un aggiornamento di BIG-IP 13 che abilita la funzionalità di controllo di accesso alla rete per F5 Access su iOS in Intune. Per usare questa funzionalità:
+
+- Aggiornare BIG-IP alla versione 13.1.1.5. BIG-IP 14 non è supportata.
+- Integrare BIG-IP con Intune per il controllo di accesso alla rete. Vedere la procedura in [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Controllare l'impostazione di **Abilita il controllo accesso alla rete** nel profilo VPN in Intune.
+
+Per vedere l'impostazione disponibile, passare a [Configurare le impostazioni VPN nei dispositivi iOS](vpn-settings-ios.md).
+
+Si applica a: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>Connettore di certificati PFX per Microsoft Intune aggiornato <!-- doc-vso 1521237  -->  
+È stato rilasciato un aggiornamento del [connettore di certificati PFX per Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) in cui l'intervallo di polling è stato ridotto da 5 minuti a 30 secondi.
 
 ## <a name="week-of-april-22-2019"></a>Settimana del 22 aprile 2019
 
@@ -75,7 +94,7 @@ Nell'esempio seguente sono illustrati i controlli GDPR in dettaglio. Microsoft c
 I criteri di Protezione app di Intune nei dispositivi Android usano ora una libreria di crittografia OpenSSL compatibile con FIPS 140-2. Per altre informazioni, vedere la sezione [Crittografia](app-protection-policy-settings-android.md#encryption) di [Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Abilitare le dipendenze delle app Win32 <!-- 2617348  -->
-Gli amministratori possono richiedere che vengano installate altre app come dipendenze prima di installare l'app Win32. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. In Intune selezionare **App client** > **App** > **Aggiungi** per visualizzare il pannello **Aggiungi app**. Selezionare **App di Windows (Win32)** come **Tipo di app**. Dopo aver aggiunto l'app, è possibile selezionare **Dipendenze** per aggiungere le app dipendenti che devono essere installate prima di poter installare l'app Win32. Per altre informazioni, vedere [Intune autonomo - Gestione di app Win32](apps-win32-app-management.md). Questa funzionalità è disponibile solo dopo che l'agente di gestione di Intune è stato aggiornato alla versione 1904 (superiore alla 1.18.120.0), il che potrebbe richiedere una o due settimane aggiuntive dopo l'aggiornamento del servizio alla versione 1904.
+Gli amministratori possono richiedere che vengano installate altre app come dipendenze prima di installare l'app Win32. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. In Intune selezionare **App client** > **App** > **Aggiungi** per visualizzare il pannello **Aggiungi app**. Selezionare **App di Windows (Win32)** come **Tipo di app**. Dopo aver aggiunto l'app, è possibile selezionare **Dipendenze** per aggiungere le app dipendenti che devono essere installate prima di poter installare l'app Win32. Per altre informazioni, vedere [Intune autonomo - Gestione di app Win32](apps-win32-app-management.md). 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Informazioni di installazione sulla versione delle app per le app di Microsoft Store per le aziende <!-- 3537391   -->
 I report di installazione delle app includono informazioni sulla versione delle app per le app di Microsoft Store per le aziende. In Intune selezionare **App client** > **App**. Selezionare un'**app di Microsoft Store per le aziende** e quindi selezionare **Stato dell'installazione del dispositivo** nella sezione **Monitoraggio**.
@@ -91,6 +110,9 @@ Nella pagina Panoramica del dispositivo verrà visualizzato l'utente primario, d
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Segnalazione app Google Play gestite per dispositivi del profilo di lavoro Android Enterprise <!-- 4105925  -->
 Per le app Google Play gestite distribuite nei dispositivi del profilo di lavoro Android Enterprise, è possibile visualizzare il numero di versione specifico dell'app installata in un dispositivo. Questo vale solo per le app richieste. In una versione futura verrà abilitata la stessa funzionalità per le app disponibili. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>Tastiere di terze parti iOS <!-- 4111843 idready eeready -->
+Il supporto per i criteri di protezione app di Intune per l'impostazione delle **tastiere di terze parti** per iOS non è più disponibile a causa di una modifica della piattaforma iOS. Non sarà possibile configurare questa impostazione nella console di amministrazione di Intune e non verrà applicata nel client in Intune App SDK.
 
 ### <a name="device-configuration"></a>Configurazione del dispositivo
 
@@ -207,7 +229,7 @@ Quando V1.0 è stato introdotto per la prima volta nella versione 1808, c'erano 
 ### <a name="device-configuration"></a>Configurazione del dispositivo
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Connettori di certificati aggiornati  <!-- ICM 113304612 -->
-Sono stati rilasciati aggiornamenti per il [connettore di certificati di Intune e il connettore di certificati PFX](certficates-pfx-configure.md#whats-new-for-connectors). Le nuove versioni consentono di risolvere diversi problemi noti.  
+Sono stati rilasciati aggiornamenti per il [connettore di certificati di Intune e il connettore di certificati PFX per Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). Le nuove versioni consentono di risolvere diversi problemi noti.  
 
 ### <a name="app-management"></a>Gestione delle app
 
@@ -376,7 +398,7 @@ In Intune selezionare **App client** > **App** > "Nome app" > **Stato dell'insta
 È stata aggiunta una nuova schermata denominata **Categorie di app** per migliorare l'esperienza di esplorazione e selezione delle app nel Portale aziendale per Windows 10. Gli utenti vedranno ora le proprie app ordinate in categorie, ad esempio **In evidenza**, **Istruzione** e **Produttività**. Questa modifica viene visualizzata nelle versioni del Portale aziendale 10.3.3451.0 e versioni successive. Per visualizzare la nuova schermata, vedere [Novità dell'interfaccia utente dell'app](https://docs.microsoft.com/intune/whats-new-app-ui). Per altre informazioni sulle app nel Portale aziendale, vedere [Installare e condividere app nel dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>App di conformità di Power BI <!-- 1455231 doc-work-item -->
-Accedere al data warehouse di Intune in Power BI Online usando l'app di [conformità di Intune (Data warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance). Con questa app di Power BI, è ora possibile accedere ai report creati in precedenza e condividerli senza alcuna configurazione e senza uscire dal Web browser. Per altre informazioni, vedere [Registro modifiche - App di conformità di Power BI](reports-changelog.md#power-bi-compliance-app).
+Accedere al data warehouse di Intune in Power BI Online usando l'app di [conformità di Intune (Data warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp). Con questa app di Power BI, è ora possibile accedere ai report creati in precedenza e condividerli senza alcuna configurazione e senza uscire dal Web browser. Per altre informazioni, vedere [Registro modifiche - App di conformità di Power BI](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Configurazione del dispositivo
@@ -638,7 +660,7 @@ I modelli amministrativi in Intune (**Configurazione del dispositivo** > **Model
 
 - i modelli amministrativi includono circa 300 impostazioni che possono essere gestite in Intune. In precedenza, queste impostazioni erano disponibili solo in Editor Criteri di gruppo.
 - I modelli amministrativi sono disponibili in anteprima pubblica.
-- Using a device configuration profile (I modelli amministrativi vengono spostati da **Configurazione del dispositivo** > **Modelli amministrativi** a **Configurazione del dispositivo** > **Profili** > **Crea profilo** > in **Piattaforma** scegliere **Windows 10 e versioni successive** > in **Tipo di profilo** scegliere **Modelli amministrativi**.
+- I modelli amministrativi vengono spostati da **Configurazione del dispositivo** > **Modelli amministrativi** a **Configurazione del dispositivo** > **Profili** > **Crea profilo** > in **Piattaforma** scegliere  **Windows 10 e versioni successive** > in **Tipo di profilo** scegliere **Modelli amministrativi**.
 - La creazione di report è abilitata
 
 Per altre informazioni su questa funzionalità, vedere [Modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune](administrative-templates-windows.md).

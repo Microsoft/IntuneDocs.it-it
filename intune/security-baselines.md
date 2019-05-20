@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
+ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490688"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197637"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Creare una baseline di sicurezza di Windows 10 in Intune
 
@@ -61,7 +61,7 @@ Quando si usano dispositivi con co-gestione, è necessario trasferire il carico 
 ## <a name="create-the-profile"></a>Creare il profilo
 
 1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
-2. Selezionare **Baseline di sicurezza (anteprima)**. È disponibile un elenco delle baseline disponibili. Le nuove baseline aggiunte verranno visualizzate in questo elenco:
+2. Selezionare **Sicurezza dei dispositivi** > **Baseline di sicurezza (anteprima)**. È disponibile un elenco delle baseline disponibili. Le nuove baseline aggiunte verranno visualizzate in questo elenco:
 
     ![Visualizzare un elenco delle baseline di sicurezza attualmente disponibili in Intune](./media/security-baselines/available-baselines.png)
 
