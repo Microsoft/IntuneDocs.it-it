@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507308"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942079"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -42,7 +42,7 @@ Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** 
 -   **Assegnazioni**: elenco di [assegnazioni di ruolo]( assign-role.md) che definiscono gli utenti che hanno accesso a determinati utenti/dispositivi. Un ruolo può avere più assegnazioni e un utente può essere incluso in più assegnazioni.
 
 ### <a name="built-in-roles"></a>Ruoli predefiniti
-È possibile assegnare ruoli predefiniti a gruppi senza ulteriore configurazione. Non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo predefinito. Per un elenco completo delle autorizzazioni per ogni ruolo predefinito, vedere [Tabella del controllo degli accessi in base al ruolo di Intune] ((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+È possibile assegnare ruoli predefiniti a gruppi senza ulteriore configurazione. Non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo predefinito. Per un elenco completo delle autorizzazioni per ogni ruolo predefinito, vedere [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Tabella di controllo degli accessi in base al ruolo di Intune).
 
 - **Help Desk Operator** (Operatore help desk): consente di eseguire attività remote su utenti e dispositivi e assegnare applicazioni o criteri a utenti o dispositivi.
 - **Policy and Profile Manager** (Gestione criteri e profili): gestisce i criteri di conformità, i profili di configurazione, la registrazione Apple, gli identificatori dei dispositivi aziendali e le baseline di sicurezza.
