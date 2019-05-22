@@ -1,11 +1,11 @@
 ---
 title: Impostazioni dei dispositivi Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
-description: Nei dispositivi Android Enterprise o Android for Work limitare le impostazioni del dispositivo, tra cui copia e incolla, visualizzazione delle notifiche, autorizzazioni delle app, condivisione dei dati, lunghezza della password, errori di accesso, uso dell'impronta digitale per sbloccare, riutilizzo delle password e abilitazione della condivisione dei contatti di lavoro con Bluetooth. Configurare i dispositivi come un chiosco multimediale un dispositivo dedicato per eseguire una sola app o più app.
+description: Nei dispositivi Android Enterprise o Android for Work limitare le impostazioni del dispositivo, tra cui copia e incolla, visualizzazione delle notifiche, autorizzazioni delle app, condivisione dei dati, lunghezza della password, errori di accesso, uso dell'impronta digitale per sbloccare, riutilizzo delle password e abilitazione della condivisione dei contatti di lavoro con Bluetooth. Configurare i dispositivi come chiosco multimediale dedicato del dispositivo per eseguire una sola app o più App.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MTE75
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505778"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -65,32 +65,24 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 
   **Non configurata** impedisce agli utenti di attivare la funzionalità di rete di emergenza nel dispositivo.
 
-- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** in modo che gli utenti possano attivare **Origini sconosciute**. Questa impostazione consente l'installazione di app da origini sconosciute. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
 - **Aggiornamento del sistema**: scegliere un'opzione per definire la modalità di gestione degli aggiornamenti in modalità wireless da parte del dispositivo:
   - **Impostazione predefinita dispositivo**: usare l'impostazione predefinita del dispositivo.
   - **Automatico**: gli aggiornamenti vengono installati automaticamente senza l'intervento dell'utente. L'impostazione del criterio consente di installare immediatamente eventuali aggiornamenti in sospeso.
   - **Posposto**: gli aggiornamenti vengono rimandati di 30 giorni. Al termine dei 30 giorni, Android chiede all'utente di installare l'aggiornamento. Ai produttori di dispositivi e ai gestori telefonici è consentito impedire il posticipo degli aggiornamenti della sicurezza. Un aggiornamento posticipato viene indicato all'utente da una notifica di sistema nel dispositivo. 
   - **Finestra di manutenzione**: installa automaticamente gli aggiornamenti in una finestra di manutenzione giornaliera impostata in Intune. L'installazione viene tentata ogni giorno per 30 giorni e può non riuscire a causa di livelli di batteria o spazio insufficienti. Dopo 30 giorni, Android chiede all'utente di eseguire l'installazione. Questa finestra viene usata anche per installare gli aggiornamenti per le app di Play. Usare questa opzione per i dispositivi dedicati, ad esempio i chioschi multimediali, in quanto consente di aggiornare le app in primo piano dei dispositivi dedicati per app singola.
-- **Aggiornamenti automatici delle app**: scegliere se gli aggiornamenti automatici vengono installati. Le opzioni disponibili sono:
-  - **Non configurato**
-  - **Scelta utente**
-  - **Mai**
-  - **Solo Wi-Fi**
-  - **Sempre**
 
 - **Finestre di notifica**: se l'opzione è impostata su **Disabilita**, le notifiche, tra cui avvisi popup, chiamate in ingresso, chiamate in uscita, avvisi di sistema ed errori di sistema, non vengono visualizzate nel dispositivo. Se è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare le notifiche.
 - **Ignora suggerimenti al primo utilizzo**: scegliere **Abilita** per nascondere o ignorare i suggerimenti delle app che richiedono di eseguire le esercitazioni o leggere i suggerimenti iniziali quando viene avviata l'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
 
-
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
-- **Analisi delle minacce nelle app**: specificare **Rendi obbligatorio** per imporre l'abilitazione dell'impostazione **Verifica app** per i profili di lavoro e personali.
+- **Analisi delle minacce nelle app**: **Richiedi** (impostazione predefinita) consente a Google Play Protect di analizzare le app prima e dopo la loro installazione. Se rileva una minaccia, può richiedere all'utente di rimuovere l'app dal dispositivo. **Non configurata** non attivare o esegue Google Play Protect per analizzare le app.
 
-### <a name="dedicated-device-settings"></a>Impostazioni di un dispositivo dedicato
+### <a name="dedicated-device-settings"></a>Impostazioni dedicate del dispositivo
 
-Usare queste impostazioni per configurare un'esperienza di tipo chiosco multimediale nei dispositivi dedicati. È possibile configurare un dispositivo per eseguire una sola app o per eseguire molte app. Quando un dispositivo è impostato in modalità tutto schermo, sono disponibili solo le app aggiunte. Queste impostazioni si applicano ai dispositivi aziendali Android dedicato. Non si applicano ai dispositivi aziendali Android completamente gestito.
+Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco multimediale nei dispositivi dedicati. È possibile configurare un dispositivo per eseguire una sola app o per eseguire molte app. Quando un dispositivo è impostato in modalità tutto schermo, sono disponibili solo le app aggiunte. Queste impostazioni si applicano ai dispositivi dedicati Android Enterprise. Non si applicano ai dispositivi Android Enterprise completamente gestiti.
 
-**Modalità tutto schermo**: scegliere se il dispositivo esegue una sola app o più app.
+**Modalità tutto schermo**: scegliere se il dispositivo eseguirà una sola app o più app.
 
 - **App singola**: gli utenti possono accedere solo a un'app singola nel dispositivo. All'avvio del dispositivo viene avviata solo l'app specifica. Gli utenti non possono aprire nuove app o modificare l'app in esecuzione.
 
@@ -117,30 +109,63 @@ Usare queste impostazioni per configurare un'esperienza di tipo chiosco multimed
     È anche possibile aggiungere al dispositivo altre [app Android](apps-add-android-for-work.md) e [app Web](web-app.md) create dall'organizzazione. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](apps-deploy.md).
 
   - **Pulsante Pagina iniziale virtuale**: scegliere **Abilita** per visualizzare un pulsante Pagina iniziale nel dispositivo dedicato. Quando questo pulsante è visualizzato, riporta l'utente alla schermata iniziale del dispositivo in modo che possa cambiare facilmente app. In alcuni dispositivi Android, è possibile che gli utenti debbano scorrere velocemente verso l'alto sullo schermo per visualizzare il pulsante Pagina iniziale. **Disabilita** non mostra un pulsante Pagina iniziale e gli utenti devono quindi usare il pulsante Indietro per spostarsi tra le app.
-  - **Esci dalla modalità tutto schermo**: scegliere **Abilita** per consentire agli amministratori di sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per usare questa funzionalità, l'amministratore: 
+  - **Esci dalla modalità tutto schermo**: scegliere **Abilita** per consentire agli amministratori di sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per utilizzare questa funzionalità, l'amministratore esegue le operazioni seguenti: 
   
     1. Continua a selezionare il pulsante Indietro fino a quando non viene visualizzato il pulsante "Exit kiosk" (Esci da modalità tutto schermo). 
     2. Seleziona il pulsante e immette il PIN per **Codice di uscita dalla modalità tutto schermo**.
     3. Al termine delle modifiche, selezionare l'app di **schermata iniziale gestita**. Questo passaggio blocca di nuovo il dispositivo in modalità tutto schermo con più app. 
-    
+
     **Disabilita** non offre la possibilità di sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante "Exit kiosk" (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
-    
+
     - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4-6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
- 
+
   - **Imposta uno sfondo personalizzato per l'URL**: immettere un URL per personalizzare la schermata di sfondo nel dispositivo dedicato.
+    
+    > [!NOTE]
+    > Nella maggior parte dei casi, è consigliabile iniziare almeno con immagini delle dimensioni seguenti:
+    >
+    > - Telefono: 1920 x 1080 pixel
+    > - Tablet: 1920 x 1080 pixel
+    >    
+    > Per ottenere la migliore esperienza e nitidezza dei dettagli, è consigliabile procedere alla creazione di asset per ogni immagine del dispositivo in base alle specifiche di visualizzazione.
+    >
+    > Gli schermi moderni hanno maggiori densità di pixel e consentono di visualizzare immagini con definizione equivalente a 2K/4K.
+  - **Configurazione Wi-Fi**: scegliere **Abilita** per consentire agli utenti di connettere il dispositivo a reti Wi-Fi diverse. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurata** (impostazione predefinita) impedisce agli utenti di connettersi alle reti Wi-Fi quando si trovano nella modalità schermata iniziale gestita (modalità attività di blocco).
+
+    Altre informazioni sulla [modalità attività di blocco](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (apre il sito Web di Android).
+
+  - **Configurazione Bluetooth**: scegliere **Abilita** per attivare Bluetooth nel dispositivo e consentire agli utenti di associare i dispositivi tramite Bluetooth. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurata** (impostazione predefinita) impedisce agli utenti di configurare il Bluetooth e associare i dispositivi quando si trovano nella modalità schermata iniziale gestita (modalità attività di blocco). 
+
+    Altre informazioni sulla [modalità attività di blocco](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (apre il sito Web di Android).
 
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
 
-- **Protezione della tastiera**: scegliere **Disabilita** per impedire agli utenti di usare la funzionalità della schermata di blocco di protezione della tastiera nel dispositivo. **Non configurata** consente all'utente di usare le funzionalità di protezione della tastiera.
-- **Disabilitata la protezione della tastiera funzionalità**: quando è abilitata la protezione della tastiera sul dispositivo, scegliere le funzionalità da disabilitare. Ad esempio, se è selezionata l'opzione **Secure camera** (Fotocamera sicura), la funzionalità fotocamera è disabilitata nel dispositivo. Le funzionalità non selezionate sono abilitate nel dispositivo.
+- **Disabilita la schermata di blocco**: scegliere **Disabilita** per impedire agli utenti di usare la funzionalità della schermata di blocco di protezione della tastiera nel dispositivo. **Non configurata** consente all'utente di usare le funzionalità di protezione della tastiera.
+- **Funzionalità disabilitate della schermata di blocco**: se la protezione della tastiera è abilitata sul dispositivo, scegliere quali funzionalità disabilitare. Ad esempio, se è selezionata l'opzione **Secure camera** (Fotocamera sicura), la funzionalità fotocamera è disabilitata nel dispositivo. Le funzionalità non selezionate sono abilitate nel dispositivo.
+
+  Queste funzionalità sono disponibili per gli utenti quando il dispositivo è bloccato. Gli utenti non potranno visualizzare o accedere alle funzionalità che sono selezionate.
+
 - **Tipo di password richiesto**: definire il tipo di password richiesta per il dispositivo. Le opzioni disponibili sono:
-  - **Almeno numerico**
-  - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti.
-  - **Almeno alfabetico**
-  - **Almeno alfanumerico**
-  - **Almeno alfanumerico con simboli**
-- **Lunghezza minima password**: immettere la lunghezza minima della password che l'utente deve configurare (da 4 a 16 caratteri).
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di accesso consentiti prima della cancellazione del dispositivo (da 1 a 11).
+  - **Impostazione predefinita dispositivo**
+  - **Password obbligatoria, nessuna restrizione**
+  - **Biometria vulnerabile**: [biometrica complessa rispetto alla vulnerabile](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web di Android)
+  - **Numerica**: la password contiene solo numeri, ad esempio `123456789`. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Alfabetica**: è obbligatorio utilizzare le lettere dell'alfabeto. Numeri e simboli non sono richiesti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Alfanumerica**: include lettere maiuscole, lettere minuscole e caratteri numerici. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Alfanumerico con simboli**: include lettere maiuscole, lettere minuscole, caratteri numerici, segni di punteggiatura e simboli. Specificare anche:
+
+    - **Lunghezza minima password**: immettere la lunghezza minima per la password che deve essere compresa tra da 4 e 16 caratteri.
+    - **Numero di caratteri richiesti**: immettere il numero di caratteri deve contenere la password, compreso tra 0 e 16 caratteri.
+    - **Numero di caratteri minuscoli obbligatori**: immettere il numero di caratteri minuscoli compreso tra 0 e 16 che la password deve contenere.
+    - **Numero di caratteri maiuscoli obbligatori**: immettere il numero di caratteri maiuscoli compreso tra 0 e 16 che la password deve contenere.
+    - **Numero di caratteri diversi da lettere obbligatori**: immettere il numero di caratteri (diversi dalle lettere dell'alfabeto) compreso tra 0 e 16 caratteri che la password deve contenere.
+    - **Numero di caratteri numerici obbligatori**: immettere il numero di caratteri numerici (`1`, `2`, `3` e così via) compreso tra 0 e 16 caratteri che la password deve contenere.
+    - **Numero di caratteri di tipo simbolo obbligatori**: immettere il numero di caratteri di tipo simbolo (`&`, `#`, `%` e così via) compreso tra 0 e 16 caratteri che la password deve contenere.
+
+- **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni che devono trascorrere tra 1 e 365 prima che sia necessario modificare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
+- **Numero di password obbligatorie prima che un utente possa riutilizzare una password**: immettere il numero di password recenti tra 1 e 24 che non può essere riutilizzato. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero tra 4 e 11 di errori di accesso consentiti prima che i dati vengano cancellati dal dispositivo.
 
 ### <a name="power-settings"></a>Impostazioni di risparmio energia
 
@@ -152,6 +177,17 @@ Usare queste impostazioni per configurare un'esperienza di tipo chiosco multimed
 - **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurata** consente agli utenti di aggiungere altri utenti nel dispositivo.
 - **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurata** consente agli utenti di rimuovere altri utenti dal dispositivo.
 - **Modifiche all'account**: scegliere **Blocca** per impedire agli utenti di modificare gli account. **Non configurata** consente agli utenti di aggiornare gli account utente nel dispositivo.
+
+### <a name="applications"></a>Applicazioni
+
+- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** in modo che gli utenti possano attivare **Origini sconosciute**. Questa impostazione consente di installare app da origini sconosciute, tra cui origini diverse da Google Play Store. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
+- **Consenti l'accesso a tutte le app in Google Play Store**: se impostata su **Consenti**, gli utenti possono accedere a tutte le app in Google Play Store. Non possono accedere alle app bloccate dall'amministratore in [App client](apps-add-android-for-work.md). **Non configurata** impone agli utenti di accedere solo alle app che l'amministratore rende disponibile in Google Play Store o le app richieste in [App client](apps-add-android-for-work.md).
+- **Aggiornamenti automatici delle app**: scegliere se gli aggiornamenti automatici vengono installati. Le opzioni disponibili sono:
+  - **Non configurato**
+  - **Scelta utente**
+  - **Mai**
+  - **Solo Wi-Fi**
+  - **Sempre**
 
 ### <a name="connectivity"></a>Connettività
 

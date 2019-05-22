@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565934"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135162"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Configurare le impostazioni VPN nei dispositivi iOS in Microsoft Intune
 
@@ -42,7 +42,7 @@ Selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
 - **Cisco (IPSec)**
 - **VPN Citrix**
 - **Citrix SSO**
-- **Zscaler**: richiede l'integrazione di Zscaler Private Access (ZPA) con il proprio account Azure AD. Per informazioni dettagliate, vedere la [documentazione di Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: per usare l'accesso condizionale oppure consentire agli utenti di ignorare la schermata di accesso di Zscaler, è necessario integrare Zscaler Private Access (ZPA) con il proprio account Azure AD. Per informazioni dettagliate, vedere la [documentazione di Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **VPN personalizzata**
 
 > [!NOTE]
@@ -70,19 +70,28 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
 - **Identificatore VPN** (VPN personalizzata, Zscaler e Citrix): identificatore per l'app VPN in uso, specificato dal provider VPN.
   - **Immettere le coppie chiave-valore per gli attributi della VPN personalizzata dell'organizzazione**: aggiungere o importare **chiavi** e **valori** che consentono di personalizzare la connessione VPN. Anche questi valori vengono in genere specificati dal provider VPN.
 
-- **Abilita il controllo accesso alla rete** (solo Citrix SSO): quando si sceglie **Accetto**, l'ID del dispositivo viene incluso nel profilo VPN. Questo ID può essere usato per l'autenticazione della rete VPN per consentire o impedire l'accesso alla rete.
+- **Abilita il controllo accesso alla rete** (Citrix SSO, F5 Access): quando si sceglie **Accetto**, l'ID del dispositivo viene incluso nel profilo VPN. Questo ID può essere usato per l'autenticazione della rete VPN per consentire o impedire l'accesso alla rete.
+
+  **Quando si usa F5 Access**, assicurarsi di:
+
+  - Confermare che si sta usando F5 BIG-IP 13.1.1.5. BIG-IP 14 non è supportata.
+  - Integrare BIG-IP con Intune per NAC. Vedere [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) della Guida di F5.
+  - Abilitare il controllo accesso alla rete nel profilo VPN.
 
   **Quando si usa Citrix SSO con Gateway**, assicurarsi di:
 
   - Verificare che sia in uso Citrix Gateway 12.0.59 o versione successiva.
   - Verificare che gli utenti abbiano Citrix SSO 1.1.6 o versione successiva installato nei dispositivi.
-  - Integrare Citrix Gateway con Intune per il controllo accesso alla rete, come descritto nella guida alla distribuzione di Citrix [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) (Integrazione di Microsoft Intune/Enterprise Mobility Suite con NetScaler - scenario LDAP+OTP).
+  - Integrare Citrix Gateway con Intune per NAC. Vedere la guida alla distribuzione di Citrix [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) (Integrazione di Microsoft Intune/Enterprise Mobility Suite con NetScaler - scenario LDAP+OTP).
   - Abilitare il controllo accesso alla rete nel profilo VPN.
 
-  Informazioni importanti:  
+  **Informazioni importanti**:  
 
-  - Quando il controllo accesso alla rete è abilitato, la rete VPN viene disconnessa ogni 24 ore.
-  - L'ID del dispositivo fa parte del profilo, ma non può essere visualizzato in Intune. Questo ID non viene archiviato né condiviso da Microsoft. Una volta supportato dai partner VPN, il client VPN, ad esempio Citrix SSO, può ottenere l'ID ed eseguire query in Intune per confermare che il dispositivo sia registrato e se il profilo VPN sia conforme o non conforme.
+  - Quando il controllo accesso alla rete è abilitato, la rete VPN viene disconnessa ogni 24 ore. La VPN può essere riconnessa immediatamente.
+  - L'ID del dispositivo fa parte del profilo, ma non viene visualizzato in Intune. Questo ID non viene archiviato né condiviso da Microsoft.
+
+  Quando l'ID del dispositivo è supportato dai partner VPN, il client VPN, ad esempio Citrix SSO, è in grado di ottenere l'ID. Quindi, può inviare una query a Intune per verificare se il dispositivo è registrato e se il profilo VPN è conforme o meno.
+
   - Per rimuovere questa informazione, creare nuovamente il profilo e non selezionare **Accetto**. Riassegnare quindi il profilo.
 
 ## <a name="automatic-vpn-settings"></a>Impostazioni VPN automatico
@@ -92,7 +101,7 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
   - Quando si usano i profili **VPN per app** iOS con Pulse Secure o una VPN personalizzata, scegliere il tunneling a livello di app (proxy delle app) o il tunneling a livello di pacchetto (tunnel di pacchetti). Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto. Se non si conosce il valore da usare, vedere la documentazione del provider VPN.
   - **URL Safari che attiveranno questa connessione VPN**: aggiungere uno o più URL del sito Web. Quando questi URL vengono visitati con il browser Safari nel dispositivo, viene stabilita automaticamente la connessione alla VPN.
 
-- **VPN su richiesta**: configurare le regole condizionali che controllano l'avvio della connessione VPN. Ad esempio, creare una condizione per cui la connessione VPN viene usata solo quando un dispositivo non è connesso a una rete Wi-Fi aziendale. Oppure, creare una condizione per cui, se un dispositivo non può accedere a un dominio di ricerca DNS specificato, la connessione VPN non viene avviata.
+- **VPN su richiesta**: configurare le regole condizionali che controllano l'avvio della connessione VPN. Ad esempio, creare una condizione per cui la connessione VPN viene usata solo quando un dispositivo non è connesso a una rete Wi-Fi aziendale. In alternativa, creare una nuova condizione. Ad esempio, se un dispositivo non può accedere a un dominio di ricerca DNS specificato, la connessione VPN non viene avviata.
 
   - **SSID o domini di ricerca DNS**: selezionare se la condizione usa o meno **SSID** della rete wireless o **Domini di ricerca DNS**. Scegliere **Aggiungi** per configurare uno o più SSID o domini di ricerca.
   - **Probe della stringa dell'URL**: facoltativo. Immettere un URL che viene usato dalla regola come test. Se il dispositivo con questo profilo accede a tale URL senza reindirizzamento, la connessione VPN viene avviata. Il dispositivo si connette quindi all'URL di destinazione. L'utente non visualizza il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi che la rete VPN possa connettersi a un sito prima di connettere il dispositivo all'URL di destinazione tramite VPN.
@@ -103,7 +112,7 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
     - Connessione
     - Valuta la connessione
     - Ignora
-    - Disconnessione
+    - Disconnetti
 
 ## <a name="proxy-settings"></a>Impostazioni proxy
 

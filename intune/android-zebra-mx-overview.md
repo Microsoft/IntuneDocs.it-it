@@ -1,11 +1,11 @@
 ---
-title: Usare le estensioni di mobilità nei dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
-description: Usare Microsoft Intune per gestire e usare dispositivi Zebra che eseguono Android con le mobilità delle estensioni (MX). Vedere tutti i passaggi, tra cui installare l'app portale aziendale, effettuare il sideload delle app, assegnare il ruolo di amministratore dispositivo, creare un profilo StageNow e altro ancora.
+title: Utilizzare Mobility Extensions di Zebra sui dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
+description: Utilizzare Microsoft Intune per gestire e usare i dispositivi Zebra che eseguono Android con Mobility Extensions (MX) di Zebra. Vedere tutti i passaggi, tra cui l’installazione dell’app Portale aziendale, effettuare il sideload dell’app, assegnare il ruolo di amministratore del dispositivo, creare un profilo StageNow e altro ancora.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,112 +17,112 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 69814b91978aa3cd74c4dc239b099883ae402af9
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490605"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764780"
 ---
-# <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usare e gestire i dispositivi Zebra con le estensioni di mobilità in Microsoft Intune
+# <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizzare e gestire i dispositivi Zebra con Mobility Extensions di Zebra in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune include un'ampia gamma di funzionalità, ad esempio la gestione delle App e configurare le impostazioni del dispositivo. Queste funzionalità incorporate e le impostazioni vengono usate per gestire i dispositivi Android realizzati dalle tecnologie, noto anche come "dispositivi zebrato".
+Intune include un'ampia gamma di funzionalità, tra cui la gestione delle app e la configurazione delle impostazioni del dispositivo. Queste funzionalità e impostazioni incorporate vengono utilizzate per gestire i dispositivi Android prodotti da Zebra Technologies, noti anche come "dispositivi Zebra".
 
-Se si desidera personalizzare o aggiungere altre impostazioni Zebra specifiche, è inoltre possibile utilizzare Zebra **mobilità delle estensioni (MX)** su questi dispositivi. 
+Nei dispositivi Android, utilizzare i profili **Mobility Extensions (MX)** per personalizzare o aggiungere altre impostazioni specifiche di Zebra.
+
+Questo articolo illustra come utilizzare Mobility Extensions (MX) di Zebra sui dispositivi Zebra in Microsoft Intune.
 
 Questa funzionalità si applica a:
 
 - Android
 
-La società può usare dispositivi zebrato per la vendita al dettaglio, in ambiente di produzione e molto altro. Ad esempio, si ha un rivenditore e l'ambiente include migliaia di dispositivi mobili Zebra usati dagli assistenti alle vendite. Intune consente di gestire questi dispositivi come parte della soluzione mobile device management (MDM).
+La società può usare dispositivi Zebra per la vendita al dettaglio, nell’ambiente di produzione e altro ancora. Ad esempio, nel caso in cui l’ambiente di un rivenditore al dettaglio includa migliaia di dispositivi mobili Zebra utilizzati dagli assistenti alle vendite. Intune consente di gestire questi dispositivi come parte della soluzione MDM.
 
-Con Intune, è possibile registrare i dispositivi Zebra per distribuire le app line-of-business ai dispositivi. I profili "Configurazione del dispositivo" consentono di creare i profili per gestire le impostazioni specifiche Zebra MX.
-
-Questo articolo illustra come usare le mobilità delle estensioni (MX) nei dispositivi Zebra in Microsoft Intune.
+Con Intune, è possibile registrare i dispositivi Zebra per distribuire le app line-of-business sui dispositivi. I profili "Configurazione del dispositivo" consentono di creare profili MX per gestire le impostazioni specifiche di Zebra.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Assicurarsi di avere la versione più recente dell'app desktop StageNow le tecnologie.
-- Assicurarsi di controllare [matrice di funzionalità del Zebra completo MX](http://techdocs.zebra.com/mx/compatibility) (si apre in sito web delle) per verificare che i profili creati siano compatibili con versione MX, versione del sistema operativo e il modello del dispositivo.
-- Alcuni dispositivi, ad esempio dispositivi TC20/25, non supportano tutte le funzionalità MX disponibili in StageNow. Assicurarsi di controllare [matrice di funzionalità del Zebra](http://techdocs.zebra.com/mx/tc2x/) (si apre in sito web delle) per informazioni sul supporto aggiornato.
+- Assicurarsi di disporre della versione più recente dell'app desktop StageNow di Zebra Technologies.
+- Assicurarsi di controllare la [matrice completa delle funzionalità MX di Zebra](http://techdocs.zebra.com/mx/compatibility) (apre il sito Web di Zebra) per verificare che i profili creati siano compatibili con la versione di MX, la versione del sistema operativo e il modello del dispositivo.
+- Alcuni dispositivi, ad esempio i dispositivi TC20/25, non supportano tutte le funzionalità MX disponibili in StageNow. Assicurarsi di controllare la [matrice delle funzionalità di Zebra](http://techdocs.zebra.com/mx/tc2x/) (apre il sito Web di Zebra) per informazioni aggiornate sul supporto.
 
-## <a name="step-1-install-the-latest-company-portal-app"></a>Passaggio 1: Installare l'app portale aziendale più recente
+## <a name="step-1-install-the-latest-company-portal-app"></a>Passaggio 1: installare l'app Portale aziendale più recente
 
-Nel dispositivo, passare a Google Play store, scaricare e installare l'app portale aziendale di Intune da Microsoft. Durante l'installazione da Google Play, l'app portale aziendale Ottiene gli aggiornamenti e correzioni automaticamente.
+Nel dispositivo, accedere a Google Play Store, quindi scaricare e installare l'app Portale aziendale di Intune da Microsoft. Una volta installata da Google Play, l'app Portale aziendale scarica automaticamente gli aggiornamenti e le correzioni.
 
-Se Google Play non è disponibile, scaricare il [portale aziendale di Microsoft Intune per Android](https://www.microsoft.com/download/details.aspx?id=49140) (si apre un altro sito Web Microsoft), e [effettuare il sideload,](#sideload-the-company-portal-app) (in questo articolo). Quando è installato in questo modo, l'app non può ricevere gli aggiornamenti o corregge automaticamente. Verranno regolarmente aggiornamento e patch manualmente l'app.
+Se Google Play non è disponibile, scaricare [Portale aziendale di Microsoft Intune per Android](https://www.microsoft.com/download/details.aspx?id=49140) (si apre un altro sito Web Microsoft) ed [effettuarne il sideload ](#sideload-the-company-portal-app) (in questo articolo). Se viene installata in questo modo, l'app non può ricevere automaticamente gli aggiornamenti o le correzioni. Gli aggiornamenti e le patch dovranno essere regolarmente installati sull'app manualmente.
 
 ### <a name="sideload-the-company-portal-app"></a>Trasferire localmente l'app Portale aziendale
 
-"Sideload" è quando non si usa Google Play per installare un'app. Trasferire localmente l'app portale aziendale, usare StageNow. 
+"Sideload" indica quando non viene utilizzato Google Play per installare un'app. Per effettuare il sideload dell'app Portale aziendale, utilizzare StageNow. 
 
-I passaggi seguenti offrono una panoramica. Per informazioni dettagliate, vedere documentazione di zebrato. [Registrare un MDM usando StageNow](http://techdocs.zebra.com/stagenow/3-1/Profiles/enrollmdm/) (si apre in sito web delle) può essere un'ottima risorsa.
+I passaggi seguenti offrono una panoramica. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. [La registrazione a un sistema MDM tramite StageNow](http://techdocs.zebra.com/stagenow/3-1/Profiles/enrollmdm/) (si apre il sito Web di Zebra) può essere un'ottima risorsa.
 
-1. In StageNow, creare un profilo per **Enroll in MDM un**.
-2. Nelle **distribuzione**, scegliere di scaricare il file dell'agente MDM.
-3. Impostare il **App di supporto** e **Scarica Configuration** la procedura per **No**.
-4. Nelle **MDM scaricare**, selezionare **trasferimento o copiare File**. Aggiungere l'origine e la destinazione del pacchetto Android di portale aziendale (APK).
-5. Nelle **MDM avviare**, lasciare i valori predefiniti come-è. Aggiungere i dettagli seguenti:
+1. In StageNow, creare un profilo per **Enroll in an MDM (Registra in un MDM)**.
+2. In **Deployment (distribuzione)**, scegliere di scaricare il file dell'agente MDM.
+3. Impostare i passaggi **Support App (App di supporto)** e **Download Configuration (Scarica configurazione)** su **No**.
+4. In **Download MDM (Scarica MDM)**, selezionare **Transfer/Copy File (Trasferisci/copia file)**. Aggiungere l'origine e la destinazione del pacchetto Android (APK) Portale aziendale.
+5. In **Launch MDM (Avvia MDM)**, lasciare i valori predefiniti come sono. Aggiungere i dettagli seguenti:
 
     - **Nome pacchetto**: `com.microsoft.windowsintune.companyportal`
     - **Nome classe**: `com.microsoft.windowsintune.companyportal.views.SplashActivity`
 
-Continuare a pubblicare il profilo e usarla con l'app StageNow nel dispositivo. L'app portale aziendale è installata e aperta sul dispositivo.
+Continuare a pubblicare il profilo e utilizzarlo con l'app StageNow nel dispositivo. L’app Portale aziendale viene installata e aperta nel dispositivo.
 
 > [!TIP]
-> Per altre informazioni su StageNow e cosa, vedere [staging dispositivo StageNow Android](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (si apre in sito web delle).
+> Per altre informazioni su StageNow e il suo funzionamento, vedere [Staging dei dispositivi Android con StageNow](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (si apre il sito Web di Zebra).
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Passaggio 2: Verificare che l'app portale aziendale ha il ruolo di amministratore dispositivo
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Passaggio 2: verificare che l’app Portale aziendale disponga del ruolo di amministratore del dispositivo
 
-L'app portale aziendale richiede l'amministratore del dispositivo per gestire i dispositivi Android. Per attivare il ruolo di amministratore del dispositivo, alcuni dispositivi Zebra includono un'interfaccia utente (UI) nel dispositivo. Se il dispositivo include un'interfaccia utente, l'app portale aziendale chiede all'utente finale per concedere l'amministratore del dispositivo durante [registrazione](#step-3-enroll-the-device-in-to-intune) (in questo articolo).
+L'app Portale aziendale richiede il ruolo Amministratore dispositivo per gestire i dispositivi Android. Per attivare il ruolo Amministratore dispositivo, alcuni dispositivi Zebra includono un'interfaccia utente nel dispositivo. Se il dispositivo include un'interfaccia utente, l'app Portale aziendale chiede all'utente finale di concedere il ruolo Amministratore dispositivo durante la [registrazione](#step-3-enroll-the-device-in-to-intune) (in questo articolo).
 
-Se un'interfaccia utente non è disponibile, usare il **DevAdmin Manager** in StageNow per creare un profilo che concede l'amministratore del dispositivo manualmente per l'app portale aziendale.
+Se non è disponibile un'interfaccia utente, utilizzare **DevAdmin Manager** in StageNow per creare un profilo che conceda manualmente il ruolo Amministratore dispositivo all'app Portale aziendale.
 
-I passaggi seguenti offrono una panoramica. Per informazioni dettagliate, vedere documentazione di zebrato. 
-[Impostare la modalità di scambio della batteria come amministratore del dispositivo](https://zebratechnologies.force.com/s/article/Set-Battery-Swap-Mode-as-Device-Administrator-using-StageNow-Tool) (si apre in sito Web del Zebra) può essere un'ottima risorsa.
+I passaggi seguenti offrono una panoramica. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. 
+[L’impostazione della modalità di scambio della batteria come amministratore del dispositivo](https://zebratechnologies.force.com/s/article/Set-Battery-Swap-Mode-as-Device-Administrator-using-StageNow-Tool) (si apre il sito Web di Zebra) può essere un'ottima risorsa.
 
-1. In StageNow, creare un profilo e selezionare **Xpert modalità**.
+1. In StageNow, creare un profilo e selezionare **Xpert Mode (Modalità esperto)**.
 2. Aggiungere **DevAdmin Manager** al profilo.
-3. Impostare **azione di amministrazione del dispositivo** al **attivare come amministratore del dispositivo**.
-4. Impostare **nome del pacchetto di amministratore dispositivo** a `com.microsoft.windowsintune.companyportal`.
-5. Impostare **nome della classe di amministratore dispositivo** a `com.microsoft.omadm.client.PolicyManagerReceiver`.
+3. Impostare **Device Administration Action (Azione amministrazione dispositivo)** su **Turn On as Device Administrator (Attiva come Amministratore dispositivo)**.
+4. Impostare **Device Admin Package Name (Nome pacchetto amministratore dispositivo)** su `com.microsoft.windowsintune.companyportal`.
+5. Impostare **Device Admin Class Name (Nome classe amministratore dispositivo)** su `com.microsoft.omadm.client.PolicyManagerReceiver`.
 
-Continuare a pubblicare il profilo e usarla con l'app StageNow nel dispositivo. L'app portale aziendale viene concesso il ruolo di amministratore del dispositivo.
+Continuare a pubblicare il profilo e utilizzarlo con l'app StageNow nel dispositivo. All’app Portale aziendale viene concesso il ruolo Amministratore dispositivo.
 
-## <a name="step-3-enroll-the-device-in-to-intune"></a>Passaggio 3: Registrare il dispositivo in Intune
+## <a name="step-3-enroll-the-device-in-to-intune"></a>Passaggio 3: registrare il dispositivo in Intune
 
-Dopo aver completato i primi due passaggi, l'app portale aziendale è installata nel dispositivo. Il dispositivo è pronto per essere iscritti a Intune.
+Dopo aver completato i primi due passaggi, l'app Portale aziendale viene installata nel dispositivo. Il dispositivo è pronto per essere registrato in Intune.
 
-[Registrare i dispositivi Android](android-enroll.md) Elenca i passaggi. Se si dispone di molti dispositivi zebrato, è possibile usare una [account di manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
+[Registrare dispositivi Android](android-enroll.md) elenca i passaggi. Se si dispone di più dispositivi Zebra, è consigliabile utilizzare un [account manager di registrazione dispositivi (DEM)](device-enrollment-manager-enroll.md). L’utilizzo dell’account DEM consente anche di eliminare la possibilità di annullare la registrazione dall'app Portale aziendale, in modo che gli utenti non possano annullare la registrazione con estrema facilità.
 
-## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Passaggio 4: Creare un profilo di gestione di dispositivi in StageNow
+## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Passaggio 4: creare un profilo di gestione dei dispositivi in StageNow
 
-Usare StageNow per creare un profilo che consente di configurare le impostazioni desiderate per la gestione del dispositivo. Per informazioni dettagliate, vedere documentazione di zebrato. [I profili](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (si apre in sito Web del Zebra) può essere un'ottima risorsa.
+Utilizzare StageNow per creare un profilo che consente di configurare le impostazioni desiderate per la gestione del dispositivo. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. I [profili](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (si apre il sito Web di Zebra) possono rappresentare un'ottima risorsa.
 
-Quando si crea il profilo in StageNow, nell'ultimo passaggio, selezionare **esportare in MDM**. Verrà generato un file XML. Salvare questo file. È necessario in un passaggio successivo.
+Quando si crea il profilo in StageNow, nell'ultimo passaggio, selezionare **Export to MDM (Esporta in MSM)**. Verrà generato un file XML. Salvare questo file. Sarà necessario in un passaggio successivo.
 
 > [!TIP]
-> È consigliabile per testare il profilo prima di distribuirla ai dispositivi nell'organizzazione. Per testare, nell'ultimo passaggio quando si creano i profili con StageNow nel computer, usare il **testare** opzioni. Quindi, utilizzare il file generato StageNow con l'app StageNow nel dispositivo. 
+> È consigliabile testare il profilo prima di distribuirlo ai dispositivi nell'organizzazione. Per effettuare il test, durante l’ultimo passaggio per la creazione dei profili con StageNow nel computer, utilizzare le opzioni **Test**. Quindi, utilizzare il file generato da StageNow con l'app StageNow nel dispositivo. 
 > 
-> L'app StageNow nel dispositivo vengono visualizzati i log generati quando si testa il profilo. [Usare StageNow accede Zebra dispositivi Android in Intune](android-zebra-mx-logs-troubleshoot.md) contiene informazioni sull'uso dei log StageNow per informazioni sugli errori.
+> L'app StageNow nel dispositivo mostra i log generati quando si testa il profilo. [Utilizzare i log StageNow sui dispositivi Zebra che eseguono Android in Intune](android-zebra-mx-logs-troubleshoot.md) contiene informazioni sull'utilizzo del log di StageNow per ottenere informazioni sugli errori.
 
 > [!NOTE]
-> Se si fa riferimento le app, i pacchetti di aggiornamento o aggiornare altri file nel profilo StageNow, si vuole che il dispositivo per ottenere questi aggiornamenti. Per ottenere gli aggiornamenti, il dispositivo deve connettersi al server di distribuzione StageNow quando viene applicato il profilo. 
+> Se si fa riferimento ad app, pacchetti di aggiornamento o si aggiornano altri file nel profilo di StageNow, in genere si desidera che tali aggiornamenti vegano scaricati sul dispositivo. Per scaricare gli aggiornamenti, il dispositivo deve connettersi al server di distribuzione StageNow quando viene applicato il profilo. 
 > 
 > In alternativa, è possibile usare le funzionalità incorporate in Intune per ottenere queste modifiche, tra cui: 
-> - Funzionalità di gestione delle app da [aggiungere](apps-add.md), [distribuire](apps-deploy.md), aggiornare, e [monitor](apps-monitor.md) app.
-> - Gestire [gli aggiornamenti di sistema e app](device-restrictions-android-for-work.md#device-owner-only) nei dispositivi che eseguono Android Enterprise
+> - Funzionalità di gestione delle app per [aggiungere](apps-add.md), [distribuire](apps-deploy.md), aggiornare e [monitorare](apps-monitor.md) le app.
+> - Gestione di [aggiornamenti di sistema e app](device-restrictions-android-for-work.md#device-owner-only) nei dispositivi che eseguono Android Enterprise
 
 Dopo avere testato il file, il passaggio successivo consiste nel distribuire il profilo ai dispositivi con Intune.
 
 > [!NOTE]
-> Distribuire un profilo per ogni dispositivo. Se sono presenti più profili StageNow da distribuire nei dispositivi, quindi esportare i profili StageNow e combinare le impostazioni in un unico file XML prima di aggiungerlo a Intune. 
+> Distribuire un profilo per ogni dispositivo. Se sono presenti più profili StageNow da distribuire nei dispositivi, esportare i profili StageNow e combinare le impostazioni in un unico file XML prima di aggiungerlo a Intune. 
 > 
-> Per evitare che due impostazioni che consentono di configurare la stessa proprietà nello stesso file XML. L'obiettivo è evitare conflitti tra le impostazioni del dispositivo.
+> È consigliabile evitare che due impostazioni che consentono di configurare la stessa proprietà si trovino nello stesso file XML. L'obiettivo è evitare conflitti tra le impostazioni sul dispositivo.
 
-## <a name="step-5-create-a-profile-in-intune"></a>Passaggio 5: Creare un profilo di Intune
+## <a name="step-5-create-a-profile-in-intune"></a>Passaggio 5: creare un profilo iOS in Intune
 
 Creare un profilo di configurazione del dispositivo in Intune:
 
@@ -133,22 +133,21 @@ Creare un profilo di configurazione del dispositivo in Intune:
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.
     - **Descrizione:** immettere una descrizione per il profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **Android**.
-    - **Tipo di profilo**: selezionare **profilo MX (solo Zebra)**.
+    - **Tipo di profilo**: selezionare il **profilo MX (solo Zebra)**.
 
-4. Nelle **profilo MX in formato XML**, aggiungere il file del profilo XML [esportato da StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in questo articolo).
+4. In **MX profile in .xml format (Profilo MX in formato .xml)**, aggiungere il file del profilo XML [esportato da StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in questo articolo).
 5. Selezionare **OK** > **Crea** per salvare le modifiche. Il criterio viene creato e visualizzato nell'elenco.
 
 Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-La volta successiva che il dispositivo verifica la disponibilità di aggiornamenti di configurazione, il profilo MX viene distribuito al dispositivo. Sincronizzare i dispositivi con Intune quando registrano i dispositivi e quindi ogni 8 ore circa. È anche possibile [forzare una sincronizzazione in Intune](device-sync.md). In alternativa, nel dispositivo, aprire il **app portale aziendale** > **impostazioni** > **sincronizzazione**. 
+La volta successiva che il dispositivo verifica la disponibilità di aggiornamenti di configurazione, il profilo MX viene distribuito sul dispositivo. I dispositivi vengono sincronizzati con Intune quando vengono registrati e quindi ogni 8 ore circa. È anche possibile [forzare una sincronizzazione in Intune](device-sync.md). In alternativa, sul dispositivo, aprire l’**app Portale aziendale** > **Impostazioni** > **Sincronizzazione**. 
 
 > [!TIP]
-> - Per motivi di sicurezza, sarà possibile vedere il testo XML del profilo dopo averlo salvato. Il testo è crittografato e viene visualizzato solo un asterisco (`****`). Per riferimento, è consigliabile salvarne le copie dei profili MX prima di aggiungerli a Intune.
+> - Per motivi di sicurezza, non sarà possibile vedere il testo XML del profilo dopo averlo salvato. Il testo è crittografato e viene sostituito da asterischi (`****`). Per riferimento, è consigliabile salvare le copie dei profili MX prima di aggiungerli a Intune.
 > 
-> - Per aggiornare un profilo dopo che è assegnato ai dispositivi zebrato, creare un file XML StageNow aggiornato, modificare il profilo di Intune esistente e aggiungere il nuovo file StageNow XML. Questo nuovo file sovrascrive i precedenti criteri StageNow nel profilo.
+> - Per aggiornare un profilo dopo che è stato assegnato ai dispositivi Zebra, creare un file XML di StageNow aggiornato, modificare il profilo di Intune esistente e aggiungere il nuovo file XML di StageNow. Questo nuovo file sovrascrive i precedenti criteri StageNow nel profilo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
-
-[Usare i log StageNow per risolvere i problemi di dispositivi Zebra](android-zebra-mx-logs-troubleshoot.md).
+- [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
+- [Usare i log StageNow per risolvere i problemi relativi ai dispositivi Zebra](android-zebra-mx-logs-troubleshoot.md).
