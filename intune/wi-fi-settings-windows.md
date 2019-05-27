@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.reviewer: tycast
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566268"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046657"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi Windows 10 e versioni successive in Intune
 
@@ -37,7 +36,7 @@ Questo articolo descrive queste impostazioni.
 
 - **Tipo Wi-Fi**: scegliere **Base**. 
 
-- **Nome Wi-Fi (SSID)**: acronimo di Service Set Identifier, identificatore del set di servizi. Questo valore è il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, tuttavia, gli utenti vedono solo il **nome della connessione** configurata.
+- **Nome Wi-Fi (SSID)** : acronimo di Service Set Identifier, identificatore del set di servizi. Questo valore è il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, tuttavia, gli utenti vedono solo il **nome della connessione** configurata.
 
 - **Nome connessione**: immettere un nome descrittivo per la connessione Wi-Fi. Il testo immesso è il nome che gli utenti vedono quando visualizzano le connessioni disponibili nel dispositivo.
 
@@ -47,7 +46,7 @@ Questo articolo descrive queste impostazioni.
 
     Si supponga ad esempio di creare una rete Wi-Fi **ContosoCorp** e di usare **ContosoCorp** all'interno di questo profilo di configurazione. Nel raggio di copertura è disponibile anche una rete Wi-Fi **ContosoGuest**. Quando si trovano nel raggio di copertura, i dispositivi aziendali devono connettersi automaticamente a **ContosoCorp**. In questo scenario impostare la proprietà **Connetti alla rete preferita se disponibile** su **No**.
 
-  - **Connetti quando la rete non sta trasmettendo il nome (SSID)**: scegliere **Sì** per indicare al profilo di configurazione di connettersi automaticamente alla rete, anche quando la rete è nascosta, ovvero quando il relativo SSID non viene trasmesso pubblicamente. Scegliere **No** se non si vuole che il profilo di configurazione si connetta alla rete nascosta.
+  - **Connetti quando la rete non sta trasmettendo il nome (SSID)** : scegliere **Sì** per indicare al profilo di configurazione di connettersi automaticamente alla rete, anche quando la rete è nascosta, ovvero quando il relativo SSID non viene trasmesso pubblicamente. Scegliere **No** se non si vuole che il profilo di configurazione si connetta alla rete nascosta.
 
 - **Limite per la connessione a consumo**: l'amministratore può scegliere come viene misurato il traffico di rete. Le applicazioni possono quindi modificare il comportamento del traffico di rete in base a questa impostazione. Le opzioni disponibili sono:
 
@@ -56,7 +55,7 @@ Questo articolo descrive queste impostazioni.
   - **Variabile**: usare questa opzione se il traffico di rete viene addebitato per byte (costo per byte).
 
 - **Tipo di sicurezza wireless**: immettere il protocollo di sicurezza usato per autenticare i dispositivi nella rete. Le opzioni disponibili sono:
-  - **Apri (nessuna autenticazione)**: usare questa opzione solo se la rete non è protetta.
+  - **Apri (nessuna autenticazione)** : usare questa opzione solo se la rete non è protetta.
   - **WPA/WPA2-Personal**: opzione che offre maggiore protezione in genere usata per la connettività Wi-Fi. Per maggiore sicurezza, è anche possibile immettere una password chiave precondivisa o una chiave di rete. 
 
     - **Chiave precondivisa** (PSK): facoltativa. Visualizzato quando si sceglie **WPA/WPA2-Personal** come tipo di sicurezza. Quando viene configurata la rete dell'organizzazione, viene configurata anche una password o una chiave di rete. Immettere questa password o chiave di rete per il valore di chiave precondivisa. Immettere una stringa con un numero di caratteri compreso tra 8 e 64. Se la password o la chiave di rete è di 64 caratteri, immettere caratteri esadecimali.
@@ -75,7 +74,7 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 
 - **Tipo Wi-Fi**: scegliere **Enterprise**. 
 
-- **Nome Wi-Fi (SSID)**: acronimo di Service Set Identifier, identificatore del set di servizi. Questo valore è il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, tuttavia, gli utenti vedono solo il **nome della connessione** configurata.
+- **Nome Wi-Fi (SSID)** : acronimo di Service Set Identifier, identificatore del set di servizi. Questo valore è il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, tuttavia, gli utenti vedono solo il **nome della connessione** configurata.
 
 - **Nome connessione**: immettere un nome descrittivo per la connessione Wi-Fi. Il testo immesso è il nome che gli utenti vedono quando visualizzano le connessioni disponibili nel dispositivo.
 
@@ -84,7 +83,7 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 
     Si supponga ad esempio di creare una rete Wi-Fi **ContosoCorp** e di usare **ContosoCorp** all'interno di questo profilo di configurazione. Nel raggio di copertura è disponibile anche una rete Wi-Fi **ContosoGuest**. Quando si trovano nel raggio di copertura, i dispositivi aziendali devono connettersi automaticamente a **ContosoCorp**. In questo scenario impostare la proprietà **Connetti alla rete preferita se disponibile** su **No**.
 
-  - **Connetti quando la rete non sta trasmettendo il nome (SSID)**: scegliere **Sì** per indicare al profilo di configurazione di connettersi automaticamente alla rete, anche quando la rete è nascosta, ovvero quando il relativo SSID non viene trasmesso pubblicamente. Scegliere **No** se non si vuole che il profilo di configurazione si connetta alla rete nascosta.
+  - **Connetti quando la rete non sta trasmettendo il nome (SSID)** : scegliere **Sì** per indicare al profilo di configurazione di connettersi automaticamente alla rete, anche quando la rete è nascosta, ovvero quando il relativo SSID non viene trasmesso pubblicamente. Scegliere **No** se non si vuole che il profilo di configurazione si connetta alla rete nascosta.
 
 - **Limite per la connessione a consumo**: l'amministratore può scegliere come viene misurato il traffico di rete. Le applicazioni possono quindi modificare il comportamento del traffico di rete in base a questa impostazione. Le opzioni disponibili sono:
 
@@ -92,14 +91,14 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
   - **Fisso**: usare questa opzione se la rete è configurata con un limite fisso per il traffico di rete. Quando viene raggiunto questo limite, l'accesso alla rete non viene più consentito.
   - **Variabile**: usare questa opzione se il traffico di rete viene addebitato per byte.
 
-- **Accesso Single Sign-On (SSO)**: consente di configurare l'accesso Single Sign-On (SSO) in cui le credenziali vengono condivise per l'accesso al computer e alla rete Wi-Fi. Le opzioni disponibili sono:
+- **Accesso Single Sign-On (SSO)** : consente di configurare l'accesso Single Sign-On (SSO) in cui le credenziali vengono condivise per l'accesso al computer e alla rete Wi-Fi. Le opzioni disponibili sono:
   - **Disabilita**: disabilita il comportamento SSO. L'utente deve eseguire l'autenticazione alla rete separatamente.
   - **Enable before user signs into device** (Abilita prima dell'accesso dell'utente al dispositivo): consente di usare SSO per l'autenticazione in rete prima della procedura di accesso dell'utente.
   - **Enable after user signs into device**: (Abilita dopo l'accesso dell'utente al dispositivo): consente di usare SSO per l'autenticazione in rete dopo il completamento della procedura di accesso dell'utente.
   - **Maximum time to authenticate before timeout** (Tempo massimo per l'autenticazione prima del timeout): immettere il numero massimo di secondi di attesa prima dell'autenticazione in rete, da 1 a 120 secondi.
   - **Allow Windows to prompt user for additional authentication credentials** (Consenti a Windows di chiedere credenziali di autenticazione aggiuntive all'utente): se si sceglie **Sì**, il sistema Windows potrà chiedere credenziali aggiuntive all'utente, se il metodo di autenticazione lo richiede. Scegliere **No** per nascondere questi prompt.
 
-- **Consenti memorizzazione nella cache Pairwise Master Key (PMK)**: selezionare **Sì** per memorizzare nella cache la PMK usata nell'autenticazione. La memorizzazione nella cache in genere consente una procedura di autenticazione in rete più rapida. Scegliere **No** per imporre l'handshake di autenticazione ogni volta che l'utente si connette alla rete Wi-Fi.
+- **Consenti memorizzazione nella cache Pairwise Master Key (PMK)** : selezionare **Sì** per memorizzare nella cache la PMK usata nell'autenticazione. La memorizzazione nella cache in genere consente una procedura di autenticazione in rete più rapida. Scegliere **No** per imporre l'handshake di autenticazione ogni volta che l'utente si connette alla rete Wi-Fi.
 
   - **Maximum time a PMK is stored in cache** (Tempo massimo di memorizzazione di una PMK nella cache): immettere il numero di minuti di memorizzazione di una PMK (Pairwise Master Key) nella cache, da 5 a 1440 minuti.
   - **Maximum number of PMKs stored in cache** (Numero massimo di PMK memorizzate nella cache): immettere il numero di chiavi memorizzate nella cache, da 1 a 255.
@@ -126,11 +125,11 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 
         **Certificato radice per la convalida server**: usare con i tipi EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Scegliere il profilo del certificato radice attendibile usato per autenticare la connessione.  
 
-        **Privacy dell'identità (identità esterna)**: usare con il tipo EAP **PEAP**. Immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.  
+        **Privacy dell'identità (identità esterna)** : usare con il tipo EAP **PEAP**. Immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.  
 
       - **Autenticazione client**
 
-        **Certificato client per l'autenticazione client (certificato di identità)**: usare con il tipo EAP **EAP-TLS**. Scegliere il profilo di certificato usato per autenticare la connessione.
+        **Certificato client per l'autenticazione client (certificato di identità)** : usare con il tipo EAP **EAP-TLS**. Scegliere il profilo di certificato usato per autenticare la connessione.
 
         **Metodo di autenticazione**: usare con il tipo EAP **EAP-TTLS**. Selezionare il metodo di autenticazione per la connessione:  
 
@@ -142,7 +141,7 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP versione 2 (MS-CHAP v2)**
 
-        **Privacy dell'identità (identità esterna)**: usare con il tipo EAP **EAP-TTLS**. Immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+        **Privacy dell'identità (identità esterna)** : usare con il tipo EAP **EAP-TTLS**. Immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
 - **Impostazioni del proxy aziendale**: scegliere questa impostazione per usare le impostazioni proxy all'interno dell'organizzazione. Le opzioni disponibili sono:
   - **Nessuna**: non sono state configurate impostazioni proxy.

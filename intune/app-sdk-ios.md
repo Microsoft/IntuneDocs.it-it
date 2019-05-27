@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
-ms.translationtype: HT
+ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59533610"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049825"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -83,7 +82,7 @@ L'obiettivo di Intune App SDK per iOS è quello di aggiungere funzionalità di g
 
 Per abilitare Intune App SDK, seguire questa procedura:
 
-1. **Opzione 1 (consigliata)**: collegare `IntuneMAM.framework` al progetto. Trascinare `IntuneMAM.framework` nell'elenco **Embedded Binaries** (File binari incorporati) della destinazione del progetto.
+1. **Opzione 1 (consigliata)** : collegare `IntuneMAM.framework` al progetto. Trascinare `IntuneMAM.framework` nell'elenco **Embedded Binaries** (File binari incorporati) della destinazione del progetto.
 
    > [!NOTE]
    > Se si usa il framework, prima di inviare l'app all'App Store, è necessario eliminare manualmente le architetture del simulatore dal framework universale. Per altri dettagli, vedere [Inviare l'app all'App Store](#submit-your-app-to-the-app-store).

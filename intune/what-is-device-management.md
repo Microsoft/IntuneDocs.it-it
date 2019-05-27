@@ -7,7 +7,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
-ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.custom: intune
@@ -16,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788446"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050265"
 ---
 # <a name="what-is-device-management"></a>Che cos'è la gestione dei dispositivi? 
 
@@ -66,9 +65,9 @@ Fornire sicurezza e protezione è un compito fondamentale che deve svolgere qual
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Scegliere la soluzione di gestione dei dispositivi adatta alle esigenze della propria azienda
 
-Esistono un paio di metodi per affrontare la gestione dei dispositivi. In primo luogo, è possibile gestire vari aspetti dei dispositivi facendo leva sulle funzionalità integrate in Intune. Questo metodo si chiama **Gestione di dispositivi mobili (MDM)**. Gli utenti "registrano" i propri dispositivi e usano certificati per comunicare con Intune. Gli amministratori IT eseguono il push delle app nei dispositivi, limitano i dispositivi a un unico sistema operativo, bloccano i dispositivi personali e altro ancora. Se un dispositivo viene smarrito o rubato, sarà possibile anche rimuovere tutti i dati dal dispositivo. 
+Esistono un paio di metodi per affrontare la gestione dei dispositivi. In primo luogo, è possibile gestire vari aspetti dei dispositivi facendo leva sulle funzionalità integrate in Intune. Questo metodo si chiama **Gestione di dispositivi mobili (MDM)** . Gli utenti "registrano" i propri dispositivi e usano certificati per comunicare con Intune. Gli amministratori IT eseguono il push delle app nei dispositivi, limitano i dispositivi a un unico sistema operativo, bloccano i dispositivi personali e altro ancora. Se un dispositivo viene smarrito o rubato, sarà possibile anche rimuovere tutti i dati dal dispositivo. 
 
-Il secondo metodo, invece, prevede la gestione delle app nei dispositivi. Questo metodo si chiama **Gestione di applicazioni mobili (MAM)**. Gli utenti possono usare i propri dispositivi personali per accedere alle risorse aziendali. Quando gli utenti aprono un'app, ad esempio la posta elettronica o SharePoint, viene richiesta un'autenticazione aggiuntiva. Se un dispositivo viene smarrito o rubato, sarà possibile anche rimuovere tutti i dati dell'organizzazione dal dispositivo. 
+Il secondo metodo, invece, prevede la gestione delle app nei dispositivi. Questo metodo si chiama **Gestione di applicazioni mobili (MAM)** . Gli utenti possono usare i propri dispositivi personali per accedere alle risorse aziendali. Quando gli utenti aprono un'app, ad esempio la posta elettronica o SharePoint, viene richiesta un'autenticazione aggiuntiva. Se un dispositivo viene smarrito o rubato, sarà possibile anche rimuovere tutti i dati dell'organizzazione dal dispositivo. 
 
 È anche possibile combinare tra loro [MDM e MAM](https://docs.microsoft.com/intune/byod-technology-decisions).
 

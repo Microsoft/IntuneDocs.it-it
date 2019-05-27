@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798802"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046957"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
 
@@ -68,7 +67,7 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   Sono supportati solo i caratteri ASCII.
 
-        -   I caratteri seguenti non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+        -   I caratteri seguenti non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
         -   Il nome del file non può superare i 128 caratteri.
 
@@ -94,7 +93,7 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   **Nome contratto**: specificare un nome univoco per il contratto.
 
-            Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+            Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
         -   **Numero autorizzazione/contratto**: immettere il numero di autorizzazione/contratto della coppia di licenze.
 
@@ -147,7 +146,7 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 4.  Nell'area **Aggiungi dettagli contratto** specificare quanto segue:
 
-    -   **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+    -   **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
     -   **Autore** (obbligatorio). Quando si inizia a digitare il nome dell'autore, il servizio recupera tutti i nomi degli autori che contengono i caratteri digitati. Ad esempio, se si digita "soft", il servizio recupera tutti i nomi degli autori che contengono "soft" come parte del nome, come "Microsoft" e "Microsoft Research". I nomi degli autori vengono recuperati dal Software Asset Catalog. È necessario selezionare l'autore prima di immettere il titolo del prodotto.
 

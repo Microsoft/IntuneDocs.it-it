@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 84a4db5639a03720b03da665c9df09fbc39d9df5
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565860"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045023"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Impostazioni di Windows Holographic for Business per gestire i dispositivi condivisi con Intune
 
@@ -44,9 +43,9 @@ Per altre informazioni su questa funzionalità in Intune, vedere [Controllare l'
 > I dispositivi che eseguono Windows Holographic for Business, tra cui i dispositivi Microsoft HoloLens, supportano solo le impostazioni **Gestione account**. Se si configura una delle altre impostazioni visualizzate in Intune, inclusa l'impostazione **Modalità Computer condiviso**, tale configurazione non influirà su questi dispositivi.
 
 - **Gestione account**: impostare su **Abilita** per eliminare automaticamente gli account locali creati dagli utenti Guest e gli account in AD e in Azure AD. Quando un utente si disconnette dal dispositivo o quando viene eseguita la manutenzione del sistema, questi account vengono eliminati. Quando l'opzione è abilitata, impostare anche:
-  - **L'eliminazione dell'account**: scegliere se gli account vengono eliminati: **alla soglia di spazio di archiviazione**, **alla soglia di spazio di memorizzazione e soglia inattiva**, o **subito dopo, disconnettiti** . Specificare anche:
-    - **Avviare l'eliminazione threshold(%)**: immettere un valore di percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco scende sotto il valore specificato, vengono eliminati gli account memorizzati nella cache. Gli account vengono eliminati in modo continuo per recuperare spazio su disco. Gli account inattivi da più tempo vengono eliminati per primi.
-    - **Arrestare threshold(%) delete**: immettere un valore di percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco corrisponde al valore specificato, l'eliminazione viene interrotta.
+  - **Eliminazione account**: scegliere quando gli account vengono eliminati: **In corrispondenza della soglia di spazio di archiviazione**, **In corrispondenza della soglia di spazio di archiviazione e della soglia di inattività** o **Immediatamente dopo la disconnessione**. Specificare anche:
+    - **Soglia di inizio dell'eliminazione (%)** : immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco scende sotto il valore specificato, vengono eliminati gli account memorizzati nella cache. Gli account vengono eliminati in modo continuo per recuperare spazio su disco. Gli account inattivi da più tempo vengono eliminati per primi.
+    - **Soglia di interruzione dell'eliminazione (%)** : immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco corrisponde al valore specificato, l'eliminazione viene interrotta.
 
   Impostare su **Disabilita** per mantenere gli account locali, AD e Azure AD creati dagli utenti guest.
 

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798894"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050208"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Aggiungere app per i PC Windows che eseguono il software client di Intune
 
@@ -78,7 +77,7 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e cari
 5. Nella pagina **Regole di rilevamento** è possibile configurare le regole per rilevare se l'app in fase di configurazione è già installata in un PC. In alternativa, è possibile usare le regole di rilevamento predefinite per sovrascrivere automaticamente eventuali versioni dell'app installate in precedenza. Questa opzione è per Windows Installer (solo file con estensione exe).
 
    È possibile configurare le regole seguenti:
-   - **File esistente**. Specificare il percorso per il file da rilevare. È possibile cercare in **%ProgramFiles%** (per eseguire ricerche in **Programmi**\&lt;percorso&gt; e **Programmi (x86)**\&lt;percorso&gt;) nel PC o **%SystemDrive%** (per eseguire ricerche nell'unità radice del PC, in genere C).
+   - **File esistente**. Specificare il percorso per il file da rilevare. È possibile cercare in **%ProgramFiles%** (per eseguire ricerche in **Programmi**\&lt;percorso&gt; e **Programmi (x86)** \&lt;percorso&gt;) nel PC o **%SystemDrive%** (per eseguire ricerche nell'unità radice del PC, in genere C).
    - **Codice prodotto MSI esistente**. Fare clic su **Sfoglia** per scegliere il file di Windows Installer (con estensione msi) da rilevare.
    - <strong>Chiave del Registro di sistema esistente</strong>. Specificare una chiave del Registro di sistema che inizia con <strong>HKEY_LOCAL_MACHINE\</strong>. Vengono eseguite ricerche nei percorso del Registro di sistema a 32 bit e a 64 bit. Se la chiave specificata esiste in uno dei due percorsi, la regola di rilevamento sarà soddisfatta.
 

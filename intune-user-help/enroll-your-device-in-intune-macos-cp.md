@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834722"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196773"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
 
@@ -31,7 +31,9 @@ Registrare un dispositivo macOS nell'app Portale aziendale Intune per ottenere a
 
 Le organizzazioni richiedono spesso di attivare la gestione del dispositivo prima di concedere l'accesso ai dati proprietari da quest'ultimo. Quando un dispositivo è gestito, le organizzazioni possono effettuare il push di criteri e app verso di esso tramite il provider di gestione dei dispositivi mobili. Per ottenere accesso continuato alle informazioni aziendali o dell'istituto di istruzione tramite il dispositivo, è necessario configurare nel dispositivo le impostazioni dei criteri corrispondenti.  
 
-Questo articolo descrive come l'app Portale aziendale Intune per macOS consenta di registrare, configurare e gestire il dispositivo in modo da soddisfare i requisiti dell'organizzazione.
+Questo articolo descrive come l'app Portale aziendale Intune per macOS consenta di registrare, configurare e gestire il dispositivo in modo da soddisfare i requisiti dell'organizzazione.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Aspettative relative all'app Portale aziendale
 

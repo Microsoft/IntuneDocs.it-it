@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/01/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 67393f83ecd76250e01deef3eee20aa1206b3f99
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788488"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040544"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Impostazioni di Windows 10 e versioni successive per la gestione dei dispositivi condivisi con Intune
 
@@ -47,16 +46,16 @@ Per altre informazioni su questa funzionalità in Intune, vedere [Controllare l'
   - **Guest e dominio**: crea un account Guest locale nel dispositivo e in Azure Active Directory (AD).
 - **Gestione account**: impostare su **Abilita** per eliminare automaticamente gli account locali creati dagli utenti Guest e gli account in AD e in Azure AD. Quando un utente si disconnette dal dispositivo o quando viene eseguita la manutenzione del sistema, questi account vengono eliminati. Quando l'opzione è abilitata, impostare anche:
   - **Eliminazione account**: scegliere quando gli account vengono eliminati: **In corrispondenza della soglia di spazio di archiviazione**, **In corrispondenza della soglia di spazio di archiviazione e della soglia di inattività** o **Immediatamente dopo la disconnessione**. Specificare anche:
-    - **Soglia di inizio dell'eliminazione (%)**: immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco scende sotto il valore specificato, vengono eliminati gli account memorizzati nella cache. Gli account vengono eliminati in modo continuo per recuperare spazio su disco. Gli account inattivi da più tempo vengono eliminati per primi.
-    - **Soglia di interruzione dell'eliminazione (%)**: immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco corrisponde al valore specificato, l'eliminazione viene interrotta.
+    - **Soglia di inizio dell'eliminazione (%)** : immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco scende sotto il valore specificato, vengono eliminati gli account memorizzati nella cache. Gli account vengono eliminati in modo continuo per recuperare spazio su disco. Gli account inattivi da più tempo vengono eliminati per primi.
+    - **Soglia di interruzione dell'eliminazione (%)** : immettere una percentuale (0-100) di spazio su disco. Quando lo spazio totale di archiviazione o su disco corrisponde al valore specificato, l'eliminazione viene interrotta.
 
   Impostare su **Disabilita** per mantenere gli account locali, AD e Azure AD creati dagli utenti guest.
 
 - **Archiviazione locale**: scegliere **Abilitata** per impedire agli utenti di salvare e visualizzare file nel disco rigido del dispositivo. Scegliere **Disabilitata** per consentire agli utenti di visualizzare e salvare file in locale tramite Esplora file. **Non configurati** (impostazione predefinita) lascia questa impostazione non gestita da Intune e non esegue il push di alcun criterio al dispositivo per controllare questa impostazione.
 - **Criteri per l'alimentazione**: se questa opzione è impostata su **Abilitati**, gli utenti non possono disabilitare l'ibernazione, eseguire l'override delle azioni di sospensione (ad esempio la chiusura del coperchio) o cambiare le impostazioni di risparmio energia. Se questa opzione è impostata su **Disabilitati**, gli utenti possono attivare l'ibernazione del dispositivo, chiudere il coperchio per sospendere il dispositivo e cambiare le impostazioni di risparmio energia. **Non configurati** (impostazione predefinita) lascia questa impostazione non gestita da Intune e non esegue il push di alcun criterio al dispositivo per controllare questa impostazione.
-- **Timeout della sospensione (in secondi)**: immettere il numero di secondi di inattività (0-100) che devono trascorrere prima che il dispositivo passi alla modalità sospensione. Se non si imposta alcun valore, il dispositivo passa in modalità sospensione dopo 60 minuti.
+- **Timeout della sospensione (in secondi)** : immettere il numero di secondi di inattività (0-100) che devono trascorrere prima che il dispositivo passi alla modalità sospensione. Se non si imposta alcun valore, il dispositivo passa in modalità sospensione dopo 60 minuti.
 - **Accedi alla riattivazione del computer**: impostare su **Abilitato** per richiedere agli utenti di accedere con la password quando il dispositivo esce dalla modalità sospensione. Scegliere **Disabilitato** perché gli utenti non debbano immettere il nome utente e la password. **Non configurati** (impostazione predefinita) lascia questa impostazione non gestita da Intune e non esegue il push di alcun criterio al dispositivo per controllare questa impostazione.
-- **Ora di inizio della manutenzione (in minuti da mezzanotte)**: immettere l'ora di avvio dell'esecuzione delle attività di manutenzione automatica, ad esempio Windows Update, in minuti (0-1440). L'ora di avvio predefinito è mezzanotte, ovvero zero (`0`) minuti. Per cambiare l'ora di inizio, immettere un'ora in minuti successivi alla mezzanotte. Se ad esempio si vuole che la manutenzione inizi alle 2.00, immettere `120`. Se si vuole che la manutenzione inizi alle 20.00, immettere `1200`.
+- **Ora di inizio della manutenzione (in minuti da mezzanotte)** : immettere l'ora di avvio dell'esecuzione delle attività di manutenzione automatica, ad esempio Windows Update, in minuti (0-1440). L'ora di avvio predefinito è mezzanotte, ovvero zero (`0`) minuti. Per cambiare l'ora di inizio, immettere un'ora in minuti successivi alla mezzanotte. Se ad esempio si vuole che la manutenzione inizi alle 2.00, immettere `120`. Se si vuole che la manutenzione inizi alle 20.00, immettere `1200`.
 - **Criteri per la formazione**: scegliere **Abilitati** per usare le impostazioni consigliate per i dispositivi usati negli istituti di istruzione, più restrittive. Scegliere **Disabilitati** perché i criteri per la formazione predefiniti e consigliati non vengano usati. **Non configurati** (impostazione predefinita) lascia questa impostazione non gestita da Intune e non esegue il push di alcun criterio al dispositivo per controllare questa impostazione.
 
   Per altre informazioni sulla funzione dei criteri per la formazione, vedere [Consigli sulla configurazione di Windows 10 per i clienti del settore istruzione](https://docs.microsoft.com/education/windows/configure-windows-for-education).

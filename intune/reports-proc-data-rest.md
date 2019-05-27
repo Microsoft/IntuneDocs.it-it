@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/02/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871451"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041169"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Recuperare dati dall'API data warehouse di Intune con un client REST
 
@@ -156,7 +155,7 @@ L'esempio seguente contiene un semplice client REST. Il codice usa la classe **h
 > È possibile accedere all'[esempio di codice seguente su GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Fare riferimento al repository GitHub per le modifiche e gli aggiornamenti più recenti per l'esempio.
 
 1. Aprire **Microsoft Visual Studio**.
-2. Scegliere **File** > **Nuovo progetto**. Espandere **Visual C#** e scegliere **App console (.NET Framework)**.
+2. Scegliere **File** > **Nuovo progetto**. Espandere **Visual C#** e scegliere **App console (.NET Framework)** .
 3. Assegnare al progetto il nome ` IntuneDataWarehouseSamples`, scegliere il percorso in cui si vuole salvare il progetto e quindi fare clic su **OK**.
 4. Fare clic con il pulsante destro del mouse sul nome della soluzione in Esplora soluzioni e quindi scegliere **Gestisci pacchetti NuGet per la soluzione**. Fare clic su **Sfoglia** e quindi digitare `Microsoft.IdentityModel.Clients.ActiveDirectory` nella casella di ricerca.
 5. Scegliere il pacchetto, selezionare il progetto **IntuneDataWarehouseSamples** in Gestisci pacchetti per la soluzione e quindi fare clic su **Installa**.

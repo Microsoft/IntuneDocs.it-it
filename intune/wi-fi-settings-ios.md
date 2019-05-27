@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91e69fed37f9a6171ef72d3c01e2de9a31bbcaed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566302"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046684"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi iOS in Microsoft Intune
 
@@ -44,7 +43,7 @@ Questo articolo descrive queste impostazioni.
 - **Rete nascosta**: scegliere **Abilita** se il SSID della rete non viene trasmesso. Scegliere **Disabilita** se il SSID della rete viene trasmesso ed è visibile.
 - **Tipo di sicurezza**: selezionare il protocollo di sicurezza per l'autenticazione nella rete Wi-Fi. Le opzioni disponibili sono:
 
-  - **Apri (nessuna autenticazione)**: usare questa opzione solo se la rete non è protetta.
+  - **Apri (nessuna autenticazione)** : usare questa opzione solo se la rete non è protetta.
   - **WPA o WPA2 - Personale**: immettere la password in **Chiave precondivisa**. Quando viene configurata la rete dell'organizzazione, viene configurata anche una password o una chiave di rete. Immettere questa password o chiave di rete per il valore di chiave precondivisa.
   - **WEP**
 
@@ -62,9 +61,9 @@ Questo articolo descrive queste impostazioni.
 
 - **Tipo EAP**: scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette. Le opzioni disponibili sono:
 
-  - **EAP-FAST**: immettere le **Impostazioni di PAC (Protected Access Credential)**. Questa opzione usa credenziali di accesso protetto per creare un tunnel autenticato tra il client e il server di autenticazione. Le opzioni disponibili sono:
+  - **EAP-FAST**: immettere le **Impostazioni di PAC (Protected Access Credential)** . Questa opzione usa credenziali di accesso protetto per creare un tunnel autenticato tra il client e il server di autenticazione. Le opzioni disponibili sono:
     - **Non usare (PAC)**
-    - **Uso (PAC)**: se esiste un file PAC, usarlo.
+    - **Uso (PAC)** : se esiste un file PAC, usarlo.
     - **Uso e provisioning di PAC**: creare e aggiungere il file PAC ai dispositivi.
     - **Uso e provisioning di PAC in modo anonimo**: creare e aggiungere il file PAC ai dispositivi senza effettuare l'autenticazione nel server.
 
@@ -77,7 +76,7 @@ Questo articolo descrive queste impostazioni.
 
       Selezionare **OK** per salvare le modifiche.
 
-    - **Autenticazione client** - **Certificato client per l'autenticazione client (certificato di identità)**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
+    - **Autenticazione client** - **Certificato client per l'autenticazione client (certificato di identità)** : scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -91,15 +90,15 @@ Questo articolo descrive queste impostazioni.
     - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
 
       - **Nome utente e password**: richiedere all'utente di specificare nome utente e password per autenticare la connessione. Specificare anche:
-        - **Metodo non EAP (identità interna)**: scegliere la modalità di autenticazione della connessione. Assicurarsi di scegliere lo stesso protocollo configurato nella rete Wi-Fi.
+        - **Metodo non EAP (identità interna)** : scegliere la modalità di autenticazione della connessione. Assicurarsi di scegliere lo stesso protocollo configurato nella rete Wi-Fi.
 
-          Le opzioni disponibili sono: **Password Authentication Protocol (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)** o **Microsoft CHAP versione 2 (MS-CHAP v2)**
+          Le opzioni disponibili sono: **Password Authentication Protocol (PAP)** , **Challenge Handshake Authentication Protocol (CHAP)** , **Microsoft CHAP (MS-CHAP)** o **Microsoft CHAP versione 2 (MS-CHAP v2)**
 
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
         Selezionare **OK** per salvare le modifiche.
 
-      - **Privacy dell'identità (identità esterna)**: immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
   - **LEAP**
 
@@ -118,7 +117,7 @@ Questo articolo descrive queste impostazioni.
 
         Selezionare **OK** per salvare le modifiche.
 
-      - **Privacy dell'identità (identità esterna)**: immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
 - **Impostazioni proxy**: le opzioni disponibili sono:
   - **Nessuna**: non sono state configurate impostazioni proxy.

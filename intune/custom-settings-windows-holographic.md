@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/06/2018
 ms.article: article
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.topic: reference
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8512f8270e7f219814aa5e3919f72b95de93cbcf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566166"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048459"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usare le impostazioni personalizzate per i dispositivi Windows Holographic for Business in Intune
 
@@ -50,7 +49,7 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 
     - **Nome**: immettere un nome univoco per l'impostazione OMA-URI per identificarla nell'elenco delle impostazioni.
     - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
-    - **OMA-URI (maiuscole/minuscole)**: immettere il valore OMA-URI che si vuole usare come impostazione.
+    - **OMA-URI (maiuscole/minuscole)** : immettere il valore OMA-URI che si vuole usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
         - Stringa

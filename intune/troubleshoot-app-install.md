@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e14fe3dd50f43c1b72079dfc3df05ddbbcd4c629
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799502"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853969"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Risolvere i problemi di installazione delle app
 
@@ -48,7 +48,7 @@ Intune offre informazioni dettagliate per la risoluzione dei problemi delle app 
     > La stessa app potrebbe essere assegnata a più gruppi, ma con diverse azioni previste (finalità) per l'app. Ad esempio, la finalità risolta per un'app indicherà **esclusa** se l'app viene esclusa per un utente durante l'assegnazione di app. Per altre informazioni, vedere [Modalità di risoluzione dei conflitti tra finalità di app](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Se si verifica un errore di installazione per un'app obbligatoria, l'utente o il supporto tecnico sarà in grado di sincronizzare il dispositivo e ritentare l'installazione dell'app.
 
-I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Error Codes For Troubleshooting App Installation Issues](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues) (Codici di errore per la risoluzione dei problemi di installazione delle app).
+I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Errori di installazione delle app](troubleshoot-app-install.md#app-installation-errors).
 
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
