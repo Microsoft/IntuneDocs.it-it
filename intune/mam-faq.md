@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506815"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992894"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -51,6 +51,13 @@ I criteri di protezione delle app sono regole che assicurano che i dati di un'or
 
 **Esempi di criteri di protezione delle app**.<br></br>
 Per informazioni dettagliate sulle singole impostazioni dei criteri di protezione delle app, vedere [Impostazioni dei criteri di protezione delle app per Android](app-protection-policy-settings-android.md) e [Impostazioni dei criteri di protezione delle app iOS](app-protection-policy-settings-ios.md).
+
+**È possibile applicare criteri MDM e MAM allo stesso utente nello stesso momento per dispositivi diversi? Ad esempio, nel caso in cui l'utente abbia accesso alle risorse di lavoro dal proprio computer abilitato per MAM, ma usi anche un dispositivo gestito da MDM di Intune. Ci sono particolari avvertenze per questo scenario?**<br></br>
+Se si applica un criterio MAM per l'utente senza impostare lo stato del dispositivo, l'utente riceverà il criterio MAM sia nel dispositivo BYOD che nel dispositivo gestito da Intune. È anche possibile applicare un criterio MAM basato sullo stato gestito. Quando si crea un criterio di protezione dell'app, accanto a Includi tutti i tipi di app selezionare No. Effettuare quindi una delle operazioni seguenti:
+- Applicare un criterio MAM meno rigoroso ai dispositivi gestiti da Intune e applicare un criterio MAM più restrittivo ai dispositivi non registrati in MDM.
+- Applicare un criterio MAM solo ai dispositivi non registrati.
+
+Per altre informazioni, vedere [Come monitorare i criteri di protezione delle app](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>App gestibili con i criteri di protezione delle app
 

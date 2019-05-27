@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527211"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733095"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorare BitLocker e la crittografia dei dispositivi  
 Intune offre una posizione centralizzata per identificare lo stato della crittografia dei dispositivi Windows 10 e consente di accedere a informazioni importanti per BitLocker dai dispositivi, come disponibili in Azure Active Directory (Azure AD).  
 
-- Il [report di crittografia (in versione di anteprima pubblica)](#encryption-report) fornisce informazioni dettagliate sulla conformità e sullo stato della crittografia di un dispositivo. I dettagli del report possono aiutare a identificare i problemi che impediscono la corretta crittografia dei dispositivi che si vuole proteggere.  
-- La [visualizzazione dei dettagli di BitLocker (in versione di anteprima pubblica)](#bitlocker-recovery-keys) consente di visualizzare informazioni come l'ID chiave e le chiavi di ripristino per i dispositivi dal portale di Intune.  
+- Il [report di crittografia](#encryption-report) fornisce informazioni dettagliate sulla conformità e sullo stato della crittografia di un dispositivo. I dettagli del report possono aiutare a identificare i problemi che impediscono la corretta crittografia dei dispositivi che si vuole proteggere.  
+- La [visualizzazione dei dettagli di BitLocker](#bitlocker-recovery-keys) consente di visualizzare informazioni come l'ID chiave e le chiavi di ripristino per i dispositivi dal portale di Intune.  
 
 ## <a name="encryption-report"></a>Report di crittografia
-È possibile usare il report di crittografia (in versione di anteprima pubblica) per visualizzare informazioni dettagliate sullo stato della crittografia dei dispositivi Windows 10.  
+È possibile usare il report di crittografia per visualizzare informazioni dettagliate sullo stato della crittografia dei dispositivi Windows 10.  
 
-Per trovare il report, accedere a [Intune](https://aka.ms/intuneportal) e passare a **Configurazione dispositivo**, quindi in *Monitoraggio*, selezionare **Report di crittografia (anteprima)**.  
+Per trovare il report, accedere a [Intune](https://aka.ms/intuneportal) e passare a **Configurazione del dispositivo**, quindi in *Monitoraggio*, selezionare **Report di crittografia**.  
 
 ### <a name="prerequisites"></a>Prerequisiti:
 Per essere visualizzato nel report di crittografia, un dispositivo deve eseguire Windows versione 1607 o successiva.  
@@ -95,9 +95,9 @@ Questo riquadro fornisce le informazioni seguenti:
    - La rete non è disponibile ma è necessaria per il backup della chiave di ripristino.  
 
 ## <a name="bitlocker-recovery-keys"></a>Chiavi di ripristino di BitLocker
-Come anteprima pubblica, Intune offre l'accesso al pannello di Azure AD per BitLocker, per consentire di visualizzare gli ID delle chiavi di BitLocker e le chiavi di ripristino per i dispositivi Windows 10 dal portale di Intune.  Per essere accessibile, il dispositivo deve avere le chiavi depositate in Azure AD. 
+Intune offre l'accesso al pannello di Azure AD per BitLocker, per consentire di visualizzare gli ID delle chiavi di BitLocker e le chiavi di ripristino per i dispositivi Windows 10 dal portale di Intune.  Per essere accessibile, il dispositivo deve avere le chiavi depositate in Azure AD. 
 1. Accedere a [Intune](https://aka.ms/intuneportal), passare a **Dispositivi** e quindi in *Gestisci* selezionare **Tutti i dispositivi**.
-2. Selezionare un dispositivo nell'elenco e in *Monitoraggio* selezionare **Chiavi di ripristino - Anteprima**.  
+2. Selezionare un dispositivo nell'elenco e in *Monitoraggio* selezionare **Chiavi di ripristino**.  
   
 Quando le chiavi sono presenti in Azure AD, sono disponibili le informazioni seguenti:
 - ID chiave BitLocker

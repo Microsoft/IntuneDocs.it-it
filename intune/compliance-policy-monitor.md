@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509071"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942043"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -75,7 +75,9 @@ Descrizioni dei diversi stati dei criteri di conformità dei dispositivi:
 
   - Dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità
   - Dispositivi che non si sono connessi dall'ultimo aggiornamento dei criteri di conformità
-  - Dispositivi non associati a un utente specifico
+  - Dispositivi non associati a un utente specifico, come:
+    - Dispositivi iOS acquistati tramite il programma Device Enrollment Program (DEP) di Apple che non hanno affinità utente
+    - Dispositivi dedicati Android Enterprise o Android in modalità tutto schermo
   - Dispositivi registrati con un account del manager di registrazione dispositivi
 
 - **Non conforme**: il dispositivo non rispetta una o più impostazioni dei criteri di conformità dei dispositivi. Oppure l'utente non è conforme ai criteri.

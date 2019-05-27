@@ -1,11 +1,11 @@
 ---
 title: Usare le baseline di sicurezza in Microsoft Intune - Azure | Microsoft Docs
-description: Aggiungere o configurare le impostazioni di sicurezza di gruppo consigliate per proteggere utenti e dati nei dispositivi con Microsoft Intune per la gestione dei dispositivi mobili. Abilitare BitLocker, configurare Windows Defender Advanced Threat Protection, controllare Internet Explorer, usare SmartScreen, impostare criteri di sicurezza locali, richiedere una password, bloccare i download da Internet e altro ancora.
+description: Aggiungere o configurare le impostazioni di sicurezza di gruppo consigliate per proteggere utenti e dati nei dispositivi con Microsoft Intune per la gestione dei dispositivi mobili. Abilitare BitLocker, configurare Microsoft Defender Advanced Threat Protection, controllare Internet Explorer, usare SmartScreen, impostare criteri di sicurezza locali, richiedere una password, bloccare i download da Internet e altro ancora.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197637"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732567"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Creare una baseline di sicurezza di Windows 10 in Intune
 
@@ -44,9 +44,19 @@ Le baseline di sicurezza creano un "profilo di configurazione" in Intune. Questo
 
 Dopo aver assegnato il profilo, è possibile monitorare sia il profilo che la baseline. Ad esempio, è possibile visualizzare i dispositivi che corrispondono o meno alla baseline.
 
-Questo articolo illustra come usare le baseline di sicurezza per creare, assegnare e monitorare il profilo.
+Questo articolo è un valido aiuto per usare le baseline di sicurezza per creare, assegnare e monitorare il profilo.
 
 [Baseline della sicurezza di Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) è un'ottima risorsa per scoprire di più su questa funzionalità. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (Gestione di dispositivi mobili) è una valida fonte di informazioni su MDM e sulle funzionalità disponibili per i dispositivi Windows.
+
+## <a name="available-security-baselines"></a>Baseline di sicurezza disponibili  
+
+Sono disponibili le baseline di sicurezza seguenti da usare con Intune.
+- **Anteprima: Baseline della sicurezza MDM per ottobre 2018**  
+  [Visualizzare le impostazioni](security-baseline-settings-windows.md)
+
+- **ANTEPRIMA: Baseline di Windows Defender ATP**  
+  [Visualizzare le impostazioni](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>Prerequisiti
 Per gestire le baseline in Intune, l'account deve avere il ruolo predefinito [Gestione profili e criteri](role-based-access-control.md#built-in-roles).
@@ -60,51 +70,36 @@ Quando si usano dispositivi con co-gestione, è necessario trasferire il carico 
 
 ## <a name="create-the-profile"></a>Creare il profilo
 
-1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
-2. Selezionare **Sicurezza dei dispositivi** > **Baseline di sicurezza (anteprima)**. È disponibile un elenco delle baseline disponibili. Le nuove baseline aggiunte verranno visualizzate in questo elenco:
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e quindi selezionare **Sicurezza dei dispositivi** > **Baseline di sicurezza (anteprima)**. È disponibile un elenco delle baseline disponibili. 
 
-    ![Visualizzare un elenco delle baseline di sicurezza attualmente disponibili in Intune](./media/security-baselines/available-baselines.png)
+    ![Selezionare una baseline di sicurezza da configurare](./media/security-baselines/available-baselines.png)
 
-3. Selezionare la baseline che si vuole usare > **Crea profilo**.
-4. In **Informazioni di base** immettere le proprietà seguenti:
 
-    - **Nome**: immettere un nome per il profilo della baseline di sicurezza. Immettere ad esempio `pilot Windows 10 MDM baseline - Oct 2018`.
+2. Selezionare la baseline che si vuole usare e quindi selezionare **Crea profilo**.  
+
+3. Nella scheda **Informazioni di base** specificare le proprietà seguenti:
+
+    - **Nome**: immettere un nome per il profilo della baseline di sicurezza. Ad esempio, immettere *Profilo standard per Defender ATP*
     - **Description**: immettere un testo che descriva gli scopi di questa baseline. Nella descrizione è possibile immettere il testo preferito. È facoltativa, ma decisamente consigliata.
 
-5. Espandere **Impostazioni**. Nell'elenco vengono visualizzate tutte le impostazioni incluse nella baseline di sicurezza e l'azione automatica corrispondente. Le impostazioni e i relativi valori sono quelli consigliati e possono essere modificati.
+4. Selezionare la scheda **Configurazione** per visualizzare i gruppi di **Impostazioni** disponibili in questa baseline. Selezionare un gruppo per espanderlo e visualizzare le singole impostazioni che contiene. Le impostazioni hanno configurazioni predefinite per la baseline di sicurezza. Riconfigurare le impostazioni predefinite in base alle specifiche esigenze aziendali.  
 
-    ![Espandere l'impostazione per visualizzare tutte le impostazioni in questa baseline di sicurezza in Intune](./media/security-baselines/sample-list-of-settings.png)
+    ![Espandere un gruppo per visualizzare le impostazioni per tale gruppo](./media/security-baselines/sample-list-of-settings.png)
 
-    Espandere alcune delle impostazioni per controllare i relativi valori. Ad esempio, espandere **Windows Defender**. Notare alcune delle impostazioni e dei valori corrispondenti:
+5. Selezionare la scheda **Assegnazioni** per assegnare la baseline ai gruppi. Assegnare la baseline a un gruppo esistente oppure creare un nuovo gruppo usando la procedura standard nella console di Intune per completare la configurazione.  
 
-    ![Vedere alcune delle impostazioni di Windows Defender impostate automaticamente in Intune](./media/security-baselines/expand-windows-defender.png)
+   ![Assegnare un profilo](./media/security-baselines/assignments.png)
+  
+6. Quando si è pronti per distribuire la baseline, selezionare la scheda **Rivedi e crea** per esaminare i dettagli per la baseline. Selezionare quindi **Salva profilo** per salvare e distribuire il profilo. 
 
-6. **Creare** il profilo. 
-7. Selezionare **Profili**. Il profilo viene creato e visualizzato nell'elenco, ma non è ancora operativo. È ora necessario assegnare il profilo.
+   ![Rivedere la baseline](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>Assegnare il profilo
+   Dopo il salvataggio viene eseguito il push del profilo nei dispositivi quando vengono rilevati da Intune. Il push può quindi avvenire anche immediatamente.
 
-Dopo averlo creato, il profilo è pronto per l'assegnazione a utenti, dispositivi e gruppi. Dopo l'assegnazione, il profilo e le relative impostazioni vengono applicati agli utenti, i dispositivi e i gruppi scelti.
+   > [!TIP]  
+   > È possibile salvare un profilo senza prima assegnarlo a gruppi specifici. È possibile modificare il profilo in un secondo momento per aggiungere gruppi. 
 
-1. In Intune selezionare **Baseline di sicurezza** > scegliere una baseline > **Profili**.
-2. Selezionare il profilo > **Assegnazioni**.
-
-    ![Scegliere il profilo della baseline di sicurezza in Intune e fare clic su Assegnazioni per distribuire il profilo](./media/security-baselines/assignments.png)
-
-3. Nella scheda **Includi**, aggiungere i gruppi, gli utenti o i dispositivi a cui si vogliono applicare i criteri.
-
-    > [!TIP]
-    > Si noti che è anche possibile **escludere** gruppi. Se si applicano i criteri a **Tutti gli utenti**, valutare la possibilità di escludere i gruppi di amministratori. In caso di problemi, è meglio evitare che gli amministratori rimangano bloccati.
-
-4. **Salvare** le modifiche.
-
-Dopo il salvataggio viene eseguito il push del profilo nei dispositivi quando vengono rilevati da Intune. Il push può quindi avvenire anche immediatamente.
-
-## <a name="available-security-baselines"></a>Baseline di sicurezza disponibili  
-
-Sono disponibili le baseline di sicurezza seguenti da usare con Intune.
-- **Anteprima: baseline di sicurezza MDM**
-  - Versione: [Ottobre 2018](security-baseline-settings-windows.md)
+7. Dopo aver creato il profilo, è possibile modificarlo passando a **Sicurezza dei dispositivi** > **Baseline di sicurezza**, selezionare la baseline configurata e quindi selezionare **Profili**.  Selezionare il profilo e quindi selezionare **Proprietà** per modificare le impostazioni e selezionare **Assegnazioni** per modificare i gruppi che ricevono questa baseline. 
 
 ## <a name="q--a"></a>Domande e risposte
 

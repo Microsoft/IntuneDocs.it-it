@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7ba5ca4dcd8e43d63e98c281cac3487def8a0045
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490157"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765328"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -85,3 +85,6 @@ Nei dispositivi configurati senza affinità utente il portale aziendale non è s
 
 Se è necessaria l'affinità utente, assicurarsi che nel profilo di registrazione del dispositivo sia selezionata l'opzione **Affinità utente** prima di registrare il dispositivo. Per modificare lo stato di affinità in un dispositivo è necessario ritirare il dispositivo e quindi registrarlo nuovamente.
 
+## <a name="see-also"></a>Vedere anche
+
+[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809) (Risoluzione dei problemi di registrazione dei dispositivi iOS in Microsoft Intune)

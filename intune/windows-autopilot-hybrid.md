@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619440"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816298"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Azure Active Directory ibrido. A tale scopo, eseguire i passaggi descritti in questo articolo.
@@ -119,6 +119,9 @@ Il connettore di Intune per Active Directory deve essere installato in un comput
 > [!NOTE]
 > Dopo l'accesso, la visualizzazione del connettore in [Intune](https://aka.ms/intuneportal) può richiedere qualche minuto. Il connettore viene visualizzato solo se può comunicare correttamente con il servizio Intune.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>Disattivare la Configurazione sicurezza avanzata IE
+Per impostazione predefinita, in Windows Server la Configurazione sicurezza avanzata di Internet Explorer è attivata. Se non è possibile accedere al connettore di Intune per Active Directory, disattivare la Configurazione sicurezza avanzata IE per l'amministratore. [Come disattivare la Configurazione sicurezza avanzata di Internet Explorer](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Configurare le impostazioni del proxy Web
 
 Se nell'ambiente di rete è presente un proxy Web, vedere [Usare server proxy locali esistenti](autopilot-hybrid-connector-proxy.md) per garantire il corretto funzionamento del connettore di Intune per Active Directory.
@@ -194,7 +197,7 @@ Il passaggio dello stato del profilo del dispositivo da *Non assegnato* ad *Asse
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Facoltativo) Attivare la pagina dello stato della registrazione
 
-1. In [Intune](https://aka.ms/intuneportal) selezionare **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione (anteprima)**.
+1. In [Intune](https://aka.ms/intuneportal) selezionare **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
 1. Nel riquadro **Pagina relativa allo stato della registrazione** selezionare **Predefinito** > **Impostazioni**.
 1. Nella casella **Mostra lo stato dell'installazione di profili e applicazioni** scegliere **Sì**.
 1. Configurare le altre opzioni in base alle proprie esigenze.

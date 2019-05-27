@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511540"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732999"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Esercitazione: Usare Autopilot per registrare i dispositivi Windows in Intune
 Windows Autopilot semplifica la registrazione dei dispositivi. Con Microsoft Intune e Autopilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare immagini del sistema operativo personalizzate. 
@@ -90,23 +90,20 @@ Successivamente, verrà creato un gruppo di dispositivi in cui verranno inseriti
 Dopo aver creato un gruppo di dispositivi, è necessario creare un profilo di distribuzione in modo che sia possibile configurare i dispositivi Autopilot.
 
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > **Crea profilo**.
-2. Per **Nome** immettere *Profilo Autopilot*. Per **Descrizione** immettere *Profilo di test per dispositivi Autopilot*.
+2. Nella pagina **Informazioni di base** per **Nome** immettere *Profilo Autopilot*. Per **Descrizione** immettere *Profilo di test per dispositivi Autopilot*.
 3. Impostare **Converti tutti i dispositivi interessati in Autopilot** su **Sì**. Questa impostazione garantisce che tutti i dispositivi nell'elenco vengano registrati per il servizio di distribuzione Autopilot. L'elaborazione della registrazione può richiedere fino a 48 ore.
-4. In **Modalità di distribuzione** scegliere **Definita dall'utente**. I dispositivi con questo profilo sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente sono necessarie per effettuare la registrazione del dispositivo.
-5. Nella casella **Join to Azure AD as** (Connetti ad Azure AD come) scegliere **Aggiunto ad Azure AD**.
-6. Scegliere **Configurazione guidata**, configurare le opzioni seguenti e lasciare le altre impostate sui valori predefiniti, quindi scegliere **Salva**:
+4. Selezionare **Avanti**.
+5. Nella pagina **Configurazione guidata** per **Modalità di distribuzione** scegliere **Definita dall'utente**. I dispositivi con questo profilo sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente sono necessarie per effettuare la registrazione del dispositivo.
+6. Nella casella **Join to Azure AD as** (Connetti ad Azure AD come) scegliere **Aggiunto ad Azure AD**.
+7. Configurare le opzioni seguenti e lasciare le altre impostate sui valori predefiniti:
     - **Contratto di licenza con l'utente finale**: **Nascondi**
     - **Impostazioni di privacy**: **Mostra**
     - **Tipo di account utente**: **Standard**
-
-6. Scegliere **Crea** per creare il profilo. Il profilo di distribuzione di Autopilot è ora disponibile per l'assegnazione ai dispositivi.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Assegnare un profilo di distribuzione di Autopilot a un gruppo di dispositivi
-
-Dopo aver creato il profilo di distribuzione, lo si assegnerà al gruppo di dispositivi.
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > scegliere un profilo.
-2. Nel pannello del profilo specifico, scegliere **Assegnazioni**. 
-3. Scegliere **Selezione gruppi**, nel pannello **Selezione gruppi** scegliere **Gruppo Autopilot** e quindi scegliere **Seleziona**.
+8. Selezionare **Avanti**.
+9. Nella pagina **Assegnazioni** scegliere **Gruppi selezionati** per **Assegna a**.
+10. Scegliere **Selezionare i gruppi da includere** e quindi **Gruppo Autopilot**.
+11. Selezionare **Avanti**.
+12. Nella pagina **Rivedi e crea** scegliere **Crea** per creare il profilo.
 
 ## <a name="distribute-devices-to-users"></a>Distribuire i dispositivi agli utenti
 

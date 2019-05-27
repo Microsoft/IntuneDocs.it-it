@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135127"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853964"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -153,6 +153,8 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     > È possibile configurare un'app Win32 in modo che venga installata nel contesto **utente** o **di sistema**. Il contesto **utente** si riferisce solo a un determinato utente. Il contesto **di sistema** si riferisce a tutti gli utenti di un dispositivo Windows 10.
     >
     > Gli utenti finali non devono eseguire l'accesso al dispositivo per installare le app Win32.
+    > 
+    > L'installazione e la disinstallazione delle app Win32 verranno eseguite con privilegi di amministratore (per impostazione predefinita) quando l'app è configurata per l'installazione nel contesto utente e l'utente finale nel dispositivo dispone di privilegi amministrativi.
 
 4.  Al termine, fare clic su **OK**.
 
@@ -243,7 +245,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
             L'agente di Intune controlla i risultati dello script. Legge i valori scritti dallo script nel flusso di output standard (STDOUT) e nel flusso degli errori standard (STDERR), nonché il codice di uscita. Se il codice di uscita dello script è un valore diverso da zero, lo script non è riuscito e lo stato del rilevamento dell'applicazione è non installato. Se il codice di uscita è pari a zero e STDOUT contiene dati, lo stato di rilevamento dell'applicazione è installato. 
 
             > [!NOTE]
-            > Quando lo script viene chiuso con il valore 0, l'esecuzione dello script ha avuto esito positivo. Il secondo canale di output indica che l'app è stata rilevata e i dati di STDOUT indicano che l'app è stata trovata nel client. Non è necessario cercare una determinata stringa di STDOUT.
+            > Microsoft consiglia la codifica dello script come UTF-8. Quando lo script viene chiuso con il valore 0, l'esecuzione dello script ha avuto esito positivo. Il secondo canale di output indica che l'app è stata rilevata e i dati di STDOUT indicano che l'app è stata trovata nel client. Non è necessario cercare una determinata stringa di STDOUT.
 
         4.  Dopo aver aggiunto una o più regole, selezionare **Aggiungi** > **OK**.
 

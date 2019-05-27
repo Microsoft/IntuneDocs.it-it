@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510125"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765407"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -567,4 +567,6 @@ A partire dalla versione 6.1806.x.x, il servizio Intune Connector registra gli e
 
 - [Usare i certificati PKCS](certficates-pfx-configure.md) o [Rilasciare certificati PKCS da un servizio Web di gestione PKI Symantec](certificates-symantec-configure.md)
 - [Aggiungere un'autorità di certificazione di terze parti per l'uso di SCEP con Intune](certificate-authority-add-scep-overview.md)
-- Per assistenza aggiuntiva, usare la guida [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) (Risoluzione dei problemi di distribuzione del profilo certificato SCEP in Microsoft Intune).
+- Per assistenza aggiuntiva, usare le guide seguenti:
+  - [Risoluzione dei problemi di distribuzione del profilo certificato SCEP in Microsoft Intune](https://support.microsoft.com/help/4457481)
+  - [Risoluzione dei problemi di configurazione del servizio Registrazione dispositivi di rete per l'uso con i profili certificato di Microsoft Intune](https://support.microsoft.com/help/4459540)

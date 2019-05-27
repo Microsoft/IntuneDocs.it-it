@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508273"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765365"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
@@ -133,3 +133,9 @@ Dopo aver creato un profilo certificato attendibile, creare i profili certificat
 [Assegnare i profili di dispositivo](device-profile-assign.md)  
 [Usare S/MIME per firmare e crittografare la posta elettronica](certificates-s-mime-encryption-sign.md)  
 [Usare un'autorità di certificazione di terze parti](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>Vedere anche
+
+[Risoluzione dei problemi di configurazione del servizio Registrazione dispositivi di rete per l'uso con i profili certificato di Microsoft Intune](https://support.microsoft.com/help/4459540)
+
+[Risoluzione dei problemi di distribuzione del profilo certificato SCEP in Microsoft Intune](https://support.microsoft.com/help/4457481)

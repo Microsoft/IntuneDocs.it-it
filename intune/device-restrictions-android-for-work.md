@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505778"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836464"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -327,3 +327,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
 [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
 È anche possibile creare profili in modalità tutto schermo per dispositivi dedicati [Android](device-restrictions-android.md#kiosk) e [Windows 10](kiosk-settings.md).
+
+## <a name="see-also"></a>Vedere anche
+
+[Configurazione e risoluzione dei problemi dei dispositivi aziendali Android in Microsoft Intune](https://support.microsoft.com/help/4476974)
