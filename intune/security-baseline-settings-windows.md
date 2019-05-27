@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
-ms.translationtype: HT
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733052"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045043"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza Windows per Intune  
 
@@ -1087,7 +1086,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Sì
 
 - **Virtualizzare gli errori di scrittura nel file e nel Registro di sistema in percorsi specifici per ogni utente**  
-  L'impostazione di questo criterio specifica se gli errori di scrittura delle applicazioni vengono reindirizzati in percorsi definiti sia nel Registro di sistema sia nel file system. Questo criterio riduce l'impatto delle applicazioni che vengono eseguite con account amministratore ed eseguono la scrittura dei dati in fase di esecuzione in *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* o *HKLM\Software*.
+  L'impostazione di questo criterio specifica se gli errori di scrittura delle applicazioni vengono reindirizzati in percorsi definiti sia nel Registro di sistema sia nel file system. Questo criterio riduce l'impatto delle applicazioni che vengono eseguite con account amministratore ed eseguono la scrittura dei dati in fase di esecuzione in *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* o *HKLM\Software*.
   
   **Impostazione predefinita**: Sì
 
@@ -1161,7 +1160,7 @@ Per altre informazioni, vedere [Policy CSP - RemoteDesktopServices](https://docs
   **Impostazione predefinita**: Abilitato
   
 - **Bloccare il reindirizzamento delle unità**  
-  L'impostazione di questo criterio specifica se impedire il mapping delle unità dei client in una sessione di Servizi Desktop remoto (reindirizzamento delle unità). Per impostazione predefinita, un server host sessione Desktop remoto esegue automaticamente il mapping di unità di client al momento della connessione. Le unità mappate vengono visualizzate nell'albero delle cartelle della sessione in Esplora file o in Computer nel formato *\<letteraunità>* in *\<nomecomputer>*. È possibile usare l'impostazione di questo criterio per eseguire l'override di questo comportamento. Se si abilita l'impostazione di questo criterio, il reindirizzamento delle unità dei client non è consentito nelle sessioni di Servizi Desktop remoto e il reindirizzamento della copia dei file degli Appunti non è consentito nei computer che eseguono Windows Server 2003, Windows 8 e Windows XP. Se si disabilita l'impostazione di questo criterio, il reindirizzamento delle unità dei client è sempre consentito. Inoltre, se è consentito il reindirizzamento degli Appunti, il reindirizzamento della copia dei file degli Appunti è sempre consentito. Se non si configura l'impostazione di questo criterio, il reindirizzamento delle unità dei client e il reindirizzamento della copia dei file degli Appunti non sono specificate a livello di Criteri di gruppo.
+  L'impostazione di questo criterio specifica se impedire il mapping delle unità dei client in una sessione di Servizi Desktop remoto (reindirizzamento delle unità). Per impostazione predefinita, un server host sessione Desktop remoto esegue automaticamente il mapping di unità di client al momento della connessione. Le unità mappate vengono visualizzate nell'albero delle cartelle della sessione in Esplora file o in Computer nel formato *\<letteraunità>* in *\<nomecomputer>* . È possibile usare l'impostazione di questo criterio per eseguire l'override di questo comportamento. Se si abilita l'impostazione di questo criterio, il reindirizzamento delle unità dei client non è consentito nelle sessioni di Servizi Desktop remoto e il reindirizzamento della copia dei file degli Appunti non è consentito nei computer che eseguono Windows Server 2003, Windows 8 e Windows XP. Se si disabilita l'impostazione di questo criterio, il reindirizzamento delle unità dei client è sempre consentito. Inoltre, se è consentito il reindirizzamento degli Appunti, il reindirizzamento della copia dei file degli Appunti è sempre consentito. Se non si configura l'impostazione di questo criterio, il reindirizzamento delle unità dei client e il reindirizzamento della copia dei file degli Appunti non sono specificate a livello di Criteri di gruppo.
   
   **Impostazione predefinita**: Abilitato
   
@@ -1324,7 +1323,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
 - **Impedire il tipo di intercettazione delle credenziali**  
   Windows Defender Credential Guard usa la protezione basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. L'accesso non autorizzato a questi segreti può provocare attacchi di furto delle credenziali, ad esempio Pass-the-Hash o Pass-The-Ticket. Windows Defender Credential Guard impedisce questi attacchi proteggendo gli hash delle password NTLM, Kerberos Ticket Granting Tickets e le credenziali archiviate dalle applicazioni come credenziali di dominio.
   
-  **Impostazione predefinita**: Abilitato
+  **Impostazione predefinita**: Abilita
 
 - **Tipo di esecuzione del contenuto del messaggio di posta elettronica**  
   Questa regola consente di bloccare l'esecuzione e l'avvio dei tipi di file seguenti da un messaggio di posta elettronica visualizzato in Microsoft Outlook o nella posta sul Web, ad esempio Gmail.com oppure Outlook.com: file eseguibili, ad esempio con estensione exe, dll o scr, file di script, ad esempo file di PowerShell con estensione ps, file di VisualBasic con estensione vbs o file JavaScript con estensione js, e file di archivio di script.
