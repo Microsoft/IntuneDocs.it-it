@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
-ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
-ms.translationtype: HT
+ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65836464"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048118"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -254,7 +253,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**16**).
 - **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare la quantità di tempo che deve trascorrere prima che il profilo di lavoro si blocchi. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che il profilo di lavoro venga cancellato dal dispositivo.
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**) .
+- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**) .
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -275,7 +274,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**14**).
 - **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare il periodo di tempo che deve trascorrere prima che un dispositivo inattivo si blocchi automaticamente
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che i dati vengano cancellati dal dispositivo
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**)
+- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**)
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
