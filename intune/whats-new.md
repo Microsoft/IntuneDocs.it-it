@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975814"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264179"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -45,8 +44,20 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 
 -->  
 
-
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>Settimana del 20 maggio 2019 
+
+### <a name="app-management"></a>Gestione delle app
+
+#### <a name="windows-company-portal-app----3316993---"></a>App Portale aziendale Windows <!-- 3316993 -->
+L'app Portale aziendale di Windows ora ha una nuova pagina con l'etichetta **Dispositivi**. La pagina **Dispositivi** visualizza per gli utenti finali tutti i loro dispositivi registrati. Gli utenti visualizzano questa modifica nel Portale aziendale quando usano la versione 10.3.4291.0 e le versioni successive. Per informazioni sulla configurazione del Portale aziendale, vedere [Come configurare l'app Portale aziendale di Microsoft Intune](company-portal-app.md).
+
+### <a name="device-enrollment"></a>Registrazione del dispositivo
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Nome dell'attributo OrderID dei dispositivi Autopilot modificato in Tag di gruppo <!-- 4659453 -->
+
+Il nome dell'attributo **OrderID** nei dispositivi Autopilot è stato modificato in **Tag di gruppo** per renderlo più intuitivo. Quando si usano file con estensione csv per caricare informazioni sui dispositivi Autopilot, è necessario usare come intestazione colonna Tag di gruppo e non OrderID.  
 
 ## <a name="week-of-may-13-2019"></a>Settimana del 13 maggio 2019 
 
@@ -64,7 +75,7 @@ Nei dispositivi già registrati tramite l'Assistente configurazione con uno dei 
 
 Gli utenti riceveranno un errore se installano l'app Portale aziendale dall'App Store e quindi provano a registrare i dispositivi tramite tale app. È previsto che questi dispositivi usino l'app Portale aziendale solo quando ne è stato eseguito il push automaticamente da Intune durante la registrazione. I profili di registrazione in Intune nel portale di Azure verranno aggiornati in modo che sia possibile specificare come devono eseguire l'autenticazione i dispositivi e se ricevono l'app Portale aziendale. Se si vuole che gli utenti dei dispositivi DEP dispongano dell'app Portale aziendale, è necessario specificare le preferenze in un profilo di registrazione. 
 
-Inoltre, la schermata **Identifica il dispositivo** nel Portale aziendale iOS è in fase di rimozione. Di conseguenza, gli amministratori che vogliono abilitare l'accesso condizionale o distribuire le app aziendali devono aggiornare il profilo di registrazione DEP. Questo requisito si applica solo se la registrazione DEP viene autenticata con Assistente configurazione. In tal caso, è necessario eseguire il push del Portale aziendale nel dispositivo. A tale scopo, scegliere **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione** > scegliere un token > **Profili** > scegliere un profilo > **Proprietà** > impostare **Installa il Portale aziendale** su **True**.
+Inoltre, la schermata **Identifica il dispositivo** nel Portale aziendale iOS è in fase di rimozione. Di conseguenza, gli amministratori che vogliono abilitare l'accesso condizionale o distribuire le app aziendali devono aggiornare il profilo di registrazione DEP. Questo requisito si applica solo se la registrazione DEP viene autenticata con Assistente configurazione. In tal caso, è necessario eseguire il push del Portale aziendale nel dispositivo. A tale scopo, scegliere **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione** > scegliere un token > **Profili** > scegliere un profilo > **Proprietà** > impostare **Installa il Portale aziendale** su **Sì**.
 
 Per installare il Portale aziendale nei dispositivi DEP già registrati, si dovrà passare a Intune > App client ed eseguirne il push come app gestita con i criteri di configurazione delle app. 
 
@@ -301,7 +312,7 @@ Quando si crea un profilo di registrazione macOS, è possibile configurarlo per 
 Per altre informazioni, vedere [Registrare automaticamente i dispositivi macOS con Device Enrollment Program o Apple School Manager](device-enrollment-program-enroll-macos.md).
 
 #### <a name="bulk-device-naming-when-enrolling-corporate-ios-devices--3566569----"></a>Denominazione in blocco dei dispositivi durante la registrazione di dispositivi iOS aziendali<!--3566569  -->
-Quando si usa uno dei metodi di registrazione aziendali di Apple (DEP/ABM/ASM), è possibile impostare un formato del nome del dispositivo in modo da denominare automaticamente i dispositivi iOS in ingresso. È possibile specificare un formato che include il tipo di dispositivo e il numero di serie nel modello. A tale scopo, scegliere **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione** > **Selezionare un token** >**Crea profilo** > **Device naming format (Formato di denominazione dispositivi)**. È possibile modificare i profili esistenti, ma il nome sarà applicato solo ai dispositivi appena sincronizzati.
+Quando si usa uno dei metodi di registrazione aziendali di Apple (DEP/ABM/ASM), è possibile impostare un formato del nome del dispositivo in modo da denominare automaticamente i dispositivi iOS in ingresso. È possibile specificare un formato che include il tipo di dispositivo e il numero di serie nel modello. A tale scopo, scegliere **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione** > **Selezionare un token** >**Crea profilo** > **Device naming format (Formato di denominazione dispositivi)** . È possibile modificare i profili esistenti, ma il nome sarà applicato solo ai dispositivi appena sincronizzati.
 
 #### <a name="updated-default-timeout-message-on-enrollment-status-page----3959331---"></a>Messaggio di timeout predefinito aggiornato nella pagina Stato della registrazione <!-- 3959331 -->
 È stato aggiornato il messaggio di timeout predefinito che gli utenti vedono quando la pagina Stato della registrazione (ESP) supera il valore di timeout specificato nel profilo ESP. Il nuovo messaggio predefinito è quello che gli utenti vedono e consente di comprendere le azioni successive da eseguire durante la distribuzione ESP.  
@@ -432,7 +443,7 @@ La console di Intune non supporta più la visualizzazione e la gestione dei disp
 - Usare i controlli di Exchange, come descritto in [Client e dispositivi mobili in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Cercare un dispositivo specifico nella pagina Tutti i dispositivi tramite [nome] <!--4254930 -->
-È ora possibile cercare un nome dispositivo esatto. Passare a **Intune** > **Dispositivi** > **Tutti i dispositivi** > nella casella di ricerca racchiudere il nome dispositivo con {} per cercare una corrispondenza esatta. Ad esempio, **{Dispositivo12345}**.
+È ora possibile cercare un nome dispositivo esatto. Passare a **Intune** > **Dispositivi** > **Tutti i dispositivi** > nella casella di ricerca racchiudere il nome dispositivo con {} per cercare una corrispondenza esatta. Ad esempio, **{Dispositivo12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorare e risolvere i problemi
 
@@ -581,8 +592,8 @@ Android Enterprise
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>Le impostazioni iOS per Safari e il ritardo della visibilità degli aggiornamenti software per l'utente passano all'interfaccia utente di Intune <!-- 3640850, 3803313   -->
 Per i dispositivi iOS è possibile configurare le impostazioni di Safari e gli aggiornamenti software. In questo aggiornamento le impostazioni sono state spostate in diverse parti dell'interfaccia utente di Intune:
 
-- Le impostazioni di Safari sono passate da **Safari** (**Configurazione del dispositivo** > **Profili** > **Nuovo profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo) in **[App predefinite](device-restrictions-ios.md#built-in-apps)**.
-- L'impostazione relativa al **ritardo della visibilità degli aggiornamenti software per l'utente per i dispositivi iOS con supervisione** (**Aggiornamenti software** > **Criteri di aggiornamento per iOS**) passa in **Limitazioni del dispositivo** > **[Generale](device-restrictions-ios.md#general)**.  Per informazioni dettagliate sull'impatto sui criteri esistenti, vedere l'articolo sugli [aggiornamenti software iOS](software-updates-ios.md#configure-the-policy). 
+- Le impostazioni di Safari sono passate da **Safari** (**Configurazione del dispositivo** > **Profili** > **Nuovo profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo) in **[App predefinite](device-restrictions-ios.md#built-in-apps)** .
+- L'impostazione relativa al **ritardo della visibilità degli aggiornamenti software per l'utente per i dispositivi iOS con supervisione** (**Aggiornamenti software** > **Criteri di aggiornamento per iOS**) passa in **Limitazioni del dispositivo** >  **[Generale](device-restrictions-ios.md#general)** .  Per informazioni dettagliate sull'impatto sui criteri esistenti, vedere l'articolo sugli [aggiornamenti software iOS](software-updates-ios.md#configure-the-policy). 
 
 Per un elenco di impostazioni, vedere:
 
@@ -594,7 +605,7 @@ Questa funzionalità si applica a:
 - iOS
 
 #### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-----"></a>L'abilitazione delle restrizioni nelle impostazioni del dispositivo è stata rinominata in Orario schermo nei dispositivi iOS <!-- 3699164   -->
-È possibile configurare **Abilitazione delle restrizioni nelle impostazioni del dispositivo** nei dispositivi iOS con supervisione (**Configurazione del dispositivo** > **Profili** > **Nuovo profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo > **Generale**). In questo aggiornamento l'impostazione è stata rinominata in **Orario schermo (solo con supervisione)**. 
+È possibile configurare **Abilitazione delle restrizioni nelle impostazioni del dispositivo** nei dispositivi iOS con supervisione (**Configurazione del dispositivo** > **Profili** > **Nuovo profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo > **Generale**). In questo aggiornamento l'impostazione è stata rinominata in **Orario schermo (solo con supervisione)** . 
 
 Il comportamento è lo stesso. In particolare: 
 
@@ -1122,7 +1133,7 @@ Un nuovo modulo di PowerShell, che offre il supporto per l'API di Intune attrave
 ## <a name="week-of-october-15-2018"></a>Settimana del 15 ottobre 2018
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>Richiesta del PIN quando si modificano le impronte digitali o l'ID del viso in un dispositivo iOS  <!-- 2637704  -->
-Agli utenti viene ora richiesto un PIN dopo la modifica dei dati biometrici nel proprio dispositivo iOS. Sono incluse le modifiche per le impronte digitali registrate o l'ID viso. La tempistica della richiesta dipende dalla configurazione del timeout per *Controlla di nuovo i requisiti di accesso dopo (minuti)*.  Se non è impostato alcun PIN, all'utente viene richiesto di configurarne uno. 
+Agli utenti viene ora richiesto un PIN dopo la modifica dei dati biometrici nel proprio dispositivo iOS. Sono incluse le modifiche per le impronte digitali registrate o l'ID viso. La tempistica della richiesta dipende dalla configurazione del timeout per *Controlla di nuovo i requisiti di accesso dopo (minuti)* .  Se non è impostato alcun PIN, all'utente viene richiesto di configurarne uno. 
  
 Questa funzionalità è disponibile solo per iOS e richiede la partecipazione delle applicazioni che integrano Intune APP SDK per iOS, versione 9.0.1 o successive. L'integrazione dell'SDK è necessaria in modo che il comportamento possa essere applicato nelle applicazioni di destinazione. Questa integrazione avviene sistematicamente e dipende dai team delle applicazioni specifiche. Tra le app partecipanti sono inclusi WXP, Outlook, Managed Browser e Yammer.
 
@@ -1220,7 +1231,7 @@ Supportato in:
 - Windows Phone 8.1 e versioni successive 
 
 #### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224---"></a>Miglioramenti del profilo per la modalità tutto schermo per Windows 10 e versioni successive nel portale di Azure <!-- 2748224 -->
-Questo aggiornamento include i miglioramenti seguenti per il profilo di configurazione del dispositivo per modalità tutto schermo per Windows 10 (**Configurazione del dispositivo** > **Profili** > **Crea profilo** >  piattaforma**Windows 10 e versioni successive** > tipo di profilo**Modalità tutto schermo (anteprima)**): 
+Questo aggiornamento include i miglioramenti seguenti per il profilo di configurazione del dispositivo per modalità tutto schermo per Windows 10 (**Configurazione del dispositivo** > **Profili** > **Crea profilo** >  piattaforma**Windows 10 e versioni successive** > tipo di profilo**Modalità tutto schermo (anteprima)** ): 
 - Attualmente, è possibile creare più profili per modalità tutto schermo sullo stesso dispositivo. Con questo aggiornamento, Intune supporterà un solo un profilo per modalità tutto schermo per ogni dispositivo. Se servono più profili per modalità tutto schermo in un singolo dispositivo, usare un URI personalizzato.
 - In un profilo **Più app in modalità tutto schermo** è possibile selezionare le dimensioni del riquadro dell'applicazione e l'ordine del **layout del menu Start** nella griglia dell'applicazione. Se si desidera un maggiore livello di personalizzazione, è possibile continuare a caricare un file XML.
 - Le impostazioni del browser in modalità tutto schermo sono state spostate in **Modalità tutto schermo**. Attualmente, le impostazioni **Web browser in modalità tutto schermo** dispongono di una propria categoria nel portale di Azure.

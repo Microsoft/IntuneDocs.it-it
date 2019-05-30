@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b91e3863a23d62921f4145db4460fa07f325df98
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515781"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040287"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -54,7 +53,7 @@ Per questa esercitazione, si imposteranno criteri di protezione delle app di Int
 
     - Per **Consenti all'app di trasferire i dati ad altre app**, selezionare **Nessuna**.
     - Per **Consenti all'app di ricevere i dati da altre app**, selezionare **Nessuna**.
-    - Per **Impedisci "Salva con nome"**, selezionare **Sì**.
+    - Per **Impedisci "Salva con nome"** , selezionare **Sì**.
     - Per **Limita le operazioni taglia, copia e incolla con le altre app**, selezionare **Bloccato**.
    
      ![Selezionare le impostazioni di rilocazione dei dati per i criteri di protezione delle app per Outlook](media/tutorial-protect-email-on-unmanaged-devices/outlook-app-data-relocation.png)
@@ -179,9 +178,9 @@ Con i criteri creati, i dispositivi dovranno essere registrati in Intune e usare
 Quando i criteri di test non sono più necessari, è possibile rimuoverli.
 1. Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune.
 2. Selezionare **Conformità del dispositivo** > **Criteri**.
-3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
+3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
 4. Selezionare **Accesso condizionale** > **Criteri**.
-5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per ciascuno dei criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
+5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per ciascuno dei criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
 
  ## <a name="next-steps"></a>Passaggi successivi 
 In questa esercitazione sono stati creati criteri di protezione delle app, per limitare le operazioni che gli utenti possono eseguire con l'app Outlook, e criteri di accesso condizionale, per richiedere l'uso dell'app Outlook e dell'autenticazione a più fattori per i client con autenticazione moderna. Per informazioni sull'uso di Intune con l'accesso condizionale per proteggere altri servizi e app, vedere [Configurare l'accesso condizionale](conditional-access.md).

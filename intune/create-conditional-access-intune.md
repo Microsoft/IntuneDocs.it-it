@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5299ef8c0159592c9754f886fe1c3d90a6637599
-ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
+ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65765381"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043281"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
@@ -81,7 +80,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
 10. In **Controlli di accesso** selezionare **Concedi**. Specificare cosa accade in base alle condizioni configurate.  È possibile selezionare una delle opzioni seguenti:
     - **Blocca accesso**: agli utenti specificati in questi criteri verrà negato l'accesso alle app in base alle condizioni specificate.
     - **Concedi accesso**: agli utenti specificati in questi criteri verrà concesso l'accesso, ma è possibile richiedere una delle azioni seguenti:
-      - **Richiedi autenticazione a più fattori** : l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
+      - **Richiedi autenticazione a più fattori **: l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
       - **Richiedi che i dispositivi siano contrassegnati come conformi**: il dispositivo deve essere conforme a Intune. Se il dispositivo non è conforme, l'utente avrà la possibilità di registrare il dispositivo in Intune. 
       - **Richiedi dispositivo aggiunto ad Azure AD ibrido**: i dispositivi devono essere aggiunti ad Azure AD ibrido.
       - **Richiedi app client approvata**: il dispositivo deve usare app client approvate. 

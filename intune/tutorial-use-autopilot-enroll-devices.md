@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732999"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044515"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Esercitazione: Usare Autopilot per registrare i dispositivi Windows in Intune
 Windows Autopilot semplifica la registrazione dei dispositivi. Con Microsoft Intune e Autopilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare immagini del sistema operativo personalizzate. 
@@ -53,9 +52,9 @@ Il primo passaggio nella configurazione di Windows Autopilot consiste nell'aggiu
 
 1. In qualsiasi editor di testo, creare un elenco di valori delimitati da virgole (CSV) che identificano i dispositivi Windows. Usare il formato seguente:
     
-    *numero-di-serie*, *id-prodotto-windows*, *hash-hardware*, *id-ordine-facoltativo*
+    *numero-di-serie*, *ID-prodotto-windows*, *hash-hardware*, *Tag-di-gruppo-facoltativo*
     
-    I primi tre elementi sono obbligatori, ma l'ID dell'ordine è facoltativo.
+    I primi tre elementi sono obbligatori, ma il Tag di gruppo (denominato in precedenza "ID ordine") è facoltativo.
 
 2. Salvare il file CSV.
 
