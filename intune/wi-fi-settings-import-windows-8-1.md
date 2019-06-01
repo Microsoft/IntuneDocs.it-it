@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050601"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373315"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importare le impostazioni Wi-Fi per i dispositivi Windows in Intune
 
@@ -44,7 +44,7 @@ In un computer Windows in cui il profilo Wi-Fi necessario è già installato, se
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importare le impostazioni Wi-Fi in Intune
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere un **Nome** e una **Descrizione** per il profilo di restrizione del dispositivo.
 
@@ -56,7 +56,7 @@ In un computer Windows in cui il profilo Wi-Fi necessario è già installato, se
 
 4. In **Piattaforma** selezionare **Windows 8.1 e versioni successive**.
 5. In **Tipo di profilo** selezionare **Importazione Wi-Fi**.
-6. Configurare le seguenti impostazioni:
+6. Configurare le impostazioni seguenti:
     - **Nome della connessione**: immettere un nome per la connessione Wi-Fi. Gli utenti finali visualizzano questo nome quando esplorano le reti Wi-Fi disponibili.
     - **Profilo XML**: selezionare il pulsante Sfoglia e scegliere il file XML che contiene le impostazioni del profilo Wi-Fi da importare.
     - **Contenuti del file**: visualizza il codice XML per il profilo di configurazione selezionato.

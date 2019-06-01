@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8512f8270e7f219814aa5e3919f72b95de93cbcf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 551294be1d6b90d65104b50413c088e8e15bcd09
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048459"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373583"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usare le impostazioni personalizzate per i dispositivi Windows Holographic for Business in Intune
 
@@ -36,7 +36,7 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 
 ## <a name="create-the-profile"></a>Creare il profilo
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere le impostazioni seguenti:
 
@@ -52,12 +52,12 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
     - **OMA-URI (maiuscole/minuscole)** : immettere il valore OMA-URI che si vuole usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
-        - Stringa
+        - String
         - Stringa (file XML)
         - Data e ora
         - Integer
         - A virgola mobile
-        - Boolean
+        - Booleano
         - Base64 (file)
 
     - **Valore**: immettere il valore dati da associare all'impostazione OMA-URI immessa. Il valore varia a seconda del tipo di dati selezionato. Ad esempio, se si sceglie **Data e ora**, selezionare il valore dalla selezione data.
@@ -125,7 +125,7 @@ Le impostazioni seguenti sono utili per i dispositivi che eseguono Windows Holog
 > [!div class="mx-tableFixed"]
 > |URI OMA|Tipo di dati|
 > |----|---|
-> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Importante**<br/>L'articolo dedicato al provider del servizio di crittografia AppLocker usa esempi XML con caratteri di escape. Per configurare le impostazioni con profili personalizzati di Intune, è necessario usare XML semplice.|Stringa<br/>Per altre informazioni, vedere [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (Provider del servizio di configurazione AppLocker).|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Importante**<br/>L'articolo dedicato al provider del servizio di crittografia AppLocker usa esempi XML con caratteri di escape. Per configurare le impostazioni con profili personalizzati di Intune, è necessario usare XML semplice.|String<br/>Per altre informazioni, vedere [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (Provider del servizio di configurazione AppLocker).|
 
 ### <a name="deletionpolicyhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
@@ -139,7 +139,7 @@ Le impostazioni seguenti sono utili per i dispositivi che eseguono Windows Holog
 > [!div class="mx-tableFixed"]
 > |URI OMA|Tipo di dati|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Boolean<br/>True: abilita<br/>False: disabilita (impostazione predefinita)|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Booleano<br/>True: abilita<br/>False: disabilita (impostazione predefinita)|
 
 ### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
