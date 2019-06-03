@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046316"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412302"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usare i log di controllo per tenere traccia degli eventi e monitorarli in Microsoft Intune
 
@@ -39,7 +39,7 @@ Gli utenti con le autorizzazioni seguenti possono esaminare i log di controllo:
 
 È possibile esaminare i log di controllo nel gruppo di monitoraggio per ogni carico di lavoro di Intune:
 
-1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Scegliere il carico di lavoro per cui si vogliono esaminare i log di controllo. Selezionare, ad esempio, **Dispositivi**.
 3. In **Monitoraggio** scegliere **Log di controllo**.
 
