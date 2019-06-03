@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429692"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046964"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo in Intune
 
@@ -36,40 +35,40 @@ Per altre informazioni sulla funzionalità Modalità tutto schermo di Windows in
 
 - [Creare il profilo](kiosk-settings.md#create-the-profile).
 
-- Questo profilo per chiosco multimediale è direttamente correlato al profilo di restrizioni del dispositivo creata tramite il [impostazioni modalità tutto schermo di Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Per concludere:
+- Questo profilo per la modalità tutto schermo è direttamente correlato al profilo di restrizioni per i dispositivi creato usando le [impostazioni della modalità tutto schermo di Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Per concludere:
 
-  1. È stato creato il profilo per chiosco multimediale per l'esecuzione del dispositivo in modalità tutto schermo.
-  2. Creare il [profilo di restrizione](device-restrictions-windows-10.md#microsoft-edge-browser)e configurare le impostazioni consentite in Microsoft Edge e le funzionalità specifiche.
+  1. Creare questo profilo per la modalità tutto schermo per l'esecuzione del dispositivo in modalità tutto schermo.
+  2. Creare il [profilo di restrizioni per i dispositivi](device-restrictions-windows-10.md#microsoft-edge-browser) e configurare le funzionalità e le impostazioni specifiche consentite in Microsoft Edge.
 
 > [!IMPORTANT] 
-> Assicurarsi di assegnare il profilo per chiosco multimediale agli stessi dispositivi come le [profilo di Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+> Assicurarsi di assegnare questo profilo per la modalità tutto schermo agli stessi dispositivi del [profilo di Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ## <a name="single-full-screen-app-kiosks"></a>App singola per chioschi multimediali a schermo intero
 
-Esegue solo un'app nel dispositivo.
+Eseguire una sola app nel dispositivo.
 
-- **Selezionare una modalità per chiosco multimediale**: scegliere **singola app, per chiosco multimediale a schermo intero**.
+- **Selezionare una modalità tutto schermo**: scegliere **App singola per chiosco multimediale a schermo intero**.
 
 - **Tipo di accesso utente**: le app aggiunte vengono eseguite con l'account utente immesso. Le opzioni disponibili sono:
 
-  - **Accesso automatico (Windows 10, versione 1803+)**: usare sui dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account Guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Account utente locale**: immettere l'account utente locale (per il dispositivo). L'account che immesso consente l'accesso per la modalità tutto schermo.
+  - **Accesso automatico (Windows 10, versione 1803+)** : usare sui dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account Guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Account utente locale**: immettere l'account utente locale (per il dispositivo). L'account immesso accede al chiosco multimediale.
 
 - **Tipo di applicazione**: selezionare il tipo di applicazione. Le opzioni disponibili sono:
 
-  - **Aggiungere browser Microsoft Edge**: selezionare **browser Microsoft Edge**, quindi scegliere il **tipo Edge type di modalità per chiosco multimediale**:
+  - **Aggiungi il browser Microsoft Edge**: selezionare **Browser Microsoft Edge** e scegliere il **Tipo di modalità tutto schermo di Microsoft Edge**:
 
-    - **/ Interactive digital signage**: consente di aprire un URL completo e Mostra solo il contenuto in tale sito Web. [Impostare i cartelli digitali](https://docs.microsoft.com/windows/configuration/setup-digital-signage) vengono fornite ulteriori informazioni su questa funzionalità.
-    - **Pubblica esplorazione (InPrivate)**: esegue una versione multi-scheda limitata di Microsoft Edge. Gli utenti possono esplorare pubblicamente o terminare la sessione di esplorazione.
+    - **Insegna digitale o schermo interattivo**: consente di aprire un URL a schermo intero e visualizza solo il contenuto di tale sito Web. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) (Configurare insegne digitali) offre altre informazioni su questa funzionalità.
+    - **Esplorazione pubblica (InPrivate)** : esegue una versione multi-scheda limitata di Microsoft Edge. Gli utenti possono esplorare pubblicamente o terminare la sessione di esplorazione.
 
-    Per altre informazioni su queste opzioni, vedere [modalità tutto schermo di distribuire Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+    Per altre informazioni su queste opzioni, vedere [Distribuire la modalità tutto schermo di Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Questa impostazione abilita il browser Microsoft Edge sul dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**configurazione del dispositivo** > **profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **restrizioni del dispositivo** >  **Browser Microsoft Edge**). [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) Elenca e descrive le impostazioni disponibili.
+    > Questa impostazione abilita il browser Microsoft Edge nel dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**Configurazione del dispositivo** > **Profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **Restrizioni del dispositivo** >  **Browser Microsoft Edge**). In [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) sono elencate e descritte le impostazioni disponibili.
 
     Selezionare **OK** per salvare le modifiche.
 
-  - **Aggiungere browser Chiosco**: selezionare **delle impostazioni del browser per chiosco multimediale**. Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
+  - **Aggiungi un browser in modalità tutto schermo**: selezionare **Impostazioni del browser in modalità tutto schermo**. Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
 
     Immettere le impostazioni seguenti:
 
@@ -96,7 +95,7 @@ Esegue solo un'app nel dispositivo.
 
     Selezionare **OK** per salvare le modifiche.
 
-  - **App Store Add**: selezionare **aggiungere un'app dello store**, scegliere un'app dall'elenco.
+  - **Aggiungi l'app dello Store**: scegliere **Aggiungi un'app dello Store** e scegliere un'app nell'elenco.
 
     Se l'elenco non include app, aggiungerne qualcuna seguendo la procedura in [App client](apps-add.md).
 
@@ -104,34 +103,34 @@ Esegue solo un'app nel dispositivo.
 
 ## <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
 
-Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire. Se un'app presenta una dipendenza da un'altra app, entrambi deve essere incluso nell'elenco App consentite. Ad esempio, Internet Explorer 64 bit presenta una dipendenza su Internet Explorer 32 bit, pertanto è necessario consentire in "C:\Programmi\Microsoft c:\Programmi\Internet explorer\iexplore.exe" sia "C:\Program Files (x86) \Internet". 
+Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire. Se un'app presenta una dipendenza da un'altra app, entrambe devono essere incluse nell'elenco delle app consentite. Ad esempio, Internet Explorer a 64 bit ha una dipendenza da Internet Explorer a 32 bit, pertanto è necessario consentire sia "C:\Programmi\internet explorer\iexplore.exe" che “C:\Programmi (x86)\Internet Explorer\iexplore.exe”. 
 
-- **Selezionare una modalità per chiosco multimediale**: scegliere **tra più app per chiosco multimediale**.
+- **Selezionare una modalità tutto schermo**: scegliere **Più app in modalità tutto schermo**.
 
 - **Specifica Windows 10 come destinazione nei dispositivi in modalità S**:
   - **Sì**: consente le app dello Store e le app AUMID (escluse le app Win32) nel profilo in modalità tutto schermo.
-  - **No**: consente le app dello Store, le app Win32 e le app AUMID nel profilo in modalità tutto schermo. Questo profilo per chiosco multimediale non è stato distribuito ai dispositivi in modalità S.
+  - **No**: consente le app dello Store, le app Win32 e le app AUMID nel profilo in modalità tutto schermo. Questo profilo per la modalità tutto schermo non viene distribuito nei dispositivi in modalità S.
 
 - **Tipo di accesso utente**: le app aggiunte vengono eseguite con l'account utente immesso. Le opzioni disponibili sono:
 
-  - **Accesso automatico (Windows 10, versione 1803+)**: usare sui dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account Guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Account utente locale**: **aggiungere** l'account utente locale (per il dispositivo). L'account che immesso consente l'accesso per la modalità tutto schermo.
-  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: selezionare **Aggiungi** e scegliere gli utenti o i gruppi di Azure nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
+  - **Accesso automatico (Windows 10, versione 1803+)** : usare sui dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account Guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Account utente locale**: **aggiungere** l'account utente locale (per il dispositivo). L'account immesso accede al chiosco multimediale.
+  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)** : selezionare **Aggiungi** e scegliere gli utenti o i gruppi di Azure nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
   - **Visitatore di HoloLens**: l'account del visitatore è un account Guest che non richiede credenziali utente o autenticazione, come descritto in [Concetti della modalità PC condiviso](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Browser e applicazioni**: aggiungere le app da eseguire nel dispositivo in modalità tutto schermo. Ricordarsi che è possibile aggiungere più app.
 
   - **Browser**
 
-    - **Aggiungere Microsoft Edge**: Microsoft Edge viene aggiunta alla griglia di app e tutte le applicazioni possono essere eseguite in questa modalità tutto schermo. Scegliere il **tipo di modalità tutto schermo di Microsoft Edge**:
+    - **Aggiungi Microsoft Edge**: Microsoft Edge viene aggiunto alla griglia delle app e tutte le applicazioni possono essere eseguite in questo chiosco multimediale. Scegliere il **Tipo di modalità tutto schermo di Microsoft Edge**:
 
-      - **Modalità normale (versione completa di Microsoft Edge)**: esegue una versione completa di Microsoft Edge con tutte le funzionalità di esplorazione. Lo stato e dati utente vengono salvate tra le sessioni.
-      - **Pubblica esplorazione (InPrivate)**: esegue una versione multi-scheda di InPrivate di Microsoft Edge con un'esperienza personalizzata per i chioschi multimediali che vengono eseguiti in modalità schermo intero.
+      - **Modalità normale (versione completa di Microsoft Edge)** : esegue una versione completa di Microsoft Edge con tutte le funzionalità di esplorazione. I dati dell'utente e lo stato vengono salvati tra le sessioni.
+      - **Esplorazione pubblica (InPrivate)** : esegue una versione con più schede di Microsoft Edge InPrivate con un'esperienza personalizzata per i chioschi multimediali eseguiti in modalità schermo intero.
 
-      Per altre informazioni su queste opzioni, vedere [modalità tutto schermo di distribuire Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+      Per altre informazioni su queste opzioni, vedere [Distribuire la modalità tutto schermo di Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Questa impostazione abilita il browser Microsoft Edge sul dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**configurazione del dispositivo** > **profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **restrizioni del dispositivo** >  **Browser Microsoft Edge**). [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) Elenca e descrive le impostazioni disponibili.
+      > Questa impostazione abilita il browser Microsoft Edge nel dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**Configurazione del dispositivo** > **Profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **Restrizioni del dispositivo** >  **Browser Microsoft Edge**). In [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) sono elencate e descritte le impostazioni disponibili.
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -165,18 +164,18 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
       - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
       - **Percorso locale**: obbligatorio. Immettere il percorso del file eseguibile, ad esempio `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-      - **ID modello utente applicazione (AUMID)**: immettere l'ID modello utente applicazione dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
+      - **ID modello utente applicazione (AUMID)** : immettere l'ID modello utente applicazione dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
 
       Selezionare **OK** per salvare le modifiche.
 
     - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows come il Blocco note o la Calcolatrice. Immettere le proprietà seguenti:
 
       - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
-      - **ID modello utente applicazione (AUMID)**: obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+      - **ID modello utente applicazione (AUMID)** : obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
 
       Selezionare **OK** per salvare le modifiche.
 
-    - **Avvio automatico di**: facoltativo. Scegliere un'applicazione di avvio automatico quando l'utente esegue l'accesso. È possibile AutoLaunched solo una singola app.
+    - **AutoLaunch**: facoltativo. Scegliere un'applicazione da avviare automaticamente quando l'utente esegue l'accesso. È possibile configurare una sola app per l'avvio automatico.
     - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
 - **Barra delle applicazioni di Windows**: scegliere **Mostra** o **Nascondi** per la barra delle applicazioni. Per impostazione predefinita, la barra delle applicazioni non viene visualizzata. Vengono visualizzate delle icone, ad esempio l'icona del Wi-Fi, ma le impostazioni non possono essere modificate dagli utenti finali.
 
-- **Consentire l'accesso alla cartella Downloads**: scegliere **Sì** per consentire agli utenti di accedere alla cartella di download in Windows Explorer. Per impostazione predefinita, l'accesso alla cartella di download è disabilitata. Questa funzionalità viene comunemente usata per gli utenti finali per accedere agli elementi scaricati da un browser.
+- **Consenti l'accesso alla cartella Download**: scegliere **Sì** per consentire agli utenti di accedere alla cartella Download in Esplora risorse. Per impostazione predefinita, l'accesso alla cartella Download è disabilitato. Questa funzionalità viene usata comunemente per consentire agli utenti finali di accedere agli elementi scaricati da un browser.
 
 Selezionare **OK** per salvare le modifiche.
 

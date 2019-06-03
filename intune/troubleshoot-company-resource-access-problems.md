@@ -1,13 +1,12 @@
 ---
 title: Codici di errore e di stato in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco degli errori, il codice di stato, le descrizioni e soluzioni quando si usa MDM gestiti dispositivi, ottenere l'accesso alle risorse aziendali, gli errori nei dispositivi iOS e gli errori di risposta OMA in Microsoft Intune.
+description: Visualizzare un elenco di errori, codici di stato, descrizioni e soluzioni quando si usano dispositivi gestiti MDM, ottenere l'accesso a risorse aziendali, errori nei dispositivi iOS ed errori di risposta OMA in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330479"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040424"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Codici di errore comuni e le descrizioni in Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Codici di errore comuni e descrizioni in Microsoft Intune
 
-Questo articolo sono elencati gli errori più comuni, i codici di stato, le descrizioni e soluzioni possibili durante l'accesso alle risorse dell'organizzazione. Usare queste informazioni per risolvere i problemi di accesso quando si usa Microsoft Intune.
+In questo articolo sono elencati gli errori più comuni, i codici di stato, le descrizioni e le soluzioni possibili durante l'accesso alle risorse dell'organizzazione. Usare queste informazioni per facilitare la risoluzione dei problemi di accesso quando si usa Microsoft Intune.
 
-Se è necessario il supporto della Guida, vedere [ottenere il supporto per Microsoft Intune](get-support.md).
+Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Codici di stato per dispositivi Windows gestiti da MDM
 
@@ -134,7 +133,7 @@ Se è necessario il supporto della Guida, vedere [ottenere il supporto per Micro
 |-2016314101|0x87D17D0B|22011: Impossibile generare CSR|
 |-2016314102|0x87D17D0A|22010: Impossibile archiviare l'identità temporanea|
 |-2016314103|0x87D17D09|22009: Impossibile creare l'identità temporanea|
-|-2016314104|0x87D17D08|22008: Impossibile creare l'identità |
+|-2016314104|0x87D17D08|22008: Impossibile creare l'identità|
 |-2016314105|0x87D17D07|22007: Certificato firmato non valido|
 |-2016314106|0x87D17D06|22006: CACaps non sufficienti|
 |-2016314107|0x87D17D05|22005: Errore di rete|
@@ -230,7 +229,7 @@ Se è necessario il supporto della Guida, vedere [ottenere il supporto per Micro
 |-2016327107|0x87D14A3D|9005: Formato del certificato non valido|
 |-2016327108|0x87D14A3C|9004: Impossibile archiviare il certificato root|
 |-2016327109|0x87D14A3B|9003: Impossibile archiviare i dati WAPI|
-|-2016327110|0x87D14A3A|9002: Impossibile archiviare il certificato |
+|-2016327110|0x87D14A3A|9002: Impossibile archiviare il certificato|
 |-2016327111|0x87D14A39|9001: Troppi certificati in un payload|
 |-2016327112|0x87D14A38|9000: Password non valida|
 |-2016328112|0x87D14650|8000: Impossibile installare Web Clip|
@@ -387,4 +386,4 @@ Se è necessario il supporto della Guida, vedere [ottenere il supporto per Micro
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Contattare il supporto Microsoft per [ottenere il supporto per Microsoft Intune](get-support.md).
+Contattare il supporto tecnico di Microsoft per [ottenere supporto per Microsoft Intune](get-support.md).

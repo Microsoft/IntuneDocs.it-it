@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460513"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044607"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Risolvere problemi relativi a criteri e profili in Intune
 
@@ -56,7 +55,7 @@ Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e desc
 
       - I criteri di protezione delle app, per la gestione delle applicazioni per dispositivi mobili, non richiedono che i dispositivi siano registrati. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
-    - **Tipo di Join di Azure AD**: deve essere impostata su **Workplace** oppure **AzureAD**.
+    - **Tipo di join per Azure AD**: deve essere impostato su **Area di lavoro** oppure **AzureAD**.
  
       - Se la colonna ha valore **Non registrato**, potrebbe esserci un problema con la registrazione. In genere, il problema si risolve annullando ed eseguendo nuovamente la registrazione del dispositivo.
 
@@ -68,7 +67,7 @@ Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e desc
 
       Per altre informazioni, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).
 
-    - **Ultimo check-in**: deve essere una data e ora di recente. Per impostazione predefinita, i dispositivi Intune si sincronizzano ogni 8 ore.
+    - **Ultima sincronizzazione**: devono essere indicate una data e un'ora recenti. Per impostazione predefinita, i dispositivi Intune si sincronizzano ogni 8 ore.
 
       - Se il valore di **Ultima sincronizzazione** è superiore a 24 ore, potrebbe esserci un problema con il dispositivo. Un dispositivo che non può essere sincronizzato non riceve i criteri da Intune.
 
@@ -87,7 +86,7 @@ Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e desc
 
       **Stati dei criteri**:
 
-      - **Non applicabile**: questo criterio non è supportato in questa piattaforma. Ad esempio, i criteri iOS non funzionano in Android. I criteri Samsung KNOX non funzionano nei dispositivi Windows.
+      - **Non applicabile**: questi criteri non sono supportati in questa piattaforma. Ad esempio, i criteri iOS non funzionano in Android. I criteri Samsung KNOX non funzionano nei dispositivi Windows.
       - **Conflitto**: nel dispositivo è presente un'impostazione di cui Intune non può eseguire l'override. Oppure, sono stati distribuiti due criteri con la stessa impostazione che usa valori diversi.
       - **In sospeso**: il dispositivo non è stato sincronizzato in Intune per ottenere i criteri. Oppure, il dispositivo ha ricevuto i criteri, ma non ha segnalato lo stato a Intune.
       - **Errori**: cercare gli errori e le risoluzioni possibili in [Risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune](troubleshoot-company-resource-access-problems.md).
@@ -110,7 +109,7 @@ Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e desc
 
     - **In sospeso**: il profilo viene inviato al dispositivo, ma lo stato non viene segnalato a Intune. Ad esempio, la crittografia in Android richiede l'abilitazione da parte dell'utente e può quindi comparire come in sospeso.
 
-**Collegamento utile**: [monitorare i profili di configurazione dispositivo](device-profile-monitor.md)
+**Collegamento utile**: [Monitorare i profili di configurazione dei dispositivi in Microsoft Intune](device-profile-monitor.md)
 
 > [!NOTE]
 > Quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene applicato il criterio più restrittivo.

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/11/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566412"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042107"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>Impostazioni del profilo di posta elettronica per dispositivi iOS con Intune
 
@@ -76,20 +75,20 @@ Questo articolo elenca e descrive tutte le impostazioni di posta elettronica dis
   Quando si usa S/MIME con un messaggio di posta elettronica, si conferma l'autenticità del mittente e l'integrità e la riservatezza del messaggio.
 
   - **Firma S/MIME abilitata**: selezionare **Abilita** per consentire agli utenti di firmare digitalmente i messaggi di posta elettronica in uscita per l'account immesso. La firma consente agli utenti che ricevono i messaggi di essere sicuri che il messaggio proveniva da quell'utente specifico e non da qualcuno che fingeva di essere il mittente. Selezionare **Disabilita** per non consentire agli utenti di firmare digitalmente il messaggio.
-    - **Consentire all'utente di modificare l'impostazione**: scegliere **abilitare** per consentire agli utenti di modificare il comportamento di firma S/MIME. Selezionare **Disabilita** per impedire agli utenti di modificare l'impostazione della firma S/MIME configurata. Disponibile in iOS 12 e versioni successive.
+    - **Consenti all'utente di cambiare impostazione**: scegliere **Abilita** per consentire agli utenti di modificare il comportamento di firma S/MIME. Selezionare **Disabilita** per impedire agli utenti di modificare l'impostazione della firma S/MIME configurata. Disponibile in iOS 12 e versioni successive.
 
   - **Certificato di firma S/MIME**: selezionare un profilo esistente del certificato PKCS o SCEP usato per firmare i messaggi di posta elettronica.
-    - **Consentire all'utente di modificare l'impostazione**: scegliere **abilitare** per consentire agli utenti di modificare il certificato di firma. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di firma e imporre di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
+    - **Consenti all'utente di cambiare impostazione**: scegliere **Abilita** per consentire agli utenti di modificare il certificato di firma. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di firma e imporre di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
 
-  - **La crittografia per impostazione predefinita**: **abilitare** Crittografa tutti i messaggi come comportamento predefinito. Selezionare **Disabilita** per non crittografare tutti i messaggi come comportamento predefinito.
-    - **Consentire all'utente di modificare l'impostazione**: scegliere **abilitare** per consentire agli utenti di modificare il comportamento di crittografia predefinito. Selezionare **Disabilita** per impedire agli utenti di modificare il comportamento di crittografia predefinito e imporre agli utenti di usare l'impostazione configurata. Disponibile in iOS 12 e versioni successive.
+  - **Crittografa per impostazione predefinita**: scegliere **Abilita** per crittografare tutti i messaggi come comportamento predefinito. Selezionare **Disabilita** per non crittografare tutti i messaggi come comportamento predefinito.
+    - **Consenti all'utente di cambiare impostazione**: scegliere **Abilita** per consentire agli utenti di modificare il comportamento di crittografia predefinito. Selezionare **Disabilita** per impedire agli utenti di modificare il comportamento di crittografia predefinito e imporre agli utenti di usare l'impostazione configurata. Disponibile in iOS 12 e versioni successive.
 
   - **Force per-message encryption** (Forza crittografia per singoli messaggi): la crittografia per singoli messaggi consente agli utenti di scegliere quali messaggi di posta elettronica crittografare prima dell'invio. Selezionare **Abilita** per mostrare l'opzione di crittografia per singoli messaggi quando si crea un nuovo messaggio di posta elettronica. Gli utenti possono quindi scegliere se usare o non usare la crittografia per singoli messaggi. Selezionare **Disabilita** per impedire agli utenti di visualizzare l'opzione di crittografia per singoli messaggi.
 
     Se l'impostazione **Encrypt by default** (Crittografa per impostazione predefinita) è abilitata, abilitando la crittografia per singoli messaggi si consente agli utenti di non usare la crittografia per singoli messaggi. Se l'impostazione **Encrypt by default** (Crittografa per impostazione predefinita) è disabilitata, abilitando la crittografia per singoli messaggi si consente agli utenti di usare la crittografia per singoli messaggi.
 
   - **Certificato di crittografia S/MIME**: selezionare un profilo esistente del certificato PKCS o SCEP usato per crittografare i messaggi di posta elettronica.
-    - **Consentire all'utente di modificare l'impostazione**: scegliere **abilitare** per consentire agli utenti di modificare il certificato di crittografia. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di crittografia e imporre agli utenti di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
+    - **Consenti all'utente di cambiare impostazione**: scegliere **Abilita** per consentire agli utenti di modificare il certificato di crittografia. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di crittografia e imporre agli utenti di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
 - **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
 - **Consenti di spostare i messaggi negli altri account di posta elettronica**: selezionare **Abilita** per consentire agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati dagli utenti nei dispositivi.
 - **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti**: selezionare **Abilita** per consentire agli utenti di selezionare questo profilo come account predefinito per l'invio di posta elettronica. Ciò consente alle applicazioni di terze parti di aprire i messaggi di posta elettronica nell'app nativa, ad esempio per allegare file ai messaggi.

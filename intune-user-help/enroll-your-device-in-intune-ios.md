@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292425"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196866"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurare l'accesso del dispositivo iOS alle risorse aziendali  
 
@@ -31,7 +31,9 @@ Registrare un dispositivo iOS nell'app Portale aziendale Intune per ottenere acc
 
 Dopo la registrazione, il dispositivo diventa *gestito*. L'organizzazione può assegnare criteri e app al dispositivo tramite un provider di gestione di dispositivi mobili (MDM), ad esempio Intune.  
 
-Per mantenere l'accesso alle informazioni aziendali o dell'istituto di istruzione dal dispositivo, è necessario configurare il dispositivo in base alle impostazioni preferite dell'organizzazione. Questo articolo descrive come usare il Portale aziendale per registrare il dispositivo e mantenere i requisiti relativi alle impostazioni dell'organizzazione. 
+Per mantenere l'accesso alle informazioni aziendali o dell'istituto di istruzione dal dispositivo, è necessario configurare il dispositivo in base alle impostazioni preferite dell'organizzazione. Questo articolo descrive come usare il Portale aziendale per registrare il dispositivo e mantenere i requisiti relativi alle impostazioni dell'organizzazione.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Se si è provato ad accedere alla posta elettronica aziendale nell'app Posta ed è stata ricevuta una richiesta di impostare il dispositivo come gestito, questo è il posto giusto. Eseguire le istruzioni seguenti per accedere alla posta elettronica e ad altre risorse aziendali sul dispositivo iOS.  
@@ -39,7 +41,7 @@ Per mantenere l'accesso alle informazioni aziendali o dell'istituto di istruzion
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Aspettative relative all'app Portale aziendale  
 
 ### <a name="security"></a>Sicurezza  
-Durante la configurazione iniziale, l'app richiede l'autenticazione presso l'organizzazione. Quindi, comunica le eventuali impostazioni dispositivo che è necessario aggiornare. Ad esempio, le organizzazioni spesso definiscono il numero di caratteri minimo o massimo che la password deve soddisfare.     
+Durante la configurazione iniziale, l'app richiede l'autenticazione presso l'organizzazione. Quindi, comunica le eventuali impostazioni dispositivo che è necessario aggiornare. Ad esempio, le organizzazioni spesso definiscono il numero di caratteri minimo o massimo che la password deve soddisfare.
 
 ### <a name="protection"></a>Protezione  
 Quando il dispositivo è registrato, l'app Portale aziendale continuerà ad assicurarsi che il dispositivo sia protetto. Ad esempio, se si installa un'app da un'origine non attendibile, si riceve un avviso dall'app e, talvolta, l'accesso ai dati aziendali viene revocato. Questi tipi di criteri sono comuni nelle organizzazioni e spesso richiedono la disinstallazione dell'app non attendibile prima di poter ottenere di nuovo l'accesso.  
@@ -118,6 +120,9 @@ La sospensione per un periodo più lungo di qualche minuto durante la registrazi
 
 > [!Note]
 > Se l'organizzazione monitora i limiti di voce e dati oppure mette a disposizione dell'utente un dispositivo di proprietà dell'azienda, potrebbe essere necessario completare altri passaggi. Se viene chiesto di installare l'app **Datalert**, vedere [Registrare il dispositivo nella gestione delle spese per telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione partecipa al programma DEP (Device Enrollment Program) di Apple, vedere [come registrare un dispositivo di proprietà dell'azienda](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>Supporto per amministratori IT  
+Gli amministratori IT che riscontrano problemi durante la registrazione dei dispositivi possono vedere [Risoluzione dei problemi di registrazione dei dispositivi iOS in Microsoft Intune](https://support.microsoft.com/en-us/help/4039809). Questo articolo elenca gli errori comuni, le cause e le procedure per risolverli.  
 
 ## <a name="next-steps"></a>Passaggi successivi  
 Trovare app utili per le attività lavorative o scolastiche. Informazioni su [come vengono rese disponibili le app](use-managed-apps-on-your-device-ios.md) tramite il Portale aziendale.  

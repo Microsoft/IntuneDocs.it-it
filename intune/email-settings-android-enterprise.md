@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6c6c6e3e999e44ad6a07b4d8bdc1ddf9c400cf7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565452"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048038"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Impostazioni dei dispositivi Android Enterprise per configurare posta elettronica, autenticazione e sincronizzazione in Intune
 
@@ -43,15 +42,15 @@ Per altre informazioni sui profili di posta elettronica in Intune, vedere [Confi
   - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
   - **Nome utente**: ottiene solo il nome, ad esempio `user1`
 
-- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo di posta elettronica che Intune ottiene da Azure AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
+- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo dell'indirizzo di posta elettronica che Intune ottiene da Azure AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
   - **Nome dell'entità utente**: usa come indirizzo di posta elettronica il nome dell'entità completo, ad esempio `user1@contoso.com` o `user1`.
-  - **Indirizzo SMTP primario**: Usa l'indirizzo SMTP primario, ad esempio `user1@contoso.com`, per accedere a Exchange.
+  - **Indirizzo SMTP primario**: usa l'indirizzo SMTP primario, ad esempio `user1@contoso.com`, per accedere a Exchange.
 
 - **Metodo di autenticazione**: selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.
   - Se si seleziona l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.
 - **SSL**: scegliere **Abilita** per usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
-- **Quantità di posta elettronica da sincronizzare**: scegliere la quantità di tempo del messaggio di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Tipo di contenuto da sincronizzare** (solo Nine Work): scegliere quali dati da sincronizzare nei dispositivi. Le opzioni disponibili sono:
+- **Numero di messaggi di posta elettronica da sincronizzare**: scegliere il periodo di tempo di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
+- **Tipo di contenuto da sincronizzare** (solo Nine Work): scegliere quali dati sincronizzare nei dispositivi. Le opzioni disponibili sono:
   - **Contatti**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare i contatti nei propri dispositivi.
   - **Calendario**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare il calendario nei propri dispositivi.
   - **Attività**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare qualsiasi attività nei propri dispositivi.

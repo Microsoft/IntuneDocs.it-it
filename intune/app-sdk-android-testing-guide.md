@@ -1,13 +1,12 @@
 ---
 title: Guida al testing di Microsoft Intune App SDK per sviluppatori di Android
-description: Microsoft Intune App SDK per Android Guida test consente di testare l'app Android gestiti da Intune.
+description: La Guida al testing di Microsoft Intune App SDK per Android è utile per testare le app Android gestite da Intune.
 keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,114 +16,114 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4203f424c395399cb0ed1e7472b006602aa0b210
-ms.sourcegitcommit: db7a6b8fc9e82dae4f2111ca0b2d3c14e33658f9
+ms.openlocfilehash: 9f8fa8f361e886c8eac697bb585ccf15eb9152f1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58072471"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043849"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Guida al testing di Microsoft Intune App SDK per sviluppatori di Android
 
-Microsoft Intune App SDK per Android Guida test è progettato per consentire di testare l'app Android gestiti da Intune.  
+La Guida al testing di Microsoft Intune App SDK per Android è progettata per agevolare le operazioni di test per le app Android gestite da Intune.  
 
-## <a name="prerequisite-test-accounts"></a>Account di test dei prerequisiti
+## <a name="prerequisite-test-accounts"></a>Account di test prerequisiti
 È possibile creare nuovi account con e senza dati pre-generati. Per creare un nuovo account:
-1. Passare il [Demos Microsoft](https://demos.microsoft.com/environments/create/tenant) sito. 
-2. [Configurare Intune](https://docs.microsoft.com/intune/setup-steps) per abilitare la gestione dei dispositivi mobili (MDM).
-3. [Creare utenti](https://docs.microsoft.com/intune/users-add).
+1. Passare al sito [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant). 
+2. [Configurare Intune](https://docs.microsoft.com/intune/setup-steps) per abilitare la gestione di dispositivi mobili (MDM).
+3. [Creare gli utenti](https://docs.microsoft.com/intune/users-add).
 4. [Creare i gruppi](https://docs.microsoft.com/intune/groups-add).
-5. [Assegnare le licenze](https://docs.microsoft.com/intune/licenses-assign) come appropriato per il test.
+5. [Assegnare le licenze](https://docs.microsoft.com/intune/licenses-assign) appropriate per i test.
 
 
-## <a name="azure-portal-policy-configuration"></a>Configurazione dei criteri del portale Azure
-[Creare e assegnare criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) nella [pannello Intune del portale di Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). I [criteri di configurazione app](https://docs.microsoft.com/intune/app-configuration-policies-overview) può anche essere creato e assegnato nel Pannello di Intune.
+## <a name="azure-portal-policy-configuration"></a>Configurazione dei criteri del portale di Azure
+[Creare e assegnare criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) nel [pannello Intune del portale di Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). I [criteri di configurazione delle app](https://docs.microsoft.com/intune/app-configuration-policies-overview) possono anche essere creati e assegnati nel pannello Intune.
 
 > [!NOTE]
-> Se l'app non è elencato nel portale di Azure, è possibile definire la destinazione con un criterio selezionando il **altre app** opzione e fornendo il nome del pacchetto nella casella di testo.
+> Se l'app non è elencata nel portale di Azure, è possibile impostarla come destinazione con un criterio selezionando l'opzione **Altre app** e specificando il nome del pacchetto nella casella di testo.
 
 > [!IMPORTANT]
-> Per i criteri di configurazione da applicare, l'utente della registrazione deve essere impostata come destinazione un' [criteri di protezione delle app Intune](https://docs.microsoft.com/intune/app-protection-policy).
+> Per poter applicare i criteri di configurazione delle app, l'utente da registrare deve essere impostato come destinazione per i [criteri di protezione delle app di Intune](https://docs.microsoft.com/intune/app-protection-policy).
 
 ## <a name="test-cases"></a>Test case
 
-I test case seguenti illustrano le procedure di configurazione e la conferma. Utilizzare questo materiale sussidiario per risolvere i problemi di app Android gestita da Intune.
+I test case seguenti illustrano le procedure di configurazione e conferma. Usare queste linee guida per risolvere i problemi relativi alle app Android gestite da Intune.
 
-### <a name="required-pin-and-corporate-credentials"></a>PIN obbligatorio e le credenziali aziendali
+### <a name="required-pin-and-corporate-credentials"></a>PIN obbligatorio e credenziali aziendali
 
-È possibile richiedere un pin per accedere alle risorse aziendali. Inoltre, è possibile imporre l'autenticazione azienda prima che gli utenti possono usare le app gestite. Utilizzare la procedura seguente per impostare questi requisiti:
+È possibile richiedere un PIN per accedere alle risorse aziendali. È anche possibile imporre l'autenticazione aziendale prima che gli utenti possano usare le app gestite. Seguire questa procedura per impostare questi requisiti:
 
-1. Configurare **Richiedi PIN per l'accesso** e **Richiedi credenziali aziendali per l'accesso** al **Sì**. Per altre informazioni, vedere [Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
+1. Impostare **Richiedi PIN per l'accesso** e **Richiedi credenziali aziendali per l'accesso** su **Sì**. Per altre informazioni, vedere [Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
 2. Confermare le condizioni seguenti:
-    - Avvio dell'app deve presentare una richiesta di input/configurazione del PIN e/o l'utente di produzione che è stato usato durante la registrazione con l'App portale aziendale.
-    - Errore di presentare una richiesta di accesso valida potrebbe essere a causa di un manifesto di android non configurato correttamente, in modo specifico i valori per l'integrazione di ADAL (SkipBroker ClientID e Authority).
-    - Errore nella presentazione alcuna richiesta potrebbe essere dovuto a un prodotto in modo non corretto `MAMActivity` valore. Per altre informazioni sulle `MAMActivity`, vedere [Microsoft Intune App SDK per la Guida per sviluppatori Android](app-sdk-android.md).
+    - All'avvio dell'app deve essere visualizzato un prompt per l'input o la configurazione del PIN e/o l'utente di produzione che è stato usato durante la registrazione nel portale aziendale.
+    - Se non viene visualizzato un prompt di accesso valido, è possibile che il manifesto Android non sia configurato correttamente, in modo specifico i valori per l'integrazione di ADAL (SkipBroker ClientID e Authority).
+    - Se non viene visualizzato alcun prompt la causa potrebbe essere un valore `MAMActivity` integrato in modo non corretto. Per altre informazioni su `MAMActivity`, vedere [Manuale dello sviluppatore di Microsoft Intune App SDK per Android](app-sdk-android.md).
 
 > [!NOTE] 
-> Se il test precedente non funziona, il test seguente probabilmente avrà inoltre esito negativo. Revisione [SDK](app-sdk-android.md##sdk-integration) e [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) integrazione.
+> Se il test precedente non funziona, è probabile che abbiano esito negativo anche i test seguenti. Controllare l'integrazione di [SDK](app-sdk-android.md##sdk-integration) e [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
-### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Limitare il trasferimento e la ricezione di dati con altre App
-È possibile controllare il trasferimento dati tra le applicazioni gestite aziendali come indicato di seguito:
+### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Limitare il trasferimento e la ricezione di dati con altre app
+È possibile controllare il trasferimento dei dati tra le applicazioni gestite aziendali come indicato di seguito:
 
-1. Impostare **Consenti all'app di trasferire dati ad altre app** al **le app gestite da criteri**.
-2. Impostare **Consenti all'app di ricevere i dati da altre app** su **Tutte le app**. Utilizzo di tipi e i provider di contenuti sarà interessata da questi criteri.
+1. Impostare **Consenti all'app di trasferire i dati ad altre app** su **App gestite da criteri**.
+2. Impostare **Consenti all'app di ricevere i dati da altre app** su **Tutte le app**. Questi criteri avranno effetto sull'uso di finalità e provider di contenuti.
 3. Confermare le condizioni seguenti:
-    - Apertura da un'app non gestita nelle funzioni app correttamente.
-    - È consentita la condivisione del contenuto tra App gestite.
-    - La condivisione dalle App gestite per le app non gestite (ad esempio Chrome) è bloccata.
+    - L'apertura da un'app non gestita nell'app funziona correttamente.
+    - È consentita la condivisione del contenuto tra app gestite.
+    - La condivisione da app gestite ad app non gestite (ad esempio Chrome) è bloccata.
 
 ### <a name="restrict-cut-copy-and-paste"></a>Limitare le operazioni taglia, copia e incolla
 È possibile limitare gli Appunti di sistema per le applicazioni gestite nel modo seguente:
 
-1. Impostare **limita le operazioni Taglia, copia e Incolla con le altre app** al **gestite da criteri con Incolla in**.
+1. Impostare **Limita le operazioni taglia, copia e incolla con le altre app** su **App gestite da criteri con Incolla in**.
 2. Confermare le condizioni seguenti:
-    - Copiare il testo dalla propria app in un oggetto gestito viene bloccata un'app non gestita (ad esempio, i messaggi).
+    - La copia di testo dalla propria app in un'app gestita o non gestita (ad esempio, Messaggi) ha esito negativo.
 
 ### <a name="prevent-save-as"></a>Impedire **Salva con nome**
-È possibile controllare **Salva con nome** funzionalità come indicato di seguito:
+È possibile controllare la funzionalità **Salva con nome** come indicato di seguito:
 
-1. Se l'app richiede [integrata 'Salva con nome' controlli](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), impostare **Impedisci 'Salva con nome'** al **Sì**.
+1. Se l'app richiede [controlli 'Salva con nome' integrati](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), impostare **Impedisci 'Salva con nome'** su **Sì**.
 2. Confermare le condizioni seguenti:
-    - Salva è limitato solo nelle posizioni gestito appropriate.
+    - Il comando Salva è limitato solo alle posizioni gestite appropriate.
 
 ### <a name="file-encryption"></a>Crittografia file
-È possibile crittografare i dati sul dispositivo come indicato di seguito:
+È possibile crittografare i dati nel dispositivo come indicato di seguito:
 
-1. Impostare **Crittografa dati app** al **Yes**.
+1. Impostare **Crittografa dati app** su **Sì**.
 2. Confermare le condizioni seguenti:
-    - Il comportamento normale dell'applicazione non è compromessa.
+    - Nessun effetto sul comportamento normale dell'applicazione.
 
 ### <a name="prevent-android-backups"></a>Impedire backup in Android
 È possibile controllare i backup dell'app come indicato di seguito:
 
-1. Se è stata impostata [restrizioni sul backup integrato](app-sdk-android.md#protecting-backup-data), configurare **Impedisci backup in Android** al **Sì**.
+1. Se sono state impostate [limitazioni per il backup integrato](app-sdk-android.md#protecting-backup-data), impostare **Impedisci backup in Android** su **Sì**.
 2. Confermare le condizioni seguenti:
     - I backup sono limitati.
 
 ### <a name="unenrollment"></a>Annullamento della registrazione
-È possibile cancellare le app gestite da contenente i documenti e posta elettronica aziendale e i dati personali viene decrittografati quando il servizio non è non è più gestito come indicato di seguito:
+È possibile cancellare posta elettronica e documenti aziendali dalle app gestite e i dati personali vengono decrittografati quando non sono più amministrati, come indicato di seguito:
 
 1. Dal portale di Azure [eseguire una cancellazione](https://docs.microsoft.com/intune/apps-selective-wipe).
-2. Se l'app non effettuare la registrazione per qualsiasi gestore di cancellazione verificare le condizioni seguenti:
+2. Se l'app non è registrata per qualsiasi gestore di cancellazione verificare le condizioni seguenti:
     - Si verifica una cancellazione completa dell'app.
 3. Se l'app è registrata per `WIPE_USER_DATA` o `WIPE_USER_AUXILARY_DATA`, verificare le condizioni seguenti:
-    - Il contenuto gestito viene rimosso dall'app. Per altre informazioni, vedere [Intune App SDK per la Guida per sviluppatori Android - cancellazione selettiva](app-sdk-android.md#selective-wipe).
+    - Il contenuto gestito viene rimosso dall'app. Per altre informazioni, vedere [Manuale dello sviluppatore di Intune App SDK per Android - Cancellazione selettiva](app-sdk-android.md#selective-wipe).
 
 ### <a name="multi-identity"></a>Identità multiple
-L'integrazione [supporto di più identità](app-sdk-android.md#multi-identity-optional) è una modifica ad alto rischio che deve essere verificato. I problemi più comuni saranno pronti per l'impostazione non corretta dell'identità (contesto rispetto al livello di minaccia) e anche i file di rilevamento (`MAMFileProtectionManager`).
+L'integrazione del [supporto di più identità](app-sdk-android.md#multi-identity-optional) è una modifica ad alto rischio che deve essere testata accuratamente. I problemi più comuni saranno causati dall'impostazione non corretta dell'identità (a livello di contesto o di minaccia) e anche dei file di rilevamento (`MAMFileProtectionManager`).
 
-Minima devono essere riconvalidati gli scenari seguenti per identità multiple:
+Come minimo, devono essere riconvalidati gli scenari seguenti per le identità multiple:
 
-- **Salva con nome** criteri funzionano correttamente per identità gestita.
-- Copiare e incollare le restrizioni vengono applicate correttamente dal codice gestito a personale.
+- I criteri per **Salva con nome** funzionano correttamente per le identità gestite.
+- Le limitazioni per Copia/Incolla vengono applicate correttamente nel passaggio dal contesto gestito a quello personale.
 - Vengono crittografati solo i dati appartenenti all'identità gestita e i file personali non vengono modificati.
-- Durante l'annullamento della registrazione la cancellazione selettiva rimuove solo i dati di identità gestita.
-- L'utente finale viene richiesto per il lancio condizionale quando si passa da non gestiti a managed account (solo la prima volta).
+- La cancellazione selettiva in fase di l'annullamento della registrazione rimuove solo i dati dell'identità gestita.
+- All'utente finale viene richiesto di eseguire l'avvio condizionale quando passa da un account non gestito a un account gestito (solo la prima volta).
 
-### <a name="app-configuration-optional"></a>Configurazione delle App (facoltativa)
-È possibile configurare il comportamento di App gestite nel modo seguente:
+### <a name="app-configuration-optional"></a>Configurazione delle app (facoltativa)
+È possibile configurare il comportamento delle app gestite nel modo seguente:
 
-1. Se l'app utilizza le impostazioni di configurazione di app, è necessario verificare che l'app gestisce correttamente tutti i valori (come amministratore) possono essere impostati. [I criteri di configurazione App](https://docs.microsoft.com/intune/app-configuration-policies-overview) possono essere creati e assegnati usando Intune.
+1. Se l'app utilizza eventuali impostazioni di configurazione delle app, è necessario verificare che l'app gestisca correttamente tutti i valori che possono essere impostati dall'amministratore. I [criteri di configurazione delle app](https://docs.microsoft.com/intune/app-configuration-policies-overview) possono essere creati e assegnati tramite Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

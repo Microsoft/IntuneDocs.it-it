@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565911"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043045"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Usare le impostazioni personalizzate per dispositivi Windows 10 in Intune
 
@@ -53,7 +52,7 @@ Questo articolo:
 
     - **Nome**: immettere un nome univoco per l'impostazione OMA-URI per identificarla nell'elenco delle impostazioni.
     - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
-    - **OMA-URI (maiuscole/minuscole)**: immettere il valore OMA-URI che si vuole usare come impostazione.
+    - **OMA-URI (maiuscole/minuscole)** : immettere il valore OMA-URI che si vuole usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
         - Stringa
@@ -83,7 +82,7 @@ Un elenco completo di tutti i provider di servizi di configurazione (CSP) suppor
 
 Non tutte le impostazioni sono compatibili con tutte le versioni di Windows 10. In [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) (Informazioni di riferimento sui provider di servizi di configurazione) sono indicate le versioni supportate per ogni provider CSP.
 
-Inoltre, Intune non supporta tutte le impostazioni elencate in [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) (Informazioni di riferimento sui provider di servizi di configurazione). Per verificare se Intune supporta l'impostazione desiderata, aprire l'articolo relativo all'impostazione. La pagina di ogni impostazione mostra le operazioni supportate. Per usare Intune, l'impostazione deve supportare le operazioni **Add** o **Replace** e **Get**. Se il valore restituito dal **ottenere** operazione non corrisponde al valore fornito dalle **Add** o **sostituire** operazioni e quindi Intune segnala un errore di conformità.
+Inoltre, Intune non supporta tutte le impostazioni elencate in [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) (Informazioni di riferimento sui provider di servizi di configurazione). Per verificare se Intune supporta l'impostazione desiderata, aprire l'articolo relativo all'impostazione. La pagina di ogni impostazione mostra le operazioni supportate. Per usare Intune, l'impostazione deve supportare le operazioni **Add** o **Replace** e **Get**. Se il valore restituito dall'operazione **Get** non corrisponde al valore fornito dalle operazioni **Add** o **Replace**, Intune segnala un errore di conformità.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

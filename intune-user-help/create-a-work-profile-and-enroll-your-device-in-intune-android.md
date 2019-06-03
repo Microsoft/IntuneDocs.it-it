@@ -1,11 +1,11 @@
 ---
-title: Registrare il dispositivo usando un profilo di lavoro | Microsoft Docs
-description: Come migliorare la sicurezza dei dispositivi Android con i profili di lavoro.
+title: Registrare un dispositivo con profilo di lavoro Android | Microsoft Docs
+description: Come creare un profilo di lavoro e registrare un dispositivo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334953"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196926"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)
+# <a name="enroll-device-with-android-work-profile"></a>Registrare un dispositivo con profilo di lavoro Android
 
-La registrazione del dispositivo Android consente di accedere a posta elettronica, app e dati aziendali. Come parte della registrazione, è possibile impostare un profilo di lavoro, che separa i dati personali che si trovano sul dispositivo dai dati aziendali.
+Registrare il dispositivo Android personale per accedere a posta elettronica, app e altri dati aziendali. Durante la registrazione verrà configurato un profilo di lavoro Android. Questo profilo separa i dati personali nel dispositivo dai dati aziendali. Il supporto tecnico dell'azienda gestisce solo il profilo di lavoro, che è costituito da file e dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali nel dispositivo dell'utente. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
-Il supporto tecnico aziendale può gestire solo il profilo di lavoro, che contiene i dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali sul dispositivo dell'utente. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
-
-Per creare un profilo di lavoro:
+## <a name="create-work-profile-and-enroll-device"></a>Creare il profilo di lavoro e registrare il dispositivo
 
 1.  Nella **schermata iniziale** del Portale aziendale Android toccare **Accedi** e accedere con l'account aziendale o dell'istituto di istruzione. Se non è stata ancora installata l'app gratuita, scaricarla da [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) e installarla.
 
@@ -82,5 +82,7 @@ Per creare un profilo di lavoro:
     È possibile ora ottenere app aziendali da Play Store for work.
 
     ![Pagina delle app in Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>Passaggi successivi  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
