@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045283"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412707"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Inviare i dati dei log alla risorsa di archiviazione, agli hub eventi o a Log Analytics in Intune (anteprima)
 
@@ -53,7 +53,7 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 
 ## <a name="send-logs-to-azure-monitor"></a>Inviare i log a Monitoraggio di Azure
 
-1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In **Monitoraggio** selezionare **Impostazioni di diagnostica**. La prima volta che si apre la diagnostica, attivarla:
 
     ![Attivare Impostazioni di diagnostica in Intune per inviare i log a Monitoraggio di Azure](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 
 Ad esempio, per esportare i log di controllo quando si usa la conformità dei dispositivi:
 
-1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Monitoraggio** > **Log di controllo**:
 
     ![Scegliere i log di controllo per indirizzare i dati di Intune all'archiviazione di Monitoraggio di Azure, a hub eventi o all'analisi](media/audit-logs-under-monitor-in-compliance.png)

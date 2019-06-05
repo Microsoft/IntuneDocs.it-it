@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373425"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Aggiungere criteri di aggiornamento software per iOS in Intune
 
@@ -31,7 +31,7 @@ Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornament
 
 ## <a name="configure-the-policy"></a>Configurare i criteri
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Aggiornamenti software** > **Criteri di aggiornamento per iOS** > **Crea**.
 3. Immettere le impostazioni seguenti:
 
@@ -51,7 +51,7 @@ Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornament
       - **Ora di inizio**: scegliere l'ora di inizio dell'intervallo di tempo limitato. Ad esempio, immettere 5.00 in modo che gli aggiornamenti non vengano installati a partire dalle 5.00.
       - **Ora di fine**: scegliere l'ora di fine dell'intervallo di tempo limitato. Ad esempio, immettere 1.00 in modo che gli aggiornamenti possano essere installati a partire dall'1.00.
 
-    - **Ritarda la visibilità degli aggiornamenti software per gli utenti finali senza modificare gli aggiornamenti pianificati (giorni)**: 
+    - **Ritarda la visibilità degli aggiornamenti software per gli utenti finali senza modificare gli aggiornamenti pianificati (giorni)** : 
 
       **Questa impostazione è passata a [Limitazioni del dispositivo](device-restrictions-ios.md#general). Verrà rimossa da questa posizione nel portale**. Per un breve periodo di tempo, i criteri esistenti possono essere modificati qui. Dopo circa un mese, questa impostazione verrà rimossa dai criteri esistenti.
 

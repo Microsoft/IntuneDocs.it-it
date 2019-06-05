@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bb4d94048025f4b0b6c984c4bf0972b432707b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041867"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402725"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -68,7 +68,6 @@ I dispositivi seguenti sono indicati come provvisti di supporto eSIM o sono attu
 - Surface Pro LTE
 - HP Spectre Folio 13
 - Lenovo Yoga C630
-- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Passaggio 1: Aggiungere i codici di attivazione del cellulare
 
@@ -117,7 +116,7 @@ Creare un gruppo che include i dispositivi che supportano eSIM. La procedura è 
 Assegnare il profilo al gruppo di Azure AD che include i dispositivi eSIM.
 
 1. Nel [portale di Azure](https://portal.azure.com/) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Selezionare **Configurazione del dispositivo** > **eSIM cellular (Cellulare eSIM)** > **Profili**.
+2. Selezionare **Configurazione del dispositivo** > **eSIM cellular (Cellulare eSIM)**  > **Profili**.
 3. Nell'elenco dei profili selezionare il pool di sottoscrizione cellulare eSIM che si vuole assegnare e quindi scegliere **Assegnazioni**.
 4. Scegliere **Includi** o **Escludi**, quindi selezionare i gruppi da includere o escludere.
 

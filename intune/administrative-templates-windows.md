@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050104"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373735"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
@@ -34,14 +34,14 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 
 ## <a name="create-a-template"></a>Creare un modello
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome per il profilo.
     - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
-    - **Tipo di profilo**: selezionare **Modelli amministrativi (anteprima)**.
+    - **Tipo di profilo**: selezionare **Modelli amministrativi (anteprima)** .
 
 4. Selezionare **Crea**. Nella nuova finestra selezionare **Impostazioni**. Vengono elencate tutte le impostazioni ed è possibile usare le frecce avanti e indietro per visualizzare più impostazioni:
 

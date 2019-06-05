@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264152"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373463"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usare gli script di PowerShell nei dispositivi Windows 10 in Intune
 
@@ -65,7 +65,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 
 ## <a name="create-a-script-policy"></a>Creare criteri di script 
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Script di PowerShell** > **Aggiungi**.
 3. Immettere le proprietà seguenti:
     - **Nome**: immettere un nome per lo script di PowerShell. 

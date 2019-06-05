@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618557c129b693ad035dd82c823db43dcca2ee4d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ae63fa19bb24381580a206481a9ac2e3684314a
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049451"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412384"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Assegnare Office 365 a dispositivi macOS con Microsoft Intune
 
@@ -40,8 +40,7 @@ Prima di iniziare ad aggiungere Office 365 nei dispositivi macOS, tenere present
 ## <a name="create-and-configure-the-app-suite"></a>Creare e configurare la suite di app
 
 Aggiungere Office 365 dal riquadro **App**.
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Nel riquadro **Intune** selezionare **App client**.
 4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**. 
 5. Selezionare **Aggiungi**.
@@ -50,7 +49,7 @@ Aggiungere Office 365 dal riquadro **App**.
     Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
 8. Immettere le informazioni seguenti:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
-    - **Descrizione della suite **: immettere una descrizione per la suite di app.
+    - **Descrizione della suite** : immettere una descrizione per la suite di app.
     - **Autore**: come editore viene visualizzato Microsoft.
     - **Categoria**: Selezionare uno o più categorie di app predefinite oppure una categoria creata. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.

@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042644"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373939"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Impostazioni di ottimizzazione recapito in Microsoft Intune
 
@@ -36,7 +36,7 @@ Per informazioni sull'ottimizzazione recapito in Windows 10, vedere [Ottimizzazi
 > Le impostazioni **Aggiornamenti software - Anelli di aggiornamento di Windows 10** vengono sostituite dalle impostazioni di **Ottimizzazione recapito**. È possibile modificare gli anelli di aggiornamento esistenti in modo da usare le impostazioni di **Ottimizzazione recapito**. [Passare anelli di aggiornamento esistenti all'ottimizzazione recapito](#move-existing-update-rings-to-delivery-optimization) (in questo articolo) 
 ## <a name="create-the-profile"></a>Creare il profilo
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374074"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
@@ -83,11 +83,11 @@ Una volta eseguito l'onboarding di un dispositivo con il pacchetto di configuraz
 
 ### <a name="create-the-configuration-profile"></a>Creare il profilo di configurazione
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere un **nome** e una **descrizione**.
 4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
-5. In **Tipo di profilo** selezionare **Windows Defender ATP (Windows 10 Desktop)**.
+5. In **Tipo di profilo** selezionare **Windows Defender ATP (Windows 10 Desktop)** .
 6. Configurare le impostazioni:
 
   - **Tipo del pacchetto di configurazione client di Windows Defender ATP**: selezionare **Onboarding** per aggiungere il pacchetto di configurazione al profilo. Selezionare **Offboarding** per rimuovere il pacchetto di configurazione dal profilo.
@@ -105,11 +105,11 @@ Una volta eseguito l'onboarding di un dispositivo con il pacchetto di configuraz
 ## <a name="create-the-compliance-policy"></a>Creare i criteri di conformità
 I criteri di conformità determinano un livello di rischio accettabile per un dispositivo.
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
 3. Immettere un **nome** e una **descrizione**.
 4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
-5. Nelle impostazioni di **Windows Defender ATP** impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito. Le classificazioni dei livelli delle minacce vengono [determinate da Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. Nelle impostazioni di **Windows Defender ATP** impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito. Le classificazioni dei livelli delle minacce vengono [determinate da Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Cancella**: questo livello è il più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme. Per gli utenti di Windows Defender ATP il valore è *Sicuro*.
    - **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. I dispositivi con un livello di minaccia medio o alto non sono conformi.
@@ -120,7 +120,7 @@ I criteri di conformità determinano un livello di rischio accettabile per un di
 
 ## <a name="assign-the-policy"></a>Assegnare i criteri
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Criteri**> selezionare i criteri di conformità di Windows Defender ATP.
 3. Selezionare **Assegnazioni**.
 4. Includere o escludere i gruppi di Azure AD per assegnare loro i criteri.
@@ -153,7 +153,7 @@ L'articolo [Che cos'è l'accesso condizionale?](conditional-access.md) offre alt
 ## <a name="monitor-device-compliance"></a>Monitorare la conformità dei dispositivi
 A questo punto occorre monitorare lo stato dei dispositivi in cui sono applicati i criteri di conformità di Windows Defender ATP.
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Conformità dei criteri**.
 3. Trovare il proprio criterio di Windows Defender ATP nell'elenco e verificare quali dispositivi sono conformi o non conformi.
 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b3e8d7de7f80017d65e80860d217f1a9bc71fbe
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373700"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi in Intune
 
@@ -61,7 +61,7 @@ Questo articolo illustra come:
 
 Per inviare il messaggio di posta elettronica agli utenti, creare un modello di messaggio di notifica. Quando un dispositivo risulta non conforme, i dettagli immessi nel modello vengono visualizzati nel messaggio di posta elettronica inviato agli utenti.
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Notifiche**.
 3. Selezionare **Crea la notifica**. Immettere le informazioni seguenti:
 

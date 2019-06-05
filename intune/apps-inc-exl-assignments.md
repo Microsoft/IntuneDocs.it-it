@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049296"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454078"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Includere ed escludere assegnazioni di app in Microsoft Intune
 
@@ -44,9 +44,8 @@ Intune non considera l'associazione tra utente e dispositivo quando esclude i gr
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Includere ed escludere gruppi durante l'assegnazione di app 
 Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione:
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Dal menu **Intune** scegliere **App client**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Nel riquadro **Intune** selezionare **App client**.
 4. Nel riquadro **App client** selezionare **App**. Viene visualizzato l'elenco di app aggiunte.
 5. Selezionare l'app che si vuole assegnare. Un dashboard visualizza le informazioni sull'app. 
 6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**. 
@@ -76,7 +75,7 @@ Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione
 
 Quando si creano le assegnazioni di gruppi, i gruppi che sono già stati assegnati non sono disponibili per la modifica. Se si vuole selezionare un gruppo che non è attualmente disponibile, prima rimuovere l'app dall'elenco assegnato dell'app. 
 
-Per modificare le assegnazioni, nell'elenco **Assegnazioni** dell'app selezionare la riga che contiene l'assegnazione specifica da modificare. È anche possibile rimuovere un'assegnazione selezionando i puntini di sospensione (**...**) alla fine di una riga e quindi selezionando **Rimuovi**. Per modificare la visualizzazione dell'elenco **Assegnazioni**, raggruppare per **Tipo di assegnazione** o per **Inclusi/Esclusi**.
+Per modificare le assegnazioni, nell'elenco **Assegnazioni** dell'app selezionare la riga che contiene l'assegnazione specifica da modificare. È anche possibile rimuovere un'assegnazione selezionando i puntini di sospensione ( **...** ) alla fine di una riga e quindi selezionando **Rimuovi**. Per modificare la visualizzazione dell'elenco **Assegnazioni**, raggruppare per **Tipo di assegnazione** o per **Inclusi/Esclusi**.
 
 ![Assegnazioni di app in Intune - Procedura completata](./media/apps-inc-exl-05.png)
 

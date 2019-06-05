@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264142"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402754"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -47,7 +47,7 @@ Vedere il cmdlet PowerShell per altre informazioni su come usarlo.
 
     ![Screenshot dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file con estensione csv deve elencare i numeri di serie, facoltativamente gli ID prodotto Windows, gli hash hardware e facoltativamente i tag dei gruppi dei dispositivi. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file con estensione csv deve elencare i numeri di serie, facoltativamente gli ID prodotto Windows, gli hash hardware e facoltativamente i tag dei gruppi dei dispositivi. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Screenshot dell'aggiunta dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)

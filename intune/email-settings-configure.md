@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68fce40c194c831e65fb6631bf079f8703b039af
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6a80ff2ca7c2265da358f57291032f59d47d22dd
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047957"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412353"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Aggiungere impostazioni di posta elettronica ai dispositivi con Intune
 
@@ -38,7 +38,7 @@ Questo articolo illustra come creare un profilo di posta elettronica in Microsof
 
 ## <a name="create-a-device-profile"></a>Creare un profilo del dispositivo
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** > filtrare per **Intune** > selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Specificare un **nome** e una **descrizione** per il profilo di posta elettronica.
 4. Scegliere la **piattaforma** dall'elenco a discesa. Le opzioni disponibili sono:

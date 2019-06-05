@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df4a3dc5c45a909e2c56b1fd741445bc6485e1e8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044475"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373662"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
@@ -65,7 +65,7 @@ Creare o scegliere un gruppo esistente in Azure Active Directory (Azure AD) per 
 
 Importare il certificato di radice del server VPN rilasciato dalla CA in un profilo creato in Intune. Il profilo certificato attendibile indica al dispositivo iOS di considerare attendibile automaticamente la CA che il server VPN presenta.
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
     - **Nome**
