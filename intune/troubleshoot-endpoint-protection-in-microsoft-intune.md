@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di Endpoint Protection in Intune - Azure | Microsoft Docs
-description: Risolvere i problemi relativi all'uso di Microsoft Intune Endpoint Protection.
+title: Messaggi comuni di Endpoint Protection in Microsoft Intune - Azure | Microsoft Docs
+description: Descrizione dei messaggi comuni e delle possibili soluzioni durante l'utilizzo e la risoluzione dei problemi di Endpoint Protection e Windows Defender in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040160"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402652"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Risoluzione dei problemi di Endpoint Protection in Intune
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemi di Endpoint Protection e possibili soluzioni in Microsoft Intune
 
-Usare queste informazioni per la risoluzione dei problemi che si verificano durante l'uso di Endpoint Protection. È anche possibile [esaminare i registri eventi e i codici di errore per risolvere i problemi relativi a Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+Questo articolo elenca e descrive le possibili cause di alcuni errori e avvisi e le relative soluzioni. Usare queste informazioni per la risoluzione dei problemi che si verificano durante l'uso di Endpoint Protection.
 
-Se queste informazioni non risultano utili, è anche possibile [richiedere supporto per Microsoft Intune](get-support.md).
+## <a name="windows-defender-error-codes"></a>Codici di errore di Windows Defender
 
-### <a name="error-messages"></a>Messaggi di errore
-Questa sezione descrive le cause e le soluzioni potenziali per gli errori e gli avvisi seguenti.
+Esaminare i log eventi e i codici di errore per [risolvere i problemi relativi a Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
-|Stato|Possibili cause|Possibili soluzioni|
-|---------------|--------------------|-----------------------|
-|**Motore Endpoint Protection non disponibile**|Il motore di Endpoint Protection di Intune è danneggiato o è stato eliminato.|Se il motore di Endpoint Protection di Intune è danneggiato, è possibile aggiornare o reinstallare il software.<br /><br />Per forzare un aggiornamento immediato, scegliere **Aggiorna** nel software client di Endpoint Protection (disponibile nella barra delle applicazioni dei computer gestiti).<br /><br />Se il motore non può essere aggiornato, è necessario reinstallare il motore Endpoint Protection.<br /><br />Nel Pannello di controllo del computer gestito trovare l'**agente Microsoft Intune Endpoint Protection** nell'elenco dei programmi installati e disinstallare l'applicazione.<br /><br />Durante la successiva sincronizzazione degli aggiornamenti, il programma mancante verrà rilevato dallo strumento Gestione aggiornamenti di Microsoft Online Management e sarà reinstallato al momento dell'installazione pianificata.|
-|**Endpoint Protection disabilitato**|Endpoint Protection di Intune è stato disabilitato da un amministratore tramite un profilo di configurazione o da un utente in un computer gestito.|Abilitare Endpoint Protection. Vedere [Aggiungere le impostazioni di Endpoint Protection in Intune](endpoint-protection-configure.md) oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows).|
-|**Protezione in tempo reale disabilitata**|La protezione in tempo reale è stata disabilitata da un amministratore tramite un profilo o da un utente in un computer gestito.|Abilitare Endpoint Protection. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Analisi dei download disabilitata**|L'analisi dei download è stata disabilitata da un amministratore usando un profilo o da un utente in un computer gestito.|Abilitare l'analisi. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Monitoraggio dell'attività di file e programmi disabilitato**|Il monitoraggio dell'attività di programmi e file è stato disabilitato da un amministratore usando un profilo o da un utente in un computer gestito.|Abilitare l'attività di file e programmi. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Monitoraggio del comportamento disabilitato**|Il monitoraggio del comportamento è stato disabilitato da un amministratore usando un profilo o da un utente in un computer gestito.|Abilitare il monitoraggio del comportamento. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Analisi degli script disabilitata**|L'analisi degli script è stata disabilitata da un amministratore usando un profilo oppure da un utente in un computer gestito.|Abilitare l'analisi degli script. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Network Inspection System disabilitato**|Network Inspection System è stato disabilitato da un amministratore usando un profilo o da un utente in un computer gestito.|Abilitare Network Inspection System. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune oppure [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows). |
-|**Definizioni malware scadute**|Il computer potrebbe essere stato disconnesso da Internet per un periodo di tempo prolungato ed è possibile che le relative definizioni malware non siano state ancora aggiornate. Questo stato viene visualizzato quando le definizioni malware nel computer non vengono aggiornate da almeno 14 giorni.|Se le definizioni malware non sono aggiornate, è possibile aggiornare le definizioni usando [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Analisi completa scaduta**|L'ultima analisi completa è stata eseguita 14 giorni fa. Il problema può essere causato da un riavvio del computer durante un'analisi completa.|In presenza di un'analisi completa scaduta, è possibile eseguire un'analisi completa occasionale oppure pianificare analisi complete periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus). |
-|**Analisi veloce scaduta**|L'ultima analisi veloce è stata eseguita 14 giorni fa. Il problema può essere causato da un riavvio durante un'analisi veloce.|In presenza di un'analisi veloce scaduta, è possibile eseguire un'analisi veloce occasionale oppure pianificare analisi veloci periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**È in esecuzione un'altra applicazione Endpoint Protection**|È in esecuzione un'altra applicazione Endpoint Protection e il computer è integro.|Per impostazione predefinita, se è installata un'altra applicazione di protezione degli endpoint e Intune rileva tale applicazione, il dispositivo potrebbe diventare instabile.|
+## <a name="common-intune-errors-and-possible-resolutions"></a>Errori comuni di Intune e possibili soluzioni
 
-### <a name="next-steps"></a>Passaggi successivi
-Se queste informazioni non risultano utili, è anche possibile [richiedere supporto per Microsoft Intune](get-support.md).
+#### <a name="endpoint-protection-engine-unavailable"></a>Motore Endpoint Protection non disponibile
+
+**Possibile causa**: il motore di Intune Endpoint Protection è danneggiato o è stato eliminato.
+
+**Possibili soluzioni**:
+
+- Se Endpoint Protection è danneggiato o non viene aggiornato, aggiornare o reinstallare il programma.
+- Forzare un aggiornamento immediato. Nell'applicazione client Endpoint Protection (probabilmente nella barra delle applicazioni) scegliere **Aggiorna**.
+- In Pannello di controllo > Programmi selezionare **Agente di Microsoft Intune Endpoint Protection**. Disinstallare l'applicazione.
+- Durante la successiva sincronizzazione degli aggiornamenti, il programma mancante verrà rilevato dallo strumento Gestione aggiornamenti di Microsoft Online Management e sarà reinstallato al momento dell'installazione pianificata.
+
+#### <a name="features-are-disabled"></a>Funzionalità disabilitate
+
+Potrebbe essere visualizzato un messaggio che informa che alcune funzionalità sono disabilitate. Messaggi di questo tipo possono essere visualizzati se Intune Endpoint Protection o Windows Defender è stato disabilitato da un amministratore tramite un profilo di configurazione oppure se è stato disabilitato da un utente finale sul dispositivo. Ecco alcun messaggi possibili:
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**Possibili soluzioni**: abilitare queste funzionalità. Per istruzioni, vedere:
+
+- [Aggiungere le impostazioni di Endpoint Protection in Intune](endpoint-protection-configure.md)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>Definizioni malware scadute
+
+Questo stato viene visualizzato quando le definizioni malware nel dispositivo non vengono aggiornate da almeno 14 giorni. Ad esempio, il messaggio potrebbe essere visualizzato se il dispositivo è disconnesso da Internet o se le definizioni malware non sono aggiornate.
+
+**Possibili soluzioni**: se le definizioni malware non sono aggiornate, aggiornarle usando [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Analisi completa scaduta o Analisi veloce scaduta
+
+Non viene completata un'analisi completa o un'analisi veloce da 14 giorni. Questa situazione può verificarsi se il dispositivo viene riavviato durante un'analisi completa.
+
+**Possibili soluzioni**: in presenza di un'analisi scaduta, è possibile eseguire un'analisi occasionale oppure pianificare analisi periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="another-endpoint-protection-application-running"></a>È in esecuzione un'altra applicazione Endpoint Protection
+
+È in esecuzione un'altra applicazione Endpoint Protection e il dispositivo è integro.
+
+**Possibili soluzioni**: per impostazione predefinita, se è installata un'altra applicazione Endpoint Protection e Intune rileva tale applicazione, il dispositivo potrebbe diventare instabile.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Ottenere [supporto da Microsoft](get-support.md) o usare i [forum della community](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

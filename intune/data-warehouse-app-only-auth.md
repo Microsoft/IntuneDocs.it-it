@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042666"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454044"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticazione OAuth del data warehouse di Intune
 
 È possibile configurare un'applicazione con Azure Active Directory (Azure AD) ed eseguirne l'autenticazione nel data warehouse di Intune. Questo processo è utile per i siti Web, le app e i processi in background in cui l'applicazione non deve avere accesso alle credenziali utente. Usando la procedura seguente, si autorizza l'applicazione con Azure AD mediante OAuth 2.0.
 
-## <a name="authorization"></a>Autorizzazione
+## <a name="authorization"></a>Authorization
 
 In Azure Active Directory (Azure AD) si utilizza OAuth 2.0 per consentire all'utente di autorizzare l'accesso ad applicazioni Web e API Web nel proprio tenant di Azure AD. Questa guida illustra come eseguire l'autenticazione dell'applicazione tramite C#. Il flusso del codice di autorizzazione OAuth 2.0 è descritto nella sezione 4.1 della specifica OAuth 2.0. Per altre informazioni, vedere [Autorizzare l'accesso alle applicazioni Web tramite OAuth 2.0 e Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -92,10 +92,11 @@ Usare Visual Studio per creare un progetto di app console (.NET Framework) che s
 2.  A sinistra, selezionare **Visual C#** per visualizzare tutti i progetti .NET Framework.
 3.  Selezionare **App console (.NET Framework)** , aggiungere un nome di app e quindi fare clic su **OK** per creare l'app.
 4.  In **Esplora soluzioni** selezionare **Program.cs** per visualizzare il codice.
-5.  Nel menu a comparsa selezionare **Aggiungi** > **Nuovo elemento**. Viene visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
-6.  A sinistra, in **Visual C#** selezionare **Codice**.
-7.  Selezionare **Classe**, modificare il nome della classe in *IntuneDataWarehouseClass.cs* e fare clic su **Aggiungi**.
-8.  Aggiungere il codice seguente all'interno del metodo <code>Main</code>:
+5.  In Esplora soluzioni aggiungere un riferimento all'assembly `System.Configuration`.
+6.  Nel menu a comparsa selezionare **Aggiungi** > **Nuovo elemento**. Viene visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+7.  A sinistra, in **Visual C#** selezionare **Codice**.
+8.  Selezionare **Classe**, modificare il nome della classe in *IntuneDataWarehouseClass.cs* e fare clic su **Aggiungi**.
+9.  Aggiungere il codice seguente all'interno del metodo <code>Main</code>:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Usare Visual Studio per creare un progetto di app console (.NET Framework) che s
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Aggiungere ulteriori spazi dei nomi aggiungendo il codice seguente nella parte superiore del file di codice:
+10. Aggiungere ulteriori spazi dei nomi aggiungendo il codice seguente nella parte superiore del file di codice:
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Usare Visual Studio per creare un progetto di app console (.NET Framework) che s
      using System.Configuration;
     ``` 
 
-10. Dopo il metodo <code>Main</code> aggiungere il metodo privato seguente per elaborare e convertire la chiave dell'app:
+11. Dopo il metodo <code>Main</code> aggiungere il metodo privato seguente per elaborare e convertire la chiave dell'app:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Usare Visual Studio per creare un progetto di app console (.NET Framework) che s
     }
     ```
 
-11. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e quindi scegliere **Gestisci pacchetti NuGet**.
-12. Cercare *Microsoft.IdentityModel.Clients.ActiveDirectory* e installare il pacchetto Microsoft NuGet correlato.
-13. In **Esplora soluzioni** selezionare e aprire il file *App.config*.
-14. Aggiungere la sezione <code>appSettings</code> in modo da ottenere il codice XML seguente:
+12. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e quindi scegliere **Gestisci pacchetti NuGet**.
+13. Cercare *Microsoft.IdentityModel.Clients.ActiveDirectory* e installare il pacchetto Microsoft NuGet correlato.
+14. In **Esplora soluzioni** selezionare e aprire il file *App.config*.
+15. Aggiungere la sezione <code>appSettings</code> in modo da ottenere il codice XML seguente:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Usare Visual Studio per creare un progetto di app console (.NET Framework) che s
     </configuration>
     ``` 
 
-15. Aggiornare i valori <code>appId</code>, <code>appKey</code> e <code>tenantDomain</code> in modo che corrispondano ai valori specifici correlati all'app.
-16. Compilare l'app.
+16. Aggiornare i valori <code>appId</code>, <code>appKey</code> e <code>tenantDomain</code> in modo che corrispondano ai valori specifici correlati all'app.
+17. Compilare l'app.
 
     >[!NOTE] 
     > Per visualizzare codice di implementazione aggiuntivo, vedere l'[esempio di codice Intune-Data-Warehouse](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).

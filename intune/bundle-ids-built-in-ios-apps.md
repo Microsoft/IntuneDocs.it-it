@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26f43523589da0d59afb3b667eb4ead8357f7a60
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049033"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402771"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>ID bundle per le app iOS predefinite che è possibile utilizzare in Intune
 
-Quando si configurano le funzionalità nei dispositivi iOS, è anche possibile aggiungere le app predefinite nei dispositivi iOS. Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software.
+Quando si configurano le funzionalità nei dispositivi iOS, è anche possibile aggiungere le app predefinite nei dispositivi iOS. Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software. Vedere l'elenco degli [ID bundle iOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) sul sito Web Apple.
 
 ## <a name="bundle-ids"></a>ID bundle
 
@@ -59,6 +59,7 @@ Quando si configurano le funzionalità nei dispositivi iOS, è anche possibile a
 | com.apple.mobilenotes       | Note        | Apple     |
 | com.apple.Numbers           | Numeri      | Apple     |
 | com.apple.Pages             | .NET        | Apple     |
+| com.apple.mobilephone       | Telefono        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Foto       | Apple     |
 | com.apple.podcasts          | Podcast     | Apple     |

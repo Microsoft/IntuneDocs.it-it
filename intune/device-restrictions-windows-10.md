@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354213"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -58,6 +58,24 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
 - **Installa le app nell'unità di sistema**: **Blocca** impedisce l'installazione delle app nell'unità di sistema nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'installazione delle app nell'unità di sistema.
 - **Game DVR** (solo desktop): **Blocca** disabilita la registrazione e la trasmissione di giochi di Windows. L'impostazione **Non configurata** (predefinita) consente la registrazione e la trasmissione dei giochi.
 - **App solo dallo Store**: **Rendi obbligatorio** impone agli utenti finali di installare le app solo da Windows App Store. L'impostazione **Non configurata** consente agli utenti finali di installare app da posizioni diverse da Windows App Store.
+- **Imponi il riavvio delle app in caso di errore di aggiornamento**: quando un'app è in uso, potrebbe non venire aggiornata. Usare questa impostazione per forzare il riavvio di un'app. **Non configurata** (impostazione predefinita) non forza il riavvio delle app. **Rendi obbligatorio** consente agli amministratori di forzare il riavvio in base a una data e un'ora specifiche o a una pianificazione ricorrente. Quando l'opzione è impostata su **Rendi obbligatorio**, immettere anche:
+
+  - **Data/Ora di inizio**: scegliere una data e un'ora specifiche per il riavvio delle app.
+  - **Ricorrenza**: scegliere un riavvio giornaliero, settimanale o mensile.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Controllo utente sulle installazioni**: quando è impostata su **Non configurata** (impostazione predefinita), Windows Installer impedisce agli utenti di cambiare le opzioni di installazione generalmente riservate agli amministratori di sistema, come l'immissione della directory in cui installare i file. **Blocca** consente agli utenti di cambiare queste opzioni di installazione. Alcune funzionalità di sicurezza di Windows Installer vengono inoltre ignorate.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Installazione di app con privilegi elevati**: quando è impostata su **Non configurata** (impostazione predefinita), il sistema applica le autorizzazioni dell'utente corrente quando installa programmi non distribuiti o offerti da un amministratore di sistema. **Blocca** indica a Windows Installer di usare le autorizzazioni elevate per installare qualsiasi programma nel sistema. Questi privilegi vengono estesi a tutti i programmi.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **App di avvio**: immettere un elenco di app da aprire dopo l'accesso di un utente al dispositivo. Assicurarsi di usare un elenco delimitato da punto e virgola di nomi della famiglia di pacchetti (PFN) di applicazioni Windows. Per il corretto funzionamento di questo criterio, il manifesto nelle app Windows deve usare un'attività di avvio.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Selezionare **OK** per salvare le modifiche.
 
@@ -408,6 +426,10 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
     - **Numerica**: la password deve essere composta solo da numeri.
     - **Alfanumerico**: la password deve essere composta da una combinazione di lettere e numeri.
   - **Lunghezza minima password**: immettere il numero minimo di caratteri necessari, da 4 a 16. Ad esempio, immettere `6` per richiedere una lunghezza della password di minimo sei caratteri.
+  
+    > [!IMPORTANT]
+    > La modifica dei requisiti per la password in un desktop di Windows interessa gli utenti al successivo accesso, ossia quando il dispositivo passa dallo stato inattivo allo stato attivo. Agli utenti con password che soddisfano i requisiti viene comunque chiesto di cambiare la password.
+    
   - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di autenticazioni consentiti prima della cancellazione del dispositivo, da 1 a 11. `0` (zero) potrebbe disabilitare la funzionalità di cancellazione del dispositivo.
 
     Questa impostazione ha un impatto diverso a seconda dell'edizione. Per informazioni dettagliate, vedere il [provider di servizi di configurazione DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
@@ -755,7 +777,7 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
   Per altre informazioni sulle app potenzialmente indesiderate, vedere [Rilevare e bloccare le applicazioni potenzialmente indesiderate](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Azioni per le minacce malware rilevate**: scegliere le azioni che si vuole vengano eseguite da Defender a seconda del livello di minaccia rilevato: basso, moderato, alto o grave. Le opzioni disponibili sono:
+- **Azioni per le minacce malware rilevate**: scegliere le azioni che si vuole vengano eseguite da Defender a seconda del livello di minaccia rilevato: basso, moderato, alto o grave. Se non è possibile, Windows Defender sceglie l'opzione migliore per assicurare che la minaccia venga corretta. Le opzioni disponibili sono:
   - **Pulisci**
   - **Quarantena**
   - **Rimuovi**

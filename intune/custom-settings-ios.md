@@ -1,7 +1,7 @@
 ---
 title: Aggiungere impostazioni personalizzate per dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Esportare le impostazioni iOS da Apple Configurator o Apple Profile Manager e quindi importarle in Microsoft Intune. Queste impostazioni possono creare, usare e controllare le impostazioni personalizzate e le funzionalità nei dispositivi iOS. Il profilo personalizzato può essere quindi assegnato o distribuito nei dispositivi iOS nell'organizzazione per creare una baseline o uno standard.
+description: Esportare le impostazioni iOS da Apple Configurator o Apple Profile Manager e quindi importarle in Microsoft Intune. Queste impostazioni possono creare, usare e controllare le funzionalità e le impostazioni personalizzate nei dispositivi iOS. Il profilo personalizzato può essere quindi assegnato o distribuito nei dispositivi iOS nell'organizzazione per creare una baseline o uno standard.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9637cc36d6ee901b5da0ffbe44180cd7dbdaffee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048615"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374000"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Usare le impostazioni personalizzate per i dispositivi iOS in Microsoft Intune
 
@@ -51,7 +51,7 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 
 ## <a name="create-the-profile"></a>Creare il profilo
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere le impostazioni seguenti:
 

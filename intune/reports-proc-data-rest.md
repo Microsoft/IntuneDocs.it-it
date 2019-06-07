@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041169"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412711"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Recuperare dati dall'API data warehouse di Intune con un client REST
 
@@ -94,9 +94,8 @@ Per effettuare una chiamata REST con Postman sono necessarie le informazioni seg
 
 È necessario l'endpoint. Per ottenere l'endpoint del Data Warehouse, occorre l'URL del feed personalizzato. L'endpoint OData è disponibile nel riquadro del data warehouse.
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Selezionare **Configura il data warehouse di Intune** in **Altre attività**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Aprire il riquadro **Data warehouse di Intune** selezionando il collegamento Data warehouse in **Altre attività** sul lato destro del pannello **Microsoft Intune - Panoramica**.
 4. Copiare l'url del feed personalizzato in **Usa servizi di creazione report di terze parti**. Sarà simile a: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 L'endpoint viene indicato con il formato seguente: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
