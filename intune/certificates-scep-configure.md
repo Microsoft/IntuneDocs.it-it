@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
+ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043736"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448121"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -34,7 +34,7 @@ Questo articolo illustra come configurare l'infrastruttura e quindi creare e ass
     Se la CA esegue Windows Server 2008 R2, è necessario [installare l'hotfix di KB2483564](http://support.microsoft.com/kb/2483564/).
 
 - **Server del servizio Registrazione dispositivi di rete**: in un server che esegue Windows Server 2012 R2 o versioni successive è necessario configurare il ruolo del server del servizio Registrazione dispositivi di rete. Intune non supporta l'uso del servizio Registrazione dispositivi di rete se viene eseguito in un server con CA globale (enterprise). Per istruzioni sulla configurazione di Windows Server 2012 R2 per ospitare il servizio Registrazione dispositivi di rete, vedere [Linee guida per il servizio Registrazione dispositivi di rete](http://technet.microsoft.com/library/hh831498.aspx).
-Il server del servizio Registrazione dispositivi di rete deve essere aggiunto a un dominio all'interno della stessa foresta dell'autorità di certificazione globale (enterprise). Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/library/dn473016.aspx).
+Il server del servizio Registrazione dispositivi di rete deve essere aggiunto a un dominio all'interno della stessa foresta dell'autorità di certificazione globale (enterprise). Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/library/dn473016.aspx). Non è possibile usare un server NDES che è già in uso con un altro MDM.
 
 - **Connettore di certificati di Microsoft Intune**: Nel portale di Intune passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per SCEP*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione del connettore di certificati **NDESConnectorSetup.exe**.  Il programma di installazione verrà eseguito nel server con il ruolo del servizio Registrazione dispositivi di rete.  
 
@@ -272,8 +272,8 @@ In questo passaggio verranno eseguite le operazioni seguenti:
 
 2. Selezionare **Modifica impostazioni funzionalità**, quindi impostare i valori seguenti:
 
-    - **Lunghezza massima stringa di query (byte)** = **65534**
-    - **Lunghezza massima URL (byte)** = **65534**
+    - **Lunghezza massima stringa di query (byte)**  = **65534**
+    - **Lunghezza massima URL (byte)**  = **65534**
 
 3. Esaminare la seguente chiave del Registro di sistema:
 
@@ -297,7 +297,7 @@ In questo passaggio verranno eseguite le operazioni seguenti:
 > [!IMPORTANT] 
 > Connettore di certificati di Microsoft Intune **deve** essere installato in un server Windows separato. Non può essere installato nell'Autorità di certificazione (CA) emittente. **Deve** anche essere installato nello stesso server del ruolo Servizio Registrazione dispositivi di rete (NDES).
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi**.
 3. Scaricare e salvare il connettore per il file SCEP. Salvarlo in una posizione accessibile dal server in cui si intende installare il connettore.
 
@@ -350,7 +350,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 ## <a name="create-a-scep-certificate-profile"></a>Creare un profilo certificato SCEP
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 3. Immettere **Nome** e **Descrizione** per il profilo certificato SCEP.
 4. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo per questo certificato SCEP. Attualmente, è possibile selezionare una delle piattaforme seguenti per le impostazioni delle restrizioni del dispositivo:
@@ -384,17 +384,17 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
         - **Nome comune come indirizzo di posta elettronica**
         - **IMEI (International Mobile Equipment Identity)**
         - **Numero di serie**
-        - **Personalizzato**: quando si seleziona questa opzione, viene visualizzata anche una casella di testo **Personalizzato**. Usare questo campo per immettere un formato di nome soggetto personalizzato, incluse le variabili. Il formato personalizzato supporta due variabili: **CN (Nome comune)** ed **E (Posta elettronica)**. **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
+        - **Personalizzato**: quando si seleziona questa opzione, viene visualizzata anche una casella di testo **Personalizzato**. Usare questo campo per immettere un formato di nome soggetto personalizzato, incluse le variabili. Il formato personalizzato supporta due variabili: **CN (Nome comune)** ed **E (Posta elettronica)** . **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
 
-            - **CN={{UserName}}**: nome dell'entità utente (UPN) dell'utente, ad esempio janedoe@contoso.com.
-            - **CN={{AAD_Device_ID}}**: ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
-            - **CN={{SERIALNUMBER}}**: numero di serie (SN) univoco usato in genere dal produttore per identificare un dispositivo.
-            - **CN={{IMEINumber}}**: numero IMEI (International Mobile Equipment Identity) univoco usato per identificare un telefono cellulare.
-            - **CN={{OnPrem_Distinguished_Name}}**: sequenza di nomi distinti relativi separati da virgole, ad esempio `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
+            - **CN={{UserName}}** : nome dell'entità utente (UPN) dell'utente, ad esempio janedoe@contoso.com.
+            - **CN={{AAD_Device_ID}}** : ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
+            - **CN={{SERIALNUMBER}}** : numero di serie (SN) univoco usato in genere dal produttore per identificare un dispositivo.
+            - **CN={{IMEINumber}}** : numero IMEI (International Mobile Equipment Identity) univoco usato per identificare un telefono cellulare.
+            - **CN={{OnPrem_Distinguished_Name}}** : sequenza di nomi distinti relativi separati da virgole, ad esempio `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
 
                 Per usare la variabile `{{OnPrem_Distinguished_Name}}`, assicurarsi di sincronizzare l'attributo utente `onpremisesdistingishedname` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
 
-            - **CN={{onPremisesSamAccountName}}**: gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato `onPremisesSamAccountName`. Intune può sostituire tale variabile come parte di una richiesta di rilascio di certificati nel soggetto di un certificato SCEP.  L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso utente è: `DomainName\testUser` o solo `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato `onPremisesSamAccountName`. Intune può sostituire tale variabile come parte di una richiesta di rilascio di certificati nel soggetto di un certificato SCEP.  L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso utente è: `DomainName\testUser` o solo `testUser`.
 
                 Per usare la variabile `{{onPremisesSamAccountName}}`, assicurarsi di sincronizzare l'attributo utente `onPremisesSamAccountName` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
 
@@ -426,7 +426,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
         > [!IMPORTANT]
         >  - Nel testo statico del soggetto le parentesi graffe **{}** che non racchiudono una variabile genereranno un errore. 
-        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }**.
+        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }** .
         >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
         >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
         >  - Il profilo non verrà installato nel dispositivo se le variabili di dispositivo specificate non sono supportate. Ad esempio, se si usa {{IMEI}} nel nome del soggetto del profilo SCEP assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo. 
@@ -468,8 +468,8 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
         Queste variabili possono essere aggiunte con testo statico nella casella di testo del valore personalizzato. Ad esempio, l'attributo DNS può essere aggiunto come `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
-        >  - Nel testo statico del nome alternativo del soggetto le parentesi graffe **{ }**, la barra verticale **|** e il punto e virgola **;** non funzioneranno. 
-        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }**.
+        >  - Nel testo statico del nome alternativo del soggetto le parentesi graffe **{ }** , la barra verticale **|** e il punto e virgola **;** non funzioneranno. 
+        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }** .
         >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
         >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
         >  - Il profilo non verrà installato nel dispositivo se le variabili di dispositivo specificate non sono supportate. Ad esempio, se si usa {{IMEI}} nel nome alternativo del soggetto del profilo SCEP assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo.  
@@ -484,12 +484,12 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
    - **Utilizzo chiavi**: specificare le opzioni d'uso della chiave per il certificato. Le opzioni disponibili sono:
      - **Crittografia chiave**: consentire lo scambio di chiavi solo quando la chiave è crittografata.
      - **Firma digitale**: consentire lo scambio di chiavi solo se viene usata una firma digitale per proteggere la chiave.
-   - **Dimensioni chiave (bit)**: selezionare il numero di bit contenuti nella chiave.
+   - **Dimensioni chiave (bit)** : selezionare il numero di bit contenuti nella chiave.
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selezionare uno dei tipi di algoritmo hash disponibili da usare con questo certificato. Selezionare il livello di sicurezza più avanzato supportato dai dispositivi che verranno connessi.
    - **Certificato radice**: scegliere un profilo di certificato radice della CA già configurato e assegnato all'utente e/o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato. Assicurarsi di assegnare il profilo certificato radice attendibile allo stesso gruppo assegnato nel profilo certificato SCEP.
    - **Utilizzo chiavi avanzato**: scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiede l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione in un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità.
    - **Impostazioni di registrazione**
-     - **Soglia di rinnovo (%)**: immettere la percentuale di durata residua del certificato prima che il dispositivo richieda il rinnovo del certificato.
+     - **Soglia di rinnovo (%)** : immettere la percentuale di durata residua del certificato prima che il dispositivo richieda il rinnovo del certificato.
      - **URL server SCEP**: specificare uno o più URL per i server del servizio Registrazione dispositivi di rete che emettono certificati tramite SCEP. Immettere ad esempio un URL simile a `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Selezionare **OK**, quindi **Crea** per creare il profilo.
 
@@ -535,15 +535,15 @@ A partire dalla versione 6.1806.x.x, il servizio Intune Connector registra gli e
 | 20102 | PkcsCertIssue_Failure  | Non è possibile rilasciare un certificato PKCS. Esaminare i dettagli evento per ID dispositivo, ID utente, nome CA, nome modello certificato e identificazione personale del certificato corrispondenti a questo evento. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Il certificato è stato revocato. Esaminare i dettagli evento per ID dispositivo, ID utente, nome CA e numero di serie del certificato corrispondenti a questo evento. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Non è possibile revocare il certificato. Esaminare i dettagli evento per ID dispositivo, ID utente, nome CA e numero di serie del certificato corrispondenti a questo evento. Per altre informazioni, vedere i registri SVC NDES.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Upload_Success | Upload eseguito della richiesta di certificato o dei dati di revoca. Esaminare i dettagli evento per i dettagli sul caricamento. | 0x00000000, 0x0FFFFFFF  |
-| 20302 | Upload_Failure | Non è possibile caricare la richiesta di certificato o i dati di revoca. Esaminare i dettagli evento nello stato di caricamento per determinare il punto in cui si è verificato l'errore.| 0x00000000, 0x0FFFFFFF  |
-| 20400 | Download_Success | Download della richiesta eseguito per firmare un certificato, scaricare un certificato client o revocare un certificato. Esaminare i dettagli evento per i dettagli sul download.  | 0x00000000, 0x0FFFFFFF  |
-| 20402 | Download_Failure | Non è possibile scaricare la richiesta per firmare un certificato, scaricare un certificato client o revocare un certificato. Esaminare i dettagli evento per i dettagli sul download. | 0x00000000, 0x0FFFFFFF  |
-| 20500 | CRPVerifyMetric_Success  | Il punto di registrazione certificati ha riscontrato un problema di client | 0x00000000, 0x0FFFFFFF  |
+| 20300 | Upload_Success | Upload eseguito della richiesta di certificato o dei dati di revoca. Esaminare i dettagli evento per i dettagli sul caricamento. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Non è possibile caricare la richiesta di certificato o i dati di revoca. Esaminare i dettagli evento nello stato di caricamento per determinare il punto in cui si è verificato l'errore.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Download della richiesta eseguito per firmare un certificato, scaricare un certificato client o revocare un certificato. Esaminare i dettagli evento per i dettagli sul download.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Non è possibile scaricare la richiesta per firmare un certificato, scaricare un certificato client o revocare un certificato. Esaminare i dettagli evento per i dettagli sul download. | 0x00000000, 0x0FFFFFFF |
+| 20500 | CRPVerifyMetric_Success  | Il punto di registrazione certificati ha riscontrato un problema di client | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | Il punto di registrazione certificati è stato completato, ma ha rifiutato la richiesta. Vedere il codice di diagnostica e il messaggio per altri dettagli. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | Il punto di registrazione certificati non ha riscontrato un problema di client. Vedere il codice di diagnostica e il messaggio per altri dettagli. Vedere i dettagli del messaggio dell'evento per l'ID dispositivo corrispondente alla richiesta. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
-| 20600 | CRPNotifyMetric_Success  | Il punto di registrazione certificati ha terminato il processo di notifica e ha inviato il certificato al dispositivo client. | 0x00000000, 0x0FFFFFFF  |
-| 20602 | CRPNotifyMetric_Failure  | Il punto di registrazione certificati non ha terminato il processo di notifica. Vedere i dettagli del messaggio dell'evento per informazioni sulla richiesta. Verificare la connessione tra il server NDES e l'autorità di certificazione. | 0x00000000, 0x0FFFFFFF  |
+| 20600 | CRPNotifyMetric_Success  | Il punto di registrazione certificati ha terminato il processo di notifica e ha inviato il certificato al dispositivo client. | 0x00000000, 0x0FFFFFFF |
+| 20602 | CRPNotifyMetric_Failure  | Il punto di registrazione certificati non ha terminato il processo di notifica. Vedere i dettagli del messaggio dell'evento per informazioni sulla richiesta. Verificare la connessione tra il server NDES e l'autorità di certificazione. | 0x00000000, 0x0FFFFFFF |
 
 ### <a name="diagnostic-codes"></a>Codici di diagnostica
 

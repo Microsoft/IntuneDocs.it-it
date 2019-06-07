@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041660"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506889"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
 Questo articolo fornisce risposte ad alcune domande frequenti su Gestione di applicazioni mobili (MAM) di Intune e sulla protezione delle app di Intune.
 
 ## <a name="mam-basics"></a>Informazioni di base su MAM
-
 
 **Che cos'è MAM?**<br></br>
 [Gestione di applicazioni mobili (MAM) di Intune](/intune/app-lifecycle) indica la suite di funzionalità di gestione di Intune che consente di pubblicare, distribuire, configurare, proteggere, monitorare e aggiornare le app mobili degli utenti.
@@ -45,7 +44,7 @@ MAM di Intune supporta due configurazioni:
 
 ## <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-**Che cosa sono i criteri di protezione delle app**?<br></br>
+**Che cosa sono i criteri di protezione delle app?**<br></br>
 I criteri di protezione delle app sono regole che assicurano che i dati di un'organizzazione rimangano sicuri o contenuti in un'app gestita. Un criterio può essere una regola che viene applicata quando l'utente tenta di accedere o spostare dati "aziendali" o un set di azioni vietate o monitorate quando l'utente è all'interno dell'app.
 
 **Esempi di criteri di protezione delle app**.<br></br>
@@ -72,6 +71,13 @@ Qualsiasi app integrata con [Intune App SDK](/intune/app-sdk) o di cui è stato 
 - L'utente finale deve appartenere a un gruppo di sicurezza che è la destinazione dei criteri di protezione dell'app. Gli stessi criteri di protezione devono avere come destinazione l'app specifica in uso. I criteri di protezione delle app possono essere creati e distribuiti nella console di Intune nel [portale di Azure](https://portal.azure.com). È possibile creare gruppi di sicurezza simultaneamente nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
 
 - L'utente finale deve accedere all'app usando il proprio account AAD.
+
+**Cosa accade se si vuole abilitare un'app con Protezione app di Intune ma non si usa una piattaforma di sviluppo di app supportata?** 
+
+Il team di sviluppo di Intune SDK verifica e gestisce attivamente il supporto per le app compilate con la piattaforme native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Anche se alcuni clienti sono riusciti a integrare Intune SDK con altre piattaforme, ad esempio React Native e NativeScript, Microsoft non offre linee guida o plug-in specifici per gli sviluppatori di app che usano piattaforme diverse da quelle supportate da Microsoft.
+
+**Intune APP SDK supporta Microsoft Authentication Library (MSAL) o gli account di social networking?**<br></br>
+Intune APP SDK usa alcune funzionalità avanzate di ADAL sia per la versione proprietaria che per le versioni di terze parti dell'SDK. Di conseguenza, MSAL non funziona bene con molti degli scenari di base, ad esempio l'autenticazione nel servizio Protezione app di Intune e l'avvio condizionale. Dato che le linee guida generali dal team per le identità di Microsoft prevedono il passaggio a MSAL per tutte le app Microsoft Office, Intune SDK dovrà prima o poi supportare questa libreria, ma non esistono piani precisi al momento.
 
 **Quali sono i requisiti aggiuntivi per usare l'[app Outlook per dispositivi mobili](https://products.office.com/outlook)?**
 
@@ -164,8 +170,7 @@ La protezione delle app di Intune dipende dalla coerenza dell'identità dell'ute
 **Esiste un modo sicuro per aprire i collegamenti Web da app gestite?**<br></br>
 Sì. L'amministratore IT può distribuire e impostare i criteri di protezione delle app per l'[app Intune Managed Browser](app-configuration-managed-browser.md), un Web browser sviluppato da Microsoft Intune che è possibile gestire facilmente con Intune. L'amministratore IT può richiedere che tutti i collegamenti Web nelle app gestite da Intune vengano aperti tramite l'app Managed Browser.
 
-**Intune APP SDK supporta Microsoft Authentication Library (MSAL) o gli account di social networking?**
-Intune APP SDK usa alcune funzionalità avanzate di ADAL sia per la versione proprietaria che per le versioni di terze parti dell'SDK. Di conseguenza, MSAL non funziona bene con molti degli scenari di base, ad esempio l'autenticazione nel servizio Protezione app di Intune e l'avvio condizionale. Non esistono attualmente piani per implementarne il supporto.
+
 
 ## <a name="app-experience-on-android"></a>Esperienza dell'app in Android
 
@@ -199,13 +204,13 @@ I controlli delle API SafetyNet di Google Play Protect richiedono che l'utente f
 Le impostazioni "Attestazione dispositivo SafetyNet" e "Analisi delle minacce nelle app" richiedono entrambe una versione determinata da Google di Google Play Services per funzionare correttamente. Poiché si tratta di impostazioni che rientrano nell'ambito della sicurezza, l'utente finale verrà bloccato se sono state assegnate queste impostazioni e l'utente non soddisfa i requisiti per la versione appropriata di Google Play Services o non ha accesso a Google Play Services. 
 
 ## <a name="app-experience-on-ios"></a>Esperienza dell'app in iOS
-**Cosa accade se si aggiunge o si rimuove un'impronta digitale o un viso dal dispositivo?**
+**Cosa accade se si aggiunge o si rimuove un'impronta digitale o un viso dal dispositivo?**<br></br>
 I criteri di Protezione app di Intune consentono l'accesso alle app solo all'utente dotato di licenza per Intune. Uno dei modi per controllare l'accesso alle app consiste nel richiedere Apple Touch ID o Face ID per i dispositivi supportati. Intune implementa un comportamento in base al quale, se viene apportata una modifica al database di biometria del dispositivo e viene raggiunto il valore del timeout di inattività successivo, viene richiesto un PIN. Esempi di modifiche ai dati biometrici sono l'aggiunta o la rimozione di un'impronta digitale o di un viso. Se in Intune non è impostato un PIN, l'utente viene indirizzato alla configurazione di un PIN di Intune.
  
 La finalità di questa procedura è di continuare a garantire la protezione e la sicurezza a livello di app dei dati dell'organizzazione all'interno dell'app stessa. Questa funzionalità è disponibile solo per iOS e richiede la partecipazione delle applicazioni che integrano Intune APP SDK per iOS, versione 9.0.1 o successive. L'integrazione dell'SDK è necessaria in modo che il comportamento possa essere applicato nelle applicazioni di destinazione. Questa integrazione avviene sistematicamente e dipende dai team delle applicazioni specifiche. Tra le app partecipanti sono inclusi WXP, Outlook, Managed Browser e Yammer. 
   
 **È possibile usare l'estensione di condivisione per iOS per aprire i dati aziendali o dell'istituto di istruzione nelle app non gestite, anche se i criteri di trasferimento dei dati sono impostati su "solo app gestite" o "nessuna app". Questo scenario non comporta la perdita dei dati?**<br></br>
-I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione per iOS senza la gestione del dispositivo. Pertanto, Intune _**crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**_. È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.
+I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione per iOS senza la gestione del dispositivo. Pertanto, Intune _**crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**_ . È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.
 
 **Come funzionano in iOS più impostazioni di accesso della protezione app di Intune configurate per lo stesso set di app e utenti?**<br></br>
 I criteri di protezione delle app di Intune relativi all'accesso vengono applicati in un ordine specifico nei dispositivi degli utenti finali quando cercano di accedere a un'app di destinazione dal proprio account aziendale. In generale, una cancellazione ha la precedenza, seguita da un avviso che può essere ignorato. Ad esempio, se possibile per l'app o l'utente specifici, un'impostazione di versione minima del sistema operativo iOS che avvisa l'utente che può essere eseguito un aggiornamento della versione di iOS verrà applicata dopo l'impostazione di versione minima del sistema operativo iOS che impedisce all'utente di accedere. Quindi, nello scenario in cui l'amministratore IT configura la versione minima del sistema operativo iOS su 11.0.0.0 e la versione minima del sistema operativo iOS (solo avvisi) su 11.1.0.0, se il dispositivo che tenta di accedere all'app usa iOS 10, l'utente finale verrebbe bloccato in base all'impostazione più restrittiva per la versione minima del sistema operativo iOS che comporta il blocco dell'accesso.

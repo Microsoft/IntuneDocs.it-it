@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270004"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402783"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -36,7 +36,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 | Impostazione | Uso | Valore predefinito |
 |------|------|------|
 | **Esegui il backup dei dati dell'organizzazione nei servizi di backup di Android** | Selezionare **Blocca** per impedire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione nel [servizio di backup di Android](https://developer.android.com/google/backup/index.html).<br><br> Selezionare **Consenti** per consentire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione.| **Consentito** |
-| **Invia i dati dell'organizzazione ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento dei dati alle app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati per impostazione predefinita. È anche possibile creare le proprie esenzioni se è necessario consentire il trasferimento dei dati a un'app che non supporta i criteri di protezione delle app di Intune. Per altre informazioni, vedere [Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Questo criterio può essere applicato anche ai collegamenti delle app Android.  I collegamenti Web generali sono gestiti dall'impostazione del criterio che consente di **aprire i collegamenti delle app in Intune Managed Browser**.<p>**Nota:** *Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app. Per altre informazioni, vedere [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) nella documentazione per sviluppatori di Android.*</p>| **Tutte le app** | 
+| **Invia i dati dell'organizzazione ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento dei dati alle app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati per impostazione predefinita. È anche possibile creare le proprie esenzioni se è necessario consentire il trasferimento dei dati a un'app che non supporta i criteri di protezione delle app di Intune. Per altre informazioni, vedere [Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Questo criterio può essere applicato anche ai collegamenti delle app Android.  I collegamenti Web generali sono gestiti dall'impostazione del criterio che consente di **aprire i collegamenti delle app in Intune Managed Browser**.<p><div class="NOTE"><p>Nota</p><p>Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app. Per altre informazioni, vedere [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) nella documentazione per sviluppatori di Android.</p><p>Se **Invia i dati dell'organizzazione ad altre app** è impostato su **Tutte le app**, i dati di testo possono ancora essere trasferiti tramite la condivisione negli Appunti del sistema operativo.</p></div> | **Tutte le app** | 
 |<ul><ui> **Select apps to exempt** (Selezionare app da escludere) | Questa opzione è disponibile quando si seleziona *App gestite da criteri* per l'opzione precedente. | |
 | **Ricevi dati da altre app** | Specificare le app che possono trasferire dati a questa app: <ul><li>**App gestite da criteri**: consente il trasferimento solo da altre app gestite da criteri.</li><li>**Tutte le app**: consente il trasferimento dei dati da qualsiasi app.</li><li>**Nessuna**: non consente il trasferimento dei dati dalle app, incluse le altre app gestite da criteri. </li></ul> <p>Esistono alcuni servizi e app esenti, dai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions) per un elenco completo di app e servizi. | **Tutte le app** |
 | **Salva copie dei dati dell'organizzazione** | Scegliere **Blocca** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **Consenti** per consentire l'uso di Salva con nome. **Nota:** *Questa impostazione è supportata per Microsoft Excel, OneNote, PowerPoint e Word. Può essere supportata anche da app di terze parti e da applicazioni line-of-business.*| **Consentito** |  
