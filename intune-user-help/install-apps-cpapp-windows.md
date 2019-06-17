@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742534"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828939"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installare e condividere app nel dispositivo
 Installare le app nel dispositivo dall'app Portale aziendale per Windows.
@@ -70,6 +70,10 @@ Quando la condivisione è stata confermata, il destinatario riceverà un collega
 L'organizzazione seleziona le app utili e appropriate per l'utente all’interno dell’azienda o dell'istituto di istruzione. Queste app sono le uniche disponibili nel portale aziendale.  
 
 Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per Windows, si avrà accesso alle app per Windows, non alle app per iOS.  
+
+## <a name="required-apps"></a>Required apps  
+
+L'organizzazione può distribuire alcune App direttamente sul tuo dispositivo e contrassegnarli come **necessari**. Queste App verranno installate automaticamente per l'utente senza l'intervento.
 
 ## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione  
 Se un’app necessaria non è disponibile nell’app Portale aziendale, richiederla. Trovare i dettagli di contatto per il **supporto tecnico** nella pagina del supporto tecnico dell'app Portale aziendale. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).    
