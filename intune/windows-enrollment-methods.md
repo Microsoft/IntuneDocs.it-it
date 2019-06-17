@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: c3f5f3b39efd33e8dbd3dd84f9a5f2abaf347216
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046695"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819588"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Metodi di registrazione di Intune per dispositivi Windows
 
@@ -49,8 +49,8 @@ Gli amministratori possono configurare i metodi di registrazione seguenti, che n
 
 - [Aggiunta ad Azure AD ibrido](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy): permette agli amministratori di configurare criteri di gruppo di Active Directory per registrare automaticamente i dispositivi aggiunti ad Azure AD ibrido. 
 - [Co-gestione di Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview): permette agli amministratori di registrare i propri dispositivi esistenti gestiti con Configuration Manager in Intune per ottenere tutti i vantaggi di Intune e Configuration Manager. 
-- [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md): account di servizio speciale. Gli account manager di registrazione dispositivi hanno autorizzazioni che permettono agli utenti di registrare e gestire più dispositivi di proprietà aziendale. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Inoltre, questo metodo non permette l'uso di funzionalità come l'accesso condizionale. 
-- [Registrazione in blocco](windows-bulk-enroll.md): permette a un utente non autorizzato di aggiungere un numero elevato di nuovi dispositivi di proprietà aziendale ad Azure Active Directory e Intune. Creare un pacchetto di provisioning con l'app Progettazione configurazione di Windows. Usando quindi supporti USB durante la Configurazione guidata di Windows iniziale o da un PC Windows esistente, installare il pacchetto di provisioning per registrare automaticamente i dispositivi in Intune. 
+- [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md): account di servizio speciale. Gli account manager di registrazione dispositivi hanno autorizzazioni che permettono agli utenti di registrare e gestire più dispositivi di proprietà aziendale. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Questo metodo non consente l'uso di funzionalità come l'accesso condizionale. 
+- [Registrazione in blocco](windows-bulk-enroll.md): permette a un utente non autorizzato di aggiungere un numero elevato di nuovi dispositivi di proprietà aziendale ad Azure Active Directory e Intune. Creare un pacchetto di provisioning con l'app Progettazione configurazione di Windows. Usando quindi supporti USB durante la Configurazione guidata di Windows iniziale o da un PC Windows esistente, installare il pacchetto di provisioning per registrare automaticamente i dispositivi in Intune. Questo metodo non consente l'uso dell'accesso condizionale. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

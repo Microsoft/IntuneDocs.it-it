@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374074"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819879"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
@@ -52,8 +52,7 @@ Per usare ATP con Intune, verificare che gli elementi seguenti siano configurati
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Abilitare Windows Defender ATP in Intune
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selezionare **Conformità del dispositivo** > **Windows Defender ATP** > **Apri Windows Defender Security Center**.
 
     ![Selezionare per aprire Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Il criterio di accesso condizionale blocca l'accesso alle risorse *se* il dispos
 > [!TIP]  
 > L'accesso condizionale è una tecnologia di Azure Active Directory (Azure AD). Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
 
-1. Nel [portale di Azure](https://portal.azure.com) aprire **Intune** > **Accesso condizionale** > **Nuovi criteri**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionare **Accesso condizionale** > **Nuovi criteri**.
 2. Immettere un **nome** per il criterio e selezionare **Utenti e gruppi**. Usare l'opzione Includi o Escludi per aggiungere i gruppi per il criterio e selezionare **Fatto**.
 3. Selezionare **App cloud** e scegliere le app da proteggere. Ad esempio, scegliere **Seleziona le app** e quindi selezionare **Office 365 SharePoint Online**e **Office 365 Exchange Online**.
 

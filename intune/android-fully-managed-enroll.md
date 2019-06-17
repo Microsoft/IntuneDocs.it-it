@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044195"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819884"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurare la registrazione in Intune per dispositivi Android Enterprise completamente gestiti (anteprima)
 
@@ -55,8 +55,11 @@ Per configurare la gestione di dispositivi Android Enterprise completamente gest
 
 ### <a name="enable-corporate-owned-user-devices"></a>Abilitare i dispositivi utente di proprietà aziendale
 
-1. Passare al [Portale di Intune](https://portal.azure.com) e scegliere **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi utente completamente gestiti di proprietà aziendale (anteprima)**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi utente completamente gestiti di proprietà aziendale (anteprima)** .
 2. In **Consenti agli utenti di registrare dispositivi utente di proprietà aziendale** scegliere **Sì**.
+
+[!NOTE]
+Se sono stati definiti criteri di accesso condizionale di Azure AD che usano il controllo *Richiedi che i dispositivi siano contrassegnati come conformi* e si applicano a **Tutte le app cloud**, **Android** e **Browser**, è necessario escludere l'app cloud **Microsoft Intune** da questi criteri. Ciò è necessario poiché i processi di installazione di Android usano una scheda di Chrome per autenticare gli utenti durante la registrazione. Per altre informazioni, vedere [Documentazione di accesso condizionale di Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Se impostata su **Sì**, questa impostazione rende disponibile per il tenant di Intune un token di registrazione (una stringa casuale) e un codice a matrice. Questo token di registrazione singola è valido per tutti gli utenti e non scade. A seconda del sistema operativo Android e della versione del dispositivo, per registrare il dispositivo in modalità tutto schermo è possibile usare il token o il codice a matrice.
 

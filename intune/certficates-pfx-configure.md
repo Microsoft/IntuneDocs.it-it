@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454047"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749804"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS con Intune
 
@@ -249,12 +249,17 @@ Periodicamente vengono rilasciati aggiornamenti per i due connettori di certific
 
 Il *connettore di certificati PFX per Microsoft Intune* [supporta gli aggiornamenti automatici](#requirements), mentre il *connettore di certificati di Intune* viene aggiornato manualmente.
 
-### <a name="may-6-2019"></a>6 maggio 2019
+### <a name="may-17-2019"></a>17 maggio 2019  
+- **Connettore dei certificati PFX per Microsoft Intune - versione 6.1905.0.404**  
+  Modifiche in questa versione:  
+  - È stato risolto un problema a causa del quale i certificati PFX esistenti continuano a essere rielaborati e di conseguenza il connettore smette di elaborare le nuove richieste. 
+
+### <a name="may-6-2019"></a>6 maggio 2019  
 - **Connettore di certificati PFX per Microsoft Intune - versione 6.1905.0.402**  
   Modifiche in questa versione:  
   - L'intervallo di polling per il connettore è stato ridotto da 5 minuti a 30 secondi.
  
-### <a name="april-2-2019"></a>2 aprile 2019
+### <a name="april-2-2019"></a>2 aprile 2019  
 - **Connettore di certificati di Intune - versione 6.1904.1.0**  
   Modifiche in questa versione:  
   - È stato risolto un problema a causa del quale può verificarsi un errore di registrazione in Intune dopo avere eseguito l'accesso al connettore con un account amministratore globale.  

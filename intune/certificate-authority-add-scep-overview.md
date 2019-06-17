@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043529"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713873"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Aggiungere un'autorità di certificazione partner in Intune tramite SCEP
 
@@ -87,7 +87,7 @@ Assicurarsi di avere le autorizzazioni necessarie per registrare un'app di Azure
    > [!IMPORTANT]  
    > Prima di uscire da questa pagina, copiare il valore del segreto client e annotarlo per usarlo in seguito durante l'implementazione dell'autorità di certificazione di terze parti. Questo valore non viene più visualizzato. Assicurarsi di rivedere il materiale sussidiario per l'autorità di certificazione di terze parti per informazioni sulla configurazione dell'ID applicazione, della chiave di autenticazione e dell'ID tenant.  
 
-6. Prendere nota dell'**ID tenant**. L'ID tenant è il testo del dominio che segue il simbolo @ nell'account. Se ad esempio l'account è *admin@name.onmicrosoft.com*, l'ID tenant è **name.onmicrosoft.com**.  
+6. Prendere nota dell'**ID tenant**. L'ID tenant è il testo del dominio che segue il simbolo @ nell'account. Se ad esempio l'account è *admin@name.onmicrosoft.com* , l'ID tenant è **name.onmicrosoft.com**.  
 
 7. Nel riquadro di spostamento per l'app passare ad **Autorizzazioni API** in **Gestione** e quindi selezionare **Aggiungi un'autorizzazione**.  
 
@@ -123,6 +123,7 @@ Intune è supportato dalle autorità di certificazione di terze parti seguenti:
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 Le autorità di certificazione di terze parti interessate a integrare il proprio prodotto con Intune possono vedere il materiale sussidiario sull'API:
 

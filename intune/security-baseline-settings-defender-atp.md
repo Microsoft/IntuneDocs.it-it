@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373506"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749920"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Impostazioni della baseline di Microsoft Defender Advanced Threat Protection per Intune
 
-Vedere le impostazioni della baseline di Microsoft Defender Advanced Threat Protection (in precedenza Windows Defender Advanced Threat Protection) supportate da Microsoft Intune. I valori predefiniti in questo articolo rappresentano la configurazione di base predefinita per Intune. Tali valori rappresentano la configurazione consigliata per Intune e potrebbero non corrispondere ai valori predefiniti di Windows.
+Vedere le impostazioni della baseline di Microsoft Defender Advanced Threat Protection (in precedenza Windows Defender Advanced Threat Protection) supportate da Microsoft Intune. Le impostazioni predefinite della baseline di Advanced Threat Protection (ATP) rappresentano la configurazione consigliata per ATP e potrebbero non corrispondere ai valori predefiniti della baseline per altre baseline di sicurezza.  
 
   La baseline di Microsoft Defender Advanced Threat Protection è disponibile quando l'ambiente soddisfa i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
@@ -33,7 +33,7 @@ Vedere le impostazioni della baseline di Microsoft Defender Advanced Threat Prot
 
 
 > [!NOTE]  
-> Le impostazioni di base di Microsoft Defender Advanced Threat Protection sono attualmente in **anteprima**. Nella fase di anteprima l'elenco delle impostazioni disponibili e l'ordine di presentazione di tali impostazioni in questo contenuto potrebbero non corrispondere a quanto disponibile nel portale. 
+> Le impostazioni della baseline di ATP sono attualmente in **anteprima**. Nella fase di anteprima l'elenco delle impostazioni disponibili e l'ordine di presentazione di tali impostazioni in questo contenuto potrebbero non corrispondere a quanto disponibile nel portale.  
 >
 > Al termine della fase di anteprima, questo contenuto verrà aggiornato per riflettere un elenco corrente delle impostazioni della baseline di sicurezza supportate da Intune.
 

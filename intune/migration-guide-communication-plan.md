@@ -16,51 +16,38 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80292fab9a8e35db23163f7c5a0dfc1c01b65848
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050540"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804664"
 ---
-# <a name="plan-communications"></a>Pianificare le comunicazioni
+# <a name="plan-communications"></a>Pianificare le comunicazioni 
+Il piano di comunicazione è un elemento chiave in una migrazione a Intune. Gli strumenti e i modelli seguenti vengono forniti per agevolare la formazione degli utenti finali. Il kit di adozione di Intune include modelli di posta elettronica, una guida alla registrazione di Intune e collegamenti a video didattici per la registrazione degli utenti finali.  
 
-Il piano di comunicazione è un elemento chiave in una migrazione a Intune. È possibile seguire lo stesso piano di comunicazione per ogni fase della migrazione.
+Download:  [Kit di adozione di Intune](http://aka.ms/IntuneAdoptionKit)
 
-## <a name="email-templates"></a>Modelli di messaggi di posta
-
+## <a name="email-templates"></a>Modelli di messaggi di posta 
 Si consiglia il piano di comunicazione di posta elettronica seguente. Sono disponibili modelli da adattare al piano di comunicazione scelto:
+- **Messaggio di posta elettronica 1**: presentare i vantaggi, le aspettative e la pianificazione. Cogliere questa opportunità per presentare tutti gli altri nuovi servizi a cui sarà concesso l'accesso nei dispositivi gestiti da Intune. 
 
--   **Posta elettronica \#1:** presentare i vantaggi, le aspettative e la pianificazione. Cogliere questa opportunità per presentare tutti gli altri nuovi servizi a cui sarà concesso l'accesso nei dispositivi gestiti da Intune.<br/><br/>
-
-
-    -   [Scaricare il modello Messaggio di posta elettronica\# 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
-<br></br>
-
--   **Posta elettronica \#2:** annunciare che i servizi sono ora pronti per l'accesso tramite Intune. Dare istruzioni agli utenti di eseguire la registrazione. Ricordare agli utenti i vantaggi e i motivi strategici per la migrazione.<br/><br/>
-
-
-    -   [Scaricare il modello Messaggio di posta elettronica\# 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
-<br></br>
-
--   **Posta elettronica \#3:** indicare agli utenti una sequenza temporale prima che l'accesso venga compromesso. Ricordare di nuovo agli utenti i vantaggi e i motivi strategici per la migrazione. La tempistica di invio dei messaggi di posta elettronica deve includere una finestra temporale scorrevole corrispondente alle fasi previste. Ad esempio, in giugno inviare il messaggio di posta elettronica\# 1 agli utenti nella fase 1, il messaggio di posta elettronica\# 2 agli utenti nella fase 2 e il messaggio di posta elettronica\# 3 agli utenti nella fase 3.<br/><br/>
-
-    -   [Scaricare il modello di messaggio di posta\# 3](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
-
+- **Messaggio di posta elettronica 2**: annunciare che i servizi sono ora pronti per l'accesso tramite Intune. Dare istruzioni agli utenti di eseguire la registrazione.  indicare agli utenti una sequenza temporale prima che l'accesso venga compromesso. Ricordare agli utenti i vantaggi e i motivi strategici per la migrazione.
 Dopo un determinato periodo, è possibile iniziare ad applicare la conformità tramite criteri di accesso condizionale e usarli per l'accesso ai dati aziendali, come illustrato in [Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale](migration-guide-drive-adoption.md).
 
-## <a name="additional-communication-templates"></a>Modelli di comunicazione aggiuntivi
+## <a name="intune-enrollment-guide"></a>Guida alla registrazione di Intune 
+È possibile fornire questo allegato in formato PDF agli utenti così com'è oppure personalizzare la versione di Word per includere le risorse interne e le informazioni di contatto.
 
-Intune offre altri modelli che è possibile usare per promuovere la registrazione dei dispositivi presso gli utenti:
-
--   [Come informare gli utenti finali su Microsoft Intune](end-user-educate.md) suddivide la procedura di registrazione a seconda della piattaforma di sistema operativo per dispositivi mobili
-
--   [Intune end-user enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) (Modelli di registrazione degli utenti finali per gli amministratori IT) è un documento di Word personalizzabile che illustra come registrare dispositivi Android, iOS e Mac in Intune.
-
--   Le [guide e i messaggi di posta elettronica relativi alle procedure di FastTrack per EMS ](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) possono essere personalizzati con il logo della società per promuovere l'adozione di Intune ed EMS all'interno dell'organizzazione.
-
--   Condividere l'[URL dell'app Portale aziendale](http://go.microsoft.com/fwlink/?LinkID=396941) con gli utenti di Android, iOS e Windows. Questo URL reindirizza all'elenco di app Portale aziendale appropriato nei dispositivi Android, iOS e Windows.
+## <a name="instructional-videos"></a>Video didattici
+Sono stati creati brevi video dettagliati per aiutare gli utenti a registrare in modo semplice i dispositivi in Intune.
+- [Registrare il dispositivo Android](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
+- [Registrare il dispositivo con il profilo di lavoro Android](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [Registrare il dispositivo iOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Registrare il dispositivo macOS](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
+- [Registrare il dispositivo Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>Passaggi successivi
-
-[Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale](migration-guide-drive-adoption.md).
+Intune offre altre risorse che è possibile usare per promuovere la registrazione dei dispositivi presso gli utenti:
+- [Come informare gli utenti finali su Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate) suddivide la procedura di registrazione a seconda della piattaforma di sistema operativo per dispositivi mobili 
+- [Registrazione di dispositivi Intune per amministratori IT](https://docs.microsoft.com/intune/device-enrollment) illustra come registrare dispositivi Android, iOS e Mac in Intune.
+- Condividere l'[URL dell'app Portale aziendale](http://go.microsoft.com/fwlink/?LinkID=396941) con gli utenti di Android, iOS e Windows. Questo URL reindirizza all'elenco di app Portale aziendale appropriato nei dispositivi Android, iOS e Windows.

@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045043"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749924"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza Windows per Intune  
 
-Vedere le [impostazioni delle baseline di sicurezza di Windows](security-baselines.md) supportate da Microsoft Intune.  
+Vedere le [impostazioni delle baseline di sicurezza di Windows](security-baselines.md) supportate da Microsoft Intune. Le impostazioni predefinite della baseline di Windows rappresentano la configurazione consigliata per Windows e potrebbero non corrispondere ai valori predefiniti della baseline per altre baseline di sicurezza.  
 
 > [!NOTE]  
-> Le impostazioni della baseline di sicurezza di Windows sono in anteprima. Nella fase di anteprima, l'elenco delle impostazioni disponibili e l'ordine di presentazione di tali impostazioni in questo contenuto varieranno in base a quanto disponibile nel portale.  
+> Le impostazioni della baseline di sicurezza di Windows sono attualmente in **anteprima**. Nella fase di anteprima, l'elenco delle impostazioni disponibili e l'ordine di presentazione di tali impostazioni in questo contenuto varieranno in base a quanto disponibile nel portale.  
 >  
 > Al termine della fase di anteprima, questo contenuto verrà aggiornato con l'elenco definitivo delle impostazioni della baseline di sicurezza supportate da Intune.  
 
@@ -50,7 +50,7 @@ L'impostazione di questo criterio consente di controllare se gli account Microso
   
   **Impostazione predefinita**: Abilitato  
 
-## <a name="application-management"></a>Gestione delle applicazioni   
+## <a name="application-management"></a>Gestione applicazioni   
 Per altre informazioni, vedere [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) (Provider di servizi di configurazione dei criteri - ApplicationManagement) nella documentazione di Windows.  
 
 - **Bloccare Game DVR (solo desktop)**  
@@ -163,7 +163,7 @@ Per altre informazioni, vedere [Policy CSP - CredentialsUI](https://docs.microso
   
   **Impostazione predefinita**: Disabilitato  
 
-## <a name="data-protection"></a>Protezione dati  
+## <a name="data-protection"></a>Protezione dei dati  
 Per altre informazioni, vedere [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) (Provider di servizi di configurazione dei criteri - DataProtection) nella documentazione di Windows.  
 
@@ -991,7 +991,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Sì
   
 - **Comportamento della richiesta di elevazione dei privilegi per gli amministratori**  
-  L'impostazione di questo criterio specifica il comportamento della richiesta di elevazione dei privilegi per gli amministratori. Le opzioni disponibili sono: 
+  L'impostazione di questo criterio specifica il comportamento della richiesta di elevazione dei privilegi per gli amministratori. Opzioni disponibili: 
     - *Esegui con privilegi elevati senza chiedere conferma*: consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati. 
     - *Richiedi le credenziali nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile. 
     - *Richiedi il consenso nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
@@ -1002,7 +1002,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Richiedi il consenso nel desktop sicuro
   
 - **Sicurezza sessione minima per client basati su NTLM SSP**  
-  Questa impostazione di sicurezza consente ai client di richiedere la negoziazione della crittografia a 128 bit e/o della sicurezza di sessione NTLMv2. Tali valori dipendono dal valore dell'impostazione di sicurezza Livello di autenticazione di LAN Manager. Le opzioni disponibili sono:
+  Questa impostazione di sicurezza consente ai client di richiedere la negoziazione della crittografia a 128 bit e/o della sicurezza di sessione NTLMv2. Tali valori dipendono dal valore dell'impostazione di sicurezza Livello di autenticazione di LAN Manager. Opzioni disponibili:
   - Richiedi sicurezza sessione NTLMv2: se il protocollo NTLMv2 non viene negoziato, la connessione non riuscirà. 
   - *Richiedi crittografia a 128 bit*: se la crittografia avanzata (a 128 bit) non viene negoziata, la connessione non riesce.
   - *Richiedi NTLM V2 e la crittografia a 128 bit*. 
@@ -1010,7 +1010,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Richiedi NTLM V2 e la crittografia a 128 bit
   
 - **Comportamento in caso di rimozione della smart card**  
-    Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
+    Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Opzioni disponibili:
      - *Nessuna azione*. 
      - *Blocca workstation* - La workstation è bloccata quando la smart card viene rimossa, consentendo agli utenti di uscire dall'area, tenere la smart card e mantenere comunque una sessione protetta.
      - *Imponi disconnessione*: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
@@ -1041,7 +1041,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Rifiuta automaticamente le richieste di elevazione dei privilegi
   
 - **Richiedere la modalità Approvazione amministratore per gli amministratori**  
-  L'impostazione di questo criterio specifica il comportamento di tutte le impostazioni dei criteri di Controllo dell'account utente per il computer. Se questa impostazione viene modificata, è necessario riavviare il computer. Le opzioni disponibili sono:   
+  L'impostazione di questo criterio specifica il comportamento di tutte le impostazioni dei criteri di Controllo dell'account utente per il computer. Se questa impostazione viene modificata, è necessario riavviare il computer. Opzioni disponibili:   
   - *Non configurato*: la modalità Approvazione amministratore e i criteri correlati di Controllo dell'account utente sono disattivati. Nota: se questa impostazione è disattivata, Centro sicurezza PC segnala che la sicurezza complessiva del sistema operativo è ridotta. 
   - *Sì*: la modalità Approvazione amministratore è abilitata. Perché l'account predefinito Administrator e tutti gli altri utenti membri del gruppo Administrators possano essere eseguiti in modalità Approvazione amministratore, è necessario che questo criterio sia abilitato e che tutti i criteri di Controllo dell'account utente correlati siano impostati in modo appropriato.  
   
@@ -1060,7 +1060,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: *O:BAG:BAD:(A;;RC;;;BA)*
 
 - **Usare la modalità Approvazione amministratore**  
-  L'impostazione di questo criterio specifica il comportamento della modalità Approvazione amministratore per l'account Administrator predefinito. Le opzioni disponibili sono: 
+  L'impostazione di questo criterio specifica il comportamento della modalità Approvazione amministratore per l'account Administrator predefinito. Opzioni disponibili: 
   - *Sì*: l'account predefinito Administrator usa la modalità Approvazione amministratore. Per impostazione predefinita, per qualunque operazione che richiede l'elevazione dei privilegi l'utente dovrà scegliere se autorizzare o rifiutare l'esecuzione. 
   - *Non configurato*: l'account predefinito Administrator esegue tutte le applicazioni con privilegi amministrativi completi.  
 
@@ -1074,7 +1074,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Sì
 
 - **Rilevare installazioni di applicazioni e richiedere l'elevazione dei privilegi**  
-  L'impostazione di questo criterio specifica il comportamento del rilevamento di installazioni di applicazioni nel computer. Le opzioni disponibili sono: 
+  L'impostazione di questo criterio specifica il comportamento del rilevamento di installazioni di applicazioni nel computer. Opzioni disponibili: 
   - *Abilitato*: per i pacchetti di installazione delle applicazioni che richiedono l'elevazione dei privilegi, l'utente dovrà immettere nome utente e password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente. 
   - *Disabilitato*: i pacchetti di installazione delle applicazioni non vengono rilevati e non viene richiesta l'elevazione dei privilegi. È consigliabile disattivare questa impostazione nel caso di un'organizzazione che esegue desktop utente standard e utilizza tecnologie di installazione delegata, ad esempio Estensione dell'installazione software basata su Criteri di gruppo o Systems Management Server (SMS), in quanto il rilevamento dei programmi di installazione non è necessario.  
   
@@ -1224,7 +1224,7 @@ Per altre informazioni, vedere [Policy CSP - RemoteProcedureCall](https://docs.m
 
   **Impostazione predefinita**: Autenticato
 
-## <a name="search"></a>Cerca 
+## <a name="search"></a>Ricerca 
 Per altre informazioni, vedere [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) (Provider di servizi di configurazione dei criteri - Search) nella documentazione di Windows.  
 
 - **Disabilitare l'indicizzazione di elementi crittografati**  
@@ -1252,7 +1252,7 @@ Per altre informazioni, vedere [Policy CSP - SmartScreen](https://docs.microsoft
 
   **Impostazione predefinita**: Sì
   
-## <a name="system"></a>Sistema  
+## <a name="system"></a>System  
 Per altre informazioni, vedere [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) (Provider di servizi di configurazione dei criteri - System) nella documentazione di Windows.  
 
 - **Inizializzazione del driver di esecuzione avvio del sistema**  

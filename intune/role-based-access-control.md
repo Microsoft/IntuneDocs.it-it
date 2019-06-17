@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040672"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804475"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -30,6 +30,8 @@ Il controllo degli accessi in base al ruolo semplifica la gestione degli utenti 
 Per creare, modificare o assegnare ruoli, l'account deve disporre di una delle seguenti autorizzazioni in Azure AD:
 - **Amministratore globale**
 - **Amministratore del servizio Intune** (noto anche come **amministratore di Intune**)
+
+Per consigli e suggerimenti sul controllo degli accessi in base al ruolo di Intune, è possibile vedere questa serie di cinque video che presentano esempi e procedure dettagliate: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Ruoli
 Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati al ruolo.
@@ -84,8 +86,8 @@ Per visualizzare un'assegnazione di ruolo, scegliere **Intune** > **Ruoli** > **
 
 -   **Proprietà**: nome, descrizione, ruolo, membri, ambiti e tag dell'assegnazione.
 -   **Membri**: tutti gli utenti nei gruppi elencati hanno l'autorizzazione necessaria per gestire gli utenti/i dispositivi elencati in Ambito (gruppi).
--   **Ambito (gruppi)**: tutti gli utenti/i dispositivi in questi gruppi possono essere gestiti dagli utenti in Membri.
--   **[Ambito (tag)](scope-tags.md)**: Gli utenti in Membri possono visualizzare le risorse che hanno gli stessi tag di ambito.
+-   **Ambito (gruppi)** : tutti gli utenti/i dispositivi in questi gruppi possono essere gestiti dagli utenti in Membri.
+-   **[Ambito (tag)](scope-tags.md)** : Gli utenti in Membri possono visualizzare le risorse che hanno gli stessi tag di ambito.
 
 ### <a name="multiple-role-assignments"></a>Più assegnazioni di ruolo
 Se un utente ha più assegnazioni di ruolo, le autorizzazioni in queste assegnazioni di ruolo si estendono ai diversi oggetti in questo modo:
