@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041540"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044517"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Confrontare la gestione dei PC Windows come computer o come dispositivi mobili
 
@@ -43,7 +43,7 @@ Le organizzazioni possono usare Microsoft Intune per gestire i PC Windows come d
 |**Inventario**|Disponibile <br>[Visualizzare l'inventario software e hardware per PC Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Disponibile <br>[Come monitorare le informazioni sulle app](apps-monitor.md)<br>[Che cos'è la gestione dei dispositivi?](device-management.md)|
 |**Criteri di Windows Firewall**|Disponibile <br>[Proteggere i PC Windows con criteri di Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Disponibile <br>[Windows Defender Firewall](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**Protezione antimalware**|Endpoint Protection<br>[Proteggere i PC Windows con Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Abilitare Windows Defender](advanced-threat-protection.md)|
-|**Assistenza remota** |TeamViewer<br>[Richiedere e fornire assistenza remota per i PC Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Usare TeamViewer per l'amministrazione remota dei dispositivi di Intune](device-profile-android-teamviewer.md) |
+|**Assistenza remota** |TeamViewer<br>[Richiedere e fornire assistenza remota per i PC Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Usare TeamViewer per l'amministrazione remota dei dispositivi di Intune](teamviewer-support.md) |
 |**Distribuzione di app** | Non disponibile per Microsoft Store per le aziende,<br>solo .exe, .appx e .msi con più file<br>[Aggiungere app per i PC Windows che eseguono il software client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponibile per le app di Microsoft Store e le app line-of-business<br>[Come aggiungere app di Windows Store](store-apps-windows.md)<br>[Come aggiungere app line-of-business Windows](lob-apps-windows.md)|
 |**Protezione delle app**|Non disponibile|Disponibile <br>[Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)|
 |**Attestazione dell'integrità**|Non disponibile|Disponibile|

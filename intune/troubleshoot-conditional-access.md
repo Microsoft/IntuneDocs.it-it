@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044682"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043907"
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
-È possibile proteggere l'accesso ai servizi di Office 365 come Exchange Online, SharePoint Online, Skype for Business Online, Exchange locale e altri servizi tramite Intune e l'accesso condizionale. Questa funzionalità consente di assicurarsi che l'accesso alle risorse aziendali sia limitato ai dispositivi registrati con Intune e conformi alle regole di accesso condizionale impostate nella console di amministrazione di Intune o in Azure Active Directory. Questo articolo descrive cosa fare quando gli utenti non riescono ad accedere alle risorse protette con accesso condizionale o quando gli utenti possono accedere alle risorse protette mentre in realtà dovrebbero essere bloccati.
+È possibile proteggere l'accesso ai servizi di Office 365 come Exchange Online, SharePoint Online, Skype for Business Online, Exchange locale e altri servizi tramite Intune e l'accesso condizionale. Questa funzionalità consente di assicurarsi che l'accesso alle risorse aziendali sia limitato ai dispositivi registrati con Intune e conformi alle regole di accesso condizionale impostate nella console di amministrazione di Intune o in Azure Active Directory. Questo articolo descrive cosa fare quando gli utenti non riescono ad accedere alle risorse protette con l'accesso condizionale o quando gli utenti possono accedere alle risorse protette mentre in realtà dovrebbero essere bloccati.
 
 ## <a name="requirements-for-conditional-access"></a>Requisiti per l'accesso condizionale
 
@@ -66,7 +66,7 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 
 - Nei PC Windows, l'accesso condizionale blocca solo le app native di posta elettronica, Office 2013 con autenticazione moderna o Office 2016. Il blocco delle versioni precedenti di Outlook o di tutte le app di posta elettronica nei PC Windows richiede le configurazioni Registrazione dispositivo Azure AD e Active Directory Federation Services (AD FS) come spiegato in [Configurare SharePoint Online ed Exchange Online per l'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Se viene cancellato o ritirato da Intune in modo selettivo, il dispositivo potrebbe continuare ad avere accesso per alcune ore dopo il ritiro. Questo avviene perché Exchange memorizza nella cache i diritti di accesso per 6 ore. Prendere in considerazione altri metodi di protezione dei dati nei dispositivi ritirati in questo scenario.
-- I dispositivi Surface Hub supportano l'accesso condizionale, tuttavia, per eseguire una corretta valutazione, è necessario distribuire i criteri di conformità ai gruppi di dispositivi e non ai gruppi di utenti.
+- I dispositivi Surface Hub supportano l'accesso condizionale. Tuttavia, per eseguire una corretta valutazione, è necessario distribuire i criteri di conformità ai gruppi di dispositivi e non ai gruppi di utenti.
 - Controllare le assegnazioni per i criteri di conformità e i criteri di accesso condizionale. Un utente che non fa parte del gruppo a cui viene assegnato il criterio oppure che fa parte di un gruppo da escludere viene bloccato. Viene verificata la conformità solo dei dispositivi di utenti che fanno parte di un gruppo di destinazione.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Il dispositivo non conforme non è bloccato

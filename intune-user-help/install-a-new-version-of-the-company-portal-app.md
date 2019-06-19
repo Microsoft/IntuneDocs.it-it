@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840539"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840953"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Come aggiornare l'app Portale aziendale
 
@@ -29,7 +29,7 @@ Questo articolo descrive come aggiornare la versione dell'app Portale aziendale 
 * È disponibile una versione più recente del portale aziendale.
 * La versione del portale aziendale in uso non è più supportata.
 
-La procedura seguente descrive come aggiornare o ottenere la versione più recente dell'app nei dispositivi Android, iOS e Windows.    
+La procedura seguente descrive come aggiornare o ottenere la versione più recente dell'app nei dispositivi Android, iOS, macOS e Windows.    
 
 ## <a name="update-the-company-portal-app-on-your-android-device"></a>Aggiornare l'app Portale aziendale nel dispositivo Android  
 
@@ -41,6 +41,16 @@ Quando è disponibile una nuova versione, viene visualizzata un'opzione **Aggior
 
 1. Aprire l'App Store e cercare **Intune**.  
 2. Quando si trova l'app, toccare **Aggiorna**.  
+
+## <a name="update-the-company-portal-app-on-your-macos-device"></a>Aggiornare l'app Portale aziendale nel dispositivo macOS
+
+Configurare il portale aziendale per installare automaticamente gli aggiornamenti appena diventano disponibili. 
+
+1. Aprire App portale aziendale e passare a **aiutare**. 
+2. Selezionare **Controlla aggiornamenti**. 
+3. Nella schermata di Microsoft AutoUpdate, selezionare **scaricare e installare automaticamente**. 
+
+Per visualizzare gli aggiornamenti disponibili, selezionare **verificare la presenza di aggiornamenti**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Aggiornare l'app Portale aziendale nel dispositivo Windows
 Per ottenere automaticamente gli aggiornamenti non appena sono disponibili, aprire Microsoft Store e passare a **Impostazioni**. Attivare quindi **Aggiornamenti app**. Per visualizzare gli aggiornamenti recenti e le app in attesa nella coda di download, passare a **Downloads and updates** (Download e aggiornamenti).  
