@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041118"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234981"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -420,7 +420,8 @@ Selezionare **OK** per salvare le modifiche.
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi a DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), che elenca anche le edizioni di Windows supportate.
 
-- **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso al dispositivo senza una password.
+- **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso al dispositivo senza una password. Si applica ai soli account locali. Le password degli account di dominio rimarranno configurate da Active Directory (AD) e Azure AD.
+
   - **Tipo di password richiesto**: scegliere il tipo di password. Le opzioni disponibili sono:
     - **Non configurato**: la password può includere lettere e numeri.
     - **Numerica**: la password deve essere composta solo da numeri.
