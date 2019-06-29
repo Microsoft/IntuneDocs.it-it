@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196866"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402800"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurare l'accesso del dispositivo iOS alle risorse aziendali  
 
@@ -59,15 +59,15 @@ La sospensione per un periodo più lungo di qualche minuto durante la registrazi
 
 1. Aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione. 
 
-    ![Screenshot di esempio dell'app Portale aziendale, accesso.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio dell'app Portale aziendale, accesso.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. Quando viene chiesto di indicare se si vuole ricevere notifiche dal Portale aziendale, toccare **Consenti**. Il Portale aziendale usa le notifiche per avvisare se, ad esempio, è necessario aggiornare le impostazioni del dispositivo. 
 
-    ![Screenshot di esempio della home page del Portale aziendale, prompt "Notifiche".](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio della home page del Portale aziendale, prompt "Notifiche".](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. Nella schermata di **configurazione dell'accesso** selezionare **Inizia**.  
 
-     ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso.](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Prendere visione dell'elenco di informazioni relative al dispositivo la cui visualizzazione è concessa o non concessa all'organizzazione. Quindi toccare **Continua**.  
 
@@ -87,7 +87,7 @@ La sospensione per un periodo più lungo di qualche minuto durante la registrazi
 
 7. Solo iOS 12.2 e versioni successive: quando viene chiesto di aprire il Portale aziendale, toccare **Apri**. La schermata di **installazione del profilo di gestione** elenca i passaggi necessari per installare il profilo.
 
-    ![Screenshot di esempio del Portale aziendale, schermata di installazione del profilo di gestione.](./media/ios-1904-settings-icon.PNG)  
+    ![Screenshot di esempio del Portale aziendale, schermata di installazione del profilo di gestione.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Passare all'app Impostazioni e toccare **Profile Downloaded** (Profilo scaricato).  
 
@@ -99,24 +99,24 @@ La sospensione per un periodo più lungo di qualche minuto durante la registrazi
     
 10. Immettere la password del dispositivo. Quindi toccare **Installa**.    
 
-    ![Screenshot di esempio dell'app Impostazioni, schermata di installazione del profilo con il cursore sul pulsante **Installa**.](./media/ios-1904-password-install.PNG)  
+    ![Screenshot di esempio dell'app Impostazioni, schermata di installazione del profilo con il cursore sul pulsante **Installa**.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. La schermata successiva riporta un avviso di sistema standard per la gestione dei dispositivi. Per continuare l'installazione, toccare **Installa**. Se viene chiesto di considerare attendibile la gestione remota, toccare **Considera attendibile**.  
 
-    ![Screenshot di esempio dell'app Impostazioni, schermata di avviso di sistema standard per il certificato radice e la gestione di dispositivi mobili.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio dell'app Impostazioni, schermata di avviso di sistema standard per il certificato radice e la gestione di dispositivi mobili.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. Al termine dell'installazione, toccare **Fine**. Per verificare che il dispositivo sia stato installato, passare alle impostazioni **Gestione di profili e dispositivi**. Il profilo dovrebbe essere visualizzato in **Gestione dispositivi mobili**.   
 
-    ![Screenshot di esempio dell'app Impostazioni, impostazioni Gestione di profili e dispositivi con il profilo di gestione.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio dell'app Impostazioni, impostazioni Gestione di profili e dispositivi con il profilo di gestione.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Tornare all'app Portale aziendale. Il Portale aziendale avvierà la sincronizzazione e la configurazione del dispositivo. Il Portale aziendale può richiedere di aggiornare altre impostazioni del dispositivo. Se ciò avviene, toccare **Continua**.  
 
-    ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso con un triangolo giallo accanto al requisito di impostazione.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso con un triangolo giallo accanto al requisito di impostazione.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. La configurazione sarà completa quando per tutti gli elementi dell'elenco viene visualizzato un cerchio verde. Toccare **Fine**.   
     
-    ![Screenshot di esempio del Portale aziendale, schermata "La configurazione è completata." in cui sono visualizzati tutti cerchi verdi.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Screenshot di esempio del Portale aziendale, schermata "La configurazione è completata." in cui sono visualizzati tutti cerchi verdi.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > Se l'organizzazione monitora i limiti di voce e dati oppure mette a disposizione dell'utente un dispositivo di proprietà dell'azienda, potrebbe essere necessario completare altri passaggi. Se viene chiesto di installare l'app **Datalert**, vedere [Registrare il dispositivo nella gestione delle spese per telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione partecipa al programma DEP (Device Enrollment Program) di Apple, vedere [come registrare un dispositivo di proprietà dell'azienda](enroll-your-device-dep-ios.md).  

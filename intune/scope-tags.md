@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045183"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403781"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti
 
@@ -38,12 +38,14 @@ Ad esempio, si supponga che a un amministratore della filiale di Milano venga as
 
 ## <a name="to-create-a-scope-tag"></a>Per creare un tag di ambito
 
-1. In Intune scegliere **Ruoli** > **Ambito (tag)** > **Crea**.
+1. In Intune scegliere **Ruoli** > **Ambito (tag)**  > **Crea**.
 
     ![Screenshot della creazione di un tag di ambito.](./media/scope-tags/create-scope-tag.png)
 
-2. Specificare un **nome** e una **descrizione**.
-3. Scegliere **Crea**.
+3. Se si desidera che tutti i dispositivi in gruppi specifici, scegliere **assegnare tag di ambito per tutti i dispositivi nei gruppi selezionati**.
+    1. Nel **selezionare i gruppi da includere** , scegliere i gruppi che i dispositivi che si desidera assegnare il tag di ambito su pagina.
+    2. Scegliere **Seleziona**.
+4. Scegliere **Crea**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Per assegnare un tag di ambito a un ruolo
 
@@ -52,11 +54,11 @@ Ad esempio, si supponga che a un amministratore della filiale di Milano venga as
     ![Screenshot dell'assegnazione dell'ambito a un ruolo.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Specificare **Nome dell'assegnazione** e **Descrizione**.
-3. Scegliere **Membri (gruppi)** > **Aggiungi** > scegliere i gruppi desiderati per questa assegnazione > **selezionare** > **OK**. Gli utenti in questo gruppo saranno autorizzati a gestire i criteri e i profili per gli utenti/dispositivi in Ambito (gruppi).
+3. Scegliere **Membri (gruppi)**  > **Aggiungi** > scegliere i gruppi desiderati per questa assegnazione > **selezionare** > **OK**. Gli utenti in questo gruppo saranno autorizzati a gestire i criteri e i profili per gli utenti/dispositivi in Ambito (gruppi).
 
     ![Screenshot della selezione dei gruppi membri.](./media/scope-tags/select-member-groups.png)
 
-4. Se si vogliono gestire gli utenti o i dispositivi in un set specifico di gruppi, scegliere **Ambito (gruppi)** > **Gruppi selezionati** > **Selezionare i gruppi da includere**> **scegliere i gruppi** > **OK**. I profili e i criteri per tutti gli utenti/dispositivi in questo gruppo possono essere gestiti dagli amministratori in Membri (gruppi).
+4. Se si vogliono gestire gli utenti o i dispositivi in un set specifico di gruppi, scegliere **Ambito (gruppi)**  > **Gruppi selezionati** > **Selezionare i gruppi da includere**> **scegliere i gruppi** > **OK**. I profili e i criteri per tutti gli utenti/dispositivi in questo gruppo possono essere gestiti dagli amministratori in Membri (gruppi).
 
     ![Screenshot della selezione dei gruppi di ambito.](./media/scope-tags/select-scope-groups.png)
 
@@ -64,7 +66,7 @@ Ad esempio, si supponga che a un amministratore della filiale di Milano venga as
 
     ![Screenshot di altre opzioni per la selezione di gruppi di ambito.](./media/scope-tags/scope-group-other-options.png)
     
-5. Scegliere **Ambito (tag)** > **Aggiungi** > scegliere i tag che si vuole aggiungere a questo ruolo >**selezionare** > **OK**. Gli utenti in Membri (gruppi) avranno accesso ai criteri e ai profili con lo stesso tag di ambito.
+5. Scegliere **Ambito (tag)**  > **Aggiungi** > scegliere i tag che si vuole aggiungere a questo ruolo >**selezionare** > **OK**. Gli utenti in Membri (gruppi) avranno accesso ai criteri e ai profili con lo stesso tag di ambito.
 
     ![Screenshot della selezione dei tag di ambito.](./media/scope-tags/select-scope-tags.png)
 
@@ -75,7 +77,7 @@ Ad esempio, si supponga che a un amministratore della filiale di Milano venga as
 
     ![Screenshot della selezione di un profilo.](./media/scope-tags/choose-profile.png)
 
-2. Scegliere **Proprietà** > **Ambito (tag)** > **Aggiungi**.
+2. Scegliere **Proprietà** > **Ambito (tag)**  > **Aggiungi**.
 
     ![Screenshot dell'aggiunta di tag di ambito.](./media/scope-tags/add-scope-tags.png)
 

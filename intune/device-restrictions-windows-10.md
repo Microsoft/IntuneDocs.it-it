@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234981"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403082"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -57,7 +57,16 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
 - **Installa i dati dell'app nel volume di sistema**: **Blocca** impedisce alle app di archiviare dati nel volume di sistema del dispositivo. L'impostazione **Non configurata** (predefinita) consente alle app di archiviare i dati nel volume del disco di sistema.
 - **Installa le app nell'unità di sistema**: **Blocca** impedisce l'installazione delle app nell'unità di sistema nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'installazione delle app nell'unità di sistema.
 - **Game DVR** (solo desktop): **Blocca** disabilita la registrazione e la trasmissione di giochi di Windows. L'impostazione **Non configurata** (predefinita) consente la registrazione e la trasmissione dei giochi.
-- **App solo dallo Store**: **Rendi obbligatorio** impone agli utenti finali di installare le app solo da Windows App Store. L'impostazione **Non configurata** consente agli utenti finali di installare app da posizioni diverse da Windows App Store.
+- **Le app dallo store solo**: questa impostazione determina l'esperienza utente quando gli utenti installano le app da posizioni diverse di Microsoft Store. Le opzioni disponibili sono:
+
+  - **Non configurato** (impostazione predefinita): consente agli utenti di installare le app da posizioni diverse di Microsoft Store, incluse le app definite in altre impostazioni dei criteri.  
+  - **Ovunque**: consente di disattivare le raccomandazioni di app, e consente agli utenti di installare le app da qualsiasi posizione.  
+  - **Solo Store**: impone agli utenti finali di installano solo applicazioni dall'interno di Microsoft Store.
+  - **Raccomandazioni**: quando si installa un'app dal web che è disponibile nella finestra di Microsoft Store, gli utenti visualizzano un messaggio in cui si consiglia di scaricarlo dall'archivio.  
+  - **Preferisce Store**: avvisa gli utenti quando installano le app da posizioni diverse di Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Imponi il riavvio delle app in caso di errore di aggiornamento**: quando un'app è in uso, potrebbe non venire aggiornata. Usare questa impostazione per forzare il riavvio di un'app. **Non configurata** (impostazione predefinita) non forza il riavvio delle app. **Rendi obbligatorio** consente agli amministratori di forzare il riavvio in base a una data e un'ora specifiche o a una pianificazione ricorrente. Quando l'opzione è impostata su **Rendi obbligatorio**, immettere anche:
 
   - **Data/Ora di inizio**: scegliere una data e un'ora specifiche per il riavvio delle app.
