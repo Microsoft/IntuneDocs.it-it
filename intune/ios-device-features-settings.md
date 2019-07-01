@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047172"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413817"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Impostazioni dei dispositivi iOS per usare le funzionalità iOS comuni in Intune
 
@@ -195,7 +195,7 @@ Questa funzionalità supporta i dispositivi con supervisione che eseguono iOS 9.
   Per aggiungere informazioni specifiche del dispositivo in questi campi è anche possibile usare token di dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `Serial Number: {{serialnumber}}`. Nella schermata di blocco il testo è simile a `Serial Number 123456789ABC`. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceName` o qualsiasi altro valore specifico del dispositivo.
 
   > [!NOTE]
-  > Le variabili non vengono convalidate nell'interfaccia utente. Di conseguenza possono essere visualizzati dei profili salvati con input non corretto. Se ad esempio si immette `{{Devicename}}` invece di `{{devicename}}`, viene visualizzata la stringa letterale anziché il nome univoco del dispositivo.
+  > Le variabili non vengono convalidate nell'interfaccia utente e sono tra maiuscole e minuscole. Di conseguenza possono essere visualizzati dei profili salvati con input non corretto. Ad esempio, se si immette `{{DeviceID}}` invece di `{{deviceid}}`, viene visualizzata la stringa letterale anziché l'ID univoco del dispositivo. Assicurarsi di immettere le informazioni corrette.
 
 Selezionare **OK** per salvare le modifiche.
 

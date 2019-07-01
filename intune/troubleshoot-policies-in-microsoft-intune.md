@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402668"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298391"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Risolvere problemi relativi a criteri e profili in Intune
 
 Microsoft Intune include alcune funzioni predefinite per la risoluzione dei problemi. Usare queste funzioni per risolvere i problemi di criteri di conformità e di profili di configurazione nell'ambiente.
 
 Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e descrive alcuni problemi che possono verificarsi.
+
+## <a name="check-tenant-status"></a>Controllare lo stato di tenant
+Verificare i [dello stato del Tenant](tenant-status.md) e confermare la sottoscrizione è attiva. È anche possibile visualizzare i dettagli per eventi imprevisti attivi e gli avvisi che potrebbero influire sulla distribuzione dei criteri o il profilo.
 
 ## <a name="use-built-in-troubleshooting"></a>Usare la risoluzione dei problemi predefinita
 
@@ -113,6 +116,13 @@ Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e desc
 > [!NOTE]
 > Quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene applicato il criterio più restrittivo.
 
+## <a name="policy-troubleshooting-resources"></a>Risorse per la risoluzione dei problemi relativi ai criteri
+
+- [Risoluzione dei problemi di iOS o Android criteri non applicati ai dispositivi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (si apre un altro sito di Microsoft)
+- [Risoluzione degli errori dei criteri di Intune di Windows 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (si apre un blog)
+- [Risolvere i problemi di impostazioni personalizzate di CSP per Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (si apre un altro sito di Microsoft)
+- [Criteri di gruppo di Windows 10 e MDM di Intune criteri](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (si apre un altro sito di Microsoft)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Avviso: Il salvataggio delle regole di accesso in Exchange non è riuscito
 
 **Problema**: viene visualizzato l'avviso **Il salvataggio delle regole di accesso in Exchange non è riuscito**  nella console di amministrazione.
@@ -125,11 +135,13 @@ L'articolo [Risolvere i problemi di Intune Exchange Connector locale](troublesho
 
 I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo che i criteri sono stati configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 e poi si prova a ridurlo a 4. Vengono applicati al dispositivo i criteri più restrittivi.
 
+I dispositivi Windows 10 non possono rimuovere i criteri di sicurezza quando si annulla l'assegnazione di criteri (arrestare la distribuzione). Potrebbe essere necessario lasciare i criteri assegnati e quindi modificare le impostazioni di sicurezza ai valori predefiniti.
+
 A seconda della piattaforma del dispositivo, se si vogliono modificare i criteri in un valore meno sicuro, può essere necessario reimpostare i criteri di sicurezza.
 
-Ad esempio, in Windows, sul desktop scorrere verso destra per aprire la barra **Accessi**. Scegliere **Impostazioni** > **Pannello di controllo** > **Account utente**. A sinistra, selezionare il collegamento **Reimposta criteri di sicurezza** e scegliere **Reimposta criteri**.
+Ad esempio, in Windows 8.1, sul desktop scorrere verso destra per aprire la barra **Accessi**. Scegliere **Impostazioni** > **Pannello di controllo** > **Account utente**. A sinistra, selezionare il collegamento **Reimposta criteri di sicurezza** e scegliere **Reimposta criteri**.
 
-È possibile che altri dispositivi MDM, ad esempio dispositivi Android, iOS e Windows Phone 8.1, debbano essere ritirati e registrati nuovamente per applicare criteri meno restrittivi.
+È possibile che altre piattaforme, ad esempio dispositivi Android, iOS e Windows Phone 8.1, debbano essere ritirati e registrati nuovamente per applicare criteri meno restrittivi.
 
 [Risolvere i problemi di registrazione dei dispositivi in Intune](troubleshoot-device-enrollment-in-intune.md) può rivelarsi una risorsa utile.
 
@@ -160,6 +172,7 @@ Per i PC Windows gestiti con il client software di Intune, gli errori dei criter
 Si verifica se l'ora nel sistema locale è fuori sincronia di 5 minuti o più. Se l'ora nel computer locale non è sincronizzata, le transazioni sicure hanno esito negativo perché i timestamp non sono validi.
 
 Per risolvere il problema, impostare l'ora di sistema locale il più vicino possibile all'ora di Internet. Oppure, impostare l'ora di sistema locale sull'ora dei controller di dominio della rete.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

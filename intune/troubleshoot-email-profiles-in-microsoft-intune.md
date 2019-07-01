@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402716"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197501"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di posta elettronica in Microsoft Intune
 
 Esaminare alcuni problemi comuni relativi ai profili di posta elettronica e le relative procedure di risoluzione.
 
+## <a name="what-you-need-to-know"></a>Informazioni importanti
+
+- Profili di posta elettronica vengono distribuiti per l'utente che ha registrato il dispositivo. Per configurare il profilo di posta elettronica, Intune Usa le proprietà di Azure Active Directory (AD) nel profilo di posta elettronica dell'utente durante la registrazione. [Aggiungere impostazioni di posta elettronica ai dispositivi](email-settings-configure.md) potrebbe essere un'ottima risorsa.
+- Dopo la migrazione dalla soluzione ibrida di Configuration Manager a Intune autonomo, il profilo di posta elettronica dalla soluzione ibrida di Configuration Manager rimane sul dispositivo per 7 giorni. Si tratta di un comportamento previsto. Se è necessario rimosso prima il profilo di posta elettronica, contattare [supporto tecnico di Intune](get-support.md).
+- Per Android Enterprise, distribuire Gmail o Nine for Work usando la Store di Play Google gestito. [Aggiungere App Google Play gestito](apps-add-android-for-work.md) Elenca i passaggi.
+- Microsoft Outlook per iOS e Android non supporta i profili di posta elettronica. In alternativa, distribuire i criteri di configurazione. Per altre informazioni, vedere [impostazione di configurazione di Outlook](app-configuration-policies-outlook.md).
+- Profili di posta elettronica destinati ai gruppi di dispositivi (non i gruppi di utenti) potrebbero non essere recapitati al dispositivo. Quando il dispositivo dispone di un utente primario, quindi destinate a dispositivi dovrebbe funzionare. Se il profilo di posta elettronica sono inclusi i certificati utente, assicurarsi di gruppi di utenti di destinazione.
+- Gli utenti possono ripetutamente richiesto di immettere la password per il profilo di posta elettronica. In questo scenario, verificare che tutti i certificati a cui fa riferimento il profilo di posta elettronica. Se uno dei certificati non è destinato a un utente, quindi Ritenta Intune per distribuire il profilo di posta elettronica.
+
 ## <a name="device-already-has-an-email-profile-installed"></a>Nel dispositivo è già installato un profilo di posta elettronica
 
-Se un utente crea un profilo di posta elettronica prima di registrarsi in Intune, il profilo di posta elettronica di Intune potrebbe non funzionare nel modo previsto:
+Se gli utenti creano un profilo di posta elettronica prima di registrarsi in Intune o Office 365 MDM, il profilo di posta elettronica distribuito da Intune potrebbe non funzionare come previsto:
 
 - **iOS**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Il profilo di posta elettronica creato dall'utente blocca la distribuzione del profilo creato da Intune. Si tratta di un problema comune, poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. L'app Portale aziendale indica che l'utente non è conforme e potrebbe richiedergli di rimuovere il profilo di posta elettronica.
 
@@ -50,19 +59,16 @@ Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di ori
 
 ## <a name="unable-to-send-images-from--email-account"></a>Impossibile inviare immagini dall'account di posta elettronica
 
-Si applica a Intune nel portale di Azure classico.
-
 Gli utenti con account di posta elettronica configurati automaticamente non possono inviare immagini o foto dai propri dispositivi. Questo scenario può verificarsi se l'opzione **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** non è abilitata.
 
 ### <a name="intune-solution"></a>Soluzione Intune
 
-1. Aprire la console di amministrazione di Microsoft Intune, selezionare il carico di lavoro **Criteri** > **Criteri di configurazione**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selezionare **Configurazione del dispositivo** > **Profili**.
+3. Selezionare il profilo di posta elettronica > **delle proprietà** > **impostazioni**.
+4. Impostare il **consentire messaggi di posta elettronica dalle applicazioni di terze parti** se si imposta su **abilitare**.
 
-2. Selezionare il profilo di posta elettronica e scegliere **Modifica**.
-
-3. Selezionare **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti**.
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Configuration Manager integrato con la soluzione Intune
+### <a name="configuration-manager-hybrid"></a>Distribuzione ibrida di Configuration Manager
 
 1. Aprire la console di Configuration Manager > **Asset e conformità**.
 
