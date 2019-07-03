@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041857"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529748"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Report Registrazioni utente incomplete
 
@@ -35,9 +35,9 @@ Usando queste informazioni, è possibile aggiornare i documenti di onboarding pe
 
 Una registrazione incompleta si verifica quando un utente esegue una delle operazioni seguenti:
 
--   Sceglie in modo esplicito un'azione per interrompere la registrazione
--   Chiude il portale aziendale durante la registrazione
--   Impiega oltre 30 minuti per passare da una sezione della registrazione all'altra
+- Sceglie in modo esplicito un'azione per interrompere la registrazione
+- Chiude il portale aziendale durante la registrazione
+- Impiega oltre 30 minuti per passare da una sezione della registrazione all'altra
 
 Se un utente sceglie di arrestare e riavviare la registrazione più volte, queste azioni vengono conteggiate come più tentativi e più registrazioni incomplete. Se un utente attende 30 minuti tra schermate di registrazione diverse, questa azione viene considerata come più registrazioni incomplete.
 
@@ -53,18 +53,18 @@ I report visualizzano i dati delle ultime due settimane, ma è possibile filtrar
 
 Nella parte superiore del report è possibile vedere il numero e la percentuale di registrazioni incomplete rispetto al totale delle registrazioni.
 
--   Registrazioni avviate: numero di tentativi di registrazione.
--   Registrazioni incomplete: numero di tentativi di registrazione che non hanno restituito come risultato un dispositivo registrato e conforme.
--   Incomplete rate (Percentuale registrazioni incomplete): percentuale di tentativi di registrazione abbandonati (Registrazioni abbandonate/Registrazioni avviate).
+- Registrazioni avviate: numero di tentativi di registrazione.
+- Registrazioni incomplete: numero di tentativi di registrazione che non hanno restituito come risultato un dispositivo registrato e conforme.
+- Incomplete rate (Percentuale registrazioni incomplete): percentuale di tentativi di registrazione abbandonati (Registrazioni abbandonate/Registrazioni avviate).
 
 ### <a name="line-graph"></a>Grafico a linee
 
 Il grafico a linee visualizza le registrazioni incomplete giornaliere per ognuna delle quattro sezioni principali della registrazione:
 
--   Elenco di controllo per l'installazione
--   Schermate della piattaforma
--   Condizioni per l'utilizzo
--   Conformità/Attivazione
+- Elenco di controllo per l'installazione
+- Schermate della piattaforma
+- Condizioni per l'utilizzo
+- Conformità/Attivazione
 
 ### <a name="user-abandonment-actions"></a>Azioni di abbandono degli utenti
 

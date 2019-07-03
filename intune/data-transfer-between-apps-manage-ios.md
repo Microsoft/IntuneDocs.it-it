@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042795"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512147"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 
@@ -34,7 +34,7 @@ Per facilitare la protezione dei dati aziendali, limitare i trasferimenti di fil
 
 La funzionalità di **gestione Open In** per i dispositivi iOS consente i trasferimenti di file solo tra le app distribuite tramite il **canale MDM**. Impostare restrizioni per la *gestione Apri in* nelle impostazioni di configurazione e quindi distribuirle tramite la soluzione MDM.  Le restrizioni impostate vengono applicate quando l'utente installa l'app distribuita.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Usare la protezione delle app con app iOS
+## <a name="use-app-protection-with-ios-apps"></a>Usare la protezione delle app con app iOS
 Usare i criteri di protezione delle app con la funzionalità di **gestione Apri in** di iOS per proteggere i dati aziendali nei modi seguenti:
 
 -   **Dispositivi di proprietà dei dipendenti non gestiti da soluzioni MDM:** è possibile impostare i criteri di protezione delle app su **Consenti all'app di trasferire i dati ad altre app: App gestite da criteri**. Il comportamento *Apri in* di un'app gestita da criteri propone come opzioni per la condivisione solo altre app gestite da criteri. Se un utente tenta di inviare un file protetto da criteri come allegato da OneDrive nell'app di posta nativa, il file risulta illeggibile.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeddbf39093210e640125db3be6ddd6bcad7d59b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec60a618280caf6a5b7ef242c192cc64b5d839de
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044992"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511901"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>Integrare Sophos Mobile con Intune  
 
@@ -52,7 +52,7 @@ Il processo di autorizzazione dell'app Sophos Mobile è il seguente:
 2. Nella pagina **Aggiungi un connettore** scegliere **Sophos** dal menu a discesa. Selezionare quindi **Crea**.  
 3. Selezionare il collegamento *Apri la console dell'amministratore di Sophos*.  
 4. Accedere alla [console di amministrazione di Sophos](https://central.sophos.com/) con le credenziali di Sophos.  
-5. Passare a **Mobile** > **Settings (Impostazioni)** > **Setup (Configura)** > **Sophos setup (Configurazione di Sophos)**.  
+5. Passare a **Mobile** > **Settings (Impostazioni)**  > **Setup (Configura)**  > **Sophos setup (Configurazione di Sophos)** .  
 6. Nella pagina **Sophos setup** selezionare la scheda **Intune MTD**.  
    ![Configurazione di Sophos](./media/sophos-mtd-connector-integration/sophos-setup.png) 
  

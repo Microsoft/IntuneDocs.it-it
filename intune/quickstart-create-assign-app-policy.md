@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050345"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530767"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guida introduttiva: Creare e assegnare un criterio di protezione delle app
 
@@ -66,12 +66,12 @@ Dopo aver creato un criterio di protezione delle app in Intune, è possibile ass
 
 Usare la procedura seguente per assegnare il criterio di protezione delle app:
 
-1.  In [Intune](https://aka.ms/intuneportal) selezionare **Intune** > **App client** > **Criteri di protezione delle app**. 
-2.  Selezionare il criterio di protezione delle app creato in precedenza. In questa guida introduttiva il criterio è **Protezione del contenuto Windows 10**.
-3.  Selezionare **Assegnazioni**.
-4.  Fare clic su **Selezionare i gruppi da includere** nella scheda **Includi**.
-5.  Selezionare **Contoso Testers** (Tester Contoso) come gruppo da includere.
-6.  Fare clic su **Seleziona** > **Salva**. 
+1. In [Intune](https://aka.ms/intuneportal) selezionare **Intune** > **App client** > **Criteri di protezione delle app**. 
+2. Selezionare il criterio di protezione delle app creato in precedenza. In questa guida introduttiva il criterio è **Protezione del contenuto Windows 10**.
+3. Selezionare **Assegnazioni**.
+4. Fare clic su **Selezionare i gruppi da includere** nella scheda **Includi**.
+5. Selezionare **Contoso Testers** (Tester Contoso) come gruppo da includere.
+6. Fare clic su **Seleziona** > **Salva**. 
 
 Il criterio di protezione delle app è stato assegnato.
 
