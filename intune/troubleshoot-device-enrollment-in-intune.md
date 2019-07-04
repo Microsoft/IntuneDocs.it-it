@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040608"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046289"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Microsoft Intune
 
@@ -143,7 +143,7 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 - Hanno più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com).
 
 
-Un [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) interagisce con l'opzione <strong>SupportMultipleDomain</strong> per consentire al server AD FS di supportare questo scenario senza richiedere la presenza di altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+Un [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) interagisce con l'opzione <strong>SupportMultipleDomain</strong> per consentire al server AD FS di supportare questo scenario senza richiedere la presenza di altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemi di Android
@@ -241,7 +241,7 @@ Per risolvere il problema, importare i certificati nei certificati personali del
 3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
 4.  Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
 5.  Per ogni certificato padre, scegliere **Visualizza certificato**.
-6.  Scegliere **Dettagli** > **Copia su file...**.
+6.  Scegliere **Dettagli** > **Copia su file...** .
 7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
 8.  Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
 9.  Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.

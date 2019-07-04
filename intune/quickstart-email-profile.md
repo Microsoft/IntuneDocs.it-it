@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050296"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044288"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guida introduttiva: Creare un profilo di posta elettronica del dispositivo per iOS
 
-In questa guida introduttiva verrà illustrato come creare un profilo di posta elettronica per i dispositivi iOS. Questo profilo specifica le impostazioni necessarie per l'app di posta elettronica predefinita per consentire al dispositivo iOS di connettersi alla posta elettronica aziendale. I profili di posta elettronica del dispositivo facilitano l'omogeneità delle impostazioni tra i dispositivi e consentono agli utenti finali di accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. Per proteggere ulteriormente la posta elettronica, è possibile utilizzare un profilo di posta elettronica per determinare se i dispositivi sono conformi e quindi impostare l'accesso condizionale ai soli dispositivi conformi. Per altre informazioni sui profili di posta elettronica, vedere [Come configurare le impostazioni di posta elettronica in Microsoft Intune](email-settings-configure.md)
+In questa guida introduttiva verrà illustrato come creare un profilo di posta elettronica per i dispositivi iOS. Questo profilo specifica le impostazioni necessarie per l'app di posta elettronica predefinita per consentire al dispositivo iOS di connettersi alla posta elettronica aziendale. I profili di posta elettronica del dispositivo facilitano l'omogeneità delle impostazioni tra i dispositivi e consentono agli utenti finali di accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. Per proteggere ulteriormente la posta elettronica, è possibile usare un profilo di posta elettronica per determinare se i dispositivi sono conformi e quindi configurare l'accesso condizionale per consentire ai soli dispositivi conformi di accedere alla posta elettronica. Per altre informazioni sui profili di posta elettronica, vedere [Come configurare le impostazioni di posta elettronica in Microsoft Intune](email-settings-configure.md)
 
 Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ottenere un account di prova gratuito](free-trial-sign-up.md).
 
@@ -67,11 +67,11 @@ Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o c
 Se non si prevede di usare il profilo creato per esercitazioni o test aggiuntivi, è possibile eliminarlo ora.
 1. In Intune selezionare **Configurazione del dispositivo** e quindi **Profili**.
 2. Selezionare il profilo di test appena creato **Dispositivi iOS richiedono posta elettronica aziendale**.
-3. Selezionare i punti di sospensione (**...**) accanto al profilo, quindi fare clic su **Elimina**.
+3. Selezionare i punti di sospensione ( **...** ) accanto al profilo, quindi fare clic su **Elimina**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato creato un profilo di posta elettronica per i dispositivi iOS. Ora è possibile usare questo profilo per determinare se un dispositivo iOS è conforme ai criteri di conformità che contrassegnano come non conformi tutti i dispositivi iOS che non corrispondono al profilo. Per ulteriore protezione, è possibile creare un criterio di accesso condizionale che impedisce ai dispositivi iOS non conformi di accedere alla posta elettronica. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).
+In questa guida introduttiva è stato creato un profilo di posta elettronica per i dispositivi iOS. Ora è possibile usare questo profilo per determinare se un dispositivo iOS è conforme ai criteri di conformità che contrassegnano come non conformi tutti i dispositivi iOS che non corrispondono al profilo. Per un'ulteriore protezione, è possibile creare un criterio di accesso condizionale che impedisce ai dispositivi iOS non conformi di accedere alla posta elettronica. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
 > [Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti](tutorial-protect-email-on-enrolled-devices.md)

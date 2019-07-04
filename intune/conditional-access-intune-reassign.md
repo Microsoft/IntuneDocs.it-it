@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a197b057278ff2f32539169feccc91edbd752386
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048970"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045319"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
-Con il nuovo portale di Azure, l'accesso condizionale offre supporto per più criteri di applicazione insieme ad altre possibilità di personalizzazione. Se in precedenza sono stati creati criteri di accesso condizionale nel portale di Intune classico, è possibile eseguirne la migrazione al portale di Azure. 
+Con il nuovo portale di Azure, l'accesso condizionale offre supporto per più criteri per applicazione, insieme ad altre possibilità di personalizzazione. Se in precedenza sono stati creati criteri di accesso condizionale nel portale di Intune classico, è possibile eseguirne la migrazione al portale di Azure. 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -59,9 +59,9 @@ Quando si è pronti per passare al portale di Azure, seguire la procedura descri
 
 4.  Prendere nota delle impostazioni di accesso condizionale e farvi riferimento durante la creazione degli stessi criteri di accesso condizionale nel portale di Azure.
 
-### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Interazione dei criteri di accesso condizionale basati sui dispositivi e sull'app
+### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Interazione dei criteri di accesso condizionale basati sul dispositivo e basati sull'app
 
-Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amministratori di impostare regole condizionali basate su app, in modo che solo le app che supportano i criteri di protezione delle app di Intune possano accedere alle risorse aziendali. È possibile scegliere di sovrapporre questi criteri di accesso condizionale basati su app e i criteri di accesso condizionale basati su dispositivo. È possibile combinare i criteri condizionali basati su dispositivo e app (AND logico) oppure specificare uno o l'altro tipo di criteri (OR logico). Se i requisiti dei criteri di accesso condizionale prevedono di:
+Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amministratori di impostare regole condizionali basate su app, in modo che solo le app che supportano i criteri di protezione delle app di Intune possano accedere alle risorse aziendali. È possibile scegliere di sovrapporre questi criteri di accesso condizionale basati su app usando i criteri di accesso condizionale basati su dispositivo. È possibile combinare i criteri condizionali basati su dispositivo e app (AND logico) oppure specificare uno o l'altro tipo di criteri (OR logico). Se i requisiti dei criteri di accesso condizionale prevedono di:
 
 - Richiedere un dispositivo conforme **E** usare l'app approvata.
     - È necessario impostare i criteri di accesso condizionale tramite il [pannello Accesso condizionale di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e il [pannello Protezione app di Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
@@ -180,7 +180,7 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 12. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
-    ![Confronto dell'interfaccia utente dei criteri di accesso condizionale tra Intune e Azure](./media/reassign-ca-17.png)
+    ![Confronto dell'interfaccia utente di abilitazione dei criteri di accesso condizionale tra Intune e Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Se si configurano **Piattaforme del dispositivo**, quando si tenta di salvare i criteri verrà visualizzato l'errore "La configurazione dei criteri non è supportata". Exchange ActiveSync non riesce a identificare la piattaforma in uso dal dispositivo che esegue la connessione. Pertanto, la configurazione di piattaforme del dispositivo specifiche non è supportata per la creazione di criteri per i dispositivi Exchange ActiveSync.

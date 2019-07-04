@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751359"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044888"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gestire l'accesso Web usando Microsoft Edge con Microsoft Intune
 
@@ -134,7 +134,7 @@ Le impostazioni vengono assegnate a gruppi di utenti di Azure AD. Se tale utente
 
 Ecco alcuni esempi di scenari abilitati da AD Application Proxy: 
 
-- Un utente sta usando l'app per dispositivi mobili Outlook, protetta da Intune. L'utente fa clic su un collegamento a un sito Intranet in un messaggio di posta elettronica e Microsoft Edge riconosce che tale sito Intranet è stato esposto all'utente tramite Application Proxy. L'utente viene automaticamente indirizzato tramite Application Proxy, per autenticarsi con un'autenticazione a più fattori applicabile e con l'accesso condizionale prima di aprire il sito Intranet. Gli utenti possono così accedere ai siti interni anche da dispositivi mobili e il collegamento in Outlook funziona come previsto.
+- Un utente sta usando l'app per dispositivi mobili Outlook, protetta da Intune. L'utente fa clic su un collegamento a un sito Intranet in un messaggio di posta elettronica e Microsoft Edge riconosce che tale sito Intranet è stato esposto all'utente tramite Application Proxy. L'utente viene automaticamente indirizzato tramite Application Proxy, per autenticarsi con un'autenticazione a più fattori applicabile e con l'accesso condizionale prima di accedere al sito Intranet. Gli utenti possono così accedere ai siti interni anche da dispositivi mobili e il collegamento in Outlook funziona come previsto.
 - Un utente apre Microsoft Edge nel dispositivo iOS o Android. Se Microsoft Edge è protetto con Intune e Application Proxy è abilitato, l'utente può passare a un sito Intranet usando l'URL interno che è abituato a usare. Microsoft Edge riconosce che il sito Intranet è stato esposto all'utente tramite Application Proxy e l'utente viene indirizzato automaticamente tramite Application Proxy, per eseguire l'autenticazione prima dell'apertura del sito Intranet. 
 
 ### <a name="before-you-start"></a>Prima di iniziare

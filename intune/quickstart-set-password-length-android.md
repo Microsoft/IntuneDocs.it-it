@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dec78e0b1e323e99b6e70f71db982256aa98d18
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041234"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044205"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Guida introduttiva: Creare un criterio di conformità della password per i dispositivi Android
 
 In questa guida introduttiva si userà Microsoft Intune per richiedere agli utenti della forza lavoro che usano Android di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei dispositivi Android. 
 
-I criteri di conformità del dispositivo in Intune specificano le regole e le impostazioni che i dispositivi devono soddisfare per essere considerati conformi. È possibile usare criteri di conformità con accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità.
+I criteri di conformità del dispositivo in Intune specificano le regole e le impostazioni che i dispositivi devono soddisfare per essere considerati conformi. È possibile usare criteri di conformità con l'accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità.
 
 > [!IMPORTANT]
 > Oltre alle impostazioni della password, è consigliabile prendere in considerazione altre impostazioni di sicurezza del sistema per proteggere la forza lavoro. Per altre informazioni, vedere [Impostazioni di sicurezza del sistema](compliance-policy-create-android-for-work.md).

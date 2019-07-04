@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3f3d51cfbacfa8ef380531f91e058717cf51d089
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044583"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044139"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 Informazioni sull'uso dei criteri di conformità dei dispositivi con accesso condizionale per assicurarsi che i dispositivi iOS possano accedere alla posta elettronica di Exchange Online solo se vengono gestiti da Intune e con un'app di posta elettronica approvata. 
@@ -133,9 +133,9 @@ Con i criteri creati, qualsiasi dispositivo iOS che tenta di accedere alla posta
 Quando i criteri di test non sono più necessari, è possibile rimuoverli.
 1. Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune.
 2. Selezionare **Conformità del dispositivo** > **Criteri**.
-3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
+3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
 4. Selezionare **Accesso condizionale** > **Criteri**.
-5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per i criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
+5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
 
  ## <a name="next-steps"></a>Passaggi successivi 
 In questa esercitazione sono stati creati criteri che richiedono ai dispositivi iOS la registrazione in Intune e l'uso dell'app Outlook per accedere alla posta elettronica di Exchange Online. Per altre informazioni sull'uso di Intune con l'accesso condizionale per proteggere altri servizi e app, inclusi i client di Exchange ActiveSync per Office 365 Exchange Online, vedere [Configurare l'accesso condizionale](conditional-access.md).

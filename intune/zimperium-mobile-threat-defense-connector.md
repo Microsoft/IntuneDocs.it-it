@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b05e9e5b3933e9fbd8ca3f1f03ffd93d2522893e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046827"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046111"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
-È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Zimperium, una soluzione MTD (Mobile Threat Defense) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Zimperium.
+È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Zimperium, una soluzione Mobile Threat Defense (MTD) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Zimperium.
 
 È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Zimperium e abilitati usando i criteri di conformità dei dispositivi di Intune. I criteri di valutazione dei rischi possono consentire o bloccare l'accesso alle risorse aziendali dai dispositivi non conformi in base alle minacce rilevate.
 

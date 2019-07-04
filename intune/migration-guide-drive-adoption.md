@@ -16,18 +16,18 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050466"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044595"
 ---
-# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promuovere l'uso da parte di utenti finali con accesso condizionale in Microsoft Intune
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promuovere l'uso da parte degli utenti finali con l'accesso condizionale in Microsoft Intune
 
 Abilitare le funzionalità di accesso condizionale con Intune, ad esempio il blocco della posta elettronica per i dispositivi non registrati, può essere utile ai fini della registrazione e della conformità, ma non è obbligatorio per l'esito positivo di una migrazione. Il successo dipende dagli obiettivi e dai requisiti di sicurezza per l'adozione.
 
-## <a name="migration-campaign-with-conditional-access"></a>Campagna di migrazione con accesso condizionale
+## <a name="migration-campaign-with-conditional-access"></a>Campagna di migrazione con l'accesso condizionale
 
 Ecco un approccio tipico per ottimizzare una campagna di migrazione con accesso condizionale:
 

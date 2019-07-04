@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047706"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045687"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurare Intune Exchange Connector locale in Microsoft Intune
 Le informazioni di questo articolo consentono di installare e quindi monitorare il connettore locale di Exchange Active Sync per Intune.  È possibile usare Intune Exchange Connector locale con i [criteri di accesso condizionale per consentire o bloccare l'accesso alle cassette postali locali di Exchange](conditional-access-exchange-create.md). 
@@ -184,9 +184,9 @@ A partire dalla versione 1710 di Intune, è possibile usare [Operations Manager 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forzare manualmente una sincronizzazione rapida o una sincronizzazione completa
 Exchange Connector locale sincronizza automaticamente EAS e i record dei dispositivi Intune a intervalli regolari. Se viene modificato lo stato di conformità di un dispositivo, il processo di sincronizzazione automatica aggiorna periodicamente i record, in modo che l'accesso al dispositivo possa essere bloccato o consentito.
 
-   - La **sincronizzazione rapida** si verifica a intervalli regolari più volte al giorno. Una sincronizzazione rapida recupera le informazioni sul dispositivo relative a utenti con licenza di Intune e destinazione di accesso condizionale Exchange locale che sono cambiate dall'ultima sincronizzazione.
+   - La **sincronizzazione rapida** si verifica a intervalli regolari più volte al giorno. Una sincronizzazione rapida recupera le informazioni sul dispositivo relative a utenti con licenza di Intune e configurati con l'accesso condizionale a Exchange locale che sono cambiate dall'ultima sincronizzazione.
 
-   - Per impostazione predefinita la **sincronizzazione completa** viene eseguita una volta al giorno. Una sincronizzazione completa recupera le informazioni sul dispositivo relative a tutti gli utenti con licenza di Intune e destinazione di accesso condizionale Exchange locale. Una sincronizzazione completa recupera anche informazioni sul server Exchange e verifica che la configurazione specificata da Intune nel portale di Azure sia aggiornata nel server Exchange. 
+   - Per impostazione predefinita la **sincronizzazione completa** viene eseguita una volta al giorno. Una sincronizzazione completa recupera le informazioni sul dispositivo relative a tutti gli utenti con licenza di Intune e configurati con l'accesso condizionale a Exchange locale. Una sincronizzazione completa recupera anche informazioni sul server Exchange e verifica che la configurazione specificata da Intune nel portale di Azure sia aggiornata nel server Exchange. 
 
 
 È possibile forzare un connettore a eseguire una sincronizzazione usando le opzioni **Sincronizzazione rapida** o **Sincronizzazione completa** nel dashboard di Intune seguendo questa procedura:

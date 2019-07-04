@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045857"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044244"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guida introduttiva: Inviare notifiche a dispositivi non conformi
 
@@ -35,7 +35,7 @@ Una delle azioni che è possibile eseguire in caso di dispositivi non conformi c
 Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ottenere un account di prova gratuito](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
-- Quando si usano i criteri di conformità dei dispositivi per bloccare i dispositivi delle risorse aziendali è necessario impostare l'accesso condizionale di Azure AD. Se sono state eseguite le procedure descritte nella guida introduttiva [Creare criteri di conformità dei dispositivi](quickstart-set-password-length-android.md) si sta usando Azure Active Directory. Per altre informazioni su Azure AD, vedere [Che cos'è l'accesso condizionale in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [Quali sono i modi comuni per usare l'accesso condizionale con Intune?](conditional-access-intune-common-ways-use.md).
+- Per usare i criteri di conformità per impedire ai dispositivi di usare le risorse aziendali, è necessario aver configurato l'accesso condizionale di Azure AD. Se sono state eseguite le procedure descritte nella guida introduttiva [Creare criteri di conformità dei dispositivi](quickstart-set-password-length-android.md) si sta usando Azure Active Directory. Per altre informazioni su Azure AD, vedere [Che cos'è l'accesso condizionale in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [Quali sono i modi comuni per usare l'accesso condizionale con Intune?](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 

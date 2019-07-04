@@ -16,18 +16,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043281"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045109"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
-Con Intune, è possibile migliorare l'accesso condizionale in Azure Active Directory aggiungendo i criteri di conformità dei dispositivi mobili ai controlli di accesso. Dopo aver creato in Intune i criteri che definiscono i requisiti di conformità dei dispositivi, è possibile usare lo stato di conformità di un dispositivo per consentire o bloccare l'accesso ad app e servizi. A tale scopo è possibile creare criteri di accesso condizionale con l'impostazione **Richiedi che i dispositivi siano contrassegnati come conformi**.  
+Con Intune è possibile migliorare l'accesso condizionale in Azure Active Directory aggiungendo i criteri di conformità dei dispositivi mobili ai controlli di accesso. Dopo aver creato in Intune i criteri che definiscono i requisiti di conformità dei dispositivi, è possibile usare lo stato di conformità di un dispositivo per consentire o bloccare l'accesso ad app e servizi. A tale scopo è possibile creare criteri di accesso condizionale con l'impostazione **Richiedi che i dispositivi siano contrassegnati come conformi**.  
 
-I criteri di accesso condizionale specificano le app o i servizi da proteggere, le condizioni di accessibilità alle app o ai servizi e gli utenti a cui si applicano i criteri. L'accesso condizionale è una funzionalità di Azure AD Premium che è possibile configurare in Azure Active Directory, ma questi stessi criteri possono essere configurati dal portale di Intune. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
+I criteri di accesso condizionale specificano le app o i servizi da proteggere, le condizioni di accessibilità alle app o ai servizi e gli utenti a cui si applicano i criteri. L'accesso condizionale è una funzionalità Premium di Azure AD che è possibile configurare in Azure Active Directory, ma questi stessi criteri possono essere configurati dal portale di Intune. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  
 
 > [!IMPORTANT]
 > Prima dell'accesso condizionale, è necessario configurare i criteri di conformità dei dispositivi di Intune per valutare i dispositivi in base alla capacità di soddisfare requisiti specifici. Vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).
@@ -80,7 +80,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
 10. In **Controlli di accesso** selezionare **Concedi**. Specificare cosa accade in base alle condizioni configurate.  È possibile selezionare una delle opzioni seguenti:
     - **Blocca accesso**: agli utenti specificati in questi criteri verrà negato l'accesso alle app in base alle condizioni specificate.
     - **Concedi accesso**: agli utenti specificati in questi criteri verrà concesso l'accesso, ma è possibile richiedere una delle azioni seguenti:
-      - **Richiedi autenticazione a più fattori **: l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
+      - **Richiedi autenticazione a più fattori** : l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
       - **Richiedi che i dispositivi siano contrassegnati come conformi**: il dispositivo deve essere conforme a Intune. Se il dispositivo non è conforme, l'utente avrà la possibilità di registrare il dispositivo in Intune. 
       - **Richiedi dispositivo aggiunto ad Azure AD ibrido**: i dispositivi devono essere aggiunti ad Azure AD ibrido.
       - **Richiedi app client approvata**: il dispositivo deve usare app client approvate. 

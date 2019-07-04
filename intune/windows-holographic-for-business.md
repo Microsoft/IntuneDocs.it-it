@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050162"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045983"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare diverse funzionalità di gestione dei dispositivi nei dispositivi Windows Holographic e HoloLens con Intune
 
@@ -33,11 +33,11 @@ Per usare i dispositivi Windows Holographic con Intune, creare un profilo di agg
 
 Azure Active Directory (AD) è una risorsa eccezionale per la gestione e il controllo dei dispositivi che eseguono Windows Holographic for Business. Con Intune e Azure AD è possibile: 
 
-- **[Aggiungere dispositivi ad Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: in Azure Active Directory (AD) è possibile aggiungere i dispositivi Windows 10 di proprietà aziendale, inclusi quelli che eseguono Windows Holographic for Business. Questa funzionalità consente ad Azure AD di controllare il dispositivo, verificando che gli utenti accedano alle risorse aziendali da dispositivi che soddisfano gli standard di sicurezza e conformità in vigore.
+- **[Aggiungere dispositivi ad Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : in Azure Active Directory (AD) è possibile aggiungere i dispositivi Windows 10 di proprietà aziendale, inclusi quelli che eseguono Windows Holographic for Business. Questa funzionalità consente ad Azure AD di controllare il dispositivo, verificando che gli utenti accedano alle risorse aziendali da dispositivi che soddisfano gli standard di sicurezza e conformità in vigore.
 
   Per altri dettagli, vedere [Gestione dei dispositivi in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview).
 
-- **[Registrazione in blocco per dispositivi Windows](windows-bulk-enroll.md)**: è possibile aggiungere un numero elevato di nuovi dispositivi Windows ad Azure Active Directory (AD) e Intune. Questa funzionalità, detta registrazione in blocco, usa pacchetti di provisioning. Questi pacchetti aggiungono i dispositivi che eseguono Windows Holographic for Business al tenant Azure AD e li registrano in Intune.
+- **[Registrazione in blocco per dispositivi Windows](windows-bulk-enroll.md)** : è possibile aggiungere un numero elevato di nuovi dispositivi Windows ad Azure Active Directory (AD) e Intune. Questa funzionalità, detta registrazione in blocco, usa pacchetti di provisioning. Questi pacchetti aggiungono i dispositivi che eseguono Windows Holographic for Business al tenant Azure AD e li registrano in Intune.
 
 ## <a name="company-portal"></a>Portale aziendale
 **[Configurare l'app Portale aziendale](company-portal-app.md)**
@@ -54,9 +54,9 @@ Se si usa l'app Portale aziendale è possibile anche eseguire una delle operazio
 ## <a name="compliance-policy"></a>Criteri di conformità
 **[Creare criteri di conformità dei dispositivi](compliance-policy-create-windows.md)**
 
-I criteri di conformità sono regole e impostazioni che i dispositivi devono soddisfare per adeguarsi ai criteri di conformità. Usare questi criteri con accesso condizionale per bloccare l'accesso alle risorse aziendali per i dispositivi che risultino non conformi. In Intune creare criteri di conformità per consentire o bloccare l'accesso per i dispositivi che eseguono Windows Holographic for Business. È possibile ad esempio creare un criterio che richiede l'abilitazione di Bitlocker.
+I criteri di conformità sono regole e impostazioni che i dispositivi devono soddisfare per adeguarsi ai criteri di conformità. Usare questi criteri con l'accesso condizionale per bloccare l'accesso alle risorse aziendali per i dispositivi che risultino non conformi. In Intune creare criteri di conformità per consentire o bloccare l'accesso per i dispositivi che eseguono Windows Holographic for Business. È possibile ad esempio creare un criterio che richiede l'abilitazione di Bitlocker.
 
-Vedere anche **[Introduzione ai criteri di conformità](device-compliance-get-started.md)**.
+Vedere anche **[Introduzione ai criteri di conformità](device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Distribuire e gestire le app
 **[Aggiungere le app a Intune](apps-add.md)**
@@ -85,13 +85,13 @@ In Intune sono presenti alcune azioni predefinite che consentono agli amministra
 
 Quando si usano dispositivi che eseguono Windows Holographic for Business, è possibile eseguire le azioni seguenti: 
 
-- **[Cancellare](devices-wipe.md#wipe)**: l'azione **Cancella** rimuove il dispositivo da Intune e ne ripristina le impostazioni predefinite di fabbrica. Usare questa azione prima di consegnare il dispositivo a un nuovo utente o quando il dispositivo viene smarrito o rubato.
+- **[Cancellare](devices-wipe.md#wipe)** : l'azione **Cancella** rimuove il dispositivo da Intune e ne ripristina le impostazioni predefinite di fabbrica. Usare questa azione prima di consegnare il dispositivo a un nuovo utente o quando il dispositivo viene smarrito o rubato.
 
-- **[Disattivare](devices-wipe.md#retire)**: l'azione **Disattiva** rimuove il dispositivo da Intune. Rimuove anche dati, impostazioni e profili di posta elettronica delle app assegnati da Intune. I dati personali dell'utente rimangono nel dispositivo.
+- **[Disattivare](devices-wipe.md#retire)** : l'azione **Disattiva** rimuove il dispositivo da Intune. Rimuove anche dati, impostazioni e profili di posta elettronica delle app assegnati da Intune. I dati personali dell'utente rimangono nel dispositivo.
 
-- **[Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti](device-sync.md)**: l'azione **Sincronizza** forza il dispositivo a contattare immediatamente Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente eventuali azioni o criteri in sospeso assegnati. Questa funzionalità consente di convalidare e risolvere i problemi dei criteri assegnati, senza attendere la successiva archiviazione pianificata.
+- **[Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti](device-sync.md)** : l'azione **Sincronizza** forza il dispositivo a contattare immediatamente Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente eventuali azioni o criteri in sospeso assegnati. Questa funzionalità consente di convalidare e risolvere i problemi dei criteri assegnati, senza attendere la successiva archiviazione pianificata.
 
-**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md) ** è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
+**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md)**  è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
 
 ## <a name="device-categories-and-groups"></a>Categorie e gruppi di dispositivi
 **[Raggruppare i dispositivi in categorie](device-group-mapping.md)**

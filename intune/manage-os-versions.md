@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041666"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044913"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gestire le versioni del sistema operativo con Intune
 Sulle piattaforme moderne di dispositivi mobili e desktop, i principali aggiornamenti, le patch e le nuove versioni vengono rilasciati con una certa rapidità. In Windows è possibile controllare la gestione completa degli aggiornamenti e delle patch, mentre altre piattaforme quali iOS e Android richiedono la partecipazione degli utenti finali al processo.  Le funzionalità di Microsoft Intune consentono di strutturare la gestione delle versioni del sistema operativo in piattaforme diverse.
@@ -81,7 +81,7 @@ Per informazioni dettagliate, vedere [Come creare e assegnare criteri di protezi
   - È possibile eseguire un report di conformità per identificare gli utenti non conformi. 
 - **Passaggio 3a**: Usare i criteri di protezione delle app di Intune per bloccare gli utenti quando un'applicazione viene aperta se il dispositivo non esegue la versione 2 del sistema operativo.
 - **Passaggio 3b**: Usare criteri di conformità dei dispositivi per richiedere la versione 2 del sistema operativo come versione minima per la conformità del dispositivo.
-  - Questi criteri richiedono l'aggiornamento dei dispositivi per continuare ad accedere ai dati aziendali. I servizi protetti vengono bloccati quando vengono usati con accesso condizionale per i dispositivi. Le app abilitate con un criterio di protezione delle app vengono bloccate quando aperte o quando accedono ai dati aziendali.
+  - Questi criteri richiedono l'aggiornamento dei dispositivi per continuare ad accedere ai dati aziendali. I servizi protetti vengono bloccati quando vengono usati con l'accesso condizionale per i dispositivi. Le app abilitate con un criterio di protezione delle app vengono bloccate quando aperte o quando accedono ai dati aziendali.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Usare le risorse seguenti per gestire le versioni del sistema operativo all'interno dell'organizzazione: 

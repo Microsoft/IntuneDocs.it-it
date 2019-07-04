@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046134"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044395"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -403,7 +403,7 @@ Di seguito è riportato un esempio di come progettare i criteri di conformità:
 Per determinare le esigenze specifiche a livello di criteri di conformità, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
-L'accesso condizionale viene usato per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ad altre risorse aziendali. Intune interagisce con Enterprise Mobility + Security (EMS) per controllare l'accesso alle risorse aziendali. È necessario stabilire se è richiesto l'accesso condizionale e quali elementi devono essere protetti. Altre informazioni sull'[accesso condizionale](conditional-access.md).
+L'accesso condizionale viene usato per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ad altre risorse aziendali. Intune interagisce con Enterprise Mobility + Security (EMS) per controllare l'accesso alle risorse aziendali. Stabilire se l'accesso condizionale è necessario e quali elementi devono essere protetti. Altre informazioni sull'[accesso condizionale](conditional-access.md).
 
 Per l'accesso online, definire le piattaforme e i gruppi di utenti cui saranno destinati i criteri di accesso condizionale. Stabilire inoltre se è necessario installare o configurare il connettore di Intune per Exchange in locale: 
 

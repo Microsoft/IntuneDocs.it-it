@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819879"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045919"
 ---
-# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Applicare la conformità per Windows Defender ATP con l'accesso condizionale in Intune
 
 Windows Defender Advanced Threat Protection (ATP) e Microsoft Intune interagiscono tra loro per impedire violazioni della sicurezza e limitare l'impatto delle violazioni all'interno di un'organizzazione.
 
@@ -126,7 +126,7 @@ I criteri di conformità determinano un livello di rischio accettabile per un di
 5. Per distribuire i criteri ai gruppi, scegliere **Salva**. I dispositivi degli utenti a cui sono destinati i criteri vengono valutati per la conformità.
 
 ## <a name="create-a-conditional-access-policy"></a>Creare criteri di accesso condizionale
-Il criterio di accesso condizionale blocca l'accesso alle risorse *se* il dispositivo non è conforme. Se quindi un dispositivo supera il livello di minaccia, è possibile bloccare l'accesso alle risorse aziendali, come SharePoint o Exchange Online.  
+I criteri di accesso condizionale bloccano l'accesso alle risorse *se* il dispositivo non è conforme. Se quindi un dispositivo supera il livello di minaccia, è possibile bloccare l'accesso alle risorse aziendali, come SharePoint o Exchange Online.  
 
 > [!TIP]  
 > L'accesso condizionale è una tecnologia di Azure Active Directory (Azure AD). Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.  

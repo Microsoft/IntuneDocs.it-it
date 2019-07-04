@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044338"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043888"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usare i percorsi (isolamento di rete) in Intune
 
 Può essere necessario bloccare l'accesso a una rete aziendale, se un dispositivo lascia un percorso. Questa funzionalità è offerta dalla funzione **Percorsi** in Intune. 
 
-È possibile creare criteri di conformità basati sul percorso di rete. Questa funzionalità è nota anche con il nome di isolamento di rete. Questi criteri consentono di assicurarsi che, per essere ritenuti conformi, i dispositivi siano collegati a una rete aziendale. È possibile usare questi criteri insieme a criteri di accesso condizionale, in modo che i dispositivi abbiano accesso a risorse aziendali *solo* se sono connessi alla rete aziendale. Se il dispositivo non è connesso alla rete aziendale, il dispositivo non è più conforme e perde l'accesso alle risorse aziendali.
+È possibile creare criteri di conformità basati sul percorso di rete. Questa funzionalità è nota anche con il nome di isolamento di rete. Questi criteri consentono di assicurarsi che, per essere ritenuti conformi, i dispositivi siano collegati a una rete aziendale. È possibile usare questi criteri insieme a criteri di accesso condizionale, in modo che i dispositivi abbiano accesso alle risorse aziendali *solo* se sono connessi alla rete aziendale. Se il dispositivo non è connesso alla rete aziendale, il dispositivo non è più conforme e perde l'accesso alle risorse aziendali.
 
 Considerare lo scenario seguente:
 
