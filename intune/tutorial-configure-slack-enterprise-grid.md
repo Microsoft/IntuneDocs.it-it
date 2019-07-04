@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0829a2b3f9aff5f30a971d176591bf838510a606
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197614"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530699"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -54,44 +54,44 @@ Aggiungere l'app iOS Slack per EMM al tenant di Intune e creare un criterio di c
 
 ### <a name="add-slack-for-emm-to-intune"></a>Aggiungere Slack per EMM a Intune
 Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi Android.
-1.  In Intune selezionare **App client** > **App** > **Aggiungi**.
-2.  In Tipo di applicazione selezionare **App dello Store - iOS**.
-3.  Selezionare **Cerca in App Store**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
-4.  Selezionare **Informazioni sull'app** e configurare le eventuali modifiche necessarie.
-5.  Selezionare **Aggiungi**.
-6.  Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app appena aggiunta.
-7.  In Gestisci selezionare **Assegnazioni**.
-8.  Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
+1. In Intune selezionare **App client** > **App** > **Aggiungi**.
+2. In Tipo di applicazione selezionare **App dello Store - iOS**.
+3. Selezionare **Cerca in App Store**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
+4. Selezionare **Informazioni sull'app** e configurare le eventuali modifiche necessarie.
+5. Selezionare **Aggiungi**.
+6. Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app appena aggiunta.
+7. In Gestisci selezionare **Assegnazioni**.
+8. Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
     -  **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
     -  **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
-9.  Selezionare **Gruppi inclusi** e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
+9. Selezionare **Gruppi inclusi** e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
 10. Fare clic su **OK** e di nuovo su **OK**.
 11. Fare clic su **Save**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Aggiungere un criterio di configurazione dell'app per Slack per EMM
 Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi Android.
-1.  In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
-2.  In Nome immettere Test criteri di configurazione dell'app Slack.
-3.  In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
-4.  In Piattaforma selezionare **iOS**.
-5.  Selezionare **App associata**.
-6.  Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app.
-7.  Fare clic su **OK** e selezionare **Impostazioni di configurazione**. 
+1. In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
+2. In Nome immettere Test criteri di configurazione dell'app Slack.
+3. In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
+4. In Piattaforma selezionare **iOS**.
+5. Selezionare **App associata**.
+6. Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app.
+7. Fare clic su **OK** e selezionare **Impostazioni di configurazione**. 
     -   Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
-8.  Scegliere **OK** e quindi **Aggiungi**.
-9.  Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
+8. Scegliere **OK** e quindi **Aggiungi**.
+9. Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
 10. In Gestisci selezionare **Assegnazioni**.
 11. In Assegna a selezionare **Tutti gli utenti e tutti i dispositivi**.
 12. Fare clic su **Save**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Facoltativo) Creare un criterio di conformità per i dispositivi iOS
 Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verranno creati criteri di conformità per i dispositivi iOS. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack su dispositivi Android.
-1.  In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
-2.  In Nome immettere "Test criteri di conformità iOS".
-3.  In Descrizione immettere "Test criteri di conformità iOS".
-4.  In Piattaforma selezionare **iOS**.
-5.  Selezionare **Integrità del dispositivo**. Accanto a Dispositivi Jailbroken selezionare **Blocca** e quindi scegliere **OK**.
-6.  Selezionare **Sicurezza del sistema** e immettere le impostazioni della password. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
+1. In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
+2. In Nome immettere "Test criteri di conformità iOS".
+3. In Descrizione immettere "Test criteri di conformità iOS".
+4. In Piattaforma selezionare **iOS**.
+5. Selezionare **Integrità del dispositivo**. Accanto a Dispositivi Jailbroken selezionare **Blocca** e quindi scegliere **OK**.
+6. Selezionare **Sicurezza del sistema** e immettere le impostazioni della password. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
     -   Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
     -   Per Password semplici selezionare **Blocca**.
     -   Per Lunghezza minima password immettere 4.
@@ -99,60 +99,60 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
     -   Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **Immediatamente**.
     -   Per Scadenza password (giorni) immettere 41.
     -   Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
-7.  Fare clic su **OK** e quindi di nuovo su **OK**.
-8.  Scegliere **Crea**.
+7. Fare clic su **OK** e quindi di nuovo su **OK**.
+8. Scegliere **Crea**.
 
 ## <a name="set-up-slack-on-android-work-profile-devices"></a>Configurare Slack nei dispositivi del profilo di lavoro Android
 Aggiungere l'app Slack di Google Play gestita al tenant di Intune e creare un criterio di configurazione dell'app per consentire agli utenti Android dell'organizzazione di accedere a Slack con Intune come provider EMM.
 
 ### <a name="add-slack-to-intune"></a>Aggiungere Slack a Intune
 Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi iOS.
-1.  In Intune selezionare **App client** > **App** > **Aggiungi**.
-2.  In Tipo di app selezionare **App dello Store - Google Play gestito**.
-3.  Selezionare **Google Play gestito - Approva**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
-4.  Selezionare **Approva**.
-5.  Nella barra di ricerca immettere "Slack" e selezionare l'app appena aggiunta.
-6.  In Gestisci selezionare **Assegnazioni**.
-7.  Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
+1. In Intune selezionare **App client** > **App** > **Aggiungi**.
+2. In Tipo di app selezionare **App dello Store - Google Play gestito**.
+3. Selezionare **Google Play gestito - Approva**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
+4. Selezionare **Approva**.
+5. Nella barra di ricerca immettere "Slack" e selezionare l'app appena aggiunta.
+6. In Gestisci selezionare **Assegnazioni**.
+7. Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
     -   **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
     -   **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
-8.  Selezionare Gruppi inclusi e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
-9.  Fare clic su **OK** e di nuovo su **OK**.
+8. Selezionare Gruppi inclusi e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
+9. Fare clic su **OK** e di nuovo su **OK**.
 10. Fare clic su **Save**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Aggiungere un criterio di configurazione dell'app per Slack
 Aggiungere un criterio di configurazione dell'app per Slack. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi iOS.
-1.  In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
-2.  In Nome immettere Test criteri di configurazione dell'app Slack.
-3.  In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
-4.  In Piattaforma selezionare **Android**.
-5.  Selezionare **App associata**.
-6.  Nella barra di ricerca immettere "Slack" e selezionare l'app.
-7.  Scegliere **OK** e selezionare **Impostazioni di configurazione**.
+1. In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
+2. In Nome immettere Test criteri di configurazione dell'app Slack.
+3. In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
+4. In Piattaforma selezionare **Android**.
+5. Selezionare **App associata**.
+6. Nella barra di ricerca immettere "Slack" e selezionare l'app.
+7. Scegliere **OK** e selezionare **Impostazioni di configurazione**.
     -   Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
-8.  Fare clic su **OK** e quindi selezionare **Aggiungi**.
-9.  Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
+8. Fare clic su **OK** e quindi selezionare **Aggiungi**.
+9. Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
 10. In Gestisci selezionare **Assegnazioni**.
 11. In Assegna a selezionare **Tutti gli utenti e tutti i dispositivi**.
 12. Fare clic su **Save**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Facoltativo) Creare un criterio di conformità per i dispositivi Android
 Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verrà creato un criterio di conformità per i dispositivi Android. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack su dispositivi iOS.
-1.  In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
-2.  In Nome immettere "Test criteri di conformità Android".
-3.  In Descrizione immettere "Test criteri di conformità Android".
-4.  In Piattaforma selezionare **Android Enterprise**.
-5.  In Tipo di profilo selezionare **Profilo di lavoro**.
-6.  Selezionare **Integrità del dispositivo**. Accanto a Dispositivi rooted selezionare **Blocca** e quindi scegliere **OK**.
-7.  Selezionare **Sicurezza del sistema** e immettere le **Impostazioni della password**. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
+1. In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
+2. In Nome immettere "Test criteri di conformità Android".
+3. In Descrizione immettere "Test criteri di conformità Android".
+4. In Piattaforma selezionare **Android Enterprise**.
+5. In Tipo di profilo selezionare **Profilo di lavoro**.
+6. Selezionare **Integrità del dispositivo**. Accanto a Dispositivi rooted selezionare **Blocca** e quindi scegliere **OK**.
+7. Selezionare **Sicurezza del sistema** e immettere le **Impostazioni della password**. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
     -   Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
     -   In Tipo di password richiesto selezionare **Almeno numerico**.
     -   Per Lunghezza minima password immettere 4.
     -   Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **15 minuti**.
     -   Per Scadenza password (giorni) immettere 41.
     -   Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
-8.  Fare clic su **OK** e di nuovo su **OK**.
-9.  Scegliere **Crea**.
+8. Fare clic su **OK** e di nuovo su **OK**.
+9. Scegliere **Crea**.
 
 ## <a name="launch-slack"></a>Avviare Slack
 

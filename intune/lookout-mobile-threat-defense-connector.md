@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045693"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529805"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Connettore Lookout Mobile Endpoint Security con Intune
 
@@ -98,7 +98,7 @@ Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle, e impedi
 
 ## <a name="next-steps"></a>Passaggi successivi
 Ecco i passaggi principali per l'implementazione di questa soluzione:
-1.  [Configurare l'integrazione di Lookout](lookout-mtd-connector-integration.md)
-2.  [Abilitare Mobile Endpoint Security in Intune](mtd-connector-enable.md)
-3.  [Aggiungere e assegnare l'app Lookout for Work](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Configurare i criteri di conformità dei dispositivi di Lookout](mtd-device-compliance-policy-create.md)
+1. [Configurare l'integrazione di Lookout](lookout-mtd-connector-integration.md)
+2. [Abilitare Mobile Endpoint Security in Intune](mtd-connector-enable.md)
+3. [Aggiungere e assegnare l'app Lookout for Work](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [Configurare i criteri di conformità dei dispositivi di Lookout](mtd-device-compliance-policy-create.md)

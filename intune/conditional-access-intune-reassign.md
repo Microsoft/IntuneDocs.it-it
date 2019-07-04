@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045319"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530669"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -81,7 +81,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 3. Specificare un nome per il criterio.
 
 4. Scegliere **Utenti e gruppi** nella sezione **Assegnazioni** per assegnare i nuovi criteri di accesso condizionale.
-    
+
     ![Immagine che confronta l'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 

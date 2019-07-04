@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045791"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530660"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisioni in merito alla tecnologia per l'abilitazione di BYOD con Microsoft Enterprise Mobility + Security (EMS)
 
@@ -56,7 +56,7 @@ Come già accennato, con l'accesso condizionale è possibile richiedere a un ute
 
 * Utente che tenta l'accesso
 * Posizione attendibile o non attendibile
-*   Livello di rischio di accesso
+* Livello di rischio di accesso
 * Piattaforma per i dispositivi
 
 Molte organizzazioni spesso sono ancora preoccupate per rischi specifici.  La tabella seguente elenca le preoccupazioni più comuni e le soluzioni offerte da MDM e MAM.

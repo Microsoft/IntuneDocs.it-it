@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046276"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528676"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -74,7 +74,7 @@ Per questa esercitazione, si imposteranno criteri di protezione delle app di Int
 
     Selezionare **OK** per tornare al riquadro Impostazioni.  
 
-7.  Nel riquadro Impostazioni selezionare **OK** e quindi nel riquadro Crea criteri selezionare **Crea**.
+7. Nel riquadro Impostazioni selezionare **OK** e quindi nel riquadro Crea criteri selezionare **Crea**.
 
 La creazione dei criteri di protezione delle app per Outlook è completata. È quindi possibile configurare l'accesso condizionale per richiedere ai dispositivi di usare l'app Outlook.
 
@@ -188,5 +188,5 @@ Quando i criteri di test non sono più necessari, è possibile rimuoverli.
 4. Selezionare **Accesso condizionale** > **Criteri**.  
 5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per ciascuno dei criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.  
 
- ## <a name="next-steps"></a>Passaggi successivi  
+## <a name="next-steps"></a>Passaggi successivi  
 In questa esercitazione sono stati creati criteri di protezione delle app, per limitare le operazioni che gli utenti possono eseguire con l'app Outlook, e criteri di accesso condizionale, per richiedere l'uso dell'app Outlook e dell'autenticazione a più fattori per i client con autenticazione moderna. Per informazioni sull'uso di Intune con l'accesso condizionale per proteggere altri servizi e app, vedere [Configurare l'accesso condizionale](conditional-access.md).

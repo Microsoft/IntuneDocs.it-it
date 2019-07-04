@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046289"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528759"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Microsoft Intune
 
@@ -34,10 +34,10 @@ Questo articolo contiene suggerimenti per la risoluzione dei problemi di [regist
 
 Prima di iniziare la risoluzione dei problemi, verificare di aver configurato Intune correttamente per consentire la registrazione. Per informazioni su tali requisiti di configurazione, vedere:
 
--   [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](setup-steps.md)
--   [Configurare la gestione dei dispositivi iOS e Mac](ios-enroll.md)
--   [Configurare la gestione dei dispositivi Windows](windows-enroll.md)
--   [Configurare la gestione dei dispositivi Android](android-enroll.md) - Non sono necessari passaggi aggiuntivi
+- [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](setup-steps.md)
+- [Configurare la gestione dei dispositivi iOS e Mac](ios-enroll.md)
+- [Configurare la gestione dei dispositivi Windows](windows-enroll.md)
+- [Configurare la gestione dei dispositivi Android](android-enroll.md) - Non sono necessari passaggi aggiuntivi
 
 È anche possibile assicurarsi che la data e l'ora nel dispositivo dell'utente siano impostate correttamente:
 
@@ -236,15 +236,15 @@ L'errore di certificato si verifica perché i dispositivi Android richiedono cer
 
 Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
 
-1.  Nei server ADFS e proxy fare clic con il pulsante destro del mouse su **Start** > **Esegui** > **certlm.msc** per avviare la console Gestione certificati del computer locale.
-2.  Espandere **Personale** e scegliere **Certificati**.
-3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
-4.  Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
-5.  Per ogni certificato padre, scegliere **Visualizza certificato**.
-6.  Scegliere **Dettagli** > **Copia su file...** .
-7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
-8.  Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
-9.  Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.
+1. Nei server ADFS e proxy fare clic con il pulsante destro del mouse su **Start** > **Esegui** > **certlm.msc** per avviare la console Gestione certificati del computer locale.
+2. Espandere **Personale** e scegliere **Certificati**.
+3. Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
+4. Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5. Per ogni certificato padre, scegliere **Visualizza certificato**.
+6. Scegliere **Dettagli** > **Copia su file...** .
+7. Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
+8. Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
+9. Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.
 10. Riavviare i server ADFS.
 11. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
 

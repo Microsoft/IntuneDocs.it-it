@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045109"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530462"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
@@ -34,12 +34,12 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
 
 ## <a name="create-conditional-access-policy"></a>Creare criteri di accesso condizionale
 
-1.  Nel portale di Intune selezionare **Accesso condizionale** > **Criteri** > **Nuovi criteri**.
+1. Nel portale di Intune selezionare **Accesso condizionale** > **Criteri** > **Nuovi criteri**.
    
     ![Creare nuovi criteri di accesso condizionale](media/create-conditional-access-intune/create-ca.png)
  
-2.  In **Assegnazioni** selezionare **Utenti e gruppi**. 
-3.  Nella scheda **Includi** identificare gli utenti o i gruppi a cui dovranno essere applicati i criteri di accesso condizionale. Dopo aver scelto chi si vuole includere, è possibile usare la scheda **Escludi** per specificare eventuali utenti, ruoli o gruppi da escludere da questi criteri.  
+2. In **Assegnazioni** selezionare **Utenti e gruppi**. 
+3. Nella scheda **Includi** identificare gli utenti o i gruppi a cui dovranno essere applicati i criteri di accesso condizionale. Dopo aver scelto chi si vuole includere, è possibile usare la scheda **Escludi** per specificare eventuali utenti, ruoli o gruppi da escludere da questi criteri.  
     - **Tutti gli utenti**: selezionare questa opzione per applicare i criteri a tutti gli utenti e gruppi, inclusi gli utenti interni e guest.
   
     - **Seleziona utenti e gruppi**: selezionare questa opzione e specificare una o più delle opzioni seguenti:
@@ -52,9 +52,9 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
      
        > [!TIP]  
        > Testare i criteri su un gruppo di utenti più limitato per assicurarsi che funzionino come previsto.
-4.  Seleziona **Chiudi**.
-5.  In **Assegnazioni** selezionare **App cloud**. 
-6.  Nella scheda **Includi** identificare le app e i servizi da proteggere con questi criteri di accesso condizionale. È quindi possibile usare la scheda **Escludi** per escludere eventuali app o servizi da questi criteri.
+4. Seleziona **Chiudi**.
+5. In **Assegnazioni** selezionare **App cloud**. 
+6. Nella scheda **Includi** identificare le app e i servizi da proteggere con questi criteri di accesso condizionale. È quindi possibile usare la scheda **Escludi** per escludere eventuali app o servizi da questi criteri.
     - **Tutte le app cloud**: selezionare questa opzione per applicare i criteri a tutte le app.
       > [!IMPORTANT]  
       > In questo elenco è inclusa l'app di gestione di Microsoft Azure per l'accesso al portale di Azure. Usare la scheda **Escludi** in questo riquadro o nelle opzioni del riquadro **Utenti e gruppi** per assicurarsi di poter accedere al portale di Azure (o consentire agli utenti o gruppi designati di accedervi). 
@@ -63,8 +63,8 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
     
       ![Creare nuovi criteri di accesso condizionale](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  Seleziona **Chiudi**.
-8.  In **Assegnazioni** selezionare **Condizioni**.
+7. Seleziona **Chiudi**.
+8. In **Assegnazioni** selezionare **Condizioni**.
     - **Rischio di accesso**: scegliere Sì per usare il rilevamento del rischio di accesso di Azure AD Identity Protection con questi criteri e quindi scegliere i livelli di rischio di accesso a cui devono essere applicati i criteri.
     - **Piattaforme del dispositivo**: nella scheda **Includi** identificare le piattaforme per dispositivi a cui devono essere applicati i criteri di accesso condizionale. Usare la scheda **Escludi** per escludere eventuali piattaforme da questi criteri.
     - **Percorsi**: nella scheda **Includi** specificare se i criteri si applicano a qualsiasi percorso, a percorsi di rete attendibili che sono sotto il controllo del reparto IT o a percorsi di rete specifici. Usare la scheda **Escludi** per escludere percorsi di rete da questi criteri. 
@@ -76,7 +76,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
       > [!TIP]  
       > Se si vogliono proteggere sia i **client con autenticazione moderna** sia i **client Exchange ActiveSync**, creare due criteri di accesso condizionale separati, uno per ogni tipo di client. Anche se Exchange ActiveSync supporta l'autenticazione moderna, l'unica condizione supportata da Exchange ActiveSync è quella relativa alla piattaforma. Non sono supportate altre condizioni, inclusa l'autenticazione a più fattori. Per proteggere in modo efficace l'accesso a Exchange Online da Exchange ActiveSync, creare criteri di accesso condizionale che specificano l'app cloud Office 365 Exchange Online e l'app client Exchange ActiveSync con l'opzione Applica i criteri solo alle piattaforme supportate selezionata.
 
-9.  Seleziona **Chiudi**.
+9. Seleziona **Chiudi**.
 10. In **Controlli di accesso** selezionare **Concedi**. Specificare cosa accade in base alle condizioni configurate.  È possibile selezionare una delle opzioni seguenti:
     - **Blocca accesso**: agli utenti specificati in questi criteri verrà negato l'accesso alle app in base alle condizioni specificate.
     - **Concedi accesso**: agli utenti specificati in questi criteri verrà concesso l'accesso, ma è possibile richiedere una delle azioni seguenti:

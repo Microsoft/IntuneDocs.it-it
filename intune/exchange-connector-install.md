@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045687"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529774"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurare Intune Exchange Connector locale in Microsoft Intune
 Le informazioni di questo articolo consentono di installare e quindi monitorare il connettore locale di Exchange Active Sync per Intune.  È possibile usare Intune Exchange Connector locale con i [criteri di accesso condizionale per consentire o bloccare l'accesso alle cassette postali locali di Exchange](conditional-access-exchange-create.md). 

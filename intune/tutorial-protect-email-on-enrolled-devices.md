@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f3d51cfbacfa8ef380531f91e058717cf51d089
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044139"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530736"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 Informazioni sull'uso dei criteri di conformità dei dispositivi con accesso condizionale per assicurarsi che i dispositivi iOS possano accedere alla posta elettronica di Exchange Online solo se vengono gestiti da Intune e con un'app di posta elettronica approvata. 
@@ -47,19 +47,19 @@ Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o c
 ## <a name="create-the-ios-device-compliance-policy"></a>Creare i criteri di conformità del dispositivo per iOS
 Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verranno creati criteri di conformità per i dispositivi iOS. I criteri di conformità sono specifici della piattaforma, pertanto sono necessari criteri di conformità separati per ogni piattaforma del dispositivo da valutare.
 
-1.  In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
-2.  In **Nome** immettere **Test criteri di conformità iOS**. 
-3.  In **Descrizione** immettere **Test criteri di conformità iOS**.
-4.  In **Piattaforma** selezionare **iOS**. 
-5.  Selezionare **Impostazioni** > **Posta elettronica**. 
+1. In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
+2. In **Nome** immettere **Test criteri di conformità iOS**. 
+3. In **Descrizione** immettere **Test criteri di conformità iOS**.
+4. In **Piattaforma** selezionare **iOS**. 
+5. Selezionare **Impostazioni** > **Posta elettronica**. 
      
     1.  Accanto a **Rendi obbligatorio un profilo di posta elettronica gestito nei dispositivi mobili** selezionare **Rendi obbligatorio**.
     2. Selezionare **OK**.
 
     ![Impostare i criteri di conformità per la posta elettronica per richiedere un profilo di posta elettronica gestito](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
-6.  Selezionare **Integrità del dispositivo**. Accanto a **Dispositivi Jailbroken** selezionare **Blocca** e quindi selezionare **OK**.
-7.  Selezionare **Sicurezza del sistema** e immettere le impostazioni **Password**. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
+6. Selezionare **Integrità del dispositivo**. Accanto a **Dispositivi Jailbroken** selezionare **Blocca** e quindi selezionare **OK**.
+7. Selezionare **Sicurezza del sistema** e immettere le impostazioni **Password**. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
      
     - Per **Richiedi una password per sbloccare i dispositivi mobili** selezionare **Rendi obbligatorio**.
     - Per **Password semplici** selezionare **Blocca**.
@@ -71,16 +71,16 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
  
     ![Configurare le impostazioni per la password per i criteri di conformità della posta elettronica](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
-8.  Selezionare **OK** e quindi di nuovo **OK**.
-9.  Selezionare **Crea**.
+8. Selezionare **OK** e quindi di nuovo **OK**.
+9. Selezionare **Crea**.
 
 ## <a name="create-the-conditional-access-policy"></a>Creare i criteri di accesso condizionale
 A questo punto si creeranno criteri di accesso condizionale che richiedono che tutte le piattaforme di dispositivi prevedano la registrazione in Intune e siano conformi ai criteri di conformità di Intune prima di poter accedere a Exchange Online. Verrà anche richiesto l'uso dell'app Outlook per l'accesso alla posta elettronica. I criteri di accesso condizionale sono configurabili nel portale di Azure AD o nel portale di Intune. Dato che finora è stato usato il portale di Intune, i criteri verranno creati in questo portale.
-1.  In Intune selezionare **Accesso condizionale** > **Criteri** > **Nuovi criteri**.
+1. In Intune selezionare **Accesso condizionale** > **Criteri** > **Nuovi criteri**.
 1.  In **Nome** immettere **Criteri di test per posta elettronica Office 365**. 
-3.  In **Assegnazioni** selezionare **Utenti e gruppi**. Nella scheda **Includi** selezionare **Tutti gli utenti** e quindi selezionare **Fine**.
+3. In **Assegnazioni** selezionare **Utenti e gruppi**. Nella scheda **Includi** selezionare **Tutti gli utenti** e quindi selezionare **Fine**.
 
-4.  In **Assegnazioni** selezionare **App cloud**. Dato che si vuole proteggere la posta elettronica di Office 365 Exchange Online, si selezionerà questa app tramite la procedura seguente:
+4. In **Assegnazioni** selezionare **App cloud**. Dato che si vuole proteggere la posta elettronica di Office 365 Exchange Online, si selezionerà questa app tramite la procedura seguente:
      
     1. Nella scheda **Includi** scegliere **Selezionare le app**.
     2. Scegliere **Seleziona**. 
@@ -89,7 +89,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
   
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
-5.  In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
+5. In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
      
     1. In **Configura** selezionare **Sì**.
     2. Nella scheda **Includi** selezionare **Qualsiasi dispositivo** e quindi selezionare **Fine**. 
@@ -97,7 +97,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
    
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
-6.  In **Assegnazioni** selezionare **Condizioni** > **App client**.
+6. In **Assegnazioni** selezionare **Condizioni** > **App client**.
      
     1. In **Configura** selezionare **Sì**.
     2. Per questa esercitazione, selezionare **App per dispositivi mobili e client desktop** e **Client con autenticazione moderna** (che fa riferimento ad app come Outlook per iOS e Outlook per Android). Deselezionare tutte le altre caselle di controllo.
@@ -105,7 +105,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
     
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
-7.  In **Controlli di accesso** selezionare **Concedi**. 
+7. In **Controlli di accesso** selezionare **Concedi**. 
      
     1. Nel riquadro **Concedi** selezionare **Concedi accesso**.
     2. Selezionare **Richiedi che i dispositivi siano contrassegnati come conformi**. 
@@ -115,11 +115,11 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
      
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
-8.  In **Abilita criterio** selezionare **Sì**.
+8. In **Abilita criterio** selezionare **Sì**.
      
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9.  Selezionare **Crea**.
+9. Selezionare **Crea**.
 
 ## <a name="try-it-out"></a>Procedura
 Con i criteri creati, qualsiasi dispositivo iOS che tenta di accedere alla posta elettronica di Office 365 dovrà essere registrato in Intune e usare l'app per dispositivi mobili Outlook per iOS. Per testare questo scenario in un dispositivo iOS, provare ad accedere a Exchange Online usando le credenziali di un utente nel tenant di test. Verrà richiesto di registrare il dispositivo e installare l'app per dispositivi mobili Outlook.
@@ -137,5 +137,5 @@ Quando i criteri di test non sono più necessari, è possibile rimuoverli.
 4. Selezionare **Accesso condizionale** > **Criteri**.
 5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
 
- ## <a name="next-steps"></a>Passaggi successivi 
+## <a name="next-steps"></a>Passaggi successivi 
 In questa esercitazione sono stati creati criteri che richiedono ai dispositivi iOS la registrazione in Intune e l'uso dell'app Outlook per accedere alla posta elettronica di Exchange Online. Per altre informazioni sull'uso di Intune con l'accesso condizionale per proteggere altri servizi e app, inclusi i client di Exchange ActiveSync per Office 365 Exchange Online, vedere [Configurare l'accesso condizionale](conditional-access.md).

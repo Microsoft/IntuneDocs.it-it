@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044169"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528249"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -38,9 +38,9 @@ Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati al ru
 È possibile usare ruoli sia predefiniti sia personalizzati. I ruoli predefiniti sono utili in alcuni scenari di Intune comuni. È possibile [creare ruoli personalizzati](create-custom-role.md) con il set esatto di autorizzazioni necessarie. Diversi ruoli di Azure Active Directory hanno autorizzazioni per Intune.
 Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > scegliere un ruolo. Verranno visualizzate le pagine seguenti:
 
--   **Proprietà**: nome, descrizione, tipo, assegnazioni e tag di ambito per il ruolo. 
--   **Autorizzazioni**: elenca una lunga serie di interruttori che definiscono le autorizzazioni di cui dispone il ruolo.
--   **Assegnazioni**: elenco di [assegnazioni di ruolo]( assign-role.md) che definiscono gli utenti che hanno accesso a determinati utenti/dispositivi. Un ruolo può avere più assegnazioni e un utente può essere incluso in più assegnazioni.
+- **Proprietà**: nome, descrizione, tipo, assegnazioni e tag di ambito per il ruolo. 
+- **Autorizzazioni**: elenca una lunga serie di interruttori che definiscono le autorizzazioni di cui dispone il ruolo.
+- **Assegnazioni**: elenco di [assegnazioni di ruolo]( assign-role.md) che definiscono gli utenti che hanno accesso a determinati utenti/dispositivi. Un ruolo può avere più assegnazioni e un utente può essere incluso in più assegnazioni.
 
 ### <a name="built-in-roles"></a>Ruoli predefiniti
 È possibile assegnare ruoli predefiniti a gruppi senza ulteriore configurazione. Non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo predefinito. Per un elenco completo delle autorizzazioni per ogni ruolo predefinito, vedere [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Tabella di controllo degli accessi in base al ruolo di Intune).
@@ -84,10 +84,10 @@ Un'assegnazione di ruolo definisce:
 È possibile assegnare ruoli sia predefiniti sia personalizzati agli utenti. Per potergli assegnare un ruolo di Intune, l'utente deve avere una licenza di Intune.
 Per visualizzare un'assegnazione di ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > scegliere un ruolo > scegliere un'assegnazione. Verranno visualizzate le pagine seguenti:
 
--   **Proprietà**: nome, descrizione, ruolo, membri, ambiti e tag dell'assegnazione.
--   **Membri**: tutti gli utenti nei gruppi elencati hanno l'autorizzazione necessaria per gestire gli utenti/i dispositivi elencati in Ambito (gruppi).
--   **Ambito (gruppi)** : tutti gli utenti/i dispositivi in questi gruppi possono essere gestiti dagli utenti in Membri.
--   **[Ambito (tag)](scope-tags.md)** : Gli utenti in Membri possono visualizzare le risorse che hanno gli stessi tag di ambito.
+- **Proprietà**: nome, descrizione, ruolo, membri, ambiti e tag dell'assegnazione.
+- **Membri**: tutti gli utenti nei gruppi elencati hanno l'autorizzazione necessaria per gestire gli utenti/i dispositivi elencati in Ambito (gruppi).
+- **Ambito (gruppi)** : tutti gli utenti/i dispositivi in questi gruppi possono essere gestiti dagli utenti in Membri.
+- **[Ambito (tag)](scope-tags.md)** : Gli utenti in Membri possono visualizzare le risorse che hanno gli stessi tag di ambito.
 
 ### <a name="multiple-role-assignments"></a>Più assegnazioni di ruolo
 Se un utente ha più assegnazioni di ruolo, le autorizzazioni in queste assegnazioni di ruolo si estendono ai diversi oggetti in questo modo:
