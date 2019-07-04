@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047816"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316940"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorare BitLocker e la crittografia dei dispositivi  
 Intune offre una posizione centralizzata per identificare lo stato della crittografia dei dispositivi Windows 10 e consente di accedere a informazioni importanti per BitLocker dai dispositivi, come disponibili in Azure Active Directory (Azure AD).  
@@ -51,7 +51,7 @@ Il report visualizza il valore di **Nome dispositivo** per i dispositivi Windows
   - **Non pronto**: il dispositivo non ha funzionalità di crittografia complete, ma supporta comunque la crittografia. Ad esempio, il dispositivo potrebbe essere crittografato manualmente da un utente oppure tramite Criteri di gruppo, che è possibile impostare per consentire la crittografia senza un chip TPM.
   - **Non applicabile**: non sono disponibili informazioni sufficienti per classificare il dispositivo.  
 
-- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata.  
+- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata. 
 
 
 ### <a name="device-encryption-status"></a>Stato della crittografia del dispositivo
@@ -60,7 +60,7 @@ Quando si seleziona un dispositivo, Intune visualizza il riquadro **Stato della 
 Questo riquadro fornisce le informazioni seguenti:  
 - **Nome dispositivo**: nome del dispositivo visualizzato.  
 - **Conformità con la crittografia**: valutazione della conformità dei dispositivi per il supporto della crittografia BitLocker. Un dispositivo può avere un stato della crittografia *Crittografato* anche se l'impostazione di Conformità con la crittografia è *Non pronto*, a causa dell'assenza di un chip TPM. Vedere la sezione precedente relativa alla conformità con la crittografia per maggiori informazioni.
-- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata.  
+- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata. Possono trascorrere fino a 24 ore prima che Intune inizi a segnalare lo stato di crittografia di un dispositivo o una modifica di tale stato.  
 - **Profili**: elenco dei profili di *Configurazione dispositivo* che si applicano al dispositivo e che includono le impostazioni e il tipo di profilo seguenti:  
   - Tipo di profilo = *Endpoint Protection*  
   - Impostazioni > Crittografia di Windows > Crittografa i dispositivi = *Richiesto*  
@@ -95,7 +95,7 @@ Questo riquadro fornisce le informazioni seguenti:
 
 ## <a name="bitlocker-recovery-keys"></a>Chiavi di ripristino di BitLocker
 Intune offre l'accesso al pannello di Azure AD per BitLocker, per consentire di visualizzare gli ID delle chiavi di BitLocker e le chiavi di ripristino per i dispositivi Windows 10 dal portale di Intune.  Per essere accessibile, il dispositivo deve avere le chiavi depositate in Azure AD. 
-1. Accedere a [Intune](https://aka.ms/intuneportal), passare a **Dispositivi** e quindi in *Gestisci* selezionare **Tutti i dispositivi**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), passare a **Dispositivi** e quindi in *Gestisci* selezionare **Tutti i dispositivi**.
 2. Selezionare un dispositivo nell'elenco e in *Monitoraggio* selezionare **Chiavi di ripristino**.  
   
 Quando le chiavi sono presenti in Azure AD, sono disponibili le informazioni seguenti:

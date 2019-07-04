@@ -1,7 +1,7 @@
 ---
 title: Integrare Jamf Pro con Microsoft Intune per la conformità
 titleSuffix: Microsoft Intune
-description: Usare i criteri di conformità dei dispositivi Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti Jamf.
+description: Usare i criteri di conformità di Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti tramite Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048847"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251093"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
@@ -80,7 +80,7 @@ Per connettere Intune a Jamf Pro, è possibile:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Abilitare Intune per l'integrazione con Jamf Pro
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e passare a **Microsoft Intune** > **Conformità del dispositivo** > **Gestione dei dispositivi partner**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e passare a **Microsoft Intune** > **Conformità del dispositivo** > **Gestione dei dispositivi partner**.
 
 2. Abilitare il connettore per la conformità per Jamf incollando l'ID dell'applicazione salvato durante la procedura precedente nel campo **Jamf Azure Active Directory App ID** (ID app di Azure Active Directory per Jamf).
 

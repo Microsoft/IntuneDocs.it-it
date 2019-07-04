@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744335"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344083"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -68,7 +68,7 @@ Abilitare tutte le porte e i protocolli necessari tra il server del servizio Reg
 |**Modello di certificato**|Configurare questo modello nella CA emittente.|
 |**Certificato di autenticazione client**|Necessario alla CA emittente o alla CA pubblica, questo certificato viene installato nel server NDES.|
 |**Certificato di autenticazione server**|Necessario alla CA emittente o alla CA pubblica, questo certificato SSL viene installato e associato in IIS nel server NDES. Se il certificato ha il set di utilizzi della chiave di autenticazione client e server (**Utilizzi chiave avanzati**), è possibile usare lo stesso certificato.|
-|**Certificato CA radice attendibile**|Esportare questo certificato come file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che consideri attendibile la CA radice. Assegnarlo quindi agli utenti, ai dispositivi o a entrambi usando il profilo certificato della CA attendibile.<br /><b>Nota:<b /> in fase di assegnazione di un profilo certificato SCEP, assicurarsi di assegnare il profilo certificato radice attendibile a cui fa riferimento il profilo certificato SCEP allo stesso gruppo di utenti o dispositivi.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
+|**Certificato CA radice attendibile**|Esportare questo certificato come file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che consideri attendibile la CA radice. Assegnarlo quindi agli utenti, ai dispositivi o a entrambi usando il profilo certificato della CA attendibile.<br /> **Nota:<br /> in fase di assegnazione di un profilo di certificato SCEP, assicurarsi di assegnare il *profilo di certificato radice trusted* a cui fa riferimento il profilo di certificato SCEP allo stesso gruppo di utenti o dispositivi.  Per creare questo profilo, vedere [Creare un profilo certificato attendibile](certficates-pfx-configure.md#create-a-trusted-certificate-profile), documentato nell'articolo sui profili di certificato PKCS.** <br/><br />Si usa un certificato della CA radice trusted per ogni piattaforma di sistema operativo e lo si associa a ogni profilo di certificato radice trusted creato. <br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
 
 ### <a name="accounts"></a>Account
 
@@ -487,7 +487,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
      - **Firma digitale**: consentire lo scambio di chiavi solo se viene usata una firma digitale per proteggere la chiave.
    - **Dimensioni chiave (bit)** : selezionare il numero di bit contenuti nella chiave.
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selezionare uno dei tipi di algoritmo hash disponibili da usare con questo certificato. Selezionare il livello di sicurezza più avanzato supportato dai dispositivi che verranno connessi.
-   - **Certificato radice**: scegliere un profilo di certificato radice della CA già configurato e assegnato all'utente e/o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato. Assicurarsi di assegnare il profilo certificato radice attendibile allo stesso gruppo assegnato nel profilo certificato SCEP.
+   - **Certificato radice**: scegliere un [profilo di certificato radice trusted](certficates-pfx-configure.md#create-a-trusted-certificate-profile) già creato e assegnato all'utente e/o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato. Assicurarsi di assegnare il profilo certificato radice attendibile allo stesso gruppo assegnato nel profilo certificato SCEP.
    - **Utilizzo chiavi avanzato**: scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiede l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione in un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità.
    - **Impostazioni di registrazione**
      - **Soglia di rinnovo (%)** : immettere la percentuale di durata residua del certificato prima che il dispositivo richieda il rinnovo del certificato.
@@ -508,6 +508,7 @@ Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
 
     > [!NOTE]
     > Per iOS, se si distribuiscono più profili di risorse che usano lo stesso profilo di certificato, è possibile che vengano visualizzate più copie del certificato nel profilo di gestione.
+- Se si usa la co-gestione per Intune e Configuration Manager, in Configuration Manager impostare il [dispositivo di scorrimento del carico di lavoro](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) per *Criteri di accesso alle risorse* su **Intune** o **Intune pilota**. Questa impostazione consente ai client Windows 10 di avviare il processo di richiesta del certificato.  
 
 Per informazioni su come assegnare profili, vedere [Assegnare i profili di dispositivo](device-profile-assign.md).
 
@@ -552,7 +553,7 @@ A partire dalla versione 6.1806.x.x, il servizio Intune Connector registra gli e
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Operazione completata  | Operazione completata |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | L'autorità di certificazione non è valida o non è raggiungibile. Verificare che l'autorità di certificazione sia disponibile e che il server possa comunicare con essa. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Il certificato di autenticazione client Symantec non è stato trovato nell'archivio certificati locale. Vedere [Installare il certificato di registrazione dell'autorità (RA) Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) per altre informazioni.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Il certificato di autenticazione client Symantec non è stato trovato nell'archivio certificati locale. Per altre informazioni, vedere l'articolo [Configurare il Connettore di certificati di Intune per l'infrastruttura a chiave pubblica DigiCert](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting).  |
 | 0x00000402 | RevokeCert_AccessDenied  | L'account specificato non dispone delle autorizzazioni per revocare un certificato dall'autorità di certificazione. Vedere il campo Nome CA nei dettagli del messaggio dell'evento per determinare l'autorità di certificazione emittente.  |
 | 0x00000403 | CertThumbprint_NotFound  | Non è possibile trovare un certificato corrispondente all'input. Registrare il connettore di certificati, quindi riprovare. |
 | 0x00000404 | Certificate_NotFound  | Non è possibile trovare un certificato corrispondente all'input specificato. Registrare nuovamente il connettore di certificati, quindi riprovare. |

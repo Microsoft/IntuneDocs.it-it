@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373463"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298411"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usare gli script di PowerShell nei dispositivi Windows 10 in Intune
 
@@ -45,7 +45,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 
 - Dispositivi che eseguono Windows 10 versione 1607 o successiva. Se il dispositivo viene registrato tramite la [registrazione automatica in blocco](windows-bulk-enroll.md), i dispositivi devono eseguire Windows 10 versione 1703 o successiva. L'estensione di gestione di Intune non è supportata in Windows 10 in modalità S, perché la modalità S non consente l'esecuzione di app non dello Store. 
   
-- Dispositivi aggiunti ad Azure Active Directory (AD), tra cui:
+- Dispositivi aggiunti ad Azure Active Directory (AD), tra cui:  
   
   - Aggiunti ad Azure AD ibrido: Dispositivi aggiunti ad Azure Active Directory (AD) e anche ad Active Directory (AD) locale. Per informazioni aggiuntive, vedere [Pianificare l'implementazione dell'aggiunta ad Azure Active Directory ibrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
 
@@ -55,13 +55,20 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
   
   - Dispositivi registrati in Intune manualmente, ovvero quando:
   
-    - L'utente esegue l'accesso al dispositivo usando un account utente locale e quindi aggiunge manualmente il dispositivo ad Azure AD (e la registrazione automatica in Intune è abilitata in Azure AD).
+    - La [registrazione automatica a Intune](quickstart-setup-auto-enrollment.md) è abilitata in Azure AD. L'utente finale esegue l'accesso al dispositivo usando un account utente locale, aggiunge manualmente il dispositivo ad Azure AD e quindi accede al dispositivo con il proprio account Azure AD.
     
-    Oppure
+    OPPURE  
     
     - L'utente esegue l'accesso al dispositivo usando il proprio account Azure AD e quindi esegue la registrazione in Intune.
 
-  - Dispositivi con co-gestione che usano Configuration Manager e Intune. Per informazioni aggiuntive, vedere [Informazioni sulla co-gestione](https://docs.microsoft.com/sccm/comanage/overview).
+  - Dispositivi con co-gestione che usano Configuration Manager e Intune. Assicurarsi che il carico di lavoro **App client** sia impostato su **Intune pilota** o **Intune**. Per indicazioni, vedere: 
+  
+    - [Informazioni sulla co-gestione](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Carico di lavoro App client](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Passare i carichi di lavoro di Configuration Manager a Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> Assicurarsi che i dispositivi siano [aggiunti](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) ad Azure AD. I dispositivi che sono solo [registrati](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD non riceveranno gli script.
 
 ## <a name="create-a-script-policy"></a>Creare criteri di script 
 
@@ -87,7 +94,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 5. Selezionare **OK** > **Crea** per salvare lo script.
 
 > [!NOTE]
-> Lo script di PowerShell viene eseguito con privilegi di amministratore (per impostazione predefinita) quando è impostato sul contesto utente e l'utente finale del dispositivo dispone di privilegi amministrativi.
+> Per impostazione predefinita, quando gli script sono impostati sul contesto utente e l'utente finale ha diritti di amministratore, lo script di PowerShell viene eseguito con privilegi di amministratore.
 
 ## <a name="assign-the-policy"></a>Assegnare i criteri
 
@@ -156,6 +163,7 @@ Per vedere se il dispositivo è registrato automaticamente, è possibile:
     > [!TIP]
     > L'**estensione di gestione di Microsoft Intune** è un servizio che viene eseguito sul dispositivo esattamente come qualsiasi altro servizio elencato nell'app Servizi (services.msc). Dopo il riavvio di un dispositivo è possibile che anche questo servizio venga riavviato e verifichi la presenza di eventuali script PowerShell assegnati con il servizio Intune. Se il servizio **estensione di gestione di Microsoft Intune** è impostato su Manuale, potrebbe non essere riavviato dopo il riavvio del dispositivo.
 
+- Assicurarsi che i dispositivi siano [aggiunti ad Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). I dispositivi che sono solo aggiunti all'area di lavoro o all'organizzazione ([registrati](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD) non riceveranno gli script.
 - Il client dell'estensione di gestione di Intune verifica ogni ora la presenza di modifiche nello script o nei criteri di Intune.
 - Verificare che l'estensione di gestione di Intune sia stata scaricata in `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Gli script non vengono eseguiti in Surface Hub o in Windows 10 in modalità S.

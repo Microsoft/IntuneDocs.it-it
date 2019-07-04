@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819588"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389253"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Metodi di registrazione di Intune per dispositivi Windows
 
@@ -51,6 +51,7 @@ Gli amministratori possono configurare i metodi di registrazione seguenti, che n
 - [Co-gestione di Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview): permette agli amministratori di registrare i propri dispositivi esistenti gestiti con Configuration Manager in Intune per ottenere tutti i vantaggi di Intune e Configuration Manager. 
 - [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md): account di servizio speciale. Gli account manager di registrazione dispositivi hanno autorizzazioni che permettono agli utenti di registrare e gestire più dispositivi di proprietà aziendale. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Questo metodo non consente l'uso di funzionalità come l'accesso condizionale. 
 - [Registrazione in blocco](windows-bulk-enroll.md): permette a un utente non autorizzato di aggiungere un numero elevato di nuovi dispositivi di proprietà aziendale ad Azure Active Directory e Intune. Creare un pacchetto di provisioning con l'app Progettazione configurazione di Windows. Usando quindi supporti USB durante la Configurazione guidata di Windows iniziale o da un PC Windows esistente, installare il pacchetto di provisioning per registrare automaticamente i dispositivi in Intune. Questo metodo non consente l'uso dell'accesso condizionale. 
+- La [registrazione di dispositivi Windows IoT Core](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) viene effettuata usando il Dashboard Windows IoT Core per preparare il dispositivo e quindi usando Progettazione configurazione di Windows per creare un pacchetto di provisioning. Quindi, con un supporto di scheda SD durante l'avvio iniziale, viene installato il pacchetto di provisioning per registrare automaticamente i dispositivi in Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
