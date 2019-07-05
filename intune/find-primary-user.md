@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325539"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500651"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Trovare l'utente primario di un dispositivo Intune
 
@@ -60,8 +60,8 @@ Intune aggiunge automaticamente l'utente primario ai dispositivi durante o subit
 | Windows | Aggiunta ad Azure AD (configurazione guidata) | Utente che effettua la registrazione | Durante la registrazione | 
 | Windows | Aggiunta ad Azure AD (configurazione guidata Autopilot) | Utente che effettua la registrazione | Durante la registrazione | 
 | Windows | Solo registrazione in MDM | Utente che effettua la registrazione | Durante la registrazione | 
-| Windows | Aggiunta ad AAD ibrida + oggetto Criteri di gruppo registrazione automatica | Primo utente che esegue l'accesso | All'accesso del primo utente | 
-| Windows | Co-gestione | Primo utente che esegue l'accesso | All'accesso del primo utente | 
+| Windows | Aggiunta ad AAD ibrida + oggetto Criteri di gruppo registrazione automatica | Primo utente ad accedere a Windows | Quando il primo utente esegue l'accesso a Windows| 
+| Windows | Co-gestione | Primo utente ad accedere a Windows | Quando il primo utente esegue l'accesso a Windows | 
 | Windows | Aggiunta ad Azure AD (token di registrazione in blocco) | Nessuno | Non applicabile | 
 | Windows | Aggiunta ad Azure AD (modalità di distribuzione automatica Autopilot) | Nessuno | Non applicabile | 
 | Multipiattaforma | Registrazione guidata dall'utente con l'app Portale aziendale | Utente che effettua la registrazione | Durante la registrazione |

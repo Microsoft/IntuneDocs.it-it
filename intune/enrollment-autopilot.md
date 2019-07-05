@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389300"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512117"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -35,7 +35,7 @@ Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La comp
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Come ottenere il file con estensione csv da importare in Intune
 
-Vedere il cmdlet PowerShell per altre informazioni su come usarlo.
+Per altre informazioni, vedere il cmdlet di PowerShell seguente.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Vedere il cmdlet PowerShell per altre informazioni su come usarlo.
 
     ![Screenshot dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file con estensione csv deve elencare i numeri di serie, facoltativamente gli ID prodotto Windows, gli hash hardware e facoltativamente i tag dei gruppi dei dispositivi. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file CSV deve elencare i numeri di serie, gli ID prodotto Windows, gli hash hardware e facoltativamente i tag dei gruppi, gli utenti assegnati e gli ID ordine dei dispositivi. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Screenshot dell'aggiunta dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Vedere il cmdlet PowerShell per altre informazioni su come usarlo.
     I dispositivi Autopilot che non sono ancora registrati sono dispositivi il cui nome è uguale al numero di serie del dispositivo stesso.
 4. Se nel passaggio precedente si è scelto **Dispositivi dinamici** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri dispositivo dinamico** e digitare uno dei codici seguenti nella casella **Regola avanzata**.
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot, digitare: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Il campo del tag del gruppo di Intune è associato all'attributo OrderID nei dispositivi Azure AD. Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot con un tag del gruppo specifico (OrderID), è necessario digitare: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - Il campo del tag del gruppo di Intune è associato all'attributo OrderID nei dispositivi Azure AD. Se si vuole creare un gruppo che includa tutti i dispositivi Autopilot con un tag di gruppo (OrderID) specifico, è necessario digitare: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot con un ID ordine d'acquisto specifico, digitare `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Dopo aver aggiunto il codice **Regola avanzata** scegliere **Salva**.
@@ -95,7 +96,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
     - **Contratto di licenza con l'utente finale**: (Windows 10, versione 1709 o successive): scegliere se si vuole visualizzare il contratto di licenza per gli utenti.
     - **Impostazioni di privacy**: scegliere se si vuole visualizzare le impostazioni di privacy per gli utenti.
     >[!IMPORTANT]
-    >Per le distribuzioni Autopilot nei dispositivi Windows 10 versione 1903 e versioni successive, il valore predefinito di Dati di diagnostica è impostato automaticamente su Completo. Per altre informazioni, vedere i [dati di diagnostica di Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    >Per le distribuzioni Autopilot nei dispositivi Windows 10 versione 1903 e versioni successive, il valore predefinito di Dati di diagnostica è impostato automaticamente su Completo. Per altre informazioni, vedere i [dati di diagnostica di Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **Nascondi le opzioni di cambio di account (richiede Windows 10 versione 1809 o successiva)** : scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo di account utente**: scegliere il tipo di account utente (**Amministratore** o **Standard**).
@@ -118,7 +119,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
     ![Screenshot della pagina Rivedi](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune verificherà periodicamente la presenza di nuovi dispositivi nei gruppi assegnati e quindi avvierà il processo di assegnazione dei profili a quei dispositivi. Questo processo può richiedere alcuni minuti. Prima di distribuire un dispositivo, assicurarsi che questo processo sia stato completato.  In **Registrazione del dispositivo** > **Registrazione di Windows ** > **Dispositivi** è possibile verificare che lo stato del profilo passi da "Non assegnato" ad "Assegnazione" e infine ad "Assegnato".
+> Intune verificherà periodicamente la presenza di nuovi dispositivi nei gruppi assegnati e quindi avvierà il processo di assegnazione dei profili a quei dispositivi. Questo processo può richiedere alcuni minuti. Prima di distribuire un dispositivo, assicurarsi che questo processo sia stato completato.  In **Registrazione del dispositivo** > **Registrazione di Windows** > **Dispositivi** è possibile verificare che lo stato del profilo passi da "Non assegnato" ad "Assegnazione" e infine ad "Assegnato".
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Modificare un profilo di distribuzione di AutoPilot
 Dopo aver creato un profilo di distribuzione di AutoPilot, è possibile modificare alcune parti del profilo di distribuzione.   

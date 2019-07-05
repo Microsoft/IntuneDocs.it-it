@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344083"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494298"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -30,10 +30,10 @@ Questo articolo illustra come configurare l'infrastruttura e quindi creare e ass
 
 - **Dominio di Active Directory**: Tutti i server elencati in questa sezione (tranne il server proxy applicazione Web) devono essere aggiunti al dominio di Active Directory.
 
-- **Autorità di certificazione** (CA): deve trattarsi di un'autorità di certificazione globale (enterprise) Microsoft eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. Per informazioni dettagliate, vedere [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx) (Installare l'autorità di certificazione).
+- **Autorità di certificazione** (CA): deve trattarsi di un'autorità di certificazione globale (enterprise) Microsoft eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. Per informazioni dettagliate, vedere [Install the Certification Authority](https://technet.microsoft.com/library/jj125375.aspx) (Installare l'autorità di certificazione).
     Se la CA esegue Windows Server 2008 R2, è necessario [installare l'hotfix di KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **Server del servizio Registrazione dispositivi di rete**: in un server che esegue Windows Server 2012 R2 o versioni successive è necessario configurare il ruolo del server del servizio Registrazione dispositivi di rete. Intune non supporta l'uso del servizio Registrazione dispositivi di rete se viene eseguito in un server con CA globale (enterprise). Per istruzioni sulla configurazione di Windows Server 2012 R2 per ospitare il servizio Registrazione dispositivi di rete, vedere [Linee guida per il servizio Registrazione dispositivi di rete](http://technet.microsoft.com/library/hh831498.aspx).
+- **Server del servizio Registrazione dispositivi di rete**: in un server che esegue Windows Server 2012 R2 o versioni successive è necessario configurare il ruolo del server del servizio Registrazione dispositivi di rete. Intune non supporta l'uso del servizio Registrazione dispositivi di rete se viene eseguito in un server con CA globale (enterprise). Per istruzioni sulla configurazione di Windows Server 2012 R2 per ospitare il servizio Registrazione dispositivi di rete, vedere [Linee guida per il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/library/hh831498.aspx).
 Il server del servizio Registrazione dispositivi di rete deve essere aggiunto a un dominio all'interno della stessa foresta dell'autorità di certificazione globale (enterprise). Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/library/dn473016.aspx). Non è possibile usare un server NDES che è già in uso con un altro MDM.
 
 - **Connettore di certificati di Microsoft Intune**: Nel portale di Intune passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per SCEP*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione del connettore di certificati **NDESConnectorSetup.exe**.  Il programma di installazione verrà eseguito nel server con il ruolo del servizio Registrazione dispositivi di rete.  
@@ -507,7 +507,8 @@ Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
 - Sebbene ogni profilo venga assegnato separatamente, è anche necessario assegnare la CA radice attendibile e il profilo SCEP o PKCS. In caso contrario, i criteri di certificato SCEP o PKCS hanno esito negativo.
 
     > [!NOTE]
-    > Per iOS, se si distribuiscono più profili di risorse che usano lo stesso profilo di certificato, è possibile che vengano visualizzate più copie del certificato nel profilo di gestione.
+    > Nei dispositivi iOS, quando un profilo certificato SCEP viene associato a un profilo aggiuntivo, ad esempio un profilo Wi-Fi o VPN, il dispositivo riceve un certificato per ognuno di questi profili aggiuntivi. Ne risulta che il dispositivo iOS riceve più certificati dalla richiesta di certificato SCEP.  
+
 - Se si usa la co-gestione per Intune e Configuration Manager, in Configuration Manager impostare il [dispositivo di scorrimento del carico di lavoro](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) per *Criteri di accesso alle risorse* su **Intune** o **Intune pilota**. Questa impostazione consente ai client Windows 10 di avviare il processo di richiesta del certificato.  
 
 Per informazioni su come assegnare profili, vedere [Assegnare i profili di dispositivo](device-profile-assign.md).
