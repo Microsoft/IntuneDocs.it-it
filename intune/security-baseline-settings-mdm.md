@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418946"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549056"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
@@ -32,7 +32,7 @@ La versione baseline più recente è **MDM Baseline di sicurezza per l'aggiornam
 Per altre informazioni sulle novità nella versione più recente di questa linea di base rispetto alla versione precedente, vedere [ciò che viene modificato nel nuovo modello](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Nel giugno del 2019, la base della sicurezza di anteprima MDM è stato sostituito dal rilascio del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19H)* modello, ovvero generaly disponibili (non in anteprima). I profili che sono stati creati prima della disponibilità del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19 H)* della linea di base non verrà aggiornate per riflettere il le impostazioni e i valori presenti nella baseline della sicurezza di MDM per Spring 2019 Update ( 19 1 H) versione.  Anche se è possibile creare nuovi profili basati sul modello di anteprima, è possibile modificare e continuare a usare i profili creato in precedenza che si basano sul modello di anteprima.   
+> Nel giugno del 2019, la base della sicurezza di anteprima MDM è stato sostituito dal rilascio del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19H)* modello, ovvero generaly disponibili (non in anteprima). I profili che sono stati creati prima della disponibilità del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19 H)* della linea di base non verrà aggiornate per riflettere le impostazioni e i valori che sono in linea di base di sicurezza MDM per l'aggiornamento di primavera 2019 (19 ore 1 ) versione.  Anche se è possibile creare nuovi profili basati sul modello di anteprima, è possibile modificare e continuare a usare i profili creato in precedenza che si basano sul modello di anteprima.   
   
 Per altre informazioni sull'utilizzo standard di sicurezza con Intune, vedere [usare le linee di base di sicurezza](security-baselines.md).  
 
@@ -58,7 +58,7 @@ Per altre informazioni, vedere [Policy CSP - AppRuntime](https://docs.microsoft.
 - **Account Microsoft facoltativi per le app di 
   Microsoft Store**  
   L'impostazione di questo criterio consente di controllare se gli account Microsoft sono facoltativi per le app di Microsoft Store che richiedono un account per l'accesso. Questo criterio influisce solo sulle app di Microsoft Store che lo supportano. Se si abilita l'impostazione di questo criterio, le app di Microsoft Store che in genere richiedono un account Microsoft per l'accesso consentiranno agli utenti di accedere invece con un account aziendale. Se si disabilita o non si configura l'impostazione di questo criterio, gli utenti devono eseguire l'accesso con un account Microsoft.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067104)  
+[Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Impostazione predefinita**: Abilitato  
 
@@ -69,7 +69,7 @@ Per altre informazioni, vedere [Policy CSP - ApplicationManagement](https://docs
   Questa impostazione criterio consente agli utenti di modificare le opzioni di installazione che in genere sono disponibili solo per gli amministratori di sistema. Se si abilita questa impostazione dei criteri, alcune delle funzionalità di sicurezza di Windows Installer vengono ignorate. Consente il completamento di installazioni che in caso contrario, potrebbero essere stato interrotto a causa di una violazione della sicurezza. Se si disabilita o non si configura questa impostazione dei criteri, le funzionalità di sicurezza di Windows Installer impediscono agli utenti di modificare le opzioni di installazione in genere riservate per gli amministratori di sistema, ad esempio specificando la directory in cui sono installati i file. Se il programma di installazione di Windows rileva che un pacchetto di installazione ha consentito all'utente di modificare un'opzione protetta, interrompe l'installazione e viene visualizzato un messaggio. Queste funzionalità di sicurezza funzionano solo quando il programma di installazione è in esecuzione in un contesto di sicurezza con privilegi in cui ha accesso a directory di cui è stato negato all'utente. Questa impostazione dei criteri è progettata per gli ambienti meno restrittivi. Può essere utilizzato per ovviare a errori in un programma di installazione che impedisce l'installazione di software.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Impostazione predefinita**: Sì
+  **Impostazione predefinita**: Sì
 
 - **Installazioni di app di blocco MSI con privilegi elevati**  
   Questa impostazione dei criteri indica a Windows Installer di usare le autorizzazioni elevate per installare qualsiasi programma nel sistema.  
@@ -829,7 +829,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   
 - **Internet Explorer - Area attendibile - Autorizzazioni Java**   
   L'impostazione di questo criterio consente di gestire le autorizzazioni per le applet Java. Se si abilita l'impostazione di questo criterio, è possibile scegliere le opzioni dalla casella a discesa. Personalizza consente di controllare le impostazioni delle autorizzazioni singolarmente. Protezione bassa consente alle applet di eseguire tutte le operazioni. Protezione media abilita l'esecuzione delle applet nell'ambiente sandbox (area di memoria all'esterno della quale il programma non può eseguire chiamate) e funzionalità come lo spazio di lavoro (area di archiviazione protetta e sicura nel computer client) e l'I/O di file controllato dall'utente. Protezione alta abilita l'esecuzione delle applet nell'ambiente sandbox. Disabilitare Java per impedire l'esecuzione di tutte le applet. Se si disabilita l'impostazione di questo criterio, le applet Java non potranno essere eseguite. Se non si configura l'impostazione di questo criterio, l'autorizzazione viene impostata su Protezione bassa.  
-    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Impostazione predefinita**: Protezione alta  
   
@@ -1830,7 +1830,7 @@ Le impostazioni seguenti sono:
 - *Revisione* in qualche modo dal modo in cui le impostazioni visualizzate nella versione precedente. 
 
 *[Nuovo]*  [ **Blocco sopra**](#above-lock):
--  **Le app dalla schermata di blocco di attivazione vocale**    
+- **Le app dalla schermata di blocco di attivazione vocale**    
 
 *[Nuovo]* [**Gestione delle applicazioni**](#application-management): 
 - **Controllo utente di blocco sulle installazioni**  
@@ -2603,7 +2603,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

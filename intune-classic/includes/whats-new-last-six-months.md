@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 448ec3aaa9bc9ad09e54d7dd78d4f08a4adae010
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044703"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67571970"
 ---
 ## <a name="april-2017"></a>Aprile 2017
 
@@ -37,15 +37,15 @@ All'interno dell'app Portale aziendale per iOS verranno ora visualizzati nuovi m
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Stato di installazione delle app migliorato per l'app Portale aziendale di Windows 10 <!--676495-->
 
 I nuovi miglioramenti per le installazioni di app avviate nell'app Portale aziendale di Windows 10 includono:
--   Segnalazione dello stato dell'installazione più veloce per i pacchetti MSI
--   Segnalazione dello stato dell'installazione più veloce per le app moderne in dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 e versioni successive
--   Nuova barra di stato per le installazioni di app moderne in dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 e versioni successive
+- Segnalazione dello stato dell'installazione più veloce per i pacchetti MSI
+- Segnalazione dello stato dell'installazione più veloce per le app moderne in dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 e versioni successive
+- Nuova barra di stato per le installazioni di app moderne in dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 e versioni successive
 
 È possibile visualizzare la nuova barra di stato nella [pagina delle novità dell'interfaccia utente dell'app di Intune](/intune/whats-new-app-ui).
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Registrazione in blocco di dispositivi Windows 10 <!-- 747607 -->
 
-È ora possibile aggiungere un numero elevato di dispositivi che eseguono Windows 10 Creators Update ad Azure Active Directory e Intune con Windows Configuration Designer (WCD). Per abilitare la [registrazione MDM in blocco](/intune-classic/deploy-use/bulk-enroll-windows) del tenant di Azure AD, creare un pacchetto di provisioning che aggiunga i dispositivi al tenant di Azure AD usando Windows Configuration Designer e applicare il pacchetto ai dispositivi di proprietà dell'azienda che si vuole registrare e gestire in blocco. Dopo aver applicato il pacchetto, i dispositivi verranno aggiunti ad Azure AD, registrati in Intune e saranno pronti per l'accesso da parte degli utenti di Azure AD.  Gli utenti di Azure AD sono utenti standard di questi dispositivi e ricevono i criteri assegnati e le app necessarie. Al momento non sono supportati scenari self-service o con il portale aziendale.
+È ora possibile aggiungere un numero elevato di dispositivi che eseguono Windows 10 Creators Update ad Azure Active Directory e Intune con Windows Configuration Designer (WCD). Per abilitare la [registrazione MDM in blocco](/intune-classic/deploy-use/bulk-enroll-windows) del tenant di Azure AD, creare un pacchetto di provisioning che aggiunga i dispositivi al tenant di Azure AD usando Windows Configuration Designer e applicare il pacchetto ai dispositivi di proprietà dell'azienda che si vuole registrare e gestire in blocco. Dopo aver applicato il pacchetto, i dispositivi verranno aggiunti ad Azure AD, registrati in Intune e saranno pronti per l'accesso da parte degli utenti di Azure AD.  Gli utenti di Azure AD sono utenti standard di questi dispositivi e ricevono i criteri assegnati e le app necessarie. Al momento non sono supportati scenari self-service o con il portale aziendale.
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novità dell'anteprima pubblica dell'esperienza di amministrazione di Intune in Azure <!--736542-->
 
@@ -81,7 +81,7 @@ Dopo la migrazione, sarà necessario caricare nuovamente l'app appx come app app
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Ruoli di amministrazione in corso di sostituzione nel portale di Azure
 
-I ruoli di amministrazione per la gestione di applicazioni mobili (MAM) esistenti (Collaboratore, Proprietario e Sola lettura) usati nel portale classico di Intune (Silverlight) verranno sostituiti con un set completo di nuovi controlli di amministrazione in base al ruolo nel portale di Intune di Azure. Dopo aver completato la migrazione al portale di Azure, sarà necessario riassegnare gli amministratori a questi nuovi ruoli di amministrazione. Per altre informazioni sul controllo degli accessi in base al ruolo e i nuovi ruoli, vedere [Ruoli di Intune (Controllo degli accessi in base al ruolo) per Microsoft Intune](/intune/role-based-access-control).
+I ruoli di amministrazione di gestione delle applicazioni per dispositivi mobili (MAM) esistenti (Collaboratore, Proprietario e Sola lettura) usati nel portale classico di Intune (Silverlight) verranno sostituiti con un set completo di nuovi controlli di amministrazione in base al ruolo nel portale di Intune di Azure. Dopo aver completato la migrazione al portale di Azure, sarà necessario riassegnare gli amministratori a questi nuovi ruoli di amministrazione. Per altre informazioni sul controllo degli accessi in base al ruolo e i nuovi ruoli, vedere [Ruoli di Intune (Controllo degli accessi in base al ruolo) per Microsoft Intune](/intune/role-based-access-control).
 
 ### <a name="whats-coming"></a>Sviluppi futuri
 
@@ -334,7 +334,7 @@ A partire dalla metà di dicembre 2016, gli utenti non potranno più usare le ap
 
 __Nuovo portale aziendale di Microsoft Intune disponibile per dispositivi Windows 10__ Microsoft ha rilasciato una nuova app [Portale aziendale di Microsoft Intune per dispositivi Windows 10](https://www.microsoft.com/store/apps/9wzdncrfj3pz). Questa app, che sfrutta il nuovo formato universale di Windows 10, offrirà un'esperienza utente aggiornata all'interno dell'app ed esperienze identiche in tutti i dispositivi Windows 10, sia PC che mobili, senza variazioni alle funzionalità già in uso.
 
-La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni esistenti dell'app Portale aziendale di Windows 8.1 e l'app Portale aziendale di Windows Phone 8.1 viene installata da Microsoft Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni esistenti dell'app Portale aziendale di Windows 8.1 e l'app Portale aziendale di Windows Phone 8.1 viene installata da Microsoft Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __Un aggiornamento in Intune e Android for Work__ Anche se è possibile distribuire app Android for Work con l'azione __Richiesto__, un'app può essere distribuita solo come __Disponibile__ se è stata eseguita la migrazione dei gruppi di Intune alla nuova esperienza dei gruppi di Azure AD.

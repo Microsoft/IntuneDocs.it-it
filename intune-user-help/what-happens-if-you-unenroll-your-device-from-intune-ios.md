@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844242"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545685"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Che cosa avviene se si annulla la registrazione del dispositivo iOS o macOS da Intune
 
 Che cosa avviene se si annulla la registrazione del dispositivo iOS o macOS da Intune:
 
--   Il dispositivo non verrà più visualizzato nel Portale aziendale.
+- Il dispositivo non verrà più visualizzato nel Portale aziendale.
 
--   Non sarà più possibile installare app dal portale aziendale.
+- Non sarà più possibile installare app dal portale aziendale.
 
--   Non saranno più valide le impostazioni modificate nel dispositivo quando questo è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
+- Non saranno più valide le impostazioni modificate nel dispositivo quando questo è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
 
--   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse aziendali, ad esempio condivisioni di file o siti Web interni.
+- Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse aziendali, ad esempio condivisioni di file o siti Web interni.
 
--   Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
+- Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
 
--   Potrebbe non essere più possibile connettersi alla rete aziendale tramite Wi-Fi o una rete privata virtuale (VPN, Virtual Private Network).
+- Potrebbe non essere più possibile connettersi alla rete aziendale tramite Wi-Fi o una rete privata virtuale (VPN, Virtual Private Network).
 
--   I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
+- I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
 
 Per istruzioni su come annullare la registrazione, vedere [Annullare la registrazione del dispositivo da Intune](unenroll-your-device-from-intune-ios.md).
 

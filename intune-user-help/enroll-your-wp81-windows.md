@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497519"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545495"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrare il dispositivo Windows Phone 8.1 in Intune  
 
@@ -34,45 +34,45 @@ Per registrare il dispositivo in Intune, seguire le istruzioni che soddisfano le
 ## <a name="enroll-through-company-portal"></a>Registrarsi tramite Portale aziendale  
 Seguire questi passaggi se è possibile installare l'app Portale aziendale da Microsoft Store. 
 
-1.  Toccare **Start** > **Store**.  
+1. Toccare **Start** > **Store**.  
 
-2.  Toccare **Cerca** e quindi digitare **portale aziendale**.  
+2. Toccare **Cerca** e quindi digitare **portale aziendale**.  
 
-3.  Nell'elenco dei risultati toccare **Portale aziendale**.  
+3. Nell'elenco dei risultati toccare **Portale aziendale**.  
 
 
     ![Risultati della ricerca del portale aziendale](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  Toccare **Portale aziendale**  &gt; **Installa**.  
+4. Toccare **Portale aziendale**  &gt; **Installa**.  
 
 
     ![Installare il portale aziendale](./media/WP81-2-CP-install-v2.png)  
 
 Registrare il dispositivo:  
 
-1.  Nel dispositivo aprire l'app **Portale aziendale di Microsoft Intune**.  
+1. Nel dispositivo aprire l'app **Portale aziendale di Microsoft Intune**.  
 
 
-2.  Immettere le credenziali. Se necessario, potrebbe essere visualizzata la richiesta di accettare termini e condizioni aziendali.  
+2. Immettere le credenziali. Se necessario, potrebbe essere visualizzata la richiesta di accettare termini e condizioni aziendali.  
 
-3.  Passare a **Dispositivi personali**.  
+3. Passare a **Dispositivi personali**.  
 
-4.  Selezionare **Toccare per registrare o identificare questo dispositivo**.  
+4. Selezionare **Toccare per registrare o identificare questo dispositivo**.  
 
 
     ![Toccare per registrare o identificare questo dispositivo nella schermata di questo dispositivo](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  Toccare **Registra il dispositivo**.  
+5. Toccare **Registra il dispositivo**.  
 
 
     ![Schermata di registrazione del dispositivo](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  Toccare **Aggiungi account**.  
+6. Toccare **Aggiungi account**.  
 
 
     ![Schermata delle impostazioni della rete aziendale](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.  
+7. Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.  
 
 
     ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ Registrare il dispositivo:
 ## <a name="enroll-through-settings-app"></a>Registrarsi tramite l'app Impostazioni  
 Se non è consentito accedere a Microsoft Store dal dispositivo Windows Phone o se non si ha un account Microsoft, seguire questi passaggi.
 
-1.  Toccare **Impostazioni** &gt; **area di lavoro**.  
+1. Toccare **Impostazioni** &gt; **area di lavoro**.  
 
-2.  Toccare **aggiungi account** e quindi accedere con l'account aziendale.  
+2. Toccare **aggiungi account** e quindi accedere con l'account aziendale.  
 
-3.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione.  
+3. Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione.  
 
-4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.  
+4. Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.  
 
 Se il supporto tecnico aziendale ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, l'app verrà visualizzata nell'elenco delle app.  
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.openlocfilehash: 082bd6cb680c413d13e5ed6804011daa6c929b57
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031667"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548629"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
 
@@ -37,13 +37,13 @@ Microsoft Intune consente di aggiungere e gestire le informazioni sui contratti 
 
 Nell'area di lavoro **Licenze** della console di amministrazione di Intune è possibile:
 
--   Aggiungere e modificare i contratti multilicenza Microsoft.
+- Aggiungere e modificare i contratti multilicenza Microsoft.
 
--   Aggiungere e modificare altri contratti di licenza software.
+- Aggiungere e modificare altri contratti di licenza software.
 
--   Gestire licenze e gruppi.
+- Gestire licenze e gruppi.
 
--   Confrontare le informazioni sui diritti recuperate tramite Intune dal Centro servizi per contratti multilicenza (VLSC) con l'inventario del software Microsoft rilevato da Intune nei PC Windows gestiti.
+- Confrontare le informazioni sui diritti recuperate tramite Intune dal Centro servizi per contratti multilicenza (VLSC) con l'inventario del software Microsoft rilevato da Intune nei PC Windows gestiti.
 
 È anche possibile creare report con i dati relativi al numero di installazioni e di licenze dei titoli software. I report licenze sono utili per valutare la situazione complessiva delle licenze relative al software Microsoft e non Microsoft.
 
@@ -53,35 +53,35 @@ Nell'area di lavoro **Licenze** della console di amministrazione di Intune è po
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Aggiungere contratti multilicenza Microsoft
 I contratti multilicenza per Intune offrono informazioni sulle licenze per il software acquistato tramite contratti multilicenza Microsoft. È possibile aggiungere contratti multilicenza Microsoft a Intune specificando coppie di numeri di contratto. I numeri di contratto o di autorizzazione devono corrispondere ai numeri di licenza o di registrazione corretti. Le coppie dei numeri di contratto si ottengono da [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)al momento dell'acquisto dei contratti di licenza.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://admin.manage.microsoft.com/) scegliere **Licenze**.
+1. Nella [console di amministrazione di Microsoft Intune](https://admin.manage.microsoft.com/) scegliere **Licenze**.
 
-2.  Nella pagina **Aggiungi contratti** selezionare **Contratto multilicenza**in **Scegli tipo di contratto**.
+2. Nella pagina **Aggiungi contratti** selezionare **Contratto multilicenza**in **Scegli tipo di contratto**.
 
-3.  Nella sezione **Aggiungi dettagli contratto** scegliere se caricare un file o aggiungere i dettagli manualmente.
+3. Nella sezione **Aggiungi dettagli contratto** scegliere se caricare un file o aggiungere i dettagli manualmente.
 
-    -   **Carica un file CSV che contiene i dettagli del contratto**. Scegliere **Sfoglia** e selezionare il file CSV da caricare.
+    - **Carica un file CSV che contiene i dettagli del contratto**. Scegliere **Sfoglia** e selezionare il file CSV da caricare.
 
-        -   Il file può comprendere due o tre colonne: due per le sole coppie di numeri di contratto o tre se si desidera aggiungere un nome descrittivo che ne agevoli l'individuazione.
+        - Il file può comprendere due o tre colonne: due per le sole coppie di numeri di contratto o tre se si desidera aggiungere un nome descrittivo che ne agevoli l'individuazione.
 
-        -   Il numero totale dei caratteri di una coppia di numeri di contratto non può superare i 16 caratteri ASCII.
+        - Il numero totale dei caratteri di una coppia di numeri di contratto non può superare i 16 caratteri ASCII.
 
-        -   Sono supportati solo i caratteri ASCII.
+        - Sono supportati solo i caratteri ASCII.
 
-        -   I caratteri seguenti non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
+        - I caratteri seguenti non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
-        -   Il nome del file non può superare i 128 caratteri.
+        - Il nome del file non può superare i 128 caratteri.
 
-        -   Il file deve contenere almeno una coppia di contratti e non può includere più di 5.000 coppie di contratti.
+        - Il file deve contenere almeno una coppia di contratti e non può includere più di 5.000 coppie di contratti.
 
         **Formato del file**
 
         È possibile creare il file aggiungendo le coppie di numeri di contratto a un documento di solo testo in uno dei formati riportati di seguito, in base al tipo di organizzazione registrato in VLSC. Specificare una coppia di numeri di contratto per riga.
 
-        -   **Clienti Open Value:** *Numero di contratto*, *ripetere il numero di contratto*, *nome contratto*
+        - **Clienti Open Value:** *Numero di contratto*, *ripetere il numero di contratto*, *nome contratto*
 
-        -   **Clienti Open:** *Numero autorizzazione*, *relativo numero di licenza*, *nome contratto*
+        - **Clienti Open:** *Numero autorizzazione*, *relativo numero di licenza*, *nome contratto*
 
-        -   **Clienti Select ed Enterprise:** *Numero di contratto*, *relativo numero di registrazione*, *nome contratto*
+        - **Clienti Select ed Enterprise:** *Numero di contratto*, *relativo numero di registrazione*, *nome contratto*
 
         Quando si aggiungono nuovi contratti, il modulo **Aggiungi contratti** richiede di selezionare questo file.
 
@@ -89,30 +89,30 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         `01-07001, 01-07001, Office agreements`
 
-    -   **Aggiungi manualmente i dettagli del contratto**. Specificare le informazioni seguenti e quindi digitare le coppie di numeri di contratto nelle caselle **Numero autorizzazione/contratto** e **Numero licenza/registrazione/cliente**. Dopo aver digitato entrambi i numeri, fare clic su **Aggiungi coppia** per salvare i numeri e, se si vuole, aggiungere una nuova coppia.
+    - **Aggiungi manualmente i dettagli del contratto**. Specificare le informazioni seguenti e quindi digitare le coppie di numeri di contratto nelle caselle **Numero autorizzazione/contratto** e **Numero licenza/registrazione/cliente**. Dopo aver digitato entrambi i numeri, fare clic su **Aggiungi coppia** per salvare i numeri e, se si vuole, aggiungere una nuova coppia.
 
-        -   **Nome contratto**: specificare un nome univoco per il contratto.
+        - **Nome contratto**: specificare un nome univoco per il contratto.
 
             Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
-        -   **Numero autorizzazione/contratto**: immettere il numero di autorizzazione/contratto della coppia di licenze.
+        - **Numero autorizzazione/contratto**: immettere il numero di autorizzazione/contratto della coppia di licenze.
 
-        -   **Numero licenza/registrazione/cliente**: immettere il numero di licenza/registrazione/cliente della coppia di licenze.
+        - **Numero licenza/registrazione/cliente**: immettere il numero di licenza/registrazione/cliente della coppia di licenze.
 
         > [!NOTE]
         > Se si aggiungono diverse coppie di numeri di contratto, Intune crea un contratto con il nome specificato in cui rientreranno tutte le coppie aggiunte in precedenza.
 
     Scegliere **+** per aggiungere un'altra coppia di numeri di contratto o **-** per rimuovere una coppia di numeri di contratto già immessa.
 
-4.  Nell'area **Seleziona gruppo di licenze** , effettuare una delle seguenti operazioni:
+4. Nell'area **Seleziona gruppo di licenze** , effettuare una delle seguenti operazioni:
 
-    -   **Aggiungi i contratti a un gruppo di contratti non assegnato**. Selezionare questa opzione se non si vogliono aggiungere i nuovi contratti a un gruppo di licenze.
+    - **Aggiungi i contratti a un gruppo di contratti non assegnato**. Selezionare questa opzione se non si vogliono aggiungere i nuovi contratti a un gruppo di licenze.
 
-    -   **Aggiungi contratti a un nuovo gruppo di licenze**. Specificare un nome per il nuovo gruppo di licenze.
+    - **Aggiungi contratti a un nuovo gruppo di licenze**. Specificare un nome per il nuovo gruppo di licenze.
 
-    -   **Aggiungi contratti a un gruppo di licenze esistente**. Nell'elenco **Nome gruppo** selezionare il gruppo di licenze a cui si desidera aggiungere i contratti.
+    - **Aggiungi contratti a un gruppo di licenze esistente**. Nell'elenco **Nome gruppo** selezionare il gruppo di licenze a cui si desidera aggiungere i contratti.
 
-5.  Scegliere **OK**.
+5. Scegliere **OK**.
 
 Viene aperta la visualizzazione **Tutti i contratti** e Intune si connette al Centro servizi per contratti multilicenza per convalidare le coppie di numeri di contratto specificate.
 
@@ -123,9 +123,9 @@ Per aggiornare le informazioni sui contratti multilicenza dopo aver aggiunto i c
 
 Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile confrontare le informazioni sulle licenze con il software Microsoft rilevato nell'area di lavoro **App** . È anche possibile eseguire i report sulle licenze seguenti:
 
--   **Report acquisto licenza**: consente di visualizzare il software concesso in licenza per i gruppi di licenze selezionati per facilitare l'individuazione di lacune nella copertura.
+- **Report acquisto licenza**: consente di visualizzare il software concesso in licenza per i gruppi di licenze selezionati per facilitare l'individuazione di lacune nella copertura.
 
--   **Report installazione licenza**: consente di determinare se la copertura del contratto di licenza è sufficiente.
+- **Report installazione licenza**: consente di determinare se la copertura del contratto di licenza è sufficiente.
 
 > [!NOTE]
 > Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
@@ -138,40 +138,40 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 ### <a name="to-add-other-software-agreements"></a>Per aggiungere altri contratti software
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://admin.manage.microsoft.com/) scegliere **Licenze**.
+1. Nella [console di amministrazione di Microsoft Intune](https://admin.manage.microsoft.com/) scegliere **Licenze**.
 
-2.  Scegliere **Aggiungi contratti** nella sezione **Altri contratti di licenza software**.
+2. Scegliere **Aggiungi contratti** nella sezione **Altri contratti di licenza software**.
 
-3.  Nella sezione **Scelta del tipo di contratto** della pagina **Aggiungi contratti** selezionare **Altri contratti di licenza software** .
+3. Nella sezione **Scelta del tipo di contratto** della pagina **Aggiungi contratti** selezionare **Altri contratti di licenza software** .
 
-4.  Nell'area **Aggiungi dettagli contratto** specificare quanto segue:
+4. Nell'area **Aggiungi dettagli contratto** specificare quanto segue:
 
-    -   **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
+    - **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Sono invece consentiti gli spazi.
 
-    -   **Autore** (obbligatorio). Quando si inizia a digitare il nome dell'autore, il servizio recupera tutti i nomi degli autori che contengono i caratteri digitati. Ad esempio, se si digita "soft", il servizio recupera tutti i nomi degli autori che contengono "soft" come parte del nome, come "Microsoft" e "Microsoft Research". I nomi degli autori vengono recuperati dal Software Asset Catalog. È necessario selezionare l'autore prima di immettere il titolo del prodotto.
+    - **Autore** (obbligatorio). Quando si inizia a digitare il nome dell'autore, il servizio recupera tutti i nomi degli autori che contengono i caratteri digitati. Ad esempio, se si digita "soft", il servizio recupera tutti i nomi degli autori che contengono "soft" come parte del nome, come "Microsoft" e "Microsoft Research". I nomi degli autori vengono recuperati dal Software Asset Catalog. È necessario selezionare l'autore prima di immettere il titolo del prodotto.
 
         > [!IMPORTANT]
         > La società che si vuole aggiungere potrebbe non essere visualizzata nell'elenco. È possibile aggiungere contratti software solo per le aziende già presenti in Software Asset Catalog. Tuttavia, Microsoft si impegna continuamente ad aggiungere i titoli software più diffusi. Se si vuole inviare una richiesta per aggiungere una società a questo elenco, usare il [sito Intune UserVoice](https://microsoftintune.uservoice.com/).
 
-    -   **Titolo prodotto** (obbligatorio). Quando si digita il titolo del prodotto, il servizio recupera tutti i titoli dei prodotti che contengono i caratteri digitati. È necessario specificare prima l' **Autore** e dopo il **Titolo prodotto**.
+    - **Titolo prodotto** (obbligatorio). Quando si digita il titolo del prodotto, il servizio recupera tutti i titoli dei prodotti che contengono i caratteri digitati. È necessario specificare prima l' **Autore** e dopo il **Titolo prodotto**.
 
-    -   **Conteggio licenze** (obbligatorio). Immettere il numero delle licenze acquistate.
+    - **Conteggio licenze** (obbligatorio). Immettere il numero delle licenze acquistate.
 
-    -   **Data di inizio licenza**. Immettere la data di inizio della licenza.
+    - **Data di inizio licenza**. Immettere la data di inizio della licenza.
 
-    -   **Data di scadenza licenza**. Immettere la data di scadenza della licenza.
+    - **Data di scadenza licenza**. Immettere la data di scadenza della licenza.
 
-    -   **Dettagli contratto**. È facoltativo specificare le informazioni di contatto, i codici di registrazione e altre informazioni.
+    - **Dettagli contratto**. È facoltativo specificare le informazioni di contatto, i codici di registrazione e altre informazioni.
 
-5.  Nell'area **Seleziona gruppo di licenze** , effettuare una delle seguenti operazioni:
+5. Nell'area **Seleziona gruppo di licenze** , effettuare una delle seguenti operazioni:
 
-    -   Se non si desidera aggiungere nuovi contratti a un gruppo di licenze nuovo o esistente, selezionare **Aggiungi i contratti a un gruppo di contratti non assegnato** . In qualsiasi momento, è possibile aggiungere i contratti a gruppi di licenze definiti dall'utente.
+    - Se non si desidera aggiungere nuovi contratti a un gruppo di licenze nuovo o esistente, selezionare **Aggiungi i contratti a un gruppo di contratti non assegnato** . In qualsiasi momento, è possibile aggiungere i contratti a gruppi di licenze definiti dall'utente.
 
-    -   Per aggiungere i nuovi contratti a un nuovo gruppo di licenze, selezionare **Aggiungi contratti a un nuovo gruppo di licenze** . Viene richiesto di indicare il nome del nuovo gruppo di licenze.
+    - Per aggiungere i nuovi contratti a un nuovo gruppo di licenze, selezionare **Aggiungi contratti a un nuovo gruppo di licenze** . Viene richiesto di indicare il nome del nuovo gruppo di licenze.
 
-    -   Per aggiungere i nuovi contratti a un gruppo di licenze esistente, selezionare **Aggiungi contratti a un gruppo di licenze esistente** . Nell'elenco **Nome gruppo** selezionare il gruppo di licenze a cui si desidera aggiungere i contratti.
+    - Per aggiungere i nuovi contratti a un gruppo di licenze esistente, selezionare **Aggiungi contratti a un gruppo di licenze esistente** . Nell'elenco **Nome gruppo** selezionare il gruppo di licenze a cui si desidera aggiungere i contratti.
 
-6.  Scegliere **OK**.
+6. Scegliere **OK**.
 
 Viene visualizzato l'elenco **Tutti i contratti** .
 

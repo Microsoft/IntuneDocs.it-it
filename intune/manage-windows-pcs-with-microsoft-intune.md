@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044941"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572556"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
 
@@ -70,16 +70,16 @@ L'amministratore di Intune può rendere disponibile il client software di Intune
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Funzionalità di gestione dei computer con il software client di Intune
 Nella maggior parte dei casi i dispositivi vengono registrati con Microsoft Intune che offre un maggior numero di funzionalità. Tuttavia è possibile anche gestire i PC usando il client software di Intune che fornisce le funzionalità seguenti:
 
--   **[Gestione aggiornamenti software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : è possibile mantenere aggiornati i PC e stabilire quando applicare gli aggiornamenti.
+- **[Gestione aggiornamenti software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : è possibile mantenere aggiornati i PC e stabilire quando applicare gli aggiornamenti.
 
--   **[Criteri di Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : questa funzionalità garantisce che in nessun PC usato nell'azienda Windows Firewall sia inattivo o configurato in modo non corretto.
+- **[Criteri di Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : questa funzionalità garantisce che in nessun PC usato nell'azienda Windows Firewall sia inattivo o configurato in modo non corretto.
 
--   **[Protezione antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune include Endpoint Protection, che consente di proteggere i PC dal malware.
+- **[Protezione antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune include Endpoint Protection, che consente di proteggere i PC dal malware.
 
--   **[Assistenza remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Intune consente agli utenti di contattare il personale tecnico IT, che può fornire assistenza usando la funzionalità Desktop remoto inclusa in Intune (è necessario installare il software TeamViewer).
+- **[Assistenza remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Intune consente agli utenti di contattare il personale tecnico IT, che può fornire assistenza usando la funzionalità Desktop remoto inclusa in Intune (è necessario installare il software TeamViewer).
 
--   **[Gestione delle licenze software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : è possibile tenere traccia del numero di licenze software disponibili e di quante licenze disponibili sono in uso.
--   **[Distribuzione di app](add-apps-for-windows-pcs-in-microsoft-intune.md)** : è possibile distribuire software nei PC gestiti. Alcune funzionalità di gestione di app non sono disponibili quando si gestiscono PC con il client software.
+- **[Gestione delle licenze software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : è possibile tenere traccia del numero di licenze software disponibili e di quante licenze disponibili sono in uso.
+- **[Distribuzione di app](add-apps-for-windows-pcs-in-microsoft-intune.md)** : è possibile distribuire software nei PC gestiti. Alcune funzionalità di gestione di app non sono disponibili quando si gestiscono PC con il client software.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Per altre informazioni sulle attività di gestione dei computer, vedere [Attivit
 
 Alcune opzioni di gestione usate per gestire i PC come dispositivi mobili non possono essere usate per i PC gestiti con il software client di Intune:
 
--   Cancellazione completa (è disponibile la cancellazione selettiva)
--   Accesso condizionale
+- Cancellazione completa (è disponibile la cancellazione selettiva)
+- Accesso condizionale
 
 Nella console di amministrazione di Intune alcune sezioni, ad esempio **Aggiornamenti**, **Protezione** e **Licenze**, vengono visualizzate solo se i dispositivi sono stati registrati usando il software client di Intune.
 

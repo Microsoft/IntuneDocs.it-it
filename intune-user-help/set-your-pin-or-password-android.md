@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 767788d702db45686d686e21018cbf0c5b038412
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069106"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546666"
 ---
 # <a name="set-your-pin-or-password"></a>Impostare il PIN o la password
 
@@ -31,9 +31,9 @@ Se si usa Intune per accedere ai dati aziendali o dell'istituto di istruzione, i
 
 Per impostare un PIN o una password eseguire la procedura seguente.
 
-1.  Toccare **Impostazioni** > **Sicurezza** > **Blocco schermo** > **Password**.
+1. Toccare **Impostazioni** > **Sicurezza** > **Blocco schermo** > **Password**.
 
-2.  Scegliere e confermare la nuova password.
+2. Scegliere e confermare la nuova password.
 
 Per alcuni dispositivi, è possibile che sia necessario impostare un PIN di avvio oltre alla password della schermata. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**. Per altre informazioni, vedere [qui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 

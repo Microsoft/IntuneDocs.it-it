@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040216"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548830"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usare i criteri per semplificare la gestione dei PC
 
@@ -35,13 +35,13 @@ Per gestire i desktop di Windows come PC, eseguendo il client software di Intune
 ### <a name="manage-the-microsoft-intune-center"></a>Gestire Microsoft Intune Center
 Gli utenti visualizzano il client software di Intune come **Microsoft Intune Center**. Microsoft Intune Center consente agli utenti di:
 
--   Ottenere applicazioni dal portale aziendale.
+- Ottenere applicazioni dal portale aziendale.
 
--   Verificare la disponibilità di aggiornamenti.
+- Verificare la disponibilità di aggiornamenti.
 
--   Gestire Microsoft Intune Endpoint Protection.
+- Gestire Microsoft Intune Endpoint Protection.
 
--  Richiedere assistenza remota.
+- Richiedere assistenza remota.
 
 Microsoft Intune Center viene installato su tutti i computer gestiti. È possibile configurare le seguenti impostazioni in un criterio di Intune e visualizzarle in Microsoft Intune Center:
 

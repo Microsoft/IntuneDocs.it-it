@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d52ef6f2cf995031c25bc9065212e39235041b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841150"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546590"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Rimuovere il dispositivo iOS da Intune
 
@@ -35,9 +35,9 @@ Quando il dispositivo iOS viene rimosso da Intune, il dispositivo non potrà pi�
 Per rimuovere il dispositivo da Intune, seguire questa procedura o guardare il video:
 
 
-1.  Nell'app Portale aziendale toccare **Dispositivi** e selezionare il dispositivo di cui annullare la registrazione. Se toccando **Dispostivi** viene visualizzato un solo dispositivo, si accede direttamente alla schermata dei dettagli di quel dispositivo.
+1. Nell'app Portale aziendale toccare **Dispositivi** e selezionare il dispositivo di cui annullare la registrazione. Se toccando **Dispostivi** viene visualizzato un solo dispositivo, si accede direttamente alla schermata dei dettagli di quel dispositivo.
 
-2.  Toccare i puntini di sospensione accanto a **RINOMINA** > **Rimuovi dispositivo** > **Rimuovi**.  
+2. Toccare i puntini di sospensione accanto a **RINOMINA** > **Rimuovi dispositivo** > **Rimuovi**.  
 
     |![Screenshot della schermata Dispositivi nell'app Portale aziendale, con le opzioni possibili dopo che è stato selezionato Rimuovi. Vengono illustrati i pulsanti "Rimuovi dispositivo", "Ripristino delle impostazioni predefinite" e "Annulla".](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
@@ -46,33 +46,33 @@ Per rimuovere il dispositivo da Intune, seguire questa procedura o guardare il v
 
   Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
 
-  -   Il dispositivo non verrà più visualizzato nel portale aziendale.
+  - Il dispositivo non verrà più visualizzato nel portale aziendale.
 
-  -   Non sarà più possibile installare app dal portale aziendale.
+  - Non sarà più possibile installare app dal portale aziendale.
 
-  -   Le impostazioni modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza, non sono più valide.
+  - Le impostazioni modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza, non sono più valide.
 
-  -   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
+  - Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
 
-  -   Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
+  - Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
 
-  -   Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
+  - Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
 
-  -   I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
+  - I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
 
-  -   I dispositivi configurati solo per la posta elettronica non verranno più visualizzati nel sito Web o nell'app Portale aziendale.
+  - I dispositivi configurati solo per la posta elettronica non verranno più visualizzati nel sito Web o nell'app Portale aziendale.
   
-  -   Le app vengono disinstallate e vengono rimossi i dati dell'app aziendale.
+  - Le app vengono disinstallate e vengono rimossi i dati dell'app aziendale.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Rimozione dei dati raccolti dall'app Portale aziendale
 
 Il Portale aziendale archivia i dati locali in tre posizioni del dispositivo.
 
--   **Log informazioni**: i dati sulle attività dell'app standard raccolti da Microsoft, ad esempio per quanto tempo l'app restava aperta o se si arresta in modo anomalo, vengono automaticamente cancellati quando si rimuove il dispositivo dal Portale aziendale.
+- **Log informazioni**: i dati sulle attività dell'app standard raccolti da Microsoft, ad esempio per quanto tempo l'app restava aperta o se si arresta in modo anomalo, vengono automaticamente cancellati quando si rimuove il dispositivo dal Portale aziendale.
 
--   **Analisi di Apple**: dati sulle attività di arresto anomalo dell'app standard raccolti da Apple. Queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
+- **Analisi di Apple**: dati sulle attività di arresto anomalo dell'app standard raccolti da Apple. Queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
 
--   **Keychain**: il dispositivo archivia le password e altre informazioni usate per accedere al keychain. Le app Microsoft condividono le informazioni di accesso con qualsiasi app sviluppata da Microsoft disponibile nel dispositivo, ad esempio Microsoft Outlook e Microsoft Authenticator. Come per Analisi di Apple, queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
+- **Keychain**: il dispositivo archivia le password e altre informazioni usate per accedere al keychain. Le app Microsoft condividono le informazioni di accesso con qualsiasi app sviluppata da Microsoft disponibile nel dispositivo, ad esempio Microsoft Outlook e Microsoft Authenticator. Come per Analisi di Apple, queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

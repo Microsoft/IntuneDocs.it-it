@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330399"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545943"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Annullare la registrazione del dispositivo macOS dall'App portale aziendale
 
@@ -31,26 +31,26 @@ Dopo l'annullamento della registrazione del dispositivo macOS in Intune, il disp
 
 Seguire questa procedura per annullare la registrazione del dispositivo macOS dalla gestione:
 
-1.  Accedere al portale aziendale per macOS.
-2.  Passare a **Dispositivi**  e selezionare il dispositivo di cui si vuole annullare la registrazione.
+1. Accedere al portale aziendale per macOS.
+2. Passare a **Dispositivi**  e selezionare il dispositivo di cui si vuole annullare la registrazione.
 
-3.  Selezionare l'icona di menu di puntini di sospensione > **rimuovere**.
-4.  Viene visualizzato un messaggio di conferma. Selezionare **rimuovere** annullare la registrazione del dispositivo. 
+3. Selezionare l'icona di menu di puntini di sospensione > **rimuovere**.
+4. Viene visualizzato un messaggio di conferma. Selezionare **rimuovere** annullare la registrazione del dispositivo. 
 
 Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
 
--   Il dispositivo non viene visualizzato nel portale aziendale.
+- Il dispositivo non viene visualizzato nel portale aziendale.
 
--   Non è possibile installare app dal portale aziendale.
+- Non è possibile installare app dal portale aziendale.
 
--   Non sono più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la lunghezza della password.
+- Non sono più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la lunghezza della password.
 
--   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
+- Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
 
--   Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
+- Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
 
--   Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
+- Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
 
--   L'accesso alla posta elettronica potrebbe essere rimosso dal dispositivo.
+- L'accesso alla posta elettronica potrebbe essere rimosso dal dispositivo.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835064"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546609"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usare le app gestite nel dispositivo iOS
 
@@ -38,9 +38,9 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 ## <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?  
 Le app gestite possono essere installate in due modi:
 
--   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dal supporto tecnico dell'azienda. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
+- Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dal supporto tecnico dell'azienda. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
 
--   L'app viene installata da App Store e quindi l'utente accede con l'account utente aziendale gestito da Intune.
+- L'app viene installata da App Store e quindi l'utente accede con l'account utente aziendale gestito da Intune.
 
 È possibile a volte che il supporto tecnico dell'azienda acquisti più licenze per un'app installata. Se viene visualizzato un messaggio in cui viene richiesto di accettare il contratto di Volume Purchase Program di Apple, accettare il programma. Se non lo si accetta, non sarà possibile installare l'app.
 
@@ -56,22 +56,22 @@ Le app gestite possono essere installate in due modi:
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?  
 Di seguito sono riportati alcuni esempi di opzioni che il supporto tecnico dell'azienda può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:
 
--   Accesso a specifici siti Web
+- Accesso a specifici siti Web
 
--   Trasferimenti di dati tra applicazioni
+- Trasferimenti di dati tra applicazioni
 
--   Salvataggio di file
+- Salvataggio di file
 
--   Operazioni di copia e incolla
+- Operazioni di copia e incolla
 
--   Requisiti di accesso PIN
+- Requisiti di accesso PIN
 
--   Account di accesso con le credenziali aziendali
+- Account di accesso con le credenziali aziendali
 
--   Possibilità di eseguire il backup nel cloud
+- Possibilità di eseguire il backup nel cloud
 
--   Possibilità di acquisire screenshot
+- Possibilità di acquisire screenshot
 
--   Requisiti di crittografia dati
+- Requisiti di crittografia dati
 
 Per altre informazioni sulle applicazioni gestite nel dispositivo, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

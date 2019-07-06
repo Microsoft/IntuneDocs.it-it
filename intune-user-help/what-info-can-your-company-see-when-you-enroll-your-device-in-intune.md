@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1afdaa1bb21e3a13932202524eed9322d95479bb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174205"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545647"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'organizzazione quando si registra il dispositivo?
 
@@ -34,7 +34,7 @@ L'organizzazione non può vedere le informazioni personali di un utente che regi
 - Posta elettronica e messaggi di testo
 - Contatti
 - Calendario
--   Password
+- Password
 - Immagini, incluse quelle nell'app Foto o nel rullino della fotocamera
 - File
 
@@ -51,8 +51,8 @@ L'organizzazione non può vedere le informazioni personali di un utente che regi
 
 **Informazioni che l'organizzazione potrebbe visualizzare:**
 
--  Numero di telefono: per i dispositivi di proprietà dell'**azienda**, può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale**, l'organizzazione può visualizzare solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
+- Numero di telefono: per i dispositivi di proprietà dell'**azienda**, può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale**, l'organizzazione può visualizzare solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
 - Spazio di archiviazione del dispositivo: se non è possibile installare un'app necessaria, l'organizzazione potrebbe esaminare lo spazio di archiviazione del dispositivo per determinare se lo spazio non è sufficiente.  
--  Posizione: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
+- Posizione: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
 - Dettagli dell'inventario delle app: se l'organizzazione usa Mobile Threat Defense, può visualizzare dettagli sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Informazioni di rete: alcune informazioni sulle connessioni di rete per dispositivi Android possono essere disponibili per il supporto tecnico dell'organizzazione. Se l'organizzazione esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 

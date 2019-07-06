@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9da053d0358d9b85426d75de51aeaea8beb866c1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29b435c3e41ba633ce4312808793bee4a495cd32
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843171"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528799"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Inviare i log agli sviluppatori dell'app Portale aziendale per i dispositivi iOS
 
@@ -31,9 +31,9 @@ Talvolta l'app Portale aziendale può chiudersi inaspettatamente. Gli sviluppato
 
 Se si riscontra questo problema con l'app, è necessario inviare alcune informazioni al team di Portale aziendale affinché possa riprodurlo e diagnosticare la causa principale. Ecco come procedere:
 
-1.  Provare a riprodurre il problema. Anche se non è indispensabile, questo passaggio può facilitare il passaggio successivo.
-2.  Passare a __Impostazioni__ > __Privacy__ > __Analytics (Analisi)__ > __Analytics Data (Dati analitici)__. Questo è un elenco delle varie attività dell'app, da arresti anomali a modelli di utilizzo generale, e non contiene informazioni personali. L'elenco è organizzato in ordine cronologico inverso, dal più recente al meno recente. Se è stato possibile riprodurre il problema, questo dovrebbe comparire al primo posto nell'elenco delle attività dell'app in questa pagina. Se invece non è stato possibile riprodurre il problema, scorrere l'elenco verso il basso fino alla prima voce che inizia con "Portale aziendale" e toccarla per aprire il report corrispondente.
-3.  Effettuare una pressione prolungata e quindi trascinare i puntini blu verso l'alto e verso il basso finché tutto il testo del report non è selezionato. Toccare __Copia__ nel menu popup.
-4.  Aprire l'app di posta elettronica e incollare il contenuto copiato nel corpo del messaggio di posta elettronica. Inviare il messaggio a <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
+1. Provare a riprodurre il problema. Anche se non è indispensabile, questo passaggio può facilitare il passaggio successivo.
+2. Passare a __Impostazioni__ > __Privacy__ > __Analytics (Analisi)__  > __Analytics Data (Dati analitici)__ . Questo è un elenco delle varie attività dell'app, da arresti anomali a modelli di utilizzo generale, e non contiene informazioni personali. L'elenco è organizzato in ordine cronologico inverso, dal più recente al meno recente. Se è stato possibile riprodurre il problema, questo dovrebbe comparire al primo posto nell'elenco delle attività dell'app in questa pagina. Se invece non è stato possibile riprodurre il problema, scorrere l'elenco verso il basso fino alla prima voce che inizia con "Portale aziendale" e toccarla per aprire il report corrispondente.
+3. Effettuare una pressione prolungata e quindi trascinare i puntini blu verso l'alto e verso il basso finché tutto il testo del report non è selezionato. Toccare __Copia__ nel menu popup.
+4. Aprire l'app di posta elettronica e incollare il contenuto copiato nel corpo del messaggio di posta elettronica. Inviare il messaggio a <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

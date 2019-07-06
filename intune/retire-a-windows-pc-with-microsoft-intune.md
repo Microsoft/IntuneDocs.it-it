@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040848"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549170"
 ---
 # <a name="retire-a-windows-pc"></a>Ritirare un PC Windows
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040848"
 
 Usare la procedura descritta di seguito per ritirare i desktop gestiti come PC eseguendo il client software di Intune. Quando si ritira un PC, lo si rimuove dalla gestione Intune. Non è possibile cancellare un PC da Intune per riportarlo alle impostazioni originali.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il PC da ritirare.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il PC da ritirare.
 
-2.  Selezionare i dispositivi da ritirare, quindi scegliere **Disattiva/Cancella**.
+2. Selezionare i dispositivi da ritirare, quindi scegliere **Disattiva/Cancella**.
 
 Per registrare nuovamente un PC in Intune, reinstallare il client software nel PC seguendo la procedura descritta in [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -40,19 +40,19 @@ Se un PC non è in grado di connettersi a Intune, viene visualizzato un messaggi
 
 Quando si ritira un PC:
 
--   Il PC viene rimosso dall'inventario e dalla gestione di Intune e la licenza associata al PC viene resa disponibile per essere riusata. Ritira/cancella dati rimuove il client software Intune ma non rimuove le app o i dati dal PC. Il ritiro non esegue una cancellazione completa nel PC.
+- Il PC viene rimosso dall'inventario e dalla gestione di Intune e la licenza associata al PC viene resa disponibile per essere riusata. Ritira/cancella dati rimuove il client software Intune ma non rimuove le app o i dati dal PC. Il ritiro non esegue una cancellazione completa nel PC.
 
--   Lo stato del computer non viene più visualizzato nella console di Intune.
+- Lo stato del computer non viene più visualizzato nella console di Intune.
 
--   Intune rimuove il client software dal PC. Se il PC non è connesso al servizio Intune, il client software verrà rimosso alla successiva connessione.
+- Intune rimuove il client software dal PC. Se il PC non è connesso al servizio Intune, il client software verrà rimosso alla successiva connessione.
 
--   Microsoft Intune Endpoint Protection viene rimosso dal PC. Se nel PC è installata un'altra applicazione endpoint ed è disabilitata, sarà possibile abilitarla di nuovo dopo aver rimosso Microsoft Intune Endpoint Protection per garantire che i PC siano protetti.
+- Microsoft Intune Endpoint Protection viene rimosso dal PC. Se nel PC è installata un'altra applicazione endpoint ed è disabilitata, sarà possibile abilitarla di nuovo dopo aver rimosso Microsoft Intune Endpoint Protection per garantire che i PC siano protetti.
 
--   Tutti i criteri vengono rimossi dal PC e i valori impostati dal criterio verranno modificati.
+- Tutti i criteri vengono rimossi dal PC e i valori impostati dal criterio verranno modificati.
 
--   Il PC non riceve più aggiornamenti software o aggiornamenti delle definizioni malware dal servizio Intune.
+- Il PC non riceve più aggiornamenti software o aggiornamenti delle definizioni malware dal servizio Intune.
 
--   A seconda del modo in cui sono configurati, i PC ritirati possono continuare a ricevere gli aggiornamenti tramite Windows Server Update Services, Windows Update o Microsoft Update.
+- A seconda del modo in cui sono configurati, i PC ritirati possono continuare a ricevere gli aggiornamenti tramite Windows Server Update Services, Windows Update o Microsoft Update.
 
     > [!IMPORTANT]
     > Se il software client è stato installato tramite un oggetto Criteri di gruppo, è necessario rimuovere l'oggetto Criteri di gruppo prima di rimuovere il software client per evitare che il software venga reinstallato.

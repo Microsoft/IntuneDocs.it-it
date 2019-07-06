@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196773"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545723"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
 
@@ -63,7 +63,7 @@ Usare la procedura seguente per registrare i dispositivi macOS che eseguono OS X
     * Se non si hanno dispositivi, verrà visualizzato il banner **You don't have any managed devices. Add this one by tapping here. (Non ci sono dispositivi gestiti. Aggiungere questo toccando qui)** Fare clic sul banner per aggiungere il dispositivo.  
 
      ![Screenshot della pagina dei dispositivi, con un quadrato rosso attorno all'opzione banner per evidenziare dove fare clic.](./media/CP-enroll-MACOS-1808.png)  
-5.  Completare il passaggio seguente che corrisponde al messaggio attualmente visualizzato nel portale aziendale.  
+5. Completare il passaggio seguente che corrisponde al messaggio attualmente visualizzato nel portale aziendale.  
     * Se si aggiunge un dispositivo per la prima volta, verrà richiesto di scaricare l'app Portale aziendale nel dispositivo. Fare clic su **Download** per continuare.  
 
          ![Screenshot di esempio della schermata dei messaggi di richiesta per scaricare l'app Portale aziendale macOS. L'utente ha la possibilità di selezionare il pulsante Download blu in basso a sinistra nel messaggio o il pulsante Annulla grigio in basso a destra.](./media/CP-enroll-download-macOS-1808.png)  

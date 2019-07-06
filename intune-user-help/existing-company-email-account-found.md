@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834756"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545427"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Account di posta elettronica aziendale già esistente
 
@@ -34,7 +34,7 @@ L'utente potrebbe aver ottenuto l'accesso tramite dispositivo mobile al proprio 
 
 Questa procedura consente di assicurarsi che il dispositivo soddisfi i requisiti di sicurezza della propria azienda e che i messaggi di posta elettronica rimangano protetti.
 
-1.  Nel dispositivo scegliere **Impostazioni** e trovare i propri account connessi. In un dispositivo iOS 11+, ad esempio, selezionare **Account e password**.
+1. Nel dispositivo scegliere **Impostazioni** e trovare i propri account connessi. In un dispositivo iOS 11+, ad esempio, selezionare **Account e password**.
  
 2. Selezionare e rimuovere il proprio account di posta elettronica aziendale.
 

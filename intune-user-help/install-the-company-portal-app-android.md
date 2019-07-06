@@ -18,30 +18,30 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040934"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546334"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installare l'app Portale aziendale per Android
 
 Portale aziendale è un'app che fornisce accesso alle app, alla posta elettronica e alle connessioni Internet dell'azienda o dell'istituto di istruzione. Questa app consente di mantenere le informazioni dell'organizzazione sicure proteggendo il dispositivo, ad esempio mantenendo aggiornate le app aziendali o assicurandosi che il dispositivo si blocchi dopo un determinato periodo di tempo. Per altre informazioni sulle funzionalità dell'App portale aziendale e la parte di gestione dei dispositivi, vedere [perché registrare il dispositivo Android](why-enroll-android-device.md).  
 
-1.  Toccare **Home** > **Play Store**.
+1. Toccare **Home** > **Play Store**.
 
-2.  Nella casella **Cerca** digitare **portale aziendale di Intune**.  
+2. Nella casella **Cerca** digitare **portale aziendale di Intune**.  
 
-3.  Toccare **Portale aziendale di Intune**.
+3. Toccare **Portale aziendale di Intune**.
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
-4.  Toccare **INSTALLA**.
+4. Toccare **INSTALLA**.
 
     ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
-5.  Toccare **ACCETTO**.
+5. Toccare **ACCETTO**.
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 

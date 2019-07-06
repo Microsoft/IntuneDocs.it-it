@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 841be002cf9ed99142ce95a1f9cafda761d1b856
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373315"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558480"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importare le impostazioni Wi-Fi per i dispositivi Windows in Intune
 
@@ -56,7 +56,7 @@ In un computer Windows in cui il profilo Wi-Fi necessario è già installato, se
 
 4. In **Piattaforma** selezionare **Windows 8.1 e versioni successive**.
 5. In **Tipo di profilo** selezionare **Importazione Wi-Fi**.
-6. Configurare le impostazioni seguenti:
+6. Configurare le seguenti impostazioni:
     - **Nome della connessione**: immettere un nome per la connessione Wi-Fi. Gli utenti finali visualizzano questo nome quando esplorano le reti Wi-Fi disponibili.
     - **Profilo XML**: selezionare il pulsante Sfoglia e scegliere il file XML che contiene le impostazioni del profilo Wi-Fi da importare.
     - **Contenuti del file**: visualizza il codice XML per il profilo di configurazione selezionato.

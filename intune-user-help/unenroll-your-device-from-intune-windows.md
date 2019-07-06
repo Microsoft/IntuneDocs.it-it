@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840366"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546654"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Rimuovere il dispositivo Windows dalla gestione
 
@@ -76,24 +76,24 @@ Per rimuovere dalla gestione un dispositivo Windows 10 seguire questa procedura.
 ## <a name="remove-your-windows-81-computer"></a>Rimuovere il computer Windows 8.1
 Per rimuovere da Intune un computer Windows 8.1 seguire questa procedura.
 
-1.  Selezionare **Impostazioni PC** > **Rete** > **Area di lavoro**.
-2.  In **Aggiunta all'area di lavoro** selezionare **Esci**.
-3.  In **Turn on device management** (Attiva gestione dei dispositivi) selezionare **Disattiva**.
-4.  Nella finestra popup visualizzata selezionare **Disattiva**.
+1. Selezionare **Impostazioni PC** > **Rete** > **Area di lavoro**.
+2. In **Aggiunta all'area di lavoro** selezionare **Esci**.
+3. In **Turn on device management** (Attiva gestione dei dispositivi) selezionare **Disattiva**.
+4. Nella finestra popup visualizzata selezionare **Disattiva**.
 
 ## <a name="remove-your-windows-81-phone"></a>Rimuovere il telefono Windows 8.1
 Per rimuovere da Intune un telefono Windows 8.1 seguire questa procedura.
 
-1.  Accedere a **Impostazioni** > **Area di lavoro**.
-2.  Toccare l'account aziendale di cui si vuole annullare la registrazione.
-3.  Nella parte inferiore della schermata toccare **Elimina**.
-4.  Nella finestra di dialogo **Elimina account** toccare **Elimina**.  
+1. Accedere a **Impostazioni** > **Area di lavoro**.
+2. Toccare l'account aziendale di cui si vuole annullare la registrazione.
+3. Nella parte inferiore della schermata toccare **Elimina**.
+4. Nella finestra di dialogo **Elimina account** toccare **Elimina**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Rimozione delle informazioni personali dopo avere rimosso il Portale aziendale  
 
 Esistono due tipi di dati archiviati dal Portale aziendale nel dispositivo Windows:
 
--   **Log di diagnostica**: dati di attività standard delle app raccolti da Microsoft. Tali dati vengono cancellati automaticamente quando si disinstalla l'app Portale aziendale. I dati dell'attività dell'app indicano ad esempio per quanto tempo è stata aperta l'app o se ha registrato un arresto anomalo.
--   **Cache dell'applicazione**: file di supporto necessari per il funzionamento dell'app, come icone e impostazioni.
+- **Log di diagnostica**: dati di attività standard delle app raccolti da Microsoft. Tali dati vengono cancellati automaticamente quando si disinstalla l'app Portale aziendale. I dati dell'attività dell'app indicano ad esempio per quanto tempo è stata aperta l'app o se ha registrato un arresto anomalo.
+- **Cache dell'applicazione**: file di supporto necessari per il funzionamento dell'app, come icone e impostazioni.
 
 Per eliminare i log e la cache memorizzati, completare una delle operazioni seguenti:
 

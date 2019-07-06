@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040899"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549143"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Richiedere e fornire assistenza remota per i PC Windows
 
@@ -79,13 +79,13 @@ Dal menu**Azioni** della finestra di **TeamViewer**, scegliere **Termina session
 ## <a name="remotely-restart-a-windows-pc"></a>Riavviare in remoto un PC Windows
 Quando si fornisce supporto agli utenti riguardo a questi problemi, in alcune occasioni può essere necessario riavviarne i PC in remoto. Seguire questa procedura per riavviare in remoto un PC Windows.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il PC da riavviare.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il PC da riavviare.
 
-2.  Selezionare uno o più PC e quindi scegliere **Attività remote** &gt; **Riavvia il computer**.
+2. Selezionare uno o più PC e quindi scegliere **Attività remote** &gt; **Riavvia il computer**.
 
-3.  Per visualizzare lo stato dell'attività, scegliere il collegamento **Attività remote** nell'angolo inferiore destro della pagina.
+3. Per visualizzare lo stato dell'attività, scegliere il collegamento **Attività remote** nell'angolo inferiore destro della pagina.
 
-4.  Nella finestra di dialogo **Stato attività** , rivedere le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati.
+4. Nella finestra di dialogo **Stato attività** , rivedere le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati.
 
 ### <a name="see-also"></a>Vedere anche
 

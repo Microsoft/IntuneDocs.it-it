@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: efed9522f64cd7b34d702cd959f6b1aa4524f855
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491005"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545888"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?
 
@@ -32,48 +32,48 @@ Quando si installa l'app Portale aziendale e la si usa per registrare un disposi
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Che cosa avviene a tutti i dispositivi Windows dopo l'iscrizione?
 Mediante la registrazione del dispositivo Windows o Windows Phone in Intune è possibile:
 
--   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
+- Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
 
--   Ottenere app aziendali dal sito Web del portale aziendale. (__Nota__: per Windows 7 e Windows Vista è possibile ottenere app aziendali solo dal sito Web del portale aziendale.)
+- Ottenere app aziendali dal sito Web del portale aziendale. (__Nota__: per Windows 7 e Windows Vista è possibile ottenere app aziendali solo dal sito Web del portale aziendale.)
 
--   Configurare automaticamente l'account di posta elettronica aziendale o dell'istituto di istruzione.
+- Configurare automaticamente l'account di posta elettronica aziendale o dell'istituto di istruzione.
 
--   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato.
+- Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato.
 
 Quando si registra un dispositivo, si concedono al supporto tecnico dell'azienda le autorizzazioni necessarie per eseguire alcune operazioni, ad esempio:
 
--   Ripristinare le impostazioni predefinite del dispositivo impostate dal produttore. Questa operazione è utile se il dispositivo viene smarrito o rubato.
+- Ripristinare le impostazioni predefinite del dispositivo impostate dal produttore. Questa operazione è utile se il dispositivo viene smarrito o rubato.
 
--   Rimuovere solo le app aziendali e i file correlati alla società. *Impostazioni e dati personali non vengono rimossi.*
+- Rimuovere solo le app aziendali e i file correlati alla società. *Impostazioni e dati personali non vengono rimossi.*
 
--   Il supporto tecnico dell'azienda può vedere il software installato nel dispositivo, incluso il software installato personalmente dall'utente.
+- Il supporto tecnico dell'azienda può vedere il software installato nel dispositivo, incluso il software installato personalmente dall'utente.
 
--   Impostare requisiti per il dispositivo, ad esempio richiedere una password del dispositivo o un PIN per consentire la protezione dei dati aziendali. Il supporto tecnico dell'azienda può anche limitare il numero di immissioni di una password errata e impedire l'accesso al dispositivo se tale numero viene superato.
+- Impostare requisiti per il dispositivo, ad esempio richiedere una password del dispositivo o un PIN per consentire la protezione dei dati aziendali. Il supporto tecnico dell'azienda può anche limitare il numero di immissioni di una password errata e impedire l'accesso al dispositivo se tale numero viene superato.
 
--   Richiedere all'utente di crittografare i dati del dispositivo per proteggere i dati aziendali in caso di furto o smarrimento del dispositivo.
+- Richiedere all'utente di crittografare i dati del dispositivo per proteggere i dati aziendali in caso di furto o smarrimento del dispositivo.
 
--   Richiedere di accettare i termini e le condizioni.
+- Richiedere di accettare i termini e le condizioni.
 
--   Impedire lo scatto di foto di dati correlati alla società.
+- Impedire lo scatto di foto di dati correlati alla società.
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Che cosa accade a tutti i PC Windows dopo l'iscrizione?
 
--  Verrà installato software nel computer per consentire al supporto tecnico dell'azienda di gestire il computer e all'utente di accedere alle risorse aziendali, come app e informazioni sul supporto. Il supporto tecnico dell'azienda può aggiornare automaticamente il software.
+- Verrà installato software nel computer per consentire al supporto tecnico dell'azienda di gestire il computer e all'utente di accedere alle risorse aziendali, come app e informazioni sul supporto. Il supporto tecnico dell'azienda può aggiornare automaticamente il software.
 
--  Intune Endpoint Protection può essere installato nel computer. Questo software controlla l'eventuale presenza di virus e malware.
+- Intune Endpoint Protection può essere installato nel computer. Questo software controlla l'eventuale presenza di virus e malware.
 
--  Il supporto tecnico dell'azienda può raccogliere o eliminare dati dal disco rigido del computer.
+- Il supporto tecnico dell'azienda può raccogliere o eliminare dati dal disco rigido del computer.
 
--  Il supporto tecnico dell'azienda può installare app e aggiornamenti nel computer.
+- Il supporto tecnico dell'azienda può installare app e aggiornamenti nel computer.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Che cosa accade ogni otto ore dopo la registrazione del dispositivo?
 
 Ogni otto ore circa i dispositivi registrati eseguono le operazioni seguenti:
 
--   Download degli aggiornamenti di criteri o app resi disponibili dal supporto tecnico dell'azienda.
+- Download degli aggiornamenti di criteri o app resi disponibili dal supporto tecnico dell'azienda.
 
--   Invio degli aggiornamenti dell'inventario hardware.
+- Invio degli aggiornamenti dell'inventario hardware.
 
--   Invio degli aggiornamenti dell'inventario delle app aziendali.
+- Invio degli aggiornamenti dell'inventario delle app aziendali.
 
 Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

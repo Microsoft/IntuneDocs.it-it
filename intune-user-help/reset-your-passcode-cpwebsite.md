@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163429"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546796"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Come reimpostare il passcode del dispositivo dal sito Web del portale aziendale
 
@@ -36,7 +36,7 @@ Se si usa un dispositivo aziendale registrato, è possibile che l'opzione per re
 
 ## <a name="reset-your-passcode"></a>Reimpostare il passcode
 
-1.  Aprire il [sito Web Portale aziendale](https://portal.manage.microsoft.com) e selezionare il pulsante __Menu__ > __Dispositivi__.  
+1. Aprire il [sito Web Portale aziendale](https://portal.manage.microsoft.com) e selezionare il pulsante __Menu__ > __Dispositivi__.  
 
 2. Selezionare il dispositivo per il quale è necessario reimpostare il passcode.  
 
@@ -79,7 +79,7 @@ In questa sezione viene descritto come reimpostare il passcode e il comportament
 **iOS**: rimuove il passcode esistente senza crearne uno temporaneo. Se si usa lo scanner di impronte digitali Touch ID per aprire il dispositivo o fare acquisti, è necessario configurarlo nuovamente.  
 
 **Windows 10 Mobile**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri. Se configurato, il riconoscimento facciale di Windows Hello funzionerà comunque con il dispositivo.
-    
+
 **Windows Phone 8.1**: rimuove il passcode esistente e crea un passcode temporaneo con numeri.  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

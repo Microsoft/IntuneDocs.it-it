@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196874"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546371"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Registrazione di un dispositivo Windows in Portale aziendale Intune  
 
@@ -61,17 +61,17 @@ La procedura di registrazione è diversa per versioni differenti dei dispositivi
 
 4. Se la versione è  
 
-    *  __1607 o successive__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Account** > **Accedi all'azienda o all'istituto di istruzione**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 o successive__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Account** > **Accedi all'azienda o all'istituto di istruzione**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 o precedenti__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Account** > **Il tuo account**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### <a name="windows-10-mobile-devices"></a>Dispositivi Windows 10 Mobile       
+### <a name="windows-10-mobile-devices"></a>Dispositivi Windows 10 Mobile
 
-1.  Passare a __Tutte le app__ e selezionare l'app __Impostazioni__.  
-2.  Selezionare __Sistema__ > __Informazioni__.      
-3.  In __Informazioni sul dispositivo__ trovare __Versione__.  
+1. Passare a __Tutte le app__ e selezionare l'app __Impostazioni__.
+2. Selezionare __Sistema__ > __Informazioni__.
+3. In __Informazioni sul dispositivo__ trovare __Versione__.  
 4. Se la versione è  
 
-    *  __1607 o successive__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Accedi all'azienda o all'istituto di istruzione**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 o successive__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Accedi all'azienda o all'istituto di istruzione**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 o precedenti__: registrare il dispositivo tramite il [percorso **Impostazioni** > **Account**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## <a name="enroll-non-windows-10-devices"></a>Registrare dispositivi non Windows 10  

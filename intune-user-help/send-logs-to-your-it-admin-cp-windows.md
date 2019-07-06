@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836473"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528764"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Comunicare tramite posta elettronica i problemi al supporto tecnico aziendale dall'app Portale aziendale per Windows
 
@@ -32,7 +32,7 @@ ms.locfileid: "55836473"
 Quando si richiede assistenza, viene aperto un messaggio di posta elettronica precompilato in cui è possibile descrivere in dettaglio il problema. Il messaggio include anche un ID di log di diagnostica. Se il team di supporto non riesce a risolvere il problema in base alla descrizione fornita, contatterà Microsoft per richiedere assistenza. Microsoft avrà bisogno dell'ID di diagnostica per fare riferimento ai log dell'app.   
 
 
-> [!Note]       
+> [!Note]
 > Dopo che si è fatto clic sul pulsante **Guida**, l'app Portale aziendale invia automaticamente i log al team di supporto Microsoft. Questo è un passaggio proattivo che consente di risolvere con più facilità i problemi inoltrati al supporto Microsoft. Come indicato in precedenza, il team di supporto Microsoft può recuperare i log usando l'ID di diagnostica nel messaggio di posta elettronica.  
 
 ## <a name="what-is-a-diagnostic-log"></a>Che cos'è un log di diagnostica?

@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040972"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549172"
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
 La categoria **Policy** contiene le entità per i dispositivi mobili che tengono traccia delle informazioni come:
 
-  -  Inventario dei profili di configurazione del dispositivo, profili di configurazione dell'app e criteri di conformità  
-  -  Numero di dispositivi nello stato completato, in sospeso, non riuscito o di errore al giorno  
-  -  Numero di utenti nello stato completato, in sospeso, non riuscito o di errore al giorno  
-  -  Numero cumulativo di dispositivi nello stato completato, in sospeso, non riuscito o di errore  
+  - Inventario dei profili di configurazione del dispositivo, profili di configurazione dell'app e criteri di conformità  
+  - Numero di dispositivi nello stato completato, in sospeso, non riuscito o di errore al giorno  
+  - Numero di utenti nello stato completato, in sospeso, non riuscito o di errore al giorno  
+  - Numero cumulativo di dispositivi nello stato completato, in sospeso, non riuscito o di errore  
 
 ## <a name="policy"></a>Criteri
 

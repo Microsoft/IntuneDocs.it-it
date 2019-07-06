@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043907"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530725"
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
@@ -35,8 +35,8 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 - Il dispositivo deve essere registrato con Intune e gestito da Intune.
 - Sia il dispositivo che l'utente devono essere conformi ai criteri di conformità assegnati in Intune.
 - Per impostazione predefinita, all'utente deve essere assegnato un criterio di conformità del dispositivo. Ciò può dipendere dalla configurazione dell'impostazione **Contrassegna i dispositivi senza criteri di conformità assegnati come** in **Conformità del dispositivo** > **Impostazioni dei criteri di conformità** nel portale di amministrazione di Intune.
--   È necessario attivare Exchange ActiveSync sul dispositivo se l'utente usa il client di posta elettronica nativo del dispositivo anziché Outlook. Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android.
--   Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
+- È necessario attivare Exchange ActiveSync sul dispositivo se l'utente usa il client di posta elettronica nativo del dispositivo anziché Outlook. Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android.
+- Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
 
 È possibile visualizzare queste condizioni per ogni dispositivo nel portale di Azure e nel report di inventario dei dispositivi.
 

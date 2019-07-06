@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468724"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494254"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>In fase di sviluppo per Microsoft Intune - Luglio 2019
 
@@ -58,8 +58,6 @@ Per supportare gli utenti nella preparazione e pianificazione, questa pagina ill
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Gestione delle app
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Gli utenti dei dispositivi potranno visualizzare tutte le app gestite che hanno installato o tentato di installare <!-- 2352913 -->
-Nel Portale aziendale per Windows saranno elencate tutte le app gestite, sia obbligatorie che disponibili, installate nel dispositivo dell'utente. Gli utenti potranno visualizzare le installazioni di app tentate e in sospeso e i rispettivi stati correnti. Se l'organizzazione non rende le app obbligatorie o disponibili, verrà visualizzato un messaggio che indica che non è stata installata alcuna app aziendale. Gli utenti potranno anche ordinare o filtrare le app in base allo stato di installazione.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Notifiche personalizzate per gli utenti e gruppi    <!-- 16766574   -->
 Presto sarà in grado di inviare notifiche push ad-hoc personalizzate dall'applicazione portale aziendale agli utenti di dispositivi iOS e Android gestiti con Intune. Queste notifiche personalizzate non sono vincolate a particolari funzionalità di Intune e può essere usate per qualsiasi scopo sono necessarie, incluse le notifiche generali da inviare ad alcuni o tutti i dipendenti.  

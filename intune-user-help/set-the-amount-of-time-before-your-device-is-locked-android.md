@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a91de6b4f86500afa043d0b8045980e6437af3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3236d61d34766c5517ac1051fa3bfebd3de558d0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843137"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546009"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Come impostare l'intervallo prima che il dispositivo venga bloccato
 
 Per ottimizzare la protezione dei dati sul dispositivo Android, il supporto tecnico dell'azienda può impostare un criterio che richiede di specificare l'intervallo in cui il dispositivo può rimanere inattivo prima che venga bloccato automaticamente. Per impostare l'intervallo prima che il dispositivo venga bloccato, seguire questa procedura.
 
-1.  In **Impostazioni** nel dispositivo fare clic su **Sicurezza** &gt; **Blocca automaticamente**, che corrisponde a **Blocca telefono dopo** in alcuni dispositivi.
+1. In **Impostazioni** nel dispositivo fare clic su **Sicurezza** &gt; **Blocca automaticamente**, che corrisponde a **Blocca telefono dopo** in alcuni dispositivi.
 
-2.  Specificare il valore di timeout della password.
+2. Specificare il valore di timeout della password.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

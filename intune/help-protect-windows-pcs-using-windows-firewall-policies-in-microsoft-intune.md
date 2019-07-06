@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403023"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572523"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune
 
@@ -48,14 +48,14 @@ I criteri di Windows Firewall consentono di creare e distribuire le impostazioni
 > [!IMPORTANT]
 > Per gestire Windows Firewall con Intune, verificare che i due servizi seguenti siano abilitati nei computer gestiti:
 >
-> -   Windows Firewall
-> -   Agente criteri IPsec
+> - Windows Firewall
+> - Agente criteri IPsec
 
 ## <a name="configure-a-windows-firewall-policy"></a>Configurare un criterio di Windows Firewall
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Aggiungi criterio**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Aggiungi criterio**.
 
-2.  Configurare e distribuire un criterio delle **Impostazioni di Windows Firewall** . È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configurare e distribuire un criterio delle **Impostazioni di Windows Firewall** . È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     La sezione seguente illustra i valori che possono essere configurati nei criteri e i valori predefiniti che vengono usati se i criteri non vengono personalizzati.
 

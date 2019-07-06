@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412683"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558506"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Risolvere i problemi di installazione delle app
 
@@ -50,6 +50,18 @@ I dettagli dell'errore di installazione dell'app indicheranno il problema. È po
 
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>Installazione dell'app applicano non raggiungere i dispositivi
+Quando si verificano problemi durante l'installazione di App, è necessario considerare le seguenti azioni:
+- Se l'app non viene visualizzata nel portale aziendale, assicurarsi che l'app viene distribuita con **Available** finalità e che l'utente accede al portale aziendale con il tipo di dispositivo supportato dall'app.
+- Per i dispositivi Windows BYOD, l'utente deve aggiungere un account aziendale nel dispositivo.
+- Controllare se l'utente viene superato il limite di dispositivi AAD:
+  1. Passare a [le impostazioni di dispositivo di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Prendere nota del valore impostato per **dispositivi massimo per ogni utente**.
+  3. Passare a [agli utenti di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Selezionare gli utenti interessati e fare clic su **dispositivi**.
+  5. Se l'utente viene superato il limite di set di eliminare qualsiasi record non aggiornati che non sono più necessari.
+- Per i dispositivi DEP iOS, assicurarsi che l'utente è elencato come **registrati dall'utente** nel Pannello di panoramica del dispositivo Intune. Se viene visualizzato ND, quindi distribuire un criterio di configurazione per il portale aziendale di Intune. Per altre informazioni, vedere [configurare l'app portale aziendale](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Risoluzione dei problemi di installazione delle app Win32
 

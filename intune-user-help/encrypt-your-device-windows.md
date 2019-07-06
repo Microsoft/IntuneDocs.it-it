@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564466"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545275"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Come proteggere il dispositivo Windows usando la crittografia
 
@@ -37,8 +37,8 @@ Un dispositivo Windows registrato viene crittografato automaticamente se è nece
 
 Per crittografare un dispositivo desktop, leggere invece le istruzioni seguenti.
 
-1.  Cercare e avviare l'app **Gestione BitLocker**.
+1. Cercare e avviare l'app **Gestione BitLocker**.
 
-2.  Selezionare **Attiva BitLocker** e seguire le istruzioni per crittografare ogni unità.
+2. Selezionare **Attiva BitLocker** e seguire le istruzioni per crittografare ogni unità.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto, vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

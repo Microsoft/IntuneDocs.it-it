@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850905"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546143"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Inviare i log agli sviluppatori dell'app Portale aziendale per i dispositivi Android
 
@@ -34,16 +34,16 @@ Talvolta l'app Portale aziendale può chiudersi inaspettatamente. Per gli svilup
 
 Per inviare i log a Microsoft:
 
-1.  Aprire l'app Portale aziendale.
+1. Aprire l'app Portale aziendale.
 
-2.  Toccare **Menu** > **?** > **Invia messaggio di posta elettronica al supporto**.
+2. Toccare **Menu** >  **?**  > **Invia messaggio di posta elettronica al supporto**.
 
     > [!NOTE]
     > **Menu** può essere un pulsante software o hardware, a seconda del dispositivo Android in uso.
 
-3.  Toccare **Carica solo log**.
+3. Toccare **Carica solo log**.
 
-4.  Quando il caricamento è completo, l'utente riceverà un ID evento imprevisto. Salvare l'ID per riferimento.
+4. Quando il caricamento è completo, l'utente riceverà un ID evento imprevisto. Salvare l'ID per riferimento.
 
 Per contattare direttamente il team del Portale aziendale per Android, è possibile inviare un messaggio di posta elettronica a <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 

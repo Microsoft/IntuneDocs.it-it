@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846248"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527626"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installare Mobile Threat Defense nel dispositivo iOS
 
@@ -38,12 +38,12 @@ Prima di poter accedere ai dati aziendali, viene richiesto dal supporto tecnico 
 
 Mobile Threat Defense protegge i dispositivi degli utenti aziendali dalle app che sottraggono informazioni riservate dell'azienda. Per fornire questo tipo di protezione il servizio Mobile Threat Defense usato dall'azienda deve disporre di informazioni aggiuntive sulle app presenti nei dispositivi. L'azienda non può visualizzare i dati presenti nelle app personali. Tutte le app sul dispositivo vengono aggiunte agli [elementi che l'azienda può visualizzare](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) se usa il servizio Mobile Threat Defense. Le parti dell'app che l'azienda può visualizzare sono:
 
-*   Nome app
+* Nome app
 * ID dell'app: nome univoco che identifica l'app nell'App Store
-*   Numero di versione e versione breve dell'app: numeri di versione specifici di un'app
+* Numero di versione e versione breve dell'app: numeri di versione specifici di un'app
 * Bundle e dimensioni dinamiche dell'app: quantità di spazio usato dall'app nel dispositivo
 * Validità dell'app: se un'app è approvata per l'uso
-*   Stato di gestione dell'app: se si tratta di un'app gestita dall'azienda o di un'app personale
+* Stato di gestione dell'app: se si tratta di un'app gestita dall'azienda o di un'app personale
 
 ## <a name="if-the-installation-doesnt-work"></a>Se l'installazione non riesce
 

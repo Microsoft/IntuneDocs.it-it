@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403770"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547945"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo
 
@@ -38,11 +38,11 @@ In questo caso, i criteri di gruppo a livello di dominio hanno la precedenza sui
 ## <a name="what-to-do-if-you-are-using-group-policy"></a>Che cosa fare se si usa Criteri di gruppo
 Verificare che i criteri applicati non siano gestiti da Criteri di gruppo. Per evitare conflitti, è possibile applicare uno o più dei metodi seguenti:
 
--   Spostare i PC in un'unità organizzativa Active Directory in cui non sono stati applicati i Criteri di gruppo prima di installare il client di Intune. È inoltre possibile bloccare l'ereditarietà di Criteri di gruppo nelle unità organizzative che includono PC registrati in Intune ai quali non si vuole che vengano applicate le impostazioni di Criteri di gruppo.
+- Spostare i PC in un'unità organizzativa Active Directory in cui non sono stati applicati i Criteri di gruppo prima di installare il client di Intune. È inoltre possibile bloccare l'ereditarietà di Criteri di gruppo nelle unità organizzative che includono PC registrati in Intune ai quali non si vuole che vengano applicate le impostazioni di Criteri di gruppo.
 
--   Usare un filtro gruppo di sicurezza per limitare gli oggetti Criteri di gruppo solo ai PC gestiti da Intune.
+- Usare un filtro gruppo di sicurezza per limitare gli oggetti Criteri di gruppo solo ai PC gestiti da Intune.
 
--   Disabilitare o rimuovere gli oggetti Criteri di gruppo che sono in conflitto con i criteri di Intune.
+- Disabilitare o rimuovere gli oggetti Criteri di gruppo che sono in conflitto con i criteri di Intune.
 
 Per altre informazioni sui Criteri di gruppo di Active Directory e Windows, vedere la documentazione di Windows Server.
 
@@ -54,7 +54,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
 #### To apply WMI filters to a GPO
 
-1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
+1. Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -84,42 +84,42 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
     };
     ```
 
-2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
+2. Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
     **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
+3. Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
+    - For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   For GPOs that apply to PCs that are managed by Intune, use the following:
+    - For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
+4. Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
+    - For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
+    - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 Gli oggetti Criteri di gruppo possono essere applicati solo ai gruppi di sicurezza specificati nell'area **Filtri di sicurezza** della console Gestione Criteri di gruppo per l'oggetto selezionato. Per impostazione predefinita, gli oggetti Criteri di gruppo vengono applicati ai membri del gruppo *Authenticated Users*.
 
--   Nello snap-in **Utenti e computer di Active Directory** creare un nuovo gruppo di sicurezza contenente i computer e gli account utente che non si vogliono gestire con Intune. Ad esempio, è possibile denominare il gruppo *Non appartenenti a Microsoft Intune*.
+- Nello snap-in **Utenti e computer di Active Directory** creare un nuovo gruppo di sicurezza contenente i computer e gli account utente che non si vogliono gestire con Intune. Ad esempio, è possibile denominare il gruppo *Non appartenenti a Microsoft Intune*.
 
--   Nella console di gestione dei criteri di gruppo, nella scheda **Delega** relativa all'oggetto Criteri di gruppo selezionato, fare clic con il pulsante destro del mouse sul nuovo gruppo di sicurezza per delegare le appropriate autorizzazioni **Lettura** e **Applica Criteri di gruppo** sia agli utenti che ai computer del gruppo di sicurezza. Le autorizzazioni**Applica Criteri di gruppo** si trovano nella finestra di dialogo **Avanzate** .
+- Nella console di gestione dei criteri di gruppo, nella scheda **Delega** relativa all'oggetto Criteri di gruppo selezionato, fare clic con il pulsante destro del mouse sul nuovo gruppo di sicurezza per delegare le appropriate autorizzazioni **Lettura** e **Applica Criteri di gruppo** sia agli utenti che ai computer del gruppo di sicurezza. Le autorizzazioni**Applica Criteri di gruppo** si trovano nella finestra di dialogo **Avanzate** .
 
--   Quindi, applicare il filtro del nuovo gruppo di sicurezza all'oggetto Criteri di gruppo selezionato e rimuovere il filtro predefinito **Authenticated Users**.
+- Quindi, applicare il filtro del nuovo gruppo di sicurezza all'oggetto Criteri di gruppo selezionato e rimuovere il filtro predefinito **Authenticated Users**.
 
 È necessario gestire la registrazione del nuovo gruppo di sicurezza in seguito a modifiche del servizio Intune.
 

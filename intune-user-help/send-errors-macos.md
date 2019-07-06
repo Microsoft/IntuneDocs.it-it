@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833974"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546156"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Inviare gli errori alle persone appropriate per il dispositivo macOS gestito
 
@@ -33,11 +33,11 @@ In alcuni casi si verificano errori indefiniti nell'app Portale aziendale. Quand
 
 Per inviare i dettagli su un errore nell'app Portale aziendale:
 
--   Nel messaggio di errore visualizzato fare clic su **Report**.
+- Nel messaggio di errore visualizzato fare clic su **Report**.
 
--   Fare clic sul menu **?** > **Salva il report di diagnostica**. Scegliere un percorso in cui salvare il file. Caricare o inviare quindi questo file al referente per il supporto dell'azienda tramite posta elettronica.
+- Fare clic sul menu **?** > **Salva il report di diagnostica**. Scegliere un percorso in cui salvare il file. Caricare o inviare quindi questo file al referente per il supporto dell'azienda tramite posta elettronica.
 
--   Se l'app di posta elettronica è configurata, è possibile inviare il report di diagnostica tramite **?** > **Invia report di diagnostica**. Dopo che i log sono stati caricati, fare clic su **Dettagli della posta elettronica**.
+- Se l'app di posta elettronica è configurata, è possibile inviare il report di diagnostica tramite **?**  > **Invia report di diagnostica**. Dopo che i log sono stati caricati, fare clic su **Dettagli della posta elettronica**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Inviare errori agli sviluppatori dell'app Portale aziendale per i dispositivi macOS
 
@@ -45,8 +45,8 @@ Talvolta l'app Portale aziendale può chiudersi inaspettatamente. Per gli svilup
 
 Per inviare i log a Microsoft:
 
-1.  Aprire l'app Portale aziendale.
-2.  Fare clic sul menu **?** > **Invia report di diagnostica**.  Dopo che i log sono stati caricati, si riceverà un ID evento imprevisto. Copiare e salvare l'ID.
-3.  Inviare un messaggio di posta elettronica a Microsoft usando <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">questo modello</a>.
+1. Aprire l'app Portale aziendale.
+2. Fare clic sul menu **?** > **Invia report di diagnostica**.  Dopo che i log sono stati caricati, si riceverà un ID evento imprevisto. Copiare e salvare l'ID.
+3. Inviare un messaggio di posta elettronica a Microsoft usando <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">questo modello</a>.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

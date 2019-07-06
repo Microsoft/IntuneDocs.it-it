@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335072"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546262"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizzare il dispositivo Windows manualmente
 
@@ -41,9 +41,9 @@ Tutti i dispositivi Windows possono essere sincronizzati dall'app Impostazioni d
 ## <a name="sync-directly-from-company-portal-app-for-windows"></a>Eseguire la sincronizzazione diretta dall'app Portale aziendale per Windows
 Completare questi passaggi per sincronizzare manualmente qualsiasi dispositivo Windows 10 che esegue l'aggiornamento Creators Update (versione 1703) o versione successiva.
 
-1.  Aprire l'app Portale aziendale nel dispositivo.
+1. Aprire l'app Portale aziendale nel dispositivo.
 
-2.  Selezionare **Impostazioni** > **Sincronizza**.
+2. Selezionare **Impostazioni** > **Sincronizza**.
 
     ![Screenshot della home page dell'app Portale aziendale, con Impostazioni evidenziato](./media/RS1_homePage_settings_04.png)  
     
@@ -96,7 +96,7 @@ Completare questi passaggi per sincronizzare manualmente i dispositivi Microsoft
 
 #### <a name="work-access-steps"></a>Procedura di accesso società
 
-1.  Fare clic su **Accesso società**.
+1. Fare clic su **Accesso società**.
 
     ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
 
@@ -128,12 +128,12 @@ Completare questi passaggi per sincronizzare manualmente i dispositivi Microsoft
        ![Scelta dell'icona Sincronizza.](./media/win10m-sync-4-tap-sync.png)  
 ### <a name="microsoft-hololens"></a>Microsoft HoloLens  
 Queste istruzioni si applicano ai dispositivi HoloLens che eseguono l'Aggiornamento dell'anniversario di Windows 10 (noto anche come RS1). 
-1.  Aprire l'app Impostazioni del dispositivo.  
+1. Aprire l'app Impostazioni del dispositivo.  
 
-2.  Selezionare **Account** > **Accesso società**.  
+2. Selezionare **Account** > **Accesso società**.  
     ![Screenshot dell'app Impostazioni di HoloLens, con il collegamento Account evidenziato](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3.  Selezionare l'account connesso > **Sincronizza**. ![Screenshot dell'app Impostazioni di HoloLens, con il pulsante Sincronizza evidenziato](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. Selezionare l'account connesso > **Sincronizza**.  ![Screenshot dell'app Impostazioni di HoloLens, con il pulsante Sincronizza evidenziato](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
 ### <a name="windows-phone-81"></a>Windows Phone 8.1
 

@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804435"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545244"
 ---
-## <a name="microsoft-open-source-code-of-conduct"></a>Codice di comportamento open source Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Codice di comportamento per community Open Source Microsoft
 
-Questo progetto ha adottato il [codice di comportamento open source Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Per altre informazioni, vedere [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Domande frequenti sul codice di comportamento) o contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) per domande o commenti.
+Questo progetto ha adottato il [codice di comportamento per community Open Source Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Per altre informazioni, vedere [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Domande frequenti sul codice di comportamento) o inviare eventuali domande o commenti all'indirizzo [opencode@microsoft.com](mailto:opencode@microsoft.com).
 
 # <a name="docsmicrosoftcom-github-repository"></a>Repository di Github per docs.microsoft.com
 
@@ -30,7 +30,7 @@ Questo è uno dei repository di GitHub in cui si trova l'origine dei contenuti p
     5. Creare una richiesta pull.
     
     **Opzione 2: trovare l'articolo in questo repository e aggiornarlo**  
-    1.  La maggior parte degli argomenti si trovano in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In questa cartella cercare il nome dell'argomento, ad esempio `troubleshoot-policies-in-microsoft-intune`. 
+    1. La maggior parte degli argomenti si trovano in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In questa cartella cercare il nome dell'argomento, ad esempio `troubleshoot-policies-in-microsoft-intune`. 
     2. Selezionare il collegamento e fare clic sull'icona a forma di matita. Quando si passa il mouse sull'icona a forma di matita, viene visualizzata la descrizione comando **Edit this file** (Modifica file). 
     3. Apportare le modifiche e quindi **eseguire il commit** delle modifiche. 
     4. Creare una richiesta pull. 

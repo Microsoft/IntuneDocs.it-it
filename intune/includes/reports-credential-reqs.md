@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 015e50d24149a6b6242eda86d5f3d62489e9955d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76706fb39c3c5a69cba4fbf3f57c0b58d92e4a27
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511330"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67560000"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -14,8 +14,8 @@ L'autenticazione e l'autorizzazione si basano sulle credenziali di Azure AD e su
 
 I requisiti per l'accesso al data warehouse di Intune (inclusa l'API) sono i seguenti:
 
-  -  L'utente deve essere uno dei seguenti:
-      -  Amministratore globale di Azure AD
-      -  Amministratore del servizio Intune
-      -  Utente con accesso basato sul ruolo alla risorsa **data warehouse di Intune**
-      -  Autenticazione senza utente usando l'[autenticazione OAuth](../data-warehouse-app-only-auth.md) 
+  - L'utente deve essere uno dei seguenti:
+      - Amministratore globale di Azure AD
+      - Amministratore del servizio Intune
+      - Utente con accesso basato sul ruolo alla risorsa **data warehouse di Intune**
+      - Autenticazione senza utente usando l'[autenticazione OAuth](../data-warehouse-app-only-auth.md) 

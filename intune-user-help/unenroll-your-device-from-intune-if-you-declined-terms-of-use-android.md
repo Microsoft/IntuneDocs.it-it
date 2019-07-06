@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849234"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546625"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Rimuovere il dispositivo dalla gestione se sono state rifiutate le Condizioni per l'utilizzo
 
@@ -37,11 +37,11 @@ Prima di disinstallare l'app Portale aziendale, è necessario passare all'impost
 
 Per rimuovere il dispositivo da Intune e disinstallare l'app Portale aziendale:
 
-1.  Passare a **Impostazioni** &gt; **Sicurezza &amp; Blocco schermo** &gt; **Amministratori dispositivo**.
+1. Passare a **Impostazioni** &gt; **Sicurezza &amp; Blocco schermo** &gt; **Amministratori dispositivo**.
 
     Al termine di questo passaggio la registrazione del dispositivo verrà immediatamente annullata.
 
-2.  Deselezionare la casella accanto a **Portale aziendale** o disattivare il portale.
+2. Deselezionare la casella accanto a **Portale aziendale** o disattivare il portale.
 
     Ora è possibile disinstallare l'app Portale aziendale.
 
