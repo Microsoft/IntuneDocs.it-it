@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044888"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529632"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gestire l'accesso Web usando Microsoft Edge con Microsoft Intune
 
 Usando i criteri di protezione delle app di Intune con Microsoft Edge, è possibile garantire che l'accesso ai siti Web aziendali venga sempre eseguito con misure di sicurezza applicate. Sono disponibili le seguenti funzionalità aziendali di Microsoft Edge abilitate dai criteri di Intune. Queste funzionalità aziendali includono:
 
-1.  **Doppia identità**: gli utenti possono aggiungere sia un account aziendale che un account personale per l'esplorazione. Le due identità sono completamente separate, in modo analogo all'architettura e all'esperienza utente di Office 365 e Outlook. Gli amministratori di Intune potranno impostare i criteri desiderati per un'esperienza di esplorazione protetta nell'account aziendale.
-2.  **Integrazione dei criteri di protezione delle app di Intune**: poiché Microsoft Edge si integra con Intune SDK, è possibile assegnare criteri di protezione delle app per garantire la protezione dalla perdita di dati. Queste funzionalità includono il controllo delle operazioni taglia, copia e incolla, il blocco delle acquisizioni di schermata e l'apertura dei collegamenti selezionati dagli utenti solo in altre app gestite.
-3.  **Integrazione con Azure Application Proxy**: è possibile controllare l'accesso alle app SaaS e alle app Web, per assicurare che le app basate su browser vengano eseguite solo nel browser Microsoft Edge sicuro, sia che gli utenti finali si connettano dalla rete aziendale che da Internet.
-4.  **Configurazione delle applicazioni**: è possibile usare le impostazioni di configurazione delle applicazioni per rafforzare la sicurezza delle organizzazioni e configurare funzionalità facili da usare per gli utenti finali. È ad esempio possibile definire segnalibri, un collegamento alla home page, siti consentiti/bloccati, Azure Application Proxy e molto altro.
+1. **Doppia identità**: gli utenti possono aggiungere sia un account aziendale che un account personale per l'esplorazione. Le due identità sono completamente separate, in modo analogo all'architettura e all'esperienza utente di Office 365 e Outlook. Gli amministratori di Intune potranno impostare i criteri desiderati per un'esperienza di esplorazione protetta nell'account aziendale.
+2. **Integrazione dei criteri di protezione delle app di Intune**: poiché Microsoft Edge si integra con Intune SDK, è possibile assegnare criteri di protezione delle app per garantire la protezione dalla perdita di dati. Queste funzionalità includono il controllo delle operazioni taglia, copia e incolla, il blocco delle acquisizioni di schermata e l'apertura dei collegamenti selezionati dagli utenti solo in altre app gestite.
+3. **Integrazione con Azure Application Proxy**: è possibile controllare l'accesso alle app SaaS e alle app Web, per assicurare che le app basate su browser vengano eseguite solo nel browser Microsoft Edge sicuro, sia che gli utenti finali si connettano dalla rete aziendale che da Internet.
+4. **Configurazione delle applicazioni**: è possibile usare le impostazioni di configurazione delle applicazioni per rafforzare la sicurezza delle organizzazioni e configurare funzionalità facili da usare per gli utenti finali. È ad esempio possibile definire segnalibri, un collegamento alla home page, siti consentiti/bloccati, Azure Application Proxy e molto altro.
 I criteri di protezione di Microsoft Intune per Microsoft Edge contribuiscono a proteggere i dati e le risorse dell'organizzazione. Usando questi criteri con Microsoft Edge le risorse aziendali sono protette non solo all'interno delle app installate in modo nativo, ma anche in caso di accesso tramite il Web browser.
 
 ## <a name="getting-started"></a>Guida introduttiva
@@ -115,8 +115,8 @@ La procedura seguente consente di creare una configurazione per l'app browser pr
     > [!NOTE]
     > Microsoft Edge usa le stesse coppie chiave-valore di Managed Browser. 
 
-8.  Al termine, fare clic su **OK**.
-9.  Nel pannello **Aggiungi i criteri di configurazione** scegliere **Aggiungi**.<br>
+8. Al termine, fare clic su **OK**.
+9. Nel pannello **Aggiungi i criteri di configurazione** scegliere **Aggiungi**.<br>
     La nuova configurazione verrà creata e visualizzata nel pannello **Configurazione dell'app**.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Assegnare le impostazioni di configurazione create 
@@ -184,7 +184,7 @@ Per configurare i segnalibri gestiti, usare la coppia chiave/valore seguente:
 
 |    Chiave    |    Valore    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    Il valore per questa configurazione è un elenco di segnalibri. Ogni segnalibro è costituito da un titolo e un URL. Separare titolo e URL con il carattere `|`.      **Esempio:**<br>`Microsoft Bing|https://www.bing.com`<p>Per configurare più segnalibri, separare ogni coppia con il doppio carattere `||`.<p>**Esempio:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    Il valore per questa configurazione è un elenco di segnalibri. Ogni segnalibro è costituito da un titolo e un URL. Separare titolo e URL con il carattere `|`.      **Esempio:**<br>`Microsoft Bing|https://www.bing.com`<br>Per configurare più segnalibri, separare ogni coppia con il doppio carattere `||`.<p>**Esempio:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>Come visualizzare MyApps nei segnalibri di Microsoft Edge
 
@@ -201,16 +201,17 @@ Per impostazione predefinita, gli utenti visualizzeranno i siti MyApps configura
 
 |    Chiave    |    Valore    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Scegliere tra:<p>1. Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Il valore corrispondente per la chiave è un elenco di URL. Immettere tutti gli URL da consentire o bloccare come singolo valore, separandoli tramite un carattere di barra verticale `|`.<p>**Esempi:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Scegliere tra:<p>1. Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Il valore corrispondente per la chiave è un elenco di URL. Immettere tutti gli URL da consentire o bloccare come singolo valore, separandoli tramite un carattere di barra verticale `|`.<br>**Esempi:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formati di URL per gli elenchi dei siti consentiti e bloccati 
 È possibile usare diversi formati di URL per creare gli elenchi dei siti consentiti e bloccati. I modelli che è possibile usare sono descritti nella tabella seguente. Di seguito sono indicate alcune note: 
 - Assicurarsi che tutte le URL abbiano con prefisso **http** o **https** quando immetterle nell'elenco.
-- È possibile usare il carattere jolly (*) secondo le regole nell'elenco di modelli consentiti seguente.
+- È possibile usare il carattere jolly (\*) secondo le regole nell'elenco di modelli consentiti seguente.
+- Un carattere jolly può corrispondere solamente a un componente intero del nome host (separato da punti) o a parti intere del percorso (separate da barre). Ad esempio, `http://*contoso.com` **non** è supportato.
 - È possibile specificare numeri di porta nell'indirizzo. Se non si specifica un numero di porta, i valori usati sono:
     - Porta 80 per http
     - Porta 443 per https
-- L'uso di caratteri jolly per il numero di porta **non** è supportato. Ad esempio, `http://www.contoso.com:*` e `http://www.contoso.com:*/` non sono supportati.
+- L'uso di caratteri jolly per il numero di porta **non** è supportato. Ad esempio, `http://www.contoso.com:*` e `http://www.contoso.com:*/` non sono supportati. 
 
     |    URL    |    Dettagli    |    Corrispondenze    |    Non corrisponde    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Per impostazione predefinita, gli utenti visualizzeranno i siti MyApps configura
     - Indirizzi IP
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Usare la coppia chiave/valore seguente per definire se abilitare o meno queste t
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Indirizzamento degli utenti a Microsoft Edge invece che a Intune Managed Browser 
 
-Ora è possibile usare sia Intune Managed Browser che Microsoft Edge come browser protetti dai criteri. Per garantire che gli utenti vengano reindirizzati in modo da usare l'app browser corretta, assegnare a tutte le app gestite da Intune (ad esempio Outlook e OneDrive) l'impostazione di configurazione seguente:
+Ora è possibile usare sia Intune Managed Browser che Microsoft Edge come browser protetti dai criteri. Per garantire che gli utenti vengano reindirizzati in modo da usare l'app browser corretta, assegnare a tutte le app gestite da Intune (ad esempio Outlook, OneDrive e SharePoint) l'impostazione di configurazione seguente:
 
 |    Chiave    |    Valore    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    Il valore `true` reindirizzerà gli utenti in modo da usare Microsoft Edge.<p>Il valore `false` reindirizzerà gli utenti in modo da usare Intune Managed Browser.    |
+|    `com.microsoft.intune.useEdge`    |    Il valore `true` indicherà agli utenti di scaricare e usare Microsoft Edge.<br>Il valore `false` consentirà agli utenti di usare Intune Managed Browser.    |
 
-Se questo valore di configurazione dell'app non viene impostato, il browser usato per aprire i collegamenti aziendali verrà definito dalla logica seguente.
+Se questo valore di configurazione dell'app **non** viene impostato, il browser usato per aprire i collegamenti aziendali verrà definito dalla logica seguente.
 
 In Android:
 - Se un utente ha scaricato nel dispositivo sia Intune Managed Browser che Microsoft Edge, verrà avviato Intune Managed Browser. 
