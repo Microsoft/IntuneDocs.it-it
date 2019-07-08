@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373647"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530308"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Usare le impostazioni personalizzate per i dispositivi Android Enterprise in Microsoft Intune
 
-Con Microsoft Intune è possibile aggiungere o creare impostazioni personalizzate per i dispositivi Android Enterprise usando un "profilo personalizzato". I profili personalizzati sono una funzionalità di Intune. Sono progettati per aggiungere impostazioni dei dispositivi e funzionalità non incluse in Intune.
+Con Microsoft Intune è possibile aggiungere o creare impostazioni personalizzate per i dispositivi con profilo di lavoro Android Enterprise usando un "profilo personalizzato". I profili personalizzati sono una funzionalità di Intune. Sono progettati per aggiungere impostazioni dei dispositivi e funzionalità non incluse in Intune.
 
 I profili personalizzati Android Enterprise usano impostazioni Open Mobile Alliance Uniform Resource Identifier (OMA-URI) per controllare le funzionalità nei dispositivi Android Enterprise. Queste impostazioni vengono in genere usate dai produttori di dispositivi mobili per controllare le funzionalità.
 
-Intune supporta un numero limitato di profili personalizzati Android.
+Intune supporta un numero limitato di profili personalizzati di Android Enterprise, tra cui:
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/impostazioni: [creare un profilo Wi-Fi con una chiave precondivisa](wi-fi-profile-shared-key.md) presenta alcuni esempi.
+- ./Vendor/MSFT/VPN/Profile/Name//PackageList: [creare un profilo VPN per app](android-pulse-secure-per-app-vpn.md) presenta alcuni esempi.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: vedere la [esempio](#example) (in questo articolo).
+
+Se sono necessarie altre impostazioni, vedere [OEMConfig per Android Enterprise](android-oem-configuration-overview.md).
 
 Questo articolo descrive come creare un profilo personalizzato per i dispositivi Android Enterprise. L'articolo offre anche un esempio di profilo personalizzato che blocca l'operazione di copia e incolla.
 
@@ -51,12 +57,12 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
     - **OMA-URI**: immettere l'OMA-URI da usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
-      - String
+      - Stringa
       - Stringa (file XML)
       - Data e ora
       - Integer
       - A virgola mobile
-      - Booleano
+      - Boolean
       - Base64 (file)
 
     - **Valore**: immettere il valore dati da associare all'impostazione OMA-URI immessa. Il valore varia a seconda del tipo di dati selezionato. Ad esempio, se si sceglie **Data e ora**, selezionare il valore dalla selezione data.

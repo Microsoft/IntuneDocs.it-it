@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841335"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546029"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usare le app gestite nel dispositivo Android
 Le app gestite sono configurate per soddisfare i requisiti di sicurezza dell'organizzazione e proteggere i dati aziendali e dell'istituto di istruzione. Queste app vengono rese disponibili all'utente nel dispositivo per essere installate o usate automaticamente. 
@@ -45,25 +45,25 @@ Quando si accede per la prima volta a dati aziendali o dell'istituto di istruzio
 ## <a name="commonly-managed-apps"></a>App gestite comuni  
 Di seguito sono riportati esempi di app gestite normalmente obbligatorie o disponibili in aziende e istituti di istruzione:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel e PowerPoint
+- Microsoft Word, Excel e PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?
-In primo luogo, è necessario installare il Portale aziendale e, se richiesta, ottenere la gestione del dispositivo. Successivamente, esistono tre modi per ottenere le app gestite.
-* L'organizzazione installa automaticamente le app nel dispositivo al momento della registrazione. Per altre informazioni sulla registrazione, vedere [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md).
-* L'organizzazione rende disponibili le app gestite all'utente nel Portale aziendale. Passare all'app o al sito Web Portale aziendale per cercare, visualizzare e installare queste app. 
-* Installare un'app da Google Play Store e quindi accedere all'app con il proprio account aziendale o dell'istituto di istruzione.  
+Esistono tre modi per ottenere le app gestite.  
+* L'organizzazione installa automaticamente le app nel dispositivo al momento della registrazione.  
+* Installare un'app da Google Play Store e quindi accedere all'app con il proprio account aziendale o dell'istituto di istruzione.    
+* L'organizzazione rende disponibili le app gestite all'utente nel Portale aziendale. Passare all'app o al sito Web del portale aziendale per cercare, visualizzare e installare le app disponibili. Per ulteriori informazioni su queste App, vedere la sezione successiva [le app disponibili](#available-apps).  
 
- ## <a name="available-apps"></a>App disponibili   
- L'organizzazione seleziona le app utili e appropriate per l'utente all’interno dell’azienda o dell'istituto di istruzione. Queste app sono le uniche disponibili nel portale aziendale.   
+### <a name="available-apps"></a>App disponibili   
+ L'organizzazione può selezionare le app che sono utili e appropriate per l'utente al lavoro o dell'istituto di istruzione e rendono disponibili per l'utente nel portale aziendale.  
 
  Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per Android, si avrà accesso alle app per Android, non alle app per iOS.   
 
- ## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione   
- Se un’app necessaria non è disponibile nell’app Portale aziendale, è possibile richiederla. Trovare i dettagli di contatto per il **supporto tecnico** nella scheda **Contatta IT** dell'app Portale aziendale. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione   
+ Se un’app necessaria non è disponibile nell’app Portale aziendale, è possibile richiederla. Trovare i dettagli dei contatti per i **Helpdesk** in delle app **contatta l'IT** scheda. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?  
 L'elenco seguente descrive le impostazioni che il supporto tecnico dell'azienda può gestire all'interno di un'app. Queste impostazioni influenzano il modo in cui l'utente apre, visualizza e usa i dati aziendali o dell'istituto di istruzione nel proprio dispositivo:

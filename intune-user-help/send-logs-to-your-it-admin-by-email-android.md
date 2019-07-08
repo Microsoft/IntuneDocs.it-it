@@ -1,11 +1,11 @@
 ---
-title: Inviare i log al supporto tecnico dell'azienda via posta elettronica | Microsoft Docs
-description: Inviare i registri di dati tramite posta elettronica in un dispositivo Android
+title: Caricare e i log dell'app di posta elettronica | Microsoft Docs
+description: Log di posta elettronica e di caricamento da app di Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,36 +14,53 @@ ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b709ec1cf900645fd53fe47329a3d0833e1cf87d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c03d83e6f1bfbffdc7a43d0b80d0568a44555e32
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850425"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546023"
 ---
-# <a name="email-logs-to-your-company-support"></a>Inviare i log al supporto tecnico dell'azienda tramite posta elettronica
+# <a name="upload-and-email-logs"></a>Caricare e inviare i log tramite posta elettronica  
 
-È talvolta possibile che si verifichi un errore quando si usa l'app Portale aziendale nel dispositivo Android. In questo caso, è possibile inviare i dettagli sull'errore al referente per il supporto dell'azienda tramite posta elettronica, con i quali potrà determinare il contesto e risolvere il problema.  
+Se si verifica un problema nell'app portale aziendale o Microsoft Intune, è possibile inviare tramite posta elettronica i dettagli del problema per il supporto tecnico aziendale. Questi dettagli verranno fornire contesto aggiuntivo sul problema.  
 
-I dettagli relativi all'errore vengono memorizzati nel dispositivo in uno documento specifico definito _log di diagnostica_. Quando i log vengono caricati nell'app Portale aziendale, vengono prima inviati agli sviluppatori Microsoft che lavorano sull'app. Questi log vengono usati per migliorare le funzionalità dell'app ed evitare errori in futuro. L'utente riceverà poi un ID evento imprevisto per l'errore specifico, che dovrà condividere con il referente per il supporto dell'azienda per l'uso nei casi correlati al supporto tecnico Microsoft.
+I dettagli relativi all'errore effettivo vengono memorizzati nel dispositivo in uno documento specifico definito _log di diagnostica_. Quando i log vengono caricati nell'app Portale aziendale o Microsoft Intune, vengono prima inviati agli sviluppatori Microsoft che lavorano sull'app. Questi log vengono usati per migliorare le funzionalità dell'app ed evitare errori in futuro. L'utente riceverà poi un ID evento imprevisto per l'errore specifico, che dovrà condividere con il referente per il supporto dell'azienda per l'uso nei casi correlati al supporto tecnico Microsoft.  
 
 > [!Note]
-> Perché il supporto tecnico dell'azienda possa individuare più facilmente la causa del problema, attivare la _registrazione dettagliata_. Nella registrazione dettagliata vengono registrati tutti i dettagli sull'errore. Tali dettagli vengono inclusi nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
+> Perché il supporto tecnico dell'azienda possa individuare più facilmente la causa del problema, attivare la _registrazione dettagliata_ nel portale aziendale. Se si usa l'app di Microsoft Intune, impostare il **accedere a livello di dettaglio** al **Verbose**. Nella registrazione dettagliata vengono registrati tutti i dettagli sull'errore. Tali dettagli vengono inclusi nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
 
-Per inviare i log al supporto tecnico dell'azienda tramite posta elettronica:
+## <a name="upload-and-email-logs-from-company-portal"></a>Log di caricamento e alla posta elettronica dall'App portale aziendale  
 
-1.  Aprire l'app Portale aziendale.
+1. Nell'app portale aziendale, esistono due modi per avviare il supporto tramite posta elettronica.
+    * Schermata iniziale: toccare **dal Menu** > **Guida** > **supporto via posta elettronica**.  
+    * Da un messaggio di errore: toccare **AIUTARE** oppure **invia informazioni**, se disponibile.  
 
-2.  Toccare **Menu** > **?** > **Invia messaggio di posta elettronica al supporto**.
+    > [!NOTE]
+    > **Menu** può essere un pulsante software o hardware, a seconda del dispositivo Android in uso.  
+
+3. Toccare **Invia messaggio di posta elettronica e Carica i log**.  
+4. Quando il caricamento è completo, toccare l'app di posta elettronica. 
+5. Si aprirà un messaggio di posta elettronica con l'ID evento imprevisto pre-popolato nel campo Oggetto. Nel corpo del messaggio di posta elettronica descrivere il problema che si è verificato.    
+
+
+## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Log di caricamento e alla posta elettronica dall'app di Microsoft Intune   
+
+1. Nell'app di Microsoft Intune, esistono due modi per avviare il supporto tramite posta elettronica.  
+    * Schermata iniziale: toccare **dal Menu** > **Guida** > **Ottieni supporto**.  
+    * Da un messaggio di errore: toccare **AIUTARE** oppure **invia informazioni**, se disponibile.  
 
     > [!NOTE]
     > **Menu** può essere un pulsante software o hardware, a seconda del dispositivo Android in uso.
 
-3.  Toccare **Invia messaggio di posta elettronica e Carica i log**.
-4.  Quando il caricamento è completo, toccare l'app di posta elettronica. Si aprirà un messaggio di posta elettronica con l'ID evento imprevisto pre-popolato nel campo Oggetto. Nel corpo del messaggio di posta elettronica descrivere il problema che si è verificato.  
+3. Toccare **Carica i log**.  
+4. Dopo il caricamento è completo, toccare **messaggio di posta elettronica** e selezionare l'app di posta elettronica.  
+5. Si aprirà un messaggio di posta elettronica con l'ID evento imprevisto pre-popolato nel campo Oggetto. Nel corpo del messaggio di posta elettronica descrivere il problema che si è verificato.  
+
+## <a name="next-steps"></a>Passaggi successivi  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

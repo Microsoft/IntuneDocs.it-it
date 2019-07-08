@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047507"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548770"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Proteggere i PC Windows con Endpoint Protection per Microsoft Intune
 
@@ -46,15 +46,15 @@ Come amministratore IT, mantenere i computer gestiti privi di virus e malware è
 
 Per passare dall'applicazione di protezione degli endpoint corrente a Microsoft Intune Endpoint Protection, eseguire le operazioni seguenti:
 
-1.  Lasciare l'applicazione di protezione degli endpoint in esecuzione durante la distribuzione del software client di Intune nei computer.
+1. Lasciare l'applicazione di protezione degli endpoint in esecuzione durante la distribuzione del software client di Intune nei computer.
 
-2.  Verificare che Microsoft Intune Endpoint Protection sia installato e funzioni correttamente per proteggere i computer client.
+2. Verificare che Microsoft Intune Endpoint Protection sia installato e funzioni correttamente per proteggere i computer client.
 
-3.  Rimuovere il software Endpoint Protection di terze parti in uno dei seguenti modi:
+3. Rimuovere il software Endpoint Protection di terze parti in uno dei seguenti modi:
 
-    -   Tramite la distribuzione del software di Intune, distribuire uno strumento di rimozione software offerto dal produttore dell'applicazione di protezione degli endpoint di terze parti. Per altre informazioni, vedere [Deploy apps in Microsoft Intune (Distribuire app in Microsoft Intune)](apps-deploy.md).
+    - Tramite la distribuzione del software di Intune, distribuire uno strumento di rimozione software offerto dal produttore dell'applicazione di protezione degli endpoint di terze parti. Per altre informazioni, vedere [Deploy apps in Microsoft Intune (Distribuire app in Microsoft Intune)](apps-deploy.md).
 
-    -   Tramite la rimozione manuale dell'applicazione Endpoint Protection di terze parti.
+    - Tramite la rimozione manuale dell'applicazione Endpoint Protection di terze parti.
 
 > [!NOTE]
 > Intune non eseguirà automaticamente la disinstallazione delle applicazioni di protezione degli endopoint di terze parti.
@@ -62,9 +62,9 @@ Per passare dall'applicazione di protezione degli endpoint corrente a Microsoft 
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurare Microsoft Intune Endpoint Protection
 Attenersi alla procedura seguente per configurare Endpoint Protection per Microsoft Intune.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Criteri** > **Aggiungi criterio**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Criteri** > **Aggiungi criterio**.
 
-2.  Espandere **Gestione Computer** e quindi selezionare **Impostazioni agente di Microsoft Intune**. Selezionare **Creare e distribuire criteri personalizzati** per specificare criteri per le impostazioni di Endpoint Protection. Scegliere quindi il pulsante **Crea criterio**.
+2. Espandere **Gestione Computer** e quindi selezionare **Impostazioni agente di Microsoft Intune**. Selezionare **Creare e distribuire criteri personalizzati** per specificare criteri per le impostazioni di Endpoint Protection. Scegliere quindi il pulsante **Crea criterio**.
 
 È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere l'argomento [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
