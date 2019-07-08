@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 3cfe2aef93fb8b7c420ee6513945f11bee5bd0be
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804695"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529717"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -65,7 +65,7 @@ Se si esegue `IntuneWinAppUtil.exe` dalla finestra di comando senza parametri, l
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    Cartella per tutti i file di installazione. Tutti i file in questa cartella verranno compressi in un file con estensione *intunewin*.    |
-|   ` -s <setup_file>`     |    File di installazione (ad esempio, *setup.exe* o *setup.msi*).    |
+|    `-s <setup_file>`     |    File di installazione (ad esempio, *setup.exe* o *setup.msi*).    |
 |    `-o <output_folder>`     |    Cartella di output per il file con estensione *intunewin* generato.    |
 |    `-q`       |    Modalità non interattiva    |
 
@@ -98,28 +98,28 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 ### <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3.  Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
-4.  Nel riquadro dell'app **Aggiungi** selezionare **App Windows (Win32)** nell'elenco a discesa.
+3. Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
+4. Nel riquadro dell'app **Aggiungi** selezionare **App Windows (Win32)** nell'elenco a discesa.
 
     ![Screenshot del pannello Aggiungi app - elenco a discesa Tipo di app](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Passaggio 2: Caricare il file del pacchetto dell'app
 
-1.  Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app** per selezionare un file. Verrà visualizzato il riquadro File del pacchetto dell'app.
+1. Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app** per selezionare un file. Verrà visualizzato il riquadro File del pacchetto dell'app.
 
     ![Screenshot del pannello File del pacchetto dell'app](./media/apps-win32-app-02.png)
 
-2.  Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione *intunewin*.
+2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione *intunewin*.
 
     > [!IMPORTANT]
     > Assicurarsi di usare la versione più recente dello strumento Microsoft di preparazione di contenuti Win32. Se non si usa la versione più recente, verrà visualizzato un avviso che indica che il pacchetto dell'app è stato compilato con una versione precedente dello strumento. 
 
-3.  Al termine, fare clic su **OK**.
+3. Al termine, fare clic su **OK**.
 
 ### <a name="step-3-configure-app-information"></a>Passaggio 3: Configurare le informazioni sull'app
 
-1.  Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
-2.  Nel riquadro **Informazioni sull'app** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
+1. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
+2. Nel riquadro **Informazioni sull'app** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Se il nome di un'app è usato due volte, ogni app verrà visualizzata nel portale aziendale.
     - **Description**: Immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
@@ -131,21 +131,22 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. L'icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-3.  Al termine, fare clic su **OK**.
+3. Al termine, fare clic su **OK**.
 
 ### <a name="step-4-configure-app-installation-details"></a>Passaggio 4: Configurare i dettagli di installazione dell'app
-1.  Nel riquadro **Aggiungi app** selezionare **Programma** per configurare i comandi di installazione e rimozione per l'app.
-2.  Aggiungere la riga di comando di installazione completa per installare l'app. 
+1. Nel riquadro **Aggiungi app** selezionare **Programma** per configurare i comandi di installazione e rimozione per l'app.
+2. Aggiungere la riga di comando di installazione completa per installare l'app. 
 
     Se, ad esempio, il nome file dell'app è **MyApp123**, aggiungere quanto segue:<br>
     `msiexec /p “MyApp123.msp”`<p>
     E, se l'applicazione è `ApplicationName.exe`, il comando sarà il nome dell'applicazione seguito dagli argomenti di comando (opzioni) supportati dal pacchetto. <br>Ad esempio:<br>
     `ApplicationName.exe /quiet`<br>
-    Nel comando precedente il pacchetto `ApplicationName.exe` supporta l'argomento di comando `/quiet`.<p> Per gli argomenti specifici supportati dal pacchetto dell'applicazione, contattare il fornitore dell'applicazione.
+    Nel comando precedente il pacchetto `ApplicationName.exe` supporta l'argomento di comando `/quiet`.<p> 
+    Per gli argomenti specifici supportati dal pacchetto dell'applicazione, contattare il fornitore dell'applicazione.
 
-3.  Aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
+3. Aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
 
-    ad esempio `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Ad esempio: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > È possibile configurare un'app Win32 in modo che venga installata nel contesto **utente** o **di sistema**. Il contesto **utente** si riferisce solo a un determinato utente. Il contesto **di sistema** si riferisce a tutti gli utenti di un dispositivo Windows 10.
@@ -154,12 +155,12 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     > 
     > L'installazione e la disinstallazione delle app Win32 verranno eseguite con privilegi di amministratore (per impostazione predefinita) quando l'app è configurata per l'installazione nel contesto utente e l'utente finale nel dispositivo dispone di privilegi amministrativi.
 
-4.  Al termine, fare clic su **OK**.
+4. Al termine, fare clic su **OK**.
 
 ### <a name="step-5-configure-app-requirements"></a>Passaggio 5: Configurare i requisiti dell'app
 
-1.  Nel riquadro **Aggiungi app** selezionare **Requisiti** per configurare i requisiti che i dispositivi devono soddisfare prima che l'app venga installata.
-2.  Nel riquadro **Aggiungi una regola relativa ai requisiti** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
+1. Nel riquadro **Aggiungi app** selezionare **Requisiti** per configurare i requisiti che i dispositivi devono soddisfare prima che l'app venga installata.
+2. Nel riquadro **Aggiungi una regola relativa ai requisiti** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
     - **Architettura del sistema operativo**: scegliere l'architettura necessaria per installare l'app.
     - **Sistema operativo minimo**: selezionare il sistema operativo minimo in cui è necessario installare l'app.
     - **Spazio su disco necessario (MB)** : aggiungere facoltativamente lo spazio libero su disco necessario nell'unità di sistema per installare l'app.
@@ -184,32 +185,32 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
         - **Esegui lo script con le credenziali dell'utente connesso**: selezionare **Sì** per eseguire lo script usando le credenziali del dispositivo connesso**.
         - **Imponi il controllo della firma degli script**: selezionare **Sì** per verificare che lo script sia firmato da un'entità di pubblicazione attendibile, in modo da consentire l'esecuzione dello script senza la visualizzazione di avvisi o richieste. Lo script verrà eseguito senza essere bloccato. Selezionare **No** (impostazione predefinita) per eseguire lo script con la conferma dell'utente finale senza la verifica della firma.
         - **Selezionare il tipo di dati di output**: selezionare il tipo di dati usato per determinare la corrispondenza di una regola relativa ai requisiti.
-4.  Al termine, fare clic su **OK**.
+4. Al termine, fare clic su **OK**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Passaggio 6: Configurare le regole di rilevamento dell'app
 
-1.  Nel riquadro **Aggiungi app** selezionare **Regole di rilevamento** per configurare le regole per rilevare la presenza dell'app.
-2.  Nel campo **Formato delle regole** selezionare come verrà rilevata la presenza dell'app. È possibile scegliere di configurare manualmente le regole di rilevamento oppure usare uno script personalizzato per rilevare la presenza dell'app. È necessario scegliere almeno una regola di rilevamento. 
+1. Nel riquadro **Aggiungi app** selezionare **Regole di rilevamento** per configurare le regole per rilevare la presenza dell'app.
+2. Nel campo **Formato delle regole** selezionare come verrà rilevata la presenza dell'app. È possibile scegliere di configurare manualmente le regole di rilevamento oppure usare uno script personalizzato per rilevare la presenza dell'app. È necessario scegliere almeno una regola di rilevamento. 
 
     > [!NOTE]
     > Nel riquadro **Regole di rilevamento** è possibile scegliere di aggiungere più regole. Per rilevare l'app, devono essere soddisfatte le condizioni per **tutte** le regole.
 
     - **Configura manualmente le regole di rilevamento** - È possibile selezionare uno dei tipi di regole seguenti:
-        1.  **MSI**: eseguire una verifica in base al controllo della versione MSI. Questa opzione può essere aggiunta una sola volta. Quando si sceglie questo tipo di regola, sono disponibili due impostazioni:
+        1. **MSI**: eseguire una verifica in base al controllo della versione MSI. Questa opzione può essere aggiunta una sola volta. Quando si sceglie questo tipo di regola, sono disponibili due impostazioni:
             - **Codice prodotto MSI**: aggiungere un codice prodotto MSI valido per l'app.
             - **Verifica della versione del prodotto MSI**: selezionare **Sì** per verificare la versione del prodotto MSI oltre al codice del prodotto MSI.
-        2.  **File**: eseguire una verifica in base a rilevamento, data, versione o dimensioni del file o della cartella.
+        2. **File**: eseguire una verifica in base a rilevamento, data, versione o dimensioni del file o della cartella.
             - **Percorso**: percorso completo della cartella contenente il file o la cartella da rilevare.
             - **File o cartella**: file o cartella da rilevare.
             - **Metodo di rilevamento**: selezionare il tipo di metodo di rilevamento usato per convalidare la presenza dell'app.
             - **Associata a un'app a 32 bit nei client a 64 bit**: selezionare **Sì** per espandere eventuali variabili di ambiente PATH nel contesto a 32 bit nei client a 64 bit. Selezionare **No** (impostazione predefinita) per espandere eventuali variabili di ambiente nel contesto a 64 bit nei client a 64 bit. I client a 32 bit useranno sempre il contesto a 32 bit.
             
             **Esempi di rilevamento basato su file**
-            1.  Verificare la presenza del file.
+            1. Verificare la presenza del file.
          
                 ![Screenshot del riquadro Regola di rilevamento - esistenza del file](./media/apps-win32-app-03.png)
         
-            2.  Verificare l'esistenza della cartella.
+            2. Verificare l'esistenza della cartella.
          
                 ![Screenshot del riquadro Regola di rilevamento - esistenza della cartella](./media/apps-win32-app-04.png)
         
@@ -220,62 +221,62 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
             - **Associata a un'app a 32 bit nei client a 64 bit**: selezionare **Sì** per eseguire ricerche nel Registro di sistema a 32 bit nei client a 64 bit. Selezionare **No** (impostazione predefinita) per eseguire ricerche nel Registro di sistema a 64 bit nei client a 64 bit. I client a 32 bit eseguiranno sempre ricerche nel registro di sistema a 32 bit.
             
             **Esempi di rilevamento basato sul Registro di sistema**
-            1.  Cercare la chiave del Registro di sistema esistente.
+            1. Cercare la chiave del Registro di sistema esistente.
             
                 ![Screenshot del riquadro Regola di rilevamento - chiave del Registro di sistema esistente](./media/apps-win32-app-05.png)    
             
-            2.  Verificare che il valore del Registro di sistema esista.
+            2. Verificare che il valore del Registro di sistema esista.
         
                 ![Screenshot del riquadro Regola di rilevamento - valore del Registro di sistema esistente](./media/apps-win32-app-06.png)    
         
-            3.  Cercare la stringa del valore del Registro di sistema Equals.
+            3. Cercare la stringa del valore del Registro di sistema Equals.
         
                 ![Screenshot del riquadro Regola di rilevamento - stringa del valore del Registro di sistema Equals](./media/apps-win32-app-07.png)    
      
     - **Usa uno script di rilevamento personalizzato**: specificare lo script di PowerShell che verrà usato per rilevare questa app. 
     
-        1.  **File di script**: selezionare uno script di PowerShell che rileverà la presenza dell'app nel client. L'app verrà rilevata quando lo script restituirà un codice di uscita con valore 0 e scriverà un valore stringa in STDOUT.
+        1. **File di script**: selezionare uno script di PowerShell che rileverà la presenza dell'app nel client. L'app verrà rilevata quando lo script restituirà un codice di uscita con valore 0 e scriverà un valore stringa in STDOUT.
 
-        2.  **Esegui lo script come processo a 32 bit nei client a 64 bit**: selezionare **Sì** per eseguire lo script in un processo a 32 bit su client a 64 bit. Selezionare **No** (impostazione predefinita) per eseguire lo script in un processo a 64 bit su client a 64 bit. I client a 32 bit eseguono lo script in un processo a 32 bit.
+        2. **Esegui lo script come processo a 32 bit nei client a 64 bit**: selezionare **Sì** per eseguire lo script in un processo a 32 bit su client a 64 bit. Selezionare **No** (impostazione predefinita) per eseguire lo script in un processo a 64 bit su client a 64 bit. I client a 32 bit eseguono lo script in un processo a 32 bit.
 
-        3.  **Imponi il controllo della firma degli script**: selezionare **Sì** per verificare che lo script sia firmato da un'entità di pubblicazione attendibile, in modo da consentire l'esecuzione dello script senza la visualizzazione di avvisi o richieste. Lo script verrà eseguito senza essere bloccato. Selezionare **No** (impostazione predefinita) per eseguire lo script con la conferma dell'utente finale senza la verifica della firma.
+        3. **Imponi il controllo della firma degli script**: selezionare **Sì** per verificare che lo script sia firmato da un'entità di pubblicazione attendibile, in modo da consentire l'esecuzione dello script senza la visualizzazione di avvisi o richieste. Lo script verrà eseguito senza essere bloccato. Selezionare **No** (impostazione predefinita) per eseguire lo script con la conferma dell'utente finale senza la verifica della firma.
     
             L'agente di Intune controlla i risultati dello script. Legge i valori scritti dallo script nel flusso di output standard (STDOUT) e nel flusso degli errori standard (STDERR), nonché il codice di uscita. Se il codice di uscita dello script è un valore diverso da zero, lo script non è riuscito e lo stato del rilevamento dell'applicazione è non installato. Se il codice di uscita è pari a zero e STDOUT contiene dati, lo stato di rilevamento dell'applicazione è installato. 
 
             > [!NOTE]
             > Microsoft consiglia la codifica dello script come UTF-8. Quando lo script viene chiuso con il valore 0, l'esecuzione dello script ha avuto esito positivo. Il secondo canale di output indica che l'app è stata rilevata e i dati di STDOUT indicano che l'app è stata trovata nel client. Non è necessario cercare una determinata stringa di STDOUT.
 
-        4.  Dopo aver aggiunto una o più regole, selezionare **Aggiungi** > **OK**.
+        4. Dopo aver aggiunto una o più regole, selezionare **Aggiungi** > **OK**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Passaggio 7: Configurare i codici restituiti dell'app
 
-1.  Nel riquadro **Aggiungi app** selezionare **Codici restituiti** per aggiungere i codici restituiti usati per specificare il comportamento in caso di nuovo tentativo di installazione dell'app o il comportamento successivo all'installazione. Le voci dei codici restituiti vengono aggiunte durante la creazione dell'app per impostazione predefinita. È tuttavia possibile aggiungere altri codici restituiti o modificare i codici restituiti esistenti. 
-2.  Nel riquadro **Codici restituiti** aggiungere altri codici restituiti o modificare i codici restituiti esistenti.
+1. Nel riquadro **Aggiungi app** selezionare **Codici restituiti** per aggiungere i codici restituiti usati per specificare il comportamento in caso di nuovo tentativo di installazione dell'app o il comportamento successivo all'installazione. Le voci dei codici restituiti vengono aggiunte durante la creazione dell'app per impostazione predefinita. È tuttavia possibile aggiungere altri codici restituiti o modificare i codici restituiti esistenti. 
+2. Nel riquadro **Codici restituiti** aggiungere altri codici restituiti o modificare i codici restituiti esistenti.
     - **Errore**: valore restituito indicante un errore di installazione dell'app.
     - **Avvio a freddo**: Il codice restituito di avvio a freddo non consente di installare le app Win32 successive nel client senza riavvio. 
     - **Avvio a caldo**: il codice restituito di avvio a caldo consente di installare le app Win32 successive senza richiedere un riavvio del client. Il riavvio è necessario per completare l'installazione dell'applicazione corrente.
     - **Riprova**: l'agente del codice restituito di nuovo tentativo proverà a installare l'app tre volte. Attenderà 5 minuti tra un tentativo e l'altro. 
     - **Riuscita**: valore restituito indicante che l'app è stata installata correttamente.
-3.  Selezionare **OK** dopo aver aggiunto o modificato l'elenco di codici restituiti.
+3. Selezionare **OK** dopo aver aggiunto o modificato l'elenco di codici restituiti.
 
 ### <a name="step-8-add-the-app"></a>Passaggio 8: Aggiungere l'app
 
-1.  Nel riquadro **Aggiungi app** verificare di aver configurato correttamente le informazioni sull'app.
-2.  Selezionare **Aggiungi** per caricare l'app in Intune.
+1. Nel riquadro **Aggiungi app** verificare di aver configurato correttamente le informazioni sull'app.
+2. Selezionare **Aggiungi** per caricare l'app in Intune.
 
 ### <a name="step-9-assign-the-app"></a>Passaggio 9: Assegnare l'app
 
-1.  Nel riquadro dell'app selezionare **Assegnazioni**.
-2.  Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
-3.  Per l'app specifica, selezionare un **tipo di assegnazione**:
+1. Nel riquadro dell'app selezionare **Assegnazioni**.
+2. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
+3. Per l'app specifica, selezionare un **tipo di assegnazione**:
     - **Disponibile per i dispositivi registrati**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.
     - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati.
     - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati.
-4.  Selezionare **Gruppi inclusi** e assegnare i gruppi che useranno questa app.
-5.  Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
-6.  Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
-7.  Nel riquadro **Aggiungi gruppo** selezionare **OK**.
-8.  Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
+4. Selezionare **Gruppi inclusi** e assegnare i gruppi che useranno questa app.
+5. Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
+6. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
+7. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
+8. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
 
 A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 a Intune. Per informazioni sull'assegnazione e il monitoraggio di app, vedere [Assegnare app ai gruppi con Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) e [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 

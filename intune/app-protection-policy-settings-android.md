@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402783"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511703"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -31,18 +31,18 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 > [!IMPORTANT]
 > Il portale aziendale Intune deve essere presente nel dispositivo per ricevere i criteri di protezione per i dispositivi Android. Per altre informazioni, vedere [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](end-user-mam-apps-android.md).
 
-##  <a name="data-protection"></a>Protezione dati 
+## <a name="data-protection"></a>Protezione dati 
 ### <a name="data-transfer"></a>Trasferimento dati
 | Impostazione | Uso | Valore predefinito |
 |------|------|------|
 | **Esegui il backup dei dati dell'organizzazione nei servizi di backup di Android** | Selezionare **Blocca** per impedire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione nel [servizio di backup di Android](https://developer.android.com/google/backup/index.html).<br><br> Selezionare **Consenti** per consentire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione.| **Consentito** |
 | **Invia i dati dell'organizzazione ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento dei dati alle app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati per impostazione predefinita. È anche possibile creare le proprie esenzioni se è necessario consentire il trasferimento dei dati a un'app che non supporta i criteri di protezione delle app di Intune. Per altre informazioni, vedere [Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Questo criterio può essere applicato anche ai collegamenti delle app Android.  I collegamenti Web generali sono gestiti dall'impostazione del criterio che consente di **aprire i collegamenti delle app in Intune Managed Browser**.<p><div class="NOTE"><p>Nota</p><p>Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app. Per altre informazioni, vedere [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) nella documentazione per sviluppatori di Android.</p><p>Se **Invia i dati dell'organizzazione ad altre app** è impostato su **Tutte le app**, i dati di testo possono ancora essere trasferiti tramite la condivisione negli Appunti del sistema operativo.</p></div> | **Tutte le app** | 
-|<ul><ui> **Select apps to exempt** (Selezionare app da escludere) | Questa opzione è disponibile quando si seleziona *App gestite da criteri* per l'opzione precedente. | |
+|<ul><ui>**Selezionare le app da esentare** | Questa opzione è disponibile quando si seleziona *App gestite da criteri* per l'opzione precedente. | |
 | **Ricevi dati da altre app** | Specificare le app che possono trasferire dati a questa app: <ul><li>**App gestite da criteri**: consente il trasferimento solo da altre app gestite da criteri.</li><li>**Tutte le app**: consente il trasferimento dei dati da qualsiasi app.</li><li>**Nessuna**: non consente il trasferimento dei dati dalle app, incluse le altre app gestite da criteri. </li></ul> <p>Esistono alcuni servizi e app esenti, dai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions) per un elenco completo di app e servizi. | **Tutte le app** |
 | **Salva copie dei dati dell'organizzazione** | Scegliere **Blocca** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **Consenti** per consentire l'uso di Salva con nome. **Nota:** *Questa impostazione è supportata per Microsoft Excel, OneNote, PowerPoint e Word. Può essere supportata anche da app di terze parti e da applicazioni line-of-business.*| **Consentito** |  
-|<ul><ui> **Allow user to save copies to selected services** (Consenti all'utente di salvare copie nei servizi selezionati) |Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati.  | **0 selezionato** |
+|<ul><ui>**Consenti all'utente di salvare copie nei servizi selezionati** |Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati.  | **0 selezionato** |
 | **Limita le operazioni taglia, copia e incolla tra altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. Scegliere tra: <ul><li>**Bloccato**:  non consente le azioni Taglia, Copia e Incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni Taglia, Copia e Incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni Taglia o Copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni Taglia, Copia e Incolla in e da questa app. | **Qualsiasi app** |
-| **Limite di caratteri per copia e incolla per qualsiasi app** | Specificare il numero di caratteri che è possibile tagliare o copiare da account e dati dell'organizzazione.  Ciò consente la condivisione del numero specificato di caratteri in qualsiasi applicazione, indipendentemente dall'impostazione "Limita le operazioni taglia, copia e incolla con le altre app".<p>Valore predefinito = 0<p>**Nota**: è richiesta la versione 5.0.4364.0 o successiva del Portale aziendale Intune.  | **0** |
+| <ul><ui>**Limite di caratteri per copia e incolla per qualsiasi app** | Specificare il numero di caratteri che è possibile tagliare o copiare da account e dati dell'organizzazione.  Ciò consente la condivisione del numero specificato di caratteri in qualsiasi applicazione, indipendentemente dall'impostazione "Limita le operazioni taglia, copia e incolla con le altre app".<p>Valore predefinito = 0<p>**Nota**: è richiesta la versione 5.0.4364.0 o successiva del Portale aziendale Intune.  | **0** |
 | **Acquisizione di schermata e Assistente Google** | Selezionare **Disattiva** per bloccare l'acquisizione della schermata e le funzionalità dell'**Assistente Google** del dispositivo quando si usa questa app. Se si sceglie **Disattiva** verrà anche sfocata l'immagine di anteprima della funzione Switch quando si usa questa app con un account aziendale o dell'istituto di istruzione.| **Attiva** |
 
   
@@ -50,7 +50,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 | Impostazione | Uso | Valore predefinito |
 |------|------|------|
 | **Crittografa i dati dell'organizzazione** | Scegliere **Richiedi** per abilitare la crittografia dei dati aziendali o dell'istituto di istruzione in questa app. Intune usa uno schema di crittografia OpenSSL AES a 256 bit insieme al sistema di archivio chiavi Android per crittografare i dati dell'app in modo sicuro. I dati vengono crittografati in modo sincrono durante le operazioni di I/O dei file. Il contenuto nella memoria del dispositivo è sempre crittografato. L'SDK continuerà a supportare le chiavi a 128 bit per garantire la compatibilità con il contenuto e le app che usano versioni precedenti dell'SDK. <br><br> Il metodo di crittografia è conforme a FIPS 140-2.     |  **Richiedi**|  
-
+| <ul><ui>**Crittografa i dati dell'organizzazione nei dispositivi registrati** | Selezionare **Rendi obbligatorio** per imporre la crittografia dei dati dell'organizzazione con la crittografia di livello app di Intune in tutti i dispositivi. Selezionare **Non obbligatorio** per non imporre la crittografia dei dati dell'organizzazione con la crittografia di livello app di Intune per i dispositivi registrati.| **Richiedi** |
 
 
 ### <a name="functionality"></a>Funzionalità
@@ -58,13 +58,16 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 |------|------|------|
 | **Sincronizza l'app con l'app contatti nativa** | Scegliere **Disattiva** per impedire all'app di salvare dati nell'app Contatti nativa nel dispositivo. Se si sceglie **Attiva**, l'app può salvare dati nell'app Contatti nativa nel dispositivo. <br><br>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali o dell'istituto di istruzione dall'app, i contatti sincronizzati direttamente dall'app nell'app Contatti nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app Microsoft Outlook. | **Attiva** |
 | **Stampa dei dati dell'organizzazione** | Scegliere **Disattiva** per impedire all'app di stampare dati aziendali o dell'istituto di istruzione. | **Attiva** |
-|**Condividi il contenuto Web con browser gestiti da criteri** | Specificare la modalità di apertura del contenuto Web (collegamenti HTTP/HTTPS) dalle applicazioni gestite da criteri. Scegliere tra:<ul><li>**Richiedi**: consente l'apertura del contenuto Web solo nei browser gestiti da criteri.</li><li>**Non configurata**: consente i collegamenti Web in qualsiasi app. </li></ul><br><br> Se si usa Intune per gestire i dispositivi, vedere [Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Browser gestiti da criteri**<br>Se si distribuiscono più browser gestiti da criteri, verrà avviato un solo browser.  Verrà avviato per primo Intune Managed Browser e successivamente Microsoft Edge.  In Android gli utenti possono scegliere altre app gestite da criteri che supportano i collegamenti HTTP/HTTPS se Intune Managed Browser e Microsoft Edge non sono stati installati.<p>Se un browser gestito da criteri è obbligatorio ma non è installato, verrà richiesto agli utenti finali di installare Intune Managed Browser.<p>Se un browser gestito da criteri è obbligatorio, i collegamenti delle app Android sono gestiti tramite l'impostazione del criterio **Consenti all'app di trasferire i dati ad altre app**.<p>**Registrazione del dispositivo in Intune**<br>Se si usa Intune per gestire i dispositivi, vedere Gestire l'accesso a Internet usando criteri di browser gestiti con Microsoft Intune. <p>**Microsoft Edge gestito da criteri**<br>Il browser Microsoft Edge per i dispositivi mobili (iOS e Android) supporta i criteri di protezione delle app di Intune. Gli utenti che accedono con gli account Azure AD aziendali nell'applicazione browser Microsoft Edge saranno protetti da Intune. Il browser Microsoft Edge integra l'SDK per MAM e supporta tutti i relativi criteri di protezione dei dati, con le seguenti eccezioni:<br><ul><li>**Salva con nome**: il browser Microsoft Edge non consente a un utente di aggiungere connessioni in-app dirette ai provider di archiviazione cloud, ad esempio OneDrive.</li><li>**Sincronizzazione del contatto**: il browser Microsoft Edge non salva gli elenchi di contatti nativi.</li></ul><br>**Nota:** *APP SDK non è in grado di determinare se l'app di destinazione è un browser. Nei dispositivi Android è possibile usare altre app browser gestite che supportano HTTP/HTTPS.* | **Non configurato** |
+|**Condividi il contenuto Web con browser gestiti da criteri** | Specificare la modalità di apertura del contenuto Web (collegamenti HTTP/HTTPS) dalle applicazioni gestite da criteri. Scegliere tra:<ul><li>**Richiedi**: consente l'apertura del contenuto Web solo nei browser gestiti da criteri.</li><li>**Browser non gestito**: consentire l'apertura del contenuto Web solo nel browser non gestito definito dall'impostazione **Unmanaged browser ID** (ID browser non gestito). Il contenuto Web sarà non gestito nel browser di destinazione.<br>**Nota**: è richiesta la versione 5.0.4415.0 o successiva del Portale aziendale Intune.</li><li>**Non configurata**: consente i collegamenti Web in qualsiasi app. </li></ul><br><br> Se si usa Intune per gestire i dispositivi, vedere [Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Browser gestiti da criteri**<br>Se si distribuiscono più browser gestiti da criteri, verrà avviato un solo browser.  Verrà avviato per primo Intune Managed Browser e successivamente Microsoft Edge.  In Android gli utenti possono scegliere altre app gestite da criteri che supportano i collegamenti HTTP/HTTPS se Intune Managed Browser e Microsoft Edge non sono stati installati.<p>Se un browser gestito da criteri è obbligatorio ma non è installato, verrà richiesto agli utenti finali di installare Intune Managed Browser.<p>Se un browser gestito da criteri è obbligatorio, i collegamenti delle app Android sono gestiti tramite l'impostazione del criterio **Consenti all'app di trasferire i dati ad altre app**.<p>**Registrazione del dispositivo in Intune**<br>Se si usa Intune per gestire i dispositivi, vedere Gestire l'accesso a Internet usando criteri di browser gestiti con Microsoft Intune. <p>**Microsoft Edge gestito da criteri**<br>Il browser Microsoft Edge per i dispositivi mobili (iOS e Android) supporta i criteri di protezione delle app di Intune. Gli utenti che accedono con gli account Azure AD aziendali nell'applicazione browser Microsoft Edge saranno protetti da Intune. Il browser Microsoft Edge integra l'SDK per MAM e supporta tutti i relativi criteri di protezione dei dati, con le seguenti eccezioni:<br><ul><li>**Salva con nome**: il browser Microsoft Edge non consente a un utente di aggiungere connessioni in-app dirette ai provider di archiviazione cloud, ad esempio OneDrive.</li><li>**Sincronizzazione del contatto**: il browser Microsoft Edge non salva gli elenchi di contatti nativi.</li></ul><br>**Nota:** *APP SDK non è in grado di determinare se l'app di destinazione è un browser. Nei dispositivi Android è possibile usare altre app browser gestite che supportano HTTP/HTTPS.* | **Non configurato** |
+|<ul><ui>**Unmanaged Browser ID** (ID browser non gestito) | Immettere l'ID dell'applicazione per un singolo browser. Il contenuto Web (collegamenti http/https) dalle applicazioni gestite da criteri verrà aperto nel browser specificato.  Il contenuto Web sarà non gestito nel browser di destinazione. | **Vuoto** |
+|<ul><ui>**Unmanaged Browser Name** (Nome browser non gestito) | Immettere il nome dell'applicazione per il browser associato a **Unmanaged Browser ID** (ID browser non gestito) Questo nome verrà visualizzato agli utenti se non è installato il browser specificato.  | **Vuoto** |
 
-  ## <a name="data-transfer-exemptions"></a>Esenzioni per il trasferimento dei dati
+
+## <a name="data-transfer-exemptions"></a>Esenzioni per il trasferimento dei dati
 
   Esistono alcune app e servizi della piattaforma esenti, per i quali i criteri di protezione delle app di Intune possono consentire il trasferimento dei dati in entrambe le direzioni. Ad esempio, tutte le app gestite da Intune in Android devono essere in grado di trasferire i dati a e da Google Text-to-Speech, in modo da consentire la lettura a voce alta del testo dallo schermo del dispositivo mobile. Questo elenco è soggetto a modifiche e include le app e i servizi considerati utili per una produttività sicura.
 
-  ### <a name="full-exemptions"></a>Esenzioni complete
+### <a name="full-exemptions"></a>Esenzioni complete
 
   Queste app e servizi dispongono di autorizzazioni complete per il trasferimento di dati a e da app gestite da Intune.
 
@@ -81,7 +84,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
   | com.azure.authenticator | App Azure Authenticator, necessaria per il completamento dell'autenticazione in molte configurazioni. |
   | com.microsoft.windowsintune.companyportal | Intune Portale aziendale|
 
-  ### <a name="conditional-exemptions"></a>Esenzioni condizionali
+### <a name="conditional-exemptions"></a>Esenzioni condizionali
   Queste app e servizi sono autorizzati al trasferimento di dati a e da app gestite da Intune solo se si verificano determinate condizioni.
 
   |Nome app/servizio | Descrizione | Condizione per l'esenzione|
@@ -93,7 +96,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 
 Per altre informazioni, vedere [Eccezioni dei criteri di trasferimento dei dati per le app](app-protection-policies-exception.md).
 
-##  <a name="access-requirements"></a>Requisiti per l'accesso
+## <a name="access-requirements"></a>Requisiti per l'accesso
 
 | Impostazione | Uso |  
 |------|------| 

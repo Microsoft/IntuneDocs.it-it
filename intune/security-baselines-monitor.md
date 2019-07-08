@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040648"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403586"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e i profili in Microsoft Intune  
 
@@ -34,7 +34,7 @@ In [Baseline di sicurezza in Intune](security-baselines.md) sono disponibili mag
 
 Quando si monitora una baseline, si ottengono informazioni dettagliate sullo stato di sicurezza dei dispositivi in base ai consigli di Microsoft. È possibile visualizzare queste informazioni dettagliate nel riquadro Panoramica della baseline di sicurezza nella console di Intune.  Sono necessarie fino a 24 ore prima che i dati vengano visualizzati dopo che si assegna per la prima volta una baseline. La visualizzazione delle modifiche apportate successivamente può richiedere fino a sei ore.  
 
-Per visualizzare i dati di monitoraggio per la baseline e i dispositivi, accedere al [portale di Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Selezionare quindi **Sicurezza dei dispositivi** > **Baseline di sicurezza (anteprima)**, selezionare una baseline e visualizzare il riquadro **Panoramica**.
+Per visualizzare i dati di monitoraggio per la baseline e i dispositivi, accedere al [portale di Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Selezionare quindi **Sicurezza dei dispositivi** > **Baseline di sicurezza**, selezionare una baseline e visualizzare il riquadro **Panoramica**.
 
 Il riquadro **Panoramica** offre due metodi per monitorare lo stato:
 - **Visualizzazione dispositivo**: riepilogo del numero di dispositivi inclusi in ogni categoria di stato per la baseline.  

@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,16 +16,14 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568167"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403369"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 L'amministratore può aggiungere un numero elevato di nuovi dispositivi Windows ad Azure Active Directory e Intune. Per eseguire la registrazione in blocco dei dispositivi per il tenant di Azure AD, è necessario creare un pacchetto di provisioning con l'Applicazione immagine e configurazione di Windows. Quando si applica il pacchetto di provisioning ai dispositivi aziendali, questi vengono aggiunti al tenant di Azure AD e vengono registrati per la gestione di Intune. Una volta applicato il pacchetto, gli utenti di Azure AD possono eseguire l'accesso.
 
@@ -51,6 +48,7 @@ Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono confo
    - **Description** (Descrizione): una descrizione facoltativa del progetto ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-name.png)
 
 4. Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%NUMERO DI SERIE%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.
+   
    ![Screenshot della schermata in cui specificare nome e codice Product Key nell'app Progettazione configurazione di Windows](media/bulk-enroll-device.png)
 
 5. Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se i dispositivi di rete non sono configurati, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
@@ -91,9 +89,6 @@ Il provisioning deve essere usato su nuovi dispositivi Windows. La correzione de
 
 - Un pacchetto di provisioning che tenta di aggiungere un dominio di Active Directory o un tenant di Azure Active Directory che non crea un account locale potrebbe rendere il dispositivo non raggiungibile, se il processo di aggiunta al dominio ha esito negativo a causa della mancanza di connettività di rete.
 - Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto del sistema. Gli script possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o cancellandolo.
-
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemi della registrazione in blocco e del portale aziendale
-Se un utente tenta di registrare tramite il portale aziendale un dispositivo registrato in precedenza con una registrazione in blocco, un messaggio di avviso comunica che per il dispositivo sono necessarie altre azioni, ovvero la configurazione o la registrazione. Il dispositivo è registrato, ma la registrazione non viene riconosciuta dall'app del portale aziendale o dal sito Web.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Registrazione in blocco con Wi-Fi 
 
