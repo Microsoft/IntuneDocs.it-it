@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046060"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549344"
 ---
 # <a name="intune-testing-and-validation"></a>Test e convalida di Intune
 
@@ -33,17 +33,17 @@ Quando si testa l'implementazione di Microsoft Intune, prendere in considerazion
 
 È consigliabile documentare quanto segue:
 
--   **Criteri di test:** identificare i benchmark rispetto ai quali eseguire le misurazioni.
+- **Criteri di test:** identificare i benchmark rispetto ai quali eseguire le misurazioni.
 
--   **Componenti di progettazione:** devono essere presenti in almeno un criterio di test.
+- **Componenti di progettazione:** devono essere presenti in almeno un criterio di test.
 
 Se un componente di progettazione non è presente in almeno un criterio di test allineato a un requisito o uno scenario, valutare se il componente di progettazione è necessario o meno. Assicurarsi inoltre di avere i seguenti elementi:
 
--   **Account:** account di test che dispongono delle licenze per EMS e Office 365 per testare tutti gli scenari dei casi d'uso.
+- **Account:** account di test che dispongono delle licenze per EMS e Office 365 per testare tutti gli scenari dei casi d'uso.
 
--   **Dispositivi:** dispositivi di test di cui è possibile eseguire la cancellazione dei dati o il ripristino delle impostazioni predefinite.
+- **Dispositivi:** dispositivi di test di cui è possibile eseguire la cancellazione dei dati o il ripristino delle impostazioni predefinite.
 
--   **Componenti di integrazione:** tutti i componenti di integrazione (connettori di certificati e Intune Exchange Connector locale) devono essere installati e configurati, se necessario.
+- **Componenti di integrazione:** tutti i componenti di integrazione (connettori di certificati e Intune Exchange Connector locale) devono essere installati e configurati, se necessario.
 
 Possono essere necessarie modifiche di progettazione per far fronte a difficoltà impreviste. Inoltre, tutte le modifiche di progettazione devono essere completamente documentate con il motivo per ogni modifica. Ecco un esempio per illustrare una possibile modifica:
 
@@ -51,9 +51,9 @@ Possono essere necessarie modifiche di progettazione per far fronte a difficolt�
 
 Durante il processo di test e convalida si potrebbero riscontrare difficoltà o problemi che richiedono indicazioni tecniche o procedure specializzate di risoluzione dei problemi. È consigliabile richiedere assistenza tramite i canali di supporto Microsoft.
 
--   [Informazioni su come ottenere supporto per Intune](get-support.md)
+- [Informazioni su come ottenere supporto per Intune](get-support.md)
 
--   [Come contattare il supporto telefonico assistito per Microsoft Intune](get-support.md)
+- [Come contattare il supporto telefonico assistito per Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Test di convalida funzionale
 

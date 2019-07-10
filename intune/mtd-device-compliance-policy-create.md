@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528633"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549359"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune
 
@@ -37,23 +37,23 @@ Nell'ambito della configurazione di MTD, nella console partner di MTD sono stati
 
 Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
--   Configurazione dell'integrazione di MTD con Intune
+- Configurazione dell'integrazione di MTD con Intune
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Per creare criteri di conformità per dispositivi MTD
 
-1.  Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
+1. Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
-2.  Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-3.  Scegliere **Intune**. Si aprirà il **dashboard di Intune**.
+3. Scegliere **Intune**. Si aprirà il **dashboard di Intune**.
 
 4. Nel **dashboard di Intune** scegliere **Conformità del dispositivo** e quindi nella sezione **Gestisci** scegliere **Criteri**.
 
-5.  Scegliere **Crea criterio**, immettere **Nome** e **Descrizione** della conformità del dispositivo, selezionare la **piattaforma** e quindi nella sezione **Impostazioni** scegliere **Configura**.
+5. Scegliere **Crea criterio**, immettere **Nome** e **Descrizione** della conformità del dispositivo, selezionare la **piattaforma** e quindi nella sezione **Impostazioni** scegliere **Configura**.
 
-6.  Nel riquadro **Criteri di conformità** scegliere **Integrità del dispositivo**.
+6. Nel riquadro **Criteri di conformità** scegliere **Integrità del dispositivo**.
 
-7.  Nel riquadro **Integrità del dispositivo** scegliere il livello di minaccia per dispositivi mobili nell'elenco a discesa in **Richiedi che il dispositivo si trovi al massimo al livello di minaccia per dispositivi mobili**.
+7. Nel riquadro **Integrità del dispositivo** scegliere il livello di minaccia per dispositivi mobili nell'elenco a discesa in **Richiedi che il dispositivo si trovi al massimo al livello di minaccia per dispositivi mobili**.
 
     a.  **Protetti**: questo livello è il più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme.
 
@@ -63,7 +63,7 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
     d.  **Alto**: questo livello è il meno sicuro. Questa impostazione consente tutti i livelli di minacce e usa Mobile Threat Defense solo a scopi di report. È necessario che nei dispositivi l'app MTD sia attivata con questa impostazione.
 
-8.  Fare clic su **OK** due volte e quindi scegliere **Crea**.
+8. Fare clic su **OK** due volte e quindi scegliere **Crea**.
 
 > [!IMPORTANT]
 > Se si creano criteri di accesso condizionale per Office 365 o altri servizi, viene eseguita la valutazione della conformità dei dispositivi e per i dispositivi non conformi viene bloccato l'accesso alle risorse aziendali fino alla risoluzione della condizione di minaccia nei dispositivi interessati.

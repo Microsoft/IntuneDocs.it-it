@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530699"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549001"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -62,8 +62,8 @@ Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti d
 6. Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app appena aggiunta.
 7. In Gestisci selezionare **Assegnazioni**.
 8. Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
-    -  **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
-    -  **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
+    - **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
+    - **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
 9. Selezionare **Gruppi inclusi** e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
 10. Fare clic su **OK** e di nuovo su **OK**.
 11. Fare clic su **Save**.
@@ -77,7 +77,7 @@ Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS. I cr
 5. Selezionare **App associata**.
 6. Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app.
 7. Fare clic su **OK** e selezionare **Impostazioni di configurazione**. 
-    -   Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
+    - Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
 8. Scegliere **OK** e quindi **Aggiungi**.
 9. Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
 10. In Gestisci selezionare **Assegnazioni**.
@@ -92,13 +92,13 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
 4. In Piattaforma selezionare **iOS**.
 5. Selezionare **Integrità del dispositivo**. Accanto a Dispositivi Jailbroken selezionare **Blocca** e quindi scegliere **OK**.
 6. Selezionare **Sicurezza del sistema** e immettere le impostazioni della password. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
-    -   Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
-    -   Per Password semplici selezionare **Blocca**.
-    -   Per Lunghezza minima password immettere 4.
-    -   Per Tipo di password richiesto scegliere **Alfanumerico**.
-    -   Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **Immediatamente**.
-    -   Per Scadenza password (giorni) immettere 41.
-    -   Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
+    - Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
+    - Per Password semplici selezionare **Blocca**.
+    - Per Lunghezza minima password immettere 4.
+    - Per Tipo di password richiesto scegliere **Alfanumerico**.
+    - Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **Immediatamente**.
+    - Per Scadenza password (giorni) immettere 41.
+    - Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
 7. Fare clic su **OK** e quindi di nuovo su **OK**.
 8. Scegliere **Crea**.
 
@@ -114,8 +114,8 @@ Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utent
 5. Nella barra di ricerca immettere "Slack" e selezionare l'app appena aggiunta.
 6. In Gestisci selezionare **Assegnazioni**.
 7. Selezionare **Aggiungi gruppi**. A seconda degli utenti interessati dall'attivazione di EMM per Slack, in **Tipo di assegnazione** è possibile selezionare:
-    -   **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
-    -   **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
+    - **Disponibile per i dispositivi registrati** se si è scelto "All members (including guests)" (Tutti i membri inclusi i guest) OPPURE
+    - **Disponibile con o senza registrazione** se si è scelto "All members (excluding guests)" (Tutti i membri esclusi i guest) o "Facoltativo".
 8. Selezionare Gruppi inclusi e quindi in Rendi questa app disponibile per tutti gli utenti selezionare **Sì**.
 9. Fare clic su **OK** e di nuovo su **OK**.
 10. Fare clic su **Save**.
@@ -129,7 +129,7 @@ Aggiungere un criterio di configurazione dell'app per Slack. I criteri di config
 5. Selezionare **App associata**.
 6. Nella barra di ricerca immettere "Slack" e selezionare l'app.
 7. Scegliere **OK** e selezionare **Impostazioni di configurazione**.
-    -   Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
+    - Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
 8. Fare clic su **OK** e quindi selezionare **Aggiungi**.
 9. Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
 10. In Gestisci selezionare **Assegnazioni**.
@@ -145,12 +145,12 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
 5. In Tipo di profilo selezionare **Profilo di lavoro**.
 6. Selezionare **Integrità del dispositivo**. Accanto a Dispositivi rooted selezionare **Blocca** e quindi scegliere **OK**.
 7. Selezionare **Sicurezza del sistema** e immettere le **Impostazioni della password**. Per questa esercitazione, selezionare le seguenti impostazioni consigliate:
-    -   Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
-    -   In Tipo di password richiesto selezionare **Almeno numerico**.
-    -   Per Lunghezza minima password immettere 4.
-    -   Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **15 minuti**.
-    -   Per Scadenza password (giorni) immettere 41.
-    -   Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
+    - Per Richiedi una password per sbloccare i dispositivi mobili selezionare **Rendi obbligatorio**.
+    - In Tipo di password richiesto selezionare **Almeno numerico**.
+    - Per Lunghezza minima password immettere 4.
+    - Per Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password scegliere **15 minuti**.
+    - Per Scadenza password (giorni) immettere 41.
+    - Per Numero di password precedenti di cui impedire il riutilizzo immettere 5.
 8. Fare clic su **OK** e di nuovo su **OK**.
 9. Scegliere **Crea**.
 

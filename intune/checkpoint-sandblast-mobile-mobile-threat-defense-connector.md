@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530686"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572574"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Connettore Check Point SandBlast Mobile Threat Defense con Intune
 
@@ -45,11 +45,11 @@ Ecco alcuni scenari comuni:
 
 Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloccare i dispositivi finché la condizione di minaccia non viene risolta:
 
--   Connessione alla posta elettronica aziendale
+- Connessione alla posta elettronica aziendale
 
--   Sincronizzazione di file aziendali tramite l'app OneDrive for Work
+- Sincronizzazione di file aziendali tramite l'app OneDrive for Work
 
--   Accesso alle app aziendali
+- Accesso alle app aziendali
 
 **Bloccare quando vengono rilevate app dannose:**
 
@@ -61,7 +61,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 
@@ -73,7 +73,7 @@ Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e 
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
 
 **Bloccare SharePoint Online quando vengono rilevate minacce per la rete:**
 
@@ -85,18 +85,18 @@ Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e 
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
--   **Android 4.1 e versioni successive**
+- **Android 4.1 e versioni successive**
 
--   **iOS 8 e versioni successive**
+- **iOS 8 e versioni successive**
 
 ## <a name="pre-requisites"></a>Prerequisiti
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Sottoscrizione di Microsoft Intune
+- Sottoscrizione di Microsoft Intune
 
--   Sottoscrizione di Check Point SandBlast Mobile Threat Defense
-    -   Vedere il [sito Web di CheckPoint SandBlast](https://www.checkpoint.com/) per altre informazioni.
+- Sottoscrizione di Check Point SandBlast Mobile Threat Defense
+    - Vedere il [sito Web di CheckPoint SandBlast](https://www.checkpoint.com/) per altre informazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046220"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548339"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Elaborare un piano di comunicazione per l'implementazione
 
 Una gestione del cambiamento efficiente si basa sulla chiarezza e sull'utilità delle comunicazioni relative ai cambiamenti futuri. Perché il percorso verso la distribuzione di Intune sia privo di problemi, il piano di comunicazione per l'implementazione deve includere quattro aree:
 
--   Quali informazioni devono essere comunicate
+- Quali informazioni devono essere comunicate
 
--   Il metodo usato per le comunicazioni
+- Il metodo usato per le comunicazioni
 
--   Chi riceverà le comunicazioni
+- Chi riceverà le comunicazioni
 
--   La sequenza temporale per le comunicazioni
+- La sequenza temporale per le comunicazioni
 
 Esaminiamo ognuna di queste aree più in dettaglio.
 
@@ -56,13 +56,13 @@ Può risultare utile questa [guida alla registrazione per l'utente finale](https
 
 Esistono diversi metodi di recapito che è possibile usare per comunicare le informazioni relative all'implementazione di Intune ai gruppi e agli utenti dell'organizzazione interessati. L'elenco seguente illustra alcuni esempi e indica la fase durante la quale è possibile usare il metodo:
 
--   Riunioni di persona o con Microsoft Teams a livello di organizzazione, per la fase di preparazione
+- Riunioni di persona o con Microsoft Teams a livello di organizzazione, per la fase di preparazione
 
--   Posta elettronica, usata per le fasi di pre-registrazione, registrazione e post-registrazione
+- Posta elettronica, usata per le fasi di pre-registrazione, registrazione e post-registrazione
 
--   Siti Web dell'organizzazione, usati per tutte le fasi
+- Siti Web dell'organizzazione, usati per tutte le fasi
 
--   Yammer, poster e volantini, usati per le fasi di kick off e pre-registrazione
+- Yammer, poster e volantini, usati per le fasi di kick off e pre-registrazione
 
 ## <a name="communications-timeline"></a>Sequenza temporale per le comunicazioni
 

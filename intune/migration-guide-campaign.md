@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e409683c294b9d0321458f40c9b7f66bc3660ac
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046519"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549414"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campagna di migrazione
 
@@ -31,39 +31,39 @@ Scegliere l'approccio di migrazione più adatto alle esigenze dell'organizzazion
 
 I fattori chiave per una corretta migrazione da un provider MDM di terze parti a Intune sono i seguenti:
 
--   Comunicazioni chiare e utili per ridurre al minimo i tempi di inattività e l'insoddisfazione degli utenti finali.
+- Comunicazioni chiare e utili per ridurre al minimo i tempi di inattività e l'insoddisfazione degli utenti finali.
 
--   Assicurarsi di disporre di istruzioni specifiche e concrete per la migrazione.
+- Assicurarsi di disporre di istruzioni specifiche e concrete per la migrazione.
 
--   Per poter eseguire la registrazione in Intune, è necessario annullare la registrazione di tutti i dispositivi gestiti dal provider MDM esistente.
+- Per poter eseguire la registrazione in Intune, è necessario annullare la registrazione di tutti i dispositivi gestiti dal provider MDM esistente.
 
--   Fornire indicazioni agli utenti finali su come annullare la registrazione dei propri dispositivi dal provider MDM esistente.
+- Fornire indicazioni agli utenti finali su come annullare la registrazione dei propri dispositivi dal provider MDM esistente.
 
--   Adottare un approccio graduale. Iniziare con un piccolo gruppo di utenti pilota e aggiungere in modo incrementale altri gruppi di utenti fino a completare la distribuzione.
+- Adottare un approccio graduale. Iniziare con un piccolo gruppo di utenti pilota e aggiungere in modo incrementale altri gruppi di utenti fino a completare la distribuzione.
 
--   Monitorare il carico per l'help desk e l'esito della registrazione per ogni ciclo. Includere nella pianificazione il tempo necessario per valutare l'esito dell'operazione per ogni gruppo prima di procedere alla migrazione del gruppo successivo. Per la distribuzione pilota è consigliabile valutare gli aspetti seguenti:
+- Monitorare il carico per l'help desk e l'esito della registrazione per ogni ciclo. Includere nella pianificazione il tempo necessario per valutare l'esito dell'operazione per ogni gruppo prima di procedere alla migrazione del gruppo successivo. Per la distribuzione pilota è consigliabile valutare gli aspetti seguenti:
 
-    -   I tassi di riuscita/non riuscita della registrazione rientrano nei parametri previsti.
+    - I tassi di riuscita/non riuscita della registrazione rientrano nei parametri previsti.
 
-    -   Produttività degli utenti:
+    - Produttività degli utenti:
 
-        -   Le risorse aziendali, ad esempio VPN, Wi-Fi, posta elettronica e certificati funzionano.
+        - Le risorse aziendali, ad esempio VPN, Wi-Fi, posta elettronica e certificati funzionano.
 
-        -   Le app di cui è stato effettuato il provisioning sono accessibili.
+        - Le app di cui è stato effettuato il provisioning sono accessibili.
 
-    -   Sicurezza dei dati:
+    - Sicurezza dei dati:
 
-        -   È in corso la creazione di report di conformità.
+        - È in corso la creazione di report di conformità.
 
-        -   Vengono applicate protezioni delle app per dispositivi mobili.
+        - Vengono applicate protezioni delle app per dispositivi mobili.
 
 Quando si è soddisfatti della prima fase della migrazione, ripetere il [ciclo di migrazione](migration-guide-cycle.md) per la fase successiva.
 
--   Ripetere i cicli progressivamente fino a completare la migrazione di tutti gli utenti a Intune.
+- Ripetere i cicli progressivamente fino a completare la migrazione di tutti gli utenti a Intune.
 
--   Assicurarsi che il team dell'help desk sia pronto per supportare gli utenti finali per tutta la durata della campagna di migrazione. Eseguire una migrazione volontaria in modo da poter stimare il carico di lavoro per le chiamate al supporto tecnico.
+- Assicurarsi che il team dell'help desk sia pronto per supportare gli utenti finali per tutta la durata della campagna di migrazione. Eseguire una migrazione volontaria in modo da poter stimare il carico di lavoro per le chiamate al supporto tecnico.
 
--   Non impostare scadenze per la registrazione fino a quando la popolazione rimanente può essere gestita dall'help desk
+- Non impostare scadenze per la registrazione fino a quando la popolazione rimanente può essere gestita dall'help desk
 
 > [!IMPORTANT]
 > Non configurare sia Intune che la soluzione MDM di terze parti esistente per applicare i controlli di accesso alle risorse, ad esempio Exchange o SharePoint Online. Inoltre, i dispositivi devono essere registrati solo in un'unica soluzione alla volta.

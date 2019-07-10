@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046311"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549319"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Risorse aggiuntive per la pianificazione della distribuzione di Intune
 
@@ -50,12 +50,12 @@ Ecco un elenco dei modelli di tabella per ogni sezione.
 
 Consultare queste risorse per informazioni aggiuntive che possono risultare utili durante il processo di pianificazione, progettazione e implementazione della distribuzione di Intune.
 
--   [Documentazione di Microsoft Intune](/intune/) - Il set completo della documentazione di Intune.
+- [Documentazione di Microsoft Intune](/intune/) - Il set completo della documentazione di Intune.
 
--   [Blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/) - Post per comprendere il ruolo di Intune all'interno del contesto più ampio di Enterprise Mobility.
+- [Blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/) - Post per comprendere il ruolo di Intune all'interno del contesto più ampio di Enterprise Mobility.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - Informazioni sull'approccio di Microsoft a sicurezza, privacy, conformità e trasparenza in tutti i prodotti e i servizi cloud di Microsoft.
+- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - Informazioni sull'approccio di Microsoft a sicurezza, privacy, conformità e trasparenza in tutti i prodotti e i servizi cloud di Microsoft.
 
--   [Suggerimenti degli utenti per Intune](http://microsoftintune.uservoice.com/) - Si vuole richiedere una funzionalità o votare le funzionalità richieste da altri clienti? È possibile fornire feedback su Intune tramite la pagina dedicata alla voce degli utenti. Microsoft presta grande attenzione ai suggerimenti degli utenti.
+- [Suggerimenti degli utenti per Intune](http://microsoftintune.uservoice.com/) - Si vuole richiedere una funzionalità o votare le funzionalità richieste da altri clienti? È possibile fornire feedback su Intune tramite la pagina dedicata alla voce degli utenti. Microsoft presta grande attenzione ai suggerimenti degli utenti.
 
--   [Guida alla registrazione](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - Un set di documenti che possono essere usati così come sono oppure modificati nell'ambito del proprio piano di comunicazione per aiutare gli utenti finali a capire che cosa significa registrare il loro dispositivo personale in Intune.
+- [Guida alla registrazione](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - Un set di documenti che possono essere usati così come sono oppure modificati nell'ambito del proprio piano di comunicazione per aiutare gli utenti finali a capire che cosa significa registrare il loro dispositivo personale in Intune.

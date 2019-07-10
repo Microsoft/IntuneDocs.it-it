@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045983"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549278"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificare gli scenari dei casi d'uso per la gestione di dispositivi mobili
 
@@ -33,9 +33,9 @@ Esaminiamo alcuni esempi che possono essere utili per aiutare le organizzazioni 
 ## <a name="device-ownership"></a>Proprietà del dispositivo
 È possibile iniziare facendo riferimento agli scopi e agli obiettivi dell'organizzazione per la distribuzione di Intune per identificare gli scenari dei casi d'uso principali per la distribuzione. Nell'ambito del piano di distribuzione di Intune rispondere alle domande seguenti:
 
--   Si prevede di supportare dispositivi di proprietà dell'azienda?
+- Si prevede di supportare dispositivi di proprietà dell'azienda?
 
--   Si prevede di supportare dispositivi personali (BYOD)?
+- Si prevede di supportare dispositivi personali (BYOD)?
 
 Queste opzioni non si escludono a vicenda. Potrebbe essere necessario supportare entrambe le forme di proprietà del dispositivo per soddisfare gli obiettivi dell'organizzazione. I casi d'uso secondari consentiranno di chiarire dove applicare i diversi criteri di gestione dei dispositivi.
 
@@ -43,11 +43,11 @@ Queste opzioni non si escludono a vicenda. Potrebbe essere necessario supportare
 
 Determinare se ogni scenario dei casi d'uso include anche casi d'uso secondari. Un'organizzazione potrebbe ad esempio avere identificato i requisiti per supportare uno scenario relativo al caso d'uso aziendale che include casi d'uso secondari aggiuntivi basati sul tipo di utente o sul ruolo del dispositivo, ad esempio:
 
--   Information Worker
+- Information Worker
 
--   Risorse esecutive
+- Risorse esecutive
 
--   Modalità tutto schermo
+- Modalità tutto schermo
 
 Ecco alcuni esempi di scenari dei casi d'uso e dei casi d'uso secondari:
 

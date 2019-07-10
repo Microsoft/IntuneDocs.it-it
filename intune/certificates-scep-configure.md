@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494298"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547361"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -429,7 +429,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
         >  - Nel testo statico del soggetto le parentesi graffe **{}** che non racchiudono una variabile genereranno un errore. 
         >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }** .
         >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
-        >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
+        >  - Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
         >  - Il profilo non verrà installato nel dispositivo se le variabili di dispositivo specificate non sono supportate. Ad esempio, se si usa {{IMEI}} nel nome del soggetto del profilo SCEP assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo. 
 
 
@@ -472,7 +472,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
         >  - Nel testo statico del nome alternativo del soggetto le parentesi graffe **{ }** , la barra verticale **|** e il punto e virgola **;** non funzioneranno. 
         >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }** .
         >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
-        >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
+        >  - Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
         >  - Il profilo non verrà installato nel dispositivo se le variabili di dispositivo specificate non sono supportate. Ad esempio, se si usa {{IMEI}} nel nome alternativo del soggetto del profilo SCEP assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo.  
 
    - **Periodo di validità del certificato**: se il comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` è stato eseguito nella CA emittente, che consente un periodo di validità personalizzato, è possibile immettere la quantità di tempo rimanente prima della scadenza del certificato.<br>È possibile immettere un valore inferiore, ma non superiore, al periodo di validità presente nel modello di certificato. Se ad esempio il periodo di validità del certificato nel modello di certificato è di due anni, è possibile immettere un valore di un anno ma non un valore di cinque anni. Inoltre, il valore deve essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente. 

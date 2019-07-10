@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468749"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572627"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti più recenti per le app Microsoft Intune. Il sito Web e l'app Portale aziendale Intune vengono regolarmente estesi e migliorati. Questo articolo fornisce agli amministratori del servizio Intune o ai tecnici del supporto le informazioni necessarie per:
@@ -246,7 +246,7 @@ Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. 
 ## <a name="week-of-october-16-2017"></a>Settimana del 16 ottobre 2017
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Miglioramenti della ricerca per il sito Web del Portale aziendale <!-- 1331697 -->
-Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
+Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
 
 Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app del Portale aziendale per iOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi.
 
@@ -260,7 +260,7 @@ In questa versione viene risolto un problema noto di visualizzazione delle icone
 ## <a name="week-of-october-2-2017"></a>Settimana del 2 ottobre 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Miglioramenti del flusso di lavoro di installazione dei dispositivi nel Portale aziendale <!-- 1490692 -->
-È stato migliorato il flusso di lavoro di installazione dei dispositivi nell'app Portale aziendale per Android. Il linguaggio è più semplice e specifico della società e sono state inserite schermate dove possibile. 
+È stato migliorato il flusso di lavoro di installazione dei dispositivi nell'app Portale aziendale per Android. Il linguaggio è più semplice e specifico della società e sono state inserite schermate dove possibile. 
 
 |Prima|Dopo|
 |---|---|
@@ -288,7 +288,7 @@ Altri passaggi sono stati migliorati nei dispositivi del profilo di lavoro Andro
 
 ## <a name="week-of-september-11-2017"></a>Settimana dell'11 settembre 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!-- 1396349 -->  
 
 Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Aggiornare la precedente documentazione relativa alla registrazione personalizzata perché contenga le nuove schermate. Di seguito alcune immagini di esempio:
 
@@ -305,7 +305,7 @@ Il processo di registrazione per l'app del portale aziendale per Android è ora 
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L'app di posta elettronica iOS 11 supporta OAuth <!-- 1196951 -->
 
-L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dispositivi iOS con OAuth. Per il supporto di questa funzionalità il flusso di lavoro nell'app Portale aziendale per iOS è stato modificato, per consentire un'autenticazione più sicura. Quando gli utenti finali tentano di accedere a un nuovo account di Exchange nell'app della posta elettronica, appare una richiesta di visualizzazione Web. Al momento della registrazione in Intune gli utenti visualizzano una richiesta per consentire all'app di posta elettronica nativa l'accesso a un certificato. La maggior parte degli utenti finali non visualizza più i messaggi di posta elettronica di quarantena. Gli account di posta elettronica esistenti continuano a usare il protocollo di autenticazione di base, pertanto gli utenti di questi account ricevono comunque i messaggi di posta elettronica di quarantena. Questa esperienza di accesso per gli utenti finali è simile a quella delle app Office per dispositivi mobili.
+L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dispositivi iOS con OAuth. Per il supporto di questa funzionalità il flusso di lavoro nell'app Portale aziendale per iOS è stato modificato, per consentire un'autenticazione più sicura. Quando gli utenti finali tentano di accedere a un nuovo account di Exchange nell'app della posta elettronica, appare una richiesta di visualizzazione Web. Al momento della registrazione in Intune gli utenti visualizzano una richiesta per consentire all'app di posta elettronica nativa l'accesso a un certificato. La maggior parte degli utenti finali non visualizza più i messaggi di posta elettronica di quarantena. Gli account di posta elettronica esistenti continuano a usare il protocollo di autenticazione di base, pertanto gli utenti di questi account ricevono comunque i messaggi di posta elettronica di quarantena. Questa esperienza di accesso per gli utenti finali è simile a quella delle app Office per dispositivi mobili.
 
 ![Selezione del tipo di account nell'app di posta elettronica nativa.](./media/ios-11-ca-email-after-1708-01.png)
 

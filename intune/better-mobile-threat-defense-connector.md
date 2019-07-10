@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511767"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547300"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Connettore Better Mobile Threat Defense con Intune
 
@@ -41,11 +41,11 @@ Ecco alcuni scenari comuni.
 
 Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impedire ai dispositivi di eseguire le azioni seguenti fino alla risoluzione della condizione di minaccia:
 
--   Connessione alla posta elettronica aziendale
+- Connessione alla posta elettronica aziendale
 
--   Sincronizzazione di file aziendali tramite l'app OneDrive for Work
+- Sincronizzazione di file aziendali tramite l'app OneDrive for Work
 
--   Accesso alle app aziendali
+- Accesso alle app aziendali
 
 **Bloccare quando vengono rilevate app dannose:**
 
@@ -81,19 +81,19 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle**, e im
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
--   **Android 4.1 e versioni successive**
+- **Android 4.1 e versioni successive**
 
--   **iOS 8.0 e versioni successive**
+- **iOS 8.0 e versioni successive**
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Sottoscrizione di Microsoft Intune
+- Sottoscrizione di Microsoft Intune
 
--   Sottoscrizione di Better Mobile Threat Defense
+- Sottoscrizione di Better Mobile Threat Defense
 
-    -   Per altre informazioni, vedere il [sito Web Better Mobile](https://www.better.mobi/).
+    - Per altre informazioni, vedere il [sito Web Better Mobile](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

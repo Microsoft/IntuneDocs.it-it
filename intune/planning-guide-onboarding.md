@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044347"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549307"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementare il piano di Microsoft Intune
 
@@ -34,17 +34,17 @@ Nella sezione seguente viene fornita una panoramica del processo di implementazi
 
 I requisiti principali per la configurazione autonoma di Intune sono:
 
--   Sottoscrizione Enterprise Mobility + Security (EMS)/Intune
+- Sottoscrizione Enterprise Mobility + Security (EMS)/Intune
 
--   Sottoscrizione Office 365 (per le app di Office e le app gestite con criteri di protezione delle app)
+- Sottoscrizione Office 365 (per le app di Office e le app gestite con criteri di protezione delle app)
 
--   Certificato APN Apple (per consentire la gestione della piattaforma per dispositivi iOS)
+- Certificato APN Apple (per consentire la gestione della piattaforma per dispositivi iOS)
 
--   Azure AD Connect (per la sincronizzazione della directory)
+- Azure AD Connect (per la sincronizzazione della directory)
 
--   Intune On-Premises Connector per Exchange (per l'accesso condizionale per Exchange locale, se necessario)
+- Intune On-Premises Connector per Exchange (per l'accesso condizionale per Exchange locale, se necessario)
 
--   Connettore di certificati di Intune (per la distribuzione del certificato SCEP, se necessario)
+- Connettore di certificati di Intune (per la distribuzione del certificato SCEP, se necessario)
 
 >[!TIP]
 > Per un elenco completo dei dispositivi che è possibile gestire con Intune, consultare l'elenco dei [dispositivi supportati](supported-devices-browsers.md).
@@ -57,20 +57,20 @@ Sono state identificate 13 attività discrete per l'implementazione di una distr
 
 Come indicato in precedenza nella sezione relativa ai requisiti per Intune, è necessaria una sottoscrizione a EMS o Intune. Se l'organizzazione non dispone di una sottoscrizione, contattare Microsoft o il team dell'account Microsoft e comunicare il proprio interesse per l'acquisto di Enterprise Mobility + Security (EMS) o Intune.
 
--   Altre informazioni su [come acquistare Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
+- Altre informazioni su [come acquistare Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 ### <a name="task-2-add-office-365-subscription"></a>Attività 2: Aggiungere l'abbonamento a Office 365
 
 Questo passaggio è facoltativo. Se si prevede di usare Exchange Online e di gestire app Office Mobile con i criteri di protezione delle app, è necessaria una sottoscrizione Office 365. Se l'organizzazione non dispone di una sottoscrizione Office 365, contattare Microsoft o il team dell'account Microsoft e comunicare il proprio interesse per l'acquisto di Office 365.
 
--   Altre informazioni su [come acquistare Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
+- Altre informazioni su [come acquistare Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
 ### <a name="task-3-add-users-groups-in-azure-ad"></a>Attività 3: Aggiungere gruppi di utenti in Azure AD
 
 Potrebbe essere necessario aggiungere utenti o gruppi di sicurezza in Active Directory o Azure Active Directory, in base agli scenari per i casi d'uso e ai requisiti della distribuzione di Intune. Esaminare gli utenti e i gruppi di sicurezza correnti in Active Directory o Azure Active Directory e stabilire se soddisfano pienamente le proprie esigenze. Quando si aggiungono nuovi utenti e gruppi di sicurezza, è consigliabile aggiungerli in Active Directory ed eseguire la sincronizzazione con Azure Active Directory tramite Azure AD Connect.
 
 
--   Altre informazioni su [come aggiungere utenti o gruppi in Intune](users-permissions-add.md).
+- Altre informazioni su [come aggiungere utenti o gruppi in Intune](users-permissions-add.md).
 <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
@@ -79,61 +79,61 @@ Potrebbe essere necessario aggiungere utenti o gruppi di sicurezza in Active Dir
 
 A tutti gli utenti interessati dalla distribuzione di Office 365 ed EMS/Intune deve essere assegnata una licenza. È possibile assegnare licenze di EMS/Intune e Office 365 nell'interfaccia di amministrazione di Microsoft 365.
 
--   Altre informazioni su [come assegnare le licenze di Intune](licenses-assign.md).
+- Altre informazioni su [come assegnare le licenze di Intune](licenses-assign.md).
 
 ### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Attività 5: Impostare l'autorità di gestione di dispositivi mobili su Intune
 
 Prima di iniziare a impostare, configurare, gestire e registrare i dispositivi con Intune, è necessario impostare l'autorità di gestione dei dispositivi su Intune.
 
--   Altre informazioni su [come impostare l'autorità di gestione dei dispositivi](mdm-authority-set.md).
+- Altre informazioni su [come impostare l'autorità di gestione dei dispositivi](mdm-authority-set.md).
 
 ### <a name="task-6-enable-device-platforms"></a>Attività 6: Abilitare le piattaforme per i dispositivi
 
 Per impostazione predefinita, è abilitata la maggior parte delle piattaforme per i dispositivi, ad eccezione dei dispositivi Apple (iOS e Mac). Per poter registrare e gestire in Intune i dispositivi iOS, è prima necessario abilitare la piattaforma del dispositivo. A tale scopo, è necessario creare un certificato push MDM Apple e aggiungerlo a Intune.
 
--   Altre informazioni su [come abilitare i dispositivi Apple per la registrazione](apple-mdm-push-certificate-get.md).
+- Altre informazioni su [come abilitare i dispositivi Apple per la registrazione](apple-mdm-push-certificate-get.md).
 
 ### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Attività 7: Aggiungere e distribuire criteri di termini e condizioni
 
 Intune supporta criteri di termini e condizioni. Aggiungere i criteri di termini e condizioni a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come aggiungere e distribuire i criteri di termini e condizioni](terms-and-conditions-create.md).
+- Altre informazioni su [come aggiungere e distribuire i criteri di termini e condizioni](terms-and-conditions-create.md).
 
 ### <a name="task-8-add-and-deploy-configuration-policies"></a>Attività 8: Aggiungere e distribuire criteri di configurazione
 
 Intune supporta due tipi di criteri di configurazione: generali e personalizzati. Aggiungere i criteri di configurazione a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come aggiungere e distribuire i criteri di configurazione](device-profiles.md).
+- Altre informazioni su [come aggiungere e distribuire i criteri di configurazione](device-profiles.md).
 
 ### <a name="task-9-add-and-deploy-resource-profiles"></a>Attività 9: Aggiungere e distribuire profili delle risorse
 
 Intune supporta i profili di posta elettronica, Wi-Fi e VPN. Aggiungere questi profili a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come abilitare l'accesso alle risorse aziendali con Intune](device-profiles.md).
+- Altre informazioni su [come abilitare l'accesso alle risorse aziendali con Intune](device-profiles.md).
 
 ### <a name="task-10-add-and-deploy-apps"></a>Attività 10: Aggiungere e distribuire app
 
 Intune supporta la distribuzione di app Web, line-of-business e di Store pubblici. È anche possibile gestire app in cui è integrato Intune SDK, associandole con i criteri di protezione delle app. Aggiungere le app a seconda delle esigenze e distribuirle ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come aggiungere e distribuire app](app-management.md).
+- Altre informazioni su [come aggiungere e distribuire app](app-management.md).
 
 ### <a name="task-11-add-and-deploy-compliance-policies"></a>Attività 11: Aggiungere e distribuire criteri di conformità
 
 Intune supporta i criteri di conformità. Aggiungere i criteri di conformità a seconda delle esigenze e distribuirli ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni sui [criteri di conformità](device-compliance.md).
+- Altre informazioni sui [criteri di conformità](device-compliance.md).
 
 ### <a name="task-12-enable-conditional-access-policies"></a>Attività 12: Abilitare i criteri di accesso condizionale
 
 Intune supporta l'accesso condizionale per Exchange Online, Exchange locale, SharePoint Online, Skype for Business Online e Dynamics CRM Online. Abilitare e configurare l'accesso condizionale a seconda delle esigenze, in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni sull'[accesso condizionale](conditional-access.md).
+- Altre informazioni sull'[accesso condizionale](conditional-access.md).
 
 ### <a name="task-13-enroll-devices"></a>Attività 13: Registrare i dispositivi
 
 Intune supporta le piattaforme per dispositivi mobili iOS, Mac OS, Android, Windows desktop e Windows Mobile. Registrare le piattaforme per dispositivi mobili a seconda delle esigenze, in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come registrare i dispositivi](device-enrollment.md).
+- Altre informazioni su [come registrare i dispositivi](device-enrollment.md).
 
 
 ## <a name="next-steps"></a>Passaggi successivi

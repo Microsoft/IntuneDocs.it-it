@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512260"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548473"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune
 
@@ -30,13 +30,13 @@ L'obiettivo principale durante la migrazione a Intune è registrare tutti i disp
 
 Ogni piattaforma di dispositivi può offrire impostazioni diverse, ma i criteri per i dispositivi di Intune supportano ogni piattaforma e offrono le funzionalità seguenti per la gestione dei dispositivi:
 
--   Regolare il numero di dispositivi registrati da ogni utente.
+- Regolare il numero di dispositivi registrati da ogni utente.
 
--   Gestire le impostazioni dei dispositivi, ad esempio la crittografia a livello di dispositivo, la lunghezza delle password e l'uso della fotocamera.
+- Gestire le impostazioni dei dispositivi, ad esempio la crittografia a livello di dispositivo, la lunghezza delle password e l'uso della fotocamera.
 
--   Distribuire app, profili di posta elettronica, profili VPN e così via.
+- Distribuire app, profili di posta elettronica, profili VPN e così via.
 
--   Valutare i criteri a livello di dispositivo per i criteri di conformità di sicurezza.
+- Valutare i criteri a livello di dispositivo per i criteri di conformità di sicurezza.
 
 > [!IMPORTANT]
 > I criteri di gestione dei dispositivi non vengono assegnati direttamente a singoli dispositivi o utenti, ma vengono invece assegnati a gruppi di utenti. I criteri possono essere applicati direttamente a un gruppo di utenti, e quindi al dispositivo degli utenti, oppure a un gruppo di dispositivi, e quindi ai relativi membri.
@@ -61,9 +61,9 @@ I profili di accesso alle risorse forniscono i certificati e le configurazioni d
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>Importare direttamente i profili di configurazione iOS (facoltativo)
 
--   **Profili iOS di Apple Configurator (iOS 7.1 e versioni successive):** se la soluzione MDM esistente usa profili di Apple Configurator (file con estensione mobileconfig), Intune può importarli direttamente come criteri di configurazione personalizzati.
+- **Profili iOS di Apple Configurator (iOS 7.1 e versioni successive):** se la soluzione MDM esistente usa profili di Apple Configurator (file con estensione mobileconfig), Intune può importarli direttamente come criteri di configurazione personalizzati.
 
--   **Criteri di configurazione delle applicazioni per dispositivi mobili iOS:** se la soluzione MDM esistente usa criteri di configurazione delle applicazioni per dispositivi mobili iOS, Intune può importarli direttamente, a condizione che siano conformi al formato XML specificato da Apple per gli elenchi di proprietà.
+- **Criteri di configurazione delle applicazioni per dispositivi mobili iOS:** se la soluzione MDM esistente usa criteri di configurazione delle applicazioni per dispositivi mobili iOS, Intune può importarli direttamente, a condizione che siano conformi al formato XML specificato da Apple per gli elenchi di proprietà.
 
 - Informazioni su come aggiungere criteri personalizzati per [iOS](custom-settings-ios.md).
 
@@ -71,25 +71,25 @@ I profili di accesso alle risorse forniscono i certificati e le configurazioni d
 
 I criteri di conformità del dispositivo valutano le impostazioni relative alle sicurezza e generano report che indicano se i dispositivi sono conformi o meno agli standard aziendali. Queste impostazioni includono:
 
--   Lunghezza PIN
+- Lunghezza PIN
 
--   Stato jail-broken
+- Stato jail-broken
 
--   Versione sistema operativo
+- Versione sistema operativo
 
 Vedere le risorse aggiuntive seguenti per le impostazioni di conformità dei dispositivi:
 
--   Informazioni sui [criteri di conformità del dispositivo](device-compliance.md).
+- Informazioni sui [criteri di conformità del dispositivo](device-compliance.md).
 
--   Informazioni su [come creare criteri di conformità del dispositivo](device-compliance-get-started.md).
+- Informazioni su [come creare criteri di conformità del dispositivo](device-compliance-get-started.md).
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Attività 5: Pubblicare e distribuire le app
 
 Quando si usa la soluzione MDM di Intune, è possibile fornire le app richiedendone l'installazione automatica o rendendole disponibili nel portale aziendale.
 
--   [Come aggiungere le app](apps-add.md).
+- [Come aggiungere le app](apps-add.md).
 
--   [Come distribuire le app](apps-deploy.md).
+- [Come distribuire le app](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>Attività 6: Abilitare la registrazione dei dispositivi
 

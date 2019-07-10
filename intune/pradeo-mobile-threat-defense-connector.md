@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512246"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548475"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Connettore Mobile Threat Defense Pradeo con Intune
 
@@ -41,11 +41,11 @@ Ecco alcuni scenari comuni.
 
 Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impedire ai dispositivi di eseguire le azioni seguenti fino alla risoluzione della condizione di minaccia:
 
--   Connessione alla posta elettronica aziendale
+- Connessione alla posta elettronica aziendale
 
--   Sincronizzazione di file aziendali tramite l'app OneDrive for Work
+- Sincronizzazione di file aziendali tramite l'app OneDrive for Work
 
--   Accesso alle app aziendali
+- Accesso alle app aziendali
 
 **Bloccare quando vengono rilevate app dannose:**
 
@@ -81,19 +81,19 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle**, e im
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
--   **Android 4.0.3 e versioni successive**
+- **Android 4.0.3 e versioni successive**
 
--   **iOS 7 e versioni successive**
+- **iOS 7 e versioni successive**
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Sottoscrizione di Microsoft Intune
+- Sottoscrizione di Microsoft Intune
 
--   Sottoscrizione di Pradeo Security Mobile Threat Defense
+- Sottoscrizione di Pradeo Security Mobile Threat Defense
 
-    -   Per altre informazioni, vedere il [sito Web Pradeo](https://www.pradeo.com/en-US/mobile-threat-protection).
+    - Per altre informazioni, vedere il [sito Web Pradeo](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

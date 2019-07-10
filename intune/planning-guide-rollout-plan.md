@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09e2f88168acd1bc77051df924f756a326a02b21
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041497"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548410"
 ---
 # <a name="develop-a-rollout-plan"></a>Elaborare un piano di implementazione
 
@@ -53,11 +53,11 @@ Includere il piano di [comunicazione](planning-guide-communication-plan.md), il 
 ### <a name="production-rollout"></a>Implementazione in produzione
 Dopo il progetto pilota, si è pronti per avviare un'implementazione completa in produzione, per il resto dei gruppi dell'organizzazione. Alcuni esempi dei diversi gruppi e delle fasi di distribuzione sono:
 
--   **Reparti** <br/>A ogni reparto può essere associata una fase di implementazione. Si effettuerà l'implementazione per un intero reparto alla volta. In questo tipo di implementazione, gli utenti di ogni reparto tendono a usare i dispositivi mobili nello stesso modo e ad accedere alle stesse applicazioni. Per gli utenti sono solitamente previsti gli stessi tipi di criteri.
+- **Reparti** <br/>A ogni reparto può essere associata una fase di implementazione. Si effettuerà l'implementazione per un intero reparto alla volta. In questo tipo di implementazione, gli utenti di ogni reparto tendono a usare i dispositivi mobili nello stesso modo e ad accedere alle stesse applicazioni. Per gli utenti sono solitamente previsti gli stessi tipi di criteri.
 
--   **Area geografica** <br/>Questo approccio prevede la distribuzione per tutti gli utenti in una specifica area geografica (un continente, un paese, una regione o un edificio della stessa società). Questo tipo di distribuzione graduale consente di concentrarsi sulla specifica posizione degli utenti. In questo modo, è possibile adottare un approccio basato su un [trattamento esclusivo](#user-assisted-enrollment), perché si riduce il numero di posizioni in cui eseguire la distribuzione di Intune contemporaneamente. Poiché è possibile che siano presenti diversi reparti o casi d'uso nella stessa posizione, può essere necessario distribuire diversi casi d'uso nello stesso momento.
+- **Area geografica** <br/>Questo approccio prevede la distribuzione per tutti gli utenti in una specifica area geografica (un continente, un paese, una regione o un edificio della stessa società). Questo tipo di distribuzione graduale consente di concentrarsi sulla specifica posizione degli utenti. In questo modo, è possibile adottare un approccio basato su un [trattamento esclusivo](#user-assisted-enrollment), perché si riduce il numero di posizioni in cui eseguire la distribuzione di Intune contemporaneamente. Poiché è possibile che siano presenti diversi reparti o casi d'uso nella stessa posizione, può essere necessario distribuire diversi casi d'uso nello stesso momento.
 
--   **Piattaforma** <br/>Questo tipo di distribuzione consiste nella distribuzione di piattaforme simili nello stesso momento. Un esempio potrebbe essere: tutti i dispositivi iOS durante il primo mese, seguiti dai dispositivi Android e quindi dai dispositivi Windows. Questo tipo di distribuzione graduale consente di semplificare il supporto help desk, perché sarebbe sufficiente supportare un'unica piattaforma alla volta.
+- **Piattaforma** <br/>Questo tipo di distribuzione consiste nella distribuzione di piattaforme simili nello stesso momento. Un esempio potrebbe essere: tutti i dispositivi iOS durante il primo mese, seguiti dai dispositivi Android e quindi dai dispositivi Windows. Questo tipo di distribuzione graduale consente di semplificare il supporto help desk, perché sarebbe sufficiente supportare un'unica piattaforma alla volta.
 
 Di seguito è riportato un esempio di un piano di implementazione di Intune che include i gruppi di destinazione e le sequenze temporali:
 
