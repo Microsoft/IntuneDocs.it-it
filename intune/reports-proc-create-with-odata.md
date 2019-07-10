@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412454"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648904"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
@@ -55,7 +55,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Aprire il riquadro **Data warehouse di Intune** selezionando il collegamento Data warehouse in **Altre attività** sul lato destro del pannello **Microsoft Intune - Panoramica**.
-4. Copiare l'URL del feed personalizzato. Ad esempio: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Copiare l'URL del feed personalizzato. ad esempio `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 1. Aprire Power BI Desktop.
 2. Scegliere **Recupera dati** > **Feed OData**.
 3. Incollare l'URL del feed personalizzato nella casella URL nella finestra **Feed OData**.

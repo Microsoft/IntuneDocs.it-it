@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197057"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735754"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrare il dispositivo aziendale con l'app Microsoft Intune
 
@@ -46,9 +46,9 @@ Seguire questa procedura per configurare e registrare il dispositivo.
 2. Nella schermata **Benvenuto** selezionare la lingua.   Se è stato indicato di eseguire la registrazione con un codice a matrice o NFC, seguire la procedura corrispondente riportata di seguito.  
      * NFC: toccare con il dispositivo supportato da NFC il dispositivo di un programmatore per connettersi alla rete dell'organizzazione. Seguire le istruzioni visualizzate. Quando si raggiunge la schermata delle condizioni del servizio di Chrome, procedere al passaggio 5.  
 
-      * Codice a matrice: seguire la procedura descritta in [Registrazione con codice a matrice](#qr-code-enrollment).  
+     * Codice a matrice: seguire la procedura descritta in [Registrazione con codice a matrice](#qr-code-enrollment).  
 
-      Se si è ricevuta indicazione di usare un altro metodo, procedere al passaggio 3.    
+     Se si è ricevuta indicazione di usare un altro metodo, procedere al passaggio 3.    
 
 1. Connettersi alla rete Wi-Fi e toccare **AVANTI**. Seguire la procedura corrispondente al metodo di registrazione. 
 

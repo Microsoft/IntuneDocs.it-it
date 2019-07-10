@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88c95533630cdb3c96626de13a2c843ed8318671
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d599b2a03985965bd8962bcd9f24bfe7555f131c
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043904"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735607"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
 
@@ -54,7 +54,7 @@ Aggiungendo il pacchetto **Webex** come un'eccezione per i criteri di trasferime
 
 - Esempio **Webex** iOS:   per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>wbx</code>
     
- - Esempio **Maps** iOS:  per esentare l'app **Maps** nativa in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>maps</code>
+- Esempio **Maps** iOS:   per esentare l'app **Maps** nativa in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>maps</code>
 
 - Esempio **Webex** Android:   per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>com.cisco.webex.meetings</code>
     

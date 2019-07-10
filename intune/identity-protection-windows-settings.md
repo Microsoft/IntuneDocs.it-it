@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 5a8111d2542269441c7305aad0aad0b7c2162037
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402931"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735624"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Impostazioni dei dispositivi Windows 10 per abilitare Windows Hello for Business in Intune
 
@@ -44,57 +44,57 @@ Per altre informazioni sui profili di Windows Hello for Business in Intune, vede
   
   **Impostazione predefinita**: Non configurato
 
-  Se impostato su *abilitato*, sono disponibili le seguenti impostazioni:
+  Se impostato su *abilitato*, sono disponibili le impostazioni seguenti:
 
-    - **Lunghezza minima del PIN**  
-     Specificare una lunghezza minima del PIN per i dispositivi, per consentire Accedi sicura. Impostazioni predefinite di dispositivo Windows sono sei caratteri, ma questa impostazione può imporre un minimo di quattro a 127 caratteri. 
-  
-      **Impostazione predefinita**: *Non configurato*
+  - **Lunghezza minima del PIN**  
+    Specificare una lunghezza minima del PIN per i dispositivi, per proteggere l'accesso. Le impostazioni predefinite del dispositivo Windows sono sei caratteri, ma questa impostazione può applicare un minimo di quattro a 127 caratteri. 
 
-    - **Lunghezza massima del PIN**  
-    Specificare una lunghezza massima del PIN per i dispositivi, per consentire Accedi sicura. Impostazioni predefinite di dispositivo Windows sono sei caratteri, ma questa impostazione può imporre un minimo di quattro a 127 caratteri.  
+    **Impostazione predefinita**: *Non configurato*
 
-      **Impostazione predefinita**: *Non configurato*  
+  - **Lunghezza massima del PIN**  
+  Specificare una lunghezza massima del PIN per i dispositivi, per proteggere l'accesso. Le impostazioni predefinite del dispositivo Windows sono sei caratteri, ma questa impostazione può applicare un minimo di quattro a 127 caratteri.  
 
-    - **Lettere minuscole nel PIN**  
-      è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere lettere minuscole. Le opzioni disponibili sono:
+    **Impostazione predefinita**: *Non configurato*  
 
-      - **Non consentito** - Impedisce agli utenti di usare lettere minuscole nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
-      - **Consentito** - Consente agli utenti di usare lettere minuscole nel PIN, ma non è obbligatorio.
-      - **Obbligatorio** - Gli utenti devono includere almeno una lettera minuscola nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
+  - **Lettere minuscole nel PIN**  
+    è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere lettere minuscole. Le opzioni disponibili sono:
 
-    - **Lettere maiuscole nel PIN**  
+    - **Non consentito** - Impedisce agli utenti di usare lettere minuscole nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
+    - **Consentito** - Consente agli utenti di usare lettere minuscole nel PIN, ma non è obbligatorio.
+    - **Obbligatorio** - Gli utenti devono includere almeno una lettera minuscola nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
+
+  - **Lettere maiuscole nel PIN**  
     è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere lettere maiuscole. Le opzioni disponibili sono:
 
-      - **Non consentito** - Impedisce agli utenti di usare lettere maiuscole nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
-      - **Consentito** - Consente agli utenti di usare caratteri speciali nel PIN, ma non è obbligatorio.
-      - **Obbligatorio** - Gli utenti devono includere almeno un carattere speciale nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
+    - **Non consentito** - Impedisce agli utenti di usare lettere maiuscole nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
+    - **Consentito** - Consente agli utenti di usare caratteri speciali nel PIN, ma non è obbligatorio.
+    - **Obbligatorio** - Gli utenti devono includere almeno un carattere speciale nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
 
-    - **Caratteri speciali nel PIN**  
+  - **Caratteri speciali nel PIN**  
     è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere caratteri speciali. I caratteri speciali includono: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
- 
-      Le opzioni disponibili sono:
-      - **Non consentito** - Impedisce agli utenti di usare caratteri speciali nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
-      - **Consentito** - Consente agli utenti di usare caratteri speciali nel PIN, ma non è obbligatorio.
-      - **Obbligatorio** - Gli utenti devono includere almeno un carattere speciale nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
 
-      **Default**: non consentito
+    Le opzioni disponibili sono:
+    - **Non consentito** - Impedisce agli utenti di usare caratteri speciali nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
+    - **Consentito** - Consente agli utenti di usare caratteri speciali nel PIN, ma non è obbligatorio.
+    - **Obbligatorio** - Gli utenti devono includere almeno un carattere speciale nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
+
+    **Impostazione**predefinita: non consentita
 
   - **Scadenza PIN (giorni)**  
-      Si consiglia di specificare un periodo di scadenza dopo il quale gli utenti finali devono modificare il PIN. Valori predefiniti di dispositivo Windows sono 41 giorni.
+    Si consiglia di specificare un periodo di scadenza dopo il quale gli utenti finali devono modificare il PIN. Le impostazioni predefinite del dispositivo Windows sono di 41 giorni.
 
     **Impostazione predefinita**: Non configurato
 
   - **Ricorda cronologia PIN**  
-    Limita il riutilizzo di PIN usati in precedenza. Windows dispositivi per impostazione predefinita per impedire il riutilizzo dei pin ultime cinque.  
+    Limita il riutilizzo di PIN usati in precedenza. Per impostazione predefinita, i dispositivi Windows impediscono il riutilizzo degli ultimi cinque pin.  
 
     **Impostazione predefinita**: Non configurato  
 
   - **Abilita il recupero del PIN**   
-    Consente di utilizzare di Windows Hello per il servizio di ripristino PIN aziendale. 
+    Consente all'utente di usare il servizio di ripristino PIN di Windows Hello for business. 
     
-    - **Abilitato** : segreto di PIN di ripristino verrà archiviato nel dispositivo e l'utente può modificare il PIN, se necessario.  
-    - **Disabilitato** -il segreto di ripristino non è stato creato o archiviato.
+    - **Abilitato** : il segreto di ripristino del PIN viene archiviato nel dispositivo e l'utente può modificare il pin se necessario.  
+    - **Disabilitato** : il segreto di ripristino non viene creato o archiviato.
 
     **Impostazione predefinita**: Non configurato
 
@@ -129,10 +129,10 @@ Per altre informazioni sui profili di Windows Hello for Business in Intune, vede
   **Impostazione predefinita**: Non configurato
 
 - **Usare le chiavi di sicurezza per l'accesso**  
-  Questa impostazione è disponibile per i dispositivi che eseguono Windows 10 versione 1903 o versioni successive. Usarlo per gestire il supporto per l'uso di chiavi di sicurezza Windows Hello per l'accesso.  
+  Questa impostazione è disponibile per i dispositivi che eseguono Windows 10 versione 1903 o successiva. Usarlo per gestire il supporto per l'uso delle chiavi di sicurezza di Windows Hello per l'accesso.  
 
-  - **Abilitato** -gli utenti possono usare una chiave di sicurezza Windows Hello come destinazione di una credenziale di accesso per i PC con questo criterio. 
-  - **Disabilitato** : le chiavi di sicurezza sono disabilitate e gli utenti non possono usare per accedere al computer.   
+  - **Abilitato** : gli utenti possono usare una chiave di sicurezza di Windows Hello come credenziale di accesso per i PC assegnati a questi criteri. 
+  - **Disabled** : le chiavi di sicurezza sono disabilitate e gli utenti non possono usarle per accedere ai PC.   
 
   **Impostazione predefinita**: Non configurato
 
