@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bde64e9bbe756b61b41dd8e7d55ba327491ae55b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046233"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648728"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Risolvere i problemi relativi alla gestione di applicazioni mobili
 
-Questo argomento propone soluzioni per i problemi comuni che si verificano durante l'uso della gestione di applicazioni mobili di Intune.
+In questo argomento vengono fornite le soluzioni ai problemi comuni che si sono verificati durante l'utilizzo di Protezione app di Intune (noto anche come gestione di applicazioni per dispositivi mobili o MAM).
 
 Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](get-support.md) per trovare altri modi per ottenere assistenza.
 
@@ -37,7 +37,7 @@ Questi sono i problemi comuni che un amministratore IT può sperimentare durante
 | -- | -- | -- |
 | Criteri non applicati a Skype for Business | I criteri di protezione delle app senza registrazione del dispositivo, eseguita nel portale di Azure, non vengono applicati all'app Skype for Business in dispositivi iOS e Android. | È necessario configurare Skype for Business per l'autenticazione moderna.  Per configurare l'autenticazione moderna per Skype, seguire le istruzioni in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Abilitare il tenant per l'autenticazione moderna). |
 | Criteri per le app di Office non applicati | I criteri di protezione delle app non vengono applicati ad alcuna [app di Office supportata](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) per qualsiasi utente. | Verificare che l'utente abbia una licenza per Intune e che le app di Office siano la destinazione di un criterio di protezione delle app distribuito. L'applicazione di un criterio di protezione dell'app appena distribuito può richiedere fino a otto ore. |
-| L'amministratore non può configurare criteri di protezione delle app nel portale di Azure | L'utente amministratore IT non riesce a configurare i criteri di protezione delle app nel portale di Azure. | i ruoli utente seguenti hanno accesso al portale di Azure: <ul><li>Amministratore globale, configurabile nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietario, configurabile nel [portale di Office](https://portal.azure.com/)</li><li>Collaboratore, configurabile nel [portale di Office](https://portal.azure.com/)</li></ul> Fare riferimento a [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](role-based-access-control.md) per informazioni sulla configurazione di questi ruoli.|
+| L'amministratore non può configurare criteri di protezione delle app nel portale di Azure | L'utente amministratore IT non riesce a configurare i criteri di protezione delle app nel portale di Azure. | I ruoli utente seguenti hanno accesso al portale di Azure: <ul><li>Amministratore globale, configurabile nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietario, configurabile nel [portale di Azure](https://portal.azure.com/).</li><li>Collaboratore, configurabile nel [portale di Azure](https://portal.azure.com/).</li></ul> Fare riferimento a [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](role-based-access-control.md) per informazioni sulla configurazione di questi ruoli.|
 |Account utente mancanti nei report dei criteri di protezione delle app | I report della console di amministrazione non mostrano gli account utente a cui sono stati distribuiti di recente criteri di protezione delle app. | Se un utente è stato selezionato di recente come destinazione di criteri di protezione delle app, possono trascorrere fino a 24 ore prima che l'utente compaia nei report come utente di destinazione. |
 | Modifiche dei criteri non funzionanti | Per l'applicazione di modifiche o aggiornamenti dei criteri di protezione delle app possono essere richieste fino a 8 ore. | Se applicabile, l'utente finale può disconnettersi dall'app e rieseguire l'accesso per forzare la sincronizzazione con il servizio. |
 | Criteri di protezione delle app non funzionanti con DEP | I criteri di protezione delle app non vengono applicati ai dispositivi DEP di Apple. | Assicurarsi di usare l'affinità utente con il programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple. L'affinità utente è obbligatoria per qualsiasi app che richiede l'autenticazione utente nell'ambito del programma DEP. <br><br>Fare riferimento a [Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-ios.md) per altre informazioni sulla registrazione nel programma DEP iOS.|
@@ -58,7 +58,15 @@ I problemi comuni degli utenti finali sono suddivisi nelle categorie seguenti:
 Piattaforma | Scenario | Spiegazione |
 ---| --- | --- |
 iOS | L'utente finale può usare l'estensione di condivisione iOS per aprire i dati aziendali o dell'istituto di istruzione nelle app non gestite, anche con i criteri di trasferimento dei dati impostati su **App gestite da criteri** o **Nessuna**. Questo scenario non comporta la perdita dei dati? | I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione di iOS senza la gestione del dispositivo. Pertanto, **Intune crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**. È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.
+iOS | Perché l'utente finale ha **richiesto di installare l'app Microsoft Authenticator** | Questa operazione è necessaria quando si applica l'accesso condizionale basato su app, vedere [richiedere l'app client](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)approvata.
 Android | Perché l'utente finale **deve installare l'app Portale aziendale**, anche se si usa la protezione delle app MAM senza registrazione del dispositivo?  | In Android, gran parte delle funzionalità di protezione delle app è inclusa nell'app Portale aziendale. **La registrazione dei dispositivi non è necessaria anche se l'app Portale aziendale è sempre obbligatoria**. Per la protezione delle app senza registrazione, è sufficiente che l'utente finale installi l'app Portale aziendale nel dispositivo.
+iOS/Android | Criteri di protezione delle app non applicati alla posta elettronica della bozza nell'app Outlook | Poiché Outlook supporta sia il contesto aziendale che quello personale, non impone la gestione delle applicazioni mobili nella bozza di posta elettronica.
+iOS/Android | Criteri di protezione delle app non applicati ai nuovi documenti in WXP (Word, Excel, PowerPoint) | Poiché WXP supporta sia il contesto aziendale che quello personale, non impone la gestione delle applicazioni mobili nei nuovi documenti fino a quando non vengono salvati in un percorso aziendale identificato, ad esempio OneDrive.
+iOS/Android | App che non consentono il salvataggio con memoria locale quando è abilitato il criterio | Il comportamento dell'app per questa impostazione è controllato dallo sviluppatore dell'app.
+Android | Android ha più restrizioni rispetto a iOS sulle app "native" che possono accedere al contenuto protetto da MAM | Android è una piattaforma aperta e l'associazione di app "native" può essere modificata dall'utente finale a app potenzialmente non sicure. Applicare le [eccezioni dei criteri di trasferimento dei dati](app-protection-policies-exception.md) per esentare app specifiche.
+Android | Il Azure Information Protection (AIP) può essere salvato in formato PDF quando è stato impedito il salvataggio | AIP rispetta i criteri MAM per "Disabilita stampa" quando viene usato Salva con nome PDF.
+iOS | L'apertura di allegati PDF nell'app Outlook ha esito negativo con "azione non consentita | Questo problema può verificarsi se l'utente non ha eseguito l'autenticazione ad Acrobat Reader per Intune o ha usato l'identificazione personale per l'autenticazione nella propria organizzazione. Aprire prima Acrobat Reader ed eseguire l'autenticazione usando le credenziali UPN.
+
 
 ### <a name="normal-usage-dialogs"></a>Finestre di dialogo di utilizzo normali
 
@@ -82,7 +90,7 @@ Messaggio o finestra di dialogo di errore | Causa | Soluzione |
 **Dispositivo non conforme**: questa app non può essere usata perché si sta usando un dispositivo jailbroken. Per assistenza contattare l'amministratore IT. | Intune ha rilevato che l'utente sta usando un dispositivo jailbroken. | Ripristinare le impostazioni predefinite del dispositivo. Seguire [queste istruzioni](https://support.apple.com/HT201274) dal sito di supporto di Apple.
 **Connessione a Internet richiesta**: è necessaria una connessione a Internet per verificare se è possibile usare questa app. | Il dispositivo non è connesso a Internet. | Connettere il dispositivo a una rete Wi-Fi o dati.
 **Errore sconosciuto**: provare a riavviare l'app. Se il problema persiste, contattare l'amministratore IT per assistenza. | Si è verificato un errore sconosciuto. | Attendere qualche minuto e riprovare. Se l'errore persiste, creare un [ticket di supporto](get-support.md#create-an-online-support-ticket) con Intune.
-**Accesso ai dati dell'organizzazione**: l'account aziendale o dell'istituto di istruzione specificato non ha accesso a questa app. Può essere necessario accedere con un altro account. Per assistenza contattare l'amministratore IT. | Intune rileva che l'utente ha provato ad accedere con il secondo account aziendale o dell'istituto di istruzione che è diverso dall'account registrato in MAM per il dispositivo. MAM può gestire un solo account aziendale o dell'istituto di istruzione alla volta per ogni dispositivo. | Richiedere all'utente di accedere con l'account il cui nome utente è popolato dalla schermata di accesso. <br> <br> In alternativa, richiedere all'utente di accedere con il nuovo account aziendale o dell'istituto di istruzione e rimuovere l'account registrato in MAM esistente.
+**Accesso ai dati dell'organizzazione**: l'account aziendale o dell'istituto di istruzione specificato non ha accesso a questa app. Può essere necessario accedere con un altro account. Per assistenza contattare l'amministratore IT. | Intune rileva che l'utente ha provato ad accedere con il secondo account aziendale o dell'istituto di istruzione che è diverso dall'account registrato in MAM per il dispositivo. MAM può gestire un solo account aziendale o dell'istituto di istruzione alla volta per ogni dispositivo. | Richiedere all'utente di accedere con l'account il cui nome utente è popolato dalla schermata di accesso. Potrebbe essere necessario [configurare l'impostazione UPN dell'utente per Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> In alternativa, richiedere all'utente di accedere con il nuovo account aziendale o dell'istituto di istruzione e rimuovere l'account registrato in MAM esistente.
 **Problema di connessione**: si è verificato un problema di connessione imprevisto. Controllare la connessione e riprovare.  |  Errore imprevisto. | Attendere qualche minuto e riprovare. Se l'errore persiste, creare un [ticket di supporto](get-support.md#create-an-online-support-ticket) con Intune.
 **Avviso**: questa app non può più essere usata. Per altre informazioni, contattare l'amministratore IT. | Non è stato possibile convalidare il certificato dell'app. | Assicurarsi che la versione dell'app sia aggiornata. <br><br> Reinstallare l'app.
 **Errore**: questa applicazione ha riscontrato un errore e verrà chiusa. Se l'errore persiste, contattare l'amministratore IT. | Non è stato possibile leggere il PIN dell'app MAM da Apple iOS Keychain. | Riavviare il dispositivo. Assicurarsi che la versione dell'app sia aggiornata. <br><br> Reinstallare l'app.
@@ -103,6 +111,7 @@ Finestra di dialogo/Messaggio di errore | Causa | Soluzione |
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Convalidare la configurazione dei criteri di gestione delle applicazioni mobili](app-protection-policies-validate.md)
+- Per informazioni su come usare i file di log per la risoluzione dei problemi di Protezione app di Intune, vedere[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Per altre informazioni sulla risoluzione dei problemi di Intune, vedere [Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali](help-desk-operators.md). 
 - È possibile ottenere informazioni sui problemi noti in Microsoft Intune. Per altre informazioni, vedere [Problemi noti in Microsoft Intune](known-issues.md).
 - È possibile ottenere altre informazioni. Vedere [Come ottenere supporto per Microsoft Intune](get-support.md).
