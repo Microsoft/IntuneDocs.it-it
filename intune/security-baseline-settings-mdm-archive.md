@@ -1,7 +1,7 @@
 ---
-title: Archivia - MDM di Intune le linee di base di impostazioni di sicurezza per Windows 10
+title: Archivio-delle impostazioni di base della sicurezza MDM di Intune per Windows 10
 titleSuffix: Microsoft Intune
-description: Archivio delle versioni precedenti la MDM della linea di base di impostazioni di sicurezza per la gestione di Windows 10 con Microsoft Intune
+description: Archivio delle versioni precedenti delle impostazioni di base della sicurezza MDM per la gestione di Windows 10 con Microsoft Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418959"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735781"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>Archivio MDM della linea di base di impostazioni di sicurezza  
+# <a name="archive-of-mdm-security-baseline-settings"></a>Archivio delle impostazioni di base della sicurezza MDM  
 
-Visualizza i dettagli per le versioni della linea di base di sicurezza MDM di Intune.  
+Visualizzare i dettagli per le versioni archiviate della linea di base di sicurezza MDM per Intune.  
 
-Quando si rilascia una nuova linea di base della protezione MDM, l'elenco delle impostazioni precedente Sposta nell'articolo di impostazioni di sicurezza della linea di base per questo archivio. Queste versioni sono ancora supportate per l'uso e questo archivio viene fornito per aiutare a comprendere le impostazioni predefinite per le versioni precedenti della linea di base.
+Quando viene rilasciata una nuova linea di base di sicurezza MDM, l'elenco precedente di impostazioni passa dall'articolo impostazioni di base sicurezza a questo archivio. Queste versioni sono ancora supportate per l'uso e questo archivio viene fornito per facilitare la comprensione delle impostazioni predefinite per le versioni di base precedenti.
 
-Quando una versione di base non è non è più supportata per l'utilizzo, verrà quindi rimosso da questo articolo.
+Quando una versione di base non è più supportata per l'uso, verrà rimossa da questo articolo.
 
-- Visualizzare le impostazioni disponibili in [la linea di base di sicurezza MDM corrente](security-baseline-settings-mdm.md) 
-- Scopri [le baseline della sicurezza](security-baselines.md)e come eseguire l'aggiornamento dalla versione di base nei profili di base di sicurezza.
+- Visualizzare le impostazioni disponibili nella linea di [base di sicurezza MDM corrente](security-baseline-settings-mdm.md) 
+- Informazioni sulle [linee di base di sicurezza](security-baselines.md)e su come aggiornare la versione di base nei profili di base di sicurezza.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Anteprima: baseline della sicurezza MDM per ottobre 2018  
 
-*Questa linea di base è stata sostituita da [Baseline di sicurezza di MDM per Spring 2019 (1 di 19 H)](security-baseline-settings-mdm.md)*
+*Questa baseline è stata sostituita dalla baseline di [sicurezza MDM per la primavera 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Notifiche sulla schermata di blocco  
 
@@ -262,38 +262,38 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
   
   **Impostazione predefinita**: Sì  
   
-    Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
+  Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
 
-    - **Conteggio set di caratteri minimo password**  
-      Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. L'utilizzo di un PIN prevede le condizioni seguenti per dispositivi mobili e desktop: 1 - Solo cifre 2 - Cifre e caratteri minuscoli obbligatori 3 - Cifre e caratteri minuscoli e maiuscoli obbligatori. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1. 
-      
-      **Impostazione predefinita**: 3  
+  - **Conteggio set di caratteri minimo password**  
+    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. L'utilizzo di un PIN prevede le condizioni seguenti per dispositivi mobili e desktop: 1 - Solo cifre 2 - Cifre e caratteri minuscoli obbligatori 3 - Cifre e caratteri minuscoli e maiuscoli obbligatori. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1. 
+    
+    **Impostazione predefinita**: 3  
   
-    - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**  
-      Numero di errori di autenticazione consentiti prima che il dispositivo venga cancellato. Il valore 0 disabilita la funzionalità di cancellazione del dispositivo.
-        
-      **Impostazione predefinita**: 10  
+  - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**  
+    Numero di errori di autenticazione consentiti prima che il dispositivo venga cancellato. Il valore 0 disabilita la funzionalità di cancellazione del dispositivo.
+    
+    **Impostazione predefinita**: 10  
   
-    - **Scadenza password (giorni)**  
-      L'impostazione del criterio Validità massima password specifica per quanto tempo (giorni) è possibile usare una password prima che il sistema richieda all'utente di modificarla. È possibile impostare la scadenza delle password dopo un numero di giorni compreso tra 1 e 999 oppure è possibile specificare che le password non hanno scadenza impostando il numero di giorni su 0. Se la Validità massima password è compresa tra 1 e 999 giorni, la Validità minima password deve essere inferiore della validità massima password. Se la Validità massima password è impostata su 0, la Validità minima password può essere qualsiasi valore compreso tra 0 e 998 giorni.
-      
-      **Impostazione predefinita**: 60  
+  - **Scadenza password (giorni)**  
+    L'impostazione del criterio Validità massima password specifica per quanto tempo (giorni) è possibile usare una password prima che il sistema richieda all'utente di modificarla. È possibile impostare la scadenza delle password dopo un numero di giorni compreso tra 1 e 999 oppure è possibile specificare che le password non hanno scadenza impostando il numero di giorni su 0. Se la Validità massima password è compresa tra 1 e 999 giorni, la Validità minima password deve essere inferiore della validità massima password. Se la Validità massima password è impostata su 0, la Validità minima password può essere qualsiasi valore compreso tra 0 e 998 giorni.
+    
+    **Impostazione predefinita**: 60  
   
-    - **Tipo di password richiesto**  
-      Determina il tipo di PIN o password obbligatorio.
-      
-      **Impostazione predefinita**: Caratteri alfanumerici  
+  - **Tipo di password richiesto**  
+    Determina il tipo di PIN o password obbligatorio.
+    
+    **Impostazione predefinita**: Caratteri alfanumerici  
   
-    - **Lunghezza minima password**  
-      L'impostazione del criterio Lunghezza minima password determina il numero minimo di caratteri della password di un account utente. È possibile impostare un valore compreso tra 1 e 14 caratteri oppure è possibile specificare che non è richiesta alcuna password impostando il numero di caratteri su 0.
-      
-      **Impostazione predefinita**: 8  
-  
-    - **Bloccare le password semplici**  
-      Specifica se sono consentiti PIN o password come "1111" o "1234". Per il desktop, controlla anche l'uso di password grafiche.
-      
-      **Impostazione predefinita**: Sì  
-        *L'impostazione Sì impedisce l'uso di password semplici.* 
+  - **Lunghezza minima password**  
+    L'impostazione del criterio Lunghezza minima password determina il numero minimo di caratteri della password di un account utente. È possibile impostare un valore compreso tra 1 e 14 caratteri oppure è possibile specificare che non è richiesta alcuna password impostando il numero di caratteri su 0.
+    
+    **Impostazione predefinita**: 8  
+
+  - **Bloccare le password semplici**  
+    Specifica se sono consentiti PIN o password come "1111" o "1234". Per il desktop, controlla anche l'uso di password grafiche.
+    
+    **Impostazione predefinita**: Sì  
+      *L'impostazione Sì impedisce l'uso di password semplici.* 
 
   - **Impedisci riutilizzo delle password precedenti**  
     Specifica il numero di password che possono essere archiviate nella cronologia che non possono essere usate. Il valore include la password corrente dell'utente. Con un'impostazione di *1*, ad esempio, l'utente non può usare nuovamente la password corrente quando sceglie una nuova password. Un'impostazione di *5* significa che un utente non può definire la nuova password uguale alla password corrente o a una qualsiasi delle quattro precedenti.
@@ -345,10 +345,10 @@ Per altre informazioni, vedere [Policy CSP - Experience](https://docs.microsoft.
     Specifica se consentire o meno i suggerimenti su app e contenuto di autori o distributori di software di terze parti nelle funzionalità di Contenuti in evidenza di Windows come Contenuti in evidenza di Windows nella schermata di blocco, le app suggerite nel menu Start e Suggerimenti di Windows. Gli utenti possono comunque visualizzare i suggerimenti per le funzionalità, le app e i servizi Microsoft.
       
     **Impostazione predefinita**: Sì  
-   - **Bloccare le funzionalità specifiche per i consumer**  
-      Consente agli amministratori IT di attivare le esperienze solitamente riservate ai consumer, ad esempio i suggerimenti del menu Start, le notifiche sull'appartenenza, l'installazione di app post-OOBE e i riquadri di reindirizzamento.
-      
-     **Impostazione predefinita**: Sì  
+  - **Bloccare le funzionalità specifiche per i consumer**  
+    Consente agli amministratori IT di attivare le esperienze solitamente riservate ai consumer, ad esempio i suggerimenti del menu Start, le notifiche sull'appartenenza, l'installazione di app post-OOBE e i riquadri di reindirizzamento.
+    
+    **Impostazione predefinita**: Sì  
 
 
 ### <a name="exploit-guard"></a>Exploit Guard  
@@ -1441,5 +1441,5 @@ Per altre informazioni, vedere [Policy CSP - WindowsPowerShell](https://docs.mic
  
 ## <a name="next-steps"></a>Passaggi successivi  
 
-[Visualizzare la versione corrente di linea di base](security-baseline-settings-mdm.md)  
-[Aggiornare i profili per usare una nuova versione di base](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Visualizza la versione di base corrente](security-baseline-settings-mdm.md)  
+[Aggiornare i profili per l'uso di una nuova versione di base](security-baselines.md#change-the-baseline-instance-for-a-profile)

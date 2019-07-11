@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
-ms.translationtype: MTE75
+ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558393"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735460"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -68,22 +68,29 @@ Se l’applicazione è già configurata per l’uso di ADAL o MSAL e se per l’
       ```csharp
       using Microsoft.Intune.MAM;
       ```
+
 4. Per iniziare a ricevere i criteri di protezione delle app, è necessario registrare l'app nel servizio MAM di Intune. Se l'app non usa [Azure Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) (ADAL) o [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) (MSAL) per l'autenticazione degli utenti e si vuole che l'autenticazione venga gestita da Intune SDK, è necessario che l'app fornisca l'UPN dell'utente al metodo LoginAndEnrollAccount di IntuneMAMEnrollmentManager:
+
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+
       Se al momento della chiamata l'UPN dell'utente non è noto, è possibile che le app passino un valore Null. In questo caso verrà richiesto agli utenti di immettere l'indirizzo di posta elettronica e la password.
       
       Se l'app usa già ADAL o MSAL per l'autenticazione degli utenti, è possibile configurare un accesso Single Sign-On (SSO) tra l'app e Intune SDK. Innanzitutto, sarà necessario configurare ADAL/MSAL per archiviare i token nello stesso gruppo di accesso keychain usato dai binding Intune Xamarin per iOS (com.microsoft.adalcache). Per ADAL è possibile eseguire questa operazione [impostando la proprietà iOSKeychainSecurityGroup di AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access). Per MSAL è necessario [impostare la proprietà iOSKeychainSecurityGroup di PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access). Successivamente sarà necessario eseguire l'override delle impostazioni di AAD predefinite usate da Intune SDK con quelle dell'app. È possibile farlo tramite il dizionario IntuneMAMSettings nel file Info.plist dell'app, come indicato nel [Manuale dello sviluppatore di Intune App SDK per iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk) oppure è possibile usare le proprietà di sostituzione AAD dell'istanza IntuneMAMPolicyManager. L'approccio che prevede il file Info.plist è consigliato per applicazioni con impostazioni ADAL statiche, mentre le proprietà di sostituzione sono consigliate per le applicazioni che determinano questi valori in fase di esecuzione. Dopo aver configurato tutte le impostazioni SSO, l'app dovrebbe fornire l'UPN dell'utente al metodo RegisterAndEnrollAccount di IntuneMAMEnrollmentManager dopo essere stata autenticata:
+
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
+
       Le app possono determinare il risultato di un tentativo di registrazione implementando il metodo EnrollmentRequestWithStatus in una sottoclasse di IntuneMAMEnrollmentDelegate e impostando la proprietà Delegate di IntuneMAMEnrollmentManager su un'istanza della classe. Per un esempio, vedere l'[applicazione Xamarin.iOS di esempio](https://github.com/msintuneappsdk/sample-intune-xamarin-ios).
 
       Dopo aver eseguito la registrazione, le app possono determinare l'UPN dell'account registrato (se precedentemente sconosciuto) eseguendo una query nella proprietà seguente: 
+
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+
 > [!NOTE] 
 > Non è disponibile alcun remapper per iOS. L'integrazione in un'app Xamarin.Forms deve essere identica a quella di un progetto Xamarin.iOS regolare. 
 
@@ -96,11 +103,22 @@ Se l’applicazione è già configurata per l’uso di ADAL o MSAL e se per l’
 
 In [Guida per sviluppatori di Microsoft Intune App SDK per Android](app-sdk-android.md) è disponibile una panoramica completa sull'integrazione di Intune App SDK. Durante la lettura della guida e l'integrazione di Intune App SK con l'app Xamarin, è possibile leggere le sezioni seguenti, che servono a evidenziare le differenze tra l'implementazione per un'app nativa per Android sviluppata in Java e un'app Xamarin sviluppata in C#. Queste sezioni devono essere considerate supplementari e non possono sostituire l'intera guida.
 
+#### <a name="remapper"></a>Remapper
+A partire dalla versione 1.4428.1, il `Microsoft.Intune.MAM.Remapper` pacchetto può essere aggiunto a un'applicazione Novell. Android come [strumento](app-sdk-android.md#build-tooling) di compilazione per eseguire le sostituzioni di classe Mam, metodo e servizi di sistema. Se il mapping è incluso, le parti sostitutive di MAM equivalenti dei metodi rinominati e delle sezioni dell'applicazione MAM verranno eseguite automaticamente al momento della compilazione dell'applicazione.
+
+Per escludere una classe da Mam-Unity tramite il file di mapping, è possibile aggiungere la proprietà `.csproj` seguente al file di progetto.
+```xml
+  <PropertyGroup>
+    <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
+  </PropertyGroup>
+```
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Metodi rinominati](app-sdk-android.md#renamed-methods)
 In molti casi, un metodo disponibile nella classe Android è stato contrassegnato come finale nella classe sostitutiva MAM. In questo caso, la classe sostitutiva MAM fornisce un metodo denominato in modo analogo (con suffisso `MAM`), che deve essere sostituito al suo posto. Ad esempio, quando si deriva da `MAMActivity`, invece di sostituire `OnCreate()` e chiamare `base.OnCreate()`, la classe `Activity` deve sostituire `OnMAMCreate()` e chiamare `base.OnMAMCreate()`.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Applicazione MAM](app-sdk-android.md#mamapplication)
-L'app deve definire una classe `Android.App.Application` che eredita da `MAMApplication`. Assicurarsi che la sottoclasse sia decorata correttamente con l'attributo `[Application]` ed esegua l'override del costruttore `(IntPtr, JniHandleOwnership)`.
+L'app deve definire una `Android.App.Application` classe. Se si integra manualmente MAM, deve ereditare da `MAMApplication`. Assicurarsi che la sottoclasse sia decorata correttamente con l'attributo `[Application]` ed esegua l'override del costruttore `(IntPtr, JniHandleOwnership)`.
+
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -108,26 +126,33 @@ L'app deve definire una classe `Android.App.Application` che eredita da `MAMAppl
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+
 > [!NOTE]
 > In caso di problema con i binding Xamarin MAM, l'applicazione potrebbe arrestarsi in modo anomalo quando viene distribuita in modalità di debug. Per risolvere il problema, aggiungere l'attributo `Debuggable=false` alla classe `Application` e rimuovere il flag `android:debuggable="true"` dal manifesto se è stato impostato manualmente.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Abilitare le funzionalità che richiedono la partecipazione dell'app](app-sdk-android.md#enable-features-that-require-app-participation)
 Esempio: determinare se è necessario il PIN per l'app
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
 ```
+
 Esempio: determinare l'utente primario di Intune
+
 ```csharp
 IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
 return info?.PrimaryUser;
 ```
+
 Esempio: determinare se il salvataggio nel dispositivo o in un servizio di archiviazione cloud è consentito
+
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
 #### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[Eseguire la registrazione per le notifiche dall'SDK](app-sdk-android.md#register-for-notifications-from-the-sdk)
 L'app deve eseguire la registrazione per le notifiche dall'SDK creando un oggetto `MAMNotificationReceiver` e registrandolo con `MAMNotificationReceiverRegistry`. Ciò avviene specificando il ricevente e il tipo di notifica desiderato in `App.OnMAMCreate`, come nell'esempio seguente:
+
 ```csharp
 public override void OnMAMCreate()
 {
@@ -141,13 +166,14 @@ public override void OnMAMCreate()
 ```
 
 #### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[Manager di registrazione MAM](app-sdk-android.md#mamenrollmentmanager)
+
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
 
 ### <a name="xamarinforms-integration"></a>Integrazione di Xamarin.Forms
 
-Per le applicazioni `Xamarin.Forms` è disponibile il pacchetto `Microsoft.Intune.MAM.Remapper` per eseguire automaticamente la sostituzione delle classi MAM inserendo le classi `MAM` nella gerarchia di classi `Xamarin.Forms` usate comunemente. 
+Per le applicazioni `Xamarin.Forms` il pacchetto `Microsoft.Intune.MAM.Remapper` esegue automaticamente la sostituzione delle classi MAM inserendo le classi `MAM` nella gerarchia di classi `Xamarin.Forms` usate comunemente. 
 
 > [!NOTE]
 > È necessario completare l'integrazione di Xamarin.Forms oltre all'integrazione di Xamarin.Android descritta in precedenza.
@@ -164,6 +190,7 @@ Dopo aver aggiunto il remapper al progetto, sarà necessario eseguire le sostitu
             LoadApplication(new App());
         }
 ```
+
 In caso di mancata sostituzione, è possibile che si verifichino gli errori di compilazione seguenti finché non viene eseguita la sostituzione:
 * [Errore del compilatore CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). questo errore in genere è visualizzato in questo formato ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
 È previsto perché quando lo strumento di modifica del mapping modifica l'ereditarietà delle classi Xamarin, determinate funzioni vengono rese `sealed` e viene aggiunta una nuova variante MAM per eseguire l'override.
@@ -173,12 +200,15 @@ In caso di mancata sostituzione, è possibile che si verifichino gli errori di c
 > Il remapper riscrive una dipendenza usata da Visual Studio per il completamento automatico di IntelliSense. Potrebbe essere poi necessario ricaricare e ricompilare il progetto quando il remapper viene aggiunto per IntelliSense affinché le modifiche siano riconosciute correttamente.
 
 ### <a name="company-portal-app"></a>App Portale aziendale
-I binding Xamarin per Intune SDK si basa sulla presenza del [portale aziendale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) app Android nel dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale. L'utente non è necessario eseguire l'accesso.
+Le associazioni Novell di Intune SDK si basano sulla presenza dell' [app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) portale aziendale Android sul dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale. Non è necessario che l'utente sia connesso.
 
 > [!NOTE]
 > Quando l'app Portale aziendale non è presente nel dispositivo **Android**, un'app gestita da Intune si comporta analogamente a una normale app che non supporta i criteri di protezione delle app di Intune.
 
 Per la protezione delle app senza registrazione del dispositivo, _**non**_ è richiesta la registrazione del dispositivo con l'app Portale aziendale.
+
+### <a name="sample-applications"></a>Applicazioni di esempio
+Applicazioni di esempio che evidenziano la funzionalità Mam nelle app Novell. Android e Novell Forms sono disponibili su [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Support
 Se l'organizzazione è un cliente Intune, contattare il rappresentante del supporto tecnico Microsoft per aprire un ticket di supporto e creare un problema [nella pagina GitHub relativa ai problemi](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). Verrà presto prestato supporto. 

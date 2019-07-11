@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549056"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735776"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
-Visualizzare le impostazioni di base di sicurezza MDM che sono supportati da Microsoft Intune per i dispositivi che eseguono Windows 10 o versione successiva. I valori predefiniti per le impostazioni in questa linea di base rappresentano la configurazione consigliata per i dispositivi applicabili e potrebbero non corrispondere ai valori predefiniti di base da altre linee di base di sicurezza.  
+Visualizzare le impostazioni di base della sicurezza MDM supportate da Microsoft Intune per i dispositivi che eseguono Windows 10 o versioni successive. I valori predefiniti per le impostazioni in questa linea di base rappresentano la configurazione consigliata per i dispositivi applicabili e potrebbero non corrispondere alle impostazioni predefinite di base di altre linee di base di sicurezza.  
 
-La versione baseline più recente è **MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19 H)**  
+La versione di base più recente è la baseline della **sicurezza MDM per l'aggiornamento di Spring 2019 (19H1)**  
 
-Per altre informazioni sulle novità nella versione più recente di questa linea di base rispetto alla versione precedente, vedere [ciò che viene modificato nel nuovo modello](#whats-changed-in-the-new-template).  
+Per informazioni sulle modifiche apportate nella versione più recente di questa baseline dalla versione precedente, vedere modifiche apportate al [nuovo modello](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Nel giugno del 2019, la base della sicurezza di anteprima MDM è stato sostituito dal rilascio del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19H)* modello, ovvero generaly disponibili (non in anteprima). I profili che sono stati creati prima della disponibilità del *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19 H)* della linea di base non verrà aggiornate per riflettere le impostazioni e i valori che sono in linea di base di sicurezza MDM per l'aggiornamento di primavera 2019 (19 ore 1 ) versione.  Anche se è possibile creare nuovi profili basati sul modello di anteprima, è possibile modificare e continuare a usare i profili creato in precedenza che si basano sul modello di anteprima.   
+> Nel giugno del 2019, la baseline della sicurezza MDM di anteprima è stata sostituita dalla versione di *MDM Security Baseline per il modello Spring 2019 Update (19H1)* , che è disponibile a livello generale (non in anteprima). I profili creati prima della disponibilità della baseline di *sicurezza MDM per l'aggiornamento della primavera 2019 (19H1)* non verranno aggiornati in modo da riflettere le impostazioni e i valori presenti nella baseline di sicurezza MDM per la versione Spring 2019 Update (19H1).  Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza che sono basati sul modello di anteprima.   
   
-Per altre informazioni sull'utilizzo standard di sicurezza con Intune, vedere [usare le linee di base di sicurezza](security-baselines.md).  
+Per informazioni sull'uso delle linee di base di sicurezza con Intune, vedere [usare le linee di base di sicurezza](security-baselines.md).  
 
 
    
@@ -47,7 +47,7 @@ Per altre informazioni, vedere [Policy CSP - AboveLock](https://docs.microsoft.c
 
   **Impostazione predefinita**: Sì  
 
-- **Le app dalla schermata di blocco di attivazione vocale**  
+- **Attivazione vocale delle app dalla schermata bloccata**  
 
   **Impostazione predefinita**: Disabilitato
 
@@ -65,16 +65,16 @@ Per altre informazioni, vedere [Policy CSP - AppRuntime](https://docs.microsoft.
 ## <a name="application-management"></a>Gestione delle applicazioni   
 Per altre informazioni, vedere [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) (Provider di servizi di configurazione dei criteri - ApplicationManagement) nella documentazione di Windows.  
 
-- **Controllo utente di blocco sulle installazioni**  
-  Questa impostazione criterio consente agli utenti di modificare le opzioni di installazione che in genere sono disponibili solo per gli amministratori di sistema. Se si abilita questa impostazione dei criteri, alcune delle funzionalità di sicurezza di Windows Installer vengono ignorate. Consente il completamento di installazioni che in caso contrario, potrebbero essere stato interrotto a causa di una violazione della sicurezza. Se si disabilita o non si configura questa impostazione dei criteri, le funzionalità di sicurezza di Windows Installer impediscono agli utenti di modificare le opzioni di installazione in genere riservate per gli amministratori di sistema, ad esempio specificando la directory in cui sono installati i file. Se il programma di installazione di Windows rileva che un pacchetto di installazione ha consentito all'utente di modificare un'opzione protetta, interrompe l'installazione e viene visualizzato un messaggio. Queste funzionalità di sicurezza funzionano solo quando il programma di installazione è in esecuzione in un contesto di sicurezza con privilegi in cui ha accesso a directory di cui è stato negato all'utente. Questa impostazione dei criteri è progettata per gli ambienti meno restrittivi. Può essere utilizzato per ovviare a errori in un programma di installazione che impedisce l'installazione di software.  
+- **Blocca il controllo utente sulle installazioni**  
+  Questa impostazione di criteri consente agli utenti di modificare le opzioni di installazione che in genere sono disponibili solo per gli amministratori di sistema. Se si abilita questa impostazione di criteri, alcune delle funzionalità di sicurezza di Windows Installer verranno ignorate. Consente di completare le installazioni che altrimenti verrebbero interrotte a causa di una violazione della sicurezza. Se questa impostazione viene disabilitata o non configurata, le funzionalità di sicurezza di Windows Installer impediscono agli utenti di modificare le opzioni di installazione generalmente riservate agli amministratori di sistema, ad esempio specificando la directory in cui vengono installati i file. Se Windows Installer rileva che un pacchetto di installazione ha consentito all'utente di modificare un'opzione protetta, l'installazione viene arrestata e viene visualizzato un messaggio. Queste funzionalità di sicurezza funzionano solo quando il programma di installazione è in esecuzione in un contesto di sicurezza con privilegi in cui ha accesso alle directory negate all'utente. Questa impostazione dei criteri è progettata per ambienti meno restrittivi. Può essere usato per aggirare gli errori in un programma di installazione che impedisce l'installazione del software.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
   **Impostazione predefinita**: Sì
 
-- **Installazioni di app di blocco MSI con privilegi elevati**  
+- **Blocca le installazioni di app MSI con privilegi elevati**  
   Questa impostazione dei criteri indica a Windows Installer di usare le autorizzazioni elevate per installare qualsiasi programma nel sistema.  
-  - *Se si abilita questa impostazione dei criteri*, privilegi sono stati estesi ad tutti i programmi. In genere, questi privilegi sono riservati per i programmi che sono stati assegnati all'utente (disponibile sul desktop), assegnato al computer (installato automaticamente) f o resi disponibile in Installazione applicazioni nel Pannello di controllo. Questa impostazione di profilo consente agli utenti di installare i programmi che richiedono l'accesso alle directory che l'utente non dispone dell'autorizzazione alla visualizzazione o modifica, comprese le directory nel computer con restrizioni elevate.
-  - *Se si disabilita o non si configura questa impostazione criterio*, il sistema applica le autorizzazioni dell'utente corrente durante l'installazione di programmi che un amministratore di sistema non distribuire o offrire. Nota: l'impostazione di questo criterio è presente in entrambe le cartelle Configurazione computer e Configurazione utente. Per rendere effettiva questa impostazione dei criteri, è necessario abilitarla in entrambe le cartelle. Attenzione: Gli utenti esperti possono sfruttare i vantaggi delle autorizzazioni di questa impostazione concede per modificare i propri privilegi e ottenere l'accesso permanente a cartelle e file con restrizioni di criteri. Si noti che la versione di configurazione utente di questa impostazione dei criteri non è necessariamente protetto.  
+  - *Se si abilita questa impostazione di criteri*, i privilegi vengono estesi a tutti i programmi. Questi privilegi sono generalmente riservati ai programmi assegnati all'utente (offerti sul desktop), assegnati al computer (installato automaticamente) f o resi disponibili in Installazione applicazioni nel pannello di controllo. Questa impostazione del profilo consente agli utenti di installare programmi che richiedono l'accesso alle directory che l'utente potrebbe non disporre delle autorizzazioni per la visualizzazione o la modifica, incluse le directory su computer con restrizioni.
+  - *Se questa impostazione viene disabilitata o non*configurata, il sistema applica le autorizzazioni dell'utente corrente durante l'installazione di programmi che non vengono distribuiti o offerti da un amministratore di sistema. Nota: l'impostazione di questo criterio è presente in entrambe le cartelle Configurazione computer e Configurazione utente. Per rendere effettiva questa impostazione dei criteri, è necessario abilitarla in entrambe le cartelle. Attenzione: gli utenti esperti possono sfruttare le autorizzazioni concesse da questa impostazione di criteri per modificare i privilegi e ottenere l'accesso permanente a file e cartelle con restrizioni. Si noti che non è garantita la sicurezza della versione di configurazione utente di questa impostazione di criteri.  
   
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067134)    
 
@@ -271,44 +271,44 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
   
   **Impostazione predefinita**: Sì  
   
-    Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
+  Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
 
-    - **Conteggio set di caratteri minimo password**  
-      Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. L'utilizzo di un PIN prevede le condizioni seguenti per dispositivi mobili e desktop: 1 - Solo cifre 2 - Cifre e caratteri minuscoli obbligatori 3 - Cifre e caratteri minuscoli e maiuscoli obbligatori. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Conteggio set di caratteri minimo password**  
+    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. L'utilizzo di un PIN prevede le condizioni seguenti per dispositivi mobili e desktop: 1 - Solo cifre 2 - Cifre e caratteri minuscoli obbligatori 3 - Cifre e caratteri minuscoli e maiuscoli obbligatori. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Impostazione predefinita**: 3  
+
+  - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**  
+    Numero di errori di autenticazione consentiti prima che il dispositivo venga cancellato. Il valore 0 disabilita la funzionalità di cancellazione del dispositivo.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Impostazione predefinita**: 3  
-  
-    - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**  
-      Numero di errori di autenticazione consentiti prima che il dispositivo venga cancellato. Il valore 0 disabilita la funzionalità di cancellazione del dispositivo.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Impostazione predefinita**: 10  
-  
-    - **Scadenza password (giorni)**  
-      L'impostazione del criterio Validità massima password specifica per quanto tempo (giorni) è possibile usare una password prima che il sistema richieda all'utente di modificarla. È possibile impostare la scadenza delle password dopo un numero di giorni compreso tra 1 e 999 oppure è possibile specificare che le password non hanno scadenza impostando il numero di giorni su 0. Se la Validità massima password è compresa tra 1 e 999 giorni, la Validità minima password deve essere inferiore della validità massima password. Se la Validità massima password è impostata su 0, la Validità minima password può essere qualsiasi valore compreso tra 0 e 998 giorni.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Impostazione predefinita**: 60  
-  
-    - **Tipo di password richiesto**  
-      Determina il tipo di PIN o password obbligatorio.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Impostazione predefinita**: Caratteri alfanumerici  
-  
-    - **Lunghezza minima password**  
-      L'impostazione del criterio Lunghezza minima password determina il numero minimo di caratteri della password di un account utente. È possibile impostare un valore compreso tra 1 e 14 caratteri oppure è possibile specificare che non è richiesta alcuna password impostando il numero di caratteri su 0.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Impostazione predefinita**: 8  
-  
-    - **Bloccare le password semplici**  
-      Specifica se sono consentiti PIN o password come "1111" o "1234". Per il desktop, controlla anche l'uso di password grafiche.  
-      [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Impostazione predefinita**: Sì  
-        *L'impostazione Sì impedisce l'uso di password semplici.* 
+    **Impostazione predefinita**: 10  
+
+  - **Scadenza password (giorni)**  
+    L'impostazione del criterio Validità massima password specifica per quanto tempo (giorni) è possibile usare una password prima che il sistema richieda all'utente di modificarla. È possibile impostare la scadenza delle password dopo un numero di giorni compreso tra 1 e 999 oppure è possibile specificare che le password non hanno scadenza impostando il numero di giorni su 0. Se la Validità massima password è compresa tra 1 e 999 giorni, la Validità minima password deve essere inferiore della validità massima password. Se la Validità massima password è impostata su 0, la Validità minima password può essere qualsiasi valore compreso tra 0 e 998 giorni.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Impostazione predefinita**: 60  
+
+  - **Tipo di password richiesto**  
+    Determina il tipo di PIN o password obbligatorio.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Impostazione predefinita**: Caratteri alfanumerici  
+
+  - **Lunghezza minima password**  
+    L'impostazione del criterio Lunghezza minima password determina il numero minimo di caratteri della password di un account utente. È possibile impostare un valore compreso tra 1 e 14 caratteri oppure è possibile specificare che non è richiesta alcuna password impostando il numero di caratteri su 0.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Impostazione predefinita**: 8  
+
+  - **Bloccare le password semplici**  
+    Specifica se sono consentiti PIN o password come "1111" o "1234". Per il desktop, controlla anche l'uso di password grafiche.  
+    [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Impostazione predefinita**: Sì  
+      *L'impostazione Sì impedisce l'uso di password semplici.* 
 
   - **Impedisci riutilizzo delle password precedenti**  
     Specifica il numero di password che possono essere archiviate nella cronologia che non possono essere usate. Il valore include la password corrente dell'utente. Con un'impostazione di *1*, ad esempio, l'utente non può usare nuovamente la password corrente quando sceglie una nuova password. Un'impostazione di *5* significa che un utente non può definire la nuova password uguale alla password corrente o a una qualsiasi delle quattro precedenti.  
@@ -329,10 +329,10 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
   
   **Impostazione predefinita**: 1  
 
-## <a name="dma-guard"></a>Guard DMA  
+## <a name="dma-guard"></a>Protezione DMA  
 Per altre informazioni, vedere [Provider di servizi di configurazione dei criteri - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) nella documentazione di Windows.
 - **Enumerazione di dispositivi esterni non compatibili con la protezione DMA del kernel**  
-  Questo criterio è utile per fornire protezione aggiuntiva contro dispositivi in grado di supportare DMA esterni. Consente inoltre maggiore controllo sull'enumerazione di dispositivi esterni idonei per DMA non compatibili con il remapping e/o l'isolamento e il sandboxing della memoria del dispositivo. Questo criterio viene applicato solo quando la protezione DMA del kernel è supportata e abilitata dal firmware del sistema. Protezione DMA kernel è una funzionalità di piattaforma che non può essere controllata tramite criteri o dall'utente finale. Deve essere supportata dal sistema in fase di produzione. Per verificare se il sistema supporta la protezione DMA Kernel, controllare il campo Kernel DMA protezione nella pagina di riepilogo della MSINFO32.exe.  
+  Questo criterio ha lo scopo di fornire sicurezza aggiuntiva ai dispositivi compatibili con DMA esterno. Consente inoltre maggiore controllo sull'enumerazione di dispositivi esterni idonei per DMA non compatibili con il remapping e/o l'isolamento e il sandboxing della memoria del dispositivo. Questo criterio viene applicato solo quando la protezione DMA del kernel è supportata e abilitata dal firmware del sistema. Il kernel DMA Protection è una funzionalità della piattaforma che non può essere controllata tramite criteri o dall'utente finale. Deve essere supportata dal sistema in fase di produzione. Per verificare se il sistema supporta la protezione con DMA del kernel, controllare il campo protezione DMA kernel nella pagina di riepilogo di MSINFO32. exe.  
   [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Impostazione predefinita**: Blocca tutto   
@@ -532,12 +532,12 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   
   **Impostazione predefinita**: Nessun sito  
 
-- **Supporto di crittografia di Internet Explorer**  
-  Questa impostazione criterio consente di disattivare il supporto per Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 o 3.0 SSL nel browser. TLS e SSL sono protocolli che consentono di proteggere la comunicazione tra il browser e il server di destinazione. Quando il browser prova a impostare una comunicazione protetta con il server di destinazione, il browser e server di negoziare il protocollo e la versione da usare. Il browser e il server tenta di associare di altro elenco di protocolli supportati e le versioni e selezionano la corrispondenza più preferita. Se si abilita questa impostazione dei criteri, il browser viene negoziato da o non negozia un tunnel di crittografia usando i metodi di crittografia selezionato nell'elenco a discesa. Se si disabilita o non si configura questa impostazione dei criteri, l'utente può selezionare quali crittografia metodo il browser supporta.  
+- **Supporto per la crittografia di Internet Explorer**  
+  Questa impostazione criterio consente di disattivare il supporto per Transport Layer Security (TLS) 1,0, TLS 1,1, TLS 1,2, Secure Sockets Layer (SSL) 2,0 o SSL 3,0 nel browser. TLS e SSL sono protocolli che consentono di proteggere la comunicazione tra il browser e il server di destinazione. Quando il browser tenta di configurare una comunicazione protetta con il server di destinazione, il browser e il server negoziano il protocollo e la versione da usare. Il browser e il server tentano di trovare la corrispondenza con l'elenco di protocolli e versioni supportati e selezionano la corrispondenza più desiderata. Se si abilita questa impostazione di criteri, il browser negozia o non negozia un tunnel di crittografia usando i metodi di crittografia selezionati dall'elenco a discesa. Se questa impostazione viene disabilitata o non configurata, l'utente potrà selezionare il metodo di crittografia supportato dal browser.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Default**: 2 oggetti: TLS versione 1.1 e TLS 1.2  
-  *Selezionare la freccia giù per visualizzare le opzioni che è possibile selezionare per questa impostazione.*
+  **Impostazione predefinita**: 2 elementi: TLS v 1.1 e TLS v 1.2  
+  *Selezionare la freccia rivolta verso il basso per visualizzare le opzioni che è possibile selezionare per questa impostazione.*
   
 - **Internet Explorer - Area Internet bloccata - SmartScreen**  
   L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: in Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
@@ -941,7 +941,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   
   **Impostazione predefinita**: Abilitato  
   
-- **Scriptlet zona internet di Internet Explorer**  
+- **Internet Explorer gli scriptlet area Internet**  
   L'impostazione di questo criterio consente di specificare se l'utente può eseguire scriptlet. Se si abilita l'impostazione di questo criterio, l'utente potrà eseguire gli scriptlet. Se si disabilita l'impostazione di questo criterio, l'utente non potrà eseguire gli scriptlet. Se non si configura l'impostazione di questo criterio, l'utente potrà abilitare o disabilitare gli scriptlet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -1387,29 +1387,29 @@ Per altre informazioni, vedere [Policy CSP - Power](https://docs.microsoft.com/w
   **Impostazione predefinita**: Abilitato
 
 ## <a name="remote-assistance"></a>Assistenza remota
-- **Assistenza remota su richiesta**  
-  Questa impostazione criterio consente di attivare o disattivare l'assistenza remota richiesto (Richiedi) in questo computer. 
-  - *Se si abilita questa impostazione dei criteri*, gli utenti in questo computer possono usare il trasferimento di file o posta elettronica per chiedere aiuto. Inoltre, gli utenti possono usare programmi di messaggistica immediata per consentire le connessioni al computer ed è possibile configurare ulteriori impostazioni di assistenza remota. 
-  - *Se si disabilita questa impostazione dei criteri*, utenti del computer non è possibile usare trasferimento di file o posta elettronica per chiedere aiuto. Inoltre, gli utenti non è possibile usare programmi di messaggistica immediata per consentire le connessioni a questo computer. 
-  - *Se non si configura questa impostazione dei criteri*, gli utenti possono attivare o disattivare Assistenza remota richiesto (Richiedi) stessi nelle proprietà del sistema nel Pannello di controllo. Gli utenti possono anche configurare le impostazioni di assistenza remota. 
+- **Assistenza remota richiesta**  
+  Questa impostazione criterio consente di attivare o disattivare l'assistenza remota richiesta (Richiedi) in questo computer. 
+  - *Se si abilita questa impostazione*relativa ai criteri, gli utenti di questo computer possono utilizzare la posta elettronica o il trasferimento di file per chiedere assistenza a un utente. Inoltre, gli utenti possono utilizzare i programmi di messaggistica immediata per consentire le connessioni al computer ed è possibile configurare altre impostazioni di assistenza remota. 
+  - *Se si disabilita questa impostazione di criteri*, gli utenti di questo computer non potranno utilizzare la posta elettronica o il trasferimento di file per chiedere assistenza. Inoltre, gli utenti non possono utilizzare i programmi di messaggistica immediata per consentire le connessioni a questo computer. 
+  - *Se questa impostazione di criteri non viene*configurata, gli utenti possono attivare o disattivare l'assistenza remota richiesta (Richiedi) in proprietà di sistema nel pannello di controllo. Gli utenti possono anche configurare le impostazioni di assistenza remota. 
 
-  Se si abilita questa impostazione dei criteri, sono disponibili due modi per consentire gli helper fornire assistenza remota: "Consenti a Visualizza solo il computer" o "Consenti helper controllare in remoto il computer". La "durata massima ticket" impostazione di criteri di imposta un limite sulla quantità di tempo che un invito alla assistenza remota creato tramite posta elettronica o trasferimento di file può rimanere aperto. Il "selezionare il metodo per l'invio di inviti tramite posta elettronica" impostazione consente di specificare quali standard del messaggio di posta elettronica da usare per l'invio di inviti alla assistenza remota. A seconda del programma di posta elettronica, è possibile usare Mailto standard (il destinatario dell'invito si connette tramite un collegamento Internet) o l'interfaccia SMAPI (Simple MAPI) standard (l'invito allegato al messaggio di posta elettronica). Questa impostazione dei criteri non è disponibile in Windows Vista poiché SMAPI è l'unico metodo supportato. Se si abilita questa impostazione dei criteri è necessario abilitare le eccezioni del firewall appropriate consentire le comunicazioni di assistenza remota.  
+  Se si abilita questa impostazione di criteri, sono disponibili due modi per consentire agli helper di fornire assistenza remota: "Consenti agli helper di visualizzare solo il computer" o "Consenti agli helper di controllare in remoto il computer". L'impostazione dei criteri "tempo massimo ticket" consente di impostare un limite per il periodo di tempo durante il quale un invito di assistenza remota creato tramite posta elettronica o trasferimento di file può rimanere aperto. L'impostazione "selezionare il metodo per l'invio di inviti tramite posta elettronica" specifica lo standard di posta elettronica da usare per inviare gli inviti di assistenza remota. A seconda del programma di posta elettronica, è possibile usare lo standard mailto (il destinatario dell'invito si connette tramite un collegamento a Internet) o lo standard SMAPI (Simple MAPI) (l'invito è allegato al messaggio di posta elettronica). Questa impostazione dei criteri non è disponibile in Windows Vista, poiché SMAPI è l'unico metodo supportato. Se si abilita questa impostazione di criteri, è necessario abilitare anche le eccezioni appropriate del firewall per consentire le comunicazioni di assistenza remota.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Default**: disabilitare l'assistenza remota
+  **Impostazione predefinita**: Disabilita assistenza remota
 
-  Se impostato su *attiva Assistenza remota*, configurare le impostazioni aggiuntive seguenti:  
-  - **Assistenza remota su richiesta l'autorizzazione**  
+  Quando si imposta l'abilitazione dell' *assistenza remota*, configurare le impostazioni aggiuntive seguenti:  
+  - **Autorizzazione richiesta assistenza remota**  
     **Impostazione predefinita**: Visualizza  
 
-  - **Valore di ora massima ticket**  
+  - **Valore tempo massimo ticket**  
     **Impostazione predefinita**: *Non configurato*  
 
-  - **Ticket massimo periodo di tempo**  
-    **Default**: minuti    
+  - **Periodo di tempo massimo del ticket**  
+    **Impostazione predefinita**: minuti    
 
-  - **Metodo di posta elettronica di invito**  
-    **Default**: Simple MAPI
+  - **Metodo di invito tramite posta elettronica**  
+    **Impostazione predefinita**: MAPI semplice
 
   
 ## <a name="remote-desktop-services"></a>Servizi Desktop remoto  
@@ -1661,7 +1661,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Sì
   
 - **Monitoraggio del comportamento**  
-  Consente o impedisce la funzionalità di monitoraggio del comportamento Windows Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
+  Consente o impedisce la funzionalità di monitoraggio del comportamento di Windows Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Impostazione predefinita**: Sì
@@ -1710,9 +1710,9 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Blocca
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
-Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) nella documentazione di protocolli di Windows.  
+Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) nella documentazione relativa ai protocolli di Windows.  
 
-- **Dominio del profilo di firewall**  
+- **Dominio del profilo firewall**  
   Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti connesse ai domini.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2066796)  
 
@@ -1728,7 +1728,7 @@ Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.
   - **Firewall abilitato**  
     **Impostazione predefinita**: Consentito
 
-- **Profilo del firewall pubblica**  
+- **Profilo del firewall pubblico**  
   Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti pubbliche. Tali reti sono classificate come pubbliche dagli amministratori nell'host del server. La classificazione viene stabilita la prima volta che l'host si connette alla rete. Queste reti sono in genere quelle di aeroporti, bar e altri luoghi pubblici, in cui i peer nella rete o l'amministratore di rete non sono attendibili.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
@@ -1750,11 +1750,11 @@ Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.
   - **Regole dei criteri da Criteri di gruppo non unite**  
     **Impostazione predefinita**: Sì
 
-- **Profilo di firewall privato**  
+- **Profilo del firewall privato**  
   Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti private.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Connessioni in ingresso bloccate**  
+  - **Connessioni in ingresso bloccate**  
     **Impostazione predefinita**: Sì
 
   - **Connessioni in uscita obbligatorie**  
@@ -1768,7 +1768,7 @@ Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business  
 - **Richiedi anti-spoofing avanzato, se disponibile**  
-  In caso affermativo, i dispositivi userà l'anti-spoofing avanzato, se disponibile. Se No, anti-spoofing verrà bloccato. Non è configurato, verranno rispettate le configurazioni eseguite sul client.  
+  In caso affermativo, i dispositivi utilizzeranno l'anti-spoofing avanzato, se disponibile. Se no, l'anti-spoofing verrà bloccato. Non configurata rispetta le configurazioni eseguite sul client.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Impostazione predefinita**: Sì
@@ -1779,22 +1779,22 @@ Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.
   **Impostazione predefinita**: Sì
 
 - **Richiedi lettere minuscole nel PIN**  
-  Se necessario, PIN utente deve includere almeno una lettera minuscola.
+  Se necessario, il PIN dell'utente deve includere almeno una lettera minuscola.
 
   **Impostazione predefinita**: Consentito
 
 - **Richiedi caratteri speciali nel PIN**  
-  Se necessario, PIN utente deve includere almeno un carattere speciale.
+  Se necessario, il PIN dell'utente deve includere almeno un carattere speciale.
 
   **Impostazione predefinita**: Consentito
 
 - **Lunghezza minima del PIN**  
-  Lunghezza minima del PIN deve essere compreso tra 4 e 127 caratteri.
+  La lunghezza minima del PIN deve essere compresa tra 4 e 127.
 
   **Impostazione predefinita**: 6
 
 - **Richiedi lettere maiuscole nel PIN**  
-  Se necessario, PIN utente deve includere almeno una lettera maiuscola.
+  Se necessario, il PIN dell'utente deve includere almeno una lettera maiuscola.
 
   **Impostazione predefinita**: Consentito
 
@@ -1820,26 +1820,26 @@ Per altre informazioni, vedere [Policy CSP - WindowsPowerShell](https://docs.mic
 
   **Impostazione predefinita**: Abilitato
 
-## <a name="whats-changed-in-the-new-template"></a>Cosa è cambiato nel nuovo modello
-Il *MDM Baseline di sicurezza per l'aggiornamento di primavera 2019 (1 di 19H)* modello presenta le modifiche seguenti dalle *anteprima* modello.
+## <a name="whats-changed-in-the-new-template"></a>Modifiche apportate al nuovo modello
+La *baseline di sicurezza MDM per il modello di aggiornamento Spring 2019 (19H1)* presenta le modifiche seguenti rispetto al modello di *Anteprima* .
 
-### <a name="changes-to-the-baseline-settings"></a>Modificare le impostazioni di base
+### <a name="changes-to-the-baseline-settings"></a>Modifiche alle impostazioni di base
 Le impostazioni seguenti sono:
 - *Nuovo* in questa versione più recente della linea di base.
-- *Rimosso* da questa versione di base più recente, ma erano presenti nella versione precedente.
-- *Revisione* in qualche modo dal modo in cui le impostazioni visualizzate nella versione precedente. 
+- *Rimossi* da questa versione di base più recente, ma erano presenti nella versione precedente.
+- *Revisione* del modo in cui le impostazioni sono state visualizzate nella versione precedente. 
 
-*[Nuovo]*  [ **Blocco sopra**](#above-lock):
-- **Le app dalla schermata di blocco di attivazione vocale**    
+*[Nuovo]* [**Blocco precedente**](#above-lock):
+- **Attivazione vocale delle app dalla schermata bloccata**    
 
 *[Nuovo]* [**Gestione delle applicazioni**](#application-management): 
-- **Controllo utente di blocco sulle installazioni**  
-- **Installazioni di app di blocco MSI con privilegi elevati**  
+- **Blocca il controllo utente sulle installazioni**  
+- **Blocca le installazioni di app MSI con privilegi elevati**  
 
-*[Rimosso]*  [ **Bitlocker**](#bitlocker):  
-- Bit criterio dell'unità rimovibile Locker > **metodo di crittografia**
-- **Criterio unità fissato con crittografica** *(tutte le impostazioni)*
-- **Bit di criteri di unità del sistema locker** *(tutte le impostazioni)*
+*[Rimosso]* [**BitLocker**](#bitlocker):  
+- Criteri dell'unità rimovibile di bit Locker > **metodo di crittografia**
+- **Criteri di unità fissa del blocco di bit** *(tutte le impostazioni)*
+- **Criteri dell'unità di sistema di bit Locker** *(tutte le impostazioni)*
 
 *[Nuovo]* [**Connettività**](#connectivity):
 - **Configurare l'accesso sicuro ai percorsi UNC**
@@ -1848,7 +1848,7 @@ Le impostazioni seguenti sono:
 - **Sicurezza basata sulla virtualizzazione**
 
 
-*[Nuovo]*  [ **DMA Guard**](#dma-guard):
+*[Nuovo]* [**Protezione DMA**](#dma-guard):
 - **Enumerazione di dispositivi esterni non compatibili con la protezione DMA del kernel**  
 
 *[Nuovo]* [**Internet Explorer**](#internet-explorer):
@@ -1856,17 +1856,17 @@ Le impostazioni seguenti sono:
 - **Internet Explorer - Area Internet - Trascinare o copiare e incollare file**  
 - **Internet Explorer - Area con restrizioni - Componenti basati su .NET Framework**  
 - **Internet Explorer - Area computer locale - Non eseguire programmi antimalware su controlli ActiveX**
-- **Supporto di crittografia di Internet Explorer**  
+- **Supporto per la crittografia di Internet Explorer**  
 
-*[Modificato]*  [ **Internet Explorer**](#internet-explorer):
-- **Prompt automatica zona internet di Internet Explorer per il download del file** > il valore predefinito è ora **disabilitato**. Disponibile in anteprima il è stato impostato su abilitato.
+*[Modificato]* [**Internet Explorer**](#internet-explorer):
+- La **richiesta automatica dell'area Internet di Internet Explorer per il download dei file** > il valore predefinito è **disabilitata**. In anteprima questa impostazione è stata impostata su abilitato.
 
 *[Nuovo]* [**Assistenza remota**](#remote-assistance):  
-- **Assistenza remota su richiesta** 
-  - **Assistenza remota su richiesta l'autorizzazione**
-  - **Valore di ora massima ticket**  
-  - **Ticket massimo periodo di tempo**  
-  - **Metodo di posta elettronica di invito**
+- **Assistenza remota richiesta** 
+  - **Autorizzazione richiesta assistenza remota**
+  - **Valore tempo massimo ticket**  
+  - **Periodo di tempo massimo del ticket**  
+  - **Metodo di invito tramite posta elettronica**
 
 
 *[Nuovo]* [**WIndows Defender**](#windows-defender):
@@ -1874,19 +1874,19 @@ Le impostazioni seguenti sono:
 - **Avvio di app di comunicazione di Office in un processo figlio** 
 
 *[Nuovo]* [**Windows Defender Firewall**](#windows-defender-firewall)
-- **Dominio del profilo di firewall**  
+- **Dominio del profilo firewall**  
   - **Connessioni in ingresso bloccate**  
   - **Connessioni in uscita obbligatorie**  
   - **Notifiche in ingresso bloccate**  
   - **Firewall abilitato**  
-- **Profilo del firewall pubblica**  
+- **Profilo del firewall pubblico**  
   - **Connessioni in ingresso bloccate**  
   - **Connessioni in uscita obbligatorie**  
   - **Notifiche in ingresso bloccate**  
   - **Firewall abilitato** 
   - **Regole di sicurezza connessione da Criteri di gruppo non unite**   
   - **Regole dei criteri da Criteri di gruppo non unite**  
-- **Profilo di firewall privato**  
+- **Profilo del firewall privato**  
   - **Connessioni in ingresso bloccate**  
   - **Connessioni in uscita obbligatorie**  
   - **Notifiche in ingresso bloccate**  
