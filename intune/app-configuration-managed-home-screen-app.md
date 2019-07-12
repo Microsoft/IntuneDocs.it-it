@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648741"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735707"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -382,8 +382,8 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Per altre informazioni sui dispositivi Android Enterprise dedicati, vedere [Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati](android-kiosk-enroll.md).
