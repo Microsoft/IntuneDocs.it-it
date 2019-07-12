@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046111"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572474"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
@@ -44,11 +44,11 @@ Di seguito sono riportati alcuni scenari in cui Zimperium viene integrato in Int
 
 Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloccare i dispositivi finché la condizione di minaccia non viene risolta:
 
--   Connessione alla posta elettronica aziendale
+- Connessione alla posta elettronica aziendale
 
--   Sincronizzazione di file aziendali tramite l'app OneDrive for Work
+- Sincronizzazione di file aziendali tramite l'app OneDrive for Work
 
--   Accesso alle app aziendali
+- Accesso alle app aziendali
 
 **Bloccare quando vengono rilevate app dannose:**
 
@@ -60,7 +60,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 
@@ -72,7 +72,7 @@ Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e 
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
 
 **Bloccare SharePoint Online quando vengono rilevate minacce per la rete:**
 
@@ -84,19 +84,19 @@ Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e 
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
--   **Android 4.1 e versioni successive**
+- **Android 4.1 e versioni successive**
 
--   **iOS 8 e versioni successive**
+- **iOS 8 e versioni successive**
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Sottoscrizione di Microsoft Intune
+- Sottoscrizione di Microsoft Intune
 
--   Sottoscrizione di Zimperium Mobile Threat Defense
+- Sottoscrizione di Zimperium Mobile Threat Defense
 
-    -   Per altre informazioni, vedere il  [sito Web di Zimperium](https://www.zimperium.com/zips-mobile-ips).
+    - Per altre informazioni, vedere il [sito Web di Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

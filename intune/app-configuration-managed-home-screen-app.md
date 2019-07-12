@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049947"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648741"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -74,12 +74,12 @@ La tabella seguente contiene un elenco delle chiavi di configurazione di Managed
 | Enable home screen feed (Abilita feed della schermata iniziale) | bool | FALSE | Abilita il feed della schermata iniziale, che è possibile vedere con lo scorrimento rapido a sinistra. Questo feed visualizza diversi tipi di contenuto, come il calendario, le app usate di frequente, la scheda dell'assistente vocale Cortana e così via. Se si abilita questa impostazione, l'utente finale potrà passare al feed scorrendo rapidamente a sinistra nella schermata iniziale. |
 | Enable overview mode (Abilita modalità panoramica) | bool | FALSE | Consente agli utenti finali di aggiungere o rimuovere diverse pagine della schermata iniziale accessibili con lo scorrimento rapido a destra dalla schermata predefinita. Se si abilita questa impostazione, l'utente finale potrà aggiungere pagine a destra della pagina predefinita della schermata iniziale, potrà cambiare la pagina predefinita e potrà accedere alle impostazioni di Managed Home Screen. |
 | Enable device telemetry (Abilita telemetria del dispositivo) | bool | FALSE | Abilita tutti i dati di telemetria acquisiti per la schermata iniziale gestita. Se si abilita questa impostazione, Microsoft potrà acquisire i dati di telemetria sull'utilizzo del dispositivo, ad esempio il numero di volte in cui è stata avviata una specifica app. |
-| Set whitelisted applications (Imposta applicazioni nell'elenco elementi consentiti) | bundleArray | FALSE | Consente di definire il set di app visibili nella schermata iniziale tra le app installate nel dispositivo. Per definire le app, immettere il nome del pacchetto delle app da rendere visibili, ad esempio com.android.settings per rendere le impostazioni accessibili nella schermata iniziale. Le app da aggiungere nell'elenco elementi consentiti in questa sezione devono essere già installate nel dispositivo per renderle visibili nella schermata iniziale. |
+| Set allow-listed applications (Imposta applicazioni nell'elenco elementi consentiti) | bundleArray | FALSE | Consente di definire il set di app visibili nella schermata iniziale tra le app installate nel dispositivo. Per definire le app, immettere il nome del pacchetto delle app da rendere visibili, ad esempio com.microsoft.emmx per rendere le impostazioni accessibili nella schermata iniziale. Le app da aggiungere nell'elenco elementi consentiti in questa sezione devono essere già installate nel dispositivo per renderle visibili nella schermata iniziale. |
 | Set pinned web links (Imposta collegamenti Web aggiunti) | bundleArray | FALSE | Consente di aggiungere i siti Web come icone di avvio rapido nella schermata iniziale. Con questa configurazione è possibile definire l'URL e aggiungerlo nella schermata iniziale per consentire all'utente finale di avviarlo nel browser con un singolo tocco. |
 | Enable search bar (Abilita barra di ricerca) | bool | FALSE | Abilita la barra di ricerca nella schermata iniziale. Se si abilita questa impostazione, gli utenti del dispositivo vedranno la barra di ricerca nella schermata iniziale e potranno immettere qualsiasi contenuto da cercare nel Web. |
 | Disable settings app (Disabilita app di impostazioni) | bool | FALSE | Disabilita la pagina di impostazioni per Managed Home Screen. Se si disabilita questa impostazione, l'utente finale del dispositivo non potrà accedere alle impostazioni di Managed Home Screen. |
-| Enable screen saver (Abilita screen saver) | bool | FALSE | Abilita o disabilita la modalità screen saver. Se impostata su True, è possibile configurare **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** e **media_detect_screen_saver**. |
-| Screen saver image (Immagine screen saver) | string |   | Consente di impostare l'URL dell'immagine dello screen saver. Se non viene impostato un URL, nei dispositivi verrà visualizzata la schermata predefinita quando è attivato lo screen saver.  |
+| Enable screen saver (Abilita screen saver) | bool | FALSE | Per abilitare o non abilitare la modalità screen saver. Se impostata su True, è possibile configurare **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** e **media_detect_screen_saver**. |
+| Screen saver image (Immagine screen saver) | string |   | Consente di impostare l'URL dell'immagine dello screen saver. Se non viene impostato un URL, nei dispositivi verrà visualizzata l'immagine dello screen saver predefinita quando è attivato lo screen saver. L'immagine predefinita visualizza l'icona dell'app Managed Home Screen.  |
 | Screen saver show time (Durata dello screen saver) | integer | 0 | Offre la possibilità di impostare la durata, in secondi, dello screen saver visualizzato nel dispositivo in modalità screen saver. Se impostata su 0, lo screen saver verrà visualizzato per un tempo indefinito in modalità screen saver finché il dispositivo non diventa attivo.  |
 | Inactive time to enable screen saver (Tempo di inattività per abilitare lo screen saver) | integer | 30 | Il numero di secondi durante il quale il dispositivo è inattivo prima che venga attivato lo screen saver. Se impostata su 0, il dispositivo non passerà mai in modalità screen saver. |
 | Media detect before showing screen saver (Rilevamento di contenuti multimediali prima dello screen saver) | bool | TRUE | Scegliere se nel dispositivo dovrà essere visualizzato lo screen saver durante la riproduzione di audio o video. Se impostata su True, il dispositivo non riprodurrà audio o video, indipendentemente dal valore di **inactive_time_to_show_scree_saver**. Se impostata su False, nel dispositivo verrà visualizzato lo screen saver in base al valore impostato in **inactive_time_to_show_screen_saver**.   |
@@ -89,6 +89,9 @@ La tabella seguente contiene un elenco delle chiavi di configurazione di Managed
 | Exit lock task mode password (Password di uscita dalla modalità blocco attività) | string |   | Immettere un codice di 4-6 cifre da usare per uscire temporaneamente dalla modalità blocco attività per la risoluzione dei problemi. |
 | Show Wi-Fi setting (Mostra impostazioni Wi-Fi) | bool | FALSE | Se impostata su `True`, l'utente finale può attivare o disattivare il Wi-Fi oppure connettersi a reti Wi-Fi diverse.  |
 | Show Bluetooth setting (Mostra impostazione Bluetooth) | bool | FALSE | Se impostata su `True`, l'utente finale può attivare o disattivare il Bluetooth oppure connettersi ad altri dispositivi abilitati per Bluetooth.   |
+| Applications in folder are ordered by name (Le applicazioni nella cartella sono ordinate per nome) | bool | TRUE | Se impostata su `False`, gli elementi in una cartella vengono visualizzati nell'ordine in cui sono specificati. In caso contrario, verranno visualizzati in ordine alfabetico nella cartella.   |
+| Application order enabled (Ordine delle applicazioni abilitato) | bool | FALSE | Se impostata su `True` è possibile impostare l'ordine di applicazioni, collegamenti Web e cartelle in Managed Home Screen. Dopo l'abilitazione, impostare l'ordinamento con **app_order**. L'utente finale può attivare o disattivare il Bluetooth e connettersi ad altri dispositivi abilitati per Bluetooth.   |
+| Application order (Ordine delle applicazioni) | bundleArray | FALSE | Consente di specificare l'ordine di applicazioni, collegamenti Web e cartelle in Managed Home Screen. Per usare questa impostazione, l'impostazione **Lock Home Screen** (Blocca schermata iniziale) deve essere abilitata, l'opzione **Set Grid Size** (Imposta dimensioni griglia) deve essere definita e l'opzione **Application order enabled** (Ordine delle applicazioni abilitato) deve essere impostata su `True`.   |
 
 ## <a name="enter-json-data"></a>Immettere dati JSON
 
@@ -111,10 +114,6 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -236,6 +235,87 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "managed_folders",

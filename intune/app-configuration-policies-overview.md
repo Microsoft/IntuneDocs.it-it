@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494066"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649031"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni di configurazione per un'app iOS o Android. Queste impostazioni di configurazione consentono di personalizzare un'app. Questi criteri di configurazione non vengono assegnati direttamente agli utenti o ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
+Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni di configurazione per un'app iOS o Android. Queste impostazioni di configurazione consentono la personalizzazione di un'app tramite un approccio standard del settore alla gestione e configurazione delle app. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
 È possibile assegnare un criterio di configurazione dell'app a un gruppo di utenti e dispositivi tramite una combinazione di assegnazioni di inclusione ed esclusione. Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi** e **Tutti gli utenti + Tutti i dispositivi**.
 
@@ -52,9 +52,11 @@ Sono disponibili due opzioni per l'uso delle configurazioni delle app con Intune
 
 ## <a name="apps-that-support-app-configuration"></a>App che supportano la configurazione delle app
 
-È possibile usare i criteri di configurazione delle app per le app che li supportano. Per supportare la configurazione delle app in Microsoft Intune, le app devono essere scritte in modo da supportare l'uso delle configurazioni delle app. Per maggiori dettagli, consultare il fornitore dell'app.
+### <a name="managed-devices"></a>Dispositivi gestiti
+È possibile usare i criteri di configurazione delle app per le app che li supportano. Per supportare la configurazione delle app in Microsoft Intune, le app devono essere scritte in modo da supportare l'uso delle configurazioni delle app definite dalla [community di Appconfig](https://www.appconfig.org/members). Per maggiori dettagli, consultare il fornitore dell'app.
 
-È possibile preparare un'app line-of-business includendo Intune App SDK nell'app oppure eseguendo il wrapping dell'app dopo che è stata sviluppata. Intune App SDK, disponibile per iOS e Android, consente di abilitare per le app i criteri di configurazione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. Per altre informazioni, vedere [Panoramica di Intune App SDK](app-sdk.md).
+### <a name="managed-apps"></a>App gestite
+È possibile preparare un'app line-of-business includendo Intune App SDK nell'app oppure eseguendo il wrapping dell'app dopo che è stata sviluppata. Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di configurazione della protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. Per altre informazioni, vedere [Panoramica di Intune App SDK](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Supporto dell'API Graph per la configurazione delle app
 

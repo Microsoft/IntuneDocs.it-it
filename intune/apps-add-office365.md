@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527435"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648702"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -42,6 +42,7 @@ Prima di poter assegnare, monitorare, configurare o proteggere le app è necessa
 - Questo metodo di installazione non è supportato nei dispositivi Windows 10S, Windows Home, Windows Team, Windows Holographic o Windows Holographic for Business.
 - Intune non consente di installare le app desktop di Office 365 da Microsoft Store (note come app Office Centennial) in un dispositivo a cui sono già state distribuite app di Office 365 con Intune. Se si installa questa configurazione, si potrebbero verificare perdite o danneggiamenti dei dati.
 - Più assegnazioni di app necessarie o disponibili non sono cumulative. Un'assegnazione di app successiva sovrascriverà le assegnazioni di app installate preesistenti. Ad esempio, se il primo set di app di Office contiene Word mentre il successivo set non lo contiene, Word verrà disinstallato. Questa condizione non si applica alle applicazioni di Visio o Project.
+- Non sono attualmente supportate più distribuzioni di Office 365. Solo una distribuzione verrà recapitata al dispositivo.
 - **Versione di Office** - Scegliere se assegnare la versione a 32 bit o a 64 bit di Office. La versione a 32 bit può essere installata in dispositivi a 32 bit e a 64 bit, mentre la versione a 64 bit può essere installata solo in dispositivi a 64 bit.
 - **Remove MSI from end-user devices** (Rimuovi MSI dai dispositivi degli utenti finali) - Scegliere se si vogliono rimuovere le app MSI di Office preesistenti dai dispositivi degli utenti finali. L'installazione non riesce se sono già presenti app MSI nei dispositivi degli utenti finali. Le app da disinstallare non sono limitate alle app selezionate per l'installazione in **Configura la suite di app**, in quanto verranno rimosse tutte le app di Office (MSI) dal dispositivo dell'utente finale. Per altre informazioni, vedere [Rimuovere le versioni MSI esistenti di Office durante l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Quando Intune reinstalla Office nei computer dell'utente finale, i Language Pack saranno gli stessi usati nelle precedenti installazioni di Office MSI.
 
@@ -142,7 +143,14 @@ Se è stata selezionata l'opzione **Immettere i dati XML** nella casella di riep
 
 Al termine, selezionare **Aggiungi** nel riquadro **Aggiungi app**. L'app creata viene visualizzata nell'elenco di app.
 
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+Intune usa lo [strumento di distribuzione di Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) per scaricare e distribuire Office 365 ProPlus ai computer client usando la [rete CDN di Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Fare riferimento alle procedure consigliate descritte in [Gestione degli endpoint di Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) per garantire che la configurazione di rete consenta ai client di accedere alla rete CDN direttamente anziché indirizzare il traffico della rete CDN tramite proxy centrali per evitare di introdurre latenza inutile.
+
+Eseguire [Assistente supporto e ripristino per Office 365](https://diagnostics.office.com) su un dispositivo di destinazione se si verificano problemi in fase di esecuzione o installazione.
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>Errori durante l'installazione della suite di app
+
+Vedere [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) (Come abilitare la registrazione del Servizio di registrazione unificato di Office 365 ProPlus) per informazioni su come visualizzare i log di installazione dettagliati.
 
 Le tabelle seguenti elencano i codici di errore comuni che possono essere visualizzati e il relativo significato.
 

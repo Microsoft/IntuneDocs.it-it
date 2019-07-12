@@ -1,7 +1,7 @@
 ---
-title: Cancellare i dati usando le azioni di accesso per i criteri di protezione delle app
+title: Cancellare i dati usando le azioni di avvio condizionale per i criteri di protezione delle app
 titleSuffix: Microsoft Intune
-description: Informazioni su come cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Microsoft Intune.
+description: Informazioni su come cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804677"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558447"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
 I criteri di protezione delle app di Intune consentono di configurare impostazioni per impedire agli utenti finali di accedere a un'app o un account aziendale. Queste impostazioni riguardano la rilocazione dei dati e i requisiti di accesso definiti dall'organizzazione per aspetti quali dispositivi jail-broken e versioni minime del sistema operativo.
  
 Usando queste impostazioni, è possibile scegliere in modo esplicito di cancellare i dati aziendali dell'organizzazione dal dispositivo dell'utente finale come azione da intraprendere in caso di non conformità. Per alcune impostazioni sarà possibile configurare più azioni, ad esempio il blocco dell'accesso e la cancellazione dei dati in base a diversi valori specificati.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Creare criteri di protezione delle app usando le azioni di accesso
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Creare criteri di protezione delle app usando azioni di avvio condizionale
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Nel riquadro **Intune** selezionare **App client** > **Criteri di protezione delle app**.
 4. Fare clic su **Aggiungi criteri**. È anche possibile modificare criteri esistenti. 
 5. Fare clic su **Configura le impostazioni obbligatorie** per visualizzare l'elenco di impostazioni configurabili per il criterio. 
-6. Se si scorre verso il basso il riquadro Impostazioni, verrà visualizzata la sezione **Azioni di accesso** con una tabella modificabile.
+6. Se si scorre verso il basso il riquadro Impostazioni, verrà visualizzata la sezione **Avvio condizionale** con una tabella modificabile.
 
     ![Screenshot delle azioni di accesso per la protezione delle app di Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ La tabella delle impostazioni dei criteri di protezione delle app contiene le co
 
 ### <a name="ios-policy-settings"></a>Impostazioni dei criteri di iOS
 Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa della colonna **Impostazione**:
--  Numero massimo di tentativi di PIN
--  Periodo di prova offline
--  Dispositivi jailbroken/rooted
--  Versione minima del sistema operativo
--  Versione minima dell'app
--  Versione minima dell'SDK
--  Modello/i dispositivo
+- Numero massimo di tentativi di PIN
+- Periodo di prova offline
+- Dispositivi jailbroken/rooted
+- Versione minima del sistema operativo
+- Versione minima dell'app
+- Versione minima dell'SDK
+- Modello/i dispositivo
 
 Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. È possibile trovare un identificatore di modello iOS nella colonna Device Type (Tipo di dispositivo) nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Input di esempio: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Quando si verificano conflitti tra due criteri di protezione delle app per i val
 ### <a name="android-policy-settings"></a>Impostazione dei criteri di Android
 
 Per Android è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa della colonna **Impostazione**:
--  Numero massimo di tentativi di PIN
--  Periodo di prova offline
--  Dispositivi jailbroken/rooted
--  Versione minima del sistema operativo
--  Versione minima dell'app
--  Versione minima della patch
--  Produttore/i dispositivo
--  Attestazione del dispositivo SafetyNet
--  Analisi delle minacce nelle app
+- Numero massimo di tentativi di PIN
+- Periodo di prova offline
+- Dispositivi jailbroken/rooted
+- Versione minima del sistema operativo
+- Versione minima dell'app
+- Versione minima della patch
+- Produttore/i dispositivo
+- Attestazione del dispositivo SafetyNet
+- Analisi delle minacce nelle app
 
 Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
 Esempio di input: *Produttore A;Produttore B* 
@@ -105,9 +105,9 @@ Per impostazione predefinita, la tabella avrà righe popolate come le impostazio
 Per configurare un'impostazione, selezionarla dall'elenco a discesa nella colonna **Impostazione**. Dopo aver selezionato un'impostazione, viene abilitata la casella di testo modificabile nella colonna **Valore** sulla stessa riga, se è necessario impostare un valore. L'elenco a discesa viene inoltre abilitato nella colonna **Azione** con il set di azioni di avvio condizionale applicabili all'impostazione. 
 
 L'elenco seguente riporta le azioni comuni:
--  **Blocca l'accesso**: blocca l'accesso dell'utente finale all'app aziendale.
--  **Cancella i dati**: cancella i dati aziendali dal dispositivo dell'utente finale.
--  **Avvisa**: visualizza una finestra di dialogo per l'utente finale come messaggio di avviso.
+- **Blocca l'accesso**: blocca l'accesso dell'utente finale all'app aziendale.
+- **Cancella i dati**: cancella i dati aziendali dal dispositivo dell'utente finale.
+- **Avvisa**: visualizza una finestra di dialogo per l'utente finale come messaggio di avviso.
 
 In alcuni casi, ad esempio per l'impostazione **Versione minima del sistema operativo**, è possibile configurare l'impostazione per l'esecuzione di tutte le azioni applicabili in base ai diversi numeri di versione. 
 

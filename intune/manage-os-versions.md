@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044913"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548763"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gestire le versioni del sistema operativo con Intune
 Sulle piattaforme moderne di dispositivi mobili e desktop, i principali aggiornamenti, le patch e le nuove versioni vengono rilasciati con una certa rapidità. In Windows è possibile controllare la gestione completa degli aggiornamenti e delle patch, mentre altre piattaforme quali iOS e Android richiedono la partecipazione degli utenti finali al processo.  Le funzionalità di Microsoft Intune consentono di strutturare la gestione delle versioni del sistema operativo in piattaforme diverse.
@@ -61,7 +61,7 @@ Per informazioni dettagliate, vedere [Get started with device compliance](https:
 I criteri di protezione delle app di Intune e le impostazioni di accesso della gestione di applicazioni mobili (MAM) consentono di specificare la versione minima del sistema operativo a livello dell'app. Consente di informare e invitare gli utenti ad aggiornare il sistema operativo a una versione minima specificata.
  
 Sono disponibili due opzioni diverse: 
-- **Avviso**: consiglia all'utente finale di effettuare l'aggiornamento quando si apre un'applicazione con criteri di protezione o impostazioni di accesso della gestione di applicazioni mobili su un dispositivo con una versione del sistema operativo precedente alla versione specificata. Accesso alle app e ai dati aziendali consentito.
+- **Avviso** - Consiglia all'utente finale di effettuare l'aggiornamento quando si apre un'app con criteri di protezione delle applicazioni o impostazioni di accesso della gestione di applicazioni mobili su un dispositivo con una versione del sistema operativo precedente alla versione specificata. Accesso alle app e ai dati aziendali consentito.
   ![Immagine della finestra di dialogo Avviso sull'aggiornamento di Android](./media/os-version-update-warning.png) 
 
 - **Blocco**: informa l'utente finale che è necessario effettuare l'aggiornamento quando si apre un'app con criteri di protezione o impostazioni di accesso della gestione di applicazioni mobili su un dispositivo con una versione del sistema operativo precedente alla versione specificata. Accesso alle app e ai dati aziendali non consentito.
@@ -77,7 +77,7 @@ Per informazioni dettagliate, vedere [Come creare e assegnare criteri di protezi
 - **Passaggio 1**: Usare le restrizioni di registrazione per richiedere la versione 2 del sistema operativo come versione minima per registrare il dispositivo. Ciò garantisce che i nuovi dispositivi degli utenti finali siano compatibili in fase di registrazione.
 - **Passaggio 2a**: Usare i criteri di protezione delle app di Intune per avvisare gli utenti quando l'app viene aperta o se è necessaria la versione 2 del sistema operativo.
 - **Passaggio 2b**. Usare criteri di conformità dei dispositivi per richiedere la versione 2 del sistema operativo come versione minima per la conformità del dispositivo. Usare **Azioni** in caso di mancata conformità per consentire un periodo di tolleranza di sette giorni e inviare agli utenti finali una notifica di posta elettronica con i requisiti e la sequenza temporale.
-  -  Questi criteri informano gli utenti finali che i dispositivi esistenti devono essere aggiornati tramite posta elettronica, il portale aziendale di Intune e quando l'applicazione viene aperta per le app abilitate con un criterio di protezione delle app.
+  - Questi criteri informano gli utenti finali che i dispositivi esistenti devono essere aggiornati tramite posta elettronica, il portale aziendale di Intune e quando l'applicazione viene aperta per le app abilitate con un criterio di protezione delle app.
   - È possibile eseguire un report di conformità per identificare gli utenti non conformi. 
 - **Passaggio 3a**: Usare i criteri di protezione delle app di Intune per bloccare gli utenti quando un'applicazione viene aperta se il dispositivo non esegue la versione 2 del sistema operativo.
 - **Passaggio 3b**: Usare criteri di conformità dei dispositivi per richiedere la versione 2 del sistema operativo come versione minima per la conformità del dispositivo.
