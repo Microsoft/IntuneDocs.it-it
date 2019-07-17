@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529616"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883024"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -67,9 +67,9 @@ Altre informazioni sulla [Registrazione con Apple Configurator](apple-configurat
 I dispositivi configurati con affinità utente possono installare ed eseguire l'app Portale aziendale per scaricare le app e gestire i dispositivi. Dopo che gli utenti ricevono i dispositivi, devono eseguire alcuni passaggi supplementari per completare l'Assistente configurazione e installare l'app del portale aziendale.
 
 L'affinità utente è necessaria per supportare quanto segue:
-  - App per la gestione di applicazioni mobili (MAM)
-  - Accesso condizionale ai dati aziendali e alla posta elettronica
-  - App Portale aziendale
+- App per la gestione di applicazioni mobili (MAM)
+- Accesso condizionale ai dati aziendali e alla posta elettronica
+- App Portale aziendale
 
 **Come registrare i dispositivi iOS di proprietà dell'azienda con l'affinità utente**
 1. Quando gli utenti accendono i dispositivi, viene chiesto di completare l'Assistente configurazione. 

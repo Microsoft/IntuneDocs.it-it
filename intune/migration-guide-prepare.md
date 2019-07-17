@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548368"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882834"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparare Microsoft Intune per la gestione di dispositivi mobili (MDM)
 
@@ -51,8 +51,8 @@ Prima di affrontare nei dettagli la configurazione di Intune, è importante esam
 
 - Quali sono i requisiti per le condizioni per l'utilizzo?
 
-    - Assicurarsi di coinvolgere l'ufficio legale con il dovuto anticipo per questo aspetto.
-    - Quali interventi di localizzazione sono necessari?
+  - Assicurarsi di coinvolgere l'ufficio legale con il dovuto anticipo per questo aspetto.
+  - Quali interventi di localizzazione sono necessari?
 
 - Gli utenti hanno familiarità con la tecnologia e l'IT in generale?
 
@@ -63,8 +63,8 @@ Prima di affrontare nei dettagli la configurazione di Intune, è importante esam
 - Quali sono le lunghezze correnti per passcode/PIN dei dispositivi?
 
 - È necessario disabilitare funzionalità dei dispositivi o limitare particolari comportamenti? Con i profili di configurazione dei dispositivi è possibile controllare un'ampia gamma di impostazioni specifiche della piattaforma, ad esempio:
-    - Disabilitazione della fotocamera
-    - Blocco del dispositivo in modalità applicazione singola<br/>
+  - Disabilitazione della fotocamera
+  - Blocco del dispositivo in modalità applicazione singola<br/>
 
 - Quali tipi di autenticazione è necessario supportare? Se è necessaria l'autenticazione basata su certificati, di quali tipi di certificati è necessario effettuare il provisioning?
   - Intune consente di eseguire il provisioning dei certificati con i profili di accesso alle risorse per i dispositivi registrati.

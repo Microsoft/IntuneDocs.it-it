@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: f5c78eb01e495b87a35bed06c9800c04a7f97ba4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572474"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882027"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
@@ -96,7 +96,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impe
 
 - Sottoscrizione di Zimperium Mobile Threat Defense
 
-    - Per altre informazioni, vedere il [sito Web di Zimperium](https://www.zimperium.com/zips-mobile-ips).
+  - Per altre informazioni, vedere il [sito Web di Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548425"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885000"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Aggiungere e assegnare app Mobile Threat Defense (MTD) con Intune  
 
@@ -90,7 +90,7 @@ Scegliere la sezione corrispondente al provider MTD:
 
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Configurare app di Symantec Endpoint Protection Mobile  
 - **Android**
-   - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](store-apps-android.md). Nel **passaggio 7** usare questo [URL dello Store dell'app SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure).  Per **Sistema operativo minimo** selezionare **Android 4.0 (Ice Cream Sandwich)** .
+  - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](store-apps-android.md). Nel **passaggio 7** usare questo [URL dello Store dell'app SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure).  Per **Sistema operativo minimo** selezionare **Android 4.0 (Ice Cream Sandwich)** .
 
 - **iOS**
   - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](store-apps-ios.md). Usare questo [URL dello Store per l'app SEP Mobile](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) nel **passaggio 11** per **URL di App Store**.
@@ -162,7 +162,7 @@ Scegliere la sezione corrispondente al provider MTD:
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Criteri di configurazione delle app Check Point SandBlast Mobile  
 - Vedere le istruzioni per l'[uso dei criteri di configurazione di app Microsoft Intune per iOS](app-configuration-policies-use-ios.md) per aggiungere i criteri di configurazione dell'app Check Point SandBlast Mobile per iOS.
-    - Al **passaggio 8** usare l'opzione **Immettere i dati XML**, copiare il contenuto seguente e incollarlo nel corpo dei criteri di configurazione.
+  - Al **passaggio 8** usare l'opzione **Immettere i dati XML**, copiare il contenuto seguente e incollarlo nel corpo dei criteri di configurazione.
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549414"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882854"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campagna di migrazione
 
@@ -43,19 +43,19 @@ I fattori chiave per una corretta migrazione da un provider MDM di terze parti a
 
 - Monitorare il carico per l'help desk e l'esito della registrazione per ogni ciclo. Includere nella pianificazione il tempo necessario per valutare l'esito dell'operazione per ogni gruppo prima di procedere alla migrazione del gruppo successivo. Per la distribuzione pilota è consigliabile valutare gli aspetti seguenti:
 
-    - I tassi di riuscita/non riuscita della registrazione rientrano nei parametri previsti.
+  - I tassi di riuscita/non riuscita della registrazione rientrano nei parametri previsti.
 
-    - Produttività degli utenti:
+  - Produttività degli utenti:
 
-        - Le risorse aziendali, ad esempio VPN, Wi-Fi, posta elettronica e certificati funzionano.
+    - Le risorse aziendali, ad esempio VPN, Wi-Fi, posta elettronica e certificati funzionano.
 
-        - Le app di cui è stato effettuato il provisioning sono accessibili.
+    - Le app di cui è stato effettuato il provisioning sono accessibili.
 
-    - Sicurezza dei dati:
+  - Sicurezza dei dati:
 
-        - È in corso la creazione di report di conformità.
+    - È in corso la creazione di report di conformità.
 
-        - Vengono applicate protezioni delle app per dispositivi mobili.
+    - Vengono applicate protezioni delle app per dispositivi mobili.
 
 Quando si è soddisfatti della prima fase della migrazione, ripetere il [ciclo di migrazione](migration-guide-cycle.md) per la fase successiva.
 

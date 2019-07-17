@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572275"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884887"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -49,47 +49,47 @@ L'ambiente corrente può influenzare le decisioni di progettazione e deve essere
 
 - **Identità nel cloud**
 
-    - Viene usato DirSync o Azure Active Directory (Azure AD) Connect?
+  - Viene usato DirSync o Azure Active Directory (Azure AD) Connect?
 
-    - L'ambiente è federato?
+  - L'ambiente è federato?
 
-    - È abilitato per l'autenticazione a più fattori?
+  - È abilitato per l'autenticazione a più fattori?
 
 - **Ambiente di posta elettronica**
 
-    - Si usa Exchange? In locale o nel cloud?
+  - Si usa Exchange? In locale o nel cloud?
 
-    - È in corso un progetto per la migrazione di Exchange nel cloud?
+  - È in corso un progetto per la migrazione di Exchange nel cloud?
 
 - **Soluzione corrente di gestione dei dispositivi mobili (MDM)**
 
-    - Vengono attualmente usate altre soluzioni MDM?
+  - Vengono attualmente usate altre soluzioni MDM?
 
-    - Quali soluzioni MDM vengono usate per gli scenari dei casi d'uso aziendali e BYOD?
+  - Quali soluzioni MDM vengono usate per gli scenari dei casi d'uso aziendali e BYOD?
 
-    - Quali funzionalità vengono usate (ad esempio: impostazioni per le app dei dispositivi, configurazioni Wi-Fi)?
+  - Quali funzionalità vengono usate (ad esempio: impostazioni per le app dei dispositivi, configurazioni Wi-Fi)?
 
-    - Quali piattaforme per i dispositivi sono supportate?
+  - Quali piattaforme per i dispositivi sono supportate?
 
-    - Quali gruppi e quanti utenti usano la soluzione MDM?
+  - Quali gruppi e quanti utenti usano la soluzione MDM?
 
 - **Soluzione per i certificati**
 
-    - È stata implementata una soluzione per i certificati?
+  - È stata implementata una soluzione per i certificati?
 
-    - Che tipo di certificati vengono usati?
+  - Che tipo di certificati vengono usati?
 
 - **Gestione dei sistemi**
 
-    - Come viene gestito l'ambiente PC e server?
+  - Come viene gestito l'ambiente PC e server?
 
-    - Si usa System Center Configuration Manager? Viene usata una piattaforma di gestione dei sistemi di terze parti?
+  - Si usa System Center Configuration Manager? Viene usata una piattaforma di gestione dei sistemi di terze parti?
 
 - **Soluzione VPN**
 
-    - Quale soluzione VPN viene usata?
+  - Quale soluzione VPN viene usata?
 
-    - Questa soluzione viene usata sia per gli scenari dei casi d'uso aziendali che BYOD?
+  - Questa soluzione viene usata sia per gli scenari dei casi d'uso aziendali che BYOD?
 
 Durante la registrazione dell'ambiente MDM corrente, assicurarsi di prendere nota di eventuali progetti o altri piani che potrebbero influire sull'ambiente. Di seguito è riportato un esempio di come registrare l'ambiente corrente durante la creazione della progettazione per Intune:
 

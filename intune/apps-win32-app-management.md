@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735452"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884042"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -37,9 +37,9 @@ Per usare la gestione delle app Win32, assicurarsi che siano soddisfatti i crite
 
 - Windows 10 versione 1607 o successive (edizioni Enterprise, Pro ed Education)
 - Il client di Windows 10 deve essere: 
-    - I dispositivi devono essere aggiunti ad Azure AD e registrati automaticamente. L'estensione di gestione di Intune supporta i dispositivi aggiunti ad Azure AD, aggiunti al dominio ibrido e registrati con Criteri di gruppo. 
-    > [!NOTE]
-    > Per lo scenario di registrazione con Criteri di gruppo: l'utente finale usa l'account utente locale per aggiungere ad AAD il dispositivo Windows 10. L'utente deve accedere al dispositivo usando il proprio account utente AAD ed eseguire la registrazione in Intune. Intune installerà l'estensione di gestione di Intune nel dispositivo se c'è uno script di PowerShell o un'app Win32 destinato all'utente o al dispositivo.
+  - I dispositivi devono essere aggiunti ad Azure AD e registrati automaticamente. L'estensione di gestione di Intune supporta i dispositivi aggiunti ad Azure AD, aggiunti al dominio ibrido e registrati con Criteri di gruppo. 
+  > [!NOTE]
+  > Per lo scenario di registrazione con Criteri di gruppo: l'utente finale usa l'account utente locale per aggiungere ad AAD il dispositivo Windows 10. L'utente deve accedere al dispositivo usando il proprio account utente AAD ed eseguire la registrazione in Intune. Intune installerà l'estensione di gestione di Intune nel dispositivo se c'è uno script di PowerShell o un'app Win32 destinato all'utente o al dispositivo.
 - Le applicazioni Windows possono avere dimensioni massime di 8 GB.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparare il contenuto delle app Win32 per il caricamento

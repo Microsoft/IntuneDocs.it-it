@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040522"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882232"
 ---
 # <a name="intune-tenant-status-page"></a>Pagina Stato del tenant di Intune
 La pagina Stato del tenant è un hub centralizzato in cui è possibile visualizzare informazioni dettagliate aggiornate e importanti sul tenant. Queste informazioni includono la disponibilità e l'uso di licenze, lo stato del connettore e importanti comunicazioni sul servizio Intune.  
@@ -48,14 +48,14 @@ Quando esiste più di un connettore di un determinato tipo, lo stato è un riepi
 
 **Stato del connettore**:
 - **Non integro:**
-    - Il certificato o le credenziali sono scadute
-    - L'ultima sincronizzazione è avvenuta non prima di tre giorni fa
+  - Il certificato o le credenziali sono scadute
+  - L'ultima sincronizzazione è avvenuta non prima di tre giorni fa
 - **Avviso:**
-    - Il certificato o le credenziali scadranno entro sette giorni
-    - L'ultima sincronizzazione è avvenuta più di un giorno fa
+  - Il certificato o le credenziali scadranno entro sette giorni
+  - L'ultima sincronizzazione è avvenuta più di un giorno fa
 - **Integro:**
-    - Il certificato o le credenziali non scadranno nei prossimi sette giorni
-    - L'ultima sincronizzazione è avvenuta meno di un giorno fa  
+  - Il certificato o le credenziali non scadranno nei prossimi sette giorni
+  - L'ultima sincronizzazione è avvenuta meno di un giorno fa  
 
 Quando si seleziona un connettore dall'elenco, il portale presenta la pagina del portale pertinente per la creazione o la configurazione del connettore.  Ad esempio, se si seleziona il connettore **Data di scadenza VPP**, si apre la pagina **Token iOS con Volume Purchase Program** che contiene maggiori dettagli sul connettore. È quindi possibile creare una nuova configurazione o modificare e correggere i problemi di una configurazione esistente.  
 

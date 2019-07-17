@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373662"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884530"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
@@ -150,16 +150,16 @@ Con la VPN per app configurata e associata all'app, verificare da un dispositivo
 
 ### <a name="before-you-attempt-to-connect"></a>Prima di provare a connettersi
 
- - Verificare di implementare tutti i criteri specificati allo stesso gruppo di utenti. In caso contrario, l'esperienza VPN per app non funzionerà.
- - Se si usa l'app VPN Pulse Secure o un'app client VPN personalizzata, è possibile scegliere di usare il tunnelling di livello app o di livello pacchetto. Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto. Controllare la documentazione del provider della VPN per assicurarsi di usare il valore corretto.
+- Verificare di implementare tutti i criteri specificati allo stesso gruppo di utenti. In caso contrario, l'esperienza VPN per app non funzionerà.
+- Se si usa l'app VPN Pulse Secure o un'app client VPN personalizzata, è possibile scegliere di usare il tunnelling di livello app o di livello pacchetto. Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto. Controllare la documentazione del provider della VPN per assicurarsi di usare il valore corretto.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Connessione mediante VPN per app
 
 Verificare l'esperienza completamente automatica effettuando la connessione senza dover selezionare la VPN o digitare le credenziali. Con l'esperienza completamente automatica:
 
- - Il dispositivo non richiede di considerare attendibile il server VPN. Non verrà quindi visualizzata la finestra di dialogo **Dynamic Trust** (Trust dinamico).
- - Non è necessario digitare le credenziali.
- - Il dispositivo dell'utente si connette alla VPN all'apertura di una delle app associate.
+- Il dispositivo non richiede di considerare attendibile il server VPN. Non verrà quindi visualizzata la finestra di dialogo **Dynamic Trust** (Trust dinamico).
+- Non è necessario digitare le credenziali.
+- Il dispositivo dell'utente si connette alla VPN all'apertura di una delle app associate.
 
 <!-- ## Troubleshooting the per-app VPN
 

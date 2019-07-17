@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649031"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885109"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
@@ -44,8 +44,8 @@ I criteri di configurazione delle app consentono di evitare i problemi di config
 Le impostazioni di configurazione vengono usate ogni volta che l'app controlla se sono presenti. In genere, un'app controlla se sono presenti impostazioni di configurazione quando viene eseguita per la prima volta dall'utente.
 
 Sono disponibili due opzioni per l'uso delle configurazioni delle app con Intune:
- - **Dispositivi gestiti**: il dispositivo è gestito da Intune come provider di gestione di dispositivi mobili (MDM).
- - **App gestite**: le app vengono gestite senza registrazione del dispositivo.
+- **Dispositivi gestiti**: il dispositivo è gestito da Intune come provider di gestione di dispositivi mobili (MDM).
+- **App gestite**: le app vengono gestite senza registrazione del dispositivo.
 
 > [!NOTE]
 > L'amministratore di Microsoft Intune può controllare gli account utente che vengono aggiunti alle applicazioni di Microsoft Office nei dispositivi gestiti. Può limitare l'accesso agli account utente consentiti dell'organizzazione e bloccare gli account personali nei dispositivi registrati. Le applicazioni di supporto elaborano la configurazione dell'app e rimuovono e bloccano gli account non approvati.
@@ -66,9 +66,9 @@ Sono disponibili due opzioni per l'uso delle configurazioni delle app con Intune
 
 ### <a name="managed-devices"></a>Dispositivi gestiti
 
- - Informazioni sull'uso della configurazione delle app con i dispositivi iOS.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
- - Informazioni sull'uso della configurazione delle app con i dispositivi Android.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md).
+- Informazioni sull'uso della configurazione delle app con i dispositivi iOS.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
+- Informazioni sull'uso della configurazione delle app con i dispositivi Android.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>App gestite
 
- - Informazioni sull'uso della configurazione delle app con le app gestite. Vedere [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](app-configuration-policies-managed-app.md).
+- Informazioni sull'uso della configurazione delle app con le app gestite. Vedere [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](app-configuration-policies-managed-app.md).

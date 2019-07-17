@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548677"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884190"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Metodi di registrazione di Intune per dispositivi Windows
 
@@ -36,8 +36,8 @@ Esistono due metodi per registrare i dispositivi in Intune:
 Gli utenti possono registrare personalmente il proprio dispositivo Windows usando uno di questi metodi:
 
 - [Bring Your Own Device (BYOD)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device): gli utenti registrano i propri dispositivi personali scegliendo di connettere un account **aziendale e dell'istituto di istruzione** da **Impostazioni** del dispositivo. Questo processo:
-    - Registra il dispositivo con Azure Active Directory per poter accedere a risorse aziendali come la posta elettronica.
-    - Registra il dispositivo in Intune come dispositivo personale (BYOD).
+  - Registra il dispositivo con Azure Active Directory per poter accedere a risorse aziendali come la posta elettronica.
+  - Registra il dispositivo in Intune come dispositivo personale (BYOD).
 Se un amministratore ha configurato la registrazione automatica (disponibile con sottoscrizioni di Azure AD premium), l'utente deve immettere le credenziali solo una volta. In caso contrario, l'utente dovrà eseguire la registrazione separatamente tramite la registrazione solo MDM e immettere di nuovo le credenziali.  
 - **Registrazione solo MDM**: permette agli utenti di registrare un PC aggiunto a un gruppo di lavoro, ad Active Directory o ad Azure Active Directory in Intune. Gli utenti eseguono la registrazione da Impostazioni nel PC Windows esistente. Questo metodo non è consigliato, in quanto non registra il dispositivo in Azure Active Directory. Impedisce anche l'uso di funzionalità come l'accesso condizionale.
 - [Aggiunta ad Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - Aggiunge il dispositivo ad Azure Active Directory e permette agli utenti di accedere a Windows con le proprie credenziali di Azure AD. Se è abilitata la registrazione automatica, il dispositivo viene registrato automaticamente in Intune. Il vantaggio della registrazione automatica è che si tratta di un processo a un solo passaggio per l'utente. In caso contrario, l'utente dovrà eseguire la registrazione separatamente tramite la registrazione solo MDM e immettere di nuovo le credenziali. Gli utenti eseguono la registrazione in questo modo durante la Configurazione iniziale di Windows o da Impostazioni. Il dispositivo viene contrassegnato come dispositivo di proprietà aziendale in Intune.

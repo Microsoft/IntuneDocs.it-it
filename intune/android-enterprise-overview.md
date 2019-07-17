@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547504"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885137"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gestire i dispositivi del profilo di lavoro Android con Intune
 
@@ -71,9 +71,9 @@ Il supporto VPN è simile ai profili VPN Android. Per la gestione di Android Ent
 - **VPN con ambito profilo di lavoro**: le connessioni VPN si limitano alle app distribuite nel profilo di lavoro. Solo le app gestite da Android Enterprise possono usare la connessione VPN. Le app personali nel dispositivo non possono usare una connessione VPN gestita. Per altre informazioni, vedere [Impostazioni VPN per Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 - **VPN specifica dell'app**: la VPN specifica dell'app può essere configurata in Intune se il provider VPN supporta:
-    - la configurazione per la VPN specifica dell'app
-    - la possibilità di configurare una VPN per ogni app tramite il profilo di configurazione delle app di Android Enterprise.
-    Per altre informazioni, vedere [Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android](android-pulse-secure-per-app-vpn.md).
+  - la configurazione per la VPN specifica dell'app
+  - la possibilità di configurare una VPN per ogni app tramite il profilo di configurazione delle app di Android Enterprise.
+  Per altre informazioni, vedere [Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android](android-pulse-secure-per-app-vpn.md).
 
 ## <a name="certificate-profiles"></a>Profili certificato
 

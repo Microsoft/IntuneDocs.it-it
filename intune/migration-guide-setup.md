@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549378"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885040"
 ---
 # <a name="basic-setup"></a>Configurazione di base
 
@@ -61,9 +61,9 @@ Prima di poter eseguire la migrazione a Intune, è necessaria una sottoscrizione
 
 - È possibile visitare [questa pagina](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) in cui sono disponibili istruzioni su come:
 
-    - Creare una nuova sottoscrizione a Intune collegata a un nuovo tenant AAD.
+  - Creare una nuova sottoscrizione a Intune collegata a un nuovo tenant AAD.
 
-    - Collegare la sottoscrizione a Intune accedendo a un tenant AAD esistente.
+  - Collegare la sottoscrizione a Intune accedendo a un tenant AAD esistente.
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Attività 2: Assegnare le licenze utente di Intune
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549408"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882774"
 ---
 # <a name="intune-migration-guide"></a>Guida alla migrazione a Intune
 
@@ -37,25 +37,25 @@ La guida suddivide la migrazione in due fasi, che includono entrambe attività, 
 
 - [Fase 1: Preparare Intune per la gestione di dispositivi mobili](migration-guide-prepare.md)
 
-    - [Valutare i requisiti per la gestione dei dispositivi mobili](migration-guide-prepare.md#assess-mdm-requirements)
+  - [Valutare i requisiti per la gestione dei dispositivi mobili](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Configurazione di base](migration-guide-setup.md)
+  - [Configurazione di base](migration-guide-setup.md)
 
-    - [Configurare i criteri di gestione di dispositivi e app](migration-guide-configure-policies.md)
+  - [Configurare i criteri di gestione di dispositivi e app](migration-guide-configure-policies.md)
 
-    - [Configurare i criteri di protezione delle app](migration-guide-app-protection-policies.md)
+  - [Configurare i criteri di protezione delle app](migration-guide-app-protection-policies.md)
 
-    - [Considerazioni speciali sulla migrazione](migration-guide-considerations.md)
+  - [Considerazioni speciali sulla migrazione](migration-guide-considerations.md)
 
 - [Fase 2: Campagna di migrazione](migration-guide-campaign.md)
 
-    - [Piano di comunicazione](migration-guide-communication-plan.md)
+  - [Piano di comunicazione](migration-guide-communication-plan.md)
 
-    - [Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale](migration-guide-drive-adoption.md)
+  - [Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale](migration-guide-drive-adoption.md)
 
-    - [Ciclo di migrazione tipico](migration-guide-cycle.md)
-        - [Monitoraggio della migrazione](migration-guide-cycle.md#monitoring-migration)
-        - [Attività post-migrazione](migration-guide-cycle.md#post-migration)
+  - [Ciclo di migrazione tipico](migration-guide-cycle.md)
+    - [Monitoraggio della migrazione](migration-guide-cycle.md#monitoring-migration)
+    - [Attività post-migrazione](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Presupposti
 

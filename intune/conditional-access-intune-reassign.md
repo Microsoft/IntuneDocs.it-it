@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546888"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883798"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -38,14 +38,14 @@ Quando si è pronti per passare al portale di Azure, seguire la procedura descri
 
 - Disabilitare i criteri condizionali nel portale classico di Intune dopo avere verificato che i nuovi criteri funzionino come previsto nel portale di Azure.
 <br /><br />
-    - **Prima di disabilitare** i criteri di accesso condizionale nel portale di Intune classico, pianificare come spostare gli utenti nei criteri nuovi. È possibile seguire due approcci:
+  - **Prima di disabilitare** i criteri di accesso condizionale nel portale di Intune classico, pianificare come spostare gli utenti nei criteri nuovi. È possibile seguire due approcci:
 <br /><br />
-        - **Usare lo stesso gruppo di inclusione per applicare i criteri creati nel portale di Azure e creare un nuovo gruppo di esenzione da usare con i criteri applicati dal portale di Intune classico**.
-            - Spostare progressivamente alcuni utenti nel gruppo di esenzione specificato nel portale classico. Ciò impedisce che vengano applicati i criteri assegnati dal portale di Intune classico. Oltre ai criteri del portale di Intune classico, vengono anche applicati i criteri creati e assegnati allo stesso gruppo di utenti nel portale di Azure. 
+    - **Usare lo stesso gruppo di inclusione per applicare i criteri creati nel portale di Azure e creare un nuovo gruppo di esenzione da usare con i criteri applicati dal portale di Intune classico**.
+      - Spostare progressivamente alcuni utenti nel gruppo di esenzione specificato nel portale classico. Ciò impedisce che vengano applicati i criteri assegnati dal portale di Intune classico. Oltre ai criteri del portale di Intune classico, vengono anche applicati i criteri creati e assegnati allo stesso gruppo di utenti nel portale di Azure. 
 <br /><br />
-        - **Creare un nuovo gruppo a cui assegnare i criteri di accesso condizionale nel portale di Azure**. Se si sceglie questo approccio, è necessario eseguire le operazioni seguenti:
-            - Rimuovere gradualmente gli utenti dai gruppi di sicurezza che hanno criteri di accesso condizionale assegnati nel portale di Intune classico.
-            - Dopo aver verificato che i nuovi criteri funzionano per tali utenti, è possibile disabilitare i criteri nel portale di Intune classico. 
+    - **Creare un nuovo gruppo a cui assegnare i criteri di accesso condizionale nel portale di Azure**. Se si sceglie questo approccio, è necessario eseguire le operazioni seguenti:
+      - Rimuovere gradualmente gli utenti dai gruppi di sicurezza che hanno criteri di accesso condizionale assegnati nel portale di Intune classico.
+      - Dopo aver verificato che i nuovi criteri funzionano per tali utenti, è possibile disabilitare i criteri nel portale di Intune classico. 
 <br /><br />
 - Se le impostazioni dei criteri di accesso condizionale erano state configurate per usare Exchange ActiveSync (EAS) nel portale di Intune classico, vedere le [istruzioni in questo argomento](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) per **riassegnare le impostazioni dei criteri di accesso condizionale EAS nel portale di Azure**.
 
@@ -64,10 +64,10 @@ Quando si è pronti per passare al portale di Azure, seguire la procedura descri
 Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amministratori di impostare regole condizionali basate su app, in modo che solo le app che supportano i criteri di protezione delle app di Intune possano accedere alle risorse aziendali. È possibile scegliere di sovrapporre questi criteri di accesso condizionale basati su app usando i criteri di accesso condizionale basati su dispositivo. È possibile combinare i criteri condizionali basati su dispositivo e app (AND logico) oppure specificare uno o l'altro tipo di criteri (OR logico). Se i requisiti dei criteri di accesso condizionale prevedono di:
 
 - Richiedere un dispositivo conforme **E** usare l'app approvata.
-    - È necessario impostare i criteri di accesso condizionale tramite il [pannello Accesso condizionale di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e il [pannello Protezione app di Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - È necessario impostare i criteri di accesso condizionale tramite il [pannello Accesso condizionale di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e il [pannello Protezione app di Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 <br /><br />
 - Richiedere un dispositivo conforme **O** usare l'app approvata.
-    - È necessario impostare i criteri di accesso condizionale tramite il [portale di Intune classico](https://manage.microsoft.com) e il [pannello Protezione app di Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - È necessario impostare i criteri di accesso condizionale tramite il [portale di Intune classico](https://manage.microsoft.com) e il [pannello Protezione app di Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 
 > [!TIP] 
 > Questo argomento include screenshot che confrontano l'esperienza utente con il portale di Intune classico e con il portale di Azure.

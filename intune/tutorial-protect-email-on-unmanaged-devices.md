@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528676"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884508"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -32,10 +32,10 @@ Informazioni sull'uso di criteri di protezione delle app con accesso condizional
 > * Creare criteri di accesso condizionale di Azure Active Directory (Azure AD) che consentano solo all'app Outlook di accedere alla posta elettronica aziendale in Exchange Online. Si richiederà inoltre l'autenticazione a più fattori (MFA) per i client con autenticazione moderna, come Outlook per iOS e Android.
 
 ## <a name="prerequisites"></a>Prerequisiti
-  - Per questa esercitazione sarà necessario un tenant di test con le sottoscrizioni seguenti:
-    - Azure Active Directory Premium ([versione di valutazione gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Sottoscrizione di Intune ([versione di valutazione gratuita](free-trial-sign-up.md))
-    - Abbonamento a Office 365 Business che include Exchange ([versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Per questa esercitazione sarà necessario un tenant di test con le sottoscrizioni seguenti:
+  - Azure Active Directory Premium ([versione di valutazione gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Sottoscrizione di Intune ([versione di valutazione gratuita](free-trial-sign-up.md))
+  - Abbonamento a Office 365 Business che include Exchange ([versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528266"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882728"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinare i requisiti degli scenari per i casi d'uso
 
@@ -50,21 +50,21 @@ Di seguito sono riportati alcuni esempi di requisiti per i casi d'uso di un'orga
 Di seguito sono riportati alcuni esempi aggiuntivi che possono essere usati nella colonna "Requisiti":
 
 - **Posta elettronica sicura**
-    - Accesso condizionale per Exchange Online/locale
-    - Criteri di protezione delle app di Outlook
+  - Accesso condizionale per Exchange Online/locale
+  - Criteri di protezione delle app di Outlook
 
 - **Impostazioni del dispositivo**
-    - Impostazione del PIN con quattro, sei caratteri
-    - Limitazione del backup cloud
+  - Impostazione del PIN con quattro, sei caratteri
+  - Limitazione del backup cloud
 
 - **Profili**
-    - Wi-Fi
-    - VPN
-    - Posta elettronica (Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - Posta elettronica (Windows 10 Mobile)
 
 - **App**
-    - Office 365 con criteri di protezione delle app
-    - Line-of-business criteri di protezione delle app
+  - Office 365 con criteri di protezione delle app
+  - Line-of-business criteri di protezione delle app
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316940"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883362"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorare BitLocker e la crittografia dei dispositivi  
 Intune offre una posizione centralizzata per identificare lo stato della crittografia dei dispositivi Windows 10 e consente di accedere a informazioni importanti per BitLocker dai dispositivi, come disponibili in Azure Active Directory (Azure AD).  
@@ -76,22 +76,22 @@ Questo riquadro fornisce le informazioni seguenti:
 
   Di seguito sono riportati alcuni esempi dei dettagli dello stato che Intune può segnalare:  
 
-   - I criteri di BitLocker richiedono il consenso utente per l'avvio della Crittografia guidata unità BitLocker per iniziare la crittografia del volume del sistema operativo, ma l'utente non ha fornito il consenso.  
-   - Il metodo di crittografia del volume del sistema operativo non corrisponde ai criteri di BitLocker.  
-   - I criteri di BitLocker richiedono una protezione tramite TPM per proteggere il volume del sistema operativo ma la protezione tramite TPM non viene usata.  
-   - I criteri di BitLocker richiedono una protezione tramite solo TPM per il volume del sistema operativo ma la protezione tramite TPM non viene usata.  
-   - I criteri di BitLocker richiedono una protezione tramite TPM e PIN per il volume del sistema operativo ma la protezione tramite TPM e PIN non viene usata.  
-   - I criteri di BitLocker richiedono una protezione tramite TPM e chiave di avvio per il volume del sistema operativo ma la protezione tramite TPM e chiave di avvio non viene usata.  
-   - I criteri di BitLocker richiedono una protezione tramite TPM, PIN e chiave di avvio per il volume del sistema operativo ma la protezione tramite TPM, PIN e chiave di avvio non viene usata.  
-   - Il volume del sistema operativo non è protetto.  
-   - Non è stato possibile eseguire il backup della chiave di ripristino.  
-   - Un'unità fissa non è protetta.  
-   - Il metodo di crittografia dell'unità fissa non corrisponde ai criteri di BitLocker.  
-   - Per crittografare le unità, i criteri di BitLocker richiedono che l'utente acceda come amministratore oppure, se il dispositivo è aggiunto ad Azure AD, che il criterio AllowStandardUserEncryption sia impostato su 1.  
-   - L'Ambiente ripristino Windows non è configurato.  
-   - TPM non è disponibile per BitLocker perché non è presente, non è più disponibile nel Registro di sistema o il sistema operativo si trova su un'unità rimovibile.  
-   - TPM non è pronto per BitLocker.  
-   - La rete non è disponibile ma è necessaria per il backup della chiave di ripristino.  
+  - I criteri di BitLocker richiedono il consenso utente per l'avvio della Crittografia guidata unità BitLocker per iniziare la crittografia del volume del sistema operativo, ma l'utente non ha fornito il consenso.  
+  - Il metodo di crittografia del volume del sistema operativo non corrisponde ai criteri di BitLocker.  
+  - I criteri di BitLocker richiedono una protezione tramite TPM per proteggere il volume del sistema operativo ma la protezione tramite TPM non viene usata.  
+  - I criteri di BitLocker richiedono una protezione tramite solo TPM per il volume del sistema operativo ma la protezione tramite TPM non viene usata.  
+  - I criteri di BitLocker richiedono una protezione tramite TPM e PIN per il volume del sistema operativo ma la protezione tramite TPM e PIN non viene usata.  
+  - I criteri di BitLocker richiedono una protezione tramite TPM e chiave di avvio per il volume del sistema operativo ma la protezione tramite TPM e chiave di avvio non viene usata.  
+  - I criteri di BitLocker richiedono una protezione tramite TPM, PIN e chiave di avvio per il volume del sistema operativo ma la protezione tramite TPM, PIN e chiave di avvio non viene usata.  
+  - Il volume del sistema operativo non è protetto.  
+  - Non è stato possibile eseguire il backup della chiave di ripristino.  
+  - Un'unità fissa non è protetta.  
+  - Il metodo di crittografia dell'unità fissa non corrisponde ai criteri di BitLocker.  
+  - Per crittografare le unità, i criteri di BitLocker richiedono che l'utente acceda come amministratore oppure, se il dispositivo è aggiunto ad Azure AD, che il criterio AllowStandardUserEncryption sia impostato su 1.  
+  - L'Ambiente ripristino Windows non è configurato.  
+  - TPM non è disponibile per BitLocker perché non è presente, non è più disponibile nel Registro di sistema o il sistema operativo si trova su un'unità rimovibile.  
+  - TPM non è pronto per BitLocker.  
+  - La rete non è disponibile ma è necessaria per il backup della chiave di ripristino.  
 
 ## <a name="bitlocker-recovery-keys"></a>Chiavi di ripristino di BitLocker
 Intune offre l'accesso al pannello di Azure AD per BitLocker, per consentire di visualizzare gli ID delle chiavi di BitLocker e le chiavi di ripristino per i dispositivi Windows 10 dal portale di Intune.  Per essere accessibile, il dispositivo deve avere le chiavi depositate in Azure AD. 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402725"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883265"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -160,12 +160,12 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
 1. Selezionare **Configurazione del dispositivo** > **Profili cellulare eSIM** > Select an existing subscription (Seleziona sottoscrizione esistente).
 2. Selezionare **Stato del dispositivo**. Intune visualizza dettagli aggiuntivi sul dispositivo:
 
-  - **Nome dispositivo**: nome del dispositivo di destinazione
-  - **Utente**: utente del dispositivo registrato
-  - **ICCID**: codice univoco reso disponibile dall'operatore di telefonia mobile e incluso nel codice di attivazione installato nel dispositivo
-  - **Stato attivazione**: stato di distribuzione e installazione Intune del codice di attivazione nel dispositivo
-  - **Stato della rete cellulare**: stato specificato dall'operatore di telefonia mobile. Per la risoluzione dei problemi, contattare l'operatore di telefonia mobile.
-  - **Ultima sincronizzazione**: data dell'ultima comunicazione tra il dispositivo e Intune
+    - **Nome dispositivo**: nome del dispositivo di destinazione
+    - **Utente**: utente del dispositivo registrato
+    - **ICCID**: codice univoco reso disponibile dall'operatore di telefonia mobile e incluso nel codice di attivazione installato nel dispositivo
+    - **Stato attivazione**: stato di distribuzione e installazione Intune del codice di attivazione nel dispositivo
+    - **Stato della rete cellulare**: stato specificato dall'operatore di telefonia mobile. Per la risoluzione dei problemi, contattare l'operatore di telefonia mobile.
+    - **Ultima sincronizzazione**: data dell'ultima comunicazione tra il dispositivo e Intune
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorare i dettagli del profilo eSIM sul dispositivo
 
