@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045299"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270289"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usare Intune per risolvere le vulnerabilità identificate da Microsoft Defender ATP  
 
@@ -32,7 +32,7 @@ Quando si integra Intune con Microsoft Defender Advanced Threat Protection (ATP)
 
 Dopo aver connesso Intune a Microsoft Defender Advanced Threat Protection, ATP riceve i dettagli delle minacce e delle vulnerabilità dai dispositivi gestiti.  
 
-Nella console Windows Defender Security Center gli amministratori della sicurezza ATP esaminano i dati sulle vulnerabilità dell'endpoint. Con un solo clic del mouse gli amministratori creano quindi attività di sicurezza che contrassegnano i dispositivi vulnerabili per la correzione. Le attività di sicurezza vengono passate immediatamente alla console di Intune dove gli amministratori di Intune possono visualizzarle. L'attività di sicurezza identifica il tipo di vulnerabilità, la priorità, lo stato e i passaggi da eseguire per risolvere la vulnerabilità. L'amministratore di Intune sceglie se accettare o rifiutare l'attività.  
+Nella console di Microsoft Defender Security Center gli amministratori della sicurezza ATP esaminano i dati sulle vulnerabilità dell'endpoint. Con un solo clic del mouse gli amministratori creano quindi attività di sicurezza che contrassegnano i dispositivi vulnerabili per la correzione. Le attività di sicurezza vengono passate immediatamente alla console di Intune dove gli amministratori di Intune possono visualizzarle. L'attività di sicurezza identifica il tipo di vulnerabilità, la priorità, lo stato e i passaggi da eseguire per risolvere la vulnerabilità. L'amministratore di Intune sceglie se accettare o rifiutare l'attività.  
 
 Quando un'attività viene accettata, l'amministratore di Intune cerca di risolvere la vulnerabilità tramite Intune, facendo riferimento alle indicazioni fornite nell'ambito dell'attività di sicurezza.  
 
@@ -67,7 +67,7 @@ Ecco un flusso di lavoro di esempio:
 **Configurazioni di Intune per ATP**:  
 - Configurare una connessione da servizio a servizio con Microsoft Defender ATP.  
 - Distribuire un criterio di conformità del dispositivo con un tipo di profilo **Microsoft Defender ATP (Windows 10 Desktop)** per i dispositivi per cui ATP ha valutato la presenza di un rischio.
-  Per informazioni su come configurare Intune per usare ATP, vedere [Applicare la conformità per Microsoft Defender ATP con l'accesso condizionale in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  Per informazioni su come configurare Intune per usare ATP, vedere [Applicare la conformità per Microsoft Defender ATP con l'accesso condizionale in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Gestire le attività di sicurezza  
 

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744304"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812503"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future. 
 
@@ -72,3 +72,19 @@ Se applicabile, aggiornare anche la documentazione o il materiale sussidiario pe
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Modifica prevista: Nuove impostazioni per gli aggiornamenti di Windows in Intune <!-- 4464404 -->
+A partire dalla versione di agosto per il servizio Intune o 1908, verranno aggiunte nuove "impostazioni per la scadenza" che è possibile configurare al posto delle impostazioni "Consenti all'utente di riavviare (riavvio in caso di occupato)". È prevista la disabilitazione delle impostazioni di riavvio in caso di occupato nell'interfaccia utente nella versione 1909 o nell'aggiornamento di settembre e quindi la rimozione completa di queste impostazioni dalla console verso la fine di ottobre. 
+
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+Se si gestiscono i dispositivi Windows 10 nell'ambiente: 
+- Con l'aggiornamento di Intune di agosto o la versione 1908 le nuove impostazioni di scadenza verranno visualizzate nella console oltre alle impostazioni di riavvio in caso di occupato precedenti.
+- Quando vengono configurate entrambe le impostazioni precedenti e nuove, i valori delle impostazioni di scadenza avranno priorità rispetto ai valori dell'impostazione di riavvio in caso di occupato.
+- Le impostazioni di scadenza sostituiranno l'opzione "Consenti all'utente di riavviare (riavvio in caso di occupato)" nella console nell'aggiornamento 1910.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Come prepararsi a questo cambiamento?
+Iniziare a usare le impostazioni di scadenza nella versione 1908, configurandole con i valori desiderati. Dopo averle configurate, è possibile impostare l'opzione di riavvio in caso di occupato su "Non configurato" per prepararsi per la rimozione dalla console in ottobre.
+
+Se necessario, aggiornare la documentazione e gli eventuali script di automazione. 
+
+Verranno pubblicati aggiornamenti e un promemoria nel centro messaggi prima di rimuovere le impostazioni di riavvio in caso di occupato.
