@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735781"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884695"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -98,23 +98,23 @@ Per altre informazioni, vedere [Policy CSP - Bitlocker](https://docs.microsoft.c
 
   Per i criteri di un'unità rimovibile BitLocker, configurare le impostazioni seguenti:
 
-    - **Richiedere la crittografia per l'accesso in scrittura**  
-      **Impostazione predefinita**: Sì  
-  
-    - **Metodo di crittografia**  
-      **Impostazione predefinita**: AES-CBC a 256 bit  
+  - **Richiedere la crittografia per l'accesso in scrittura**  
+    **Impostazione predefinita**: Sì  
+
+  - **Metodo di crittografia**  
+    **Impostazione predefinita**: AES-CBC a 256 bit  
 
 - **Criterio per le unità fisse BitLocker**  
   L'impostazione di questo criterio viene usata per controllare il metodo di crittografia e il livello di codifica. I valori di questo criterio determinano il livello di codifica usato da BitLocker per la crittografia. Per una maggiore sicurezza, le aziende potrebbero voler controllare il livello di crittografia (AES-256 è un algoritmo più avanzato rispetto a AES-128). Se si abilita questa impostazione, è possibile configurare individualmente un algoritmo di crittografia e un livello di codifica per unità dati fisse, unità del sistema operativo e unità dati rimovibili. Per le unità fisse e del sistema operativo è consigliabile usare l'algoritmo XTS-AES. Per le unità rimovibili è consigliabile usare AES-CBC a 128 bit o AES-CBC a 256 bit se l'unità viene usata in altri dispositivi che non eseguono Windows 10 versione 1511 o successiva. La modifica del metodo di crittografia non produce alcun effetto se l'unità è già crittografata o se la crittografia è in corso. In questi casi, l'impostazione di questo criterio viene ignorata.  
  
-   Per i criteri di un'unità fissa BitLocker, configurare le impostazioni seguenti: 
-   - **Metodo di crittografia**
-     **Impostazione predefinita**: AES-XTS a 256 bit  
+  Per i criteri di un'unità fissa BitLocker, configurare le impostazioni seguenti: 
+  - **Metodo di crittografia**  
+    **Impostazione predefinita**: AES-XTS a 256 bit  
 
 - **Criterio per le unità di sistema BitLocker**  
   L'impostazione di questo criterio viene usata per controllare il metodo di crittografia e il livello di codifica. I valori di questo criterio determinano il livello di codifica usato da BitLocker per la crittografia. Per una maggiore sicurezza, le aziende potrebbero voler controllare il livello di crittografia (AES-256 è un algoritmo più avanzato rispetto a AES-128). Se si abilita questa impostazione, è possibile configurare individualmente un algoritmo di crittografia e un livello di codifica per unità dati fisse, unità del sistema operativo e unità dati rimovibili. Per le unità fisse e del sistema operativo è consigliabile usare l'algoritmo XTS-AES. Per le unità rimovibili è consigliabile usare AES-CBC a 128 bit o AES-CBC a 256 bit se l'unità viene usata in altri dispositivi che non eseguono Windows 10 versione 1511 o successiva. La modifica del metodo di crittografia non produce alcun effetto se l'unità è già crittografata o se la crittografia è in corso. In questi casi, l'impostazione di questo criterio viene ignorata.  
 
-   Per i criteri di un'unità di sistema BitLocker, configurare le impostazioni seguenti:
+  Per i criteri di un'unità di sistema BitLocker, configurare le impostazioni seguenti:
   - **Metodo di crittografia**  
     **Impostazione predefinita**: AES-XTS a 256 bit  
 
@@ -220,33 +220,33 @@ Per altre informazioni, vedere [Policy CSP - DeviceInstallation](https://docs.mi
   
   **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware  
 
-    Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
-  
-    - **Rimuovi i dispositivi hardware corrispondenti**   
-    Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: Sì
-  
-    - **Identificatori di dispositivo hardware bloccati**  
-       Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: Sì  
+  Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
+
+  - **Rimuovi i dispositivi hardware corrispondenti**   
+  Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
+    
+    **Impostazione predefinita**: Sì
+
+  - **Identificatori di dispositivo hardware bloccati**  
+      Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
+    
+    **Impostazione predefinita**: Sì  
   
 - **Installazione di dispositivi hardware per classi di installazione**  
   L'impostazione di questo criterio consente di specificare un elenco di identificatori univoci globali (GUID) della classe di installazione del dispositivo per i driver di dispositivo la cui installazione non è consentita in Windows. L'impostazione di questo criterio ha la precedenza su qualsiasi altra impostazione di criteri che consente a Windows di installare un dispositivo. Se si abilita l'impostazione di questo criterio, viene impedito a Windows di installare o aggiornare i driver di dispositivo il cui GUID della classe di installazione del dispositivo sia presente nell'elenco creato. Se si abilita l'impostazione di questo criterio in un server desktop remoto, l'impostazione del criterio influirà sul reindirizzamento dei dispositivi specificati da un client desktop remoto al server desktop remoto. Se si disabilita o non si configura l'impostazione di questo criterio, Windows potrà installare e aggiornare i dispositivi in base a quanto consentito o impedito da altre impostazioni di criteri.
   
   **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware  
 
-    Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
-    - **Rimuovi i dispositivi hardware corrispondenti**    
-    Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.  
+  Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
+  - **Rimuovi i dispositivi hardware corrispondenti**    
+  Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.  
 
-      **Impostazione predefinita**: *Nessuna configurazione predefinita*  
-  
-    - **Identificatori di dispositivo hardware bloccati**  
-      Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: *Nessuna configurazione predefinita*  
+    **Impostazione predefinita**: *Nessuna configurazione predefinita*  
+
+  - **Identificatori di dispositivo hardware bloccati**  
+    Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.
+    
+    **Impostazione predefinita**: *Nessuna configurazione predefinita*  
 
 ### <a name="device-lock"></a>Blocco del dispositivo  
 
@@ -993,12 +993,12 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   
 - **Comportamento della richiesta di elevazione dei privilegi per gli amministratori**  
   L'impostazione di questo criterio specifica il comportamento della richiesta di elevazione dei privilegi per gli amministratori. Le opzioni disponibili sono: 
-    - *Esegui con privilegi elevati senza chiedere conferma*: consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati. 
-    - *Richiedi le credenziali nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile. 
-    - *Richiedi il consenso nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
-    - *Richiedi credenziali*: quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente. 
-    - *Richiedi il consenso*: quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.  
-    - *Richiedi il consenso per file binari non Windows*: quando un'operazione per un'applicazione non Microsoft richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.   
+  - *Esegui con privilegi elevati senza chiedere conferma*: consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati. 
+  - *Richiedi le credenziali nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile. 
+  - *Richiedi il consenso nel desktop protetto*: quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
+  - *Richiedi credenziali*: quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente. 
+  - *Richiedi il consenso*: quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.  
+  - *Richiedi il consenso per file binari non Windows*: quando un'operazione per un'applicazione non Microsoft richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.   
   
   **Impostazione predefinita**: Richiedi il consenso nel desktop sicuro
   
@@ -1011,12 +1011,12 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Richiedi NTLM V2 e la crittografia a 128 bit
   
 - **Comportamento in caso di rimozione della smart card**  
-    Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
-     - *Nessuna azione*. 
-     - *Blocca workstation* - La workstation è bloccata quando la smart card viene rimossa, consentendo agli utenti di uscire dall'area, tenere la smart card e mantenere comunque una sessione protetta.
-     - *Imponi disconnessione*: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
-     - *Disconnetti la sessione Desktop remoto*: la rimozione della smart card determina la disconnessione della sessione senza disconnettere l'utente. Questa modalità consente all'utente di inserire la smart card e di riprendere la sessione in seguito oppure di usare un altro terminale dotato di lettore di smart card senza dover effettuare un'altra connessione. Se la sessione è locale, questo criterio funziona in modo identico all'opzione Blocca workstation.  <br><br>
-    
+  Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
+  - *Nessuna azione*. 
+  - *Blocca workstation* - La workstation è bloccata quando la smart card viene rimossa, consentendo agli utenti di uscire dall'area, tenere la smart card e mantenere comunque una sessione protetta.
+  - *Imponi disconnessione*: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
+  - *Disconnetti la sessione Desktop remoto*: la rimozione della smart card determina la disconnessione della sessione senza disconnettere l'utente. Questa modalità consente all'utente di inserire la smart card e di riprendere la sessione in seguito oppure di usare un altro terminale dotato di lettore di smart card senza dover effettuare un'altra connessione. Se la sessione è locale, questo criterio funziona in modo identico all'opzione Blocca workstation.  <br><br>
+
   **Impostazione predefinita**: Blocca workstation
   
 - **Bloccare l'enumerazione anonima di account e condivisioni SAM**  

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506856"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230078"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Controllare la conformità nel dispositivo Android
 
@@ -31,6 +31,6 @@ Se il dispositivo non si è connesso a Intune per un certo periodo di tempo, pot
 
 1. Aprire l'app Portale aziendale per Android nel dispositivo.  
 
-2. Toccare **Controlla le impostazioni del dispositivo**.  
+2. Toccare **Controlla le impostazioni del dispositivo**.   
 
 Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere al supporto tecnico dell'azienda di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

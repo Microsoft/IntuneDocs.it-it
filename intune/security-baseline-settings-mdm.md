@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735776"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882287"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
@@ -117,8 +117,8 @@ Per altre informazioni, vedere [Policy CSP - Bitlocker](https://docs.microsoft.c
 
   Per i criteri di un'unità rimovibile BitLocker, configurare l'impostazione seguente:
 
-    - **Richiedere la crittografia per l'accesso in scrittura**  
-      **Impostazione predefinita**: Sì  
+  - **Richiedere la crittografia per l'accesso in scrittura**  
+    **Impostazione predefinita**: Sì  
   
 
 ## <a name="browser"></a>Browser  
@@ -227,17 +227,17 @@ Per altre informazioni, vedere [Policy CSP - DeviceInstallation](https://docs.mi
   
   **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware  
 
-    Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
-  
-    - **Rimuovi i dispositivi hardware corrispondenti**   
+  Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
+
+  - **Rimuovi i dispositivi hardware corrispondenti**   
     Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: Sì
-  
-    - **Identificatori di dispositivo hardware bloccati**  
-       Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: Sì  
+    
+    **Impostazione predefinita**: Sì
+
+  - **Identificatori di dispositivo hardware bloccati**  
+    Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per identificatori di dispositivo* è impostata su *Bloccare l'installazione del dispositivo hardware*.
+    
+    **Impostazione predefinita**: Sì  
   
 - **Installazione di dispositivi hardware per classi di installazione**  
   L'impostazione di questo criterio consente di specificare un elenco di identificatori univoci globali (GUID) della classe di installazione del dispositivo per i driver di dispositivo la cui installazione non è consentita in Windows. L'impostazione di questo criterio ha la precedenza su qualsiasi altra impostazione di criteri che consente a Windows di installare un dispositivo. Se si abilita l'impostazione di questo criterio, viene impedito a Windows di installare o aggiornare i driver di dispositivo il cui GUID della classe di installazione del dispositivo sia presente nell'elenco creato. Se si abilita l'impostazione di questo criterio in un server desktop remoto, l'impostazione del criterio influirà sul reindirizzamento dei dispositivi specificati da un client desktop remoto al server desktop remoto. Se si disabilita o non si configura l'impostazione di questo criterio, Windows potrà installare e aggiornare i dispositivi in base a quanto consentito o impedito da altre impostazioni di criteri.  
@@ -245,16 +245,16 @@ Per altre informazioni, vedere [Policy CSP - DeviceInstallation](https://docs.mi
   
   **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware  
 
-    Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
-    - **Rimuovi i dispositivi hardware corrispondenti**    
+  Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
+  - **Rimuovi i dispositivi hardware corrispondenti**    
     Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.  
 
-      **Impostazione predefinita**: *Nessuna configurazione predefinita*  
-  
-    - **Identificatori di dispositivo hardware bloccati**  
-      Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.
-      
-      **Impostazione predefinita**: *Nessuna configurazione predefinita*  
+    **Impostazione predefinita**: *Nessuna configurazione predefinita*  
+
+  - **Identificatori di dispositivo hardware bloccati**  
+    Questa impostazione è disponibile solo quando l'*installazione di dispositivi hardware per classi di installazione* è impostata su *Bloccare l'installazione del dispositivo hardware*.
+    
+    **Impostazione predefinita**: *Nessuna configurazione predefinita*  
 
 ## <a name="device-lock"></a>Blocco del dispositivo  
 Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) (Provider di servizi di configurazione dei criteri - DeviceLock) nella documentazione di Windows.  
@@ -1187,12 +1187,12 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   
 - **Comportamento della richiesta di elevazione dei privilegi per gli amministratori**  
   L'impostazione di questo criterio specifica il comportamento della richiesta di elevazione dei privilegi per gli amministratori. Le opzioni disponibili sono: 
-    - *Esegui con privilegi elevati senza chiedere conferma* - Consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati. 
-    - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile. 
-    - *Richiedi il consenso nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
-    - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente. 
-    - *Richiedi il consenso* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.  
-    - *Richiedi il consenso per file binari non Windows* - Quando un'operazione per un'applicazione non Microsoft richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
+  - *Esegui con privilegi elevati senza chiedere conferma* - Consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati. 
+  - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile. 
+  - *Richiedi il consenso nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
+  - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente. 
+  - *Richiedi il consenso* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.  
+  - *Richiedi il consenso per file binari non Windows* - Quando un'operazione per un'applicazione non Microsoft richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile. 
   
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1209,11 +1209,11 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   **Impostazione predefinita**: Richiedi NTLM V2 e la crittografia a 128 bit
   
 - **Comportamento in caso di rimozione della smart card**  
-    Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
-     - *Nessuna azione*. 
-     - *Blocca workstation* - La workstation è bloccata quando la smart card viene rimossa, consentendo agli utenti di uscire dall'area, tenere la smart card e mantenere comunque una sessione protetta.
-     - *Imponi disconnessione*: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
-     - *Disconnetti la sessione Desktop remoto*: la rimozione della smart card determina la disconnessione della sessione senza disconnettere l'utente. Questa modalità consente all'utente di inserire la smart card e di riprendere la sessione in seguito oppure di usare un altro terminale dotato di lettore di smart card senza dover effettuare un'altra connessione. Se la sessione è locale, questo criterio funziona in modo identico all'opzione Blocca workstation.
+  Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
+  - *Nessuna azione*. 
+  - *Blocca workstation* - La workstation è bloccata quando la smart card viene rimossa, consentendo agli utenti di uscire dall'area, tenere la smart card e mantenere comunque una sessione protetta.
+  - *Imponi disconnessione*: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
+  - *Disconnetti la sessione Desktop remoto*: la rimozione della smart card determina la disconnessione della sessione senza disconnettere l'utente. Questa modalità consente all'utente di inserire la smart card e di riprendere la sessione in seguito oppure di usare un altro terminale dotato di lettore di smart card senza dover effettuare un'altra connessione. Se la sessione è locale, questo criterio funziona in modo identico all'opzione Blocca workstation.
   
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067331) 
     

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547977"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353295"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualizzare l'inventario software e hardware per PC Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si desidera visualizzare l'inventario per i PC Windows registrati come dispositivi mobili, vedere [visualizzare i dettagli del dispositivo in Intune](device-inventory.md).
+> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si vuole visualizzare l'inventario per i PC Windows registrati come dispositivi mobili, vedere [visualizzare i dettagli dei dispositivi in Intune](device-inventory.md).
 
 Intune raccoglie informazioni dettagliate sull'hardware e sul software per i desktop gestiti come PC con il client software di Intune. Le informazioni delle seguenti procedure consentono di:
 
@@ -71,6 +71,6 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software per i des
 
     Nella finestra di dialogo **Stato attività** sono elencate le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati, nonché un collegamento per consultare le informazioni sulla risoluzione dei problemi.
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 
 [Attività comuni di gestione di PC Windows con il client software di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

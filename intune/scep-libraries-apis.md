@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040726"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882372"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usare le API per aggiungere a Intune autorità di certificazione di terze parti per SCEP
 
@@ -176,8 +176,8 @@ Genera:
 
 **Note sulla sicurezza**  
 
-  - Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
-  - Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
+- Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
+- Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
 
 ##### <a name="sendsuccessnotification-method"></a>Metodo SendSuccessNotification
 
@@ -217,8 +217,8 @@ Genera:
 
 **Note sulla sicurezza**
 
-  - Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
-  - Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
+- Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
+- Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
 
 ##### <a name="sendfailurenotification-method"></a>Metodo SendFailureNotification
 
@@ -254,8 +254,8 @@ Genera:
 
 **Note sulla sicurezza**
 
-  - Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
-  - Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
+- Se questo metodo genera un'eccezione, il server SCEP **non deve** emettere un certificato per il client.
+- Gli errori di convalida della richiesta del certificato SCEP possono indicare un problema nell'infrastruttura di Intune. Oppure, indicare che un utente malintenzionato sta cercando di ottenere un certificato.
 
 ##### <a name="setsslsocketfactory-method"></a>Metodo SetSslSocketFactory
 

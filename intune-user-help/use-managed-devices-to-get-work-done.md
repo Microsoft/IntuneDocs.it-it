@@ -18,56 +18,56 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c0d3484311d044842daf6718b306d45fc93edf2
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2f698f03ed3c7523ef1d768d2a1361d6d1a55008
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545936"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883862"
 ---
-# <a name="enroll-device-for-access-to-work-or-school-resources"></a>Registrazione dispositivo per l'accesso all'azienda o dell'istituto di istruzione delle risorse
-Per registrare il dispositivo e ottenere l'accesso alla posta elettronica e le app, è necessario installare l'app portale aziendale di Intune o app di Microsoft Intune. Quando si registra, i criteri di gestione di base che l'organizzazione ha configurato, ad esempio password, PIN e la crittografia, vengono applicati al dispositivo. Dopo che le impostazioni del dispositivo che soddisfi tutti i requisiti dell'organizzazione, è possibile accedere in modo sicuro le informazioni di lavoro praticamente ovunque ti trovi.  
+# <a name="enroll-device-for-access-to-work-or-school-resources"></a>Registrare il dispositivo per l'accesso alle risorse aziendali o dell'Istituto di istruzione
+Per registrare il dispositivo e ottenere l'accesso alla posta elettronica e alle app, è necessario installare l'app Portale aziendale Intune o Microsoft Intune. Quando si esegue la registrazione, al dispositivo vengono applicati i criteri di gestione di base configurati dall'organizzazione, ad esempio password, PIN e crittografia. Quando le impostazioni del dispositivo soddisfano tutti i requisiti dell'organizzazione, è possibile accedere in modo sicuro alle informazioni di lavoro praticamente ovunque.  
 
-L'App portale aziendale e Microsoft Intune Proteggi dispositivo registrato, garantendo che le impostazioni del dispositivo corrispondano i criteri dell'organizzazione. 
+Le app Portale aziendale e Microsoft Intune consentono di proteggere il dispositivo registrato assicurando che le impostazioni del dispositivo corrispondano ai criteri dell'organizzazione. 
 
 L'app Portale aziendale, inoltre:  
-* Mantiene le informazioni personali e di lavoro separati.  
-* Rende facile trovare e installare rilevanti App aziendali e dell'istituto di istruzione.   
+* Mantiene separate le informazioni personali e di lavoro.  
+* Semplifica la ricerca e l'installazione di applicazioni aziendali e dell'Istituto di istruzione pertinenti.   
 
 ## <a name="get-the-apps"></a>Ottenere le app
 Per ottenere l'app Portale aziendale:
 
-- Installare l'app portale aziendale dall'archivio di app specifici della piattaforma. In alcuni casi, l'organizzazione verrà installata l'app portale aziendale per l'utente.  
-- Andare alla [sito Web portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per accedere all'app da un browser.  
+- Installare l'app Portale aziendale dall'App Store specifica della piattaforma. In alcuni casi, l'organizzazione installerà l'app Portale aziendale.  
+- Passare al [sito web portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per accedere all'app da un browser.  
 
-Se ti viene richiesto di usare l'app di Microsoft Intune, l'organizzazione verrà installato automaticamente.  
+Se è necessario usare l'app Microsoft Intune, l'organizzazione verrà installata per l'utente.  
 
 
 ## <a name="what-information-can-my-company-see-when-i-enroll"></a>Quali sono le informazioni visibili per l'azienda quando si effettua la registrazione?
-Dopo aver registrato il dispositivo, addetti al supporto tecnico dell'organizzazione possono visualizzare solo le informazioni relative al lavoro. Non possono vedere le informazioni personali. Se si vuole registrare un dispositivo personale per usarlo al lavoro, [informazioni su esattamente cosa può e non possono essere visualizzati](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+Dopo che il dispositivo è stato registrato, le persone del supporto tecnico dell'organizzazione possono visualizzare solo le informazioni rilevanti per il lavoro. Non possono vedere le informazioni personali. Se si sta registrando un dispositivo personale per l'uso al lavoro, è necessario [conoscere esattamente cosa può e non è](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)possibile visualizzare.  
 
 
 ## <a name="whats-the-difference-between-the-apps-and-the-website"></a>Qual è la differenza tra app e sito Web?
-L'app portale aziendale è disponibile per dispositivi Android, iOS, macOS e Windows 10. Si integra perfettamente con rispettiva piattaforma del dispositivo. La versione nel sito Web è accessibile da qualsiasi dispositivo e offre la stessa esperienza universale indipendentemente dal dispositivo in uso. 
+L'app Portale aziendale è disponibile per i dispositivi Windows 10, iOS, macOS e Android. Si integra perfettamente con la piattaforma corrispondente del dispositivo. La versione nel sito Web è accessibile da qualsiasi dispositivo e offre la stessa esperienza universale indipendentemente dal dispositivo in uso. 
 
-L'app di Microsoft Intune è per i dispositivi Android aziendali.  
+L'app Microsoft Intune è destinata ai dispositivi Android di proprietà dell'azienda.  
 
-## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Che tipo di dispositivi possono essere registrati con il portale aziendale?
+## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Quali tipi di dispositivi è possibile registrare con Portale aziendale?
 - Dispositivi Apple con iOS (ad esempio iPhone e iPad) e macOS (ad esempio MacBook e iMac)
 - Dispositivi Android
 - Dispositivi Windows
-    - Windows 10 Mobile
-    - Windows 10 Desktop
-    - Windows Phone 8.1
-    - Windows 8.1
+  - Windows 10 Mobile
+  - Windows 10 Desktop
+  - Windows Phone 8.1
+  - Windows 8.1
 
-## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Che tipo di dispositivi possono essere registrati con l'app di Microsoft Intune?  
-È possibile registrare dispositivi Android aziendali impostati dall'organizzazione da usare con l'app. L'app supporta Android 6.0 e versioni successive. 
+## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Quali tipi di dispositivi è possibile registrare con l'app Microsoft Intune?  
+È possibile registrare i dispositivi Android di proprietà dell'azienda che l'organizzazione ha configurato per l'uso con l'app. L'app supporta Android 6,0 e versioni successive. 
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>È possibile rimuovere un computer o un dispositivo dal Portale aziendale?
 È possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale. Esiste una differenza tra **rimuovere** e **reimpostare**.
 
-Quando si rimuove un computer o un dispositivo dal portale aziendale, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dal portale aziendale, vedere i collegamenti seguenti:  
+Quando si rimuove un computer o un dispositivo dal portale aziendale, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dalla Portale aziendale, vedere i collegamenti seguenti:  
 
 - [Annullamento della registrazione del dispositivo Android](unenroll-your-device-from-intune-android.md)
 - [Annullamento della registrazione del dispositivo iOS](unenroll-your-device-from-intune-ios.md)
@@ -76,29 +76,29 @@ Quando si rimuove un computer o un dispositivo dal portale aziendale, si annulla
 
 Quando si reimposta un computer o un dispositivo, il Portale aziendale tenta di reimpostare le impostazioni predefinite del computer o del dispositivo stesso. La reimpostazione del dispositivo rimuove tutti i dati personali e aziendali dal dispositivo. Se si smarrisce il dispositivo, è possibile reimpostarlo anche in remoto dal sito Web del portale aziendale.  
 
-Per informazioni su come reimpostare il dispositivo, vedere [Reimposta il dispositivo dal sito Web del portale aziendale](reset-erase-your-device-cpwebsite.md).  
+Per informazioni su come reimpostare il dispositivo, vedere [reimpostare il dispositivo dal sito web portale aziendale](reset-erase-your-device-cpwebsite.md).  
 
-## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>È possibile rimuovere un computer o dispositivo dall'app Microsoft Intune?
-No, non è possibile rimuovere un dispositivo aziendale dall'app Microsoft Intune.  
+## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>È possibile rimuovere un computer o un dispositivo dall'app Microsoft Intune?
+No, non è possibile rimuovere un dispositivo di proprietà dell'azienda dall'app Microsoft Intune.  
 
-## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>Cosa accade se non è visibile il dispositivo nell'app portale aziendale o Microsoft Intune
+## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>Cosa accade se il dispositivo non è visibile nell'app Portale aziendale o Microsoft Intune?
 Per essere visibile, un dispositivo deve essere in primo luogo aggiunto al Portale aziendale. Accedere al Portale aziendale consigliato dall'amministratore e seguire la procedura per il dispositivo in uso. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
 
-Se si usa l'app di Microsoft Intune, verrà visualizzato solo il dispositivo che attualmente in uso. Altri dispositivi registrati non saranno visibili all'utente nell'app.  
+Se si usa l'app Microsoft Intune, verrà visualizzato solo il dispositivo attualmente in uso. Altri dispositivi registrati non saranno visibili all'utente nell'app.  
 
 ## <a name="where-else-can-i-go-for-help"></a>Dove è possibile trovare altre informazioni?  
-Per risolvere i problemi e domande comuni, vedere questi documenti specifici della piattaforma:  
+Per risolvere problemi comuni e domande, vedere questi documenti specifici della piattaforma:  
 
 - [Risolvere problemi comuni con il dispositivo Android](check-compliance-on-your-device-android.md)  
 - [Risolvere problemi comuni con il dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Risolvere problemi comuni con il dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Risolvere problemi comuni con il dispositivo Windows](troubleshoot-your-device-windows.md)
 
-È possibile anche contattare il supporto tecnico. L'App portale aziendale e Microsoft Intune app offrono assistenza e supportano le pagine che elenca le informazioni di contatto e sui modi per segnalare un problema. Informazioni di contatto sono inoltre disponibili sul nome organizzazione [sito Web portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+È anche possibile contattare il personale di supporto. L'app Portale aziendale e Microsoft Intune offre le pagine di guida e supporto che elencano le informazioni di contatto e i modi per segnalare un problema. Le informazioni di contatto sono disponibili anche nel [sito web portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980)dell'organizzazione.  
 
 ## <a name="next-steps"></a>Passaggi successivi  
 
-L'assistenza per iniziare a con la registrazione, che è specifica della piattaforma del dispositivo:  
+Ottenere la guida che inizia con la registrazione, che è specifica della piattaforma del dispositivo:  
 
 - [Uso del dispositivo Android](using-your-android-device-with-intune.md)
 - [Uso del dispositivo iOS](using-your-ios-device-with-intune.md)

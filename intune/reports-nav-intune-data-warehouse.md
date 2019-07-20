@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 7c832fd423a2486fa7c2252513202d82dc432859
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549217"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882591"
 ---
 # <a name="microsoft-intune-data-warehouse-api"></a>API data warehouse di Microsoft Intune
 
 L'API data warehouse di Intune consente di accedere ai dati di Intune in un formato leggibile da computer per l'uso nello strumento di analisi preferito. È possibile usare l'API per compilare report che consentono di comprendere l'ambiente per dispositivi mobili dell'organizzazione. L'API usa il protocollo OData, che segue i modelli standard per:
 
-  - Intestazioni di richiesta e risposta
-  - Codici di stato
-  - Metodi HTTP
-  - Convenzioni degli URL
-  - Tipi di supporti
-  - Formati di payload
-  - Opzioni di query
+- Intestazioni di richiesta e risposta
+- Codici di stato
+- Metodi HTTP
+- Convenzioni degli URL
+- Tipi di supporti
+- Formati di payload
+- Opzioni di query
 
 Il protocollo OData (Open Data Protocol) è uno standard dell'organizzazione OASIS (Organization for the Advancement of Structured Information Standards) che definisce la procedura consigliata per creare e utilizzare le API RESTful. Il data warehouse di Intune usa OData versione 4.0.
 
@@ -56,8 +56,8 @@ Per altre informazioni, vedere [Recuperare dati dall'API data warehouse con un c
 
 L'API richiede l'autorizzazione con Azure AD. Azure AD usa OAuth 2.0. Una volta autorizzata, è possibile ottenere i dati dall'API usando un verbo HTTP GET e contattando le raccolte di entità esposte. Per ulteriori informazioni vedere:
 
- - [Autorizzazione](reports-api-url.md)
- - [Struttura URL API](reports-api-url.md)
+- [Autorizzazione](reports-api-url.md)
+- [Struttura URL API](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Modello di dati del data warehouse Intune
 

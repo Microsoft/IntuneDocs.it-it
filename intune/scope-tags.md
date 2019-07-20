@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403781"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882497"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti
 
@@ -42,8 +42,8 @@ Ad esempio, si supponga che a un amministratore della filiale di Milano venga as
 
     ![Screenshot della creazione di un tag di ambito.](./media/scope-tags/create-scope-tag.png)
 
-3. Se si desidera che tutti i dispositivi in gruppi specifici, scegliere **assegnare tag di ambito per tutti i dispositivi nei gruppi selezionati**.
-    1. Nel **selezionare i gruppi da includere** , scegliere i gruppi che i dispositivi che si desidera assegnare il tag di ambito su pagina.
+3. Se si vogliono tutti i dispositivi in gruppi specifici, scegliere **Assegna tag ambito a tutti i dispositivi nei gruppi selezionati**.
+    1. Nella pagina **Seleziona gruppi da includere** scegliere i gruppi che contengono i dispositivi a cui si vuole assegnare questo tag ambito.
     2. Scegliere **Seleziona**.
 4. Scegliere **Crea**.
 
@@ -108,17 +108,17 @@ Per i dispositivi con **Tipo di registrazione del dispositivo** impostato su **A
 Quando si lavora con i tag di ambito, tenere presente questi dettagli:
 
 - È attualmente possibile assegnare i tag di ambito a:
-    - Assegnazioni di ruolo
-    - Criteri di conformità dei dispositivi
-    - Profili di configurazione dispositivo
-    - Anelli di aggiornamento di Windows 10
-    - Dispositivi gestiti
-    - App
-    - Criteri di configurazione delle app - dispositivi gestiti
-    - Script PowerShell
-    - Token DEP
-    - Profilo di provisioning delle app iOS
-    - Token Volume Purchase Program (VPP) di Apple
+  - Assegnazioni di ruolo
+  - Criteri di conformità dei dispositivi
+  - Profili di configurazione dispositivo
+  - Anelli di aggiornamento di Windows 10
+  - Dispositivi gestiti
+  - App
+  - Criteri di configurazione delle app - dispositivi gestiti
+  - Script PowerShell
+  - Token DEP
+  - Profilo di provisioning delle app iOS
+  - Token Volume Purchase Program (VPP) di Apple
 - Quando un amministratore crea un oggetto in Intune, tutti i tag di ambito assegnati a tale amministratore verranno assegnati automaticamente al nuovo oggetto.
 - Il controllo degli accessi in base al ruolo di Intune non si applica ai ruoli di Azure Active Directory. I ruoli di amministratore del servizio e amministratore globale di Intune hanno quindi accesso amministrativo completo a Intune, indipendentemente dai tag di ambito assegnati.
 - Gli amministratori in un'assegnazione di ruolo con tag di ambito possono anche vedere gli oggetti di Intune senza tag di ambito.

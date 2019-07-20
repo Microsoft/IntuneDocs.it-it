@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5a119154c4676d3c8039463b181263d516bb2b51
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547945"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353514"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo
 
@@ -123,5 +123,5 @@ Gli oggetti Criteri di gruppo possono essere applicati solo ai gruppi di sicurez
 
 È necessario gestire la registrazione del nuovo gruppo di sicurezza in seguito a modifiche del servizio Intune.
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 [Gestire i PC Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

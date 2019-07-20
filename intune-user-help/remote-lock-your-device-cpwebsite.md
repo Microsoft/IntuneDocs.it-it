@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835778"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884071"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
@@ -56,9 +56,9 @@ Dopo la conferma, il portale aziendale tenta di bloccare il dispositivo. Durante
 
 Lo stato del blocco remoto viene visualizzato in tre posizioni:
 
-   * L'area delle notifiche del sito Web.
-   * La pagina **Dettagli** per il dispositivo.
-   * Il riquadro contenente il nome del dispositivo nella sezione **Dispositivi** della pagina.  
+* L'area delle notifiche del sito Web.
+* La pagina **Dettagli** per il dispositivo.
+* Il riquadro contenente il nome del dispositivo nella sezione **Dispositivi** della pagina.  
 
 > [!Note]
 > Se una notifica avvisa che il blocco remoto non è riuscito, attendere qualche minuto. Quindi, tentare di bloccare nuovamente il dispositivo. Lo stato diventa nuovamente "Blocco remoto in sospeso". Se il nuovo tentativo non funziona, contattare il supporto tecnico aziendale per assistenza.

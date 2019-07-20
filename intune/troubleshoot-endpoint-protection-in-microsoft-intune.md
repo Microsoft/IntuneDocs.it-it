@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402652"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353349"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemi di Endpoint Protection e possibili soluzioni in Microsoft Intune
 
@@ -34,7 +34,7 @@ Esaminare i log eventi e i codici di errore per [risolvere i problemi relativi a
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Errori comuni di Intune e possibili soluzioni
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Motore Endpoint Protection non disponibile
+### <a name="endpoint-protection-engine-unavailable"></a>Motore Endpoint Protection non disponibile
 
 **Possibile causa**: il motore di Intune Endpoint Protection è danneggiato o è stato eliminato.
 
@@ -45,7 +45,7 @@ Esaminare i log eventi e i codici di errore per [risolvere i problemi relativi a
 - In Pannello di controllo > Programmi selezionare **Agente di Microsoft Intune Endpoint Protection**. Disinstallare l'applicazione.
 - Durante la successiva sincronizzazione degli aggiornamenti, il programma mancante verrà rilevato dallo strumento Gestione aggiornamenti di Microsoft Online Management e sarà reinstallato al momento dell'installazione pianificata.
 
-#### <a name="features-are-disabled"></a>Funzionalità disabilitate
+### <a name="features-are-disabled"></a>Funzionalità disabilitate
 
 Potrebbe essere visualizzato un messaggio che informa che alcune funzionalità sono disabilitate. Messaggi di questo tipo possono essere visualizzati se Intune Endpoint Protection o Windows Defender è stato disabilitato da un amministratore tramite un profilo di configurazione oppure se è stato disabilitato da un utente finale sul dispositivo. Ecco alcun messaggi possibili:
 
@@ -63,19 +63,19 @@ Potrebbe essere visualizzato un messaggio che informa che alcune funzionalità s
 - [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>Definizioni malware scadute
+### <a name="malware-definitions-out-of-date"></a>Definizioni malware scadute
 
 Questo stato viene visualizzato quando le definizioni malware nel dispositivo non vengono aggiornate da almeno 14 giorni. Ad esempio, il messaggio potrebbe essere visualizzato se il dispositivo è disconnesso da Internet o se le definizioni malware non sono aggiornate.
 
 **Possibili soluzioni**: se le definizioni malware non sono aggiornate, aggiornarle usando [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Analisi completa scaduta o Analisi veloce scaduta
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Analisi completa scaduta o Analisi veloce scaduta
 
 Non viene completata un'analisi completa o un'analisi veloce da 14 giorni. Questa situazione può verificarsi se il dispositivo viene riavviato durante un'analisi completa.
 
 **Possibili soluzioni**: in presenza di un'analisi scaduta, è possibile eseguire un'analisi occasionale oppure pianificare analisi periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>È in esecuzione un'altra applicazione Endpoint Protection
+### <a name="another-endpoint-protection-application-running"></a>È in esecuzione un'altra applicazione Endpoint Protection
 
 È in esecuzione un'altra applicazione Endpoint Protection e il dispositivo è integro.
 

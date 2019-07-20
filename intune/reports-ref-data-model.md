@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547881"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884752"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modello di dati del data warehouse di Microsoft Intune
 
@@ -32,22 +32,22 @@ Il data warehouse di Intune esegue il campionamento giornaliero dei dati per for
 
 Il warehouse espone i dati nelle aree generali seguenti:
 
-  - App abilitate per la protezione dati e utilizzo
-  - Dispositivi registrati, proprietà e inventario
-  - Inventario app e software
-  - Configurazione del dispositivo e criteri di conformità
+- App abilitate per la protezione dati e utilizzo
+- Dispositivi registrati, proprietà e inventario
+- Inventario app e software
+- Configurazione del dispositivo e criteri di conformità
 
 Queste aree contengono le entità significative per l'ambiente Intune. Informazioni dettagliate sui set di entità sono disponibili negli argomenti seguenti:
 
-  - [Applicazione](reports-ref-application.md)
-  - [Data](reports-ref-date.md)
-  - [Dispositivi](reports-ref-devices.md)
-  - [Intune Management Extension](reports-ref-intunemanagementextension.md) (Estensione di gestione di Intune)
-  - [Criteri](reports-ref-policy.md)
-  - [Gestione delle app mobili (MAM)](reports-ref-mobile-app-management.md)
-  - [User](reports-ref-user.md)
-  - [Current User](reports-ref-current-user.md)
-  - [Associazioni utente-dispositivo](reports-ref-user-device.md)
+- [Applicazione](reports-ref-application.md)
+- [Data](reports-ref-date.md)
+- [Dispositivi](reports-ref-devices.md)
+- [Intune Management Extension](reports-ref-intunemanagementextension.md) (Estensione di gestione di Intune)
+- [Criteri](reports-ref-policy.md)
+- [Gestione delle app mobili (MAM)](reports-ref-mobile-app-management.md)
+- [User](reports-ref-user.md)
+- [Current User](reports-ref-current-user.md)
+- [Associazioni utente-dispositivo](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Relazione: modello di schema a stella
 
@@ -63,6 +63,6 @@ Il warehouse si trova a valle rispetto ai dati di Intune. Intune crea uno snapsh
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- - Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).
- - Per altre informazioni sull'uso dei data warehouse, vedere [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creare il primo warehouse).
- - Per altre informazioni sull'uso di Power BI e di un data warehouse, vedere [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) (Creare un nuovo report di Power BI importando un set di dati). 
+- Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).
+- Per altre informazioni sull'uso dei data warehouse, vedere [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creare il primo warehouse).
+- Per altre informazioni sull'uso di Power BI e di un data warehouse, vedere [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) (Creare un nuovo report di Power BI importando un set di dati). 

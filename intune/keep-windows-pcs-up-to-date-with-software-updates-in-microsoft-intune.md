@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548661"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353868"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si desidera gestire gli aggiornamenti per i PC Windows registrati come dispositivi mobili, vedere [gestire gli aggiornamenti software in Intune](windows-update-for-business-configure.md).
+> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si vogliono gestire gli aggiornamenti per i PC Windows registrati come dispositivi mobili, vedere [gestire gli aggiornamenti software in Intune](windows-update-for-business-configure.md).
 
 Microsoft Intune consente di proteggere i computer gestiti in diversi modi, ad esempio con la gestione degli aggiornamenti software, che consente di mantenere i computer aggiornati installando rapidamente le patch e gli aggiornamenti software più recenti.
 
@@ -260,5 +260,5 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 6. È possibile controllare il riquadro dei dettagli nella parte inferiore della pagina **Tutti gli aggiornamenti** per i messaggi di promemoria sull'aggiornamento.
 
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 [Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

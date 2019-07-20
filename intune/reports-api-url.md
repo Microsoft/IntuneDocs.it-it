@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648791"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313735"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpoint dell'API data warehouse di Intune
 
@@ -51,7 +51,7 @@ L'URL contiene gli elementi seguenti:
 | Elemento | Esempio | Descrizione |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | L'URL di base è reperibile visualizzando il pannello dell'API data warehouse nel portale di Azure. |
-| entity-collection | dates | Il nome della raccolta di entità OData. Per altre informazioni sulle raccolte e sulle entità nel modello di dati, vedere [Modello di dati](reports-ref-data-model.md). |
+| entity-collection | devicePropertyHistories | Il nome della raccolta di entità OData. Per altre informazioni sulle raccolte e sulle entità nel modello di dati, vedere [Modello di dati](reports-ref-data-model.md). |
 | api-version | beta | Si intende la versione dell'API a cui accedere. Per altre informazioni, vedere [Versione](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (Facoltativo) Numero massimo di giorni della cronologia di elaborazione da recuperare. Questo parametro può essere aggiunto a qualsiasi raccolta, ma è attivo solo per le raccolte che includono `dateKey` nella proprietà chiave. Per altre informazioni, vedere [Filtri di intervallo DateKey](reports-api-url.md#datekey-range-filters). |
 

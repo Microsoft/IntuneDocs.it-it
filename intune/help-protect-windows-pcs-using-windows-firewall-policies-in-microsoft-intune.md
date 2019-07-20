@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572523"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354013"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si desidera gestire le impostazioni del firewall per i PC Windows registrati come dispositivi mobili, vedere [aggiungere impostazioni di endpoint protection in Intune](endpoint-protection-configure.md).
+> Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si vogliono gestire le impostazioni del firewall per i PC Windows registrati come dispositivi mobili, vedere [aggiungere le impostazioni di Endpoint Protection in Intune](endpoint-protection-configure.md).
 
 Microsoft Intune consente di proteggere i PC Windows gestiti usando il client di Intune in diversi modi, ad esempio fornendo criteri che consentono di configurare le impostazioni di Windows Firewall nei computer.
 
@@ -140,5 +140,5 @@ Per tutte queste impostazioni, il valore predefinito è **Sì**.
 |**Windows Virtual PC**<br>(Windows 7 o versioni successive)|Consente la comunicazione tra macchine virtuali e altri computer.|
 |**Dispositivi portatili wireless**|Consente di trasferire file multimediali nei computer gestiti da fotocamere, videocamere o dispositivi multimediali che supportano la rete con il protocollo MTP (Media Transfer Protocol). Vengono usati i protocolli di rete SSDP e UPnP.|
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 [Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

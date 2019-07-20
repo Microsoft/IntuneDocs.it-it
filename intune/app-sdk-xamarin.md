@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735460"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794362"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -104,9 +104,10 @@ Se l’applicazione è già configurata per l’uso di ADAL o MSAL e se per l’
 In [Guida per sviluppatori di Microsoft Intune App SDK per Android](app-sdk-android.md) è disponibile una panoramica completa sull'integrazione di Intune App SDK. Durante la lettura della guida e l'integrazione di Intune App SK con l'app Xamarin, è possibile leggere le sezioni seguenti, che servono a evidenziare le differenze tra l'implementazione per un'app nativa per Android sviluppata in Java e un'app Xamarin sviluppata in C#. Queste sezioni devono essere considerate supplementari e non possono sostituire l'intera guida.
 
 #### <a name="remapper"></a>Remapper
-A partire dalla versione 1.4428.1, il `Microsoft.Intune.MAM.Remapper` pacchetto può essere aggiunto a un'applicazione Novell. Android come [strumento](app-sdk-android.md#build-tooling) di compilazione per eseguire le sostituzioni di classe Mam, metodo e servizi di sistema. Se il mapping è incluso, le parti sostitutive di MAM equivalenti dei metodi rinominati e delle sezioni dell'applicazione MAM verranno eseguite automaticamente al momento della compilazione dell'applicazione.
+A partire dalla versione 1.4428.1, il `Microsoft.Intune.MAM.Remapper` pacchetto può essere aggiunto a un'applicazione Novell. Android come [strumento di compilazione](app-sdk-android.md#build-tooling) per eseguire le sostituzioni di classe Mam, metodo e servizi di sistema. Se il mapping è incluso, le parti sostitutive di MAM equivalenti dei metodi rinominati e delle sezioni dell'applicazione MAM verranno eseguite automaticamente al momento della compilazione dell'applicazione.
 
 Per escludere una classe da Mam-Unity tramite il file di mapping, è possibile aggiungere la proprietà `.csproj` seguente al file di progetto.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -200,7 +201,7 @@ In caso di mancata sostituzione, è possibile che si verifichino gli errori di c
 > Il remapper riscrive una dipendenza usata da Visual Studio per il completamento automatico di IntelliSense. Potrebbe essere poi necessario ricaricare e ricompilare il progetto quando il remapper viene aggiunto per IntelliSense affinché le modifiche siano riconosciute correttamente.
 
 ### <a name="company-portal-app"></a>App Portale aziendale
-Le associazioni Novell di Intune SDK si basano sulla presenza dell' [app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) portale aziendale Android sul dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale. Non è necessario che l'utente sia connesso.
+Le associazioni Novell di Intune SDK si basano sulla presenza dell'app [portale aziendale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android sul dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale. Non è necessario che l'utente sia connesso.
 
 > [!NOTE]
 > Quando l'app Portale aziendale non è presente nel dispositivo **Android**, un'app gestita da Intune si comporta analogamente a una normale app che non supporta i criteri di protezione delle app di Intune.
@@ -208,7 +209,7 @@ Le associazioni Novell di Intune SDK si basano sulla presenza dell' [app](https:
 Per la protezione delle app senza registrazione del dispositivo, _**non**_ è richiesta la registrazione del dispositivo con l'app Portale aziendale.
 
 ### <a name="sample-applications"></a>Applicazioni di esempio
-Applicazioni di esempio che evidenziano la funzionalità Mam nelle app Novell. Android e Novell Forms sono disponibili su [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
+Applicazioni di esempio che evidenziano la funzionalità MAM nelle app Novell. Android e Novell Forms sono disponibili su [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Support
 Se l'organizzazione è un cliente Intune, contattare il rappresentante del supporto tecnico Microsoft per aprire un ticket di supporto e creare un problema [nella pagina GitHub relativa ai problemi](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). Verrà presto prestato supporto. 
