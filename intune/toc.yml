@@ -14,7 +14,7 @@
           href: whats-new-app-ui.md
         - name: Funzionalità in fase di sviluppo
           href: in-development.md
-- name: Guida introduttiva
+- name: Avvio rapido
   items:
     - name: Provare Intune gratuitamente
       href: free-trial-sign-up.md
@@ -111,7 +111,7 @@
             - name: Preparare Intune
               href: migration-guide-prepare.md
               items:
-                - name: Configurazione di base
+                - name: Installazione di base
                   href: migration-guide-setup.md
                 - name: Configurare i criteri di gestione di dispositivi e app
                   href: migration-guide-configure-policies.md
@@ -244,7 +244,7 @@
           href: enrollment-report-company-portal-abandon.md
         - name: Risolvere i problemi di registrazione dei dispositivi
           href: troubleshoot-device-enrollment-in-intune.md
-    - name: Gestire dispositivi
+    - name: Gestire i dispositivi
       href: device-management.md
       items:
         - name: Funzionalità di gestione dei dispositivi
@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: 'Controllare, esportare, eliminare'
               href: privacy-data-audit-export-delete.md
+        - name: Crittografa i dispositivi
+          href: encrypt-devices.md
         - name: Accesso condizionale
           href: conditional-access.md
           items:
@@ -566,7 +568,7 @@
               href: apps-windows-10-app-deploy.md
             - name: Distribuire le app agli enti pubblici
               href: apps-deploy-gcc-dod.md
-        - name: Eseguire il monitoraggio delle app
+        - name: Monitorare le app
           href: apps-monitor.md
         - name: Configurare le app
           href: app-configuration-policies-overview.md
@@ -656,7 +658,7 @@
       items:
         - name: Stato tenant
           href: tenant-status.md
-        - name: Risoluzione dei problemi
+        - name: Risolvere i problemi
           items:
             - name: Aiutare gli utenti nella risoluzione dei problemi
               href: help-desk-operators.md
@@ -696,7 +698,7 @@
                   href: device-restrictions-android.md
                 - name: Posta elettronica
                   href: email-settings-android.md
-                - name: Connessione
+                - name: VPN
                   href: 'vpn-settings-android.md#android-vpn-settings'
                 - name: Wi-Fi
                   href: wi-fi-settings-android.md
@@ -715,7 +717,7 @@
                   href: device-restrictions-android-for-work.md
                 - name: Posta elettronica
                   href: email-settings-android-enterprise.md
-                - name: Connessione
+                - name: VPN
                   href: 'vpn-settings-android.md#android-enterprise-vpn-settings'
                 - name: Wi-Fi
                   href: wi-fi-settings-android-enterprise.md
@@ -733,7 +735,7 @@
                   href: device-restrictions-ios.md
                 - name: Posta elettronica
                   href: email-settings-ios.md
-                - name: Connessione
+                - name: VPN
                   href: vpn-settings-ios.md
                 - name: Wi-Fi
                   href: wi-fi-settings-ios.md
@@ -753,7 +755,7 @@
                   href: device-restrictions-macos.md
                 - name: Endpoint Protection
                   href: endpoint-protection-macos.md
-                - name: Connessione
+                - name: VPN
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
@@ -783,11 +785,11 @@
                   href: identity-protection-windows-settings.md
                 - name: Modalità tutto schermo
                   href: kiosk-settings-windows.md
-                - name: Connessione
+                - name: VPN
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: Education
+                - name: Istruzione
                   href: education-settings-windows.md
                 - name: Dispositivo multiutente condiviso
                   href: shared-user-device-settings-windows.md
@@ -825,7 +827,7 @@
               items:
                 - name: Limitazioni del dispositivo
                   href: device-restrictions-windows-8-1.md
-                - name: Connessione
+                - name: VPN
                   href: vpn-settings-windows-8-1.md
                 - name: Importazione Wi-Fi
                   href: wi-fi-settings-import-windows-8-1.md
@@ -839,7 +841,7 @@
                   href: device-restrictions-windows-phone-8-1.md
                 - name: Posta elettronica
                   href: email-settings-windows-phone-8-1.md
-                - name: Connessione
+                - name: VPN
                   href: vpn-settings-windows-phone-8-1.md
                 - name: Personalizzato
                   href: custom-settings-windows-phone-8-1.md
@@ -925,7 +927,7 @@
           href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Risorse
   items:
-    - name: Archivia
+    - name: Archive
       items:
         - name: Archivio delle novità
           items:
