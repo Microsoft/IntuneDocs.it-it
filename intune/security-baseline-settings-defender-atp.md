@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549132"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354441"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Impostazioni della baseline di Microsoft Defender Advanced Threat Protection per Intune
 
 Vedere le impostazioni della baseline di Microsoft Defender Advanced Threat Protection (in precedenza Windows Defender Advanced Threat Protection) supportate da Microsoft Intune. Le impostazioni predefinite della baseline di Advanced Threat Protection (ATP) rappresentano la configurazione consigliata per ATP e potrebbero non corrispondere ai valori predefiniti della baseline per altre baseline di sicurezza.  
 
-  La baseline di Microsoft Defender Advanced Threat Protection è disponibile quando l'ambiente soddisfa i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
+La baseline di Microsoft Defender Advanced Threat Protection è disponibile quando l'ambiente soddisfa i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites). 
 
-
+Questa baseline è ottimizzata per i dispositivi fisici e attualmente non è consigliata per l'uso in macchine virtuali (VM) o endpoint VDI. Alcune impostazioni di base possono influito sulle sessioni interattive Remote negli ambienti virtualizzati. Per ulteriori informazioni, vedere la pagina relativa all' [aumento della conformità alla baseline della sicurezza di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) nella documentazione di Windows.
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ Per altre informazioni, vedere [Impostazioni di Criteri di gruppo per BitLocker]
 
   Per i criteri di un'unità rimovibile BitLocker, configurare le impostazioni seguenti:
 
-    - **Richiedere la crittografia per l'accesso in scrittura**  
-      **Impostazione predefinita**: Sì
+  - **Richiedere la crittografia per l'accesso in scrittura**  
+    **Impostazione predefinita**: Sì
 
-    - **Metodo di crittografia**  
-      **Impostazione predefinita**: AES-CBC a 128 bit
+  - **Metodo di crittografia**  
+    **Impostazione predefinita**: AES-CBC a 128 bit
 
 - **Criterio per le unità fisse BitLocker**  
   I valori per questo criterio determinano il livello di crittografia che BitLocker usa per la crittografia delle unità fisse. Per una maggiore sicurezza, le aziende possono controllare il livello di crittografia (AES-256 è un algoritmo più avanzato rispetto a AES-128). Se si abilita questa impostazione, è possibile configurare individualmente un algoritmo di crittografia e un livello di codifica per unità dati fisse, unità del sistema operativo e unità dati rimovibili. Per le unità fisse e del sistema operativo è consigliabile usare l'algoritmo XTS-AES. Per le unità rimovibili è consigliabile usare AES-CBC a 128 bit o AES-CBC a 256 bit se l'unità viene usata in altri dispositivi che non eseguono Windows 10 versione 1511 o successiva. La modifica del metodo di crittografia non produce alcun effetto se l'unità è già crittografata o se la crittografia è in corso. In questi casi, l'impostazione di questo criterio viene ignorata.
 
   Per i criteri di un'unità fissa BitLocker, configurare le impostazioni seguenti:
 
-    - **Richiedere la crittografia per l'accesso in scrittura**  
-      **Impostazione predefinita**: Sì
+  - **Richiedere la crittografia per l'accesso in scrittura**  
+    **Impostazione predefinita**: Sì
 
-    - **Metodo di crittografia**  
-      **Impostazione predefinita**: AES-XTS a 128 bit
+  - **Metodo di crittografia**  
+    **Impostazione predefinita**: AES-XTS a 128 bit
 
 - **Criterio per le unità di sistema BitLocker**  
   I valori per questo criterio determinano il livello di crittografia che BitLocker usa per la crittografia delle unità di sistema. Per una maggiore sicurezza, le aziende potrebbero voler controllare il livello di crittografia (AES-256 è un algoritmo più avanzato rispetto a AES-128). Se si abilita questa impostazione, è possibile configurare individualmente un algoritmo di crittografia e un livello di codifica per unità dati fisse, unità del sistema operativo e unità dati rimovibili. Per le unità fisse e del sistema operativo è consigliabile usare l'algoritmo XTS-AES. Per le unità rimovibili è consigliabile usare AES-CBC a 128 bit o AES-CBC a 256 bit se l'unità viene usata in altri dispositivi che non eseguono Windows 10 versione 1511 o successiva. La modifica del metodo di crittografia non produce alcun effetto se l'unità è già crittografata o se la crittografia è in corso. In questi casi, l'impostazione di questo criterio viene ignorata.  

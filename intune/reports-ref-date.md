@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,42 +17,42 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041018"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313830"
 ---
-# <a name="reference-for-date-entity"></a>Informazioni di riferimento per l'entità Date
+# <a name="reference-for-dates-entity"></a>Riferimento per l'entità dates
 
-La categoria **Date** contiene l'entità **Date usata** per definire i riferimenti di data nel modello di dati.
+La categoria **dates** contiene l'entità **date** usata per definire i riferimenti di data nel modello di dati.
 
-## <a name="date"></a>Date
+## <a name="dates"></a>dates
 
-L'entità **Date** rappresenta le date a cui si fa riferimento tra più entità di data warehouse.
+L'entità **dates** rappresenta le date a cui si fa riferimento tra più entità del data warehouse.
 
 
 |    Proprietà     |                      Descrizione                       |       Esempio        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | Identificatore univoco della data nel data warehouse. |       20160703       |
-|    FullDate     |    Data nel formato di Data/ora completo.     | 7/3/2016 12:00:00 |
-|    DayOfWeek    |                      Giorno della settimana                       |          1           |
-|   DayOfMonth    |                      Giorno del mese                      |          3           |
-|    DayOfYear    |                      Giorno dell'anno                       |         185          |
-|   WeekOfYear    |                      Settimana dell'anno                      |          28          |
-|   MonthOfYear   |                   Mese dell'anno                    |          7           |
-| CalendarQuarter |                    Trimestre di calendario                    |          3           |
-|  CalendarYear   |                     Anno di calendario                      |         2016         |
-|     DateKey     | Identificatore univoco della data nel data warehouse. |       20160703       |
-|    FullDate     |    Data nel formato di Data/ora completo.     | 7/3/2016 12:00:00 |
-|    DayOfWeek    |                      Giorno della settimana                       |          1           |
-|   DayOfMonth    |                      Giorno del mese                      |          3           |
-|    DayOfYear    |                      Giorno dell'anno                       |         185          |
-|   WeekOfYear    |                      Settimana dell'anno                      |          28          |
-|   MonthOfYear   |                   Mese dell'anno                    |          7           |
-| CalendarQuarter |                    Trimestre di calendario                    |          3           |
-|  CalendarYear   |                     Anno di calendario                      |         2016         |
+|     dateKey     | Identificatore univoco della data nel data warehouse. |       20160703       |
+|    fullDate     |    Data nel formato di Data/ora completo.     | 7/3/2016 12:00:00 |
+|    dayOfWeek    |                      Giorno della settimana                       |          1           |
+|   dayOfMonth    |                      Giorno del mese                      |          3           |
+|    dayOfYear    |                      Giorno dell'anno                       |         185          |
+|   weekOfYear    |                      Settimana dell'anno                      |          28          |
+|   monthOfYear   |                   Mese dell'anno                    |          7           |
+| calendarQuarter |                    Trimestre di calendario                    |          3           |
+|  calendarYear   |                     Anno di calendario                      |         2016         |
+|     dateKey     | Identificatore univoco della data nel data warehouse. |       20160703       |
+|    fullDate     |    Data nel formato di Data/ora completo.     | 7/3/2016 12:00:00 |
+|    dayOfWeek    |                      Giorno della settimana                       |          1           |
+|   dayOfMonth    |                      Giorno del mese                      |          3           |
+|    dayOfYear    |                      Giorno dell'anno                       |         185          |
+|   weekOfYear    |                      Settimana dell'anno                      |          28          |
+|   monthOfYear   |                   Mese dell'anno                    |          7           |
+| calendarQuarter |                    Trimestre di calendario                    |          3           |
+|  calendarYear   |                     Anno di calendario                      |         2016         |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
