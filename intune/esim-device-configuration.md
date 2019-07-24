@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883265"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354379"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -79,7 +79,7 @@ I codici di attivazione del cellulare vengono resi disponibili dall'operatore di
 4. Selezionare il file con estensione csv contenente i codici di attivazione.
 5. Selezionare **OK** per salvare le modifiche.
 
-#### <a name="csv-file-requirements"></a>Requisiti del file con estensione csv
+### <a name="csv-file-requirements"></a>Requisiti del file con estensione csv
 
 Quando si usa il file con estensione csv con i codici di attivazione, assicurarsi o richiedere all'operatore di telefonia mobile che siano soddisfatti i requisiti seguenti:
 
@@ -89,7 +89,7 @@ Quando si usa il file con estensione csv con i codici di attivazione, assicurars
 - Ogni file deve essere specifico per un singolo operatore di telefonia mobile e tutti i codici di attivazione devono corrispondere allo stesso piano di fatturazione. Intune distribuisce in modo casuale i codici di attivazione ai dispositivi di destinazione. Non è possibile determinare quale dispositivo ottiene un codice di attivazione specifico.
 - È possibile importare un massimo di 1000 codici di attivazione in un singolo file con estensione csv.
 
-#### <a name="csv-file-example"></a>Esempio di file con estensione csv
+### <a name="csv-file-example"></a>Esempio di file con estensione csv
 
 1. La prima riga e la prima cella del file con estensione csv specificano l'URL del servizio di attivazione eSIM dell'operatore di telefonia mobile, denominato SM-DP+ (server Subscription Manager Data Preparation). L'URL deve essere un nome di dominio completo (FQDN) senza virgole.
 2. La seconda riga e tutte le righe successive sono codici di attivazione univoci monouso che includono due valori:
@@ -129,7 +129,7 @@ I codici di attivazione eSIM devono essere usati una sola volta. Dopo che Intune
 
 ## <a name="step-4-monitor-deployment"></a>Passaggio 4: Monitorare la distribuzione
 
-#### <a name="review-the-deployment-status"></a>Esaminare lo stato della distribuzione
+### <a name="review-the-deployment-status"></a>Esaminare lo stato della distribuzione
 
 Dopo aver assegnato il profilo, è possibile monitorare lo stato della distribuzione di un pool di sottoscrizioni.
 
@@ -138,7 +138,7 @@ Dopo aver assegnato il profilo, è possibile monitorare lo stato della distribuz
 3. Selezionare **Configurazione del dispositivo** > **Profili cellulare eSIM**. Vengono elencati tutti i pool di sottoscrizione cellulare eSIM esistenti.
 4. Selezionare una sottoscrizione ed esaminare **Stato distribuzione**.
 
-#### <a name="check-the-profile-status"></a>Verificare lo stato del profilo
+### <a name="check-the-profile-status"></a>Verificare lo stato del profilo
 Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi grafici visualizzano lo stato di un profilo, ad esempio che è correttamente assegnato ai dispositivi oppure se il profilo mostra un conflitto.
 
 1. Selezionare **Configurazione del dispositivo** > **Profili cellulare eSIM** > Select an existing subscription (Seleziona sottoscrizione esistente).
@@ -167,7 +167,7 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
     - **Stato della rete cellulare**: stato specificato dall'operatore di telefonia mobile. Per la risoluzione dei problemi, contattare l'operatore di telefonia mobile.
     - **Ultima sincronizzazione**: data dell'ultima comunicazione tra il dispositivo e Intune
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorare i dettagli del profilo eSIM sul dispositivo
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorare i dettagli del profilo eSIM sul dispositivo
 
 1. Nel dispositivo selezionare **Impostazioni** > **Rete e Internet**.
 2. Selezionare **Cellulare** > **Manage eSIM profiles** (Gestisci profili eSIM)

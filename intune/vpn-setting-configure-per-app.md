@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884530"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354500"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
@@ -48,7 +48,7 @@ Zscaler Private Access (ZPA) si integra con Azure Active Directory (Azure AD) pe
 
 Per dimostrare la propria identità, il server VPN presenta il certificato che deve essere accettato senza prompt da parte del dispositivo. Per confermare l'approvazione automatica del certificato, creare un profilo del certificato attendibile che contiene un certificato radice del server VPN emesso dall'Autorità di certificazione (CA). 
 
-#### <a name="export-the-certificate-and-add-the-ca"></a>Esportare il certificato e aggiungere la CA
+### <a name="export-the-certificate-and-add-the-ca"></a>Esportare il certificato e aggiungere la CA
 
 1. Nel server VPN aprire la console di amministrazione.
 2. Confermare che il server VPN usi l'autenticazione basata sui certificati. 

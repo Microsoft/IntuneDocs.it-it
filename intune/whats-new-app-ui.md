@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572627"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354547"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti più recenti per le app Microsoft Intune. Il sito Web e l'app Portale aziendale Intune vengono regolarmente estesi e migliorati. Questo articolo fornisce agli amministratori del servizio Intune o ai tecnici del supporto le informazioni necessarie per:
@@ -49,7 +49,7 @@ L'app Portale aziendale per Windows elenca ora tutte le app gestite, sia obbliga
 
 ## <a name="week-of-june-17-2019"></a>Settimana del 17 giugno 2019  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Nuove funzionalità dell'app Microsoft Intune
+### <a name="new-features-in-microsoft-intune-app"></a>Nuove funzionalità dell'app Microsoft Intune
 Sono state aggiunte nuove funzionalità all'app Microsoft Intune (anteprima) per Android. Ora gli utenti di dispositivi Android completamente gestiti possono:  
 
 * Visualizzare e gestire i dispositivi che hanno registrato tramite il Portale aziendale Intune o l'app Microsoft Intune.    
@@ -552,7 +552,7 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 > Le immagini seguenti potrebbero essere anteprime e il prodotto annunciato potrebbe differire dalle versioni presentate.  
 
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Novità in Intune](https://docs.microsoft.com/intune/whats-new)

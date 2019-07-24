@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045983"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354449"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare diverse funzionalità di gestione dei dispositivi nei dispositivi Windows Holographic e HoloLens con Intune
 
@@ -105,23 +105,23 @@ Intune include impostazioni e funzionalità che è possibile abilitare o disabil
 
 Nei profili è possibile usare URI OMA per personalizzare alcune impostazioni, creare restrizioni dei dispositivi e configurare una rete privata virtuale (VPN) e Wi-Fi.
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Impostazioni dispositivo personalizzate](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Impostazioni dispositivo personalizzate](custom-settings-windows-holographic.md)
 
 Per configurare le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier), è possibile creare un profilo personalizzato in Intune. Usare le impostazioni URI OMA per controllare diverse funzionalità nei dispositivi Windows Holographic for Business, ad esempio abilitare la rete VPN o controllare gli aggiornamenti su Microsoft Update.
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Configurare la modalità tutto schermo](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Configurare la modalità tutto schermo](kiosk-settings-holographic.md)
 
 Grazie alle funzionalità del PC in condivisione o guest disponibili in Intune, è possibile configurare i dispositivi Windows Holographic for Business per l'esecuzione in modalità tutto schermo. Questi dispositivi possono eseguire un'app (modalità tutto schermo per app singola), o più app (modalità tutto schermo per più app).
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Restrizioni dei dispositivi](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Restrizioni dei dispositivi](device-restrictions-windows-holographic.md)
 
 Le restrizioni dei dispositivi consentono di controllare diverse impostazioni e funzionalità nei dispositivi, inclusi la richiesta di password, l'installazione di app da [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), l'abilitazione Bluetooth e altro ancora. Queste restrizioni vengono create in un profilo di Intune. Questo profilo può essere applicato a più dispositivi che eseguono Windows Holographic for Business.
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[Configurare la rete VPN](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[Configurare la rete VPN](vpn-settings-configure.md)
 
 Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. In Intune è possibile creare un profilo VPN che include impostazioni specifiche per i dispositivi che eseguono Windows Holographic for Business. È possibile ad esempio creare un profilo VPN in modo che tutti i dispositivi Windows Holographic for Business usino la VPN Citrix come tipo di connessione.
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurare la rete Wi-Fi](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurare la rete Wi-Fi](wi-fi-settings-configure.md)
 
 È anche possibile creare un profilo Wi-Fi in Intune per assegnare le impostazioni della rete wireless ai dispositivi Windows Holographic for Business. Quando si assegna un profilo Wi-Fi, gli utenti finali ottengono l'accesso alla rete aziendale, senza alcuna configurazione di rete. È ad esempio possibile creare una rete Wi-Fi dedicata esclusivamente ai dispositivi Windows Holographic for Business.
 

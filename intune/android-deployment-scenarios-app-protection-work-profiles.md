@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049907"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353801"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Criteri di protezione delle applicazioni e profili di lavoro in Intune su dispositivi Android Enterprise
 
@@ -58,7 +58,7 @@ Per un elenco delle app già abilitate con criteri APP, vedere [Le app gestite d
 
 Questa sezione descrive le caratteristiche importanti degli scenari di distribuzione con i criteri di protezione delle app senza registrazione (APP-WE) e con i criteri di lavoro Android Enterprise.
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 Una distribuzione APP-WE (criteri di protezione delle app senza registrazione) definisce i criteri per le app e non per i dispositivi. In genere, in questo scenario i dispositivi non sono registrati o gestiti da un'autorità MDM, ad esempio Intune. Per la protezione delle app e l'accesso ai dati aziendali, gli amministratori usano app gestibili con criteri APP e implementano criteri di protezione dati in tali app.
 
@@ -71,7 +71,7 @@ Questa funzionalità si applica a:
 
 Gli scenari APP-WE sono destinati agli utenti finali che richiedono un footprint dei dati aziendali ridotto sui dispositivi e non sono interessati alla registrazione in MDM. L'amministratore deve comunque garantire la protezione dei dati. Questi dispositivi non sono gestiti. Pertanto le attività e le funzionalità MDM comuni, come WiFi, VPN per i dispositivi mobili e gestione dei certificati non appartengono a questo scenario di distribuzione.
 
-#### <a name="android-enterprise-work-profiles"></a>Profili di lavoro Android Enterprise
+### <a name="android-enterprise-work-profiles"></a>Profili di lavoro Android Enterprise
 
 I profili di lavoro sono lo scenario di distribuzione principale di Android Enterprise e l'unico scenario considerato nei casi d'uso BYOD. Il profilo di lavoro è una partizione separata creata a livello del sistema operativo Android, che può essere gestita da Intune.
 
@@ -95,7 +95,7 @@ Le impostazioni dei profili di lavoro e dei criteri APP possono integrarsi tra l
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>Eliminare i criteri APP per i profili di lavoro
 
-In certi casi è necessario supportare singoli utenti che hanno più dispositivi: dispositivi non gestiti in uno scenario APP-WE e dispositivi gestiti con i profili di lavoro. 
+In certi casi è necessario supportare singoli utenti che hanno più dispositivi: dispositivi non gestiti in uno scenario APP-WE e dispositivi gestiti con i profili di lavoro.
 
 Ad esempio, si richiede agli utenti finali di immettere un PIN quando aprono un'app di lavoro. A seconda del dispositivo, le funzionalità PIN vengono gestite dai criteri APP o dal profilo di lavoro. Per i dispositivi APP-WE, la funzionalità PIN per l'avvio è implementata dai criteri APP. Per i dispositivi con il profilo di lavoro, è possibile usare il PIN del dispositivo o quello del profilo di lavoro implementato dal sistema operativo. Per implementare questo scenario, configurare le impostazioni dei criteri APP in modo che non vengano applicate *quando* un'app viene distribuita in un profilo di lavoro. Se non si esegue questa configurazione l'utente finale deve immettere un PIN per il dispositivo e immettere di nuovo un PIN al livello dei criteri APP.
 
@@ -111,13 +111,13 @@ Per altre informazioni, vedere [Deploying Outlook for iOS and Android app config
 
 L'uso dei criteri APP di Intune è consigliato in diversi scenari di gestione di dispositivi mobili aziendali.
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Uso di dispositivi meno recenti che eseguono Android 4.4-5.1
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Uso di dispositivi meno recenti che eseguono Android 4.4-5.1
 
 Ufficialmente qualsiasi dispositivo Android 5.0 o versioni successive con Google Mobile Services supporta i profili di lavoro e può essere gestito con questa soluzione. Tuttavia alcuni dispositivi Android 5.0 e 5.1 di OEM specifici non supportano i profili di lavoro.
 
 Se si usano versioni che non supportano i profili di lavoro (e per garantire la prevenzione della perdita dei dati dell'organizzazione nei dispositivi) è necessario usare le funzionalità dei criteri APP di Intune.
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM non implementata, nessuna registrazione, servizi Google non disponibili
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM non implementata, nessuna registrazione, servizi Google non disponibili
 
 Alcuni clienti non implementano nessuna modalità di gestione dei dispositivi, inclusa la gestione dei profili di lavoro, per diversi motivi:
 

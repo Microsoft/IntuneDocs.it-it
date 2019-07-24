@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548763"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427108"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gestire le versioni del sistema operativo con Intune
 Sulle piattaforme moderne di dispositivi mobili e desktop, i principali aggiornamenti, le patch e le nuove versioni vengono rilasciati con una certa rapidità. In Windows è possibile controllare la gestione completa degli aggiornamenti e delle patch, mentre altre piattaforme quali iOS e Android richiedono la partecipazione degli utenti finali al processo.  Le funzionalità di Microsoft Intune consentono di strutturare la gestione delle versioni del sistema operativo in piattaforme diverse.
@@ -40,7 +40,7 @@ Le organizzazioni usano le restrizioni sul tipo di dispositivo per controllare l
 1. Usare la versione minima del sistema operativo per mantenere gli utenti finali nelle piattaforme correnti e supportate dall'organizzazione. 
 2. Lasciare la versione massima del sistema operativo non specificata (nessun limite) oppure impostare l'ultima versione convalidata dall'organizzazione per lasciare un determinato periodo di tempo per effettuare test interni relativi alle nuove versioni del sistema operativo.
 
-Per informazioni dettagliate, vedere [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions).
+Per informazioni dettagliate, vedere [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction).
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Report della versione del sistema operativo e conformità ai criteri di conformità del dispositivo MDM di Intune
 I criteri di conformità MDM di Intune offrono gli strumenti seguenti: 
@@ -86,6 +86,6 @@ Per informazioni dettagliate, vedere [Come creare e assegnare criteri di protezi
 ## <a name="next-steps"></a>Passaggi successivi
 Usare le risorse seguenti per gestire le versioni del sistema operativo all'interno dell'organizzazione: 
 
-- [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
 - [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started) (Introduzione alla conformità dei dispositivi)
 - [Come creare e assegnare criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) (How to create and assign app protection policies)
