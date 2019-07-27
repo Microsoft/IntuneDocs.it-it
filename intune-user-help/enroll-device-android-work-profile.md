@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329465"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467307"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrare un dispositivo con profilo di lavoro Android
 
-Registrare il dispositivo Android personale per accedere a posta elettronica, app e altri dati aziendali. Durante la registrazione verrà configurato un profilo di lavoro Android. Questo profilo separa i dati personali nel dispositivo dai dati aziendali. Il supporto tecnico dell'azienda gestisce solo il profilo di lavoro, che è costituito da file e dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali nel dispositivo dell'utente. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).  
+Registrare il dispositivo Android personale per accedere a posta elettronica, app e altri dati aziendali. Durante la registrazione verrà configurato un profilo di lavoro Android. Questo profilo separa i dati personali nel dispositivo dai dati aziendali. Il supporto tecnico dell'azienda gestisce solo il profilo di lavoro, che è costituito da file e dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali nel dispositivo dell'utente.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
 
 ## <a name="create-work-profile-and-enroll-device"></a>Creare il profilo di lavoro e registrare il dispositivo
 

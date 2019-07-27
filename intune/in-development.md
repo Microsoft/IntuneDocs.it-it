@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: f9b02deb529bd6a9bca882fecb3d55d9db513191
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341354"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427179"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>In fase di sviluppo per Microsoft Intune - Luglio 2019
 
@@ -58,10 +58,6 @@ Per supportare gli utenti nella preparazione e pianificazione, questa pagina ill
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Gestione delle app
 
-
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Notifiche personalizzate per utenti e gruppi    <!-- 16766574   -->
-Sarà presto possibile inviare notifiche push ad hoc personalizzate dall'applicazione Portale aziendale agli utenti di dispositivi iOS e Android gestiti con Intune. Queste notifiche personalizzate non sono associate a specifiche funzionalità di Intune e possono essere usate per qualsiasi scopo, incluse le notifiche generali da inviare ad alcuni o a tutti i dipendenti.  
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Configurare il contenuto della notifica dell'app per gli account dell'organizzazione <!-- 2576686 -->
 I criteri di protezione delle app di Intune (APP) nei dispositivi Android e iOS consentiranno di controllare il contenuto delle notifiche dell'app per gli account dell'organizzazione. Questa funzionalità richiede il supporto delle applicazioni e potrebbe non essere disponibile per tutte le applicazioni abilitate per l'APP. Per altre informazioni, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md).
 
@@ -70,7 +66,6 @@ Per le installazioni di app disponibili nei dispositivi con profilo di lavoro An
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configurazione del dispositivo
-
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>Supporto per i profili VPN IKEv2 per iOS <!-- 1943438 -->
 È possibile creare profili VPN per il client VPN nativo di iOS tramite il protocollo IKEv2. IKEv2 è un nuovo tipo di connessione in **Configurazione dispositivo** > **Profili** > **Crea profilo** > **iOS**  per la piattaforma > **VPN** per il tipo di profilo > **Impostazioni**.
@@ -81,39 +76,18 @@ Per visualizzare le impostazioni VPN correnti che è possibile configurare, vede
 
 Si applica a: iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Usare le "regole di applicabilità" durante la creazione dei profili di configurazione dispositivo Windows 10 <!-- 2549910 -->
-Creare profili di configurazione dispositivo Windows 10 (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > **Windows 10** per la piattaforma). Sarà possibile creare una **regola di applicabilità** in modo che il profilo si applichi solo a un'edizione o versione specifica. Creare ad esempio un profilo che consente alcune impostazioni di BitLocker. Dopo aver aggiunto il profilo, usare una regola di applicabilità in modo che il profilo si applichi solo ai dispositivi che eseguono Windows 10 Enterprise.
-
-Si applica a: 
-- Windows 10 e versioni successive
-
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Impostazioni avanzate per Windows Defender Firewall   <!--  1311949     -->
-Trattandosi di un'anteprima pubblica, a breve sarà possibile usare Intune per gestire le regole firewall personalizzate nei client per Windows Defender.  
-
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Nuova finestra di progettazione della configurazione quando si crea un profilo OEMConfig per Android Enterprise <!-- 3712769  -->
-In Intune è possibile creare un profilo di configurazione del dispositivo che usa un'app OEMConfig (configurazione del dispositivo > profili > creare un profilo > Android Enterprise per la piattaforma > OEMConfig per il tipo di profilo). Quando si esegue questa operazione, viene aperto un editor JSON con un modello e i valori che è possibile modificare. Questo aggiornamento include una finestra di progettazione di configurazione con un'esperienza utente migliorata che mostra i dettagli incorporati nell'app, inclusi i titoli, le descrizioni e altro ancora. L'editor JSON è ancora disponibile e Mostra tutte le modifiche apportate nella finestra di progettazione di configurazione.
-
-Per visualizzare le impostazioni correnti, passare a [usare e gestire i dispositivi Android Enterprise con OEMConfig](android-oem-configuration-overview.md).
-
-Si applica a: Android Enterprise
-
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Gestione dei dispositivi
 
-### <a name="improve-device-location---3855417---"></a>Migliorare il percorso del dispositivo<!-- 3855417 -->
-Sarà possibile ingrandire le coordinate esatte di un dispositivo usando l'azione **individua dispositivo** . Per ulteriori informazioni sull'individuazione dei dispositivi iOS persi, vedere la pagina relativa alla [ricerca di dispositivi iOS persi](device-locate.md).
-
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Configurare il limite di tempo di pulizia automatico del dispositivo fino a 30 giorni <!--4231059  -->
 È possibile impostare il limite di tempo di pulizia automatico del dispositivo fino a 30 giorni (anziché il limite corrente di 90 giorni) dopo l'ultimo accesso. A tale scopo, passare a**dispositivi** >  **Intune** > **installazione** > **regole di pulizia del dispositivo**.
-
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Sicurezza
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>Importare ed esportare le linee di base di sicurezza    <!--3408610          -->  
 È stata aggiunta la funzionalità per esportare e importare le linee di base di sicurezza, in modo da poter eseguire le personalizzazioni e condividerle tra gli ambienti Intune.
-
 
 
 <!-- ***********************************************-->

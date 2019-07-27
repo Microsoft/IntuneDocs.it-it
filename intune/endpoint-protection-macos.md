@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
-ms.translationtype: HT
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341307"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467407"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Impostazioni di Endpoint Protection per macOS in Intune  
 
@@ -92,36 +92,24 @@ Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFil
   - **Tipo di chiave di ripristino**  
     Per i dispositivi vengono create chiavi di ripristino della *chiave personale* . Configurare le impostazioni seguenti per la chiave personale.  
 
-     - **Percorso della chiave di ripristino personale** : specificare un messaggio breve per l'utente che spiega come è possibile recuperare la chiave di ripristino personale. Questo testo viene inserito nel messaggio visualizzato dall'utente quando si Abilita FileVault.  
+    - **Percorso della chiave di ripristino personale** : specificare un messaggio breve per l'utente che spiega come e dove è possibile recuperare la chiave di ripristino personale. Questo testo viene inserito nel messaggio visualizzato dall'utente nella schermata di accesso quando viene richiesto di immettere la chiave di ripristino personale se una password viene dimenticata.  
       
-     - **Rotazione della chiave di ripristino personale** : specificare la frequenza con cui viene ruotata la chiave di ripristino personale per un dispositivo. È possibile selezionare il valore predefinito di **non configurato**o un valore da **1** a **12** mesi.  
+    - **Rotazione della chiave di ripristino personale** : specificare la frequenza con cui viene ruotata la chiave di ripristino personale per un dispositivo. È possibile selezionare il valore predefinito di **non configurato**o un valore da **1** a **12** mesi.  
 
-  - **Rinvia FileVault fino alla disconnessione** 
-    > [!NOTE]
-    > Il supporto per FileVault è limitato fino al completamento della versione di luglio in pochi giorni. Fino al completamento della distribuzione, se si configura FileVault, è necessario impostare *rinvia FileVault fino a quando* non si esegue la disconnessione per **abilitare**.   
-
-    FileVault non verrà abilitato fino a quando l'utente non si disconnette. A un utente locale o a un account per dispositivi mobili verrà richiesto di abilitare FileVault durante la disconnessione o il successivo accesso.  
+  - **Disattiva richiesta alla disconnessione**  
+    Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  Se impostato su disabilitato, la richiesta di disconnessione viene disabilitata e all'utente viene richiesto di eseguire l'accesso.  
     - **Non configurato**  
-    - **Attiva**  
-    
+    - **Disabilitato**  
+
     **Impostazione predefinita**: Non configurato  
 
+  - **Numero di volte in cui è consentito eseguire il bypass**  
+  Impostare il numero di volte in cui un utente può ignorare le richieste di abilitazione di FileVault prima che FileVault sia necessario per l'accesso dell'utente.  
 
-
-    - **Disattiva richiesta alla disconnessione**  
-      Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  
-      - **Non configurato**  
-      - **Attiva**  
-
-      **Impostazione predefinita**: Non configurato  
-
-    - **Numero di volte in cui è consentito eseguire il bypass**  
-      Impostare il numero di volte in cui un utente può ignorare le richieste di abilitazione di FileVault prima che FileVault sia necessario per l'accesso dell'utente.  
-
-      - **Non configurato** : la crittografia del dispositivo è obbligatoria prima che il successivo accesso sia consentito.  
-      -  da **1** a **10** : consente a un utente di ignorare la richiesta da 1 a 10 volte prima di richiedere la crittografia nel dispositivo.  
-      - **Nessun limite, sempre richiesta** . all'utente viene richiesto di abilitare FileVault, ma la crittografia non è mai necessaria.  
+    - **Non configurato** : la crittografia del dispositivo è obbligatoria prima che il successivo accesso sia consentito.  
+    - da **1** a **10** : consente a un utente di ignorare la richiesta da 1 a 10 volte prima di richiedere la crittografia nel dispositivo.  
+    - **Nessun limite, sempre richiesta** . all'utente viene richiesto di abilitare FileVault, ma la crittografia non è mai necessaria.  
  
-      **Impostazione predefinita**: Non configurato  
+    **Impostazione predefinita**: Non configurato  
 
 

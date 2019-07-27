@@ -5,7 +5,7 @@ description: Impostazioni delle baseline di sicurezza di Intune per la gestione 
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882287"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491902"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
@@ -1774,7 +1774,12 @@ Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPOE]( https://docs.micros
   **Impostazione predefinita**: Sì
 
 - **Configurare Windows Hello for Business**   
-  Windows Hello for Business è un metodo alternativo per l'accesso a Windows che prevede la sostituzione di password, smart card e smart card virtuali. Se si abilita o non si configura questo criterio, il dispositivo esegue il provisioning di Windows Hello for Business. Se si disabilita questo criterio, il dispositivo non effettua il provisioning di Windows Hello for Business per alcun utente.
+    Windows Hello for Business è un metodo alternativo per l'accesso a Windows che prevede la sostituzione di password, smart card e smart card virtuali.  
+
+  - Se è impostato su *Sì*, si Abilita questo criterio e il dispositivo esegue il provisioning di Windows Hello for business.  
+  - Se impostata su *non configurato*, la linea di base non influisce sull'impostazione dei criteri del dispositivo. Ciò significa che se Windows Hello for business è disabilitato in un dispositivo, rimane disabilitato. Se abilitata, rimane abilitata. 
+
+  Non è possibile disabilitare Windows Hello for business tramite questa linea di base. È possibile disabilitare Windows Hello for business quando si configura la [registrazione di Windows](windows-hello.md)o come parte di un profilo di configurazione del dispositivo per [Identity Protection](identity-protection-configure.md).  
 
   **Impostazione predefinita**: Sì
 
