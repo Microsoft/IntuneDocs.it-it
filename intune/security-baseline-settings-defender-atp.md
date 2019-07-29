@@ -5,7 +5,7 @@ description: Impostazioni della baseline di sicurezza supportate da Intune per l
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354441"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491926"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Impostazioni della baseline di Microsoft Defender Advanced Threat Protection per Intune
 
@@ -29,7 +29,7 @@ Vedere le impostazioni della baseline di Microsoft Defender Advanced Threat Prot
 
 La baseline di Microsoft Defender Advanced Threat Protection è disponibile quando l'ambiente soddisfa i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites). 
 
-Questa baseline è ottimizzata per i dispositivi fisici e attualmente non è consigliata per l'uso in macchine virtuali (VM) o endpoint VDI. Alcune impostazioni di base possono influito sulle sessioni interattive Remote negli ambienti virtualizzati. Per ulteriori informazioni, vedere la pagina relativa all' [aumento della conformità alla baseline della sicurezza di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) nella documentazione di Windows.
+Questa baseline è ottimizzata per i dispositivi fisici e attualmente non è consigliata per l'uso in macchine virtuali (VM) o endpoint VDI. Alcune impostazioni di base possono influire sulle sessioni interattive remote negli ambienti virtualizzati. Per altre informazioni, vedere [Incremento della conformità alla baseline di sicurezza di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) nella documentazione di Windows.
 
 
 > [!NOTE]  
@@ -292,7 +292,7 @@ Per altre informazioni, vedere [WindowsAdvancedThreatProtection CSP](https://doc
 
   **Impostazione predefinita**: Modalità di controllo
 
-## <a name="web-network-protection"></a>Protezione del Web e della rete  
+## <a name="web--network-protection"></a>Protezione del Web e della rete  
 
 - **Tipo di protezione di rete**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - Questo criterio consente di attivare/disattivare la protezione della rete in Windows Defender Exploit Guard. La protezione di rete è una funzionalità di Windows Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi.  
@@ -600,6 +600,13 @@ Per altre informazioni, vedere [PassportForWork CSP](https://docs.microsoft.com/
 
 - **Configura Windows Hello for Business** - *IDTenant/Criteri/UsePassportForWork*    
   Windows Hello for Business è un metodo alternativo per l'accesso a Windows che prevede la sostituzione di password, smart card e smart card virtuali.  
+
+  - Se è impostato su *Sì*, si Abilita questo criterio e il dispositivo esegue il provisioning di Windows Hello for business.  
+  - Se impostata su *non configurato*, la linea di base non influisce sull'impostazione dei criteri del dispositivo. Ciò significa che se Windows Hello for business è disabilitato in un dispositivo, rimane disabilitato. Se abilitata, rimane abilitata. 
+
+  Non è possibile disabilitare Windows Hello for business tramite questa linea di base. È possibile disabilitare Windows Hello for business quando si configura la [registrazione di Windows](windows-hello.md)o come parte di un profilo di configurazione del dispositivo per [Identity Protection](identity-protection-configure.md).  
+
+Windows Hello for Business è un metodo alternativo per l'accesso a Windows che prevede la sostituzione di password, smart card e smart card virtuali.  
 
   Se si abilita o non si configura questo criterio, il dispositivo esegue il provisioning di Windows Hello for Business. Se si disabilita questo criterio, il dispositivo non effettua il provisioning di Windows Hello for Business per alcun utente.
 
