@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649108"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387323"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+
+Esistono quattro tipi di distribuzione Autopilot: [Modalità di distribuzione automatica](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) per chioschi multimediali, segnaletica digitale o un dispositivo condiviso, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) che consente ai partner o al personale IT di eseguire il pre-provisioning di un PC Windows 10 in modo che sia completamente configurato e pronto per le attività aziendali, [Autopilot per i dispositivi esistenti](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) che consente di distribuire facilmente la versione più recente di Windows 10 nei dispositivi esistenti e [modalità definita dall'utente](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) per gli utenti tradizionali. 
 
 
 ## <a name="prerequisites"></a>Prerequisiti

@@ -15,24 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1c5463406d74b9fcb96d4236d656ad33509a56
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f9819adf100cbe56147f22629e1311e7e3b376e9
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049718"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374901"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Impostazioni di configurazione di Microsoft Outlook 
 
 Usare un criterio di configurazione per le impostazioni di Microsoft Outlook in esecuzione in dispositivi iOS e Android. 
 
-Per creare un criterio di configurazione dell'app per i dispositivi iOS gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md). Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md). 
+Per i dispositivi registrati:
+- Per creare un criterio di configurazione dell'app per i dispositivi iOS gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md). 
+- Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md). 
+
+Per i dispositivi non registrati, vedere [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) per creare criteri di configurazione delle app per Outlook per iOS e Android.
 
 ## <a name="configuration-settings"></a>Impostazioni di configurazione
 
-Quando si aggiunge un criterio di configurazione in Intune, è possibile impostare impostazioni specifiche per configurare Microsoft Outlook in iOS e Android. Nel riquadro Impostazioni di configurazione è possibile specificare la configurazione dell'account di posta elettronica e configurare le impostazioni specifiche dell'app. Inoltre è possibile configurare queste impostazioni e/o usare coppie nome-valore.
+Quando si aggiunge un criterio di configurazione in Intune è possibile definire impostazioni specifiche per configurare Microsoft Outlook per iOS e Android. Nel riquadro Impostazioni di configurazione è possibile specificare la configurazione dell'account di posta elettronica e configurare le impostazioni specifiche dell'app.
 
-Per le informazioni sulla configurazione dell'account di Outlook e per le procedure per i dispositivi iOS e Android in Microsoft Intune, vedere [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Distribuzione di Outlook per le impostazioni di configurazione delle app iOS e Android).
+Per procedure specifiche e documentazione dettagliata sulle impostazioni di configurazione delle app supportate da Outlook per iOS e Android, vedere [Distribuzione di impostazioni di configurazione delle app Outlook per iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

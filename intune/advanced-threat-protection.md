@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885155"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427080"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Applicare la conformità per Microsoft Defender ATP con l'accesso condizionale in Intune  
 
@@ -52,6 +52,17 @@ Per usare Microsoft Defender ATP con Intune, verificare che gli elementi seguent
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Abilitare Microsoft Defender ATP in Intune
 
+Quando si integra una nuova applicazione in Intune Mobile Threat Defense e si abilita la connessione, Intune crea un criterio di accesso condizionale classico in Azure Active Directory. Ogni app MTD integrata, ad esempio [Defender ATP](advanced-threat-protection.md) o uno qualsiasi dei [partner MTD](mobile-threat-defense.md#mobile-threat-defense-partners) aggiuntivi crea nuovi criteri di accesso condizionale classici.  Questi criteri possono essere ignorati, ma non devono essere modificati, eliminati o disabilitati.
+
+I criteri di accesso condizionale classici per le app gestite: 
+
+- Vengono usati da Intune MTD per richiedere che i dispositivi vengano registrati in Azure AD in modo da avere un ID dispositivo. L'ID è necessario per consentire ai dispositivi di segnalare correttamente lo stato a Intune.  
+- Sono diversi dai criteri di accesso condizionale che è possibile creare per facilitare la gestione di MTD.
+- Per impostazione predefinita non interagiscono con altri criteri di accesso condizionale usati per la valutazione.  
+
+Per visualizzare i criteri di accesso condizionale classici, in [Azure](https://portal.azure.com/#home) passare a **Azure Active Directory** > **Accesso condizionale** > **Criteri classici**.
+
+### <a name="to-enable-defender-atp"></a>Per abilitare Defender ATP
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Conformità del dispositivo** > **Microsoft Defender ATP** e quindi, sotto a *Impostazioni del connettore*, selezionare **Aprire Microsoft Defender Security Center**.
 

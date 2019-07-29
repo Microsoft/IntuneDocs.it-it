@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735707"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374837"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -89,7 +89,7 @@ La tabella seguente contiene un elenco delle chiavi di configurazione di Managed
 | Exit lock task mode password (Password di uscita dalla modalità blocco attività) | string |   | Immettere un codice di 4-6 cifre da usare per uscire temporaneamente dalla modalità blocco attività per la risoluzione dei problemi. |
 | Show Wi-Fi setting (Mostra impostazioni Wi-Fi) | bool | FALSE | Se impostata su `True`, l'utente finale può attivare o disattivare il Wi-Fi oppure connettersi a reti Wi-Fi diverse.  |
 | Show Bluetooth setting (Mostra impostazione Bluetooth) | bool | FALSE | Se impostata su `True`, l'utente finale può attivare o disattivare il Bluetooth oppure connettersi ad altri dispositivi abilitati per Bluetooth.   |
-| Applications in folder are ordered by name (Le applicazioni nella cartella sono ordinate per nome) | bool | TRUE | Se impostata su `False`, gli elementi in una cartella vengono visualizzati nell'ordine in cui sono specificati. In caso contrario, verranno visualizzati in ordine alfabetico nella cartella.   |
+| Applications in folder are ordered by name (Le applicazioni nella cartella sono ordinate per nome) | bool | TRUE | Se impostata su `False`, gli elementi in una cartella vengono visualizzati nell'ordine in cui sono specificati. In caso contrario vengono visualizzati in ordine alfabetico nella cartella.   |
 | Application order enabled (Ordine delle applicazioni abilitato) | bool | FALSE | Se impostata su `True` è possibile impostare l'ordine di applicazioni, collegamenti Web e cartelle in Managed Home Screen. Dopo l'abilitazione, impostare l'ordinamento con **app_order**. L'utente finale può attivare o disattivare il Bluetooth e connettersi ad altri dispositivi abilitati per Bluetooth.   |
 | Application order (Ordine delle applicazioni) | bundleArray | FALSE | Consente di specificare l'ordine di applicazioni, collegamenti Web e cartelle in Managed Home Screen. Per usare questa impostazione, l'impostazione **Lock Home Screen** (Blocca schermata iniziale) deve essere abilitata, l'opzione **Set Grid Size** (Imposta dimensioni griglia) deve essere definita e l'opzione **Application order enabled** (Ordine delle applicazioni abilitato) deve essere impostata su `True`.   |
 
@@ -383,6 +383,9 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
     ]
 }
 ```
+
+## <a name="googles-android-device-policy-app"></a>App Google Apps Device Policy per Android
+L'app di schermata iniziale gestita ora consente l'accesso a Google Apps Device Policy per Android. L'app di schermata iniziale gestita è un'utilità di avvio personalizzata usata per i dispositivi registrati in Intune come dispositivi dedicati Android Enterprise (AE) che usano la modalità tutto schermo per più app. È possibile accedere all'app Android Device Policy o guidare gli utenti all'app Android Device Policy per fini di supporto e debug. Questa funzionalità di avvio è disponibile nel momento in cui il dispositivo viene registrato e bloccato nella schermata iniziale gestita. Per usare questa funzionalità non è necessaria alcuna installazione aggiuntiva.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

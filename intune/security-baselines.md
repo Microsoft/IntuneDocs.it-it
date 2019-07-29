@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851475"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353585"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -73,6 +73,9 @@ Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intu
 - **Baseline di Microsoft Defender ATP**  
   *(Per usare questa baseline, l'ambiente deve soddisfare i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
   - [Anteprima: Baseline di Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > La baseline di sicurezza di Microsoft Defender ATP è stata ottimizzata per i dispositivi fisici e attualmente se ne sconsiglia l'uso in macchine virtuali (VM) o endpoint VDI. Alcune impostazioni di base possono influire sulle sessioni interattive remote negli ambienti virtualizzati.  Per altre informazioni, vedere [Incremento della conformità alla baseline di sicurezza di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) nella documentazione di Windows.
 
 È possibile continuare a usare e modificare i profili creati in precedenza basati su un modello di anteprima, anche quando tale modello di anteprima non è più disponibile per la creazione di nuovi profili. 
 
@@ -177,19 +180,19 @@ Altri processi che potrebbero modificare le impostazioni nel dispositivo in un s
 
 ## <a name="q--a"></a>Domande e risposte
 
-#### <a name="why-these-settings"></a>Perché queste impostazioni?
+### <a name="why-these-settings"></a>Perché queste impostazioni?
 
 Per la creazione di queste raccomandazioni, il team di sicurezza di Microsoft può contare su anni di esperienza di collaborazione diretta con gli sviluppatori di Windows e la community sulla sicurezza. Le impostazioni in questa baseline sono considerate le opzioni di configurazione correlate alla sicurezza più rilevanti. In ogni nuova build di Windows, il team adatta le raccomandazioni alle nuove funzionalità rilasciate.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Esiste una differenza nelle raccomandazioni per le baseline di sicurezza di Windows per Criteri di gruppo rispetto a quelle per Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Esiste una differenza nelle raccomandazioni per le baseline di sicurezza di Windows per Criteri di gruppo rispetto a quelle per Intune?
 
 La scelta e l'organizzazione delle impostazioni per ogni baseline sono state decise dal team di sicurezza Microsoft. Intune include tutte le impostazioni pertinenti nella baseline di sicurezza di Intune. Esistono alcune impostazioni nella baseline per Criteri di gruppo specifiche di un controller di dominio locale. Queste impostazioni vengono escluse dalle raccomandazioni di Intune. Tutte le altre impostazioni sono uguali.
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Le baseline di sicurezza di Intune sono conformi a CIS o NSIT?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Le baseline di sicurezza di Intune sono conformi a CIS o NSIT?
 
 In senso stretto, no. Il team di sicurezza di Microsoft si consulta con varie organizzazioni, come CIS, per definire le raccomandazioni. Tuttavia, la definizione "conforme a CIS" non è ufficialmente applicabile alle baseline Microsoft.
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Di quali certificazioni dispongono le baseline di sicurezza Microsoft? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Di quali certificazioni dispongono le baseline di sicurezza Microsoft? 
 
 - Microsoft continua a pubblicare baseline di sicurezza per Criteri di gruppo (GPO) e [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), come ha fatto per molti anni. Queste baseline sono usate da molte organizzazioni. Le raccomandazioni incluse nelle baseline derivano dalla collaborazione del team di sicurezza Microsoft con clienti aziendali e agenzie esterne, tra le quali il Dipartimento della difesa (DoD, Department of Defense), NIST (National Institute of Standards e Technology) e altri. Microsoft condivide sia le raccomandazioni che le baseline con queste organizzazioni. Anche queste organizzazioni pubblicano raccomandazioni proprie, molto vicine a quelle di Microsoft. In concomitanza con la continua crescita delle soluzioni di gestione dei dispositivi mobili (MDM) nel cloud, Microsoft ha creato raccomandazioni MDM equivalenti per queste baseline di Criteri di gruppo. Queste baseline aggiuntive sono integrate in Microsoft Intune e includono report di conformità per utenti, gruppi e dispositivi che seguono (o non seguono) la baseline.
 
@@ -202,4 +205,5 @@ In senso stretto, no. Il team di sicurezza di Microsoft si consulta con varie or
   - [Baseline di sicurezza MDM](security-baseline-settings-mdm.md)  
   - [Baseline di Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
 
-- Controllare lo stato e monitorare la [baseline e il profilo](security-baselines-monitor.md).
+- Controllare lo stato e monitorare la [baseline e il profilo](security-baselines-monitor.md)
+

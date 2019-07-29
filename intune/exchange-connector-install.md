@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883276"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427325"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurare Intune Exchange Connector locale in Microsoft Intune
 Le informazioni di questo articolo consentono di installare e quindi monitorare il connettore locale di Exchange Active Sync per Intune.  È possibile usare Intune Exchange Connector locale con i [criteri di accesso condizionale per consentire o bloccare l'accesso alle cassette postali locali di Exchange](conditional-access-exchange-create.md). 
@@ -152,8 +152,22 @@ Disponibilità elevata per Exchange Connector locale significa che se il server 
 Per ottenere funzionalità di failover, dopo che il connettore stabilisce una connessione a Exchange usando il server Accesso client specificato, il connettore individua altri server Accesso client per tale organizzazione di Exchange. La conoscenza dei server Accesso client aggiuntivi consente al connettore di eseguire il failover a un altro server Accesso client, fino a quando il server primario non diventa disponibile. Per impostazione predefinita, l'individuazione di server Accesso client aggiuntivi è abilitata. È possibile disattivare il failover seguendo questa procedura:  
 1. Nel server in cui è installato Exchange Connector, passare a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Aprire **OnPremisesExchangeConnectorServiceConfiguration.xml** in un editor di testo.
-3. Modificare &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; per disabilitare la funzionalità.    
+3. Modificare &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; per disabilitare la funzionalità.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Ottimizzazione delle prestazioni facoltativa per Exchange Connector  
+
+Quando si supportano 5000 o più dispositivi con Exchange ActiveSync, è possibile configurare un'impostazione facoltativa per migliorare le prestazioni del connettore. Il miglioramento delle prestazioni si ottiene consentendo a Exchange di usare più istanze di uno spazio di esecuzione dei comandi di PowerShell. 
+
+Prima di apportare questa modifica, verificare che l'account usato per eseguire Exchange Connector non venga usato per altre operazioni di gestione di Exchange. Il motivo è che Exchange prevede un limite di 18 spazi di esecuzione per ogni account, la maggior parte dei quali verrà usata dal connettore. 
+
+Questa modifica delle prestazioni non è adatta per i connettori eseguiti su hardware meno recenti o più lenti.  
+
+1. Nel server in cui è installato il connettore aprire la directory di installazione dei connettori.  Il percorso predefinito è *C:\Programmi\Microsoft\Windows Intune Exchange Connector*. 
+2. Modificare il file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Trovare **EnableParallelCommandSupport** e impostare il valore su **true**:  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. Salvare il file, quindi riavviare il servizio Microsoft Intune Exchange Connector.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>Reinstallare Exchange Connector locale
 Potrebbe essere necessario reinstallare Exchange Connector. Poiché è supportato un solo connettore per la connessione a ogni organizzazione di Exchange, se si installa un secondo connettore per un'organizzazione, il nuovo connettore installato sostituisce il connettore originale.
