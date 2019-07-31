@@ -233,6 +233,8 @@
               displayName: gms
             - name: Registrare dispositivi dedicati o completamente gestiti Android Enterprise
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Registrazione dell'amministratore di un dispositivo Android
+              href: android-enroll-device-administrator.md
             - name: Gestire dispositivi con profilo di lavoro Android Enterprise
               href: android-enterprise-overview.md
             - name: Registrazione per dispositivi mobili Samsung KNOX
@@ -705,6 +707,8 @@
               items:
                 - name: Risolvere i problemi di registrazione dei dispositivi iOS
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Risolvere i problemi di registrazione dei dispositivi Windows
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: Aiutare gli utenti nella risoluzione dei problemi
               href: help-desk-operators.md
             - name: Risorse per risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune
