@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528303"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482804"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guida introduttiva: Aggiungere e assegnare un'app client
 
@@ -43,7 +43,6 @@ Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o 
 È possibile inserire un'app per poter gestire aspetti dell'app tramite Intune. 
 
 Usare la procedura seguente per aggiungere un'app in Intune:
-
 1. In [Intune](https://aka.ms/intuneportal) selezionare **App client** > **App** > **Aggiungi**. 
 2. Selezionare **Windows 10** nella sezione **Famiglia di prodotti Office 365** della casella a discesa **Tipo di app**.
 3. Selezionare **Configura la suite di app** per selezionare le app di Office da assegnare all'utente di Intune.
@@ -56,9 +55,9 @@ Usare la procedura seguente per aggiungere un'app in Intune:
 
     ![Screenshot dell'aggiunta di informazioni sull'app](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Selezionare **Impostazioni della suite di app**.
-9. Nella casella a discesa **Canale di aggiornamento** selezionare **Mensile**.
-10. Fare clic su **OK** > **Aggiungi**.
+10. Selezionare **Impostazioni della suite di app**.
+11. Nella casella a discesa **Canale di aggiornamento** selezionare **Mensile**.
+12. Fare clic su **OK** > **Aggiungi**.
 
 ## <a name="assign-the-app-to-a-group"></a>Assegnare l'app a un gruppo
 
