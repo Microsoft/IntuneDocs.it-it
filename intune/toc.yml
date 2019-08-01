@@ -233,7 +233,7 @@
               displayName: gms
             - name: Registrare dispositivi dedicati o completamente gestiti Android Enterprise
               href: android-dedicated-devices-fully-managed-enroll.md
-            - name: Registrazione dell'amministratore di un dispositivo Android
+            - name: Registrazione di tipo amministratore di dispositivi Android
               href: android-enroll-device-administrator.md
             - name: Gestire dispositivi con profilo di lavoro Android Enterprise
               href: android-enterprise-overview.md
