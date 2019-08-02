@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375168"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467449"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune  
 
@@ -66,10 +66,7 @@ Per informazioni dettagliate sulle impostazioni di FileVault che è possibile ge
 
    Ad esempio: per recuperare una chiave di ripristino smarrita o ruotata di recente, accedere al sito Web Portale aziendale di Intune da qualsiasi dispositivo. Nel portale passare a *Dispositivi*, selezionare il dispositivo con FileVault abilitato e quindi selezionare *Ottieni la chiave di ripristino*. Verrà visualizzata la chiave di ripristino corrente.  
 
-6. Configurare le impostazioni rimanenti in base alle esigenze aziendali e quindi selezionare **OK**.  
-
-   > [!NOTE]
-   > Il supporto per FileVault sarà disponibile solo fino al completamento dell'implementazione della versione di luglio, tra pochi giorni. Finché l'implementazione non sarà completata, se si configura FileVault è necessario impostare *Posticipa FileVault fino alla disconnessione* su **Abilita**.  
+6. Configurare le [impostazioni di FileVault](endpoint-protection-macos.md#filevault) rimanenti in base alle esigenze aziendali e quindi selezionare **OK**.  
 
 7. Completare la configurazione delle impostazioni aggiuntive e quindi salvare il profilo.  
 

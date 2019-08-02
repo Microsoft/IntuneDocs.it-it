@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411593"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482967"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Endpoint di rete per Microsoft Intune  
 
@@ -146,7 +146,7 @@ Per altre informazioni, vedere gli articoli di Apple [Porte TCP e UDP usate dai 
 
 ## <a name="microsoft-intune-certificate-connector"></a>Connettore di certificati di Microsoft Intune  
 
-Il server che ospita il connettore di certificati di Microsoft Intune deve poter accedere tramite la porta **TCP** **443** ai percorsi IP pubblici elencati nella tabella seguente.  
+Il server che ospita il connettore di certificati di Microsoft Intune deve poter accedere tramite la porta **TCP** **443** ai percorsi IP pubblici elencati nella tabella seguente. Per altre informazioni sui certificati, vedere [Configurare e usare i certificati PKCS con Intune](certficates-pfx-configure.md) e [Configurare e usare i certificati SCEP con Intune](certificates-scep-configure.md).
 
 |Domains                             |Indirizzo IP       |
 |---------------|--------------------------------------|

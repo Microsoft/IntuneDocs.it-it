@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374837"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482852"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -386,6 +386,9 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
 
 ## <a name="googles-android-device-policy-app"></a>App Google Apps Device Policy per Android
 L'app di schermata iniziale gestita ora consente l'accesso a Google Apps Device Policy per Android. L'app di schermata iniziale gestita è un'utilità di avvio personalizzata usata per i dispositivi registrati in Intune come dispositivi dedicati Android Enterprise (AE) che usano la modalità tutto schermo per più app. È possibile accedere all'app Android Device Policy o guidare gli utenti all'app Android Device Policy per fini di supporto e debug. Questa funzionalità di avvio è disponibile nel momento in cui il dispositivo viene registrato e bloccato nella schermata iniziale gestita. Per usare questa funzionalità non è necessaria alcuna installazione aggiuntiva.
+
+## <a name="managed-home-screen-debug-screen"></a>Schermata di debug della schermata iniziale gestita
+È possibile accedere alla schermata di debug della schermata iniziale gestita facendo clic sul pulsante **Indietro** fino a quando non viene visualizzata la schermata di debug (fare clic sul pulsante **Indietro** 15 volte o più). Da questa schermata di debug è possibile avviare l'applicazione Android Device Policy, visualizzare e caricare i log o sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per altre informazioni su come sospendere la modalità tutto schermo, vedere l'elemento **Esci dalla modalità tutto schermo** nelle [impostazioni dei dispositivi dedicati](device-restrictions-android-for-work.md#dedicated-device-settings) Android Enterprise.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

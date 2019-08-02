@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671049"
 ---
-# <a name="monitor-device-encryption"></a>Monitorare la crittografia del dispositivo  
+# <a name="monitor-device-encryption-with-intune"></a>Monitorare la crittografia dei dispositivi con Intune   
 
 Il report di crittografia di Microsoft Intune rappresenta una posizione centralizzata per visualizzare i dettagli relativi allo stato della crittografia dei dispositivi gestiti. È possibile visualizzare i dettagli sullo stato della crittografia di un dispositivo e trovare le opzioni per gestire le chiavi di ripristino del dispositivo stesso. Le opzioni relative alle chiavi di ripristino disponibili dipendono dal tipo del dispositivo che si sta visualizzando.  
 
@@ -93,8 +93,6 @@ Quando si seleziona un dispositivo dal report di crittografia, Intune visualizza
 - **Riepilogo dello stato del profilo**: riepilogo dei profili che si applicano al dispositivo. Il riepilogo rappresenta la condizione meno favorevole tra i profili applicabili. Se, ad esempio, solo uno di diversi profili determina un errore, *Riepilogo dello stato del profilo* visualizza *Errore*.  
 
 - **Dettagli stato**: dettagli avanzati sullo stato di crittografia del dispositivo.  
-  > [!NOTE]
-  > Il supporto per FileVault sarà disponibile solo fino al completamento dell'implementazione della versione di luglio, tra pochi giorni. Fino al completamento dell'implementazione, è possibile che i dettagli sullo stato e sulla crittografia dei dispositivi macOS non vengano visualizzati in modo accurato nel report di crittografia.
 
   > [!IMPORTANT]  
   > Per i dispositivi Windows 10, Intune visualizza le informazioni *Dettagli stato* solo per i dispositivi che eseguono l'*aggiornamento di Windows 10 di aprile 2019* o un aggiornamento successivo.  

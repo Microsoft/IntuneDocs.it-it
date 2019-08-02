@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388513"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590912"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -30,13 +30,22 @@ ms.locfileid: "68388513"
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Monitorare le app individuate con Intune
 
-Intune offre un elenco di app rilevate nei dispositivi registrati in Intune nel tenant dell'utente.
+Intune offre un elenco aggregato di app rilevate nei dispositivi registrati in Intune nel tenant dell'utente.
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Nel riquadro **Intune** selezionare **App client** > **App individuate**.
 
 >[!NOTE]
 >È possibile esportare l'elenco delle app individuate in un file con estensione csv selezionando **Esporta** nel pannello **App individuate**.
+>
+>Per le app Win32 individuate, il conteggio aggregato non è attualmente disponibile. Questo tipo di dati può essere visualizzato solo per singolo dispositivo.
+
+Intune offre anche l'elenco delle app individuate per il singolo dispositivo presente nel tenant. 
+
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel riquadro Intune selezionare **Dispositivi** > **Tutti i dispositivi**.
+3. Selezionare un dispositivo.
+4. Per visualizzare le app rilevate per questo dispositivo, selezionare **App individuate** nella sezione **Monitoraggio**. 
 
 ## <a name="details-of-discovered-apps"></a>Dettagli delle app individuate
 
