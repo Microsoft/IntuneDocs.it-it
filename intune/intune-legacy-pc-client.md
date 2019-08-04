@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047281"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756520"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune nella console di Azure e nel client PC Intune legacy
 
@@ -45,7 +45,7 @@ A causa del passaggio ai gruppi di Azure AD, l'applicazione di filtri in base al
 1. Selezionare una visualizzazione.
 2. Nella casella **Filtri** immettere il nome del gruppo in base al quale si vuole filtrare i dispositivi e premere INVIO. La visualizzazione elenco verrà così filtrata per mostrare i dispositivi in quel particolare gruppo.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Filtra input elenco a discesa con nessuno selezionato](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Continuare a gestire i dispositivi Windows 7 con il client PC Intune
@@ -61,7 +61,7 @@ Per un confronto dettagliato tra il client PC e le funzionalità MDM, vedere [Co
 Per passare dalla gestione dei dispositivi Windows 10 con il client PC Intune alla gestione con MDM, seguire questi passaggi:
 
 1. Nella console di Silverlight, eseguire una **Cancellazione selettiva** per annullare la registrazione del dispositivo dal client PC.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![Avviso popup con il pulsante di opzione "cancellazione selettiva del dispositivo" selezionato](media/intune-legacy-pc-client/image02.png)
 2. Registrare nuovamente il dispositivo tramite [MDM (e/o l'aggiunta ad Azure AD)](https://docs.microsoft.com/intune/windows-enroll). 
 
 ## <a name="next-steps"></a>Passaggi successivi

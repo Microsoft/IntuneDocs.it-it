@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,22 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 3c764d0bf5cccecef692b8efe1e45af383584cd2
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546323"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625076"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installare e accedere all'app Portale aziendale
 
 Installare l'app Portale aziendale nel dispositivo iOS per ottenere l'accesso alle app, alla posta elettronica e alla rete aziendali e dell'istituto di istruzione. Usare l'app per registrare il dispositivo in Microsoft Intune e proteggere l'accesso alle risorse aziendali o dell'istituto di istruzione. Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune).
 
-1. Aprire l'**App Store** e cercare **portale aziendale di intune**.
+1. Aprire l'**App Store** e cercare **Portale aziendale di Intune**.
 
 2. Scaricare l'app **Portale aziendale Intune**.
 
-    ![Screenshot di come viene visualizzata l'app Portale aziendale Intune nell'App Store.](./media/CP_iosRedesign_after_1803_04.PNG)
+    ![Screenshot di come viene visualizzata l'app Portale aziendale Intune nell'App Store.](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. Aprire l'app Portale aziendale, immettere l'indirizzo di posta elettronica e la password aziendale o dell'istituto di istruzione e toccare **Accedi**.
 

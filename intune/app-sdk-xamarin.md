@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680056"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -114,6 +114,9 @@ Per escludere una classe da Mam-Unity tramite il file di mapping, è possibile a
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> A questo punto, un problema con il remapper impedisce il debug nelle app Novell. Android. L'integrazione manuale è consigliata per eseguire il debug dell'applicazione fino a quando il problema non viene risolto.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Metodi rinominati](app-sdk-android.md#renamed-methods)
 In molti casi, un metodo disponibile nella classe Android è stato contrassegnato come finale nella classe sostitutiva MAM. In questo caso, la classe sostitutiva MAM fornisce un metodo denominato in modo analogo (con suffisso `MAM`), che deve essere sostituito al suo posto. Ad esempio, quando si deriva da `MAMActivity`, invece di sostituire `OnCreate()` e chiamare `base.OnCreate()`, la classe `Activity` deve sostituire `OnMAMCreate()` e chiamare `base.OnMAMCreate()`.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 Per le applicazioni `Xamarin.Forms` il pacchetto `Microsoft.Intune.MAM.Remapper` esegue automaticamente la sostituzione delle classi MAM inserendo le classi `MAM` nella gerarchia di classi `Xamarin.Forms` usate comunemente. 
 
 > [!NOTE]
-> È necessario completare l'integrazione di Xamarin.Forms oltre all'integrazione di Xamarin.Android descritta in precedenza.
+> È necessario completare l'integrazione di Xamarin.Forms oltre all'integrazione di Xamarin.Android descritta in precedenza. Il comportamento di remapper è diverso per le app Novell. Forms in modo che le sostituzioni MAM manuali debbano essere comunque eseguite.
 
 Dopo aver aggiunto il remapper al progetto, sarà necessario eseguire le sostituzioni MAM equivalenti. Ad esempio, è possibile continuare a usare `FormsAppCompatActivity` e `FormsApplicationActivity` nell'applicazione, purché `OnCreate` e `OnResume` siano sostituite rispettivamente dagli equivalenti MAM `OnMAMCreate` e `OnMAMResume`.
 
@@ -199,6 +202,9 @@ In caso di mancata sostituzione, è possibile che si verifichino gli errori di c
 
 > [!NOTE]
 > Il remapper riscrive una dipendenza usata da Visual Studio per il completamento automatico di IntelliSense. Potrebbe essere poi necessario ricaricare e ricompilare il progetto quando il remapper viene aggiunto per IntelliSense affinché le modifiche siano riconosciute correttamente.
+
+#### <a name="troubleshooting"></a>Risoluzione dei problemi
+* Se viene visualizzata una schermata bianca vuota nell'applicazione all'avvio, potrebbe essere necessario forzare l'esecuzione delle chiamate di navigazione sul thread principale.
 
 ### <a name="company-portal-app"></a>App Portale aziendale
 Le associazioni Novell di Intune SDK si basano sulla presenza dell'app [portale aziendale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android sul dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale. Non è necessario che l'utente sia connesso.

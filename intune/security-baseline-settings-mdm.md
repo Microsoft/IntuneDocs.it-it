@@ -1,7 +1,7 @@
 ---
 title: Impostazioni delle baseline di sicurezza di Intune per Windows 10
 titleSuffix: Microsoft Intune
-description: Impostazioni delle baseline di sicurezza di Intune per la gestione di Windows 10
+description: Verificare i valori predefiniti e le impostazioni disponibili presenti nella baseline di sicurezza di Windows MDM per i dispositivi Windows 10 gestiti con Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491902"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680029"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
 Visualizzare le impostazioni di base della sicurezza MDM supportate da Microsoft Intune per i dispositivi che eseguono Windows 10 o versioni successive. I valori predefiniti per le impostazioni in questa linea di base rappresentano la configurazione consigliata per i dispositivi applicabili e potrebbero non corrispondere alle impostazioni predefinite di base di altre linee di base di sicurezza.  
 
-La versione di base più recente è la baseline della **sicurezza MDM per l'aggiornamento di Spring 2019 (19H1)**  
+La versione di base più recente è la baseline della **sicurezza MDM per il 2019 maggio**  
 
 Per informazioni sulle modifiche apportate nella versione più recente di questa baseline dalla versione precedente, vedere modifiche apportate al [nuovo modello](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Nel giugno del 2019, la baseline della sicurezza MDM di anteprima è stata sostituita dalla versione di *MDM Security Baseline per il modello Spring 2019 Update (19H1)* , che è disponibile a livello generale (non in anteprima). I profili creati prima della disponibilità della baseline di *sicurezza MDM per l'aggiornamento della primavera 2019 (19H1)* non verranno aggiornati in modo da riflettere le impostazioni e i valori presenti nella baseline di sicurezza MDM per la versione Spring 2019 Update (19H1).  Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza che sono basati sul modello di anteprima.   
+> Nel giugno del 2019, la baseline della sicurezza MDM di anteprima è stata sostituita dalla versione del modello di *base di sicurezza MDM per il modello di maggio 2019* , disponibile a livello generale (non in anteprima). I profili creati prima della disponibilità della *linea di base di sicurezza MDM per* la baseline di maggio 2019 non verranno aggiornati in modo da riflettere le impostazioni e i valori presenti nella baseline della sicurezza MDM per la versione di maggio 2019.  Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza che sono basati sul modello di anteprima.   
   
 Per informazioni sull'uso delle linee di base di sicurezza con Intune, vedere [usare le linee di base di sicurezza](security-baselines.md).  
 
@@ -1826,7 +1826,7 @@ Per altre informazioni, vedere [Policy CSP - WindowsPowerShell](https://docs.mic
   **Impostazione predefinita**: Abilitato
 
 ## <a name="whats-changed-in-the-new-template"></a>Modifiche apportate al nuovo modello
-La *baseline di sicurezza MDM per il modello di aggiornamento Spring 2019 (19H1)* presenta le modifiche seguenti rispetto al modello di *Anteprima* .
+La *linea di base di sicurezza MDM per il modello di maggio 2019* presenta le seguenti modifiche rispetto al modello di *Anteprima* .
 
 ### <a name="changes-to-the-baseline-settings"></a>Modifiche alle impostazioni di base
 Le impostazioni seguenti sono:
