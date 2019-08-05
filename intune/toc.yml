@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Risoluzione dei problemi
           items:
+            - name: Aiutare gli utenti nella risoluzione dei problemi
+              href: help-desk-operators.md
             - name: Risolvere i problemi di registrazione
               items:
                 - name: Risolvere i problemi di registrazione dei dispositivi iOS
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Risolvere i problemi di registrazione dei dispositivi Windows
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Aiutare gli utenti nella risoluzione dei problemi
-              href: help-desk-operators.md
             - name: Risorse per risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune
               href: troubleshoot-company-resource-access-problems.md
             - name: Risolvere i problemi di installazione delle app
               href: troubleshoot-app-install.md
+            - name: Risolvere i problemi delle azioni del dispositivo
+              href: troubleshoot-device-actions.md
             - name: Risolvere i problemi relativi alla gestione di applicazioni mobili
               href: troubleshoot-mam.md
             - name: Log di controllo per le attività di Intune
