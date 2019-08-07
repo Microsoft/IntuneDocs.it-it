@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670907"
+ms.locfileid: "68680024"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dati inviati da Jamf Pro a Intune
 
-Quando si usa [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli utenti finali con Intune, Jamf Pro acquisisce informazioni sull'inventario per i dispositivi macOS gestiti e fornisce le informazioni seguenti a Intune:
+Quando si usa [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli utenti finali con Intune, Jamf Pro acquisisce informazioni sull'inventario per i dispositivi macOS gestiti 
+
+## <a name="data"></a>Dati  
+e fornisce le informazioni seguenti a Intune:  
 
 * ID Azure AD del dispositivo
 * Stato di inventario JAMF (stato di inventario di un computer che ha eseguito l'archiviazione con Jamf Pro nelle ultime 24 ore)
@@ -69,8 +72,8 @@ Quando si usa [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli 
 * UDID
 * Indirizzo di posta elettronica dell'utente
 
-
 È possibile rimuovere un dispositivo gestito da Jamf dalla console di Intune selezionando **Elimina** nella vista **Tutti i dispositivi**. L'eliminazione in blocco dei dispositivi può essere abilitata selezionando più dispositivi e facendo clic su **Elimina**.
 
+## <a name="next-steps"></a>Passaggi successivi
 Ottenere informazioni su come [rimuovere un dispositivo gestito da Jamf nella documentazione di Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Per altre informazioni, è anche possibile registrare un ticket di supporto presso il [supporto Jamf](https://www.jamf.com/support/). 
 

@@ -1,11 +1,12 @@
 ---
-title: Impostazioni di ottimizzazione recapito di Windows 10 per Intune | Microsoft Docs
+title: Impostazioni di ottimizzazione recapito di Windows 10 per Intune
+titleSuffix: Microsoft Intune
 description: Impostazioni di ottimizzazione recapito di Windows 10 che possono essere distribuite tramite Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493913"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756556"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Impostazioni di ottimizzazione recapito per Intune
 
@@ -66,6 +67,15 @@ Per configurare Intune per usare queste impostazioni, vedere [Impostazioni di ot
 | [Durata massima della cache (in giorni)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | Specificare per quanto tempo, dopo ogni download di file corretto, il file viene mantenuto nella cache di ottimizzazione recapito in un dispositivo.   <br><br>Con Intune la durata della cache viene configurata in giorni. Il numero di giorni definito viene convertito nel numero di secondi applicabile, ovvero il modo in cui Windows definisce questa impostazione. Ad esempio, una configurazione di Intune di 3 giorni viene convertita nel dispositivo in 259200 secondi (3 giorni).  <br><br>**Impostazione predefinita**: *non è configurato alcun valore*     <br><br>**Consigliato**: 7   <br><br>Provider di servizi di configurazione dei criteri: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | Tipo di dimensione massima cache  | *Visualizzare i dettagli*    | Selezionare come gestire la quantità di spazio su disco in un dispositivo che viene usato dall'ottimizzazione recapito. Se non sono configurate, le dimensioni della cache sono per impostazione predefinita pari al 20% dello spazio libero disponibile.  <br><ul><li>**Non configurato** (impostazione predefinita)</li><br><li>**Assoluto** - Specificare le [Dimensioni massime assolute della cache (in GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) per configurare la quantità massima di spazio nell'unità che un dispositivo può usare per l'ottimizzazione recapito. Se impostato su 0 (zero), le dimensioni della cache sono illimitate, anche se la cache verrà cancellata dall'ottimizzazione recapito quando lo spazio su disco nel dispositivo è insufficiente. <br><br>Richiede Windows 1607<br><br> Provider di servizi di configurazione dei criteri: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Percentuale** - Specificare le [Dimensioni massime della cache (in %)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) per configurare la quantità massima di spazio nell'unità che un dispositivo può usare per l'ottimizzazione recapito. La percentuale è riferita allo spazio disponibile nell'unità e Ottimizzazione recapito valuta costantemente lo spazio disponibile nell'unità e cancellerà la cache per mantenere le dimensioni massime della cache al di sotto della percentuale impostata. <br><br>Richiede Windows 1511<br><br>Provider di servizi di configurazione dei criteri: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [Peer caching VPN](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Selezionare **Abilitato** per configurare un dispositivo in modo che partecipi al peer caching quando è connesso tramite VPN alla rete di dominio. I dispositivi abilitati possono eseguire il download o il caricamento da/in altri dispositivi di rete di dominio, sia tramite la VPN che la rete di dominio aziendale.  <br><br>**Impostazione predefinita**: Non configurato  <br><br>Provider di servizi di configurazione dei criteri: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>Caching del server locale  
+
+|Impostazione  |Versione di Windows  |Dettagli  |
+|---------|-----------------|---------|
+|Nomi host del server di cache | 1809  |Specificare l'indirizzo IP o il nome di dominio completo dei server della cache di rete che verranno usati dai dispositivi per l'ottimizzazione del recapito e quindi selezionare **Aggiungi** per aggiungere la voce all'elenco.  <br><br>**Impostazione predefinita**: Non configurato  <br><br>CSP dei criteri: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[Fallback del server cache di download di primo piano (in secondi)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |Specificare un'ora in secondi (0-2592000) per ritardare il fallback da un server di cache all'origine HTTP per un per il download di contenuto in primo piano. Quando il criterio per ritardare il download in primo piano da http, viene applicato per primo (per consentire i download dai peer prima). (0-2592000)    <br><br>**Impostazione predefinita**: 0  <br><br>[DODELAYCACHESERVERFALLBACKFOREGROUND](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground) CSP del criterio  |
+|[Fallback del server cache di download in background ritardato (in secondi)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |Specificare un'ora in secondi (0-2592000) per ritardare il fallback da un server di cache all'origine HTTP per il download di contenuto in background. Quando il *download http in background ritardato (in secondi)* è configurato, questa impostazione viene applicata per prima per consentire i download dai peer. (0-2592000)   <br><br>**Impostazione predefinita**: 0 <br><br>CSP dei criteri: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

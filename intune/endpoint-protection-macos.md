@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467407"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756517"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Impostazioni di Endpoint Protection per macOS in Intune  
 
@@ -97,11 +97,18 @@ Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFil
     - **Rotazione della chiave di ripristino personale** : specificare la frequenza con cui viene ruotata la chiave di ripristino personale per un dispositivo. È possibile selezionare il valore predefinito di **non configurato**o un valore da **1** a **12** mesi.  
 
   - **Disattiva richiesta alla disconnessione**  
-    Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  Se impostato su disabilitato, la richiesta di disconnessione viene disabilitata e all'utente viene richiesto di eseguire l'accesso.  
+    Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  Quando l'impostazione è abilitata, la richiesta di disconnessione viene disabilitata e all'utente viene richiesto di eseguire l'accesso.  
     - **Non configurato**  
-    - **Disabilitato**  
+    - **Abilita** -Disabilita la richiesta di disconnessione.
 
     **Impostazione predefinita**: Non configurato  
+
+     > [!IMPORTANT]  
+     > Si è verificato un problema noto quando l'impostazione **Disattiva richiesta alla disconnessione** è impostata su *Abilita*. Quando è impostato su *Abilita*, l'impostazione per il **numero di volte consentito a bypass** deve essere impostata su un valore e non deve essere impostata come *non*configurata. Se impostato su *non configurato*, il profilo ha esito negativo nel dispositivo. In questo scenario il dispositivo segnala che si tratta di un **Riepilogo dello stato del profilo** come **errore** senza ulteriori dettagli.
+     > 
+     > Quando la **richiesta di disabilitazione alla disconnessione** è impostata su *non configurato*, il **numero di volte consentito per il bypass** non può essere *configurato* o avere un valore.  
+     > 
+     > Il problema verrà risolto in un aggiornamento futuro. 
 
   - **Numero di volte in cui è consentito eseguire il bypass**  
   Impostare il numero di volte in cui un utente può ignorare le richieste di abilitazione di FileVault prima che FileVault sia necessario per l'accesso dell'utente.  
