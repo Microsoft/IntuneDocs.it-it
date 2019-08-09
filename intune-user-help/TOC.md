@@ -39,8 +39,8 @@
 ### Domande sul sistema operativo
 #### [Aggiornare il dispositivo](you-need-to-update-your-android-device.md)
 #### [Versione non supportata](your-android-version-isnt-yet-supported.md)
-#### [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Manca un certificato necessario](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Dispositivo rooted e impossibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Manca un certificato necessario](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Disattivare le origini sconosciute](you-need-to-turn-off-unknown-sources-android.md)
 #### [Disattivare il debug USB](you-need-to-turn-off-usb-debugging-android.md)
 #### [Attivare l'analisi per il rilevamento di minacce per la sicurezza](you-need-to-turn-on-scanning-for-security-threats-android.md)
