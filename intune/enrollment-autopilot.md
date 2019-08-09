@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625097"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700991"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -99,7 +99,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
     - **Contratto di licenza con l'utente finale**: (Windows 10, versione 1709 o successive): scegliere se si vuole visualizzare il contratto di licenza per gli utenti.
     - **Impostazioni di privacy**: scegliere se si vuole visualizzare le impostazioni di privacy per gli utenti.
     >[!IMPORTANT]
-    >Per le distribuzioni Autopilot nei dispositivi Windows 10 versione 1903 e versioni successive, il valore predefinito di Dati di diagnostica è impostato automaticamente su Completo. Per altre informazioni, vedere i [dati di diagnostica di Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
+    >Il valore predefinito per l'impostazione Dati di diagnostica varia in base alle versioni di Windows. Per i dispositivi che eseguono Windows 10, versione 1903, il valore predefinito è impostato su Completa durante l'esperienza predefinita. Per altre informazioni, vedere i [dati di diagnostica di Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **Nascondi le opzioni di cambio di account (richiede Windows 10 versione 1809 o successiva)** : scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo di account utente**: scegliere il tipo di account utente (**Amministratore** o **Standard**).

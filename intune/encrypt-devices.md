@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467449"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756537"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune  
 
@@ -67,6 +67,13 @@ Per informazioni dettagliate sulle impostazioni di FileVault che è possibile ge
    Ad esempio: per recuperare una chiave di ripristino smarrita o ruotata di recente, accedere al sito Web Portale aziendale di Intune da qualsiasi dispositivo. Nel portale passare a *Dispositivi*, selezionare il dispositivo con FileVault abilitato e quindi selezionare *Ottieni la chiave di ripristino*. Verrà visualizzata la chiave di ripristino corrente.  
 
 6. Configurare le [impostazioni di FileVault](endpoint-protection-macos.md#filevault) rimanenti in base alle esigenze aziendali e quindi selezionare **OK**.  
+
+   > [!IMPORTANT]  
+   > Si verifica un problema noto quando **Disabilita la richiesta alla disconnessione** è impostato su *Abilita*. Quando è impostato su *Abilita*, **Numero di volte per cui è consentito ignorare** deve essere impostato su un valore e non su *Non configurato*. Se è impostato su *Non configurato*, si verifica un problema con il profilo nel dispositivo. In questo scenario **Riepilogo dello stato del profilo** è segnalato come **Errore** nel dispositivo, senza altri dettagli.
+   > 
+   > Quando **Disabilita la richiesta alla disconnessione** è impostato su *Non configurato*, **Numero di volte per cui è consentito ignorare** può essere impostato su *Non configurato* o avere un valore.  
+   > 
+   > Il problema verrà risolto in un aggiornamento futuro. 
 
 7. Completare la configurazione delle impostazioni aggiuntive e quindi salvare il profilo.  
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884887"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783249"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -116,7 +116,7 @@ Intune offre due opzioni di distribuzione: versione autonoma e configurazione ib
 
 ## <a name="intune-tenant-location"></a>Posizione del tenant Intune
 
-Se l'organizzazione ha una presenza globale, assicurarsi di pianificare la posizione del tenant al momento della sottoscrizione del servizio. Il paese viene definito quando ci si iscrive per la prima volta per ottenere una sottoscrizione di Intune ed è associato alle aree internazionali elencate di seguito:
+Se l'organizzazione ha una presenza globale, assicurarsi di pianificare la posizione del tenant al momento della sottoscrizione del servizio. Il paese/l'area geografica viene definito quando ci si iscrive per la prima volta per ottenere una sottoscrizione di Intune ed è associato ai paesi/alle aree geografiche internazionali elencati di seguito:
 
 - America del Nord
 
@@ -125,7 +125,7 @@ Se l'organizzazione ha una presenza globale, assicurarsi di pianificare la posiz
 - Asia e Pacifico
 
 >[!IMPORTANT]
-> Non è possibile modificare il paese e la posizione del tenant in un secondo momento.
+> Non è possibile modificare il paese/l'area geografica e la posizione del tenant in un secondo momento.
 
 ## <a name="external-dependencies"></a>Dipendenze esterne
 

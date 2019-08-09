@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671026"
+ms.locfileid: "68679990"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -67,7 +67,7 @@ I profili di baseline di sicurezza supportano una [modifica della versione](#cha
 Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intune. Usare i collegamenti per visualizzare le impostazioni per l'istanza più recente di ogni baseline. 
 
 - **Baseline di sicurezza MDM**
-  - [Baseline di sicurezza MDM per la primavera 2019 (19H1)](security-baseline-settings-mdm.md)
+  - [Baseline della sicurezza MDM per maggio 2019](security-baseline-settings-mdm.md)
   - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](security-baseline-settings-mdm-archive.md)
 
 - **Baseline di Microsoft Defender ATP**  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
+ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883024"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68738285"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -32,8 +32,10 @@ Come amministratore di Intune, è possibile abilitare la registrazione per i dis
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Prerequisiti per la registrazione iOS
 Prima di abilitare i dispositivi iOS, completare i passaggi seguenti:
+- [Verificare che il dispositivo sia idoneo per la registrazione dei dispositivi Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Configurare Intune](setup-steps.md): questi passaggi consentono di impostare l'infrastruttura Intune. In particolare, per la registrazione del dispositivo è necessario [impostare l'autorità di gestione dei dispositivi mobili](mdm-authority-set.md).
 - [Ottenere un certificato push MDM di Apple](apple-mdm-push-certificate-get.md): Apple richiede un certificato per abilitare la gestione dei dispositivi iOS e macOS.
+
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
 

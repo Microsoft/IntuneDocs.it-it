@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680111"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Inviare notifiche personalizzate in Intune  
 
@@ -38,8 +38,9 @@ I messaggi di notifica personalizzati includono un titolo breve e un corpo del m
 ## <a name="considerations-for-using-custom-notifications"></a>Considerazioni sull'uso delle notifiche personalizzate  
 
 **Configurazione del dispositivo**:  
-- Prima che gli utenti possano ricevere notifiche personalizzate, è necessario che nei dispositivi sia installata l'app Portale aziendale. È anche necessario che siano configurate le impostazioni per consentire all'app Portale aziendale di inviare notifiche push. Il Portale aziendale richiederà agli utenti di consentire le notifiche.  
+- Prima che gli utenti possano ricevere notifiche personalizzate, è necessario che nei dispositivi sia installata l'app Portale aziendale. È anche necessario che siano configurate le impostazioni per consentire all'app Portale aziendale di inviare notifiche push. Il Portale aziendale richiederà agli utenti di consentire le notifiche a ogni installazione o aggiornamento.  
 - In Android Google Play Services è una dipendenza obbligatoria.  
+- Il dispositivo deve disporre della registrazione a MDM.
 
 **Creazione delle notifiche**:  
 - Per creare un messaggio, usare un account a cui è assegnato un ruolo di Intune che include l'autorizzazione **Aggiorna** per l'**organizzazione**. Per assegnare autorizzazioni a un utente, vedere [Assegnazioni di ruolo](role-based-access-control.md#role-assignments)  

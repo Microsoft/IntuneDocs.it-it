@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 47c2e509c9eb032dae67dbb5a44839f88fa5de4b
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467507"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783067"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -410,7 +410,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
             **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
 
-            In questo esempio è stato creato un formato di nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. L'argomento [Funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) visualizza questa funzione e le relative stringhe supportate.
+            In questo esempio è stato creato un formato di nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese/area geografica. L'argomento [Funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) visualizza questa funzione e le relative stringhe supportate.
 
         **Tipo di certificato dispositivo**  
 

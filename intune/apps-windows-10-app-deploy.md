@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590933"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680065"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
@@ -34,6 +34,8 @@ Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che 
 > Gli aggiornamenti di Windows 10 minimi necessari per la distribuzione di app moderne sono i seguenti:
 > - Per Windows 10 1803, [23 maggio 2018-KB4100403 (build del sistema operativo 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - Per Windows 10 1709, [21 giugno 2018-KB4284822 (build del sistema operativo 16299.522)](https://support.microsoft.com/help/4284822).
+>
+> Solo Windows 10, 1803 e versioni successive supportano l'installazione di app quando non è associato alcun utente primario.
 
 ## <a name="windows-10-line-of-business-apps"></a>App line-of-business per Windows 10
 

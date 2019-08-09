@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a1ac47fd512323ce809d4ee13c5e98f563ce51c
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548410"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783112"
 ---
 # <a name="develop-a-rollout-plan"></a>Elaborare un piano di implementazione
 
@@ -55,7 +55,7 @@ Dopo il progetto pilota, si è pronti per avviare un'implementazione completa in
 
 - **Reparti** <br/>A ogni reparto può essere associata una fase di implementazione. Si effettuerà l'implementazione per un intero reparto alla volta. In questo tipo di implementazione, gli utenti di ogni reparto tendono a usare i dispositivi mobili nello stesso modo e ad accedere alle stesse applicazioni. Per gli utenti sono solitamente previsti gli stessi tipi di criteri.
 
-- **Area geografica** <br/>Questo approccio prevede la distribuzione per tutti gli utenti in una specifica area geografica (un continente, un paese, una regione o un edificio della stessa società). Questo tipo di distribuzione graduale consente di concentrarsi sulla specifica posizione degli utenti. In questo modo, è possibile adottare un approccio basato su un [trattamento esclusivo](#user-assisted-enrollment), perché si riduce il numero di posizioni in cui eseguire la distribuzione di Intune contemporaneamente. Poiché è possibile che siano presenti diversi reparti o casi d'uso nella stessa posizione, può essere necessario distribuire diversi casi d'uso nello stesso momento.
+- **Area geografica** <br/>Questo approccio prevede la distribuzione per tutti gli utenti in una specifica area geografica (un continente, un paese/area geografica o un edificio della stessa società). Questo tipo di distribuzione graduale consente di concentrarsi sulla specifica posizione degli utenti. In questo modo, è possibile adottare un approccio basato su un [trattamento esclusivo](#user-assisted-enrollment), perché si riduce il numero di posizioni in cui eseguire la distribuzione di Intune contemporaneamente. Poiché è possibile che siano presenti diversi reparti o casi d'uso nella stessa posizione, può essere necessario distribuire diversi casi d'uso nello stesso momento.
 
 - **Piattaforma** <br/>Questo tipo di distribuzione consiste nella distribuzione di piattaforme simili nello stesso momento. Un esempio potrebbe essere: tutti i dispositivi iOS durante il primo mese, seguiti dai dispositivi Android e quindi dai dispositivi Windows. Questo tipo di distribuzione graduale consente di semplificare il supporto help desk, perché sarebbe sufficiente supportare un'unica piattaforma alla volta.
 
@@ -93,16 +93,16 @@ Ecco un esempio aggiornato del piano di implementazione di Intune precedente che
 
 | **Fase di implementazione** | **Luglio** | **Agosto** | **Settembre** | **Ottobre** |
 |:---:|:---:|:---:|:---:|:---:|
-| Progetto pilota limitato |  |  |  |  |                                                         
+| Progetto pilota limitato |  |  |  |  |
 | Self-service | IT |  |  |  |
-| Progetto pilota ampliato |  |  |  |  |                                                         
+| Progetto pilota ampliato |  |  |  |  |
 | Self-service | IT |  |  |  |
 | Trattamento esclusivo | Responsabili IT |  |  |  |
 | Fase 1 di implementazione in produzione |  | Vendite, marketing |  |  |
 | Self-service |  | Vendite e marketing |  |  |
 | Fase 2 di implementazione in produzione |  |  | Vendita al dettaglio |  |
-| Self-service |  |  |  |  |
-| Fase 3 di implementazione in produzione |  |  | Vendita al dettaglio |  |
+| Self-service |  |  | Vendita al dettaglio |  |
+| Fase 3 di implementazione in produzione |  |  |  | Dirigenti, HR, finanza |
 | Self-service |  |  |  | HR, finanza |
 | Trattamento esclusivo |  |  |  | Dirigenti |
 

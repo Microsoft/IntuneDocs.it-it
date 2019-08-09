@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045208"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68679999"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
@@ -33,7 +33,10 @@ Si applica a: Intune nel portale di Azure
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Impostare i criteri di conformità dei dispositivi in Intune
 
 1. Aprire Microsoft Azure e quindi passare a **Intune** > **Conformità del dispositivo** > **Criteri**. È possibile creare criteri specifici per macOS, tra cui scegliere una serie di azioni, ad esempio inviare messaggi di posta elettronica di avviso, per gli utenti e i gruppi non conformi.
-2. Cercare i gruppi desiderati e applicare ad essi i criteri.
+2. Selezionare i criteri > Assegnazioni. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
+3. Scegliere Gruppi selezionati per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi di utenti a cui si vogliono applicare questi criteri > scegliere Salva per distribuire i criteri agli utenti.
+
+Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui sono assegnati i criteri vengono valutati per verificarne la conformità e contrassegnati come conformi per l'impostazione "Richiedi che i dispositivi siano contrassegnati come conformi" in Azure Active Directory.
 
 > [!Note]
 > Per la conformità ai requisiti, Intune richiede la crittografia del disco completa.

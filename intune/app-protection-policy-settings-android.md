@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329021"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700954"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -93,6 +93,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
   | com.skype.raider | Skype | L'app Skype è consentita solo per determinate azioni che generano una chiamata telefonica. |
   | com.android.providers.media | Provider di contenuti multimediali Android | Il provider di contenuti multimediali è consentito solo per l'azione di selezione della suoneria. |
   | com.google.android.gms; com.google.android.gsf | Pacchetti di Google Play Services | Questi pacchetti sono consentiti per le azioni di Google Cloud Messaging, ad esempio per le notifiche push. |
+  | com.google.android.apps.maps | Google Maps | Gli indirizzi sono consentiti per la navigazione |
 
 Per altre informazioni, vedere [Eccezioni dei criteri di trasferimento dei dati per le app](app-protection-policies-exception.md).
 
