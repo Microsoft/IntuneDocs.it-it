@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
 - User help
-ROBOTS: ''
+ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 119e3399067297764abb8a14d2f5861cba33e408
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a91a6c934ba3b1a32ea2ef10da0256019fc25392
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529288"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862125"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Manca un certificato necessario per il dispositivo Android generalmente installato nel telefono
 
@@ -33,7 +33,7 @@ Se il dispositivo non è registrato in Intune e manca un certificato solitamente
 
 È possibile risolvere il problema ottenendo il certificato richiesto dalla [pagina dei certificati di Digicert](https://www.digicert.com/digicert-root-certificates.htm).
 
-1. Trovare e scaricare il certificato __Baltimore CyberTrust Root__. È possibile scaricare il certificato anche da [qui](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
+1. Trovare e scaricare il certificato __Baltimore CyberTrust Root__ . È possibile scaricare il certificato anche da [qui](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
 
 2. Trascinare verso il basso dalla parte superiore dello schermo per visualizzare l'elenco delle notifiche recenti e toccare **BaltimoreCyberTrustRoot.crt**.
 

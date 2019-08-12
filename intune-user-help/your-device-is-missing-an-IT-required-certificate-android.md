@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625130"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862131"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Installare il certificato mancante richiesto dall'organizzazione  
 
-Se il dispositivo non è registrato in Intune e non ha un determinato certificato richiesto dal supporto tecnico dell'azienda, non sarà possibile accedere all'app Portale aziendale dal dispositivo. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
+Se il dispositivo non è registrato in Intune e manca un certificato obbligatorio, non sarà possibile accedere all'app Portale aziendale. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ Completare questi passaggi per abilitare l'accesso al browser. Dopo aver abilita
 
 1. Nell'app Portale aziendale passare all'angolo destro e selezionare il menu.  
 2. Selezionare **Impostazioni**.  
-3. Accanto a **Abilita accesso browser** selezionare **Abilita**.  
-4. Nella schermata amministratore del dispositivo selezionare **attiva**. 
+3. Accanto a **Abilita accesso** browser selezionare **Abilita**.  
+4. Nella schermata amministratore del dispositivo selezionare **attiva.** 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identificare e scaricare il certificato mancante tramite la ricerca Web
 Completare questi passaggi per identificare e installare manualmente il certificato nel dispositivo.  
@@ -82,3 +82,7 @@ Completare questi passaggi per identificare e installare manualmente il certific
 7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare il supporto tecnico dell'azienda.
 
 Se viene visualizzato di nuovo il messaggio "Certificato mancante" illustrato in precedenza ed è già stata eseguita la relativa procedura, è probabile che sia necessario installare un altro certificato con l'assistenza del supporto tecnico dell'azienda. Per indicazioni sull'uso delle informazioni di contatto disponibili nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980), contattare il supporto tecnico dell'azienda.
+
+## <a name="next-steps"></a>Passaggi successivi  
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

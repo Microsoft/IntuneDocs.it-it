@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09a996e3e1a47cae33e8a4189b4406a940acfe3
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: d414295966580e0dd91ce2b94757509fd13bdfbe
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353266"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783141"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novità del portale di Intune classico - mesi precedenti
 
@@ -178,7 +178,7 @@ Non ci sono attualmente problemi noti da condividere. Se si riscontrano problemi
 A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere le app dai marketplace cinesi. L'app Portale aziendale supporterà questo flusso di lavoro reindirizzando gli utenti Android in Cina per scaricare le app Portale aziendale e Outlook dagli app store locali. Ciò consentirà di migliorare l'esperienza utente quando sono abilitati i criteri di accesso condizionale, per la gestione dei dispositivi e delle applicazioni mobili. Le app Portale aziendale e Outlook per Android sono disponibili negli app store cinesi seguenti:
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+- [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -223,15 +223,15 @@ Gli utenti finali riceveranno ulteriori indicazioni su come riottenere l'accesso
 I collegamenti all'interno dell'app Portale aziendale per iOS, inclusi quelli per la documentazione e le app, verranno aperti direttamente nell'app Portale aziendale tramite una visualizzazione in-app di Safari. Questo aggiornamento verrà fornito separatamente rispetto all'aggiornamento del servizio in gennaio.
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Nuovo indirizzo del server MDM per i dispositivi Windows <!--893007-->
-Gli utenti di Windows e Windows Phone che tentano di registrare un dispositivo non riusciranno a eseguire la registrazione se immettono __manage.microsoft.com__ come indirizzo del server MDM (se richiesto). L'indirizzo del server MDM __manage.microsoft.com__ è sostituito da __enrollment.manage.microsoft.com__. Comunicare agli utenti di immettere __enrollment.manage.microsoft.com__ come indirizzo del server MDM per la registrazione di un dispositivo Windows o Windows Phone. Non sono necessarie modifiche alla configurazione CNAME. Per altre informazioni su questa modifica, visitare [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
+Gli utenti di Windows e Windows Phone che tentano di registrare un dispositivo non riusciranno a eseguire la registrazione se immettono __manage.microsoft.com__ come indirizzo del server MDM (se richiesto). L'indirizzo del server MDM __manage.microsoft.com__ è sostituito da __enrollment.manage.microsoft.com__ . Comunicare agli utenti di immettere __enrollment.manage.microsoft.com__ come indirizzo del server MDM per la registrazione di un dispositivo Windows o Windows Phone. Non sono necessarie modifiche alla configurazione CNAME. Per altre informazioni su questa modifica, visitare [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nuova esperienza utente per l'app Portale aziendale per Android <!--621622-->
 A partire da marzo, l'app Portale aziendale per Android seguirà le [linee guida di progettazione dei materiali](https://material.io/guidelines/material-design/introduction.html) per creare un aspetto più moderno. La nuova esperienza utente include i seguenti miglioramenti:
 
-* __Colori__: i colori delle intestazioni delle schede possono essere impostati in base alla tavolozza dei colori personalizzata.
-* __Interfaccia__: i pulsanti App in evidenza e Tutte le app sono stati aggiornati nella scheda App. Il pulsante Cerca è ora un pulsante di azione mobile.
-* __Navigazione__: Tutte le app mostra una visualizzazione a schede di In evidenza, Tutte e Categorie per una navigazione più semplice.
-* __Servizio__: la leggibilità delle schede Dispositivi personali e Contatta l'IT è stata migliorata.
+* __Colori__ : i colori delle intestazioni delle schede possono essere impostati in base alla tavolozza dei colori personalizzata.
+* __Interfaccia__ : i pulsanti App in evidenza e Tutte le app sono stati aggiornati nella scheda App. Il pulsante Cerca è ora un pulsante di azione mobile.
+* __Navigazione__ : Tutte le app mostra una visualizzazione a schede di In evidenza, Tutte e Categorie per una navigazione più semplice.
+* __Servizio__ : la leggibilità delle schede Dispositivi personali e Contatta l'IT è stata migliorata.
 
 Le immagini di prima e dopo sono disponibili nella [pagina degli aggiornamenti dell'interfaccia utente](whats-new-app-ui.md).
 
@@ -322,13 +322,13 @@ Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'ammin
 __Trasferimento di Multi-Factor Authentication per la registrazione nel portale di Azure__ <!--VSO 750545-->
 Per impostare MFA per le registrazioni in Intune, gli amministratori dovevano usare in precedenza la console di Intune o Configuration Manager (prima della versione di ottobre 2016). Con questa funzionalità aggiornata è ora possibile accedere al [portale di Microsoft Azure](https://manage.windowsazure.com) con le credenziali di Intune e configurare le impostazioni di MFA tramite Azure AD. Per altre informazioni a questo proposito, vedere [qui](https://aka.ms/mfa_ad).
 
-__L'app Portale aziendale per Android è ora disponibile in Cina__ <!--VSO 658093-->
+__L'app Portale aziendale per Android è ora disponibile in Cina__  <!--VSO 658093-->
 L'app Portale aziendale per Android sta per essere pubblicata per il download in Cina. A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere l'app dai marketplace di app cinesi. L'app Portale aziendale per Android sarà disponibile per il download negli store seguenti:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+* [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 
 L'app Portale aziendale per Android usa i servizi Google Play per comunicare con il servizio Microsoft Intune. Dato che i servizi Google Play non sono ancora disponibili in Cina, per completare qualsiasi attività tra le seguenti possono essere richieste fino a 8 ore. 
 
@@ -360,7 +360,7 @@ __Nuovo portale aziendale di Microsoft Intune disponibile per dispositivi Window
 La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni esistenti dell'app Portale aziendale di Windows 8.1 e l'app Portale aziendale di Windows Phone 8.1 viene installata da Microsoft Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
-> __Un aggiornamento in Intune e Android for Work__ Anche se è possibile distribuire app Android for Work con l'azione __Richiesto__, un'app può essere distribuita solo come __Disponibile__ se è stata eseguita la migrazione dei gruppi di Intune alla nuova esperienza dei gruppi di Azure AD.
+> __Un aggiornamento in Intune e Android for Work__ Anche se è possibile distribuire app Android for Work con l'azione __Richiesto__ , un'app può essere distribuita solo come __Disponibile__ se è stata eseguita la migrazione dei gruppi di Intune alla nuova esperienza dei gruppi di Azure AD.
 
 __Il plug-in Cordova per Intune App SDK attualmente supporta la gestione di applicazioni mobili senza registrazione__ Gli sviluppatori di app possono ora usare il plug-in Cordova per Intune App SDK per abilitare funzionalità di gestione di applicazioni mobili senza registrazione del dispositivo nelle proprie app basate su Cordova per iOS e Android. Il plug-in Cordova per Intune App SDK è disponibile [qui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
