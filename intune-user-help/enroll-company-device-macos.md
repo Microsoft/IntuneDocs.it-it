@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511918"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783028"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrare un dispositivo macOS fornito dall'organizzazione per la gestione
 
@@ -40,10 +40,10 @@ L'organizzazione potrebbe avere acquistato i propri dispositivi tramite un *Appl
 Seguire questa procedura per registrare il dispositivo macOS nella gestione. Se si usa un dispositivo personale invece di un dispositivo fornito dall'organizzazione, seguire questa procedura per i [dispositivi personali e BYOD](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Accendere il dispositivo macOS. 
-2. Scegliere il proprio paese e fare clic su **Continua**.  
+2. Scegliere paese/area geografica e fare clic su **Continua**.  
 
    ![Screenshot della schermata iniziale dell'Assistente configurazione per il dispositivo macOS, che mostra un elenco di lingue per la selezione.](./media/macos-dep-welcome-1808.png)   
-3. Scegliere un layout di tastiera. L'elenco mostra una o più opzioni in base al paese selezionato. Per visualizzare tutte le opzioni di layout, indipendentemente dal paese selezionato, fare clic su **Mostra tutto**. Al termine dell'operazione fare clic su **Continua**.  
+3. Scegliere un layout di tastiera. L'elenco mostra una o più opzioni in base al paese o all'area geografica selezionati. Per visualizzare tutte le opzioni di layout, indipendentemente dal paese o dall'area geografica selezionati, fare clic su **Mostra tutto**. Al termine dell'operazione fare clic su **Continua**.  
 
    ![Screenshot della schermata Layout di tastiera dell'Assistente configurazione per il dispositivo macOS, che mostra un elenco delle lingue della tastiera per la selezione, l'opzione Mostra tutto non selezionata e i pulsanti Indietro e Continua.](./media/macos-dep-keyboard-1808.png)  
 4. Selezionare la rete Wi-Fi. È necessario disporre di una connessione Internet per continuare con la configurazione. Se la rete non è visibile o se è necessario connettersi tramite una rete cablata, fare clic su **Other Network Options** (Altre opzioni di rete). Al termine dell'operazione fare clic su **Continua**.  
