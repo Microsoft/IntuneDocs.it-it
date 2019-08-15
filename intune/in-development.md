@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670927"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833556"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>In fase di sviluppo per Microsoft Intune - Agosto 2019
 
@@ -62,7 +62,7 @@ Per supportare gli utenti nella preparazione e pianificazione, questa pagina ill
 Gli amministratori saranno in grado di gestire se un'app viene rimossa o mantenuta in un dispositivo quando viene annullata la registrazione del dispositivo a livello di utente o di gruppo di dispositivi. 
 
 ### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Categorizzare le app di Microsoft Store per le aziende <!-- 3926922 -->
-Potrai categorizzare Microsoft Store per le app aziendali. A tale scopo, scegliere **app**client > **diIntune** >  **app**>selezionareun'appMicrosoftStoreforbusinessapp>**Categoria** > **informazioni.** Nel menu a discesa assegnare una categoria.
+Potrai categorizzare Microsoft Store per le app aziendali. A tale scopo, scegliere **app** > c**lient** diIntune >  **app**>selezionareun'appMicrosoftStoreforbusinessapp> **Categoria** > **informazioni**. Nel menu a discesa assegnare una categoria.
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Configurare il contenuto della notifica dell'app per gli account dell'organizzazione <!-- 2576686 -->
 I criteri di protezione delle app di Intune (APP) nei dispositivi Android e iOS consentiranno di controllare il contenuto delle notifiche dell'app per gli account dell'organizzazione. Questa funzionalità richiede il supporto delle applicazioni e potrebbe non essere disponibile per tutte le applicazioni abilitate per l'APP. Per altre informazioni, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md).
 
@@ -73,7 +73,7 @@ Per le installazioni di app disponibili nei dispositivi con profilo di lavoro An
 ## <a name="device-configuration"></a>Configurazione del dispositivo
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Alcune restrizioni dei dispositivi iOS senza supervisione verranno supervisionate solo con la versione iOS 13,0 <!-- 4867809  -->
-Alcune impostazioni verranno applicate ai dispositivi con solo supervisione con la versione iOS 13,0. Queste impostazioni includono:
+Alcune impostazioni verranno applicate ai dispositivi supervisionati a partire dalla versione iOS 13,0. Queste impostazioni includono:
 
 - App Store, visualizzazione documenti, giochi
   - App Store
@@ -98,16 +98,16 @@ Si applica a:
 - iOS 13,0 e versioni successive
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>Nuove impostazioni e modifiche alle impostazioni esistenti per limitare le funzionalità nei dispositivi iOS e macOS <!-- 4867699 4867709  -->
-Sarà possibile creare profili per limitare le impostazioni nei dispositivi che eseguono iOS e MacOS (i**profili** > di**configurazione** > dei dispositivi**creano un profilo** > **iOS** o **MacOS** per la piattaforma digitare > **restrizioni del dispositivo**). Verranno aggiunte le funzionalità seguenti:
+Sarà possibile creare profili per limitare le impostazioni nei dispositivi che eseguono iOS**e MacOS (configurazione** >   **del dispositivo profili** > **di creazione profilo**  > **iOS** o**MacOS**per il tipo di piattaforma >**restrizionideidispositivi)** . Verranno aggiunte le funzionalità seguenti:
 
-- Nelle **restrizioni**deidispositivi > **MacOScloude** > **archiviazione usare la nuova** **impostazione dicontinuità** per impedire agli utenti di iniziare a lavorare su un dispositivo macOS e continuare a usare un altro dispositivo macOS o iOS.
+- Nelle **restrizioni**deidispositivi > **MacOScloude**  > **archiviazione usare la nuova**impostazione dicontinuità**per** impedire agli utenti di iniziare a lavorare su un dispositivo macOS e continuare a usare un altro dispositivo macOS o iOS.
   Per visualizzare le impostazioni correnti, passare a [Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune](device-restrictions-macos.md).
-- Sulle**restrizioni dei dispositivi** **iOS** > sono state apportate alcune modifiche:
-  - **App predefinite trova** **il mio iPhone (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità trova l'app. >  
-  - **App predefinite trovare** **i miei amici (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità trova l'app. >  
-  - **Modifica wireless** > dello**stato Wi-Fi (solo con supervisione)** : nuova impostazione che impedisce agli utenti di attivare o disattivare il Wi-Fi nel dispositivo.
-  - **Tastiera e dizionario** > **QuickPath (solo con supervisione)** : nuova impostazione che blocca la funzionalità QuickPath.
-  - **Cloud e archiviazione**: la continuazione dell' **attività** è stata rinominata come **uniforme**.
+- Sulle **restrizioni** > deidispositivi**iOS sono state apportate alcune modifiche:**
+  - **App** >  **predefinite trova il mio iPhone (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità trova l'app. 
+  - **App** >  **predefinite trovare i miei amici (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità trova l'app. 
+  - **Modifica**wireless > **dello stato Wi-Fi (solo con supervisione**): nuova impostazione che impedisce agli utenti di attivare o disattivare il Wi-Fi nel dispositivo.
+  - **Tastiera e dizionario** >  **QuickPath (solo con supervisione)** : nuova impostazione che blocca la funzionalità QuickPath.
+  - **Cloud e archiviazione**: **la continuazione** dell'attività è stata **rinominata come uniforme**.
 
   Per visualizzare le impostazioni correnti, vedere [Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune](device-restrictions-ios.md).
 
@@ -116,7 +116,7 @@ Si applica a:
 - iOS 13 e versioni successive
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>Controllare le app, i file, i documenti e le cartelle che si aprono quando l'utente accede ai dispositivi macOS <!--3914202  -->
-Sarà possibile abilitare e configurare le funzionalità nei dispositivi MacOS (i**profili** > di**configurazione** > dei dispositivi**creano il profilo** > **MacOS** per le funzionalità della piattaforma > **dispositivo** per tipo di profilo). 
+Sarà possibile**abilitare e configurare**  >  **le funzionalità nei dispositivi**  >  MacOS (configurazione **del dispositivo profili Crea profilo**  >  **MacOS** per le **funzionalitàdel** dispositivo > della piattaforma per il tipo di profilo). 
 
 Sono disponibili nuove impostazioni degli elementi di accesso per controllare quali app, file, documenti e cartelle si aprono quando un utente accede al dispositivo registrato. 
 
@@ -126,12 +126,12 @@ Si applica a:
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>Nuove funzionalità per dispositivi Android Enterprise dedicati in modalità multiapp <!-- 3755304 3041943 3041946  -->
-Sarà possibile controllare le funzionalità e le impostazioni in un'esperienza di tipo chiosco multimediale sui dispositivi Android Enterprise dedicati. A tale scopo, scegliere**profili** > di **configurazione** > del dispositivo**Crea profilo** > **Android Enterprise** per piattaforma > **solo proprietario del dispositivo, restrizioni del dispositivo** per tipo di profilo.
+Sarà possibile controllare le funzionalità e le impostazioni in un'esperienza di tipo chiosco multimediale sui dispositivi Android Enterprise dedicati. A tale scopo, scegliere **profili**   > **diconfigurazione**del dispositivo creaprofilo > **AndroidEnterprise** > **per la piattaforma** **> solo il proprietario del dispositivo** , le restrizioni del dispositivo per il tipo di profilo.
 
 Verranno aggiunte le funzionalità seguenti:
-- **Dispositivi** > dedicati**multiapp**: il **pulsante Home virtuale** può essere visualizzato scorrendo il dispositivo o spostando lo schermo in modo che gli utenti possano spostarlo.
-- **Dispositivi** > dedicati**multiapp**: **l'accesso alla torcia** consente agli utenti di usare la torcia. 
-- **Dispositivi** > dedicati**multiapp**: il **controllo del volume multimediale** consente agli utenti di controllare il volume multimediale del dispositivo usando un dispositivo di scorrimento. 
+- **Dispositividedicati** > **multiapp**:il **pulsante Home virtuale può essere visualizzato scorrendo il dispositivo o spostando lo schermo in modo che gli utenti possano spostarlo.**
+- **Dispositividedicati** > **multiapp** :l'**accessoallatorciaconsenteagliutentidiusarelatorcia**. 
+- **Dispositividedicati** > **multiapp** :il**controllodelvolumemultimedialeconsenteagliutentidicontrollareilvolumemultimedialedeldispositivousandoundispositivodiscorrimento.** 
 - **Dispositivi** > **dedicatimultiapp**: consente di abilitare uno screensaver, caricare un'immagine personalizzata e controllare quando viene visualizzato lo screensaver.
 
 Per visualizzare le impostazioni correnti, passare alle [impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
@@ -167,11 +167,11 @@ Sarà possibile impostare profili di Device Enrollment Program per ignorare le s
 - Orario schermo
 - Configurazione dell'ID tocco
 
-A tale scopo, passare a **registrazione** > del dispositivo registrazione**Apple** > **token del programma di registrazione** > scegliere un token > **profili** > scegliere un profilo > modifica **Proprietà** >  **accanto** a **personalizzazione Assistente configurazione**.
-Per altre informazioni sulla personalizzazione di Assistente configurazione, vedere [creare un profilo di registrazione Apple ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+A tale scopo, passare a **registrazione del dispositivo** >  **registrazione Apple** > token**delprogrammadiregistrazione>scegliereuntoken>** **Profili** > scegliere un profilo > **modificare** > **leproprietà**accanto **allapersonalizzazione**diAssistenteconfigurazione.
+Per altre informazioni sulla personalizzazione di Assistente configurazione, [vedere creare un profilo ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)di registrazione Apple.
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Supporto per l'amministratore del dispositivo di registrazione Android <!-- 4869749  -->
-L'opzione registrazione amministratore dispositivi Android verrà aggiunta alla pagina registrazione Android (registrazione**Android**per la registrazione del**dispositivo** > in**Intune** > ). L'amministratore del dispositivo Android sarà ancora abilitato per impostazione predefinita per tutti i tenant.  
+L'opzione registrazione amministratore dispositivi Android verrà aggiunta alla pagina**registrazione Android (registrazione** > **del dispositivo di Intune**   > **Android registrazione**). L'amministratore del dispositivo Android sarà ancora abilitato per impostazione predefinita per tutti i tenant.  
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Per i dispositivi iOS, personalizzare la schermata relativa alla privacy del processo di registrazione del Portale aziendale <!-- 4394993  -->
 Usando Markdown, sarà possibile personalizzare la schermata di privacy del Portale aziendale visualizzata dagli utenti finali durante la registrazione di iOS. In particolare, sarà possibile personalizzare l'elenco di elementi che l'organizzazione non può visualizzare o eseguire sul dispositivo.
@@ -183,13 +183,13 @@ Usando Markdown, sarà possibile personalizzare la schermata di privacy del Port
 Una nuova voce nella pagina hardware per ogni dispositivo Android includerà il numero di build del sistema operativo del dispositivo.
 
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Configurare il limite di tempo di pulizia automatico del dispositivo fino a 30 giorni <!--4231059  -->
-È possibile impostare il limite di tempo di pulizia automatico del dispositivo fino a 30 giorni (anziché il limite corrente di 90 giorni) dopo l'ultimo accesso. A tale scopo, passare a**dispositivi** >  **Intune** > **installazione** > **regole di pulizia del dispositivo**.
+È possibile impostare il limite di tempo di pulizia automatico del dispositivo fino a 30 giorni (anziché il limite corrente di 90 giorni) dopo l'ultimo accesso. A tale scopo, passare a **dispositivi**  > **Intun** > **installazioneregoledi**  > **pulizia del dispositivo**.
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>Controllo di accesso in base ai ruoli
 
 ### <a name="default-scope-tag----3702875---"></a>Tag ambito predefinito <!-- 3702875 -->
-Sarà disponibile un nuovo tag di ambito predefinito incorporato. Tutti gli oggetti di Intune senza tag che supportano i tag di ambito verranno assegnati automaticamente al tag di ambito predefinito. Il tag di ambito **predefinito** verrà aggiunto a tutte le assegnazioni di ruolo esistenti per mantenere la parità con l'esperienza di amministrazione attuale. Se non si vuole che un amministratore visualizzi gli oggetti di Intune con i tag di ambito predefiniti, rimuovere il tag di ambito predefinito dall'assegnazione di ruolo. Questa funzionalità è simile alla funzionalità ambiti di protezione in System Center Configuration Manager.
+Sarà disponibile un nuovo tag di ambito predefinito incorporato. Tutti gli oggetti di Intune senza tag che supportano i tag di ambito verranno assegnati automaticamente al tag di ambito predefinito. Il **tag** di ambito predefinito verrà aggiunto a tutte le assegnazioni di ruolo esistenti per mantenere la parità con l'esperienza di amministrazione attuale. Se non si vuole che un amministratore visualizzi gli oggetti di Intune con i tag di ambito predefiniti, rimuovere il tag di ambito predefinito dall'assegnazione di ruolo. Questa funzionalità è simile alla funzionalità ambiti di protezione in System Center Configuration Manager.
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Sicurezza
