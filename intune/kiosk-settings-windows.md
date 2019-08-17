@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046964"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487743"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo in Intune
 
@@ -66,9 +66,7 @@ Eseguire una sola app nel dispositivo.
     > [!NOTE]
     > Questa impostazione abilita il browser Microsoft Edge nel dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**Configurazione del dispositivo** > **Profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **Restrizioni del dispositivo** >  **Browser Microsoft Edge**). In [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) sono elencate e descritte le impostazioni disponibili.
 
-    Selezionare **OK** per salvare le modifiche.
-
-  - **Aggiungi un browser in modalità tutto schermo**: selezionare **Impostazioni del browser in modalità tutto schermo**. Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
+  - **Aggiungi un browser in modalità tutto schermo**: selezionare **Impostazioni del browser in modalità tutto schermo**. Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di ottenere l' [app kiosk browser](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md). Quindi, assegnare l'app ai dispositivi Kiosk.
 
     Immettere le impostazioni seguenti:
 
@@ -91,15 +89,14 @@ Eseguire una sola app nel dispositivo.
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    Selezionare **OK** per salvare le modifiche.
+    > [!NOTE]
+    > I chioschi Windows 10 con accesso automatico abilitato tramite il browser Microsoft Kiosk devono usare una licenza offline di Microsoft Store for business. Questo requisito è dovuto al fatto che l'accesso automatico usa un account utente locale senza credenziali di Azure Active Directory (AD). Non è quindi possibile valutare le licenze online. Per altre informazioni, vedere [Distribuire app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Aggiungi l'app dello Store**: scegliere **Aggiungi un'app dello Store** e scegliere un'app nell'elenco.
 
     Se l'elenco non include app, aggiungerne qualcuna seguendo la procedura in [App client](apps-add.md).
-
-  Selezionare **OK** per salvare le modifiche.
 
 ## <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
 
@@ -132,8 +129,6 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
       > [!NOTE]
       > Questa impostazione abilita il browser Microsoft Edge nel dispositivo. Per configurare le impostazioni specifiche di Microsoft Edge, creare un profilo di configurazione del dispositivo (**Configurazione del dispositivo** > **Profili** > **Crea profilo**  >  **Windows 10** per la piattaforma > **Restrizioni del dispositivo** >  **Browser Microsoft Edge**). In [Browser Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) sono elencate e descritte le impostazioni disponibili.
 
-      Selezionare **OK** per salvare le modifiche.
-
     - **Aggiungi un browser in modalità tutto schermo**: queste impostazioni consentono di controllare un'app Web browser nel dispositivo in modalità tutto schermo. Assicurarsi di distribuire un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
 
       Immettere le impostazioni seguenti:
@@ -152,13 +147,12 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
         Per consentire siti Web specifici, caricare un file CSV che include un elenco dei siti Web consentiti. Se non si aggiunge un file CSV, sono consentiti tutti i siti Web.
 
-      Selezionare **OK** per salvare le modifiche.
+      > [!NOTE]
+      > I chioschi Windows 10 con accesso automatico abilitato tramite il browser Microsoft Kiosk devono usare una licenza offline di Microsoft Store for business. Questo requisito è dovuto al fatto che l'accesso automatico usa un account utente locale senza credenziali di Azure Active Directory (AD). Non è quindi possibile valutare le licenze online. Per altre informazioni, vedere [Distribuire app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Applicazioni**
 
     - **Aggiungi l'app dello Store**: aggiungere un'app da Microsoft Store per le aziende. Se l'elenco non include alcuna app, è possibile ottenerle e [aggiungerle a Intune](store-apps-windows.md). Ad esempio, è possibile aggiungere un browser in modalità tutto schermo, Excel, OneNote e altro ancora.
-
-      Selezionare **OK** per salvare le modifiche.
 
     - **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale, ad esempio Visual Studio Code o Google Chrome. Immettere le proprietà seguenti:
 
@@ -166,14 +160,10 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
       - **Percorso locale**: obbligatorio. Immettere il percorso del file eseguibile, ad esempio `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
       - **ID modello utente applicazione (AUMID)** : immettere l'ID modello utente applicazione dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
 
-      Selezionare **OK** per salvare le modifiche.
-
     - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows come il Blocco note o la Calcolatrice. Immettere le proprietà seguenti:
 
       - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
       - **ID modello utente applicazione (AUMID)** : obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
-
-      Selezionare **OK** per salvare le modifiche.
 
     - **AutoLaunch**: facoltativo. Scegliere un'applicazione da avviare automaticamente quando l'utente esegue l'accesso. È possibile configurare una sola app per l'avvio automatico.
     - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
@@ -186,8 +176,6 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 - **Barra delle applicazioni di Windows**: scegliere **Mostra** o **Nascondi** per la barra delle applicazioni. Per impostazione predefinita, la barra delle applicazioni non viene visualizzata. Vengono visualizzate delle icone, ad esempio l'icona del Wi-Fi, ma le impostazioni non possono essere modificate dagli utenti finali.
 
 - **Consenti l'accesso alla cartella Download**: scegliere **Sì** per consentire agli utenti di accedere alla cartella Download in Esplora risorse. Per impostazione predefinita, l'accesso alla cartella Download è disabilitato. Questa funzionalità viene usata comunemente per consentire agli utenti finali di accedere agli elementi scaricati da un browser.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

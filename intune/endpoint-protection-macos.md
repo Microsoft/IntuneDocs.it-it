@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756517"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960408"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Impostazioni di Endpoint Protection per macOS in Intune  
 
@@ -82,6 +82,9 @@ Usare il firewall per controllare le connessioni per ogni singola applicazione, 
 ## <a name="filevault"></a>FileVault  
 Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) nel contenuto Apple Developer. 
 
+> [!IMPORTANT]  
+> A partire da macOS 10,15, la configurazione di FileVault richiede la registrazione MDM approvata dall'utente. 
+
 - **FileVault**  
   È possibile *abilitare* la crittografia dei dischi completa usando XTS-AES 128 con FileVault nei dispositivi che eseguono MacOS 10,13 e versioni successive.  
   - **Non configurato**  
@@ -104,9 +107,9 @@ Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFil
     **Impostazione predefinita**: Non configurato  
 
      > [!IMPORTANT]  
-     > Si è verificato un problema noto quando l'impostazione **Disattiva richiesta alla disconnessione** è impostata su *Abilita*. Quando è impostato su *Abilita*, l'impostazione per il **numero di volte consentito a bypass** deve essere impostata su un valore e non deve essere impostata come *non*configurata. Se impostato su *non configurato*, il profilo ha esito negativo nel dispositivo. In questo scenario il dispositivo segnala che si tratta di un **Riepilogo dello stato del profilo** come **errore** senza ulteriori dettagli.
+     > Si verifica un problema noto quando **Disabilita la richiesta alla disconnessione** è impostato su *Abilita*. Quando è impostato su *Abilita*, **Numero di volte per cui è consentito ignorare** deve essere impostato su un valore e non su *Non configurato*. Se è impostato su *Non configurato*, si verifica un problema con il profilo nel dispositivo. In questo scenario **Riepilogo dello stato del profilo** è segnalato come **Errore** nel dispositivo, senza altri dettagli.
      > 
-     > Quando la **richiesta di disabilitazione alla disconnessione** è impostata su *non configurato*, il **numero di volte consentito per il bypass** non può essere *configurato* o avere un valore.  
+     > Quando **Disabilita la richiesta alla disconnessione** è impostato su *Non configurato*, **Numero di volte per cui è consentito ignorare** può essere impostato su *Non configurato* o avere un valore.  
      > 
      > Il problema verrà risolto in un aggiornamento futuro. 
 

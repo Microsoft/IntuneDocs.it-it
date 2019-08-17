@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494491"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550170"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -57,13 +57,13 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
 - **Installa i dati dell'app nel volume di sistema**: **Blocca** impedisce alle app di archiviare dati nel volume di sistema del dispositivo. L'impostazione **Non configurata** (predefinita) consente alle app di archiviare i dati nel volume del disco di sistema.
 - **Installa le app nell'unità di sistema**: **Blocca** impedisce l'installazione delle app nell'unità di sistema nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'installazione delle app nell'unità di sistema.
 - **Game DVR** (solo desktop): **Blocca** disabilita la registrazione e la trasmissione di giochi di Windows. L'impostazione **Non configurata** (predefinita) consente la registrazione e la trasmissione dei giochi.
-- **Le app dallo store solo**: questa impostazione determina l'esperienza utente quando gli utenti installano le app da posizioni diverse di Microsoft Store. Le opzioni disponibili sono:
+- **App solo dallo Store**: questa impostazione determina l'esperienza utente quando gli utenti installano le app da posizioni diverse dalla Microsoft Store. Le opzioni disponibili sono:
 
-  - **Non configurato** (impostazione predefinita): consente agli utenti di installare le app da posizioni diverse di Microsoft Store, incluse le app definite in altre impostazioni dei criteri.  
-  - **Ovunque**: consente di disattivare le raccomandazioni di app, e consente agli utenti di installare le app da qualsiasi posizione.  
-  - **Solo Store**: impone agli utenti finali di installano solo applicazioni dall'interno di Microsoft Store.
-  - **Raccomandazioni**: quando si installa un'app dal web che è disponibile nella finestra di Microsoft Store, gli utenti visualizzano un messaggio in cui si consiglia di scaricarlo dall'archivio.  
-  - **Preferisce Store**: avvisa gli utenti quando installano le app da posizioni diverse di Microsoft Store.
+  - **Non configurato** (impostazione predefinita): consente agli utenti finali di installare app da posizioni diverse da Microsoft Store, incluse le app definite in altre impostazioni dei criteri.  
+  - **Ovunque**: disattiva le raccomandazioni per le app e consente agli utenti di installare le app da qualsiasi percorso.  
+  - **Solo archivio**: impone agli utenti finali di installare solo le app dal Microsoft Store.
+  - **Suggerimenti**: quando si installa un'app dal Web disponibile nel Microsoft Store, gli utenti visualizzano un messaggio che suggerisce di scaricarlo dall'archivio.  
+  - **Preferisci Store**: avvisa gli utenti quando installano app da posizioni diverse dal Microsoft Store.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -429,7 +429,7 @@ Selezionare **OK** per salvare le modifiche.
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi a DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), che elenca anche le edizioni di Windows supportate.
 
-- **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso al dispositivo senza una password. Si applica ai soli account locali. Le password degli account di dominio rimarranno configurate da Active Directory (AD) e Azure AD.
+- **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso al dispositivo senza una password. Si applica solo agli account locali. Le password dell'account di dominio restano configurate da Active Directory (AD) e Azure AD.
 
   - **Tipo di password richiesto**: scegliere il tipo di password. Le opzioni disponibili sono:
     - **Non configurato**: la password può includere lettere e numeri.
@@ -440,7 +440,7 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
     > [!IMPORTANT]
     > La modifica dei requisiti per la password in un desktop di Windows interessa gli utenti al successivo accesso, ossia quando il dispositivo passa dallo stato inattivo allo stato attivo. Agli utenti con password che soddisfano i requisiti viene comunque chiesto di cambiare la password.
     
-  - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di autenticazioni consentiti prima della cancellazione del dispositivo, fino a 11. Il numero valido che immesso dipende dall'edizione. [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) sono elencati i valori supportati. `0` (zero) potrebbe disabilitare la funzionalità di cancellazione del dispositivo.
+  - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di autenticazioni consentiti prima della cancellazione del dispositivo, fino a 11. Il numero valido immesso dipende dall'edizione. [DeviceLock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) elenca i valori supportati. `0` (zero) potrebbe disabilitare la funzionalità di cancellazione del dispositivo.
 
     Questa impostazione ha inoltre un impatto diverso a seconda dell'edizione. Per informazioni dettagliate su questa impostazione, vedere il [provider di servizi di configurazione DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
@@ -753,9 +753,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
   [CSP Defender/ScheduleQuickScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > Per questa impostazione in Intune nel portale di Azure può essere visualizzato uno stato di errore. Si tratta di un bug della funzionalità di creazione di report. Dopo la riproduzione del comportamento e la risoluzione dei problemi, il gruppo di prodotto Intune ha confermato che lo stato è effettivamente corretto. Il bug per la creazione dei report verrà risolto in una versione futura. Non esiste attualmente una data di implementazione prevista, perché le tempistiche sono soggette a variazioni. Gli eventuali aggiornamenti per questa funzionalità vengono annunciati in [In fase di sviluppo per Microsoft Intune](in-development.md).
-
 - **Tipo di analisi di sistema da eseguire**: consente di pianificare un'analisi di sistema, inclusi il livello di analisi e il giorno e l'ora in cui eseguire l'analisi. Le opzioni disponibili sono:
   - **Non configurata**: l'analisi di sistema non è pianificata nel dispositivo. Gli utenti finali possono eseguire manualmente le analisi nei dispositivi in base alle proprie esigenze.
   - **Disabilita**: disabilita qualsiasi analisi di sistema presente nel dispositivo. Scegliere questa opzione se si usa una soluzione antivirus partner che analizza i dispositivi.
@@ -776,9 +773,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   [CSP Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [CSP Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > Per questa impostazione in Intune nel portale di Azure può essere visualizzato uno stato di errore. Si tratta di un bug della funzionalità di creazione di report. Dopo la riproduzione del comportamento e la risoluzione dei problemi, il gruppo di prodotto Intune ha confermato che lo stato è effettivamente corretto. Il bug per la creazione dei report verrà risolto in una versione futura. Non esiste attualmente una data di implementazione prevista, perché le tempistiche sono soggette a variazioni. Gli eventuali aggiornamenti per questa funzionalità vengono annunciati in [In fase di sviluppo per Microsoft Intune](in-development.md).
 
 - **Rileva applicazioni potenzialmente indesiderate**: scegliere il livello di protezione quando Windows rileva applicazioni potenzialmente indesiderate. Le opzioni disponibili sono:
   - **Non configurato** (impostazione predefinita): la protezione di Windows Defender per le applicazioni potenzialmente indesiderate è disabilitata.
