@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883423"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550196"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -85,13 +85,13 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 - **App singola**: gli utenti possono accedere solo a un'app singola nel dispositivo. All'avvio del dispositivo viene avviata solo l'app specifica. Gli utenti non possono aprire nuove app o modificare l'app in esecuzione.
 
-  **Procedura**
-  1. Scegliere **Selezionare un'app gestita** e selezionare l'app Google Play gestita nell'elenco. 
+  - **Selezionare un'app gestita**: selezionare l'app Google Play gestita nell'elenco.
 
-      Se l'elenco non include alcuna app, [aggiungere alcune app Android](apps-add-android-for-work.md) al dispositivo. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](apps-deploy.md).
+    Se l'elenco non include alcuna app, [aggiungere alcune app Android](apps-add-android-for-work.md) al dispositivo. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](apps-deploy.md).
 
-  2. Scegliere **OK** > **OK** per aggiungere l'app.
-
+  > [!IMPORTANT]
+  > Quando si usa la modalità tutto schermo a app singola, le app del comparatore/telefono potrebbero non funzionare correttamente. 
+  
 - **Più app**: gli utenti possono accedere a un set di app limitato nel dispositivo. All'avvio del dispositivo vengono avviate solio le app aggiunte. È anche possibile aggiungere alcuni collegamenti Web che gli utenti possono aprire. Quando viene applicato il criterio, gli utenti visualizzano le icone delle app consentite nella schermata iniziale.
 
   > [!IMPORTANT]
@@ -101,43 +101,65 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   > 
   > Non è richiesto che l'app di **schermata iniziale gestita** sia inclusa nel profilo di configurazione, ma è necessario che venga aggiunta come app client. Quando l'app di **schermata iniziale gestita** viene aggiunta come app client, qualsiasi altra app aggiunta nel profilo di configurazione viene visualizzata come icona nell'app di **schermata iniziale gestita**. 
   >
-  > Quando si usa la modalità tutto schermo per più app con la schermata iniziale gestita, le app per il dialer e il telefono potrebbero non funzionare correttamente. 
+  > Quando si usa la modalità tutto schermo per più app, le app del servizio di connessione/telefono potrebbero non funzionare correttamente. 
 
-  - Scegli **Aggiungi** e selezionare le app nell'elenco.
+  - **Aggiungi**: selezionare le app dall'elenco.
 
     Se l'app di **schermata iniziale gestita** non è inclusa nell'elenco, [aggiungerla da Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Assicurarsi di [assegnare l'app](apps-deploy.md) al gruppo di dispositivi creato per i dispositivi dedicati.
 
     È anche possibile aggiungere al dispositivo altre [app Android](apps-add-android-for-work.md) e [app Web](web-app.md) create dall'organizzazione. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](apps-deploy.md).
 
-  - **Pulsante Pagina iniziale virtuale**: scegliere **Abilita** per visualizzare un pulsante Pagina iniziale nel dispositivo dedicato. Quando questo pulsante è visualizzato, riporta l'utente alla schermata iniziale del dispositivo in modo che possa cambiare facilmente app. In alcuni dispositivi Android, è possibile che gli utenti debbano scorrere velocemente verso l'alto sullo schermo per visualizzare il pulsante Pagina iniziale. **Disabilita** non mostra un pulsante Pagina iniziale e gli utenti devono quindi usare il pulsante Indietro per spostarsi tra le app.
-  - **Esci dalla modalità tutto schermo**: scegliere **Abilita** per consentire agli amministratori di sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per utilizzare questa funzionalità, l'amministratore esegue le operazioni seguenti: 
-  
-    1. Continua a selezionare il pulsante Indietro fino a quando non viene visualizzato il pulsante "Exit kiosk" (Esci da modalità tutto schermo). 
-    2. Seleziona il pulsante e immette il PIN per **Codice di uscita dalla modalità tutto schermo**.
-    3. Al termine delle modifiche, selezionare l'app di **schermata iniziale gestita**. Questo passaggio blocca di nuovo il dispositivo in modalità tutto schermo con più app. 
+  - **Pulsante Home virtuale**: un pulsante del tasto softkey che restituisce gli utenti alla schermata iniziale gestita in modo che gli utenti possano passare tra le app. Le opzioni disponibili sono:
 
-    **Disabilita** non offre la possibilità di sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante "Exit kiosk" (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
+    - **Non configurato** (impostazione predefinita): non viene visualizzato un pulsante Home. Gli utenti devono usare il pulsante indietro per spostarsi tra le app.
+    - **Scorri verso l'alto**: un pulsante Home viene visualizzato quando un utente scorre il dispositivo.
+    - **Floating**: Mostra un pulsante Home permanente e mobile sul dispositivo.
+
+  - **Esci dalla modalità tutto schermo**: scegliere **Abilita** per consentire agli amministratori di sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per utilizzare questa funzionalità, l'amministratore esegue le operazioni seguenti:
+  
+    1. Continua a selezionare il pulsante Indietro fino a quando non viene visualizzato il pulsante **Exit kiosk** (Esci da modalità tutto schermo). 
+    2. Seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo) e immette il PIN per **Codice di uscita dalla modalità tutto schermo**.
+    3. Al termine, selezionare l'app **Home Screen gestita** . Questo passaggio blocca di nuovo il dispositivo in modalità tutto schermo con più app.
+
+      Se impostato su **non configurato**, gli amministratori non possono sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
 
     - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4-6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
 
   - **Imposta uno sfondo personalizzato per l'URL**: immettere un URL per personalizzare la schermata di sfondo nel dispositivo dedicato.
-    
+
     > [!NOTE]
     > Nella maggior parte dei casi, è consigliabile iniziare almeno con immagini delle dimensioni seguenti:
     >
     > - Telefono: 1920 x 1080 pixel
     > - Tablet: 1920 x 1080 pixel
-    >    
+    >
     > Per ottenere la migliore esperienza e nitidezza dei dettagli, è consigliabile procedere alla creazione di asset per ogni immagine del dispositivo in base alle specifiche di visualizzazione.
     >
     > Gli schermi moderni hanno maggiori densità di pixel e consentono di visualizzare immagini con definizione equivalente a 2K/4K.
-  - **Configurazione Wi-Fi**: scegliere **Abilita** per consentire agli utenti di connettere il dispositivo a reti Wi-Fi diverse. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurata** (impostazione predefinita) impedisce agli utenti di connettersi alle reti Wi-Fi quando si trovano nella modalità schermata iniziale gestita (modalità attività di blocco).
 
-    Altre informazioni sulla [modalità attività di blocco](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (apre il sito Web di Android).
+  - **Configurazione Wi-Fi**: **Abilita** Mostra il controllo Wi-Fi nella schermata iniziale gestita e consente agli utenti finali di connettere il dispositivo a diverse reti Wi-Fi. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non Visualizza il controllo Wi-Fi nella schermata iniziale gestita. Impedisce agli utenti di connettersi alle reti Wi-Fi usando la schermata iniziale gestita.
 
-  - **Configurazione Bluetooth**: scegliere **Abilita** per attivare Bluetooth nel dispositivo e consentire agli utenti di associare i dispositivi tramite Bluetooth. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurata** (impostazione predefinita) impedisce agli utenti di configurare il Bluetooth e associare i dispositivi quando si trovano nella modalità schermata iniziale gestita (modalità attività di blocco). 
+  - **Configurazione Bluetooth**: **Abilita** Mostra il controllo Bluetooth nella schermata iniziale gestita e consente agli utenti finali di associare i dispositivi tramite Bluetooth. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non Visualizza il controllo Bluetooth nella schermata iniziale gestita. Impedisce agli utenti di configurare i dispositivi Bluetooth e di associazione usando la schermata iniziale gestita.
 
-    Altre informazioni sulla [modalità attività di blocco](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (apre il sito Web di Android).
+  - **Torcia Access**: **Abilita** Mostra il controllo torcia sulla schermata iniziale gestita e consente agli utenti finali di attivare o disattivare la torcia. **Non configurato** (impostazione predefinita) non Visualizza il controllo torcia nella schermata iniziale gestita. Impedisce agli utenti di usare la torcia durante l'uso della schermata iniziale gestita.
+
+  - **Controllo volume multimediale**: **Abilita** Mostra il controllo volume multimediale nella schermata iniziale gestita e consente agli utenti finali di modificare il volume multimediale del dispositivo usando un dispositivo di scorrimento. **Non configurato** (impostazione predefinita) non Visualizza il controllo volume multimediale nella schermata iniziale gestita. Impedisce agli utenti di modificare il volume multimediale del dispositivo durante l'uso della schermata iniziale gestita, a meno che i pulsanti hardware non lo supportino. 
+
+  - **Modalità screen saver**: **Abilita** Mostra uno screensaver nella schermata iniziale gestita quando il dispositivo è bloccato o si verifica un timeout. **Non configurato** (impostazione predefinita) non mostra uno screen saver nella schermata iniziale gestita.
+
+    Se abilitata, configurare anche:
+
+    - **Imposta immagine screen saver personalizzata**: immettere l'URL di un'immagine personalizzata. Ad esempio, immettere:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Se non si immette un URL, viene utilizzata l'immagine predefinita del dispositivo, se è presente un'immagine predefinita.
+
+    - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0-9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
+    - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1-9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
+    - **Rileva supporto prima di iniziare screen saver**: **Abilita** (impostazione predefinita) non Mostra l'screen saver se l'audio o il video è in riproduzione sul dispositivo. **Non** configurata mostra il screen saver, anche se la riproduzione audio o video viene eseguita.
 
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
 

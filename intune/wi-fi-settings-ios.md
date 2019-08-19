@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046684"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022672"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi iOS in Microsoft Intune
 
@@ -71,8 +71,8 @@ Questo articolo descrive queste impostazioni.
 
   - **EAP-TLS**: immettere anche:
 
-    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
-    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete e viene usato per autenticare la connessione.
+    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile ai server di accesso alla rete wireless. Ad esempio, aggiungere `mywirelessserver.contoso.com` o `mywirelessserver`. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
+    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato consente al client di considerare attendibile il certificato del server di accesso alla rete wireless.
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -82,8 +82,8 @@ Questo articolo descrive queste impostazioni.
 
   - **EAP-TTLS**: immettere anche:
 
-    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
-    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete e viene usato per autenticare la connessione.
+    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile ai server di accesso alla rete wireless. Ad esempio, aggiungere `mywirelessserver.contoso.com` o `mywirelessserver`. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
+    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato consente al client di considerare attendibile il certificato del server di accesso alla rete wireless.
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -104,8 +104,8 @@ Questo articolo descrive queste impostazioni.
 
   - **PEAP**: immettere anche:
 
-    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
-    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete e viene usato per autenticare la connessione.
+    - **Server trust** - **Nomi dei server per certificati**: scegliere **Aggiungi** per aggiungere uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile ai server di accesso alla rete wireless. Ad esempio, aggiungere `mywirelessserver.contoso.com` o `mywirelessserver`. Quando si immettono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.
+    - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato consente al client di considerare attendibile il certificato del server di accesso alla rete wireless.
 
       Selezionare **OK** per salvare le modifiche.
 

@@ -1,11 +1,11 @@
 ---
 title: Il dispositivo Android sembra essere crittografato | Microsoft Docs
-description: ''
+description: Risolvere lo stato della crittografia nell'app Portale aziendale e Microsoft Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,60 +18,46 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389476"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022740"
 ---
-# <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
+# <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo crittografato, ma le app dicono altrimenti
 
-Quando si crittografa un dispositivo, si esegue la codifica delle informazioni in esso contenute tramite una chiave segreta nota solo all'utente. Questo impedisce l'accesso agli utenti non autorizzati. Molte organizzazioni richiedono agli utenti di crittografare i propri dispositivi Android prima di poter accedere ai file, alla posta elettronica o ai dati aziendali.
+Se Portale aziendale o l'app Microsoft Intune affermano che il dispositivo non è crittografato, ma si è certi che sia, provare i passaggi descritti in questo articolo.  
 
-## <a name="common-issues"></a>Problemi comuni
+## <a name="add-a-startup-pin"></a>Aggiungere un PIN di avvio
 
-Le versioni più recenti di Android, in particolare a partire dalla versione 7.0, richiedono un passcode di avvio per assicurarsi che il dispositivo sia completamente crittografato. Produttori di dispositivi diversi hanno descrizioni e posizioni variabili per il passcode di avvio. Nella maggior parte dei casi, questa impostazione è detta "avvio sicuro". 
+Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Il percorso di questa impostazione sarà nell'app **Impostazioni** del dispositivo. Il nome e il percorso dell'impostazione possono variare. Ad esempio, in Samsung Galaxy S7, l'impostazione viene definita **avvio protetto**. Per abilitarla e creare un codice di accesso, passare a **Impostazioni** > **schermata di blocco e sicurezza** > **avvio protetto**.  
 
-## <a name="solutions"></a>Soluzioni
+## <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
 
-### <a name="add-a-startup-pin"></a>Aggiungere un PIN di avvio
+Questa sezione si applica solo all'app Portale aziendale. Alcuni dispositivi consentono di scegliere se crittografare l'intero dispositivo o solo lo spazio usato. Scegliere l'opzione per crittografare l'intero dispositivo. Se si è scelto di crittografare solo lo spazio utilizzato:
 
-Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Esistono molte versioni di Android da più produttori diversi. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**.  
+1. [Rimuovere il dispositivo dal Portale aziendale](unenroll-your-device-from-intune-android.md).
+2. Decrittografare lo spazio usato.  
+3. Crittografare l'intero dispositivo.  
+4. Registrare nuovamente il dispositivo.  
 
-### <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
+## <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
 
-Alcuni dispositivi consentono di scegliere se crittografare l'intero dispositivo o solo lo spazio usato. Scegliere l'opzione per crittografare l'intero dispositivo anziché solo lo spazio usato. Se è già stato crittografato solo lo spazio usato:
-
-1. [Rimuovere il dispositivo dal Portale aziendale](unenroll-your-device-from-intune-android.md)
-2. Decrittografare lo spazio usato
-3. Crittografare l'intero dispositivo
-4. Registrare nuovamente il dispositivo
-
-### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
-
-Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
+Questa sezione si applica solo all'app Portale aziendale. Se il dispositivo offre la possibilità di effettuare il downgrade ad Android 6.0 e versioni successive, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto del supporto tecnico dell'azienda, sono disponibili nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ## <a name="specific-manufacturer-issues"></a>Problemi di produttori specifici
 
-Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi dispositivi possono risultare crittografati anche se sono completamente nuovi. Intune riconosce che i metodi di crittografia di questi dispositivi mettono a rischio le informazioni del dispositivo. Questo rischio deriva principalmente da utenti malintenzionati che hanno accesso fisico al dispositivo.
+Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi metodi di crittografia mettono a rischio le informazioni sul dispositivo. Di conseguenza, questi dispositivi non sono supportati. 
+
+Per un elenco non esaustivo di dispositivi Android supportati, vedere l'articolo [sistemi operativi e browser supportati in Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Se il dispositivo non è elencato, consultare il produttore del dispositivo o contattare il personale di supporto. 
 
 > [!Note]
 > Microsoft collabora con i produttori per risolvere i problemi rilevati durante i test o segnalati dagli utenti. Questo articolo verrà aggiornato quando saranno disponibili nuove informazioni. 
 
-## <a name="known-devices"></a>Dispositivi noti
+## <a name="update-devices"></a>Aggiornare i dispositivi   
 
-### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Dispositivi noti che possono essere aggiornati per risolvere questo problema
+Se il dispositivo non è stato aggiornato alla versione più recente di Android, passare all'app **Impostazioni** del dispositivo e selezionare **Aggiorna**.  
 
-Se il dispositivo non è stato aggiornato alla versione più recente di Android, accedere al tuo dispositivo **le impostazioni** app e selezionare **Update**. Questi dispositivi potrebbero essere visualizzati come non conformi solo dopo aver aggiornato:  
-
-- Huawei Honor 8
-- Huawei P9
-
-### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivi noti che attualmente non possono essere aggiornati per risolvere questo problema
-I dispositivi seguenti verranno sempre visualizzate crittografati e non possono essere utilizzati per accedere alle risorse aziendali. Per accedere alle risorse aziendali, è necessario usare un dispositivo diverso.  
-
-- Huawei Mate 8
-- Dispositivi OPPO
-- Dispositivi Vivo
-- Smartphone Xiaomi Mi
+## <a name="next-steps"></a>Passaggi successivi   
+Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.  
