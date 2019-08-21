@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Recapito dei criteri di protezione dell'app
                   href: app-protection-policy-delivery.md
+                - name: Protezione delle estensioni delle app
+                  href: app-protection-policy-extensions.md
                 - name: Monitorare lo stato dell'utente con protezione delle app
                   href: app-protection-policies-monitor.md
                 - name: Prepararsi per i criteri di protezione delle app WIP
