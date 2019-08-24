@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550170"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998936"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -66,13 +66,6 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
   - **Preferisci Store**: avvisa gli utenti quando installano app da posizioni diverse dal Microsoft Store.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **Imponi il riavvio delle app in caso di errore di aggiornamento**: quando un'app è in uso, potrebbe non venire aggiornata. Usare questa impostazione per forzare il riavvio di un'app. **Non configurata** (impostazione predefinita) non forza il riavvio delle app. **Rendi obbligatorio** consente agli amministratori di forzare il riavvio in base a una data e un'ora specifiche o a una pianificazione ricorrente. Quando l'opzione è impostata su **Rendi obbligatorio**, immettere anche:
-
-  - **Data/Ora di inizio**: scegliere una data e un'ora specifiche per il riavvio delle app.
-  - **Ricorrenza**: scegliere un riavvio giornaliero, settimanale o mensile.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **Controllo utente sulle installazioni**: quando è impostata su **Non configurata** (impostazione predefinita), Windows Installer impedisce agli utenti di cambiare le opzioni di installazione generalmente riservate agli amministratori di sistema, come l'immissione della directory in cui installare i file. **Blocca** consente agli utenti di cambiare queste opzioni di installazione. Alcune funzionalità di sicurezza di Windows Installer vengono inoltre ignorate.
 
