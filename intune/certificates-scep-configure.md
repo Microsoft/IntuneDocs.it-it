@@ -115,7 +115,7 @@ In questo passaggio verranno eseguite le operazioni seguenti:
    - In **Sicurezza** aggiungere l'account del servizio NDES e assegnare all'account le autorizzazioni di **registrazione** al modello. È necessario che gli amministratori di Intune che creano profili SCEP abbiano i diritti di **lettura** per selezionare il modello durante la creazione dei profili.
 
      > [!NOTE]
-     > Per revocare i certificati, l'account del servizio NDES necessita dei diritti di *	Rilascio e gestione certificati* per l'autorità di certificazione. Per delegare questa autorizzazione, aprire la console di gestione delle autorità di certificazione e fare clic con il pulsante destro del mouse sul nome dell'autorità di certificazione. Nella scheda Sicurezza aggiungere o selezionare l'account e quindi selezionare la casella di controllo **Rilascio e gestione certificati**.
+     > Per revocare i certificati, l'account del servizio NDES necessita dei diritti di *Rilascio e gestione certificati* per l'autorità di certificazione. Per delegare questa autorizzazione, aprire la console di gestione delle autorità di certificazione e fare clic con il pulsante destro del mouse sul nome dell'autorità di certificazione. Nella scheda Sicurezza aggiungere o selezionare l'account e quindi selezionare la casella di controllo **Rilascio e gestione certificati**.
 
 
 3. Esaminare il **periodo di validità** nella scheda **Generale** del modello. Per impostazione predefinita, Intune usa il valore configurato nel modello. È tuttavia possibile configurare la CA per consentire al richiedente di immettere un valore diverso, che è poi possibile impostare dalla console di amministrazione di Intune. Per usare sempre il valore nel modello, ignorare il resto del passaggio.

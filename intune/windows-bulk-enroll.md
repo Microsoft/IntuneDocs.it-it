@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403369"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651043"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -73,7 +73,7 @@ Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono confo
 
 2. Scegliere la modalità di applicazione del pacchetto di provisioning nel dispositivo.  Un pacchetto di provisioning può essere applicato a un dispositivo in uno dei modi seguenti:
    - Archiviare il pacchetto di provisioning in un'unità USB, inserire l'unità USB nel dispositivo di cui eseguire la registrazione in blocco e applicare il pacchetto durante l'installazione iniziale
-   - Archiviare il pacchetto di provisioning in una cartella di rete e applicarlo nel dispositivo di cui si vuole eseguire la registrazione in blocco dopo l'installazione iniziale
+   - Archiviare il pacchetto di provisioning in una cartella di rete e applicarlo dopo l'installazione iniziale
 
    Per istruzioni dettagliate sull'applicazione di un pacchetto di provisioning, vedere [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) (Applicare un pacchetto di provisioning).
 

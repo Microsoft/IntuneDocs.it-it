@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487743"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998885"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo in Intune
 
@@ -97,6 +97,17 @@ Eseguire una sola app nel dispositivo.
   - **Aggiungi l'app dello Store**: scegliere **Aggiungi un'app dello Store** e scegliere un'app nell'elenco.
 
     Se l'elenco non include app, aggiungerne qualcuna seguendo la procedura in [App client](apps-add.md).
+    
+ - **Specificare la finestra di manutenzione per i riavvii dell'app**: il valore predefinito è "non configurato", selezionare "Richiedi" per verificare la presenza di app che richiedono un riavvio per completare l'installazione.
+ 
+     Se si usa il browser Kiosk o altre app Microsoft Store for business, decidere con quale frequenza verificare la presenza di aggiornamenti dell'app che richiedono il riavvio per completare l'installazione dell'applicazione. Se non è configurato, le app Microsoft Store per le aziende vengono riavviate dopo 3 giorni non pianificati dopo l'installazione di un aggiornamento dell'app.
+     
+     - **Ora di inizio della finestra di manutenzione**: selezionare la data e l'ora del giorno in cui iniziare a controllare i client per eventuali aggiornamenti dell'app che richiedono il riavvio. L'ora di avvio predefinita è mezzanotte, ovvero zero minuti.
+     
+     - **Ricorrenza finestra di manutenzione**: il valore predefinito è giornaliero.
+         Imposta la frequenza con cui verranno applicate le finestre di manutenzione per gli aggiornamenti delle app. Il suggerimento è giornaliero per evitare i riavvii delle app non pianificati.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
 

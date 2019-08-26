@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530548"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582926"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
@@ -88,30 +88,35 @@ Esportare il certificato dell'Autorità di certificazione radice disponibile nel
 Il certificato viene importato quando si configura un profilo certificato attendibile.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Passaggio 3: Creare profili di certificati attendibili
+
 Creare un profilo certificato attendibile prima di creare un profilo certificato SCEP o PKCS. Sono necessari un profilo certificato attendibile e un profilo SCEP o PKCS per ogni piattaforma del dispositivo. La procedura per la creazione di certificati attendibili è simile per tutte le piattaforme dei dispositivi.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selezionare **Configurazione del dispositivo** > **Gestisci** > **Profili** > **Crea profilo**.
-4. Immettere **Nome** e **Descrizione** per il profilo certificato attendibile.
-5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo per questo certificato attendibile. Le opzioni disponibili sono:
+1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **Configurazione del dispositivo** > **Gestisci** > **Profili** > **Crea profilo**.
+2. Immettere le proprietà seguenti:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 e versioni successive**
-    - **Windows 10 e versioni successive**
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di profilo valido è **Profilo certificato attendibile per dispositivi con proprietario Android Enterprise** o **Profilo certificato attendibile per dispositivi iOS**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
 
-6. Dall'elenco a discesa **Tipo di profilo** scegliere **Certificato attendibile**.
-7. Passare al certificato salvato in [Passaggio 2: Esportare il certificato CA radice attendibile](#step-2-export-your-trusted-root-ca-certificate) e quindi selezionare **OK**.
-8. Solo per i dispositivi Windows 8.1 e Windows 10, selezionare l'**Archivio di destinazione** per il certificato attendibile da:
+      - **Android**
+      - **Android Enterprise** > **Solo proprietario del dispositivo**
+      - **Android Enterprise** > **Solo profilo di lavoro**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 e versioni successive**
+      - **Windows 10 e versioni successive**
 
-    - **Archivio certificati computer - Radice**
-    - **Archivio certificati computer - Intermedio**
-    - **Archivio certificati utente - Intermedio**
+    - **Tipo di profilo**: Scegliere **Certificato attendibile**.
 
-9. Al termine scegliere **OK**, tornare alla pagina **Crea profilo** e selezionare **Crea**.
+3. Passare al certificato salvato in [Passaggio 2: Esportare il certificato CA radice attendibile](#step-2-export-your-trusted-root-ca-certificate) e quindi selezionare **OK**.
+4. Solo per i dispositivi Windows 8.1 e Windows 10, selezionare l'**Archivio di destinazione** per il certificato attendibile da:
+
+    - **Archivio certificati computer - Radice** (SCEP)
+    - **Archivio certificati computer - Intermedio** (SCEP)
+    - **Archivio certificati utente - Intermedio** (PKCS,SCEP)
+
+5. Al termine scegliere **OK**, tornare alla pagina **Crea profilo** e selezionare **Crea**.
 
 Il profilo viene creato e quindi visualizzato nell'elenco. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md).
 
@@ -128,6 +133,7 @@ Vedere uno degli articoli seguenti per informazioni sulla configurazione e sull'
 Dopo aver creato un profilo certificato attendibile, creare i profili certificato SCEP o PKCS per ogni piattaforma che si vuole usare. Quando si crea un profilo certificato SCEP, è necessario specificare un profilo certificato attendibile per la stessa piattaforma. In questo modo i due profili certificato risultano collegati, anche se è ancora necessario assegnarli separatamente.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 [Assegnare i profili di dispositivo](device-profile-assign.md)  
 [Usare S/MIME per firmare e crittografare la posta elettronica](certificates-s-mime-encryption-sign.md)  
 [Usare un'autorità di certificazione di terze parti](certificate-authority-add-scep-overview.md)

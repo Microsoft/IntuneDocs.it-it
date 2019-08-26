@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670971"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960658"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Applicare la conformità per Microsoft Defender ATP con l'accesso condizionale in Intune  
 
@@ -82,11 +82,12 @@ Il primo passaggio consiste nel configurare la connessione da servizio a servizi
 Questa procedura viene in genere eseguita una volta sola. Dopo aver abilitato Microsoft Defender ATP per il tenant di Intune, non è necessario ripetere l'operazione.
 
 > [!TIP]  
-> Quando si integra una nuova applicazione in Intune Mobile Threat Defense e si abilita la connessione, Intune crea un criterio di accesso condizionale classico in Azure Active Directory. Ogni app MTD integrata, ad esempio [Defender ATP](advanced-threat-protection.md) o uno qualsiasi dei [partner MTD](mobile-threat-defense.md#mobile-threat-defense-partners) aggiuntivi crea nuovi criteri di accesso condizionale classici.  Questi criteri possono essere ignorati, ma non devono essere modificati, eliminati o disabilitati.
+> Quando si integra una nuova applicazione in Intune Mobile Threat Defense e si abilita la connessione per Intune, Intune crea criteri di accesso condizionale classici in Azure Active Directory. Ogni app MTD integrata, inclusi [Defender ATP](advanced-threat-protection.md) o uno qualsiasi dei [partner MTD](mobile-threat-defense.md#mobile-threat-defense-partners) aggiuntivi, crea nuovi criteri di accesso condizionale classici. Questi criteri possono essere ignorati, ma non devono essere modificati, eliminati o disabilitati.
 > 
 > I criteri di accesso condizionale classici per le app gestite: 
 > 
-> - Vengono usati da Intune MTD per richiedere che i dispositivi vengano registrati in Azure AD in modo da avere un ID dispositivo. L'ID è necessario per consentire ai dispositivi di segnalare correttamente lo stato a Intune.  
+> - Vengono usati da Intune MTD per richiedere che i dispositivi vengano registrati in Azure AD in modo da avere un ID dispositivo prima di comunicare con i partner MTD. L'ID è necessario per consentire ai dispositivi di segnalare correttamente lo stato a Intune.  
+> - Non ha alcun effetto su altre app o risorse cloud.  
 > - Sono diversi dai criteri di accesso condizionale che è possibile creare per facilitare la gestione di MTD.
 > - Per impostazione predefinita non interagiscono con altri criteri di accesso condizionale usati per la valutazione.  
 > 

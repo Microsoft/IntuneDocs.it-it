@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041303"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651203"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -152,7 +152,9 @@ Il report **Conformità del dispositivo** > **Conformità delle impostazioni** c
 Quando si seleziona un'impostazione specifica, è possibile visualizzare lo **stato di conformità**, l'**alias di posta elettronica dell'utente**, il **modello del dispositivo** e la **posizione** per ogni dispositivo a cui viene applicata tale impostazione.
 
 > [!NOTE]
-> I dispositivi Windows 10 aggiunti ad Azure AD possono visualizzare l'account di sistema come utente non conforme. Si tratta di un comportamento previsto che non influisce sulla conformità complessiva del dispositivo. 
+> I criteri possono essere assegnati a un dispositivo e a un utente nello stesso dispositivo. In alcuni scenari, un dispositivo può essere sincronizzato prima che l'utente esegua l'accesso, ad esempio quando il dispositivo viene riavviato. La conformità può valutare l'utente e mostrare il dispositivo come non conforme. Questo comportamento può anche indicare l'account di sistema come utente non conforme.
+>
+> Si tratta di un problema noto con i dispositivi Windows 10 multiutente. Eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](in-development.md) e/o [novità](whats-new.md).
 
 ## <a name="view-status-of-device-policies"></a>Visualizzare lo stato dei criteri dei dispositivi
 

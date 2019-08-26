@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68679990"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978516"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -37,7 +37,7 @@ Tipi di baseline separati possono includere le stesse impostazioni, ma usare val
 > [!NOTE]
 > Microsoft sconsiglia di usare le versioni di anteprima delle baseline di sicurezza in ambiente di produzione. Le impostazioni in una baseline di anteprima potrebbero cambiare nel corso della fase di anteprima. 
 
-L'obiettivo dell'uso delle baseline di sicurezza è avere un flusso di lavoro end-to-end sicuro quando si lavora con Microsoft 365. Alcuni dei vantaggi sono i seguenti:
+Le baseline di sicurezza possono essere utili per definire un flusso di lavoro completo sicuro quando si lavora con Microsoft 365. Alcuni dei vantaggi sono i seguenti:
 
 - Una baseline di sicurezza include le procedure consigliate e le raccomandazioni per le impostazioni con effetti sulla sicurezza. Partner di Intune con lo stesso team di sicurezza per Windows che crea le baseline di sicurezza di Criteri di gruppo. Queste raccomandazioni si basano su linee guida e una vasta esperienza.
 - Se non si ha familiarità con Intune e non si sa da dove iniziare, le baseline di sicurezza rappresentano un vantaggio. È possibile creare e distribuire rapidamente un profilo sicuro, sapendo che si sta contribuendo alla protezione delle risorse e dei dati dell'organizzazione.
@@ -47,20 +47,21 @@ L'obiettivo dell'uso delle baseline di sicurezza è avere un flusso di lavoro en
 
 [Baseline della sicurezza di Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) è un'ottima risorsa per scoprire di più su questa funzionalità. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (Gestione di dispositivi mobili) è una valida fonte di informazioni su MDM e sulle funzionalità disponibili per i dispositivi Windows.
 
-## <a name="security-baseline-versions-and-instances"></a>Versioni e istanze delle baseline di sicurezza
-Periodicamente diventano disponibili nuovi aggiornamenti per una baseline. Ogni istanza di una nuova versione di una baseline può aggiungere o rimuovere impostazioni o introdurre altre modifiche. Ad esempio, quando diventano disponibili nuove impostazioni di Windows 10 con le nuove versioni di Windows 10, la baseline di sicurezza MDM potrebbe ricevere una nuova istanza di versione che include le impostazioni più recenti.  
+## <a name="about-baseline-versions-and-instances"></a>Informazioni su versioni e istanze delle baseline di sicurezza
 
-Nella console di Intune è possibile visualizzare le baseline di sicurezza disponibili e relative informazioni. Le informazioni disponibili includono il numero di profili esistenti che usano tale tipo di baseline, il numero di istanze separate del tipo di baseline disponibili e la data di disponibilità, o pubblicazione, dell'ultima istanza più recente.  L'esempio seguente mostra il riquadro per una baseline di sicurezza MDM molto usata:  
+Ogni istanza di una nuova versione di una baseline può aggiungere o rimuovere impostazioni o introdurre altre modifiche. Ad esempio, quando diventano disponibili nuove impostazioni di Windows 10 con le nuove versioni di Windows 10, la baseline di sicurezza MDM potrebbe ricevere una nuova istanza di versione che include le impostazioni più recenti.  
+
+Nella console di Intune il riquadro per ogni baseline visualizza il nome del modello di baseline e le informazioni di base su tale baseline. Le informazioni includono il numero di profili esistenti che usano tale tipo di baseline, il numero di istanze separate (versioni) del tipo di baseline disponibili e la data *Ultima pubblicazione* che identifica quando il modello di baseline è stato aggiunto al tenant. L'esempio seguente mostra il riquadro per una baseline di sicurezza MDM molto usata:  
 
 ![Riquadro della baseline](./media/security-baselines/baseline-tile.png)
 
-Per visualizzare informazioni sulle versioni di baseline usate, selezionare una baseline e quindi selezionare **Versioni**. Intune visualizza informazioni dettagliate sulle versioni usate dai profili. Nel riquadro Versioni è possibile selezionare una singola versione per visualizzare ulteriori dettagli sui profili che usano tale versione. È anche possibile selezionare due versioni diverse e quindi scegliere **Compare baselines** (Confronta baseline) per scaricare un file CSV con informazioni dettagliate sulle differenze.  
+Per visualizzare altre informazioni sulle versioni delle baseline usate, selezionare un riquadro di baseline per aprire il relativo riquadro *Panoramica* e quindi selezionare **Versioni**. Intune visualizza i dettagli sulle versioni di tale baseline in uso nei profili. Nel riquadro Versioni è possibile selezionare una singola versione per visualizzare ulteriori dettagli sui profili che usano tale versione. È anche possibile selezionare due versioni diverse e quindi scegliere **Compare baselines** (Confronta baseline) per scaricare un file CSV con informazioni dettagliate sulle differenze.  
 
 ![Confrontare le baseline](./media/security-baselines/compare-baselines.png)
 
 Quando si crea un *profilo* di baseline di sicurezza, il profilo usa automaticamente l'istanza della baseline di sicurezza rilasciata più di recente.  È possibile continuare a usare e modificare i profili creati in precedenza che usano un'istanza di versione precedente della baseline, incluse le baseline create con una versione di anteprima. 
 
-I profili di baseline di sicurezza supportano una [modifica della versione](#change-the-baseline-instance-for-a-profile) della baseline in uso. Questo significa che quando viene pubblicata una nuova versione, non è necessario creare un nuovo profilo di baseline per sfruttarne i vantaggi. Al contrario, quando si è pronti, è possibile selezionare un profilo di baseline e quindi usare l'opzione predefinita per cambiare la versione dell'istanza per il profilo.  
+È possibile scegliere di [modificare la versione](#change-the-baseline-version-for-a-profile) di una baseline in uso con un determinato profilo. Questo significa che quando viene pubblicata una nuova versione, non è necessario creare un nuovo profilo di baseline per sfruttarne i vantaggi. Al contrario, quando si è pronti, è possibile selezionare un profilo di baseline e quindi usare l'opzione predefinita per sostituire la versione dell'istanza per il profilo con una nuova.  
 
 ## <a name="available-security-baselines"></a>Baseline di sicurezza disponibili 
 
@@ -79,18 +80,21 @@ Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intu
 
 È possibile continuare a usare e modificare i profili creati in precedenza basati su un modello di anteprima, anche quando tale modello di anteprima non è più disponibile per la creazione di nuovi profili. 
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="manage-baselines"></a>Gestire le baseline  
+
+Le attività comuni per l'uso delle baseline di sicurezza includono:
+- [Creare un profilo](#create-the-profile): per configurare le impostazioni che si vuole usare e quindi assegnare la baseline ai gruppi.
+- [Modificare la versione](#change-the-baseline-version-for-a-profile): per modificare la versione della baseline in uso in un profilo.
+- [Rimuovere un'assegnazione di baseline](#remove-a-security-baseline-assignment): informazioni su cosa accade quando si interrompe la gestione delle impostazioni con una baseline di sicurezza.
+
+
+### <a name="prerequisites"></a>Prerequisiti
 - Per gestire le baseline in Intune, l'account deve avere il ruolo predefinito [Gestione profili e criteri](role-based-access-control.md#built-in-roles).
 
 - Per usare alcune baseline potrebbe essere necessario avere una sottoscrizione attiva per servizi aggiuntivi, ad esempio Microsoft Defender ATP.  
 
-## <a name="co-managed-devices"></a>Dispositivi con co-gestione
 
-Le baseline di sicurezza nei dispositivi gestiti da Intune sono paragonabili ai dispositivi con co-gestione con Configuration Manager. I dispositivi con co-gestione usano System Center Configuration Manager e Microsoft Intune per gestire contemporaneamente i dispositivi Windows 10. Questa funzionalità consente di collegare gli investimenti esistenti per Configuration Manager ai vantaggi di Intune tramite il cloud. La [panoramica della co-gestione](https://docs.microsoft.com/sccm/comanage/overview) è un'ottima risorsa se si usa Configuration Manager e si vogliono sfruttare anche i vantaggi del cloud.
-
-Quando si usano dispositivi con co-gestione, è necessario trasferire il carico di lavoro **Configurazione del dispositivo** (le relative impostazioni) in Intune. In [Co-management workloads](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) (Carichi di lavoro di co-gestione) sono disponibili altre informazioni.
-
-## <a name="create-the-profile"></a>Creare il profilo
+### <a name="create-the-profile"></a>Creare il profilo
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e quindi selezionare **Sicurezza dei dispositivi** > **Baseline di sicurezza** per visualizzare l'elenco delle baseline disponibili.
 
@@ -131,12 +135,13 @@ Quando si usano dispositivi con co-gestione, è necessario trasferire il carico 
    ![Rivedere la baseline](./media/security-baselines/review.png) 
 
   
-8. Dopo aver creato il profilo, è possibile modificarlo passando a **Sicurezza dei dispositivi** > **Baseline di sicurezza**, selezionare il tipo di baseline configurato e quindi selezionare **Profili**.  Selezionare il profilo nell'elenco dei profili disponibili e quindi selezionare **Proprietà**. È possibile modificare le impostazioni da tutte le schede di configurazione disponibili e quindi selezionare **Verifica e salva** per eseguire il commit delle modifiche.  
+8. Dopo aver creato il profilo, è possibile modificarlo passando a **Sicurezza dei dispositivi** > **Baseline di sicurezza**, selezionare il tipo di baseline configurato e quindi selezionare **Profili**. Selezionare il profilo nell'elenco dei profili disponibili e quindi selezionare **Proprietà**. È possibile modificare le impostazioni da tutte le schede di configurazione disponibili e quindi selezionare **Verifica e salva** per eseguire il commit delle modifiche.  
 
-## <a name="change-the-baseline-instance-for-a-profile"></a>Modificare l'istanza della baseline per un profilo
-I profili di baseline supportano la modifica dell'istanza della baseline usata dal profilo. È possibile selezionare un'istanza precedente o, più comunemente, un'istanza più recente della stessa baseline.  Non è possibile cambiare il profilo per usare due baseline diverse, ad esempio passare dall'uso di una baseline per Defender ATP all'uso della baseline di sicurezza MDM. 
+### <a name="change-the-baseline-version-for-a-profile"></a>Modificare la versione della baseline per un profilo  
 
-Quando si configura una modifica della versione della baseline sarà disponibile un'opzione per scaricare un file CSV in cui sono elencate le modifiche tra le due versioni della baseline coinvolte. Viene anche offerta la possibilità di mantenere tutte le personalizzazioni nella versione della baseline originale e di applicarle alla nuova versione o di implementare tutte le impostazioni predefinite disponibili nella nuova versione della baseline selezionata. 
+È possibile modificare la versione dell'istanza della baseline in uso con un profilo.  Quando si modifica la versione, si seleziona un'istanza disponibile della stessa baseline. Non è possibile cambiare il profilo per usare due tipi di baseline diversi, ad esempio passare dall'uso di una baseline per Defender ATP all'uso della baseline di sicurezza MDM. 
+
+Quando si configura una modifica della versione della baseline è possibile scaricare un file CSV in cui sono elencate le modifiche tra le due versioni della baseline coinvolte. È anche possibile scegliere di mantenere tutte le personalizzazioni dalla versione della baseline originale oppure implementare la nuova versione usando tutti i valori predefiniti. Non è possibile apportare modifiche alle singole impostazioni quando si modifica la versione di una baseline per un profilo. 
 
 Al momento del salvataggio, dopo il completamento della conversione, la baseline viene ridistribuita immediatamente ai gruppi assegnati.  
 
@@ -147,7 +152,7 @@ Al momento del salvataggio, dopo il completamento della conversione, la baseline
 
   Quando un'impostazione non è più gestita da un profilo di baseline, tale impostazione non viene reimpostata nel dispositivo. Al contrario, l'impostazione nel dispositivo rimane impostata sull'ultima configurazione fino a quando un altro processo gestisce l'impostazione per modificarla. Un profilo di base diverso, un'impostazione di Criteri di gruppo o una configurazione manuale eseguita nel dispositivo sono esempi di processi che possono modificare un'impostazione dopo averne interrotto la gestione. 
 
-### <a name="to-change-the-instance-for-a-baseline"></a>Per modificare l'istanza per una baseline  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>Per modificare la versione della baseline per un profilo  
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionare **Sicurezza dei dispositivi** > **Baseline di sicurezza**, quindi selezionare il riquadro per il tipo di baseline che include il profilo da modificare.  
 
@@ -159,7 +164,7 @@ Al momento del salvataggio, dopo il completamento della conversione, la baseline
 
    ![selezionare una versione](./media/security-baselines/select-instance.png)  
    
-4. Selezionare **Review update** (Verifica aggiornamento) per scaricare un file CSV che visualizza la differenza tra la versione di istanza corrente dei profili e la nuova versione selezionata. Esaminare questo file in modo da conoscere le impostazioni aggiunte e rimosse, nonché i valori predefiniti per queste impostazioni nel profilo aggiornato.  
+4. Selezionare **Review update** (Verifica aggiornamento) per scaricare un file CSV che visualizza la differenza tra la versione di istanza corrente dei profili e la nuova versione selezionata. Esaminare questo file in modo da conoscere le impostazioni nuove o rimosse, nonché i valori predefiniti per queste impostazioni nel profilo aggiornato.  
 
    Quando si è pronti, continuare con il passaggio successivo.  
 
@@ -169,14 +174,16 @@ Al momento del salvataggio, dopo il completamento della conversione, la baseline
 
 6. Selezionare **Invia**. Il profilo viene aggiornato alla versione della baseline selezionata e al termine della conversione la baseline viene ridistribuita immediatamente ai gruppi assegnati.
 
-## <a name="remove-a-security-baseline-assignment"></a>Rimuovere un'assegnazione della baseline di sicurezza
+### <a name="remove-a-security-baseline-assignment"></a>Rimuovere un'assegnazione della baseline di sicurezza
 Quando un'impostazione della baseline di sicurezza non è più applicabile a un dispositivo oppure le impostazioni in una baseline vengono impostate su *Non configurato*, per queste impostazioni in un dispositivo non viene ripristinata una configurazione gestita in precedenza. Le impostazioni precedentemente gestite nel dispositivo mantengono invece le ultime configurazioni ricevute dalla baseline fino a quando un altro processo non aggiorna tali impostazioni nel dispositivo.  
 
 Altri processi che potrebbero modificare le impostazioni nel dispositivo in un secondo momento includono l'aggiunta o la modifica di una baseline della sicurezza, un profilo di configurazione del dispositivo, configurazioni di Criteri di gruppo o la modifica manuale dell'impostazione nel dispositivo.  
 
+## <a name="co-managed-devices"></a>Dispositivi con co-gestione
 
+Le baseline di sicurezza nei dispositivi gestiti da Intune sono paragonabili ai dispositivi con co-gestione con Configuration Manager. I dispositivi con co-gestione usano System Center Configuration Manager e Microsoft Intune per gestire contemporaneamente i dispositivi Windows 10. Questa funzionalità consente di collegare gli investimenti esistenti per Configuration Manager ai vantaggi di Intune tramite il cloud. La [panoramica della co-gestione](https://docs.microsoft.com/sccm/comanage/overview) è un'ottima risorsa se si usa Configuration Manager e si vogliono sfruttare anche i vantaggi del cloud.
 
-
+Quando si usano dispositivi con co-gestione, è necessario trasferire il carico di lavoro **Configurazione del dispositivo** (le relative impostazioni) in Intune. In [Co-management workloads](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) (Carichi di lavoro di co-gestione) sono disponibili altre informazioni.  
 
 ## <a name="q--a"></a>Domande e risposte
 

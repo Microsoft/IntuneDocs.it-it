@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671049"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550127"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorare la crittografia dei dispositivi con Intune   
 
@@ -102,15 +102,15 @@ Quando si seleziona un dispositivo dal report di crittografia, Intune visualizza
   Di seguito sono riportati alcuni esempi dei dettagli dello stato che Intune può segnalare:  
   
   **macOS**:
-  - Il profilo non può essere attualmente installato perché è in attesa di un prerequisito.  
+  - la chiave di ripristino non è ancora stata recuperata e archiviata. È probabile che il dispositivo non sia stato sbloccato o che non sia stato archiviato.  
  
-    *Tenere in considerazione: questo risultato non rappresenta necessariamente una condizione di errore, ma uno stato temporaneo che può essere dovuto a un intervallo nel dispositivo in cui è necessario configurare il deposito delle chiavi di ripristino prima che la richiesta di crittografia venga inviata al dispositivo stesso. Questo risultato può anche indicare che il dispositivo rimane bloccato o non è stato recentemente sincronizzato con Intune. Infine, poiché la crittografia FileVault viene avviata solo quando un dispositivo viene collegato per la ricarica, è possibile che un utente riceva una chiave di ripristino per un dispositivo non ancora crittografato*.  
+    *Tenere in considerazione: questo risultato non rappresenta necessariamente una condizione di errore, ma uno stato temporaneo che può essere dovuto a un intervallo nel dispositivo in cui è necessario configurare il deposito delle chiavi di ripristino prima che la richiesta di crittografia venga inviata al dispositivo stesso. Questo stato potrebbe anche indicare che il dispositivo rimane bloccato o non è stato recentemente sincronizzato con Intune. Infine, poiché la crittografia FileVault viene avviata solo quando un dispositivo viene collegato per la ricarica, è possibile che un utente riceva una chiave di ripristino per un dispositivo non ancora crittografato*.  
 
-  - Il profilo FileVault è installato, ma FileVault non è abilitato nel dispositivo.  
+  - L'utente sta posticipando la crittografia o sta attualmente eseguendo la crittografia.  
  
     *Tenere in considerazione: l'utente non si è ancora disconnesso dopo aver ricevuto la richiesta di crittografia (operazione necessaria perché FileVault possa crittografare il dispositivo) oppure l'utente ha decrittografato manualmente il dispositivo. Intune non può impedire a un utente di decrittografare il dispositivo.*  
 
-  - FileVault è già stato abilitato dall'utente, pertanto Intune non riesce a gestirne il ripristino.  
+  - Il dispositivo è già crittografato. Per continuare, l'utente del dispositivo deve decrittografare il dispositivo.  
  
     *Tenere in considerazione: Intune non è in grado di configurare FileVault in un dispositivo già crittografato. L'utente deve invece decrittografare manualmente il dispositivo prima di poterlo gestire con criteri di configurazione del dispositivo e Intune*. 
  
@@ -118,9 +118,9 @@ Quando si seleziona un dispositivo dal report di crittografia, Intune visualizza
  
     *Tenere in considerazione: A partire da macOS versione 10.15 (Catalina), le impostazioni di registrazione approvate dall'utente possono comportare il requisito dell'approvazione manuale della crittografia FileVault da parte dell'utente. Per altre informazioni, vedere [Registrazione approvata dall'utente](macos-enroll.md)* nella documentazione di Intune.  
 
-  - Il dispositivo iOS ha restituito NotNow (è bloccato).  
+  - Sconosciuto.  
 
-    *Tenere in considerazione: il dispositivo è bloccato e Intune non può avviare il processo di deposito o di crittografia. Dopo che il dispositivo sarà stato sbloccato, il processo potrà continuare*.  
+    *Tenere in considerazione: Una delle possibili cause di uno stato sconosciuto è che il dispositivo è bloccato e Intune non può avviare il processo di deposito o di crittografia. Dopo che il dispositivo sarà stato sbloccato, il processo potrà continuare*.  
 
   **Windows 10**:  
   - I criteri di BitLocker richiedono il consenso utente per l'avvio della Crittografia guidata unità BitLocker per iniziare la crittografia del volume del sistema operativo, ma l'utente non ha fornito il consenso.  
@@ -161,7 +161,7 @@ Durante la visualizzazione del riquadro Report sulla crittografia è possibile s
   
 ![Esportare i dettagli](./media/encryption-monitor/export.png) 
  
-Questo report può essere utile per identificare i problemi di gruppi di dispositivi. È ad esempio possibile usare il report per identificare un elenco di dispositivi macOS che segnalano *FileVault is already enabled by the user* (FileVault già abilitato dall'utente). Questo messaggio identifica i dispositivi che devono essere decrittografati manualmente perché Intune possa iniziare a gestirne le impostazioni di FileVault.  
+Questo report può essere utile per identificare i problemi di gruppi di dispositivi. È ad esempio possibile usare il report per identificare un elenco di dispositivi macOS che segnalano *FileVault is already enabled by the user* (FileVault già abilitato dall'utente). Questo messaggio identifica i dispositivi che devono essere decrittografati manualmente perché Intune possa gestirne le impostazioni di FileVault.  
  
 ## <a name="filevault-recovery-keys"></a>Chiavi di ripristino di FileVault   
 Quando Intune esegue per la prima volta la crittografia di un dispositivo macOS con FileVault, viene creata una chiave di ripristino personale. Al momento della crittografia, il dispositivo visualizza la chiave personale una sola volta per l'utente finale.  

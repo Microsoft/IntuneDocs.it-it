@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68700991"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549994"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Esistono quattro tipi di distribuzione Autopilot: [Modalità di distribuzione automatica](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) per chioschi multimediali, segnaletica digitale o un dispositivo condiviso, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) che consente ai partner o al personale IT di eseguire il pre-provisioning di un PC Windows 10 in modo che sia completamente configurato e pronto per le attività aziendali, [Autopilot per i dispositivi esistenti](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) che consente di distribuire facilmente la versione più recente di Windows 10 nei dispositivi esistenti e [modalità definita dall'utente](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) per gli utenti tradizionali. 
+Esistono quattro tipi di distribuzione Autopilot: [Modalità di distribuzione automatica](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) per chioschi multimediali, segnaletica digitale o un dispositivo condiviso, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) che consente ai partner o al personale IT di eseguire il pre-provisioning di un PC Windows 10 in modo che sia completamente configurato e pronto per le attività aziendali, [Autopilot per i dispositivi esistenti](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) che consente di distribuire facilmente la versione più recente di Windows 10 nei dispositivi esistenti e [modalità definita dall'utente](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) per gli utenti tradizionali. 
 
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -49,10 +49,10 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
 
     ![Screenshot dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file CSV deve elencare i numeri di serie, gli ID prodotto Windows, gli hash hardware e facoltativamente i tag dei gruppi. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito:
+2. In **Aggiungi dispositivi di Windows AutoPilot** passare a un file con estensione csv che elenca i dispositivi che si vuole aggiungere. Il file CSV deve elencare i numeri di serie, gli ID prodotto Windows, gli hash hardware, i tag dei gruppi dei dispositivi e facoltativamente l'utente assegnato. È possibile avere fino a 500 righe nell'elenco. Usare l'intestazione e il formato di riga indicati di seguito:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
-    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Screenshot dell'aggiunta dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528249"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549975"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -85,16 +85,16 @@ Un'assegnazione di ruolo definisce:
 Per visualizzare un'assegnazione di ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > scegliere un ruolo > scegliere un'assegnazione. Verranno visualizzate le pagine seguenti:
 
 - **Proprietà**: nome, descrizione, ruolo, membri, ambiti e tag dell'assegnazione.
-- **Membri**: tutti gli utenti nei gruppi elencati hanno l'autorizzazione necessaria per gestire gli utenti/i dispositivi elencati in Ambito (gruppi).
-- **Ambito (gruppi)** : tutti gli utenti/i dispositivi in questi gruppi possono essere gestiti dagli utenti in Membri.
+- **Membri**: tutti gli utenti nei gruppi di sicurezza di Azure elencati hanno l'autorizzazione necessaria per gestire gli utenti/i dispositivi elencati in Ambito (gruppi).
+- **Ambito (gruppi)** : tutti gli utenti/i dispositivi in questi gruppi di sicurezza di Azure possono essere gestiti dagli utenti in Membri.
 - **[Ambito (tag)](scope-tags.md)** : Gli utenti in Membri possono visualizzare le risorse che hanno gli stessi tag di ambito.
 
 ### <a name="multiple-role-assignments"></a>Più assegnazioni di ruolo
-Se un utente ha più assegnazioni di ruolo, le autorizzazioni in queste assegnazioni di ruolo si estendono ai diversi oggetti in questo modo:
+Se un utente ha più assegnazioni di ruolo, autorizzazioni e tag di ambito, queste assegnazioni di ruolo si estendono ai diversi oggetti in questo modo:
 
-- Le autorizzazioni di assegnazione si applicano solo agli oggetti, come criteri o app, all'interno dell'assegnazione del ruolo Ambito (gruppi). Le autorizzazioni di assegnazione non si applicano a oggetti in altre assegnazioni di ruolo, a meno che non vengano concesse in modo specifico dall'altra assegnazione.
-- Le altre autorizzazioni, ad esempio di creazione e lettura, si applicano a tutti gli oggetti dello stesso tipo (come tutti i criteri o tutte le app) in qualsiasi assegnazione dell'utente.
-- Le autorizzazioni per oggetti di tipi diversi, come criteri o app, non si applicano le une alle altre. Un'autorizzazione di lettura per i criteri, ad esempio, non fornisce un'autorizzazione di lettura per le app nelle assegnazioni dell'utente.
+- Le autorizzazioni di assegnazione e i tag di ambito si applicano solo agli oggetti, come criteri o app, all'interno dell'assegnazione del ruolo Ambito (gruppi). Le autorizzazioni di assegnazione e i tag di ambito non si applicano a oggetti in altre assegnazioni di ruolo, a meno che non vengano concesse in modo specifico dall'altra assegnazione.
+- Le altre autorizzazioni (ad esempio Creazione, Lettura, Aggiornamento ed Eliminazione) si applicano a tutti gli oggetti dello stesso tipo (come tutti i criteri o tutte le app) in qualsiasi assegnazione dell'utente.
+- Le autorizzazioni e i tag di ambito per oggetti di tipi diversi, come criteri o app, non si applicano le une alle altre. Un'autorizzazione di lettura per i criteri, ad esempio, non fornisce un'autorizzazione di lettura per le app nelle assegnazioni dell'utente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Assegnare un ruolo a un utente](assign-role.md)
