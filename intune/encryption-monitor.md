@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550127"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027382"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorare la crittografia dei dispositivi con Intune   
 
-Il report di crittografia di Microsoft Intune rappresenta una posizione centralizzata per visualizzare i dettagli relativi allo stato della crittografia dei dispositivi gestiti. È possibile visualizzare i dettagli sullo stato della crittografia di un dispositivo e trovare le opzioni per gestire le chiavi di ripristino del dispositivo stesso. Le opzioni relative alle chiavi di ripristino disponibili dipendono dal tipo del dispositivo che si sta visualizzando.  
+Il report di crittografia di Microsoft Intune è una posizione centralizzata che consente di visualizzare i dettagli sullo stato di crittografia di un dispositivo e di trovare le opzioni per gestire le chiavi di ripristino del dispositivo. Le opzioni relative alle chiavi di ripristino disponibili dipendono dal tipo del dispositivo che si sta visualizzando.  
 
 Per trovare il report, accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e passare a **Configurazione del dispositivo**, quindi in *Monitoraggio*, selezionare **Report di crittografia**.  
 
@@ -48,7 +48,7 @@ Il riquadro Report sulla crittografia visualizza l'elenco dei dispositivi gestit
 - **Versione del sistema operativo**: versione di Windows o di macOS del dispositivo.  
 - **Versione TPM**  *(solo per Windows 10)* : versione del chip TPM (Trusted Platform Module) nel dispositivo Windows 10.  
 - **Conformità con la crittografia**: valutazione della conformità dei dispositivi per il supporto di una tecnologia di crittografia applicabile, ad esempio BitLocker o FileVault. I dispositivi vengono identificati come:  
-  - **Pronto**: il dispositivo può essere crittografato usando criteri MDM, che richiedono che il dispositivo soddisfi i requisiti seguenti:  
+  - **Pronto**: Il dispositivo può essere crittografato usando i criteri MDM, in base ai quali il dispositivo deve soddisfare i requisiti seguenti:  
     
     **Per i dispositivi macOS**:  
     - macOS versione 10.13 o successiva  
@@ -74,9 +74,11 @@ Quando si seleziona un dispositivo dal report di crittografia, Intune visualizza
 
 - **Conformità con la crittografia**: valutazione della conformità dei dispositivi per il supporto della crittografia tramite i criteri MDM.  
   
-  Ad esempio: anche se un dispositivo Windows 10 presenta una conformità corrispondente a *Non pronto*, è comunque possibile che supporti la crittografia. Per essere designato come *Pronto*, il dispositivo Windows 10 deve avere un chip TPM. I chip TPM non sono obbligatori per il supporto della crittografia. Vedere la sezione precedente relativa alla conformità con la crittografia per maggiori informazioni.  
+  Ad esempio: anche se un dispositivo Windows 10 presenta una conformità corrispondente a *Non pronto*, è comunque possibile che supporti la crittografia. Per essere designato come *Pronto*, il dispositivo Windows 10 deve avere un chip TPM. I chip TPM non sono obbligatori per il supporto della crittografia. Per altre informazioni, vedere *Conformità con la crittografia* nella sezione precedente.  
 
-- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata. Possono trascorrere fino a 24 ore prima che Intune segnali lo stato di crittografia di un dispositivo o una modifica di tale stato.  
+- **Stato crittografia**: indica se l'unità del sistema operativo è crittografata. Possono trascorrere fino a 24 ore prima che Intune segnali lo stato di crittografia di un dispositivo o una modifica di tale stato. Questo tempo include quello richiesto per la crittografia del sistema operativo, oltre al tempo richiesto al dispositivo per la segnalazione a Intune.  
+
+  Per velocizzare la creazione di report sullo stato di crittografia di FileVault prima della normale archiviazione del dispositivo, chiedere agli utenti di sincronizzare i dispositivi al termine della crittografia.  
 
 - **Profili**: elenco dei profili di *Configurazione dispositivo* validi per il dispositivo e configurati con i valori seguenti:  
 
@@ -86,11 +88,13 @@ Quando si seleziona un dispositivo dal report di crittografia, Intune visualizza
 
   - Windows 10:
     - Tipo di profilo = *Endpoint Protection*  
-    - Impostazioni > Crittografia di Windows > Crittografa i dispositivi = *Richiesto*  
+    - Impostazioni > Crittografia di Windows > Crittografa i dispositivi = *Richiedi*  
 
   È possibile usare l'elenco dei profili per individuare singoli criteri da esaminare nel caso in cui *Riepilogo dello stato del profilo* dovesse segnalare problemi.  
 
 - **Riepilogo dello stato del profilo**: riepilogo dei profili che si applicano al dispositivo. Il riepilogo rappresenta la condizione meno favorevole tra i profili applicabili. Se, ad esempio, solo uno di diversi profili determina un errore, *Riepilogo dello stato del profilo* visualizza *Errore*.  
+  
+  Per visualizzare altri dettagli di uno stato, passare a **Intune** > **Configurazione del dispositivo** > **Profili** e selezionare il profilo. Facoltativamente, selezionare **Stato del dispositivo** e quindi un dispositivo.  
 
 - **Dettagli stato**: dettagli avanzati sullo stato di crittografia del dispositivo.  
 
@@ -168,7 +172,7 @@ Quando Intune esegue per la prima volta la crittografia di un dispositivo macOS 
  
 Per i dispositivi gestiti, Intune può depositare una copia della chiave di ripristino personale. Il deposito delle chiavi consente agli amministratori di Intune di ruotare le chiavi per favorire la protezione dei dispositivi e agli utenti di recuperare una chiave di ripristino personale smarrita o ruotata.  
  
-Intune supporta più opzioni per la rotazione e il ripristino delle chiavi di ripristino personali. Un motivo per la rotazione delle chiavi è il fatto che se la chiave personale corrente viene smarrita questo viene considerato un rischio.  
+Intune supporta più opzioni per la rotazione e il ripristino delle chiavi di ripristino personali. È opportuno eseguire la rotazione delle chiavi se la chiave personale corrente viene smarrita o si ritiene che sia a rischio.  
  
 > [!IMPORTANT]  
 >  I dispositivi crittografati dagli utenti e non da Intune non possono essere gestiti da Intune. Questo significa che Intune non può depositare la chiave di ripristino personale di questi dispositivi, né gestire la rotazione delle chiavi di ripristino.  Perché Intune possa gestire FileVault e le chiavi di ripristino dei dispositivi, gli utenti devono decrittografare i dispositivi e quindi consentire a Intune di crittografarli.  

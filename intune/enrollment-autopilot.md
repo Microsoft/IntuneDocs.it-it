@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549994"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062943"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -55,6 +55,9 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Screenshot dell'aggiunta dei dispositivi di Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
+
+    >[!IMPORTANT]
+    > Quando si usa il caricamento CSV per assegnare un utente, assicurarsi di assegnare UPN validi. Se si assegna un UPN non valido (nome utente errato), il dispositivo potrebbe risultare inaccessibile fino a quando non si rimuove l'assegnazione non valida. Durante il caricamento CSV, l'unica convalida eseguita sulla colonna **Utente assegnato** consiste nel verificare la validità del nome di dominio. Non è possibile eseguire la convalida dei singoli UPN per assicurarsi che si stia assegnando un utente esistente o corretto.
 
 3. Scegliere **Importa** per avviare l'importazione delle informazioni sui dispositivi. L'importazione può richiedere alcuni minuti.
 

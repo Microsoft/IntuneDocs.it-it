@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044809"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974253"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi in Intune
 
@@ -103,7 +103,13 @@ Quando si crea un criterio di conformità del dispositivo, Intune crea automatic
     
     - **Blocca in remoto il dispositivo non conforme**: quando il dispositivo non è conforme, bloccare il dispositivo. Questa azione obbliga l'utente a immettere un PIN o un passcode per sbloccare il dispositivo. 
     
-5. Configurare i valori per l'opzione **Pianifica**: immettere il numero di giorni (da 0 a 365) dal rilevamento della non conformità, dopo cui attivare l'azione nei dispositivi degli utenti. Dopo questo periodo di tolleranza, è possibile applicare un criterio di accesso condizionale. Se si immette **0** (zero) come numero di giorni, l'accesso condizionale viene applicato **immediatamente**. È ad esempio possibile bloccare immediatamente l'accesso alle risorse aziendali se un dispositivo risulta non conforme.
+5. Configurare i valori per l'opzione **Pianifica**: immettere il numero di giorni (da 0 a 365) dal rilevamento della non conformità, dopo cui attivare l'azione nei dispositivi degli utenti. Dopo questo periodo di tolleranza, è possibile applicare un criterio di [accesso condizionale](conditional-access-intune-common-ways-use.md). Se si immette **0** (zero) come numero di giorni, l'accesso condizionale viene applicato **immediatamente**. Ad esempio, se un dispositivo non è conforme, usare l'accesso condizionale per bloccare immediatamente l'accesso alla posta elettronica, a SharePoint e ad altre risorse dell'organizzazione.
+
+    Quando si crea un criterio di conformità, viene creata automaticamente l'azione **Contrassegna il dispositivo come non conforme**, che viene impostata su **0** giorni (immediatamente). Con questa azione, durante l'archiviazione del dispositivo ne viene valutata immediatamente la conformità. Se si usa anche l'accesso condizionale, questo viene applicato immediatamente. Se si vuole consentire un periodo di tolleranza, modificare il valore di **Pianifica** nell'azione **Contrassegna il dispositivo come non conforme**.
+    
+    Nei criteri di conformità si vuole, ad esempio, anche inviare una notifica all'utente. A questo scopo, è possibile aggiungere l'azione **Invia un messaggio di posta elettronica all'utente finale**. In questa azione **Invia messaggio** si imposta **Pianifica** su 2 giorni. Se il dispositivo o l'utente finale viene ancora valutato come non conforme il giorno 2, il messaggio di posta elettronica viene inviato il giorno 2. Se si vuole inviare nuovamente il messaggio di posta elettronica all'utente il giorno 5 della mancata conformità, aggiungere un'altra azione e impostare **Pianifica** su 5 giorni.
+
+    Per altre informazioni sulla conformità e sulle azioni predefinite, vedere la [panoramica della conformità](device-compliance-get-started.md).
 
 6. Al termine, selezionare **Aggiungi** > **OK** per salvare le modifiche.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978516"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063031"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -64,6 +64,12 @@ Quando si crea un *profilo* di baseline di sicurezza, il profilo usa automaticam
 È possibile scegliere di [modificare la versione](#change-the-baseline-version-for-a-profile) di una baseline in uso con un determinato profilo. Questo significa che quando viene pubblicata una nuova versione, non è necessario creare un nuovo profilo di baseline per sfruttarne i vantaggi. Al contrario, quando si è pronti, è possibile selezionare un profilo di baseline e quindi usare l'opzione predefinita per sostituire la versione dell'istanza per il profilo con una nuova.  
 
 ## <a name="available-security-baselines"></a>Baseline di sicurezza disponibili 
+
+ È possibile usare contemporaneamente una o più delle baseline disponibili nell'ambiente Intune. È anche possibile usare più istanze delle stesse baseline di sicurezza con personalizzazioni diverse. 
+
+Quando si usano più baseline di sicurezza, esaminare le impostazioni di ognuna per identificare i casi in cui baseline diverse introducono valori in conflitto per la stessa impostazione. Dal momento che è possibile distribuire baseline di sicurezza progettate per finalità diverse e distribuire più istanze della stessa baseline che include impostazioni personalizzate, si potrebbero generare [conflitti di configurazione che devono essere analizzati e risolti](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Tenere anche in considerazione i [profili di configurazione dei dispositivi](device-profiles.md), che consentono di configurare molte delle stesse impostazioni delle baseline di sicurezza. 
+
+
 
 Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intune. Usare i collegamenti per visualizzare le impostazioni per l'istanza più recente di ogni baseline. 
 
