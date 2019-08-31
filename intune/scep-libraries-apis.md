@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b6daa574b983b4a03346e521c61f267e13c7de1a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882372"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122345"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usare le API per aggiungere a Intune autorità di certificazione di terze parti per SCEP
 
@@ -304,4 +304,4 @@ La convalida e la verifica che la soluzione è integrata correttamente con Intun
 - [Add partner certification authority in Intune using SCEP](certificate-authority-add-scep-overview.md) (Aggiungere l'autorità di autenticazione partner in Intune con SCEP)
 - [Configurare Intune](setup-steps.md)
 - [Registrazione dei dispositivi](device-enrollment.md)
-- [Creare un profilo certificato SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile) (il programma di installazione del server o connettore NDES di Microsoft non viene usato per questo scenario)
+- [Creare un profilo certificato SCEP](certificates-profile-scep.md) (il programma di installazione del server o connettore NDES di Microsoft non viene usato per questo scenario)
