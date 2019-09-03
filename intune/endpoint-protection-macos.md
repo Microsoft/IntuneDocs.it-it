@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960408"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158031"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Impostazioni di Endpoint Protection per macOS in Intune  
 
@@ -100,14 +100,14 @@ Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFil
     - **Rotazione della chiave di ripristino personale** : specificare la frequenza con cui viene ruotata la chiave di ripristino personale per un dispositivo. È possibile selezionare il valore predefinito di **non configurato**o un valore da **1** a **12** mesi.  
 
   - **Disattiva richiesta alla disconnessione**  
-    Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  Quando l'impostazione è abilitata, la richiesta di disconnessione viene disabilitata e all'utente viene richiesto di eseguire l'accesso.  
+    Impedire all'utente di richiedere l'abilitazione di FileVault al momento della disconnessione.  Quando l'impostazione è disabilitata, la richiesta di disconnessione viene disabilitata e all'utente viene richiesto di eseguire l'accesso.  
     - **Non configurato**  
-    - **Abilita** -Disabilita la richiesta di disconnessione.
+    - **Disable** : disattiva la richiesta di disconnessione.
 
     **Impostazione predefinita**: Non configurato  
 
      > [!IMPORTANT]  
-     > Si verifica un problema noto quando **Disabilita la richiesta alla disconnessione** è impostato su *Abilita*. Quando è impostato su *Abilita*, **Numero di volte per cui è consentito ignorare** deve essere impostato su un valore e non su *Non configurato*. Se è impostato su *Non configurato*, si verifica un problema con il profilo nel dispositivo. In questo scenario **Riepilogo dello stato del profilo** è segnalato come **Errore** nel dispositivo, senza altri dettagli.
+     > Si verifica un problema noto quando **Disabilita la richiesta alla disconnessione** è impostato su *Disabilita*. Quando è impostato su *Disabilita*, **Numero di volte per cui è consentito ignorare** deve essere impostato su un valore e non su *Non configurato*. Se è impostato su *Non configurato*, si verifica un problema con il profilo nel dispositivo. In questo scenario **Riepilogo dello stato del profilo** è segnalato come **Errore** nel dispositivo, senza altri dettagli.
      > 
      > Quando **Disabilita la richiesta alla disconnessione** è impostato su *Non configurato*, **Numero di volte per cui è consentito ignorare** può essere impostato su *Non configurato* o avere un valore.  
      > 
@@ -122,4 +122,5 @@ Per ulteriori informazioni sulle impostazioni di Apple FileVault, vedere [FDEFil
  
     **Impostazione predefinita**: Non configurato  
 
+Per altre informazioni su FileVault con Intune, vedere [chiavi di ripristino di FileVault](encryption-monitor.md#filevault-recovery-keys).
 
