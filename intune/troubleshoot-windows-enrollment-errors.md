@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993708"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063013"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune
 
@@ -223,7 +223,7 @@ Per risolvere questo problema in MDM ibrido con Intune e Configuration Manager, 
 #### <a name="resolution"></a>Soluzione
 1. Accedere al [portale di Azure](https://portal.azure.com/) come amministratore.    
 2. Passare a **Azure Active Directory > dispositivi > impostazioni del dispositivo**.    
-3. Impostare **gli utenti possono aggiungere dispositivi a Azure ad** **tutti** o **selezionati**.
+3. Impostare**Gli utenti possono aggiungere dispositivi ad Azure AD** su **Tutti** o **Selezionato**.
 
    Se si sceglie **selezionato**, fare clic su **selezionato**e quindi su **Aggiungi membri** per aggiungere tutti gli utenti che possono aggiungere i propri dispositivi a Azure ad. Verificare che siano stati aggiunti tutti gli account Azure AD per il pacchetto di provisioning.
  
@@ -331,7 +331,7 @@ Errore 0x80070774: si è verificato un problema. Confermare di usare le informaz
 
 Questo problema si verifica in genere prima che il dispositivo venga riavviato in uno scenario di Azure AD ibrido Autopilot, quando si verifica il timeout del dispositivo durante la schermata di accesso iniziale. Significa che il controller di dominio non è stato trovato o è stato raggiunto correttamente a causa di problemi di connettività. O che il dispositivo sia entrato in uno stato che non può essere aggiunto al dominio.
 
-**Motivo:** La causa più comune è che Aggiunta ad Azure AD ibrido viene usato e la funzionalità assegna utente è configurata nel profilo di Autopilot. Con la funzionalità assegna utente viene eseguito un Azure AD join sul dispositivo durante la schermata di accesso iniziale che inserisce il dispositivo in uno stato in cui non può partecipare al dominio locale. Pertanto, la funzionalità assegna utente deve essere utilizzata solo negli scenari con Azure AD di join di Autopilot standard.  La funzionalità deve essere utilizzata in scenari Aggiunta ad Azure AD ibrido.
+**Motivo:** La causa più comune è che Aggiunta ad Azure AD ibrido viene usato e la funzionalità assegna utente è configurata nel profilo di Autopilot. Con la funzionalità assegna utente viene eseguito un Azure AD join sul dispositivo durante la schermata di accesso iniziale che inserisce il dispositivo in uno stato in cui non può partecipare al dominio locale. Pertanto, la funzionalità assegna utente deve essere utilizzata solo negli scenari con Azure AD di join di Autopilot standard.  La funzionalità non deve essere utilizzata negli scenari Aggiunta ad Azure AD ibrido.
 
 #### <a name="resolution"></a>Soluzione
 
@@ -370,7 +370,7 @@ Description:
 
 Questo problema è in genere causato dalla delega non corretta delle autorizzazioni all'unità organizzativa in cui vengono creati i dispositivi Windows Autopilot. Per ulteriori informazioni, vedere [aumentare il limite di account computer nell'unità organizzativa](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit).
 
-1. Aprire **Utenti e computer di Active Directory (DSA.msc)** .
+1. Aprire **Utenti e computer di Active Directory (DSA.msc)**.
 2. Fare clic con il pulsante destro del mouse sull'unità organizzativa che si userà per creare i computer aggiunti ad Azure AD ibrido > **Delega controllo**.
 3. Nella procedura **Delega guidata del controllo** scegliere **Avanti** > **Aggiungi** > **Tipi di oggetto**.
 4. Nella finestra di dialogo **Tipi di oggetto** selezionare la casella di controllo **Computer** > **OK**.
