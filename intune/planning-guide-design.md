@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783249"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121869"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -166,7 +166,7 @@ L'infrastruttura a chiave pubblica fornisce certificati a dispositivi o utenti p
 
 Se si prevede di usare certificati con profili VPN, Wi-Fi o di posta elettronica con Intune, assicurarsi di disporre di un'[infrastruttura PKI](certificates-configure.md) supportata, pronta per la creazione e la distribuzione dei profili certificato.
 
-Inoltre, se verranno emessi certificati SCEP, è necessario determinare quale server ospiterà la funzionalità Servizio Registrazione dispositivi di rete (NDES) e come avverrà la comunicazione.
+Inoltre, se verranno usati profili di certificato SCEP, è necessario determinare quale server ospiterà la funzionalità Servizio Registrazione dispositivi di rete (NDES) e come avverrà la comunicazione.
 
 Sono disponibili altre informazioni su:
 
@@ -297,7 +297,7 @@ I profili certificato consentono a Intune di emettere un certificato per un uten
 È consigliabile documentare quale gruppo di utenti richiede un certificato, quanti profili certificato sono necessari e a quali gruppi di utenti distribuirli.
 
 >[!NOTE]
-> Tenere presente che il certificato radice attendibile è necessario per il certificato SCEP, pertanto verificare che tutti gli utenti a cui è assegnato il certificato SCEP ricevano anche un certificato radice attendibile. Se sono necessari certificati SCEP, progettare e documentare i modelli di certificato SCEP necessari.
+> Tenere presente che il certificato radice attendibile è necessario per il profilo di certificato SCEP, pertanto assicurarsi che tutti gli utenti a cui è assegnato il profilo di certificato SCEP ricevano anche un certificato radice attendibile. Se sono necessari certificati SCEP, progettare e documentare i modelli di certificato SCEP necessari.
 
 Di seguito è riportato un esempio di come documentare i certificati durante la progettazione:
 

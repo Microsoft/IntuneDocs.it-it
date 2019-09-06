@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590912"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206413"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -62,6 +62,9 @@ L'elenco seguente include il tipo di piattaforma app, le app monitorate per i di
 | macOS | Tutte le app installate nel dispositivo | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android Enterprise | Solo le app gestite | Solo le app installate nel profilo di lavoro | Ogni 7 giorni dalla registrazione del dispositivo |
+
+> [!NOTE]
+>I dispositivi aggiunti ad Azure AD ibrido Windows 10 con l'estensione di gestione di Intune attualmente non raccolgono l'inventario delle app in base alla pianificazione precedente. Si tratta di un problema noto. Eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](in-development.md) e/o [novità](whats-new.md).
 
 Il numero di app individuate potrebbe non corrispondere al conteggio degli stati di installazione delle app. Le possibilità delle incoerenze includono:
 - Una modifica di destinazione di un'app gestita installata può far sì che il conteggio delle installazioni nel pannello di stato diminuisca, mentre rimane segnalato nelle app individuate.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354500"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122295"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
@@ -83,7 +83,7 @@ Il profilo del certificato radice trusted consente al dispositivo di considerare
 
 Per configurare e assegnare il certificato di autenticazione client, vedere uno degli articoli seguenti:
 
-- [Configurare e gestire i certificati SCEP con Intune](certificates-scep-configure.md)
+- [Configurare l'infrastruttura per il supporto di SCEP con Intune](certificates-scep-configure.md)
 - [Configurare e gestire i certificati PKCS con Intune](certficates-pfx-configure.md)
 
 Verificare che il certificato sia configurato per l'autenticazione client. È possibile impostare questa opzione direttamente nei profili del certificato SCEP (elenco **Utilizzo chiavi avanzato** > **Autenticazione client**). Per PKCS, impostare l'autenticazione client nel modello di certificato nella CA.

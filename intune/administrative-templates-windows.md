@@ -1,11 +1,11 @@
 ---
 title: Usare i modelli per dispositivi Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Usare i modelli amministrativi di Microsoft Intune per creare gruppi di impostazioni per dispositivi Windows 10. Usare queste impostazioni in un profilo di configurazione del dispositivo per controllare le applicazioni di Office, proteggere le funzionalità di Internet Explorer, controllare l'accesso a OneDrive, usare le funzionalità di desktop remoto, abilitare la riproduzione automatica, impostare le opzioni di risparmio energia, usare la stampa HTTP, usare opzioni di accesso diverse e controllare le dimensioni del registro eventi.
+description: Usare i modelli amministrativi di Microsoft Intune per creare gruppi di impostazioni per dispositivi Windows 10. Usare queste impostazioni in un profilo di configurazione del dispositivo per controllare le applicazioni di Office, Microsoft Edge, proteggere le funzionalità di Internet Explorer, controllare l'accesso a OneDrive, usare le funzionalità di desktop remoto, abilitare la riproduzione automatica, impostare le opzioni di risparmio energia, usare la stampa HTTP, usare opzioni di accesso diverse e controllare le dimensioni del registro eventi.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842767"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214327"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
-Una soluzione pratica per gestire i dispositivi di un'organizzazione è creare un gruppo di impostazioni da applicare a gruppi di dispositivi diversi. Supponiamo ad esempio di avere vari gruppi di dispositivi. A GruppoA si vuole assegnare un set di impostazioni specifico. A GruppoB si vuole assegnare un set di impostazioni diverso. Si vuole anche disporre di una visualizzazione semplice delle impostazioni che è possibile configurare.
+Per gestire i dispositivi di un'organizzazione, può essere utile creare un gruppo di impostazioni da applicare a gruppi di dispositivi diversi. Supponiamo ad esempio di avere vari gruppi di dispositivi. A GruppoA si vuole assegnare un set di impostazioni specifico. A GruppoB si vuole assegnare un set di impostazioni diverso. Si vuole anche disporre di una visualizzazione semplice delle impostazioni che è possibile configurare.
 
-Per completare questa attività, è possibile usare **Modelli amministrativi** in Microsoft Intune. I modelli amministrativi includono centinaia di impostazioni che controllano le funzionalità per Internet Explorer, le applicazioni Microsoft Office, desktop remoto, OneDrive, password e PIN e altro ancora. Queste impostazioni consentono agli amministratori di gruppi di gestire i Criteri di gruppo tramite il cloud.
+Per completare questa attività, è possibile usare **Modelli amministrativi** in Microsoft Intune. I modelli amministrativi includono centinaia di impostazioni che controllano le funzionalità per Microsoft Edge, Internet Explorer, le applicazioni Microsoft Office, desktop remoto, OneDrive, password e PIN e altro ancora. Queste impostazioni consentono agli amministratori di gruppi di gestire i Criteri di gruppo tramite il cloud.
 
-Le impostazioni di Windows sono simili alle impostazioni di Criteri di gruppo (GPO) in Active Directory (AD). Queste impostazioni sono incluse in Windows e sono [impostazioni supportate da ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (il collegamento apre un altro sito Microsoft) che usano XML. Le impostazioni di Office sono inserite con ADMX e usano le impostazioni ADMX nei [file dei modelli amministrativi di Office](https://www.microsoft.com/download/details.aspx?id=49030). Tuttavia, i modelli di Intune sono completamente basati sul cloud. Offrono un modo semplice e immediato di configurare le impostazioni e trovare quelle che interessano.
+Le impostazioni di Windows sono simili alle impostazioni di Criteri di gruppo (GPO) in Active Directory (AD). Queste impostazioni sono incluse in Windows e sono [impostazioni supportate da ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) che usano XML. Le impostazioni di Office sono inserite con ADMX e usano le impostazioni ADMX nei [file dei modelli amministrativi di Office](https://www.microsoft.com/download/details.aspx?id=49030). Tuttavia, i modelli di Intune sono completamente basati sul cloud. Offrono un modo semplice e immediato di configurare le impostazioni e trovare quelle che interessano.
 
 La funzionalità **Modelli amministrativi** è incorporata in Intune e non richiede alcuna personalizzazione, incluso l'uso di OMA-URI. Usare queste impostazioni dei modelli nella propria soluzione di gestione di dispositivi mobili (MDM) per gestire i dispositivi Windows 10 da una posizione centralizzata.
 
@@ -38,7 +38,7 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 
 - Alcune di queste impostazioni sono disponibili a partire da Windows 10 versione 1703 (RS2). Per un'esperienza ottimale, è consigliabile usare Windows 10 Enterprise versione 1903 (19H1) e versioni successive.
 
-- Le impostazioni di Windows usano [i provider di servizi di configurazione (CSP) dei criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (il collegamento apre un altro sito Microsoft). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (il collegamento apre un altro sito Microsoft).
+- Le impostazioni di Windows usano i [provider di servizi di configurazione (CSP) dei criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## <a name="create-a-template"></a>Creare un modello
 
@@ -58,9 +58,16 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
     > [!TIP]
     > Le impostazioni di Windows in Intune sono correlate al percorso dei Criteri di gruppo locali visualizzato in Editor Criteri di gruppo locali (`gpedit`).
 
-5. Per impostazione predefinita, l'elenco a discesa mostra **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo le impostazioni di **Windows** o solo le impostazioni di **Office**:
+5. Per impostazione predefinita, l'elenco a discesa mostra **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo le impostazioni di **Windows**, solo le impostazioni di **Office** o solo le impostazioni di **Microsoft Edge**:
 
     ![Filtrare l'elenco per visualizzare tutte impostazioni di Windows o di Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > Le impostazioni di Microsoft Edge si applicano a:
+    >
+    > - Windows 10 RS4 e versioni successive con [KB 4512509](https://support.microsoft.com/kb/4512509) installato.
+    > - Windows 10 RS5 e versioni successive con [KB 4512534](https://support.microsoft.com/kb/4512534) installato.
+    > - Windows 10 19H1 e versioni successive con [KB 4512941](https://support.microsoft.com/kb/4512941) installato.
 
 6. Selezionare un'impostazione qualsiasi, Ad esempio, filtrare in base a **Office** e selezionare **Attivazione esplorazione con restrizioni**. Viene visualizzata una descrizione dettagliata dell'impostazione. Scegliere **Abilitata**, **Disabilitata** oppure lasciare l'opzione **Non configurata** (impostazione predefinita). La descrizione dettagliata spiega anche cosa accade quando si sceglie **Abilitata**, **Disabilitata** o **Non configurata**.
 7. Selezionare **OK** per salvare le modifiche.
@@ -69,9 +76,10 @@ Continuare a scorrere l'elenco delle impostazioni e configurare quelle che si vo
 
 - Usare l'impostazione **Impostazioni notifiche macro VBA** per gestire le macro VBA in diverse applicazioni Microsoft Office, tra cui Word ed Excel.
 - Usare l'impostazione **Consenti download dei file** per consentire o impedire i download da Internet Explorer.
-- Usare l'impostazione **Richiedi password alla riattivazione del computer (alimentazione da rete elettrica)** per richiedere agli utenti una password quando il dispositivo torna attivo dopo uno stato di inattività.
+- Usare **Richiedi password alla riattivazione del computer (alimentazione da rete elettrica)** per richiedere agli utenti una password quando il dispositivo torna attivo dopo uno stato di inattività.
 - Usare l'impostazione **Scarica controlli ActiveX non firmati** per impedire agli utenti di scaricare controlli ActiveX non firmati da Internet Explorer.
 - Usare l'impostazione **Disattiva Ripristino configurazione di sistema** per consentire o impedire agli utenti di eseguire un ripristino del sistema sul dispositivo.
+- Usare l'impostazione **Allow importing of favorites** (Consenti importazione Preferiti) per consentire o impedire agli utenti di importare i Preferiti da un altro browser in Microsoft Edge.
 - E molte altre...
 
 ## <a name="find-some-settings"></a>Trovare alcune impostazioni

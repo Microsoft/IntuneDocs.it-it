@@ -1,11 +1,11 @@
 ---
-title: Instradare i log di controllo in Monitoraggio di Azure usando Microsoft Intune - Azure | Microsoft Docs
+title: Indirizzare i log a Monitoraggio di Azure usando Microsoft Intune - Azure | Microsoft Docs
 description: Usare le impostazioni di diagnostica per inviare log di controllo e log operativi in Microsoft Intune all'account di archiviazione di Azure, agli hub eventi o a Log Analytics. Scegliere per quanto tempo si vogliono conservare i dati e verificare i costi stimati per tenant di dimensioni diverse.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354528"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122420"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Inviare i dati dei log alla risorsa di archiviazione, agli hub eventi o a Log Analytics in Intune (anteprima)
 
-Microsoft Intune include log predefiniti che forniscono informazioni sull'ambiente. I **log di controllo** mostrano i dettagli su diversi eventi o attività che si verificano in Intune. I **log operativi (anteprima)** mostrano i dettagli su utenti e dispositivi che hanno eseguito la registrazione (o per cui la registrazione non è riuscita), nonché i dettagli sui dispositivi non conformi.
+Microsoft Intune include log predefiniti che forniscono informazioni sull'ambiente:
+
+- I **log di controllo** mostrano i dettagli su diversi eventi o attività che si verificano in Intune.
+- I **log operativi (anteprima)** mostrano i dettagli su utenti e dispositivi che hanno eseguito la registrazione (o per cui la registrazione non è riuscita), nonché i dettagli sui dispositivi non conformi.
+- I **log dell'organizzazione di conformità del dispositivo (anteprima)** mostrano un report dell'organizzazione per la conformità dei dispositivi in Intune e informazioni dettagliate sui dispositivi non conformi.
 
 Questi log possono anche essere inviati ai servizi di monitoraggio di Azure, inclusi account di archiviazione, hub eventi e Log Analytics. In particolare, è possibile:
 
@@ -35,7 +39,7 @@ Questi log possono anche essere inviati ai servizi di monitoraggio di Azure, inc
 
 Queste funzionalità fanno parte delle **impostazioni di diagnostica** in Intune.
 
-Questo articolo illustra come usare le **impostazioni di diagnostica** per inviare i dati dei log a servizi diversi, fornisce esempi e stime dei costi e risponde ad alcune domande comuni.
+Questo articolo illustra come usare le **impostazioni di diagnostica** per inviare i dati dei log a servizi diversi, fornisce esempi e stime dei costi e risponde ad alcune domande comuni. Dopo aver abilitato questa funzionalità, i log vengono indirizzati al servizio di Monitoraggio di Azure scelto.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -54,7 +58,7 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 ## <a name="send-logs-to-azure-monitor"></a>Inviare i log a Monitoraggio di Azure
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In **Monitoraggio** selezionare **Impostazioni di diagnostica**. La prima volta che si apre la diagnostica, attivarla:
+2. In **Monitoraggio** selezionare **Impostazioni di diagnostica**. Alla prima apertura, attivare la funzionalità. In caso contrario, aggiungere un'impostazione.
 
     ![Attivare Impostazioni di diagnostica in Intune per inviare i log a Monitoraggio di Azure](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
       Se si sceglie di usare un account di archiviazione, immettere anche il numero di giorni per cui si vogliono mantenere i dati (conservazione). Per mantenere i dati per sempre, impostare **Conservazione (giorni)** su `0` (zero).
 
       > [!NOTE]
-      > I log operativi sono in anteprima. Per fornire commenti e suggerimenti, tra cui le informazioni incluse nei log operativi, passare a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback). Il collegamento apre un nuovo sito Web.
+      > I log operativi sono in anteprima. Per fornire commenti e suggerimenti, tra cui le informazioni incluse nei log operativi, passare a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
+
+    - **LOG** > **DeviceComplianceOrg**: i log dell'organizzazione di conformità di dispositivi (anteprima) mostrano il report dell'organizzazione per la conformità dei dispositivi in Intune e informazioni dettagliate sui dispositivi non conformi. Scegliere questa opzione per inviare i log di conformità all'account di archiviazione, all'hub eventi o a Log Analytics.
+
+      Se si sceglie di usare un account di archiviazione, immettere anche il numero di giorni per cui si vogliono mantenere i dati (conservazione). Per mantenere i dati per sempre, impostare **Conservazione (giorni)** su `0` (zero).
+ 
+      > [!NOTE]
+      > I log dell'organizzazione di conformità dei dispositivi sono disponibili in anteprima. Per fornire commenti e suggerimenti, tra cui le informazioni incluse nel report, passare a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
     Al termine, le impostazioni saranno simili alle seguenti: 
 

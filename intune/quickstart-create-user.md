@@ -13,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511355"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234819"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Guida introduttiva: Creare un utente in Intune e assegnare una licenza
 
@@ -28,7 +28,7 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o come amministratore del servizio Intune](users-add.md#types-of-administrators). Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
+Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o come amministratore del servizio Intune](users-add.md#types-of-administrators). Se è stata creata una sottoscrizione di valutazione di Intune, l'account con cui è stata creata la sottoscrizione sarà l'amministratore globale.
 
 ## <a name="create-a-user"></a>Creazione di un utente
 
@@ -61,7 +61,7 @@ Per assegnare una licenza di Intune a un utente:
    > Questa impostazione usa una delle licenze dell'utente. Se si usa un ambiente di valutazione, sarà necessario riassegnare la licenza a un utente reale in un ambiente live.
 6. Scegliere **Salva** > **Chiudi**.
 
-Sarà visualizzato il nuovo utente Intune attivo che userà una licenza **Intune**.
+Verrà ora indicato che il nuovo utente di Intune attivo usa una licenza di **Intune**.
 
 ## <a name="clean-up-resources"></a>Pulizia delle risorse
 
