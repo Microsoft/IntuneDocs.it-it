@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353349"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302343"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemi di Endpoint Protection e possibili soluzioni in Microsoft Intune
 
@@ -60,20 +60,20 @@ Potrebbe essere visualizzato un messaggio che informa che alcune funzionalità s
 **Possibili soluzioni**: abilitare queste funzionalità. Per istruzioni, vedere:
 
 - [Aggiungere le impostazioni di Endpoint Protection in Intune](endpoint-protection-configure.md)
-- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Abilitare Windows Defender per accedere alle risorse aziendali](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Definizioni malware scadute
 
 Questo stato viene visualizzato quando le definizioni malware nel dispositivo non vengono aggiornate da almeno 14 giorni. Ad esempio, il messaggio potrebbe essere visualizzato se il dispositivo è disconnesso da Internet o se le definizioni malware non sono aggiornate.
 
-**Possibili soluzioni**: se le definizioni malware non sono aggiornate, aggiornarle usando [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Possibili soluzioni**: se le definizioni malware non sono aggiornate, aggiornarle usando [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Analisi completa scaduta o Analisi veloce scaduta
 
 Non viene completata un'analisi completa o un'analisi veloce da 14 giorni. Questa situazione può verificarsi se il dispositivo viene riavviato durante un'analisi completa.
 
-**Possibili soluzioni**: in presenza di un'analisi scaduta, è possibile eseguire un'analisi occasionale oppure pianificare analisi periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Possibili soluzioni**: in presenza di un'analisi scaduta, è possibile eseguire un'analisi occasionale oppure pianificare analisi periodiche. Vedere [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>È in esecuzione un'altra applicazione Endpoint Protection
 
