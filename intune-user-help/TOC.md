@@ -4,7 +4,7 @@
 
 ## [Informazioni visibili per l'azienda con Intune](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Aggiornamento della password](password-does-not-meet-it-administrator-requirements.md)
+## [Requisiti per le password dei dispositivi](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Accedere al portale aziendale](sign-in-to-the-company-portal.md)
 
