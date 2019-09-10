@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998936"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302287"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
-Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi Windows 10 e versioni successive. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, impostare regole per le password, personalizzare la schermata di blocco, usare Windows Defender e altro ancora.
+Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi Windows 10 e versioni successive. Usare queste impostazioni nella soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, impostare regole per le password, personalizzare la schermata di blocco, usare Microsoft Defender e altro ancora.
 
 Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo in Intune e quindi assegnate o distribuite ai dispositivi Windows 10.
 
@@ -79,8 +79,6 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="cellular-and-connectivity"></a>Rete cellulare e connettività
 
 Queste impostazioni usano i provider di servizi di configurazione per i [criteri di connettività](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) e i [criteri Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi), che elencano anche le edizioni di Windows supportate.
@@ -114,8 +112,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
   In [ServicesAllowedList usage guide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) (Guida all'utilizzo di ServicesAllowedList) sono disponibili altre informazioni sull'elenco di servizi.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi agli account](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts), che elenca anche le edizioni di Windows supportate.
@@ -124,8 +120,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 - **Account non Microsoft**: **Blocca** impedisce agli utenti finali di aggiungere account non Microsoft tramite l'interfaccia utente. L'impostazione **Non configurata** (predefinita) consente agli utenti di aggiungere account di posta elettronica che non sono associati a un account Microsoft.
 - **Sincronizzazione delle impostazioni per l'account Microsoft**: **Non configurata** (impostazione predefinita) consente la sincronizzazione fra i dispositivi delle impostazioni delle app e dei dispositivi associati a un account Microsoft. **Blocca** impedisce la sincronizzazione.
 - **Assistente per l'accesso all'account Microsoft**: con l'impostazione **Non configurata** (predefinita), gli utenti finali possono avviare e arrestare il servizio **Assistente per l'accesso all'account Microsoft** (wlidsvc). Questo servizio del sistema operativo consente agli utenti di accedere al proprio account Microsoft. **Disabilita** impedisce agli utenti finali di controllare il servizio Assistente per l'accesso all'account Microsoft (wlidsvc).
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="cloud-printer"></a>Stampante cloud
 
@@ -140,8 +134,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 > [!TIP]
 > Dopo aver configurato [Hybrid Cloud Print di Windows Server](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), è possibile configurare queste impostazioni e quindi eseguire la distribuzione ai dispositivi Windows.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="control-panel-and-settings"></a>Pannello di controllo e impostazioni
 
@@ -165,8 +157,6 @@ Selezionare **OK** per salvare le modifiche.
   - **Privacy**: **Blocca** impedisce l'accesso all'area Privacy dell'app Impostazioni nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'accesso.
   - **Aggiornamento e sicurezza**: **Blocca** impedisce l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'accesso.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="display"></a>Schermo
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi allo schermo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display), che elenca anche le edizioni di Windows supportate.
@@ -182,8 +172,6 @@ Il ridimensionamento DPI del programma GDI consente alle applicazioni non sensib
   Il ridimensionamento DPI del programma GDI è disattivato per tutte le applicazioni legacy nell'elenco.
 
 È anche possibile **importare** un file CSV con l'elenco delle app.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="general"></a>Generale
 
@@ -230,8 +218,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 - **Termina processi da Gestione attività**: questa impostazione determina se gli utenti non amministratori possono usare Gestione attività per terminare le attività. **Blocca** impedisce agli utenti standard (non amministratori) di usare Gestione attività per terminare un processo o un'attività nel dispositivo. **Non configurata** (impostazione predefinita) consente agli utenti standard di terminare un processo o un'attività usando Gestione attività.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="locked-screen-experience"></a>Esperienza della schermata bloccata
 
 - **Notifiche del centro notifiche (solo per dispositivi mobili)** : **Blocca** impedisce la visualizzazione delle notifiche del centro notifiche nella schermata di blocco del dispositivo. L'impostazione **Non configurata** (predefinita) consente agli utenti di scegliere quali app mostrano le notifiche nella schermata di blocco.
@@ -255,8 +241,6 @@ Selezionare **OK** per salvare le modifiche.
 
   [Provider di servizi di configurazione DeviceLock/ScreenTimeoutWhileLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="messaging"></a>Messaggistica
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi alla messaggistica](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging), che elenca anche le edizioni di Windows supportate.
@@ -264,8 +248,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 - **Sincronizzazione di messaggi (solo dispositivi mobili)** : **Blocca** disabilita il backup o il ripristino degli SMS e la sincronizzazione di messaggi tra i dispositivi Windows. La disabilitazione consente di evitare l'archiviazione delle informazioni in server fuori dal controllo dell'organizzazione. L'impostazione **Non configurata** (predefinita) consente agli utenti di modificare queste impostazioni e di sincronizzare i messaggi.
 - **MMS (solo dispositivi mobili)** : **Blocca** disabilita la funzionalità di invio e ricezione di MMS nel dispositivo. Le aziende possono usare questi criteri per disabilitare gli MMS nei dispositivi come parte dei requisiti di controllo o di gestione. L'impostazione **Non configurata** (predefinita) consente l'invio e la ricezione di MMS.
 - **RCS (solo dispositivi mobili)** : **Blocca** disabilita la funzionalità di invio e ricezione di RCS (Rich Communication Services) nel dispositivo. Le aziende possono usare questi criteri per disabilitare RCS nei dispositivi come parte dei requisiti di controllo o di gestione. L'impostazione **Non configurata** (predefinita) consente l'invio e la ricezione di RCS.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
@@ -336,8 +318,6 @@ Questo profilo di restrizioni per i dispositivi è direttamente correlato al pro
 - **Precarica le pagine iniziali e la pagina Nuova scheda**: **Sì** (impostazione predefinita) usa il comportamento predefinito del sistema operativo, che potrebbe prevedere il precaricamento di queste pagine. Il precaricamento riduce al minimo il tempo necessario per avviare Microsoft Edge e caricare nuove schede. **No** impedisce a Microsoft Edge di precaricare le pagine iniziali e la pagina Nuova scheda.
 - **Preavvia le pagine iniziali e la pagina Nuova scheda**: **Sì** (impostazione predefinita) usa il comportamento predefinito del sistema operativo, che potrebbe prevedere il preavvio di queste pagine. Il preavvio contribuisce a migliorare le prestazioni di Microsoft Edge e riduce al minimo il tempo necessario per avviare Microsoft Edge. **No** impedisce a Microsoft Edge di preavviare le pagine iniziali e la pagina Nuova scheda.
 
-Selezionare **OK** per salvare le modifiche.
-
 ### <a name="favorites-and-search"></a>Preferiti e ricerca
 
 - **Mostra la barra Preferiti**: scegliere cosa accade alla barra Preferiti in qualsiasi pagina di Microsoft Edge. Le opzioni disponibili sono:
@@ -357,8 +337,6 @@ Selezionare **OK** per salvare le modifiche.
 - **Consenti modifiche al motore di ricerca**: **Sì** (impostazione predefinita) consente agli utenti di aggiungere nuovi motori di ricerca o di cambiare quello predefinito in Microsoft Edge. Scegliere **No** per impedire agli utenti di personalizzare il motore di ricerca.
 
   Questa impostazione è disponibile solo in [Modalità normale (più app in modalità tutto schermo)](#use-microsoft-edge-kiosk-mode).
-
-Selezionare **OK** per salvare le modifiche.
 
 ### <a name="privacy-and-security"></a>Privacy e sicurezza
 
@@ -383,8 +361,6 @@ Quando l'opzione "Blocca e consenti l'override dell'utente" è selezionata, un u
 - **Consenti la raccolta di dati dei riquadri animati**: **Sì** (impostazione predefinita) consente a Microsoft Edge di raccogliere informazioni dai riquadri animati aggiunti al menu Start. **No** impedisce la raccolta di queste informazioni, che possono fornire agli utenti un'esperienza limitata.
 - **L'utente può eseguire l'override degli errori del certificato**: **Sì** (impostazione predefinita) consente agli utenti di accedere ai siti Web con errori SSL/TLS (Secure Socket Layer/Transport Layer Security). **No** (scelta consigliata per una maggiore sicurezza) impedisce agli utenti di accedere ai siti Web con errori SSL o TLS.
 
-Selezionare **OK** per salvare le modifiche.
-
 ### <a name="additional"></a>Ulteriori informazioni
 
 - **Consenti il browser Microsoft Edge** (solo dispositivi mobili): **Sì** (impostazione predefinita) consente l'uso del Web browser Microsoft Edge nel dispositivo mobile. **No** impedisce l'uso di Microsoft Edge nel dispositivo. Se si sceglie **No**, le altre singole impostazioni si applicano solo al desktop.
@@ -401,8 +377,6 @@ Selezionare **OK** per salvare le modifiche.
 
   È anche possibile **importare** un file CSV che include i nomi delle famiglie di pacchetti. In alternativa, **esportare** i nomi delle famiglie di pacchetti immessi.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="network-proxy"></a>Proxy di rete
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi a NetworkProxy](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp), che elenca anche le edizioni di Windows supportate.
@@ -415,8 +389,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Numero porta**: immettere il numero della porta del server proxy.
   - **Eccezione del proxy**: immettere gli URL che non devono usare il server proxy. Per separare ogni elemento, usare un punto e virgola.
   - **Ignora il server proxy per l'indirizzo locale**: **Non configurato** (impostazione predefinita) impedisce l'uso di un server proxy per gli indirizzi locali della rete Intranet. **Consenti** permette di usare un server proxy per gli indirizzi locali.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="password"></a>Password
 
@@ -466,8 +438,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
   [CSP Authentication/PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="per-app-privacy-exceptions"></a>Eccezioni alla privacy per app
 
 È possibile aggiungere app che devono avere un comportamento diverso in relazione alla privacy da quello definito in "Privacy predefinita".
@@ -496,23 +466,17 @@ Selezionare **OK** per salvare le modifiche.
 - **Commenti e diagnostica**: specificare se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi**: specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito al dispositivo.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="personalization"></a>Personalization
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi alla personalizzazione](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), che elenca anche le edizioni di Windows supportate.
 
 - **URL dell'immagine di sfondo del desktop (solo desktop)** : immettere l'URL per un'immagine in formato JPG, JPEG o PNG che si vuole usare come sfondo del desktop di Windows. Gli utenti non possono modificare l'immagine. Immettere ad esempio `https://contoso.com/logo.png`.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="printer"></a>Stampante
 
 - **Stampanti**: elenco delle stampanti locali che sono state aggiunte.
 - **Stampante predefinita**: impostare la stampante predefinita.
 - **User access to add new printers** (Accesso utente per l'aggiunta di nuove stampanti): consentire o bloccare l'uso delle stampanti locali.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="privacy"></a>Privacy
 
@@ -524,8 +488,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 - **Solo attività locali**: **Blocca** impedisce la condivisione delle esperienze e l'individuazione delle risorse usate di recente nella selezione attività solo per le attività locali. L'impostazione **Non configurata** (predefinita) abilita questa funzionalità.
 
 È possibile configurare le informazioni accessibili per tutte le app nel dispositivo. Definire anche le eccezioni per le singole app tramite **Eccezioni alla privacy per app**.
-
-Selezionare **OK** per salvare le modifiche.
 
 ### <a name="exceptions"></a>Eccezioni
 
@@ -548,8 +510,6 @@ Selezionare **OK** per salvare le modifiche.
 - **Commenti e diagnostica**: specificare se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi** - Specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito a questo PC, tablet o telefono.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="projection"></a>Proiezione
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi a WirelessDisplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), che elenca anche le edizioni di Windows supportate.
@@ -557,8 +517,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 - **Input degli utenti da ricevitori di schermo wireless**: **Blocca** impedisce l'input degli utenti da ricevitori di schermo wireless. **Non configurato** (impostazione predefinita) consente a uno schermo wireless di inviare l'input da tastiera, mouse, penna e tocco al dispositivo di origine.
 - **Proiezione per questo computer**: **Blocca** impedisce ad altri dispositivi di trovare il dispositivo per la proiezione. **Non configurato** (impostazione predefinita) consente al dispositivo di essere individuabili ed è consentita la proiezione nel dispositivo al di sopra della schermata di blocco.
 - **Richiedi il PIN per l'associazione**: scegliere **Rendi obbligatorio** per richiedere sempre un PIN per la connessione a un dispositivo di proiezione. **Non configurato** (impostazione predefinita) non richiede un PIN per l'associazione del dispositivo a un dispositivo di proiezione.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="reporting-and-telemetry"></a>Reporting e telemetria
 
@@ -602,8 +560,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Restrittivo**: filtro massimo del contenuto per adulti.
   - **Moderato**: filtro moderato del contenuto per adulti. I risultati di ricerca validi non vengono filtrati.
 - **Visualizza i risultati Web nella ricerca**: se impostata su **Blocca**, gli utenti non possono eseguire ricerche e i risultati Web non vengono visualizzati nella ricerca. **Non configurato** (impostazione predefinita) consente agli utenti di eseguire ricerche nel Web e i risultati vengono visualizzati nel dispositivo.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="start"></a>Avvia
 
@@ -675,8 +631,6 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Nascondi**: il collegamento viene nascosto e l'impostazione viene disabilitata nell'app Impostazioni.
   - **Mostra**: il collegamento viene visualizzato e l'impostazione viene disabilitata nell'app Impostazioni.
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **SmartScreen per Microsoft Edge**: **Rendi obbligatorio** disattiva Windows Defender SmartScreen e impedisce agli utenti di riattivarlo. L'impostazione **Non configurata** (predefinita) attiva SmartScreen. Consente di proteggere gli utenti da minacce potenziali e impedisce agli utenti di disattivarla.
@@ -693,8 +647,6 @@ Selezionare **OK** per salvare le modifiche.
 
   [Provider di servizi di configurazione Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Selezionare **OK** per salvare le modifiche.
-
 ## <a name="windows-spotlight"></a>Contenuti in evidenza di Windows
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi all'esperienza](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), che elenca anche le edizioni di Windows supportate.
@@ -709,38 +661,96 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Personalizzazione di Windows Spotlight**: **Blocca** impedisce a Windows di usare i dati di diagnostica per fornire esperienze personalizzate all'utente. **Non configurato** (impostazione predefinita) consente a Microsoft di usare dati di diagnostica per fornire consigli, suggerimenti e offerte personalizzati per adattare Windows alle esigenze dell'utente.
   - **Esperienza di Configurazione e personalizzazione di Windows**: **Blocca** consente di disattivare la funzionalità dell'esperienza di Configurazione e personalizzazione di Windows per Windows Spotlight. L'esperienza di Configurazione e personalizzazione di Windows non verrà visualizzata in presenza di aggiornamenti e modifiche per Windows e le relative app. **Non configurato** (impostazione predefinita) consente l'esperienza di Configurazione e personalizzazione di Windows, che visualizza le informazioni dell'utente su funzionalità nuove o aggiornate.
 
-Selezionare **OK** per salvare le modifiche.
-
-## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
 
 Queste impostazioni usano il [provider di servizi di configurazione per i criteri relativi a Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), che elenca anche le edizioni di Windows supportate.
 
-- **Monitoraggio in tempo reale**: **Abilita** impedisce l'analisi in tempo reale per malware, spyware e altro software indesiderato. L'impostazione **Non configurata** (predefinita) consente questa funzionalità.
-- **Monitoraggio del comportamento**: **Abilita** impedisce a Defender di controllare la presenza di modelli noti di attività sospette nei dispositivi. **Non configurato** (impostazione predefinita) consente il monitoraggio del comportamento di Windows Defender.
-- **Network Inspection System (NIS)** : consente di proteggere i computer dagli exploit basati sulla rete. Usa le firme delle vulnerabilità note da Microsoft Endpoint Protection Center per consentire di rilevare e bloccare il traffico dannoso.
-- **Analizza tutti i download**: controlla se Defender deve analizzare tutti i file scaricati da Internet.
-- **Analizza gli script caricati nei Web browser Microsoft**: **Non configurato** (impostazione predefinita) consente a Defender di analizzare gli script usati in Internet Explorer. **Abilita** impedisce questa analisi.
-- **Accesso dell'utente finale a Defender**: **Blocca** nasconde l'interfaccia utente di Windows Defender agli utenti finali. Vengono inoltre eliminate tutte le notifiche di Windows Defender. **Non configurato** (impostazione predefinita) consente l'accesso utente all'interfaccia utente di Windows Defender. Quando questa impostazione viene modificata, ha effetto dal successivo avvio del PC dell'utente finale.
-- **Intervallo di aggiornamento della firma (in ore)** : immettere l'intervallo con il quale Defender controllerà se sono disponibili nuovi file di firma, da 0 a 24. Le opzioni disponibili sono:
+- **Monitoraggio in tempo reale**: **Abilita** disattiva l'analisi in tempo reale di malware, spyware e altro software indesiderato. L'impostazione **Non configurata** (predefinita) consente questa funzionalità.
 
-  - **Non configurato** (impostazione predefinita)
-  - **Non controllare**: Defender non controlla se sono disponibili nuovi file di firma.
+  [CSP Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Monitoraggio del comportamento**: **Abilita** disattiva i controlli di Defender per la presenza di modelli noti di attività sospette nei dispositivi. **Non configurato** (impostazione predefinita) consente il monitoraggio del comportamento di Windows Defender.
+
+  [CSP Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Network Inspection System (NIS)** : consente di proteggere i computer dagli exploit basati sulla rete. Usa le firme delle vulnerabilità note da Microsoft Endpoint Protection Center per consentire di rilevare e bloccare il traffico dannoso.
+
+  L'impostazione **Non configurata** (predefinita) disabilita questa funzionalità. Gli utenti non sono bloccati a connettersi a vulnerabilità note. Quando è impostato su **Abilita**, la protezione di rete e il blocco di rete sono attivati e gli utenti non possono disattivarla. Agli utenti viene impedito di connettersi a vulnerabilità note.
+
+  [CSP Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Analizza tutti i download**: **non configurato** (impostazione predefinita), Defender analizza tutti i file scaricati da Internet. Quando è impostato su **Abilita**, questa funzionalità è disabilitata. Quindi, Defender non analizza tutti i file Internet scaricati.
+
+  [CSP Defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Analizza gli script caricati nei Web browser Microsoft**: **Non configurato** (impostazione predefinita) consente a Defender di analizzare gli script usati in Internet Explorer. **Abilita** impedisce questa analisi.
+
+  [CSP Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Accesso dell'utente finale a Defender**: **Blocca** nasconde l'interfaccia utente di Windows Defender agli utenti finali. Vengono inoltre eliminate tutte le notifiche di Windows Defender. **Non configurato** (impostazione predefinita) consente l'accesso utente all'interfaccia utente di Windows Defender. Quando questa impostazione viene modificata, ha effetto dal successivo avvio del PC dell'utente finale.
+
+  [CSP Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Intervallo di aggiornamento di intelligence per la sicurezza (in ore)** : immettere l'intervallo con cui Defender verifica la presenza di nuove Intelligence per la sicurezza, da 0-24. Le opzioni disponibili sono:
+
+  - **Non configurato** (impostazione predefinita): controlla la disponibilità di aggiornamenti ogni 8 ore.
+  - Non **selezionare**: Defender non controlla la presenza di nuovi aggiornamenti di intelligence per la sicurezza.
   - **1-24**: `1` controlla ogni ora `2` controlla ogni due ore, `24` controlla una volta al giorno e così via.
-- **Monitora l'attività di file e programmi**: consente a Defender di monitorare l'attività di file e programmi nei dispositivi.
-- **Giorni di attesa prima dell'eliminazione di malware in quarantena**: continua a monitorare il malware risolto per il numero di giorni immesso, in modo che sia possibile controllare manualmente i dispositivi colpiti in precedenza. Se si imposta il numero di giorni su **0**, il malware rimane nella cartella della quarantena e non viene rimosso automaticamente. Con l'impostazione `90` gli elementi in quarantena vengono archiviati per 90 giorni nel sistema e quindi rimossi.
-- **Limite di utilizzo della CPU durante un'analisi**: limitare la quantità di CPU di cui è consentito l'uso per le analisi, da **1** a **100**.
-- **Analizza file di archivio**: **Abilita** impedisce a Defender di analizzare i file archiviati, ad esempio file ZIP o CAB. **Non configurato** (impostazione predefinita) consente questa analisi.
+  
+  [CSP Defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Monitora l'attività di file e programmi**: consente a Defender di monitorare l'attività di file e programmi nei dispositivi. Le opzioni disponibili sono:
+
+  - **Non configurato** (impostazione predefinita): esegue il monitoraggio di tutti i file
+  - **Monitoraggio disabilitato**
+  - **Monitora tutti i file**
+  - **Monitora solo i file in ingresso**
+  - **Monitora solo i file in uscita**
+
+  [CSP Defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Giorni di attesa prima dell'eliminazione di malware in quarantena**: continua a monitorare il malware risolto per il numero di giorni immesso, in modo che sia possibile controllare manualmente i dispositivi colpiti in precedenza. Se si imposta il numero di giorni su `0`, il malware rimane nella cartella della quarantena e non viene rimosso automaticamente. Con l'impostazione `90` gli elementi in quarantena vengono archiviati per 90 giorni nel sistema e quindi rimossi.
+
+  [CSP Defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **Limite di utilizzo della CPU durante un'analisi**: limita la quantità di CPU di cui è consentito l'uso per le analisi, da `0` a `100`.
+- **Analizza file di archivio**: **Abilita** disattiva Defender dall'analisi dei file di archivio, ad esempio file zip o CAB. **Non configurato** (impostazione predefinita) consente questa analisi.
+
+  [CSP Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Analizza i messaggi di posta in arrivo**: **Abilita** consente a Defender di analizzare i messaggi di posta elettronica non appena arrivano nel dispositivo. **Non configurato** (impostazione predefinita) impedisce l'analisi dei messaggi di posta elettronica.
+
+  [CSP Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Analizza le unità rimovibili durante un'analisi completa**: **Abilita** impedisce analisi complete delle unità rimovibili. **Non configurato** (impostazione predefinita) consente a Defender di analizzare le unità rimovibili, ad esempio le chiavette USB.
+
+  Durante un'analisi veloce, è possibile che le unità rimovibili siano ancora analizzate.
+
+  [CSP Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Analizza le unità di rete mappate durante un'analisi completa**: **Abilita** consente a Defender di analizzare i file nelle unità di rete mappate. **Non configurato** (impostazione predefinita) impedisce l'analisi completa. Se i file nell'unità sono di sola lettura, Defender non può rimuovere il malware rilevato in tali file.
+
+  Durante un'analisi veloce, le unità di rete mappate potrebbero ancora essere analizzate.
+
+  [CSP Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Analizza file aperti da cartelle di rete**: **Non configurato** (impostazione predefinita) consente a Defender di analizzare i file nelle unità di rete condivise, ad esempio i file a cui si accede da un percorso UNC. **Abilita** impedisce questa analisi. Se i file nell'unità sono di sola lettura, Defender non può rimuovere il malware rilevato in tali file.
+
+  [CSP Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Protezione cloud**: **Non configurato** (impostazione predefinita) consente la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. **Abilita** blocca questa funzionalità.
+
+  [CSP Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Richiedi conferma all'utente prima dell'invio di campioni**: determina se i file potenzialmente dannosi che potrebbero richiedere ulteriore analisi vengono inviati automaticamente a Microsoft. Le opzioni disponibili sono:
-  - **Non configurato**
+
+  - **Non configurato** (impostazione predefinita): Invia automaticamente campioni sicuri.
   - **Chiedi sempre conferma**
   - **Richiedi conferma prima di inviare dati personali**
   - **Non inviare mai dati**
-  - **Invia tutti i dati senza chiedere conferma**: i dati vengono inviati automaticamente
+  - **Invia tutti i dati senza chiedere conferma**: i dati vengono inviati automaticamente.
+
+  [CSP Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Ora di esecuzione di un'analisi veloce giornaliera**: scegliere l'ora in cui eseguire un'analisi veloce giornaliera. Se **Non configurata**, l'analisi giornaliera non viene eseguita. Per un'ulteriore personalizzazione, configurare l'impostazione **Tipo di analisi di sistema da eseguire**.
 
@@ -756,12 +766,16 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
     - **Giorno pianificato**: scegliere il giorno in cui eseguire l'analisi.
     - **Ora pianificata**: scegliere l'ora in cui eseguire l'analisi.
 
-  Questa impostazione potrebbe essere in conflitto con l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**. Alcuni consigli:
-
-  - Per eseguire un'analisi veloce giornaliera, configurare l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**.
-  - Per eseguire un'analisi veloce giornaliera e un'analisi completa ogni settimana, configurare quindi l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**. Impostare **Tipo di analisi di sistema da eseguire** su un'analisi completa con giorno e ora.
-  - Non configurare l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera** contemporaneamente a **Tipo di analisi di sistema da eseguire** impostato su **Analisi veloce**. Queste impostazioni possono essere in conflitto e l'analisi potrebbe non essere eseguita.
-  - Per eseguire un'analisi veloce ogni martedì alle 6, configurare l'impostazione **Tipo di analisi di sistema da eseguire**.
+  > [!TIP]
+  > Questa impostazione potrebbe essere in conflitto con l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera**. Alcuni consigli:  
+  >
+  > - Se si desidera pianificare un'analisi veloce giornaliera e un'analisi completa settimanale, effettuare le seguenti operazioni:
+  >   1. Configurare il **tempo per l'esecuzione di un'impostazione di analisi veloce giornaliera** .
+  >   2. Configurare il **tipo di analisi del sistema da eseguire** per eseguire un'analisi completa.
+  > 
+  > - Se si desidera eseguire un'analisi veloce quotidianamente (nessuna analisi completa), utilizzare entrambe le impostazioni: **tempo per eseguire un'analisi veloce giornaliera o un** **tipo di analisi del sistema da eseguire**. Ad esempio, per eseguire un'analisi veloce ogni martedì alle 6, configurare l'impostazione **Tipo di analisi di sistema da eseguire**.
+  > 
+  > - Non configurare l'impostazione **Ora di esecuzione di un'analisi veloce giornaliera** contemporaneamente a **Tipo di analisi di sistema da eseguire** impostato su **Analisi veloce**. Queste impostazioni possono essere in conflitto e l'analisi potrebbe non essere eseguita.
 
   [CSP Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
   Per altre informazioni sulle app potenzialmente indesiderate, vedere [Rilevare e bloccare le applicazioni potenzialmente indesiderate](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Azioni per le minacce malware rilevate**: scegliere le azioni che si vuole vengano eseguite da Defender a seconda del livello di minaccia rilevato: basso, moderato, alto o grave. Se non è possibile, Windows Defender sceglie l'opzione migliore per assicurare che la minaccia venga corretta. Le opzioni disponibili sono:
+  [CSP Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Azioni per le minacce malware rilevate**: scegliere come si desidera gestire i thread di malware. **Non configurato** (impostazione predefinita) consente a Microsoft Defender di scegliere l'opzione migliore. Quando è impostato su **Abilita**, scegliere le azioni che Defender deve eseguire a seconda del livello di minaccia rilevato (Basso, Moderato, Alto o Grave). Le opzioni disponibili sono:
+  
   - **Pulisci**
   - **Quarantena**
   - **Rimuovi**
@@ -782,15 +799,15 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Definito dall'utente**
   - **Bloccato**
 
-Selezionare **OK** per salvare le modifiche.
+  Se l'azione non è possibile, Windows Defender sceglie l'opzione migliore per assicurarsi che la minaccia venga risolta. 
+
+  [CSP Defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Esclusioni di Windows Defender Antivirus
 
 - **File e cartelle da escludere dalle analisi e dalla protezione in tempo reale**: aggiunge uno o più file e cartelle come **C:\Percorso** o **%ProgramFiles%\Percorso\nomefile.exe** all'elenco delle esclusioni. Questi file e cartelle non sono inclusi nelle analisi in tempo reale o pianificate.
 - **Estensioni di file da escludere dalle analisi e dalla protezione in tempo reale**: aggiunge una o più estensioni di file come **jpg** o **txt** all'elenco delle esclusioni. I file con queste estensioni non vengono inclusi nelle analisi in tempo reale o pianificate.
 - **Processi da escludere dalle analisi e dalla protezione in tempo reale**: aggiunge uno o più processi di tipo **.exe**, **.com** o **.scr** all'elenco delle esclusioni. Questi processi non vengono inclusi nelle analisi in tempo reale o nelle analisi pianificate.
-
-Selezionare **OK** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

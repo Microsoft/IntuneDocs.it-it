@@ -1,11 +1,11 @@
 ---
-title: La password non soddisfa i requisiti del supporto tecnico dell'azienda | Microsoft Docs
-description: ''
+title: Requisiti delle password per i dispositivi in Portale aziendale Intune | Microsoft Docs
+description: Questo articolo descrive i requisiti di password comuni che l'organizzazione potrebbe applicare.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,42 +16,86 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bce3ae1fd5386c749285313f29fc88cf7b464750
+ms.sourcegitcommit: d0d320fbac69b063b4264491d8a918cfe12bd485
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837017"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751772"
 ---
-# <a name="your-password-does-not-meet-your-company-supports-requirements"></a>La password non soddisfa i requisiti del supporto tecnico dell'azienda
+# <a name="device-password-requirements-for-enrolled-devices"></a>Requisiti delle password del dispositivo per i dispositivi registrati
 
-Per la protezione del dispositivo, il supporto tecnico aziendale richiede una password. La password usata per accedere alle risorse aziendali o dell'istituto di istruzione attualmente non soddisfa uno o più requisiti impostati dal supporto tecnico della società. Per risolvere il problema, seguire le istruzioni visualizzate nel dispositivo. Di seguito sono elencate le descrizioni dei problemi.
+L'organizzazione può richiedere la creazione di una password più sicura prima di consentire l'accesso alle risorse aziendali o dell'Istituto di istruzione. Questo articolo descrive i requisiti delle password comuni per i dispositivi Windows 10, iOS, macOS e Android. L'organizzazione potrebbe non applicare tutti questi requisiti.  
 
-Per la procedura necessaria per impostare il PIN o la password, usare il collegamento che corrisponde al tipo del dispositivo in uso:
 
-- [Impostare il PIN o la password del dispositivo Android](set-your-pin-or-password-android.md)
-- [Impostare o modificare il passcode del dispositivo iOS](set-or-change-your-passcode-ios.md)
-- [Impostare o modificare la password del dispositivo Windows](set-or-change-your-password-windows.md)
+Quando una password o un codice di accesso non soddisfa più un requisito, si riceverà un messaggio da Portale aziendale. Verranno descritte le modifiche che è necessario apportare. Se nel messaggio non è specificato alcun dettaglio, usare questo articolo come riferimento per confrontare con la password corrente.  
 
-> [!NOTE]
-> Se si ha difficoltà a fare in modo che la password soddisfi i requisiti stabiliti dal supporto tecnico aziendale, rivolgersi al personale del supporto tecnico stesso. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
+> [!IMPORTANT]
+> Se la password è stata modificata per soddisfare i requisiti ma sono ancora state ricevute le notifiche, riavviare il dispositivo.  
 
-## <a name="pin-or-password-issue-descriptions"></a>Descrizioni dei problemi relativi al PIN o alla password
+Per ulteriori informazioni o per individuare i requisiti specifici dell'organizzazione, contattare il personale di supporto IT. Per informazioni sul contatto, vedere il [sito Web del Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
-| **Problema** | **Descrizione** |
+## <a name="windows-10-password-requirements"></a>Requisiti per le password di Windows 10
+
+| Messaggio | Procedura di correzione |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **La password non contiene caratteri complessi.** | Il supporto tecnico dell'azienda richiede di usare una password con caratteri complessi. Caratteri complessi sono, ad esempio, numeri, lettere maiuscole e simboli quali $, % e #. |
-| **La password è troppo semplice e non abbastanza sicura.** | Password semplici sono, ad esempio, 1234 o 1111. Se non si sa con sicurezza quali siano i tipi di password consentiti, assicurarsi che la password non contenga numeri in sequenza o ripetuti, come nell'esempio. |
-| **La password è scaduta.** | La password è scaduta. È quindi necessario impostarne un nuova che soddisfi i requisiti impostati dal supporto tecnico dell'azienda. |
-| **La password non è impostata.** | Prima di accedere alla posta elettronica e ai dati aziendali dal dispositivo, è necessario impostare una password che soddisfi i requisiti impostati dal supporto tecnico dell'azienda. |
-| **La password è troppo breve.** | Il supporto tecnico dell'azienda richiede di usare una password più lunga con più caratteri. |
-| **La password è stata usata troppo di recente.** | Il supporto tecnico dell'azienda non consente l'uso di password usate in passato. Scegliere una password non usata in precedenza. |
-| **La password non è abbastanza complessa da soddisfare i requisiti.** | Il supporto tecnico dell'azienda richiede di usare una password con caratteri più complessi. Provare a usare caratteri come numeri, lettere maiuscole e simboli quali $, % e #. Questo requisito può essere applicato anche ad altri account nel dispositivo, pertanto assicurarsi di controllare gli altri account aziendali per assicurarsi che la password soddisfi i requisiti impostati dall'amministratore IT per il dispositivo. |
+| Password richiesta. | Impostare una password. L'organizzazione richiede l'immissione di una password per sbloccare il dispositivo. |
+| La password è troppo breve. |  Assicurarsi che la password non contenga numeri sequenziali o ripetuti, ad esempio 1234 o 1111. |
+| La password è troppo breve.| Aggiornare o impostare una password con più caratteri. Per l'organizzazione è necessario che la password abbia una certa lunghezza. Gli elementi scelti variano, ma la lunghezza minima che può richiedere è di 4 caratteri e il valore massimo è 16. |
+| La password deve contenere solo numeri. | Impostare una password che contenga solo numeri.|
+| La password deve contenere solo caratteri alfanumerici. | Impostare una password che contenga una combinazione di numeri e lettere.|
+| La password deve contenere caratteri complessi. | Aggiungere caratteri complessi come numeri, lettere maiuscole e simboli come `$`, `%`e `#`. L'organizzazione richiede una combinazione di lettere, numeri e caratteri non alfanumerici per rendere più difficile l'individuazione della password da parte di altri utenti.|  
+| Password scaduta. | Impostare una nuova password. Per l'organizzazione è necessario modificare la password dopo un determinato numero di giorni. |
+| La password è stata usata troppo di recente. | Scegliere una password non usata in precedenza. L'organizzazione richiede una certa quantità di tempo prima di riutilizzare una password. |
+
+## <a name="ios-passcode-requirements"></a>requisiti per il codice di accesso iOS
+
+| Messaggio | Procedura di correzione |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Il codice di accesso è obbligatorio.| Impostare un passcode. L'organizzazione richiede l'immissione di un codice di accesso per sbloccare il dispositivo. |
+| Il codice di accesso è troppo semplice. |  Verificare che il codice di accesso non contenga numeri sequenziali o ripetuti, ad esempio 1234 o 1111. |
+| Il codice di accesso è troppo breve. | Aggiornare o impostare un codice di accesso con più caratteri. Per l'organizzazione è necessario che il codice di accesso sia una certa lunghezza. Gli elementi scelti variano, ma la lunghezza minima che può richiedere è di 4 caratteri e il valore massimo è 14. Quando si modifica il codice di accesso, è possibile che venga visualizzato un messaggio di Apple che informa di immettere 6 o più caratteri; Questo messaggio è una raccomandazione del sistema Apple. Se l'organizzazione richiede solo un codice di accesso di 4 o 5 caratteri, non è necessario immettere un codice a 6 cifre.|  
+| Il codice di accesso deve contenere solo numeri. | Impostare un codice di accesso che contenga solo numeri.|
+| Il codice di accesso deve contenere solo caratteri alfanumerici.| Impostare un codice di accesso che contenga una combinazione di numeri e lettere.|
+| Il codice di accesso deve contenere caratteri non alfanumerici. | `&`Aggiungere caratteri speciali `%` `!` ,ad`#`esempio,, ,e.`$` L'organizzazione richiede una combinazione di lettere, numeri e caratteri non alfanumerici per rendere più difficile per altri indovinare il codice.|
+| Il passcode è scaduto. | Impostare una nuova password. Per l'organizzazione è necessario modificare la password dopo un determinato numero di giorni. |
+| Il codice di accesso è stato usato troppo di recente.| Scegliere un codice di accesso non usato in precedenza. L'organizzazione richiede una certa quantità di tempo prima di riutilizzare un codice. |
+|È richiesta l'autenticazione con ID tocco o Face ID. | Configurare l'ID tocco o il Face ID. Per l'organizzazione è necessario eseguire l'autenticazione con uno di questi metodi prima di usare il riempimento automatico per le password o le informazioni sulla carta di credito. | 
+
+## <a name="macos-password-requirements"></a>requisiti per le password macOS
+| Messaggio | Procedura di correzione |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Password richiesta. | Impostare una password. L'organizzazione richiede l'immissione di una password per sbloccare il dispositivo. |
+| La password è troppo breve.|  Assicurarsi che la password non contenga numeri sequenziali o ripetuti, ad esempio 1234 o 1111. |
+| La password è troppo breve. | Aggiornare o impostare una password con più caratteri. Per l'organizzazione è necessario che la password abbia una certa lunghezza.|
+| La password deve contenere solo numeri. | Impostare una password che contenga solo numeri.|
+| La password deve contenere solo caratteri alfanumerici. | Impostare una password che contenga una combinazione di numeri e lettere.|
+| La password deve contenere caratteri non alfanumerici. | `&`Aggiungere caratteri speciali `%` `!` ,ad`#`esempio,, ,e.`$` L'organizzazione richiede una combinazione di lettere, numeri e caratteri non alfanumerici per rendere più difficile l'individuazione della password da parte di altri utenti.|
+| Password scaduta. | Impostare una nuova password. Per l'organizzazione è necessario modificare la password dopo un determinato numero di giorni. |
+| La password è stata usata troppo di recente. | Scegliere una password non usata in precedenza. L'organizzazione richiede una certa quantità di tempo prima di riutilizzare una password. |
+
+## <a name="android-password-requirements"></a>Requisiti per le password Android
+| Messaggio | Procedura di correzione |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Password richiesta. | Impostare una password o un PIN. L'organizzazione richiede l'immissione di una password per sbloccare il dispositivo. |
+| La password è troppo breve. |  Assicurarsi che la password o il PIN non contenga numeri sequenziali o ripetuti, ad esempio 1234 o 1111. |
+| La password è troppo breve. | Aggiornare o impostare una password con più caratteri. Per l'organizzazione è necessario che la password abbia una certa lunghezza.|
+| La password deve contenere numeri. | Impostare una password o un PIN contenente numeri.|
+| La password deve contenere lettere. | Impostare una password che contiene lettere dall'alfabeto.|
+| La password deve contenere caratteri alfanumerici. | Impostare una password che contenga una combinazione di numeri e lettere.|
+| La password deve contenere caratteri alfanumerici e simboli. | Impostare una password che contenga una combinazione di lettere, numeri e caratteri speciali, ad `&`esempio `!` `$`,, `%`, e `#`. |
+| La password deve usare la tecnologia biometrica.| Configurare il dispositivo per l'uso dell'autenticazione biometrica, ad esempio l'impronta digitale o il riconoscimento facciale.
+| Password scaduta. | Impostare una nuova password. Per l'organizzazione è necessario modificare la password dopo un determinato numero di giorni. |
+| La password è stata usata troppo di recente. | Scegliere una password non usata in precedenza. L'organizzazione richiede una certa quantità di tempo prima di riutilizzare una password. |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per la procedura necessaria per impostare il PIN o la password, usare il collegamento che corrisponde al tipo del dispositivo in uso:
+Vedere gli articoli seguenti per creare o modificare la password, il codice o il PIN del dispositivo.  
 
-- [Impostare il PIN o la password del dispositivo Android](set-your-pin-or-password-android.md)
-- [Impostare o modificare il passcode del dispositivo iOS](set-or-change-your-passcode-ios.md)
-- [Impostare o modificare la password del dispositivo Windows](set-or-change-your-password-windows.md)
+- [Imposta la password del dispositivo Windows 10](set-or-change-your-password-windows.md)  
+- [Imposta il codice di accesso dispositivo iOS](set-or-change-your-passcode-ios.md)  
+- [Impostare il PIN o la password del dispositivo Android](set-your-pin-or-password-android.md)  
+
+Serve ancora assistenza? Contattare il personale di supporto. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+
