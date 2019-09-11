@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063031"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815467"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -74,8 +74,8 @@ Quando si usano più baseline di sicurezza, esaminare le impostazioni di ognuna 
 Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intune. Usare i collegamenti per visualizzare le impostazioni per l'istanza più recente di ogni baseline. 
 
 - **Baseline di sicurezza MDM**
-  - [Baseline della sicurezza MDM per maggio 2019](security-baseline-settings-mdm.md)
-  - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](security-baseline-settings-mdm-archive.md)
+  - [Baseline della sicurezza MDM per maggio 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Baseline di Microsoft Defender ATP**  
   *(Per usare questa baseline, l'ambiente deve soddisfare i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
@@ -215,7 +215,7 @@ In senso stretto, no. Il team di sicurezza di Microsoft si consulta con varie or
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Visualizzare le impostazioni nelle versioni più recenti delle baseline disponibili:  
-  - [Baseline di sicurezza MDM](security-baseline-settings-mdm.md)  
+  - [Baseline di sicurezza MDM](security-baseline-settings-mdm-all.md)  
   - [Baseline di Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
 
 - Controllare lo stato e monitorare la [baseline e il profilo](security-baselines-monitor.md)
