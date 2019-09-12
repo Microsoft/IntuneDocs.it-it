@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122152"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842150"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -53,6 +53,25 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre ad [avvisi 
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-9-2019"></a>Settimana del 9 settembre 2019
+
+### <a name="app-management"></a>Gestione delle app
+
+#### <a name="updates-to-microsoft-intune-app----4997846---"></a>Aggiornamenti all'app Microsoft Intune <!-- 4997846 -->
+L'app Microsoft Intune per Android è stata aggiornata con i miglioramenti seguenti:
+- Il layout è stato aggiornato e migliorato per includere lo spostamento inferiore per le azioni più importanti.
+- È stata aggiunta un'altra pagina per il profilo dell'utente.
+- È stata aggiunta la visualizzazione delle notifiche interattive nell'app per l'utente, ad esempio la necessità di aggiornare le impostazioni del dispositivo.
+- È stata aggiunta la visualizzazione di notifiche push personalizzate, allineando l'app al supporto aggiunto di recente nell'app Portale aziendale per iOS e Android. Per altre informazioni, vedere [Inviare notifiche personalizzate in Intune](custom-notifications.md).
+
+## <a name="week-of-september-2-2019"></a>Settimana del 2 settembre 2019
+
+### <a name="monitor-and-troubleshoot"></a>Monitorare e risolvere i problemi
+
+#### <a name="intune-user-interface-update--tenant-status-dashboard-----5273210----"></a>Aggiornamento dell'interfaccia utente di Intune: dashboard Stato del tenant  <!-- 5273210  -->
+È stata aggiornata l'interfaccia utente per il dashboard Stato del tenant per allinearsi agli stili dell'interfaccia utente di Azure. Per altre informazioni, vedere [Stato tenant](tenant-status.md).
+
 
 ## <a name="week-of-august-26-2019"></a>Settimana del 26 agosto 2019
 
@@ -185,7 +204,7 @@ In Intune è possibile creare criteri per usare Windows Defender Antivirus per a
 
 Questo comportamento è stato corretto in questo aggiornamento. Le impostazioni di report **Ora di esecuzione di un'analisi veloce giornaliera** e **Tipo di analisi di sistema da eseguire** mostrano quindi uno stato di operazione riuscita quando le analisi vengono completate correttamente e uno stato di errore quando non è possibile applicare le impostazioni. 
 
-Per altre informazioni sulle impostazioni di Windows Defender Antivirus, vedere [Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+Per altre informazioni sulle impostazioni di Windows Defender Antivirus, vedere [Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### <a name="device-enrollment"></a>Registrazione del dispositivo
 

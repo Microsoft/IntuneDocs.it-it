@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388104"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808636"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti con Intune
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseguire immediatamente l'archiviazione in Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente le azioni in sospeso o i criteri assegnati. Questa funzionalità consente di convalidare e risolvere i problemi di criteri assegnati immediatamente, senza attendere la successiva archiviazione pianificata.
+L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseguire immediatamente l'archiviazione in Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente le azioni in sospeso o i criteri assegnati. Questa funzionalità consente di convalidare e risolvere i problemi di criteri assegnati immediatamente, senza attendere la successiva archiviazione pianificata.
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
@@ -40,15 +37,14 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 
 ## <a name="sync-a-device"></a>Sincronizzare un dispositivo
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**. 
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 3. In **Intune** selezionare **Dispositivi** > **Tutti i dispositivi**.
-4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo, selezionare **Altro** e quindi selezionare **Sincronizza**.
+4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo per aprire il relativo riquadro *Panoramica*, quindi selezionare **Sincronizza**.
 5. Selezionare **Sì** per confermare.
 
 Per visualizzare lo stato dell'azione di sincronizzazione, scegliere **Dispositivi** > **Azioni del dispositivo**.
 
-Le frequenze di controllo standard dei criteri di Intune sono disponibili in [Frequenza dei cicli di aggiornamento](device-profiles.md).
+Le frequenze di controllo standard dei criteri di Intune sono disponibili in [Frequenza dei cicli di aggiornamento](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## <a name="retryable-error-codes"></a>Codici di errori non irreversibili
 

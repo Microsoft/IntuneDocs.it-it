@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050376"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739218"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Archiviazione ed elaborazione dei dati in Intune
 
@@ -41,13 +41,13 @@ I dati di telemetria (log del servizio, log di prestazioni, errori e così via) 
 
 Microsoft offre e gestisce servizi di Intune in numerose aree in tutto il mondo. Intune rispetta le scelte per le posizioni di archiviazione effettuate dall'amministratore per i dati dei clienti.
 
-Per altre informazioni, vedere [Microsoft Intune Where is my customer data?](For more information, see Microsoft Intune Where is my customer data?) (Microsoft Intune - Dove sono i dati dei clienti?).
+Per altre informazioni, vedere [Dove vengono archiviati i tuoi dati](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ### <a name="personal-data-retention"></a>Conservazione dei dati personali
 
-In generale, i dati personali vengono mantenuti da Intune fino a trenta giorni dopo la rimozione dell'utente dalla gestione di Intune.
+In generale, i dati personali vengono conservati da Intune per 30 giorni dopo la rimozione dell'utente dalla gestione di Intune.
 
-I dati di telemetria raccolti come parte dell'utilizzo di Intune vengono mantenuti per un massimo di 30 giorni.
+I dati di telemetria raccolti nell'ambito dell'utilizzo di Intune vengono conservati per un massimo di 30 giorni.
 
 I log di controllo vengono mantenuti fino a un massimo di un anno.
 

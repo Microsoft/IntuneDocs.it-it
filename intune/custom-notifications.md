@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021748"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878048"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Inviare notifiche personalizzate in Intune  
 
-Usare Microsoft Intune per inviare notifiche personalizzate agli utenti di dispositivi iOS e Android gestiti. Questi messaggi vengono visualizzati come notifiche push standard dall'app Portale aziendale sul dispositivo di un utente nello stesso modo in cui vengono visualizzate sul dispositivo le notifiche provenienti da altre applicazioni. Le notifiche personalizzate di Intune non sono supportate dai dispositivi Windows.   
+Usare Microsoft Intune per inviare notifiche personalizzate agli utenti di dispositivi iOS e Android gestiti. Questi messaggi vengono visualizzati come notifiche push standard dall'app Portale aziendale e dall'app Microsoft Intune sul dispositivo di un utente nello stesso modo in cui vengono visualizzate sul dispositivo le notifiche provenienti da altre applicazioni. Le notifiche personalizzate di Intune non sono supportate dai dispositivi Windows.   
 
 I messaggi di notifica personalizzati includono un titolo breve e un corpo del messaggio di massimo 500 caratteri. Questi messaggi possono essere personalizzati per qualsiasi scopo di comunicazione generale.
 
@@ -38,7 +38,7 @@ I messaggi di notifica personalizzati includono un titolo breve e un corpo del m
 ## <a name="considerations-for-using-custom-notifications"></a>Considerazioni sull'uso delle notifiche personalizzate  
 
 **Configurazione del dispositivo**:  
-- Prima che gli utenti possano ricevere notifiche personalizzate, è necessario che nei dispositivi sia installata l'app Portale aziendale. È anche necessario che siano configurate le impostazioni per consentire all'app Portale aziendale di inviare notifiche push. Il Portale aziendale richiederà agli utenti di consentire le notifiche a ogni installazione o aggiornamento.  
+- Prima che gli utenti possano ricevere notifiche personalizzate, è necessario che nei dispositivi sia installata l'app Portale aziendale o l'app Microsoft Intune. È anche necessario che siano configurate le autorizzazioni per consentire all'app Portale aziendale o all'app Microsoft Intune di inviare notifiche push. Se necessario, l'app Portale aziendale e l'app Microsoft Intune possono richiedere agli utenti di consentire le notifiche.  
 - In Android Google Play Services è una dipendenza obbligatoria.  
 - Il dispositivo deve disporre della registrazione a MDM.
 
@@ -51,8 +51,8 @@ I messaggi di notifica personalizzati includono un titolo breve e un corpo del m
 - I gruppi possono includere utenti o dispositivi, ma i messaggi vengono inviati solo agli utenti e vengono inviati a ogni dispositivo iOS o Android registrato dall'utente.  
 
 **Recapito**:  
-- Intune invia i messaggi all'app Portale aziendale degli utenti, che quindi crea la notifica push. Non è necessario che gli utenti siano connessi all'app affinché la notifica venga inviata tramite push al dispositivo.  
-- Intune e l'app Portale aziendale non possono garantire la consegna di una notifica personalizzata. Le notifiche personalizzate potrebbero essere visualizzate con alcune ore di ritardo, pertanto non è consigliabile usarle per i messaggi urgenti.  
+- Intune invia i messaggi all'app Portale aziendale degli utenti o all'app Microsoft Intune, che quindi crea la notifica push. Non è necessario che gli utenti siano connessi all'app affinché la notifica venga inviata tramite push al dispositivo.  
+- Intune, l'app Portale aziendale e l'app Microsoft Intune non possono garantire il recapito di una notifica personalizzata. Le notifiche personalizzate potrebbero essere visualizzate con alcune ore di ritardo, pertanto non è consigliabile usarle per i messaggi urgenti.  
 - I messaggi di notifica personalizzati di Intune vengono visualizzati nei dispositivi come notifiche push standard. Se l'app Portale aziendale è aperta in un dispositivo iOS quando riceve la notifica, la notifica viene visualizzata nell'app invece che in una notifica push.  
 - Le notifiche personalizzate possono essere visibili nelle schermate di blocco nei dispositivi iOS e Android a seconda delle impostazioni del dispositivo.  
 - Nei dispositivi Android altre app potrebbero avere accesso ai dati nelle notifiche personalizzate. Non usarle per le comunicazioni riservate.  
@@ -80,7 +80,7 @@ Intune non tiene traccia delle notifiche personalizzate inviate e i dispositivi 
 
 ## <a name="receive-a-custom-notification"></a>Ricevere una notifica personalizzata  
 
-In un dispositivo, gli utenti visualizzano i messaggi di notifica personalizzati inviati da Intune come una notifica push standard dall'app Portale aziendale. Queste notifiche sono simili alle notifiche push che gli utenti ricevono da altre app del dispositivo.  
+In un dispositivo gli utenti visualizzano i messaggi di notifica personalizzati inviati da Intune come notifica push standard dall'app Portale aziendale o dall'app Microsoft Intune. Queste notifiche sono simili alle notifiche push che gli utenti ricevono da altre app del dispositivo.  
 
 Nei dispositivi iOS, se l'app Portale aziendale è aperta quando si riceve la notifica essa viene visualizzata nell'app invece che in una notifica push.  
 

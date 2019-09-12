@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373425"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739196"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Aggiungere criteri di aggiornamento software per iOS in Intune
 
@@ -53,14 +53,8 @@ Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornament
 
     - **Ritarda la visibilità degli aggiornamenti software per gli utenti finali senza modificare gli aggiornamenti pianificati (giorni)** : 
 
-      **Questa impostazione è passata a [Limitazioni del dispositivo](device-restrictions-ios.md#general). Verrà rimossa da questa posizione nel portale**. Per un breve periodo di tempo, i criteri esistenti possono essere modificati qui. Dopo circa un mese, questa impostazione verrà rimossa dai criteri esistenti.
-
-      Per limitare l'impatto, è consigliabile:
-        - Rimuovere i criteri esistenti da questa posizione nel portale.
-        - Creare un nuovo [criterio di limitazione del dispositivo](device-restrictions-ios.md#general).
-        - Destinare il criterio agli stessi utenti del criterio originale.
-
-      Se si verifica un conflitto, questa impostazione non ha alcun effetto, *a meno che* i due valori non siano identici. Per evitare un conflitto, assicurarsi di modificare o rimuovere i criteri esistenti da questa posizione nel portale.
+      **Se si vuole ritardare la visibilità degli aggiornamenti software per un periodo di tempo specifico nei dispositivi iOS con supervisione, configurare queste impostazioni in [Limitazioni del dispositivo](device-restrictions-ios.md#general).
+     
       > [! Importante]  
       > Un criterio i cui valori per *Ora di inizio* e *Ora di fine* sono impostati sulle 00.00 viene valutato come 0 ore e non 24 ore. Questo significa nessuna limitazione.  
 

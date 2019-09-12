@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062943"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842186"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Esistono quattro tipi di distribuzione Autopilot: [Modalità di distribuzione automatica](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) per chioschi multimediali, segnaletica digitale o un dispositivo condiviso, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) che consente ai partner o al personale IT di eseguire il pre-provisioning di un PC Windows 10 in modo che sia completamente configurato e pronto per le attività aziendali, [Autopilot per i dispositivi esistenti](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) che consente di distribuire facilmente la versione più recente di Windows 10 nei dispositivi esistenti e [modalità definita dall'utente](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) per gli utenti tradizionali. 
+Esistono quattro tipi di distribuzione Autopilot:
+- [Modalità di distribuzione automatica](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) per chioschi multimediali, segnaletica digitale o un dispositivo condiviso
+- [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) consente ai partner o al personale IT di eseguire il pre-provisioning di un PC Windows 10 in modo che sia completamente configurato e pronto per le attività aziendali [Autopilot per i dispositivi esistenti](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) consente di distribuire facilmente la versione più recente di Windows 10 nei dispositivi esistenti
+- [Modalità Definita dall'utente](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) per utenti tradizionali. 
 
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -74,9 +77,9 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
     3. In **Tipo di appartenenza** scegliere **Assegnato** o **Dispositivo dinamico**.
 3. Se nel passaggio precedente si è scelto **Assegnato** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri** e aggiungere i dispositivi AutoPilot al gruppo.
     I dispositivi Autopilot che non sono ancora registrati sono dispositivi il cui nome è uguale al numero di serie del dispositivo stesso.
-4. Se nel passaggio precedente si è scelto **Dispositivi dinamici** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri dispositivo dinamico** e digitare uno dei codici seguenti nella casella **Regola avanzata**.
+4. Se nel passaggio precedente si è scelto **Dispositivi dinamici** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri dispositivo dinamico** e digitare uno dei codici seguenti nella casella **Regola avanzata**. Queste regole eseguono la raccolta dei soli dispositivi Autopilot perché hanno come destinazione attributi in possesso solo dei dispositivi Autopilot.
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot, digitare: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Il campo del tag del gruppo di Intune è associato all'attributo OrderID nei dispositivi Azure AD. Se si vuole creare un gruppo che includa tutti i dispositivi Autopilot con un tag di gruppo (OrderID) specifico, è necessario digitare: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Il campo del tag del gruppo di Intune è associato all'attributo OrderID nei dispositivi Azure AD. Se si vuole creare un gruppo che includa tutti i dispositivi Autopilot con un tag di gruppo (l'ID ordine del dispositivo di Azure AD) specifico, è necessario digitare: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot con un ID ordine d'acquisto specifico, digitare `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Dopo aver aggiunto il codice **Regola avanzata** scegliere **Salva**.
@@ -93,7 +96,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
 4. Selezionare **Avanti**.
 5. Nella pagina **Configurazione guidata** per **Modalità di distribuzione** scegliere una di queste due opzioni:
     - **Definita dall'utente**: I dispositivi con questo profilo sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente sono necessarie per effettuare la registrazione del dispositivo.
-    - **Distribuzione automatica (anteprima)** (richiede Windows 10 versione 1809 o successive): i dispositivi con questo profilo non sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente non sono necessarie per effettuare la registrazione del dispositivo.
+    - **Distribuzione automatica (anteprima)** (richiede Windows 10 versione 1809 o successive): i dispositivi con questo profilo non sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente non sono necessarie per effettuare la registrazione del dispositivo. Quando a un dispositivo non è associato alcun utente, i criteri di conformità basati sull'utente non sono applicabili. Quando si usa la modalità di distribuzione automatica, verranno applicati solo i criteri di conformità destinati al dispositivo.
 
     ![Screenshot della pagina Configurazione guidata](media/enrollment-autopilot/create-profile-outofbox.png)
 
