@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978534"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864546"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,12 +34,12 @@ Quando viene rilasciata una nuova linea di base di sicurezza MDM, l'elenco prece
 
 Quando una versione di base non è più supportata per l'uso, verrà rimossa da questo articolo.
 
-- Visualizzare le impostazioni disponibili nella linea di [base di sicurezza MDM corrente](security-baseline-settings-mdm.md) 
+- Visualizzare le impostazioni disponibili nella linea di [base di sicurezza MDM corrente](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
 - Informazioni sulle [linee di base di sicurezza](security-baselines.md)e su come aggiornare la versione di base nei profili di base di sicurezza.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Anteprima: baseline della sicurezza MDM per ottobre 2018  
 
-*Questa baseline è stata sostituita dalla [linea di base di sicurezza MDM per il 2019 maggio](security-baseline-settings-mdm.md)*
+*Questa baseline è stata sostituita dalla [linea di base di sicurezza MDM per il 2019 maggio](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)*
 
 ### <a name="above-lock"></a>Notifiche sulla schermata di blocco  
 
@@ -1441,5 +1442,5 @@ Per altre informazioni, vedere [Policy CSP - WindowsPowerShell](https://docs.mic
  
 ## <a name="next-steps"></a>Passaggi successivi  
 
-[Visualizza la versione di base corrente](security-baseline-settings-mdm.md)  
+[Visualizza la versione di base corrente](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
 [Aggiornare i profili per l'uso di una nuova versione di base](security-baselines.md#change-the-baseline-version-for-a-profile)
