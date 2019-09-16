@@ -82,7 +82,7 @@ Seguire questa procedura per configurare e registrare il dispositivo.
 
     ![Immagine di esempio della schermata Set up your work phone (Configura telefono aziendale), con il pulsante Start (Avvia) evidenziato.](./media/fully-managed-intune-app-17.png)   
 
-11. Toccare  ****accedi e quindi toccareAvanti** per avviare la registrazione.** Quando viene visualizzato il messaggio che indica che la registrazione è **stata**completata, toccare fine.  
+11. Toccare **accedi** e quindi toccare **Avanti** per avviare la registrazione. Quando viene visualizzato il messaggio che indica che la registrazione è **stata**completata, toccare fine.  
 
     ![Immagine di esempio relativa alla configurazione dell'accesso, alla schermata di registrazione del dispositivo, all'evidenziazione del pulsante fine.](./media/fully-managed-intune-app-19.png)   
 
