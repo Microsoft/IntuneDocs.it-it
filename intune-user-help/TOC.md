@@ -1,6 +1,6 @@
 # Guida dell'utente per Intune
 
-## [Usare dispositivi gestiti per lo svolgimento del lavoro](use-managed-devices-to-get-work-done.md)
+## [Che cos'è la registrazione dei dispositivi?](use-managed-devices-to-get-work-done.md)
 
 ## [Informazioni visibili per l'azienda con Intune](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
