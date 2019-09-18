@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842073"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061669"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -77,7 +77,6 @@ Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS. I cr
 5. Selezionare **App associata**.
 6. Nella barra di ricerca immettere "Slack per EMM" e selezionare l'app.
 7. Fare clic su **OK** e selezionare **Impostazioni di configurazione**. 
-    - Per informazioni sulle chiavi di configurazione e i relativi valori, consultare la documentazione nella scheda "Technical" (Informazioni tecniche) della [pagina Web AppConfig di Slack](https://www.appconfig.org/company/slack/).
 8. Scegliere **OK** e quindi **Aggiungi**.
 9. Nella barra di ricerca immettere "Test criteri di configurazione dell'app Slack" e selezionare il criterio appena aggiunto.
 10. In Gestisci selezionare **Assegnazioni**.

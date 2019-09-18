@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027382"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905052"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorare la crittografia dei dispositivi con Intune   
 
@@ -201,8 +201,7 @@ Intune supporta più opzioni per la rotazione e il ripristino delle chiavi di ri
   1. Da un qualsiasi dispositivo accedere al *Portale aziendale Intune*.  
   2. Nel portale passare a **Dispositivi** e selezionare il dispositivo macOS crittografato con FileVault.  
   3. Selezionare **Ottieni la chiave di ripristino**. Verrà visualizzata la chiave di ripristino corrente.  
-  
-     In un iPhone per visualizzare l'opzione *Ottieni la chiave di ripristino* è necessario selezionare i *tre* puntini.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>Chiavi di ripristino di BitLocker  
 

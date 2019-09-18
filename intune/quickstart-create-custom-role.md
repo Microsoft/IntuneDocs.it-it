@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511591"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080048"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Guida introduttiva: Creare e assegnare un ruolo personalizzato
 
@@ -45,7 +45,7 @@ Quando si crea un ruolo personalizzato, è possibile impostare le autorizzazioni
 4. Scegliere **Configura** > **Identificatori dei dispositivi aziendali** > **Sì** accanto a **Lettura** > **OK**.
 ![Browser](media/quickstart-create-custom-role/corp-device-id-read.png)
 5. Scegliere **Tutti i criteri di conformità del dispositivo** > **Sì** accanto a **Lettura** > **OK**.
-6. Scegliere **Device configurations (Configurazioni dispositivo)** > **Sì** accanto a **Lettura** > **OK**.
+6. Scegliere **Device configurations (Configurazioni dispositivo)**  > **Sì** accanto a **Lettura** > **OK**.
 7. Scegliere **Organizzazione** > **Sì** accanto a **Lettura** > **OK**.
 8. Scegliere **OK** > **Crea**.
 
@@ -56,10 +56,10 @@ Prima che l'operatore della sicurezza possa usare le nuove autorizzazioni, è in
 1. In Intune scegliere **Ruoli** > **Tutti i ruoli** > **Security operations** (Operazioni di sicurezza).
 2. In **Ruoli di Intune** scegliere **Assegnazioni** > **Assegna**.
 3. Nella casella **Nome dell'assegnazione** immettere *Sec ops*.
-4. Scegliere **Membri (gruppi)** > **Aggiungi**.
+4. Scegliere **Membri (gruppi)**  > **Aggiungi**.
 5. Scegliere il gruppo **Contoso Testers**.
 6. Scegliere **Seleziona** > **OK**.
-7. Scegliere **Ambito (gruppi)** > **Selezionare i gruppi da includere** > **Contoso Testers**.
+7. Scegliere **Ambito (gruppi)**  > **Selezionare i gruppi da includere** > **Contoso Testers**.
 8. Scegliere **Seleziona** > **OK** > **OK**.
 
 A questo punto tutti i membri del gruppo fanno parte del ruolo *Operazioni di sicurezza* e possono accedere alle seguenti informazioni su un dispositivo: identificatori dei dispositivi aziendali, criteri di conformità dei dispositivi, configurazioni dei dispositivi e informazioni sull'organizzazione.
