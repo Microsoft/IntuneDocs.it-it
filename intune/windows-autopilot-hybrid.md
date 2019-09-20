@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861841"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071141"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Azure Active Directory ibrido. A tale scopo, eseguire i passaggi descritti in questo articolo.
@@ -106,14 +106,14 @@ L'unità organizzativa a cui vengono assegnate le autorizzazioni per la creazion
 
 Il connettore di Intune per Active Directory deve essere installato in un computer che esegue Windows Server 2016 o versioni successive. Il computer deve anche avere accesso a Internet e al servizio Active Directory. Per aumentare la scalabilità e la disponibilità o per supportare più domini di Active Directory, è possibile installare più connettori nell'ambiente. È consigliabile installare il connettore in un server che non esegue altri connettori di Intune.
 
-1. In [Intune](https://aka.ms/intuneportal) selezionare **Registrazione del dispositivo** > **Registrazione Windows** > **Connettore di Intune per Active Directory (anteprima)**  > **Aggiungi un connettore**. 
+1. In [Intune](https://aka.ms/intuneportal) selezionare **Registrazione del dispositivo** > **Registrazione Windows** > **Connettore di Intune per Active Directory** > **Aggiungi**. 
 2. Seguire le istruzioni per scaricare il connettore.
 3. Aprire il file di installazione del connettore scaricato *ODJConnectorBootstrapper.exe* per installare il connettore.
 4. Al termine dell'installazione selezionare **Configura**.
 5. Selezionare **Accedi**.
 6. Immettere le credenziali utente del ruolo Amministratore globale o Amministratore di Intune.  
    All'account utente deve essere assegnata una licenza di Intune.
-7. Passare a **Registrazione del dispositivo** > **Registrazione Windows** > **Connettore di Intune per Active Directory (anteprima)** e verificare che lo stato della connessione sia **Attivo**.
+7. Passare a **Registrazione del dispositivo** > **Registrazione Windows** > **Connettore di Intune per Active Directory** e verificare che lo stato della connessione sia **Attivo**.
 
 > [!NOTE]
 > Dopo l'accesso, la visualizzazione del connettore in [Intune](https://aka.ms/intuneportal) può richiedere qualche minuto. Il connettore viene visualizzato solo se può comunicare correttamente con il servizio Intune.
@@ -183,14 +183,17 @@ Dopo la registrazione dei dispositivi di Autopilot, i nomi dei dispositivi diven
 I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi AutoPilot.
 
 1. In [Intune](https://aka.ms/intuneportal) selezionare **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > **Crea profilo**.
-1. Digitare un **Nome** e una **Descrizione** facoltativa.
-1. In **Modalità di distribuzione** scegliere **Definita dall'utente**.
-1. Nella casella **Aggiungi ad Azure AD come** scegliere **Aggiunto ad Azure AD ibrido (anteprima)** .
-1. Selezionare **Configurazione guidata**, configurare le opzioni in base alle esigenze e selezionare **Salva**.
-1. Selezionare **Crea** per creare il profilo. 
-1. Nel riquadro del profilo selezionare **Assegnazioni**.
-1. Selezionare **Seleziona gruppi**.
-1. Nel riquadro **Seleziona gruppi** selezionare il gruppo di dispositivi e fare clic su **Seleziona**.
+2. Nella pagina **Informazioni di base** specificare un **Nome** e una **Descrizione** facoltativa.
+3. Se si vuole che tutti i dispositivi nei gruppi assegnati vengano automaticamente converti in Autopilot, impostare **Converti tutti i dispositivi interessati in Autopilot** su **Sì**. Tutti i dispositivi non Autopilot nei gruppi assegnati verranno registrati con il servizio di distribuzione di Autopilot. L'elaborazione della registrazione può richiedere fino a 48 ore. Quando la registrazione viene annullata e il dispositivo viene reimpostato, Autopilot eseguirà la registrazione. Dopo che un dispositivo è stato registrato in questo modo, se si disabilita o rimuove l'assegnazione del profilo, il dispositivo non verrà rimosso dal servizio di distribuzione di Autopilot. È invece necessario [rimuovere direttamente il dispositivo](enrollment-autopilot.md#delete-autopilot-devices).
+4. Selezionare **Avanti**.
+5. Nella pagina **Configurazione guidata** per **Modalità di distribuzione** selezionare **Definita dall'utente**.
+6. Nella casella **Aggiungi ad Azure AD come** selezionare **Aggiunto ad Azure AD ibrido**.
+7. Se necessario, configurare le opzioni rimanenti nella pagina **Configurazione guidata**.
+8. Selezionare **Avanti**.
+9. Nella pagina **Tag di ambito** selezionare [tag di ambito](scope-tags.md) per questo profilo.
+10. Selezionare **Avanti**.
+11. Nella pagina **Assegnazioni** selezionare **Selezionare i gruppi da includere** > cercare e selezionare il gruppo di dispositivi > **Seleziona**.
+12. Selezionare **Avanti** > **Crea**.
 
 Il passaggio dello stato del profilo del dispositivo da *Non assegnato* ad *Assegnazione* e infine ad *Assegnato* richiede circa 15 minuti.
 

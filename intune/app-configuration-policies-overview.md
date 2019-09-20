@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160536"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061587"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
 I criteri di configurazione delle app consentono di evitare i problemi di configurazione delle app, permettendo di assegnare le impostazioni di configurazione a criteri assegnati agli utenti finali prima dell'esecuzione dell'app. Le impostazioni vengono quindi fornite automaticamente quando l'app viene configurata nel dispositivo degli utenti finali e gli utenti finali non devono eseguire alcuna azione. Le impostazioni di configurazione sono univoche per ogni app. 
 
-È possibile creare e usare i criteri di configurazione delle app per specificare le impostazioni di configurazione sia per app iOS che Android. Queste impostazioni di configurazione consentono la personalizzazione di un'app tramite un [approccio standard del settore](https://www.appconfig.org/) alla gestione e configurazione delle app. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione. 
+È possibile creare e usare i criteri di configurazione delle app per specificare le impostazioni di configurazione sia per app iOS che Android. Queste impostazioni di configurazione consentono di personalizzare un'app tramite la gestione e la configurazione delle app. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione. 
 
 Ad esempio, un'impostazione di configurazione dell'app potrebbe richiedere di specificare i dettagli seguenti:
 
@@ -60,7 +60,7 @@ Sono disponibili due opzioni per l'uso dei criteri di configurazioni delle app c
 ## <a name="apps-that-support-app-configuration"></a>App che supportano la configurazione delle app
 
 ### <a name="managed-devices"></a>Dispositivi gestiti
-È possibile usare i criteri di configurazione delle app per le app che li supportano. Per supportare la configurazione delle app in Intune, le app devono essere scritte in modo da supportare l'uso delle configurazioni delle app definite dalla [community di AppConfig](https://www.appconfig.org/members). Per maggiori dettagli, consultare il fornitore dell'app.
+È possibile usare i criteri di configurazione delle app per le app che li supportano. Per supportare la configurazione delle app in Intune, le app devono essere scritte in modo da poter usare le configurazioni delle app definite dal sistema operativo. Per altri dettagli sulle chiavi di configurazione dell'app supportate, rivolgersi al fornitore dell'app.
 
 ### <a name="managed-apps"></a>App gestite
 È possibile preparare un'app line-of-business incorporando [Intune App SDK](app-sdk.md) nell'app oppure eseguendo il wrapping dell'app dopo lo sviluppo tramite lo [strumento di wrapping delle app di Intune](apps-prepare-mobile-application-management.md). Intune App SDK mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. Per altre informazioni, vedere [Panoramica di Intune App SDK](app-sdk.md). Per un confronto tra Intune App SDK e lo strumento di wrapping delle app di Intune, vedere [Preparare le app line-of-business per i criteri di protezione delle app](apps-prepare-mobile-application-management.md#feature-comparison).

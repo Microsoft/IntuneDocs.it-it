@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427284"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071393"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi in Intune usando un account del manager di registrazione dispositivi
 
@@ -39,7 +39,7 @@ Gli account utente di tipo manager di registrazione dispositivi e i dispositivi 
 - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo VPP Apple.
 - I dispositivi sono bloccati per l'accesso condizionale ad eccezione di Windows 10 1803+
 - Tutti i dispositivi registrati con gli account di manager di registrazione dispositivi devono avere le licenze appropriate per la gestione da Intune. La licenza può essere una licenza utente di Intune o una licenza dispositivo di Intune.
-
+- Se si stanno [registrando dispositivi con profilo di lavoro Android Enterprise](android-work-profile-enroll.md) usando un account DEM, è possibile registrare un massimo di 10 dispositivi per ogni account.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi

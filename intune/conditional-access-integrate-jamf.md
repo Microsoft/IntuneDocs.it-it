@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251093"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012517"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
@@ -38,13 +38,13 @@ Per configurare l'accesso condizionale con Jamf Pro, è necessario quanto segue:
 - [App Portale aziendale per macOS](https://aka.ms/macoscompanyportal)
 - Dispositivi macOS con OS X 10.11 Yosemite o versioni successive
 
-## <a name="connecting-intune-to-jamf-pro"></a>Connessione di Intune a Jamf Pro
+## <a name="connect-intune-to-jamf-pro"></a>Connettere Intune a Jamf Pro
 
-Per connettere Intune a Jamf Pro, è possibile:
+Per connettere Intune a Jamf Pro:
 
-1. Creare una nuova applicazione in Azure
-2. Abilitare Intune per l'integrazione con Jamf Pro
-3. Configurare l'accesso condizionale in Jamf Pro
+1. Creare una nuova applicazione in Azure.
+2. Abilitare Intune per l'integrazione con Jamf Pro.
+3. Configurare l'accesso condizionale in Jamf Pro.
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Creare un’applicazione in Azure Active Directory
 
@@ -55,7 +55,7 @@ Per connettere Intune a Jamf Pro, è possibile:
    - Per la sezione **Tipi di account supportati** selezionare **Account in qualsiasi directory organizzativa**. 
    - Per **URI di reindirizzamento** lasciare l'impostazione predefinita Web e quindi specificare l'URL dell'istanza Jamf Pro.  
 
-3. Selezionare **Registra** per creare l'applicazione e per aprire la pagina Panoramica per la nuova app.  
+3. Selezionare **Registra** per creare l'applicazione e per aprire la pagina **Panoramica** per la nuova app.  
 
 4. Nella pagina **Panoramica** dell'app copiare il valore **ID client applicazione** e annotarlo per usarlo in seguito. Questo valore sarà necessario nelle procedure successive.  
 
@@ -64,13 +64,13 @@ Per connettere Intune a Jamf Pro, è possibile:
    > [!IMPORTANT]  
    > Prima di uscire da questa pagina, copiare il valore del segreto client e annotarlo per usarlo in seguito. Questo valore sarà necessario nelle procedure successive. Questo valore non sarà più disponibile, senza ricreare la registrazione dell'app.  
 
-6. Selezionare **Autorizzazioni API** in Gestione.  Selezionare le autorizzazioni esistenti e quindi selezionare **Rimuovi l'autorizzazione** per eliminarle. È necessario rimuovere le autorizzazioni esistenti quando si aggiunge una nuova autorizzazione. L'applicazione funziona solo se è presente un'unica autorizzazione.  
+6. Selezionare **Autorizzazioni API** in **Gestione**. Selezionare le autorizzazioni esistenti e quindi selezionare **Rimuovi l'autorizzazione** per eliminarle. È necessario rimuovere le autorizzazioni esistenti quando si aggiunge una nuova autorizzazione. L'applicazione funziona solo se è presente un'unica autorizzazione.  
 
 7. Per assegnare una nuova autorizzazione, selezionare **Aggiungi un'autorizzazione**. Nella pagina **Richiedi le autorizzazioni dell'API** selezionare **Intune** e quindi selezionare **Autorizzazioni applicazione**. Selezionare solo la casella di controllo per **update_device_attributes**.  
 
    Selezionare **Aggiungi l'autorizzazione** per salvare questa configurazione.  
 
-8. Nella pagina **Autorizzazioni API** selezionare **Concedi consenso amministratore per Microsoft** e quindi selezionare Sì.  
+8. Nella pagina **Autorizzazioni API** selezionare **Concedi consenso amministratore per Microsoft**, quindi selezionare **Sì**.  
 
    Il processo di registrazione dell'app in Azure AD è stato completato.
 
@@ -88,9 +88,9 @@ Per connettere Intune a Jamf Pro, è possibile:
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Configurare l'integrazione di Microsoft Intune in Jamf Pro
 
-1. In Jamf Pro passare a **Gestione globale** > **Accesso condizionale**. Fare clic sul pulsante **Modifica** nella scheda **Microsoft Intune Integration** (Integrazione Microsoft Intune).
+1. In Jamf Pro passare a **Gestione globale** > **Accesso condizionale**. Fare clic sul pulsante **Edit** (Modifica) nella scheda **macOS Intune Integration** (Integrazione con Intune per macOS).
 
-2. Selezionare la casella di controllo **Abilita integrazione con Microsoft Intune**.
+2. Selezionare la casella di controllo **Enable Intune Integration for macOS** (Abilita integrazione con Intune per macOS).
 
 3. Fornire le informazioni necessarie sul tenant di Azure, tra cui **Percorso**, **Nome di dominio**, **ID applicazione** e il valore del *segreto client* salvato quando è stata creata l'app in Azure AD.  
 
@@ -100,7 +100,17 @@ Per connettere Intune a Jamf Pro, è possibile:
 
 Dopo aver configurato l'integrazione tra Intune e Jamf, è necessario [applicare i criteri di conformità per i dispositivi gestiti da Jamf](conditional-access-assign-jamf.md).
 
+## <a name="disconnect-jamf-pro-and-intune"></a>Disconnettere Jamf Pro e Intune 
 
+Se non si usa più Jamf Pro per gestire i computer Mac nell'organizzazione e si vuole che gli utenti siano gestiti da Intune, è necessario rimuovere la connessione tra Jamf Pro e Intune. Rimuovere la connessione usando la console di Jamf Pro. 
+
+1. In Jamf Pro passare a **Global Management** >  (Gestione globale) **Conditional Access** (Accesso condizionale). Nella scheda **macOS Intune Integration** (Integrazione con Intune per macOS) selezionare **Edit** (Modifica).
+2. Deselezionare la casella di controllo **Enable Intune Integration for macOS** (Abilita integrazione con Intune per macOS).
+3. Selezionare **Salva**. Jamf Pro invia la configurazione a Intune e l'integrazione verrà terminata.
+4. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Passare a **Microsoft Intune** > **Conformità del dispositivo** > **Gestione dei dispositivi partner** per verificare che ora lo stato sia **Terminato**. 
+
+   > [!NOTE]
+   > I dispositivi Mac dell'organizzazione verranno rimossi alla data visualizzata nella console (3 mesi). 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

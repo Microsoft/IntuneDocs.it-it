@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376916"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071064"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
@@ -36,7 +36,7 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Alcune di queste impostazioni sono disponibili a partire da Windows 10 versione 1703 (RS2). Per un'esperienza ottimale, è consigliabile usare Windows 10 Enterprise versione 1903 (19H1) e versioni successive.
+- Alcune di queste impostazioni sono disponibili a partire da Windows 10 versione 1703 (RS2). Alcune impostazioni non sono incluse in tutte le edizioni di Windows. Per un'esperienza ottimale, è consigliabile usare Windows 10 Enterprise versione 1903 (19H1) e versioni successive.
 
 - Le impostazioni di Windows usano i [provider di servizi di configurazione (CSP) dei criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 

@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738285"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079954"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -39,7 +39,7 @@ Prima di abilitare i dispositivi iOS, completare i passaggi seguenti:
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
 
-È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze, gli utenti possono scaricare l'app Portale aziendale Intune dall'App Store e seguire le istruzioni di registrazione nell'app.
+È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze, gli utenti possono scaricare l'app Portale aziendale Intune dall'App Store e seguire le istruzioni di registrazione nell'app. È possibile personalizzare l'informativa sulla privacy del portale aziendale nei dispositivi iOS come descritto nella sezione relativa alla [personalizzazione dell'informativa sulla privacy](company-portal-app.md#privacy-statement-customization).
 
 ## <a name="company-owned-ios-devices"></a>Dispositivi macOS di proprietà dell'azienda
 Per le organizzazioni che acquistano dispositivi per i propri utenti, Intune supporta i seguenti metodi di registrazione dei dispositivi iOS di proprietà dell'azienda:

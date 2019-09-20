@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842150"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061671"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -54,6 +54,21 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre ad [avvisi 
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>Settimana del 16 settembre 2019
+
+### <a name="app-management"></a>Gestione delle app
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Supporto macOS per le app Web <!-- 3174427 -->
+Le app Web, che consentono di aggiungere un collegamento a un URL sul Web, possono essere installate nel Dock usando il portale aziendale macOS. Gli utenti finali possono accedere all'azione **Installa** dalla pagina dei dettagli di un'app Web nel portale aziendale macOS. Per altre informazioni sul tipo di app **Collegamento Web**, vedere [Aggiungere app in Microsoft Intune](apps-add.md) e [Aggiungere app Web a Microsoft Intune](web-app.md).
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>Supporto macOS per app VPP <!-- 3173501  -->
+Le app macOS, acquistate con Apple Business Manager, vengono visualizzate nella console quando vengono sincronizzati i token VPP Apple in Intune. È possibile assegnare, revocare e riassegnare le licenze basate su utenti e dispositivi per i gruppi usando la console di Intune. Microsoft Intune consente di gestire le app VPP acquistate per l'uso aziendale eseguendo le operazioni seguenti:
+- Segnalazione delle informazioni di licenza dall'App Store.
+- Verifica del numero di licenze usate.
+- Blocco dell'installazione di un numero di copie dell'app superiore al numero di copie acquistate.
+
+Per altre informazioni su Intune e VPP, vedere [Gestire le app e i libri acquistati con Volume Purchase Program con Microsoft Intune](vpp-apps.md).
+
 ## <a name="week-of-september-9-2019"></a>Settimana del 9 settembre 2019
 
 ### <a name="app-management"></a>Gestione delle app
@@ -64,6 +79,10 @@ L'app Microsoft Intune per Android è stata aggiornata con i miglioramenti segue
 - È stata aggiunta un'altra pagina per il profilo dell'utente.
 - È stata aggiunta la visualizzazione delle notifiche interattive nell'app per l'utente, ad esempio la necessità di aggiornare le impostazioni del dispositivo.
 - È stata aggiunta la visualizzazione di notifiche push personalizzate, allineando l'app al supporto aggiunto di recente nell'app Portale aziendale per iOS e Android. Per altre informazioni, vedere [Inviare notifiche personalizzate in Intune](custom-notifications.md).
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>Per i dispositivi iOS, personalizzare la schermata relativa alla privacy del processo di registrazione del portale aziendale <!-- 4394993 -->
+Usando Markdown è possibile personalizzare la schermata relativa alla privacy del portale aziendale visualizzata dagli utenti finali durante la registrazione iOS. In particolare, è possibile personalizzare l'elenco di elementi che l'organizzazione non può visualizzare o eseguire sul dispositivo. Per altre informazioni, vedere [Come configurare l'app Portale aziendale Intune](company-portal-app.md#privacy-statement-customization).
+
 
 ## <a name="week-of-september-2-2019"></a>Settimana del 2 settembre 2019
 
@@ -228,7 +247,7 @@ Per altre informazioni sulle impostazioni di Windows Defender Antivirus, vedere 
 Per altre informazioni sulla personalizzazione di Assistente configurazione, vedere [Creare un profilo di registrazione di Apple per iOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) e [Creare un profilo di registrazione di Apple per macOS](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Aggiungere una colonna utente al processo di caricamento CSV del dispositivo Autopilot <!-- 3823054 -->
-È ora possibile aggiungere una colonna utente al caricamento CSV per i dispositivi Autopilot. Ciò consente di assegnare in blocco gli utenti al momento dell'importazione del file CSV. Il nuovo formato per le righe nel file CSV è simile al seguente: numero-di-serie, id-prodotto-windows, hash-hardware, tag-gruppo-facoltativo, utente-assegnato-facoltativo. Per altre informazioni, vedere [Registrare dispositivi Windows in Intune con Windows Autopilot](enrollment-autopilot.md).
+È ora possibile aggiungere una colonna utente al caricamento CSV per i dispositivi Autopilot. Ciò consente di assegnare in blocco gli utenti al momento dell'importazione del file CSV. Per altre informazioni, vedere [Registrare dispositivi Windows in Intune con Windows Autopilot](enrollment-autopilot.md).
 
 
 ### <a name="device-management"></a>Gestione dei dispositivi
