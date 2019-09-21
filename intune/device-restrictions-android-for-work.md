@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550196"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163031"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -159,7 +159,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
     - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0-9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
     - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1-9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
-    - **Rileva supporto prima di iniziare screen saver**: **Abilita** (impostazione predefinita) non Mostra l'screen saver se l'audio o il video è in riproduzione sul dispositivo. **Non** configurata mostra il screen saver, anche se la riproduzione audio o video viene eseguita.
+    - **Rileva supporto prima di iniziare screen saver**: **Abilita** (impostazione predefinita) non Mostra l'screen saver se l'audio o il video è in riproduzione sul dispositivo. **Non configurata** mostra il screen saver, anche se la riproduzione audio o video viene eseguita.
 
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
 
@@ -200,6 +200,9 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 - **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurata** consente agli utenti di aggiungere altri utenti nel dispositivo.
 - **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurata** consente agli utenti di rimuovere altri utenti dal dispositivo.
 - **Modifiche all'account**: scegliere **Blocca** per impedire agli utenti di modificare gli account. **Non configurata** consente agli utenti di aggiornare gli account utente nel dispositivo.
+
+  > [!NOTE]
+  > Questa impostazione non è rispettata nei dispositivi proprietari del dispositivo (completamente gestiti). Se si configura questa impostazione, l'impostazione viene ignorata e non ha alcun effetto.
 
 ### <a name="applications"></a>Applicazioni
 
@@ -270,6 +273,10 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 - **Cerca contatti di lavoro dal profilo personale**: scegliere **Blocca** per impedire agli utenti di cercare i contatti di lavoro nelle app nel profilo personale. **Non necessario** consente di cercare i contatti di lavoro nel profilo personale.
 
 - **Fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo nel profilo di lavoro. Questa impostazione non interessa la fotocamera nel profilo personale. **Non necessario** consente l'accesso alla fotocamera nel profilo di lavoro.
+
+- **Consenti i widget dalle app del profilo di lavoro**: **Abilita** consente agli utenti finali di inserire i widget esposti dalle app nella schermata iniziale. L'impostazione **Non configurata** (predefinita) disabilita questa funzionalità.
+
+  Ad esempio, Outlook viene installato nei profili di lavoro degli utenti. Quando l'impostazione è **abilitata**, gli utenti possono inserire il widget agenda nella schermata iniziale del dispositivo.
 
 #### <a name="work-profile-password"></a>Password del profilo di lavoro
 

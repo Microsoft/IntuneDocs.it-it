@@ -1,6 +1,6 @@
 ---
-title: Reimposta dispositivo dall'app portale aziendale di Intune | Microsoft Docs
-description: Reimpostare il dispositivo sulle impostazioni predefinite dal portale aziendale per Windows 10.
+title: Ripristinare il dispositivo dall'app Portale aziendale Intune | Microsoft Docs
+description: Ripristinare le impostazioni predefinite del dispositivo da Portale aziendale per Windows 10.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,34 +18,35 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882248261f4386a8191067a0e8533c4c24fc2a5b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57567469"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163348"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>Reimposta dispositivo dall'app portale aziendale  
+# <a name="reset-device-from-the-company-portal-app"></a>Ripristinare il dispositivo dall'app Portale aziendale  
 
-Reimpostare un dispositivo usato, smarrito o rubato alle impostazioni di fabbrica dall'app portale aziendale.  
+Ripristinare le impostazioni di fabbrica di un dispositivo usato, smarrito o rubato dall'app Portale aziendale.  
 
-Dopo che si reimposta un dispositivo, non verrà visualizzato nel portale aziendale. Le app esistenti e i file verranno cancellati e verrà ripristinato le impostazioni di out-of-box.  
+Dopo aver reimpostato un dispositivo, questo non verrà più visualizzato in Portale aziendale. Le app e i file esistenti verranno cancellati e verranno ripristinate le impostazioni predefinite.  
 
-1. Apri il portale aziendale.  
+
+1. Aprire Portale aziendale.  
 2. Selezionare il dispositivo da reimpostare in **Dispositivi personali**.   
 
-    ![Screenshot di esempio dell'app portale aziendale, la schermata iniziale, l'evidenziazione della sezione dispositivi personali.](./media/1802-cp-app-windows-home.png)  
+    ![Screenshot di esempio dell'app Portale aziendale, della schermata iniziale, dell'evidenziazione della sezione dispositivi personali.](./media/1802-cp-app-windows-home.png)  
 
-3. Nel **dettagli dispositivo** schermata, seleziona la **Vedi altro** menu.  
+3. Nella schermata dei **Dettagli del dispositivo** selezionare il menu **altri** .  
 
-    ![Screenshot di esempio dell'app portale aziendale, dispositivo descrive in dettaglio dello schermo, l'evidenziazione di vedere altri menu.](./media/1802-cp-app-windows-device-details.png)  
+    ![Screenshot di esempio dell'app Portale aziendale, schermata dei dettagli del dispositivo, evidenziando Visualizza altro menu.](./media/1802-cp-app-windows-device-details.png)  
 
 4. Selezionare **Reimposta**.  
 
-     ![Screenshot di esempio dell'app portale aziendale, schermata Dettagli dispositivo, l'evidenziazione di azione di ripristino. ](./media/1802-cp-app-windows-device-details-reset.png)  
+     ![Screenshot di esempio di app Portale aziendale, schermata dei dettagli del dispositivo, evidenziazione dell'azione di reimpostazione. ](./media/1802-cp-app-windows-device-details-reset.png)  
 
-5. Quando viene richiesto di confermare, selezionare **reimpostare**. Il dispositivo verrà reimpostato a se stesso.  
+5. Quando viene richiesto di confermare, selezionare **Reimposta**. Il dispositivo si ripristinerà automaticamente.  
 
-     ![Screenshot di esempio dell'app portale aziendale, il messaggio di conferma reimpostazione, l'evidenziazione pulsante Reimposta. ](./media/1802-cp-app-windows-reset-confirm.png)  
+     ![Screenshot di esempio dell'app Portale aziendale, reimpostare il messaggio di conferma, evidenziando il pulsante Reimposta. ](./media/1802-cp-app-windows-reset-confirm.png)  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

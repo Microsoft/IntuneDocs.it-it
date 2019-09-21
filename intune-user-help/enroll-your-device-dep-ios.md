@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847761"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166783"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrare il dispositivo iOS fornito dall'organizzazione per la gestione
 
@@ -34,15 +34,16 @@ I dispositivi iOS che vengono forniti dall'azienda o dall'istituto di istruzione
 Per avviare la configurazione, accendere il dispositivo e accedere con le credenziali aziendali o dell'istituto di istruzione. Il resto di questo articolo descrive i passaggi e le schermate visualizzati durante l'utilizzo dell'Assistente configurazione. 
 
 ## <a name="what-is-apple-dep"></a>Che cos'è il programma DEP di Apple?
-L'organizzazione potrebbe avere acquistato i propri dispositivi tramite un *Apple Device Enrollment Program* (DEP). Il programma DEP di Apple consente alle organizzazioni di acquistare grandi quantità di dispositivi iOS o macOS. Le organizzazioni possono quindi configurare e gestire tali dispositivi all'interno del provider di gestione dei dispositivi mobili preferito, ad esempio Intune. Gli amministratori che desiderano avere altre informazioni sul programma DEP di Apple possono vedere [Registrare automaticamente i dispositivi nel programma Device Enrollment Program di Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
-## <a name="set-up-your-ios-device"></a>Configurare il dispositivo iOS  
+L'organizzazione potrebbe avere acquistato i propri dispositivi tramite un *Apple Device Enrollment Program* (DEP). Il programma DEP di Apple consente alle organizzazioni di acquistare grandi quantità di dispositivi iOS o macOS. Le organizzazioni possono quindi configurare e gestire tali dispositivi all'interno del provider di gestione dei dispositivi mobili preferito, ad esempio Intune. Gli amministratori che desiderano avere altre informazioni sul programma DEP di Apple possono vedere [Registrare automaticamente i dispositivi nel programma Device Enrollment Program di Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+
+## <a name="set-up-your-ios-device"></a>Configurare il dispositivo iOS
+
 Se si usa un dispositivo iOS personale invece di un dispositivo fornito dall'organizzazione, seguire questa procedura per i [dispositivi personali e BYOD](enroll-your-device-in-intune-ios.md).  
 
-1. Accendere il dispositivo iOS. 
+1. Accendere il dispositivo iOS.
 2. Dopo avere selezionato la **lingua**, connettere il dispositivo al Wi-Fi.
-3. Nella schermata **Set up iOS device** (Configura dispositivo iOS) scegliere: 
- 
+3. Nella schermata **Set up iOS device** (Configura dispositivo iOS) scegliere:
    - **Set up as new device** (Configura come nuovo dispositivo)
    - **Restore from iCloud Backup** (Ripristina da backup iCloud)
    - **Restore from iTunes Backup** (Ripristina da backup iTunes)
@@ -53,7 +54,7 @@ Se si usa un dispositivo iOS personale invece di un dispositivo fornito dall'org
  
    **Configuration is provided by: [Your Company's] iOS Team [Address]** (La configurazione è specificata da: team iOS [società]).
 
-5. Eseguire l'accesso con l'ID Apple. L'accesso consente di installare l'app Portale aziendale e il profilo di gestione che consentono all'azienda di concedere l'accesso alle risorse, come la posta elettronica e le app. 
+5. Eseguire l'accesso con l'ID Apple. L'accesso consente di installare l'app Portale aziendale e il profilo di gestione che consentono all'azienda di concedere l'accesso alle risorse, come la posta elettronica e le app.
 6. Accettare **termini e condizioni** e decidere se inviare le informazioni di diagnostica a Apple.
 7. Dopo avere completato la registrazione, il dispositivo potrebbe chiedere di eseguire altre azioni, Alcune di queste operazioni potrebbero essere l'immissione della password per l'accesso alla posta elettronica e l'impostazione di un passcode.
 

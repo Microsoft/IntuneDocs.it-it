@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713241"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167178"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Guida al testing di Microsoft Intune App SDK per sviluppatori di Android
 
@@ -30,20 +30,20 @@ La Guida al testing di Microsoft Intune App SDK per Android è progettata per ag
 ## <a name="prerequisite-test-accounts"></a>Account di test prerequisiti
 È possibile creare nuovi account con e senza dati pre-generati. Per creare un nuovo account:
 1. Passare al sito [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant). 
-2. [Configurare Intune](https://docs.microsoft.com/intune/setup-steps) per abilitare la gestione di dispositivi mobili (MDM).
-3. [Creare gli utenti](https://docs.microsoft.com/intune/users-add).
-4. [Creare i gruppi](https://docs.microsoft.com/intune/groups-add).
-5. [Assegnare le licenze](https://docs.microsoft.com/intune/licenses-assign) appropriate per i test.
+2. [Configurare Intune](setup-steps.md) per abilitare la gestione di dispositivi mobili (MDM).
+3. [Creare gli utenti](users-add.md).
+4. [Creare i gruppi](groups-add.md).
+5. [Assegnare le licenze](licenses-assign.md) appropriate per i test.
 
 
 ## <a name="azure-portal-policy-configuration"></a>Configurazione dei criteri del portale di Azure
-[Creare e assegnare criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) nel [pannello Intune del portale di Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). I [criteri di configurazione delle app](https://docs.microsoft.com/intune/app-configuration-policies-overview) possono anche essere creati e assegnati nel pannello Intune.
+[Creare e assegnare criteri di protezione delle app](app-protection-policies.md) nel [pannello Intune del portale di Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). I [criteri di configurazione delle app](app-configuration-policies-overview.md) possono anche essere creati e assegnati nel pannello Intune.
 
 > [!NOTE]
 > Se l'app non è elencata nel portale di Azure, è possibile impostarla come destinazione con un criterio selezionando l'opzione **Altre app** e specificando il nome del pacchetto nella casella di testo.
 
 > [!IMPORTANT]
-> Per poter applicare i criteri di configurazione delle app, l'utente da registrare deve essere impostato come destinazione per i [criteri di protezione delle app di Intune](https://docs.microsoft.com/intune/app-protection-policy).
+> Per poter applicare i criteri di configurazione delle app, l'utente da registrare deve essere impostato come destinazione per i [criteri di protezione delle app di Intune](app-protection-policy.md).
 
 ## <a name="test-cases"></a>Test case
 
@@ -103,7 +103,7 @@ I test case seguenti illustrano le procedure di configurazione e conferma. Usare
 ### <a name="unenrollment"></a>Annullamento della registrazione
 È possibile cancellare posta elettronica e documenti aziendali dalle app gestite e i dati personali vengono decrittografati quando non sono più amministrati, come indicato di seguito:
 
-1. Dal portale di Azure [eseguire una cancellazione](https://docs.microsoft.com/intune/apps-selective-wipe).
+1. Dal portale di Azure [eseguire una cancellazione](apps-selective-wipe.md).
 2. Se l'app non è registrata per qualsiasi gestore di cancellazione verificare le condizioni seguenti:
     - Si verifica una cancellazione completa dell'app.
 3. Se l'app è registrata per `WIPE_USER_DATA` o `WIPE_USER_AUXILARY_DATA`, verificare le condizioni seguenti:
@@ -123,7 +123,7 @@ Come minimo, devono essere riconvalidati gli scenari seguenti per le identità m
 ### <a name="app-configuration-optional"></a>Configurazione delle app (facoltativa)
 È possibile configurare il comportamento delle app gestite nel modo seguente:
 
-1. Se l'app utilizza eventuali impostazioni di configurazione delle app, è necessario verificare che l'app gestisca correttamente tutti i valori che possono essere impostati dall'amministratore. I [criteri di configurazione delle app](https://docs.microsoft.com/intune/app-configuration-policies-overview) possono essere creati e assegnati tramite Intune.
+1. Se l'app utilizza eventuali impostazioni di configurazione delle app, è necessario verificare che l'app gestisca correttamente tutti i valori che possono essere impostati dall'amministratore. I [criteri di configurazione delle app](app-configuration-policies-overview.md) possono essere creati e assegnati tramite Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063013"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167783"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune
 
@@ -370,7 +370,7 @@ Description:
 
 Questo problema è in genere causato dalla delega non corretta delle autorizzazioni all'unità organizzativa in cui vengono creati i dispositivi Windows Autopilot. Per ulteriori informazioni, vedere [aumentare il limite di account computer nell'unità organizzativa](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit).
 
-1. Aprire **Utenti e computer di Active Directory (DSA.msc)**.
+1. Aprire **Utenti e computer di Active Directory (DSA.msc)** .
 2. Fare clic con il pulsante destro del mouse sull'unità organizzativa che si userà per creare i computer aggiunti ad Azure AD ibrido > **Delega controllo**.
 3. Nella procedura **Delega guidata del controllo** scegliere **Avanti** > **Aggiungi** > **Tipi di oggetto**.
 4. Nella finestra di dialogo **Tipi di oggetto** selezionare la casella di controllo **Computer** > **OK**.
@@ -388,4 +388,4 @@ Questo problema è in genere causato dalla delega non corretta delle autorizzazi
 - [Porre una domanda nel forum di Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Consulta il Blog del team di supporto di Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Consulta il Blog di Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Ottenere supporto per Microsoft Intune](https://docs.microsoft.com/intune/get-support) 
+- [Ottenere supporto per Microsoft Intune](get-support.md)

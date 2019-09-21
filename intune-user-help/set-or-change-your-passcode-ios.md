@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849007"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163289"
 ---
 # <a name="set-or-change-your-passcode"></a>Impostare o modificare il passcode
 
-Se il dispositivo iOS non è conforme ai criteri di passcode del supporto tecnico dell'azienda, viene visualizzato un messaggio che descrive brevemente il problema e spiega quali operazioni eseguire per fare in modo che il passcode soddisfi i requisiti.
+Creare un nuovo codice di accesso o modificarne uno esistente per soddisfare i requisiti dell'organizzazione. Il codice impedisce a utenti non autorizzati di sbloccare e usare il dispositivo. 
 
-Il supporto tecnico dell'azienda può impostare più requisiti per il passcode. Ad esempio, può essere necessario che il passcode contenga un certo numero di caratteri, un insieme di numeri, lettere e caratteri, e così via. Poiché potrebbero essere impostati più requisiti, queste istruzioni possono illustrare solo come impostare o modificare il passcode. Non viene illustrata ogni possibile combinazione di requisiti. Questi passcode vengono usati, ad esempio, per accedere al dispositivo dalla schermata di blocco.
+L'organizzazione può impostare più di un requisito di codice. Per un elenco dei requisiti comuni per le password, vedere [requisiti per la password del dispositivo per i dispositivi registrati](password-does-not-meet-it-administrator-requirements.md).  
 
-In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, contattare il supporto tecnico dell'azienda per ricevere assistenza.
+In caso di problemi durante la creazione o la modifica del codice di accesso, contattare il personale di supporto IT.  
+
 
 ## <a name="set-your-passcode"></a>Impostare il passcode
 

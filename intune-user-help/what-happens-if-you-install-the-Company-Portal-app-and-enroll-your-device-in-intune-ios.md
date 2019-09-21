@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545860"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099822"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS in Intune?
 
@@ -37,7 +37,10 @@ Quando si installa l'app Portale aziendale e si registra il dispositivo iOS in I
 
 - Configurare automaticamente l'account di posta elettronica aziendale.
 
-Quando si registra il dispositivo in Intune, si autorizza il supporto tecnico dell'azienda a gestire il dispositivo e proteggere le informazioni aziendali presenti nello stesso.
+> [!NOTE]
+> Microsoft non vende per alcun motivo a terze parti i dati raccolti dal servizio.  
+
+Quando si registra il dispositivo in Intune, si autorizza il supporto tecnico dell'azienda a gestire il dispositivo e proteggere le informazioni aziendali presenti nello stesso.  
 
 Quando il dispositivo è registrato, il supporto tecnico dell'azienda può:
 
@@ -64,5 +67,7 @@ Quando il dispositivo è registrato, il supporto tecnico dell'azienda può:
 - Abilitare o disabilitare il roaming voce sul dispositivo. Se sono consentite le chiamate in roaming, si potrebbero subire addebiti per questo servizio.
 
 - Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se è consentita la sincronizzazione automatica dei file, si potrebbero subire addebiti per questo servizio.
+
+
 
 Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046332"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166994"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Questa guida di riferimento è pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
@@ -77,7 +77,7 @@ Per visualizzare e apportare modifiche ai criteri di accesso condizionale dal po
 ## <a name="where-did-my-compliance-policies-go"></a>Dove si trovano i criteri di conformità?
 Dopo la migrazione del tenant al portale di Azure, i criteri di conformità del tenant continuano a essere applicati. Tuttavia, non è possibile visualizzarli o modificarli da Intune nel portale di Azure.
 
-Per visualizzare e apportare modifiche ai criteri di conformità dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
+Per visualizzare e apportare modifiche ai criteri di conformità dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md). 
 
 ## <a name="where-did-apple-dep-go"></a>Dove si trova il servizio Apple DEP?
 Nel portale classico è possibile impostare Intune in modo da integrarsi con Apple Device Enrollment Program e richiedere manualmente la sincronizzazione con il servizio Apple:

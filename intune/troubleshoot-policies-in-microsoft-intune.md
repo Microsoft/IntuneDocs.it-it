@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298391"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071712"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Risolvere problemi relativi a criteri e profili in Intune
 
@@ -30,8 +30,8 @@ Microsoft Intune include alcune funzioni predefinite per la risoluzione dei prob
 
 Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e descrive alcuni problemi che possono verificarsi.
 
-## <a name="check-tenant-status"></a>Controllare lo stato di tenant
-Verificare i [dello stato del Tenant](tenant-status.md) e confermare la sottoscrizione è attiva. È anche possibile visualizzare i dettagli per eventi imprevisti attivi e gli avvisi che potrebbero influire sulla distribuzione dei criteri o il profilo.
+## <a name="check-tenant-status"></a>Verificare lo stato del tenant
+Verificare lo [stato del tenant](tenant-status.md) e verificare che la sottoscrizione sia attiva. È inoltre possibile visualizzare i dettagli per gli eventi imprevisti e gli avvisi attivi che potrebbero influisca sulla distribuzione del profilo o del criterio.
 
 ## <a name="use-built-in-troubleshooting"></a>Usare la risoluzione dei problemi predefinita
 
@@ -118,10 +118,10 @@ Verificare i [dello stato del Tenant](tenant-status.md) e confermare la sottoscr
 
 ## <a name="policy-troubleshooting-resources"></a>Risorse per la risoluzione dei problemi relativi ai criteri
 
-- [Risoluzione dei problemi di iOS o Android criteri non applicati ai dispositivi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (si apre un altro sito di Microsoft)
-- [Risoluzione degli errori dei criteri di Intune di Windows 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (si apre un blog)
-- [Risolvere i problemi di impostazioni personalizzate di CSP per Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (si apre un altro sito di Microsoft)
-- [Criteri di gruppo di Windows 10 e MDM di Intune criteri](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (si apre un altro sito di Microsoft)
+- [Risoluzione dei problemi relativi ai criteri iOS o Android che non si applicano ai dispositivi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (apre un altro sito Microsoft)
+- [Risoluzione degli errori dei criteri di Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (apre un Blog)
+- [Risolvere i problemi delle impostazioni personalizzate CSP per Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (apre un altro sito Microsoft)
+- [Criteri MDM di Windows 10 criteri di gruppo rispetto a Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (apre un altro sito Microsoft)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Avviso: Il salvataggio delle regole di accesso in Exchange non è riuscito
 
@@ -135,7 +135,7 @@ L'articolo [Risolvere i problemi di Intune Exchange Connector locale](troublesho
 
 I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo che i criteri sono stati configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 e poi si prova a ridurlo a 4. Vengono applicati al dispositivo i criteri più restrittivi.
 
-I dispositivi Windows 10 non possono rimuovere i criteri di sicurezza quando si annulla l'assegnazione di criteri (arrestare la distribuzione). Potrebbe essere necessario lasciare i criteri assegnati e quindi modificare le impostazioni di sicurezza ai valori predefiniti.
+I dispositivi Windows 10 non possono rimuovere i criteri di sicurezza quando si annulla l'assegnazione del criterio (Arresta distribuzione). Potrebbe essere necessario lasciare i criteri assegnati, quindi modificare di nuovo le impostazioni di sicurezza sui valori predefiniti.
 
 A seconda della piattaforma del dispositivo, se si vogliono modificare i criteri in un valore meno sicuro, può essere necessario reimpostare i criteri di sicurezza.
 

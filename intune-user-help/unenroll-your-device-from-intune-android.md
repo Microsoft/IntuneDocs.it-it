@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529122"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167538"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Annullare la registrazione del dispositivo Android dalla gestione  
 
@@ -35,7 +35,7 @@ Rimuovere un dispositivo Android registrato in modo che non sia più gestito dal
 * Non saranno più valide le impostazioni modificate nel dispositivo quando questo è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.  
 
 > [!NOTE]
-> Non è possibile annullare la registrazione o rimuovere il dispositivo di proprietà aziendale dall'app Microsoft Intune. Il dispositivo è stato registrato durante l'installazione iniziale del dispositivo e deve essere registrato per accedere alle risorse dell'organizzazione.  
+> Non è possibile annullare la registrazione o rimuovere il dispositivo di proprietà dell'azienda dall'app Microsoft Intune. Il dispositivo è stato registrato durante la configurazione iniziale del dispositivo e deve essere registrato per accedere alle risorse dell'organizzazione.  
 
 1. Nel Portale aziendale andare all'angolo superiore destro e toccare i tre punti verticali. Si apre il menu di azione.
 
@@ -54,24 +54,28 @@ Per rimuovere tutti i dati archiviati dall'app Portale aziendale per Android nel
 - Cancellare i dati dell'app toccando **Applicazioni** > **[*nome dell'app*]**  > **Cancella dati**.
 - Eliminare la cartella seguente: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
-## <a name="uninstall-the-company-portal-app"></a>Disinstallare l'app Portale aziendale  
+## <a name="uninstall-the-company-portal-app"></a>Disinstallare l'app Portale aziendale
+
 Portale aziendale è un'app per la gestione dei dispositivi. Non può essere disinstallata finché non si annulla la registrazione del dispositivo dalla relativa gestione. Dopo aver eseguito questa operazione, toccare e tenere premuta l'icona dell'app Portale aziendale finché non viene visualizzato **Disinstalla**. Toccare **Disinstalla** per rimuovere l'app dal dispositivo.  
 
 In alternativa, toccare **Impostazioni** > **App** > **Portale aziendale** > **Disinstalla**.  
 
-### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Rimuovere l'app Portale aziendale come amministratore del dispositivo  
+### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Rimuovere l'app Portale aziendale come amministratore del dispositivo
+
 Come ultima risorsa, è possibile disinstallare l'app dal dispositivo come amministratore del dispositivo.  
 
-Se si usa un dispositivo aziendale, l'organizzazione potrebbe richiedere la disponibilità continua di Portale aziendale nel dispositivo. Se si disinstalla l'app, è possibile perdere l'accesso alle risorse aziendali protette, ad esempio la posta elettronica, le app, il Wi-Fi o la rete VPN, finché l'app non viene reinstallata. Per altre informazioni su installazione, aggiornamento o rimozione di app necessarie, vedere [Aggiungere app in Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+Se si usa un dispositivo aziendale, l'organizzazione potrebbe richiedere la disponibilità continua di Portale aziendale nel dispositivo. Se si disinstalla l'app, è possibile perdere l'accesso alle risorse aziendali protette, ad esempio la posta elettronica, le app, il Wi-Fi o la rete VPN, finché l'app non viene reinstallata. Per altre informazioni su installazione, aggiornamento o rimozione di app necessarie, vedere [Aggiungere app in Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune).  
 
 Di seguito viene spiegato come disabilitare Portale aziendale come amministratore del dispositivo. I nomi reali delle impostazioni possono variare in base al dispositivo Android.  
 
 **Opzione 1**:  
+
 1. Selezionare **Impostazioni** > **Sicurezza** > **Impostazioni di protezione aggiuntive** > **Amministratori dei dispositivi** .  
 2. Cancellare la selezione **Portale aziendale**.  
 
-**Opzione 2**:  
-1. Selezionare **Impostazioni** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** > **Device admin apps** (App di amministrazione dispositivi).  
-2. Cancellare la selezione **Portale aziendale**.    
+**Opzione 2**:
+
+1. Selezionare **Impostazioni** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** > **Device admin apps** (App di amministrazione dispositivi).
+2. Cancellare la selezione **Portale aziendale**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
