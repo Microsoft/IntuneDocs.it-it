@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775885"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166356"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Riduzione del supporto per l'amministratore di dispositivi Android 
-Amministratore di dispositivi Android, a volte denominata gestione Android "legacy" e resa disponibile con Android 2.2, indica una modalità di gestione dei dispositivi Android. Funzionalità di gestione migliorate, tuttavia, sono ora disponibili in [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (con la versione Android 5.0). Con l'obiettivo di passare a una gestione dei dispositivi moderna, più ricca e sicura, Google sta riducendo il supporto per l'amministratore di dispositivi nelle nuove versioni di Android.
+Amministratore di dispositivi Android, a volte denominata gestione Android "legacy" e resa disponibile con Android 2.2, indica una modalità di gestione dei dispositivi Android. Funzionalità di gestione migliorate, tuttavia, sono ora disponibili in [Android Enterprise](../connect-intune-android-enterprise.md) (con la versione Android 5.0). Con l'obiettivo di passare a una gestione dei dispositivi moderna, più ricca e sicura, Google sta riducendo il supporto per l'amministratore di dispositivi nelle nuove versioni di Android.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
 Queste modifiche di Google influiranno sugli utenti di Intune nei modi seguenti: 
@@ -37,7 +37,7 @@ Per evitare la riduzione di funzionalità prevista per l'estate 2020, è consigl
 - Non eseguire l'onboarding di nuovi dispositivi nella gestione di tipo amministratore di dispositivi.
 - Se si prevede che un dispositivo riceverà un aggiornamento ad Android 10, eseguirne la migrazione dalla gestione di tipo amministratore di dispositivi alla gestione Android Enterprise e/o ai criteri di protezione delle app.
 
-#### <a name="additional-information"></a>Informazioni aggiuntive
+#### <a name="additional-information"></a>Altre informazioni
 - [Indicazioni di Google per la migrazione da amministratore di dispositivi ad Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Documentazione di Google sul piano per deprecare l'API amministratore di dispositivi](https://developers.google.com/android/work/device-admin-deprecation)
 
@@ -50,7 +50,7 @@ I dati di telemetria indicano che esistono dispositivi con una versione dell'app
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 Chiedere agli utenti finali dei dispositivi Android che non sono aggiornati di aggiornare l'app Portale aziendale tramite Google Play. Inviare notifica all'help desk nel caso un utente non abbia mantenuto l'aggiornamento automatico dell'app Portale aziendale. Vedere il collegamento in Informazioni aggiuntive per altre informazioni sulla piattaforma Google FCM e su questa modifica.
 
-#### <a name="additional-information"></a>Informazioni aggiuntive
+#### <a name="additional-information"></a>Altre informazioni
 https://firebase.google.com/docs/cloud-messaging/
 
 
@@ -63,10 +63,10 @@ L'esperienza con singola schermata verrà implementata in Intune sia in portal.a
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Come prepararsi a questo cambiamento?
 Non è necessario intraprendere alcuna azione, ma è possibile valutare l'eventuale necessità di aggiornare le istruzioni per i professionisti IT. La documentazione verrà aggiornata non appena questa esperienza verrà implementata nei vari pannelli in Intune nel portale di Azure.
 
-#### <a name="additional-information"></a>Informazioni aggiuntive 
+#### <a name="additional-information"></a>Altre informazioni 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Modifica prevista: Supporto di Intune per iOS 11 e versioni successive in settembre <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Modifica prevista: Supporto di Intune per iOS 11 e versioni successive in settembre <!-- 4665324-->
 Per il mese di settembre è previsto il rilascio di iOS 13 da Apple. La registrazione di Intune, il portale aziendale e Managed Browser supporteranno iOS 11 e versioni successive poco dopo il rilascio di iOS 13.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
@@ -76,7 +76,7 @@ Se le app per dispositivi mobili O365 sono supportate in iOS 11.0 e versioni suc
 - iPhone 5c
 - iPad (quarta generazione)
 
-A partire da luglio, nei dispositivi registrati in MDM con iOS 10 e il portale aziendale verrà visualizzato un messaggio di avviso per l'aggiornamento del sistema operativo o del dispositivo. Se si usano i criteri di protezione delle app, è anche possibile attivare l'impostazione di accesso "Richiedi un sistema operativo iOS minimo (solo avviso)".
+Se si usano i criteri di protezione delle app, è anche possibile attivare l'impostazione di accesso "Richiedi un sistema operativo iOS minimo (solo avviso)".
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 Controllare i report di Intune per vedere quali dispositivi o utenti possono essere interessati. Passare a **Dispositivi** > **Tutti i dispositivi** e filtrare in base al sistema operativo. È possibile aggiungere altre colonne per facilitare l'identificazione degli utenti dell'organizzazione che hanno dispositivi che eseguono iOS 10. Richiedere agli utenti finali di aggiornare i dispositivi a una versione supportata del sistema operativo prima di settembre.
@@ -95,8 +95,8 @@ Controllare le app Microsoft, di terze parti e line-of-business (LOB). Verificar
 
 Se applicabile, aggiornare anche la documentazione o il materiale sussidiario per lo sviluppo per includere questa modifica relativa al supporto per l'SDK.
 
-#### <a name="additional-information"></a>Informazioni aggiuntive
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+#### <a name="additional-information"></a>Altre informazioni
+[Preparare le app line-of-business per i criteri di protezione delle app](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Modifica prevista: Nuove impostazioni per gli aggiornamenti di Windows in Intune <!-- 4464404 -->
 A partire dalla versione di agosto per il servizio Intune o 1908, verranno aggiunte nuove "impostazione di scadenza" che è possibile configurare al posto delle impostazioni "Consenti all'utente di riavviare (riavvio in caso di occupato)". È prevista la disabilitazione delle impostazioni di riavvio in caso di occupato nell'interfaccia utente nella versione 1909 o nell'aggiornamento di settembre e quindi la rimozione completa di queste impostazioni dalla console verso la fine di ottobre. 
