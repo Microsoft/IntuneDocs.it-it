@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546796"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163369"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Come reimpostare il passcode del dispositivo dal sito Web del portale aziendale
 
-Se il PIN o la password di un dispositivo vengono smarriti, è possibile usare il [sito Web Portale aziendale](https://portal.manage.microsoft.com) per reimpostarli.  
+Se il PIN o la password di un dispositivo vengono smarriti, è possibile usare il [sito Web Portale aziendale](https://portal.manage.microsoft.com) per reimpostarli. 
 
-Se si usa un dispositivo aziendale registrato, è possibile che l'opzione per reimpostare il passcode del dispositivo non venga visualizzata. Contattare il supporto tecnico dell'azienda per reimpostare il passcode.
+L'opzione Reimposta il codice potrebbe non essere visualizzata per un dispositivo registrato dall'azienda. In tal caso, contattare il supporto tecnico dell'azienda per reimpostarlo.  
 
-   > [!NOTE]
-   > Non è possibile reimpostare il passcode per i dispositivi che eseguono Android 7.0 e versioni successive. Se si dimentica il passcode è necessario ripristinare le impostazioni del produttore nel dispositivo. 
+La reimpostazione del codice non è disponibile per i dispositivi che eseguono Android 7,0 e versioni successive. Se si dimentica il codice di accesso in uno di questi dispositivi, è necessario reimpostarlo sulle impostazioni predefinite.  
 
 ## <a name="reset-your-passcode"></a>Reimpostare il passcode
 
@@ -40,15 +39,15 @@ Se si usa un dispositivo aziendale registrato, è possibile che l'opzione per re
 
 2. Selezionare il dispositivo per il quale è necessario reimpostare il passcode.  
 
-    ![Screenshot della pagina Dispositivi, con 2 riquadri che illustrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png) 
+    ![Screenshot della pagina Dispositivi, con due riquadri che illustrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png) 
 
 3. Selezionare **Reimposta passcode**. Se l'opzione per il passcode non viene visualizzata nella parte superiore della pagina, selezionare **Altro (...)**  > **Reimposta passcode**.   
 
    ![Pagina dei dettagli per un dispositivo selezionato nel sito Web Portale aziendale, con una serie di collegamenti nella parte superiore tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/rename-reset-device-1808.png)   
 
-    ![Vista ingrandita dell'icona Altro, evidenziata con una freccia rossa.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Screenshot dell'icona Altro, evidenziata con una freccia rossa.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Quando richiesto, fare clic su **Disconnetti**. Quando viene richiesto, eseguire nuovamente l'accesso. È necessario accedere nuovamente al sito Web Portale aziendale entro cinque minuti, o il passcode del dispositivo non viene reimpostato.  
+4. Quando richiesto, fare clic su **Disconnetti**. Quando viene richiesto, eseguire nuovamente l'accesso. Accedere nuovamente al sito Web Portale aziendale entro cinque minuti o il passcode del dispositivo non viene reimpostato.  
 
    > [!NOTE]
    > È necessario accedere nuovamente per confermare la propria identità. Questa operazione serve per evitare tentativi di reimpostare il passcode del dispositivo da parte di utenti malintenzionati.
@@ -76,7 +75,7 @@ In questa sezione viene descritto come reimpostare il passcode e il comportament
 
 **Android**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri.
 
-**iOS**: rimuove il passcode esistente senza crearne uno temporaneo. Se si usa lo scanner di impronte digitali Touch ID per aprire il dispositivo o fare acquisti, è necessario configurarlo nuovamente.  
+**iOS**: rimuove il passcode esistente senza crearne uno temporaneo. Se si usa Touch ID per aprire il dispositivo o effettuare acquisti, è necessario configurarlo di nuovo.  
 
 **Windows 10 Mobile**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri. Se configurato, il riconoscimento facciale di Windows Hello funzionerà comunque con il dispositivo.
 

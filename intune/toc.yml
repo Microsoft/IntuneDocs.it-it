@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: Creare un profilo
           href: device-profile-create.md
-        - name: Modelli amministrativi
+        - name: Modelli amministrativi in Windows
           href: administrative-templates-windows.md
-        - name: Funzionalità del dispositivo
+          displayName: 'group policy, gpo, admx'
+        - name: Funzionalità dei dispositivi in iOS e macOS
           href: device-features-configure.md
         - name: Limitare le impostazioni del dispositivo e le funzionalità
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: Distribuire gli aggiornamenti
+        - name: Aggiornamenti
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: Aggiornare le edizioni e la modalità S
           href: edition-upgrade-configure-windows-10.md
-        - name: Configurare la posta elettronica
+        - name: Posta elettronica
           href: email-settings-configure.md
-        - name: Abilitare la modalità tutto schermo
+        - name: Chioschi e dispositivi dedicati
           href: kiosk-settings.md
-        - name: Aggiungere una connessione VPN
+        - name: Dispositivi multiutente condivisi
+          href: shared-user-device-settings.md
+        - name: Connessione
           href: vpn-settings-configure.md
           items:
             - name: VPN per app per Android
               href: android-pulse-secure-per-app-vpn.md
             - name: VPN per app per iOS
               href: vpn-setting-configure-per-app.md
-        - name: Aggiungere una rete Wi-Fi wireless
+        - name: Rete Wi-Fi
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: App di istruzione Test ed esami
           href: education-settings-configure.md
-        - name: Dispositivi multiutente condivisi
-          href: shared-user-device-settings.md
         - name: Estensioni di mobilità nei dispositivi Zebra
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: App line-of-business di macOS
                   href: lob-apps-macos.md
+            - name: App di sistema Android Enterprise
+              href: apps-ae-system.md
             - name: Gestione delle app Win32
               href: apps-win32-app-management.md
             - name: Script PowerShell
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivi gestiti
               href: app-configuration-policies-use-android.md
-            - name: Configurare l'app Managed Home Screen
-              href: app-configuration-managed-home-screen-app.md
-            - name: App gestite
+            - name: Configurare le app gestite senza registrazione
               href: app-configuration-policies-managed-app.md
             - name: Usare i profili di provisioning delle app iOS
               href: app-provisioning-profile-ios.md
+            - name: Configurare app specifiche
+              items:
+                - name: Configurare l'app Managed Home Screen
+                  href: app-configuration-managed-home-screen-app.md
+                - name: Configurare il Portale aziendale
+                  href: company-portal-app.md
+                - name: Configurare Managed Browser
+                  href: app-configuration-managed-browser.md
+                - name: Configurare Microsoft Launcher
+                  href: configure-microsoft-launcher.md
+                - name: Configurare Microsoft Edge
+                  href: manage-microsoft-edge.md
+                - name: Configurare Outlook
+                  href: app-configuration-policies-outlook.md
             - name: App e libri acquistati con Volume Purchase Program
               items:
                 - name: Gestire le app VPP e i libri
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: eBook iOS
                   href: vpp-ebooks-ios.md
-            - name: Configurare il Portale aziendale
-              href: company-portal-app.md
-            - name: Configurare Managed Browser
-              href: app-configuration-managed-browser.md
-            - name: Configurare Microsoft Edge
-              href: manage-microsoft-edge.md
-            - name: Configurare Outlook
-              href: app-configuration-policies-outlook.md
         - name: Proteggere le applicazioni
           items:
             - name: Cancellare le app in modo selettivo

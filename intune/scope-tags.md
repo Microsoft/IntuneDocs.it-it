@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550033"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163810"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti
 
@@ -35,14 +35,14 @@ Ad esempio, si supponga che un amministratore della filiale di Milano abbia il r
 3. Aggiungere il tag di ambito Milano ai criteri e profili a cui si vuole abbiano accesso gli amministratori in Membri (gruppi).
 4. Aggiungere il tag di ambito Milano ai dispositivi che si vuole siano visibili per gli amministratori in Membri (gruppi). 
 
-## <a name="default-scope-tag"></a>Tag ambito predefinito
+## <a name="default-scope-tag"></a>Tag di ambito predefinito
 Il tag di ambito predefinito viene aggiunto automaticamente a tutti gli oggetti senza tag che supportano i tag di ambito.
 
-La funzionalità tag ambito predefinito è simile alla funzionalità ambiti di protezione in System Center Configuration Manager. 
+Il tag di ambito predefinito è simile alla funzionalità degli ambiti di sicurezza in System Center Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Per creare un tag di ambito
 
-1. In Intune scegliere **Ruoli** > **Ambito (tag)**  > **Crea**.
+1. In Intune scegliere **Ruoli** > **Ambito (tag)** > **Crea**.
 
     ![Screenshot della creazione di un tag di ambito.](./media/scope-tags/create-scope-tag.png)
 
@@ -58,11 +58,11 @@ La funzionalità tag ambito predefinito è simile alla funzionalità ambiti di p
     ![Screenshot dell'assegnazione dell'ambito a un ruolo.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Specificare **Nome dell'assegnazione** e **Descrizione**.
-3. Scegliere **Membri (gruppi)**  > **Aggiungi** > scegliere i gruppi desiderati per questa assegnazione > **selezionare** > **OK**. Gli utenti di questo gruppo avranno le autorizzazioni per gestire utenti/dispositivi nell'ambito (gruppi).
+3. Scegliere **Membri (gruppi)** > **Aggiungi** > scegliere i gruppi desiderati per questa assegnazione > **selezionare** > **OK**. Gli utenti di questo gruppo avranno le autorizzazioni per gestire utenti/dispositivi nell'ambito (gruppi).
 
     ![Screenshot della selezione dei gruppi membri.](./media/scope-tags/select-member-groups.png)
 
-4. Se si vogliono gestire gli utenti o i dispositivi in un set specifico di gruppi, scegliere **Ambito (gruppi)**  > **Gruppi selezionati** > **Selezionare i gruppi da includere**> **scegliere i gruppi** > **OK**. Tutti gli utenti e i dispositivi di questo gruppo verranno gestiti dagli amministratori nei membri (gruppo).
+4. Se si vogliono gestire gli utenti o i dispositivi in un set specifico di gruppi, scegliere **Ambito (gruppi)** > **Gruppi selezionati** > **Selezionare i gruppi da includere**> **scegliere i gruppi** > **OK**. Tutti gli utenti e i dispositivi di questo gruppo verranno gestiti dagli amministratori nei membri (gruppo).
 
     ![Screenshot della selezione dei gruppi di ambito.](./media/scope-tags/select-scope-groups.png)
 
@@ -70,7 +70,7 @@ La funzionalità tag ambito predefinito è simile alla funzionalità ambiti di p
 
     ![Screenshot di altre opzioni per la selezione di gruppi di ambito.](./media/scope-tags/scope-group-other-options.png)
     
-5. Scegliere **Ambito (tag)**  > **Aggiungi** > scegliere i tag che si vuole aggiungere a questo ruolo >**selezionare** > **OK**. Gli utenti dei membri (gruppi) avranno accesso agli oggetti di Intune che hanno anche lo stesso tag di ambito.
+5. Scegliere **Ambito (tag)** > **Aggiungi** > scegliere i tag che si vuole aggiungere a questo ruolo >**selezionare** > **OK**. Gli utenti dei membri (gruppi) avranno accesso agli oggetti di Intune che hanno anche lo stesso tag di ambito.
 
     ![Screenshot della selezione dei tag di ambito.](./media/scope-tags/select-scope-tags.png)
 
@@ -84,7 +84,7 @@ Per gli oggetti che supportano i tag di ambito, i tag di ambito vengono in gener
 
     ![Screenshot della selezione di un profilo.](./media/scope-tags/choose-profile.png)
 
-2. Scegliere **Proprietà** > **Ambito (tag)**  > **Aggiungi**.
+2. Scegliere **Proprietà** > **Ambito (tag)** > **Aggiungi**.
 
     ![Screenshot dell'aggiunta di tag di ambito.](./media/scope-tags/add-scope-tags.png)
 
@@ -101,7 +101,6 @@ Quando si lavora con i tag di ambito, tenere presente questi dettagli:
     - Categorie di dispositivi
     - Restrizioni di registrazione
     - Identificatori dei dispositivi Corp
-    - Termini e condizioni
     - Dispositivi Autopilot
     - Percorsi di conformità del dispositivo
     - Dispositivi JAMF
