@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071634"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167428"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Registrare automaticamente i dispositivi Android usando Knox Mobile Enrollment di Samsung
 
@@ -105,7 +105,7 @@ Per i dispositivi registrati in Intune con KME per Android, è possibile configu
 
 - **Senza associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo), lasciare vuoti i campi **User ID** (ID utente) e **Password** per i dispositivi aggiunti. Con questa opzione l'utente finale dovrà immettere sia il nome utente che la password durante la registrazione in Intune.
 
-- **Con associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo), immettere un **ID utente** (ad esempio un nome utente per l'utente assegnato o un account [Manager di registrazione dispositivi](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)) per i dispositivi aggiunti. Con questa opzione il nome utente verrà prepopolato e l'utente finale dovrà immettere una password durante la registrazione in Intune.
+- **Con associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo), immettere un **ID utente** (ad esempio un nome utente per l'utente assegnato o un account [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md)) per i dispositivi aggiunti. Con questa opzione il nome utente verrà prepopolato e l'utente finale dovrà immettere una password durante la registrazione in Intune.
 
 > [!NOTE]
 >

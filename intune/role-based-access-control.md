@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080040"
+ms.locfileid: "71094660"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -43,7 +43,7 @@ Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** 
 - **Assegnazioni**: elenco di [assegnazioni di ruolo]( assign-role.md) che definiscono gli utenti che hanno accesso a determinati utenti/dispositivi. Un ruolo può avere più assegnazioni e un utente può essere incluso in più assegnazioni.
 
 ### <a name="built-in-roles"></a>Ruoli predefiniti
-È possibile assegnare ruoli predefiniti a gruppi senza ulteriore configurazione. Non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo predefinito. Per un elenco completo delle autorizzazioni per ogni ruolo predefinito, vedere [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) (Tabella di controllo degli accessi in base al ruolo di Intune).
+È possibile assegnare ruoli predefiniti a gruppi senza ulteriore configurazione. Non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo predefinito.
 
 - **Help Desk Operator** (Operatore help desk): consente di eseguire attività remote su utenti e dispositivi e assegnare applicazioni o criteri a utenti o dispositivi.
 - **Policy and Profile Manager** (Gestione criteri e profili): gestisce i criteri di conformità, i profili di configurazione, la registrazione Apple, gli identificatori dei dispositivi aziendali e le baseline di sicurezza.

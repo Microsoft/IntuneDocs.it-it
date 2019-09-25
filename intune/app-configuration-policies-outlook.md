@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979207"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167380"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Impostazioni di configurazione di Microsoft Outlook 
 
@@ -30,7 +30,7 @@ Per i dispositivi registrati:
 - Per creare un criterio di configurazione dell'app per i dispositivi iOS gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md). 
 - Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md). 
 
-Per i dispositivi non registrati, vedere [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) per creare criteri di configurazione delle app per Outlook per iOS e Android.
+Per i dispositivi non registrati, vedere [Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi](app-configuration-policies-managed-app.md) per creare criteri di configurazione delle app per Outlook per iOS e Android.
 
 ## <a name="configuration-settings"></a>Impostazioni di configurazione
 

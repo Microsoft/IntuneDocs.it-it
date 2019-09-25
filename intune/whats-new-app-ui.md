@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061704"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167887"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti più recenti per le app Microsoft Intune. Il sito Web e l'app Portale aziendale Intune vengono regolarmente estesi e migliorati. Questo articolo fornisce agli amministratori del servizio Intune o ai tecnici del supporto le informazioni necessarie per:
@@ -120,7 +120,7 @@ La home page dell'app Portale aziendale per i dispositivi iOS è stata riprogett
 ## <a name="week-of-november-12-2018"></a>Settimana del 12 novembre 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Tasti di scelta rapida del portale aziendale di Windows <!-- 2771518 -->
-Gli utenti finali potranno ora [usare i tasti di scelta rapida](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts) per eseguire azioni sulle app e sui dispositivi nell'app Portale aziendale di Windows.
+Gli utenti finali potranno ora [usare i tasti di scelta rapida](company-portal-app.md#windows-company-portal-keyboard-shortcuts) per eseguire azioni sulle app e sui dispositivi nell'app Portale aziendale di Windows.
 
 ## <a name="week-of-october-22-2018"></a>Settimana del 22 ottobre 2018
 
@@ -572,4 +572,4 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 ## <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novità in Intune](https://docs.microsoft.com/intune/whats-new)
+* [Novità in Intune](whats-new.md)

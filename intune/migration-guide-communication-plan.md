@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5688039101e7cecf5631a0ad8dee4f343e183d96
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 325a0efeff56a2bc930fa0082023202f9c2e7696
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022846"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166782"
 ---
 # <a name="plan-communications"></a>Pianificare le comunicazioni
 
@@ -59,6 +59,6 @@ Sono stati creati brevi video dettagliati per aiutare gli utenti a registrare in
 
 Intune offre altre risorse che è possibile usare per promuovere la registrazione dei dispositivi presso gli utenti:
 
-- [Come informare gli utenti finali su Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate) suddivide la procedura di registrazione a seconda della piattaforma di sistema operativo per dispositivi mobili
-- [Registrazione di dispositivi Intune per amministratori IT](https://docs.microsoft.com/intune/device-enrollment) illustra come registrare dispositivi Android, iOS e Mac in Intune.
+- [Come informare gli utenti finali su Microsoft Intune](end-user-educate.md) suddivide la procedura di registrazione a seconda della piattaforma di sistema operativo per dispositivi mobili
+- [Registrazione di dispositivi Intune per amministratori IT](device-enrollment.md) illustra come registrare dispositivi Android, iOS e Mac in Intune.
 - Condividere l'[URL dell'app Portale aziendale](http://go.microsoft.com/fwlink/?LinkID=396941) con gli utenti di Android, iOS e Windows. Questo URL reindirizza all'elenco di app Portale aziendale appropriato nei dispositivi Android, iOS e Windows.

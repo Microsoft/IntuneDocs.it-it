@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 51f9dcd7a42951d42671888c9ceebcdd57458654
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815467"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166957"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -74,8 +74,8 @@ Quando si usano più baseline di sicurezza, esaminare le impostazioni di ognuna 
 Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intune. Usare i collegamenti per visualizzare le impostazioni per l'istanza più recente di ogni baseline. 
 
 - **Baseline di sicurezza MDM**
-  - [Baseline della sicurezza MDM per maggio 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
-  - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
+  - [Baseline della sicurezza MDM per maggio 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Baseline di Microsoft Defender ATP**  
   *(Per usare questa baseline, l'ambiente deve soddisfare i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482779"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163675"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Aggiungere le impostazioni di Endpoint Protection in Intune  
 
@@ -54,7 +54,6 @@ Prima di creare un profilo, rivedere gli articoli seguenti che illustrano in det
    Il profilo viene creato e visualizzato nella pagina dell'elenco dei profili. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md).  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Aggiungere regole del firewall personalizzate per dispositivi Windows 10  
-***Le regole del firewall personalizzate sono disponibili in anteprima pubblica.***  
 
 Quando si configura Windows Defender Firewall come parte di un profilo che include regole di protezione endpoint per Windows 10, è possibile configurare regole personalizzate per i firewall. Le regole personalizzate consentono di espandere il set predefinito di regole firewall supportate per Windows 10.  
 

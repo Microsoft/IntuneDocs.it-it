@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660959"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166832"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Aggiungere e assegnare app Mobile Threat Defense (MTD) con Intune  
 
@@ -35,8 +35,8 @@ ms.locfileid: "68660959"
 La procedura seguente deve essere completata nel [Portale di Azure](https://portal.azure.com/). Assicurarsi di avere familiarità con le procedure seguenti:
 
 - [Aggiunta di un'app in Intune](apps-add.md).
-- [Aggiunta dei criteri di configurazione delle app iOS in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-- [Assegnazione di un'app con Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Aggiunta dei criteri di configurazione delle app iOS in Intune](app-configuration-policies-use-ios.md).
+- [Assegnazione di un'app con Intune](apps-deploy.md).
 
 > [!TIP]
 > Nei dispositivi Android il portale aziendale Intune funge da broker per la verifica dell'identità degli utenti da parte di Azure AD.
@@ -136,7 +136,7 @@ Scegliere la sezione corrispondente al provider MTD:
   - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](store-apps-android.md). Usare questo [URL di App Store per Wandera Mobile](https://play.google.com/store/apps/details?id=com.wandera.android) nel **passaggio 7**. Per **Sistema operativo minimo** selezionare **Android 5.0**.
 
 - **iOS**
-  - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Usare questo [URL di App Store per Wandera Mobile](https://itunes.apple.com/app/wandera/id605469330) nel **passaggio 11** per **URL di App Store**.
+  - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](store-apps-ios.md). Usare questo [URL di App Store per Wandera Mobile](https://itunes.apple.com/app/wandera/id605469330) nel **passaggio 11** per **URL di App Store**.
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Configurare le app MTD con criteri di configurazione di app iOS  
 
