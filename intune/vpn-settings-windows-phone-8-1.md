@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c2deb36a77f34d2be3b1452d5fb4e8a88903016
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9bd79e13c285fd75c2c2abbdf8f1628d9cd09c8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565843"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302715"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono Windows Phone 8.1
 
@@ -37,24 +36,24 @@ A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguent
 - **Applica tutte le impostazioni solo a Windows Phone 8.1**: si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni vengono applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni vengono applicate anche ai dispositivi Windows 10 Mobile.
 - **Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti nel momento in cui esplorano l'elenco delle connessioni VPN disponibili nel dispositivo.
 - **Metodo di autenticazione**: scegliere tra le seguenti modalità di autenticazione dei dispositivi per il server VPN:
-    - **Certificati**: in **Certificato di autenticazione** scegliere un profilo di certificato SCEP o PKCS creato in precedenza per autenticare la connessione. Per altre informazioni sui profili di certificato, vedere [How to configure certificates](certificates-configure.md)(Come configurare i certificati).
-    - **Nome utente e password**: gli utenti finali devono fornire un nome utente e una password per accedere al server VPN.
+  - **Certificati**: in **Certificato di autenticazione** scegliere un profilo di certificato SCEP o PKCS creato in precedenza per autenticare la connessione. Per altre informazioni sui profili di certificato, vedere [How to configure certificates](certificates-configure.md)(Come configurare i certificati).
+  - **Nome utente e password**: gli utenti finali devono fornire un nome utente e una password per accedere al server VPN.
 - **Server**: aggiungere uno o più server VPN a cui si connettono i dispositivi.
-    - **Aggiungi**: apre il pannello **Aggiungi riga** in cui è possibile specificare le informazioni seguenti:
-        - **Descrizione**: specificare un nome descrittivo per il server come **server VPN di Contoso**.
-        - **Indirizzo IP o FQDN**: specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.
-        - **Server predefinito**: abilita questo server come server predefinito che i dispositivi usano per stabilire la connessione. Assicurarsi di impostare un solo server come predefinito.
-    - **Importa**: selezionare un file contenente un elenco delimitato da virgole di server nel formato descrizione, indirizzo IP o FQDN, server predefinito. Scegliere **OK** per importare i dati nell'elenco **Server**.
-    - **Esporta**: esporta l'elenco dei server in un file di valori separati da virgole (CSV).
+  - **Aggiungi**: apre il pannello **Aggiungi riga** in cui è possibile specificare le informazioni seguenti:
+    - **Descrizione**: specificare un nome descrittivo per il server come **server VPN di Contoso**.
+    - **Indirizzo IP o FQDN**: specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.
+    - **Server predefinito**: abilita questo server come server predefinito che i dispositivi usano per stabilire la connessione. Assicurarsi di impostare un solo server come predefinito.
+  - **Importa**: selezionare un file contenente un elenco delimitato da virgole di server nel formato descrizione, indirizzo IP o FQDN, server predefinito. Scegliere **OK** per importare i dati nell'elenco **Server**.
+  - **Esporta**: esporta l'elenco dei server in un file di valori separati da virgole (CSV).
 
 - **Ignora la VPN nella rete Wi-Fi aziendale**: abilitare questa opzione per specificare che la connessione VPN non viene usata quando il dispositivo è connesso alla rete Wi-Fi aziendale.
 - **Ignora la VPN nella rete Wi-Fi domestica**: abilitare questa opzione per specificare che la connessione VPN non viene usata quando il dispositivo è connesso alla rete Wi-Fi domestica.
 
 - **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
-    - **Check Point Capsule VPN**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
+  - **Check Point Capsule VPN**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
 
 - **Gruppo o dominio di accesso** (solo SonicWall Mobile Connect): specificare il nome del gruppo o dominio di accesso a cui si vuole connettersi.
 - **Ruolo** (solo Pulse Secure): specificare il nome del ruolo utente che ha accesso a questa connessione. Un ruolo utente consente di definire le opzioni e le impostazioni personali, oltre ad abilitare o disabilitare alcune funzionalità di accesso.
@@ -66,23 +65,25 @@ A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguent
 
     **Esempio per Pulse Secure:**
 
-```
+```xml
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
 **Esempio per CheckPoint Mobile VPN:**
 
-```
+```xml
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
 **Esempio per SonicWall Mobile Connect:**
-```
+
+```xml
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
 **Esempio per F5 Edge Client:**
-```
+
+```xml
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
@@ -98,6 +99,6 @@ Per altre informazioni su come scrivere comandi XML personalizzati, fare riferim
 - **Rileva automaticamente impostazioni proxy**: se il server VPN richiede un server proxy per la connessione, specificare se si desidera che i dispositivi rilevino automaticamente le impostazioni di connessione. Per altre informazioni, vedere la documentazione di Windows Server.
 - **Script di configurazione automatica**: consente di usare un file per la configurazione del server proxy. Immettere l'**URL server proxy**, ad esempio `http://proxy.contoso.com`, contenente il file di configurazione.
 - **Usa server proxy**: abilitare questa opzione se si desidera immettere manualmente le impostazioni del server proxy.
-    - **Indirizzo**: immettere l'indirizzo del server proxy (ad esempio un indirizzo IP).
-    - **Numero di porta**: immettere il numero di porta associato al server proxy.
+  - **Indirizzo**: immettere l'indirizzo del server proxy (ad esempio un indirizzo IP).
+  - **Numero di porta**: immettere il numero di porta associato al server proxy.
 - **Ignora proxy per indirizzi locali**: se il server VPN richiede un server proxy per la connessione, selezionare questa opzione se non si vuole usare il server proxy per gli indirizzi locali specificati. Per altre informazioni, vedere la documentazione di Windows Server.

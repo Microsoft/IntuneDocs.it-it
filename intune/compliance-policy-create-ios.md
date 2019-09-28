@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec071622a2e0d49068864f8bfb47954f54c8ba4
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: bde1c296abb99e8c0c81b44908e78b204c62388e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423612"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304124"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di iOS per contrassegnare un dispositivo come conforme o non conforme in Intune
 
@@ -49,7 +48,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
   - Il profilo di posta elettronica viene assegnato a un gruppo di utenti diverso rispetto al gruppo di utenti a cui sono destinati i criteri di conformità.
   - L'utente ha già configurato un account di posta elettronica nel dispositivo che corrisponde al profilo di posta elettronica di Intune distribuito nel dispositivo. Intune non può sovrascrivere il profilo configurato dall'utente e non può gestirlo. Per assicurare la conformità, l'utente finale deve rimuovere le impostazioni di posta elettronica esistenti. Intune potrà quindi installare il profilo di posta elettronica.
 
-- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune:**: se è stata selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per immettere il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere esistente nel dispositivo.
+- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune:** : se è stata selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per immettere il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere esistente nel dispositivo.
 
 Per informazioni dettagliate sui profili di posta elettronica, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Intune](email-settings-configure.md).
 
@@ -85,7 +84,7 @@ Per informazioni dettagliate sui profili di posta elettronica, vedere [Configura
     Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
 
 - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
-- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
+- **Scadenza password (giorni)** : selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
 ### <a name="device-security"></a>Sicurezza del dispositivo

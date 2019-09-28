@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461159"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302172"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Come configurare le impostazioni di Intune per l'app Classroom iOS
 
@@ -78,15 +77,14 @@ SDS sincronizza le informazioni dal sistema SIS e le archivia in Azure AD. Azure
 
 ### <a name="configure-general-settings"></a>Configurare le impostazioni generali
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-5.  Nel riquadro dei profili scegliere **Crea profilo**.
-6.  Nel riquadro **Crea profilo** immettere **Nome** e **Descrizione** per il profilo Istruzione per iOS.
-7.  Dall'elenco a discesa **Piattaforma** scegliere **iOS**.
-8.  Dall'elenco a discesa dei tipi di **profilo** scegliere **Istruzione**.
-9.  Scegliere **Impostazioni** > **Configura**.
+5. Nel riquadro dei profili scegliere **Crea profilo**.
+6. Nel riquadro **Crea profilo** immettere **Nome** e **Descrizione** per il profilo Istruzione per iOS.
+7. Dall'elenco a discesa **Piattaforma** scegliere **iOS**.
+8. Dall'elenco a discesa dei tipi di **profilo** scegliere **Istruzione**.
+9. Scegliere **Impostazioni** > **Configura**.
 
 
 Nella sezione successiva si creeranno i certificati per stabilire una relazione di trust tra gli iPad dei docenti e quelli degli studenti. I certificati vengono usati per autenticare automaticamente le connessioni tra i dispositivi senza dover immettere nomi utente e password.
@@ -116,7 +114,7 @@ In **Certificato PKCS#12 per docenti** configurare i valori seguenti:
 - **Autorità di certificazione**: un'autorità di certificazione globale eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. 
 - **Nome dell'autorità di certificazione**: immettere il nome dell'autorità di certificazione.
 - **Nome modello certificato**: immettere il nome di un modello di certificato aggiunto a una CA emittente. 
-- **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
+- **Soglia di rinnovo (%)** : specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
 - **Periodo di validità del certificato**: specificare la quantità di tempo rimanente prima della scadenza del certificato.
 È possibile specificare un valore inferiore, ma non superiore rispetto al periodo di validità nel modello di certificato indicato. Ad esempio, se il periodo di validità del certificato nel modello di certificato è di due anni, è possibile specificare un valore di un anno ma non un valore di cinque anni. Il valore deve anche essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente.
 
@@ -124,8 +122,8 @@ Al termine della configurazione dei certificati, scegliere **OK**.
 
 ### <a name="configure-student-certificates"></a>Configurare i certificati per gli studenti
 
-1.  Nel riquadro **Istruzione** scegliere **Certificati per studenti**.
-2.  Nella riquadro **Certificati per studenti** scegliere **1:1** nell'elenco **Tipo di certificati per il dispositivo di studenti**.
+1. Nel riquadro **Istruzione** scegliere **Certificati per studenti**.
+2. Nella riquadro **Certificati per studenti** scegliere **1:1** nell'elenco **Tipo di certificati per il dispositivo di studenti**.
 
 #### <a name="configure-student-root-certificate"></a>Configurare il certificato radice per gli studenti
 
@@ -141,7 +139,7 @@ In **Certificato PKCS#12 per studenti** configurare i valori seguenti:
 - **Autorità di certificazione**: un'autorità di certificazione globale eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. 
 - **Nome dell'autorità di certificazione**: immettere il nome dell'autorità di certificazione.
 - **Nome modello certificato**: immettere il nome di un modello di certificato aggiunto a una CA emittente. 
-- **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
+- **Soglia di rinnovo (%)** : specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
 - **Periodo di validità del certificato**: specificare la quantità di tempo rimanente prima della scadenza del certificato.
 È possibile specificare un valore inferiore, ma non superiore rispetto al periodo di validità nel modello di certificato indicato. Ad esempio, se il periodo di validità del certificato nel modello di certificato è di due anni, è possibile specificare un valore di un anno ma non un valore di cinque anni. Il valore deve anche essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente.
 
@@ -149,9 +147,9 @@ Al termine della configurazione dei certificati, scegliere **OK**.
 
 ## <a name="finish-up"></a>Terminare
 
-1.  Nel riquadro **Istruzione** scegliere OK.
-2.  Nel riquadro **Crea profilo** scegliere **Crea**.
-    
+1. Nel riquadro **Istruzione** scegliere OK.
+2. Nel riquadro **Crea profilo** scegliere **Crea**.
+
 Il profilo viene creato e visualizzato nel riquadro dell'elenco dei profili.
 
 Assegnare il profilo ai dispositivi degli studenti nei gruppi di classi creati durante la sincronizzazione dei dati dell'istituto di istruzione con Azure AD (vedere [Come assegnare i profili di dispositivo](device-profile-assign.md)).

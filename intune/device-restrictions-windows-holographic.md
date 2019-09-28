@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565248"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302302"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows Holographic for Business per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -55,7 +54,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 - **Pop-up**: blocca le finestre popup del browser (si applica solo a Windows 10 Desktop).
 - **Suggerimenti per la ricerca**: consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca.
 - **Strumento per la gestione delle password**: abilita o disabilita la funzionalità di gestione password di Microsoft Edge.
-- **Invia intestazioni DNT (Do Not Track)**: configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
+- **Invia intestazioni DNT (Do Not Track)** : configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
@@ -91,9 +90,9 @@ In genere un'app specifica viene eseguita in un dispositivo in modalità tutto s
   - **App singola per chiosco multimediale**: il profilo abilita il dispositivo perché esegua solo un'app. Quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
   - **Più app in modalità tutto schermo**: il profilo abilita il dispositivo perché esegua più app. Solo le app aggiunte sono disponibili all'utente. Il vantaggio di avere più app in modalità tutto schermo, o un dispositivo predefinito per uno scopo, consiste nel garantire un'esperienza semplice, consentendo di accedere solo alle app necessarie e rimuovendo dalla visualizzazione le app non necessarie. 
   
-    Quando si aggiungono app per un'esperienza costituita da più app in modalità a tutto schermo, si aggiunge anche un file di layout per il menu di avvio. Il [file di layout del menu di avvio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) include codice XML di esempio che è possibile usare in Intune. 
+    Quando si aggiungono app per un'esperienza costituita da più app in modalità a tutto schermo, si aggiunge anche un file di layout per il menu di avvio. Il [file di layout del menu di avvio](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) include codice XML di esempio che è possibile usare in Intune. 
 
-#### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
+### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
 
 Immettere le impostazioni seguenti:
 

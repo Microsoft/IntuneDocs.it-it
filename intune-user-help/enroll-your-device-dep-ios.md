@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166783"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239420"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrare il dispositivo iOS fornito dall'organizzazione per la gestione
 
@@ -35,7 +35,7 @@ Per avviare la configurazione, accendere il dispositivo e accedere con le creden
 
 ## <a name="what-is-apple-dep"></a>Che cos'è il programma DEP di Apple?
 
-L'organizzazione potrebbe avere acquistato i propri dispositivi tramite un *Apple Device Enrollment Program* (DEP). Il programma DEP di Apple consente alle organizzazioni di acquistare grandi quantità di dispositivi iOS o macOS. Le organizzazioni possono quindi configurare e gestire tali dispositivi all'interno del provider di gestione dei dispositivi mobili preferito, ad esempio Intune. Gli amministratori che desiderano avere altre informazioni sul programma DEP di Apple possono vedere [Registrare automaticamente i dispositivi nel programma Device Enrollment Program di Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+L'organizzazione potrebbe avere acquistato i propri dispositivi tramite un *Apple Device Enrollment Program* (DEP). Il programma DEP di Apple consente alle organizzazioni di acquistare grandi quantità di dispositivi iOS o macOS. Le organizzazioni possono quindi configurare e gestire tali dispositivi all'interno del provider di gestione dei dispositivi mobili preferito, ad esempio Intune. Gli amministratori che desiderano avere altre informazioni sul programma DEP di Apple possono vedere [Registrare automaticamente i dispositivi nel programma Device Enrollment Program di Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
 ## <a name="set-up-your-ios-device"></a>Configurare il dispositivo iOS
 

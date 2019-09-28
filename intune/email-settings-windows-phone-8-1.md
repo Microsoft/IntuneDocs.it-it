@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f7a14d605ae3d1a5a951f40ec789c50c847c455
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 132123b15073569c9a9601841579ca4592f27bd7
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565707"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71301894"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono Windows Phone 8.1
 
@@ -33,7 +32,7 @@ Questo articolo illustra le impostazioni del profilo di posta elettronica che è
 - **Applica tutte le impostazioni solo a Windows Phone 8.1**: si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni vengono applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni vengono applicate anche ai dispositivi Windows 10 Mobile.
 - **Server di posta elettronica** - Il nome host del server Exchange dell'azienda.
 - **Nome account** - Il nome visualizzato dell'account di posta elettronica come appare agli utenti nei dispositivi.
-- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che viene usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio **user1@contoso.com** o **Nome entità utente**, ad esempio **utente1** o **user1@contoso.com**.
+- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che viene usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio **user1@contoso.com** o **Nome entità utente**, ad esempio **utente1** o **user1@contoso.com** .
 - **Indirizzo di posta elettronica** - La modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Indirizzo SMTP primario** per accedere a Exchange con l'indirizzo SMTP primario o **Nome entità utente** per usare il nome completo dell'entità come indirizzo di posta elettronica.
 
 
@@ -51,6 +50,6 @@ Questo articolo illustra le impostazioni del profilo di posta elettronica che è
 ## <a name="content-sync-settings"></a>Impostazioni di sincronizzazione del contenuto
 
 - **Tipo di contenuto da sincronizzare** - Selezionare i tipi di contenuto da sincronizzare nei dispositivi da:
-    - **Contatti**
-    - **Calendarioio**
-    - **Attività**
+  - **Contatti**
+  - **Calendarioio**
+  - **Attività**

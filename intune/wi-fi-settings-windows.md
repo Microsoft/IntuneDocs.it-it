@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884251"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239448"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi Windows 10 e versioni successive in Intune
 
@@ -62,6 +62,9 @@ Questo articolo descrive queste impostazioni.
     
       > [!NOTE]
       > Quando si salva il profilo Wi-Fi, il valore della chiave precondivisa immesso non viene visualizzato per motivi di sicurezza. Resta visualizzata l'opzione **Non configurata** per la chiave precondivisa anche se è già stata salvata nel profilo. Per modificare la chiave precondivisa, immettere una nuova chiave e salvare il profilo. Se si salva una chiave precondivisa, si modificano i criteri e si lascia vuota la chiave precondivisa, verrà ancora usata la chiave precondivisa esistente.
+      
+      > [!IMPORTANT]
+      > La PSK è la stessa per tutti i dispositivi a cui viene indirizzata la profule. Se la chiave è compromessa, può essere usata da qualsiasi dispositivo per connettersi alla rete Wi-Fi. Proteggere precondivise per evitare accessi non autorizzati.
 
 - **Impostazioni del proxy aziendale**: scegliere questa impostazione per usare le impostazioni proxy all'interno dell'organizzazione. Le opzioni disponibili sono:
   - **Nessuna**: non sono state configurate impostazioni proxy.

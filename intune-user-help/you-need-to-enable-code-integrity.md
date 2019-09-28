@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167484"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239526"
 ---
 # <a name="enable-code-integrity"></a>Abilitare l'integrità del codice
 
@@ -35,7 +35,7 @@ Se si identifica se stessi come utente del dispositivo avanzato e si vuole prova
 
 ## <a name="additional-resources-for-it-administrators"></a>Risorse aggiuntive per gli amministratori IT
 
-Se si è un amministratore di Intune e si vogliono ottenere altre informazioni sulle impostazioni di conformità dell'integrità del dispositivo di Intune, vedere [aggiungere criteri di conformità per i dispositivi Windows 10 in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Per informazioni dettagliate sulle azioni di conformità che è possibile eseguire in Intune, vedere il [CSP HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Se si è un amministratore di Intune e si vogliono ottenere altre informazioni sulle impostazioni di conformità dell'integrità del dispositivo di Intune, vedere [aggiungere criteri di conformità per i dispositivi Windows 10 in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Per informazioni dettagliate sulle azioni di conformità che è possibile eseguire in Intune, vedere il [CSP HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Passaggi successivi
 

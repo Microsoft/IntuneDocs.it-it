@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: edff9ca3e292a2b5653a8b156a8deaa02bb79e9d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798228"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303185"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Usare criteri personalizzati in Microsoft Intune per consentire e bloccare le app per dispositivi Samsung Knox Standard 
 
@@ -36,8 +35,7 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creare un elenco di app consentite o bloccate
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel riquadro **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 2. Nell'elenco del riquadro dei profili scegliere **Crea profilo**.
@@ -51,16 +49,16 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 
    - **Nome**: immettere **PreventStartPackages**.
    - **Descrizione**: immettere una descrizione (facoltativa), ad esempio "Elenco delle app bloccate".
-   -    **Tipo di dati**: scegliere **Stringa** dall'elenco a discesa.
-   -    **URI OMA**: immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-   -    **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+   - **Tipo di dati**: scegliere **Stringa** dall'elenco a discesa.
+   - **URI OMA**: immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|** . (Esempio: pacchetto1;pacchetto2;)
 
    Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
    - **Nome**: immettere **AllowInstallPackages**.
    - **Descrizione**: immettere una descrizione (facoltativa), ad esempio "Elenco delle app che gli utenti possono installare da Google Play".
    - **Tipo di dati**: scegliere **Stringa** dall'elenco a discesa.
    - **URI OMA**: immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-   - **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+   - **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|** . (Esempio: pacchetto1;pacchetto2;)
 
 4. Fare clic su **OK** e nel riquadro **Crea profilo** scegliere **Crea**.
 
