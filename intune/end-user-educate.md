@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239787"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Come informare gli utenti finali su Microsoft Intune
 
@@ -44,7 +43,7 @@ __Livello di esperienza tecnologica degli utenti__ Le conoscenze tecnologiche e 
 
 __Cosa significa gestione della mobilità per gli utenti?__ Gli utenti potrebbero non comprendere appieno l'accesso di cui l'azienda dispone (o non dispone) ai loro dispositivi e ai dati. Un'altra fonte di preoccupazione è il fatto che i superiori o gli addetti IT possano vedere le azioni eseguite dagli utenti sul dispositivo. Gli utenti meno esperti potrebbero ritenere che tutte le attività eseguite sui loro dispositivi sono private. 
 
-__Perché Intune può risultare ostico agli utenti?__  È importante riconoscere e rispettare i tempi di cui gli utenti hanno bisogno per installare le app, registrare i dispositivi e mantenere la conformità. La priorità assoluta di tutte le distribuzioni di Intune è la protezione dei dati aziendali. Tuttavia l'atteggiamento degli utenti rispetto alla gestione dei dispositivi può essere influenzato negativamente se si distribuiscono criteri che, ad esempio:  
+__Perché Intune può risultare ostico agli utenti?__  È importante riconoscere e rispettare i tempi di cui gli utenti hanno bisogno per installare le app, registrare i dispositivi e mantenere la conformità. La priorità assoluta di tutte le distribuzioni di Intune è la protezione dei dati aziendali. Tuttavia l'atteggiamento degli utenti rispetto alla gestione dei dispositivi può essere influenzato negativamente se viene eseguito il push dei criteri, ad esempio:  
 * Richiedono passcode eccessivamente complessi su dispositivi personali
 * Inviano aggiornamenti obbligatori delle app mentre è in corso una chiamata di lavoro importante  
 
@@ -58,9 +57,9 @@ Leggere il seguente elenco di suggerimenti per semplificare la distribuzione di 
 
 * __Accessibilità.__ Indicare agli utenti dove ricevere supporto in caso di problemi con il dispositivo. Quando si [personalizza il Portale aziendale](company-portal-customize.md) assicurarsi di includere le informazioni di contatto dell'amministratore IT.
 
-* __Personalizzazione.__ Offrire istruzioni specifiche relative alla distribuzione nell'organizzazione. Questa azione dimostra agli utenti che l'organizzazione adotta le misure necessarie per garantire un'esperienza ottimale. Usare questo [modello di registrazione personalizzabile degli utenti di Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) per creare istruzioni di registrazione specifiche destinate agli utenti.
+* __Personalizzazione.__ Offrire istruzioni specifiche relative alla distribuzione nell'organizzazione. Questa azione dimostra agli utenti che l'organizzazione adotta le misure necessarie per garantire un'esperienza ottimale. Usare questo [kit di adozione di Intune](https://aka.ms/IntuneAdoptionKit) personalizzabile per creare istruzioni di registrazione specifiche destinate agli utenti.
 
-* __Canali di comunicazione diversi.__ Gli utenti hanno [diversi stili di apprendimento](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) e modalità preferite per la fruizione delle informazioni. Per gli utenti con un approccio visivo, Intune offre [video per la registrazione di vari tipi di dispositivi](https://channel9.msdn.com/Series/IntuneEnrollment) su Channel 9. È possibile incorporare direttamente i video nel proprio [sito SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). È anche possibile scaricare copie locali della traccia video o audio.
+* __Canali di comunicazione diversi.__ Gli utenti hanno [diversi stili di apprendimento](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) e modalità preferite per la fruizione delle informazioni. Per gli utenti con un approccio visivo, Intune offre [video per la registrazione di vari tipi di dispositivi](https://channel9.msdn.com/Series/IntuneEnrollment) su Channel 9. È possibile incorporare direttamente i video nel proprio [sito SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). È anche possibile scaricare copie locali della traccia video o audio.
 
 * __Conoscenza degli utenti.__ L'esperienza dell'utente con Intune ha effetto anche sulla produttività aziendale. La comprensione dell'esperienza degli utenti facilita la risoluzione dei problemi dei dispositivi e degli utenti. Ad esempio è possibile ottenere informazioni su come gli utenti acquisiscono le proprie app. Il fatto di avere in anticipo informazioni di questo tipo semplifica e rende più rapida la diagnostica e la risoluzione dei problemi.
 

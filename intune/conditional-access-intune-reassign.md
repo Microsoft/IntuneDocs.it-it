@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883798"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256207"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -194,15 +194,9 @@ Dopo aver riassegnato i criteri di accesso condizionale nel portale di Azure, è
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Per disabilitare i criteri di accesso condizionale
 
-1. Passare al [portale di Intune classico](https://manage.microsoft.com) e accedere con le proprie credenziali.
+Poiché la gestione di dispositivi mobili è stata rimossa dal portale di Intune classico, è stato aggiunto il collegamento seguente per visualizzare/disabilitare questi criteri classici:
 
-2. Scegliere **Criteri** dal menu a sinistra.
-
-3. Scegliere **Accesso condizionale** e quindi selezionare il servizio cloud Microsoft (ad esempio Exchange Online o SharePoint Online) per cui sono stati creati i criteri di accesso condizionale.
-
-4. Deselezionare l'opzione **Abilita criteri di accesso condizionale** e quindi fare clic su **Salva**.
-
-    ![Immagine della disabilitazione dei criteri di accesso condizionale nel portale di Intune classico](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>Vedere anche
 

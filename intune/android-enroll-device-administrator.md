@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: c8c9375449e55d2e6cac511cb0e279355ec95294
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071038"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163267"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registrazione di tipo amministratore di dispositivi Android
 
@@ -49,8 +49,9 @@ Per altre informazioni sulle funzionalità di Android Enterprise di Google, vede
 
 Per impostazione predefinita, Intune consente la registrazione di dispositivi Android con funzionalità di amministratore di dispositivi.
 
-1. Per preparare la gestione dei dispositivi mobili è necessario impostare l'autorità per la gestione dei dispositivi mobili su **Microsoft Intune**. Vedere [Impostare l'autorità MDM](mdm-authority-set.md) per le istruzioni. Questo elemento viene impostato una sola volta quando si configura Intune per la gestione dei dispositivi mobili per la prima volta
-2. [Informare gli utenti su come registrare i loro dispositivi](/intune-user-help/enroll-your-device-in-intune-android).  
+1. Per preparare la gestione dei dispositivi mobili è necessario impostare l'autorità per la gestione dei dispositivi mobili su **Microsoft Intune**. Vedere [Impostare l'autorità MDM](mdm-authority-set.md) per le istruzioni. Questo elemento viene impostato una sola volta quando si configura Intune per la gestione dei dispositivi mobili per la prima volta.
+2. Accedere a **Intune** > **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi personali e di proprietà aziendale con privilegi di amministratore di dispositivi** > **Usa l'amministratore di dispositivi per gestire i dispositivi**.
+3. [Informare gli utenti su come registrare i loro dispositivi](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Dopo che un utente ha eseguito la registrazione, è possibile iniziare a gestirne i dispositivi in Intune con attività quali, ad esempio, [l'assegnazione dei criteri di conformità](compliance-policy-create-android.md), [la gestione delle app](app-management.md) e così via.
 

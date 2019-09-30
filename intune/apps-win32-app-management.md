@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842198"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167151"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -194,6 +194,8 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 
     > [!NOTE]
     > Nel riquadro **Regole di rilevamento** è possibile scegliere di aggiungere più regole. Per rilevare l'app, devono essere soddisfatte le condizioni per **tutte** le regole.
+    >
+    > Se Intune rileva che l'app non è presente nel dispositivo, Intune offre di nuovo l'app dopo 24 ore. Questa situazione si verifica solo per le app a cui è assegnata la finalità obbligatoria.
 
     - **Configura manualmente le regole di rilevamento** - È possibile selezionare uno dei tipi di regole seguenti:
         1. **MSI**: eseguire una verifica in base al controllo della versione MSI. Questa opzione può essere aggiunta una sola volta. Quando si sceglie questo tipo di regola, sono disponibili due impostazioni:
@@ -278,7 +280,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 7. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
 8. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
 
-A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 a Intune. Per informazioni sull'assegnazione e il monitoraggio di app, vedere [Assegnare app ai gruppi con Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) e [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 a Intune. Per informazioni sull'assegnazione e il monitoraggio di app, vedere [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md) e [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md).
 
 ## <a name="app-dependencies"></a>Dipendenze dell'app
 

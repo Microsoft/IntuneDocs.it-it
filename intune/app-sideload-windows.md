@@ -6,9 +6,8 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,141 +15,66 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8652d260849537d1e0b504f5d309a3ab2708e5cd
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 4d30f2f392a760701337fb17b902458ea01ed00b
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587519"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238827"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firmare le app line-of-business per poterle distribuire nei dispositivi Windows con Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-L'amministratore di Intune ha la possibilità di distribuire app line-of-business (LOB) in dispositivi Windows e Windows 10 Mobile, inclusa l'app Portale aziendale. Per distribuire app con estensione appx o xap nei dispositivi Windows 10 e Windows 10 Mobile oppure per distribuire qualsiasi app LOB in dispositivi Windows 8.1 o Windows Phone 8.1, è necessario ottenere un **certificato di firma codice mobile aziendale Symantec**. Solo il certificato Symantec è considerato trusted per queste app per i rispettivi dispositivi Windows. È possibile usare un'Autorità di certificazione propria per le app di Windows 10 e le app universali. Questo certificato è necessario al fine di:
+L'amministratore di Intune ha la possibilità di distribuire app line-of-business (LOB) universali in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, inclusa l'app Portale aziendale. Per distribuire le app APPX in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, è possibile usare un certificato di firma codice di un'autorità di certificazione pubblica già considerata attendibile dai dispositivi Windows oppure usare la propria autorità di certificazione.
 
--   Firmare l'app Portale aziendale per la distribuzione in PC Windows, dispositivi Windows 10 Mobile e dispositivi Windows Phone
+Windows 8.1 Desktop richiede un criterio enterprise per abilitare il sideload o l'uso delle chiavi di sideload (abilitate automaticamente per i dispositivi aggiunti a un dominio). Per altre informazioni, vedere i [requisiti del sideload in Windows 8](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
 
--   Firmare applicazioni line-of-business dell'azienda così che Intune possa distribuirle in dispositivi Windows
+In Windows 10 il sideload è diverso rispetto alle versioni precedenti di Windows:
 
-La procedura seguente consente di ottenere il certificato necessario e di firmare le app. Sarà necessario registrarsi come sviluppatore Microsoft e quindi acquistare un certificato Symantec.
+- È possibile sbloccare un dispositivo per il sideload usando un criterio enterprise. Intune offre un criterio di configurazione del dispositivo denominato "installazione di app attendibile". L'impostazione del criterio su <allow> è tutto ciò che serve ai dispositivi che già considerano attendibile il certificato usato per firmare l'app APPX.
 
-
-1. **Registrarsi come sviluppatore Microsoft**<br>
-   [Registrarsi come sviluppatore Microsoft](https://go.microsoft.com/fwlink/?LinkId=268442) usando le informazioni sull'account aziendale usate al momento dell'accesso per l'acquisto dell'account aziendale. La richiesta di certificato di firma codice deve essere preventivamente autorizzata da un responsabile dell'azienda.
-
-2. **Ottenere un certificato aziendale Symantec.**<br>
-  Acquistare un certificato dal [sito Web Symantec](https://go.microsoft.com/fwlink/?LinkId=268441) utilizzando l’ID Symantec. Dopo aver acquistato il certificato, il responsabile aziendale dell'approvazione designato al momento della registrazione come sviluppatore Microsoft riceverà un messaggio di posta elettronica per approvare la richiesta del certificato. Per altre informazioni sui requisiti del certificato Symantec, vedere l'articolo relativo ai [motivi per i quali Windows Phone richiede un certificato Symantec](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec). Domande frequenti sulla registrazione dei dispositivi Windows.
-
-3.  **Importare certificati**<br>
-    Dopo che la richiesta è stata approvata, si riceve un messaggio di posta elettronica contenente le istruzioni per l'importazione dei certificati. Seguire le istruzioni nel messaggio di posta elettronica per importare i certificati.
-
-4.  **Verificare i certificati importati**<br>
-    Per verificare che i certificati siano stati importati correttamente, andare nello snap-in **Certificati**, fare clic con il pulsante destro del mouse su **Certificati** e selezionare **Trova certificati**. Nel campo **Contiene** immettere "Symantec", quindi fare clic su **Trova ora**. I certificati importati dovrebbero essere visualizzati nei risultati.
-
-    ![Risultati dei certificati elencati nella finestra di dialogo Trova certificati](./media/wit.gif)
-
-5. **Esportare un certificato di firma**<br>
-    Dopo aver verificato che i certificati siano presenti, è possibile esportare il file con estensione pfx per firmare il portale aziendale. Selezionare il certificato Symantec con la "firma del codice" **Scopo designato** . Fare clic con il pulsante destro del mouse sul certificato della firma del codice e selezionare **Esporta**.
-
-    ![Esportare il certificato per la firma](./media/wit-walk-cert2.gif)
-
-    In **Esportazione guidata certificati**selezionare **Sì, esporta la chiave privata** e fare clic su **Avanti**. **Selezionare Scambio informazioni personali - PKCS #12 (.PFX)** e selezionare **Se possibile, includi tutti i certificati per percorso certificazione**. Completare la procedura guidata. Per altre informazioni, vedere la sezione [Esportare un certificato con la chiave privata](https://go.microsoft.com/fwlink/?LinkID=203031).
-
-6.  **Caricare l'app in Intune**<br>
-    Caricare il file dell'app firmato e il certificato di firma del codice per rendere l'app disponibile agli utenti finali.
-
-    1.  Nel portale di Azure fare clic su **Amministrazione** &gt; **Windows Phone**.
-
-    2.  Fare clic su **Carica file app firmato** e accedere con l'ID amministratore di Intune.
-
-    3.  Aggiungere il file di certificato (estensione pfx) esportato in **Certificato di firma codice** e creare una password per il certificato.
-
-    4.  Completare la procedura guidata.
-
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Esempio: scaricare, firmare e distribuire l'app Portale aziendale per dispositivi Windows
-
-È possibile distribuire l'app Portale aziendale in dispositivi Windows, inclusi dispositivi Windows Phone e Windows 10 Mobile, con Intune invece di eseguire l'installazione da Microsoft Store. È necessario scaricare l'app Portale aziendale e firmarla con il certificato.  Questa operazione è necessaria solo se gli utenti non utilizzano lo Store aziendale e si desidera distribuire Portale aziendale nei dispositivi Windows Phone 8.1.
+- I certificati Symantec Phone e le chiavi della licenza per la funzionalità di sideload non sono obbligatori. Tuttavia, se un'autorità di certificazione locale non è disponibile, può essere necessario ottenere un certificato di firma del codice da un'autorità di certificazione pubblica. Per altre informazioni, vedere l'[introduzione alla firma del codice](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing).
 
 
-1.  **Scaricare Portale aziendale**
+## <a name="code-sign-your-app"></a>Firma del codice dell'app
 
-    Per distribuire l'app Portale aziendale con Intune, è possibile scaricare l'[app Portale aziendale di Microsoft Intune per Windows Phone 8.1](https://go.microsoft.com/fwlink/?LinkId=615799) dall'Area download ed eseguire il file autoestraente (estensione exe). Questo file contiene due file:
+Il primo passaggio consiste nel firmare il codice per il pacchetto APPX, vedere l'articolo sulla [firma del pacchetto dell'app con SignTool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
 
-    -   CompanyPortal.appx: app di installazione di Portale aziendale per Windows Phone 8.1
+## <a name="upload-your-app"></a>Caricare l'app
 
-    -   WinPhoneCompanyPortal.ps1: uno script di PowerShell che è possibile usare per firmare il file dell’app Portale aziendale in modo che possa essere distribuita ai dispositivi Windows Phone 8.1
+Caricare quindi il file APPX firmato come descritto nell'articolo sul [caricamento di un'app LOB di Windows](lob-apps-windows.md)
 
-    In alternativa, è possibile scaricare l'app Portale aziendale di Windows Phone 8.1 (pacchetto con licenza offline) o Portale aziendale di Windows 10 (pacchetto con licenza offline) da [Microsoft Store per le aziende](https://businessstore.microsoft.com/). L'app Portale aziendale dovrà essere acquisita con una licenza offline e il pacchetto appropriato dovrà essere scaricato per l'uso offline. Le voci per la piattaforma Windows 8 e Windows Phone 8 nella selezione fanno riferimento alle controparti 8.1. Per informazioni dettagliate su come eseguire questa operazione con Intune, vedere [Manage apps you purchased from the Microsoft Store for Business](windows-store-for-business.md) (Gestire le app acquistate in Microsoft Store per le aziende).
+Se si distribuisce l'app come richiesto agli utenti o ai dispositivi, l'app Portale aziendale Intune non è necessaria. Tuttavia, se si distribuisce l'app come disponibile per gli utenti, gli utenti potranno usare l'app Portale aziendale dal Microsoft Store pubblico, usare l'app Portale aziendale dal Microsoft Store privato per le aziende oppure firmare e distribuire manualmente l'app Portale aziendale Intune.
 
-2.  **Scaricare Windows Phone SDK** Scaricare Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570) e installarlo nel computer. Questo SDK è necessario per generare un token di registrazione applicazione.
+## <a name="upload-the-code-signing-certificate"></a>Caricare il certificato di firma codice
 
-3.  **Generare un file AETX** Generare un file token di registrazione dell'applicazione con estensione aetx dal file PFX Symantec usando AETGenerator.exe, incluso nel Windows Phone 8.0 SDK. Per istruzioni su come creare un file AETX, vedere [Come generare un token di registrazione dell’applicazione per Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
+Se il dispositivo Windows 10 non considera attendibile l'autorità di certificazione, dopo aver firmato il pacchetto APPX e averlo caricato nel servizio Intune, è necessario caricare il certificato di firma codice nel portale di Intune:
+1. Fare clic su App client
+2. Fare clic su Certificati Windows Enterprise
+3. Scegliere "Selezionare un file" in Certificato di firma codice
+4. Selezionare il file CER e fare clic su Carica
 
-4.  **Scaricare Windows SDK per Windows 8.1** Scaricare e installare [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525). Si noti che lo script di PowerShell incluso con l'app Portale aziendale usa il percorso di installazione predefinito, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se si esegue l’installazione in un altro percorso, è necessario includere il percorso in un parametro del cmdlet.
+A questo punto, qualsiasi dispositivo Windows 10 Desktop e Mobile con una distribuzione APPX eseguita dal servizio Intune scaricherà automaticamente il certificato enterprise corrispondente e sarà possibile avviare l'applicazione dopo l'installazione.
 
-5.  **Firmare il codice dell'app con PowerShell** Come amministratore, aprire **Windows PowerShell** sul computer host installato con il Windows SDK, il certificato di firma codice mobile aziendale Symantec, accedere al file Sign-WinPhoneCompanyPortal.ps1 ed eseguire lo script.
-
-    **Esempio 1**
-
-    ```PowerShell
-    .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
-    ```
-    In questo esempio viene firmato il file CompanyPortal.appx in C:\temp\ e viene prodotto il file CompanyPortalEnterpriseSigned.appx. Viene utilizzata la password PFX 1234 e l'ID dell'editore viene letto dal file PFX. Viene anche letto l’ID aziendale dal file cert.aetx.
-
-    **Esempio 2**
-
-    ```PowerShell
-    .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
-    ```
-    In questo esempio viene firmato il file CompanyPortal.appx in C:\temp\ e viene prodotto il file CompanyPortalEnterpriseSigned.appx. Viene utilizzata la password PFX 1234 e l'ID dell'editore specificato.
-
-    **Parametri:**
-
-    -   `-InputAppx` : il percorso locale del file CompanyPortal.appx tra virgolette singole. Ad esempio 'C:\temp\CompanyPortal.appx'
-
-    -   `-OutputAppx` : il percorso locale e il nome file per l’app Portale aziendale firmata tra virgolette singole. Ad esempio 'C:\temp\CompanyPortalEnterpriseSigned.appx'
-
-    -   `-PfxFilePath` : il percorso locale e il nome file per il file PFX esportato del certificato di Symantec. Ad esempio, 'C:\signing\cert.pfx'
-
-    -   `-PfxPassword` : la password usata per firmare il file PFX tra virgolette singole. Ad esempio  '1234'
-
-    -   `-AetxPath` : il percorso locale del file con estensione aetx usato per leggere l'ID aziendale, se l'argomento 'EnterpriseId' non è definito. È necessario specificare questo argomento oppure EnterpriseId. Ad esempio, 'C:\signing\cert.pfx'
-
-    -   `-PublisherId`: l'ID autore dell'azienda. Se assente, viene usato il campo 'Subject' del certificato di firma codice mobile aziendale Symantec . Ad esempio, 'OID.0.9.2342.19200300.100.1.1=1000000001, CN = "Test, Inc.", OU = Test 1'
-
-    -   `-SdkPath`: il percorso della cartella radice di Windows SDK per Windows 8.1. Questo argomento è facoltativo e l’impostazione predefinita è ${env:ProgramFiles(x86)} \Windows Kits\8.1.
-
-    -   `-EnterpriseId`: l'ID azienda. È necessario specificare questo argomento oppure 'AetxPath'. Se questo argomento non viene specificato, l'ID azienda viene letto dal file AETX. Ad esempio, 1000000001.
-
-6.  Distribuire l’app Portale aziendale di Windows Phone 8.1 (SSP.appx). Per istruzioni, vedere [Come aggiungere app line-of-business (LOB) per Windows Phone](lob-apps-windows-phone.md).
+Intune distribuisce solo il file CER più recente che è stato caricato. Se più file APPX sono stati creati da altri sviluppatori che non sono associati alla propria organizzazione, sarà necessario richiedere agli sviluppatori i file APPX non firmati in modo da firmarli con il proprio certificato oppure fare in modo che gli sviluppatori abbiano il certificato di firma codice usato dall'organizzazione.
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Come rinnovare il certificato di firma codice aziendale Symantec
 
-Il certificato Symantec usato per distribuire le app per dispositivi mobili Windows e Windows Phone deve essere rinnovato periodicamente.
+Il certificato usato per la distribuzione delle app per dispositivi mobili di Windows Phone 8.1 è stato sospeso il 28 febbraio 2019 e non è più disponibile per il rinnovo da Symantec. Se si esegue la distribuzione in Windows 10 Mobile, è possibile continuare a usare i certificati di firma codice di Symantec Desktop Enterprise seguendo le istruzioni di Windows 10.
 
-1.  Attendere il messaggio di posta elettronica di rinnovo inviato da Symantec circa 14 giorni prima della scadenza del certificato. Questo messaggio di posta elettronica contiene le indicazioni di Symantec per il rinnovo del certificato aziendale.
+## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Come installare il certificato aggiornato per le app line-of-business (LOB)
 
-    Per altre informazioni sui certificati Symantec, visitare [www.symantec.com](https://www.symantec.com) o chiamare il numero 1-877-438-8776 o 1-650-426-3400.
+Windows Phone 8.1
 
-2.  Visitare il sito Web, ad esempio [ https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do ](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do), e accedere con il Publisher ID (ID editore) Symantec e l'indirizzo di posta elettronica associato al certificato. Ricordare di usare lo stesso computer in cui sarà scaricato il certificato per avviare il rinnovo.
+Il servizio Intune non è più in grado di distribuire le app LOB per questa piattaforma dopo la scadenza del certificato di firma codice di Symantec Mobile Enterprise. Sarà comunque possibile il sideload dei file XAP/APPX senza firma usando una scheda SD o scaricando il file nel dispositivo. Per altre informazioni, vedere la [procedura di installazione dei file XAP in Windows Phone](https://answers.microsoft.com/en-us/mobiledevices/forum/mdlumia-mdapps/how-to-install-xap-file-in-windows-phone-8/da09ee72-51ae-407c-9b85-bc148df89280).
 
-3.  Una volta approvato e pagato il rinnovo, scaricare il certificato.
+Windows 8.1 Desktop/Windows 10 Desktop e Mobile
 
-### <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Come installare il certificato aggiornato per le app line-of-business (LOB)
-
-1.  Firmare la versione più recente dell'app line-of-business.
-
-2.  Aprire il portale di Azure, passare ad **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows Phone** e fare clic su **Carica app firmata**.
-
-3.  Caricare il portale aziendale appena firmato. Saranno necessari il file SSP.xap appena firmato e il nuovo file PFX ricevuto da Symantec oppure il token di registrazione dell'applicazione creato con questo nuovo file PFX.
-
-4.  Una volta completato il caricamento, rimuovere la versione precedente di Portale aziendale attraverso l’area di lavoro **Software**  .
-
-5.  Firmare tutte le app line-of-business aziendali nuove e aggiornate usando il nuovo certificato. Le applicazioni esistenti non devono essere firmate e distribuite di nuovo.
+Se il periodo di certificazione è scaduto, è possibile che i file APPX non vengano avviati. È necessario ottenere un nuovo file CER e seguire le istruzioni per firmare il codice per ogni file APPX distribuito e ricaricare tutti i file APPX e il file CER aggiornato nella sezione Certificati Windows Enterprise del portale di Intune
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Distribuire manualmente l'app Portale aziendale di Windows 10
-È possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Microsoft Store per le aziende.
+Se non si vuole concedere l'accesso al Microsoft Store, è possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Microsoft Store per le aziende. In alternativa, se Intune è integrato, è possibile distribuire l'app Portale aziendale seguendo la [procedura di distribuzione delle app con Microsoft Store per le aziende](store-apps-windows.md).
 
  > [!NOTE]
  > Se si sceglie questa opzione, sarà necessario distribuire manualmente gli aggiornamenti ogni volta che verrà rilasciato un aggiornamento dell'app.
@@ -158,16 +82,16 @@ Il certificato Symantec usato per distribuire le app per dispositivi mobili Wind
 1. Accedere al proprio account di [Microsoft Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
 2. Dopo aver acquisito l'app, selezionarla nella pagina **Inventario**.  
 3. Selezionare **Windows 10 all devices** (Windows 10 - tutti i dispositivi) come **Piattaforma**, quindi specificare l'opzione di **Architettura** appropriata ed eseguire il download. Per questa app non è necessario un file di licenza di app.
-![Immagine dei dettagli del pacchetto di Windows 10 X86 per il download](./media/Win10CP-all-devices.png)
+   ![Immagine dei dettagli del pacchetto di Windows 10 X86 per il download](./media/Win10CP-all-devices.png)
 4. Scaricare tutti i pacchetti inclusi in "Framework richiesti". Questa operazione deve essere eseguita per le architetture x86, x64 e ARM, per un totale di 9 pacchetti, come illustrato di seguito.
 
-![Immagine dei file di dipendenza da scaricare ](./media/Win10CP-dependent-files.png)
+   ![Immagine dei file di dipendenza da scaricare ](./media/Win10CP-dependent-files.png)
 5. Prima di caricare l'app Portale aziendale in Intune, creare una cartella (ad esempio, C:&#92;Company Portal) con i pacchetti strutturati nel modo seguente:
    1. Inserire il pacchetto dell'app Portale aziendale in C:\Company Portal. Creare anche una sottocartella Dependencies in questa posizione.  
-   ![Immagine della cartella Dependencies salvata con il file APPXBUN](./media/Win10CP-Dependencies-save.png)
+      ![Immagine della cartella Dependencies salvata con il file APPXBUN](./media/Win10CP-Dependencies-save.png)
    2. Inserire i nove pacchetti delle dipendenze nella cartella Dependencies.  
-   Se le dipendenze non vengono inserite in questo formato, Intune non sarà in grado di riconoscerle e caricarle durante il caricamento del pacchetto. Pertanto questa operazione avrà esito negativo e restituirà l'errore seguente.  
-   ![Messaggio di errore: è necessario specificare la dipendenza delle app di Windows.](./media/Win10CP-error-message.png)
+      Se le dipendenze non vengono inserite in questo formato, Intune non sarà in grado di riconoscerle e caricarle durante il caricamento del pacchetto. Pertanto questa operazione avrà esito negativo e restituirà l'errore seguente.  
+      ![Messaggio di errore: è necessario specificare la dipendenza delle app di Windows.](./media/Win10CP-error-message.png)
 6. Tornare a Intune e caricare l'app Portale aziendale come una nuova app. Distribuirla come app necessaria al gruppo di utenti di destinazione desiderato.  
 
 Per altre informazioni sul modo in cui Intune gestisce le dipendenze per le app universali, vedere [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Distribuzione di un appxbundle con dipendenze tramite MDM di Microsoft Intune).  

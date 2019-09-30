@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460615"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239591"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemi operativi e browser supportati in Intune
 
@@ -115,12 +114,12 @@ Per questi portali sono supportati i browser seguenti:
 
 ### <a name="intune-classic-portal"></a>Portale classico di Intune
 
-Le funzionalità esclusivamente classiche di Intune, come il client software per PC di Intune e l'integrazione con i partner Mobile Threat Defense sono disponibili solo nel portale classico di Intune (https://manage.microsoft.com). Per il portale classico di Intune è richiesto il supporto di un browser Silverlight.
+Il portale classico di Intune viene usato solo per gestire i dispositivi registrati con il client software per PC di Intune (https://manage.microsoft.com). Per il portale classico di Intune è richiesto il supporto di un browser Silverlight.
 
 La console di Intune è supportata dai browser Silverlight seguenti:
 - Internet Explorer 10 o versione successiva
 - Google Chrome (versioni precedenti alla versione 42)
-- Mozilla Firefox con Silverlight abilitato [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox con Silverlight abilitato (versioni precedenti alla versione 56)
 
 > [!Note]
 > Microsoft Edge e i browser per dispositivi mobili non sono supportati per il portale classico di Intune perché non supportano [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

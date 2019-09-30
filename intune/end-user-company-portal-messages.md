@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569129"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239348"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Consentire agli utenti finali di comprendere i messaggi dell'app Portale aziendale
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> Le informazioni seguenti si applicano solo ai dispositivi Android 6.0 e versioni successive.
+> Le informazioni seguenti si applicano solo ai dispositivi Android 6.0 e versioni successive e iOS 10 e versioni successive.
 
 Informazioni sui diversi messaggi dell'app che possono vedere gli utenti finali nell'app Portale aziendale. Questi messaggi vengono in genere visualizzati in diversi momenti durante il processo di registrazione. Informazioni su dove vengono visualizzati i messaggi, il significato dei messaggi e cosa accade se gli utenti negano l'accesso. Scoprire anche come spiegare in modo ottimale i messaggi agli utenti.
 
 - __Allow Company Portal to make and manage phone calls? (Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?)__
 - __Allow Company Portal to access photos, media, and files on your device?__ (Consentire a Portale aziendale di accedere a foto, elementi multimediali e file nel dispositivo?)
+
+> [!NOTE]
+> Microsoft non vende per alcun motivo a terze parti i dati raccolti dal servizio.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?
 
@@ -57,7 +59,7 @@ Se gli utenti consentono l'accesso e in seguito lo negano, il messaggio viene vi
 Se gli utenti decidono di consentire l'accesso in un secondo momento, passare a **Impostazioni** > **App** > **Portale aziendale** > **Autorizzazioni** > **Telefono** e quindi attivare l'autorizzazione.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Come spiegare questo agli utenti
-Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Android in Intune](/intune-user-help/enroll-your-device-in-intune-android) per ottenere altre informazioni.
+Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Android in Intune](/intune-user-help/enroll-device-android-company-portal) per ottenere altre informazioni.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Consentire a Portale aziendale di accedere ai contatti?
 
@@ -78,7 +80,7 @@ Se gli utenti consentono l'accesso e in seguito lo negano, il messaggio verrà v
 Se gli utenti decidono di consentire l'accesso in un secondo momento, passare a **Impostazioni** > **App** > **Portale aziendale** > **Autorizzazioni** > **Telefono** e quindi attivare l'autorizzazione.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Come spiegare questo agli utenti
-Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Android in Intune](/intune-user-help/enroll-your-device-in-intune-android) per ottenere altre informazioni.
+Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Android in Intune](/intune-user-help/enroll-device-android-company-portal) per ottenere altre informazioni.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Consentire a Portale aziendale di accedere a foto, elementi multimediali e file nel dispositivo?
 
@@ -132,7 +134,7 @@ Quando si installa un'app di questo tipo usando il portale aziendale e la si avv
 
 3. Selezionare **Gestione profilo** > **App aziendale**.
 4. Selezionare il nome dello sviluppatore.
-5. Selezionare **Considera attendibile _nome sviluppatore_**.
+5. Selezionare **Considera attendibile _nome sviluppatore_** .
 6. Confermare l'app selezionando **Considera attendibile** nel messaggio popup di installazione dell'app.
 
    ![Interfaccia utente del dispositivo iOS - Messaggio di attendibilità dell'app](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -140,5 +142,5 @@ Quando si installa un'app di questo tipo usando il portale aziendale e la si avv
     Ora dovrebbe essere possibile avviare e usare l'app aziendale.
 
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 [Informazioni sull'uso di Intune per gli utenti finali](end-user-educate.md)

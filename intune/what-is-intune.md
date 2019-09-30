@@ -5,9 +5,8 @@ keywords: informazioni su Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460581"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238256"
 ---
 # <a name="what-is-microsoft-intune"></a>Informazioni su Microsoft Intune
 
@@ -85,7 +84,7 @@ Quando si parla di configurazione delle app e di Intune, si fa riferimento in mo
 Quando si usa Intune con gli altri servizi di EMS, si assicura all'organizzazione un grado di sicurezza delle app per dispositivi mobili di gran lunga superiore a quello fornito dal sistema operativo mobile e dalle stesse app per dispositivi mobili tramite la configurazione delle app. Un'app gestita con EMS ha accesso a un set più ampio di funzionalità di protezione dei dati e delle app per dispositivi mobili che include:
 
 * [Single Sign-On](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Accesso condizionale all'app - consentire l'accesso se l'app per dispositivi mobili contiene dati aziendali](app-based-conditional-access-intune.md)
 * [Isolamento dei dati aziendali da quelli personali all'interno della stessa app](app-protection-policy.md)
 * [Criteri di protezione dell'app (PIN, crittografia, salvataggio con nome, Appunti e così via)](app-protection-policies.md)

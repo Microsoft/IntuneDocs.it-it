@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394253"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239299"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di iOS
 
@@ -36,7 +35,7 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 
 **App gestite**: app che possono essere gestite usando i criteri e sono state sottoposte a "wrapping" in Intune o sono state compilate con Intune App Software Development Kit (SDK). Queste app possono essere gestite da Intune ed è possibile applicarvi criteri di protezione delle app.
 
-**App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non comprendono Intune App SDK. Non è possibile applicare i criteri dell'applicazione a queste app.
+**App non gestite**: app che gli utenti possono scaricare dall'App Store iOS che non sono integrate con Intune App SDK. Intune non ha alcun controllo sulla distribuzione, sulla gestione o sulla cancellazione selettiva di queste app.  
 
 Le restrizioni di Apple impediscono alle app line-of-business e alle app di App Store gestite di essere elencate nell'app Portale aziendale. Per risolvere questo problema, i riquadri nell'app Portale aziendale per iOS indirizzano gli utenti a visualizzazioni diverse in un'unica posizione, il sito Web del portale aziendale, per tutte le app.
 
@@ -53,7 +52,7 @@ Gli utenti registrati possono ottenere le app toccando i riquadri seguenti nella
 
 Per informazioni su come aggiungere app, vedere [Come aggiungere un'app a Microsoft Intune](apps-add.md).
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 [Modalità di recupero delle app per gli utenti di Android](end-user-apps-android.md)
 
 [Modalità di recupero delle app per gli utenti di Windows](end-user-apps-windows.md)

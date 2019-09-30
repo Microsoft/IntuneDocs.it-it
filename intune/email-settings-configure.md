@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530043"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162876"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Aggiungere impostazioni di posta elettronica ai dispositivi con Intune
 
@@ -40,23 +40,29 @@ Questo articolo illustra come creare un profilo di posta elettronica in Microsof
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
-3. Specificare un **nome** e una **descrizione** per il profilo di posta elettronica.
-4. Scegliere la **piattaforma** dall'elenco a discesa. Le opzioni disponibili sono:
+3. Immettere le proprietà seguenti:
 
-    - **Android** (solo Samsung Android Knox Standard)
-    - **Android Enterprise**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 e versioni successive**
+    - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Impostazioni di posta elettronica per tutti i dispositivi Windows**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
 
-5. Nell'elenco a discesa dei tipi di **profilo** scegliere **Posta elettronica**.
-6. Le impostazioni che è possibile configurare potrebbero essere diverse per ogni piattaforma. Per le impostazioni specifiche, scegliere la piattaforma:
+        - **Android** (solo Samsung Android Knox Standard)
+        - **Android Enterprise**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 e versioni successive**
+
+    - **Tipo di profilo**: Selezionare **Posta elettronica**.
+
+4. Le impostazioni configurabili variano in base alla piattaforma scelta. Scegliere la piattaforma per le impostazioni dettagliate:
 
     - [Impostazioni Android Samsung Knox Standard](email-settings-android.md)
     - [Impostazioni Android Enterprise](email-settings-android-enterprise.md)
-    - [Impostazioni iOS](email-settings-ios.md)
+    - [Impostazioni di iOS/iPadOS](email-settings-ios.md)
     - [Impostazioni Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Impostazioni Windows 10](email-settings-windows-10.md)
+
+5. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
 Dopo aver immesso le impostazioni e creato il profilo, il profilo viene visualizzato nell'elenco dei profili. Ora [assegnare il profilo ad alcuni gruppi](device-profile-assign.md).
 

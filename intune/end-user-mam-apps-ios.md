@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f013ec1d40b9593e7eb8d317b5b63545c58f181
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4039c9e3ae53d8db8ee282f802cd86149b40021e
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399104"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "71239750"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app
 
@@ -30,7 +29,7 @@ ms.locfileid: "57399104"
 
  Questo argomento descrive l'esperienza utente nell'uso di app a cui sono applicati i criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo alle app usate in un contesto aziendale, ad esempio quando l'utente accede alle app con un account aziendale o accede ai file archiviati in una posizione di OneDrive for Business.
 
-##  <a name="access-apps"></a>Accedere alle app
+## <a name="access-apps"></a>Accedere alle app
 
 Se il dispositivo **non è registrato in Intune**, all'utente verrà chiesto di riavviare l'app la prima volta che la usa. Il riavvio è necessario per consentire l'applicazione dei criteri di protezione all'app.
 
@@ -41,7 +40,7 @@ Se il dispositivo **non è registrato in Intune**, all'utente verrà chiesto di 
 
 Per i dispositivi **registrati per la gestione in Intune**, l'utente riceve un messaggio in cui viene segnalato che l'app è gestita.
 
-##  <a name="use-apps-with-multi-identity-support"></a>Usare app con supporto di più identità
+## <a name="use-apps-with-multi-identity-support"></a>Usare app con supporto di più identità
 
 Le app che supportano identità multiple consentono di usare account differenti, aziendale e personale, per accedere alle stesse app, mentre i criteri di protezione delle app vengono applicati solo quando le app vengono usate nel contesto aziendale.  
 
@@ -51,13 +50,13 @@ Ad esempio, l'utente riceve la richiesta di inserimento del PIN al momento di ac
 
 I criteri di protezione delle app si applicano solo in un contesto aziendale. Di conseguenza, l'app potrebbe comportarsi in modo diverso a seconda che il contesto sia aziendale o personale.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gestire gli account utente nel dispositivo
+## <a name="manage-user-accounts-on-the-device"></a>Gestire gli account utente nel dispositivo
 
 Le applicazioni con identità multiple permettono agli utenti di aggiungere più account.  L'APP Intune supporta un solo account gestito.  L'APP Intune non limita il numero di account non gestiti.
 
 Quando in un'applicazione è presente un account gestito:
-*   Se un utente prova ad aggiungere un secondo account gestito, gli viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
-*   Se l'amministratore IT aggiunge criteri a un secondo account esistente, all'utente viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
+* Se un utente prova ad aggiungere un secondo account gestito, gli viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
+* Se l'amministratore IT aggiunge criteri a un secondo account esistente, all'utente viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio seguente.
 
