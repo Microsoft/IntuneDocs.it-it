@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566659"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238659"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -169,9 +168,9 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 ## <a name="download-the-app-wrapping-tool"></a>Scaricare lo strumento di wrapping delle app
 
-1.  Scaricare i file per lo strumento di wrapping delle app da [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in un computer macOS.
+1. Scaricare i file per lo strumento di wrapping delle app da [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in un computer macOS.
 
-2.  Fare doppio clic su **Microsoft Intune App Wrapping Tool for iOS.dmg**. Verrà visualizzata una finestra con il Contratto di licenza con l'utente finale (EULA). Leggere attentamente il documento.
+2. Fare doppio clic su **Microsoft Intune App Wrapping Tool for iOS.dmg**. Verrà visualizzata una finestra con il Contratto di licenza con l'utente finale (EULA). Leggere attentamente il documento.
 
 3. Scegliere **Accetto** per accettare il contratto di licenza e procedere al montaggio del pacchetto nel computer.
 
@@ -203,30 +202,38 @@ Con lo strumento di wrapping delle app è possibile usare i parametri della riga
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|Mostra informazioni d'uso dettagliate per le proprietà della riga di comando disponibili per lo strumento di wrapping delle app.|
-|**-v**|(Facoltativo) Mostra messaggi dettagliati nella console. È consigliabile usare questo flag per il debug di eventuali errori.|
+|**-h**| Mostra informazioni d'uso dettagliate per le proprietà della riga di comando disponibili per lo strumento di wrapping delle app. |
+|**-aa**|(Facoltativo) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, ad esempio `login.windows.net/common` |
+|**-ac**|(Facoltativo) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` questo è il GUID nel campo ID client è dall'elenco dell'app nel pannello registrazione app. |
+|**-ar**|(Facoltativo) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` questo è l'URI di reindirizzamento configurato nella registrazione dell'app. In genere si tratta del protocollo URL dell'applicazione a cui l'app Microsoft Authenticator restituirà dopo l'autenticazione negoziata. |
+|**-v**| (Facoltativo) Mostra messaggi dettagliati nella console. È consigliabile usare questo flag per il debug di eventuali errori. |
 |**-e**| (Facoltativo) Usare questo flag per fare in modo che lo strumento di wrapping delle app rimuova i diritti mancanti durante l'elaborazione dell'app. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
 |**-xe**| (Facoltativo) Visualizza informazioni sulle estensioni iOS nell'app e sui diritti necessari per usarle. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements). |
 |**-x**| (Facoltativo) `<An array of paths to extension provisioning profiles>`. Usare questa opzione se l'app richiede profili di provisioning estensioni.|
-|**-f**|(Facoltativo) `<Path to a plist file specifying arguments.>` Usare questo flag prima del file [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se si sceglie di usare il modello plist per specificare le altre proprietà IntuneMAMPackager, come: -i, -o e -p. Vedere Usare un file plist per l'input di argomenti. |
 |**-b**|(Facoltativo) Usare -b senza argomento se si vuole che l'applicazione di output con wrapper abbia la stessa versione di bundle dell'app di input (scelta non consigliata). <br/><br/> Usare `-b <custom bundle version>` se si vuole che l'app con wrapper abbia un valore CFBundleVersion personalizzato. Se si sceglie di specificare un valore CFBundleVersion personalizzato, è consigliabile incrementare il componente meno significativo del valore CFBundleVersion dell'app nativa, ad esempio 1.0.0 -> 1.0.1. |
+|**-citrix**|Opzionale Includere Citrix XenMobile App SDK (variante solo di rete). Per usare questa opzione, è necessario che sia installato [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) . |
+|**-f**|(Facoltativo) `<Path to a plist file specifying arguments.>` Usare questo flag prima del file [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se si sceglie di usare il modello plist per specificare le altre proprietà IntuneMAMPackager, come: -i, -o e -p. Vedere Usare un file plist per l'input di argomenti. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Usare un file plist per l'input di argomenti
 Un modo semplice per eseguire lo strumento di wrapping delle app è l'inserimento di tutti gli argomenti del comando in un file [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html). Il formato plist è simile al formato XML e consente di immettere gli argomenti della riga di comando mediante un'interfaccia di tipo modulo.
 
 Nella cartella IntuneMAMPackager/Contents/MacOS aprire `Parameters.plist`, un modello di file plist vuoto, con un editor di testo o Xcode. Immettere argomenti per le chiavi seguenti:
 
-| Chiave plist |  Valore predefinito| Note |
-|------------------|--------------|-----|
-| Input Application Package Path  |empty| Uguale a -i|
-| Output Application Package Path |empty| Uguale a -o|
-| Provisioning Profile Path |empty| Uguale a -p|
-| SHA-1 Certificate Hash |empty| Uguale a -c|
-| Verbose Enabled |false| Uguale a -v|
-| Remove Missing Entitlements | false| Uguale a -c|
-| Prevent Default Build |false | Equivalente all'uso di -b senza argomenti|
-|Build String Override | empty| Versione personalizzata di CFBundleVersion dell'app di output con wrapper |
-|Extension Provisioning Profile Paths | empty| Matrice di profili di provisioning estensioni per l'app.
+| Chiave plist | Tipo |  Valore predefinito | Note |
+|------------------|-----|--------------|-----|
+| Input Application Package Path |Stringa|empty| Uguale a -i|
+| Output Application Package Path |Stringa|empty| Uguale a -o|
+| Provisioning Profile Path |Stringa|empty| Uguale a -p|
+| SHA-1 Certificate Hash |Stringa|empty| Uguale a -c|
+| Autorità ADAL |Stringa|empty| Uguale a -aa|
+| ID client ADAL |Stringa|empty| Uguale a -ac|
+| URI di risposta ADAL |Stringa|empty| Uguale a -ar|
+| Verbose Enabled |Boolean|false| Uguale a -v|
+| Remove Missing Entitlements |Boolean|false| Uguale a -c|
+| Prevent Default Build Update |Booleano|false| Equivalente all'uso di -b senza argomenti|
+| Build String Override |Stringa|empty| Versione personalizzata di CFBundleVersion dell'app di output con wrapper|
+| Includere Citrix XenMobile App SDK (variante solo di rete)|Boolean|false| Uguale a-Citrix|
+| Extension Provisioning Profile Paths |Matrice di stringhe|empty| Matrice di profili di provisioning estensioni per l'app.
 
 
 Eseguire IntuneMAMPackager con il file plist come unico argomento:
@@ -285,15 +292,16 @@ Se lo strumento di wrapping delle app non viene eseguito correttamente, nella co
 ### <a name="log-files-for-the-app-wrapping-tool"></a>File di log per lo strumento di wrapping delle app
 Le app di cui è stato eseguito il wrapping tramite lo strumento di wrapping delle app generano log che vengono scritti nella console del dispositivo client iOS. Queste informazioni sono utili quando si riscontrano problemi con l'applicazione ed è necessario determinare se il problema è correlato allo strumento di wrapping delle app. Per recuperare queste informazioni, usare i passaggi seguenti:
 
-1.  Riprodurre il problema eseguendo l'app.
+1. Riprodurre il problema eseguendo l'app.
 
-2.  Raccogliere l'output della console seguendo le istruzioni di Apple fornite nell'articolo relativo al [debug delle app iOS distribuite](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
+2. Raccogliere l'output della console seguendo le istruzioni di Apple fornite nell'articolo relativo al [debug delle app iOS distribuite](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3.  Filtrare i log salvati per l'output delle restrizioni dell'app immettendo lo script seguente nella console:
+3. Filtrare i log salvati per l'output delle restrizioni dell'app immettendo lo script seguente nella console:
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     È possibile inviare i log filtrati a Microsoft.
 
     > [!NOTE]
@@ -331,7 +339,7 @@ Prima di eseguire il wrapping dell'app, è possibile assegnare *diritti* per con
 
 ### <a name="steps-to-enable-entitlements"></a>Passaggi per abilitare i diritti
 
-1.  Abilitare le funzionalità nell'app:
+1. Abilitare le funzionalità nell'app:
 
     a.  In Xcode passare alla destinazione dell'app e fare clic su **Capabilities** (Funzionalità).
 
@@ -341,7 +349,7 @@ Prima di eseguire il wrapping dell'app, è possibile assegnare *diritti* per con
 
     d.  Creare e firmare l'app di cui eseguire il wrapping.
 
-2.  Abilitare i diritti nel profilo di provisioning:
+2. Abilitare i diritti nel profilo di provisioning:
 
     a.  Accedere all'area membri degli sviluppatori Apple.
 
@@ -351,7 +359,7 @@ Prima di eseguire il wrapping dell'app, è possibile assegnare *diritti* per con
 
     d.  Completare la configurazione guidata del profilo di provisioning e scaricare il file.
 
-3.  Assicurarsi di aver soddisfatto tutti i prerequisiti e quindi eseguire il wrapping dell'app.
+3. Assicurarsi di aver soddisfatto tutti i prerequisiti e quindi eseguire il wrapping dell'app.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Risoluzione di problemi comuni relativi ai diritti
 Se lo strumento di wrapping delle app per iOS visualizza un errore relativo ai diritti, provare le procedure seguenti per la risoluzione dei problemi.
@@ -364,20 +372,20 @@ Se lo strumento di wrapping delle app per iOS visualizza un errore relativo ai d
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Trovare i diritti esistenti di un'app firmata
 Per rivedere i diritti esistenti di un'app firmata e di un profilo di provisioning:
 
-1.  Trovare il file con estensione IPA e modificare l'estensione in ZIP.
+1. Trovare il file con estensione IPA e modificare l'estensione in ZIP.
 
-2.  Espandere il file con estensione ZIP. Verrà generata una cartella Payload contenente il bundle .app.
+2. Espandere il file con estensione ZIP. Verrà generata una cartella Payload contenente il bundle .app.
 
-3.  Usare lo strumento codesign per verificare i diritti nel bundle con estensione app, dove `YourApp.app` è il nome effettivo del bundle con estensione app:
+3. Usare lo strumento codesign per verificare i diritti nel bundle con estensione app, dove `YourApp.app` è il nome effettivo del bundle con estensione app:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  Usare lo strumento security per verificare i diritti del profilo di provisioning incorporato dell'app, dove `YourApp.app` è il nome effettivo del bundle con estensione app.
+4. Usare lo strumento security per verificare i diritti del profilo di provisioning incorporato dell'app, dove `YourApp.app` è il nome effettivo del bundle con estensione app.
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Rimuovere diritti da un'app con il parametro -e
@@ -390,19 +398,19 @@ Questo comando rimuove tutte le funzionalità abilitate nell'app che non sono pr
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Sicurezza e privacy per lo strumento di wrapping delle app
 Quando si usa lo strumento di wrapping delle app, adottare le procedure consigliate seguenti per la sicurezza e la privacy.
 
--   Il certificato di firma, il profilo di provisioning e l'app line-of-business specificati devono risiedere nello stesso computer macOS usato per eseguire lo strumento di wrapping delle app. Se i file si trovano in un percorso UNC, assicurarsi che siano accessibili dal computer macOS. Il percorso deve essere protetto tramite firma IPsec o SMB.
+- Il certificato di firma, il profilo di provisioning e l'app line-of-business specificati devono risiedere nello stesso computer macOS usato per eseguire lo strumento di wrapping delle app. Se i file si trovano in un percorso UNC, assicurarsi che siano accessibili dal computer macOS. Il percorso deve essere protetto tramite firma IPsec o SMB.
 
     L'applicazione di cui è stato eseguito il wrapping importata nella console di amministrazione deve trovarsi nello stesso computer in cui viene eseguito lo strumento. Se il file si trova in un percorso UNC, assicurarsi che sia accessibile dal computer che esegue la console di amministrazione. Il percorso deve essere protetto tramite firma IPsec o SMB.
 
--   L'ambiente in cui lo strumento di wrapping delle app viene scaricato dal repository GitHub deve essere protetto tramite firma IPSec o SMB.
+- L'ambiente in cui lo strumento di wrapping delle app viene scaricato dal repository GitHub deve essere protetto tramite firma IPSec o SMB.
 
--   L'app elaborata deve provenire da una fonte attendibile per garantire la protezione dagli attacchi.
+- L'app elaborata deve provenire da una fonte attendibile per garantire la protezione dagli attacchi.
 
--   Assicurarsi che la cartella di output specificata nello strumento di wrapping delle app sia protetta, soprattutto se è una cartella remota.
+- Assicurarsi che la cartella di output specificata nello strumento di wrapping delle app sia protetta, soprattutto se è una cartella remota.
 
--   Le app iOS che includono una finestra di dialogo per il caricamento dei file possono consentire agli utenti di eludere le restrizioni per le operazioni taglia, copia e incolla applicate all'app. Ad esempio, un utente potrebbe usare la finestra di dialogo per il caricamento dei file per caricare una schermata dei dati dell'app.
+- Le app iOS che includono una finestra di dialogo per il caricamento dei file possono consentire agli utenti di eludere le restrizioni per le operazioni taglia, copia e incolla applicate all'app. Ad esempio, un utente potrebbe usare la finestra di dialogo per il caricamento dei file per caricare una schermata dei dati dell'app.
 
--   Quando si monitora la cartella dei documenti nel dispositivo dall'app di cui è stato eseguito il wrapping, potrebbe essere visualizzata una cartella denominata .msftintuneapplauncher. Se questo file viene modificato o eliminato, ciò potrebbe influire sul corretto funzionamento delle app con restrizioni.
+- Quando si monitora la cartella dei documenti nel dispositivo dall'app di cui è stato eseguito il wrapping, potrebbe essere visualizzata una cartella denominata .msftintuneapplauncher. Se questo file viene modificato o eliminato, ciò potrebbe influire sul corretto funzionamento delle app con restrizioni.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Strumento di wrapping delle app di Intune per iOS con tecnologia mVPN MDX di Citrix
 Questa funzionalità è un'integrazione con il wrapper di app Citrix MDX per iOS. L'integrazione è semplicemente un flag della riga di comando facoltativo aggiuntivo, `-citrix` per gli strumenti di wrapping delle app di Intune generali.
@@ -418,11 +426,13 @@ Per usare il flag `-citrix` è necessario installare anche il [wrapper di app Ci
 Eseguire semplicemente il comando di wrapping delle app generale con il flag `-citrix` aggiunto. Il flag `-citrix` attualmente non accetta alcun argomento.
 
 **Formato di utilizzo**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Comando di esempio**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -442,5 +452,5 @@ Usare questa procedura per ottenere i log per le applicazioni di cui è stato es
 ## <a name="see-also"></a>Vedere anche
 
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)
-- [Domande, problemi e soluzioni con i criteri dei dispositivi e i profili comuni](device-profile-troubleshoot.md)
+- [Domande frequenti, problemi e soluzioni con i criteri e i profili dei dispositivi](device-profile-troubleshoot.md)
 - [Usare l'SDK per abilitare le app per la gestione delle applicazioni mobili](app-sdk.md)

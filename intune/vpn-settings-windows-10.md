@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/12/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b71bc2ea893199b83de5fd1480dae5630c3edfd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a35ebcf6ecbaaa746a6da98c5bd5c13ca9a7b130
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565664"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302758"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Impostazioni dei dispositivi Windows 10 e Windows Holographic per l'aggiunta di connessioni VPN con Intune
 
@@ -68,29 +67,29 @@ A seconda delle impostazioni selezionate, è possibile che non tutti i valori si
   - **PPTP**
 
   Quando si sceglie un tipo di connessione VPN, potrebbe essere richieste anche le impostazioni seguenti:  
-    - **Always On**: scegliere **Abilita** per connettersi automaticamente alla connessione VPN quando si verificano gli eventi seguenti: 
-      - Gli utenti accedono ai propri dispositivi
-      - La rete del dispositivo cambia
-      - Lo schermo del dispositivo si riattiva dopo essere stato disattivato 
+  - **Always On**: scegliere **Abilita** per connettersi automaticamente alla connessione VPN quando si verificano gli eventi seguenti: 
+    - Gli utenti accedono ai propri dispositivi
+    - La rete del dispositivo cambia
+    - Lo schermo del dispositivo si riattiva dopo essere stato disattivato 
 
-    - **Metodo di autenticazione**: selezionare come si vuole eseguire l'autenticazione degli utenti nel server VPN. L'uso dei **certificati** offre funzionalità avanzate, ad esempio un'esperienza completamente automatica, VPN su richiesta e VPN per singole app.
-    - **Ricorda le credenziali a ogni accesso**: scegliere di memorizzare nella cache le credenziali di autenticazione.
-    - **XML personalizzato**: immettere i comandi XML personalizzati per la configurazione della connessione VPN.
-    - **XML EAP**: immettere i comandi XML EAP per la configurazione della connessione VPN
+  - **Metodo di autenticazione**: selezionare come si vuole eseguire l'autenticazione degli utenti nel server VPN. L'uso dei **certificati** offre funzionalità avanzate, ad esempio un'esperienza completamente automatica, VPN su richiesta e VPN per singole app.
+  - **Ricorda le credenziali a ogni accesso**: scegliere di memorizzare nella cache le credenziali di autenticazione.
+  - **XML personalizzato**: immettere i comandi XML personalizzati per la configurazione della connessione VPN.
+  - **XML EAP**: immettere i comandi XML EAP per la configurazione della connessione VPN
 
-#### <a name="pulse-secure-example"></a>Esempio di Pulse Secure
+### <a name="pulse-secure-example"></a>Esempio di Pulse Secure
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### <a name="f5-edge-client-example"></a>Esempio di F5 Edge Client
+### <a name="f5-edge-client-example"></a>Esempio di F5 Edge Client
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### <a name="sonicwall-mobile-connect-example"></a>Esempio di SonicWALL Mobile Connect
+### <a name="sonicwall-mobile-connect-example"></a>Esempio di SonicWALL Mobile Connect
 **Gruppo o dominio di accesso**: questa proprietà non può essere impostata nel profilo VPN. Mobile Connect analizza questo valore quando nome utente e dominio vengono immessi nel formato `username@domain` o `DOMAIN\username`.
 
 Esempio:
@@ -99,13 +98,13 @@ Esempio:
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### <a name="checkpoint-mobile-vpn-example"></a>Esempio di VPN CheckPoint Mobile
+### <a name="checkpoint-mobile-vpn-example"></a>Esempio di VPN CheckPoint Mobile
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### <a name="writing-custom-xml"></a>Scrittura di XML personalizzato
+### <a name="writing-custom-xml"></a>Scrittura di XML personalizzato
 Per altre informazioni su come scrivere comandi XML personalizzati, vedere la documentazione della VPN fornita dai diversi produttori.
 
 Per altre informazioni sulla creazione di XML EAP personalizzato, vedere [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration) (Configurazione EAP).
@@ -143,7 +142,7 @@ Per altre informazioni sulla creazione di XML EAP personalizzato, vedere [EAP co
 
   ![Selezionare i tre puntini e fare clic e trascinare per spostare il suffisso DNS](./media/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Assegnare un nome regole di tabella (NRPT) dei criteri di risoluzione**: definiscono le regole di criteri risoluzione nomi (NRPT) nella tabella come DNS risolve i nomi quando si è connessi alla VPN. Dopo che è stata stabilita la connessione VPN, scegliere i server DNS usati dalla connessione.
+- **Regole della tabella dei criteri di risoluzione**dei nomi: le regole della tabella dei criteri di risoluzione dei nomi definiscono il modo in cui DNS risolve i nomi quando si è connessi alla VPN. Dopo che è stata stabilita la connessione VPN, scegliere i server DNS usati dalla connessione.
 
   È possibile aggiungere alla tabella regole che includono il dominio, il server DNS, il proxy e altri dettagli per la risoluzione del dominio immesso. La connessione VPN usa queste regole quando gli utenti si connettono ai domini immessi.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885059"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239440"
 ---
 # <a name="review-client-app-protection-logs"></a>Esaminare i log di protezione delle app client
 
@@ -31,7 +31,7 @@ In questo articolo vengono descritte le impostazioni che è possibile esaminare 
 Il processo per abilitare e raccogliere i log varia a seconda della piattaforma:
 - **Dispositivi Android**: utilizzare il *Portale aziendale*. Vedere [Inviare i log al supporto tecnico dell'azienda tramite posta elettronica](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
 - **Dispositivi iOS**: usare un Managed Browser oppure *Microsoft Edge* per raccogliere i log. Per informazioni dettagliate, vedere il blog del team di supporto di Intune [Nuova console di diagnostica di Intune per l'invio di log in Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
-- **Dispositivi Windows 10**: utilizzare *MDMDiag* e i registri eventi. Vedere [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnosi degli errori MDM in Windows 10) e il blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (Risoluzione dei problemi dei criteri di Intune in Windows 10)
+- **Dispositivi Windows 10**: utilizzare *MDMDiag* e i registri eventi. Vedere [Diagnosticare gli errori di MDM in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) nel contenuto di gestione del client Windows e il blog [Troubleshooting Windows 10 Intune Policy Failures](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (Risoluzione dei problemi dei criteri di Intune in Windows 10).
 
 
 La tabella seguente mostra il nome e una spiegazione delle impostazioni registrate nel log.

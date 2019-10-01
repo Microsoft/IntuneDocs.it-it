@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3bcfad3937b4ab6f533cd7ac915a964f2551be45
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565282"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71302295"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi Windows Phone 8.1 in Microsoft Intune
 
@@ -32,30 +31,30 @@ Questo articolo illustra le impostazioni relative alle restrizioni dei dispositi
 
 ## <a name="general"></a>Generale
 
--   **Fotocamera** - Abilita o blocca la fotocamera del dispositivo.
--   **Copia e incolla** - Abilita o blocca la funzionalità copia e incolla nel dispositivo.
--   **Archivi rimovibili** - Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.
--   **Georilevazione** - Consente al dispositivo di usare le informazioni sulla posizione geografica.
--   **Account Microsoft** - Consente o impedisce all'utente di collegare un account Microsoft al dispositivo.
--   **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come file di immagine.
--   **Invio dati di diagnostica** - Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.
--   **Sincronizzazione degli account di posta elettronica personalizzati** - Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.
+- **Fotocamera** - Abilita o blocca la fotocamera del dispositivo.
+- **Copia e incolla** - Abilita o blocca la funzionalità copia e incolla nel dispositivo.
+- **Archivi rimovibili** - Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.
+- **Georilevazione** - Consente al dispositivo di usare le informazioni sulla posizione geografica.
+- **Account Microsoft** - Consente o impedisce all'utente di collegare un account Microsoft al dispositivo.
+- **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come file di immagine.
+- **Invio dati di diagnostica** - Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.
+- **Sincronizzazione degli account di posta elettronica personalizzati** - Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.
 
 ## <a name="password"></a>Password
 
--   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
-    -   **Tipo di password richiesto** - Specifica il tipo di password che viene richiesto, ad esempio alfanumerico o solo numerico.
-    -   **Lunghezza minima password** - Specifica il numero minimo di caratteri complessi richiesti per la password.
-    -   **Password semplici** - Specifica la possibilità di usare password semplici, ad esempio "0000" e "1234".
-    -   **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.
-    -   **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.
-    -   **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
-    -   **Impedisci riutilizzo delle password precedenti** - Specifica quante password utilizzate in precedenza devono essere ricordate.
--   **Crittografia** - Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.
+- **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
+  - **Tipo di password richiesto** - Specifica il tipo di password che viene richiesto, ad esempio alfanumerico o solo numerico.
+  - **Lunghezza minima password** - Specifica il numero minimo di caratteri complessi richiesti per la password.
+  - **Password semplici** - Specifica la possibilità di usare password semplici, ad esempio "0000" e "1234".
+  - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.
+  - **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.
+  - **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
+  - **Impedisci riutilizzo delle password precedenti** - Specifica quante password utilizzate in precedenza devono essere ricordate.
+- **Crittografia** - Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.
 
 ## <a name="app-store"></a>App Store
 
--   **App Store** - Consente all'utente di connettersi all'App Store dal dispositivo.
+- **App Store** - Consente all'utente di connettersi all'App Store dal dispositivo.
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
@@ -80,18 +79,18 @@ Esempio: cercare per l'app Skype in Store. L'URL usato è `http://www.windowspho
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-È possibile anche fare clic su **Importa** per popolare l'elenco da un file CSV nel formato <*app url*>, <*app name*>, <app publisher> o fare clic su **Esporta** per creare un file CSV che abbia come contenuto l'elenco delle app con restrizioni nello stesso formato.
+È possibile anche fare clic su **Importa** per popolare l'elenco da un file CSV nel formato <*url app*>, <*nome app*>, <*autore app*> o fare clic su **Esporta** per creare un file CSV che abbia come contenuto l'elenco delle app con restrizioni nello stesso formato.
 
 
 ## <a name="browser"></a>Browser
 
--   **Browser Web** - Abilita o blocca il Web browser integrato nei dispositivi.
+- **Browser Web** - Abilita o blocca il Web browser integrato nei dispositivi.
 
 ## <a name="cellular-and-connectivity"></a>Rete cellulare e connettività
 
--   **Wi-Fi** - Abilita o disabilita le funzionalità Wi-Fi del dispositivo.
--   **Tethering Wi-Fi** - Abilita l'uso del tethering Wi-Fi nel dispositivo.
--   **Connetti automaticamente a hotspot Wi-Fi** - Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni d'uso.
--   **Reporting hotspot Wi-Fi** - Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.
--   **NFC** - Abilita o disabilita le operazioni che usano Near Field Communication sui dispositivi che la supportano.
--   **Bluetooth** - Abilita o disabilita la funzione Bluetooth del dispositivo.
+- **Wi-Fi** - Abilita o disabilita le funzionalità Wi-Fi del dispositivo.
+- **Tethering Wi-Fi** - Abilita l'uso del tethering Wi-Fi nel dispositivo.
+- **Connetti automaticamente a hotspot Wi-Fi** - Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni d'uso.
+- **Reporting hotspot Wi-Fi** - Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.
+- **NFC** - Abilita o disabilita le operazioni che usano Near Field Communication sui dispositivi che la supportano.
+- **Bluetooth** - Abilita o disabilita la funzione Bluetooth del dispositivo.

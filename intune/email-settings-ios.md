@@ -1,11 +1,11 @@
 ---
-title: Impostazioni di posta elettronica per dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
+title: Configurare impostazioni di posta elettronica per dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
 description: Vedere l'elenco di tutte le impostazioni di posta elettronica che è possibile configurare e aggiungere ai dispositivi iOS in Microsoft Intune, incluso l'uso dei server Exchange e il recupero degli attributi da Azure Active Directory. È anche possibile abilitare SSL, autenticare gli utenti con certificati o nome utente/password e sincronizzare posta elettronica nei dispositivi iOS usando i profili di configurazione dispositivo in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8fa0a7edd1782cd3eae725e6adf0af867e0f3727
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042107"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301933"
 ---
-# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Impostazioni del profilo di posta elettronica per dispositivi iOS con Intune
+# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Aggiungere impostazioni di posta elettronica per dispositivi iOS in Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In Microsoft Intune è possibile creare e configurare la posta elettronica per connettersi a un server di posta elettronica, scegliere come si autenticano gli utenti, usare S/MIME per la crittografia e altro ancora.
 
@@ -29,7 +31,10 @@ Questo articolo elenca e descrive tutte le impostazioni di posta elettronica dis
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-[Creare un profilo di configurazione del dispositivo](email-settings-configure.md#create-a-device-profile).
+[Creare un profilo di configurazione del dispositivo](email-settings-configure.md).
+
+> [!NOTE]
+> Queste impostazioni sono disponibili per tutti i tipi di registrazione. Per altre informazioni sui tipi di registrazione, vedere [registrazione iOS](ios-enroll.md).
 
 ## <a name="email-settings"></a>Impostazioni di posta elettronica
 
@@ -98,4 +103,4 @@ Questo articolo elenca e descrive tutte le impostazioni di posta elettronica dis
 
 Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-Configurare le impostazioni di posta elettronica nei dispositivi [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md) e [Windows Phone 8.1](email-settings-windows-phone-8-1.md).
+Configurare le impostazioni di posta elettronica nei dispositivi [Android](email-settings-android.md), [Android Enterprise](email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md)e [Windows Phone 8,1](email-settings-windows-phone-8-1.md) .
