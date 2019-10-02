@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 869491098afc9e68ea1bbcb21bf6e7720e80564c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587417"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303210"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -37,15 +36,15 @@ ms.locfileid: "59587417"
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Elenco delle app consentite ed escluse
 
--   **App protette:** app che devono essere conformi ai criteri.
+- **App protette:** app che devono essere conformi ai criteri.
 
--   **App escluse:** app escluse dai criteri. Possono accedere ai dati aziendali senza restrizioni.
+- **App escluse:** app escluse dai criteri. Possono accedere ai dati aziendali senza restrizioni.
 
 ### <a name="types-of-apps"></a>Tipi di app
 
--   **App consigliate:** elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri.
--   **App Store:** è possibile aggiungere qualsiasi app da Windows Store ai criteri.
--   **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale (ad esempio con estensione exe e dll) ai criteri
+- **App consigliate:** elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri.
+- **App Store:** è possibile aggiungere qualsiasi app da Windows Store ai criteri.
+- **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale (ad esempio con estensione exe e dll) ai criteri
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -56,8 +55,8 @@ Configurare il provider MAM prima di creare un criterio di protezione dell'app d
 
 È inoltre necessario avere la licenza e l'aggiornamento seguenti:
 
--   Una licenza di [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
--   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- Una licenza di [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
+- [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -81,7 +80,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
     - **Descrizione:** (facoltativo) digitare una descrizione.
     - **Piattaforma:** scegliere **Windows 10** come piattaforma supportata per i criteri di protezione delle app.
     - **Stato registrazione:** scegliere **Senza registrazione** come stato di registrazione per i criteri.
-7.  Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel pannello **Criteri di protezione delle app**.
+7. Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel pannello **Criteri di protezione delle app**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Per aggiungere app consigliate all'elenco delle app protette
 
@@ -150,11 +149,11 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 ### <a name="add-a-protection-mode"></a>Aggiungere una modalità di protezione
 
-1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
+1. Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
 
     ![Screenshot del riquadro della modalità di apprendimento](./media/learning-mode-sc1.png)
 
-1.  Selezionare un'impostazione e quindi scegliere **Salva**.
+1. Selezionare un'impostazione e quindi scegliere **Salva**.
 
 ### <a name="use-wip-learning"></a>Usare Apprendimento WIP
 
@@ -188,11 +187,11 @@ Oltre a impostare l'opzione che **consente all'indicizzatore di ricerca di Windo
 
 Dopo aver creato i criteri di protezione delle app WIP, è necessario distribuirli all'organizzazione tramite MAM.
 
-1.  Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere**Gruppi utenti** > **Aggiungi gruppo utenti**.
+1. Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere**Gruppi utenti** > **Aggiungi gruppo utenti**.
 
     Nel pannello **Aggiungi un gruppo di utenti** verrà visualizzato un elenco dei gruppi di utenti composto da tutti i gruppi di sicurezza in Azure Active Directory.
 
-2.  Scegliere il gruppo a cui si vuole applicare il criterio e quindi scegliere **Seleziona** per distribuire il criterio.
+2. Scegliere il gruppo a cui si vuole applicare il criterio e quindi scegliere **Seleziona** per distribuire il criterio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

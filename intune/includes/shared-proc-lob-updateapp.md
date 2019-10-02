@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 66abce3b3dd2adc645695c9aab5fe6729713bbdc
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "71301812"
+---
 
 1. Accedere al [portale di Azure](https://portal.azure.com).  
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.  
