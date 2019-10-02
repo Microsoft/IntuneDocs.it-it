@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279905"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726401"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Riduzione del supporto per l'amministratore di dispositivi Android 
-Amministratore di dispositivi Android, a volte denominata gestione Android "legacy" e resa disponibile con Android 2.2, indica una modalità di gestione dei dispositivi Android. Funzionalità di gestione migliorate, tuttavia, sono ora disponibili in [Android Enterprise](../connect-intune-android-enterprise.md) (con la versione Android 5.0). Con l'obiettivo di passare a una gestione dei dispositivi moderna, più ricca e sicura, Google sta riducendo il supporto per l'amministratore di dispositivi nelle nuove versioni di Android.
+Amministratore di dispositivi Android, a volte denominata gestione Android "legacy" e resa disponibile con Android 2.2, indica una modalità di gestione dei dispositivi Android. Funzionalità di gestione migliorate, tuttavia, sono ora disponibili in [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (con la versione Android 5.0). Con l'obiettivo di passare a una gestione dei dispositivi moderna, più ricca e sicura, Google sta riducendo il supporto per l'amministratore di dispositivi nelle nuove versioni di Android.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
 Queste modifiche di Google influiranno sugli utenti di Intune nei modi seguenti: 
@@ -67,10 +67,11 @@ Non è necessario intraprendere alcuna azione, ma è possibile valutare l'eventu
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Modifica prevista: Nuove impostazioni per gli aggiornamenti di Windows in Intune <!-- 4464404 -->
-A partire dalla versione di agosto per il servizio Intune o 1908, verranno aggiunte nuove "impostazione di scadenza" che è possibile configurare al posto delle impostazioni "Consenti all'utente di riavviare (riavvio in caso di occupato)". È prevista la disabilitazione delle impostazioni di riavvio in caso di occupato nell'interfaccia utente nella versione 1909 o nell'aggiornamento di settembre e quindi la rimozione completa di queste impostazioni dalla console verso la fine di ottobre. 
+A partire dalla versione di agosto per il servizio Intune o 1908, verranno aggiunte nuove "impostazione di scadenza" che è possibile configurare al posto delle impostazioni "Consenti all'utente di riavviare (riavvio in caso di occupato)". È prevista la disabilitazione delle impostazioni di riavvio in caso di occupato nell'interfaccia utente nella versione 1909 o nell'aggiornamento di settembre e quindi la rimozione completa di queste impostazioni dalla console verso la fine di ottobre.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Se si gestiscono i dispositivi Windows 10 nell'ambiente: 
+Se si gestiscono i dispositivi Windows 10 nell'ambiente:
+
 - Con l'aggiornamento di Intune di agosto o la versione 1908 le nuove impostazioni di scadenza verranno visualizzate nella console oltre alle impostazioni di riavvio in caso di occupato precedenti.
 - Quando vengono configurate entrambe le impostazioni precedenti e nuove, i valori delle impostazioni di scadenza avranno priorità rispetto ai valori dell'impostazione di riavvio in caso di occupato.
 - Le impostazioni di scadenza sostituiranno l'opzione "Consenti all'utente di riavviare (riavvio in caso di occupato)" nella console nell'aggiornamento 1910.
@@ -78,7 +79,7 @@ Se si gestiscono i dispositivi Windows 10 nell'ambiente:
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Come prepararsi a questo cambiamento?
 Iniziare a usare le impostazioni di scadenza nella versione 1908, configurandole con i valori desiderati. Dopo averle configurate, è possibile impostare l'opzione di riavvio in caso di occupato su "Non configurato" per prepararsi per la rimozione di queste impostazioni dalla console in ottobre.
 
-Se necessario, aggiornare la documentazione e gli eventuali script di automazione. 
+Se necessario, aggiornare la documentazione e gli eventuali script di automazione.
 
 Verranno pubblicati aggiornamenti e un promemoria nel centro messaggi prima di rimuovere le impostazioni di riavvio in caso di occupato.
 
@@ -86,12 +87,13 @@ Verranno pubblicati aggiornamenti e un promemoria nel centro messaggi prima di r
 In ottobre Intune passerà a supportare Android 5.x (Lollipop) e versioni successive. Aggiornare le app con wrapping con la versione più recente di Intune App SDK e aggiornare i dispositivi.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Questa modifica non interessa coloro che non usano o non prevedono di usare l'SDK o i criteri di protezione delle app per Android. Coloro che usano Intune App SDK devono invece assicurarsi di eseguire l'aggiornamento alla versione più recente e anche di aggiornare i dispositivi alla versione Android 5.x e successive. Se l'aggiornamento non viene eseguito, le app non riceveranno gli aggiornamenti e la qualità dell'esperienza d'uso andrà nel tempo a deteriorarsi. 
+Questa modifica non interessa coloro che non usano o non prevedono di usare l'SDK o i criteri di protezione delle app per Android. Coloro che usano Intune App SDK devono invece assicurarsi di eseguire l'aggiornamento alla versione più recente e anche di aggiornare i dispositivi alla versione Android 5.x e successive. Se l'aggiornamento non viene eseguito, le app non riceveranno gli aggiornamenti e la qualità dell'esperienza d'uso andrà nel tempo a deteriorarsi.
 
 Di seguito è riportato un elenco di dispositivi comuni registrati in Intune che eseguono Android versione 4.x. Se si è in possesso di uno di questi dispositivi, adottare le misure appropriate per assicurarsi che il dispositivo supporterà Android versione 5.0 o successiva oppure che sarà sostituito da un dispositivo che supporta Android versione 5.0 o successiva. L'elenco non è esaustivo di tutti i dispositivi che potrebbe essere necessario valutare:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Di seguito è riportato un elenco di dispositivi comuni registrati in Intune che
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 Eseguire il wrapping delle app con la versione più recente di Intune App SDK. È anche possibile configurare l'impostazione di avvio condizionale "Richiedi una versione minima del sistema operativo (solo avviso)" in modo da informare gli utenti finali sui dispositivi personali da aggiornare.
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Modifica prevista per Intune: fine del supporto prossima per Windows 7 <!-- 3042987 -->
 Come indicato nelle comunicazioni MC148476 (pubblicata lo scorso settembre 2018) e MC176794 di marzo 2019, si avvicina la fine del supporto esteso per Windows 7, prevista per il 14 gennaio 2020. In tale data Intune ritirerà il supporto per i dispositivi che eseguono Windows 7, per concentrare gli investimenti sul supporto di tecnologie più recenti e offrire esperienze nuove e ottimali agli utenti. Dopo tale data l'assistenza tecnica e gli aggiornamenti automatici che consentono di proteggere i PC con Windows 7 non saranno più disponibili tramite Intune. Microsoft consiglia vivamente di passare a Windows 10 prima di gennaio 2020, per evitare uno scenario in cui un servizio o un supporto necessario non è più disponibile. Altre informazioni sul ciclo di vita di supporto di Windows sono disponibili [qui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).

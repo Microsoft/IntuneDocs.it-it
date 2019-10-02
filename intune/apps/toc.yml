@@ -1,0 +1,202 @@
+- name: Gestire le app
+  href: index.yml
+- name: Panoramica
+  expanded: true
+  items:
+    - name: Panoramica di gestione delle app
+      href: app-management.md
+- name: Guida introduttiva
+  items:
+    - name: Aggiungere e assegnare un'app
+      href: quickstart-add-assign-app.md
+    - name: Creare e assegnare un criterio di protezione delle app
+      href: quickstart-create-assign-app-policy.md
+- name: Esercitazioni
+  items:
+    - name: Proteggere la posta elettronica nei dispositivi non gestiti
+      href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
+    - name: Configurare Slack per l'uso di Intune
+      href: tutorial-configure-slack-enterprise-grid.md
+- name: Concetti
+  items:
+    - name: Ciclo di vita dell'app
+      href: app-lifecycle.md
+    - name: Criteri di protezione delle app e profili di lavoro (Android)
+      href: android-deployment-scenarios-app-protection-work-profiles.md
+      displayName: app-we; without; without enrollment
+    - name: DOMANDE FREQUENTI SU MAM
+      href: mam-faq.md
+- name: Guide pratiche
+  items:
+    - name: Aggiungere app
+      items:
+        - name: Panoramica dell'aggiunta di app
+          href: apps-add.md
+        - name: App protette di Intune
+          href: apps-supported-intune-apps.md
+        - name: App archiviate
+          items:
+            - name: App di Android Store
+              href: store-apps-android.md
+            - name: App di iOS Store
+              href: store-apps-ios.md
+            - name: App di Windows Phone 8.1 Store
+              href: store-apps-windows-phone-8-1.md
+            - name: App di Microsoft Store
+              items:
+                - name: App di Windows
+                  href: store-apps-windows.md
+                - name: App Portale aziendale
+                  href: store-apps-company-portal-app.md
+            - name: App Google Play gestite
+              href: apps-add-android-for-work.md
+            - name: App di Office 365 per Windows 10
+              href: apps-add-office365.md
+            - name: App di Office 365 per macOS
+              href: apps-add-office365-macos.md
+        - name: App Web
+          href: web-app.md
+          displayName: web; web link; weblink; web-link
+        - name: App predefinite
+          href: apps-add-built-in.md
+        - name: Compilare l'app (LOB)
+          items:
+            - name: App line-of-business Android
+              href: lob-apps-android.md
+            - name: App line-of-business iOS
+              href: lob-apps-ios.md
+            - name: Applicazioni line-of-business di Windows Phone
+              href: lob-apps-windows-phone.md
+            - name: App line-of-business di Windows
+              href: lob-apps-windows.md
+            - name: Trasferire localmente le app LOB di Windows
+              href: app-sideload-windows.md
+            - name: App line-of-business di macOS
+              href: lob-apps-macos.md
+        - name: App di sistema Android Enterprise
+          href: apps-ae-system.md
+        - name: Gestione delle app Win32
+          href: apps-win32-app-management.md
+        - name: Script PowerShell
+          href: intune-management-extension.md
+    - name: Assegnare le app
+      items:
+        - name: Assegnare app ai gruppi
+          href: apps-deploy.md
+          displayName: app assignment; assignment
+        - name: Includere ed escludere app
+          href: apps-inc-exl-assignments.md
+          displayName: app assignment
+        - name: Distribuisci ecco le caratteristiche delle app di Windows 10
+          href: apps-windows-10-app-deploy.md
+        - name: Distribuire le app agli enti pubblici
+          href: apps-deploy-gcc-dod.md
+    - name: Eseguire il monitoraggio delle app
+      href: apps-monitor.md
+    - name: App individuate
+      href: app-discovered-apps.md
+    - name: Configurare le app
+      items:
+        - name: Criteri di configurazione dell'app
+          href: app-configuration-policies-overview.md
+          displayName: App configuration policy; configuration policy
+        - name: iOS dispositivi gestiti
+          href: app-configuration-policies-use-ios.md
+        - name: Android dispositivi gestiti
+          href: app-configuration-policies-use-android.md
+        - name: Configurare l'app Managed Home Screen
+          href: app-configuration-managed-home-screen-app.md
+        - name: App gestite
+          href: app-configuration-policies-managed-app.md
+        - name: Usare i profili di provisioning delle app iOS
+          href: app-provisioning-profile-ios.md
+        - name: App e libri acquistati con Volume Purchase Program
+          items:
+            - name: Gestire le app VPP e i libri
+              href: vpp-apps.md
+              displayName: vpp; volume purchased
+            - name: App VPP iOS
+              href: vpp-apps-ios.md
+            - name: App di Microsoft Store per le aziende
+              href: windows-store-for-business.md
+            - name: eBook iOS
+              href: vpp-ebooks-ios.md
+        - name: Configurare il Portale aziendale
+          href: company-portal-app.md
+        - name: Configurare Managed Browser
+          href: app-configuration-managed-browser.md
+        - name: Configurare Microsoft Edge
+          href: manage-microsoft-edge.md
+        - name: Configurare Microsoft Launcher
+          href: configure-microsoft-launcher.md
+        - name: Configurare Outlook
+          href: app-configuration-policies-outlook.md
+    - name: Proteggere le applicazioni
+      items:
+        - name: Cancellare le app in modo selettivo
+          href: apps-selective-wipe.md
+        - name: Usare i criteri di protezione delle app
+          items:
+            - name: Panoramica dei criteri di protezione app
+              href: app-protection-policy.md
+              displayName: app; protection; policy
+            - name: Creare criteri di protezione delle app
+              items:
+                - name: Impostazioni generali
+                  href: app-protection-policies.md
+                  displayName: dlp; data loss prevention
+                - name: Impostazioni Android
+                  href: app-protection-policy-settings-android.md
+                - name: Impostazioni iOS
+                  href: app-protection-policy-settings-ios.md
+                - name: Azioni di accesso
+                  href: app-protection-policies-access-actions.md
+                - name: Eccezioni per il trasferimento dei dati
+                  href: app-protection-policies-exception.md
+            - name: Convalidare i criteri di protezione delle app
+              href: app-protection-policies-validate.md
+            - name: Recapito dei criteri di protezione dell'app
+              href: app-protection-policy-delivery.md
+            - name: Protezione delle estensioni delle app
+              href: app-protection-policy-extensions.md
+            - name: Monitorare lo stato dell'utente con protezione delle app
+              href: app-protection-policies-monitor.md
+            - name: Prepararsi per i criteri di protezione delle app WIP
+              href: app-protection-policies-configure-windows-10.md
+            - name: Creare e assegnare i criteri di protezione delle app WIP
+              href: windows-information-protection-policy-create.md
+            - name: Gestire il trasferimento di dati tra app iOS
+              href: data-transfer-between-apps-manage-ios.md
+    - name: Risoluzione dei problemi
+      items:
+        - name: Aiutare gli utenti nella risoluzione dei problemi
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+        - name: Risolvere i problemi di installazione delle app
+          href: troubleshoot-app-install.md
+        - name: Risolvere i problemi relativi alla gestione di applicazioni mobili
+          href: troubleshoot-mam.md
+        - name: Esaminare i log di protezione delle app
+          href: app-protection-policy-settings-log.md
+- name: Riferimento
+  items:
+    - name: Proteggere le app con Intune App SDK
+      href: ../developer/app-sdk.md
+      items:
+        - name: Introduzione a Intune App SDK
+          href: ../developer/app-sdk-get-started.md
+        - name: Preparare app line-of-business per la protezione delle app
+          href: ../developer/apps-prepare-mobile-application-management.md
+        - name: Strumento di wrapping delle app per iOS
+          href: ../developer/app-wrapper-prepare-ios.md
+        - name: Intune App SDK per iOS
+          href: ../developer/app-sdk-ios.md
+        - name: Strumento di wrapping delle app per Android
+          href: ../developer/app-wrapper-prepare-android.md
+          displayName: dex
+        - name: Intune App SDK per Android
+          href: ../developer/app-sdk-android.md
+          items:
+            - name: Guida al testing di Intune App SDK per Android
+              href: ../developer/app-sdk-android-testing-guide.md
+        - name: Binding Xamarin per Intune App SDK
+          href: ../developer/app-sdk-xamarin.md
