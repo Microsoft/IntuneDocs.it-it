@@ -1,0 +1,79 @@
+- name: Istruzioni per sviluppatori
+  href: index.yml
+- name: Guide pratiche
+  expanded: true
+  items:
+    - name: Proteggere le app con Intune App SDK
+      href: app-sdk.md
+      items:
+        - name: Introduzione a Intune App SDK
+          href: app-sdk-get-started.md
+        - name: Preparare app line-of-business per la protezione delle app
+          href: apps-prepare-mobile-application-management.md
+        - name: Strumento di wrapping delle app per iOS
+          href: app-wrapper-prepare-ios.md
+        - name: Intune App SDK per iOS
+          href: app-sdk-ios.md
+        - name: Strumento di wrapping delle app per Android
+          href: app-wrapper-prepare-android.md
+          displayName: dex
+        - name: Intune App SDK per Android
+          href: app-sdk-android.md
+          items:
+            - name: Guida al testing di Intune App SDK per Android
+              href: app-sdk-android-testing-guide.md
+        - name: Binding Xamarin per Intune App SDK
+          href: app-sdk-xamarin.md
+    - name: Usare il data warehouse di Intune
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Registro modifiche per il data warehouse
+          href: reports-changelog.md
+        - name: Connettersi al data warehouse con Power BI
+          href: reports-proc-get-a-link-powerbi.md
+        - name: Creare un report dal feed OData con Power BI
+          href: reports-proc-create-with-odata.md
+    - name: Inviare report usando l'API data warehouse di Intune
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: Recuperare dati dall'API data warehouse con un client REST
+          href: reports-proc-data-rest.md
+        - name: Endpoint dell'API data warehouse
+          href: reports-api-url.md
+        - name: Autenticazione OAuth del data warehouse
+          href: data-warehouse-app-only-auth.md
+        - name: Modello di dati del data warehouse
+          href: reports-ref-data-model.md
+          items:
+            - name: Raccolte del data warehouse
+              href: intune-data-warehouse-collections.md
+            - name: Raccolte del data warehouse (beta)
+              items:
+                - name: Rappresentazione della durata degli utenti nel data warehouse di Intune
+                  href: reports-ref-user-timeline.md
+                - name: Informazioni di riferimento per le entità della categoria Application
+                  href: reports-ref-application.md
+                - name: Informazioni di riferimento per l'entità Date
+                  href: reports-ref-date.md
+                - name: Informazioni di riferimento per le entità della categoria Devices
+                  href: reports-ref-devices.md
+                - name: Informazioni di riferimento per l'entità dell'estensione di gestione di Intune
+                  href: reports-ref-intunemanagementextension.md
+                - name: Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
+                  href: reports-ref-mobile-app-management.md
+                - name: Informazioni di riferimento per le entità della categoria Policy
+                  href: reports-ref-policy.md
+                - name: Informazioni di riferimento per l'entità dell'associazione utente-dispositivo
+                  href: reports-ref-user-device.md
+                - name: Informazioni di riferimento per l'entità User
+                  href: reports-ref-user.md
+        - name: Spostare i dati dell'account del data warehouse di Intune
+          href: data-warehouse-account-move.md
+    - name: Accedere alle API di Intune in Microsoft Graph
+      items:
+        - name: Usare Azure AD per accedere alle API di Intune in Microsoft Graph
+          href: intune-graph-apis.md
+        - name: Informazioni di riferimento sulle API di Intune
+          href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: API Graph usate per configurare i dispositivi
+          href: graph-apis-used-by-intune-device-configuration-windows.md
