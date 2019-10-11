@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302623"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912785"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Abilitare la registrazione automatica di Windows 10
 
 La registrazione automatica consente agli utenti di registrare i propri dispositivi Windows 10 in Intune. Per eseguire la registrazione, gli utenti aggiungono l'account aziendale ai propri dispositivi personali oppure aggiungono i dispositivi di proprietà dell'azienda ad Azure Active Directory. Il dispositivo esegue la registrazione e accede ad Azure Active Directory in background. Dopo la registrazione, il dispositivo viene gestito con Intune.
 
 **Prerequisiti**
+
 - Sottoscrizione di Azure Active Directory Premium ([sottoscrizione di prova](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Sottoscrizione di Microsoft Intune
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurare la registrazione MDM automatica
 
 1. Accedere al [portale di Azure](https://portal.azure.com) e selezionare **Azure Active Directory**.
 
-   ![Schermata del portale di Azure](../media/auto-enroll-azure-main.png)
+   ![Schermata del portale di Azure](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. Selezionare **Servizi Mobility (MDM e MAM)** .
 
-   ![Schermata del portale di Azure](../media/auto-enroll-mdm.png)
+   ![Schermata del portale di Azure](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. Selezionare **Microsoft Intune**.
 
-   ![Schermata del portale di Azure](../media/auto-enroll-intune.png)
+   ![Schermata del portale di Azure](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. Configurare **Ambito utente MDM**. Specificare i dispositivi degli utenti che devono essere gestiti da Microsoft Intune. I dispositivi Windows 10 possono essere registrati automaticamente per la gestione con Microsoft Intune.
 
@@ -43,7 +43,7 @@ La registrazione automatica consente agli utenti di registrare i propri disposit
    > [!NOTE]
    > L'ambito utente MDM deve essere impostato su un gruppo di Azure AD contenente oggetti utente.
 
-   ![Schermata del portale di Azure](../media/auto-enroll-scope.png)
+   ![Schermata del portale di Azure](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. Usare i valori predefiniti per gli URL seguenti:
     - **URL delle condizioni per l'uso di MDM**

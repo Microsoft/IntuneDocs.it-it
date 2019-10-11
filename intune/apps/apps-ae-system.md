@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725166"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960889"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Aggiungere app di sistema Android Enterprise a Microsoft Intune
 
@@ -42,9 +42,13 @@ Seguire questa procedura per aggiungere un'app di sistema Android Enterprise a I
 5. Selezionare **OK**.
 6. Selezionare **Aggiungi**.
 
+> [!NOTE]
+> Sarà necessario collaborare con l'OEM del dispositivo per trovare il nome del pacchetto dell'app che si vuole abilitare o disabilitare.
+
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. 
 
 Le app di sistema Android Enterprise abilitano o disabilitano le app che fanno già parte della piattaforma. Per abilitare un'app, assegnare l'app di sistema come **obbligatoria**. Per disabilitare un'app, assegnare l'app di sistema come **disinstallazione**. Non è possibile assegnare le app di sistema come disponibili per un utente.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

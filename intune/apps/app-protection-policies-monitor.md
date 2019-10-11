@@ -1,7 +1,7 @@
 ---
 title: Come monitorare i criteri di protezione delle app
 titleSuffix: Microsoft Intune
-description: Questo argomento descrive come monitorare lo stato di conformità dei criteri di gestione delle app per dispositivi mobili in Intune.
+description: Questo argomento illustra come monitorare i criteri di protezione delle app in Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -12,24 +12,24 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
-ms.reviewer: joglocke
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fad554ace3b7c8c279161f149bc06854dfaca93d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725517"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830591"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 È possibile monitorare lo stato di conformità dei criteri di gestione delle app per dispositivi mobili (MAM) applicati agli utenti nel riquadro di protezione delle app di Intune nel [portale di Azure](https://portal.azure.com). Sono inoltre disponibili informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità di questi criteri ed eventuali problemi riscontrati dagli utenti.
 
-Lo stato di conformità dei criteri di gestione delle app per dispositivi mobili può essere monitorato in tre posizioni diverse:
+I criteri di protezione delle app possono essere monitorati in tre posizioni diverse:
 - Visualizzazione di riepilogo
 - Visualizzazione dettagliata
 - Visualizzazione Rapporti
@@ -72,10 +72,20 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
 - **Status** (Stato):
   - **Archiviazione eseguita**: i criteri sono stati distribuiti all'utente e l'app è stata usata almeno una volta nel contesto aziendale.
   - **Archiviazione non eseguita**: i criteri sono stati distribuiti all'utente, ma l'app non è stata usata nel contesto aziendale da quel momento.
-- **Ultima sincronizzazione**: data e ora dell'ultima sincronizzazione del dispositivo.
+- **Ultima sincronizzazione**: data dell'ultima sincronizzazione dell'app con Intune. 
 
 >[!NOTE]
-> Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che all'utente non è applicato alcun criterio MAM.
+> La colonna "Ultima sincronizzazione" contiene lo stesso valore sia nel rapporto Stato dell'utente nella console sia nel [report esportabile con estensione csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) Criteri di protezione dell'app. La differenza è un leggero ritardo nella sincronizzazione tra i valori nei 2 rapporti. 
+>
+> L'ora a cui fa riferimento "Ultima sincronizzazione" è l'ultima volta in cui Intune ha rilevato l'istanza dell'app. L'istanza di un'app è una combinazione univoca di app + utente + dispositivo. Quando un utente finale avvia un'app, potrebbe comunicare o meno con il servizio Protezione app di Intune al momento dell'avvio, a seconda dell'ultima archiviazione eseguita. Questa documentazione spiega [i tempi degli intervalli tra tentativi per l'archiviazione dei criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Quindi, se un utente finale non ha usato l'app specifica nell'ultimo intervallo di archiviazione, in genere 30 minuti per l'utilizzo attivo, e avvia l'app, si verifica quanto segue:
+>
+> - Nel report esportabile con estensione csv Criteri di protezione dell'app sarà riportata l'ora più recente in un intervallo compreso tra 1 minuto (solitamente il tempo minimo) e 30 minuti (il contratto di servizio massimo disponibile con l'aggregazione SQL usata dai report di Intune).
+> - Il report Stato dell'utente riporterà immediatamente l'ora più recente.
+>
+> Si consideri ad esempio un determinato utente finale con licenza che avvia un'app protetta alle 12:00:
+> - Se si tratta di un primo accesso, significa che l'utente finale è stato disconnesso prima (utilizzo non attivo), vale a dire che non esiste una registrazione dell'istanza dell'app con Intune. Dopo aver eseguito l'accesso, verrà inviata una nuova registrazione dell'istanza dell'app e verrà immediatamente eseguita un'archiviazione in assenza di problemi di connettività, con gli stessi ritardi di tempo elencati in precedenza per le archiviazioni future. L'ora dell'ultima sincronizzazione sarà quindi 12:00 nel report Stato dell'utente e 12:01 (o 12:30 al più tardi) nel report Criteri di protezione dell'app. 
+> - Se l'app è stata appena avviata, l'ora dell'ultima sincronizzazione segnalata dipenderà dall'ultima archiviazione eseguita.
+
 
 Per visualizzare i report generati per un utente, seguire questa procedura:
 
@@ -88,6 +98,9 @@ Per visualizzare i report generati per un utente, seguire questa procedura:
     ![Schermata dell'opzione Selezionare l'utente nel riquadro Segnalazione app](./media/app-protection-policies-monitor/MAM-reporting-2.png)
 
 3. Selezionare un utente nell'elenco. È possibile visualizzare i dettagli dello stato di conformità per l'utente.
+
+>[!NOTE]
+> Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che all'utente non è applicato alcun criterio MAM.
 
 ### <a name="flagged-users"></a>Utenti contrassegnati
 Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp. Gli utenti con dispositivi contrassegnati dal controllo dell'avvio condizionale "dell'attestazione del dispositivo SafetyNet" vengono indicati qui con il motivo segnalato da Google.

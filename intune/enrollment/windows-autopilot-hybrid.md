@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cf62d3f16951170a826528e94fcb50691be9fc7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dfd651550cd0959efc7b1dddc2a018d5346baa8c
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726648"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999377"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Azure Active Directory ibrido. A tale scopo, eseguire i passaggi descritti in questo articolo.
@@ -45,7 +45,7 @@ I dispositivi da registrare devono anche:
 
    ![Portale di Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
-1. Selezionare **Servizi Mobility (MDM e MAM)**.
+1. Selezionare **Servizi Mobility (MDM e MAM)** .
 
    ![Riquadro Azure Active Directory](./media/windows-autopilot-hybrid/auto-enroll-mdm.png)
 
@@ -69,7 +69,7 @@ L'unità organizzativa a cui vengono assegnate le autorizzazioni per la creazion
 - L'unità organizzativa specificata nel profilo Aggiunta a un dominio.
 - Se non è selezionato alcun profilo, il nome di dominio del computer per il dominio.
 
-1. Aprire **Utenti e computer di Active Directory (DSA.msc)**.
+1. Aprire **Utenti e computer di Active Directory (DSA.msc)** .
 
 1. Fare clic con il pulsante destro del mouse sull'unità organizzativa che verrà usata per creare i computer aggiunti ad Azure AD ibrido, quindi selezionare **Delega controllo**.
 
@@ -176,7 +176,7 @@ Dopo la *registrazione* i dispositivi di Autopilot vengono visualizzati in quatt
 - Il riquadro **Tutti i dispositivi** in Azure Active Directory nel portale di Azure. Selezionare **Dispositivi** > **Tutti i dispositivi**.
 - Il riquadro **Tutti i dispositivi** in Intune nel portale di Azure. Selezionare **Dispositivi** > **Tutti i dispositivi**.
 
-Dopo la registrazione dei dispositivi di Autopilot, i nomi dei dispositivi diventano il nome host del dispositivo. Per impostazione predefinita, il nome host inizia con *DESKTOP-*.
+Dopo la registrazione dei dispositivi di Autopilot, i nomi dei dispositivi diventano il nome host del dispositivo. Per impostazione predefinita, il nome host inizia con *DESKTOP-* .
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Creare e assegnare un profilo di distribuzione AutoPilot
@@ -212,8 +212,10 @@ Il passaggio dello stato del profilo del dispositivo da *Non assegnato* ad *Asse
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
    - **Description**: Immettere una descrizione del profilo.
    - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
-   - **Tipo di profilo**: selezionare **Aggiunta a un dominio (anteprima)**.
+   - **Tipo di profilo**: selezionare **Aggiunta a un dominio (anteprima)** .
 1. Selezionare **Impostazioni** e specificare **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo) nel [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+   > [!NOTE]
+   > Non racchiudere tra virgolette il valore in **Unità organizzativa**.
 1. Selezionare **OK** > **Crea**.  
     Il profilo viene creato e visualizzato nell'elenco.
 1. Per assegnare il profilo, seguire la procedura descritta in [Assegnare un profilo di dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e assegnare il profilo allo stesso gruppo usato nel passaggio [Creare un gruppo di dispositivi](windows-autopilot-hybrid.md#create-a-device-group)
