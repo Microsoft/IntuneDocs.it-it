@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: App di Windows Phone 8.1 Store
               href: store-apps-windows-phone-8-1.md
-            - name: App di Microsoft Store
-              items:
-                - name: App di Windows
-                  href: store-apps-windows.md
-                - name: App Portale aziendale
-                  href: store-apps-company-portal-app.md
+            - name: App di Windows
+              href: store-apps-windows.md
+            - name: App di Microsoft Store per le aziende
+              href: windows-store-for-business.md
             - name: App Google Play gestite
               href: apps-add-android-for-work.md
+        - name: Office 365 Suite
+          items:
             - name: App di Office 365 per Windows 10
               href: apps-add-office365.md
             - name: App di Office 365 per macOS
               href: apps-add-office365-macos.md
+        - name: App di sistema Android Enterprise
+          href: apps-ae-system.md
         - name: App Web
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: App line-of-business di macOS
               href: lob-apps-macos.md
-        - name: App di sistema Android Enterprise
-          href: apps-ae-system.md
-        - name: Gestione delle app Win32
-          href: apps-win32-app-management.md
+            - name: Gestione delle app Win32
+              href: apps-win32-app-management.md
+        - name: Aggiungere app specifiche
+          items:
+            - name: App Portale aziendale
+              href: store-apps-company-portal-app.md
         - name: Script PowerShell
           href: intune-management-extension.md
     - name: Assegnare le app

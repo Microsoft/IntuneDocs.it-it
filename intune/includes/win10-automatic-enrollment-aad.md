@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323398"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302623"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Abilitare la registrazione automatica di Windows 10
 
@@ -21,7 +21,7 @@ La registrazione automatica consente agli utenti di registrare i propri disposit
 
    ![Schermata del portale di Azure](../media/auto-enroll-azure-main.png)
 
-2. Selezionare **Servizi Mobility (MDM e MAM)**.
+2. Selezionare **Servizi Mobility (MDM e MAM)** .
 
    ![Schermata del portale di Azure](../media/auto-enroll-mdm.png)
 
@@ -41,7 +41,7 @@ La registrazione automatica consente agli utenti di registrare i propri disposit
       > Per i dispositivi aziendali, l'ambito utente MDM ha la precedenza se entrambi gli ambiti sono abilitati. I dispositivi vengono registrati in MDM.
 
    > [!NOTE]
-   > L'ambito utente MAM deve essere impostato su un gruppo utenti o una raccolta.
+   > L'ambito utente MDM deve essere impostato su un gruppo di Azure AD contenente oggetti utente.
 
    ![Schermata del portale di Azure](../media/auto-enroll-scope.png)
 
