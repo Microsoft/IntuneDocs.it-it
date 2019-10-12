@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735766"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999315"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>In fase di sviluppo per Microsoft Intune - Ottobre 2019
 
@@ -117,7 +117,7 @@ Per visualizzare le impostazioni correnti, vedere [Impostazioni dei dispositivi 
 
 Si applica a:
 - iOS 13.0 e versioni successive
-- iPados 13,0 e versioni successive
+- iPadOS 13.0 e versioni successive
 
 ### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-and-android-enterprise----5021055----"></a>Connetti automaticamente l'impostazione viene rimossa nei profili Wi-Fi in Android e Android Enterprise <!-- 5021055  -->
 Nei dispositivi Android e Android Enterprise è possibile creare un profilo Wi-Fi per configurare impostazioni diverse (**configurazione del dispositivo** > **profili** > **creare il profilo** > **Android** o **Android Enterprise** per la piattaforma > **Wi-Fi** per il tipo di profilo). L'impostazione **connessione automatica** verrà rimossa, perché non è [supportata da Android](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29). 
@@ -131,7 +131,7 @@ Si applica a:
 - Android Enterprise
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Creare un proxy HTTP globale nei dispositivi Android Enterprise Device Owner <!-- 4816339  -->
-Nei dispositivi Android Enterprise è possibile creare un profilo VPN con diversi client VPN (**configurazione del dispositivo** > **profili** > **creare il profilo** > **Android Enterprise** per la piattaforma > il **proprietario del dispositivo > Restrizioni del dispositivo** per il tipo di profilo > la **connettività**). Sarà possibile configurare un proxy HTTP globale per soddisfare gli standard di esplorazione Web dell'organizzazione. Usare questo proxy per tutte le app che passano a siti Web HTTP.
+Nei dispositivi Android Enterprise è possibile configurare un proxy HTTP globale per soddisfare gli standard di esplorazione Web dell'organizzazione (**configurazione del dispositivo** >  **profili** > **creare il profilo** > **Android Enterprise** per piattaforma > **proprietario del dispositivo > restrizioni del dispositivo** per il tipo di profilo > la **connettività**). Una volta configurata, tutto il traffico HTTP utilizzerà questo proxy.
 
 Si applica a:
 - Proprietario dispositivo Android Enterprise
@@ -139,10 +139,10 @@ Si applica a:
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Nuovo profilo di interfaccia di configurazione del firmware del dispositivo per dispositivi Windows 10 e versioni successive <!-- 2266073  -->
 In Windows 10 e versioni successive è possibile creare un profilo di configurazione del dispositivo per controllare le impostazioni e le funzionalità (**configurazione del dispositivo** > **profili** > **creare il profilo** > **Windows 10 e versioni successive** per la piattaforma). Sarà disponibile un nuovo tipo di profilo dell'interfaccia di configurazione del firmware del dispositivo che consente a Intune di gestire le impostazioni del BIOS (UEFI).
 
-Per una panoramica di tutte le impostazioni che è possibile configurare, vedere [applicare le funzionalità e le impostazioni nei dispositivi usando i profili di dispositivo in Microsoft Intune](../configuration/device-profiles.md).
+Per una panoramica di tutte le impostazioni correnti che è possibile configurare, vedere [applicare le funzionalità e le impostazioni nei dispositivi usando i profili di dispositivo in Microsoft Intune](../configuration/device-profiles.md).
 
 Si applica a:
-- Windows 10 RS5 (1809) e versioni successive in alcuni OEM
+- Windows 10 RS5 (1809) e versioni successive nei dispositivi selezionati
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>Certificati PKCS per macOS  <!-- 1333650                -->
 Verrà aggiunto il supporto completo per i certificati PKCS nei dispositivi che eseguono macOS. Gli utenti saranno in grado di distribuire certificati per utenti e dispositivi con campi oggetto personalizzazione e nome alternativo oggetto. Sarà anche disponibile una nuova impostazione Consenti l'accesso a tutte le app, che abilitando consente a tutte le app associate di accedere alla chiave privata. Per altri dettagli su questa impostazione, vedere la documentazione di Apple seguente: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.

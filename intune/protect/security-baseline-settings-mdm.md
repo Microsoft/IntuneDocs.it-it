@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736000"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237254"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
 
@@ -1623,7 +1623,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
 
 - **Tipo di esecuzione del contenuto del messaggio di posta elettronica**  
   Questa regola consente di bloccare l'esecuzione e l'avvio dei tipi di file seguenti da un messaggio di posta elettronica visualizzato in Microsoft Outlook o nella posta sul Web, ad esempio Gmail.com oppure Outlook.com: file eseguibili, ad esempio con estensione exe, dll o scr, file di script, ad esempo file di PowerShell con estensione ps, file di VisualBasic con estensione vbs o file JavaScript con estensione js, e file di archivio di script.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Altre informazioni](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Impostazione predefinita**: Blocca
 
@@ -1633,7 +1633,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
 
 - **Tipo di protezione di rete**  
   Questo criterio consente di attivare la protezione di rete (Blocca/Controlla) o di disattivarla in Windows Defender Exploit Guard. La protezione di rete è una funzionalità di Windows Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi. Il tipo di valore è un numero intero. Se si abilita questa impostazione, la protezione di rete verrà attivata e i dipendenti non potranno disattivarla. Il comportamento potrà essere controllato dalle opzioni seguenti: Blocca e Controlla. Se si abilita questo criterio impostando l'opzione "Blocca", gli utenti e le app non possono connettersi a domini dannosi. È possibile visualizzare questa attività in Windows Defender Security Center. Se si abilita questo criterio impostando l'opzione "Controlla", gli utenti e le app non potranno connettersi a domini dannosi. Sarà possibile visualizzare anche questa attività in Windows Defender Security Center. Se si disabilita questo criterio, gli utenti e le app potranno connettersi a domini dannosi. Non sarà possibile visualizzare attività di rete in Windows Defender Security Center. Se non si configura questo criterio, il blocco di rete è disabilitato per impostazione predefinita.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Altre informazioni](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Impostazione predefinita**: Abilita
   

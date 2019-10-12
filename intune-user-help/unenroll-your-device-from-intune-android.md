@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8f2e9313cf2a4d639096f783b895596fc2535649
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721215"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163542"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Annullare la registrazione del dispositivo Android dalla gestione  
 
@@ -64,7 +64,7 @@ In alternativa, toccare **Impostazioni** > **App** > **Portale aziendale** > **D
 
 Come ultima risorsa, è possibile disinstallare l'app dal dispositivo come amministratore del dispositivo.  
 
-Se si usa un dispositivo aziendale, l'organizzazione potrebbe richiedere la disponibilità continua di Portale aziendale nel dispositivo. Se si disinstalla l'app, è possibile perdere l'accesso alle risorse aziendali protette, ad esempio la posta elettronica, le app, il Wi-Fi o la rete VPN, finché l'app non viene reinstallata. Per altre informazioni su installazione, aggiornamento o rimozione di app necessarie, vedere [Aggiungere app in Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune).
+Se si usa un dispositivo aziendale, l'organizzazione potrebbe richiedere la disponibilità continua di Portale aziendale nel dispositivo. Se si disinstalla l'app, è possibile perdere l'accesso alle risorse aziendali protette, ad esempio la posta elettronica, le app, il Wi-Fi o la rete VPN, finché l'app non viene reinstallata. Per altre informazioni su installazione, aggiornamento o rimozione di app necessarie, vedere [Aggiungere app in Microsoft Intune](/intune/apps/apps-add#apps-that-are-added-automatically-by-intune).
 
 Di seguito viene spiegato come disabilitare Portale aziendale come amministratore del dispositivo. I nomi reali delle impostazioni possono variare in base al dispositivo Android.  
 
