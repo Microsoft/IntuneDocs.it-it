@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723554"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999295"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Registrare automaticamente i dispositivi Android usando Knox Mobile Enrollment di Samsung
 
@@ -109,7 +109,8 @@ Per i dispositivi registrati in Intune con KME per Android, è possibile configu
 
 > [!NOTE]
 >
->L'associazione dell'utente si applica solo alla registrazione Android. Quando l'associazione utente è definita, solo gli utenti associati possono registrare il dispositivo con KME. Ciò vale anche dopo un ripristino delle impostazioni predefinite del dispositivo. Quando non sono definite associazioni utente nel portale di Knox, qualsiasi utente con una licenza di Intune valida può registrare il dispositivo con KME.
+>L'associazione dell'utente si applica solo alla registrazione di tipo amministratore di dispositivi Android. Quando l'associazione utente è definita, solo gli utenti associati possono registrare il dispositivo con KME. Ciò vale anche dopo un ripristino delle impostazioni predefinite del dispositivo. Quando non sono definite associazioni utente nel portale di Knox, qualsiasi utente con una licenza di Intune valida può registrare il dispositivo con KME.
+>Per i dispositivi Android Enterprise completamente gestiti, anche se definita, l'associazione dell'utente non verrà passata al dispositivo o non collegherà il dispositivo all'utente.
 >
 
 ## <a name="distribute-devices"></a>Distribuire i dispositivi
@@ -126,7 +127,7 @@ Serve ancora assistenza? Vedere il [manuale dell'utente completo di KME](https:/
 
 - **Ripristino delle impostazioni predefinite per la registrazione in Android Enterprise:** in caso di reimpiego di dispositivi che sono già stati configurati, è necessario ripristinare le impostazioni predefinite dei dispositivi quando si effettua la registrazione in Android Enterprise.
 
-- **Aggiornamenti tramite account Google Play:** l'account Google Play non è necessario per registrare il dispositivo in Microsoft Intune, ma i futuri aggiornamenti dell'app Portale aziendale Intune potrebbero richiedere un account Google Play nel dispositivo. Per la registrazione nel proprietario del dispositivo Google non è obbligatorio usare un account Google Play.
+- **Aggiornamenti tramite account Google Play:** l'account Google Play non è necessario per registrare il dispositivo in Microsoft Intune, ma per le registrazioni di tipo amministratore di dispositivi Android i futuri aggiornamenti dell'app Portale aziendale di Intune potrebbero richiedere un account Google Play nel dispositivo. Per la registrazione nel proprietario del dispositivo Google non è obbligatorio usare un account Google Play.
 
 - **Il campo "Password" viene ignorato:** se il campo **password** viene popolato in **Device details** (Dettagli dispositivo) nel portale di Knox, viene ignorato dall'app Portale aziendale Intune durante la registrazione in Android. L'utente finale deve immettere una password nel dispositivo per completare la registrazione del dispositivo.
 

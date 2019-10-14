@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722969"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999310"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usare i certificati per l'autenticazione in Microsoft Intune  
 
 Usare i certificati con Intune per autenticare gli utenti in applicazioni e risorse aziendali tramite profili VPN, Wi-Fi o di posta elettronica. Quando si usano i certificati per autenticare queste connessioni, gli utenti finali non dovranno immettere nomi utente e password e l'accesso risulterà così semplificato. I certificati vengono usati anche per la firma e la crittografia della posta elettronica tramite S/MIME.
 
-Intune supporta i tipi di certificato seguenti:  
-
-- Simple Certificate Enrollment Protocol (SCEP)  
-- PKCS#12 (o PFX)  
-- Certificati importati PKCS
+## <a name="intune-supported-certificates-and-usage"></a>Certificati supportati da Intune e utilizzo
+| Tipo              | Autenticazione | Firma S/MIME | Crittografia S/MIME  |
+|--|--|--|--|
+| Certificato importato PKCS |  | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png)|
+| PKCS#12 (o PFX)    | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |  |
+| Simple Certificate Enrollment Protocol (SCEP)  | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | |
 
 Per distribuire questi certificati, verranno creati e assegnati profili di certificato ai dispositivi.  
 

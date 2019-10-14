@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724971"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830551"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
@@ -36,6 +36,8 @@ Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che 
 > - Per Windows 10 1709, [21 giugno 2018-KB4284822 (build del sistema operativo 16299.522)](https://support.microsoft.com/help/4284822).
 >
 > Solo Windows 10, 1803 e versioni successive supportano l'installazione di app quando non è associato alcun utente primario.
+>
+> La distribuzione di app line-of-business non è supportata nei dispositivi che eseguono edizioni di Windows 10 Home.
 
 ## <a name="windows-10-line-of-business-apps"></a>App line-of-business per Windows 10
 

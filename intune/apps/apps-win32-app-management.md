@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593c2d2b509047115ebeb3415393d6112484a6a9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724984"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036502"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724984"
 
 > [!NOTE]
 > Questa funzionalità di gestione delle app supporta l'architettura del sistema operativo sia a 32 bit che a 64 bit per le applicazioni di Windows.
+
+> [!IMPORTANT]
+> Quando si distribuiscono app Win32, è consigliabile usare esclusivamente l'[estensione di gestione di Intune](../apps/intune-management-extension.md), in particolare quando si usa un programma di installazione di app Win32 a più file. Se vengono installate sia app Win32 sia app line-of-business durante la registrazione di Autopilot, l'installazione dell'app potrebbe non riuscire.  
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -89,7 +92,7 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
 
 ### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Flusso del processo per l'aggiunta di un'app Win32 a Intune
 
-   ![Flusso del processo per l'aggiunta di un'app Win32 a Intune](./media/apps-win32-app-management/add-win32-app.svg)
+<img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
 ### <a name="add-a-win32-app-to-intune"></a>Aggiungere un'app Win32 a Intune
 

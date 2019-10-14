@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721604"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999335"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS importati con Intune
 
@@ -168,7 +168,7 @@ Selezionare il provider di archiviazione chiavi che corrisponde al provider usat
 
 7. Importare l'oggetto **UserPFXCertificate** in Intune eseguendo `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`
 
-8. Per verificare che il certificato è stato importato, eseguire `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"`
+8. Per verificare che il certificato è stato importato, eseguire `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
 
 Per altre informazioni sugli altri comandi disponibili, vedere il file Leggimi in [PFXImport PowerShell Project su GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
@@ -186,7 +186,7 @@ Dopo aver importato i certificati in Intune, creare un profilo **certificato PKC
 
 3. Accedere a **Impostazioni** e immettere le proprietà seguenti:
 
-   - **Scopo designato**: Specificare lo scopo designato dei certificati importati per questo profilo. Gli amministratori possono importare certificati con scopi designati diversi, ad esempio autenticazione, firma S/MIME o crittografia S/MIME. Lo scopo designato selezionato nel profilo certificato corrisponde al profilo certificato con i certificati importati corretti. Lo scopo designato è un tag usato per raggruppare i certificati importati e non garantisce che i certificati importati con tale tag soddisfino lo scopo designato.  
+   - **Scopo designato**: Specificare lo scopo designato dei certificati importati per questo profilo. Gli amministratori possono importare certificati con scopi designati diversi, ad esempio firma S/MIME o crittografia S/MIME. Lo scopo designato selezionato nel profilo certificato corrisponde al profilo certificato con i certificati importati corretti. Lo scopo designato è un tag usato per raggruppare i certificati importati e non garantisce che i certificati importati con tale tag soddisfino lo scopo designato.  
    - **Periodo di validità del certificato**: A meno che non sia stato modificato il periodo di validità nel modello di certificato, il valore predefinito di questa opzione è un anno.  
    - **Provider di archiviazione chiavi (KSP)** : per Windows, selezionare la posizione in cui archiviare le chiavi nel dispositivo.  
 

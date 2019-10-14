@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d7a63f3ff1e2936eff0961d4a9b368b0289e2b65
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722722"
+ms.locfileid: "71813959"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
 Si applica a: Intune nel portale di Azure
 
-Le organizzazioni che usano [Jamf Pro](https://www.jamf.com) per gestire i computer Mac degli utenti finali possono adottare i criteri di conformità di Microsoft Intune e l'accesso condizionale di Azure Active Directory per garantire la conformità dei dispositivi presenti nell'organizzazione.
+Quando l'organizzazione usa [Jamf Pro](https://www.jamf.com) per gestire i dispositivi macOS, è possibile adottare i criteri di conformità di Microsoft Intune e l'accesso condizionale di Azure Active Directory (Azure AD) per garantire la conformità dei dispositivi presenti nell'organizzazione prima che questi accedano alle risorse aziendali. Questo articolo consente di configurare l'integrazione di Jamf con Intune.
+
+Quando Jamf Pro è integrato con Intune, è possibile sincronizzare i dati di inventario dei dispositivi macOS con Intune tramite Azure AD. Il motore di conformità di Intune analizza quindi i dati di inventario per generare un report. L'analisi di Intune viene combinata con informazioni sull'identità Azure AD dell'utente del dispositivo per configurare l'implementazione tramite l'accesso condizionale. I dispositivi conformi ai criteri di accesso condizionale possono ottenere l'accesso alle risorse aziendali protette.
+
+Dopo aver configurato l'integrazione, si [configurano Jamf e Intune per applicare la conformità con l'accesso condizionale](conditional-access-assign-jamf.md) nei dispositivi gestiti da Jamf.  
+
 
 ## <a name="prerequisites"></a>Prerequisiti
 
+### <a name="products-and-services"></a>Prodotti e servizi
 Per configurare l'accesso condizionale con Jamf Pro, è necessario quanto segue:
 
 - Jamf Pro 10.1.0 o versione successiva
 - [App Portale aziendale per macOS](https://aka.ms/macoscompanyportal)
 - Dispositivi macOS con OS X 10.11 Yosemite o versioni successive
+
+### <a name="network-ports"></a>Porte rete
+<!-- source: https://support.microsoft.com/en-us/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune -->
+Le seguenti porte devono essere accessibili per garantire l'integrazione corretta di Jamf e Intune: 
+- **Intune**: Porta 443
+- **Apple**: Porte 2195, 2196 e 5223 (notifiche push a Intune)
+- **Jamf**: Porte 80 e 5223
+
+Per consentire il corretto funzionamento di APNS in rete, è necessario abilitare anche le connessioni in uscita a, e i reindirizzamenti da:
+- Blocco Apple 17.0.0.0/8 sulle porte TCP 5223 e 443 da tutte le reti client.   
+- Porte 2195 e 2196 dai server Jamf Pro.  
+
+Per altre informazioni su queste porte, vedere i seguenti articoli:  
+- [Requisiti di configurazione di rete di Intune e larghezza di banda](../fundamentals/network-bandwidth-use.md).
+- [Network Ports Used by Jamf Pro](https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro) (Porte di rete usate da Jamf Pro) su jamf.com.
+- [Porte TCP e UDP usate dai prodotti software Apple](https://support.apple.com/HT202944) su support.apple.com
+
 
 ## <a name="connect-intune-to-jamf-pro"></a>Connettere Intune a Jamf Pro
 
@@ -70,7 +93,7 @@ Per connettere Intune a Jamf Pro:
 
    Selezionare **Aggiungi l'autorizzazione** per salvare questa configurazione.  
 
-8. Nella pagina **Autorizzazioni API** selezionare **Concedi consenso amministratore per Microsoft**, quindi selezionare **Sì**.  
+8. Nella pagina **Autorizzazioni API** selezionare **Concedi consenso amministratore per*\<tenant dell'utente>***, quindi selezionare **Sì**.  Dopo che l'app è stata registrata correttamente, le autorizzazioni dell'API vengono visualizzate come segue: ![Autorizzazioni corrette](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
    Il processo di registrazione dell'app in Azure AD è stato completato.
 
@@ -99,6 +122,7 @@ Per connettere Intune a Jamf Pro:
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Impostare i criteri di conformità e registrare i dispositivi
 
 Dopo aver configurato l'integrazione tra Intune e Jamf, è necessario [applicare i criteri di conformità per i dispositivi gestiti da Jamf](conditional-access-assign-jamf.md).
+
 
 ## <a name="disconnect-jamf-pro-and-intune"></a>Disconnettere Jamf Pro e Intune 
 

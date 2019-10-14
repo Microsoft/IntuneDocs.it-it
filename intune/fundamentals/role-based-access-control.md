@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721877"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163515"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -66,6 +66,7 @@ Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** 
 | Ruolo con autorizzazioni di lettura per la sicurezza | Sola lettura | Sola lettura |
 | Amministratore di conformità | Nessuno | Sola lettura |
 | Amministratore dati di conformità | Nessuno | Sola lettura |
+| Ruolo con autorizzazioni di lettura globali | Sola lettura | Sola lettura |
 
 > [!TIP]
 > Intune mostra inoltre tre estensioni di Azure AD: **Utenti**, **Gruppi** e **Accesso condizionale**, controllate tramite il controllo degli accessi in base al ruolo di Azure AD. Il ruolo **Amministratore account utente**, inoltre, consente di eseguire solo attività su utenti e gruppi di AAD e non dispone delle autorizzazioni complete per eseguire tutte le attività in Intune. Per altre informazioni, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
