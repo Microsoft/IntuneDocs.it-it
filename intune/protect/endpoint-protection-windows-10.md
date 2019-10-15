@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732724"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163572"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune  
 
@@ -240,7 +240,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   CSP del firewall: [DisableInboundNotifications](https://go.microsoft.com/fwlink/?linkid=8725630)  
 
   - **Non configurato**  
-  - **Block** : Consente di nascondere le notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
+  - **Block** Consente di nascondere le notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
   - **Consenti**: abilita questa impostazione e può visualizzare una notifica agli utenti quando un'app non è autorizzata all'ascolto su una porta.  
 
 - **Azione predefinita per le connessioni in ingresso**  
@@ -776,26 +776,27 @@ Queste impostazioni si applicano in modo specifico alle unità dati rimovibili.
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-Usare [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) per gestire e ridurre la superficie di attacco delle app usate dai dipendenti.  
+Usare la [protezione dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) per gestire e ridurre la superficie di attacco delle app usate dai dipendenti.  
 
 ### <a name="attack-surface-reduction"></a>Riduzione della superficie di attacco  
 
-Per informazioni sulle regole di *riduzione della superficie di attacco* , vedere ridurre le [superfici di attacco con Windows Defender exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) nella documentazione di Windows Defender exploit Guard.  
+Le regole di riduzione della superficie di attacco consentono di evitare comportamenti spesso usati da malware per infettare i computer con codice dannoso.  
 
 #### <a name="attack-surface-reduction-rules"></a>Regole per la riduzione della superficie di attacco  
 
 - **Contrassegna il furto di credenziali dal sottosistema dell'autorità di protezione locale Windows**  
   **Impostazione predefinita**: Non configurato  
-  Exploit Guard: [regole di riduzione della superficie di attacco](https://go.microsoft.com/fwlink/?linkid=874499)
+  Regola: [Blocca furto di credenziali dal sottosistema di autorità di protezione locale di Windows (lsass.exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Evitare azioni e app che generalmente vengono usate dal malware per infettare i computer.  
+
   - **Non configurato**  
   - **Abilita**: impostare flag per la sottrazione delle credenziali dal sottosistema dell'autorità di protezione locale Windows (lsass.exe).  
   - **Controlla soltanto**  
 
 - **Creazione di processi da Adobe Reader (beta)**  
   **Impostazione predefinita**: Non configurato  
-  Exploit Guard: [regole di riduzione della superficie di attacco](https://go.microsoft.com/fwlink/?linkid=853979)  
+  Regola: [impedisce a Adobe Reader di creare processi figlio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **Non configurato**  
   - **Enable** : blocca i processi figlio creati da Adobe Reader.  
@@ -807,7 +808,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
 
 - **Inserimento delle app di Office in altri processi (nessuna eccezione)**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Regola: [	Impedisci alle applicazioni di Office inserire codice in altri processi](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Non configurato**  
   - **Blocca l'** inserimento delle app di Office in altri processi.  
@@ -815,7 +816,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
 
 - **Creazione di contenuto eseguibile in app/macro di Office**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Regola: [Impedisci alle applicazioni di Office di creare contenuto eseguibile](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Non configurato**  
   - **Blocca le** app di Office e le macro dalla creazione di contenuto eseguibile.  
@@ -823,7 +824,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
 
 - **Avvio di processi figlio per le app di Office**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Regola: [impedisce a tutte le applicazioni di Office di creare processi figlio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Non configurato**  
   - **Blocca le** app di Office dall'avvio dei processi figlio.  
@@ -831,7 +832,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
   
 - **Importazioni Win32 da codice delle macro in Office**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Regola: [Blocca le chiamate API Win32 dalle macro di Office](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Non configurato**  
   - **Blocca le** importazioni Win32 dal codice macro in Office.  
@@ -839,7 +840,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
   
 - **Creazione di processi da prodotti Office Communication**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Regola: [impedisce alle applicazioni di comunicazione di Office di creare processi figlio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **Non configurato**  
   - **Abilita** -blocca la creazione di processi figlio dalle app di Office Communications.  
@@ -851,7 +852,7 @@ Bloccare i seguenti elementi per contrastare le minacce basate su script:
 
 - **Codice js/vbs/ps/macro offuscato**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Regola: [Blocca l'esecuzione di script potenzialmente offuscate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Non configurato**  
   - **Blocca il** codice js/vbs/PS/macro offuscato.  
@@ -859,7 +860,7 @@ Bloccare i seguenti elementi per contrastare le minacce basate su script:
 
 - **Esecuzione in js/vbs di payload scaricato da Internet (nessuna eccezione)**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Regola: [Impedisci a JavaScript o VBScript di avviare contenuto eseguibile scaricato](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Non configurato**  
   - **Block-Block** JS/vbs dall'esecuzione del payload scaricato da Internet.  
@@ -867,7 +868,7 @@ Bloccare i seguenti elementi per contrastare le minacce basate su script:
 
 - **Creazione di processi da comandi PSExec e WMI**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Regola: [Blocca le creazioni di processi generate da comandi PSExec e WMI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **Non configurato**  
   - **Blocca**: bloccare le creazioni di processi originate dai comandi PSExec e WMI.  
@@ -876,7 +877,7 @@ Bloccare i seguenti elementi per contrastare le minacce basate su script:
 
 - **Processi non attendibili e non firmati eseguiti da USB**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Regola: [Blocca processi non attendibili e non firmati eseguiti da USB](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **Non configurato**  
   - **Blocca**: bloccare i processi non attendibili e non firmati eseguiti da USB.  
@@ -884,7 +885,7 @@ Bloccare i seguenti elementi per contrastare le minacce basate su script:
   
 - **File eseguibili che non rispettano criteri di prevalenza, di validità o dell'elenco di elementi attendibili**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Regola: [Blocca l'esecuzione dei file eseguibili a meno che non rispettino criteri di prevalenza, di validità o dell'elenco di elementi attendibili](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **Non configurato**  
   - **Blocca**: bloccare l'esecuzione dei file eseguibili se non soddisfano i criteri di prevalenza, età o elenco attendibile.  
@@ -896,7 +897,7 @@ Bloccare gli elementi seguenti per contrastare le minacce tramite posta elettron
 
 - **Esecuzione del contenuto eseguibile (file con estensione exe, dll, ps, js, vbs e così via) non elaborato dalla posta elettronica (webmail/mail client) (nessuna eccezione)**  
   **Impostazione predefinita**: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Regola: [Blocca il contenuto eseguibile dal client di posta elettronica e dalla posta sul Web](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Non configurato**  
   - **Blocca**: esecuzione del contenuto eseguibile (file EXE, DLL, PS, JS, VBS e così via) non elaborato dalla posta elettronica (webmail/mail client).  
@@ -906,7 +907,7 @@ Bloccare gli elementi seguenti per contrastare le minacce tramite posta elettron
 
 - **Protezione ransomware avanzata**  
   Impostazione predefinita: Non configurato  
-  [Documentazione di exploit Guard](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Regola: [Usa la protezione avanzata da ransomware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **Non configurato**  
   - **Abilita**: usare una protezione ransomware aggressiva.  
@@ -932,7 +933,7 @@ Bloccare gli elementi seguenti per contrastare le minacce tramite posta elettron
 
 ### <a name="controlled-folder-access"></a>Accesso controllato alle cartelle  
 
-È possibile [proteggere i dati importanti](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) da app e minacce dannose, ad esempio il ransomware.  
+È possibile [proteggere i dati importanti](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) da app e minacce dannose, ad esempio il ransomware.  
 
 - **Protezione delle cartelle**  
   **Impostazione predefinita**: Non configurato  
@@ -979,7 +980,7 @@ Blocca le connessioni in uscita da qualsiasi app a indirizzi IP o domini con una
 - **Carica XML**  
   **Impostazione predefinita**: *Non configurato*  
 
-  Per usare la protezione dagli exploit per [proteggere i dispositivi dagli exploit](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), creare un file XML che includa le impostazioni di mitigazione del sistema e delle applicazioni desiderate. Esistono due metodi per creare il file XML:  
+  Per usare la protezione dagli exploit per [proteggere i dispositivi dagli exploit](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), creare un file XML che includa le impostazioni di mitigazione del sistema e delle applicazioni desiderate. Esistono due metodi per creare il file XML:  
 
   - *PowerShell*: usare uno o più cmdlet di PowerShell *Get-ProcessMitigation*, *Set-ProcessMitigation* e *ConvertTo-ProcessMitigationPolicy*. I cmdlet configurano le impostazioni di mitigazione ed esportano la relativa rappresentazione XML.  
 
