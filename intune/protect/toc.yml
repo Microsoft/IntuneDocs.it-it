@@ -210,7 +210,7 @@
     - name: Risoluzione dei problemi
       items:
         - name: Risolvere problemi relativi a criteri e profili
-          href: troubleshoot-policies-in-microsoft-intune.md
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
         - name: Risolvere i problemi di accesso condizionale
           href: troubleshoot-conditional-access.md
         - name: Risolvere i problemi del connettore di certificati
