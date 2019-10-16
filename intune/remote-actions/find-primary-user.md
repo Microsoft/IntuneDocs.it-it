@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728364"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379708"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Trovare l'utente primario di un dispositivo Intune
 
@@ -46,7 +46,7 @@ L'app Portale aziendale presuppone che l'account utente connesso al portale azie
 
 Se a un dispositivo Intune non è assegnato un utente primario, l'app Portale aziendale lo rileva come dispositivo condiviso. I dispositivi condivisi sono visivamente identificabili grazie all'etichetta "condiviso" visualizzata sul riquadro del dispositivo. In questa modalità è possibile continuare a usare l'app Portale aziendale per richiedere e installare le app disponibili. Le azioni self-service (reimpostazione/ridenominazione/ritiro) non sono però disponibili.  
 
-Per essere visualizzate nell'app Portale aziendale su dispositivi condivisi, le app disponibili devono essere assegnate a un gruppo di utenti. Vengono installate nel contesto del sistema o nel contesto utente, in base al modo in cui sono state configurate dall'amministratore IT. Per altre informazioni sul contesto dell'app, vedere [Installare le app nei dispositivi Windows 10](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Per usare questa funzionalità è necessaria l'app Portale aziendale versione 10.3.4651.0 o successive.
+Per essere visualizzate nell'app Portale aziendale su dispositivi condivisi, le app disponibili devono essere assegnate a un gruppo di utenti. Vengono installate nel contesto del sistema o nel contesto utente, in base al modo in cui sono state configurate dall'amministratore IT. Per altre informazioni sul contesto dell'app, vedere [Installare le app nei dispositivi Windows 10](../apps/apps-windows-10-app-deploy.md). Per usare questa funzionalità è necessaria l'app Portale aziendale versione 10.3.4651.0 o successive.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>Chi viene assegnato come utente primario?

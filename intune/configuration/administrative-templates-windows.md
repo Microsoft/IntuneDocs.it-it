@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724295"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314642"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
@@ -38,7 +38,7 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 
 - Alcune di queste impostazioni sono disponibili a partire da Windows 10 versione 1703 (RS2). Alcune impostazioni non sono incluse in tutte le edizioni di Windows. Per un'esperienza ottimale, è consigliabile usare Windows 10 Enterprise versione 1903 (19H1) e versioni successive.
 
-- Le impostazioni di Windows usano i [provider di servizi di configurazione (CSP) dei criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
+- Le impostazioni di Windows usano i [provider di servizi di configurazione (CSP) dei criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies). I provider CSP funzionano in diverse edizioni di Windows, ad esempio Home, Professional, Enterprise e così via. Per verificare se un provider CSP funziona in un'edizione specifica, vedere i [provider di servizi di configurazione (CSP) di criteri di Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies).
 
 ## <a name="create-a-template"></a>Creare un modello
 
