@@ -5,7 +5,7 @@
   items:
     - name: Panoramica di gestione delle app
       href: app-management.md
-- name: Guida introduttiva
+- name: Avvio rapido
   items:
     - name: Aggiungere e assegnare un'app
       href: quickstart-add-assign-app.md
@@ -96,7 +96,7 @@
           href: apps-windows-10-app-deploy.md
         - name: Distribuire le app agli enti pubblici
           href: apps-deploy-gcc-dod.md
-    - name: Eseguire il monitoraggio delle app
+    - name: Monitorare le app
       href: apps-monitor.md
     - name: App individuate
       href: app-discovered-apps.md
@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: Impostazioni iOS
                   href: app-protection-policy-settings-ios.md
-                - name: Azioni di accesso
+                - name: Avvio condizionale
                   href: app-protection-policies-access-actions.md
                 - name: Eccezioni per il trasferimento dei dati
                   href: app-protection-policies-exception.md
@@ -176,7 +176,7 @@
               href: windows-information-protection-policy-create.md
             - name: Gestire il trasferimento di dati tra app iOS
               href: data-transfer-between-apps-manage-ios.md
-    - name: Risoluzione dei problemi
+    - name: Risolvere i problemi
       items:
         - name: Aiutare gli utenti nella risoluzione dei problemi
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json

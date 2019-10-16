@@ -6,7 +6,7 @@
     - name: Panoramica sulla protezione del dispositivo
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Guida introduttiva
+- name: Avvio rapido
   items:
     - name: Creare criteri di conformità dei dispositivi
       href: quickstart-set-password-length-android.md
@@ -207,10 +207,10 @@
               href: windows-update-compliance-reports.md
         - name: Criteri di aggiornamento iOS
           href: software-updates-ios.md
-    - name: Risoluzione dei problemi
+    - name: Risolvere i problemi
       items:
         - name: Risolvere problemi relativi a criteri e profili
-          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
         - name: Risolvere i problemi di accesso condizionale
           href: troubleshoot-conditional-access.md
         - name: Risolvere i problemi del connettore di certificati
