@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735818"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502818"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune. Se si vogliono gestire le impostazioni del firewall per i PC Windows registrati come dispositivi mobili, vedere [aggiungere le impostazioni di Endpoint Protection in Intune](../protect/endpoint-protection-configure.md).
@@ -43,7 +44,7 @@ I criteri di Windows Firewall consentono di creare e distribuire le impostazioni
 > [!NOTE]
 > Se i criteri di Microsoft Intune e Criteri di gruppo sono configurati per gestire le stesse impostazioni nel PC, le impostazioni di Criteri di gruppo sostituiscono i criteri di Microsoft Intune. Per informazioni su come evitare i conflitti tra criteri di Intune e Criteri di gruppo, vedere [Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> Per distribuire le impostazioni di Windows Firewall nei computer che eseguono Windows Vista, è necessario installare prima l'[hotfix KB971800](http://support2.microsoft.com/kb/971800) in tali computer.
+> Per distribuire le impostazioni di Windows Firewall nei computer che eseguono Windows Vista, è necessario installare prima l'[hotfix KB971800](https://support2.microsoft.com/kb/971800) in tali computer.
 
 > [!IMPORTANT]
 > Per gestire Windows Firewall con Intune, verificare che i due servizi seguenti siano abilitati nei computer gestiti:
@@ -84,7 +85,7 @@ Queste impostazioni dei criteri configurano Windows Firewall in modo che blocchi
 Il valore predefinito per tutte queste impostazioni è **Sì**, ovvero il valore più sicuro.
 
 > [!IMPORTANT]
-> Se nel proprio ambiente sono presenti computer gestiti in cui viene eseguito Windows Vista senza Service Pack, è necessario installare l'aggiornamento associato all'[articolo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) della Microsoft Knowledge Base oppure disabilitare le impostazioni del criterio **Blocca tutte le connessioni in ingresso** nei criteri distribuiti a tali computer.
+> Se nel proprio ambiente sono presenti computer gestiti in cui viene eseguito Windows Vista senza Service Pack, è necessario installare l'aggiornamento associato all'[articolo 971800](https://go.microsoft.com/fwlink/?LinkId=188405) della Microsoft Knowledge Base oppure disabilitare le impostazioni del criterio **Blocca tutte le connessioni in ingresso** nei criteri distribuiti a tali computer.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notifica all'utente quando Windows Firewall blocca un nuovo programma
 

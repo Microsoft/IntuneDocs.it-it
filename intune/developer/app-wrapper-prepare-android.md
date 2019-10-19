@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfea74c70b81cadfa06c578dc33cdad401fa9e45
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940062"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490762"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app Android per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -53,7 +54,7 @@ Prima di eseguire lo strumento, vedere [Considerazioni sulla sicurezza per l'ese
     > [!NOTE]
     > Lo strumento di wrapping delle app di Intune non supporta gli schemi di firma v2 e v3 (in arrivo) di Google per la firma delle app. Dopo avere eseguito il wrapping del file con estensione apk usando lo strumento di wrapping delle app di Intune, si consiglia di usare [lo strumento Apksigner fornito di Google]( https://developer.android.com/studio/command-line/apksigner). Ciò garantisce che una volta installata nei dispositivi degli utenti finali, l'app possa essere avviata correttamente secondo gli standard Android. 
 
-- (Facoltativo) In alcuni casi un'app può raggiungere il limite di dimensioni DEX (Dalvik Executable) a causa delle classi MAM SDK di Intune aggiunte durante il wrapping. I file DEX fanno parte della compilazione di un'app per Android. Lo strumento di wrapping delle app di Intune gestisce automaticamente l'overflow del file DEX durante il wrapping per le app con un livello API minimo di 21 o superiore (a partire da [V. 1.0.2501.1 Per le app con un livello API minimo di < 21, è consigliabile aumentare il livello di API minimo usando il flag `-UseMinAPILevelForNativeMultiDex` del wrapper. Per i clienti che non sono in grado di aumentare il livello API minimo dell'app, sono disponibili le soluzioni alternative di overflow DEX seguenti. In alcune organizzazioni potrebbe essere necessario collaborare con gli utenti che compilano l'app, ad esempio il team di compilazione dell'app:
+- (Facoltativo) In alcuni casi un'app può raggiungere il limite di dimensioni DEX (Dalvik Executable) a causa delle classi MAM SDK di Intune aggiunte durante il wrapping. I file DEX fanno parte della compilazione di un'app per Android. Lo strumento di wrapping delle app di Intune gestisce automaticamente l'overflow del file DEX durante il wrapping per le app con un livello API minimo di 21 o superiore (a partire da [v. 1.0.2501.1 ](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Per le app con un livello API minimo di < 21, è consigliabile aumentare il livello di API minimo usando il flag di `-UseMinAPILevelForNativeMultiDex` del wrapper. Per i clienti che non sono in grado di aumentare il livello API minimo dell'app, sono disponibili le soluzioni alternative di overflow DEX seguenti. In alcune organizzazioni potrebbe essere necessario collaborare con gli utenti che compilano l'app, ad esempio il team di compilazione dell'app:
 * Usare Proguard per eliminare i riferimenti a classi non usate dal file DEX primario dell'app.
 * Per i clienti che usano v 3.1.0 o versione successiva del plug-in Android Gradle, disabilitare il [Dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 

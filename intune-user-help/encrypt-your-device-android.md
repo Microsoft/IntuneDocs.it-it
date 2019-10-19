@@ -1,6 +1,6 @@
 ---
 title: Crittografare il dispositivo Android per Intune | Microsoft Docs
-description: Procedura per attivare la crittografia del dispositivo Android quando richiesti da Intune
+description: Procedura per attivare la crittografia dei dispositivi Android quando richiesto da Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
@@ -18,55 +19,55 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545250"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506357"
 ---
 # <a name="encrypting-your-android-device"></a>Crittografia del dispositivo Android
 
-La crittografia del dispositivo consente di proteggere file e cartelle da accesso non autorizzato se il dispositivo viene smarrito o rubato. Dopo avere attivato la crittografia del dispositivo, solo gli utenti con la password corrette o il pin sarà in grado di accedere al dispositivo. 
+La crittografia del dispositivo protegge i file e le cartelle da accessi non autorizzati se il dispositivo viene smarrito o rubato. Dopo aver acceso la crittografia del dispositivo, solo gli utenti con la password o il pin corretti saranno in grado di accedere al dispositivo. 
 
-Prima di poter accedere alle risorse aziendali o dell'istituto di istruzione, l'organizzazione potrebbe essere necessario crittografare il dispositivo Android. Alcuni dispositivi Android più recenti vengono crittografati per impostazione predefinita, out-of-the-box.  
+Prima di poter accedere alle risorse scolastiche o di lavoro, è possibile che l'organizzazione richieda la crittografia del dispositivo Android. Alcuni dispositivi Android più recenti sono crittografati per impostazione predefinita.  
 
 ## <a name="turn-on-encryption"></a>Attivare la crittografia
 
-Se l'App portale aziendale o dell'app di Microsoft Intune richiede di crittografare il dispositivo, completare i passaggi seguenti. 
+Se Portale aziendale o l'app Microsoft Intune richiede di crittografare il dispositivo, completare i passaggi seguenti. 
 
 > [!Note]
-> Alcuni dispositivi Android da Huawei Vivo e OPPO non possono essere crittografate. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
+> Alcuni dispositivi Android da Huawei, vivo e OPPO non possono essere crittografati. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
 1. Impostare un blocco dello schermo del dispositivo.  
     a. Passare a **Impostazioni** > **Schermata di blocco e sicurezza** > **Tipo di blocco**.  
-    b. Selezionare uno **PIN**, **Password**, o **Pattern**.  
+    b. Selezionare **pin**, **password**o **schema**.  
     c. Seguire le istruzioni visualizzate per configurare il blocco dello schermo.  
 
-2. Tornare alla **schermata di blocco e sicurezza** e selezionare **Secure startup**.
-3. Scegli **Richiedi PIN quando si attiva dispositivo** > **OK**.
+2. Tornare alla **schermata di blocco e alla sicurezza** e selezionare **avvio protetto**.
+3. Scegliere **Richiedi PIN quando il dispositivo si attiva**  > **OK**.
 4. Immettere il PIN per confermare e crittografare il dispositivo.
-5. Aprire l'app portale aziendale o Microsoft Intune.
+5. Aprire l'app Portale aziendale o Microsoft Intune.
     * Utenti del portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**. 
-    * Gli utenti di Microsoft Intune: sarà necessario attendere gli aggiornamenti di pagina, ma in questo caso, il tuo stato di crittografia deve cambiare a conforme.  
+    * Microsoft Intune utenti: è necessario attendere che la pagina venga aggiornata, ma, in questo caso, lo stato della crittografia deve essere modificato in conforme.  
 
-Dispositivi che eseguono Android 4.4 e versioni precedenti potrebbero non avere le **Secure startup** opzione. In tal caso, completare la procedura seguente per crittografare il dispositivo.
+I dispositivi che eseguono Android 4,4 e versioni precedenti potrebbero non avere l'opzione di **avvio protetto** . In tal caso, completare la procedura seguente per crittografare il dispositivo.
 
-1. Passare a **le impostazioni** > **sicurezza** > **crittografia dispositivo**. Etichette visualizzate variano tra i dispositivi Android. Se non viene visualizzato il **Esegui crittografia dispositivo** opzione, l'archiviazione:
-    * **Archiviazione** > **crittografia di archiviazione**
-    * **Archiviazione** > **schermata di blocco e sicurezza** > **altre impostazioni di sicurezza** 
+1. Passare a **impostazioni**  > **sicurezza**  > **Crittografa dispositivo**. Le etichette sullo schermo variano tra i dispositivi Android. Se l'opzione **Encrypt Device** non è visibile, archiviare:
+    * **Archiviazione**  > **crittografia di archiviazione**
+    * **Archiviazione**  > **schermata di blocco e sicurezza**  > **altre impostazioni di sicurezza** 
 
 2. Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
-3. Aprire l'app portale aziendale o Microsoft Intune.
+3. Aprire l'app Portale aziendale o Microsoft Intune.
     * Utenti del portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**.  
-    * Gli utenti di Microsoft Intune: sarà necessario attendere gli aggiornamenti di pagina, ma in questo caso, il tuo stato di crittografia deve cambiare a conforme.
+    * Microsoft Intune utenti: è necessario attendere che la pagina venga aggiornata, ma, in questo caso, lo stato della crittografia deve essere modificato in conforme.
 
 ## <a name="troubleshoot"></a>Risoluzione dei problemi  
-**Problema**: già stato crittografato il dispositivo e
+**Problema**: il dispositivo è già stato crittografato e
 
 - Il pulsante di crittografia è disabilitato.
 - Un messaggio informa che è necessario crittografare il dispositivo.
-- Si verificano errori durante il tentativo di usare l'app portale aziendale o Microsoft Intune.
+- Si verificano errori durante il tentativo di usare l'app Portale aziendale o Microsoft Intune.
 
 **Possibili soluzioni**
 

@@ -8,20 +8,20 @@ manager: dougeby
 ms.date: 06/15/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 1f104923-12df-453c-9c20-942ef65a0945
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6b5967a5980304ba2f6c9af75491463dae1b4b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736104"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510182"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune nella console di Azure e nel client PC Intune legacy
 
@@ -34,6 +34,8 @@ Per l'uso di Intune in Azure per gestire i dispositivi di Windows dell'organizza
 È consigliabile usare [Mobile Device Management (MDM) per gestire i dispositivi Windows 10](../configuration/device-restrictions-windows-10.md) anziché il client PC Intune legacy. La possibilità di gestire i dispositivi Windows 10 tramite MDM è disponibile nel portale di Intune in Azure. La soluzione MDM per Windows 10 offre molte nuove funzionalità per la gestione e la sicurezza, non disponibili tramite il client PC Intune legacy.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Le funzionalità del client PC legacy sono disponibili solo nella console di Silverlight
+
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 I flussi di lavoro di gestione del client PC Intune usano la [console di amministrazione di Intune basata su Silverlight](https://manage.microsoft.com/), con le conseguenze seguenti:
 
@@ -61,7 +63,7 @@ Per un confronto dettagliato tra il client PC e le funzionalità MDM, vedere [Co
 Per passare dalla gestione dei dispositivi Windows 10 con il client PC Intune alla gestione con MDM, seguire questi passaggi:
 
 1. Nella console di Silverlight, eseguire una **Cancellazione selettiva** per annullare la registrazione del dispositivo dal client PC.
-  popup ![Warning con il pulsante di opzione "cancellazione selettiva del dispositivo" selezionato @ no__t-1
+  ![Warning popup con il pulsante di opzione "cancellazione selettiva del dispositivo" selezionato ](./media/intune-legacy-pc-client/image02.png)
 2. Registrare nuovamente il dispositivo tramite [MDM (e/o l'aggiunta ad Azure AD)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Passaggi successivi

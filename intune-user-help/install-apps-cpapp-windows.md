@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,27 +19,28 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413880"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506119"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installare e condividere app nel dispositivo
+
 Installare le app nel dispositivo dall'app Portale aziendale per Windows.
 
 ## <a name="install-apps"></a>Installare app
 
 1. Aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione.  
 
-    ![Home page dell'app Portale aziendale per Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
+    ![Home page dell'app Portale aziendale per Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Trovare e installare le app da una delle sezioni seguenti dell'app Portale aziendale:  
 
     * **Home**: scegliere da un elenco delle app in primo piano dell'organizzazione.  
     * **Mostra tutto**: nella sezione **Home page** > **App** fare clic su **Mostra tutto** per visualizzare tutte le app disponibili.  
     * **Tutte le app**: selezionare questa pagina nel riquadro di spostamento per visualizzare tutte le app disponibili, comprese quelle installate e in primo piano. Visualizzare, ordinare e filtrare le app. I risultati della ricerca sono ordinati automaticamente per pertinenza.  
-    * **Categorie di app**: selezionare questa pagina nel riquadro di spostamento scegliere le app basate sul tipo o funzione. Le app vengono ordinate in categorie, ad esempio **in primo piano**, **Education**, e **produttività**.  
+    * **Categorie di app**: selezionare questa pagina nel riquadro di spostamento per scegliere le app in base al tipo o alla funzione. Le app sono ordinate in categorie, ad esempio in **primo piano**, **formazione**e **produttività**.  
     * **Cerca app**: nel riquadro di spostamento dell'app è presente una barra di ricerca statica.  Per trovare le app disponibili, eseguire la ricerca per nome dell'app o dell'editore.  
 
 3. Selezionare un'app.   
@@ -49,7 +51,7 @@ Installare le app nel dispositivo dall'app Portale aziendale per Windows.
     ![App Portale aziendale per Windows 10, pagina Dettagli app, con lo stato "Installata" visualizzato dopo l'installazione dell'app. Il pulsante Installa viene sostituito da Reinstalla.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
 > [!IMPORTANT]
-> Se non è possibile installare un'app obbligatoria e l'organizzazione lo rende disponibile per poter installare manualmente, selezionare **ripetere**. Potrebbe volerci fino a dieci minuti per visualizzare lo stato aggiornato. Se si seleziona **ripetere** nuovamente durante questo periodo e riceve un errore, che è accettabile. Rimanere in attesa di dieci minuti per lo stato aggiornato.   
+> Se non è possibile installare un'app richiesta e l'organizzazione la rende disponibile per l'installazione manuale, selezionare **Riprova**. Potrebbero essere necessari fino a dieci minuti per visualizzare lo stato aggiornato. Se si seleziona nuovamente **Riprova** durante questo periodo di tempo e si riceve un errore, è accettabile. Continuare ad attendere i dieci minuti per uno stato aggiornato.   
 
 A seconda delle dimensioni dell'azienda, nel portale aziendale possono essere disponibili per il download più versioni di Office. Per informazioni specifiche sulla famiglia di prodotti Office per i dispositivi Windows, vedere [Installazione di Office 365 nel dispositivo Windows 10](./install-office-windows.md).
 
@@ -67,12 +69,12 @@ Consigliare le app e condividerle con i contatti del lavoro e dell'istituto di i
 
 Quando la condivisione è stata confermata, il destinatario riceverà un collegamento e un messaggio per visualizzare i dettagli dell'app. Il collegamento apre la pagina **Dettagli app** dell'app Portale aziendale. 
 
-## <a name="available-and-required-apps"></a>App disponibili e necessarie
-Le app sono assegnate all'utente dall'organizzazione e con etichetta nel portale aziendale come **Available** oppure **obbligatorio**. 
+## <a name="available-and-required-apps"></a>App disponibili e richieste
+Le app vengono assegnate all'utente dall'organizzazione ed etichettate in Portale aziendale come **disponibile** o **richiesto**. 
 
-* Le app disponibili: queste App sono selezionate per l'organizzazione e sono utili e appropriate per l'azienda o dell'istituto di istruzione. Sono facoltativi per installare e sono le uniche App sono disponibili nel portale aziendale per l'installazione. 
+* App disponibili: queste app sono selezionate dall'organizzazione e sono appropriate e utili per l'azienda o l'Istituto di istruzione. Sono facoltativi per l'installazione e sono le uniche app disponibili nella Portale aziendale per l'installazione. 
 
-* Le applicazioni richieste: queste App sono necessarie per il lavoro e dell'istituto di istruzione e vengono distribuite direttamente sul tuo dispositivo. Queste App vengono installate automaticamente per l'utente senza l'intervento. 
+* App richieste: queste app sono necessarie per l'ufficio e l'Istituto di istruzione e vengono distribuite direttamente nel dispositivo. Queste app vengono installate automaticamente senza alcun intervento da parte dell'utente. 
 
 Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per Windows, si avrà accesso alle app per Windows, non alle app per iOS.
 
@@ -81,20 +83,20 @@ Se un’app necessaria non è disponibile nell’app Portale aziendale, richiede
 
   ![App Portale aziendale per Windows 10, pagina Guida e supporto tecnico, con i dettagli del supporto tecnico evidenziati. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Visualizzare installato le app  
-Visualizzare un elenco di tutte le app installate nel dispositivo. Il **le app installate** pagina vengono elencati i dettagli seguenti su ogni applicazione:
+## <a name="view-installed-apps"></a>Visualizza le app installate  
+Visualizzare un elenco di tutte le app installate nel dispositivo. La pagina **app installate** elenca i dettagli seguenti su ogni app:
 
-* Nome: nome dell'app. App disponibili per includono un collegamento per il **dettagli dell'App** pagina.
-* Tipo di assegnazione: come l'app viene assegnata e reso disponibile al Licenziatario. 
-* Server di pubblicazione: Il nome dello sviluppatore o società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o la tua organizzazione.  
-* Data pubblicazione: La data che l'app è stata resa disponibile per il download. Pubblicare data è stato possibile visualizzare la versione iniziale di un'app o aggiorna un'app più recente.
-* Stato: Installazione stato corrente dell'app nel dispositivo. Le app possono mostrare come installare, installazione e installare non è riuscita. Le app obbligatorie potrebbe richiedere fino a 10 minuti per visualizzare un stato aggiornato. Vedere la nota sotto [installare le app](#install-apps) per importanti informazioni dettagliate sull'installazione di un'app obbligatoria. 
+* Nome: nome dell'app. Le app disponibili includono un collegamento alla pagina dei **Dettagli dell'app** .
+* Tipo di assegnazione: il modo in cui l'app viene assegnata e resa disponibile. 
+* Publisher: il nome dello sviluppatore o della società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o un'organizzazione.  
+* Data di pubblicazione: la data in cui l'app è stata resa disponibile per il download. La data di pubblicazione potrebbe visualizzare la versione iniziale o l'aggiornamento più recente di un'app.
+* Stato: lo stato di installazione corrente dell'app nel dispositivo. Le app possono essere visualizzate come installazione, installazione e installazione non riuscita. Per visualizzare uno stato aggiornato, le app richieste potrebbero richiedere fino a 10 minuti. Vedere la nota in [installare le app](#install-apps) per informazioni importanti sull'installazione di un'app richiesta. 
 
-Per accedere a questa pagina, passare al menu di navigazione e selezionare **le app installate**. 
+Per accedere a questa pagina, andare al menu di navigazione e selezionare **app installate**. 
 
-  ![Screenshot di esempio dell'app portale aziendale per Windows 10, pagina delle App installate. ](./media/installed-apps-cp-1906.png)  
+  ![Screenshot di esempio dell'app Portale aziendale per Windows 10, pagina App installate. ](./media/installed-apps-cp-1906.png)  
 
 
-Uso **per ordinare** per ridisporre il tipo di assegnazione di App, autore, in ordine alfabetico in base al nome, o in ordine cronologico dalla data di pubblicazione. Uso **Filtra per** per limitare l'App viene visualizzato in base allo stato di installazione.  Se non sono disponibili App, si verrà visualizzato un messaggio che nessuna App aziendali installate.  
+Usare **Sort by** per ridisporre il tipo di assegnazione di app, il server di pubblicazione, in ordine alfabetico per nome o in ordine cronologico per data di pubblicazione. Usare **Filtra** per per limitare le app visualizzate in base allo stato dell'installazione.  Se non è disponibile alcuna app, verrà visualizzato un messaggio che mostra che non sono state installate app aziendali.  
 
 Servono altre informazioni? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

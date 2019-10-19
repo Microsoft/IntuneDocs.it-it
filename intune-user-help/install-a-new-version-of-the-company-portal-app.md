@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840953"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506050"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Come aggiornare l'app Portale aziendale
 
@@ -44,13 +45,13 @@ Quando è disponibile una nuova versione, viene visualizzata un'opzione **Aggior
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>Aggiornare l'app Portale aziendale nel dispositivo macOS
 
-Configurare il portale aziendale per installare automaticamente gli aggiornamenti appena diventano disponibili. 
+Configurare Portale aziendale per installare automaticamente gli aggiornamenti non appena diventano disponibili. 
 
-1. Aprire App portale aziendale e passare a **aiutare**. 
+1. Aprire Portale aziendale e andare alla **Guida**. 
 2. Selezionare **Controlla aggiornamenti**. 
-3. Nella schermata di Microsoft AutoUpdate, selezionare **scaricare e installare automaticamente**. 
+3. Nella schermata Microsoft AutoUpdate selezionare **Scarica e installa automaticamente**. 
 
-Per visualizzare gli aggiornamenti disponibili, selezionare **verificare la presenza di aggiornamenti**.  
+Per visualizzare gli aggiornamenti disponibili, selezionare **Controlla aggiornamenti**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Aggiornare l'app Portale aziendale nel dispositivo Windows
 Per ottenere automaticamente gli aggiornamenti non appena sono disponibili, aprire Microsoft Store e passare a **Impostazioni**. Attivare quindi **Aggiornamenti app**. Per visualizzare gli aggiornamenti recenti e le app in attesa nella coda di download, passare a **Downloads and updates** (Download e aggiornamenti).  

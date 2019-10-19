@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733478"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490467"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creare un report di Intune dal feed OData con Power BI
 
@@ -57,7 +58,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 2. Aprire il riquadro **Data warehouse di Intune** selezionando il collegamento Data warehouse in **Altre attività** sul lato destro del pannello **Microsoft Intune - Panoramica**.
 3. Copiare l'URL del feed personalizzato. ad esempio `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Aprire Power BI Desktop.
-5. Dalla barra dei menu selezionare **File** > **Ottieni dati** > **feed OData**.
+5. Dalla barra dei menu selezionare **File**  > **recuperare i dati**  > **feed OData**.
 6. Incollare l'URL del feed personalizzato copiato dal passaggio precedente nella casella URL della finestra **feed OData** .
 7. Selezionare **Di base**.
 
@@ -95,7 +96,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 2. Individuare la `devices` tabella nel riquadro **campi**.
 3. Espandere la tabella `devices` e selezionare il campo dati `manufacturer`.
 4. Trascinare il campo dati `manufacturer` nell'area di disegno report e rilasciarlo nel grafico **mappa ad albero** .
-5. Trascinare il campo dati `deviceKey` dalla tabella `devices` al riquadro **visualizzazioni** e rilasciarlo nella sezione **valori** della casella **Aggiungi campi dati qui**.  
+5. Trascinare il campo dati `deviceKey` dalla tabella `devices` al riquadro **visualizzazioni** e rilasciarlo nella sezione **valori** della casella etichetta **Aggiungi campi dati qui**.  
 
 È ora disponibile una visualizzazione della distribuzione dei produttori di dispositivi all'interno dell'organizzazione.
 
@@ -108,9 +109,9 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 1. Per aggiungere un filtro, selezionare l'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati e relazioni supportate](./media/reports-proc-create-with-odata/reports-create-slicer.png)) in **Visualizzazioni**. Verrà visualizzata la visualizzazione **filtro dei dati** vuota nell'area di disegno.
 2. Individuare la `ownerTypes` tabella nel riquadro **campi**.
 3. Espandere la tabella `ownerTypes` e selezionare il campo dati `ownerTypeName`.
-4. Trascinare il campo dati `onwerTypeName` dalla tabella `ownerTypes` al riquadro **filtri** e rilasciarlo nella sezione **filtri in questa pagina** della casella etichetta **Aggiungi campi dati qui**.  
+4. Trascinare il campo dati `onwerTypeName` dalla tabella `ownerTypes` al riquadro **filtri** e rilasciarlo nella sezione **filtri in questa pagina** della casella **Aggiungi campi dati qui**.  
 
-   Nella tabella `OwnerTypes` è disponibile un campo dati denominato `OwnerTypeKey` che che contiene i dati relativi al fatto che un dispositivo sia di proprietà dell'azienda o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella `ownerTypes` e trascinare **ownerTypeName** nel filtro dei dati. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
+   Nella tabella `OwnerTypes` è presente un campo dati denominato `OwnerTypeKey`that contiene i dati relativi al fatto che un dispositivo sia di proprietà dell'azienda o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella `ownerTypes` e trascinare **ownerTypeName** nel filtro dei dati. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
 
 ![Mappa ad albero con filtro: supporto di relazioni tra tabelle](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

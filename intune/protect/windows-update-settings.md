@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584460"
 ---
 # <a name="windows-update-settings-for-intune"></a>Impostazioni di aggiornamento di Windows per Intune  
 
@@ -216,45 +217,9 @@ Le impostazioni dell'esperienza utente specificano l'esperienza dell'utente fina
   - **Disattiva tutte le notifiche, esclusi gli avvisi di riavvio**
   - **Disattiva tutte le notifiche, inclusi gli avvisi di riavvio**  
 
-- **Consenti all'utente di riavviare (riavvio in caso di occupato)**  
-  **Impostazione predefinita**: Non configurato  
-  > [!IMPORTANT]  
-  > Non è più consigliabile usare le impostazioni di *riavvio* . Usare invece le nuove impostazioni di *scadenza* che sostituiscono le impostazioni di *riavvio* . Intune determinerà il [supporto ** per](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) le impostazioni di riavvio in un aggiornamento futuro.
-
-  Il riavvio attivato è supportato per Windows 10 versione 1803 e versioni successive. 
-
-  > [!NOTE]  
-  > Windows 10 versione 1809 introduce impostazioni aggiuntive di riavvio in caso di occupato che consentono di applicare impostazioni distinte agli aggiornamenti delle funzionalità e agli aggiornamenti qualitativi. Le impostazioni gestite da Intune non vengono tuttavia applicate separatamente ai vari tipi di aggiornamento. Al contrario, Intune applica gli stessi valori sia agli aggiornamenti delle funzionalità sia agli aggiornamenti qualitativi.  
-  
-  - **Non configurato**  
-  - **Obbligatorio**: impostare su *Obbligatorio* per consentire l'uso delle opzioni di riavvio in caso di occupato per gli aggiornamento di Windows 10. Queste opzioni coinvolgono l'utente di un dispositivo nella gestione del riavvio di un dispositivo dopo l'installazione di un aggiornamento che richiede un riavvio.  
-
-  Per altre informazioni su questa opzione, vedere [Riavvio in caso di occupato](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) nella documentazione di Windows 10 per la distribuzione degli aggiornamenti.  
-
-  Le impostazioni seguenti consentono di specificare quando si verificano le azioni di riavvio in caso di occupato.  
-
-  - **Esegui la transizione degli utenti al riavvio in caso di occupato dopo un riavvio automatico (giorni)**  
-    **Impostazione predefinita**: non configurata Windows Update CSP: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    Specificare un valore compreso tra **2** e **30** giorni per indicare dopo quanto tempo dall'installazione dell'aggiornamento il dispositivo attiva il comportamento di riavvio in caso di occupato. Trascorso il numero di giorni configurato, gli utenti riceveranno una richiesta di riavvio del dispositivo.  
-
-  - **Posponi il promemoria per il riavvio in caso di occupato (giorni)**  
-    **Impostazione predefinita**: Non configurato    
-    Windows Update CSP: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    Specificare un valore compreso tra **1** e **3** per il periodo di tempo durante il quale una richiesta di riavvio può essere posticipata.  Trascorso questo periodo, viene nuovamente richiesto il riavvio. L'utente può continuare a posporre il promemoria fino alla scadenza dell'installazione.  
-
-  - **Imposta la scadenza per i riavvii in sospeso (giorni)**  
-    **Impostazione predefinita**: Non configurato  
-    Windows Update CSP: [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    Specificare un valore compreso tra **2** e **30** come numero massimo di giorni di attesa dall'inizio del comportamento di riavvio in caso di occupato, prima che il dispositivo imponga un riavvio obbligatorio. Per questo riavvio verrà richiesto agli utenti di salvare il lavoro.
-
 - **Usa impostazioni scadenza**  
   **Impostazione predefinita**: Non configurato  
-  > [!IMPORTANT]  
-  > A partire dall'aggiornamento di agosto per Intune, è consigliabile usare le seguenti impostazioni di scadenza che sostituiscono le impostazioni di riavvio. Intune determinerà il [supporto ** per](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) le impostazioni di riavvio in un futuro aggiornamento a Intune.  
-
+ 
   Consente all'utente di usare le impostazioni di scadenza.  
 
   - **Non configurato**
@@ -263,21 +228,21 @@ Le impostazioni dell'esperienza utente specificano l'esperienza dell'utente fina
   Quando è impostato su *Consenti*, è possibile configurare le impostazioni seguenti per le scadenze:
 
   - **Scadenza per gli aggiornamenti delle funzionalità**  
-    **Impostazione predefinita**: 7  
+    **Impostazione predefinita**: *Non configurato*  
     Windows Update CSP: [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     Specifica il numero di giorni per cui un utente ha prima che gli aggiornamenti delle funzionalità vengano installati automaticamente nei dispositivi (2-30).
 
   - **Scadenza per gli aggiornamenti qualitativi**  
-    **Impostazione predefinita**: 7  
+    **Impostazione predefinita**: *Non configurato*  
     Windows Update CSP: [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     Specifica il numero di giorni per cui un utente ha prima che gli aggiornamenti qualitativi siano installati automaticamente nei propri dispositivi (2-30).
 
   - **Periodo di tolleranza**  
-    **Impostazione predefinita**: 2 Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **Impostazione predefinita**: *non configurata* Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    Specifica un numero minimo di giorni dopo la scadenza finché i riavvii non vengono eseguiti automaticamente (0-7).
+    Specifica un numero minimo di giorni dopo la scadenza finché i riavvii non vengono eseguiti automaticamente (2-7).
 
   - **Riavvio automatico prima della scadenza**  
     **Impostazione predefinita**: Sì Windows Update CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ Le impostazioni dell'esperienza utente specificano l'esperienza dell'utente fina
     Specifica se il dispositivo deve essere riavviato automaticamente prima della scadenza.
     - **Sì**
     - **No**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>Modalità di download con ottimizzazione recapito  
 

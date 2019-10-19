@@ -9,6 +9,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721176"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507674"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo crittografato, ma le app dicono altrimenti
 
@@ -31,7 +32,7 @@ Se Portale aziendale o l'app Microsoft Intune affermano che il dispositivo non �
 
 ## <a name="add-a-startup-pin"></a>Aggiungere un PIN di avvio
 
-Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Il percorso di questa impostazione sarà nell'app **Impostazioni** del dispositivo. Il nome e il percorso dell'impostazione possono variare. Ad esempio, in Samsung Galaxy S7, l'impostazione viene definita **avvio protetto**. Per abilitarla e creare un codice di accesso, passare a **impostazioni** > **schermata di blocco e sicurezza** > **avvio protetto**.  
+Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Il percorso di questa impostazione sarà nell'app **Impostazioni** del dispositivo. Il nome e il percorso dell'impostazione possono variare. Ad esempio, in Samsung Galaxy S7, l'impostazione viene definita **avvio protetto**. Per abilitarla e creare un codice di accesso, passare a **impostazioni**  > **schermata di blocco e sicurezza**  > **avvio protetto**.  
 
 ## <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
 

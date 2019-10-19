@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2ec4224bead13455752488f6ea34af6e012bc8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733049"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601503"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di iOS per contrassegnare un dispositivo come conforme o non conforme in Intune
 
@@ -73,7 +74,7 @@ Per informazioni dettagliate sui profili di posta elettronica, vedere [Configura
 ### <a name="password"></a>Password
 
 > [!NOTE]
-> Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode.
+> Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode. Quando viene impostato un codice per il dispositivo iOS, viene avviato automaticamente il processo di crittografia. Il dispositivo resta crittografato fino a quando non viene disabilitato il codice.
 
 - **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
 - **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.

@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862257"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506286"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrare il dispositivo aziendale con l'app Microsoft Intune
 
@@ -78,11 +79,11 @@ Seguire questa procedura per configurare e registrare il dispositivo.
 
    ![Immagine di esempio della schermata Set up your work phone (Configura telefono aziendale), con il pulsante Install (Installa) evidenziato.](./media/fully-managed-intune-app-11.png)   
 
-10. Toccare **Start** (Avvia) per aprire l'app Microsoft Intune e registrare il dispositivo. 
+10. Toccare **Start (avvia** ) per aprire l'app Microsoft Intune e registrare il dispositivo. 
 
     ![Immagine di esempio della schermata Set up your work phone (Configura telefono aziendale), con il pulsante Start (Avvia) evidenziato.](./media/fully-managed-intune-app-17.png)   
 
-11. Toccare **accedi** e quindi toccare **Avanti** per avviare la registrazione. Quando viene visualizzato il messaggio che indica che la registrazione è **stata**completata, toccare fine.  
+11. Toccare **accedi** e quindi toccare **Avanti** per avviare la registrazione. Quando viene visualizzato il messaggio che indica che la registrazione è stata completata, toccare **fine**.  
 
     ![Immagine di esempio relativa alla configurazione dell'accesso, alla schermata di registrazione del dispositivo, all'evidenziazione del pulsante fine.](./media/fully-managed-intune-app-19.png)   
 

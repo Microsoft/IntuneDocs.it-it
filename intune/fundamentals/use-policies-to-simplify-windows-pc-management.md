@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccedb68a7226c0d026519cf90c7b278e29678929
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f9990d24c97ea4e8b6d0c37fb8225a9df0e47cb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735493"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504832"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usare i criteri per semplificare la gestione dei PC
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Per gestire i desktop di Windows come PC, eseguendo il client software di Intune su di essi, è possibile usare solo i criteri in **Gestione computer** nella console di amministrazione di Intune. Tutti gli altri criteri elencati nella console di amministrazione sono destinati solo ai dispositivi mobili. I criteri **Gestione computer** consentono di configurare le impostazioni in Microsoft Intune Center, controllare gli aggiornamenti dei PC e configurare Windows Firewall per i PC.
 

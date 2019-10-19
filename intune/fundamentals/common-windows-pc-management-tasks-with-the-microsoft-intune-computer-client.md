@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f272053f9034cf89476922649576556de634d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: edf13046a66f825b5f976491d1dd3c22c9f320ac
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735675"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509127"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Attività comuni di gestione di PC Windows con il client software di Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento elenca le attività che è possibile eseguire per gestire i desktop gestiti come PC installando il client software di Intune. Questo argomento non tratta la gestione dei PC come dispositivi mobili. Se il client non è ancora stato installato nei PC, vedere [Installare il client software di Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 

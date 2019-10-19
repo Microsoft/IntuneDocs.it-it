@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734154"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593779"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Aggiungere impostazioni VPN in dispositivi iOS in Microsoft Intune
 
@@ -72,6 +73,8 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
     > [!NOTE]
     > Se nome utente e password vengono usati come metodo di autenticazione per la VPN IPSec Cisco, devono fornire SharedSecret tramite un profilo personalizzato di Apple Configurator.
 
+  - **Credenziale derivata**: se non è stata configurata alcuna autorità emittente di credenziali derivate, Intune richiede di eseguire questa operazione.
+
 - **URL esclusi** (solo Zscaler): quando si è connessi alla rete VPN di Zscaler, gli URL elencati sono accessibili dall'esterno del cloud di Zscaler. 
 
 - **Split tunneling**: scegliere **Abilita** o **Disabilita** per consentire ai dispositivi di scegliere la connessione da usare in base al traffico. Ad esempio, un utente in un hotel userà la connessione VPN per accedere ai file di lavoro, ma userà la rete standard dell'hotel per la normale esplorazione sul Web.
@@ -105,7 +108,7 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
 
 ## <a name="ikev2-settings"></a>Impostazioni IKEv2
 
-Queste impostazioni si applicano quando si sceglie il **tipo di connessione** > **IKEv2**.
+Queste impostazioni si applicano quando si sceglie il **tipo di connessione**  > **IKEv2**.
 
 - **Identificatore remoto**: immettere l'indirizzo IP di rete, FQDN, USERFQDN o ASN1DN del server IKEv2. Ad esempio, immettere `10.0.0.3` o `vpn.contoso.com`. In genere, si immette lo stesso valore del [**nome della connessione**](#base-vpn-settings) (in questo articolo). Ma dipende dalle impostazioni del server IKEv2.
 
