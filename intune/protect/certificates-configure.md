@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999310"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251573"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usare i certificati per l'autenticazione in Microsoft Intune  
 
@@ -51,7 +51,8 @@ Ogni singolo profilo di certificato creato supporta un'unica piattaforma. Ad ese
 | Piattaforma              | Profilo di certificato attendibile | Profilo di certificato PKCS | Profilo di certificato SCEP | Profilo di certificato PKCS importato  |
 |--|--|--|--|---|
 | Amministratore dispositivo Android | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png)|  ![Supportato](./media/certificates-configure/green-check.png) |
-| Android Enterprise <br> - Proprietario del dispositivo   | ![Supportato](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Enterprise <br> - Dispositivi completamente gestiti (proprietario del dispositivo)   | ![Supportato](./media/certificates-configure/green-check.png) |   | ![Supportato](./media/certificates-configure/green-check.png) |   |
+| Android Enterprise <br> - Dedicato (proprietario del dispositivo)   |  |   |  |   |
 | Android Enterprise <br> - Profilo di lavoro    | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Supportato](./media/certificates-configure/green-check.png) |   |![Supportato](./media/certificates-configure/green-check.png)|![Supportato](./media/certificates-configure/green-check.png)|

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 805a1b1145c6b177c83de17de5a2df3efb7380da
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830591"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379767"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,20 +35,20 @@ I criteri di protezione delle app possono essere monitorati in tre posizioni div
 - Visualizzazione Rapporti
 
 > [!NOTE]
-> Per informazioni sulla creazione di criteri di protezione delle app, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
+> Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
-Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. Tutte le istanze dell'app che hanno archiviato il servizio MAM negli ultimi 90 giorni verranno incluse nel report Stato protezione app. Un'istanza dell'app è un insieme di utente univoco + app + dispositivo. 
+Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. Tutte le istanze dell'app che hanno eseguito la sincronizzazione con il servizio MAM negli ultimi 90 giorni sono incluse nel report Stato protezione app. Un'*istanza dell'app* è un insieme univoco di utente + app + dispositivo. 
 
 ## <a name="summary-view"></a>Visualizzazione di riepilogo
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Nel riquadro **Intune** scegliere **App client**.
-4. Nel carico di lavoro **App client** scegliere **Stato protezione app** nella sezione **Monitoraggio** per esaminare la visualizzazione di riepilogo:
+4. Per la visualizzazione di riepilogo, nel carico di lavoro **App client**, in **Monitoraggio**, scegliere**Stato di protezione dell'app**.
 
-![Riquadro Riepilogo del riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
+   ![Screenshot del riquadro di riepilogo del riquadro di gestione di applicazioni per dispositivi mobili di Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Utenti assegnati**: numero totale di utenti assegnati dell'azienda che usano un'app associata a un criterio in un contesto aziendale. Comprende sia gli utenti protetti e con licenza, sia gli utenti non protetti e senza licenza.
-- **Utenti contrassegnati**: numero di utenti che riscontrano problemi. Gli utenti con dispositivi jailbroken (iOS) e rooted (Android) vengono indicati in **Utenti contrassegnati**. Gli utenti con dispositivi contrassegnati dal controllo dell'attestazione del dispositivo SafetyNet di Google (se attivato dall'amministratore IT) vengono indicati qui. 
+- **Utenti contrassegnati**: Numero di utenti che riscontrano problemi con il proprio dispositivo. Gli utenti con dispositivi jailbroken (iOS) e rooted (Android) vengono indicati in **Utenti contrassegnati**. Vengono segnalati qui anche gli utenti con dispositivi contrassegnati dal controllo dell'attestazione del dispositivo SafetyNet di Google, se attivato dall'amministratore IT. 
 - **Utenti con app potenzialmente dannose**: numero di utenti che possono avere un'app dannosa nel dispositivo Android rilevato da Google Play Protect. 
 - **Stato utente per iOS** e **Stato utente per Android**: numero di utenti che hanno usato un'app e ai quali è associato un criterio in un contesto aziendale per la relativa piattaforma. Questa informazione mostra il numero di utenti gestiti dal criterio e il numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
 - **Principali app protette di iOS**: in base alle app iOS più usate, questa informazione indica il numero di app iOS protette e non protette.
@@ -60,7 +60,7 @@ Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. 
     > Se esistono più criteri per ogni piattaforma, un utente viene considerato gestito da criteri quando ha almeno un criterio assegnato.
 
 ## <a name="detailed-view"></a>Visualizzazione dettagliata
-Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquadro **Stato utente**, a seconda della piattaforma del sistema operativo del dispositivo, e il riquadro **Utenti con app potenzialmente dannose** e **Utenti contrassegnati**.
+Per accedere alla visualizzazione dettagliata del riepilogo, scegliere i riquadri **Stato utente** (a seconda della piattaforma del sistema operativo del dispositivo), **Utenti con app potenzialmente dannose** e **Utenti contrassegnati**.
 
 ### <a name="user-status"></a>Stato utente
 È possibile eseguire la ricerca di un singolo utente e controllare il relativo stato di conformità. Il riquadro **Segnalazione app** visualizza le informazioni seguenti per un utente selezionato:
@@ -71,20 +71,20 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
 - **Criteri**: i criteri associati all'app.
 - **Status** (Stato):
   - **Archiviazione eseguita**: i criteri sono stati distribuiti all'utente e l'app è stata usata almeno una volta nel contesto aziendale.
-  - **Archiviazione non eseguita**: i criteri sono stati distribuiti all'utente, ma l'app non è stata usata nel contesto aziendale da quel momento.
+  - **Archiviazione non eseguita**: i criteri sono stati distribuiti all'utente, ma in seguito l'app non è stata usata nel contesto aziendale.
 - **Ultima sincronizzazione**: data dell'ultima sincronizzazione dell'app con Intune. 
 
 >[!NOTE]
-> La colonna "Ultima sincronizzazione" contiene lo stesso valore sia nel rapporto Stato dell'utente nella console sia nel [report esportabile con estensione csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) Criteri di protezione dell'app. La differenza è un leggero ritardo nella sincronizzazione tra i valori nei 2 rapporti. 
+> La colonna **Ultima sincronizzazione** contiene lo stesso valore sia nel report Stato dell'utente nella console sia nel [report esportabile con estensione csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) Criteri di protezione dell'app. La differenza è un leggero ritardo nella sincronizzazione tra i valori nei due report. 
 >
-> L'ora a cui fa riferimento "Ultima sincronizzazione" è l'ultima volta in cui Intune ha rilevato l'istanza dell'app. L'istanza di un'app è una combinazione univoca di app + utente + dispositivo. Quando un utente finale avvia un'app, potrebbe comunicare o meno con il servizio Protezione app di Intune al momento dell'avvio, a seconda dell'ultima archiviazione eseguita. Questa documentazione spiega [i tempi degli intervalli tra tentativi per l'archiviazione dei criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Quindi, se un utente finale non ha usato l'app specifica nell'ultimo intervallo di archiviazione, in genere 30 minuti per l'utilizzo attivo, e avvia l'app, si verifica quanto segue:
+> L'ora a cui fa riferimento Ultima sincronizzazione è l'ultima volta in cui Intune ha rilevato l'istanza dell'app. Quando un utente avvia un'app, può informare il servizio Protezione app di Intune al momento dell'avvio, a seconda dell'ultima archiviazione eseguita. Vedere [i tempi degli intervalli tra tentativi per l'archiviazione di Criteri di protezione dell'app](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Se un utente non ha usato l'app nell'ultimo intervallo di archiviazione, in genere 30 minuti per l'utilizzo attivo, e avvia l'app, si verifica quanto segue:
 >
-> - Nel report esportabile con estensione csv Criteri di protezione dell'app sarà riportata l'ora più recente in un intervallo compreso tra 1 minuto (solitamente il tempo minimo) e 30 minuti (il contratto di servizio massimo disponibile con l'aggregazione SQL usata dai report di Intune).
-> - Il report Stato dell'utente riporterà immediatamente l'ora più recente.
+> - Il report esportabile con estensione csv Criteri di protezione dell'app indica l'ora più recente, con un ritardo compreso tra 1 minuto (minimo) e 30 minuti (massimo).
+> - Il report Stato dell'utente ha immediatamente l'ora più recente.
 >
-> Si consideri ad esempio un determinato utente finale con licenza che avvia un'app protetta alle 12:00:
-> - Se si tratta di un primo accesso, significa che l'utente finale è stato disconnesso prima (utilizzo non attivo), vale a dire che non esiste una registrazione dell'istanza dell'app con Intune. Dopo aver eseguito l'accesso, verrà inviata una nuova registrazione dell'istanza dell'app e verrà immediatamente eseguita un'archiviazione in assenza di problemi di connettività, con gli stessi ritardi di tempo elencati in precedenza per le archiviazioni future. L'ora dell'ultima sincronizzazione sarà quindi 12:00 nel report Stato dell'utente e 12:01 (o 12:30 al più tardi) nel report Criteri di protezione dell'app. 
-> - Se l'app è stata appena avviata, l'ora dell'ultima sincronizzazione segnalata dipenderà dall'ultima archiviazione eseguita.
+> Si consideri ad esempio un utente specifico con licenza che avvia un'app protetta alle 12:00:
+> - Se si tratta del primo accesso, significa che l'utente prima era disconnesso e non ha registrato un'istanza dell'app con Intune. Dopo l'accesso, l'utente ottiene una nuova registrazione dell'istanza dell'app, che può essere archiviata immediatamente, con gli stessi ritardi elencati in precedenza per le archiviazioni future. L'ora dell'ultima sincronizzazione corrisponde quindi a 12:00 nel report Stato dell'utente e a 12:01 (o a 12:30 al più tardi) nel report Criteri di protezione dell'app. 
+> - Se l'utente avvia semplicemente l'app, l'ora dell'ultima sincronizzazione indicata dipende dall'ultima archiviazione eseguita.
 
 
 Per visualizzare i report generati per un utente, seguire questa procedura:
@@ -93,7 +93,7 @@ Per visualizzare i report generati per un utente, seguire questa procedura:
 
     ![Schermata del riquadro Riepilogo della funzionalità di gestione di applicazioni mobili di Intune](./media/app-protection-policies-monitor/MAM-reporting-6.png)
 
-2. Nel riquadro **Segnalazione app** che viene aperto scegliere **Selezionare l'utente** per cercare un utente di Azure Active Directory.
+2. Nel riquadro **Segnalazione app** scegliere **Selezionare l'utente** per cercare un utente di Azure Active Directory.
 
     ![Schermata dell'opzione Selezionare l'utente nel riquadro Segnalazione app](./media/app-protection-policies-monitor/MAM-reporting-2.png)
 
@@ -103,30 +103,39 @@ Per visualizzare i report generati per un utente, seguire questa procedura:
 > Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che all'utente non è applicato alcun criterio MAM.
 
 ### <a name="flagged-users"></a>Utenti contrassegnati
-Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp. Gli utenti con dispositivi contrassegnati dal controllo dell'avvio condizionale "dell'attestazione del dispositivo SafetyNet" vengono indicati qui con il motivo segnalato da Google.
+Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp. L'errore si verifica in genere per dispositivi jailbroken (iOS) o rooted (Android). In più, gli utenti con dispositivi contrassegnati dal controllo di avvio condizionale 'Attestazione del dispositivo SafetyNet' vengono indicati qui con il motivo segnalato da Google. Perché un utente possa essere rimosso dal report, è necessario che lo stato del dispositivo stesso sia cambiato. Questo si verifica dopo che il controllo di rilevamento radice (o controllo jailbreak/SafetyNet) successivo ha indicato un risultato positivo. Se il dispositivo è stato effettivamente corretto, l'aggiornamento del report Utenti contrassegnati avviene quando il pannello viene ricaricato.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Utenti con app potenzialmente dannose
-La visualizzazione dettagliata contiene l'utente, l'ID del pacchetto dell'app, se l'app è abilitata per MAM, la categoria di minacce, la posta elettronica, il nome del dispositivo e un timestamp. Gli utenti con dispositivi contrassegnati dal controllo dell'avvio condizionale "Rendi obbligatoria l'analisi delle minacce nelle app" vengono indicati qui con la categoria di minaccia segnalata da Google. Se nel report sono elencate app che vengono distribuite tramite Intune, contattare lo sviluppatore dell'app e/o rimuovere l'app perché non sia assegnata agli utenti finali. 
+La visualizzazione dettagliata indica:
+
+- Utente.
+- ID del pacchetto dell'app.
+- Se l'app è abilitata per MAM.
+- Categoria della minaccia.
+- Messaggio di posta elettronica.
+- Nome del dispositivo.
+- Timestamp.
+
+Gli utenti con dispositivi contrassegnati dal controllo di avvio condizionale **Rendi obbligatoria l'analisi delle minacce nelle app** vengono indicati qui con la categoria di minaccia segnalata da Google. Se nel report sono elencate app in corso di distribuzione tramite Intune, contattare lo sviluppatore dell'app o rimuovere l'app dall'assegnazione agli utenti. 
 
 ## <a name="reporting-view"></a>Visualizzazione Rapporti
 
 Sono visualizzati gli stessi report disponibili nella parte superiore del pannello **Stato protezione app**.
 
 > [!NOTE]
-> Intune offre campi aggiuntivi per i report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. In Intune questi campi sono disponibili selezionando **App client** > **Stato protezione app** e scegliendo **Report sulla protezione dell'app: iOS, Android**. Inoltre, questi parametri consentiranno di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della versione minima della patch di sicurezza Android. 
+> Intune offre campi aggiuntivi per i report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. È possibile accedere a questi campi in Intune selezionando **App client** > **Stato protezione app** > **Report sulla protezione dell'app: iOS, Android**. Questi parametri consentono anche di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della versione minima della patch di sicurezza Android. 
 
 Sono disponibili altri report relativi allo stato di conformità dei criteri MAM. Per visualizzare questi report, selezionare **App client** > **Stato protezione app** > **Report**. 
 
 Il pannello **Report** fornisce diversi report in base all'utente e all'app, tra cui:
 
-
 - **Report utenti**: questo report offre le stesse informazioni del report **Stato utente** descritte nella sezione [Visualizzazione dettagliata](app-protection-policies-monitor.md#detailed-view).
 
 - **Report app**: oltre a selezionare la piattaforma e l'app, questo report offre due stati di protezione dell'app diversi tra cui è possibile scegliere prima di generare il report. Questi stati sono **Protetta** e **Non protetta**.
 
-  - Stato utente per attività MAM gestita (**Protetta**): questo report descrive l'attività di ogni app MAM gestita per ogni utente. Visualizza tutte le app di destinazione dei criteri MAM per ogni utente e suddivide lo stato di ogni app archiviata con i criteri MAM o di destinazione di un criterio MAM ma mai archiviata.
-  - Stato utente per attività MAM non gestita (**Non protetta**): questo report descrive l'attività delle app abilitate per MAM attualmente non gestite per ogni utente. Questa situazione può verificarsi per i motivi seguenti:
-    - Le app sono usate da un utente o un'app che attualmente non è destinazione di un criterio MAM.
+  - Stato utente per attività MAM gestita (**Protetta**): questo report descrive, per utente, l'attività di ogni app MAM gestita. Visualizza, per utente, tutte le app a cui sono destinati criteri MAM e lo stato di ogni app archiviato con i criteri MAM. Il report include anche lo stato delle app a cui sono destinati criteri MAM ma che non sono mai state archiviate.
+  - Stato utente per attività MAM non gestita (**Non protetta**): questo report descrive, per utente, l'attività delle app abilitate per MAM attualmente non gestite. Ciò può verificarsi perché:
+    - Le app sono usate da un utente o da un'app a cui attualmente non sono destinati criteri MAM.
     - Tutte le app sono archiviate, ma non ricevono alcun criterio MAM.
 
     ![Screenshot del pannello Segnalazione app di un utente con i dettagli di tre app](./media/app-protection-policies-monitor/MAM-reporting-4.png)
@@ -138,22 +147,22 @@ Il pannello **Report** fornisce diversi report in base all'utente e all'app, tra
 
 ## <a name="table-grouping"></a>Raggruppamento tabelle
 
-Dopo la visualizzazione dei dati del **Report protezione app per l'utente**, è possibile aggregare i dati nel modo seguente:
+Dopo che i dati del **Report protezione app per l'utente** sono stati visualizzati, è possibile aggregarli nel modo seguente:
 
-- **Risultato convalida:** i dati visualizzati sono raggruppati in base allo stato di protezione dell'app, che può corrispondere a operazione completata, errore o avviso.
-- **Nome app:** i dati visualizzati sono raggruppati in base all'app (identificata dal nome effettivo) con indicazione dello stato, che può corrispondere a operazione completata, errore o avviso.
+- **Risultato convalida**: i dati sono raggruppati in base allo stato di protezione dell'app, che può corrispondere a "errore", "avviso" o "operazione completata".
+- **Nome app**: i dati sono raggruppati in base al nome effettivo dell'app. Anche in questo caso, lo stato può corrispondere a "errore", "avviso" o "operazione completata".
 
-## <a name="export-app-protection-activities-to-csv"></a>Esportare le attività di protezione delle app in formato CSV
+## <a name="export-app-protection-activities"></a>Esportare le attività di protezione delle app
 
-È possibile esportare tutte le attività relative ai criteri di protezione delle app in un singolo file con estensione *csv*. Questa opzione può rivelarsi utile per analizzare tutti gli stati di protezione delle app segnalati dagli utenti.
+È possibile esportare tutte le attività relative ai criteri di protezione delle app in un singolo file con estensione csv. Questa opzione può rivelarsi utile per analizzare tutti gli stati di protezione delle app segnalati dagli utenti.
 
-Seguire questi passaggi per generare il report sulla protezione delle app:
+Per generare il report protezione app, eseguire questa procedura:
 
 1. Nel pannello Gestione di applicazioni mobili di Intune scegliere **Report protezione app**.
 
     ![Screenshot del collegamento per il download di Protezione app](./media/app-protection-policies-monitor/app-protection-report-csv-2.png)
 
-2. Scegliere **Sì** per salvare il report, quindi scegliere **Salva con nome** e selezionare la cartella in cui eseguire il salvataggio.
+2. Scegliere **Sì** per salvare il report e quindi scegliere **Salva con nome**. Selezionare la cartella in cui si vuole salvare il report.
 
     ![Schermata della finestra di conferma Salva report](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
 

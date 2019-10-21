@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724087"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349996"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune
 
@@ -67,11 +67,11 @@ Se il dispositivo è stato registrato di recente, il controllo della conformità
 | iOS | Ogni 15 minuti per 1 ora, quindi ogni 8 ore |  
 | macOS | Ogni 15 minuti per 1 ora, quindi ogni 8 ore | 
 | Android | Ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
-| PC Windows 10 registrati come dispositivi | Ogni 3 minuti per 30 minuti, quindi ogni 8 ore circa | 
+| PC Windows 10 registrati come dispositivi | Ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
 | Windows Phone | Ogni 5 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
 | Windows 8.1 | Ogni 5 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
 
-Gli utenti possono aprire in qualsiasi momento l'app Portale aziendale e sincronizzare il dispositivo per controllare immediatamente la disponibilità di aggiornamenti dei criteri o del profilo.
+Gli utenti possono aprire in qualsiasi momento l'app Portale aziendale (**Impostazioni** > **Sincronizzazione**) per controllare immediatamente la disponibilità di aggiornamenti dei criteri o del profilo.
 
 Per i dispositivi senza affinità utente, la frequenza di sincronizzazione che segue immediatamente la registrazione può variare da alcune ore a un giorno o più. Intune invia richieste a vari intervalli al dispositivo perché quest'ultimo contatti il servizio. Spetta sempre al dispositivo decidere se eseguire o meno questa operazione. Dopo la registrazione iniziale, il tempo necessario al dispositivo per contattare Intune è imprevedibile. Dipende anche dal tipo di registrazione del dispositivo e dai criteri e i profili assegnati a un dispositivo. Dopo la registrazione del dispositivo e l'applicazione di tutti i criteri e i profili iniziali, il dispositivo controlla la presenza di nuovi criteri e profili ogni 6-8 ore circa, a partire dal momento in cui il dispositivo viene registrato in Intune.
 

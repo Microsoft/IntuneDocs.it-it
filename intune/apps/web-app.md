@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830570"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349972"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830570"
 
 Intune supporta un'ampia gamma di tipi di app, incluse le app Web. Un'app Web è un'applicazione client-server. Il server fornisce l'app Web che include interfaccia utente, contenuto e funzionalità. Le moderne piattaforme di hosting Web in genere offrono anche sicurezza, bilanciamento del carico e altri vantaggi. Un'app Web viene gestita separatamente nel Web. Usare Microsoft Intune per puntare a questo tipo di app. Assegnare anche i gruppi di utenti autorizzati ad accedere all'app. 
 
-Prima di poter gestire e assegnare un'app per gli utenti, è necessario aggiungerla in Intune. Intune crea un collegamento all'app Web nella schermata iniziale del dispositivo dell'utente.
+Prima di poter gestire e assegnare un'app per gli utenti, è necessario aggiungerla in Intune. 
+
+Intune crea un collegamento all'app Web nel dispositivo dell'utente. Per i dispositivi iOS, viene aggiunto un collegamento all'app Web nella schermata iniziale. Per i dispositivi Android, viene aggiunto un collegamento all'app Web nel widget del portale aziendale di Intune e il widget deve essere aggiunto manualmente dall'utente. Per i dispositivi Windows, viene aggiunto un collegamento all'app Web nel menu Start.
 
 > [!Note]
 > Le app Web non sono supportate nei dispositivi del profilo di lavoro Android. Per avviare app Web, è necessario che nel dispositivo dell'utente sia installato un browser.

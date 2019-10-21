@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999363"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379855"
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -80,7 +80,7 @@ Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autoriz
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device (BYOD)
-Il metodo Bring Your Own Device (BYOD) è applicabile a telefoni, tablet e PC personali. Per registrare i dispositivi BYOD, gli utenti installano ed eseguono l'app Portale aziendale. Questo programma consente agli utenti di accedere a risorse aziendali come la posta elettronica.
+Il metodo Bring Your Own Device (BYOD) è applicabile a telefoni, tablet e PC di proprietà personale. Per registrare i dispositivi BYOD, gli utenti installano ed eseguono l'app Portale aziendale. Questo programma consente agli utenti di accedere a risorse aziendali come la posta elettronica.
 
 ## <a name="corporate-owned-device"></a>Dispositivo di proprietà dell'azienda
 I [dispositivi di proprietà dell'azienda](corporate-identifiers-add.md) includono telefoni, tablet e PC di proprietà dell'organizzazione distribuiti al personale. La registrazione dei dispositivi di proprietà dell'azienda rende possibili scenari di gestione come la registrazione automatica, i dispositivi condivisi o i requisiti di registrazione pre-autorizzati. Un metodo comunemente usato dagli amministratori o dai manager per la registrazione dei dispositivi di proprietà dell'azienda è l'uso del manager di registrazione dispositivi. I dispositivi iOS possono essere registrati direttamente tramite gli strumenti DEP (Device Enrollment Program) offerti da Apple. È possibile identificare e contrassegnare come dispositivi di proprietà dell'azienda anche i dispositivi con numero IMEI.

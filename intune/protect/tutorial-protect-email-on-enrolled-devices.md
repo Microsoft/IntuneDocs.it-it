@@ -1,5 +1,5 @@
 ---
-title: Esercitazione - Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti con Intune
+title: 'Esercitazione: Proteggere la posta elettronica di Exchange Online in dispositivi gestiti'
 titleSuffix: Microsoft Intune
 description: Informazioni su come proteggere Exchange Online con criteri di conformità di Intune iOS e l'accesso condizionale di Azure AD per richiedere dispositivi gestiti e l'app Outlook.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727935"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306875"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 Informazioni sull'uso dei criteri di conformità dei dispositivi con accesso condizionale per assicurarsi che i dispositivi iOS possano accedere alla posta elettronica di Exchange Online solo se vengono gestiti da Intune e con un'app di posta elettronica approvata. 
@@ -95,7 +95,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
     2. Nella scheda **Includi** selezionare **Qualsiasi dispositivo** e quindi selezionare **Fine**. 
     3. Selezionare di nuovo **Fine**.
    
-    ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![Includere qualsiasi dispositivo](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. In **Assegnazioni** selezionare **Condizioni** > **App client**.
      
@@ -103,7 +103,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
     2. Per questa esercitazione, selezionare **App per dispositivi mobili e client desktop** e **Client con autenticazione moderna** (che fa riferimento ad app come Outlook per iOS e Outlook per Android). Deselezionare tutte le altre caselle di controllo.
     3. Selezionare **Fine** e quindi di nuovo **Fine**.
     
-    ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![Selezionare app e client](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. In **Controlli di accesso** selezionare **Concedi**. 
      
@@ -113,11 +113,11 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
     4. In **Per più controlli** selezionare **Richiedi tutti i controlli selezionati**. Questa impostazione garantisce che entrambi i requisiti selezionati vengano applicati quando un dispositivo tenta di accedere alla posta elettronica.
     5. Scegliere **Seleziona**.
      
-    ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![Selezionare i controlli](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. In **Abilita criterio** selezionare **Sì**.
      
-    ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![Abilitare un criterio](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Selezionare **Crea**.
 

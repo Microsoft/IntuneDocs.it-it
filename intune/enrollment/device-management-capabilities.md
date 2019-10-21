@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723112"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306611"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funzionalità di gestione dei dispositivi registrati di Microsoft Intune
 
@@ -43,6 +43,7 @@ Gli utenti ottengono l'accesso al portale aziendale da cui possono installare le
 |Criteri di configurazione<br><br>Criteri personalizzati| Consentono di gestire molte impostazioni e funzionalità dei dispositivi mobili dell'organizzazione. Ad esempio è possibile impostare una password obbligatoria, limitare il numero di tentativi non riusciti, limitare l'intervallo di tempo prima del blocco dello schermo, impostare la scadenza della password e impedire che vengano usate password già usate in precedenza. È anche possibile controllare l'uso delle funzionalità hardware e software, ad esempio la fotocamera del dispositivo o il Web browser.<br><br>Usare criteri personalizzati quando i criteri di configurazione non includono l'impostazione necessaria. Per i dispositivi iOS è possibile importare le impostazioni esportate dallo strumento Apple Configurator. Per altri dispositivi è possibile usare le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier) per configurare le impostazioni e le funzionalità nel dispositivo.|[Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](../protect/device-compliance-get-started.md)|
 |Cancellazione remota, blocco remoto e reimpostazione passcode|Cancella i dati riservati quando un dispositivo viene smarrito o rubato. Ad esempio, è possibile bloccare in remoto il dispositivo, ripristinarne le impostazioni predefinite o cancellare solo i dati aziendali.<br><br>È possibile reimpostare i passcode se gli utenti perdono l'accesso al dispositivo, bloccare i dispositivi persi o rubati o persino cancellarne i dati.|Protezione dei dispositivi con [blocco remoto](../remote-actions/device-remote-lock.md) e [reimpostazione passcode](../remote-actions/device-passcode-reset.md)|
 |Modalità tutto schermo|Consente di bloccare alcune funzionalità dei dispositivi mobili, ad esempio l'acquisizione schermo e l'alimentazione. Consente anche di limitare i dispositivi per eseguire una sola app specificata dall'utente. |[Impostazioni dei criteri di configurazione di iOS in Microsoft Intune](../configuration/device-restrictions-ios.md)|
+|Reimpostazione di Autopilot|Invia un'attività al dispositivo per avviare il processo di reimpostazione in modalità remota, evitando che il personale IT o altri amministratori debbano avviare il processo in ogni computer. Quando si usa la reimpostazione di Autopilot in un dispositivo, l'utente primario del dispositivo viene rimosso. L'utente successivo che accede dopo la reimpostazione verrà impostato come utente primario.|[Ripristino di Windows Autopilot in modalità remota](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>Gestione delle app
 

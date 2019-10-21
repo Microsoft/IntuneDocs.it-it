@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721266"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306794"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -113,7 +113,7 @@ Si definiranno ora due impostazioni di criteri di accesso condizionale in modo d
    3. Deselezionare le altre caselle di controllo.  
    4. Selezionare **Fine** > **Fine** per tornare al riquadro Nuovi criteri.  
 
-   ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![Selezionare App per dispositivi mobili e client](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. In **Controlli di accesso** selezionare **Concedi**. 
      
@@ -123,11 +123,11 @@ Si definiranno ora due impostazioni di criteri di accesso condizionale in modo d
    4. In **Per più controlli** selezionare **Richiedi tutti i controlli selezionati**. Questa impostazione garantisce che entrambi i requisiti selezionati vengano applicati quando un dispositivo tenta di accedere alla posta elettronica.
    5. Scegliere **Seleziona**.
      
-   ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Selezionare i controlli](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. In **Attiva criterio** selezionare **Sì** e quindi **Crea**.  
      
-    ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![Creare i criteri](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 La creazione dei criteri di accesso condizionale per i client con autenticazione moderna è completata. È ora possibile creare i criteri per i client di Exchange ActiveSync.
 
@@ -153,14 +153,14 @@ La creazione dei criteri di accesso condizionale per i client con autenticazione
    4. Deselezionare tutte le altre caselle di controllo.  
    5. Selezionare **Fine** e quindi di nuovo **Fine**.  
     
-   ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![Applicare alle piattaforme supportate](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. In **Controlli di accesso** selezionare **Concedi**.  
    1. Nel riquadro **Concedi** selezionare **Concedi accesso**.  
    2. Selezionare **Richiedi app client approvata**. Deselezionare tutte le altre caselle di controllo.  
    3. Scegliere **Seleziona**.  
      
-   ![Selezionare l'app Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![Richiedi app client approvata](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. In **Abilita criterio** selezionare **Sì**.  
 

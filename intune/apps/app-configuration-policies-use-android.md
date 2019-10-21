@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725738"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350034"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 
@@ -86,9 +86,8 @@ Per i dispositivi Android, usare le coppie chiave/valore seguenti:
 | **Valori** | <ul><li>Uno o più UPN delimitati da <code>;</code>.</li><li>Solo gli account consentiti sono gli account utente gestiti definiti da questa chiave.</li><li> Per i dispositivi registrati in Intune, è possibile usare il token <code>{{userprincipalname}}</code> per rappresentare l'account utente registrato.</li></ul> |
 
    > [!NOTE]
-   > È necessario usare Outlook per Android 2.2.222 o versioni successive quando si consentono solo gli account dell'organizzazione configurati con identità multiple.<p></p>
+   > Se si consentono solo account dell'organizzazione configurati con identità multiple, è necessario usare Outlook per Android 2.2.222 o versione successiva, Word, Excel, PowerPoint per Android 16.0.9327.1000 o versione successiva o OneDrive per Android 5.28 o versione successiva.<p></p>
    > L'amministratore di Microsoft Intune può controllare gli account utente che vengono aggiunti alle applicazioni di Microsoft Office nei dispositivi gestiti. Può limitare l'accesso agli account utente consentiti dell'organizzazione e bloccare gli account personali nei dispositivi registrati. Le applicazioni di supporto elaborano la configurazione dell'app e rimuovono e bloccano gli account non approvati.<p></p>
-   > Per Microsoft Word, Microsoft Excel, Microsoft PowerPoint è necessario usare la versione 16.0.9327.1000 e successive dell'app. 
 
 ## <a name="enter-the-json-editor"></a>Usare l'editor JSON
 

@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726375"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379824"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Richiedere l'autenticazione a più fattori per le registrazioni di dispositivi Intune
 
@@ -56,7 +56,7 @@ Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, segu
 6. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**. 
 7. In **Utenti e gruppi** scegliere **Selezionare utenti o gruppi** e selezionare **Utenti e gruppi**. Quindi selezionare gli utenti e/o i gruppi che riceveranno questi criteri e scegliere **Fine**.
 8. Nella sezione **Assegnazioni** scegliere **App cloud**.
-9. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**.
+9. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**. Scegliendo **Registrazione di Microsoft Intune**, l'autenticazione a più fattori dell'accesso condizionale viene applicata solo alla registrazione del dispositivo (richiesta di autenticazione a più fattori una sola volta).
 10. Nella sezione **Assegnazioni** in **Condizioni** non è necessario configurare impostazioni per MFA.
 11. Nella sezione **Controlli di accesso** scegliere **Concedi**.
 12. In **Concedi** scegliere **Concedi accesso** e quindi selezionare **Richiedi autenticazione a più fattori**. Non selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** perché non è possibile valutare la conformità di un dispositivo fino a quando non è registrato. Quindi scegliere **Seleziona**.

@@ -1,26 +1,26 @@
 ---
-title: Criteri di conformità dei dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Informazioni introduttive sull'uso dei criteri di conformità, panoramica dei livelli di stato e gravità, uso dello stato Periodo di tolleranza, uso dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
+title: Creare i criteri di conformità dei dispositivi in Microsoft Intune - Azure | Microsoft Docs
+description: Creare i criteri di conformità, panoramica dei livelli di stato e gravità, utilizzo dello stato InGracePeriod, utilizzo dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722631"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306587"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità in Microsoft Intune
 
@@ -95,15 +95,15 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche. Il criterio viene creato e visualizzato nell'elenco. Assegnare quindi il criterio ai gruppi.
 
-## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
+## <a name="assign-the-policy"></a>Assegnare i criteri
 
 Una volta creato un criterio, il passaggio successivo consiste nell'assegnarlo ai propri gruppi:
 
 1. Scegliere un criterio precedentemente creato. I criteri esistenti sono in **Conformità del dispositivo** > **Criteri**.
 2. Selezionare il criterio e quindi **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
-3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Salva** per distribuire il criterio agli utenti.
+3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi a cui si vogliono applicare questi criteri > Scegliere **Salva** per distribuire i criteri.
 
-Il criterio è stato applicato agli utenti. Verrà eseguita la valutazione della conformità dei dispositivi usati dagli utenti a cui il criterio è destinato.
+Gli utenti o i dispositivi ai quali sono applicati i criteri vengono valutati per la conformità durante la sincronizzazione con Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Valutare il numero di utenti interessati
 

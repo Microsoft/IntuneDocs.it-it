@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728091"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314710"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Usare Intune per definire gli anelli di aggiornamento che specificano come e quando Windows as a Service aggiorna i dispositivi Windows 10. Gli anelli di aggiornamento sono i criteri che vengono assegnati ai gruppi di dispositivi. Usando anelli di aggiornamento, è possibile creare una strategia di aggiornamento adatta alle esigenze aziendali. Per altre informazioni, vedere [Gestire gli aggiornamenti con Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -92,7 +90,7 @@ Oltre a visualizzare lo stato di assegnazione, nella parte superiore del riquadr
 ### <a name="delete"></a>Eliminazione  
 Selezionare **Elimina** per arrestare l'applicazione delle impostazioni dell'anello di aggiornamento di Windows 10 selezionato. L'eliminazione di un anello rimuove la relativa configurazione da Intune, in modo che tali impostazioni non vengano più applicate.  
 
-L'eliminazione di un anello da Intune non modifica le impostazioni nei dispositivi cui è stato assegnato l'anello di aggiornamento.  Al contrario, il dispositivo mantiene le impostazioni correnti. Questo avviene perché i dispositivi non gestiscono un record cronologico delle impostazioni definite in precedenza e perché il dispositivo potrebbe ricevere impostazioni da altri anelli di aggiornamento che rimangono attivi.  
+L'eliminazione di un anello da Intune non modifica le impostazioni nei dispositivi cui è stato assegnato l'anello di aggiornamento.  Al contrario, il dispositivo mantiene le impostazioni correnti. I dispositivi non mantengono un record cronologico delle impostazioni precedenti. I dispositivi possono ricevere le impostazioni anche da anelli di aggiornamento aggiuntivi che rimangono attivi.  
 
 #### <a name="to-delete-a-ring"></a>Per eliminare un anello  
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento, selezionare **Elimina**.  
@@ -129,6 +127,12 @@ Quando un anello di aggiornamento è sospeso, è possibile selezionare **Estendi
 
 ### <a name="uninstall"></a>Uninstall  
 Un amministratore di Intune può usare il comando **Disinstalla** per disinstallare l'aggiornamento di tipo *Funzionalità* o *Qualità* più recente (eseguirne il rollback) per un anello di aggiornamento attivo o sospeso. Dopo aver disinstallato un tipo, è possibile disinstallare l'altro tipo. Intune non supporta né gestisce la capacità degli utenti di disinstallare gli aggiornamenti.  
+
+> [!IMPORTANT] 
+> Quando si usa l'opzione *Disinstalla* , Intune passa immediatamente la richiesta di disinstallazione ai dispositivi. 
+> - I dispositivi Windows avviano la rimozione degli aggiornamenti non appena ricevono la modifica nei criteri di Intune. La rimozione degli aggiornamenti non si limita ai programmi di manutenzione, anche quando sono configurati come parte dell'anello di aggiornamento. 
+> - Se la rimozione degli aggiornamenti richiede il riavvio del dispositivo, il dispositivo viene riavviato senza offrire agli utenti del dispositivo la possibilità di ritardarlo.
+
 
 Per una corretta disinstallazione è necessario che siano soddisfatti i requisiti seguenti:  
 - In un dispositivo deve essere in esecuzione l'aggiornamento di Windows 10 di aprile 2018 (1803) o una versione successiva.  

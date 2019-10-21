@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723164"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350051"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Applicare la conformità per Microsoft Defender ATP con l'accesso condizionale in Intune  
 
@@ -135,7 +135,8 @@ I criteri di conformità determinano il livello di rischio considerato accettabi
 2. Selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
 3. Immettere un **nome** e una **descrizione**.
 4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
-5. Nelle impostazioni di **Microsoft Defender ATP** impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito. 
+5. In **Impostazioni**  selezionare **Microsoft Defender ATP** .
+6. Impostare **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer** sul livello preferito. 
    
    Le classificazioni dei livelli delle minacce vengono [determinate da Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -145,7 +146,7 @@ I criteri di conformità determinano il livello di rischio considerato accettabi
    - **Alto**: questo livello è il meno sicuro e consente tutti i livelli di minaccia. Sono quindi considerati conformi i dispositivi con un livello di minaccia alto, medio o basso.
 
 6. Scegliere **OK** e **Crea** per salvare le modifiche e creare i criteri.  
-7. [Assegnare i criteri di conformità del dispositivo](create-compliance-policy.md#assign-user-groups) ai gruppi applicabili.
+7. [Assegnare i criteri di conformità del dispositivo](create-compliance-policy.md#assign-the-policy) ai gruppi applicabili.
 
 
 

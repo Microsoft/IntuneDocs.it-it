@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724113"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237219"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724113"
 Dopo aver creato un profilo, completo di tutte le impostazioni specificate, il passaggio successivo consiste nel distribuire o "assegnare" il profilo ai gruppi di utenti o di dispositivi di Azure Active Directory (Azure AD). Con l'assegnazione, gli utenti e i dispositivi ricevono il profilo e vengono applicate le impostazioni specificate.
 
 Questo articolo illustra come assegnare un profilo e include alcune informazioni sull'uso dei tag di ambito nei profili.
+
+> [!NOTE]  
+> Quando un criterio viene rimosso o non è più assegnato a un dispositivo, l'impostazione potrebbe mantenere il valore esistente. L'impostazione non ripristina un valore predefinito. Per impostare un valore diverso, creare un nuovo criterio e assegnarlo.
 
 ## <a name="assign-a-device-profile"></a>Assegnare un profilo di dispositivo
 

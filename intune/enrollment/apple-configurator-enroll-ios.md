@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50fdbb766068e643604cdf729e62cdd07d22b62
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723515"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306792"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Configurare la registrazione di dispositivi iOS con Apple Configurator
 
@@ -60,6 +60,9 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
     - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che vogliono usare il portale aziendale per servizi come l'installazione di app. Il dispositivo deve essere associato a un utente con Assistente configurazione e può quindi accedere ai dati aziendali e alla posta elettronica. È supportata solo per la registrazione con Assistente configurazione. Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Registra senza affinità utente**: scegliere questa opzione per i dispositivi non associati a un singolo utente. Usare questa opzione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app che richiedono l'associazione utente, inclusa l'app Portale aziendale usata per installare le app line-of-business, non funzioneranno. Obbligatorio per la registrazione diretta.
+
+     > [!NOTE]
+     > Quando si seleziona **Registra con affinità utente** , assicurarsi che il dispositivo venga associato a un utente con Assistente configurazione entro le prime 24 ore di registrazione del dispositivo. In caso contrario, la registrazione potrebbe non riuscire e sarà necessario il ripristino delle impostazioni predefinite per registrare il dispositivo.
 
 4. Se si sceglie **Registra con affinità utente**, è possibile consentire agli utenti di eseguire l'autenticazione con il portale aziendale invece di Assistente configurazione Apple.
 

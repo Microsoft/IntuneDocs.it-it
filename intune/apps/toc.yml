@@ -5,7 +5,7 @@
   items:
     - name: Panoramica di gestione delle app
       href: app-management.md
-- name: Avvio rapido
+- name: Guida introduttiva
   items:
     - name: Aggiungere e assegnare un'app
       href: quickstart-add-assign-app.md
@@ -82,6 +82,10 @@
           items:
             - name: App Portale aziendale
               href: store-apps-company-portal-app.md
+            - name: Microsoft Edge per Windows 10
+              href: apps-windows-edge.md
+            - name: Microsoft Edge per macOS
+              href: apps-edge-macos.md
         - name: Script PowerShell
           href: intune-management-extension.md
     - name: Assegnare le app
@@ -96,7 +100,7 @@
           href: apps-windows-10-app-deploy.md
         - name: Distribuire le app agli enti pubblici
           href: apps-deploy-gcc-dod.md
-    - name: Monitorare le app
+    - name: Eseguire il monitoraggio delle app
       href: apps-monitor.md
     - name: App individuate
       href: app-discovered-apps.md
@@ -176,7 +180,7 @@
               href: windows-information-protection-policy-create.md
             - name: Gestire il trasferimento di dati tra app iOS
               href: data-transfer-between-apps-manage-ios.md
-    - name: Risolvere i problemi
+    - name: Risoluzione dei problemi
       items:
         - name: Aiutare gli utenti nella risoluzione dei problemi
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json

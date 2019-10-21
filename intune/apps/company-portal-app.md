@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724919"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350018"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -165,7 +165,7 @@ Gli utenti possono eseguire azioni nei dispositivi locali o remoti tramite l'app
 - **Sincronizzazione**: questa azione avvia la sincronizzazione del dispositivo con il servizio Intune. Viene visualizzato come **Verifica stato** nel Portale aziendale.
 - **Blocco remoto**: blocca il dispositivo e richiede un PIN per poterlo sbloccare.
 - **Reimpostazione passcode**: questa azione reimposta il passcode del dispositivo. Nei dispositivi iOS il passcode verrà rimosso e l'utente finale dovrà immettere un nuovo codice nelle impostazioni. Nei dispositivi Android supportati Intune genera un nuovo passcode che viene temporaneamente visualizzato nel Portale aziendale.
-- **Recupero chiave**: questa azione ripristina una chiave di crittografia per i dispositivi crittografati.
+- **Recupero chiave**: questa azione recupera una chiave di ripristino personale per i dispositivi macOS crittografati dal sito Web del Portale aziendale. 
 
 ### <a name="self-service-actions"></a>Azioni self-service
 
@@ -180,8 +180,8 @@ Alcune piattaforme e configurazioni non consentono azioni self-service nel dispo
 
 
 <sup>(1) </sup> Il ritiro è sempre bloccato nei dispositivi Windows aggiunti ad Azure AD.<br>
-<sup>(2)</sup> il recupero chiave per MacOS è disponibile solo tramite il portale Web.<br>
-<sup>(3) </sup> tutte le azioni remote sono disabilitate se si usa la registrazione di un manager di registrazione dispositivi.<br>
+<sup>(2)</sup> il recupero della chiave personale per MacOS è disponibile solo tramite il sito Web del Portale aziendale.<br> 
+<sup>(3)</sup> tutte le azioni remote sono disabilitate se si usa la registrazione di un manager di registrazione dispositivi.<br>
 <sup>(4) </sup> L'azione di ridenominazione modifica solo il nome del dispositivo nell'app Portale aziendale o nel sito Web, non nel dispositivo.<br>
 <sup>(5)</sup> la cancellazione remota non è disponibile nei dispositivi MacOS.<br>
 <sup>(6)</sup> la reimpostazione del passcode non è supportata in alcune configurazioni di Android e Android Enterprise. Per altre informazioni, vedere [Reimpostare o rimuovere il passcode di un dispositivo in Intune](../remote-actions/device-passcode-reset.md).<br>

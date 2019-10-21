@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725699"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350081"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -108,7 +108,7 @@ Per i dispositivi iOS, usare le coppie chiave/valore seguenti:
 | **Valori** | <ul><li>**Attivata**: l'unico account consentito è l'account utente gestito definito dalla chiave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Disabled** (o qualsiasi valore che non corrisponda a **Enabled** senza distinzione di maiuscole/minuscole): è consentito qualsiasi account.</li></ul> |.
 
    > [!NOTE]
-   > Quando si consentono solo gli account dell'organizzazione configurati con identità multiple, è necessario usare OneDrive per iOS 10.34 o versioni successive e Outlook per iOS 2.99.0 o versioni successive e all'app devono essere destinati [criteri di protezione delle app Intune](app-protection-policy.md).
+   > Se si consentono solo account dell'organizzazione configurati con identità multiple, è necessario usare OneDrive per iOS 10.34 o versione successiva, Outlook per iOS 2.99.0 o versione successiva o Edge per iOS 44.8.7 o versione successiva e all'app devono essere destinati [criteri di protezione delle app Intune](app-protection-policy.md).
 
 ## <a name="enter-xml-data"></a>Immettere i dati XML
 

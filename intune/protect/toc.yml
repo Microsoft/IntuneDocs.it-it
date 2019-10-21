@@ -6,7 +6,7 @@
     - name: Panoramica sulla protezione del dispositivo
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Avvio rapido
+- name: Guida introduttiva
   items:
     - name: Creare criteri di conformità dei dispositivi
       href: quickstart-set-password-length-android.md
@@ -197,6 +197,8 @@
           displayName: ca; pkcs; pki; ra; registration authority
         - name: Rimuovere i certificati SCEP o PKCS
           href: remove-certificates.md
+    - name: Credenziali derivate
+      href: derived-credentials.md
     - name: Aggiornamenti software
       items:
         - name: Aggiornamenti di Windows
@@ -207,7 +209,7 @@
               href: windows-update-compliance-reports.md
         - name: Criteri di aggiornamento iOS
           href: software-updates-ios.md
-    - name: Risolvere i problemi
+    - name: Risoluzione dei problemi
       items:
         - name: Risolvere problemi relativi a criteri e profili
           href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json

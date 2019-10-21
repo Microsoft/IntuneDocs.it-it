@@ -1,5 +1,5 @@
 ---
-title: Crittografare dispositivi in Microsoft Intune usando i metodi di crittografia supportati dalle piattaforme
+title: Crittografare i dispositivi con il metodo di crittografia supportato dalle piattaforme
 titleSuffix: Microsoft Intune
 description: Crittografare dispositivi con metodi di crittografia predefiniti, ad esempio BitLocker o FileVault, e gestire le chiavi di ripristino per tali dispositivi crittografati all'interno del portale di Intune.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721396"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306845"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune  
 
