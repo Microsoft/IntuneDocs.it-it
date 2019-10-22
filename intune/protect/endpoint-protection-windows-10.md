@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163572"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502275"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune  
 
@@ -240,7 +241,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   CSP del firewall: [DisableInboundNotifications](https://go.microsoft.com/fwlink/?linkid=8725630)  
 
   - **Non configurato**  
-  - **Block** Consente di nascondere le notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
+  - **Blocca** -Nascondi notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
   - **Consenti**: abilita questa impostazione e può visualizzare una notifica agli utenti quando un'app non è autorizzata all'ascolto su una porta.  
 
 - **Azione predefinita per le connessioni in ingresso**  
