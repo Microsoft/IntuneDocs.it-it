@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736026"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508977"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM in Windows per Intune
 Visualizzare le impostazioni di base della sicurezza MDM supportate da Microsoft Intune per i dispositivi che eseguono Windows 10 o versioni successive. I valori predefiniti per le impostazioni in questa linea di base rappresentano la configurazione consigliata per i dispositivi applicabili e potrebbero non corrispondere alle impostazioni predefinite di base di altre linee di base di sicurezza o ad altre versioni di questa linea di base.
@@ -172,19 +173,19 @@ Per altre informazioni, vedere [Policy CSP - Bitlocker](https://docs.microsoft.c
 Per altre informazioni, vedere [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) (Provider di servizi di configurazione dei criteri - Browser) nella documentazione di Windows.  
 
 - **Richiedere SmartScreen per Microsoft Edge**  
-  Per impostazione predefinita, Microsoft Edge usa Windows Defender SmartScreen (attivato) per proteggere gli utenti da potenziali tentativi di phishing e software dannoso. Inoltre, per impostazione predefinita, gli utenti non possono disabilitare (disattivare) Windows Defender SmartScreen. L'abilitazione di questo criterio determina la disattivazione di Windows Defender SmartScreen e ne impedisce l'attivazione da parte degli utenti. Non configurare questo criterio per consentire agli utenti di scegliere di attivare o disattivare Windows Defender SmartScreen.  
+  Per impostazione predefinita, Microsoft Edge usa Microsoft Defender SmartScreen (attivato) per proteggere gli utenti da potenziali tentativi di phishing e software dannoso. Per impostazione predefinita, gli utenti non possono disabilitare (disattivare) Microsoft Defender SmartScreen. L'abilitazione di questo criterio determina la disattivazione di Microsoft Defender SmartScreen e ne impedisce l'attivazione da parte degli utenti. Non configurare questo criterio in modo da consentire agli utenti di scegliere di attivare o disattivare Microsoft Defender SmartScreen.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **Impostazione predefinita**: Sì  
   
 - **Bloccare l'accesso a siti dannosi**  
-  Per impostazione predefinita, Microsoft Edge consente agli utenti di ignorare gli avvisi di Windows Defender SmartScreen relativi a siti potenzialmente dannosi, consentendo di visitare il sito. Con questo criterio, tuttavia, è possibile configurare Microsoft Edge per impedire agli utenti di ignorare gli avvisi, non consentendo di visitare il sito.  
+  Per impostazione predefinita, Microsoft Edge consente agli utenti di ignorare gli avvisi di Microsoft Defender SmartScreen relativi a siti potenzialmente dannosi, in modo che sia possibile visitare il sito. Con questo criterio, tuttavia, è possibile configurare Microsoft Edge per impedire agli utenti di ignorare gli avvisi, non consentendo di visitare il sito.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **Impostazione predefinita**: Sì  
   
 - **Bloccare il download di file non verificati**  
-  Per impostazione predefinita, Microsoft Edge consente agli utenti di ignorare gli avvisi di Windows Defender SmartScreen relativi a file potenzialmente dannosi, consentendo di continuare a scaricare i file non verificati. L'abilitazione di questo criterio impedisce agli utenti di ignorare gli avvisi, bloccando il download dei file non verificati.  
+  Per impostazione predefinita, Microsoft Edge consente agli utenti di ignorare gli avvisi di Microsoft Defender SmartScreen relativi a file potenzialmente dannosi, in modo da continuare a scaricare i file non verificati. L'abilitazione di questo criterio impedisce agli utenti di ignorare gli avvisi, bloccando il download dei file non verificati.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **Impostazione predefinita**: Sì  
@@ -273,7 +274,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceGuard](https://docs.microsoft
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **sicurezza basata sulla virtualizzazione** 
+- **sicurezza basata sulla virtualizzazione**  
   **impostazione predefinita**: Abilita vbs con avvio protetto
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -1499,7 +1500,7 @@ Per altre informazioni, vedere [CSP criteri - RemoteAssistance](https://docs.mic
   - **Autorizzazione richiesta assistenza remota**  
     **Impostazione predefinita**: Visualizza  
 
-  - **Valore tempo massimo ticket**  
+  - **Durata massima ticket (valore)**  
     **Impostazione predefinita**: *Non configurato*  
 
   - **Periodo di tempo massimo del ticket**  
@@ -1671,7 +1672,7 @@ Per altre informazioni, vedere [Policy CSP - WindowsConnectionManager](https://d
 
   **Impostazione predefinita**: Abilitato
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (Provider di servizi di configurazione dei criteri - Defender) nella documentazione di Windows.  
 
 - **Analizzare i messaggi di posta in arrivo**  
@@ -1687,7 +1688,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Blocca
   
 - **Tipo di consenso per l'invio di campioni di Defender**  
-  Verifica il livello di consenso utente in Windows Defender per l'invio di dati. Se il consenso necessario è già stato concesso, Windows Defender esegue l'invio. In caso contrario, e se l'utente ha specificato di non chiedere mai, viene avviata l'interfaccia utente per la richiesta del consenso utente (se Defender/AllowCloudProtection è consentito) prima dell'invio di dati.  
+  Verifica il livello di consenso utente in Microsoft Defender per l'invio di dati. Se il consenso necessario è già stato concesso, Microsoft Defender esegue l'invio. In caso contrario, e se l'utente ha specificato di non chiedere mai, viene avviata l'interfaccia utente per la richiesta del consenso utente (se Defender/AllowCloudProtection è consentito) prima dell'invio di dati.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **Impostazione predefinita**: Invia i campioni sicuri automaticamente 
@@ -1703,7 +1704,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Blocca
   
 - **Impedire il tipo di intercettazione delle credenziali**  
-  Windows Defender Credential Guard usa la protezione basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. L'accesso non autorizzato a questi segreti può provocare attacchi di furto delle credenziali, ad esempio Pass-the-Hash o Pass-The-Ticket. Windows Defender Credential Guard impedisce questi attacchi proteggendo gli hash delle password NTLM, Kerberos Ticket Granting Tickets e le credenziali archiviate dalle applicazioni come credenziali di dominio.  
+  Microsoft Defender Credential Guard usa la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. L'accesso non autorizzato a questi segreti può provocare attacchi di furto delle credenziali, ad esempio Pass-the-Hash o Pass-The-Ticket. Microsoft Defender Credential Guard impedisce questi attacchi proteggendo gli hash delle password NTLM, i Ticket Granting Ticket Kerberos e le credenziali archiviate dalle applicazioni come credenziali di dominio.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Impostazione predefinita**: Abilita
@@ -1722,9 +1723,9 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Tipo di protezione di rete**  
-  Questo criterio consente di attivare la protezione di rete (Blocca/Controlla) o di disattivarla in Windows Defender Exploit Guard. La protezione di rete è una funzionalità di Windows Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi. Il tipo di valore è un numero intero. Se si abilita questa impostazione, la protezione di rete verrà attivata e i dipendenti non potranno disattivarla. Il comportamento potrà essere controllato dalle opzioni seguenti: Blocca e Controlla. Se si abilita questo criterio impostando l'opzione "Blocca", gli utenti e le app non possono connettersi a domini dannosi. È possibile visualizzare questa attività in Windows Defender Security Center. Se si abilita questo criterio impostando l'opzione "Controlla", gli utenti e le app non potranno connettersi a domini dannosi. Sarà possibile visualizzare anche questa attività in Windows Defender Security Center. Se si disabilita questo criterio, gli utenti e le app potranno connettersi a domini dannosi. Non sarà possibile visualizzare attività di rete in Windows Defender Security Center. Se non si configura questo criterio, il blocco di rete è disabilitato per impostazione predefinita.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **Protezione di rete**  
+  Questo criterio consente di attivare la protezione di rete (Blocca/Controlla) o di disattivarla in Microsoft Defender Exploit Guard. La protezione di rete è una funzionalità di Microsoft Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi. Il tipo di valore è un numero intero. Se si abilita questa impostazione, la protezione di rete verrà attivata e i dipendenti non potranno disattivarla. Il comportamento potrà essere controllato dalle opzioni seguenti: Blocca e Controlla. Se si abilita questo criterio impostando l'opzione "Blocca", gli utenti e le app non possono connettersi a domini dannosi. È possibile visualizzare questa attività in Microsoft Defender Security Center. Se si abilita questo criterio impostando l'opzione "Controlla", gli utenti e le app non potranno connettersi a domini dannosi. Tuttavia, sarà possibile visualizzare comunque questa attività in Microsoft Defender Security Center. Se si disabilita questo criterio, gli utenti e le app potranno connettersi a domini dannosi. Non sarà possibile visualizzare attività di rete in Microsoft Defender Security Center. Se non si configura questo criterio, il blocco di rete è disabilitato per impostazione predefinita.  
+  [Altre informazioni](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Impostazione predefinita**: Abilita
   
@@ -1734,13 +1735,13 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Ogni giorno
   
 - **Protezione fornita dal cloud**  
-  Per proteggere al meglio il PC, Windows Defender invierà a Microsoft informazioni su qualsiasi problema che si verificherà. Le informazioni saranno analizzate, saranno raccolti altri dettagli sui problemi riscontrati dall'utente corrente e dagli altri clienti. Verranno quindi offerte soluzioni migliorate.  
+  Per proteggere al meglio il PC, Microsoft Defender invierà a Microsoft informazioni su qualsiasi problema che si verificherà. Le informazioni saranno analizzate, saranno raccolti altri dettagli sui problemi riscontrati dall'utente corrente e dagli altri clienti. Verranno quindi offerte soluzioni migliorate.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **Impostazione predefinita**: Sì  
 
 - **Azione della Protezione da applicazioni potenzialmente di Defender**  
-  La funzionalità Protezione da applicazioni potenzialmente indesiderate in Windows Defender Antivirus consente di identificare e bloccare il download e l'installazione delle applicazioni potenzialmente indesiderate negli endpoint in rete. Queste applicazioni non sono considerate virus, malware o altri tipi di minaccia, ma potrebbero agire su endpoint compromettendo le prestazioni e l'uso. Possono essere considerate applicazioni potenzialmente indesiderate anche le applicazioni di dubbia reputazione. Sono applicazioni potenzialmente indesiderate la creazione di bundle di diversi tipi di software, l'inserimento di annunci nei Web browser, gli strumenti di ottimizzazione per driver e Registro di sistema che rilevano errori e richiedono pagamenti per correggere gli errori, ma rimangono nell'endpoint e non apportano alcuna modifica né alcuna ottimizzazione (noti anche come programmi antivirus non autorizzati). Queste applicazioni possono aumentare il rischio di infezione della rete da parte di malware e incrementare la difficoltà di rilevamento delle infezioni malware e possono causare uno spreco di tempo delle risorse IT per rimuovere il malware dalle applicazioni.  
+  La funzionalità di protezione da applicazioni potenzialmente indesiderate dell'antivirus Microsoft Defender consente di identificare e bloccare il download e l'installazione delle applicazioni potenzialmente indesiderate negli endpoint di rete. Queste applicazioni non sono considerate virus, malware o altri tipi di minaccia, ma potrebbero agire su endpoint compromettendo le prestazioni e l'uso. Possono essere considerate applicazioni potenzialmente indesiderate anche le applicazioni di dubbia reputazione. Sono applicazioni potenzialmente indesiderate la creazione di bundle di diversi tipi di software, l'inserimento di annunci nei Web browser, gli strumenti di ottimizzazione per driver e Registro di sistema che rilevano errori e richiedono pagamenti per correggere gli errori, ma rimangono nell'endpoint e non apportano alcuna modifica né alcuna ottimizzazione (noti anche come programmi antivirus non autorizzati). Queste applicazioni possono aumentare il rischio di infezione della rete da parte di malware e incrementare la difficoltà di rilevamento delle infezioni malware e possono causare uno spreco di tempo delle risorse IT per rimuovere il malware dalle applicazioni.  
   [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **Impostazione predefinita**: Blocca  
@@ -1752,7 +1753,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Blocca
   
 - **Analizzare le unità rimovibili durante un'analisi completa**  
-  Consente a Defender di Windows di cercare software dannoso e indesiderato in unità rimovibili, ad esempio in unità flash, durante un'analisi completa. Windows Defender Antivirus analizza tutti i file nei dispositivi USB prima dell'esecuzione.  
+  Consente a Microsoft Defender di cercare software dannoso e indesiderato in unità rimovibili, ad esempio in unità flash USB, durante un'analisi completa. L'antivirus Microsoft Defender analizza tutti i file nei dispositivi USB prima dell'esecuzione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **Impostazione predefinita**: Sì  
@@ -1763,7 +1764,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
   **Impostazione predefinita**: Sì
   
 - **Monitoraggio del comportamento**  
-  Consente o impedisce la funzionalità di monitoraggio del comportamento di Windows Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
+  Consente o impedisce la funzionalità di monitoraggio del comportamento di Microsoft Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Impostazione predefinita**: Sì
@@ -1817,7 +1818,7 @@ Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.co
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall  
 Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) nella documentazione relativa ai protocolli di Windows.  
 
 - **Dominio del profilo firewall**  
@@ -1981,16 +1982,16 @@ Le impostazioni seguenti sono:
 *[Nuovo]* [**Assistenza remota**](#remote-assistance):  
 - **Assistenza remota richiesta** 
   - **Autorizzazione richiesta assistenza remota**
-  - **Valore tempo massimo ticket**  
+  - **Durata massima ticket (valore)**  
   - **Periodo di tempo massimo del ticket**  
   - **Metodo di invito tramite posta elettronica**
 
 
-*[Nuovo]* [**Windows Defender**](#windows-defender):
+*[Nuovo]* [**Microsoft Defender**](#microsoft-defender):
 - **Avvio di Adobe Reader in un processo figlio**  
 - **Avvio di app di comunicazione di Office in un processo figlio** 
 
-*[Nuovo]* [**Windows Defender Firewall**](#windows-defender-firewall)
+*[Nuovo]* [ **Microsoft Defender Firewall**](#microsoft-defender-firewall)
 - **Dominio del profilo firewall**  
   - **Connessioni in ingresso bloccate**  
   - **Connessioni in uscita obbligatorie**  

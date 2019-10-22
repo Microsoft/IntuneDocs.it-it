@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 553c4ae4dab211cf33e21c328b4b35408d8bfeb0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733777"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503447"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -34,7 +35,7 @@ Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione d
 
 * È necessario un computer Mac OS che esegua OS X 10.8.5 o versione successiva e in cui sia anche installato Xcode 9 o versione successiva.
 
-* L'app deve essere destinata a iOS 10 o versione successiva.
+* L'app deve essere destinata a iOS 11 o versione successiva.
 
 * Rivedere le [Condizioni di licenza di Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando Intune App SDK per iOS, l'utente accetta tali condizioni di licenza.  Se non vengono accettate, non usare il software.
 
@@ -226,12 +227,12 @@ Come indicato in precedenza, Intune App SDK può usare la [libreria di autentica
 
 ADAL - Intune App SDK specifica i valori predefiniti per i parametri ADAL e gestisce l'autenticazione con Azure AD. Gli sviluppatori non devono specificare alcun valore per le impostazioni ADAL citate in precedenza. 
 
-MSAL: gli sviluppatori devono creare una registrazione dell'app in AAD con un URI di reindirizzamento personalizzato nel formato specificato [qui](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration). Gli sviluppatori devono impostare le impostazioni `ADALClientID` e `ADALRedirectUri` citate in precedenza oppure le proprietà `aadClientIdOverride` e `aadRedirectUriOverride` equivalenti nell'istanza `IntuneMAMPolicyManager`. Gli sviluppatori devono anche assicurarsi che seguano il passaggio 4 della sezione precedente, per concedere l'accesso alla registrazione dell'app al servizio di protezione delle app di Intune.
+MSAL: gli sviluppatori devono creare una registrazione dell'app in AAD con un URI di reindirizzamento personalizzato nel formato specificato [qui](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration). Gli sviluppatori devono impostare le impostazioni `ADALClientID` e `ADALRedirectUri` indicate in precedenza oppure le proprietà `aadClientIdOverride` e `aadRedirectUriOverride` equivalenti nell'istanza di `IntuneMAMPolicyManager`. Gli sviluppatori devono anche assicurarsi che seguano il passaggio 4 della sezione precedente, per concedere l'accesso alla registrazione dell'app al servizio di protezione delle app di Intune.
 
 ### <a name="special-considerations-when-using-msal"></a>Considerazioni speciali sull'uso di MSAL 
 
-1. **Controllare la visualizzazione WebView** : è consigliabile che le applicazioni non usino SFSafariViewController, SFAuthSession o ASWebAuthSession come WebView per tutte le operazioni di autenticazione interattive MSAL avviate dall'app. Se per qualche motivo l'app deve usare una di queste Webviews per tutte le operazioni di autenticazione MSAL interattive, è necessario impostare anche `SafariViewControllerBlockedOverride` su `true` nel dizionario `IntuneMAMSettings` in info. plist dell'applicazione. AVVISO: gli hook SafariViewController di Intune vengono disabilitati per abilitare la sessione di autenticazione. Ciò consente di evitare perdite di dati in un'altra posizione nell'app se l'applicazione usa SafariViewController per visualizzare i dati aziendali, quindi l'applicazione non deve visualizzare i dati aziendali in nessuno di questi tipi di WebView.
-2. **Collegamento di adal e MSAL** : gli sviluppatori devono acconsentire esplicitamente se desiderano che Intune preferisca MSAL su Adal in questo scenario. Per impostazione predefinita, Intune preferisce le versioni di ADAL supportate per le versioni MSAL supportate, se entrambe sono collegate in fase di esecuzione. Intune preferisce solo una versione di MSAL supportata quando, al momento della prima operazione di autenticazione di Intune, `IntuneMAMUseMSALOnNextLaunch` è `true` in `NSUserDefaults`. Se `IntuneMAMUseMSALOnNextLaunch` è `false` o non impostato, Intune eseguirà il fallback al comportamento predefinito. Come suggerisce il nome, una modifica apportata a `IntuneMAMUseMSALOnNextLaunch` diverrà effettiva al successivo avvio.
+1. **Controllare la visualizzazione WebView** : è consigliabile che le applicazioni non usino SFSafariViewController, SFAuthSession o ASWebAuthSession come WebView per tutte le operazioni di autenticazione interattive MSAL avviate dall'app. Se per qualche motivo l'app deve usare una di queste Webviews per qualsiasi operazione di autenticazione MSAL interattiva, deve anche impostare `SafariViewControllerBlockedOverride` per `true` nel dizionario `IntuneMAMSettings` nel file INFO. plist dell'applicazione. AVVISO: gli hook SafariViewController di Intune vengono disabilitati per abilitare la sessione di autenticazione. Ciò consente di evitare perdite di dati in un'altra posizione nell'app se l'applicazione usa SafariViewController per visualizzare i dati aziendali, quindi l'applicazione non deve visualizzare i dati aziendali in nessuno di questi tipi di WebView.
+2. **Collegamento di adal e MSAL** : gli sviluppatori devono acconsentire esplicitamente se desiderano che Intune preferisca MSAL su Adal in questo scenario. Per impostazione predefinita, Intune preferisce le versioni di ADAL supportate per le versioni MSAL supportate, se entrambe sono collegate in fase di esecuzione. Intune preferisce solo una versione di MSAL supportata quando, al momento della prima operazione di autenticazione di Intune, `IntuneMAMUseMSALOnNextLaunch` viene `true` in `NSUserDefaults`. Se `IntuneMAMUseMSALOnNextLaunch` è `false` o non impostato, Intune eseguirà il fallback al comportamento predefinito. Come suggerisce il nome, una modifica apportata a `IntuneMAMUseMSALOnNextLaunch` diverrà effettiva al successivo avvio.
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Configurare le impostazioni per Intune App SDK
@@ -253,8 +254,6 @@ ADALCacheKeychainGroupOverride | Stringa  | Specifica il gruppo keychain da usar
 AppGroupIdentifiers | Matrice di stringhe  | Matrice di gruppi di app della sezione com.apple.security.application-groups dei diritti dell'app. | Necessaria se l'applicazione usa i gruppi di applicazioni. |
 ContainingAppBundleId | Stringa | Specifica l'ID bundle dell'applicazione che contiene l'estensione. | Necessaria per le estensioni iOS. |
 DebugSettingsEnabled| Boolean | Se impostata su Sì, è possibile applicare i criteri di test nell'ambito del bundle delle impostazioni. Le applicazioni *non* dovrebbero essere inviate con questa impostazione abilitata. | Facoltativo. L'impostazione predefinita è No. |
-MainNibFile<br>MainNibFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file NIB principale dell'applicazione.  | È obbligatoria se l'applicazione definisce MainNibFile in Info.plist. |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Stringa  | Questa impostazione deve avere il nome del file di storyboard principale dell'applicazione. | È obbligatoria se l'applicazione definisce UIMainStoryboardFile in Info.plist. |
 AutoEnrollOnLaunch| Boolean| Specifica se l'app deve tentare di registrarsi automaticamente all'avvio se viene rilevata un'identità gestita esistente e se tale operazione non è ancora stata compiuta. L'impostazione predefinita è NO. <br><br> Note: se non viene trovata alcuna identità gestita o non è disponibile alcun token valido per l'identità nella cache ADAL/MSAL, il tentativo di registrazione avrà esito negativo senza chiedere le credenziali, a meno che l'app non abbia configurato anche MAMPolicyRequired su YES. | Facoltativo. L'impostazione predefinita è No. |
 MAMPolicyRequired| Boolean| Specifica se viene impedito l'avvio dell'app se non ha i criteri di protezione delle app di Intune. L'impostazione predefinita è NO. <br><br> Note: le app non possono essere inviate ad App Store se MAMPolicyRequired è impostato su YES. Quando si imposta MAMPolicyRequired su YES, anche AutoEnrollOnLaunch deve essere impostato su YES. | Facoltativo. L'impostazione predefinita è No. |
 MAMPolicyWarnAbsent | Boolean| Specifica se l'app avvisa l'utente durante l'avvio se non ha i criteri di protezione delle app di Intune. <br><br> Nota: gli utenti potranno ancora usare l'app senza criterio dopo aver ignorato l'avviso. | Facoltativo. L'impostazione predefinita è No. |
@@ -262,9 +261,10 @@ MultiIdentity | Boolean| Specifica se l'app è compatibile con identità multipl
 SafariViewControllerBlockedOverride | Boolean| Disabilita gli hook SafariViewController di Intune per abilitare l'autenticazione MSAL tramite SFSafariViewController, SFAuthSession o ASWebAuthSession. | Facoltativo. L'impostazione predefinita è No. AVVISO: può causare la perdita di dati se utilizzata in modo errato. Abilitare solo se assolutamente necessario. Per informazioni dettagliate, vedere [considerazioni speciali sull'uso di MSAL](#special-considerations-when-using-msal) .  |
 SplashIconFile <br>SplashIconFile~ipad | Stringa  | Specifica il file dell'icona per la schermata iniziale (avvio) di Intune. | Facoltativo |
 SplashDuration | Numero | Quantità minima di tempo, in secondi, per la visualizzazione della schermata iniziale di Intune all'avvio dell'applicazione. Il valore predefinito è 1,5. | Facoltativo |
-BackgroundColor| Stringa| Specifica il colore di sfondo per le schermate di avvio e PIN. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.   | Facoltativo L'impostazione predefinita è grigio chiaro. |
-ForegroundColor| Stringa| Specifica il colore di primo piano per le schermate di avvio e PIN, ad esempio il colore del testo. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.  | Facoltativo L'impostazione predefinita è nero. |
-AccentColor | Stringa| Specifica il colore principale della schermata del PIN, ad esempio il colore del testo del pulsante e il colore di evidenziazione della casella. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.| Facoltativo L'impostazione predefinita è blu. |
+BackgroundColor| Stringa| Specifica il colore di sfondo per i componenti dell'interfaccia utente di Intune SDK. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.   | Facoltativo. Il valore predefinito è il colore di sfondo del sistema, che può variare tra le versioni di iOS e in base all'impostazione della modalità scura di iOS. |
+ForegroundColor| Stringa| Specifica il colore di primo piano per i componenti dell'interfaccia utente di Intune SDK, ad esempio il colore del testo. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.  | Facoltativo. Il valore predefinito è il colore dell'etichetta di sistema, che può variare tra le versioni di iOS e in base all'impostazione della modalità scura di iOS. |
+AccentColor | Stringa| Specifica il colore dell'accento per i componenti dell'interfaccia utente di Intune SDK, ad esempio il colore del testo del pulsante e il colore di evidenziazione della casella PIN. Accetta una stringa RGB esadecimale nel formato #XXXXXX, dove X può variare da 0 a 9 o da A a F. Il segno di cancelletto può essere omesso.| Facoltativo L'impostazione predefinita è blu. |
+SupportsDarkMode| Boolean | Specifica se la combinazione di colori dell'interfaccia utente di Intune SDK deve osservare l'impostazione della modalità scura del sistema, se non è stato impostato alcun valore esplicito per BackgroundColor/ForegroundColor/AccentColor | Facoltativo. L'impostazione predefinita è Sì. |
 MAMTelemetryDisabled| Boolean| Specifica se l'SDK non invierà i dati di telemetria al relativo back-end.| Facoltativo. L'impostazione predefinita è No. |
 MAMTelemetryUsePPE | Boolean | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
 MaxFileProtectionLevel | Stringa | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|

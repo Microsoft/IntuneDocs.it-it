@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830517"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503482"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -547,15 +548,6 @@ Se l'app prevede un'esperienza utente specifica per l'uso del PIN, è consigliab
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Esempio: determinare se è necessario il PIN per l'app
-
-Se l'app prevede un'esperienza utente specifica per l'uso del PIN, è consigliabile disabilitarla se l'amministratore IT ha configurato l'SDK in modo da chiedere il PIN per l'app. Per determinare se l'amministratore IT ha distribuito i criteri relativi al PIN per l'app per l'utente finale corrente, chiamare il metodo seguente:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>Esempio: determinare l'utente primario di Intune
 
 Oltre che dalle API esposte in AppPolicy, il nome dell'entità utente (**UPN**) è esposto anche dall'API `getPrimaryUser()` definita nell'interfaccia `MAMUserInfo`. Per ottenere il nome dell'entità utente, eseguire questa chiamata:
@@ -978,7 +970,7 @@ Quando un account viene registrato per la prima volta, ha uno stato iniziale `PE
 | `NOT_LICENSED` | L'utente non ha una licenza per Intune oppure il tentativo di contattare il servizio MAM di Intune non è riuscito.  L'app deve continuare in uno stato non gestito (normale) e l'utente non deve essere bloccato.  Verranno eseguiti periodicamente nuovi tentativi di registrazione, nel caso in cui in futuro l'utente disponga di una licenza. |
 | `ENROLLMENT_SUCCEEDED` | Il tentativo di registrazione ha avuto esito positivo oppure l'utente è già registrato.  Nel caso di una registrazione con esito positivo, verrà inviata una notifica di aggiornamento dei criteri prima di questa notifica.  L'accesso ai dati aziendali deve essere consentito. |
 | `ENROLLMENT_FAILED` | Il tentativo di registrazione non è riuscito.  Maggiori dettagli sono disponibili nei log del dispositivo.  L'app non deve consentire l'accesso ai dati aziendali in questo stato, perché è stato stabilito in precedenza che l'utente ha una licenza per Intune.|
-| `WRONG_USER` | Un solo utente per dispositivo può registrare un'app con il servizio MAM. Questo risultato indica che l'utente per il quale è stato recapitato il risultato (il secondo utente) è destinato ai criteri MAM, ma è già stato registrato un altro utente. Poiché non è possibile applicare i criteri MAM per il secondo utente, l'app non deve consentire l'accesso ai dati dell'utente (probabilmente rimuovendo l'utente dall'app), a meno che non venga eseguita la registrazione per questo utente in un momento successivo. Simultanea con la distribuzione di questo risultato `WRONG_USER`, MAM chiederà con l'opzione di rimuovere l'account esistente. Se l'utente umano risponde in modo affermativo, sarà effettivamente possibile registrare il secondo utente un breve periodo di tempo in seguito. Fino a quando il secondo utente rimane registrato, MAM riproverà a eseguire periodicamente la registrazione. |
+| `WRONG_USER` | Un solo utente per dispositivo può registrare un'app con il servizio MAM. Questo risultato indica che l'utente per il quale è stato recapitato il risultato (il secondo utente) è destinato ai criteri MAM, ma è già stato registrato un altro utente. Poiché non è possibile applicare i criteri MAM per il secondo utente, l'app non deve consentire l'accesso ai dati dell'utente (probabilmente rimuovendo l'utente dall'app), a meno che non venga eseguita la registrazione per questo utente in un momento successivo. Simultaneamente con la distribuzione di questo risultato `WRONG_USER`, MAM chiederà con l'opzione di rimuovere l'account esistente. Se l'utente umano risponde in modo affermativo, sarà effettivamente possibile registrare il secondo utente un breve periodo di tempo in seguito. Fino a quando il secondo utente rimane registrato, MAM riproverà a eseguire periodicamente la registrazione. |
 | `UNENROLLMENT_SUCCEEDED` | L'annullamento della registrazione è avvenuto correttamente.|
 | `UNENROLLMENT_FAILED` | La richiesta di annullamento della registrazione non è riuscita.  Maggiori dettagli sono disponibili nei log del dispositivo. In generale, questo problema non si verifica se l'app passa un UPN valido (né null né vuoto). Non esiste alcuna correzione diretta e affidabile che può essere eseguita dall'app. Se questo valore viene ricevuto quando si annulla la registrazione di un UPN valido, segnalare un bug al team MAM di Intune.|
 | `PENDING` | Il tentativo di registrazione iniziale per l'utente è in corso.  L'app può bloccare l'accesso ai dati aziendali fino a quando non è noto il risultato della registrazione, ma ciò non è necessario. |
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>Note sull'implementazione
 > [!NOTE]
 > **Modifica importante.**  <br>
-> Il metodo `MAMServiceAuthenticationCallback.acquireToken()` dell'app deve passare *false* per il nuovo flag `forceRefresh` a `acquireTokenSilentSync()`.
+> Il metodo `MAMServiceAuthenticationCallback.acquireToken()` dell'app deve passare *false* per `acquireTokenSilentSync()` il nuovo flag di `forceRefresh`.
 > In precedenza, si consiglia di passare *true* per risolvere un problema relativo all'aggiornamento dei token dal broker, ma è stato rilevato un problema con adal che potrebbe impedire l'acquisizione di token in alcuni scenari se questo flag è *true*.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1321,7 +1313,7 @@ Tutti i metodi usati per impostare l'identità restituiscono valori di risultato
 
 L'app dovrebbe verificare l'esito positivo di un cambio di identità prima di visualizzare o usare dati aziendali. Attualmente, i cambi di identità di processo e thread avranno sempre esito positivo per un'app con il supporto per identità multiple abilitato, tuttavia Microsoft si riserva il diritto di aggiungere le condizioni di errore. Il cambio di identità dell'interfaccia utente potrebbe non riuscire per argomenti non validi, se genera un conflitto con l'identità del thread o se l'utente cancella i requisiti di avvio condizionale (ad esempio, premendo il pulsante Indietro nella schermata del PIN). Il comportamento predefinito per un'opzione di identità dell'interfaccia utente non riuscita in un'attività consiste nel terminare l'attività (vedere `onSwitchMAMIdentityComplete` di seguito).
 
-Nel caso dell'impostazione di un'identità a livello di `Context` tramite `setUIPolicyIdentity`, il risultato viene restituito in modo asincrono. Se `Context` è `Activity`, l'SDK sa se la modifica dell'identità è riuscita solo dopo l'avvio condizionale, che potrebbe richiedere l'immissione di un PIN o di credenziali aziendali da parte dell'utente. L'app può implementare un `MAMSetUIIdentityCallback` per ricevere questo risultato oppure può passare null per l'oggetto callback. Si noti che se viene eseguita una chiamata a `setUIPolicyIdentity` mentre il risultato di una precedente chiamata a `setUIPolicyIdentity` *nello stesso contesto* non è ancora stato recapitato, il nuovo callback sostituirà quello precedente e il callback originale non riceverà mai un risultato.
+Nel caso dell'impostazione di un'identità a livello di `Context` tramite `setUIPolicyIdentity`, il risultato viene restituito in modo asincrono. Se `Context` è `Activity`, l'SDK sa se la modifica dell'identità è riuscita solo dopo l'avvio condizionale, che potrebbe richiedere l'immissione di un PIN o di credenziali aziendali da parte dell'utente. L'app può implementare una `MAMSetUIIdentityCallback` per ricevere questo risultato oppure può passare null per l'oggetto callback. Si noti che se viene eseguita una chiamata a `setUIPolicyIdentity` mentre il risultato di una precedente chiamata a `setUIPolicyIdentity` nello *stesso contesto* non è ancora stato recapitato, il nuovo callback sostituirà quello precedente e il callback originale non riceverà mai un risultato.
 
 ```java
     public interface MAMSetUIIdentityCallback {
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 L'app può anche richiedere i dati non elaborati come un elenco di set di coppie chiave-valore.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 

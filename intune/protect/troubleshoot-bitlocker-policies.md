@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817625"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503846"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Risolvere i problemi relativi ai criteri di BitLocker in Microsoft Intune
 
@@ -32,9 +33,9 @@ Crittografia unità BitLocker è un servizio offerto dai sistemi operativi Micro
 
 Con Microsoft Intune, sono disponibili i metodi seguenti per gestire BitLocker nei dispositivi Windows 10:
 
-- **Criteri di configurazione del dispositivo **-alcune opzioni predefinite dei criteri sono disponibili nella console di amministrazione di Intune in **Device Configuration** > **Endpoint Protection** > **Windows Encryption Policy**. Qui è possibile trovare tutte le opzioni e le funzionalità disponibili: [crittografia di Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+- **Criteri di configurazione del dispositivo** : alcune opzioni predefinite dei criteri sono disponibili nella console di amministrazione di Intune in **configurazione del dispositivo**  > **Endpoint Protection**  >  criteri di**crittografia di Windows**. Qui è possibile trovare tutte le opzioni e le funzionalità disponibili: [crittografia di Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
-- Le linee di base di **sicurezza** -  le linee di[base di sicurezza](security-baselines.md) sono gruppi noti di impostazioni e valori predefiniti consigliati dal team di sicurezza pertinente per proteggere i dispositivi Windows. Diverse origini di base, ad esempio la baseline di *sicurezza MDM* o la *baseline Microsoft Defender ATP* , possono gestire le stesse impostazioni e le impostazioni diverse. Possono anche gestire le stesse impostazioni gestite con i criteri di configurazione del dispositivo. 
+- Le **linee di base di sicurezza**  -  le linee di base di[sicurezza](security-baselines.md) sono gruppi noti di impostazioni e valori predefiniti consigliati dal team di sicurezza pertinente per proteggere i dispositivi Windows. Diverse origini di base, ad esempio la baseline di *sicurezza MDM* o la *baseline Microsoft Defender ATP* , possono gestire le stesse impostazioni e le impostazioni diverse. Possono anche gestire le stesse impostazioni gestite con i criteri di configurazione del dispositivo. 
 
 Oltre a Intune, è possibile che le impostazioni di BitLocker siano gestite in altri modi, ad esempio Criteri di gruppo, o impostate manualmente da un utente del dispositivo.
 
@@ -59,14 +60,14 @@ Come è possibile verificare che le impostazioni siano state applicate al dispos
 
 ### <a name="device-configuration-policy-device-status"></a>Stato dispositivo criteri di configurazione del dispositivo  
 
-Quando si usano i criteri di configurazione del dispositivo per configurare BitLocker, è possibile controllare lo stato del criterio nel portale di Intune. Nel portale passare a **Configurazione dispositivo** > **profili** > selezionare il profilo che contiene le impostazioni di BitLocker e quindi selezionare **stato del dispositivo**. Sono elencati i dispositivi assegnati al profilo e la colonna *stato dispositivo* indica se il profilo è stato distribuito correttamente da un dispositivo. 
+Quando si usano i criteri di configurazione del dispositivo per configurare BitLocker, è possibile controllare lo stato del criterio nel portale di Intune. Nel portale passare a **Configurazione dispositivo**  > **profili** > selezionare il profilo che contiene le impostazioni di BitLocker e quindi selezionare **stato del dispositivo**. Sono elencati i dispositivi assegnati al profilo e la colonna *stato dispositivo* indica se il profilo è stato distribuito correttamente da un dispositivo. 
 
 Si noti che è possibile che si verifichi un ritardo tra un dispositivo che riceve un criterio di BitLocker e che l'unità sia completamente crittografata.  
 
  
 ### <a name="use-control-panel-on-the-client"></a>Usare il pannello di controllo sul client  
 
-In un dispositivo che ha abilitato BitLocker e crittografato un'unità, è possibile visualizzare lo stato di BitLocker da un pannello di controllo dei dispositivi. Sul dispositivo aprire il **Pannello di controllo** > **sistema e sicurezza** > **crittografia unità BitLocker**. La conferma viene visualizzata come illustrato nella figura seguente.  
+In un dispositivo che ha abilitato BitLocker e crittografato un'unità, è possibile visualizzare lo stato di BitLocker da un pannello di controllo dei dispositivi. Sul dispositivo aprire il **Pannello di controllo**  > **sistema e sicurezza**  > **crittografia unità BitLocker**. La conferma viene visualizzata come illustrato nella figura seguente.  
 
 ![BitLocker è attivato nel pannello di controllo](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
@@ -75,7 +76,7 @@ In un dispositivo che ha abilitato BitLocker e crittografato un'unità, è possi
 In un dispositivo che ha abilitato BitLocker e crittografato un'unità, avviare il prompt dei comandi con credenziali di amministratore, quindi eseguire `manage-bde -status`. I risultati dovrebbero essere simili all'esempio seguente:  
 risultato ![0A del comando status](./media/troubleshooting-bitlocker-policies/command.png)
 
-Nell'esempio: 
+Nell’esempio: 
 - La **protezione BitLocker** è **attiva**,  
 - La **percentuale crittografata** è **100%**  
 - Il **metodo di crittografia** è **XTS-AES 256**.  
@@ -150,7 +151,7 @@ Il **criterio è presente, ma non tutte le impostazioni sono state configurate c
   Il criterio si arresta in un dispositivo come una singola unità, quindi se alcune impostazioni si applicano e altre no, è possibile essere certi che il criterio stesso sia stato ricevuto. In questo scenario è possibile che la versione di Windows nel dispositivo non supporti le impostazioni problematiche. Per informazioni dettagliate sui requisiti di versione per ogni impostazione, vedere [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) nella documentazione di Windows.  
 
   1. **BitLocker non è supportato in tutti i componenti hardware**.  
-  Anche se si dispone della versione corretta di Windows, è possibile che l'hardware del dispositivo sottostante non soddisfi i requisiti per la crittografia BitLocker. È possibile trovare i [requisiti di sistema per BitLocker (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) nella documentazione di Windows, ma gli aspetti principali da verificare sono che il dispositivo disponga di un chip TPM compatibile (1,2 o versione successiva) e di un BIOS conforme a Trusted Computing Group (TCG) o un firmware UEFI.
+  Anche se si dispone della versione corretta di Windows, è possibile che l'hardware del dispositivo sottostante non soddisfi i requisiti per la crittografia BitLocker. È possibile trovare i [requisiti di sistema per BitLocker (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) nella documentazione di Windows, ma gli aspetti principali da verificare sono che il dispositivo disponga di un chip TPM compatibile (1,2 o versione successiva) e di un BIOS compatibile con Trusted Computing Group (TCG) o un firmware UEFI.
 
 **Esempio di analisi** : si distribuisce un criterio di BitLocker in un dispositivo Windows 10 e l'impostazione **Crittografa dispositivi** indica uno stato di **errore** nel portale.
 
@@ -168,7 +169,7 @@ Il **criterio è presente, ma non tutte le impostazioni sono state configurate c
 
 - Poiché BitLocker si basa su TPM, è possibile concludere che BitLocker non ha esito negativo a causa di un problema con Intune o con il criterio, ma piuttosto perché il dispositivo stesso non dispone di un chip TPM o TPM è disabilitato nel BIOS.
 
-  Come suggerimento aggiuntivo, è possibile verificare lo stesso nel Visualizzatore eventi di Windows in **registri applicazioni e servizi** > **Windows** > **API BitLocker**. Nel registro eventi dell' **API BitLocker** è presente un ID evento 853 che indica che il TPM non è disponibile:
+  Come suggerimento aggiuntivo, è possibile verificare lo stesso nel Visualizzatore eventi di Windows in **registri applicazioni e servizi**  >  API**Windows**  > **BitLocker**. Nel registro eventi dell' **API BitLocker** è presente un ID evento 853 che indica che il TPM non è disponibile:
 
   ![ID evento 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Gestire le app dal sito Web portale aziendale di Intune
+title: Gestire le app dal sito Web del Portale aziendale Intune
 description: Gestire e visualizzare le app disponibili e installate
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,84 +19,84 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416863"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506104"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Gestire le app dal sito Web del portale aziendale 
-Visitare il [sito Web portale aziendale](https://portal.manage.microsoft.com) per visualizzare e gestire le App dell'organizzazione. 
+Visitare il [sito web portale aziendale](https://portal.manage.microsoft.com) per visualizzare e gestire le app dell'organizzazione. 
 
 ## <a name="view-all-apps"></a>Visualizza tutte le app  
-Nel menu, selezionare **app** per visualizzare tutte le app rese disponibili dall'organizzazione. 
+Dal menu selezionare **app** per visualizzare tutte le app rese disponibili dall'organizzazione. 
 
-   ![Sito Web screenshot del portale aziendale, pagina delle App, che mostra le opzioni di ridefinizione.](./media/intune-view-apps-1907.png)  
+   ![Screenshot del sito Web Portale aziendale, pagina app, che mostra le opzioni di perfezionamento.](./media/intune-view-apps-1907.png)  
 
-Questa pagina elenca i dettagli seguenti su ogni applicazione:  
+Questa pagina elenca i dettagli seguenti su ogni app:  
 
-* Nome: Il nome dell'app, con un collegamento alla pagina dei dettagli dell'app.
-* Server di pubblicazione: Il nome dello sviluppatore o società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o la tua organizzazione.  
-* Data pubblicazione: La data che l'app è stata resa disponibile per il download. Pubblicare data è stato possibile visualizzare la versione iniziale di un'app o aggiorna un'app più recente.
-* Stato: Stato corrente dell'app nel dispositivo, che include installazione, installato e disponibile. 
-* Categoria: L'app (funzione) o scopi, ad esempio in primo piano, engineering, formazione e produttività.  
+* Nome: il nome dell'app, con un collegamento alla pagina dei dettagli dell'app.
+* Publisher: il nome dello sviluppatore o della società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o un'organizzazione.  
+* Data di pubblicazione: la data in cui l'app è stata resa disponibile per il download. La data di pubblicazione potrebbe visualizzare la versione iniziale o l'aggiornamento più recente di un'app.
+* Stato: lo stato corrente dell'app nel dispositivo, che include disponibile, installato e installato. 
+* Categoria: funzione o scopo dell'app, ad esempio in primo piano, progettazione, istruzione e produttività.  
 
-### <a name="search-and-refine"></a>Ricerca e ottimizzali in   
+### <a name="search-and-refine"></a>Ricerca e perfezionamento   
 
 Usare la barra di ricerca per trovare le app. I risultati della ricerca sono ordinati automaticamente per pertinenza.  
 
-   ![Sito Web screenshot del portale aziendale, pagina delle App, che mostra le opzioni di ridefinizione.](./media/intune-refine-all-apps-1907.png)  
+   ![Screenshot del sito Web Portale aziendale, pagina app, che mostra le opzioni di perfezionamento.](./media/intune-refine-all-apps-1907.png)  
 
-Selezionare **perfezionare** per visualizzare, filtrare e ordinare le opzioni. Filtrare l'elenco per visualizzare le app con criteri specifici indicati, incluse **tipo**, **disponibilità**, e **editori**. Selezionare **ordinamento** riorganizzare le app da:
+Selezionare **affina** per visualizzare le opzioni di filtro e ordinamento. Filtrare l'elenco per visualizzare le app con criteri specifici, tra cui **tipo**, **disponibilità**e **autori**. Selezionare **Ordina** per ridisporre le app per:
 
-* Nome dell'App, crescente o decrescente in ordine alfabetico 
+* Nome dell'app, crescente o decrescente in ordine alfabetico 
 * Nome dell'editore, crescente o decrescente in ordine alfabetico 
-* Data, meno recente o più recente di pubblicazione  
+* Data di pubblicazione, meno recente o più recente  
 
-## <a name="view-installed-apps"></a>Visualizzare installato le app  
-Nel menu, selezionare **App installate** per visualizzare un elenco di tutte le app installate nel dispositivo.  
+## <a name="view-installed-apps"></a>Visualizza le app installate  
+Dal menu selezionare **app installate** per visualizzare un elenco di tutte le app installate nel dispositivo.  
 
-   ![Sito Web screenshot del portale aziendale, pagina App installate.](./media/intune-installed-apps-1907.png)  
+   ![Screenshot del sito Web del portale aziendale, pagina App installate.](./media/intune-installed-apps-1907.png)  
 
 
-Questa pagina elenca i dettagli seguenti su ogni applicazione:  
+Questa pagina elenca i dettagli seguenti su ogni app:  
 
-* Nome: Il nome dell'app, con un collegamento alla pagina dei dettagli dell'app.
-* Tipo di assegnazione: come l'app viene assegnata e reso disponibile al Licenziatario. Vedere disponibilità e le app necessarie per altri dettagli. L'organizzazione può rendere un'app disponibile per l'installazione manualmente, o possono richiedere e installare automaticamente un'app nel dispositivo.  
-* Server di pubblicazione: Il nome dello sviluppatore o società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o la tua organizzazione.  
-* Data pubblicazione: La data che l'app è stata resa disponibile per il download. Pubblicare data è stato possibile visualizzare la versione iniziale di un'app o aggiorna un'app più recente.
-* Stato: Installazione stato corrente dell'app nel dispositivo. Le app possono mostrare come installare, installazione e installare non è riuscita. Le app obbligatorie potrebbe richiedere fino a 10 minuti per visualizzare un stato aggiornato.  
+* Nome: il nome dell'app, con un collegamento alla pagina dei dettagli dell'app.
+* Tipo di assegnazione: il modo in cui l'app viene assegnata e resa disponibile. Per altri dettagli, vedere app disponibili e richieste. L'organizzazione può rendere un'app disponibile per l'installazione o può richiedere e installare automaticamente un'app nel dispositivo.  
+* Publisher: il nome dello sviluppatore o della società che ha distribuito l'app. Un server di pubblicazione è in genere un fornitore di software o un'organizzazione.  
+* Data di pubblicazione: la data in cui l'app è stata resa disponibile per il download. La data di pubblicazione potrebbe visualizzare la versione iniziale o l'aggiornamento più recente di un'app.
+* Stato: lo stato di installazione corrente dell'app nel dispositivo. Le app possono essere visualizzate come installazione, installazione e installazione non riuscita. Per visualizzare uno stato aggiornato, le app richieste potrebbero richiedere fino a 10 minuti.  
 
-### <a name="search-and-refine"></a>Ricerca e ottimizzali in  
+### <a name="search-and-refine"></a>Ricerca e perfezionamento  
 
 Usare la barra di ricerca per trovare le app. I risultati della ricerca sono ordinati automaticamente per pertinenza.  
 
-   ![Sito Web di schermata del portale aziendale, le app installate, perfezionare le opzioni.](./media/intune-installed-refine-1907.png)  
+   ![Screenshot del sito Web del Portale aziendale, App installate, opzioni di affinamento.](./media/intune-installed-refine-1907.png)  
 
-Selezionare **perfezionare** per visualizzare, filtrare e ordinare le opzioni. Filtrare l'elenco per visualizzare le app con criteri specifici indicati, incluse **tipi**, **i server di pubblicazione**, e **stati**. Selezionare **ordinamento** riorganizzare le app da:
+Selezionare **affina** per visualizzare le opzioni di filtro e ordinamento. Filtrare l'elenco per visualizzare le app con criteri specifici, inclusi i **tipi**, i **Publisher**e gli **Stati**. Selezionare **Ordina** per ridisporre le app per:
 
-* Nome dell'App, crescente o decrescente in ordine alfabetico  
+* Nome dell'app, crescente o decrescente in ordine alfabetico  
 * Nome dell'editore, crescente o decrescente in ordine alfabetico  
-* Data, meno recente o più recente di pubblicazione  
+* Data di pubblicazione, meno recente o più recente  
 
 Servono altre informazioni? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
-### <a name="available-and-required-apps"></a>App disponibili e necessarie
-Le app vengono assegnate all'utente da parte dell'organizzazione ed etichettate come disponibile o richiesta. Il **le app installate** pagina Mostra le app a cui si dispone con la **tipo di assegnazione** colonna. 
+### <a name="available-and-required-apps"></a>App disponibili e richieste
+Le app vengono assegnate dall'organizzazione e contrassegnate come disponibili o obbligatorie. La pagina **app installate** Mostra le app presenti nella colonna **tipo di assegnazione** . 
 
 
-* Le app disponibili: queste App sono selezionate per l'organizzazione e sono utili e appropriate per l'azienda o dell'istituto di istruzione. Sono facoltativi per installare e sono le uniche App sono disponibili nel portale aziendale per l'installazione. 
+* App disponibili: queste app sono selezionate dall'organizzazione e sono appropriate e utili per l'azienda o l'Istituto di istruzione. Sono facoltativi per l'installazione e sono le uniche app disponibili nella Portale aziendale per l'installazione. 
 
-* Le applicazioni richieste: distribuiti dall'organizzazione potrebbe essere necessario App aziendali e dell'istituto di istruzione direttamente sul tuo dispositivo. Queste App vengono installate automaticamente per l'utente senza l'intervento. 
+* App richieste: l'organizzazione potrebbe distribuire le app di lavoro e dell'Istituto di istruzione necessarie direttamente nel dispositivo. Queste app vengono installate automaticamente senza alcun intervento da parte dell'utente. 
 
 Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa il sito Web del portale aziendale in un dispositivo Windows, si avrà accesso alle app per Windows, ma non alle app per iOS.  
 
 ## <a name="view-app-details"></a>Visualizza i dettagli dell'app  
-Selezionare un'app nel **le app** oppure **le app installate** pagina per visualizzarne i dettagli. È visualizzata **dettagli dell'App**, in cui è disponibile l'app e i requisiti. Se un'app non è già installata nel dispositivo, è possibile installarlo da questa pagina. 
+Selezionare un'app nella pagina **app** o **app installate** per visualizzarne i dettagli. Verranno **illustrati i dettagli delle app**, in cui sono disponibili la descrizione e i requisiti dell'app. Se un'app non è già installata nel dispositivo, è possibile installarla da questa pagina. 
 
 
-   ![Sito Web screenshot del portale aziendale, pagina dei dettagli dell'App.](./media/intune-app-details-1907.png)  
+   ![Screenshot del sito Web Portale aziendale, pagina dei dettagli dell'app.](./media/intune-app-details-1907.png)  
 
 ## <a name="next-steps"></a>Passaggi successivi
 Ulteriore assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

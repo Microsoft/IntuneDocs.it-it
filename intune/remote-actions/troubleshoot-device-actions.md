@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735701"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508501"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Risolvere i problemi relativi alle azioni del dispositivo in Intune
 
@@ -53,7 +54,7 @@ No. E non è necessario immettere i trattini.
 ## <a name="remove-devices-action"></a>Azione Rimuovi dispositivi
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Ricerca per categorie indicare chi ha avviato un ritiro/cancellazione?
-Passare a **Intune** > **Devices** > **Device actions** > controllare la colonna **avviata da** .
+Passare a **Intune**  > **dispositivi**  > **azioni del dispositivo** > controllare la colonna **avviato da** .
 Se non viene visualizzata alcuna voce, la persona più probabile che abbia avviato l'azione è l'utente del dispositivo. Probabilmente hanno usato l'app Portale aziendale o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Perché l'applicazione non è stata disinstallata dopo l'uso del ritiro?
@@ -68,7 +69,7 @@ Si tratta di un comportamento previsto. Google non consente la reimpostazione de
 Poiché il ritiro di un dispositivo non revoca i token di accesso. È possibile usare i criteri di accesso condizionale per attenuare questa condizione.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Come è possibile monitorare un'azione di ritiro/cancellazione dopo l'emissione?
-Passare a **Intune** > **dispositivi** > **azioni del dispositivo**.
+Passare a **Intune**  > **dispositivi**  > **azioni del dispositivo**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Perché le cancellazioni vengono talvolta visualizzate come in sospeso per un periodo illimitato?
 I dispositivi non sempre segnalano il proprio stato al servizio Intune prima dell'avvio della reimpostazione. Quindi, l'azione viene visualizzata come in sospeso. Se è stata confermata l'azione riuscita, eliminare il dispositivo dal servizio.

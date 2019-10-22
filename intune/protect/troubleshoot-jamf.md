@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e92e3442e1347cb1a2cd1c737078912b74f075c9
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817638"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503575"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Risolvere i problemi di integrazione di JAMF Pro con Microsoft Intune
 
@@ -42,7 +43,7 @@ Prima di iniziare la risoluzione dei problemi, raccogliere alcune informazioni d
 
 Quando si esamina l'integrazione di JAMF Pro con Intune, tenere presenti le informazioni seguenti: 
 - Qual è il messaggio di errore esatto?
-- Dove si trova il messaggio di errore?
+- Dove viene visualizzato il messaggio di errore?
 - Quando è iniziato il problema?  L'integrazione di JAMF Pro con Intune ha sempre funzionato?
 - Quanti utenti sono interessati? Tutti gli utenti sono interessati o solo alcuni?
 - Quanti dispositivi sono interessati? Tutti i dispositivi sono interessati o solo alcuni?
@@ -56,11 +57,11 @@ Le informazioni seguenti consentono di identificare e risolvere i problemi comun
 |-----------------|--------------------------|
 | **I dispositivi vengono contrassegnati come non risponde in JAMF Pro**  | [I dispositivi non riescono ad archiviare con JAMF Pro o con Azure AD](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **La richiesta di accesso Keychain ai dispositivi Mac quando si apre un dispositivo dell'app non riesce a registrarsi**  | [Agli utenti viene richiesto di immettere la password per consentire alle app di registrarsi con Azure ad](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app). |
-| **La registrazione dei dispositivi non riesce**  | Potrebbero essere valide le cause seguenti: <br> **-** [ ***motivo 1*** : l'app JAMF Pro in Azure non ha autorizzazioni corrette](#cause-1) <br> **-** [ ***causa 2*** -si è verificato un problema per il *connettore MacOS nativo di JAMF* in Azure ad](#cause-2) <br> **-** [ ***motivo 3*** -l'utente non dispone di una licenza di Intune o JAMF valida](#cause-3) <br> **-** [ ***motivo 4*** -l'utente non ha usato JAMF self service per avviare l'app portale aziendale](#cause-4) <br> **-** [ ***cause 5*** : l'integrazione di Intune è disattivata](#cause-5) <br> **-** [ ***motivo 6*** -il dispositivo è stato registrato in precedenza in Intune o l'utente ha tentato di registrare il dispositivo più volte](#cause-6) <br> **-** : [ ***7*** -JamfAAD richiede l'accesso a una "chiave di Microsoft workplace join" dal Keychain degli utenti](#cause-7) |
+| **La registrazione dei dispositivi non riesce**  | Potrebbero essere valide le cause seguenti: <br> **-** [ ***cause 1*** : le autorizzazioni per l'app JAMF Pro in Azure non sono corrette](#cause-1) <br> **-** [ ***causa 2*** -si è verificato un problema per il *connettore MacOS nativo di JAMF* in Azure ad](#cause-2) <br> **-** [ ***cause 3*** -l'utente non dispone di una licenza di Intune o JAMF valida](#cause-3) <br> **-** [ ***motivo 4*** -l'utente non ha usato JAMF self service per avviare l'app portale aziendale](#cause-4) <br> **-** [ ***cause 5*** : l'integrazione di Intune è disattivata](#cause-5) <br> **-** [ ***motivo 6*** : il dispositivo è stato registrato in precedenza in Intune o l'utente ha tentato di registrare il dispositivo più volte](#cause-6) <br> **-** [ ***cause 7*** -JamfAAD richiede l'accesso a una "chiave di Microsoft workplace join" dal Keychain degli utenti](#cause-7) |
 |  **Il dispositivo Mac Mostra la conformità in Intune ma non è conforme in Azure** | [Problemi di registrazione del dispositivo](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **Le voci duplicate vengono visualizzate nella console di Intune per i dispositivi Mac registrati con JAMF** | [Più registrazioni per lo stesso dispositivo](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **I criteri di conformità non sono in grado di valutare il dispositivo** | [Il criterio è destinato ai gruppi di dispositivi](#compliance-policy-fails-to-evaluate-the-device) |
-| **Non è stato possibile recuperare il token di accesso per l'API Microsoft Graph** | Potrebbero essere valide le cause seguenti: <br> Autorizzazioni -[per l'app JAMF Pro in Azure](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) <br> licenza scaduta - [per JAMF o Intune](#a-license-required-for-jamf-intune-integration-has-expired) <br> porte **-** [non aperte](#the-required-ports-arent-open-on-your-network)|
+| **Non è stato possibile recuperare il token di accesso per l'API Microsoft Graph** | Potrebbero essere valide le cause seguenti: <br> -[le autorizzazioni per l'app JAMF Pro in Azure](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) <br> - [licenza scaduta per JAMF o Intune](#a-license-required-for-jamf-intune-integration-has-expired) <br> porte **-** [non aperte](#the-required-ports-arent-open-on-your-network)|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>I dispositivi vengono contrassegnati come non risponde in JAMF Pro  
@@ -145,7 +146,7 @@ Per la registrazione e la registrazione di un dispositivo con Intune tramite JAM
 
 Per determinare il servizio usato dal dispositivo per la registrazione e la registrazione, esaminare l'app Portale aziendale sul dispositivo. Quando viene registrato tramite JAMF, è necessario ricevere una notifica per aprire l'app self-service per apportare modifiche.
 
-Nell'app Portale aziendale, l'utente potrebbe vedere **`Not registered`** e una voce simile a quella dell'esempio seguente potrebbe apparire nei log del portale aziendale:  
+Nell'app Portale aziendale, l'utente potrebbe visualizzare **`Not registered`** e una voce simile a quella dell'esempio seguente potrebbe apparire nei log del portale aziendale:  
 
 ```
    Line 7783: <DATE> <IP ADDRESS> INFO com.microsoft.ssp.application TID=1  
@@ -207,8 +208,8 @@ Se viene annullata la registrazione di un dispositivo da JAMF ma non è stato ri
    - /Library/Preferences/com.microsoft.CompanyPortal.plist
    - /Library/Preferences/com.jamfsoftware.selfservice.mac.plist
    - /Library/Preferences/com.jamfsoftware.management.jamfAAD.plist
-   - /Utenti/<username>/Library/cookies/com. Microsoft. file companyportal. binarycookies
-   - /Utenti/<username>/Library/cookies/com. JAMF. Management. jamfAAD. binarycookies
+   - /Utenti/<username>/Library/Cookies/com.microsoft.CompanyPortal.binarycookies
+   - /Utenti/<username>/Library/Cookies/com.jamf.management.jamfAAD.binarycookies
    - com. Microsoft. file companyportal
    - com. Microsoft. file companyportal. HockeySDK
    - enterpriseregistration.windows.net
@@ -224,7 +225,7 @@ Se viene annullata la registrazione di un dispositivo da JAMF ma non è stato ri
    - Kind: password dell'applicazione; Account: com. Microsoft. workplacejoin. identificazione personale
    - Kind: password dell'applicazione; Account: com. Microsoft. workplacejoin. registeredUserPrincipalName
    - Kind: certificate; Rilasciato da: MS-Organization-Access
-   - Kind: preferenza di identità; Nome (URL STS ADFS se presente): https://adfs\<DNSName>.com/adfs/ls
+   - Kind: preferenza di identità; Nome (se presente, URL STS ADFS): https://adfs\<DNSName>.com/adfs/ls
    - Kind: preferenza di identità; Nome: https://enterpriseregistration.windows.net
    - Kind: preferenza di identità; Nome: https://enterpriseregistration.windows.net/  
 9. Riavviare il dispositivo Mac.
@@ -273,7 +274,7 @@ Per risolvere questo problema, seguire la [*risoluzione per la*](#cause-6) *manc
 
 ### <a name="compliance-policy-fails-to-evaluate-the-device"></a>I criteri di conformità non sono in grado di valutare il dispositivo  
 
-**Motivo**: l'integrazione di JAMF con Intune non supporta i criteri di conformità che fanno riferimento a gruppi di dispositivi. 
+**Motivo**: l'integrazione di Jamf con Intune non supporta i criteri di conformità che fanno riferimento a gruppi di dispositivi. 
 
 **Risoluzione**  
 Modificare i criteri di conformità per i dispositivi macOS da assegnare ai gruppi di utenti. 
@@ -293,7 +294,7 @@ L'origine di questo errore può essere una delle seguenti cause:
 
 Durante la registrazione dell'app JAMF Pro in Azure, si è verificata una delle condizioni seguenti:  
 - L'app ha ricevuto più di un'autorizzazione.
-- L'opzione **Concedi amministratore per *\<your Company >***  non è stata selezionata.  
+- L'opzione **Concedi amministratore per *\<your > dell'azienda***  non è stata selezionata.  
 
 **Risoluzione**  
 Per la [registrazione dei dispositivi non è possibile eseguire la registrazione](#devices-fail-to-register), più indietro in questo articolo.

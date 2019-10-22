@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58eefffac670a12fc1d1a065534b4c1a4505426
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734947"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585389"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -67,7 +68,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 - **Aggiornamento del sistema**: scegliere un'opzione per definire la modalità di gestione degli aggiornamenti in modalità wireless da parte del dispositivo:
   - **Impostazione predefinita dispositivo**: usare l'impostazione predefinita del dispositivo.
   - **Automatico**: gli aggiornamenti vengono installati automaticamente senza l'intervento dell'utente. L'impostazione del criterio consente di installare immediatamente eventuali aggiornamenti in sospeso.
-  - **Posposto**: gli aggiornamenti vengono rimandati di 30 giorni. Al termine dei 30 giorni, Android chiede all'utente di installare l'aggiornamento. Ai produttori di dispositivi e ai gestori telefonici è consentito impedire il posticipo degli aggiornamenti della sicurezza. Un aggiornamento posticipato viene indicato all'utente da una notifica di sistema nel dispositivo. 
+  - **Posposto**: gli aggiornamenti vengono rimandati di 30 giorni. Al termine dei 30 giorni, Android chiede all'utente di installare l'aggiornamento. Ai produttori di dispositivi e ai gestori telefonici è consentito impedire il posticipo degli aggiornamenti della sicurezza. Un aggiornamento posticipato viene indicato all'utente da una notifica di sistema nel dispositivo.
   - **Finestra di manutenzione**: installa automaticamente gli aggiornamenti in una finestra di manutenzione giornaliera impostata in Intune. L'installazione viene tentata ogni giorno per 30 giorni e può non riuscire a causa di livelli di batteria o spazio insufficienti. Dopo 30 giorni, Android chiede all'utente di eseguire l'installazione. Questa finestra viene usata anche per installare gli aggiornamenti per le app di Play. Usare questa opzione per i dispositivi dedicati, ad esempio i chioschi multimediali, in quanto consente di aggiornare le app in primo piano dei dispositivi dedicati per app singola.
 
 - **Finestre di notifica**: se l'opzione è impostata su **Disabilita**, le notifiche, tra cui avvisi popup, chiamate in ingresso, chiamate in uscita, avvisi di sistema ed errori di sistema, non vengono visualizzate nel dispositivo. Se è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare le notifiche.
@@ -98,8 +99,8 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   > Per i dispositivi dedicati con più app, l'[app di schermata iniziale gestita](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) da Google Play **deve essere**:
   >   - [Aggiunta come app client](../apps/apps-add-android-for-work.md) in Intune
   >   - [Assegnata al gruppo di dispositivi](../apps/apps-deploy.md) creato per i dispositivi dedicati
-  > 
-  > Non è richiesto che l'app di **schermata iniziale gestita** sia inclusa nel profilo di configurazione, ma è necessario che venga aggiunta come app client. Quando l'app di **schermata iniziale gestita** viene aggiunta come app client, qualsiasi altra app aggiunta nel profilo di configurazione viene visualizzata come icona nell'app di **schermata iniziale gestita**. 
+  >
+  > Non è richiesto che l'app di **schermata iniziale gestita** sia inclusa nel profilo di configurazione, ma è necessario che venga aggiunta come app client. Quando l'app di **schermata iniziale gestita** viene aggiunta come app client, qualsiasi altra app aggiunta nel profilo di configurazione viene visualizzata come icona nell'app di **schermata iniziale gestita**.
   >
   > Quando si usa la modalità tutto schermo per più app, le app del servizio di connessione/telefono potrebbero non funzionare correttamente. 
 
@@ -157,8 +158,8 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
       Se non si immette un URL, viene utilizzata l'immagine predefinita del dispositivo, se è presente un'immagine predefinita.
 
-    - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0-9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
-    - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1-9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
+    - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0 e 9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
+    - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1 e 9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
     - **Rileva supporto prima di iniziare screen saver**: **Abilita** (impostazione predefinita) non Mostra l'screen saver se l'audio o il video è in riproduzione sul dispositivo. **Non configurata** mostra il screen saver, anche se la riproduzione audio o video viene eseguita.
 
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
@@ -241,7 +242,22 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
   Scegliere **Non configurata** per consentire al traffico di passare attraverso il tunnel VPN o la rete per dispositivi mobili.
 
-## <a name="work-profile-only"></a>Solo profilo di lavoro 
+- **Proxy globale consigliato**: scegliere **Abilita** per aggiungere un proxy globale ai dispositivi. Se abilitata, il traffico HTTP e HTTPS, incluse alcune app nel dispositivo, usano il proxy immesso. Questo proxy è solo un suggerimento. È possibile che alcune app non usino il proxy. **Non configurato** (impostazione predefinita) non aggiunge un proxy globale consigliato.
+
+  Per ulteriori informazioni su questa funzionalità, vedere [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (apre un sito Android).
+
+  Se abilitata, immettere anche il **tipo** di proxy. Le opzioni disponibili sono:
+
+  - **Diretta**: scegliere questa opzione per immettere manualmente i dettagli del server proxy, tra cui:
+    - **Host**: immettere il nome host o l'indirizzo IP del server proxy. Ad esempio, immettere `proxy.contoso.com` o `127.0.0.1`.
+    - **Numero porta**: immettere il numero della porta TCP usato dal server proxy. Immettere ad esempio `8080`.
+    - **Host esclusi**: immettere un elenco di nomi host o indirizzi IP che non utilizzeranno il proxy. Questo elenco può includere un carattere jolly asterisco (`*`) e più host separati da punti e virgola (`;`) senza spazi. Immettere ad esempio `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Configurazione automatica del proxy**: immettere l' **URL PAC** per uno script di configurazione automatica del proxy. Immettere ad esempio `https://proxy.contoso.com/proxy.pac`.
+
+    Per altre informazioni sui file PAC, vedere [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (apre un sito non Microsoft).
+
+## <a name="work-profile-only"></a>Solo profilo di lavoro
 
 ### <a name="work-profile-settings"></a>Impostazioni del profilo di lavoro
 
@@ -249,9 +265,10 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 - **Copia e incolla tra il profilo di lavoro e il profilo personale**: scegliere **Blocca** per impedire le operazioni di copia e incolla tra app aziendali e personali. **Non configurata** consente agli utenti di condividere i dati tramite copia e incolla con le app nel profilo personale 
 - **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
-  - **Restrizioni predefinite per la condivisione**: comportamento di condivisione predefinito del dispositivo che varia in base alla versione di Android. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Nei dispositivi che eseguono la versione 6.0 e successive Google non blocca la condivisione dal profilo personale al profilo di lavoro.
+  - **Impostazione predefinita dispositivo**: comportamento di condivisione predefinito del dispositivo che varia in base alla versione di Android. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Nei dispositivi che eseguono la versione 6.0 e successive Google non blocca la condivisione dal profilo personale al profilo di lavoro.
   - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: questa opzione abilita la funzionalità Android predefinita che consente la condivisione dal profilo personale al profilo di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
-  - **Consenti la condivisione tra limiti**: abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
+  - **Impedisci la condivisione tra i limiti**: impedisce la condivisione tra i profili di lavoro e personali.
+  - **Nessuna restrizione sulla condivisione**: Abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
 
 - **Notifiche del profilo di lavoro durante il blocco del dispositivo**: controlla se le app del profilo di lavoro possono visualizzare dati nelle notifiche quando il dispositivo è bloccato. **Blocca** impedisce la visualizzazione dei dati. **Non configurata** consente di visualizzare i dati.
 - **Autorizzazioni delle app predefinite**: imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
@@ -325,6 +342,13 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
 
    > [!Note]
    > Questa impostazione funziona solo per i dispositivi Android O e versioni successive.
+
+- **Impedisci l'installazione di app da origini sconosciute nel profilo personale**: per impostazione predefinita, i dispositivi di profilo di lavoro Android Enterprise non possono installare le app da origini diverse dalla Play Store. Per natura, i dispositivi del profilo di lavoro sono progettati per essere a doppio profilo:
+
+  - Un profilo di lavoro gestito tramite MDM.
+  - Profilo personale isolato dalla gestione MDM.
+
+  Questa impostazione consente agli amministratori di controllare maggiormente le installazioni di app da origini sconosciute. **Non configurato** (impostazione predefinita) consente l'installazione di app da origini sconosciute nel profilo personale. **Blocca** impedisce l'installazione di app da origini diverse da quelle Play Store nel profilo personale.
 
 ### <a name="connectivity"></a>Connettività
 

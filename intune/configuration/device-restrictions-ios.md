@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734908"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584882"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -140,13 +141,13 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: registrazione del dispositivo, registrazione automatica dei dispositivi (supervisione)
 
 > [!IMPORTANT]
-> Nei dispositivi registrati dall'utente, se si configura qualsiasi impostazione della password, le impostazioni delle **password semplici** vengono impostate automaticamente su **blocca**e viene applicato un pin di 6 cifre.
+> Nei dispositivi registrati dall'utente, se si configura qualsiasi impostazione della password, le impostazioni **Password semplici** vengono impostate automaticamente su **Blocco** e viene impostato un PIN a 6 cifre.
 >
-> Ad esempio, si configura l'impostazione di **scadenza delle password** e si inserisce questo criterio nei dispositivi registrati dall'utente. Nei dispositivi, si verifica quanto segue:
+> Si supponga ad esempio di configurare l'impostazione **Scadenza password** e di applicare questo criterio nei dispositivi registrati dall'utente. Nei dispositivi si verificherà quanto segue:
 >
-> - L'impostazione di **scadenza password** viene ignorata.
-> - Non sono consentite password semplici, ad esempio `1111` o `1234`.
-> - Viene applicato un pin di 6 cifre.
+> - L'impostazione **Scadenza password** viene ignorata.
+> - Le password semplici, ad esempio `1111` o `1234`, non sono consentite.
+> - Viene applicato un PIN di 6 cifre.
 
 - **Password semplici**: scegliere **Blocca** per richiedere password più complesse. **Non configurata** consente password semplici, ad esempio `0000` e `1234`.
 
@@ -159,7 +160,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Lunghezza minima password**: immettere la lunghezza minima della password che l'utente deve immettere, compresa tra 4 e 14 caratteri. Nei dispositivi registrati dall'utente immettere una lunghezza compresa tra 4 e 6 caratteri.
   
   > [!NOTE]
-  > Per i dispositivi registrati dall'utente, gli utenti possono impostare un PIN maggiore di 6 cifre. Tuttavia, non vengono applicate più di 6 cifre sul dispositivo. Un amministratore, ad esempio, imposta la lunghezza minima su `8`. Nei dispositivi registrati dall'utente, gli utenti devono solo impostare un PIN di 6 cifre. Intune non impone un PIN maggiore di 6 cifre nei dispositivi registrati dall'utente.
+  > Per i dispositivi registrati dall'utente, gli utenti possono impostare un PIN maggiore di 6 cifre. Tuttavia, non vengono applicate più di 6 cifre sul dispositivo. Un amministratore, ad esempio, imposta la lunghezza minima `8`. Nei dispositivi registrati dall'utente, gli utenti devono solo impostare un PIN di 6 cifre. Intune non impone un PIN maggiore di 6 cifre nei dispositivi registrati dall'utente.
 
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di accesso consentiti prima della cancellazione del dispositivo (da 4 a 11).
   
@@ -266,6 +267,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Gioco multiplayer**: scegliere **blocca** per impedire il gioco multiplayer. **Non configurato** (impostazione predefinita) consente all'utente di partecipare a giochi multiplayer nel dispositivo.
 
   A partire da iOS 13,0, questa impostazione richiede i dispositivi con supervisione.
+
+- **Accesso all'unità di rete nell'app file**: usando il protocollo SMB (Server Message Block), i dispositivi possono accedere ai file o ad altre risorse in un server di rete. **Disabilita** impedisce l'accesso ai file in un'unità SMB di rete. L'impostazione **Non configurata** (predefinita) consente l'accesso.
+
+  Questa funzionalità si applica a:  
+  - iOS e iPados 13,0 e versioni successive
 
 ## <a name="built-in-apps"></a>App predefinite
 
@@ -377,7 +383,7 @@ Si applica ai dispositivi che eseguono iOS 9,3 o versione successiva.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
-- **Tipo di elenco di app**: creare un elenco di app da mostrare o nascondere. Le opzioni disponibili sono:
+- **Tipo di elenco di app**: creare un elenco di app da mostrare o nascondere. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094). Le opzioni disponibili sono:
 
   - **App nascoste**: immettere un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o aprire queste app.
   - **App visibili**: immettere un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
@@ -432,7 +438,12 @@ Per aggiungere le app, è possibile:
   - iOS 12.2 e versioni successive
 
 - **Aggiungi reti Wi-Fi solo tramite profili di configurazione**: **Rendi obbligatorio** impone al dispositivo l'uso esclusivo delle reti Wi-Fi impostate tramite profili di configurazione di Intune. **Non configurato** (impostazione predefinita) consente al dispositivo di usare altre reti Wi-Fi.
-- **Modifica dello stato Wi-Fi**: **non configurato** (impostazione predefinita) consente agli utenti di attivare o disattivare il Wi-Fi nel dispositivo. **Blocca** impedisce l'attivazione o la disattivazione di Wi-Fi.
+- **Wi-Fi sempre acceso**: quando è impostato su **Richiedi**, il Wi-Fi rimane attivo nell'app Impostazioni. Non può essere disattivata nelle impostazioni o nel centro di controllo, anche quando il dispositivo è in modalità aereo. **Non configurato** (impostazione predefinita) consente all'utente di controllare l'attivazione o la disattivazione di Wi-Fi.
+
+  La configurazione di questa impostazione non impedisce agli utenti di selezionare una rete Wi-Fi.
+
+  Questa funzionalità si applica a:  
+  - iOS e iPados 13,0 e versioni successive
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 
@@ -458,6 +469,11 @@ Per aggiungere le app, è possibile:
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+
+- **Accesso ai file nell'unità USB**: i dispositivi possono connettersi e aprire i file in un'unità USB. **Disabilita** impedisce l'accesso del dispositivo all'unità USB nell'app file quando un USB è connesso al dispositivo. La disabilitazione di questa funzionalità impedisce inoltre agli utenti finali di trasferire i file su un'unità USB connessa a un iPad. **Non configurato** (impostazione predefinita) consente l'accesso a un'unità USB nell'app file.
+
+  Questa funzionalità si applica a:  
+  - iOS e iPados 13,0 e versioni successive
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario
 
@@ -488,7 +504,7 @@ Per aggiungere le app, è possibile:
 - **Sincronizzazione dello streaming foto in iCloud**: **Non configurato** (impostazione predefinita) consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto** per sincronizzare le foto in iCloud in modo che siano disponibili in tutti i dispositivi degli utenti. **Blocca** impedisce la sincronizzazione dello streaming foto in iCloud. Il blocco di questa funzionalità può causare la perdita di dati. 
 - **Libreria foto di iCloud**: impostare su **Blocca** per disabilitare l'uso della libreria foto di iCloud per archiviare foto e video nel cloud. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della libreria foto iCloud.
 - **Flusso di foto condivise**: scegliere **Blocca** per disabilitare **Condivisione foto di iCloud** nel dispositivo. **Non configurato** (impostazione predefinita) consente lo streaming di foto condivise.
-- **** Consegna: **non configurata** (impostazione predefinita) consente agli utenti di iniziare a lavorare su un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce l'handoff.
+- **Consegna**: **non configurata** (impostazione predefinita) consente agli utenti di iniziare a lavorare su un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce l'handoff.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
@@ -533,7 +549,7 @@ Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano
 
   Questa impostazione si applica a:  
   - iOS 13.0 e versioni successive
-  - iPados 13,0 e versioni successive
+  - iPadOS 13.0 e versioni successive
   
   > [!TIP]
   > Se sono disponibili app line-of-business per l'organizzazione e non sono pronte per il **controllo vocale** il giorno 0 quando si rilascia iOS 13,0, è consigliabile lasciare questa impostazione **non configurata**.
@@ -553,7 +569,7 @@ Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano
 
   Questa impostazione si applica a:  
   - iOS 13.0 e versioni successive
-  - iPados 13,0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Controllo VoiceOver**: **Consenti** per consentire le modifiche del VoiceOver in modo che gli utenti possano modificare la funzione VoiceOver, ad esempio la velocità con cui viene letto il testo sullo schermo. **Non configurata** impedisce modifiche al VoiceOver.
 - **Controllo dello zoom**: **Consenti** per consentire all'utente di modificare lo zoom. **Non configurata** impedisce la modifica dello zoom.

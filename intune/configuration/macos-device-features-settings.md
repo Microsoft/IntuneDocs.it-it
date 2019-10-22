@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816863"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506659"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi macOS in Intune
 
@@ -120,7 +121,7 @@ Dopo che gli utenti hanno effettuato l'accesso ai dispositivi, le impostazioni s
 - **Disabilita Disconnetti** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l’opzione **Disconnetti** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Disconnetti** sul dispositivo.
 - **Disabilita la schermata di blocco** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l’opzione **Schermata di blocco** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Schermata di blocco** sul dispositivo.
 
-## <a name="single-sign-on-app-extension"></a>Estensione dell'app Single Sign-on
+## <a name="single-sign-on-app-extension"></a>Estensione dell'app Single Sign-On
 
 Questa funzionalità si applica a:
 
@@ -200,9 +201,9 @@ Questa funzionalità si applica a:
 
 - **ID app**: immettere l'identificatore dell'app da associare a un sito Web. L'identificatore dell'app include l'ID del team e un ID bundle: `TeamID.BundleID`.
 
-  Il team ID è una stringa alfanumerica (lettere e numeri) a 10 caratteri generata da Apple per gli sviluppatori di app, ad esempio `ABCDE12345`. [Individuare l'ID Team](https://help.apple.com/developer-account/#/dev55c3c710c)  (apre il sito Web di Apple) con ulteriori informazioni.
+  Il team ID è una stringa alfanumerica (lettere e numeri) a 10 caratteri generata da Apple per gli sviluppatori di app, ad esempio `ABCDE12345`. [Individuare l'ID Team](https://help.apple.com/developer-account/#/dev55c3c710c)   (apre il sito Web di Apple) con ulteriori informazioni.
 
-  L'ID bundle identifica in modo univoco l'app ed è in genere formattato in notazione del nome di dominio inverso. Ad esempio, l'ID bundle del Finder è `com.apple.finder`. Per trovare l'ID bundle, usare AppleScript nel terminale:
+  L'ID bundle identifica in modo univoco l'app ed è in genere formattato in notazione del nome di dominio inverso. Ad esempio, l'ID bundle di Finder viene `com.apple.finder`. Per trovare l'ID bundle, usare AppleScript nel terminale:
 
   `osascript -e 'id of app "ExampleApp"'`
 
@@ -212,14 +213,14 @@ Questa funzionalità si applica a:
 
   Il tipo di servizio può essere:
 
-  - **AuthSrv**: estensione app Single Sign-on
+  - **authsrv**: estensione dell'app per l'accesso Single Sign-On
   - **AppLink**: collegamento universale
   - **webcredentials**: riempimento automatico password
 
 - **Aggiungi**: selezionare questa aggiunta per aggiungere le app e i domini associati.
 
 > [!TIP]
-> Per risolvere i problemi, nel dispositivo macOS aprire **Preferenze di sistema** > **profili**. Verificare che il profilo creato sia presente nell'elenco profili dispositivo. Se è elencato, assicurarsi che la **configurazione dei domini associati** sia nel profilo e che includa i domini e l'ID app corretti.
+> Per risolvere i problemi, nel dispositivo macOS aprire **Preferenze di sistema**  > **profili**. Verificare che il profilo creato sia presente nell'elenco profili dispositivo. Se è elencato, assicurarsi che la **configurazione dei domini associati** sia nel profilo e che includa i domini e l'ID app corretti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,14 +1,15 @@
 ---
-title: Risolvere problemi comuni con il dispositivo Samsung Knox gestito | Microsoft Docs
-description: Informazioni sui modi per risolvere i problemi comuni con il dispositivo Samsung Knox.
+title: Risolvere i problemi comuni con i dispositivi Samsung Knox gestiti | Microsoft Docs
+description: Risolvere i problemi del dispositivo Samsung Knox.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 78c08b30-dc5f-46d9-9ee8-6cc8dee1e404
 searchScope:
@@ -17,18 +18,18 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f78c2460130068652b91b27ddcf5726a077e59e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 54a8eaafba0705968672275ba67449d9672f5c46
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833464"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502078"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Risolvere problemi comuni con il dispositivo Samsung Knox
 
-A volte possono verificarsi problemi con il dispositivo Samsung Knox non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per problemi più complessi, è consigliabile [contattare il team del portale aziendale Android](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
+Risolvere i problemi comuni associati ai dispositivi Samsung Knox gestiti. Per segnalare un problema non elencato qui, è possibile [inviare i log di diagnostica](send-logs-to-microsoft-android.md) tramite l'app Portale aziendale o Microsoft Intune. Gli sviluppatori Microsoft esaminano i log specifici dell'app per diagnosticare il problema e trovare una soluzione.    
 
-## <a name="network-activation-error"></a>Errore di attivazione della rete
+## <a name="network-activation-error"></a>Errore di attivazione della rete  
 
 Il messaggio visualizzato potrebbe essere simile al seguente:
 
@@ -50,6 +51,6 @@ Il messaggio visualizzato potrebbe essere simile al seguente:
 
 |Messaggio di errore|Possibile soluzione|
 |---|---|
-|**Errore di attivazione di Samsung Knox** - Non è stato possibile attivare la licenza di Samsung Knox. È possibile che il risparmio di energia sia attivato. Disattivare la modalità di risparmio di energia nelle impostazioni del dispositivo e riprovare ad attivare la licenza di Samsung Knox. |È possibile che le impostazioni di risparmio energia del dispositivo non siano corrette per l'uso con le risorse aziendali. Altre informazioni sulla [configurazione della modalità risparmio energia](power-saving-mode-android.md).|
+|**Errore di attivazione di Samsung Knox** - Non è stato possibile attivare la licenza di Samsung Knox. È possibile che la modalità di risparmio di energia sia abilitata. Disabilitare la modalità di risparmio di energia nelle impostazioni del dispositivo e riprovare ad attivare la licenza di Samsung Knox. |È possibile che le impostazioni di risparmio energia del dispositivo non siano corrette per l'uso con le risorse aziendali. Per ulteriori informazioni su questa impostazione, vedere [modalità di risparmio energia](power-saving-mode-android.md).|  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
