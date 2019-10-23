@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1679eb656e04296e53d8994dcd47144621c99d0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721773"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504721"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>Configurare il Connettore di certificati di Intune per la piattaforma DigiCert PKI  
 
@@ -109,7 +110,7 @@ Se si usa il connettore solo con la CA DigiCert, è possibile usare le istruzion
 
    d. Selezionare **Computer locale** > **Fine**. 
 
-   e. Selezionare **OK** nella finestra di dialogo **Aggiungi o rimuovi snap-in**. Espandere **Certificati (computer locale)** > **Personale** > **Certificati**.
+   e. Selezionare **OK** nella finestra di dialogo **Aggiungi o rimuovi snap-in**. Espandere **Certificati (computer locale)**  > **Personale** > **Certificati**.
 
    f. Fare clic con il pulsante destro del mouse sul nodo **Certificati** e scegliere **Tutte le attività** > **Importa**.  
 
@@ -121,7 +122,7 @@ Se si usa il connettore solo con la CA DigiCert, è possibile usare le istruzion
 
 6. Esportare e importare il certificato di chiave privata: 
 
-   a. Espandere **Certificati (computer locale)** > **Personale** > **Certificati**.
+   a. Espandere **Certificati (computer locale)**  > **Personale** > **Certificati**.
 
    b. Selezionare il certificato importato nel passaggio precedente.
 
@@ -169,7 +170,7 @@ Scaricare la versione più recente del Connettore di certificati di Intune dal p
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).  
 
-2. Selezionare **Configurazione del dispositivo** > **Connettori di certificati** > **+ Aggiungi**.  
+2. Selezionare **Configurazione del dispositivo** > **Connettori di certificati** >  **+ Aggiungi**.  
 
 3. Selezionare **Scaricare il software del connettore del certificato**. Salvare il software in un percorso a cui è possibile accedere dal server in cui verrà installato.  
 

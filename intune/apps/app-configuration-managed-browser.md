@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63e3a02f9df52052f27714403e8f189d089c6690
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725894"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507562"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso Web usando un browser protetto con criteri di Microsoft Intune
 
@@ -242,7 +243,7 @@ Usando la procedura per creare una configurazione per l'app Managed Browser o Mi
 
 |Chiave|Valore|
 |-|-|
-|Scegliere tra:<br><ul><li>Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
+|Scegliere tra:<br><ul><li>Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;** .<br><br>Esempi:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Non specificare entrambe le chiavi. Se entrambe le chiavi sono destinate allo stesso utente, viene usata la chiave consentita, essendo l'opzione più restrittiva.
@@ -251,7 +252,7 @@ Usando la procedura per creare una configurazione per l'app Managed Browser o Mi
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato dell'URL per URL consentite e bloccate
 Usare le informazioni seguenti per saperne di più sui formati e i caratteri jolly consentiti che possono essere usati quando si specificano gli URL negli elenchi Consenti e Blocca:
 
-- È possibile usare il carattere jolly (**&#42;**) secondo le regole dell'elenco seguente di modelli consentiti:
+- È possibile usare il carattere jolly ( **&#42;** ) secondo le regole dell'elenco seguente di modelli consentiti:
 
 - Assicurarsi che tutte le URL abbiano con prefisso **http** o **https** quando immetterle nell'elenco.
 
