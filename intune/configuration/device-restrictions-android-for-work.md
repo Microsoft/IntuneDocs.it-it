@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585389"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915712"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -193,7 +193,8 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 ### <a name="power-settings"></a>Impostazioni di risparmio energia
 
-- **Time to lock screen** (Tempo per schermata di blocco): impostare la quantità di tempo di inattività necessaria affinché il dispositivo venga bloccato.
+- **Tempo di blocco della schermata**: immettere il tempo massimo che un utente può impostare fino al blocco del dispositivo. Se ad esempio si imposta questa impostazione su **10 minuti**, gli utenti possono impostare l'ora da 15 secondi fino a 10 minuti. Se impostato su **non configurato** (impostazione predefinita), Intune non modifica o controlla questa impostazione.
+
 - **Screen on while device plugged in** (Schermata attiva con dispositivo alimentato): scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo alimentato.
 
 ### <a name="users-and-accounts-settings"></a>Impostazioni di utenti e account
