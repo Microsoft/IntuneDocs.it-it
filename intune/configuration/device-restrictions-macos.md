@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494016"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776873"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi macOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -40,7 +40,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="general"></a>Generale
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Ricerca della definizione**: **Blocca** impedisce all'utente di evidenziare una parola e quindi di cercarne la definizione nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla funzionalità di ricerca della definizione.
 - **Blocca la dettatura**: **Blocca** impedisce all'utente di immettere testo con l'input vocale. **Non configurato** (impostazione predefinita) consente all'utente di usare l'input con dettatura.
@@ -82,7 +82,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="password"></a>Password
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) non richiede una password. Non impone inoltre alcuna restrizione, ad esempio il blocco di password semplici o l'impostazione di una lunghezza minima.
   - **Tipo di password richiesto**: specifica se la password può essere solo numerica o se deve essere di tipo alfanumerico, ovvero contenere lettere e numeri.
@@ -114,7 +114,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="built-in-apps"></a>App predefinite
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Block Safari AutoFill** (Blocca riempimento automatico in Safari): **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare le impostazioni di completamento automatico nel Web browser.
 - **Blocca la fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla fotocamera del dispositivo.
@@ -127,7 +127,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Tipo di elenco di app con restrizioni**: creare un elenco di app che gli utenti non sono autorizzati a installare o usare. Le opzioni disponibili sono:
 
@@ -145,14 +145,14 @@ Per aggiungere app a questi elenchi, è possibile:
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Blocca AirDrop**: **Blocca** impedisce l'uso di AirDrop nel dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della funzionalità AirDrop per scambiare contenuti con dispositivi vicini.
 - **Block Apple Watch Auto Unlock** (Impedisci lo sblocco automatico con Apple Watch): **Blocca** impedisce agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch. **Non configurato** (impostazione predefinita) consente agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Blocca la sincronizzazione Keychain con iCloud**: scegliere **Blocca** per disabilitare la sincronizzazione delle credenziali archiviate in Keychain su iCloud. **Non configurato** (impostazione predefinita) consente agli utenti di sincronizzare queste credenziali.
 - **Block iCloud Document Sync** (Blocca la sincronizzazione di documenti in iCloud): **Blocca** impedisce a iCloud di sincronizzare documenti e dati. **Non configurato** (impostazione predefinita) consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
@@ -170,7 +170,7 @@ Per aggiungere app a questi elenchi, è possibile:
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **URL del dominio di posta elettronica**: **Aggiungi** consente di aggiungere uno o più URL all'elenco. Quando gli utenti ricevono un messaggio di posta elettronica da un dominio diverso da quello configurato, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in macOS.
 

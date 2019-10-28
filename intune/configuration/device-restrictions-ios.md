@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584882"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785512"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -300,6 +300,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 12.2 e versioni successive
+
+  > [!NOTE]
+  > L'impostazione **registrazione lato server per i comandi Siri** è deprecata da Apple. In una versione futura questa impostazione viene rimossa dalla console di Intune.
+  >
+  > Attualmente questa impostazione non ha alcun effetto sui dispositivi, anche se l'impostazione è visualizzata nei profili gestione. Per eliminare questa impostazione da un criterio, aprire il criterio, apportare una modifica secondaria, quindi salvare il criterio. Il criterio viene aggiornato e l'impostazione viene eliminata dai dispositivi.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
