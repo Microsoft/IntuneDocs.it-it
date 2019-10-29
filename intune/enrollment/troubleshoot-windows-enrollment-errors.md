@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503100"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892548"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune
 
@@ -390,3 +390,4 @@ Questo problema è in genere causato dalla delega non corretta delle autorizzazi
 - [Consulta il Blog del team di supporto di Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Consulta il Blog di Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Ottenere supporto per Microsoft Intune](../fundamentals/get-support.md)
+- [Individuare gli errori di registrazione di co-gestione](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
