@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036410"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785671"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -126,3 +127,4 @@ Per impostazione predefinita, per alcune impostazioni i valori e le azioni sono 
 | **Produttore/i dispositivo** | Specificare un elenco di produttori separati da punto e virgola. Evitare gli spazi in elenchi di più valori. I valori non fanno distinzione tra maiuscole e minuscole. Le *azioni* sono le seguenti: <br><ul><li>**Consenti specificati (blocca non specificati)** : solo i dispositivi che corrispondono al produttore specificato possono usare l'app. Tutti gli altri dispositivi vengono bloccati. </li></ul> <ul><li>**Consenti specificati (cancella non specificati)** : l'account utente associato all'applicazione viene cancellato dal dispositivo. </li></ul> Per altre informazioni sull'uso di questa impostazione, vedere [Azioni di avvio condizionale](app-protection-policies-access-actions.md#android-policy-settings). |
 | **Attestazione del dispositivo SafetyNet** | I criteri di protezione delle app supportano alcune API di Protezione di Google Play. Questa impostazione in particolare configura l'attestazione SafetyNet di Google nei dispositivi degli utenti finali. Specificare l'opzione **Integrità di base** o **Integrità di base e dispositivi certificati**. L'opzione **Integrità di base** fornisce informazioni sull'integrità generale del dispositivo. Dispositivi rooted, emulatori, dispositivi virtuali e dispositivi con segni di manomissione non superano la verifica dell'integrità di base. L'opzione **Integrità di base e dispositivi certificati** fornisce informazioni sulla compatibilità del dispositivo con i servizi Google. Solo i dispositivi non modificati che hanno ottenuto la certificazione di Google possono superare questo controllo. Le *azioni* sono le seguenti: <br><ul><li>**Avvisa**: l'utente visualizza una notifica se il dispositivo non soddisfa l'analisi per l'attestazione SafetyNet di Google in base al valore configurato. Questa notifica può essere chiusa. </li></ul><ul><li>**Blocca accesso**: l'accesso dell'utente al dispositivo viene bloccato se il dispositivo non soddisfa l'analisi per l'attestazione SafetyNet di Google in base al valore configurato. </li></ul> <ul><li>**Cancella i dati**: l'account utente associato all'applicazione viene cancellato dal dispositivo. </li></ul> </li></ul> Per domande frequenti relative a questa impostazione, vedere [Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app](mam-faq.md#app-experience-on-android). |
 | **Analisi delle minacce nelle app** | I criteri di protezione delle app supportano alcune API di Protezione di Google Play. Questa impostazione in particolare garantisce che l'analisi di verifica delle app di Google sia attivata per i dispositivi degli utenti finali. Se l'opzione è configurata, all'utente finale non sarà consentito l'accesso fino a quando non attiva l'analisi delle app di Google nel dispositivo Android. Le *azioni* sono le seguenti: <br><ul><li>**Avvisa**: l'utente visualizza una notifica se l'analisi di verifica delle app di Google non è attivata nel dispositivo. Questa notifica può essere chiusa. </li></ul><ul><li>**Blocca accesso**: l'accesso dell'utente viene bloccato se l'analisi di verifica delle app di Google non è attivata nel dispositivo. </li></ul></li></ul> I risultati dell'analisi di verifica delle app di Google vengono visualizzati nel report **Potentially Harmful Apps** (App potenzialmente dannose) nella console. |
+| **Livello di minaccia massimo consentito del dispositivo** | I criteri di protezione delle app possono sfruttare i vantaggi del connettore Intune-MTD. Specificare un livello di minaccia massimo accettabile per usare questa app. Le minacce sono determinate dall'app del fornitore di Mobile Threat Defense (MTD) prescelta nel dispositivo dell'utente finale. Specificare *Protetto*, *Basso*, *Medio* o *Alto*. Il livello *Protetto* richiede che non sia presente alcuna minaccia nel dispositivo ed è il valore configurabile più restrittivo, mentre *Alto* richiede essenzialmente una connessione attiva da Intune a MTD. Le *azioni* sono le seguenti: <br><ul><li>**Blocca accesso** - All'utente verrà impedito l'accesso se il livello di minaccia determinato dall'app del fornitore di Mobile Threat Defense (MTD) prescelta nel dispositivo dell'utente finale non soddisfa questo requisito.</li></ul> <ul><li>**Cancella i dati**: l'account utente associato all'applicazione viene cancellato dal dispositivo.</li></ul>Per altre informazioni sull'uso di questa impostazione, vedere (##Configurare Intune per MTD nei dispositivi non registrati). |

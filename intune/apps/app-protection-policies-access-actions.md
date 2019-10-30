@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725569"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785680"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
@@ -59,6 +60,7 @@ Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'el
 - Versione minima dell'app
 - Versione minima dell'SDK
 - Modello/i dispositivo
+- Livello di minaccia massimo consentito del dispositivo
 
 Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. È possibile trovare un identificatore di modello iOS nella colonna Device Type (Tipo di dispositivo) nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Input di esempio: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 - Produttore/i dispositivo
 - Attestazione del dispositivo SafetyNet
 - Analisi delle minacce nelle app
+- Livello di minaccia massimo consentito del dispositivo
 
 Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
 Esempio di input: *Produttore A;Produttore B* 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed71676b434dfe30c7591ad3a3391d2252c3275d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722332"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585284"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -89,6 +90,8 @@ Il provisioning deve essere usato su nuovi dispositivi Windows. La correzione de
 
 - Un pacchetto di provisioning che tenta di aggiungere un dominio di Active Directory o un tenant di Azure Active Directory che non crea un account locale potrebbe rendere il dispositivo non raggiungibile, se il processo di aggiunta al dominio ha esito negativo a causa della mancanza di connettività di rete.
 - Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto del sistema. Gli script possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o cancellandolo.
+
+È possibile verificare l'esito positivo o negativo delle impostazioni nel pacchetto nel registro amministrativo **Provisioning-Diagnostics-Provider** nel Visualizzatore eventi.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Registrazione in blocco con Wi-Fi 
 

@@ -1,0 +1,100 @@
+---
+title: Aggiungere Microsoft Edge per Windows 10 a Microsoft Intune
+titleSuffix: ''
+description: Informazioni su come aggiungere Microsoft Edge per Windows a Microsoft Intune.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 10/09/2019
+ms.topic: conceptual
+ms.service: microsoft-intune
+ms.localizationpriority: high
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: kellieei
+ms.suite: ems
+search.appverid: MET150
+ms.custom: ''
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585605"
+---
+# <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Aggiungere Microsoft Edge per Windows 10 a Microsoft Intune
+
+Prima di poter distribuire, configurare, monitorare o proteggere le app è necessario aggiungerle a Intune. Uno dei tipi di [app disponibili](~/apps/apps-add.md#app-types-in-microsoft-intune) è Microsoft Edge *versione 77 e successive*. Selezionando questo tipo di app in Intune, è possibile assegnare e installare Microsoft Edge *versione 77 e successive* nei dispositivi gestiti che eseguono Windows 10.
+
+> [!IMPORTANT]
+> Questo tipo di app è disponibile in **anteprima pubblica** e viene offerta nei canali per sviluppatori e beta per Windows 10. La distribuzione è solo in lingua inglese (EN), ma gli utenti finali possono modificare la lingua di visualizzazione nel browser in **Impostazioni** > **Lingue**. Microsoft Edge è un'app Win32 installata nel contesto di sistema e in architetture corrispondenti (app x86 in un sistema operativo x86 e app x64 in un sistema operativo x64). Inoltre, gli aggiornamenti automatici di Edge sono **attivi** per impostazione predefinita e non è possibile disinstallare Edge.
+
+> [!NOTE]
+> Microsoft Edge *versione 77 e successive* è disponibile anche per macOS.
+> 
+> Non è possibile usare la distribuzione dell'applicazione predefinita di Microsoft Edge per i computer aggiunti all'area di lavoro. Per la distribuzione dell'applicazione predefinita è richiesta l'estensione di gestione di Intune, disponibile solo per i dispositivi aggiunti ad AAD. È comunque possibile distribuire Microsoft Edge *versione 77 e successive* usando un file *MSI* caricato in **App client**. Vedere [Aggiungere un'app line-of-business per Windows a Microsoft Intune](~/apps/lob-apps-windows.md).
+
+## <a name="prerequisites"></a>Prerequisiti
+- È necessario Windows 10 RS2 o versione successiva.
+- Tutte le versioni preinstallate di Microsoft Edge *versione 77 e successive* per i canali di **sviluppatori** e **beta** nel contesto utente verranno sovrascritte con Edge installato nel contesto di sistema.
+
+## <a name="configure-the-app-in-intune"></a>Configurare l'app in Intune
+È possibile aggiungere Microsoft Edge versione 77 e successive a Intune seguendo questa procedura:
+
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
+3. Nell'elenco **Tipo di app** in **Microsoft Edge versione 77 e successive** selezionare **Windows 10**.
+
+## <a name="configure-app-information"></a>Configurare le informazioni sull'app
+In questo passaggio verranno specificate le informazioni su questa distribuzione di app. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovarla nel portale aziendale.
+
+1. Fare clic su **Informazioni sull'app** per visualizzare il pannello **Informazioni sull'app**.
+2. Nel pannello **Informazioni sull'app** specificare le informazioni su questa distribuzione di app. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovarla nel portale aziendale.
+    - **Nome**: Immettere il nome dell'app che verrà visualizzato nel portale aziendale. Assicurarsi che tutti i nomi siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
+    - **Description**: Immettere una descrizione per l'app. Ad esempio, è possibile elencare gli utenti di destinazione nella descrizione.
+    - **Autore**: come editore viene visualizzato Microsoft.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa impostazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **Sviluppatore**: come sviluppatore viene visualizzato Microsoft.
+    - **Proprietario**: come proprietario viene visualizzato Microsoft.
+    - **Note**: immettere eventuali note da associare a questa app (facoltativo).
+3. Selezionare **OK**.
+
+## <a name="configure-app-settings"></a>Configurare le impostazioni dell'app
+In questo passaggio configurare le opzioni di installazione per l'app.
+
+1. Nel pannello **Aggiungi app** selezionare **Impostazioni app**.
+2. Nel pannello **Impostazioni app** selezionare **Beta** o **Sviluppo** nell'elenco **Canale** per determinare il canale di Edge da cui si vuole distribuire l'app.
+    - Il canale **Beta** corrisponde all'esperienza di anteprima di Microsoft Edge più stabile ed è la scelta migliore per un progetto pilota completo all'interno dell'organizzazione. Con gli aggiornamenti principali pubblicati ogni sei settimane, ogni versione include le esperienze e i miglioramenti dal canale Sviluppo.
+    - Il canale **Sviluppo** è pensato per raccogliere commenti e suggerimenti dai clienti aziendali su Windows, Windows Server e macOS. Prevede aggiornamenti settimanali e contiene i miglioramenti e le correzioni più recenti.
+
+    > [!NOTE]
+    > Il logo del browser Microsoft Edge viene visualizzato insieme all'app quando gli utenti visitano il portale aziendale.
+
+3.  Selezionare **OK**.
+
+## <a name="select-scope-tags-optional"></a>Selezionare i tag di ambito (facoltativo)
+È possibile usare i tag di ambito per determinare chi può visualizzare le informazioni sull'app client in Intune. Per informazioni dettagliate complete sui tag di ambito, vedere Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti.
+1.  Selezionare **Ambito (tag)**  > **Aggiungi**.
+2.  Usare la casella **Seleziona** per cercare i tag di ambito.
+3.  Selezionare la casella di controllo accanto ai tag di ambito da assegnare a questa app.
+4.  Fare clic su **Seleziona** > **OK**.
+
+## <a name="add-the-app"></a>Aggiungere l'app
+Al termine della configurazione dell'app, selezionare **Aggiungi** nel pannello **Aggiungi app**. 
+
+L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. 
+
+> [!NOTE]
+> Attualmente, se si annulla l'assegnazione della distribuzione di Microsoft Edge, il programma rimarrà nel dispositivo.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+**Microsoft Edge versione 77 e successive per Windows 10:**<br>
+Intune usa l'estensione di gestione di Intune per scaricare e distribuire il programma di installazione di Microsoft Edge in dispositivi Windows 10 assegnati, quindi comunica le impostazioni di distribuzione al programma di installazione di Microsoft Edge, che scarica e installa il browser Microsoft Edge direttamente dalla rete CDN. Fare riferimento ai [prerequisiti per l'estensione di gestione di Intune](~/apps/intune-management-extension.md#prerequisites) e alle procedure consigliate descritte nell'articolo sull'accesso al servizio di aggiornamento di Azure e alla rete CDN per assicurarsi che la configurazione della rete consenta ai dispositivi Windows 10 di accedere a tali posizioni.
+
+## <a name="next-steps"></a>Passaggi successivi
+- [Assegnare app ai gruppi](~/apps/apps-deploy.md)

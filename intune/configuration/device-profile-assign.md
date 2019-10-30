@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237219"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550814"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
@@ -33,6 +34,10 @@ Questo articolo illustra come assegnare un profilo e include alcune informazioni
 
 > [!NOTE]  
 > Quando un criterio viene rimosso o non è più assegnato a un dispositivo, l'impostazione potrebbe mantenere il valore esistente. L'impostazione non ripristina un valore predefinito. Per impostare un valore diverso, creare un nuovo criterio e assegnarlo.
+
+## <a name="before-you-begin"></a>Prima di iniziare
+
+Assicurarsi di avere il ruolo appropriato per assegnare i criteri. Per altre informazioni, vedere [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Assegnare un profilo di dispositivo
 

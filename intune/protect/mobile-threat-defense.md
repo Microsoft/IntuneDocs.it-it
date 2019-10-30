@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,15 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727870"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785750"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Che cos'è l'integrazione di Mobile Threat Defense in Intune?
-Intune può integrare dati da un fornitore di soluzioni Mobile Threat Defense come origine delle informazioni per criteri di conformità e regole di accesso condizionale. È possibile usare queste informazioni per semplificare la protezione di risorse aziendali come Exchange e SharePoint, bloccando l'accesso da dispositivi mobili compromessi.  
+Intune può integrare dati da un fornitore di soluzioni Mobile Threat Defense come origine delle informazioni per i criteri di conformità dei dispositivi e le regole di accesso condizionale dei dispositivi. È possibile usare queste informazioni per semplificare la protezione di risorse aziendali come Exchange e SharePoint, bloccando l'accesso da dispositivi mobili compromessi.
+
+Intune può usare questi stessi dati come origine per i dispositivi non registrati usando i criteri di protezione delle app di Intune. Di conseguenza, gli amministratori possono usare queste informazioni per proteggere i dati aziendali all'interno di un'[app protetta da Microsoft Intune](~/apps/apps-supported-intune-apps.md) ed eseguire un blocco o una cancellazione selettiva.
 
 ## <a name="what-problem-does-this-solve"></a>Quale problema risolve questa soluzione?
 L'integrazione delle informazioni da un fornitore di soluzioni Mobile Threat Defense permette di proteggere le risorse aziendali da minacce in grado di colpire le piattaforme mobili.  
@@ -42,7 +45,7 @@ Ad esempio: Un'app Mobile Threat Defense connessa, ad esempio, segnala al fornit
 
 Se abilitato, Intune raccoglie le informazioni degli inventari delle app dei dispositivi personali e aziendali e le rende disponibili per i provider del servizio di rilevamento delle minacce per i dispositivi mobili (MTD, Mobile Threat Detection), ad esempio Lookout for Work. Si possono raccogliere gli inventari delle app dagli utenti di dispositivi iOS.
 
-Per l'uso di questo servizio è richiesto il consenso esplicito. Nessuna informazione di inventario di app viene condivisa per impostazione predefinita. Un amministratore di Intune deve abilitare la sincronizzazione delle app per dispositivi iOS nelle impostazioni del servizio prima che vengano condivise informazioni di inventario delle app.
+Per l'uso di questo servizio è richiesto il consenso esplicito. Nessuna informazione di inventario di app viene condivisa per impostazione predefinita. Un amministratore di Intune deve abilitare la **sincronizzazione delle app per dispositivi iOS** nelle impostazioni del connettore Mobile Threat Defense prima che vengano condivise informazioni di inventario delle app.
 
 **Inventario delle app**  
 Se si abilita la sincronizzazione delle app per dispositivi iOS, gli inventari dei dispositivi iOS aziendali e personali vengono inviati al provider del servizio MTD. I dati dell'inventario delle app includono:
@@ -56,7 +59,7 @@ Se si abilita la sincronizzazione delle app per dispositivi iOS, gli inventari d
 - Indicazione se l'app è o meno convalidata
 - Indicazione se l'app è o meno gestita
 
-## <a name="sample-scenarios"></a>Scenari di esempio
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Scenari di esempio per i dispositivi registrati con i criteri di conformità dei dispositivi
 
 Quando un dispositivo è considerato infetto da una soluzione Mobile Threat Defense:
 
@@ -66,14 +69,22 @@ L'accesso viene consentito quando i problemi del dispositivo vengono risolti:
 
 ![Immagine che mostra l'accesso consentito da Mobile Threat Defense](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Scenari di esempio per i dispositivi non registrati con i criteri di protezione delle app di Intune
+
+Quando un dispositivo è considerato infetto da una soluzione Mobile Threat Defense:<br>
+![Immagine che mostra un dispositivo infetto per Mobile Threat Defense](./media/mobile-threat-defense/MTD-image-3.png)
+
+L'accesso viene consentito quando i problemi del dispositivo vengono risolti:<br>
+![Immagine che mostra l'accesso consentito da Mobile Threat Defense](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> L'uso di più fornitori di soluzioni Mobile Threat Defense con Intune non è supportato. Se sono abilitati più strumenti di Mobile Threat Defense, viene forzata l'installazione di tutte le app di Mobile Threat Defense, che effettueranno l'analisi di tutti i dispositivi per il rilevamento di eventuali minacce.
+> L'uso di più fornitori di soluzioni Mobile Threat Defense con Intune non è supportato. Se sono abilitati più connettori MTD, viene forzata l'installazione di tutte le app MTD, che effettueranno l'analisi di tutti i dispositivi per il rilevamento di eventuali minacce.
 
 ## <a name="mobile-threat-defense-partners"></a>Partner Mobile Threat Defense
 
 Informazioni sulla protezione dell'accesso alle risorse aziendali in base al rischio di dispositivi, reti e applicazioni con:
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

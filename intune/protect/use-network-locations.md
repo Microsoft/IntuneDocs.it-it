@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727818"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749443"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usare i percorsi (isolamento di rete) in Intune
 
@@ -68,9 +69,8 @@ Per creare criteri di conformità basati sul percorso:
 
 ## <a name="create-the-location-compliance-policy"></a>Creare i criteri di conformità di percorso
 
-Quando si creano i criteri di conformità, selezionare **Android** come **Piattaforma**. In **Percorsi** è possibile scegliere uno o più dei percorsi di rete aggiunti. Questi percorsi fanno parte dell'isolamento di rete che si sta creando per i dispositivi.
+Quando si [creano i criteri di conformità](create-compliance-policy.md), selezionare **Android** come **Piattaforma**. In **Percorsi** è possibile scegliere uno o più dei percorsi di rete aggiunti. Questi percorsi fanno parte dell'isolamento di rete che si sta creando per i dispositivi. 
 
-[Creare criteri di conformità basati sul percorso di rete](compliance-policy-create-android.md#locations) offre materiale sussidiario.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurare le azioni per la non conformità
 

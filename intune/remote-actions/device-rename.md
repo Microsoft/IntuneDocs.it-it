@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728507"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584528"
 ---
 # <a name="rename-a-device-in-intune"></a>Rinominare un dispositivo in Intune
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 L'azione **Rinomina dispositivo** consente di rinominare un dispositivo registrato in Intune. Il nome del dispositivo viene cambiato in Intune e nel dispositivo.
 
@@ -44,6 +42,15 @@ Questa funzionalità non supporta attualmente la ridenominazione di dispositivi 
 5. Se si vuole riavviare il dispositivo dopo averlo rinominato, scegliere **Sì** accanto a **Riavvia dopo la ridenominazione**.
 6. Scegliere **Rinomina**.
 
+## <a name="windows-device-rename-rules"></a>Regole di ridenominazione del dispositivo Windows
+Quando si rinomina un dispositivo Windows, il nuovo nome deve rispettare le regole seguenti:
+- Massimo 15 caratteri (deve essere minore o uguale a 63 byte, escluso il valore NULL finale)
+- Non è Null o una stringa vuota
+- Caratteri ASCII consentiti: lettere (a-z, A-Z), numeri (0-9) e segni meno
+- Caratteri Unicode consentiti: >= 0x80, devono essere caratteri UTF8 validi, devono essere mappabili a IDN (ovvero RtlIdnToNameprepUnicode ha esito positivo; vedere RFC 3492)
+- I nomi non possono essere composti esclusivamente da numeri
+- Non sono consentiti spazi nel nome
+- Caratteri non consentiti: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>Passaggi successivi

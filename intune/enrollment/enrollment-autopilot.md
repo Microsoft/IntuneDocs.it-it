@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237225"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749405"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -77,7 +78,7 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
     3. In **Tipo di appartenenza** scegliere **Assegnato** o **Dispositivo dinamico**.
 3. Se nel passaggio precedente si è scelto **Assegnato** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri** e aggiungere i dispositivi AutoPilot al gruppo.
     I dispositivi Autopilot che non sono ancora registrati sono dispositivi il cui nome è uguale al numero di serie del dispositivo stesso.
-4. Se nel passaggio precedente si è scelto **Dispositivi dinamici** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri dispositivo dinamico** e digitare uno dei codici seguenti nella casella **Regola avanzata**. Queste regole eseguono la raccolta dei soli dispositivi Autopilot perché hanno come destinazione attributi in possesso solo dei dispositivi Autopilot.
+4. Se nel passaggio precedente si è scelto **Dispositivi dinamici** come **Tipo di appartenenza**, nella scheda **Gruppo** scegliere **Membri dispositivo dinamico** e digitare uno dei codici seguenti nella casella **Regola avanzata**. Queste regole eseguono la raccolta dei soli dispositivi Autopilot perché hanno come destinazione attributi in possesso solo dei dispositivi Autopilot. La creazione di un gruppo basato su attributi non Autopilot non garantirà che i dispositivi inclusi nel gruppo siano effettivamente registrati in Autopilot.
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot, digitare: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - Il campo del tag del gruppo di Intune è associato all'attributo OrderID nei dispositivi Azure AD. Se si vuole creare un gruppo che includa tutti i dispositivi Autopilot con un tag di gruppo (l'ID ordine del dispositivo di Azure AD) specifico, è necessario digitare: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se si vuole creare un gruppo che includa tutti i dispositivi AutoPilot con un ID ordine d'acquisto specifico, digitare `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
@@ -107,12 +108,12 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
     >[!IMPORTANT]
     >Il valore predefinito per l'impostazione Dati di diagnostica varia in base alle versioni di Windows. Per i dispositivi che eseguono Windows 10, versione 1903, il valore predefinito è impostato su Completa durante l'esperienza predefinita. Per altre informazioni, vedere i [dati di diagnostica di Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Nascondi le opzioni di cambio di account (richiede Windows 10 versione 1809 o successiva)**: scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Nascondi le opzioni di cambio di account (richiede Windows 10 versione 1809 o successiva)** : scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo di account utente**: scegliere il tipo di account utente (**Amministratore** o **Standard**). Per consentire all'utente che aggiunge il dispositivo di essere un amministratore locale, aggiungerlo al gruppo di amministratori locale. L'utente non viene abilitato come amministratore predefinito nel dispositivo.
-    - **Consenti modalità " White Glove" per OOBE ** (richiede Windows 10, versione 1903 o successive; [requisiti fisici aggiuntivi](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): scegliere **Sì** per consentire il supporto per la modalità "White Glove".
+    - **Consenti modalità " White Glove" per OOBE**  (richiede Windows 10, versione 1903 o successive; [requisiti fisici aggiuntivi](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): scegliere **Sì** per consentire il supporto per la modalità "White Glove".
     - **Applica il modello di nome di dispositivo** (richiede Windows 10 versione 1809 o successive e un tipo di join per Azure AD): scegliere **Sì** per creare un modello da usare per assegnare il nome a un dispositivo durante la registrazione. I nomi non devono superare i 15 caratteri e possono contenere lettere, numeri e trattini. I nomi non possono contenere solo numeri. Usare la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere un numero di serie specifico per l'hardware. In alternativa, usare la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere una stringa casuale di numeri, dove x corrisponde al numero di cifre da aggiungere. È possibile specificare solo un prefisso per dispositivi ibridi in un [profilo di aggiunta a un dominio](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile). 
-    - **Lingua (area geografica)**\*: scegliere la lingua da usare per il dispositivo. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
-    - **Configura automaticamente la tastiera**\*: se è selezionata una **Lingua (area geografica)**, scegliere **Sì** per ignorare la pagina di selezione della tastiera. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
+    - **Lingua (area geografica)** \*: scegliere la lingua da usare per il dispositivo. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
+    - **Configura automaticamente la tastiera**\*: se è selezionata una **Lingua (area geografica)** , scegliere **Sì** per ignorare la pagina di selezione della tastiera. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
 8. Selezionare **Avanti**.
 9. Nella pagina **Tag di ambito** aggiungere i tag di ambito da applicare a questo profilo (facoltativo). Per altre informazioni sui tag di ambito, vedere [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 10. Selezionare **Avanti**.
@@ -167,6 +168,11 @@ Prerequisiti: il portale aziendale di Azure Active Directory deve essere configu
     ![Screenshot di nome descrittivo](./media/enrollment-autopilot/friendly-name.png)
 
 4. Scegliere **OK**.
+
+## <a name="autopilot-deployments-report"></a>Report sulle distribuzioni Autopilot
+È possibile visualizzare informazioni dettagliate su ogni dispositivo distribuito tramite Windows Autopilot.
+Per visualizzare il report, passare a **Intune** e in **Monitoraggio** scegliere **Distribuzioni Autopilot**.
+I dati sono disponibili per 30 giorni dopo la distribuzione.
 
 
 ## <a name="delete-autopilot-devices"></a>Eliminare dispositivi di AutoPilot

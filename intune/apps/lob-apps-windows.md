@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036467"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601570"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -82,12 +83,12 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
    > [!NOTE]
    > Per consentire al servizio Intune di distribuire correttamente un nuovo file APPX nel dispositivo, è necessario incrementare la stringa `Version` nel file AppxManifest.xml del pacchetto APPX.
-    
+
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configurare un'app MSI per dispositivi mobili con aggiornamento automatico per ignorare il processo di controllo delle versioni
 
-È possibile configurare un'app MSI per dispositivi mobili con aggiornamento automatico nota in modo che ignori il processo di controllo delle versioni. 
+È possibile configurare un'app MSI per dispositivi mobili con aggiornamento automatico nota in modo che ignori il processo di controllo delle versioni.
 
-Alcune app basate sul programma di installazione MSI vengono aggiornate automaticamente dallo sviluppatore. Per queste app MSI con aggiornamento automatico, è possibile configurare l'impostazione **Ignora la versione dell'app** nel riquadro **Informazioni sull'app**. Se si cambia questa impostazione in **Sì**, Microsoft Intune non imporrà la versione dell'app installata nel client Windows. 
+Alcune app basate sul programma di installazione MSI vengono aggiornate automaticamente dallo sviluppatore o con un altro metodo. Per queste app MSI con aggiornamento automatico, è possibile configurare l'impostazione **Ignora la versione dell'app** nel riquadro **Informazioni sull'app**. Se si cambia questa impostazione in **Sì**, Microsoft Intune non imporrà la versione dell'app installata nel client Windows.
 
 Questa funzionalità consente di evitare una race condition. Ad esempio, può verificarsi una race condition quando l'app viene aggiornata automaticamente dallo sviluppatore dell'app e viene aggiornata da Intune. In entrambi i casi è possibile che si provi a imporre una versione dell'app in un client di Windows creando un conflitto.
 

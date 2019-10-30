@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4958a35f3a83fecffacf26421e4c1d797f45ddaa
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: a8e105dae43c4e7139c8e44a8c6535baebe31cc4
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940383"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585450"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune agli utenti. In questo argomento viene anche descritto come apportare modifiche a criteri esistenti.
+Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune per gli utenti dell'organizzazione. In questo argomento viene anche descritto come apportare modifiche a criteri esistenti.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -38,19 +39,87 @@ Per un elenco delle app supportate da MAM, vedere [Elenco di app MAM](https://ww
 
 Per informazioni sull'aggiunta di app line-of-business (LOB) dell'organizzazione in Microsoft Intune per preparare i criteri di protezione delle app, vedere [Aggiungere app in Microsoft Intune](apps-add.md).
 
-## <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
-1. Nel portale di Intune passare ad **App client** > **Criteri di protezione delle app**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
-2. Selezionare **Crea criterio**.
+Attualmente, il flusso del processo per creare i criteri di protezione delle app è diverso a seconda della piattaforma:
+- Criteri di protezione delle app per app iOS/iPadOS e Android
+- Criteri di protezione delle app per app Windows 10
 
-   ![Schermata del pannello "Aggiungi criteri"](./media/app-protection-policies/app-protection-add-policy.png)
+## <a name="app-protection-policies-for-iosipados-and-android-apps"></a>Criteri di protezione delle app per app iOS/iPadOS e Android
 
-3. Specificare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per i criteri. È possibile creare più criteri per ogni piattaforma.
+Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android, si segue un flusso di processo di Intune moderno che comporta la creazione di un nuovo criterio di protezione delle app.
 
-4. Selezionare **App** per aprire il pannello **App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando. Selezionare almeno un'app per creare un criterio.  
+### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Creare un criterio di protezione delle app iOS/iPadOS o Android
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel portale di Intune scegliere **App client** > **Criteri di protezione delle app**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+3. Selezionare **Crea criteri** e selezionare **iOS/iPadOS** o **Android**. Viene visualizzato il pannello **Crea criteri**.
+4. Nella pagina **Informazioni di base** aggiungere i valori seguenti:
 
-5. Dopo aver selezionato le app, scegliere **Seleziona** per salvare la selezione.
+    | Valore | Descrizione |
+    |--------------|------------------------------------------------|
+    | Name | Nome dei criteri di protezione delle app. |
+    | Descrizione | [Facoltativo] Descrizione dei criteri di protezione delle app. |
 
-6. Nel pannello **Aggiungi criteri** selezionare **Configura le impostazioni obbligatorie** per aprire **Impostazioni**.
+
+    Il valore **Piattaforma** viene impostato in base alla scelta effettuata in precedenza.
+
+    ![Screenshot della pagina Informazioni di base del pannello Crea criteri](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+
+5. Fare clic su **Avanti** per visualizzare la pagina **App**.<br>
+    La pagina **App** consente di scegliere come applicare questo criterio alle app su dispositivi diversi. È necessario aggiungere almeno un'app.<p>
+    
+    | Valore/opzione | Descrizione |
+    |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Specifica come destinatari le app in tutti i tipi di dispositivo | Usare questa opzione per destinare i criteri alle app nei dispositivi con qualsiasi stato di gestione. Scegliere **No** per destinare i criteri ad app su tipi di dispositivi specifici. |
+    |     Tipi di dispositivi | Usare questa opzione per specificare se i criteri di applicano ai dispositivi gestiti MDM o ai dispositivi non gestiti. Per i criteri di protezione delle app iOS selezionare **Non gestito** o **Gestito** per i dispositivi. Per i criteri di protezione delle app Android selezionare **Non gestito**, **Amministratore di dispositivi Android** e **Android Enterprise**.  |
+    | App pubbliche | Fare clic su **Select public apps** (Selezionare le app pubbliche) per scegliere le app di destinazione. |
+    | App personalizzate | Fare clic su **Select custom apps** (Selezionare le app personalizzate) per selezionare le app personalizzate di destinazione in base a un ID di bundle. |
+    
+    Le app selezionate verranno visualizzate nell'elenco delle app pubbliche e personalizzate. 
+6. Fare clic su **Avanti** per visualizzare la pagina **Protezione dei dati**.<br>
+    Questa pagina fornisce le impostazioni per i controlli di prevenzione della perdita dei dati (DLP), incluse le limitazioni per le operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano il modo in cui gli utenti interagiscono con i dati nelle app a cui vengono applicati questi criteri di protezione delle app.
+
+    **Impostazioni di protezione dati**:<br>
+    - **Protezione dati iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Protezione dati](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Protezione dati Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Protezione dati](~/apps/app-protection-policy-settings-android.md#data-protection).
+
+7. Fare clic su **Avanti** per visualizzare la pagina **Requisiti di accesso**.<br>
+    Questa pagina fornisce le impostazioni che consentono di configurare i requisiti di PIN e credenziali che gli utenti devono soddisfare per accedere alle app in un contesto aziendale. 
+ 
+    **Impostazioni dei requisiti di accesso**:<br>
+    - **Requisiti di accesso per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Requisiti di accesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Requisiti di accesso per Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Requisiti di accesso](~/apps/app-protection-policy-settings-android.md#access-requirements).
+
+8. Fare clic su **Avanti** per visualizzare la pagina **Avvio condizionale**.<br>
+    Questa pagina fornisce le impostazioni per impostare i requisiti di sicurezza per l'accesso per i criteri di protezione delle app. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione.
+
+    **Impostazioni di avvio condizionale**:<br>
+    - **Avvio condizionale per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Avvio condizionale](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Avvio condizionale per Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Avvio condizionale](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+7. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.<br>
+   La pagina **Assegnazioni** consente di assegnare i criteri di protezione delle app a gruppi di utenti. 
+8. Fare clic su **Avanti: Rivedi e crea** per esaminare i valori e le impostazioni immessi per i criteri di protezione delle app.
+9. Al termine, fare clic su **Crea** per creare i criteri di protezione delle app in Intune. 
+
+## <a name="app-protection-policies-for-windows-10-apps"></a>Criteri di protezione delle app per app Windows 10
+
+Per la creazione dei criteri di protezione delle app per le app Windows 10 si seguirà un flusso di processo di Intune classico.
+
+### <a name="create-a-windows-10-app-protection-policy"></a>Creare criteri di protezione delle app per Windows 10
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel portale di Intune scegliere **App client** > **Criteri di protezione delle app**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+3. Selezionare **Crea criterio**.
+
+    <img alt="Screenshot of the 'Create policy' blade for Windows 10" src="~/apps/media/app-protection-policies/app-protection-add-policy.png" width="350">
+
+4. Specificare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per i criteri. È possibile creare più criteri per ogni piattaforma.
+
+4. È possibile scegliere **Includi tutti i tipi di app**. Questa opzione consente di destinare i criteri alle app nei dispositivi con qualsiasi stato di gestione. Durante la risoluzione dei conflitti tra criteri, questa impostazione verrà sostituita se un utente dispone di criteri destinati a uno stato di gestione specifico. Per altre informazioni, vedere [Target app protection policies based on device management state](~/apps/app-protection-policies.md#target-app-protection-policies-based-on-device-management-state) (Assegnare i criteri di protezione delle app in base allo stato di gestione del dispositivo).
+
+5. Selezionare **App** per aprire il pannello **App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando. Selezionare almeno un'app per creare un criterio.  
+
+6. Dopo aver selezionato le app, scegliere **Seleziona** per salvare la selezione.
+
+7. Nel pannello **Aggiungi criteri** selezionare **Configura le impostazioni obbligatorie** per aprire **Impostazioni**.
 
    Sono tre le categorie di impostazioni dei criteri:
    - **Protezione dei dati**: questo gruppo include i controlli di prevenzione della perdita dei dati, ad esempio le restrizioni relative alle operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano la modalità con cui gli utenti interagiscono con i dati nelle app.
@@ -62,12 +131,12 @@ Per informazioni sull'aggiunta di app line-of-business (LOB) dell'organizzazione
    > [!TIP]
    > Queste impostazioni dei criteri vengono applicate solo quando si usano le app nel contesto aziendale. Quando gli utenti finali usano l'app per eseguire un'attività personale, questi criteri non hanno effetto. Si noti che ogni nuovo file creato viene considerato un file personale. 
 
-7. Selezionare **OK** per salvare la configurazione. A questo punto ci si trova di nuovo nel riquadro **Aggiungi criteri**.
-8. Selezionare **Crea** per creare i criteri e salvare le impostazioni.
+8. Selezionare **OK** per salvare la configurazione. A questo punto ci si trova di nuovo nel riquadro **Aggiungi criteri**.
+9. Selezionare **Crea** per creare i criteri e salvare le impostazioni.
 
-I nuovi criteri creati non vengono distribuiti agli utenti finché non si esegue questa operazione in modo esplicito. Per distribuire un criterio, vedere [Distribuire un criterio agli utenti](app-protection-policies.md#deploy-a-policy-to-users).
+I nuovi criteri per Windows 10 creati non vengono assegnati ad alcun utente fino a quando non si procede in modo esplicito all'assegnazione. Per assegnare criteri di Windows 10, vedere [Assegnare criteri di Windows 10 agli utenti](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
 
-## <a name="deploy-a-policy-to-users"></a>Distribuire un criterio agli utenti
+### <a name="assign-a-windows-10-policy-to-users"></a>Assegnare criteri di Windows 10 agli utenti 
 
 1. Selezionare un criterio nel riquadro **Criteri di protezione delle app**.
 
@@ -94,7 +163,7 @@ Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Pe
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
 
-## <a name="change-existing-policies"></a>Modificare i criteri esistenti
+### <a name="change-existing-windows-10-policies"></a>Modificare criteri esistenti di Windows 10
 È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Quando tuttavia si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di otto ore.
 
 Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve disconnettersi dall'app e quindi eseguire nuovamente l'accesso.
@@ -107,8 +176,7 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
 
 3. Rimuovere o aggiungere app dall'elenco e quindi selezionare l'icona **Salva** per salvare le modifiche.
 
-### <a name="to-change-the-list-of-user-groups"></a>Per modificare l'elenco dei gruppi di utenti
-
+#### <a name="to-change-the-list-of-user-groups"></a>Per modificare l'elenco dei gruppi di utenti
 
 1. Nel riquadro **Criteri di protezione delle app** selezionare i criteri che si vuole modificare.
 
@@ -122,7 +190,7 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
 
 5. Quando le modifiche delle assegnazioni sono pronte, selezionare **Salva** per salvare la configurazione e distribuire i criteri al nuovo set di utenti. Se si seleziona **Annulla** prima di salvare la configurazione, verranno eliminate tutte le modifiche apportate nelle schede *Includi* ed *Escludi*.
 
-### <a name="to-change-policy-settings"></a>Per modificare le impostazioni dei criteri
+### <a name="to-change-windows-10-policy-settings"></a>Per modificare le impostazioni dei criteri di Windows 10
 
 1. Nel riquadro **Criteri di protezione delle app** scegliere i criteri che si vuole modificare.
 
@@ -137,7 +205,7 @@ In molte organizzazioni è consuetudine consentire agli utenti finali di usare s
 
 Poiché i criteri di protezione delle app di Intune usano come destinazione l'identità di un utente, le impostazioni di protezione per un utente possono essere applicate sia ai dispositivi registrati (dispositivi MDM gestiti) che ai dispositivi non registrati (non MDM). È quindi possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati che a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione di dispositivi MDM gestiti, in cui i controlli DLP possono essere meno severi. Per altre informazioni sul funzionamento in dispositivi Android Enterprise personali, vedere [Criteri di protezione delle app e profili di lavoro](android-deployment-scenarios-app-protection-work-profiles.md).
 
-Per creare questi criteri, passare a **App client** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Includi tutti i tipi di app** su **No**. 
+Per creare questi criteri, passare a **App client** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che i criteri di protezione delle app vengano applicati sia ai dispositivi gestiti che non gestiti, passare alla pagina **App** e verificare che l'opzione **Specifica come destinatari le app in tutti i tipi di dispositivo** sia impostata su **Sì**, ovvero il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Specifica come destinatari le app in tutti i tipi di dispositivo** su **No**. 
 
 ![Screenshot del pannello Aggiungi criteri con Includi tutti i tipi di app](./media/app-protection-policies/app-protection-policies-target-all.png)
 

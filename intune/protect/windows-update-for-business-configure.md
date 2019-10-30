@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: coryfe
+ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314710"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584549"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
@@ -63,17 +64,30 @@ Per l'uso degli aggiornamenti di Windows per i dispositivi Windows 10 in Intune,
 
 ## <a name="create-and-assign-update-rings"></a>Creare e assegnare anelli di aggiornamento
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selezionare **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** > **Crea**.
-4. Immettere un nome e una descrizione (facoltativo) e quindi fare clic su **Configura**.
-5. In **Impostazioni** configurare le impostazioni in base alle esigenze aziendali. Per informazioni sulle impostazioni disponibili, vedere [Impostazioni di aggiornamento di Windows](../windows-update-settings.md).  
-6. Al termine, selezionare **OK**. In **Crea l'anello di aggiornamento** selezionare **Crea**. Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di aggiornamento.
-7. Per assegnare l'anello, selezionarlo dall'elenco e nella scheda <\<nome anello> scegliere **Assegnazioni**.
-8. Usare le schede **Includi** ed **Escludi** per definire i gruppi cui è assegnato l'anello, quindi selezionare **Salva** per completare l'assegnazione.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e quindi selezionare **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** > **Crea**.  
+
+2. Nella scheda Informazioni di base specificare un nome, una descrizione (facoltativa) e quindi selezionare **Avanti**.  
+
+   ![Creare un flusso di lavoro per gli anelli di aggiornamento di Windows 10](./media/windows-update-for-business-configure/basics-tab.png)
+
+3. Nella scheda **Impostazioni per la fase di aggiornamento** configurare le impostazioni in base alle esigenze aziendali. Per informazioni sulle impostazioni disponibili, vedere [Impostazioni di aggiornamento di Windows](windows-update-settings.md). Dopo aver configurato le impostazioni *Aggiorna* ed *Esperienza utente* selezionare **Avanti**.  
+
+4. Nella scheda **Tag di ambito** selezionare **+ Selezionare i tag di ambito** per aprire il riquadro *Selezionare i tag* per applicarli all'anello di aggiornamento.  
+
+   - Nel riquadro **Selezionare i tag** scegliere uno o più tag, quindi fare clic su **Seleziona** per aggiungerli all'anello di aggiornamento e tornare al riquadro *Tag di ambito*.  
+
+   Quando si è pronti, selezionare **Avanti** per procedere ad *Assegnazioni*. 
+
+5. Nella scheda **Assegnazioni** scegliere **+ Selezionare i gruppi da includere** e quindi assegnare l'anello di aggiornamento a uno o più gruppi. Usare **+ Selezionare i gruppi da escludere** per mettere a punto l'assegnazione. Selezionare **Avanti** per continuare.  
+
+6. Nella scheda **Rivedi e crea** esaminare le impostazioni e selezionare **Crea** quando si è pronti per salvare l'anello di aggiornamento di Windows 10. Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di aggiornamento.
 
 ## <a name="manage-your-windows-10-update-rings"></a>Gestire gli anelli di aggiornamento di Windows 10
-Nel portale è possibile selezionare un anello di aggiornamento Windows 10 per aprire il riquadro **Panoramica** corrispondente. In questo riquadro è possibile visualizzare lo stato di assegnazione degli anelli ed eseguire altre azioni per gestire l'anello. 
+
+Nel portale è possibile selezionare un anello di aggiornamento Windows 10 per aprire il riquadro **Panoramica** corrispondente. In questo riquadro è possibile visualizzare lo stato di assegnazione degli anelli ed eseguire altre azioni per gestire l'anello.
+
 ### <a name="to-view-an-updates-rings-overview-pane"></a>Per visualizzare un riquadro Panoramica degli anelli di aggiornamento: 
+
 1. Accedere al portale di Azure.
 2. Passare a **Intune** > **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**.
 3. Selezionare l'anello di aggiornamento da visualizzare o gestire.  
@@ -88,18 +102,22 @@ Oltre a visualizzare lo stato di assegnazione, nella parte superiore del riquadr
 ![Operazioni disponibili](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>Eliminazione  
+
 Selezionare **Elimina** per arrestare l'applicazione delle impostazioni dell'anello di aggiornamento di Windows 10 selezionato. L'eliminazione di un anello rimuove la relativa configurazione da Intune, in modo che tali impostazioni non vengano più applicate.  
 
 L'eliminazione di un anello da Intune non modifica le impostazioni nei dispositivi cui è stato assegnato l'anello di aggiornamento.  Al contrario, il dispositivo mantiene le impostazioni correnti. I dispositivi non mantengono un record cronologico delle impostazioni precedenti. I dispositivi possono ricevere le impostazioni anche da anelli di aggiornamento aggiuntivi che rimangono attivi.  
 
 #### <a name="to-delete-a-ring"></a>Per eliminare un anello  
+
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento, selezionare **Elimina**.  
 2. Selezionare **OK**.  
 
 ### <a name="pause"></a>Sospendi  
+
 Selezionare **Sospendi** per impedire la ricezione di aggiornamenti qualitativi o delle funzionalità sui dispositivi per un periodo massimo di 35 giorni dall'inizio della sospensione dell'anello. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione scade automaticamente e il dispositivo esegue la ricerca degli aggiornamenti applicabili in Windows Update. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti. Se si ripristina un anello di aggiornamento sospeso e quindi si sospende di nuovo, il periodo di sospensione viene reimpostato su 35 giorni.  
 
 #### <a name="to-pause-a-ring"></a>Per sospendere un anello  
+
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento, selezionare **Sospendi**.  
 2. Selezionare **Funzionalità** o **Qualità** per definire il tipo di aggiornamento da sospendere e quindi selezionare **OK**.  
 3. Dopo la sospensione di un tipo di aggiornamento, è possibile selezionare di nuovo Sospendi per sospendere anche l'altro tipo.  
@@ -110,22 +128,27 @@ Quando un tipo di aggiornamento viene sospeso, il riquadro Panoramica per tale a
 > Dopo l'esecuzione di un comando Sospendi, i dispositivi ricevono tale comando al successivo controllo della disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato. Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
 
 ### <a name="resume"></a>Riprendere  
+
 Quando un anello di aggiornamento è stato sospeso, è possibile selezionare **Riprendi** per ripristinare lo stato attivo degli aggiornamenti qualitativi e delle funzionalità per tale anello. Dopo aver ripristinato un anello di aggiornamento è possibile sospenderlo di nuovo.  
 
 #### <a name="to-resume-a-ring"></a>Per ripristinare un anello  
+
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento sospeso, selezionare **Riprendi**.  
 2. Tra le opzioni disponibili selezionare il tipo **Funzionalità** o **Qualità** per gli aggiornamenti da ripristinare e quindi selezionare **OK**.  
 3. Dopo il ripristino di un tipo di aggiornamento, è possibile selezionare di nuovo Riprendi per ripristinare anche l'altro tipo.  
 
 ### <a name="extend"></a>Extend  
+
 Quando un anello di aggiornamento è sospeso, è possibile selezionare **Estendi** in modo da reimpostare su 35 giorni il periodo di sospensione per gli aggiornamenti qualitativi e delle funzionalità relativi a tale anello di aggiornamento.  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>Per estendere il periodo di sospensione per un anello  
+
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento sospeso, selezionare **Estendi**. 
 2. Tra le opzioni disponibili selezionare il tipo **Funzionalità** o **Qualità** per gli aggiornamenti da ripristinare e quindi selezionare **OK**.  
 3. Dopo aver esteso il periodo di sospensione per un tipo di aggiornamento, è possibile selezionare di nuovo Estendi per estendere l'altro tipo di aggiornamento.  
 
 ### <a name="uninstall"></a>Uninstall  
+
 Un amministratore di Intune può usare il comando **Disinstalla** per disinstallare l'aggiornamento di tipo *Funzionalità* o *Qualità* più recente (eseguirne il rollback) per un anello di aggiornamento attivo o sospeso. Dopo aver disinstallato un tipo, è possibile disinstallare l'altro tipo. Intune non supporta né gestisce la capacità degli utenti di disinstallare gli aggiornamenti.  
 
 > [!IMPORTANT] 
@@ -153,21 +176,24 @@ Quando si usa Disinstalla, prendere in considerazione i seguenti aspetti:
 Per altre informazioni sui criteri di Windows Update, vedere [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) (Provider del servizio di configurazione degli aggiornamenti) nella documentazione relativa alla gestione dei client di Windows.  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>Per disinstallare l'aggiornamento più recente di Windows 10  
+
 1. Quando è visualizzata la pagina di panoramica per un anello di aggiornamento sospeso, selezionare **Disinstalla**.  
 2. Tra le opzioni disponibili selezionare il tipo **Funzionalità** o **Qualità** per gli aggiornamenti da disinstallare e quindi selezionare **OK**.  
 3. Dopo aver attivato la disinstallazione di un tipo di aggiornamento, è possibile selezionare di nuovo Disinstalla per disinstallare l'altro tipo di aggiornamento.  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>Eseguire la migrazione delle impostazioni di aggiornamento nel portale di Azure  
+
 Il portale di Azure classico include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata quando si esegue la migrazione al portale di Azure, è fortemente consigliata una delle azioni seguenti:  
 
-1. Creare gli anelli di aggiornamento di Windows 10 nel portale di Azure con le impostazioni necessarie. L'impostazione **Consenti funzionalità di versioni non definitive** non è supportata nel portale di Azure perché non è più applicabile alle build più recenti di Windows 10. È possibile configurare le altre tre impostazioni, e anche quelle relative agli aggiornamenti di Windows 10, quando si creano gli anelli aggiornamento.  
+1. Creare gli anelli di aggiornamento di Windows 10 nel portale di Azure con le impostazioni necessarie. L'impostazione **Consenti funzionalità di versioni non definitive** non è supportata nel portale di Azure perché non è più applicabile alle build più recenti di Windows 10. È possibile configurare le altre tre impostazioni e quelle relative agli aggiornamenti di Windows 10 quando si creano gli anelli di aggiornamento.  
 
    > [!NOTE]  
    > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nel portale classico non vengono visualizzate nel portale di Azure dopo la migrazione, Queste impostazioni vengono tuttavia applicate. Se si esegue la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione viene rimossa dai criteri.  
 
-2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo aver eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Quando, ad esempio, la stessa impostazione viene configurata con valori diversi, si verifica un conflitto. Non esiste un modo semplice per scoprire il motivo per cui l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.  
+2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo aver eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Ad esempio, si verifica un conflitto quando la stessa impostazione viene configurata con valori diversi. Non esiste un modo semplice per scoprire il motivo per cui l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.  
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 [Impostazioni di aggiornamento di Windows supportate da Intune](../windows-update-settings.md)  
 
 [Report di conformità di Intune per gli aggiornamenti](../windows-update-compliance-reports.md)

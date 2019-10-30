@@ -2,12 +2,13 @@
 title: Creare i criteri di conformità dei dispositivi in Microsoft Intune - Azure | Microsoft Docs
 description: Creare i criteri di conformità, panoramica dei livelli di stato e gravità, utilizzo dello stato InGracePeriod, utilizzo dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306587"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786068"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 I criteri di conformità dei dispositivi sono una funzionalità fondamentale quando si usa Intune per proteggere le risorse dell'organizzazione. In Intune è possibile creare regole e impostazioni che i dispositivi devono soddisfare per essere considerati conformi, ad esempio la versione minima del sistema operativo. Se il dispositivo non è conforme, è possibile bloccare l'accesso ai dati e alle risorse tramite l'[accesso condizionale](conditional-access.md).
 
@@ -48,10 +47,10 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 - Uso di una piattaforma supportata:
 
-  - Android
+  - Amministratore dispositivo Android
   - Android Enterprise
   - iOS
-  - macOS (anteprima)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 3. Selezionare **Criteri** > **Crea criterio**. Immettere le proprietà seguenti:
 
-    - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di criterio è **Dispositivi iOS jailbroken di Marco non conformi**.
-    - **Description**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.
-    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:  
+   - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di criterio è **Dispositivi iOS jailbroken di Marco non conformi**.  
 
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 e versioni successive**
-       - **Windows 10 e versioni successive**
+   - **Description**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.  
 
-    - **Impostazioni**: gli articoli seguenti elencano e descrivono le impostazioni per ogni piattaforma:
+   - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
+     - **Amministratore di dispositivi Android**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 e versioni successive**
+     - **Windows 10 e versioni successive**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 versioni successive](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 e versioni successive](compliance-policy-create-windows.md)
+     Per *Android Enterprise* è necessario selezionare un **tipo di profilo**:
+     - **Proprietario del dispositivo**
+     - **Profilo di lavoro**
+
+   - **Impostazioni**: gli articoli seguenti elencano e descrivono le impostazioni per ogni piattaforma:
+     - [Amministratore di dispositivi Android](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 versioni successive](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 e versioni successive](compliance-policy-create-windows.md)  
+
+   - **Percorsi** *(Amministratore di dispositivi Android)* : Nei criteri è possibile forzare la conformità in base al percorso del dispositivo. Scegliere un percorso esistente. Se non si ha ancora una posizione, Vedere [Usare percorsi (limite della rete)](use-network-locations.md) in Intune per alcuni indicazioni.  
+
+   - **Azioni per la mancata conformità**: Per i dispositivi che non soddisfano i criteri di conformità, è possibile aggiungere una sequenza di azioni da applicare automaticamente. Se il dispositivo è contrassegnato come non conforme, è possibile modificare la pianificazione, ad esempio dopo un giorno. È anche possibile configurare una seconda azione con cui inviare un messaggio di posta elettronica all'utente se il dispositivo risulta non conforme.
+    
+     [Aggiungere azioni per dispositivi non conformi](actions-for-noncompliance.md) offre altre informazioni, tra cui come creare un messaggio di posta elettronica di notifica per gli utenti.
+
+     Si supponga, ad esempio, di usare la funzionalità Percorsi e di aggiungere un percorso in un criterio di conformità. L'azione predefinita per la mancata conformità viene applicata quando si seleziona almeno un percorso. Se il dispositivo non è connesso ai percorsi selezionati, viene immediatamente considerato non conforme. È possibile concedere agli utenti un periodo di tolleranza, ad esempio un giorno.
+
+   - **Ambito (tag)** : I tag di ambito sono un metodo molto efficiente per assegnare e filtrare criteri a gruppi specifici, ad esempio ai reparti Vendite o Risorse umane, ai dipendenti di una filiale e così via. Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito ai criteri di conformità. Per altre informazioni, vedere [Filtrare i criteri con tag di ambito](../fundamentals/scope-tags.md).
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche. Il criterio viene creato e visualizzato nell'elenco. Assegnare quindi il criterio ai gruppi.
 
@@ -114,17 +127,18 @@ Quando si assegna il criterio, è anche possibile usare la funzionalità **Valut
 
 Se il pulsante **Valuta** è disattivato, verificare che il criterio sia assegnato a uno o più gruppi.
 
-## <a name="actions-for-noncompliance"></a>Azioni per la mancata conformità
+<!-- ## Actions for noncompliance
 
-Per i dispositivi che non soddisfano i criteri di conformità, è possibile aggiungere una sequenza di azioni da applicare automaticamente. Se il dispositivo è contrassegnato come non conforme, è possibile modificare la pianificazione, ad esempio dopo un giorno. È anche possibile configurare una seconda azione con cui inviare un messaggio di posta elettronica all'utente se il dispositivo risulta non conforme.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[Aggiungere azioni per dispositivi non conformi](actions-for-noncompliance.md) offre altre informazioni, tra cui come creare un messaggio di posta elettronica di notifica per gli utenti.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-Si supponga, ad esempio, di usare la funzionalità Percorsi e di aggiungere un percorso in un criterio di conformità. L'azione predefinita per la mancata conformità viene applicata quando si seleziona almeno un percorso. Se il dispositivo non è connesso ai percorsi selezionati, viene immediatamente considerato non conforme. È possibile concedere agli utenti un periodo di tolleranza, ad esempio un giorno.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Tag di ambito
+## Scope tags
 
-I tag di ambito sono un metodo molto efficiente per assegnare e filtrare criteri a gruppi specifici, ad esempio ai reparti Vendite o Risorse umane, ai dipendenti di una filiale e così via. Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito ai criteri di conformità. Per altre informazioni, vedere [Filtrare i criteri con tag di ambito](../fundamentals/scope-tags.md).
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Frequenza dei cicli di aggiornamento
 

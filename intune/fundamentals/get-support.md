@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726518"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585289"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune  
 
@@ -82,7 +83,7 @@ Per accedere a Guida e supporto tecnico, usare le opzioni seguenti:
   4. Selezionare il collegamento alla pagina Guida e supporto tecnico di Intune.
 
 > [!NOTE]  
-> Se l'istanza di Intune è ospitata in un ambiente Government Compute Cloud (GCC), ovvero un cloud sovrano quale ad esempio Azure per enti pubblici, vedere il supporto di Intune per Government Compute Cloud più avanti in questo articolo. L'esperienza *Guida e supporto tecnico* di Intune sarà disponibile in GCC più avanti nel corso di quest'anno. 
+> Se l'istanza di Intune è ospitata nel cloud privato per entità pubbliche, noto anche come cloud sovrano quale ad esempio Azure per enti pubblici, vedere [Supporto di Intune per il cloud privato per enti pubblici](#intune-support-for-private-cloud-for-government) più avanti in questo articolo. L'esperienza *Guida e supporto tecnico* di Intune sarà disponibile in nel cloud privato per enti pubblici più avanti nel corso di quest'anno. 
 
 
 Quando si apre *Guida e supporto tecnico*, la vista offerta dal portale dipende dalla presenza o meno di richieste di assistenza attive e, se si ha il supporto tecnico Premier, essa includerà opzioni ed elementi aggiuntivi:
@@ -162,20 +163,20 @@ Selezionare il pulsante della cronologia per visualizzare le richieste di suppor
 
 Quando si usa **Guida e supporto** nel riquadro di spostamento a sinistra oppure l'opzione **?** nell'angolo superiore destro del portale di Azure, viene aperta l'esperienza Guida e supporto di Azure, ovvero un'esperienza diversa da quella offerta da Guida e supporto tecnico di Intune.  
 
-Dal mese di aprile 2019 non è possibile accedere all'esperienza *Guida e supporto* di Azure per ottenere assistenza per Intune, a meno che la sottoscrizione non faccia parte di un ambiente Government Compute Cloud (GCC).  
+Dal mese di aprile 2019 non è possibile accedere all'esperienza *Guida e supporto* di Azure per ottenere assistenza per Intune, a meno che la sottoscrizione non faccia parte di un cloud privato per enti pubblici.  
 
-Se l'istanza di Intune non è eseguita in GCC, l'esplorazione di *Guida e supporto* di Azure determina il reindirizzamento dell'utente all'esperienza *Guida e supporto tecnico* di Intune per creare e gestire le richieste di assistenza.  
+Se l'istanza di Intune non è eseguita in un cloud privato per enti pubblici, l'esplorazione di *Guida e supporto* di Azure determina il reindirizzamento dell'utente all'esperienza *Guida e supporto tecnico* di Intune per creare e gestire le richieste di assistenza.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Supporto Intune per Government Compute Cloud  
+## <a name="intune-support-for-private-cloud-for-government"></a>Supporto di Intune per il cloud privato per enti pubblici  
 
-Per le sottoscrizioni di Intune ospitate in un ambiente Government Compute Cloud (GCC), ovvero un cloud sovrano quale ad esempio Azure per enti pubblici, la nuova esperienza Guida e supporto tecnico di Intune non è ancora disponibile.  Per ottenere supporto per Intune usare le informazioni indicate di seguito. 
+Per le sottoscrizioni di Intune ospitate nel cloud privato per entità pubbliche, noto anche come cloud sovrano quale ad esempio Azure per enti pubblici, la nuova esperienza Guida e supporto tecnico di Intune non è ancora disponibile.  Per ottenere supporto per Intune usare le informazioni indicate di seguito. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Creare un ticket di supporto online 
 
 >[!IMPORTANT]    
-> Durante la transizione di *Guida e supporto tecnico* a un nuovo sistema che non è ancora disponibile per GCC, quando viene creata una richiesta di assistenza, il portale identifica un caso di supporto che usa un codice identificativo di 15 cifre. Alla creazione del caso a 15 cifre, viene creato un caso speculare che sarà usato dal supporto tecnico Microsoft. Questo caso speculare viene creato in un nuovo sistema di supporto, usa un ID a 8 cifre e viene usato dai servizi di supporto tecnico per tenere traccia di tutte le attività e le comunicazioni relative alla richiesta di assistenza. Subito dopo la creazione del caso a 15 cifre, si riceverà un messaggio di posta elettronica che identifica il codice a 8 cifre del caso di supporto speculare usato dai servizi di supporto tecnico.  
+> Durante la transizione di *Guida e supporto tecnico* a un nuovo sistema che non è ancora disponibile per il cloud privato per enti pubblici, quando viene creata una richiesta di assistenza, il portale identifica un caso di supporto che usa un codice identificativo di 15 cifre. Alla creazione del caso a 15 cifre, viene creato un caso speculare che sarà usato dal supporto tecnico Microsoft. Questo caso speculare viene creato in un nuovo sistema di supporto, usa un ID a 8 cifre e viene usato dai servizi di supporto tecnico per tenere traccia di tutte le attività e le comunicazioni relative alla richiesta di assistenza. Subito dopo la creazione del caso a 15 cifre, si riceverà un messaggio di posta elettronica che identifica il codice a 8 cifre del caso di supporto speculare usato dai servizi di supporto tecnico.  
 > 
 > Il personale del supporto lavora e comunica dal caso di supporto a 8 cifre e usa esclusivamente questo caso di supporto per registrare le comunicazioni e monitorare lo stato della richiesta di assistenza. Gli aggiornamenti tramite posta elettronica verranno pertanto inviati all'utente dal caso di supporto a 8 cifre che funge da riepilogo delle attività svolte. Nessun dettaglio viene registrato nella richiesta di assistenza a 15 cifre. Al termine dell'intervento di supporto, quando il caso a 8 cifre viene chiuso, lo stato viene riportato nel caso di supporto a 15 cifre che è possibile visualizzare dall'interno del portale di Azure.  Per il caso di supporto a 15 cifre non ci saranno altri aggiornamenti o modifiche di stato.  
 > 
@@ -223,7 +224,7 @@ Per le sottoscrizioni di Intune ospitate in un ambiente Government Compute Cloud
 2. Nella pagina **Guida e supporto** è possibile visualizzare l'elenco **Richieste di supporto recenti**.
 
    > [!IMPORTANT]  
-   > I clienti Government Compute Cloud possono visualizzare solo il codice a 15 cifre del caso di supporto e lo stato della richiesta di assistenza. Tutte le comunicazioni e le registrazioni di attività o avvisi relative al caso vengono inviate tramite posta elettronica e hanno come riferimento il codice a 8 cifre del caso di supporto creato come caso di supporto speculare di quello aperto dalla console di Intune.   
+   > I clienti del cloud privato per enti pubblici possono visualizzare solo il codice a 15 cifre del caso di supporto e lo stato della richiesta di assistenza. Tutte le comunicazioni e le registrazioni di attività o avvisi relative al caso vengono inviate tramite posta elettronica e hanno come riferimento il codice a 8 cifre del caso di supporto creato come caso di supporto speculare di quello aperto dalla console di Intune.   
 
 ## <a name="additional-resources"></a>Risorse aggiuntive  
 

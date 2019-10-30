@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379807"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587944"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Gli amministratori di Intune sono in grado di creare e gestire restrizioni di registrazione che definiscono quali dispositivi possono essere registrati per la gestione con Intune, tra cui:
-- numero di dispositivi
-- sistemi operativi e versioni. È possibile creare più restrizioni e applicarle a gruppi di utenti diversi. È anche possibile impostare l'[ordine di priorità](#change-enrollment-restriction-priority) delle diverse restrizioni.
+- Numero di dispositivi.
+- Sistemi operativi e versioni.
+
+È possibile creare più restrizioni e applicarle a gruppi utenti diversi. È anche possibile impostare l'[ordine di priorità](#change-enrollment-restriction-priority) delle diverse restrizioni.
 
 >[!NOTE]
 >Le restrizioni di registrazione non sono una funzionalità di sicurezza. I dispositivi compromessi possano dare risultati non previsti. Queste restrizioni sono una barriera di massimo sforzo per gli utenti legittimi.
@@ -69,8 +72,17 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
     - L'amministratore dei dispositivi Android e il profilo di lavoro Android Enterprise supportano major.minor.rev.build.
     - iOS supporta il formato di versione maggiore.minore.revisione. Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
     - Windows supporta il formato major.minor.build.rev solo per Windows 10.
-    > [!Note]
-    > Windows 10 non specifica il numero di revisione durante la registrazione, quindi se si immette ad esempio 10.0.17134.100 e il dispositivo è 10.0.17134.174, il dispositivo verrà bloccato durante la registrazione.
+    
+    > [!IMPORTANT]
+    > Il comportamento delle piattaforme Android Enterprise (profilo di lavoro) e per gli amministratori di dispositivi Android è il seguente:
+    > - Se entrambe le piattaforme sono consentite per lo stesso gruppo, gli utenti verranno registrati con un profilo di lavoro se il dispositivo lo supporta. In caso contrario, verranno registrati come amministratore del dispositivo. 
+    > - Se entrambe le piattaforme sono consentite per il gruppo e perfezionate per versioni specifiche e non sovrapposte, gli utenti riceveranno il flusso di registrazione definito per la versione del sistema operativo in uso. 
+    > - Se entrambe le piattaforme sono consentite ma bloccate per le stesse versioni, gli utenti nei dispositivi con le versioni bloccate verranno esclusi dal flusso di registrazione dell'amministratore del dispositivo Android e quindi verrà loro impedita la registrazione e verrà richiesto di disconnettersi. 
+    >
+    > Vale la pena sottolineare che sia la registrazione di un profilo di lavoro che quella di amministratore del dispositivo funzioneranno solo se sono stati completati i prerequisiti appropriati nella registrazione di Android. 
+    
+   > [!Note]
+   > Windows 10 non specifica il numero di revisione durante la registrazione, quindi se si immette ad esempio 10.0.17134.100 e il dispositivo è 10.0.17134.174, il dispositivo verrà bloccato durante la registrazione.
 
 8. In **Di proprietà personale** scegliere **Consenti** per le piattaforme da consentire come dispositivi personali.
 9. Scegliere **Avanti** per passare alla pagina **Assegnazioni**.

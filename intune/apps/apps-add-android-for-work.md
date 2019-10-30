@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc777cc6d8b803c502d847114ef7cff04ceb26
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725335"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584949"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Aggiungere app Google Play gestite a dispositivi Android Enterprise con Intune
 
@@ -48,9 +49,9 @@ Per facilitare la configurazione e l'uso delle funzionalità di gestione di Andr
 ## <a name="managed-google-play-app-types"></a>Tipi di app Google Play gestite
 Con Google Play gestito sono disponibili tre tipi di app:
 
-* **App di Google Play Store gestite** - App pubbliche disponibili a livello generale in Play Store. Per gestire queste app in Intune, è possibile cercare le app da gestire, approvarle e quindi sincronizzarle in Intune.
-* **App privata Google Play gestita** - Si tratta di app line-of-business pubblicate in Google Play gestito da amministratori di Intune.  Queste app sono private e sono disponibili solo per il tenant di Intune. Questo è il modo in cui le app line-of-business vengono gestite e distribuite con Google Play gestito e Android Enterprise.
-* **Collegamento Web a Google Play gestito** - collegamenti Web con icone definite dall'amministratore IT che possono essere distribuiti nei dispositivi Android Enterprise. I collegamenti vengono visualizzati nei dispositivi nell'elenco delle app del dispositivo come le normali app.
+- **App di Google Play Store gestite** - App pubbliche disponibili a livello generale in Play Store. Per gestire queste app in Intune, è possibile cercare le app da gestire, approvarle e quindi sincronizzarle in Intune.
+- **App privata di Google Play gestito** - Si tratta di app line-of-business pubblicate in Google Play gestito da amministratori di Intune.  Queste app sono private e sono disponibili solo per il tenant di Intune. Questo è il modo in cui le app line-of-business vengono gestite e distribuite con Google Play gestito e Android Enterprise.
+- **Collegamento Web a Google Play gestito** - collegamenti Web con icone definite dall'amministratore IT che possono essere distribuiti nei dispositivi Android Enterprise. I collegamenti vengono visualizzati nei dispositivi nell'elenco delle app del dispositivo come le normali app.
 
 ## <a name="managed-google-play-store-apps"></a>App Google Play Store gestite
 È possibile esplorare e approvare le app Google Play Store gestite con Intune in due modi:
@@ -209,8 +210,7 @@ In alternativa, è possibile configurare Google Play per approvare di nuovo auto
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Segnalazione app Google Play gestite per dispositivi del profilo di lavoro Android Enterprise
 
-Per le app Google Play gestite distribuite nei dispositivi del profilo di lavoro Android Enterprise, è possibile visualizzare il numero di versione specifico dell'app installata in un dispositivo. Questo vale solo per le app richieste. 
-
+Per le app Google Play gestite distribuite nei dispositivi del profilo di lavoro Android Enterprise, è possibile visualizzare lo stato e il numero di versione dell'app installata in un dispositivo con Intune. 
 
 ## <a name="delete-managed-google-play-apps"></a>Eliminare le app di Google Play gestite
 Se necessario, è possibile eliminare da Microsoft Intune le app di Google Play gestite. Per eliminare un'app di Google Play gestita, aprire Microsoft Intune nel portale di Azure e selezionare **App client** > **App**. Nell'elenco di app selezionare i puntini di sospensione (...) a destra dell'app di Google Play gestita e quindi selezionare **Elimina** nell'elenco visualizzato. Quando si elimina un'app di Google Play gestita dall'elenco di app, l'app risulta automaticamente non approvata.

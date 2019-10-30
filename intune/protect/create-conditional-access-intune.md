@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722592"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681375"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
@@ -61,7 +62,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
 
     - **Selezionare le app**: selezionare questa opzione, scegliere **Seleziona** e quindi usare l'elenco di applicazioni per cercare e selezionare le app o i servizi da proteggere.
     
-      ![Creare nuovi criteri di accesso condizionale](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![Configurare le assegnazioni per i criteri di accesso condizionale](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. Seleziona **Chiudi**.
 8. In **Assegnazioni** selezionare **Condizioni**.
@@ -71,7 +72,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
     - **App client**: scegliere **Sì** per specificare se i criteri devono essere applicati ad app basate su browser, app per dispositivi mobili e client desktop. È anche possibile selezionare **Client con autenticazione moderna** (ad esempio, Outlook per iOS o Outlook per Android) e **Client Exchange ActiveSync**.
     - **Stato dispositivo**: i criteri di accesso condizionale verranno applicati a tutti gli stati dei dispositivi, a meno che non si scelga Sì specificando di escludere lo stato Dispositivo aggiunto ad Azure AD ibrido o Dispositivo contrassegnato come conforme (oppure entrambi).
     
-      ![Creare nuovi criteri di accesso condizionale](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![Impostare le condizioni per i criteri di accesso condizionale](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > Se si vogliono proteggere sia i **client con autenticazione moderna** sia i **client Exchange ActiveSync**, creare due criteri di accesso condizionale separati, uno per ogni tipo di client. Anche se Exchange ActiveSync supporta l'autenticazione moderna, l'unica condizione supportata da Exchange ActiveSync è quella relativa alla piattaforma. Non sono supportate altre condizioni, inclusa l'autenticazione a più fattori. Per proteggere in modo efficace l'accesso a Exchange Online da Exchange ActiveSync, creare criteri di accesso condizionale che specificano l'app cloud Office 365 Exchange Online e l'app client Exchange ActiveSync con l'opzione Applica i criteri solo alle piattaforme supportate selezionata.

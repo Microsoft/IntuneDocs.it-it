@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722891"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585426"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creare e assegnare profili di certificato SCEP in Intune
 
@@ -50,7 +50,7 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
 
    2. In Monitoraggio la generazione di report per i certificati non è disponibile per i profili di certificato SCEP del proprietario del dispositivo.
    
-   3. La revoca dei certificati sottoposti a provisioning dai profili di certificato SCEP per il proprietario del dispositivo non è supportata con Intune, ma può essere gestita attraverso un processo esterno o direttamente con l'autorità di certificazione.
+   3. Non è possibile usare Intune per revocare i certificati di cui è stato effettuato il provisioning tramite profili certificato SCEP per i proprietari del dispositivo. È possibile gestire la revoca tramite un processo esterno o direttamente con l'autorità di certificazione. 
 
 6. Selezionare **Impostazioni** e quindi completare le configurazioni seguenti:
 
@@ -113,15 +113,13 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(applicabile solo per Windows e i dispositivi aggiunti a un dominio)*
         - **{{MEID}}**
-        
+
         È possibile specificare queste variabili, seguite dal testo per la variabile, nella casella di testo. Ad esempio, il nome comune per un dispositivo denominato *Dispositivo1* può essere aggiunto come **CN={{DeviceName}}Dispositivo1**.
 
         > [!IMPORTANT]  
         > - Quando si specifica una variabile, racchiudere il nome della variabile tra parentesi graffe { }, come illustrato nell'esempio, per evitare un errore.  
         > - Le proprietà del dispositivo usate nel *soggetto* o nel *nome alternativo del soggetto* di un certificato del dispositivo, ad esempio **IMEI**, **SerialNumber** e **FullyQualifiedDomainName**, sono proprietà soggette a spoofing da parte di un utente con accesso al dispositivo.
         > - Un dispositivo deve supportare tutte le variabili specificate in un profilo di certificato, affinché tale profilo possa essere installato nel dispositivo.  Ad esempio, se si usa **{{IMEI}}** nel nome del soggetto di un profilo SCEP e il profilo viene assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo.  
- 
-
 
    - **Nome alternativo soggetto**:  
      specificare in che modo Intune crea automaticamente il nome alternativo del soggetto nella richiesta di certificato. Le opzioni per il nome alternativo del soggetto dipendono dal tipo di certificato selezionato, ovvero **Utente** o **Dispositivo**.  
@@ -201,12 +199,12 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
      immettere la percentuale di durata residua del certificato prima che il dispositivo richieda il rinnovo del certificato. Se si immette 20, ad esempio, il rinnovo del certificato verrà tentato quando il certificato risulta scaduto all'80% e verranno eseguiti ulteriori tentativi fino al completamento del rinnovo. Il rinnovo genera un nuovo certificato, che comporta una nuova coppia di chiavi pubblica/privata.
 
    - **URL server SCEP**:  
-     specificare uno o più URL per i server del servizio Registrazione dispositivi di rete che emettono certificati tramite SCEP. Ad esempio, immettere *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . È possibile aggiungere altri URL di SCEP per il bilanciamento del carico, se necessario, perché viene eseguito il push degli URL in modo casuale nel dispositivo con il profilo. Se uno dei server SCEP non è disponibile, la richiesta SCEP avrà esito negativo ed è possibile che nelle successive archiviazioni del dispositivo la richiesta del certificato venga effettuata sullo stesso server non attivo.
+     specificare uno o più URL per i server del servizio Registrazione dispositivi di rete che emettono certificati tramite SCEP. Ad esempio, immettere *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . È possibile aggiungere altri URL di SCEP per il bilanciamento del carico, se necessario, perché viene eseguito il push degli URL in modo casuale nel dispositivo con il profilo. Se uno dei server SCEP non è disponibile, la richiesta SCEP avrà esito negativo ed è possibile che durante sincronizzazioni successive del dispositivo la richiesta del certificato venga effettuata sullo stesso server non attivo.
 
 7. Selezionare **OK** e quindi **Crea**. Il profilo viene creato e visualizzato nell'elenco *Configurazione del dispositivo - Profili*.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitare le richieste di firma del certificato con caratteri speciali di escape
-Esiste un problema noto per le richieste di certificati SCEP che includono un nome soggetto con uno o più dei caratteri speciali seguenti come carattere di escape. I nomi di soggetto che includono uno dei caratteri speciali come carattere di escape generano una richiesta di firma del certificato con un nome soggetto errato che a sua volta determina l'esito negativo della convalida della richiesta di verifica SCEP di Intune e la mancata emissione del certificato.  
+Esiste un problema noto per le richieste di certificati SCEP e PKCS che includono un nome soggetto con uno o più dei caratteri speciali seguenti come carattere di escape. I nomi soggetto che includono uno dei caratteri speciali come carattere di escape generano un CSR con un nome soggetto errato. Un nome soggetto errato causa l'esito negativo della convalida della richiesta di verifica SCEP di Intune e la mancata emissione del certificato.
 
 I caratteri speciali sono:
 - \+
