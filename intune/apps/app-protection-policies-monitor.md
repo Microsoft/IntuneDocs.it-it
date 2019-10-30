@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507447"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889584"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere i riquadr
 - **Ultima sincronizzazione**: data dell'ultima sincronizzazione dell'app con Intune. 
 
 >[!NOTE]
-> La colonna **Ultima sincronizzazione** contiene lo stesso valore sia nel report Stato dell'utente nella console sia nel [report esportabile con estensione csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) Criteri di protezione dell'app. La differenza è un leggero ritardo nella sincronizzazione tra i valori nei due report. 
+> La colonna **Ultima sincronizzazione** contiene lo stesso valore sia nel report Stato dell'utente nella console sia nel [report esportabile con estensione csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) Criteri di protezione dell'app. La differenza è un leggero ritardo nella sincronizzazione tra i valori nei due report. 
 >
 > L'ora a cui fa riferimento Ultima sincronizzazione è l'ultima volta in cui Intune ha rilevato l'istanza dell'app. Quando un utente avvia un'app, può informare il servizio Protezione app di Intune al momento dell'avvio, a seconda dell'ultima archiviazione eseguita. Vedere [i tempi degli intervalli tra tentativi per l'archiviazione di Criteri di protezione dell'app](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Se un utente non ha usato l'app nell'ultimo intervallo di archiviazione, in genere 30 minuti per l'utilizzo attivo, e avvia l'app, si verifica quanto segue:
 >

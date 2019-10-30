@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504753"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889527"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare diverse funzionalità di gestione dei dispositivi nei dispositivi Windows Holographic e HoloLens con Intune
 
@@ -80,7 +80,7 @@ Microsoft Intune può distribuire app di Windows universale in dispositivi Micro
 - Per altre informazioni sullo sviluppo di app per Microsoft HoloLens, vedere [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (App di realtà mista per Microsoft HoloLens). 
 
 > [!NOTE]
-> I dispositivi HoloLens che eseguono Windows 10 Holographic for Business 1607 non supportano le app con licenza online di Microsoft Store per le aziende. Per altre informazioni, vedere [Installare app in HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
+> I dispositivi HoloLens che eseguono Windows 10 Holographic for Business 1607 non supportano le app con licenza online di Microsoft Store per le aziende. Per altre informazioni, vedere [Installare app in HoloLens](/hololens/holographic-store-apps).
 
 ## <a name="device-actions"></a>Azioni del dispositivo
 In Intune sono presenti alcune azioni predefinite che consentono agli amministratori IT di eseguire attività diverse, in locale nel dispositivo o in remoto tramite Intune nel portale di Azure. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.

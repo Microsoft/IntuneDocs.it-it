@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507583"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813466"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -60,25 +60,15 @@ La tabella seguente contiene un elenco delle chiavi di configurazione di Managed
 | Chiave di configurazione | Tipo valore | Valore predefinito | Descrizione |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set Grid Size (Imposta dimensioni griglia) | string | Automatico | Consente di impostare le dimensioni della griglia per le app da posizionare nella schermata iniziale gestita. È possibile specificare il numero di righe e colonne di app per definire le dimensioni della griglia nel formato `columns;rows`. Se si definiscono le dimensioni della griglia, il numero di righe impostate corrisponde al numero massimo di app che verranno visualizzate in una riga e il numero di colonne impostate al numero massimo di app che verranno visualizzate in una colonna. |
-| Enable Screen Header (Abilita intestazione schermo) | bool | TRUE | Abilita l'intestazione superiore per diverse visualizzazioni offerte dalla schermata iniziale gestita, ad esempio feed o schede di feed. Se si abilita questa impostazione, gli utenti del dispositivo vedranno l'intestazione. |
-| Enable device status bar (Abilita barra di stato del dispositivo) | bool | TRUE | Abilita la barra di stato nella schermata iniziale, ossia la barra superiore che visualizza le connessioni correnti, come il Wi-Fi e così via. Se si abilita questa impostazione, l'utente finale potrà vedere sulla barra di stato le icone che rappresentano le connessioni e le app attive. |
 | Enable notifications badge (Abilita notifiche) | bool | FALSE | Abilita le notifiche per le icone delle app che mostrano il numero delle nuove notifiche ricevute. Se si abilita questa impostazione, gli utenti finali vedranno il numero di notifiche da leggere per le app. Se si mantiene disabilitata questa chiave di configurazione, gli utenti finali non vedranno le eventuali notifiche da leggere per le app. |
 | Lock Home Screen (Blocca schermata iniziale) | bool | TRUE | Impedisce all'utente finale di spostare le icone delle app nella schermata iniziale. Se si abilita questa chiave di configurazione, le icone delle app saranno bloccate nella schermata iniziale e l'utente finale non potrà trascinarle in posizioni diverse della griglia. Se impostata su `false`, gli utenti finali potranno spostare le icone di applicazioni e collegamenti Web nella schermata iniziale gestita.  |
 | Set device wall paper (Imposta sfondo del dispositivo) | string | Predefinito | Consente di impostare uno sfondo a scelta immettendo l'URL dell'immagine da usare. |
 | Set app icon size (Imposta dimensioni delle icone delle app) | integer | 2 | Consente di impostare le dimensioni delle icone per le app visualizzate nella schermata inziale. È possibile scegliere i valori seguenti in questa configurazione per le diverse dimensioni: 0 (minime), 1 (piccole), 2 (regolari), 3 (grandi) e 4 (massime). |
 | Set app folder icon (Imposta icona delle cartelle di app) | integer | 0 | Consente di definire l'aspetto delle cartelle delle app nella schermata iniziale. È possibile scegliere l'aspetto dai valori seguenti: 0 (quadrato scuro), 1 (cerchio scuro), 2 (quadrato chiaro), 3 (cerchio chiaro). |
-| Enable gestures (Abilita gesti) | bool | FALSE | Consente all'utente finale di assegnare azioni a diversi gesti, come lo scorrimento rapido in alto o in basso. Se si disabilita questa chiave di configurazione, gli utenti finali potranno scorrere rapidamente solo a destra, se è disponibile una seconda pagina, e a sinistra per tornare nella schermata iniziale. |
-| Enable vertical scrolling (Abilita scorrimento verticale) | bool | FALSE | Abilita lo scorrimento verticale nella schermata iniziale gestita. Se si abilita questa chiave di configurazione, l'utente finale potrà passare ad altre pagine solo scorrendo in verticale e non in orizzontale. |
-| Set home screen theme (Imposta tema della schermata iniziale) | string | Theme.Light.Blue | Consente di scegliere il tema per la schermata iniziale da un set predefinito con colori diversi. È possibile scegliere i temi seguenti immettendo il valore di stringa nel formato seguente.   Theme.Light.Green. Dove Light (chiaro) può essere sostituito con Dark per un tema scuro e Green (verde) può essere sostituito con Blue (blu), Yellow (giallo), Pink (rosa), Red (rosso), Orange (arancione) e Purple (viola). |
-| Enable dock (Abilita ancoraggio) | bool | FALSE | Abilita la sezione di ancoraggio delle app nella parte inferiore della schermata iniziale, con le app persistenti visualizzate e il punto di ingresso per tutte le app installate. Se si abilita questa chiave di configurazione, l'utente finale potrà accedere alle app nella sezione di ancoraggio e potrà anche passare all'elenco di tutte le app installate nei dispositivi, indipendentemente dal fatto che siano o meno inserite nell'elenco elementi consentiti. |
 | Set screen orientation (Imposta orientamento schermo) | integer | 1 | Consente di impostare l'orientamento della schermata iniziale sulla modalità verticale, orizzontale o con rotazione automatica. Per impostare l'orientamento, immettere il valore 1 (modalità verticale), 2 (modalità orizzontale) o 3 (rotazione automatica). |
-| Enable home screen feed (Abilita feed della schermata iniziale) | bool | FALSE | Abilita il feed della schermata iniziale, che è possibile vedere con lo scorrimento rapido a sinistra. Questo feed visualizza diversi tipi di contenuto, come il calendario, le app usate di frequente, la scheda dell'assistente vocale Cortana e così via. Se si abilita questa impostazione, l'utente finale potrà passare al feed scorrendo rapidamente a sinistra nella schermata iniziale. |
-| Enable overview mode (Abilita modalità panoramica) | bool | FALSE | Consente agli utenti finali di aggiungere o rimuovere diverse pagine della schermata iniziale accessibili con lo scorrimento rapido a destra dalla schermata predefinita. Se si abilita questa impostazione, l'utente finale potrà aggiungere pagine a destra della pagina predefinita della schermata iniziale, potrà cambiare la pagina predefinita e potrà accedere alle impostazioni di Managed Home Screen. |
 | Enable device telemetry (Abilita telemetria del dispositivo) | bool | FALSE | Abilita tutti i dati di telemetria acquisiti per la schermata iniziale gestita. Se si abilita questa impostazione, Microsoft potrà acquisire i dati di telemetria sull'utilizzo del dispositivo, ad esempio il numero di volte in cui è stata avviata una specifica app. |
 | Set allow-listed applications (Imposta applicazioni nell'elenco elementi consentiti) | bundleArray | FALSE | Consente di definire il set di app visibili nella schermata iniziale tra le app installate nel dispositivo. Per definire le app, immettere il nome del pacchetto delle app da rendere visibili, ad esempio com.microsoft.emmx per rendere le impostazioni accessibili nella schermata iniziale. Le app da aggiungere nell'elenco elementi consentiti in questa sezione devono essere già installate nel dispositivo per renderle visibili nella schermata iniziale. |
 | Set pinned web links (Imposta collegamenti Web aggiunti) | bundleArray | FALSE | Consente di aggiungere i siti Web come icone di avvio rapido nella schermata iniziale. Con questa configurazione è possibile definire l'URL e aggiungerlo nella schermata iniziale per consentire all'utente finale di avviarlo nel browser con un singolo tocco. |
-| Enable search bar (Abilita barra di ricerca) | bool | FALSE | Abilita la barra di ricerca nella schermata iniziale. Se si abilita questa impostazione, gli utenti del dispositivo vedranno la barra di ricerca nella schermata iniziale e potranno immettere qualsiasi contenuto da cercare nel Web. |
-| Disable settings app (Disabilita app di impostazioni) | bool | FALSE | Disabilita la pagina di impostazioni per Managed Home Screen. Se si disabilita questa impostazione, l'utente finale del dispositivo non potrà accedere alle impostazioni di Managed Home Screen. |
 | Enable screen saver (Abilita screen saver) | bool | FALSE | Per abilitare o non abilitare la modalità screen saver. Se impostata su True, è possibile configurare **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** e **media_detect_screen_saver**. |
 | Screen saver image (Immagine screen saver) | string |   | Consente di impostare l'URL dell'immagine dello screen saver. Se non viene impostato un URL, nei dispositivi verrà visualizzata l'immagine dello screen saver predefinita quando è attivato lo screen saver. L'immagine predefinita visualizza l'icona dell'app Managed Home Screen.  |
 | Screen saver show time (Durata dello screen saver) | integer | 0 | Offre la possibilità di impostare la durata, in secondi, dello screen saver visualizzato nel dispositivo in modalità screen saver. Se impostata su 0, lo screen saver verrà visualizzato per un tempo indefinito in modalità screen saver finché il dispositivo non diventa attivo.  |
@@ -116,18 +106,6 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Di seguito è riportato un esempio di script JSON con tutte le chiavi di configu
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",
