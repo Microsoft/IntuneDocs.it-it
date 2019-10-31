@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504417"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810298"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
@@ -44,7 +44,7 @@ I criteri di accesso condizionale classici per le app gestite:
 Per visualizzare i criteri di accesso condizionale classici, in [Azure](https://portal.azure.com/#home) passare a **Azure Active Directory** > **Accesso condizionale** > **Criteri classici**.
 
 
-## <a name="to-enable-the-mtd-connector"></a>Per abilitare il connettore MTD
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>Per abilitare il connettore Mobile Threat Defense
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
@@ -58,20 +58,23 @@ Per visualizzare i criteri di accesso condizionale classici, in [Azure](https://
 
 7. Abilitare le opzioni con interruttore di attivazione/disattivazione in base ai requisiti dell'organizzazione. Le opzioni di attivazione/disattivazione visibili variano a seconda del partner MTD.
 
-## <a name="mtd-toggle-options"></a>Opzioni di attivazione/disattivazione di MTD
+## <a name="mobile-threat-defense-toggle-options"></a>Opzioni di attivazione/disattivazione di Mobile Threat Defense
 
-È possibile scegliere le opzioni di attivazione/disattivazione MTD da abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
+È possibile decidere quali opzioni di attivazione/disattivazione di Mobile Threat Defense è necessario abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
 
-- **Connetti dispositivi Android 4.1+ a [nome partner MTD] for Work MTD**: quando si abilita questa opzione, è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza a Intune.
-  - **Contrassegna come non conforme se non vengono ricevuti dati**: se Intune non riceve dati su un dispositivo in questa piattaforma da un partner MTD, il dispositivo viene considerato non conforme.
-<br></br>
-- **Connetti dispositivi iOS 8.0+ a [nome partner MTD] for Work MTD**: quando si abilita questa opzione, è possibile fare in modo che i dispositivi iOS 8.0+ segnalino i rischi di sicurezza in Intune.
-  - **Contrassegna come non conforme se non vengono ricevuti dati**: se Intune non riceve dati su un dispositivo in questa piattaforma da un partner MTD, il dispositivo viene considerato non conforme.
-<br></br>
+**Impostazioni dei criteri di conformità di MDM**
+- **Connetti dispositivi Android 4.1+ a *\<nome partner MTD>***: quando si abilita questa opzione, è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza a Intune.
+- **Connetti dispositivi iOS 8.0+ a *\<nome partner MTD>***: quando si abilita questa opzione, è possibile fare in modo che i dispositivi iOS 8.0+ segnalino i rischi di sicurezza in Intune.
 - **Abilita la sincronizzazione delle app per dispositivi iOS**: consente a questo partner di Mobile Threat Defense di richiedere metadati delle applicazioni iOS da Intune da usare per l'analisi delle minacce.
-
 - **Blocca le versioni del sistema operativo non supportate**: bloccare un dispositivo che esegue un sistema operativo con un versione precedente a quella minima supportata.
 
+**Impostazioni dei criteri di protezione delle app**
+- **Connetti i dispositivi Android con versione 4.1 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
+- **Connetti i dispositivi iOS con versione 8.0 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
+
+Per altre informazioni sull'uso dei connettori Mobile Threat Defense per la valutazione dei criteri di protezione app di Intune, vedere [Abilitare il connettore Mobile Threat Defense in Intune per i dispositivi non registrati](~/protect/mtd-enable-unenrolled-devices.md).
+
+**Impostazioni condivise comuni**
 - **Numero di giorni dopo i quali il partner risulta non reattivo**: numero di giorni di inattività prima che Intune consideri il partner non reattivo a causa della perdita della connessione. Intune ignora lo stato di conformità per i partner MTD non reattivi.
 
 > [!IMPORTANT] 

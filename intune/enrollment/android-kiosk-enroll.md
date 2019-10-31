@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503380"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923382"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati
 
@@ -78,7 +78,7 @@ Per poter registrare i dispositivi dedicati, è necessario creare un profilo di 
 4. Nel pannello **Regole di appartenenza dinamica** compilare i campi come segue:
     - **Aggiungi regola di appartenenza dinamica**: Regola semplice
     - **Aggiungi dispositivi dove**: enrollmentProfileName
-    - Nella casella centrale scegliere **Corrispondenza**.
+    - Nella casella centrale scegliere **Uguale a**.
     - Nell'ultimo campo immettere il nome del profilo di registrazione creato in precedenza.
     Per altre informazioni sulle regole di appartenenza dinamica, vedere [Regole di appartenenza dinamica per i gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. Scegliere **Aggiungi query** > **Crea**.

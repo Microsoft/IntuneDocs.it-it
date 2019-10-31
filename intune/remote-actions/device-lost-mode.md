@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509446"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057532"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Abilitare la modalità di dispositivo perso nei dispositivi iOS con Intune
 
@@ -43,8 +43,10 @@ Questa funzionalità non è supportata per le piattaforme seguenti:
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
-4. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS e quindi **...Altre informazioni**. Scegliere l'azione remota **Modalità di dispositivo perso**.
-5. In **Modalità di dispositivo perso** abilitare questa funzionalità. Immettere quindi il messaggio da visualizzare e un numero di telefono di contatto.
+4. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS e quindi scegliere **Modalità di dispositivo perso (solo con supervisione)** .
+5. In **Modalità di dispositivo perso** selezionare **Abilita**.
+6. In **Messaggi da visualizzare nella schermata di blocco** digitare un messaggio da visualizzare nella schermata di blocco del dispositivo.
+7. Facoltativamente, immettere un numero di telefono nella casella **Numero di telefono da visualizzare**.
 6. Selezionare **OK** per salvare le modifiche.
 
 Quando si abilita la modalità di dispositivo perso, si blocca qualsiasi uso del dispositivo. L'utente finale non può accedere al dispositivo finché l'amministratore non disabilita questa modalità. Quando la modalità di dispositivo perso è abilitata, è possibile usare l'azione [Individua il dispositivo](device-locate.md) per trovare il dispositivo.
