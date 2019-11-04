@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490826"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413820"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 È possibile consentire alle app di usare i criteri di protezione delle app tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## <a name="intune-app-wrapping-tool"></a>Strumento di wrapping delle app di Intune
+
 Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) **interne**. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita da un criterio di protezione delle app di Intune. Quando si protegge un'app fornita da un fornitore di software indipendenti (ISV), è importante chiarire se l'ISV continuerà a supportare l'app con wrapping.
 
 Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma. Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Per la documentazione dello strumento di wrapping delle app, vedere [Strumento di wrapping delle app per Android](app-wrapper-prepare-android.md) e [Strumento di wrapping delle app per iOS](app-wrapper-prepare-ios.md).
@@ -40,6 +39,7 @@ Lo strumento di wrapping delle app **non** supporta le app nell'App Store Apple 
 Per altre informazioni sullo strumento di wrapping delle app per i criteri di protezione delle app sui dispositivi non registrati in Intune, vedere [Proteggere app e dati line-of-business su dispositivi non registrati in Microsoft Intune](../apps/apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivi per usare lo strumento di wrapping delle app
+
 * L'app non ha funzionalità per la protezione dei dati incorporate
 * L'app è semplice
 * L'app è distribuita internamente
@@ -55,11 +55,13 @@ Per altre informazioni sullo strumento di wrapping delle app per i criteri di pr
 |**Android**|No: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
+
 App SDK è progettato principalmente per i clienti che hanno le app nell'App Store Apple o in Google Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app line-of-business.
 
 Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](app-sdk-get-started.md)
 
 ### <a name="reasons-to-use-the-sdk"></a>Motivi per usare l'SDK
+
 * L'app non ha funzionalità per la protezione dei dati incorporate
 * L'app è complessa e contiene numerose esperienze
 * L'app è distribuita a un App Store pubblico, ad esempio Google Play o l'App Store Apple
@@ -74,10 +76,12 @@ Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'intr
 |**iOS**|Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
 |**Android**| Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Se non si usa una piattaforma di sviluppo di app sopra indicata, 
+### <a name="not-using-an-app-development-platform-listed-above"></a>Se non si usa una piattaforma di sviluppo di app sopra indicata,
+
 Il team di sviluppo di Intune SDK verifica e gestisce attivamente il supporto per le app compilate con la piattaforme native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Anche se alcuni clienti sono riusciti a integrare Intune SDK con altre piattaforme, ad esempio React Native e NativeScript, Microsoft non offre linee guida o plug-in specifici per gli sviluppatori di app che usano piattaforme diverse da quelle supportate da Microsoft. 
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
+
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
 
 > [!NOTE]

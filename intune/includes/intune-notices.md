@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
-ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
+ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73057319"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415092"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
 
@@ -105,7 +105,7 @@ Di seguito è riportato un elenco di dispositivi comuni registrati in Intune che
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 Eseguire il wrapping delle app con la versione più recente di Intune App SDK. È anche possibile configurare l'impostazione di avvio condizionale "Richiedi una versione minima del sistema operativo (solo avviso)" in modo da informare gli utenti finali sui dispositivi personali da aggiornare.
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Modifica prevista per Intune: fine del supporto per Windows 7 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Modifica prevista per Intune: fine del supporto per Windows 7<!-- 3042987 -->
 Come indicato nelle comunicazioni MC148476, pubblicata nel settembre 2018, e MC176794 del marzo 2019, si avvicina la fine del supporto esteso per Windows 7, prevista per il 14 gennaio 2020. In tale data Intune ritirerà il supporto per i dispositivi che eseguono Windows 7, per concentrare gli investimenti sul supporto di tecnologie più recenti e offrire esperienze nuove e ottimali agli utenti finali. Dopo tale data l'assistenza tecnica e gli aggiornamenti automatici che consentono di proteggere i PC con Windows 7 non saranno più disponibili tramite Intune. Microsoft consiglia vivamente di passare a Windows 10 prima di gennaio 2020, per evitare uno scenario in cui un servizio o un supporto necessario non è più disponibile. Altre informazioni sul ciclo di vita di supporto di Windows sono disponibili [qui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?

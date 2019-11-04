@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776923"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143150"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi macOS in Intune
 
@@ -129,7 +129,7 @@ Questa funzionalità si applica a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione 
 
-- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Quando si salva il profilo di estensione dell'app SSO, non è possibile modificare il tipo di estensione dell'app SSO. Le opzioni disponibili sono:
+- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Le opzioni disponibili sono:
 
   - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app SSO, impostare il tipo di estensione dell'app SSO da **Kerberos** o **Credential** su **non configurato**.
   - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per usare SSO. Assicurarsi di avere familiarità con l'ID estensione e l'ID del team per l'estensione dell'app SSO dell'organizzazione.  
@@ -143,7 +143,7 @@ Questa funzionalità si applica a:
 
   [Individuare l'ID del team](https://help.apple.com/developer-account/#/dev55c3c710c) (aprire il sito Web di Apple) con ulteriori informazioni.
 
-- **Area**di autenticazione: immettere il nome dell'area di autenticazione Kerberos. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
+- **Area**di autenticazione: immettere il nome dell'area di autenticazione. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
 - **Domini**: immettere il dominio o i nomi host dei siti che possono eseguire l'autenticazione tramite SSO. Ad esempio, se il sito Web è `mysite.contoso.com`, `mysite` è il nome host e `contoso.com` è il nome di dominio. Quando gli utenti si connettono a uno di questi siti, l'estensione dell'app gestisce la richiesta di autenticazione. Questa autenticazione consente agli utenti di usare l'ID del viso, l'ID tocco o il pincode/codice Apple per accedere.
 
   - Tutti i domini nei profili di Intune dell'estensione dell'app Single Sign-On devono essere univoci. Non è possibile ripetere un dominio in nessun profilo di estensione dell'app di accesso, anche se si usano tipi diversi di estensioni di app SSO.

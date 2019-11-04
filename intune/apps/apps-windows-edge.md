@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585605"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892582"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Aggiungere Microsoft Edge per Windows 10 a Microsoft Intune
 
@@ -94,7 +94,7 @@ L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnar
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 **Microsoft Edge versione 77 e successive per Windows 10:**<br>
-Intune usa l'estensione di gestione di Intune per scaricare e distribuire il programma di installazione di Microsoft Edge in dispositivi Windows 10 assegnati, quindi comunica le impostazioni di distribuzione al programma di installazione di Microsoft Edge, che scarica e installa il browser Microsoft Edge direttamente dalla rete CDN. Fare riferimento ai [prerequisiti per l'estensione di gestione di Intune](~/apps/intune-management-extension.md#prerequisites) e alle procedure consigliate descritte nell'articolo sull'accesso al servizio di aggiornamento di Azure e alla rete CDN per assicurarsi che la configurazione della rete consenta ai dispositivi Windows 10 di accedere a tali posizioni.
+Intune usa l'estensione di gestione di Intune per scaricare e distribuire il programma di installazione di Microsoft Edge in dispositivi Windows 10 assegnati, quindi comunica le impostazioni di distribuzione al programma di installazione di Microsoft Edge, che scarica e installa il browser Microsoft Edge direttamente dalla rete CDN. Fare riferimento ai [prerequisiti per l'estensione di gestione di Intune](~/apps/intune-management-extension.md#prerequisites) e alle procedure consigliate descritte nell'articolo sull'accesso al servizio di aggiornamento di Azure e alla rete CDN per assicurarsi che la configurazione della rete consenta ai dispositivi Windows 10 di accedere a tali posizioni. Per consentire l'accesso ai file di installazione da una rete CDN per installare il browser, è anche necessario consentire l'accesso agli endpoint Windows Update. Per altre informazioni, vedere [Gestire gli endpoint di connessione per Windows 10, versione 1809 - Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update) ed [Endpoint di rete per Microsoft Intune](~/fundamentals/intune-endpoints.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Assegnare app ai gruppi](~/apps/apps-deploy.md)

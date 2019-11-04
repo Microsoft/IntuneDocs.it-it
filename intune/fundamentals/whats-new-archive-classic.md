@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c3f96b6a548536459162e81d0ea34d102ef8d1c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509742"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999512"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novità del portale di Intune classico - mesi precedenti
 
@@ -179,7 +179,6 @@ Non ci sono attualmente problemi noti da condividere. Se si riscontrano problemi
 A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere le app dai marketplace cinesi. L'app Portale aziendale supporterà questo flusso di lavoro reindirizzando gli utenti Android in Cina per scaricare le app Portale aziendale e Outlook dagli app store locali. Ciò consentirà di migliorare l'esperienza utente quando sono abilitati i criteri di accesso condizionale, per la gestione dei dispositivi e delle applicazioni mobili. Le app Portale aziendale e Outlook per Android sono disponibili negli app store cinesi seguenti:
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -329,7 +328,6 @@ L'app Portale aziendale per Android sta per essere pubblicata per il download in
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-* [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 
 L'app Portale aziendale per Android usa i servizi Google Play per comunicare con il servizio Microsoft Intune. Dato che i servizi Google Play non sono ancora disponibili in Cina, per completare qualsiasi attività tra le seguenti possono essere richieste fino a 8 ore.
 

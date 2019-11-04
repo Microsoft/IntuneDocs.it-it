@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585015"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999531"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -137,6 +137,10 @@ Intune supporta la verifica dell'identità personale (PIV, Personal Identity Ver
 
 Per altre informazioni sulle credenziali derivate per i dispositivi iOS, vedere [Usare le credenziali derivate in Microsoft Intune](~/protect/derived-credentials.md).
 
+## <a name="dark-mode-for-ios-company-portal"></a>Modalità scura per il portale aziendale iOS
+
+La modalità scura è disponibile per il portale aziendale iOS. Gli utenti possono scaricare le app aziendali, gestire i propri dispositivi e ottenere supporto tecnico nella combinazione di colori scelta in base alle impostazioni del dispositivo. Il portale aziendale iOS adatterà automaticamente le impostazioni del dispositivo dell'utente finale per la modalità scura o chiara. 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tasti di scelta rapida del portale aziendale di Windows
 
 Gli utenti finali possono usare tasti di scelta rapida per eseguire azioni di spostamento, sulle app e sui dispositivi nel portale aziendale di Windows.
@@ -180,25 +184,24 @@ Gli utenti possono eseguire azioni nei dispositivi locali o remoti tramite l'app
 
 Alcune piattaforme e configurazioni non consentono azioni self-service nel dispositivo. La tabella seguente contiene altri dettagli sulle azioni self-service:
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Ritiro | Disponibile<sup>(1)</sup> | Disponibile<sup>(8)</sup> | Disponibile | Disponibile<sup>(7)</sup> |
-| Cancellazione | Disponibile | Disponibile | N/D | Disponibile<sup>(7)</sup> |
-| Ridenominazione<sup>(4)</sup> | Disponibile | Disponibile<sup>(8)</sup> | Disponibile | Disponibile |
+| Ritiro | Disponibile<sup>(1)</sup> | Disponibile | Disponibile | Disponibile<sup>(7)</sup> |
+| Cancellazione | Disponibile | Disponibile<sup>(5)</sup> | N/D | Disponibile<sup>(7)</sup> |
+| Ridenominazione<sup>(4)</sup> | Disponibile | Disponibile | Disponibile | Disponibile |
 | Sincronizzazione | Disponibile | Disponibile | Disponibile | Disponibile |
 | Blocco remoto | Solo per Windows Phone | Disponibile | Disponibile | Disponibile |
-| Reimpostazione passcode | Solo per Windows Phone | Disponibile | N/D | Disponibile<sup>(6)</sup> |
+| Reimpostazione passcode | Solo per Windows Phone | Disponibile<sup>(8)</sup> | N/D | Disponibile<sup>(6)</sup> |
 | Recupero chiavi | N/D | N/D | Disponibile<sup>(2)</sup> | N/D |
-| Modalità scura | N/D | Disponibile | N/D | N/D |
 
 <sup>(1)</sup> Il **ritiro** è sempre bloccato nei dispositivi Windows aggiunti ad Azure AD.<br>
 <sup>(2)</sup> il **recupero chiave** per MacOS è disponibile solo tramite il portale Web.<br>
 <sup>(3) </sup> tutte le azioni remote sono disabilitate se si usa la registrazione di un manager di registrazione dispositivi.<br>
-<sup>(4)</sup> L'azione di **ridenominazione** modifica solo il nome del dispositivo nell'app Portale aziendale o nel sito Web, non nel dispositivo.<br>
-<sup>(5)</sup> la **cancellazione remota** non è disponibile nei dispositivi MacOS.<br>
+<sup>(4)</sup> La **ridenominazione** modifica solo il nome del dispositivo nell'app Portale aziendale o nel portale Web, non nel dispositivo.<br>
+<sup>(5)</sup> La **cancellazione** non è disponibile nei dispositivi iOS registrati dall'utente.<br>
 <sup>(6)</sup> la **reimpostazione del passcode** non è supportata in alcune configurazioni di Android e Android Enterprise. Per altre informazioni, vedere [Reimpostare o rimuovere il passcode di un dispositivo in Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> il **ritiro** e la **cancellazione** non sono disponibili in scenari di proprietari di dispositivi Android Enterprise (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> il **ritiro** (rimozione del dispositivo) e la **ridenominazione** sono disponibili per tutti i tipi di registrazione. Altre azioni non sono supportate per la registrazione utente.<br> 
+<sup>(8)</sup> La **reimpostazione del passcode** non è supportata nei dispositivi iOS registrati dall'utente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

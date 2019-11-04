@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915712"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143034"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -42,7 +42,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
   - **Concedi automaticamente**: le autorizzazioni vengono concesse automaticamente.
   - **Nega automaticamente**: le autorizzazioni vengono negate automaticamente.
 - **Modifiche a data e ora**: scegliere **Blocca** per impedire agli utenti di impostare manualmente la data e ora. **Non configurata** consente agli utenti di impostare data e ora nel dispositivo.
-- **Modifiche al volume**: scegliere **Blocca** per impedire agli utenti di modificare il volume del dispositivo. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
+- **Modifiche del volume**: il **blocco** impedisce agli utenti di modificare il volume del dispositivo e disattiva anche il volume principale. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
 - **Ripristino delle impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
 - **Modalità provvisoria**: scegliere **Blocca** per impedire agli utenti di riavviare il dispositivo in modalità provvisoria. **Non configurata** consente agli utenti di riavviare il dispositivo in modalità sicura.
 - **Barra di stato**: scegliere **Blocca** per impedire l'accesso alla barra di stato, incluse le notifiche e le impostazioni rapide. **Non configurata** consente agli utenti di accedere alla barra di stato.

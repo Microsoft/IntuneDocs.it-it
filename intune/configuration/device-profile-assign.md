@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550814"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892626"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
@@ -69,19 +69,28 @@ Nei dispositivi Windows 10 è possibile aggiungere **regole di applicabilità**,
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Escludere gruppi da un'assegnazione di profilo
 
-I profili di configurazione dei dispositivi Intune consentono di escludere gruppi dall'assegnazione dei criteri.
+I profili di configurazione dei dispositivi Intune consentono di includere ed escludere gruppi dall'assegnazione di criteri.
 
-Intune non esamina le relazioni da utente a gruppo di dispositivi. L'inclusione di gruppi di utenti mentre si escludono gruppi di dispositivi può non restituire i risultati previsti. Negli scenari da gruppo di utenti a gruppo di utenti e da gruppo di dispositivi a gruppo di dispositivi l'esclusione ha la precedenza sull'inclusione.
+Come procedura consigliata, creare e assegnare criteri specifici per i gruppi utenti e creare e assegnare criteri diversi specificamente per i gruppi di dispositivi. Per altre informazioni sui gruppi, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](../fundamentals/groups-add.md).
 
-Ad esempio si assegna un profilo di dispositivo al gruppo di utenti **Tutti gli utenti aziendali**, ma si escludono i membri del gruppo **Dirigenti**. Poiché entrambi i gruppi sono gruppi di utenti, tutti i membri del gruppo **Dirigenti** sono esclusi dal criterio, anche se sono membri del gruppo di inclusione **Tutti gli utenti aziendali**.
+Quando si assegnano i criteri includendo ed escludendo gruppi, usare la tabella seguente. Un segno di spunta indica che l'assegnazione è supportata.
 
-L'inclusione ha la precedenza sull'esclusione quando si usano gruppi misti, ad esempio da gruppo di utenti a gruppo di dispositivi o da gruppo di dispositivi a gruppo di utenti.
+![Opzioni supportate per includere o escludere gruppi da un'assegnazione di profilo](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Si supponga di voler assegnare un profilo di dispositivo a tutti gli utenti dell'organizzazione, ad eccezione dei dispositivi in modalità tutto schermo. Si include il gruppo **Tutti gli utenti**, ma si esclude il gruppo **Tutti i dispositivi**. In questo caso, tutti gli utenti e i relativi dispositivi ottengono i criteri, anche se il dispositivo dell'utente è nel gruppo **Tutti i dispositivi**.
+### <a name="what-you-should-know"></a>Informazioni importanti
 
-L'esclusione valuta solo i membri diretti del gruppo. Non include i dispositivi associati a un utente. Tuttavia i dispositivi che non hanno un utente non ottengono i criteri. Questo accade perché i dispositivi senza utente non hanno alcuna relazione con il gruppo **Tutti gli utenti**.
+- L'esclusione ha la precedenza sull'inclusione negli scenari seguenti, relativi a gruppi dello stesso tipo:
 
-Se si includono **tutti i dispositivi** ma si escludono **tutti gli utenti**, tutti i dispositivi ricevono i criteri. In questo caso, lo scopo è l'esclusione dei dispositivi ai quali è associato un utente in base a questi criteri. Tuttavia i dispositivi non vengono esclusi, perché l'esclusione confronta solo i membri diretti del gruppo.
+  - Inclusione di gruppi utenti ed esclusione di gruppi utenti
+  - Inclusione di gruppi di dispositivi ed esclusione di gruppi di dispositivi
+
+  Ad esempio si assegna un profilo di dispositivo al gruppo di utenti **Tutti gli utenti aziendali**, ma si escludono i membri del gruppo **Dirigenti**. Poiché entrambi i gruppi sono gruppi utenti, i criteri interessano **tutti gli utenti aziendali** ad eccezione dei **dirigenti**.
+
+- Intune non valuta le relazioni di gruppi di utenti e dispositivi. Se si assegnano criteri a gruppi misti, i risultati potrebbero non essere quelli voluti o previsti.
+
+  Si supponga, ad esempio, di assegnare un profilo di dispositivo al gruppo utenti **Tutti gli utenti**, escludendo però il gruppo di dispositivi **Tutti i dispositivi personali**. In questa assegnazione di criteri di gruppo misto il gruppo **Tutti gli utenti** è interessato dai criteri. L'esclusione non viene applicata.
+
+  Non è quindi consigliabile assegnare criteri a gruppi misti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

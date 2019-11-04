@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506734"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057654"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per usare le funzionalità iOS comuni in Intune
 
@@ -266,7 +266,7 @@ Questa funzionalità si applica a:
   - **Specificare solo i siti Web** (solo per il Web browser Safari): questi URL vengono aggiunti ai segnalibri del browser Safari. Viene consentito all'utente di visitare **solo** questi siti e non è possibile aprire altri siti. Usare questa opzione solo se si conosce l'elenco esatto degli URL a cui gli utenti possono accedere.
 
     - **URL**: immettere l'URL del sito Web che si vuole consentire. Immettere ad esempio `https://www.contoso.com`.
-    - **Percorso del segnalibro**: immettere il percorso per archiviare il segnalibro. Immettere ad esempio `/Contoso/Business Apps`. Se non si aggiunge un percorso, il segnalibro verrà aggiunto alla cartella dei segnalibri predefiniti nel dispositivo.
+    - **Percorso segnalibro**: Apple ha modificato questa impostazione. Tutti i segnalibri vengono inseriti nella cartella **siti approvati** . I segnalibri non passano al percorso del segnalibro immesso.
     - **Titolo**: immettere un titolo descrittivo per il segnalibro.
 
     Se non si immettono URL, gli utenti finali possono accedere solo ai siti Web `microsoft.com`, `microsoft.net` e `apple.com`. Questi URL sono automaticamente consentiti da Intune.
@@ -280,7 +280,7 @@ Questa funzionalità si applica a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione
 
-- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Quando si salva il profilo di estensione dell'app SSO, non è possibile modificare il tipo di estensione dell'app SSO. Le opzioni disponibili sono:
+- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Le opzioni disponibili sono:
 
   - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app, è possibile impostare il tipo di estensione dell'app SSO da **Kerberos** o **Credential** su **non configurato**.
   - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per eseguire l'accesso SSO. Assicurarsi di avere a conoscenza l'ID estensione per l'estensione dell'app SSO dell'organizzazione.
