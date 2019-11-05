@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785512"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414684"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -167,7 +167,33 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   iOS prevede una protezione incorporata che può influisca su questa impostazione. Ad esempio, iOS può ritardare l'attivazione del criterio a seconda del numero di errori di accesso. Può inoltre prendere in considerazione la possibilità di immettere ripetutamente lo stesso codice di un solo tentativo. La [Guida alla sicurezza iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) di Apple (apre il sito Web di Apple) è una risorsa efficace e fornisce dettagli più specifici sui codici di accesso.
   
 - **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta la password**<sup>1</sup>: immettere il tempo per il quale il dispositivo rimane inattivo prima che l'utente debba immettere nuovamente la password. Se il tempo immesso è più lungo dell'impostazione corrente nel dispositivo, il dispositivo ignora il tempo immesso. Supportata in iOS 8.0 e nei dispositivi più recenti.
-- **Numero massimo di minuti di inattività fino al blocco dello schermo**<sup>1</sup>: immettere il numero massimo di minuti di inattività consentiti nel dispositivo prima del blocco dello schermo. Se il tempo immesso è più lungo dell'impostazione corrente nel dispositivo, il dispositivo ignora il tempo immesso. Quando è impostato su **immediatamente**, lo schermo si blocca in base al tempo minimo del dispositivo. In iPhone è 30 secondi. In iPad è due minuti.
+
+- **Numero massimo di minuti di inattività fino al blocco dello schermo**<sup>1</sup>: immettere il numero massimo di minuti di inattività consentiti nel dispositivo prima del blocco dello schermo.
+
+  **Opzioni iOS**:  
+
+  - **Non configurato** (impostazione predefinita): Intune non tocca questa impostazione.
+  - **Immediatamente**: blocca lo schermo dopo 30 secondi di inattività.
+  - **1**: blocca lo schermo dopo 1 minuto di inattività.
+  - **2**: blocca lo schermo dopo 2 minuti di inattività.
+  - **3**: blocchi dello schermo dopo 3 minuti di inattività.
+  - **4**: blocchi dello schermo dopo 4 minuti di inattività.
+  - **5**: blocchi dello schermo dopo 5 minuti di inattività.
+    
+  **Opzioni ipados**:  
+
+  - **Non configurato** (impostazione predefinita): Intune non tocca questa impostazione.
+  - **Immediatamente**: blocca lo schermo dopo 2 minuti di inattività.
+  - **2**: blocca lo schermo dopo 2 minuti di inattività.
+  - **5**: blocchi dello schermo dopo 5 minuti di inattività.
+  - **10**: blocchi dello schermo dopo 10 minuti di inattività.
+  - **15**: blocca lo schermo dopo 15 minuti di inattività.
+
+  Se un valore non è applicabile a iOS o iPados, Apple userà il valore *più vicino più basso* . Se ad esempio si immette `4` minuti, i dispositivi iPados useranno `2` minuti. Se si immette `10` minuti, i dispositivi iOS useranno `5` minuti. Si tratta di un limite Apple.
+  
+  > [!NOTE]
+  > L'interfaccia utente di Intune per questa impostazione non separa i valori supportati da iOS e iPados. L'interfaccia utente potrebbe essere aggiornata in una versione futura.
+
 - **Scadenza password (giorni)** : immettere il numero di giorni prima che sia necessario modificare la password del dispositivo.
 - **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo.
 - **Sblocco di Touch ID e Face ID**: scegliere un **blocco** per impedire l'uso di un'impronta digitale o di una faccia per sbloccare il dispositivo. **Non configurato** consente all'utente di sbloccare il dispositivo con questi metodi.
