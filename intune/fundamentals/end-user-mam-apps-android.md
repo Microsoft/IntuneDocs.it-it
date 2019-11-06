@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe0aa4797de32936e2be7def4aeb670c78a4945
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502910"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414050"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Questo articolo descrive l'esperienza utente per le app con criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo alle app usate in un contesto aziendale, ad esempio quando l'utente accede alle app con un account aziendale o accede a file archiviati in un percorso di OneDrive for Business.
 
@@ -37,7 +35,6 @@ L'app Portale aziendale è necessaria per tutte le app associate a criteri di pr
 Per i dispositivi non registrati in Intune è necessario installare l'app Portale aziendale nel dispositivo. Tuttavia, l'utente non deve avviare l'app Portale aziendale o accedervi prima di poter usare app gestite tramite criteri di protezione delle app.
 
 L'app Portale aziendale è una modalità con cui Intune condivide i dati in una posizione sicura. Di conseguenza, l'app Portale aziendale è necessaria per tutte le app associate a criteri di protezione delle app, anche se il dispositivo non è registrato in Intune.
-
 
 ## <a name="use-apps-with-multi-identity-support"></a>Usare app con supporto di più identità
 
@@ -50,19 +47,24 @@ Ad esempio, l'utente riceve la richiesta di inserimento del PIN al momento di ac
 Le applicazioni con identità multiple permettono agli utenti di aggiungere più account.  L'APP Intune supporta un solo account gestito.  L'APP Intune non limita il numero di account non gestiti.
 
 Quando in un'applicazione è presente un account gestito:
+
 * Se un utente prova ad aggiungere un secondo account gestito, gli viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
 * Se l'amministratore IT aggiunge criteri a un secondo account esistente, all'utente viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio seguente.
 
 L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** ottiene i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y venga gestito dai criteri di protezione delle app, è necessario rimuovere l'account utente associato all'Azienda X e aggiungere l'account associato all'Azienda Y.
+
 ### <a name="add-a-second-account"></a>Aggiungere un secondo account
+
 #### <a name="android"></a>Android
+
 Se si usa un dispositivo Android, potrebbe essere visualizzato un messaggio di blocco con le istruzioni necessarie per rimuovere l'account esistente e aggiungerne uno nuovo.  Per rimuovere l'account esistente, passare a **Impostazioni &gt; Generali &gt; Applicazioni &gt;Portale aziendale** e selezionare **Cancella dati**.
 
 ![Schermata del messaggio di errore con le istruzioni per rimuovere l'account](./media/end-user-mam-apps-android/Android_SwitchUser.png)
 
 ## <a name="view-media-files-with-the-azure-information-protection-app"></a>Visualizzare file multimediali con l'app Azure Information Protection
+
 Per visualizzare file AV, PDF e di immagine in dispositivi Android, usare l'[app Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (nota in precedenza come app di condivisione file Rights Management).
 
 Scaricare questa app da Google Play Store.  
@@ -73,7 +75,6 @@ Sono supportati i tipi di file seguenti:
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Immagine:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg
 * **Documenti:** PDF, PPDF
-
 
 |**pfile**|
 |----|

@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507373"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414708"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firmare le app line-of-business per poterle distribuire nei dispositivi Windows con Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 L'amministratore di Intune ha la possibilità di distribuire app line-of-business (LOB) universali in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, inclusa l'app Portale aziendale. Per distribuire le app APPX in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, è possibile usare un certificato di firma codice di un'autorità di certificazione pubblica già considerata attendibile dai dispositivi Windows oppure usare la propria autorità di certificazione.
 
@@ -53,6 +51,7 @@ Se si distribuisce l'app come richiesto agli utenti o ai dispositivi, l'app Port
 ### <a name="upload-the-code-signing-certificate"></a>Caricare il certificato di firma codice
 
 Se il dispositivo Windows 10 non considera attendibile l'autorità di certificazione, dopo aver firmato il pacchetto APPX e averlo caricato nel servizio Intune, è necessario caricare il certificato di firma codice nel portale di Intune:
+
 1. Fare clic su App client
 2. Fare clic su Certificati Windows Enterprise
 3. Scegliere "Selezionare un file" in Certificato di firma codice
@@ -77,6 +76,7 @@ Windows 8.1 Desktop/Windows 10 Desktop e Mobile
 Se il periodo di certificazione è scaduto, è possibile che i file APPX non vengano avviati. È necessario ottenere un nuovo file CER e seguire le istruzioni per firmare il codice per ogni file APPX distribuito e ricaricare tutti i file APPX e il file CER aggiornato nella sezione Certificati Windows Enterprise del portale di Intune
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Distribuire manualmente l'app Portale aziendale di Windows 10
+
 Se non si vuole concedere l'accesso al Microsoft Store, è possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Microsoft Store per le aziende. In alternativa, se Intune è integrato, è possibile distribuire l'app Portale aziendale seguendo la [procedura di distribuzione delle app con Microsoft Store per le aziende](store-apps-windows.md).
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Se non si vuole concedere l'accesso al Microsoft Store, è possibile distribuire
 Per altre informazioni sul modo in cui Intune gestisce le dipendenze per le app universali, vedere [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Distribuzione di un appxbundle con dipendenze tramite MDM di Microsoft Intune).  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Come aggiornare l'app Portale aziendale sui dispositivi degli utenti se hanno già installato le app precedenti dallo Store?
-Se gli utenti hanno già installato le app Portale aziendale di Windows 8.1 o Windows Phone 8.1 dallo Store, queste dovrebbero essere aggiornate automaticamente alla nuova versione senza alcun intervento da parte dell'amministratore o dell'utente. Se l'aggiornamento non viene eseguito, chiedere agli utenti di controllare se hanno abilitato gli aggiornamenti automatici per le app dello Store sui dispositivi.   
+
+Se gli utenti hanno già installato le app Portale aziendale di Windows 8.1 o Windows Phone 8.1 dallo Store, queste dovrebbero essere aggiornate automaticamente alla nuova versione senza alcun intervento da parte dell'amministratore o dell'utente. Se l'aggiornamento non viene eseguito, chiedere agli utenti di controllare se hanno abilitato gli aggiornamenti automatici per le app dello Store sui dispositivi.
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Come aggiornare l'app Portale aziendale di Windows 8.1 trasferita localmente all'app Portale aziendale di Windows 10?
+
 Il percorso di migrazione consigliato consiste nell'eliminare la distribuzione dell'app Portale aziendale di Windows 8.1 impostando l'azione di distribuzione su "Disinstalla". Al termine di questa operazione, l'app Portale aziendale di Windows 10 può essere distribuita usando una delle opzioni precedenti.  
 
 Se è necessario trasferire localmente l'app e si è distribuita l'app Portale aziendale di Windows 8.1 senza firmarla con il certificato Symantec, per completare l'aggiornamento seguire i passaggi riportati nella sezione relativa alla distribuzione diretta tramite Intune.
@@ -110,6 +112,7 @@ Se è necessario trasferire localmente l'app e si è distribuita l'app Portale a
 Se è necessario trasferire localmente l'app e si è firmata e distribuita l'app Portale aziendale di Windows 8.1 con il certificato di firma codice Symantec, seguire i passaggi illustrati nella sezione seguente.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Come aggiornare l'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 firmata e trasferita localmente all'app Portale aziendale di Windows 10?
+
 Il percorso di migrazione consigliato consiste nell'eliminare la distribuzione esistente dell'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 impostando l'azione di distribuzione su "Disinstalla". Al termine di questa operazione, l'app Portale aziendale di Windows 10 può essere distribuita normalmente.  
 
 In caso contrario, è necessario aggiornare e firmare l'app Portale aziendale di Windows 10 per assicurarsi che il percorso di aggiornamento venga rispettato.  

@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502919"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414587"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di Windows
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Usare queste informazioni per comprendere come e dove gli utenti possono ottenere le app che vengono distribuite tramite Microsoft Intune.
 
@@ -39,5 +37,6 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 **App non gestite**: possono essere gestite usando i criteri e non sono state integrate in Intune o non comprendono Intune App SDK. Non è possibile applicare i criteri di protezione delle app a queste app.
 
 ## <a name="see-also"></a>Vedere anche
+
 [Modalità di recupero delle app per gli utenti di Android](end-user-apps-android.md)
 [Modalità di recupero delle app per gli utenti di iOS](end-user-apps-android.md)

@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502863"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414567"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  Questo argomento descrive l'esperienza utente nell'uso di app a cui sono applicati i criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo alle app usate in un contesto aziendale, ad esempio quando l'utente accede alle app con un account aziendale o accede ai file archiviati in una posizione di OneDrive for Business.
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502863"
 Se il dispositivo **non è registrato in Intune**, all'utente verrà chiesto di riavviare l'app la prima volta che la usa. Il riavvio è necessario per consentire l'applicazione dei criteri di protezione all'app.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ I criteri di protezione delle app si applicano solo in un contesto aziendale. Di
 Le applicazioni con identità multiple permettono agli utenti di aggiungere più account.  L'APP Intune supporta un solo account gestito.  L'APP Intune non limita il numero di account non gestiti.
 
 Quando in un'applicazione è presente un account gestito:
-* Se un utente prova ad aggiungere un secondo account gestito, gli viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
-* Se l'amministratore IT aggiunge criteri a un secondo account esistente, all'utente viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
+
+- Se un utente prova ad aggiungere un secondo account gestito, gli viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
+- Se l'amministratore IT aggiunge criteri a un secondo account esistente, all'utente viene chiesto di selezionare quale account gestito usare.  L'altro account viene rimosso.
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio seguente.
 
@@ -68,4 +66,5 @@ L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A
 Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale in tale dispositivo potrebbe essere visualizzato un messaggio di blocco. Verranno visualizzati gli account e sarà quindi possibile scegliere l'account da rimuovere.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](end-user-mam-apps-android.md)

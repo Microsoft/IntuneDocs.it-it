@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999670"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415053"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemi operativi e browser supportati in Intune
 
@@ -37,14 +37,14 @@ Per altre informazioni sul supporto del provider di servizi di configurazione, v
 
 È possibile gestire i dispositivi che eseguono i sistemi operativi seguenti:
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivi Samsung Knox Standard supportati
 
 Per evitare errori di attivazione Knox che impediscono la registrazione MDM, l'app Portale aziendale tenta l'attivazione di Samsung Knox durante la registrazione MDM solo se il dispositivo da attivare è presente nell'[elenco dei dispositivi Knox supportati](https://www.samsungknox.com/knox-supported-devices/knox-workspace). I dispositivi che non supportano l'attivazione di Samsung Knox vengono registrati come dispositivi Android standard. Tra i dispositivi Samsung, non tutti hanno un numero di modello che supporta Knox. Verificare la compatibilità Knox presso il rivenditore del dispositivo prima dell'acquisto e della distribuzione di dispositivi Samsung.
 
 > [!NOTE]
-> Per la registrazione dei dispositivi Samsung Knox potrebbe essere necessario [abilitare l'accesso ai server Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+> Per la registrazione dei dispositivi Samsung Knox potrebbe essere necessario [abilitare l'accesso ai server Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers).
 
 L'elenco seguente riporta i modelli di dispositivi Samsung che non supportano Knox. L'app Portale aziendale per Android li registra come dispositivi Android nativi:
 
@@ -85,18 +85,17 @@ L'elenco seguente riporta i modelli di dispositivi Samsung che non supportano Kn
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Client software PC Windows
 
-Un [client software Intune](../manage-windows-pcs-with-microsoft-intune.md) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. Questa funzionalità è disponibile solo nel portale classico di Intune. È possibile usare il client software di Intune per gestire PC con Windows 7 e versioni successive, ad eccezione dell'edizione Windows 10 Home.
+Un [client software Intune](manage-windows-pcs-with-microsoft-intune.md) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. Questa funzionalità è disponibile solo nel portale classico di Intune. È possibile usare il client software di Intune per gestire PC con Windows 7 e versioni successive, ad eccezione dell'edizione Windows 10 Home.
 
 > [!Note]
 > Microsoft ha annunciato che il supporto di Windows 7 terminerà il 14 gennaio 2020. In questa data, terminerà anche il supporto di Intune per i dispositivi che eseguono Windows 7.
-
-> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto prossima per Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
+> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto prossima per Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+>
 > Microsoft Intune ritirerà il supporto per la console di Intune basata su Silverlight il 15 ottobre 2020. Questo ritiro include l'interruzione del supporto per il client software PC configurato della console Silverlight (chiamato anche agente PC)
-
+>
 > Per altre informazioni, vedere [Microsoft Intune ending support for the Silverlight-based admin console](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) (Fine del supporto di Microsoft Intune per la console di amministrazione basata su Silverlight)
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 Per le svariate attività amministrative è necessario usare uno dei siti Web di amministrazione seguenti.
 
-- [Interfaccia di amministrazione di Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portale di Azure](https://portal.azure.com/)
 
 Per questi portali sono supportati i browser seguenti:
+
 - Microsoft Edge (versione più recente)
 - Microsoft Internet Explorer 11
 - Safari (versione più recente, solo Mac)
 - Chrome (versione più recente)
 - Firefox (versione più recente)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Portale classico di Intune
 
 Il portale classico di Intune viene usato solo per gestire i dispositivi registrati con il client software per PC di Intune (https://manage.microsoft.com). Per il portale classico di Intune è richiesto il supporto di un browser Silverlight.
 
 La console di Intune è supportata dai browser Silverlight seguenti:
+
 - Internet Explorer 10 o versione successiva
 - Google Chrome (versioni precedenti alla versione 42)
 - Mozilla Firefox con Silverlight abilitato (versioni precedenti alla versione 56)

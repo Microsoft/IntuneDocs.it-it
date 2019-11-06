@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503033"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143182"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare una pagina relativa allo stato della registrazione
  
@@ -191,7 +191,6 @@ Di seguito sono riportati i problemi noti.
 - La disabilitazione del profilo ESP non comporta la rimozione dei criteri ESP dai dispositivi e gli utenti ottengono comunque ESP quando accedono al dispositivo per la prima volta. I criteri non vengono rimossi quando il profilo ESP è disabilitato. Per disabilitare ESP, è necessario distribuire URI OMA. Vedere sopra per le istruzioni su come disabilitare ESP usando URI OMA. 
 - Un riavvio in sospeso causerà sempre un timeout. Il timeout si verifica perché il dispositivo deve essere riavviato. Il riavvio è necessario per consentire il completamento dell'elemento rilevato nella pagina relativa allo stato della registrazione. Un riavvio causerà la chiusura della pagina relativa allo stato della registrazione e dopo il riavvio il dispositivo non verrà immesso durante la configurazione dell'account.  Si consiglia di non richiedere un riavvio con l'installazione dell'applicazione. 
 - Un riavvio durante la configurazione del dispositivo obbliga l'utente a immettere le proprie credenziali prima di passare alla fase di configurazione dell'account. Le credenziali utente non vengono mantenute durante il riavvio. Chiedere all'utente di immettere le credenziali, quindi la pagina relativa allo stato della registrazione può continuare. 
-- I certificati SCEP con criteri di Windows Hello for business causeranno il timeout perché l'utente non può completare la configurazione del PIN di Hello per consentire la concorrenza dell'installazione del certificato SCEP.  nessuna soluzione alternativa. La data di implementazione delle correzioni è Summer 2019. 
 - La pagina relativa allo stato della registrazione raggiunge sempre il timeout durante l'aggiunta di un account aziendale e dell'istituto di istruzione nelle versioni di Windows 10 precedenti alla 1903. La pagina relativa allo stato della registrazione attende il completamento della registrazione di Azure AD. Il problema è risolto in Windows 10 versione 1903 e successive.  
 - In Azure AD ibrido la distribuzione di Autopilot con ESP richiede più tempo rispetto alla durata del timeout definita nel profilo ESP. Nelle distribuzioni di Autopilot di Azure AD ibrido ESP richiede 40 minuti in più rispetto al valore impostato nel profilo ESP. Questo ritardo concede tempo al connettore AD locale per creare il nuovo record del dispositivo per Azure AD. 
 - La pagina di accesso di Windows non viene preventivamente popolata con il nome utente nella modalità definita dall'utente di Autopilot. Se avviene un riavvio durante la fase di configurazione del dispositivo di ESP:
