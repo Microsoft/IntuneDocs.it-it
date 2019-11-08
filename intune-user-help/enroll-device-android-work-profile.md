@@ -1,11 +1,11 @@
 ---
-title: Registrare il profilo di lavoro Android in Portale aziendale Intune | Microsoft Docs
-description: Come creare un profilo di lavoro e registrare il dispositivo in Portale aziendale Intune.
+title: Registrare un profilo di lavoro Android in Portale aziendale Intune | Microsoft Docs
+description: Come creare un profilo di lavoro e registrare il dispositivo con Portale aziendale Intune.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50e4bde49f671a7f828ddb982fa18a3e68de25f6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 210eb94cf77ac703076611d2c0c06c60a12cb0ed
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506272"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415005"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrare un dispositivo con profilo di lavoro Android
 
-Registrare il dispositivo Android personale per accedere a posta elettronica, app e altri dati aziendali. Durante la registrazione verrà configurato un profilo di lavoro Android. Questo profilo separa i dati personali nel dispositivo dai dati aziendali. Il supporto tecnico dell'azienda gestisce solo il profilo di lavoro, che è costituito da file e dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali nel dispositivo dell'utente.
+Registrare il dispositivo Android personale per accedere a posta elettronica, app e altri dati aziendali o dell'istituto di istruzione. Durante la registrazione verrà configurato un profilo di lavoro Android. Questo profilo separa i dati personali nel dispositivo dai dati aziendali. L'organizzazione gestisce il profilo di lavoro, costituito da file di lavoro e dati. Il supporto tecnico aziendale non può gestire i dati personali nel dispositivo dell'utente.  
 </br>
 > [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
 
@@ -36,51 +36,51 @@ Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lav
 
 ## <a name="create-work-profile-and-enroll-device"></a>Creare il profilo di lavoro e registrare il dispositivo
 
-1. Accedere all'app Portale aziendale per Android con l'account aziendale o dell'Istituto di istruzione. Se l'app gratuita non è stata installata, installarla da [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
+1. Aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione. Se l'app gratuita non è stata installata, installarla da [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
 
-2. Nella schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**.  
+2. Nella schermata **Configurazione dell'accesso aziendale** toccare **INIZIA**.  
 
-    ![Screenshot della schermata di configurazione dell'accesso aziendale](./media/android-wp-02-1908.png)  
+    ![Screenshot della schermata di configurazione dell'accesso aziendale](./media/access-setup-work-profile-1911.png)  
 
-3. Leggere l'elenco di cosa può e cosa non può essere visualizzato dal supporto tecnico aziendale sul dispositivo. Quindi toccare **CONTINUA**.   
+3. Esaminare le informazioni che l'organizzazione può e non può visualizzare. Quindi toccare **CONTINUA**. 
 
-    ![Screenshot della schermata privacy](./media/android-wp-03-1908.png)  
+    ![Immagine di esempio di Portale aziendale, ci occupiamo della schermata sulla privacy, evidenziando il pulsante continue (continua).](./media/android-privacy-screen-1911.png)  
+4. Esaminare gli elementi che è possibile prevedere nei prossimi passaggi. Quindi toccare **Avanti**.  
 
-4. Nella schermata **operazioni successive** leggere le informazioni sulle operazioni che si verificano durante la registrazione. Quindi toccare **Avanti**.  
+    ![Immagine di esempio di Portale aziendale, schermata successiva, che evidenzia il pulsante Avanti.](./media/android-wp-04-1908.png)  
 
-    ![Screenshot della schermata elementi successivi](./media/android-wp-04-1908.png)
-
-5. La schermata successiva mostra i termini di Google per la creazione di un profilo di lavoro. Leggere i termini e quindi toccare **accetta &AMP; continuare**. L'aspetto di questa schermata può variare in base alla versione di Android del dispositivo. 
+5. Esaminare i termini di Google per la creazione di un profilo di lavoro. Toccare quindi **ACCEPT & CONTINUE** (Accetta e continua). L'aspetto di questa schermata può variare in base alla versione di Android del dispositivo. 
 
     ![Screenshot dei termini del profilo di lavoro di Google](./media/android-wp-05-1908.png)  
 
-    Il profilo di lavoro inizierà l'installazione. 
+6. Attendere la configurazione del profilo di lavoro.  
 
-     ![Screenshot della schermata "impostazione del profilo di lavoro".](./media/android-wp-05a-1908.png) 
+    ![Screenshot della schermata "impostazione del profilo di lavoro".](./media/android-wp-05a-1908.png)  
 
-     A seconda della versione di Android, potrebbe essere visualizzata una schermata aggiuntiva che indica la metà del programma di installazione. Se viene visualizzata questa schermata, attendere alcuni istanti fino a quando non si viene reindirizzati e si accede all'app Portale aziendale.  
+   A seconda della versione di Android, è possibile che venga visualizzata una schermata aggiuntiva. Indicherà che si sta eseguendo la configurazione a metà. Se viene visualizzata questa schermata, attendere alcuni istanti fino a quando non si viene reindirizzati e si accede all'app Portale aziendale.  
 
-     ![Screenshot della schermata "si sta a metà della pagina" con il messaggio di reindirizzamento.](./media/android-wp-05b-1908.png) 
+    ![Screenshot della schermata "si sta a metà della pagina" con il messaggio di reindirizzamento.](./media/android-wp-05b-1908.png)  
 
-6. Nella schermata **configurazione dell'accesso aziendale** verificare che il profilo di lavoro sia stato creato. Quindi toccare **CONTINUA**.  
+7. Nella schermata **configurazione dell'accesso aziendale** verificare che il profilo di lavoro sia stato creato. Quindi toccare **CONTINUA**.  
 
-    ![Screenshot della configurazione dell'accesso aziendale che mostra il profilo di lavoro creato.](./media/android-wp-06-1908.png)  
+    ![Screenshot della configurazione dell'accesso aziendale che mostra il profilo di lavoro creato.](./media/work-profile-complete-1911.png)  
 
-7. Verificare che il profilo di lavoro sia attivo. Quindi toccare **CONTINUA**. 
+8. Verificare che il profilo di lavoro sia attivo. Quindi toccare **CONTINUA**. 
 
-    ![Screenshot della configurazione dell'accesso aziendale che mostra il profilo di lavoro attivo.](./media/android-wp-07-1908.png)  
+    ![Screenshot della configurazione dell'accesso aziendale che mostra il profilo di lavoro attivo.](./media/work-profile-active-1911.png)  
 
-8. Per l'organizzazione potrebbe essere necessario aggiornare le impostazioni del dispositivo, ad esempio impostando una password. Al termine dell'operazione, toccare **continua**.  
+9. Per l'organizzazione potrebbe essere necessario aggiornare le impostazioni del dispositivo. Toccare **Risolvi** per modificare un'impostazione. Al termine dell'aggiornamento delle impostazioni, toccare **continua**.    
 
-    ![Screenshot della schermata Aggiorna impostazioni dispositivo.](./media/android-wp-08-1908.png) 
-
-9. Quando viene visualizzata la schermata **La configurazione è completata**, schermata, toccare **fine**.  
-
-    ![In Configurazione dell'accesso aziendale è possibile notare che il profilo di lavoro e la registrazione sono completi](./media/android-wp-09-1908.png)  
+    ![Immagine di esempio di Portale aziendale, aggiornare la schermata delle impostazioni del dispositivo, evidenziare i pulsanti Risolvi e continua.](./media/resolve-settings-1911.png) 
 
 
-È ora possibile installare le app aziendali nel dispositivo. Per trovare e installare queste app, passare all'archivio Google Play gestito. 
+10. Al termine dell'installazione, toccare **fine**.  
+
+    ![Immagine di esempio di Portale aziendale, schermata di configurazione dell'accesso aziendale, che mostra il pulsante completato per l'installazione e l'evidenziazione.](./media/work-profile-done-1911.png)  
+
 
 ## <a name="next-steps"></a>Passaggi successivi  
+
+Ora che il dispositivo è registrato, è possibile installare le app School o Work nel dispositivo. Per trovare e installare queste app, passare all'archivio Google Play gestito. 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
