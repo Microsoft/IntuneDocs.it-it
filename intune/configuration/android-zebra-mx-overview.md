@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496045"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182854"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizzare e gestire i dispositivi Zebra con Mobility Extensions di Zebra in Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496045"
 
 Intune include un'ampia gamma di funzionalità, tra cui la gestione delle app e la configurazione delle impostazioni del dispositivo. Queste funzionalità e impostazioni predefinite gestiscono i dispositivi Android prodotti da Zebra Technologies, noti anche come "dispositivi Zebra".
 
-Nei dispositivi Android, utilizzare i profili **Mobility Extensions (MX)** per personalizzare o aggiungere altre impostazioni specifiche di Zebra.
+Nei dispositivi Android, usare i profili **Mobility Extensions (MX)** di Zebra per personalizzare o aggiungere altre impostazioni specifiche di Zebra.
 
 Questo articolo illustra come utilizzare Mobility Extensions (MX) di Zebra sui dispositivi Zebra in Microsoft Intune.
 
@@ -52,6 +52,7 @@ Con Intune, è possibile registrare i dispositivi Zebra per distribuire le app l
 - Assicurarsi di disporre della versione più recente dell'app desktop StageNow di Zebra Technologies.
 - Assicurarsi di controllare la [matrice completa delle funzionalità MX di Zebra](http://techdocs.zebra.com/mx/compatibility) (apre il sito Web di Zebra) per verificare che i profili creati siano compatibili con la versione di MX, la versione del sistema operativo e il modello del dispositivo.
 - Alcuni dispositivi, ad esempio i dispositivi TC20/25, non supportano tutte le funzionalità MX disponibili in StageNow. Assicurarsi di controllare la [matrice delle funzionalità di Zebra](http://techdocs.zebra.com/mx/tc2x/) (apre il sito Web di Zebra) per informazioni aggiornate sul supporto.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Passaggio 1: installare l'app Portale aziendale più recente
 

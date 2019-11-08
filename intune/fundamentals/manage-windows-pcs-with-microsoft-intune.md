@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510093"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414399"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72510093"
 > [!WARNING]
 > Microsoft ha annunciato che il [supporto di Windows 7 terminerà il 14 gennaio 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). In questa data, terminerà anche il supporto di Intune per i dispositivi che eseguono Windows 7. Microsoft consiglia vivamente di passare a Windows 10 per impedire eventuali interruzioni di servizio o supporto.
 > 
-> Per altre informazioni, vedere [la pagina relativa alla pianificazione per la modifica di Intune: prossimi alla fine del supporto per Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-).
+> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto prossima per Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
 
 > [!NOTE]
 > È possibile usare Microsoft Intune per gestire i PC Windows [come dispositivi mobili con la soluzione di gestione dei dispositivi mobili (MDM)](../enrollment/windows-enroll.md) o come computer con il software client di Intune come descritto di seguito. Microsoft consiglia tuttavia ai clienti di [usare la soluzione di gestione MDM](../enrollment/windows-enroll.md) laddove possibile. Per altre informazioni, vedere [Confrontare la gestione dei PC Windows come computer o come dispositivi mobili](pc-management-comparison.md) 
@@ -62,7 +62,7 @@ Di seguito sono elencati i requisiti software per l'installazione del client:
 |---------------|--------------------|
 |Sistema operativo | Il dispositivo Windows deve eseguire Windows 7 SP1 e Windows 8.1 o una versione successiva. </br></br>**Le edizioni Home non sono supportate**|
 |Autorizzazioni amministrative|L'account che installa il software client deve avere le autorizzazioni di amministratore locale per il dispositivo specificato.|
-|Windows Installer 3.1|Il computer deve avere almeno Windows Installer 3.1.<br /><br />Per visualizzare la versione di Windows Installer in un computer:<br /><br />  Nel PC fare clic con il pulsante destro del mouse su **%windir%\System32\msiexec.exe** e quindi scegliere **Proprietà**.<br /><br />È possibile scaricare la versione più recente di Windows Installer da [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) dal sito Web Microsoft Developer Network.|
+|Windows Installer 3.1|Il computer deve avere almeno Windows Installer 3.1.<br /><br />Per visualizzare la versione di Windows Installer in un computer:<br /><br />  Nel PC fare clic con il pulsante destro del mouse su **%windir%\System32\msiexec.exe** e quindi scegliere **Proprietà**.<br /><br />È possibile scaricare la versione più recente di Windows Installer da [Windows Installer Redistributables](https://go.microsoft.com/fwlink/?LinkID=234258) dal sito Web Microsoft Developer Network.|
 |Rimuovere il software client incompatibile|Prima di installare il software client di Intune, è necessario disinstallare dal PC eventuale software client di Configuration Manager, Operations Manager e Service Manager.|
 
 ## <a name="deploying-the-intune-software-client"></a>Distribuzione del client software di Intune
