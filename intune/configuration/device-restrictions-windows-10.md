@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493905"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755272"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -223,12 +223,12 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 - **Notifiche del centro notifiche (solo per dispositivi mobili)** : **Blocca** impedisce la visualizzazione delle notifiche del centro notifiche nella schermata di blocco del dispositivo. L'impostazione **Non configurata** (predefinita) consente agli utenti di scegliere quali app mostrano le notifiche nella schermata di blocco.
 
-  [Provider di servizi di configurazione AboveLock/AllowActionCenterNotifications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [Provider di servizi di configurazione AboveLock/AllowActionCenterNotifications](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **URL dell'immagine della schermata bloccata (solo desktop)** : immettere l'URL di un'immagine in formato JPG, JPEG o PNG da usare come sfondo della schermata di blocco di Windows. Immettere ad esempio `https://contoso.com/image.png`. Questa impostazione blocca l'immagine e non può essere modificata in un secondo momento.
 - **Timeout dello schermo configurabile dall'utente (solo dispositivi mobili)** : **Consenti** permette agli utenti di configurare il timeout dello schermo. L'impostazione **Non configurata** (predefinita) non offre agli utenti questa opzione.
 
-  [Provider di servizi di configurazione DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [Provider di servizi di configurazione DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **Cortana nella schermata di blocco** (solo desktop): **Blocca** impedisce agli utenti di interagire con Cortana quando è attiva la schermata di blocco del dispositivo. L'impostazione **Non configurata** (predefinita) consente l'interazione con Cortana.
 
@@ -240,7 +240,7 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 - **Timeout dello schermo (solo dispositivi mobili)** : impostare il tempo di attesa, in secondi, dal blocco dello schermo alla disattivazione dello schermo. I valori supportati sono compresi tra 11 e 1800. Ad esempio, immettere `300` per impostare il timeout di 5 minuti.
 
-  [Provider di servizi di configurazione DeviceLock/ScreenTimeoutWhileLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [Provider di servizi di configurazione DeviceLock/ScreenTimeoutWhileLocked](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>Messaggistica
 

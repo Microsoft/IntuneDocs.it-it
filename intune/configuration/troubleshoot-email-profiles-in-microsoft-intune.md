@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506575"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755012"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di posta elettronica in Microsoft Intune
 
@@ -32,7 +32,6 @@ Esaminare alcuni problemi comuni relativi ai profili di posta elettronica e le r
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 - I profili di posta elettronica vengono distribuiti per l'utente che ha registrato il dispositivo. Per configurare il profilo di posta elettronica, Intune usa le proprietà Azure Active Directory (AD) nel profilo di posta elettronica dell'utente durante la registrazione. L' [aggiunta delle impostazioni di posta elettronica ai dispositivi](email-settings-configure.md) può essere una risorsa efficace.
-- Dopo aver eseguito la migrazione da Configuration Manager ibrido a Intune autonomo, il profilo di posta elettronica da Configuration Manager Hybrid rimane sul dispositivo per 7 giorni. Si tratta di un comportamento previsto. Se è necessario rimuovere prima il profilo di posta elettronica, contattare il [supporto di Intune](../fundamentals/get-support.md).
 - Per Android Enterprise, distribuire Gmail o Nine for Work usando il Google Play Store gestito. [Aggiungi app Google Play gestite](../apps/apps-add-android-for-work.md) elenca i passaggi.
 - Microsoft Outlook per iOS e Android non supporta i profili di posta elettronica. Distribuire invece un criterio di configurazione delle app. Per altre informazioni, vedere [impostazione di configurazione di Outlook](../apps/app-configuration-policies-outlook.md).
 - I profili di posta elettronica assegnati ai gruppi di dispositivi (non gruppi di utenti) non possono essere recapitati al dispositivo. Quando il dispositivo ha un utente primario, la destinazione del dispositivo dovrebbe funzionare. Se il profilo di posta elettronica include certificati utente, assicurarsi di fare riferimento ai gruppi di utenti.
@@ -62,22 +61,10 @@ Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di ori
 
 Gli utenti con account di posta elettronica configurati automaticamente non possono inviare immagini o foto dai propri dispositivi. Questo scenario può verificarsi se l'opzione **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** non è abilitata.
 
-### <a name="intune-solution"></a>Soluzione Intune
-
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili**.
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **dispositivi** > **profili di configurazione**.
 3. Selezionare il profilo di posta elettronica > **proprietà**  > **Impostazioni**.
 4. Impostare l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** per **abilitare**.
-
-### <a name="configuration-manager-hybrid"></a>Distribuzione ibrida di Configuration Manager
-
-1. Aprire la console di Configuration Manager > **Asset e conformità**.
-
-2. Espandere **Panoramica** > **Impostazioni di conformità** > **Accesso risorse aziendali** e selezionare **Profili di posta elettronica**.
-
-3. Fare clic con il tasto destro del mouse sul profilo di posta elettronica e aprire **Proprietà**.
-
-4. Nella scheda **Impostazioni di sincronizzazione** selezionare **Consenti di inviare messaggi di posta elettronica da applicazioni di terze parti**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

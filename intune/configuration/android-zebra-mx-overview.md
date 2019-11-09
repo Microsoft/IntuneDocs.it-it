@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
-ms.translationtype: HT
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182854"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756723"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizzare e gestire i dispositivi Zebra con Mobility Extensions di Zebra in Microsoft Intune
 
@@ -52,7 +52,6 @@ Con Intune, è possibile registrare i dispositivi Zebra per distribuire le app l
 - Assicurarsi di disporre della versione più recente dell'app desktop StageNow di Zebra Technologies.
 - Assicurarsi di controllare la [matrice completa delle funzionalità MX di Zebra](http://techdocs.zebra.com/mx/compatibility) (apre il sito Web di Zebra) per verificare che i profili creati siano compatibili con la versione di MX, la versione del sistema operativo e il modello del dispositivo.
 - Alcuni dispositivi, ad esempio i dispositivi TC20/25, non supportano tutte le funzionalità MX disponibili in StageNow. Assicurarsi di controllare la [matrice delle funzionalità di Zebra](http://techdocs.zebra.com/mx/tc2x/) (apre il sito Web di Zebra) per informazioni aggiornate sul supporto.
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Passaggio 1: installare l'app Portale aziendale più recente
 
@@ -134,8 +133,8 @@ Dopo avere testato il file, il passaggio successivo consiste nel distribuire il 
 
 Creare un profilo di configurazione del dispositivo in Intune:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **dispositivi** > **profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.

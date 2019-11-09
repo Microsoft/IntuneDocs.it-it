@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492129"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754939"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Risolvere problemi relativi a criteri e profili in Intune
 
@@ -32,11 +32,12 @@ Microsoft Intune include alcune funzioni predefinite per la risoluzione dei prob
 Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e descrive alcuni problemi che possono verificarsi.
 
 ## <a name="check-tenant-status"></a>Verificare lo stato del tenant
+
 Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare che la sottoscrizione sia attiva. È inoltre possibile visualizzare i dettagli per gli eventi imprevisti e gli avvisi attivi che potrebbero influisca sulla distribuzione del profilo o del criterio.
 
 ## <a name="use-built-in-troubleshooting"></a>Usare la risoluzione dei problemi predefinita
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **Risoluzione dei problemi**:
+1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)selezionare **risoluzione dei problemi e supporto**:
 
     ![In Intune passare a Guida e supporto tecnico e selezionare Risoluzione dei problemi](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Non si è sicuri che i criteri siano stati applicati correttamente
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Dispositivi** > **Tutti i dispositivi** > selezionare il dispositivo > **Configurazione del dispositivo**. 
 
     Vengono elencati i profili di tutti i dispositivi. Ogni profilo ha uno **Stato**. Lo stato si applica quando tutti i profili assegnati, tra cui le restrizioni e i requisiti hardware e del sistema operativo, vengono considerati insieme. Gli stati possibili comprendono:

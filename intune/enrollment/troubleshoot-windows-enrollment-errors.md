@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892548"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712853"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune
 
@@ -60,7 +60,7 @@ Errore 80180003: "Si è verificato un errore. Questo utente non è autorizzato a
 Esistono diverse soluzioni possibili per questo problema:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Rimuovere i dispositivi registrati
-1. Accedere al [portale di Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).    
 2. Passare a **utenti**  > **tutti gli utenti**.    
 3. Selezionare l'account utente interessato e quindi fare clic su **dispositivi**.    
 4. Selezionare tutti i dispositivi inutilizzati o indesiderati, quindi fare clic su **Elimina**. 
@@ -70,12 +70,12 @@ Esistono diverse soluzioni possibili per questo problema:
 > [!NOTE]
 > Questo metodo aumenta il limite di registrazione del dispositivo per tutti gli utenti, non solo per l'utente interessato.
 
-1. Accedere al [portale di Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Passare a **registrazione del dispositivo**  > **restrizioni di registrazione**e quindi selezionare limitazioni per il **limite di dispositivi**.    
 3. Aumentare il valore del **limite del dispositivo**. 
 
 ##### <a name="check-device-type-restrictions"></a>Controllare le restrizioni sul tipo di dispositivi
-1. Accedere al [portale di Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) con un account di amministratore globale.
+1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con un account amministratore globale.
 2. Passare a **registrazione del dispositivo**  > **restrizioni di registrazione**e quindi selezionare la restrizione **predefinita** in restrizioni del **tipo di dispositivo**.    
 3. Selezionare **piattaforme**, quindi selezionare **Consenti** per **Windows (MDM)** .
 
