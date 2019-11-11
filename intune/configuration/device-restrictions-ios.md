@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414684"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709753"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -417,6 +417,9 @@ Si applica ai dispositivi che eseguono iOS 9,3 o versione successiva.
 - **Tipo di elenco di app**: creare un elenco di app da mostrare o nascondere. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094). Le opzioni disponibili sono:
 
   - **App nascoste**: immettere un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o aprire queste app.
+  
+    Apple impedisce di nascondere alcune app native. Ad esempio, non è possibile nascondere le **Impostazioni** o le app del **portafogli** sul dispositivo. [Elimina app Apple predefinite](https://support.apple.com/HT208094) elenca le app che possono essere nascoste.
+  
   - **App visibili**: immettere un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
 
 - **URL app**: immettere l'URL dell'app Store dell'app che si desidera visualizzare o nascondere. Ad esempio:

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713481"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -44,7 +44,7 @@ Prima di eseguire lo strumento di wrapping delle app, è necessario soddisfare a
 
   * Il file dell'app di input deve avere estensione **ipa** o **app**.
 
-  * L'app di input deve essere compilata per iOS 10 o versioni successive.
+  * L'app di input deve essere compilata per iOS 11 o versioni successive.
 
   * L'app di input non può essere crittografata.
 
@@ -289,26 +289,27 @@ Se lo strumento di wrapping delle app non viene eseguito correttamente, nella co
 |È già stato eseguito il wrapping dell'app di input specificata e la versione del modello di criteri è la più recente.|Lo strumento di wrapping delle app non eseguirà nuovamente il wrapping di un'app esistente di cui è già stato eseguito il wrapping con la versione più recente del modello di criteri.|
 |AVVISO: non è stato specificato un hash SHA1 del certificato. Verificare che l'applicazione di cui è stato eseguito il wrapping è firmata prima della distribuzione.|Verificare di avere specificato un hash SHA1 valido dopo il flag della riga di comando -c. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>File di log per lo strumento di wrapping delle app
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Raccolta dei log per le applicazioni di cui è stato eseguito il wrapper dal dispositivo
+Usare questa procedura per ottenere i log per le applicazioni di cui è stato eseguito il wrapping durante la risoluzione dei problemi.
 
-Le app di cui è stato eseguito il wrapping tramite lo strumento di wrapping delle app generano log che vengono scritti nella console del dispositivo client iOS. Queste informazioni sono utili quando si riscontrano problemi con l'applicazione ed è necessario determinare se il problema è correlato allo strumento di wrapping delle app. Per recuperare queste informazioni, usare i passaggi seguenti:
+1. Passare all'app Impostazioni iOS nel dispositivo e selezionare l'app LOB.
+2. Impostare **Diagnostics Console** (Console diagnostica) su **On**.
+3. Avviare l'applicazione LOB.
+4. Fare clic sul collegamento "Get Started" (Per iniziare).
+5. È ora possibile condividere i log tramite posta elettronica o copiarli in un percorso di OneDrive.
+
+> [!NOTE]
+> La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Raccolta dei log di arresto anomalo del sistema
+
+È possibile che l'app stia registrando informazioni utili sulla console del dispositivo client iOS. Queste informazioni sono utili quando si riscontrano problemi con l'applicazione ed è necessario determinare se il problema è correlato allo strumento di wrapping delle app o all'app stessa. Per recuperare queste informazioni, usare i passaggi seguenti:
 
 1. Riprodurre il problema eseguendo l'app.
 
 2. Raccogliere l'output della console seguendo le istruzioni di Apple fornite nell'articolo relativo al [debug delle app iOS distribuite](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3. Filtrare i log salvati per l'output delle restrizioni dell'app immettendo lo script seguente nella console:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    È possibile inviare i log filtrati a Microsoft.
-
-    > [!NOTE]
-    > Nel file di log, l'elemento 'build version' rappresenta la versione build di Xcode.
-
-    Anche nelle app di cui è stato eseguito il wrapping sarà presente un'opzione per inviare i log direttamente dal dispositivo tramite posta elettronica dopo l'arresto anomalo dell'app. Il responsabile potrà analizzare i log inviati dagli utenti e se necessario inoltrarli a Microsoft.
+Anche nelle app di cui è stato eseguito il wrapping sarà presente un'opzione per inviare i log direttamente dal dispositivo tramite posta elettronica dopo l'arresto anomalo dell'app. Il responsabile potrà analizzare i log inviati dagli utenti e se necessario inoltrarli a Microsoft.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificato, profilo di provisioning e requisiti di autenticazione
 
@@ -442,19 +443,6 @@ Eseguire semplicemente il comando di wrapping delle app generale con il flag `-c
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Recupero dei log per le applicazioni di cui è stato eseguito il wrapping
-
-Usare questa procedura per ottenere i log per le applicazioni di cui è stato eseguito il wrapping durante la risoluzione dei problemi.
-
-1. Passare all'app Impostazioni iOS nel dispositivo e selezionare l'app LOB.
-2. Impostare **Diagnostics Console** (Console diagnostica) su **On**.
-3. Avviare l'applicazione LOB.
-4. Fare clic sul collegamento "Get Started" (Per iniziare).
-5. È ora possibile condividere i log tramite posta elettronica o copiarli in un percorso di OneDrive.
-
-> [!NOTE]
-> La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
 
 ## <a name="see-also"></a>Vedere anche
 
