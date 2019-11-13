@@ -2,8 +2,8 @@
 title: Firmare e crittografare la posta elettronica usando S/MIME - Microsoft Intune - Azure | Microsoft Docs
 description: Informazioni su come usare i certificati digitali di posta elettronica in Microsoft Intune per firmare e crittografare i messaggi di posta elettronica nei dispositivi. Questi certificati vengono chiamati S/MIME e vengono configurati usando profili di configurazione. I certificati di firma e crittografia usano PKCS o i certificati privati e un connettore per importare i certificati.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b16953b3402bf8aa48f0a01e5e11d9f90d56f2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502497"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801499"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Panoramica di S/MIME per firmare e crittografare la posta elettronica in Intune
 
