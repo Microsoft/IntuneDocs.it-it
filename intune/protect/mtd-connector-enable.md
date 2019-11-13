@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810298"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627692"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
@@ -63,8 +63,8 @@ Per visualizzare i criteri di accesso condizionale classici, in [Azure](https://
 È possibile decidere quali opzioni di attivazione/disattivazione di Mobile Threat Defense è necessario abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
 
 **Impostazioni dei criteri di conformità di MDM**
-- **Connetti dispositivi Android 4.1+ a *\<nome partner MTD>***: quando si abilita questa opzione, è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza a Intune.
-- **Connetti dispositivi iOS 8.0+ a *\<nome partner MTD>***: quando si abilita questa opzione, è possibile fare in modo che i dispositivi iOS 8.0+ segnalino i rischi di sicurezza in Intune.
+- **Connetti dispositivi Android 4.1+ a _\<nome partner MTD>_** : quando si abilita questa opzione, è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza a Intune.
+- **Connetti dispositivi iOS 8.0+ a _\<nome partner MTD>_** : quando si abilita questa opzione, è possibile fare in modo che i dispositivi iOS 8.0+ segnalino i rischi di sicurezza in Intune.
 - **Abilita la sincronizzazione delle app per dispositivi iOS**: consente a questo partner di Mobile Threat Defense di richiedere metadati delle applicazioni iOS da Intune da usare per l'analisi delle minacce.
 - **Blocca le versioni del sistema operativo non supportate**: bloccare un dispositivo che esegue un sistema operativo con un versione precedente a quella minima supportata.
 

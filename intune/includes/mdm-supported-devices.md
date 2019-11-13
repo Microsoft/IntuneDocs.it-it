@@ -1,24 +1,20 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239589"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445863"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 e versioni successive
+- Apple iOS e iPadOS 11.0 e versioni successive
 - Mac OS X 10.12 e versioni successive
 
 ### <a name="google"></a>Google
-- Android 4.4 e versione successiva (incluso Samsung Knox Standard 4.4 e versione successiva)
-
-  È possibile trovare l'elenco completo dei dispositivi Samsung Knox Standard verificati in [Impostazioni dei criteri di Android e Samsung Knox Standard](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
-
-
-- [Requisiti](https://support.google.com/work/android/answer/6174145?hl=en) di Android Enterprise.
+- Android 5.0 e versioni successive (incluso Samsung KNOX Standard 2.4 e versioni successive: [requisiti](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android Enterprise: [requisiti](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,18 +22,18 @@ ms.locfileid: "71239589"
 - Windows 10 (versioni Home, S, Pro, Education ed Enterprise)
 - Windows 10 Enterprise 2019 LTSC
 
-  Per altre informazioni sulla gestione dei dispositivi che eseguono Windows 10 2019 LTSC, vedere [Novità di Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019)
+  Per altre informazioni sulla gestione dei dispositivi che eseguono Windows 10 2019 LTSC, vedere [Novità di Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019)
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  Per altre informazioni sulla gestione dei dispositivi che eseguono Windows Holographic for Business, vedere [Supporto di Windows Holographic for Business](../windows-holographic-for-business.md).
+  Per altre informazioni sulla gestione dei dispositivi che eseguono Windows Holographic for Business, vedere [Supporto di Windows Holographic for Business](../fundamentals/windows-holographic-for-business.md).
 
 - Windows 10 Teams (Surface Hub)
 
-   Per altre informazioni sulla gestione dei dispositivi che eseguono Windows 10 Teams, vedere [Gestire Surface Hub con MDM](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub)
+   Per altre informazioni sulla gestione dei dispositivi che eseguono Windows 10 Teams, vedere [Gestire Surface Hub con MDM](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
 - Windows Phone 8.1, Windows 8.1 RT, PC che eseguono Windows 8.1 (modalità di mantenimento)
 
 > [!NOTE]

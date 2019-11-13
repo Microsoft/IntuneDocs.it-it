@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497909"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414629"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 
@@ -81,7 +81,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Stringa | %upn% |
 
 > [!NOTE]  
-> Per l'app Outlook in iOS, se si distribuiscono criteri di Configurazione app con l'opzione "Usa progettazione configurazione", la chiave di configurazione IntuneMAMUPN viene configurata automaticamente in background per i criteri. Per altri dettagli, vedere la sezione delle domande frequenti in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nuova esperienza per i criteri di configurazione dell'app Outlook per iOS e Android). 
+> Per Outlook in iOS, se si distribuiscono criteri di configurazione dell'app di dispositivi gestiti con l'opzione "Usa progettazione configurazione" e si abilita **Consenti solo account aziendali o dell'istituto di istruzione**, la chiave di configurazione IntuneMAMUPN viene configurata automaticamente in background per i criteri. Per altri dettagli, vedere la sezione delle domande frequenti in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nuova esperienza per i criteri di configurazione dell'app Outlook per iOS e Android - Configurazione app generale). 
 
 
 ### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza dell'utente finale

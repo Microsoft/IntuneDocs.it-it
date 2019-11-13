@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498040"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143206"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -139,7 +139,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 
 ### <a name="step-4-configure-app-installation-details"></a>Passaggio 4: Configurare i dettagli di installazione dell'app
 1. Nel riquadro **Aggiungi app** selezionare **Programma** per configurare i comandi di installazione e rimozione per l'app.
-2. Aggiungere la riga di comando di installazione completa per installare l'app. 
+2. Per configurare il **comando Installa**, aggiungere la riga di comando di installazione completa per installare l'app. 
 
     Se, ad esempio, il nome file dell'app è **MyApp123**, aggiungere quanto segue:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -148,9 +148,11 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     Nel comando precedente il pacchetto `ApplicationName.exe` supporta l'argomento di comando `/quiet`.<p> 
     Per gli argomenti specifici supportati dal pacchetto dell'applicazione, contattare il fornitore dell'applicazione.
 
-3. Aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
+3. Per configurare il **comando Disinstalla**, aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
 
     Ad esempio: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. Impostare il **Comportamento di installazione** su **Sistema** o **Utente**.
 
     > [!NOTE]
     > È possibile configurare un'app Win32 in modo che venga installata nel contesto **utente** o **di sistema**. Il contesto **utente** si riferisce solo a un determinato utente. Il contesto **di sistema** si riferisce a tutti gli utenti di un dispositivo Windows 10.
@@ -159,7 +161,13 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     > 
     > L'installazione e la disinstallazione delle app Win32 verranno eseguite con privilegi di amministratore (per impostazione predefinita) quando l'app è configurata per l'installazione nel contesto utente e l'utente finale nel dispositivo dispone di privilegi amministrativi.
 
-4. Al termine, fare clic su **OK**.
+5. Per configurare il **Comportamento riavvio dispositivo**, selezionare una delle opzioni seguenti:
+    - **Determinare il comportamento in base ai codici restituiti**: Scegliere questa opzione per riavviare il dispositivo in base alle impostazioni di configurazione dei [codici restituiti](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes).
+    - **Nessuna azione specifica**: Scegliere questa opzione per impedire i riavvii del dispositivo durante l'installazione delle app basate su MSI.
+    - **L'installazione dell'app può forzare il riavvio del dispositivo**: Scegliere questa opzione per consentire il completamento dell'installazione dell'app senza impedire i riavvii.
+    - **Intune forzerà il riavvio obbligatorio del dispositivo**: Scegliere questa opzione per riavviare sempre il dispositivo dopo l'installazione di un'app.
+
+6. Al termine, fare clic su **OK**.
 
 ### <a name="step-5-configure-app-requirements"></a>Passaggio 5: Configurare i requisiti dell'app
 
@@ -279,10 +287,11 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati.
     - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati.
 4. Selezionare **Gruppi inclusi** e assegnare i gruppi che useranno questa app.
-5. Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
-6. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
-7. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
-8. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
+5. Nel riquadro **Assegna** selezionare l'assegnazione in base a utenti o dispositivi. Quando si scelgono le assegnazioni, è anche possibile scegliere **Esperienza dell'utente finale**. L'opzione **Esperienza dell'utente finale** consente di impostare **Notifiche per l'utente finale**, **Periodo di tolleranza per il riavvio**, **Disponibilità** e **Scadenza installazione**. Per altre informazioni, vedere **Impostare la disponibilità e le notifiche delle app Win32**.
+6. Selezionare **OK** per completare la selezione dei gruppi inclusi.
+7. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
+8. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
+9. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
 
 A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 a Intune. Per informazioni sull'assegnazione e il monitoraggio di app, vedere [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md) e [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md).
 
@@ -328,6 +337,36 @@ L'utente finale riceverà le notifiche di tipo avviso popup di Windows per le in
 Nell'immagine seguente l'utente finale riceve una notifica indicante che sono in corso modifiche all'app nel dispositivo.
 
 ![Screenshot di invio della notifica relativa alle modifiche in corso per l'app](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+## <a name="set-win32-app-availability-and-notifications"></a>Impostare la disponibilità e le notifiche delle app Win32
+È possibile configurare l'ora di inizio e l'ora di scadenza per un'app Win32. All'ora di inizio, l'estensione di gestione di Intune avvia il download del contenuto dell'app e lo memorizza nella cache. L'app viene installata all'ora di scadenza. Per le app disponibili, l'ora di inizio determina quando l'app sarà visibile nel Portale aziendale e il contenuto verrà scaricato quando l'utente finale richiede l'app dal Portale aziendale. È anche possibile abilitare un periodo di tolleranza per il riavvio. 
+
+Impostare la disponibilità dell'app in base a una data e un'ora per un'app obbligatoria seguendo questa procedura:
+
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel pannello **Intune** selezionare **App client** > **App**.
+3. Selezionare un'**App Windows (Win32)** esistente dall'elenco. 
+4. Nel pannello dell'app selezionare **Assegnazioni** > **Aggiungi gruppo**. 
+5. Impostare **Tipo di assegnazione** su **Obbligatoria**. Si noti che la disponibilità dell'app può essere impostata in base al tipo di assegnazione. Il **Tipo di assegnazione** può essere **Obbligatorio**, **Disponibile per i dispositivi registrati** o **Disinstalla**.
+6. Selezionare **Gruppi inclusi** per determinare a quale gruppo di utenti verrà assegnata l'app. Verrà visualizzato il pannello **Assegna**.
+7. Impostare **Rendi questa app obbligatoria per tutti gli utenti** su **Sì**.
+
+    > [!NOTE]
+    > **Tipo di assegnazione** include le opzioni seguenti:<br>
+    > - **Obbligatoria**: È possibile scegliere **Rendi questa app obbligatoria per tutti gli utenti** e/o **Rendi questa app obbligatoria in tutti i dispositivi**.<br>
+    > - **Disponibile per i dispositivi registrati**: È possibile scegliere **Rendi questa app disponibile per tutti gli utenti con dispositivi registrati**.<br>
+    > - **Disinstalla**: È possibile scegliere ***Disinstalla questa app per tutti gli utenti** e/o **Disinstalla questa app per tutti i dispositivi**.
+
+8. Per modificare le opzioni **Esperienza dell'utente finale** selezionare **Modifica**.
+9. Nel pannello **Modifica assegnazione** impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**. Si noti che è possibile impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**, **Mostra le notifiche di tipo avviso popup per i riavvii dei computer** o **Nascondi tutte le notifiche di tipo avviso popup**.
+10. Impostare **Disponibilità dell'app** su **Data o ora specifiche** e selezionare la data e l'ora. La data e l'ora specificano quando l'app viene scaricata nel dispositivo degli utenti finali. 
+11. Impostare **Scadenza dell'installazione app** su **Data o ora specifiche** e selezionare la data e l'ora. La data e l'ora specificano quando l'app viene installata nel dispositivo degli utenti finali. Quando viene effettuata più di un'assegnazione per lo stesso utente o dispositivo, viene selezionata l'ora di scadenza dell'installazione dell'app in base alla prima ora possibile.
+12. Fare clic su **Abilitato** accanto a **Periodo di tolleranza per il riavvio**. Il periodo di tolleranza per il riavvio viene avviato non appena l'installazione dell'app è stata completata nel dispositivo. Quando è disabilitato, il dispositivo può essere riavviato senza preavviso. <br>È possibile personalizzare le opzioni seguenti:
+    - **Periodo di tolleranza per il riavvio del dispositivo (minuti)** : Il valore predefinito è 1440 minuti (24 ore). Il valore massimo è di 2 settimane.
+    - **Selezionare quando visualizzare la finestra di dialogo per il conto alla rovescia prima del riavvio (minuti)** : Il valore predefinito è 15 minuti.
+    - **Consenti all'utente di posporre la notifica di riavvio**: È possibile scegliere **Sì** o **No**.
+        - **Selezionare la durata della posposizione (minuti)** : Il valore predefinito è 240 minuti (4 ore). Il valore della posposizione non può essere maggiore del periodo di tolleranza per il riavvio.
+13. Fare clic su **OK** > **OK** > **OK** > **Salva** per aggiungere l'assegnazione.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notifiche di tipo avviso popup per app Win32 
 Se necessario, è possibile eliminare la visualizzazione delle notifiche di tipo avviso popup degli utenti finali per ogni assegnazione di app. In Intune selezionare **App client** > **App** > selezionare l'app > **Assegnazioni** > **Includi gruppi**. 

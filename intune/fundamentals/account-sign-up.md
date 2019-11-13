@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509163"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414661"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Iscriversi o accedere a Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Questo argomento descrive come gli amministratori iscriversi per ottenere un account Intune.
 
@@ -46,14 +44,17 @@ Se si ha già un account aziendale o dell'istituto di istruzione, **eseguire l'a
 2. Nella pagina Iscrizione accedere o eseguire l'iscrizione per la gestione di una nuova sottoscrizione a Intune.
 
 ## <a name="post-sign-up-considerations"></a>Considerazioni successive all'iscrizione
+
 Dopo avere eseguito l'iscrizione per una nuova sottoscrizione, all'indirizzo di posta elettronica specificato in fase di iscrizione viene inviato un messaggio contenente le informazioni sul proprio account. Questo messaggio conferma che la sottoscrizione è attiva.
 
 Dopo aver completato il processo di iscrizione, si viene indirizzati all'interfaccia di amministrazione di Microsoft 365, usata per aggiungere utenti e assegnare loro licenze. Se si hanno esclusivamente account basati su cloud che usano il nome di dominio onmicrosoft.com predefinito, è quindi possibile proseguire per aggiungere utenti e assegnare loro licenze. Tuttavia, se si prevede di usare il [nome di dominio personalizzato](custom-domain-name-configure.md) dell'organizzazione o di [sincronizzare le informazioni sull'account utente](users-add.md#sync-active-directory-and-add-users-to-intune) da Active Directory locale, è possibile chiudere la finestra del browser.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Accedere a Microsoft Intune
+
 Dopo l'iscrizione a Intune, è possibile usare qualsiasi dispositivo con un [browser supportato](supported-devices-browsers.md#intune-supported-web-browsers) per accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e amministrare il servizio.
 
 Per impostazione predefinita, l'account deve avere una delle autorizzazioni seguenti in Azure AD:
+
 - Amministratore globale
 - Amministratore del servizio Intune (noto anche come amministratore di Intune)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Gestione dispositivi mobili per Office 365: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>Vedere anche
+
 [Impossibile accedere a Office 365, Azure o Intune](https://support.microsoft.com/help/2412085)

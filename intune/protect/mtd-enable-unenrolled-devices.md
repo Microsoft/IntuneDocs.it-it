@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63079757ee3610d825601921da1d33aa94f851b6
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b2744a27a733824bab9d920f4de0b49e951c1c34
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794407"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627632"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Abilitare il connettore Mobile Threat Defense in Intune per i dispositivi non registrati
 
@@ -51,8 +51,8 @@ Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati c
 È possibile scegliere le opzioni di attivazione/disattivazione MTD da abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
 
 **Impostazioni dei criteri di protezione delle app**
-- **Connetti i dispositivi Android con versione 4.1 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
-- **Connetti i dispositivi iOS con versione 8.0 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
+- **Connetti i dispositivi Android con versione 4.4 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
+- **Connetti i dispositivi iOS con versione 11 e successiva a *\<nome partner MTD>* per la valutazione dei criteri di protezione dell'app**: Quando si abilita questa opzione, i criteri di protezione delle app che usano la regola Livello di minaccia del dispositivo valuteranno i dispositivi che includono dati da questo connettore.
 
 **Impostazioni condivise comuni**
 - **Numero di giorni dopo i quali il partner risulta non reattivo**: numero di giorni di inattività prima che Intune consideri il partner non reattivo a causa della perdita della connessione. Intune ignora lo stato di conformità per i partner MTD non reattivi.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507562"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592084"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso Web usando un browser protetto con criteri di Microsoft Intune
 
@@ -179,7 +179,7 @@ Usare la procedura precedente per creare una configurazione dell'app Microsoft E
 > [!NOTE]
 > Nei criteri di protezione delle app che gestiscono Microsoft Edge e le app associate specificate nella configurazione dell'app, verificare che siano state configurate le impostazioni dei criteri di protezione dati seguenti:
 > - Invia i dati dell'organizzazione ad altre app: **App gestite da criteri**
-> - Condividi il contenuto Web con browser gestiti da criteri: **Richiedi**
+> - Limita il trasferimento di contenuto Web con altre app: **Browser gestiti da criteri**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Come configurare le impostazioni del proxy di applicazione per i browser protetti
 

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509987"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801786"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 
@@ -36,6 +36,23 @@ Per gli studenti o i dipendenti, è consigliabile fare riferimento alle schermat
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>Settimana del 28 ottobre 2019  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Progettazione dell'elenco di controllo migliorata nell'app Portale aziendale per Android <!-- 5550857 -->  
+L'elenco di controllo della configurazione nell'app Portale aziendale per Android è stato aggiornato con una progettazione semplificata e nuove icone. Le modifiche sono in linea con gli aggiornamenti recenti dell'app Portale aziendale per iOS. Per informazioni sulla procedura di registrazione aggiornata, vedere [Registrare un dispositivo con profilo di lavoro Android](/intune-user-help/enroll-device-android-work-profile) e [Registrare il dispositivo in Portale aziendale](/intune-user-help/enroll-device-android-company-portal).  
+
+Le schermate seguenti illustrano l'elenco di controllo aggiornato per la registrazione del profilo di lavoro Android:
+
+|Aggiornamento|Precedente|  
+|---|---|  
+|![Immagine di esempio della configurazione del profilo di lavoro in Portale aziendale, con l'elenco di controllo semplificato e le nuove icone.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Immagine di esempio della configurazione precedente del profilo di lavoro in Portale aziendale, con un elenco di controllo più corposo.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+Le schermate seguenti illustrano l'elenco di controllo aggiornato per la registrazione di tipo Amministratore di dispositivi Android:  
+
+|Aggiornamento|Precedente|  
+|---|---|  
+|![Immagine di esempio della configurazione della registrazione Amministratore di dispositivi Android in Portale aziendale, con l'elenco di controllo semplificato e le nuove icone.](./media/whats-new-app-ui/android-checklist-1911.png)|![Immagine di esempio della configurazione precedente della registrazione Amministratore di dispositivi Android in Portale aziendale, con un elenco di controllo più corposo.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>Settimana del 9 settembre 2019
 
@@ -572,6 +589,6 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 
 
 ## <a name="see-also"></a>Vedere anche
-* [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Blog di Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novità in Intune](../whats-new.md)
+* [Novità in Intune](whats-new.md)

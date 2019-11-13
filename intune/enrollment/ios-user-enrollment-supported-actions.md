@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505410"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445306"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Azioni e opzioni di Intune supportate con la registrazione utente Apple
 
 La registrazione utente supporta un subset di opzioni di gestione dei dispositivi. Se un profilo di configurazione preesistente viene applicato a un dispositivo di registrazione utente, solo le impostazioni supportate dalla registrazione utente verranno applicate al dispositivo.
+
+> [!NOTE]
+> Il supporto per la registrazione utente di Apple in Intune è attualmente in versione di anteprima.
 
 ## <a name="password-settings"></a>Impostazioni della password
 
@@ -97,6 +100,19 @@ Le opzioni seguenti non sono supportate nei dispositivi registrati con la regist
 - Controllo MDM di applicazioni al di fuori del volume APFS gestito.
 - I criteri di protezione delle applicazioni verranno comunque applicati a queste app. Tuttavia, non sarà possibile assumere la gestione o distribuire una versione gestita di queste app a meno che l'utente non le elimini dal dispositivo.
 - Azioni, configurazioni, impostazioni e comandi che richiedono la supervisione. 
+
+## <a name="options-not-supported-in-preview"></a>Opzioni non supportate nell'anteprima
+- Restrizioni del tipo di dispositivo di registrazione per consentire o bloccare i dispositivi di proprietà personale 
+
+## <a name="known-issues-in-preview"></a>Problemi noti nell'anteprima
+- Revoca della licenza VPP: non viene visualizzata una notifica che informa che la licenza è stata revocata. Nel comportamento corrente la revoca viene eseguita correttamente ma l'utente finale non riceve alcuna notifica. 
+- Segnalazione applicazioni VPP: Nel report presente in App client > App > [Nome app] > Stato dell'installazione del dispositivo le applicazioni VPP distribuite nei dispositivi registrati dall'utente vengono segnalate come "non riuscite", anche quando l'applicazione viene distribuita correttamente nel dispositivo. 
+- Segnalazione applicazioni: per i tipi di app non supportati dalla registrazione utenti, i report possono inviare messaggi di errore irrilevanti. 
+- Esperienza dell'app Portale aziendale: gli utenti visualizzano tutte le applicazioni che sono loro destinate indipendentemente dal fatto che tali tipi di applicazioni siano supportati per i dispositivi registrati dall'utente. 
+- Esperienza dell'app Portale aziendale: gli utenti visualizzano lo stesso testo che indica ciò che le organizzazioni possono e non possono vedere per la registrazione di utenti e dispositivi.
+- Se un utente seleziona "My organization owns this device" (La mia organizzazione è proprietaria di questo dispositivo) durante la registrazione, il dispositivo viene comunque identificato come personale in Intune se non diversamente modificato nella console di amministrazione o tramite Graph. 
+- Destinazione della registrazione: iPadOs non è elencato nel selettore di piattaforma. iPadOS è supportato nella versione di anteprima, ma non è dichiarato in modo esplicito nella console di amministrazione. 
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

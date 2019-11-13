@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498791"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635485"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurare Google Chrome per dispositivi Android con Intune 
 
@@ -46,7 +46,7 @@ ms.locfileid: "72498791"
 
 Per altre informazioni sull'aggiunta di un'app Google Play gestita a Intune, vedere [App Google Play Store gestite](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps).
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>Aggiungere criteri di configurazione delle app per dispositivi Android Enterprise gestiti
+## <a name="add-app-configuration-for-managed-ae-devices"></a>Aggiungere la configurazione dell'app per i dispositivi Android Enterprise gestiti
 
 1. Nel riquadro [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **Criteri di configurazione dell'app** > **Aggiungi**.
 2. Aggiungere il nome dei criteri, scegliere **Dispositivi gestiti** in Tipo di registrazione del dispositivo e **Android**  in Piattaforma.
