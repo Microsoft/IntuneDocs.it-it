@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 022df428658a3c8791a07cbd797145bfe9a392bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496475"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984087"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Come gestire gli eBook iOS acquistati tramite Volume Purchase Program con Microsoft Intune
 
@@ -42,7 +42,6 @@ Le procedure per la gestione dei libri sono simili a quelle per la [gestione del
 ## <a name="before-you-start"></a>Prima di iniziare
 Prima di iniziare, ottenere un token VPP da Apple e caricarlo nell'account di Intune. Inoltre:
 
-* È possibile associare fino a 256 token VPP all'account di Intune.
 * Se in passato è stato usato un token VPP con un prodotto diverso, è necessario generare un nuovo token da usare con Intune.
 * Ogni token è valido per un anno.
 * Per impostazione predefinita, Intune esegue la sincronizzazione con il servizio VPP di Apple due volte al giorno. È possibile avviare una sincronizzazione manuale in qualsiasi momento.
