@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432538"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755357"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usare i profili dell'interfaccia di configurazione del firmware del dispositivo nei dispositivi Windows in Microsoft Intune (anteprima pubblica)
 
@@ -77,8 +77,8 @@ Questo profilo assicura che i dispositivi vengano verificati e abilitati per DFC
 
 Questo profilo include le impostazioni DFCI configurate.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Un nome di profilo valido, ad esempio, è **Windows: Configurare le impostazioni DFCI nei dispositivi Windows**.
@@ -127,9 +127,11 @@ Questo profilo include le impostazioni DFCI configurate.
 
 Una volta creati, i profili sono [pronti per l'assegnazione](../configuration/device-profile-assign.md). Assicurarsi di assegnare i profili ai gruppi di sicurezza di Azure AD che includono i dispositivi DFCI.
 
-Alla successiva sincronizzazione del dispositivo o al riavvio del dispositivo, le impostazioni del profilo DFCI vengono applicate. Dopo l'applicazione dei criteri, riavviare il dispositivo.
+Quando il dispositivo esegue Windows Autopilot, mentre è attiva la pagina Stato registrazione DFCI può forzare un riavvio. Il primo riavvio esegue la registrazione di UEFI in Intune. 
 
-Quando il dispositivo esegue la configurazione del dispositivo Windows, DFCI può forzare un riavvio durante la pagina relativa allo stato della registrazione. Al termine della configurazione, è possibile verificare che le impostazioni DFCI siano attive riavviando il dispositivo. Usare quindi le istruzioni del produttore del dispositivo per aprire il menu UEFI.
+Per verificare che il dispositivo sia registrato è possibile riavviarlo nuovamente, ma questa operazione non è obbligatoria. Usare le istruzioni del produttore del dispositivo per aprire il menu UEFI e verificare che UEFI ora è gestito.
+
+Alla successiva sincronizzazione del dispositivo con Intune, Windows riceve le impostazioni DFCI. Riavviare il dispositivo. Il terzo riavvio è necessario perché UEFI riceva le impostazioni DFCI da Windows.
 
 ## <a name="update-existing-dfci-settings"></a>Aggiornare le impostazioni di DFCI esistenti
 
@@ -156,7 +158,7 @@ Dopo la cancellazione del dispositivo, spostare il dispositivo nel gruppo a cui 
 
 Quando si è pronti per ritirare il dispositivo e rilasciarlo dalla gestione, aggiornare il profilo DFCI con le impostazioni UEFI (BIOS) desiderate per lo stato di uscita. In genere, è utile abilitare tutte le impostazioni. Ad esempio:
 
-1. Aprire il profilo DFCI (**Configurazione del dispositivo** > **Profili**).
+1. Aprire il profilo DFCI (**Dispositivi** > **Profili di configurazione**).
 2. Modificare l'impostazione **Consenti all'utente locale di modificare le impostazioni UEFI** impostandola su **Solo le impostazioni non configurate**.
 3. Impostare tutte le altre impostazioni su **Non configurata**.
 4. Salvare le impostazioni.

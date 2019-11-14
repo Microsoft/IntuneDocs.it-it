@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635485"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801654"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurare Google Chrome per dispositivi Android con Intune 
 
@@ -63,7 +63,7 @@ Per altre informazioni sull'aggiunta di un'app Google Play gestita a Intune, ved
 
     Di seguito è riportato un esempio di impostazioni di uso frequente:
     - **Block access to a list of URLs** (Blocca accesso a un elenco di URL): `["*"]`
-    - **Allow access to a list of URLs** (Consenti accesso a un elenco di URL): `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Allow access to a list of URLs** (Consenti accesso a un elenco di URL): `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Segnalibri gestiti**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Incognito mode availability** (Disponibilità modalità in incognito): `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Per altre informazioni sull'aggiunta di un'app Google Play gestita a Intune, ved
 
     ![Impostazioni comuni](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    Le impostazioni indicate sopra creano segnalibri e consentono l'accesso a tutti i siti Web ad eccezione di `baidu.com`, `yahoo.com` e `chrome://`.
+    Le impostazioni indicate sopra creano segnalibri e bloccano l'accesso a tutti gli URL ad eccezione di `baidu.com`, `yahoo.com`, `chromium.org` e `chrome://`.
 
 5. Fare clic su **OK** e su **Aggiungi**  per aggiungere i criteri di configurazione a Intune.
 6. Assegnare i criteri di configurazione a un gruppo utenti. Per altre informazioni, vedere [Assegnare app ai gruppi con Microsoft Intune](~/apps/apps-deploy.md). 

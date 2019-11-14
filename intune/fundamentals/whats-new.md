@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635350"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882501"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -53,12 +53,20 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre ad [avvisi 
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>Settimana del 4 novembre 2019
+
+### <a name="device-security"></a>Sicurezza del dispositivo
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Le baseline di sicurezza sono supportate in Microsoft Azure per enti pubblici<!-- 4062552 -->
+
+Le istanze di Intune ospitate in *Microsoft Azure per enti pubblici* ora possono usare le [baseline di sicurezza](../protect/security-baselines.md) per la protezione degli utenti e dei dispositivi.
+
 ## <a name="week-of-october-28-2019"></a>Settimana del 28 ottobre 2019
 
 ### <a name="app-management"></a>Gestione delle app
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Progettazione dell'elenco di controllo migliorata nell'app Portale aziendale per Android<!-- 5550857 -->  
-L'elenco di controllo della configurazione nell'app Portale aziendale per Android è stato aggiornato con una progettazione semplificata e nuove icone. Le modifiche sono in linea con gli aggiornamenti recenti dell'app Portale aziendale per iOS. Il processo di implementazione di questi aggiornamenti dell'app è attualmente in corso per tutti i clienti e dovrebbe essere completato entro la fine della settimana prossima. Per un confronto affiancato delle modifiche, vedere [Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune](whats-new-app-ui.md). Per informazioni sulla procedura di registrazione aggiornata, vedere [Registrare un dispositivo con profilo di lavoro Android](/intune-user-help/enroll-device-android-work-profile) e [Registrare il dispositivo in Portale aziendale](/intune-user-help/enroll-device-android-company-portal).  
+L'elenco di controllo della configurazione nell'app Portale aziendale per Android è stato aggiornato con una progettazione semplificata e nuove icone. Le modifiche sono in linea con gli aggiornamenti recenti dell'app Portale aziendale per iOS. Per un confronto affiancato delle modifiche, vedere [Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune](whats-new-app-ui.md). Per informazioni sulla procedura di registrazione aggiornata, vedere [Registrare un dispositivo con profilo di lavoro Android](/intune-user-help/enroll-device-android-work-profile) e [Registrare il dispositivo in Portale aziendale](/intune-user-help/enroll-device-android-company-portal).  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>App Win32 in dispositivi in modalità Windows 10 S<!-- 3747604 --> 
 È possibile installare ed eseguire app Win32 in dispositivi gestiti in modalità Windows 10 S. A tale scopo, è possibile creare uno o più criteri aggiuntivi per la modalità S usando gli strumenti di PowerShell del Controllo delle applicazioni di Windows Defender. Firmare i criteri supplementari con il portale per la firma di Device Guard e quindi caricare e distribuire i criteri tramite Intune. In Intune è possibile trovare questa funzionalità selezionando **App client** > **Criteri supplementari di Windows 10S**. Per altre informazioni, vedere [Abilitare le app Win32 in dispositivi in modalità S](~/apps/apps-win32-s-mode.md).

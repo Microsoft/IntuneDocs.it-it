@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445346"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709488"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -49,7 +49,7 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
 
 È possibile aggiungere i dispositivi di Windows AutoPilot importando un file CSV con le informazioni.
 
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Dispositivi** > **Importa**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Dispositivi** > **Importa**.
 
     ![Screenshot dei dispositivi di Windows Autopilot](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -71,7 +71,7 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
 
 ## <a name="create-an-autopilot-device-group"></a>Creare un gruppo di dispositivi Autopilot
 
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Gruppi** > **Nuovo gruppo**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Gruppi** > **Nuovo gruppo**.
 2. Nel pannello **Gruppo**:
     1. In **Tipo gruppo** scegliere **sicurezza**.
     2. Immettere un **Nome gruppo** e una **Descrizione gruppo**.
@@ -88,7 +88,7 @@ Per altre informazioni, vedere il cmdlet di PowerShell seguente.
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Creare un profilo di distribuzione Autopilot
 I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi AutoPilot. È possibile creare fino a 350 profili per ogni tenant.
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > **Crea profilo**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profilo di distribuzione** > **Crea profilo**.
 2. Nella pagina **Informazioni di base** specificare un **Nome** e una **Descrizione** facoltativa.
 
     ![Screenshot della pagina Informazioni di base](./media/enrollment-autopilot/create-profile-basics.png)
@@ -134,7 +134,7 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
 ## <a name="edit-an-autopilot-deployment-profile"></a>Modificare un profilo di distribuzione di AutoPilot
 Dopo aver creato un profilo di distribuzione di AutoPilot, è possibile modificare alcune parti del profilo di distribuzione.   
 
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo**.
 2. In **Registrazione Windows** nella sezione **Windows AutoPilot** scegliere **Profili di distribuzione**.
 3. Selezionare il profilo da modificare.
 4. Fare clic su **Proprietà** a sinistra per modificare il nome o la descrizione del profilo di distribuzione. Fare clic su **Salva** dopo aver apportato le modifiche.
@@ -155,7 +155,7 @@ Per visualizzare gli avvisi per i dispositivi non assegnati, in [Intune nel port
 
 Prerequisiti: il portale aziendale di Azure Active Directory deve essere configurato; Windows 10 versione 1809 o successiva.
 
-1. In [Intune nel portale di Azure](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Dispositivi** > scegliere il dispositivo > **Assegna utente**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Dispositivi** > scegliere il dispositivo > **Assegna utente**.
 
     ![Screenshot di Assegna utente](./media/enrollment-autopilot/assign-user.png)
 
