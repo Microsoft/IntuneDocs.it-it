@@ -129,6 +129,8 @@
               href: macos-device-features-settings.md
             - name: Limitazioni del dispositivo
               href: device-restrictions-macos.md
+            - name: Endpoint Protection
+              href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: Connessione
               href: vpn-settings-macos.md
             - name: Wi-Fi
@@ -149,6 +151,10 @@
               href: edition-upgrade-windows-settings.md
             - name: Posta elettronica
               href: email-settings-windows-10.md
+            - name: Endpoint Protection
+              href: ../protect/endpoint-protection-windows-10.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
+            - name: Protezione dell'identità
+              href: ../protect/identity-protection-windows-settings.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: Modalità tutto schermo
               href: kiosk-settings-windows.md
             - name: Connessione
