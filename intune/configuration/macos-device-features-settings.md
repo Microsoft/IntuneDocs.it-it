@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143150"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117858"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi macOS in Intune
 
@@ -179,12 +179,13 @@ Questa funzionalità si applica a:
 - **Validità minima password** (solo Kerberos): immettere il numero di giorni per cui è necessario usare una password nel dominio prima che un utente possa modificarlo. **Non configurato** (impostazione predefinita) non impone una validità minima delle password prima che possano essere modificate.
 - **Notifica di scadenza password** (solo Kerberos): immettere il numero di giorni prima della scadenza di una password per la quale gli utenti riceveranno una notifica della scadenza della password. **Non configurato** (impostazione predefinita) USA `15` giorni.
 - **Scadenza password** (solo Kerberos): immettere il numero di giorni prima che sia necessario modificare la password del dispositivo. **Non configurato** (impostazione predefinita) indica che le password utente non scadono mai.
-- **Nome entità** (solo Kerberos): immettere il nome utente dell'entità Kerberos. Non è necessario includere il nome dell'area di autenticazione. Ad esempio, in `user@contoso.com` `user` è il nome dell'entità e `contoso.com` è il nome dell'area di autenticazione.
+- **Nome entità** (solo Kerberos): immettere il nome utente dell'entità Kerberos. Non è necessario includere il nome dell'area di autenticazione. Ad esempio, in `user@contoso.com`, `user` è il nome dell'entità e `contoso.com` è il nome dell'area di autenticazione.
 - **Active Directory codice sito** (solo Kerberos): immettere il nome del sito Active Directory che deve essere utilizzato dall'estensione Kerberos. Potrebbe non essere necessario modificare questo valore, perché l'estensione Kerberos potrebbe trovare automaticamente il codice del sito Active Directory.
 - **Nome cache** (solo Kerberos): immettere il nome GSS (Generic Security Services) della cache Kerberos. Probabilmente non è necessario impostare questo valore.  
 - **Messaggio requisiti password** (solo Kerberos): immettere una versione in formato testo dei requisiti per le password dell'organizzazione visualizzati dagli utenti. Il messaggio viene visualizzato se non sono richiesti i requisiti di complessità delle password di Active Directory o non si immette la lunghezza minima della password.  
 - **ID bundle dell'app** (solo Kerberos): **aggiungere** gli identificatori del bundle dell'app che devono usare Single Sign-on nei dispositivi. A queste app viene concesso l'accesso al ticket di concessione ticket Kerberos, il ticket di autenticazione e l'autenticazione degli utenti ai servizi a cui sono autorizzati ad accedere.
 - **Mapping dell'area di autenticazione del dominio** (solo Kerberos): **aggiungere** i suffissi DNS di dominio che devono essere mappati all'area di autenticazione. Usare questa impostazione quando i nomi DNS degli host non corrispondono al nome dell'area di autenticazione. Probabilmente non è necessario creare questo mapping da dominio a area di autenticazione personalizzato.
+- **Certificato PKINIT** (solo Kerberos): **selezionare** il certificato di crittografia a chiave pubblica per l'autenticazione iniziale (PKINIT) che può essere usato per rinnovare le credenziali Kerberos senza interazione dell'utente. Il certificato deve essere un certificato PKCS o SCEP aggiunto in precedenza a Intune.
 
 ## <a name="associated-domains"></a>Domini associati
 

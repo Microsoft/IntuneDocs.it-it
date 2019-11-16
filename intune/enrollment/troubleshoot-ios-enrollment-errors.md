@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509236"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126142"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi iOS in Microsoft Intune
 
@@ -84,6 +84,8 @@ Raccogliere le seguenti informazioni sul problema:
 1. Rimuovere l'app Portale aziendale dal dispositivo.
 2. Scaricare e installare l'app **Portale aziendale Microsoft Intune** da **App Store**.
 3. Registrare nuovamente il dispositivo.
+ > [!NOTE]
+    > Questo errore può verificarsi anche se l'utente tenta di registrare più dispositivi rispetto alla configurazione della registrazione del dispositivo. Seguire i passaggi di risoluzione per il **limite di dispositivo raggiunto** di seguito se questa procedura non risolve il problema.
 
 ### <a name="device-cap-reached"></a>Numero massimo dispositivi raggiunto
 
