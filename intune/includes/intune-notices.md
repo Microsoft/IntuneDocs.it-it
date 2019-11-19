@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612090"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125512"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Modifica prevista per Intune: Scadenza del supporto per il Portale aziendale Windows 10, versione 1703<!--5026679-->
+Il supporto per Windows 10 versione 1703 (denominato anche Windows 10 RS2) è scaduto l'8 ottobre 2019 per le edizioni Enterprise e EDU. In Intune il supporto dell'app Portale aziendale per RS2/RS1 scadrà il 26 dicembre 2019.
+
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+Da questo momento non verranno visualizzate le nuove funzionalità nella versione specifica dell'app Portale aziendale, anche se il supporto di tale versione continuerà fino al 26 dicembre 2019 e includerà la fornitura degli aggiornamenti della sicurezza necessari per l'app Portale aziendale. Tuttavia, dato che dopo la scadenza del supporto Windows 10 versione 1703 non riceverà più aggiornamenti della sicurezza, è consigliabile aggiornare i dispositivi Windows a una versione di Windows più recente e assicurarsi avere la versione più recente dell'app Portale aziendale, in modo da continuare a ricevere le nuove caratteristiche e le funzionalità aggiuntive.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
+Le operazioni da eseguire dipendono dalla configurazione dell'ambiente in uso. In generale, tuttavia, è necessario identificare i dispositivi con versioni precedenti del sistema operativo e/o del Portale aziendale ed eseguire l'aggiornamento. Per impostare le fasi di aggiornamento di Windows 10, accedere a Intune -> Aggiornamenti software - Fasi di aggiornamento di Windows 10. La versione più recente dell'app Portale aziendale è la versione 10.3.5601.0. Richiedere agli utenti di acquistarla presso il Microsoft Store per rimanere aggiornati con le versioni future. È anche possibile usare Intune per installare la versione più recente nei dispositivi Windows tramite [Microsoft Store per le aziende](https://docs.microsoft.com/intune/windows-store-for-business).
+
+#### <a name="additional-information"></a>Informazioni aggiuntive
+[Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Azione: Usare Microsoft Edge per l'esperienza protetta del browser di Intune<!--5728447-->
+Come descritto nel corso dell'ultimo anno, Microsoft Edge per dispositivi mobili supporta la stessa gamma di funzionalità di gestione supportata da Managed Browser, ma garantisce un'esperienza utente molto migliore. Per lasciare spazio alle esperienze consolidate offerte da Microsoft Edge, Intune Managed Browser verrà ritirato. A partire dal 27 gennaio 2020 Intune non supporterà più Intune Managed Browser.  
+
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica? 
+A partire dal 1 febbraio 2020 Intune Managed Browser non sarà più disponibile in Google Play Store o nell'App Store iOS. Dopo tale data sarà ancora possibile indirizzare i nuovi criteri di protezione delle app a Intune Managed Browser, ma i nuovi utenti non potranno più scaricare l'app Intune Managed Browser. Inoltre in iOS le nuove clip Web che vengono distribuite a dispositivi registrati in MDM verranno aperte in Microsoft Edge anziché in Intune Managed Browser.  
+
+Il 31 marzo 2020 Intune Managed Browser verrà rimosso dalla console di Azure. Di conseguenza non sarà più possibile creare nuovi criteri per Intune Managed Browser. I criteri di Intune Managed Browser già implementati non subiranno variazioni. Intune Managed Browser verrà visualizzato nella console come applicazione line-of-business senza icone e i criteri esistenti continueranno ad apparire come associati all'app. Verrà anche rimossa l'opzione per reindirizzare il contenuto Web a Intune Managed Browser nel contesto della sezione Protezione dei dati dei criteri di protezione delle app.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica 
+Per garantire una transizione ottimale da Intune Managed Browser a Microsoft Edge è consigliabile adottare le seguenti misure con il necessario anticipo: 
+
+1. Impostare Microsoft Edge per iOS e Android come destinazione per i criteri di protezione delle app (detti anche MAM) e le impostazioni di configurazione delle app. Per riusare i criteri di Intune Managed Browser per Microsoft Edge è sufficiente impostare anche Microsoft Edge come destinazione dei criteri esistenti.  
+2. Verificare che per tutte le app dell'ambiente protette tramite MAM il criterio di protezione "Limita il trasferimento di contenuto Web con altre app" sia impostato su "Browser gestiti da criteri". 
+3. Verificare che per tutte le app protette tramite MAM l'impostazione di configurazione dell'app gestita "com.microsoft.intune.useEdge" sia impostata su True. A partire dal mese prossimo con la versione 1911 sarà possibile completare i passaggi 2 e 3 configurando semplicemente "Limita il trasferimento di contenuto Web con altre app" in modo che "Microsoft Edge" sia selezionato nella sezione Protezione dei dati dei criteri di protezione delle app. 
+
+Il supporto delle clip Web in iOS e Android sarà disponibile a breve. Dopo il rilascio del supporto, sarà necessario reimpostare la destinazione delle clip Web preesistenti, per garantire che vengano aperte in Microsoft Edge anziché in Managed Browser. 
+
+#### <a name="additional-information"></a>Informazioni aggiuntive
+Per altre informazioni vedere i documenti relativi all'[uso di Microsoft Edge con i criteri di protezione delle app](../apps/manage-microsoft-edge.md) o visualizzare il [post del blog sul supporto](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Modifica prevista: Nuova esperienza di registrazione dei dispositivi Android Enterprise dedicati in Intune<!--5198878-->
 Con la versione di novembre o 1911 di Intune, viene aggiunto il supporto per la distribuzione del certificato dispositivo SCEP ai dispositivi Android Enterprise dedicati per abilitare l'accesso basato su certificati ai profili Wi-Fi. Questa modifica comporta anche alcune modifiche secondarie del flusso durante la registrazione dei dispositivi Android Enterprise dedicati.
@@ -33,7 +67,7 @@ Se si gestiscono dispositivi Android Enterprise dedicati nell'ambiente in uso, s
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Modifica prevista: L'impostazione "Registrazione lato server per comandi di Siri" verrà rimossa dalla console di Intune <!-- 5468501-->
 
-Si prevede di rimuovere l'impostazione "Registrazione lato server per comandi di Siri" dalla console di Intune con l'aggiornamento di novembre del servizio Intune. Questa modifica è allineata ad Apple che ha già rimosso l'impostazione.
+È prevista la rimozione dell'impostazione "Registrazione lato server per comandi di Siri" dalla console di Intune con l'aggiornamento di novembre del servizio Intune. Questa modifica è allineata ad Apple che ha già rimosso l'impostazione.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
 Quando l'aggiornamento di novembre o 1911 verrà implementato intorno a metà novembre, si noterà che questa impostazione è stata rimossa dal menu Limitazioni del dispositivo (App predefinite) per i profili di configurazione iOS nella console di Intune. Potrebbe essere presente nei criteri e nel profilo di gestione del dispositivo di destinazione, ma l'impostazione non ha alcun effetto sul dispositivo. Non è previsto un effetto rilevante sulle funzionalità poiché attualmente non funziona nei dispositivi anche se è visibile nel profilo di gestione.
