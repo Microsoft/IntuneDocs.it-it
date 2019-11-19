@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508625"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712313"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usare Fresh Start per ripristinare i dispositivi Windows 10 con Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508625"
 
 L'azione del dispositivo **Fresh Start** rimuove le eventuali app installate nei PC con Windows 10, versione 1703 o successive. Fresh Start consente di rimuovere le app (OEM) preinstallate in genere in un nuovo PC. 
 
-1. Accedere al [portale di Azure](https://portal.azure.com) e passare a > **Microsoft Intune** > **Dispositivi** > **Tutti i dispositivi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selezionare **Dispositivi** > **Tutti i dispositivi**.
 2. Nell'elenco dei dispositivi gestiti scegliere un dispositivo desktop Windows 10.
 3. Fare clic su **Fresh Start**. 
 4. Selezionare **Mantieni i dati utente in questo dispositivo** per:

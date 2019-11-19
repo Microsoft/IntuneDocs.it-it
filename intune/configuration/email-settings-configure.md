@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492858"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755201"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Aggiungere impostazioni di posta elettronica ai dispositivi con Intune
 
@@ -39,8 +39,8 @@ Questo articolo illustra come creare un profilo di posta elettronica in Microsof
 
 ## <a name="create-a-device-profile"></a>Creare un profilo del dispositivo
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Impostazioni di posta elettronica per tutti i dispositivi Windows**.
@@ -71,7 +71,7 @@ Dopo aver immesso le impostazioni e creato il profilo, il profilo viene visualiz
 
 I profili di posta elettronica vengono assegnati ai gruppi di dispositivi, non ai gruppi di utenti. Esistono diversi modi di rimuovere un profilo di posta elettronica da un dispositivo, anche quando è disponibile un solo profilo di posta elettronica nel dispositivo:
 
-- **Opzione 1**: aprire il profilo di posta elettronica (**Configurazione del dispositivo** > **Profili**) e scegliere **Assegnazioni**. Nella scheda **Includi** sono visualizzati i gruppi assegnati al profilo. Fare clic con il pulsante destro del mouse sul gruppo > **Rimuovi**. Assicurarsi di **salvare** le modifiche.
+- **Opzione 1**: Aprire il profilo di posta elettronica (**Dispositivi** > **Profili di configurazione** > selezionare il profilo) e scegliere **Assegnazioni**. Nella scheda **Includi** sono visualizzati i gruppi assegnati al profilo. Fare clic con il pulsante destro del mouse sul gruppo > **Rimuovi**. Assicurarsi di **salvare** le modifiche.
 
 - **Opzione 2**: [cancellare o ritirare il dispositivo](../remote-actions/devices-wipe.md). È possibile usare queste azioni per rimuovere completamente o in modo selettivo dati e impostazioni.
 
@@ -103,4 +103,4 @@ Se si apportano modifiche a un profilo di posta elettronica assegnato in precede
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo che il profilo è stato creato, non è ancora operativo. Ora [assegnare il profilo ad alcuni dispositivi](../device-profile-assign.md).
+Dopo che il profilo è stato creato, non è ancora operativo. È ora necessario [assegnare il profilo](../device-profile-assign.md).

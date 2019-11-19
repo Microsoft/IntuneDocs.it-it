@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502609"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713289"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 I [criteri di protezione delle app di Intune](../apps/app-protection-policy.md) consentono di proteggere i dati aziendali sui dispositivi registrati in Intune. I criteri di protezione delle app possono essere usati anche nei dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune. In questo caso, anche se il dispositivo non viene gestito dall'azienda, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti.
 
@@ -39,6 +37,7 @@ L'accesso condizionale basato su app e la gestione delle app client consentono d
 Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è possibile bloccare le app di posta elettronica predefinite in iOS e Android. È inoltre possibile impedire di accedere a SharePoint Online alle app a cui non sono applicati criteri di protezione delle app di Intune.
 
 ## <a name="prerequisites"></a>Prerequisiti
+
 Prima di creare un criterio di accesso condizionale basato su app sono necessari:
 
 - **Enterprise Mobility + Security (EMS)** o una **sottoscrizione Azure Active Directory (AD) Premium**
@@ -57,7 +56,7 @@ L'accesso condizionale basato su app [supporta anche le app line-of-business (LO
 In questo esempio l'amministratore ha applicato criteri di protezione delle app all'app Outlook, seguiti da una regola di accesso condizionale che aggiunge l'app Outlook a un elenco approvato di app che possono essere usate per l'accesso alla posta elettronica aziendale.
 
 > [!NOTE]
-> Per le altre app gestite è possibile usare la struttura del diagramma di flusso riportata di seguito.
+> Per le altre app gestite è possibile usare il diagramma di flusso seguente.
 
 ![Processo di accesso condizionale basato su app illustrato in un diagramma di flusso](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

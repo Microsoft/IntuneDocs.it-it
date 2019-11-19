@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e3c9e3bbdc65ae3f97e4be871cfaf638f1bafcd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ee924a8c32c3c0591f968db0655044500c8c759d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506607"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754982"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
@@ -66,11 +66,11 @@ Creare o scegliere un gruppo esistente in Azure Active Directory (Azure AD) per 
 
 Importare il certificato di radice del server VPN rilasciato dalla CA in un profilo creato in Intune. Il profilo certificato attendibile indica al dispositivo iOS di considerare attendibile automaticamente la CA che il server VPN presenta.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
-    - **Nome**
-    - **Descrizione**
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di profilo è **Profilo VPN iOS con certificato attendibile per l'intera azienda**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **iOS**.
     - **Tipo di profilo**: selezionare **Certificato attendibile**.
 4. Selezionare l'icona della cartella e individuare il certificato VPN (file con estensione cer) esportato dalla console di amministrazione della VPN. 
@@ -95,15 +95,15 @@ Verificare che il certificato sia configurato per l'autenticazione client. È po
 
 Il profilo VPN contiene il certificato SCEP o PKCS con le credenziali del client, le informazioni di connessione alla VPN e il flag VPN per app per abilitare la funzionalità VPN per app utilizzabile dall'applicazione iOS.
 
-1. In **Intune** selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**. 
-2. Immettere le proprietà seguenti: 
-    - **Nome**
-    - **Descrizione**
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+2. Immettere le proprietà seguenti:
+    - **Nome**: Immettere un nome descrittivo per il profilo personalizzato. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di profilo è **Profilo VPN iOS per app per l'intera azienda**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **iOS**.
     - **Tipo di profilo**: selezionare **VPN**.
 3. In **Tipo di connessione** selezionare l'app client VPN.
-4. Selezionare **VPN di base**. Nella pagina relativa alle [impostazioni VPN iOS](vpn-settings-ios.md) sono elencate e descritte tutte le impostazioni. Quando si usa una VPN per app, assicurarsi che le queste proprietà siano impostate come specificato di seguito: 
-    
+4. Selezionare **VPN di base**. Nella pagina relativa alle [impostazioni VPN iOS](vpn-settings-ios.md) sono elencate e descritte tutte le impostazioni. Quando si usa una VPN per app, assicurarsi che le queste proprietà siano impostate come specificato di seguito:
+
     - **Metodo di autenticazione**: selezionare **Certificati**. 
     - **Certificato di autenticazione**: selezionare un certificato SCEP o PKCS esistente > **OK**.      
     - **Split tunneling**: selezionare **Disabilita** affinché tutto il traffico usi il tunnel VNP quando la connessione VPN è attiva. 
@@ -122,7 +122,7 @@ Il profilo VPN contiene il certificato SCEP o PKCS con le credenziali del client
 
 Dopo aver aggiunto il profilo VPN, associare l'app e il gruppo di Azure AD per il profilo.
 
-1. In **Intune** selezionare **App client** > **App**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **App** > **Tutte le app**.
 2. Selezionare un'app dall'elenco > **Assegnazioni** > **Aggiungi gruppo**.
 3. In **Tipo di assegnazione** selezionare **Obbligatorio** o **Available for enrolled devices** (Disponibile per i dispositivi registrati).
 4. Selezionare **Gruppi inclusi** > **Selezionare i gruppi da includere** > selezionare il gruppo [creato](#create-a-group-for-your-vpn-users) (in questo articolo) > **Seleziona**.
@@ -161,18 +161,6 @@ Verificare l'esperienza completamente automatica effettuando la connessione senz
 - Il dispositivo non richiede di considerare attendibile il server VPN. Non verrà quindi visualizzata la finestra di dialogo **Dynamic Trust** (Trust dinamico).
 - Non è necessario digitare le credenziali.
 - Il dispositivo dell'utente si connette alla VPN all'apertura di una delle app associate.
-
-<!-- ## Troubleshooting the per-app VPN
-
-The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
-
-`Note -- use the Apple Configurator as the supported tool. Only runs on a mac.'
-
-To review event logs:
-
-1. Connect your iOS device to a PC
-2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
-3. Review the logs. -->
 
 ## <a name="next-steps"></a>Passaggi successivi
 

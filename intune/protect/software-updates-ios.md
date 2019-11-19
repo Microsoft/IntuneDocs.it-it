@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681349"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984188"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Aggiungere criteri di aggiornamento software per iOS in Intune
 
@@ -28,7 +28,7 @@ Questa funzionalità si applica a:
 
 - iOS 10.3 e versioni successive (con supervisione)
 
-Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornamento, il dispositivo lo scarica e lo installa, eccetto durante i periodi limitati. Non è necessario alcun intervento dell'utente per aggiornare il dispositivo. I criteri non impediscono a un utente di aggiornare manualmente il sistema operativo.
+Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornamento, il dispositivo lo scarica e lo installa, eccetto durante i periodi limitati. Anche se in genere il processo di aggiornamento non richiede alcuna interazione con l'utente, se il dispositivo ha un passcode l'utente dovrà immetterlo per poter avviare un aggiornamento software. Questa condizione è valida per iOS 10.3 e versioni successive. I criteri non impediscono a un utente di aggiornare manualmente il sistema operativo.
 
 ## <a name="configure-the-policy"></a>Configurare i criteri
 

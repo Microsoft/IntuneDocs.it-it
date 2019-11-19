@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f201cdac0f881ce03863704dd80d8635de52074a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505452"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713459"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurare la registrazione utente iOS e iPadOS (anteprima)
 
@@ -43,7 +43,7 @@ Per altre informazioni sulle opzioni disponibili con la registrazione utente, ve
 
 Un profilo di registrazione definisce le impostazioni applicate a un gruppo di dispositivi durante la registrazione. 
 
-1. Nel portale di Intune scegliere **Registrazione dispositivi** > **Registrazione Apple** > **Tipi di registrazione (anteprima)**  > **Crea profilo** > **iOS**. Questo profilo è la posizione in cui verrà indicata l'esperienza di registrazione degli utenti finali di iOS e iPadOS nei dispositivi non registrati tramite un metodo Apple aziendale. Se si vogliono apportare modifiche, è possibile modificare questo profilo dopo averlo creato.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Tipi di registrazione (anteprima)**  > **Crea profilo** > **iOS**. Questo profilo è la posizione in cui verrà indicata l'esperienza di registrazione degli utenti finali di iOS e iPadOS nei dispositivi non registrati tramite un metodo Apple aziendale. Se si vogliono apportare modifiche, è possibile modificare questo profilo dopo averlo creato.
 
     ![Creare un profilo di registrazione Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Un profilo di registrazione definisce le impostazioni applicate a un gruppo di d
 
 Dopo aver creato più profili del tipo di registrazione, è possibile modificare l'ordine di priorità in cui vengono applicati.
 
-1. In Intune nel portale di Azure scegliere **Registrazione dispositivi** > **Registrazione Apple** > **Tipi di registrazione (anteprima)** .
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Tipi di registrazione (anteprima)** .
 2. Trascinare e rilasciare i profili nell'elenco nell'ordine in cui si vuole applicarli.
 
 In caso di conflitti tra i profili di un utente, viene applicato all'utente il profilo con priorità più elevata.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923382"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709476"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati
 
@@ -59,7 +59,7 @@ Per configurare la gestione di dispositivi dedicati Android Enterprise, seguire 
 
 Per poter registrare i dispositivi dedicati, è necessario creare un profilo di registrazione. Il profilo creato fornisce un token di registrazione (stringa casuale) e un codice a matrice (codice QR). A seconda del sistema operativo Android e della versione del dispositivo, per [registrare il dispositivo dedicato](#enroll-the-dedicated-devices) è possibile usare il token o un codice a matrice.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e scegliere **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
 2. Scegliere **Crea** e compilare i campi obbligatori.
     - **Nome**: digitare un nome che verrà usato per l'assegnazione del profilo al gruppo di dispositivi dinamico.
     - **Data di scadenza del token**: data in cui il token scade. Google impone un massimo di 90 giorni.
@@ -69,7 +69,7 @@ Per poter registrare i dispositivi dedicati, è necessario creare un profilo di 
 
 È possibile assegnare le app e i criteri a gruppi di dispositivi assegnati o dinamici. Per configurare gruppi di dispositivi AAD dinamici per popolare automaticamente i dispositivi registrati con un profilo di registrazione specifico, seguire questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e scegliere **Gruppi** > **Tutti i gruppi** > **Nuovo gruppo**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Gruppi** > **Tutti i gruppi** > **Nuovo gruppo**.
 2. Nel pannello **Gruppo** compilare i campi obbligatori come segue:
     - **Tipo di gruppo**: Sicurezza
     - **Nome gruppo**: digitare un nome intuitivo, ad esempio Factory 1
@@ -92,7 +92,7 @@ Per poter registrare i dispositivi dedicati, è necessario creare un profilo di 
 
 La sostituzione o la revoca di un token o codice a matrice non avrà alcun effetto sui dispositivi già registrati.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e scegliere **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
 2. Scegliere il profilo che si vuole usare.
 3. Scegliere **Token**.
 4. Per sostituire il token, scegliere **Sostituisci il token**.

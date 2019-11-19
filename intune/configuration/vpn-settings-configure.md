@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491759"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984178"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Creare profili VPN per la connessione ai server VPN in Intune
 
@@ -50,7 +50,7 @@ Si supponga, ad esempio, di voler configurare i dispositivi iOS con le impostazi
 |Check Point Capsule VPN|- Android<br/>- Profili di lavoro Android Enterprise<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Profili di lavoro Android Enterprise<br/>- Proprietario del dispositivo Android Enterprise (completamente gestito)<br/>- iOS<br/>- macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Profili di lavoro Android Enterprise: Usare i [criteri di configurazione delle app](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Profili di lavoro Android Enterprise: Usare i [criteri di configurazione delle app](../apps/app-configuration-policies-use-android.md)<br/>- Proprietario del dispositivo Android Enterprise (completamente gestito): Usare i [criteri di configurazione delle app](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |VPN personalizzata|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Profili di lavoro Android Enterprise<br/>- Proprietario del dispositivo Android Enterprise (completamente gestito)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
@@ -68,8 +68,9 @@ Per informazioni su come creare profili VPN personalizzati usando le impostazion
 
 ## <a name="create-a-device-profile"></a>Creare un profilo del dispositivo
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
-2. Immettere le proprietà seguenti:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di profilo è **Profilo VPN per l'intera azienda**.
     - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
@@ -86,7 +87,7 @@ Per informazioni su come creare profili VPN personalizzati usando le impostazion
 
     - **Tipo di profilo**: selezionare **VPN**.
 
-3. Le impostazioni configurabili variano in base alla piattaforma scelta. Vedere gli articoli seguenti per informazioni dettagliate sulle impostazioni per ogni piattaforma:
+4. Le impostazioni configurabili variano in base alla piattaforma scelta. Vedere gli articoli seguenti per informazioni dettagliate sulle impostazioni per ogni piattaforma:
 
     - [Impostazioni Android](vpn-settings-android.md)
     - [Impostazioni Android Enterprise](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ Per informazioni su come creare profili VPN personalizzati usando le impostazion
     - [Impostazioni Windows 8.1](vpn-settings-windows-8-1.md)
     - [Impostazioni di Windows 10](vpn-settings-windows-10.md) (incluso Windows Holographic for Business)
 
-4. Al termine, **creare** il profilo.
+5. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
 Il profilo viene creato e visualizzato nell'elenco dei profili. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md).
 

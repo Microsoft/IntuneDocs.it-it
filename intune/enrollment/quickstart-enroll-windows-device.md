@@ -2,7 +2,7 @@
 title: Guida introduttiva - Registrare il dispositivo Windows 10 Desktop in Microsoft Intune
 description: Guida introduttiva - Usare il portale aziendale per registrare il dispositivo Windows 10 Desktop in Microsoft Intune.
 services: microsoft-intune
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 07/30/2019
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509280"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713520"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Guida introduttiva: Registrare il dispositivo Windows 10
 
@@ -91,7 +91,7 @@ Prima della registrazione di Windows 10 Desktop, è necessario verificare la ver
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Verificare la registrazione del dispositivo in Intune
 
-1. Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) come Amministratore globale o come Amministratore del servizio Intune.
 2. Selezionare **Dispositivi** > **Tutti i dispositivi** per visualizzare i dispositivi registrati in Intune.
 3. Verificare la presenza di un nuovo dispositivo registrato in Intune.
 

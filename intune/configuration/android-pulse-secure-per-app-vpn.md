@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/05/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524f4cd77d85460940a885bc7950e7d476097e72
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f044d42a36717e970abba37009df2e3d0516a046
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496119"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756748"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android
 
@@ -37,50 +37,52 @@ Dopo aver assegnato i criteri ai gruppi di utenti o ai dispositivi Android, gli 
 >
 > Per questo profilo sono supportati solo i tipi di connessione Pulse Secure e Citrix.
 
-
 ## <a name="step-1-create-a-vpn-profile"></a>Passaggio 1: Creare un profilo VPN
 
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+3. Immettere le proprietà seguenti:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-2. Nell'elenco del riquadro dei profili scegliere **Crea profilo**.
-3. Nel riquadro **Crea profilo** immettere un **nome** e una **descrizione** (facoltativa) per il profilo VPN.
-4. Dall'elenco a discesa **Piattaforma** scegliere **Android**.
-5. Dall'elenco a discesa dei tipi di **profilo** scegliere **VPN**.
-3. Scegliere **Impostazioni** > **Configura** e quindi configurare il profilo VPN in base alle impostazioni in [Come configurare le impostazioni VPN](vpn-settings-configure.md) e [Impostazioni VPN Intune per dispositivi Android](vpn-settings-android.md).
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio un buon nome di profilo è **Profilo VPN Android per app per l'intera azienda**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: Selezionare **Android**.
+    - **Tipo di profilo**: selezionare **VPN**.
+
+4. Scegliere **Impostazioni** > **Configura** e quindi configurare il profilo VPN in base alle impostazioni in [Come configurare le impostazioni VPN](vpn-settings-configure.md) e [Impostazioni VPN Intune per dispositivi Android](vpn-settings-android.md).
 
 Prendere nota del valore **Nome connessione** specificato quando si crea il profilo VPN. Questo nome sarà necessario nel passaggio successivo. Ad esempio **MyAppVpnProfile**.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Passaggio 2: Creare criteri di configurazione personalizzati
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-3. Nella pagina dei profili fare clic su **Crea profilo**.
-4. Nel riquadro **Crea profilo** immettere un **nome** e una **descrizione** per il profilo personalizzato.
-5. Dall'elenco a discesa **Piattaforma** scegliere **Android**.
-6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Personalizzato**.
-7. Scegliere **Impostazioni** > **Configura**.
-3. Nel riquadro **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
-    - Immettere un nome per l'impostazione.
-    - In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList**, dove *nome* è il nome della connessione annotato nel passaggio 1. In questo esempio, la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-    - In **Tipo di dati** specificare **Stringa**.
-    - Per l'opzione **Valore** creare un elenco separato da punti e virgola dei pacchetti da associare al profilo. Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN, digitare: **com.microsoft.office.excel;com.android.chrome**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+3. Immettere le proprietà seguenti:
+
+    - **Nome**: Immettere un nome descrittivo per il profilo personalizzato. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio un buon nome di profilo è **Profilo VPN Android OMA-URI personalizzato per l'intera azienda**.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: Selezionare **Android**.
+    - **Tipo di profilo**: Selezionare **Personalizzato**.
+
+4. Scegliere **Impostazioni** > **Configura**.
+5. Nel riquadro **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
+    - **Nome**: Immettere un nome per l'impostazione.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **OMA-URI**: Immettere `./Vendor/MSFT/VPN/Profile/*Name*/PackageList` dove *Name* è il nome della connessione annotato nel passaggio 1. In questo esempio la stringa è `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
+    - **Tipo di dati**: Immettere **String**.
+    - **Valore**: Immettere un elenco separato da punti e virgola dei pacchetti da associare al profilo. Se ad esempio si vuole che Excel e il browser Google Chrome usino la connessione VPN, immettere `com.microsoft.office.excel;com.android.chrome`.
 
 ![Esempio di criteri personalizzati VPN per app Android](./media/android-pulse-secure-per-app-vpn/android_per_app_vpn_oma_uri.png)
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Impostare l'elenco di app come blacklist o whitelist (facoltativo)
-  È possibile specificare un elenco di app che *non possono* usare la connessione VPN tramite il valore **BLACKLIST**. Tutte le altre app si connettono mediante la VPN.
-In alternativa, è possibile usare il valore **WHITELIST** per specificare un elenco di app che *possono* usare la connessione VPN. Le app non incluse nell'elenco non si connettono mediante la VPN.
-  1. Nel riquadro **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
-  2. Immettere un nome per l'impostazione.
-  3. Per **URI OMA** usare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/Mode**, dove *nome* è il nome del profilo VPN annotato nel passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-  4. In **Tipo di dati** specificare **Stringa**.
-  5. In **Valore** immettere **BLACKLIST** o **WHITELIST**.
 
+È possibile specificare un elenco di app che *non possono* usare la connessione VPN tramite il valore **BLACKLIST**. Tutte le altre app si connettono mediante la VPN. In alternativa è possibile usare il valore **WHITELIST** per specificare un elenco delle app che *possono* usare la connessione VPN. Le app non incluse nell'elenco non si connettono tramite la VPN.
 
+1. Nel riquadro **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
+2. Immettere un nome per l'impostazione.
+3. In **OMA-URI** immettere `./Vendor/MSFT/VPN/Profile/*Name*/Mode` dove *Name* è il nome del profilo VPN annotato nel passaggio 1. In questo esempio la stringa è `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
+4. In **Tipo di dati** immettere **String**.
+5. In **Valore** immettere **BLACKLIST** o **WHITELIST**.
 
 ## <a name="step-3-assign-both-policies"></a>Passaggio 3: Assegnare entrambi i criteri
 
-Seguire le istruzioni in [Come assegnare i profili di dispositivo](device-profile-assign.md) per assegnare entrambi i profili agli utenti o ai dispositivi necessari.
+[Assegnare entrambi i profili di dispositivo](device-profile-assign.md) agli utenti o ai dispositivi appropriati.

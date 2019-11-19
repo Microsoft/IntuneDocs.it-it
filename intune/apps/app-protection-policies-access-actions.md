@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999484"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984029"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
@@ -44,9 +44,6 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 7. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. 
 8. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
->[!NOTE]
-> Per usare l'impostazione **Modello/i dispositivo o Produttore/i dispositivo**, inserire un elenco di identificatori di modelli di dispositivo (iOS) o di produttori di dispositivi separati da punto e virgola (Android). Evitare gli spazi in elenchi di più valori. I valori non fanno distinzione tra maiuscole e minuscole. 
-
 ## <a name="policy-settings"></a>Impostazioni criteri 
 
 La tabella delle impostazioni dei criteri di protezione delle app contiene le colonne **Impostazione**, **Valore** e **Azione**.
@@ -62,7 +59,7 @@ Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'el
 - Modello/i dispositivo
 - Livello di minaccia massimo consentito del dispositivo
 
-Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. È possibile trovare un identificatore di modello iOS nella colonna Device Type (Tipo di dispositivo) nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. I valori non fanno distinzione tra maiuscole e minuscole. Oltre a trovare l'input "Modello di dispositivi" nei report di Intune, è possibile individuare un identificatore di modello iOS nella colonna Tipo di dispositivo nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) o in questo [repository GitHub di terze parti](https://gist.github.com/adamawolf/3048717).<br>
 Input di esempio: *iPhone5,2;iPhone5,3*
 
 Nei dispositivi degli utenti finali il client Intune eseguirà un'azione in base a una semplice corrispondenza di stringhe relative a modelli di dispositivo specificate in Intune per i criteri di protezione delle applicazioni. La corrispondenza dipende completamente da quanto segnalato dal dispositivo. È consigliabile che l'amministratore IT si assicuri che si verifichi il comportamento previsto, testando questa impostazione con produttori e modelli di dispositivo diversi e usando come destinazione un piccolo gruppo di utenti. Il valore predefinito è **Non configurato**.<br>
@@ -90,7 +87,7 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 
 Usando la **Versione minima del Portale aziendale** è possibile indicare una versione minima definita specifica del Portale aziendale da applicare a un dispositivo di un utente finale. Questa impostazione di avvio condizionale consente di impostare i valori **Blocca accesso**, **Cancella i dati** e **Avvisa** come azioni possibili quando non tutti i valori sono soddisfatti. I formati possibili per questo valore seguono il criterio *[Major].[Minor]* , *[Major].[Minor].[Build]* o *[Major].[Minor].[Build].[Revision]* . Dato che alcuni utenti finali potrebbero voler evitare un aggiornamento immediato forzato delle app, l'opzione Avvisa potrebbe essere la scelta ideale per la configurazione di questa impostazione. Per gli aggiornamenti delle app, Google Play Store ha avuto la buona idea di inviare solo i byte delta, ma questi possono comunque costituire una grande quantità di dati e l'utente potrebbe non voler usare questa procedura se al momento dell'aggiornamento è connesso alla rete mobile. La forzatura di un aggiornamento e il download immediato di un'app aggiornata possono comportare addebiti imprevisti per i dati al momento dell'aggiornamento. L'impostazione **Versione minima del Portale aziendale**, se configurata, influisce su tutti gli utenti finali che ottengono la versione 5.0.4560.0 e le versioni future del Portale aziendale. Questa impostazione non influisce sugli utenti che usano una versione del Portale aziendale precedente alla versione con la quale questa funzionalità viene rilasciata. Gli utenti finali che usano gli aggiornamenti automatici delle app nel proprio dispositivo probabilmente non visualizzeranno alcuna finestra di dialogo di questa funzionalità, dal momento che probabilmente avranno la versione del Portale aziendale più recente. Questa impostazione è presente solo in Android con la protezione delle app per i dispositivi registrati e non registrati.
 
-Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
+Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. I valori non fanno distinzione tra maiuscole e minuscole. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo e nei report di Intune. <br>
 Esempio di input: *Produttore A;Produttore B* 
 
 >[!NOTE]

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507029"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756774"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
@@ -43,8 +43,8 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 
 ## <a name="create-a-template"></a>Creare un modello
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome per il profilo.
@@ -59,7 +59,7 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
     > [!TIP]
     > Le impostazioni di Windows in Intune sono correlate al percorso dei Criteri di gruppo locali visualizzato in Editor Criteri di gruppo locali (`gpedit`).
 
-5. Per impostazione predefinita, l'elenco a discesa mostra **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo quelle di **Windows**, solo quelle di **Office** o solo quelle di **Edge versione 77 o successiva**:
+5. Nell'elenco a discesa selezionare **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo quelle di **Windows**, solo quelle di **Office** o solo quelle di **Edge versione 77 o successiva**:
 
     ![Filtrare l'elenco per visualizzare tutte impostazioni di Windows o di Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

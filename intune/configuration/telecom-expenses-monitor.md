@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506635"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755067"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurare un servizio di gestione delle spese per telecomunicazioni in Intune
 
@@ -54,7 +54,7 @@ Per usare il servizio Datalert con Intune, sono disponibili alcune impostazioni 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Sottoscrizione a Microsoft Intune e accesso al [portale di Azure](https://portal.azure.com)
+- Sottoscrizione a Microsoft Intune e accesso all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Sottoscrizione a [Datalert](http://www.datalert.biz/) (viene aperto il sito Web di Datalert)
 
 ## <a name="telecom-expense-management-providers"></a>Provider di gestione delle spese per telecomunicazioni
@@ -109,9 +109,9 @@ Intune si integra con i provider di gestione delle spese per telecomunicazioni s
 
 Dopo il completamento del passaggio 1, la connessione è automaticamente abilitata. In Intune lo stato della connessione indica **Attiva**. Per verificare che lo stato sia attivo, seguire questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selezionare **Configurazione dispositivo** > **Gestione delle spese per telecomunicazioni**. Individuare lo stato di connessione **Attiva**:
+2. Selezionare **Amministrazione del tenant** > **Connettori e token** > **Gestione delle spese per telecomunicazioni**. Individuare lo stato di connessione **Attiva**:
 
    ![Pagina di Intune con stato Attiva per la connessione Datalert](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Gli utenti visualizzano queste categorie durante la registrazione ([Registrare d
 
 La procedura descritta di seguito consente di aggiungere l'app Datalert. Viene usato come esempio iOS. [Aggiungere app](../apps/apps-add.md) e [Usare i tag di ambito](../fundamentals/scope-tags.md) includono informazioni più specifiche su questi passaggi.
 
-1. In **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** selezionare **App client** > **App** > **Aggiungi**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **App** > **Tutte le app** > **Aggiungi**.
 
 2. Selezionare un valore nel campo **Tipo di app**. Per iOS, ad esempio, selezionare **App dello Store - iOS**.
 
@@ -156,7 +156,7 @@ La procedura descritta di seguito consente di aggiungere l'app Datalert. Viene u
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Assegnare l'app Datalert al gruppo dei dispositivi aziendali
 
-1. In **App client - App** selezionare l'app Datalert aggiunta nel passaggio precedente.
+1. In **App** > **Tutte le app** selezionare l'app Datalert aggiunta nel passaggio precedente.
 
 2. Selezionare **Assegnazioni** > **Aggiungi gruppo**. Scegliere come viene assegnata l'app. [Assegnare app ai gruppi in Intune](../apps/apps-deploy.md) include altri dettagli relativi a queste impostazioni.
 
@@ -183,7 +183,7 @@ Per l'esperienza utente finale possono risultare utili gli articoli seguenti:
 
 ## <a name="turn-off-the-datalert-service"></a>Disattivare il servizio Datalert
 
-1. In **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** selezionare **Configurazione dispositivo** > **Gestione delle spese per telecomunicazioni**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **Amministrazione del tenant** > **Connettori e token** > **Gestione delle spese per telecomunicazioni**.
 2. Impostare **Abilita il servizio di gestione delle spese per telecomunicazioni e blocca la rete dati o il roaming dei dati nei dispositivi che hanno superato le quote di utilizzo configurate** su **Disabilita**.
 3. **Salvare** le modifiche.
 

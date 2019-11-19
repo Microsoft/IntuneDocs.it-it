@@ -1,7 +1,7 @@
 ---
 title: Eccezioni dei criteri di trasferimento dei dati per le app
 titleSuffix: Microsoft Intune
-description: Creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune.
+description: Creare eccezioni per i criteri di trasferimento dei dati dei criteri di protezione app di Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813337"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984080"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati dei criteri di protezione app di Intune
 
-In qualità di amministratore, è possibile creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune. Un'eccezione consente di scegliere in modo specifico quali app non gestite possono trasferire i dati da e verso le app gestite. IT deve considerare attendibili le app non gestite incluse nell'elenco di eccezioni. 
+Un amministratore può creare eccezioni per i criteri di trasferimento dei dati dei criteri di protezione app di Intune. Un'eccezione consente di scegliere in modo specifico quali app non gestite possono trasferire i dati da e verso le app gestite. IT deve considerare attendibili le app non gestite incluse nell'elenco di eccezioni. 
 
 >[!WARNING] 
 > L'utente è responsabile di apportare modifiche ai criteri relativi alle eccezioni per il trasferimento dei dati. Le aggiunte a questi criteri consentono alle app non gestite (app non gestite da Intune) di accedere ai dati protetti dalle applicazioni gestite. L'accesso ai dati protetti può comportare minacce per la protezione dei dati. Aggiungere le eccezioni di trasferimento dei dati solo per le app che l'organizzazione deve usare, ma che non supportano i criteri di protezione delle app di Intune. È anche possibile aggiungere solo le eccezioni per le app che non si considerano a rischio di perdita di dati.
@@ -65,6 +65,8 @@ Aggiungendo il pacchetto **Webex** come un'eccezione per i criteri di trasferime
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Esempio **Programma di installazione** Android: Per esentare l'app **Programma di installazione dei certificati** nativa in modo che Outlook per Android possa installare un certificato S/MIME (inviato come allegato di posta elettronica) nell'archivio chiavi Android, è necessario aggiungere l'eccezione per il trasferimento dei dati per la stringa seguente: <code>com.android.certinstaller</code>. Per altre informazioni, vedere [Etichette di riservatezza e protezione in Outlook per iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

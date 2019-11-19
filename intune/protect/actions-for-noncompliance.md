@@ -2,10 +2,10 @@
 title: Messaggio e azioni per i dispositivi non conformi con Microsoft Intune - Azure | Microsoft Docs
 description: Creare un messaggio di posta elettronica di notifica da inviare ai dispositivi non conformi. Se un dispositivo viene contrassegnato come non conforme, è possibile aggiungere azioni, ad esempio un periodo di tolleranza al termine del quale il dispositivo deve essere conforme, o creare una pianificazione per bloccare l'accesso finché il dispositivo non è conforme. Queste operazioni possono essere eseguite con Microsoft Intune in Azure.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c432fbd38250212fcba346ec4762cb88a418cbce
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509695"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712908"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi in Intune
 
@@ -36,7 +36,7 @@ Sono disponibili diversi tipi di azioni:
 
     Intune include inoltre le informazioni sul dispositivo non conforme nella notifica di posta elettronica.
 
-- **Blocca in remoto il dispositivo non conforme**: per i dispositivi non conformi, è possibile impostare un blocco remoto. All'utente viene quindi richiesto un PIN o una password per sbloccare il dispositivo. Sono disponibili altre informazioni sulla funzionalità [Blocco remoto](../remote-actions/device-remote-lock.md). 
+- **Blocca in remoto il dispositivo non conforme**: per i dispositivi non conformi, è possibile impostare un blocco remoto. All'utente viene quindi richiesto un PIN o una password per sbloccare il dispositivo. Sono disponibili altre informazioni sulla funzionalità [Blocco remoto](../remote-actions/device-remote-lock.md).
 
 - **Contrassegna il dispositivo come non conforme**: è possibile creare una pianificazione (in numero di giorni) dopo la quale il dispositivo viene contrassegnato come non conforme. È possibile configurare l'azione in modo che venga applicata immediatamente oppure concedere all'utente un periodo di tolleranza entro il quale dovrà adeguarsi ai criteri di conformità.
 
@@ -62,55 +62,63 @@ Questo articolo illustra come:
 
 Per inviare il messaggio di posta elettronica agli utenti, creare un modello di messaggio di notifica. Quando un dispositivo risulta non conforme, i dettagli immessi nel modello vengono visualizzati nel messaggio di posta elettronica inviato agli utenti.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Conformità del dispositivo** > **Notifiche**.
-3. Selezionare **Crea la notifica**. Immettere le informazioni seguenti:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Criteri di conformità** > **Notifiche** > **Crea notifica**.
+3. In *Informazioni di base* specificare le informazioni seguenti:
 
    - **Nome**
    - **Oggetto**
    - **Message**
+
+4. In *Informazioni di base* configurare anche le opzioni seguenti per la notifica, che hanno tutte l'impostazione predefinita *Attivato*:
+
    - **Intestazione del messaggio di posta elettronica: includere il logo dell'azienda**
    - **Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda**
    - **Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto**
 
+   Il logo che si carica nell'ambito della personalizzazione del Portale aziendale viene usato per i modelli di posta elettronica. Per altre informazioni sulla personalizzazione del Portale aziendale, vedere [Personalizzazione dell'identità aziendale](../apps/company-portal-app.md#company-identity-branding-customization).
+
    ![Esempio di messaggio di notifica di Intune relativo alla conformità](./media/actions-for-noncompliance/actionsfornoncompliance-1.PNG)
 
-4. Dopo aver aggiunto le informazioni, scegliere **Crea**. Il modello di messaggio di notifica è pronto per l'uso. Il logo che si carica nell'ambito della personalizzazione del Portale aziendale viene usato per i modelli di posta elettronica. Per altre informazioni sulla personalizzazione del Portale aziendale, vedere [Personalizzazione dell'identità aziendale](../apps/company-portal-app.md#company-identity-branding-customization).
+   Selezionare **Avanti** per continuare.
+
+5. In **Rivedi e crea** esaminare le configurazioni per assicurarsi che il modello di messaggio di notifica sia pronto per l'uso. Selezionare **Crea** per completare la creazione della notifica.
 
 > [!NOTE]
-> È anche possibile modificare o aggiornare un modello di notifica esistente creato in precedenza.
+> È anche possibile selezionare un modello di notifica esistente creato in precedenza e usare **Modifica** per modificare le informazioni e aggiornare il modello.
 
 ## <a name="add-actions-for-noncompliance"></a>Aggiungere azioni per la mancata conformità
 
 Quando si crea un criterio di conformità del dispositivo, Intune crea automaticamente un'azione per la non conformità. Se un dispositivo non soddisfa i criteri di conformità, questa azione lo contrassegna come non conforme. È possibile personalizzare il periodo di tempo in cui il dispositivo rimane contrassegnato come non conforme. Questa azione non può essere rimossa.
 
-È anche possibile aggiungere un'altra azione quando si crea un criterio di conformità o si aggiorna un criterio esistente. 
+È anche possibile aggiungere un'altra azione quando si crea un criterio di conformità o si aggiorna un criterio esistente.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionare **Conformità del dispositivo**.
-2. Selezionare **Criteri**, scegliere uno dei criteri e quindi selezionare **Proprietà**. 
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
-  
-    > [!NOTE]
-    > Attualmente i dispositivi JAMF e i dispositivi selezionati con i gruppi di dispositivi non possono ricevere le azioni di conformità.
+2. Selezionare **Dispositivi** > **Criteri di conformità** > **Criteri**, selezionare uno dei criteri e quindi selezionare **Proprietà**.
+
+   Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
+
+   > [!NOTE]
+   > Attualmente i dispositivi JAMF e i dispositivi selezionati con i gruppi di dispositivi non possono ricevere le azioni di conformità.
 
 3. Selezionare **Azioni per la mancata conformità** > **Aggiungi**.
-4. Selezionare l'**azione**: 
 
-    - **Invia un messaggio di posta elettronica all'utente finale**: quando il dispositivo non è conforme, scegliere di inviare un messaggio di posta elettronica all'utente. Inoltre: 
-    
-         - Scegliere il **modello di messaggio** creato in precedenza
-         - Immettere eventuali **destinatari aggiuntivi** selezionando i gruppi
-    
-    - **Blocca in remoto il dispositivo non conforme**: quando il dispositivo non è conforme, bloccare il dispositivo. Questa azione obbliga l'utente a immettere un PIN o un passcode per sbloccare il dispositivo. 
-    
+4. Selezionare l'**azione**:
+
+   - **Invia un messaggio di posta elettronica all'utente finale**: quando il dispositivo non è conforme, scegliere di inviare un messaggio di posta elettronica all'utente. Inoltre:
+     - Scegliere il **modello di messaggio** creato in precedenza
+     - Immettere eventuali **destinatari aggiuntivi** selezionando i gruppi
+
+   - **Blocca in remoto il dispositivo non conforme**: quando il dispositivo non è conforme, bloccare il dispositivo. Questa azione obbliga l'utente a immettere un PIN o un passcode per sbloccare il dispositivo.
+
 5. Configurare i valori per l'opzione **Pianifica**: immettere il numero di giorni (da 0 a 365) dal rilevamento della non conformità, dopo cui attivare l'azione nei dispositivi degli utenti. Dopo questo periodo di tolleranza, è possibile applicare un criterio di [accesso condizionale](conditional-access-intune-common-ways-use.md). Se si immette **0** (zero) come numero di giorni, l'accesso condizionale viene applicato **immediatamente**. Ad esempio, se un dispositivo non è conforme, usare l'accesso condizionale per bloccare immediatamente l'accesso alla posta elettronica, a SharePoint e ad altre risorse dell'organizzazione.
 
-    Quando si crea un criterio di conformità, viene creata automaticamente l'azione **Contrassegna il dispositivo come non conforme**, che viene impostata su **0** giorni (immediatamente). Con questa azione, durante l'archiviazione del dispositivo ne viene valutata immediatamente la conformità. Se si usa anche l'accesso condizionale, questo viene applicato immediatamente. Se si vuole consentire un periodo di tolleranza, modificare il valore di **Pianifica** nell'azione **Contrassegna il dispositivo come non conforme**.
-    
-    Nei criteri di conformità si vuole, ad esempio, anche inviare una notifica all'utente. A questo scopo, è possibile aggiungere l'azione **Invia un messaggio di posta elettronica all'utente finale**. In questa azione **Invia messaggio** si imposta **Pianifica** su 2 giorni. Se il dispositivo o l'utente finale viene ancora valutato come non conforme il giorno 2, il messaggio di posta elettronica viene inviato il giorno 2. Se si vuole inviare nuovamente il messaggio di posta elettronica all'utente il giorno 5 della mancata conformità, aggiungere un'altra azione e impostare **Pianifica** su 5 giorni.
+   Quando si crea un criterio di conformità, viene creata automaticamente l'azione **Contrassegna il dispositivo come non conforme**, che viene impostata su **0** giorni (immediatamente). Con questa azione, durante l'archiviazione del dispositivo ne viene valutata immediatamente la conformità. Se si usa anche l'accesso condizionale, questo viene applicato immediatamente. Se si vuole consentire un periodo di tolleranza, modificare il valore di **Pianifica** nell'azione **Contrassegna il dispositivo come non conforme**.
 
-    Per altre informazioni sulla conformità e sulle azioni predefinite, vedere la [panoramica della conformità](device-compliance-get-started.md).
+   Nei criteri di conformità si vuole, ad esempio, anche inviare una notifica all'utente. A questo scopo, è possibile aggiungere l'azione **Invia un messaggio di posta elettronica all'utente finale**. In questa azione **Invia messaggio** si imposta **Pianifica** su 2 giorni. Se il dispositivo o l'utente finale viene ancora valutato come non conforme il giorno 2, il messaggio di posta elettronica viene inviato il giorno 2. Se si vuole inviare nuovamente il messaggio di posta elettronica all'utente il giorno 5 della mancata conformità, aggiungere un'altra azione e impostare **Pianifica** su 5 giorni.
+
+   Per altre informazioni sulla conformità e sulle azioni predefinite, vedere la [panoramica della conformità](device-compliance-get-started.md).
 
 6. Al termine, selezionare **Aggiungi** > **OK** per salvare le modifiche.
 
