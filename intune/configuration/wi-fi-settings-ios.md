@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593773"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059226"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi iOS in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi iOS. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione in rete, l'aggiunta di un certificato PKS o SCEP e altro ancora.
+È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi iOS. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione in rete, l'aggiunta di un certificato PKCS o SCEP e altro ancora.
 
 Queste impostazioni Wi-Fi sono divise in due categorie: impostazioni di base e impostazioni di livello enterprise.
 
@@ -81,9 +79,9 @@ Questo articolo descrive queste impostazioni.
     - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato consente al client di considerare attendibile il certificato del server di accesso alla rete wireless.
 
     - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
-      
-      - **Credenziale derivata**: se non è stata configurata alcuna autorità emittente di credenziali derivate, Intune richiede di eseguire questa operazione.
-      
+
+      - **Credenziale derivata**: usare un certificato derivato dalla smart card di un utente. Se non è configurata alcuna autorità emittente di credenziali derivate, Intune richiede di aggiungerne una. Per altre informazioni, vedere [use derived Credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
     - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
@@ -95,8 +93,8 @@ Questo articolo descrive queste impostazioni.
 
     - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
 
-      - **Credenziale derivata**: se non è stata configurata alcuna autorità emittente di credenziali derivate, Intune richiede di eseguire questa operazione.  
-      
+      - **Credenziale derivata**: usare un certificato derivato dalla smart card di un utente. Se non è configurata alcuna autorità emittente di credenziali derivate, Intune richiede di aggiungerne una. Per altre informazioni, vedere [use derived Credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Nome utente e password**: richiedere all'utente di specificare nome utente e password per autenticare la connessione. Specificare anche:
         - **Metodo non EAP (identità interna)** : scegliere la modalità di autenticazione della connessione. Assicurarsi di scegliere lo stesso protocollo configurato nella rete Wi-Fi.
 
@@ -115,8 +113,8 @@ Questo articolo descrive queste impostazioni.
 
     - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
 
-      - **Credenziale derivata**: se non è stata configurata alcuna autorità emittente di credenziali derivate, Intune richiede di eseguire questa operazione.  
-      
+      - **Credenziale derivata**: usare un certificato derivato dalla smart card di un utente. Se non è configurata alcuna autorità emittente di credenziali derivate, Intune richiede di aggiungerne una. Per altre informazioni, vedere [use derived Credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Nome utente e password**: richiedere all'utente di specificare nome utente e password per autenticare la connessione. 
 
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.

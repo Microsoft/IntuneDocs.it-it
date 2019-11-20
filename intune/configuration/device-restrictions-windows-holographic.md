@@ -1,11 +1,11 @@
 ---
 title: Impostazioni per dispositivi Windows Holographic for Business - Microsoft Intune - Azure | Microsoft Docs
-description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App Store, cookie e popup in Microsoft Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, orario di sistema e dati di utilizzo in Azure.
+description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App Store, cookie e popup in Microsoft Edge, Microsoft Defender, ricerca, cloud e archiviazione, connettività Bluetooth, orario di sistema e dati di utilizzo in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493914"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059496"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows Holographic for Business per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -57,7 +57,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 - **Strumento per la gestione delle password**: abilita o disabilita la funzionalità di gestione password di Microsoft Edge.
 - **Invia intestazioni DNT (Do Not Track)** : configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Smart Screen di Microsoft Defender
 
 - **SmartScreen per Microsoft Edge**: abilita SmartScreen di Microsoft Edge per l'accesso a siti e download di file.
 

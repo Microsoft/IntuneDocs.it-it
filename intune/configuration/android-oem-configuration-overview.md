@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756767"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059641"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usare e gestire i dispositivi Android Enterprise con OEMConfig in Microsoft Intune
 
@@ -80,8 +80,8 @@ Assicurarsi che il dispositivo supporti OEMConfig, che l'app OEMConfig corretta 
 
 ## <a name="create-an-oemconfig-profile"></a>Creare un profilo OEMConfig
 
-1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selezionare **dispositivi** > **profili di configurazione** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.
@@ -141,7 +141,7 @@ Rispetto alle app standard, le app OEMConfig espandono i privilegi di configuraz
 
 | OEM | ID bundle | Documentazione OEM (se disponibile) |
 | --- | --- | ---|
-| Samsung | com. Samsung. Android. Knox. KPU | [Guida dell'amministratore del plug-in del servizio Knox](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com. Samsung. Android. Knox. KPU | [Guida dell'amministratore del plug-in del servizio Knox](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Tecnologie Zebra | com. Zebra. oemconfig. Common | [Panoramica di zebra OEMConfig](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. Datalogic. oemconfig | [Documentazione dell'utente per Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |

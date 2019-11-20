@@ -1,11 +1,11 @@
 ---
 title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco di tutte le impostazioni e le relative descrizioni per la creazione di limitazioni per i dispositivi in Windows 10 e versioni successive. Usare queste impostazioni in un profilo di configurazione per controllare screenshot, requisiti per le password, impostazioni della modalità tutto schermo, app nello Store, browser Microsoft Edge, Windows Defender, accesso al cloud, menu Start e altro in Microsoft Intune.
+description: Visualizzare un elenco di tutte le impostazioni e le relative descrizioni per la creazione di limitazioni per i dispositivi in Windows 10 e versioni successive. Usare queste impostazioni in un profilo di configurazione per controllare screenshot, requisiti per le password, impostazioni della modalità tutto schermo, app nello Store, browser Microsoft Edge, Microsoft Defender, accesso al cloud, menu Start e altro in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
-ms.translationtype: MTE75
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755272"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059490"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -523,7 +523,7 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 - **Condividi i dati di utilizzo**: scegliere il livello di dati di diagnostica inviati. Le opzioni disponibili sono:
   - **Non configurato**: nessun dato viene condiviso.
-  - **Sicurezza**: le informazioni necessarie per mantenere più sicuro Windows, inclusi i dati sulle impostazioni del componente Esperienze utente connesse e telemetria, Strumento di rimozione malware e Windows Defender.
+  - **Sicurezza**: le informazioni necessarie per mantenere più sicuro Windows, inclusi i dati sulle impostazioni del componente Esperienze utente connesse e telemetria, Strumento di rimozione malware e Microsoft Defender.
   - **Base**: informazioni di base sul dispositivo, inclusi dati relativi a qualità, compatibilità delle app, utilizzo delle app e i dati dal livello Sicurezza.
   - **Avanzato**: informazioni dettagliate aggiuntive, tra cui: come vengono usati Windows, Windows Server, System Center e le app, le relative prestazioni, dati avanzati sull'affidabilità e i dati dei livelli Base e Sicurezza.
   - **Completa**: tutti i dati necessari per identificare e contribuire alla risoluzione dei problemi, oltre ai dati dai livelli Sicurezza, Base e Avanzato.
@@ -632,19 +632,19 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Nascondi**: il collegamento viene nascosto e l'impostazione viene disabilitata nell'app Impostazioni.
   - **Mostra**: il collegamento viene visualizzato e l'impostazione viene disabilitata nell'app Impostazioni.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Smart Screen di Microsoft Defender
 
-- **SmartScreen per Microsoft Edge**: **Rendi obbligatorio** disattiva Windows Defender SmartScreen e impedisce agli utenti di riattivarlo. L'impostazione **Non configurata** (predefinita) attiva SmartScreen. Consente di proteggere gli utenti da minacce potenziali e impedisce agli utenti di disattivarla.
+- **SmartScreen per Microsoft Edge**: **Rendi obbligatorio** disattiva Microsoft Defender SmartScreen e impedisce agli utenti di riattivarlo. L'impostazione **Non configurata** (predefinita) attiva SmartScreen. Consente di proteggere gli utenti da minacce potenziali e impedisce agli utenti di disattivarla.
 
-  Microsoft Edge usa Windows Defender SmartScreen (attivato) per proteggere gli utenti da potenziali tentativi di phishing e software dannoso.
+  Microsoft Edge usa Microsoft Defender SmartScreen (attivato) per proteggere gli utenti da potenziali tentativi di phishing e software dannoso.
 
   [Provider di servizi di configurazione Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **Accesso a siti dannosi**: **Blocca** impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Windows Defender e impedisce loro di passare al sito. **Non configurato** (impostazione predefinita) consente agli utenti di ignorare gli avvisi e di passare al sito.
+- **Accesso a siti dannosi**: **Blocca** impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Microsoft Defender e impedisce loro di passare al sito. **Non configurato** (impostazione predefinita) consente agli utenti di ignorare gli avvisi e di passare al sito.
 
   [Provider di servizi di configurazione Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **Download di file non verificati**: **Blocca** impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Windows Defender e impedisce loro di scaricare file non verificati. **Non configurato** (impostazione predefinita) consente agli utenti di ignorare gli avvisi e continuare a scaricare i file non verificati.
+- **Download di file non verificati**: **Blocca** impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Microsoft Defender nonché di scaricare file non verificati. **Non configurato** (impostazione predefinita) consente agli utenti di ignorare gli avvisi e continuare a scaricare i file non verificati.
 
   [Provider di servizi di configurazione Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   [CSP Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Rileva applicazioni potenzialmente indesiderate**: scegliere il livello di protezione quando Windows rileva applicazioni potenzialmente indesiderate. Le opzioni disponibili sono:
-  - **Non configurato** (impostazione predefinita): la protezione di Windows Defender per le applicazioni potenzialmente indesiderate è disabilitata.
-  - **Blocca**: Windows Defender rileva applicazioni potenzialmente indesiderate e gli elementi rilevati vengono bloccati. Questi elementi compaiono nella cronologia insieme alle altre minacce.
-  - **Controllo**: Windows Defender rileva le applicazioni potenzialmente indesiderate, ma non esegue alcuna azione. È possibile esaminare le informazioni sulle applicazioni per le quali Windows Defender interverrebbe. Ad esempio, cercare gli eventi creati da Windows Defender nel Visualizzatore eventi.
+  - **Non configurato** (impostazione predefinita): la protezione di Microsoft Defender per le applicazioni potenzialmente indesiderate è disabilitata.
+  - **Blocca**: Microsoft Defender rileva applicazioni potenzialmente indesiderate e gli elementi rilevati vengono bloccati. Questi elementi compaiono nella cronologia insieme alle altre minacce.
+  - **Controllo**: Microsoft Defender rileva le applicazioni potenzialmente indesiderate, ma non esegue alcuna azione. È possibile esaminare le informazioni sulle applicazioni per le quali Microsoft Defender interverrebbe. Ad esempio, cercare gli eventi creati da Microsoft Defender nel Visualizzatore eventi.
 
   Per altre informazioni sulle app potenzialmente indesiderate, vedere [Rilevare e bloccare le applicazioni potenzialmente indesiderate](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
@@ -850,11 +850,11 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
   - **Definito dall'utente**
   - **Bloccato**
 
-  Se l'azione non è possibile, Windows Defender sceglie l'opzione migliore per assicurarsi che la minaccia venga risolta. 
+  Se l'azione non è possibile, Microsoft Defender sceglie l'opzione migliore per assicurarsi che la minaccia venga risolta. 
 
   [CSP Defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Esclusioni di Windows Defender Antivirus
+### <a name="microsoft-defender-antivirus-exclusions"></a>Esclusioni di Antivirus Microsoft Defender
 
 - **File e cartelle da escludere dalle analisi e dalla protezione in tempo reale**: aggiunge uno o più file e cartelle come **C:\Percorso** o **%ProgramFiles%\Percorso\nomefile.exe** all'elenco delle esclusioni. Questi file e cartelle non sono inclusi nelle analisi in tempo reale o pianificate.
 - **Estensioni di file da escludere dalle analisi e dalla protezione in tempo reale**: aggiunge una o più estensioni di file come **jpg** o **txt** all'elenco delle esclusioni. I file con queste estensioni non vengono inclusi nelle analisi in tempo reale o pianificate.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593779"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059808"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Aggiungere impostazioni VPN in dispositivi iOS in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune include molte impostazioni VPN che possono essere distribuite ai dispositivi iOS. Queste impostazioni vengono usate per creare e configurare le connessioni VPN nella rete dell'organizzazione. Questo articolo descrive queste impostazioni. Alcune impostazioni sono disponibili solo per alcuni client VPN, ad esempio Citrix, Zscaler e altri.
 
@@ -73,7 +71,7 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
     > [!NOTE]
     > Se nome utente e password vengono usati come metodo di autenticazione per la VPN IPSec Cisco, devono fornire SharedSecret tramite un profilo personalizzato di Apple Configurator.
 
-  - **Credenziale derivata**: se non è stata configurata alcuna autorità emittente di credenziali derivate, Intune richiede di eseguire questa operazione.
+  - **Credenziale derivata**: usare un certificato derivato dalla smart card di un utente. Se non è configurata alcuna autorità emittente di credenziali derivate, Intune richiede di aggiungerne una. Per altre informazioni, vedere [use derived Credentials in Microsoft Intune](../protect/derived-credentials.md).
 
 - **URL esclusi** (solo Zscaler): quando si è connessi alla rete VPN di Zscaler, gli URL elencati sono accessibili dall'esterno del cloud di Zscaler. 
 
@@ -102,7 +100,7 @@ Le impostazioni visualizzate nell'elenco seguente sono determinate dal tipo di c
   - Quando il controllo accesso alla rete è abilitato, la rete VPN viene disconnessa ogni 24 ore. La VPN può essere riconnessa immediatamente.
   - L'ID del dispositivo fa parte del profilo, ma non viene visualizzato in Intune. Questo ID non viene archiviato né condiviso da Microsoft.
 
-  Quando l'ID del dispositivo è supportato dai partner VPN, il client VPN, ad esempio Citrix SSO, è in grado di ottenere l'ID. Quindi, può inviare una query a Intune per verificare se il dispositivo è registrato e se il profilo VPN è conforme o meno.
+  Per i partner VPN che supportano l'ID del dispositivo, il client VPN, ad esempio Citrix SSO, può ottenere l'ID. Quindi, può inviare una query a Intune per verificare se il dispositivo è registrato e se il profilo VPN è conforme o meno.
 
   - Per rimuovere questa informazione, creare nuovamente il profilo e non selezionare **Accetto**. Riassegnare quindi il profilo.
 
@@ -189,7 +187,10 @@ Queste impostazioni si applicano quando si sceglie il **tipo di connessione**  >
 - **VPN su richiesta**: configurare le regole condizionali che controllano l'avvio della connessione VPN. Ad esempio, creare una condizione per cui la connessione VPN viene usata solo quando un dispositivo non è connesso a una rete Wi-Fi aziendale. In alternativa, creare una nuova condizione. Ad esempio, se un dispositivo non può accedere a un dominio di ricerca DNS specificato, la connessione VPN non viene avviata.
 
   - **SSID o domini di ricerca DNS**: selezionare se la condizione usa o meno **SSID** della rete wireless o **Domini di ricerca DNS**. Scegliere **Aggiungi** per configurare uno o più SSID o domini di ricerca.
-  - **Probe della stringa dell'URL**: facoltativo. Immettere un URL che viene usato dalla regola come test. Se il dispositivo con questo profilo accede a tale URL senza reindirizzamento, la connessione VPN viene avviata. Il dispositivo si connette quindi all'URL di destinazione. L'utente non visualizza il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi che la rete VPN possa connettersi a un sito prima di connettere il dispositivo all'URL di destinazione tramite VPN.
+  - **Probe della stringa dell'URL**: facoltativo. Immettere un URL che viene usato dalla regola come test. Se il dispositivo accede all'URL senza reindirizzamento, la connessione VPN viene avviata. Il dispositivo si connette quindi all'URL di destinazione. L'utente non visualizza il sito del probe della stringa dell'URL.
+
+    Ad esempio, un probe della stringa dell'URL è l'URL di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. In alternativa, l'URL verifica la capacità della VPN di connettersi a un sito prima di connettere il dispositivo all'URL di destinazione tramite la VPN.
+.
   - **Azione del dominio**: scegliere una delle opzioni seguenti:
     - Connetti se necessario
     - Non connettere mai

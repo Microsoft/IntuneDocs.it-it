@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise include Microsoft Intune. Capire le funzio
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504785"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058536"
 ---
 # <a name="device-management-overview"></a>Panoramica della gestione dei dispositivi
 
@@ -84,7 +84,7 @@ Quando si configura Intune, è possibile scegliere di gestire i dispositivi escl
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Semplificare le attività IT usando il centro di amministrazione Gestione dei dispositivi
 
-Il [centro di amministrazione Gestione dei dispositivi](https://devicemanagement.microsoft.com/) è una risorsa centralizzata per gestire e completare le attività relative ai dispositivi mobili. Questa area di lavoro include i servizi usati per la gestione dei dispositivi, tra cui Intune e Azure Active Directory, e per la gestione delle app client.
+Il [centro di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) è una risorsa centralizzata per gestire e completare le attività relative ai dispositivi mobili. Questa area di lavoro include i servizi usati per la gestione dei dispositivi, tra cui Intune e Azure Active Directory, e per la gestione delle app client.
 
 Nel centro di amministrazione Gestione dispositivi è possibile:
 

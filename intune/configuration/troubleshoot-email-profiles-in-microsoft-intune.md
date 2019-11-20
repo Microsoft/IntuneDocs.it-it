@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755012"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059850"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di posta elettronica in Microsoft Intune
 
@@ -61,8 +61,8 @@ Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di ori
 
 Gli utenti con account di posta elettronica configurati automaticamente non possono inviare immagini o foto dai propri dispositivi. Questo scenario può verificarsi se l'opzione **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** non è abilitata.
 
-1. Accedere al centro di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selezionare **dispositivi** > **profili di configurazione**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione**.
 3. Selezionare il profilo di posta elettronica > **proprietà**  > **Impostazioni**.
 4. Impostare l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** per **abilitare**.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510218"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059690"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Proteggere i PC Windows con Endpoint Protection per Microsoft Intune
 
@@ -189,7 +189,7 @@ Intune consente di visualizzare i percorsi per fino a 10 istanze di malware rile
 4. Fare clic con il pulsante destro del mouse sull'intestazione di colonna. Verrà visualizzato un elenco delle colonne disponibili. Selezionare la casella di controllo **Percorsi di rilevamento recenti** nell'elenco. Viene visualizza la colonna **Percorsi di rilevamento recenti** che riporta fino a 10 delle istanze di malware monitorate più di recente nel dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Eseguire un'analisi del malware o aggiornare le definizioni di malware in un computer
-Intune consente di eseguire un'analisi completa o veloce del malware usando Endpoint Protection o Windows Defender in un PC gestito in remoto in cui è installato il client Intune.
+Intune consente di eseguire un'analisi completa o veloce del malware usando Endpoint Protection o Microsoft Defender in un PC gestito in remoto in cui è installato il client Intune.
 
 1. Nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com/) passare a **Gruppi** > **Panoramica** > **Tutti i dispositivi** > **Tutti i computer** e quindi selezionare il computer di destinazione.
 
