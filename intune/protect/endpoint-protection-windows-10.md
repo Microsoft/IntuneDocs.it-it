@@ -1,11 +1,11 @@
 ---
 title: Impostazioni di protezione per dispositivi Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Nei dispositivi Windows 10 usare o configurare le impostazioni di Endpoint Protection per abilitare le funzionalità di Windows Defender, tra cui Application Guard, Firewall, SmartScreen, crittografia e Bitlocker, Exploit Guard, Application Control, Centro sicurezza e protezione dei dispositivi locali in Microsoft Intune.
+description: Nei dispositivi Windows 10 usare o configurare le impostazioni di Endpoint Protection per abilitare le funzionalità di Microsoft Defender, tra cui Application Guard, Firewall, SmartScreen, crittografia e BitLocker, Exploit Guard, controllo di applicazioni, Centro sicurezza e protezione dei dispositivi locali in Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502275"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058418"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune include diverse impostazioni utili per la protezione dei dispositivi. Questo articolo descrive tutte le impostazioni che è possibile abilitare e configurare nei dispositivi Windows 10 e versioni successive. Queste impostazioni vengono create in un profilo di configurazione di Endpoint Protection in Intune per controllare la sicurezza, inclusi BitLocker e Microsoft Defender.  
 
-Microsoft Intune include diverse impostazioni utili per la protezione dei dispositivi. Questo articolo descrive tutte le impostazioni che è possibile abilitare e configurare nei dispositivi Windows 10 e versioni successive. Queste impostazioni vengono create in un profilo di configurazione di Endpoint Protection in Intune per controllare la sicurezza, inclusi BitLocker e Windows Defender.  
-
-Per configurare Windows Defender Antivirus, vedere [Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
+Per configurare Antivirus Microsoft Defender, vedere [Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## <a name="before-you-begin"></a>Prima di iniziare  
 
@@ -38,9 +36,9 @@ Per configurare Windows Defender Antivirus, vedere [Impostazioni dei dispositivi
 
 Per ulteriori informazioni sui provider di servizi di configurazione (CSP), vedere [Configuration Service Provider Reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender Application Guard  
 
-Quando si usa Microsoft Edge, Windows Defender Application Guard protegge l'ambiente dai siti che non sono considerati attendibili dall'organizzazione. Quando gli utenti visitano siti non elencati nei limiti della rete isolata, tali siti vengono aperti in una sessione del browser virtuale di Hyper-V. I siti attendibili vengono definiti da un limite di rete, configurato in Configurazione del dispositivo.  
+Quando si usa Microsoft Edge, Microsoft Defender Application Guard protegge l'ambiente dai siti non considerati attendibili dall'organizzazione. Quando gli utenti visitano siti non elencati nei limiti della rete isolata, tali siti vengono aperti in una sessione del browser virtuale di Hyper-V. I siti attendibili vengono definiti da un limite di rete, configurato in Configurazione del dispositivo.  
 
 Application Guard è disponibile solo per i dispositivi Windows 10 a 64 bit. Quando si usa questo profilo viene installato un componente Win32 per attivare Application Guard.  
 
@@ -122,7 +120,7 @@ Application Guard è disponibile solo per i dispositivi Windows 10 a 64 bit. Qua
   - **Abilita**: gli utenti possono scaricare i file dal browser virtualizzato nel sistema operativo host.  
   - **Non configurato**: consente di mantenere i file locali nel dispositivo e non scaricare i file nel file system host.  
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall  
  
 ### <a name="global-settings"></a>Impostazioni globali  
 
@@ -196,7 +194,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
 
 #### <a name="general-settings"></a>Impostazioni generali  
 
-- **Windows Defender Firewall**  
+- **Microsoft Defender Firewall**  
   **Impostazione predefinita**: Non configurato  
   CSP del firewall: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   **Impostazione predefinita**: Non configurato  
   CSP firewall: [schermato](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Non configurato**  
-    - **Blocca** : quando Windows Defender Firewall è acceso e questa impostazione è impostata su *blocca*, tutto il traffico in ingresso viene bloccato, indipendentemente dalle altre impostazioni dei criteri. 
+    - **Blocca** : quando Microsoft Defender Firewall è acceso e questa impostazione è impostata su *blocca*, tutto il traffico in ingresso viene bloccato, indipendentemente dalle altre impostazioni dei criteri. 
     - **Consenti** -se impostato su *Consenti*, questa impostazione è disattivata e il traffico in ingresso è consentito in base ad altre impostazioni dei criteri.
 
 - **Risposte unicast a broadcast multicast**  
@@ -264,7 +262,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
 
 #### <a name="rule-merging"></a>Unione delle regole  
 
-- **Regole di Windows Defender Firewall per le applicazioni autorizzate dall'archivio locale**  
+- **Regole di Microsoft Defender Firewall per le applicazioni autorizzate dall'archivio locale**  
   **Impostazione predefinita**: Non configurato  
   CSP del firewall: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   - **Consenti**: -
    scegliere **Abilita**, che applica le regole del firewall nell'archivio locale in modo che vengano riconosciute e applicate.  
 
-- **Regole di Windows Defender Firewall per porte globali dall'archivio locale**  
+- **Regole di Microsoft Defender Firewall per porte globali dall'archivio locale**  
   **Impostazione predefinita**: Non configurato  
   CSP del firewall: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   - **Block** : le regole del firewall per le porte globali nell'archivio locale vengono ignorate e non vengono applicate.  
   - **Consenti**: le regole del firewall per le porte globali vengono applicate nell'archivio locale in modo che vengano riconosciute e applicate.  
 
-- **Regole di Windows Defender Firewall dall'archivio locale**  
+- **Regole di Microsoft Defender Firewall dall'archivio locale**  
   **Impostazione predefinita**: Non configurato  
   CSP del firewall: [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -336,7 +334,7 @@ Le regole del firewall personalizzate supportano le opzioni seguenti:
 #### <a name="application-settings"></a>Impostazioni applicazione  
 
 - **Applicazione/i**  
-  **Impostazione predefinita**: tutti  
+  **Impostazione predefinita**: Tutto  
 
   Controllare le connessioni per un'app o un programma. Selezionare una delle opzioni seguenti e quindi completare la configurazione aggiuntiva:  
   - **Nome della famiglia** di pacchetti: specificare il nome della famiglia di pacchetti. Per trovare il nome della famiglia di pacchetti, usare il comando di PowerShell **Get-AppxPackage**.   
@@ -422,7 +420,7 @@ Specificare le porte locali e remote a cui si applica questa regola.
   Specificare un elenco di utenti locali autorizzati per questa regola. Non è possibile specificare un elenco di utenti autorizzati se questa regola si applica a un servizio Windows.  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Impostazioni di Windows Defender SmartScreen  
+## <a name="microsoft-defender-smartscreen-settings"></a>Impostazioni di Microsoft Defender SmartScreen  
  
 Microsoft Edge deve essere installato nel dispositivo.  
 
@@ -443,8 +441,6 @@ Microsoft Edge deve essere installato nel dispositivo.
 ## <a name="windows-encryption"></a>Crittografia di Windows  
  
 ### <a name="windows-settings"></a>Impostazioni Windows  
-
-Queste impostazioni di crittografia si applicano a tutte le versioni di Windows 10.  
 
 - **Crittografa i dispositivi**  
   **Impostazione predefinita**: Non configurato  
@@ -479,7 +475,7 @@ Le impostazioni di base sono impostazioni BitLocker universali per tutti i tipi 
   Quando è impostato su *blocca*, è possibile configurare l'impostazione seguente:  
 
   - **Consenti agli utenti standard di abilitare la crittografia durante un'aggiunta ad Azure AD**  
-    *Questa impostazione si applica solo ai dispositivi Azure Active Directory aggiunti (Azure ADJ) e dipende dall'impostazione precedente `Warning for other disk encryption`.*  
+    *Questa impostazione si applica solo ai dispositivi Azure Active Directory aggiunti (Azure ADJ) e dipende dall'impostazione precedente, `Warning for other disk encryption`.*  
     **Impostazione predefinita**: Non configurato  
     CSP BitLocker: [AllowStandardUserEncryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -775,7 +771,7 @@ Queste impostazioni si applicano in modo specifico alle unità dati rimovibili.
     - **Blocca**: consente l'accesso in scrittura ai dispositivi configurati in un'altra organizzazione.  
     - **Non configurato** -Nega accesso in scrittura.  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender exploit Guard  
 
 Usare la [protezione dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) per gestire e ridurre la superficie di attacco delle app usate dai dipendenti.  
 
@@ -825,7 +821,7 @@ Impedire alle app di Office di eseguire le azioni seguenti:
 
 - **Avvio di processi figlio per le app di Office**  
   **Impostazione predefinita**: Non configurato  
-  Regola: [impedisce a tutte le applicazioni di Office di creare processi figlio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
+  Regola: [Impedire alle applicazioni di Office di creare processi figlio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Non configurato**  
   - **Blocca le** app di Office dall'avvio dei processi figlio.  
@@ -971,21 +967,20 @@ Blocca le connessioni in uscita da qualsiasi app a indirizzi IP o domini con una
 
   Lo scopo di questa impostazione è quello di proteggere gli utenti finali dalle app con accesso a truffe di phishing, siti di hosting di exploit e contenuti dannosi su Internet. Impedisce inoltre ai browser di terze parti di connettersi a siti pericolosi.  
 
-  - **Non configurato**: disabilitare questa funzionalità. Utenti e app non sono bloccati dalla connessione a domini pericolosi. Gli amministratori non possono visualizzare questa attività in Windows Defender Security Center.  
-  - **Abilitare** : attivare la protezione della rete e impedire a utenti e app di connettersi a domini pericolosi. Gli amministratori possono visualizzare questa attività in Windows Defender Security Center.  
-  - **Solo controllo**: gli utenti e le app non sono bloccati dalla connessione a domini pericolosi. Gli amministratori possono visualizzare questa attività in Windows Defender Security Center.  
+  - **Non configurato**: disabilitare questa funzionalità. Utenti e app non sono bloccati dalla connessione a domini pericolosi. Gli amministratori non possono visualizzare questa attività in Microsoft Defender Security Center.  
+  - **Abilitare** : attivare la protezione della rete e impedire a utenti e app di connettersi a domini pericolosi. Gli amministratori possono visualizzare questa attività in Microsoft Defender Security Center.  
+  - **Solo controllo**: gli utenti e le app non sono bloccati dalla connessione a domini pericolosi. Gli amministratori possono visualizzare questa attività in Microsoft Defender Security Center.  
 
 ### <a name="exploit-protection"></a>Protezione dagli exploit  
- 
 
 - **Carica XML**  
   **Impostazione predefinita**: *Non configurato*  
 
-  Per usare la protezione dagli exploit per [proteggere i dispositivi dagli exploit](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), creare un file XML che includa le impostazioni di mitigazione del sistema e delle applicazioni desiderate. Esistono due metodi per creare il file XML:  
+  Per usare la protezione dagli exploit per [proteggere i dispositivi dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), creare un file XML che includa le impostazioni di mitigazione del sistema e delle applicazioni desiderate. Esistono due metodi per creare il file XML:  
 
   - *PowerShell*: usare uno o più cmdlet di PowerShell *Get-ProcessMitigation*, *Set-ProcessMitigation* e *ConvertTo-ProcessMitigationPolicy*. I cmdlet configurano le impostazioni di mitigazione ed esportano la relativa rappresentazione XML.  
 
-  - *Interfaccia utente di Windows Defender Security Center*: in Windows Defender Security Center fare clic su Controllo app e browser e quindi scorrere fino alla parte inferiore della schermata visualizzata per trovare Protezione dagli exploit. Usare prima di tutto le schede Impostazioni di sistema e Impostazioni programmi per configurare le impostazioni di mitigazione. Trovare quindi il collegamento Esporta impostazioni nella parte inferiore della schermata per esportare la relativa rappresentazione XML.  
+  - *Interfaccia utente di Microsoft Defender Security Center*: in Microsoft Defender Security Center fare clic su Controllo delle app e del browser e quindi scorrere fino alla parte inferiore della schermata visualizzata per trovare Protezione dagli exploit. Usare prima di tutto le schede Impostazioni di sistema e Impostazioni programmi per configurare le impostazioni di mitigazione. Trovare quindi il collegamento Esporta impostazioni nella parte inferiore della schermata per esportare la relativa rappresentazione XML.  
 
 - **Modifica dell'interfaccia di protezione dagli exploit da parte degli utenti**  
   **Impostazione predefinita**: Non configurato  
@@ -995,9 +990,9 @@ Blocca le connessioni in uscita da qualsiasi app a indirizzi IP o domini con una
   - **Blocca** : consente di caricare un file XML che consente di configurare la memoria, il flusso di controllo e le restrizioni dei criteri. Le impostazioni nel file XML possono essere usate per proteggere un'applicazione dagli exploit.  
   - **Non configurato** : non viene usata alcuna configurazione personalizzata.  
 
-## <a name="windows-defender-application-control"></a>Controllo di applicazioni di Windows Defender  
+## <a name="microsoft-defender-application-control"></a>Controllo di applicazioni di Microsoft Defender  
 
-Scegliere altre app che devono essere controllate da oppure possono essere considerate attendibili per l'esecuzione da parte del controllo delle applicazioni di Windows Defender. I componenti Windows e tutte le app di Windows Store sono ritenuti automaticamente attendibili per l'esecuzione.  
+Scegliere altre app che devono essere controllate da oppure possono essere considerate attendibili per l'esecuzione da parte del controllo delle applicazioni di Microsoft Defender. I componenti Windows e tutte le app di Windows Store sono ritenuti automaticamente attendibili per l'esecuzione.  
 
 
 - **Criteri di integrità del codice di controllo delle applicazioni**  
@@ -1012,9 +1007,9 @@ Scegliere altre app che devono essere controllate da oppure possono essere consi
  
   - **Solo controllo** : le applicazioni non sono bloccate. Tutti gli eventi vengono registrati nei log del client locale.  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard protegge contro attacchi relativi al furto di credenziali. Isola i segreti in modo che possa accedervi solo il software di sistema con privilegi.  
+Microsoft Defender Credential Guard protegge contro attacchi relativi al furto di credenziali. Isola i segreti in modo che possa accedervi solo il software di sistema con privilegi.  
 
 - **Credential Guard**  
   **Impostazione predefinita**: Disabilitato  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard protegge contro attacchi relativi al furto di 
   - **Avvio protetto con accesso diretto alla memoria**  
     attiva la sicurezza basata su virtualizzazione con l'avvio protetto e l'accesso diretto alla memoria. Le protezioni DMA richiedono supporto hardware e vengono abilitate solo nei dispositivi configurati correttamente.  
 
-## <a name="windows-defender-security-center"></a>Windows Defender Security Center  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender Security Center  
 
-Windows Defender Security Center funziona come un'app o un processo separato da ognuna delle singole funzionalità. Visualizza le notifiche tramite il centro notifiche. Funge da agente di raccolta o da posizione centralizzata per visualizzare lo stato ed eseguire alcune attività di configurazione per ogni funzionalità. Per altre informazioni, vedere la documentazione di [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).  
+Microsoft Defender Security Center funziona come un'app o un processo separato da ognuna delle singole funzionalità. Visualizza le notifiche tramite il centro notifiche. Funge da agente di raccolta o da posizione centralizzata per visualizzare lo stato ed eseguire alcune attività di configurazione per ogni funzionalità. Ulteriori informazioni sono disponibili nella documentazione di [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) .  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>App e notifiche di Windows Defender Security Center  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>App e notifiche di Microsoft Defender Security Center  
 
-È possibile bloccare l'accesso degli utenti finali alle diverse aree dell'app Windows Defender Security Center. Se si nasconde una sezione, vengono bloccate anche le notifiche correlate.  
+È possibile bloccare l'accesso degli utenti finali alle diverse aree dell'app Microsoft Defender Security Center. Se si nasconde una sezione, vengono bloccate anche le notifiche correlate.  
 
 - **Protezione da virus e minacce**  
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Configurare se gli utenti finali possono visualizzare l'area protezione da virus e minacce in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alla protezione da virus e minacce.  
+  Configurare se gli utenti finali possono visualizzare l'area protezione da virus e minacce nel centro sicurezza Microsoft Defender. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alla protezione da virus e minacce.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1057,7 +1052,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Configurare se gli utenti finali possono visualizzare l'area di protezione ransomware in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche correlate alla protezione ransomware.  
+  Configurare se gli utenti finali possono visualizzare l'area di protezione ransomware in Microsoft Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche correlate alla protezione ransomware.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1066,7 +1061,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Configurare se gli utenti finali possono visualizzare l'area di protezione dell'account in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alla protezione dell'account.  
+  Configurare se gli utenti finali possono visualizzare l'area di protezione dell'account nel centro sicurezza Microsoft Defender. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alla protezione dell'account.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1075,7 +1070,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Configurare se gli utenti finali possono visualizzare il firewall e l'area di protezione di rete in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative al firewall e alla protezione della rete.  
+  Configurare se gli utenti finali possono visualizzare il firewall e l'area di protezione di rete in Microsoft Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative al firewall e alla protezione della rete.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1084,7 +1079,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Configurare se gli utenti finali possono visualizzare l'area di controllo app e browser in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative al controllo app e browser.  
+  Configurare se gli utenti finali possono visualizzare l'area di controllo app e browser in Microsoft Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative al controllo app e browser.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1093,7 +1088,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Configurare se gli utenti finali possono visualizzare l'area di protezione hardware in Windows Defender Security Center. Se si nasconde questa sezione, vengono bloccate anche tutte le notifiche relative alla protezione hardware.  
+  Configurare se gli utenti finali possono visualizzare l'area di protezione hardware in Microsoft Defender Security Center. Se si nasconde questa sezione, vengono bloccate anche tutte le notifiche relative alla protezione hardware.  
 
   - **Non configurato**  
   - **Nascondi**  
@@ -1102,7 +1097,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Configurare se gli utenti finali possono visualizzare l'area prestazioni e integrità del dispositivo in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alle prestazioni e all'integrità del dispositivo.  
+  Configurare se gli utenti finali possono visualizzare l'area prestazioni e integrità del dispositivo in Microsoft Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alle prestazioni e all'integrità del dispositivo.  
   
   - **Non configurato**  
   - **Nascondi**  
@@ -1111,7 +1106,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configurare se gli utenti finali possono visualizzare l'area Opzioni famiglia in Windows Defender Security Center. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alle opzioni di famiglia.  
+  Configurare se gli utenti finali possono visualizzare l'area Opzioni famiglia nel centro sicurezza Microsoft Defender. Nascondendo questa sezione vengono anche bloccate tutte le notifiche relative alle opzioni di famiglia.  
   
   - **Non configurato**  
   - **Nascondi**  
@@ -1120,7 +1115,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
   **Impostazione predefinita**: Non configurato  
   WindowsDefenderSecurityCenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  scegliere le notifiche da visualizzare agli utenti finali. Le notifiche non critiche includono riepiloghi dell'attività di Windows Defender Antivirus, comprese le notifiche relative al completamento delle analisi. Tutte le altre notifiche sono considerate critiche.  
+  scegliere le notifiche da visualizzare agli utenti finali. Le notifiche non critiche includono riepiloghi dell'attività di Antivirus Microsoft Defender, comprese le notifiche relative al completamento delle analisi. Tutte le altre notifiche sono considerate critiche.  
 
   - **Non configurato**  
   - **Blocca le notifiche non critiche**  
@@ -1160,7 +1155,7 @@ Windows Defender Security Center funziona come un'app o un processo separato da 
 
 ### <a name="it-contact-information"></a>Informazioni di contatto del reparto IT  
 
-Specificare le informazioni di contatto del reparto IT da visualizzare nell'app Windows Defender Security Center e nelle relative notifiche.  
+Specificare le informazioni di contatto del reparto IT da visualizzare nell'app Microsoft Defender Security Center e nelle relative notifiche.  
 
 È possibile scegliere **Visualizza nell'app e nelle notifiche**, **Visualizza solo nell'app**, **Visualizza solo nelle notifiche** o **Non visualizzare**. Immettere il **nome dell'organizzazione IT** e almeno una delle opzioni di contatto seguenti:  
 
@@ -1202,7 +1197,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Aggiungi nuovi account Microsoft**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Accounts_BlockMicrosoftAccounts](https://go.microsoft.com/fwlink/?linkid=867916)  
+  CSP LocalPoliciesSecurityOptions: [Accounts_BlockMicrosoftAccounts](https://go.microsoft.com/fwlink/?linkid=867916)  
 
 
   - **Blocca**: consente di impedire agli utenti di aggiungere nuovi account Microsoft nel dispositivo.  
@@ -1210,7 +1205,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Accesso remoto senza password**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867890)  
+  CSP LocalPoliciesSecurityOptions: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867890)  
 
 
    - **Blocca** consente solo agli account locali con password vuote di accedere tramite la tastiera del dispositivo.  
@@ -1220,7 +1215,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Account amministratore locale**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867850)  
+  CSP LocalPoliciesSecurityOptions: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867850)  
 
 
   - **Blocca** Impedisci l'uso di un account amministratore locale.  
@@ -1228,7 +1223,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Rinomina l'account amministratore**  
   **Impostazione predefinita**: *Non configurato*  
-  LocalPoliciesSecurityOptions CSP: [Accounts_RenameAdministratorAccount](https://go.microsoft.com/fwlink/?linkid=867917)  
+  CSP LocalPoliciesSecurityOptions: [Accounts_RenameAdministratorAccount](https://go.microsoft.com/fwlink/?linkid=867917)  
  
 
   Definire un nome account diverso da associare all'ID di sicurezza (SID) per l'account "Amministratore".  
@@ -1244,7 +1239,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Rinomina l'account Guest**  
   **Impostazione predefinita**: *Non configurato*  
-  LocalPoliciesSecurityOptions CSP: [Accounts_RenameGuestAccount](https://go.microsoft.com/fwlink/?linkid=867918)  
+  CSP LocalPoliciesSecurityOptions: [Accounts_RenameGuestAccount](https://go.microsoft.com/fwlink/?linkid=867918)  
   
   Definire un nome account diverso da associare all'ID di sicurezza (SID) per l'account "Guest".  
 
@@ -1252,7 +1247,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Disancora il dispositivo senza accesso**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Devices_AllowUndockWithoutHavingToLogon](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-devices-allowundockwithouthavingtologon)  
+  CSP LocalPoliciesSecurityOptions: [Devices_AllowUndockWithoutHavingToLogon](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-devices-allowundockwithouthavingtologon)  
 
   
   - **Blocca**: gli utenti possono premere il pulsante di espulsione fisico del dispositivo portatile inserito nell'alloggiamento di espansione per disinserire in modo sicuro il dispositivo.  
@@ -1260,7 +1255,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Installa i driver della stampante per le stampanti condivise**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](https://go.microsoft.com/fwlink/?linkid=867921)  
+  CSP LocalPoliciesSecurityOptions: [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](https://go.microsoft.com/fwlink/?linkid=867921)  
 
 
   - **Abilitato**: qualsiasi utente può installare un driver della stampante durante la connessione a una stampante condivisa.  
@@ -1289,14 +1284,14 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Minuti di inattività della schermata di blocco prima dell'attivazione dello screen saver**  
   **Impostazione predefinita**: *Non configurato*  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_MachineInactivityLimit](https://go.microsoft.com/fwlink/?linkid=867891)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_MachineInactivityLimit](https://go.microsoft.com/fwlink/?linkid=867891)  
 
 
-  immettere il numero massimo di minuti di inattività nella schermata di accesso del desktop interattivo prima dell'attivazione dello screen saver. (**0** - **99999**)  
+  Immettere il numero massimo di minuti di inattività nella schermata di accesso del desktop interattivo prima dell'attivazione dello screen saver. (**0** - **99999**)  
 
 - **Richiedi CTRL+ALT+CANC per accedere**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotRequireCTRLALTDEL](https://go.microsoft.com/fwlink/?linkid=867951)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_DoNotRequireCTRLALTDEL](https://go.microsoft.com/fwlink/?linkid=867951)  
 
 
   - **Abilita**: gli utenti non devono premere CTRL+ALT+CANC per accedere.  
@@ -1304,7 +1299,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Comportamento in caso di rimozione della smart card**  
   **Impostazione predefinita**: Blocca workstation   
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_SmartCardRemovalBehavior](https://go.microsoft.com/fwlink/?linkid=868437)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_SmartCardRemovalBehavior](https://go.microsoft.com/fwlink/?linkid=868437)  
     
   determina le azioni che vengono eseguite quando la smart card di un utente connesso viene rimossa dal lettore di smart card. Le opzioni disponibili sono:  
 
@@ -1317,7 +1312,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Informazioni utente nella schermata di blocco**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked)  
 
   consente di configurare le informazioni utente visualizzate quando la sessione è bloccata. Se questa opzione non viene configurata, vengono mostrati il nome visualizzato dell'utente, il dominio e il nome utente.  
 
@@ -1328,7 +1323,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Nascondi l'ultimo utente connesso**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayLastSignedIn](https://go.microsoft.com/fwlink/?linkid=868437)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_DoNotDisplayLastSignedIn](https://go.microsoft.com/fwlink/?linkid=868437)  
   
   
   - **Abilita** -Nascondi il nome utente.  
@@ -1336,7 +1331,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Nascondi nome utente all'accesso**
   **predefinito**: non configurato  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
   
   - **Abilita** -Nascondi il nome utente.  
@@ -1344,13 +1339,13 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Titolo del messaggio di accesso**  
   **Impostazione predefinita**: *Non configurato*  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](https://go.microsoft.com/fwlink/?linkid=867964)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](https://go.microsoft.com/fwlink/?linkid=867964)  
 
   imposta il titolo del messaggio per gli utenti che eseguono l'accesso.  
 
 - **Testo del messaggio di accesso**  
   **Impostazione predefinita**: *Non configurato*  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_MessageTextForUsersAttemptingToLogOn](https://go.microsoft.com/fwlink/?linkid=867962)  
+  CSP LocalPoliciesSecurityOptions: [InteractiveLogon_MessageTextForUsersAttemptingToLogOn](https://go.microsoft.com/fwlink/?linkid=867962)  
 
   imposta il testo del messaggio per gli utenti che eseguono l'accesso.  
   
@@ -1358,28 +1353,28 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Accesso anonimo alle named pipe e alle condivisioni**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares](https://go.microsoft.com/fwlink/?linkid=868432)  
+  CSP LocalPoliciesSecurityOptions: [NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares](https://go.microsoft.com/fwlink/?linkid=868432)  
 
   - **Non configurato**: consente di limitare l'accesso anonimo alle impostazioni di condivisioni e named pipe. Si applica alle impostazioni a cui è possibile accedere anonimamente.  
   - **Blocca** : Disabilita questo criterio, rendendo disponibile l'accesso anonimo.  
 
 - **Enumerazione anonima degli account SAM**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts](https://go.microsoft.com/fwlink/?linkid=868434)  
+  CSP LocalPoliciesSecurityOptions: [NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts](https://go.microsoft.com/fwlink/?linkid=868434)  
   
   - **Non configurato** : gli utenti anonimi possono enumerare gli account SAM.  
   - **Blocca**: per impedire l'enumerazione anonima degli account SAM.  
 
 - **Enumerazione anonima di account e condivisioni SAM**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares](https://go.microsoft.com/fwlink/?linkid=868435)  
+  CSP LocalPoliciesSecurityOptions: [NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares](https://go.microsoft.com/fwlink/?linkid=868435)  
 
   - **Non configurato**: consente agli utenti anonimi di enumerare i nomi di account di dominio e condivisioni di rete.  
   - **Blocca**: per impedire l'enumerazione anonima di account e condivisioni SAM. 
 
 - **Valore hash di LAN Manager archiviato alla modifica della password**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange](https://go.microsoft.com/fwlink/?linkid=868431)  
+  CSP LocalPoliciesSecurityOptions: [NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange](https://go.microsoft.com/fwlink/?linkid=868431)  
    
   Determinare se il valore hash per le password viene archiviato la volta successiva che la password viene modificata. 
   - **Non configurato** : il valore hash non è archiviato  
@@ -1387,14 +1382,14 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Richieste di autenticazione PKU2U**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkSecurity_AllowPKU2UAuthenticationRequests](https://go.microsoft.com/fwlink/?linkid=867892)  
+  CSP LocalPoliciesSecurityOptions: [NetworkSecurity_AllowPKU2UAuthenticationRequests](https://go.microsoft.com/fwlink/?linkid=867892)  
 
   - **Non configurato**: consente le richieste PU2U.  
   - **Blocca le** richieste di autenticazione PKU2U al dispositivo.  
 
 - **Limita le connessioni RPC remote a SAM**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM](https://go.microsoft.com/fwlink/?linkid=867893)  
+  CSP LocalPoliciesSecurityOptions: [NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM](https://go.microsoft.com/fwlink/?linkid=867893)  
   
   - **Non configurato** : usare il descrittore di sicurezza predefinito, che può consentire a utenti e gruppi di effettuare chiamate RPC remote al Sam.
   - **Consenti** : nega a utenti e gruppi di effettuare chiamate RPC remote a gestione account di sicurezza (Sam), che archivia gli account utente e le password. **Consenti** consente inoltre di modificare la stringa SDDL (Security Descriptor Definition Language) predefinita per consentire o negare in modo esplicito a utenti e gruppi di effettuare queste chiamate remote.  
@@ -1404,7 +1399,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
     
 - **Sicurezza sessione minima per client basati su NTLM SSP**  
   **Impostazione predefinita**: nessuna  
-  LocalPoliciesSecurityOptions CSP: [NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients](https://aka.ms/policy-csp-localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients)  
+  CSP LocalPoliciesSecurityOptions: [NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients](https://aka.ms/policy-csp-localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients)  
   
   Questa impostazione di sicurezza consente ai server di richiedere la negoziazione della crittografia a 128 bit e/o della sicurezza di sessione NTLMv2.  
 
@@ -1415,7 +1410,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
  
 - **Sicurezza sessione minima per server basati su NTLM SSP**  
   **Impostazione predefinita**: nessuna  
-  LocalPoliciesSecurityOptions CSP: [NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers](https://aka.ms/policy-csp-localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers)  
+  CSP LocalPoliciesSecurityOptions: [NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers](https://aka.ms/policy-csp-localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers)  
 
   Questa impostazione di sicurezza specifica il protocollo di autenticazione Richiesta di verifica/Risposta usato per gli accessi di rete.  
 
@@ -1426,7 +1421,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Livello di autenticazione di LAN Manager**  
   **Impostazione predefinita**: LM e NTLM  
-  LocalPoliciesSecurityOptions CSP: [NetworkSecurity_LANManagerAuthenticationLevel](https://aka.ms/policy-csp-localpoliciessecurityoptions-lanmanagerauthenticationlevel)  
+  CSP LocalPoliciesSecurityOptions: [NetworkSecurity_LANManagerAuthenticationLevel](https://aka.ms/policy-csp-localpoliciessecurityoptions-lanmanagerauthenticationlevel)  
 
 
   - **LM e NTLM**  
@@ -1449,7 +1444,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Cancella il file di paging della memoria virtuale all'arresto**  
   **Impostazione predefinita**: Non configurato  
-   LocalPoliciesSecurityOptions CSP: [Shutdown_ClearVirtualMemoryPageFile](https://go.microsoft.com/fwlink/?linkid=867914)  
+   CSP LocalPoliciesSecurityOptions: [Shutdown_ClearVirtualMemoryPageFile](https://go.microsoft.com/fwlink/?linkid=867914)  
 
 
   - **Abilita**: consente di cancellare il file di paging della memoria virtuale quando il dispositivo viene spento.  
@@ -1457,7 +1452,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Arresta senza accesso**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](https://go.microsoft.com/fwlink/?linkid=867912)  
+  CSP LocalPoliciesSecurityOptions: [Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](https://go.microsoft.com/fwlink/?linkid=867912)  
 
   
   - **Blocca**: nasconde l'opzione di arresto del sistema nella schermata di accesso di Windows. Gli utenti devono accedere al dispositivo e quindi arrestarlo.  
@@ -1467,21 +1462,21 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Integrità UIA senza posizione sicura**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](https://go.microsoft.com/fwlink/?linkid=867897)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](https://go.microsoft.com/fwlink/?linkid=867897)  
   
   - **Block** : le app che si trovano in una posizione sicura nel file System verranno eseguite solo con l'integrità di uiAccess.  
   - **Non configurato**: consente l'esecuzione delle app con l'integrità UIAccess, anche se le app non sono in una posizione sicura nel file system.  
 
 - **Virtualizzare gli errori di scrittura nel file e nel Registro di sistema in percorsi specifici per ogni utente**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](https://go.microsoft.com/fwlink/?linkid=867900)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](https://go.microsoft.com/fwlink/?linkid=867900)  
 
   - **Abilitato**: le applicazioni che eseguono la scrittura dei dati in percorsi protetti genereranno errori.  
   - **Non configurato**: gli errori di scrittura delle applicazioni in fase di esecuzione vengono reindirizzati su percorsi utente definiti per il file system e per il Registro di sistema.  
 
 - **Esegui con privilegi elevati solo i file eseguibili firmati e convalidati**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](https://go.microsoft.com/fwlink/?linkid=867965)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](https://go.microsoft.com/fwlink/?linkid=867965)  
 
   - **Abilitato**: applicare la convalida del percorso di certificazione PKI di un file eseguibile prima che possa essere eseguito.  
   - **Non configurato**: non applicare la convalida del percorso di certificazione PKI di un file eseguibile prima che possa essere eseguito.  
@@ -1490,7 +1485,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Richiesta di elevazione dei privilegi per amministratori**  
   **Impostazione predefinita**: Richiedi consenso per file binari non Windows  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_BehaviorOfTheElevationPromptForAdministrators](https://go.microsoft.com/fwlink/?linkid=867895)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_BehaviorOfTheElevationPromptForAdministrators](https://go.microsoft.com/fwlink/?linkid=867895)  
 
   Definire il comportamento della richiesta di elevazione dei privilegi per gli amministratori in modalità Approvazione amministratore.  
 
@@ -1504,7 +1499,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Richiesta di elevazione dei privilegi per utenti standard**  
   **Impostazione predefinita**: Richiedi credenziali  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://go.microsoft.com/fwlink/?linkid=867896)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](https://go.microsoft.com/fwlink/?linkid=867896)  
 
   Definire il comportamento della richiesta di elevazione dei privilegi per gli utenti standard.  
 
@@ -1515,7 +1510,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Indirizza le richieste di elevazione dei privilegi al desktop interattivo dell'utente**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](https://go.microsoft.com/fwlink/?linkid=867899)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](https://go.microsoft.com/fwlink/?linkid=867899)  
 
 
   - **Abilitato** : tutte le richieste di elevazione dei privilegi vengono indirizzate al desktop dell'utente interattivo anziché al desktop protetto. Viene usata qualsiasi impostazione relativa ai criteri sul comportamento delle richieste per amministratori e utenti standard.  
@@ -1523,14 +1518,14 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Prompt con privilegi elevati per installazioni di app**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_DetectApplicationInstallationsAndPromptForElevation](https://go.microsoft.com/fwlink/?linkid=867901)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_DetectApplicationInstallationsAndPromptForElevation](https://go.microsoft.com/fwlink/?linkid=867901)  
 
    - **Abilitato**: i pacchetti di installazione delle applicazioni non vengono rilevati e non viene richiesta l'elevazione dei privilegi.
    - **Non configurato**: all'utente vengono richiesti nome utente e password amministrativi quando un pacchetto di installazione di un'applicazione richiede privilegi elevati.
 
 - **Richiesta di elevazione dei privilegi UIA senza desktop protetto**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_AllowUIAccessApplicationsToPromptForElevation](https://go.microsoft.com/fwlink/?linkid=867894)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_AllowUIAccessApplicationsToPromptForElevation](https://go.microsoft.com/fwlink/?linkid=867894)  
 
 - **Abilita**: consente alle app UIAccess di richiedere l'elevazione dei privilegi senza usare il desktop protetto.  
 - **Non configurato** : le richieste di elevazione dei privilegi utilizzano un desktop protetto.  
@@ -1539,14 +1534,14 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Modalità Approvazione amministratore per l'amministratore predefinito**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_UseAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867902)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_UseAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867902)  
 
   - **Abilitato**: consente all'account predefinito Administrator di usare la modalità Approvazione amministratore. Per qualunque operazione che richiede l'elevazione dei privilegi viene richiesta l'approvazione dell'utente.  
   - **Non configurato**: tutte le app vengono eseguite con privilegi di amministratore completi.  
 
 - **Esegui tutti gli amministratori in modalità Approvazione amministratore**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [UserAccountControl_RunAllAdministratorsInAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867898)  
+  CSP LocalPoliciesSecurityOptions: [UserAccountControl_RunAllAdministratorsInAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867898)  
 
 
   - **Abilitato**: Abilita la modalità Approvazione amministratore.  
@@ -1556,7 +1551,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Firma digitalmente le comunicazioni (se il server lo consente)**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](https://go.microsoft.com/fwlink/?linkid=868423)  
+  CSP LocalPoliciesSecurityOptions: [MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](https://go.microsoft.com/fwlink/?linkid=868423)  
 
   determina se il client SMB negozia la firma dei pacchetti SMB.  
   - **Blocca** : il client SMB non negozia mai la firma dei pacchetti SMB.
@@ -1564,7 +1559,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Invia password non crittografate a server SMB di terze parti**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](https://go.microsoft.com/fwlink/?linkid=868426)  
+  CSP LocalPoliciesSecurityOptions: [MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](https://go.microsoft.com/fwlink/?linkid=868426)  
 
 
   - **Blocca**: il redirector SMB (Server Message Block) può inviare password in testo non crittografato a server SMB non Microsoft che non supportano la crittografia della password durante l'autenticazione.  
@@ -1572,7 +1567,7 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Firma digitalmente le comunicazioni (sempre)**  
   **Impostazione predefinita**: Non configurato  
-  LocalPoliciesSecurityOptions CSP: [MicrosoftNetworkClient_DigitallySignCommunicationsAlways](https://go.microsoft.com/fwlink/?linkid=868425)  
+  CSP LocalPoliciesSecurityOptions: [MicrosoftNetworkClient_DigitallySignCommunicationsAlways](https://go.microsoft.com/fwlink/?linkid=868425)  
 
 
   - **Abilita**: il server di rete Microsoft comunica con un client di rete Microsoft solo se tale client accetta l'esecuzione della firma dei pacchetti SMB.  
@@ -1639,6 +1634,240 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
   - **Manuale**
   - **Automatico**
   - **Disabilitato**
+
+## <a name="user-rights"></a>Diritti utente
+
+- **Accesso a Gestione credenziali come chiamante trusted**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  Questo diritto utente viene utilizzato da Gestione credenziali durante le operazioni di backup e ripristino. Le credenziali salvate degli utenti potrebbero essere compromesse se questo privilegio viene assegnato ad altre entità.
+  - **Non configurato**
+  - **Consentito**
+
+- **Consenti accesso locale**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  Questo diritto utente determina quali utenti possono accedere al computer.
+  - **Non configurato**
+  - **Consentito**
+
+- **Consenti accesso dalla rete**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  Questo diritto utente determina quali utenti e gruppi sono autorizzati a connettersi al computer tramite la rete.
+  - **Non configurato**
+  - **Consentito**
+
+- **Agire come parte del sistema operativo**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  Agire come parte del sistema operativo
+  - **Non configurato**
+  - **Consentito**  
+
+- **Esecuzione del backup di file e directory**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  Questo diritto utente determina quali utenti possono ignorare le autorizzazioni per file, directory, registro di sistema e altri oggetti persistenti durante il backup di file e directory.
+  - **Non configurato**
+  - **Consentito**
+
+- **Modifica dell'ora di sistema**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  Questo diritto utente determina quali utenti e gruppi possono modificare la data e l'ora dell'orologio interno del computer.
+  - **Non configurato**
+  - **Consentito**
+
+- **Creazione di oggetti globali**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  Questa impostazione di sicurezza determina se gli utenti possono creare oggetti globali disponibili per tutte le sessioni. Gli utenti che possono creare oggetti globali potrebbero influire sui processi eseguiti nelle sessioni di altri utenti, operazione che può causare errori dell'applicazione o danneggiamento dei dati.
+  - **Non configurato**
+  - **Consentito**
+
+- **Crea pagefile**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  Questo diritto utente determina quali utenti e gruppi possono chiamare un'API interna per creare e modificare le dimensioni di un file di paging.
+  - **Non configurato**
+  - **Consentito**
+
+- **Creazione di oggetti condivisi permanentemente**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  Questo diritto utente determina quali account possono essere usati dai processi per creare un oggetto directory usando Gestione oggetti.
+  - **Non configurato**
+  - **Consentito**
+
+- **Creazione di collegamenti simbolici**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  Questo diritto utente determina se l'utente può creare un collegamento simbolico dal computer a cui è connesso.
+  - **Non configurato**
+  - **Consentito**
+
+- **Crea token**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/creazione Okta](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  Questo diritto utente determina quali utenti/gruppi possono essere usati dai processi per creare un token che può essere usato per ottenere l'accesso alle risorse locali quando il processo usa un'API interna per creare un token di accesso.
+  - **Non configurato**
+  - **Consentito**
+
+- **Esecuzione del debug di un programma**  
+  **Impostazione predefinita**: Non configurato  
+    CSP: [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  Questo diritto utente determina quali utenti possono alleghire un debugger a qualsiasi processo o al kernel.
+  - **Non configurato**
+  - **Consentito**
+
+- **Nega accesso dalla rete**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  Questo diritto utente determina a quali utenti viene impedito l'accesso a un computer tramite la rete.
+  - **Non configurato**
+  - **Consentito**
+
+- **Rifiuto dell'accesso come servizio**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  Questa impostazione di sicurezza determina a quali account del servizio viene impedito di registrare un processo come servizio.
+  - **Non configurato**
+  - **Consentito**
+
+- **Rifiuto dell'accesso tramite Servizi Desktop remoto**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  Questo diritto utente determina a quali utenti e gruppi non è consentito accedere come client di Servizi Desktop remoto.
+  - **Non configurato**
+  - **Consentito**
+
+- **Abilita delega**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ Questo diritto utente determina quali utenti possono impostare l'impostazione attendibile per la delega su un oggetto utente o computer.
+  - **Non configurato**
+  - **Consentito**
+
+- **Generazione di controlli di sicurezza**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  Questo diritto utente determina quali account possono essere utilizzati da un processo per aggiungere voci al registro di sicurezza. Il registro di sicurezza viene utilizzato per tracciare l'accesso al sistema non autorizzato.
+  - **Non configurato**
+  - **Consentito**
+
+- **Rappresenta un client**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  L'assegnazione di questo diritto utente a un utente consente ai programmi in esecuzione per conto di tale utente di rappresentare un client. La richiesta del diritto utente per questo tipo di rappresentazione impedisce a un utente non autorizzato di convincere un client a connettersi a un servizio che ha creato e quindi a rappresentare tale client, che può elevare le autorizzazioni di un utente non autorizzato a livelli amministrativi o di sistema.
+  - **Non configurato**
+  - **Consentito**
+
+- **Aumento della priorità di pianificazione**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  Questo diritto utente determina quali account possono usare un processo con accesso alla proprietà di scrittura a un altro processo per aumentare la priorità di esecuzione assegnata all'altro processo.
+  - **Non configurato**
+  - **Consentito**
+
+- **Caricamento e scaricamento di driver di dispositivo**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  Questo diritto utente determina quali utenti possono caricare e scaricare dinamicamente i driver di dispositivo o altro codice in modalità kernel.
+  - **Non configurato**
+  - **Consentito**
+
+- **Blocco delle pagine in memoria**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  Questo diritto utente determina quali account possono usare un processo per mantenere i dati nella memoria fisica, impedendo al sistema di eseguire il paging dei dati nella memoria virtuale su disco.
+  - **Non configurato**
+  - **Consentito**
+
+- **Gestione dei log di controllo e di sicurezza**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  Questo diritto utente determina quali utenti possono specificare le opzioni di controllo di accesso agli oggetti per le singole risorse, ad esempio file, Active Directory oggetti e chiavi del registro di sistema.
+  - **Non configurato**
+  - **Consentito**
+
+- **Esecuzione di attività di manutenzione volume**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  Questo diritto utente determina quali utenti e gruppi possono eseguire attività di manutenzione su un volume, ad esempio la deframmentazione remota.
+  - **Non configurato**
+  - **Consentito**
+
+- **Modifica dei valori di ambiente firmware**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  Questo diritto utente determina chi può modificare i valori dell'ambiente del firmware.
+  - **Non configurato**
+  - **Consentito**
+
+- **Modifica di un'etichetta dell'oggetto**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  Questo diritto utente determina quali account utente possono modificare l'etichetta di integrità degli oggetti, ad esempio file, chiavi del registro di sistema o processi di proprietà di altri utenti.
+  - **Non configurato**
+  - **Consentito**
+
+- **Profilo del singolo processo**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  Questo diritto utente determina quali utenti possono usare gli strumenti di monitoraggio delle prestazioni per monitorare le prestazioni dei processi di sistema.
+  - **Non configurato**
+  - **Consentito**
+
+- **Arresto remoto**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  Questo diritto utente determina a quali utenti è consentito arrestare un computer da una posizione remota sulla rete. Un utilizzo improprio di questo diritto utente può provocare un attacco Denial of Service.
+  - **Non configurato**
+  - **Consentito**
+  
+- **Ripristino di file e directory**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  Questo diritto utente determina quali utenti possono ignorare le autorizzazioni per file, directory, registro di sistema e altri oggetti persistenti durante il ripristino di file e directory di cui è stato eseguito il backup e determina quali utenti possono impostare qualsiasi entità di sicurezza valida come proprietario di un oggetto.
+  - **Non configurato**
+  - **Consentito**
+  
+- **Acquisizione della proprietà di oggetti o file**  
+  **Impostazione predefinita**: Non configurato  
+  CSP: [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  Questo diritto utente determina quali utenti possono acquisire la proprietà di qualsiasi oggetto a protezione diretta nel sistema, inclusi Active Directory oggetti, file e cartelle, stampanti, chiavi del registro di sistema, processi e thread.
+  - **Non configurato**
+  - **Consentito**
 
 ## <a name="next-steps"></a>Passaggi successivi
 
