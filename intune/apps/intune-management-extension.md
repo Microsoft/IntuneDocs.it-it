@@ -2,8 +2,8 @@
 title: Aggiungere script di PowerShell ai dispositivi Windows 10 in Microsoft Intune | Microsoft Docs
 description: Creare ed eseguire script di PowerShell, assegnare i criteri di script ai gruppi di Azure Active Directory, usare i report per monitorare gli script e ottenere informazioni sui passaggi necessari per eliminare gli script aggiunti ai dispositivi Windows 10 in Microsoft Intune. Vedere anche alcuni problemi e risoluzioni comuni.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94653c51bccc59fde93fdacc16f2b83e7860346b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497800"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059713"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usare gli script di PowerShell nei dispositivi Windows 10 in Intune
 

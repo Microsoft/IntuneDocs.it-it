@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494406"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199180"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune
 
@@ -73,10 +73,6 @@ Se il dispositivo è stato registrato di recente, il controllo della conformità
 | Windows 8.1 | Ogni 5 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
 
 Gli utenti possono aprire in qualsiasi momento l'app Portale aziendale (**Impostazioni** > **Sincronizzazione**) per controllare immediatamente la disponibilità di aggiornamenti dei criteri o del profilo.
-
-Per i dispositivi senza affinità utente, la frequenza di sincronizzazione che segue immediatamente la registrazione può variare da alcune ore a un giorno o più. Intune invia richieste a vari intervalli al dispositivo perché quest'ultimo contatti il servizio. Spetta sempre al dispositivo decidere se eseguire o meno questa operazione. Dopo la registrazione iniziale, il tempo necessario al dispositivo per contattare Intune è imprevedibile. Dipende anche dal tipo di registrazione del dispositivo e dai criteri e i profili assegnati a un dispositivo. Dopo la registrazione del dispositivo e l'applicazione di tutti i criteri e i profili iniziali, il dispositivo controlla la presenza di nuovi criteri e profili ogni 6-8 ore circa, a partire dal momento in cui il dispositivo viene registrato in Intune.
-
-Come procedura consigliata e per ottenere risultati ottimali, assicurarsi che i dispositivi siano online per almeno otto ore consecutive.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Quali azioni fanno sì che Intune invii immediatamente una notifica a un dispositivo?
 

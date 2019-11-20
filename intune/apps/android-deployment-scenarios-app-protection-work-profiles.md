@@ -2,8 +2,8 @@
 title: Criteri di protezione delle app e profili di lavoro in Microsoft Intune - Azure | Microsoft Docs
 description: Differenze, vantaggi e svantaggi quando si sceglie se usare i criteri di protezione delle app o i profili di lavoro per i dispositivi Android Enterprise personali o BYOD in Microsoft Intune. Confronto delle differenze e delle funzionalità ottenibili con i criteri di protezione delle app senza registrazione (APP-WE) e con i profili di lavoro Android Enterprise.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507607"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059787"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Criteri di protezione delle applicazioni e profili di lavoro in Intune su dispositivi Android Enterprise
 

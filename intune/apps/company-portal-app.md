@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999531"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199203"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999531"
 Il portale aziendale di Microsoft Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT. Dall'app Portale aziendale l'utente può anche accedere in modo sicuro alle risorse aziendali. L'app Portale aziendale è costituita da diverse pagine, ad esempio Pagina iniziale, App, Dettagli app, Dispositivi e Dettagli dispositivo. Per trovare rapidamente le app all'interno del Portale aziendale, è possibile filtrare le app nella pagina App.
 
 > [!IMPORTANT]
-> Per supportare Firebase Cloud Messaging (FCM) di Google, è necessario aggiornare l'app Portale aziendale per Android alla versione più recente. Per altre informazioni, vedere Novità - [Aggiornare l'app Portale aziendale per Android alla versione più recente](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
+> Per supportare Firebase Cloud Messaging (FCM) di Google, è necessario aggiornare l'app Portale aziendale per Android alla versione più recente.  
 
 > [!Tip]
 > Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale. Si noti che gli utenti devono avere una licenza di Intune assegnata per accedere al sito Web del portale aziendale.
