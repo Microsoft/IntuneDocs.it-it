@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984131"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390851"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -131,9 +131,6 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="password"></a>Password
 
-> [!NOTE]
-> In una versione futura le impostazioni della password nell'interfaccia utente di Intune vengono aggiornate in modo da corrispondere al tipo di registrazione.
-
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione
 
 - **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di accedere al dispositivo senza immettere una password.
@@ -194,7 +191,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   > [!NOTE]
   > L'interfaccia utente di Intune per questa impostazione non separa i valori supportati da iOS e iPados. L'interfaccia utente potrebbe essere aggiornata in una versione futura.
 
-- **Scadenza password (giorni)**: immettere il numero di giorni prima che sia necessario modificare la password del dispositivo.
+- **Scadenza password (giorni)** : immettere il numero di giorni prima che sia necessario modificare la password del dispositivo.
 - **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo.
 - **Sblocco di Touch ID e Face ID**: scegliere un **blocco** per impedire l'uso di un'impronta digitale o di una faccia per sbloccare il dispositivo. **Non configurato** consente all'utente di sbloccare il dispositivo con questi metodi.
 
@@ -265,8 +262,8 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Richiedi la password di iTunes Store per tutti gli acquisti**: **richiedere** all'utente di immettere la password dell'ID Apple per ogni acquisto in-app o iTunes. **Non configurato** (impostazione predefinita) consente l'acquisto senza richiedere una password ogni volta.
 - **Acquisti in-app**: scegliere **Blocca** per impedire gli acquisti in-app dallo Store. **Non configurato** (impostazione predefinita) consente gli acquisti dallo Store dall'interno di un'app in esecuzione.
-- **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'**: scegliere **Blocca** per impedire agli utenti di scaricare contenuti multimediali da iBook Store contrassegnati come erotici. **Non configurato** (impostazione predefinita) consente all'utente di scaricare libri della categoria "Erotici".
-- **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: quando è impostato su **Consenti**, le app gestite, ad esempio l'app Outlook per dispositivi mobili, possono salvare o sincronizzare le informazioni di contatto, inclusi i contatti aziendali e aziendali, con i contatti iOS predefiniti app. Quando è impostato su **non configurato** (impostazione predefinita), le app gestite non possono salvare o sincronizzare le informazioni di contatto nell'app dei contatti iOS incorporata sul dispositivo.
+- **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'** : scegliere **Blocca** per impedire agli utenti di scaricare contenuti multimediali da iBook Store contrassegnati come erotici. **Non configurato** (impostazione predefinita) consente all'utente di scaricare libri della categoria "Erotici".
+- **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: quando è impostato su **Consenti**, le app gestite, ad esempio l'app Outlook per dispositivi mobili, possono salvare o sincronizzare le informazioni di contatto, inclusi i contatti aziendali e aziendali, con l'app Contatti iOS incorporata. Quando è impostato su **non configurato** (impostazione predefinita), le app gestite non possono salvare o sincronizzare le informazioni di contatto nell'app dei contatti iOS incorporata sul dispositivo.
   
   Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
 
@@ -321,16 +318,6 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **JavaScript in Safari**: **Blocca** impedisce l'esecuzione nel dispositivo degli script Java nel browser. **Non configurato** (impostazione predefinita) consente gli script Java.
 
 - **Popup di Safari**: **Blocca** disabilita il blocco popup nel Web browser. **Non configurato** (impostazione predefinita) consente il blocco popup.
-
-- **Registrazione lato server per i comandi Siri**: se impostata su **Disabilita**, la registrazione Siri sul lato server è disattivata. Può anche impedire la registrazione delle richieste utente nei server Siri. **Non configurato** (impostazione predefinita) registra i comandi Siri sul lato server. Questa impostazione non dipende dall'impostazione di Siri bloccata o non configurata.
-
-  Questa funzionalità si applica a:  
-  - iOS 12.2 e versioni successive
-
-  > [!NOTE]
-  > L'impostazione **registrazione lato server per i comandi Siri** è deprecata da Apple. In una versione futura questa impostazione viene rimossa dalla console di Intune.
-  >
-  > Attualmente questa impostazione non ha alcun effetto sui dispositivi, anche se l'impostazione è visualizzata nei profili gestione. Per eliminare questa impostazione da un criterio, aprire il criterio, apportare una modifica secondaria, quindi salvare il criterio. Il criterio viene aggiornato e l'impostazione viene eliminata dai dispositivi.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
@@ -461,7 +448,7 @@ Nota necessaria per il roaming dei dati (suggerimento o Nota importante per faci
   > [!IMPORTANT]
   > Questa impostazione viene considerata come un'azione remota del dispositivo. Questa impostazione non viene quindi visualizzata nel profilo di gestione del dispositivo. Ogni volta che lo stato dell'hotspot personale viene modificato nel dispositivo, **hotspot personale** è bloccato dal servizio Intune. In Intune, se lo stato del report indica un esito positivo, è noto che funziona anche se l'impostazione non viene visualizzata nel profilo di gestione del dispositivo.
 
-- **Regole di utilizzo della rete cellulare (solo app gestite)**: definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Le opzioni disponibili sono:
+- **Regole di utilizzo della rete cellulare (solo app gestite)** : definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Le opzioni disponibili sono:
   - **Blocca l'uso della rete dati**: bloccare l'uso della rete dati per **Tutte le app gestite** oppure **Scegliere app specifiche**.
   - **Blocca l'uso della rete dati durante il roaming**: bloccare l'uso della rete dati durante il roaming per **Tutte le app gestite** oppure **Scegliere app specifiche**.
 
@@ -540,7 +527,7 @@ Nota necessaria per il roaming dei dati (suggerimento o Nota importante per faci
 - **Backup crittografato**: **Rendi obbligatorio** in modo che i backup del dispositivo debbano essere crittografati.
 - **Sincronizzazione delle app gestite nel cloud**: **Non configurato** (impostazione predefinita) consente alle app gestite di Intune di sincronizzare i dati con l'account iCloud dell'utente. **Blocca** impedisce la sincronizzazione dei dati in iCloud.
 - **Blocca il backup di libri aziendali**: scegliere **Blocca** per impedire agli utenti di eseguire un backup di libri aziendali. **Non configurato** (impostazione predefinita) consente agli utenti di eseguire il backup di questi libri.
-- **Blocca la sincronizzazione di metadati di libri aziendali (note e informazioni di rilievo)**: **Blocca** impedisce la sincronizzazione di note ed evidenziazioni nei libri aziendali. **Non configurato** (impostazione predefinita) consente la sincronizzazione.
+- **Blocca la sincronizzazione di metadati di libri aziendali (note e informazioni di rilievo)** : **Blocca** impedisce la sincronizzazione di note ed evidenziazioni nei libri aziendali. **Non configurato** (impostazione predefinita) consente la sincronizzazione.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: registrazione del dispositivo, registrazione automatica dei dispositivi (supervisione)
 
