@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059641"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390847"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usare e gestire i dispositivi Android Enterprise con OEMConfig in Microsoft Intune
 
@@ -146,6 +146,11 @@ Rispetto alle app standard, le app OEMConfig espandono i privilegi di configuraz
 | Datalogic | com. Datalogic. oemconfig | [Documentazione dell'utente per Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
 | Kyocera | JP. Kyocera. enterprisedeviceconfig |  |
+| SpectraLink-codici a barre | com. SpectraLink. Barcode. Service |  |
+| SpectraLink-pulsanti | com. SpectraLink. Buttons |  |
+| SpectraLink-dispositivo | com. SpectraLink. slnkdevicesettings  |  |
+| SpectraLink-registrazione | com. SpectraLink. slnklogger |  |
+| SpectraLink-VQO | com. SpectraLink. slnkvqo |  |
 
 -----------------
 
