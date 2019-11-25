@@ -1,11 +1,11 @@
 ---
 title: Funzionalità e impostazioni dei dispositivi in Microsoft Intune - Azure | Microsoft Docs
-description: Panoramica dei diversi profili di dispositivo di Microsoft Intune. Informazioni su funzionalità, restrizioni, posta elettronica, Wi-Fi, VPN, formazione, certificati, aggiornamento a Windows 10, BitLocker e Windows Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali.
+description: Panoramica dei diversi profili di dispositivo di Microsoft Intune. Informazioni su funzionalità, restrizioni, posta elettronica, WiFi, VPN, formazione, certificati, aggiornamento a Windows 10, BitLocker e Microsoft Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749341"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059888"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare funzionalità e impostazioni nei dispositivi usando i profili dei dispositivi in Microsoft Intune
 
@@ -145,7 +145,7 @@ Questa funzionalità supporta:
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
 
-[Endpoint protection settings for Windows 10](../protect/endpoint-protection-windows-10.md) (Impostazioni di Endpoint Protection per Windows 10) configura le impostazioni di BitLocker e Windows Defender per i dispositivi Windows 10.
+Con le [impostazioni di Endpoint Protection per Windows 10](../protect/endpoint-protection-windows-10.md) è possibile configurare le impostazioni di BitLocker e Microsoft Defender per i dispositivi Windows 10.
 
 Per l'onboarding di Microsoft Defender Advanced Threat Protection (MDATP) in Microsoft Intune, vedere [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm) (Configurare endpoint con gli strumenti di gestione dei dispositivi mobili).
 

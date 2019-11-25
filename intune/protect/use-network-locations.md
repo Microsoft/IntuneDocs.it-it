@@ -2,10 +2,10 @@
 title: Associare dispositivi Android in base al percorso di rete in Microsoft Intune - Azure | Microsoft Docs
 description: Creare o configurare percorsi di rete in Microsoft Intune per dispositivi Android. È possibile contrassegnare un dispositivo come non conforme in base al percorso di rete del dispositivo stesso. Se il dispositivo viene spostato al di fuori del percorso di rete, è possibile bloccare l'accesso alle risorse aziendali.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749443"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058145"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usare i percorsi (isolamento di rete) in Intune
 
@@ -50,7 +50,7 @@ Per creare criteri di conformità basati sul percorso:
 
 ## <a name="create-a-location"></a>Creare un percorso
 
-1. In Intune selezionare **Conformità del dispositivo** > **Percorsi** > **Crea**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **Dispositivi** > **Criteri di conformità** > **Percorsi** > **Crea**.
 
 2. Immettere le proprietà seguenti:  
 
@@ -69,8 +69,7 @@ Per creare criteri di conformità basati sul percorso:
 
 ## <a name="create-the-location-compliance-policy"></a>Creare i criteri di conformità di percorso
 
-Quando si [creano i criteri di conformità](create-compliance-policy.md), selezionare **Android** come **Piattaforma**. In **Percorsi** è possibile scegliere uno o più dei percorsi di rete aggiunti. Questi percorsi fanno parte dell'isolamento di rete che si sta creando per i dispositivi. 
-
+Quando si [creano i criteri di conformità](create-compliance-policy.md), selezionare **Android** come **Piattaforma**. In **Percorsi** è possibile scegliere uno o più dei percorsi di rete aggiunti. Questi percorsi fanno parte dell'isolamento di rete che si sta creando per i dispositivi.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurare le azioni per la non conformità
 
@@ -83,5 +82,6 @@ Dopo la creazione dei criteri di conformità, al dispositivo si applica l'azione
 Quando il dispositivo è connesso ai percorsi corretti, viene visualizzato come conforme nell'app Portale aziendale. Quando il dispositivo non è connesso a uno dei percorsi corretti, viene visualizzato come non conforme.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 [Monitorare i criteri di conformità dei dispositivi](compliance-policy-monitor.md)  
 [Introduzione ai criteri di conformità](device-compliance-get-started.md)

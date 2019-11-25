@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709175"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098191"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -117,6 +117,15 @@ Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registra
 > Se la registrazione MDM automatica non è abilitata e vengono usati dispositivi Windows 10 aggiunti ad Azure AD, saranno visibili due record nella console di Intune dopo la registrazione. Per evitare questo problema assicurarsi che gli utenti con dispositivi aggiunti ad Azure AD passino ad **Account** > **Accedi all'azienda o all'istituto di istruzione** e **Connetti** usando lo stesso account. 
 
 Per altre informazioni sulle attività per gli utenti finali, vedere [Informazioni sull'uso di Microsoft Intune per gli utenti finali](../fundamentals/end-user-educate.md).
+
+## <a name="registration-and-enrollment-cnames"></a>CNAME di registrazione
+Azure Active Directory ha un CNAME diverso che usa per la registrazione dei dispositivi iOS, Android e Windows. L'accesso condizionale di Intune richiede la registrazione dei dispositivi, chiamata anche"aggiunta all'area di lavoro". Se si prevede di usare l'accesso condizionale, è necessario configurare anche il CNAME EnterpriseRegistration per ogni nome di società.
+
+| Tipo | Nome dell'host | Punta a | TTL |
+| --- | --- | --- | --- |
+| NAME | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 ora|
+
+Per altre informazioni sulla registrazione dei dispositivi, vedere [Gestire le identità dei dispositivi usando il portale di Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504553"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188283"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Informazioni sull'accesso condizionale e su Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+Con l'accesso condizionale è possibile controllare i dispositivi e le app che possono connettersi alla posta elettronica e alle risorse aziendali. 
 
-L'accesso condizionale si riferisce ai modi in cui è possibile controllare i dispositivi e le app che sono autorizzati a connettersi alle risorse aziendali e di posta elettronica. Questo argomento illustra l'accesso condizionale basato su dispositivi e app e gli scenari comuni per l'uso dell'accesso condizionale con Intune.
-
-L'accesso condizionale di Enterprise Mobility + Security (EMS) non è un prodotto autonomo, bensì una soluzione usata in tutti i servizi e i prodotti che fanno parte di EMS. Questa soluzione consente un controllo di accesso granulare per la sicurezza dei dati aziendali, oltre a offrire agli utenti un'esperienza che consente loro di operare in modo ottimale da qualsiasi dispositivo e luogo.
+Enterprise Mobility + Security (EMS) non è un prodotto autonomo. È una soluzione che fa parte di tutti i servizi e i prodotti di EMS. L'accesso condizionale consente un controllo di accesso granulare per la sicurezza dei dati aziendali, oltre a offrire agli utenti un'esperienza che assicura loro di operare in modo ottimale da qualsiasi dispositivo e luogo.
 
 È possibile definire condizioni che limitano l'accesso ai dati aziendali in base alla posizione, al dispositivo, allo stato dell'utente e alla sensibilità dell'applicazione.
 
-> [!NOTE] 
+> [!NOTE]
 > Le funzionalità di accesso condizionale sono estese anche ai [servizi Office 365](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
-![Diagramma dell'architettura dell'accesso condizionale](./media/conditional-access/ca-diagram-1.png)
+![Diagramma dell'accesso condizionale](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Usare l'accesso condizionale con Intune
 

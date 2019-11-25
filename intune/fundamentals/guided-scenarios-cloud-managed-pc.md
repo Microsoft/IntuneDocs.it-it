@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749320"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164578"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Scenario guidato - Desktop moderno gestito da cloud
 
-Il desktop moderno è la piattaforma di produttività all'avanguardia per gli Information Worker. Office 365 ProPlus e Windows 10 sono i componenti principali del desktop moderno insieme alle baseline di sicurezza più recenti per Windows 10 e Windows Defender Advanced Threat Protection. 
+Il desktop moderno è la piattaforma di produttività all'avanguardia per gli Information Worker. Office 365 ProPlus e Windows 10 sono i componenti principali del desktop moderno insieme alle baseline di sicurezza più recenti per Windows 10 e Microsoft Defender Advanced Threat Protection. 
 
 La gestione del desktop moderno dal cloud offre l'ulteriore vantaggio di azioni remote estese a Internet. La gestione cloud usa i criteri di gestione dei dispositivi mobili di Windows predefiniti e rimuove le dipendenze dai Criteri di gruppo di Active Directory locali. 
 
@@ -33,7 +33,7 @@ Se si vuole valutare un desktop moderno gestito dal cloud nella propria organizz
 
 ## <a name="prerequisites"></a>Prerequisiti
 - [Impostare l'autorità MDM su Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - L'impostazione dell'autorità di gestione dei dispositivi mobili (MDM) determina la modalità di gestione dei dispositivi. L'amministratore IT deve impostare un'autorità MDM prima che gli utenti possano registrare i dispositivi per la gestione.
-- Minimo M356 E3 (o M365 E5 per una sicurezza ottimale)
+- Minimo M365 E3 (o M365 E5 per una sicurezza ottimale)
 - Dispositivo Windows 10 1903 (registrato con Windows Autopilot per la migliore esperienza utente finale)
 - Autorizzazioni di amministratore di Intune necessarie per completare questo scenario guidato:
   - Configurazione del dispositivo: Lettura, Creazione, Eliminazione, Assegnazione e Aggiornamento
@@ -118,5 +118,5 @@ Dopo che l'utente ha aggiunto il dispositivo ad Azure Active Directory, al dispo
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Se si usa Windows Defender Advanced Threat Detection, creare [criteri di conformità di Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) per richiedere l'analisi delle minacce di Defender per ottenere la conformità.
+- Se si usa Microsoft Defender Advanced Threat Detection, creare [criteri di conformità di Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) per richiedere l'analisi delle minacce di Defender per ottenere la conformità.
 - Creare [criteri di accesso condizionale basato sul dispositivo](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) per bloccare l'accesso se il dispositivo non risulta conforme a Intune.

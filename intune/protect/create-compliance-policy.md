@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786068"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188271"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità in Microsoft Intune
 
@@ -61,19 +61,15 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 ## <a name="create-the-policy"></a>Creare i criteri
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Conformità del dispositivo**. Sono disponibili le seguenti opzioni:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Panoramica**: mostra un riepilogo e il numero di dispositivi conformi, non valutati e così via. Elenca anche i criteri e le singole impostazioni dei criteri. Per informazioni utili, vedere [Monitorare i criteri di conformità dei dispositivi di Intune](compliance-policy-monitor.md).
-    - **Gestione**: consente di creare criteri per i dispositivi, inviare [notifiche](quickstart-send-notification.md) ai dispositivi non conformi e abilitare la [limitazione della rete](use-network-locations.md).
-    - **Monitoraggio**: consente di controllare lo stato di conformità dei dispositivi, a livello di impostazione e di criterio. Per altre informazioni, vedere [Monitorare i criteri di conformità dei dispositivi di Intune](compliance-policy-monitor.md). Consente anche di visualizzare i log e di controllare lo stato dell'agente delle minacce dei dispositivi.
-    - **Configurazione**: consente di usare i [criteri di conformità predefiniti](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), abilitare [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) aggiungere un [connettore di Mobile Threat Defense](mobile-threat-defense.md) e usare [Jamf](conditional-access-integrate-jamf.md).
+2. Selezionare **Dispositivi** > **Criteri di conformità** > **Crea criterio**.
 
-3. Selezionare **Criteri** > **Crea criterio**. Immettere le proprietà seguenti:
+3. Specificare le proprietà seguenti:
 
-   - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di criterio è **Dispositivi iOS jailbroken di Marco non conformi**.  
+   - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di criterio è **Dispositivi iOS jailbroken di Marco non conformi**.
 
-   - **Description**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.  
+   - **Description**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.
 
    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
      - **Amministratore di dispositivi Android**
@@ -99,7 +95,7 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
    - **Percorsi** *(Amministratore di dispositivi Android)* : Nei criteri è possibile forzare la conformità in base al percorso del dispositivo. Scegliere un percorso esistente. Se non si ha ancora una posizione, Vedere [Usare percorsi (limite della rete)](use-network-locations.md) in Intune per alcuni indicazioni.  
 
    - **Azioni per la mancata conformità**: Per i dispositivi che non soddisfano i criteri di conformità, è possibile aggiungere una sequenza di azioni da applicare automaticamente. Se il dispositivo è contrassegnato come non conforme, è possibile modificare la pianificazione, ad esempio dopo un giorno. È anche possibile configurare una seconda azione con cui inviare un messaggio di posta elettronica all'utente se il dispositivo risulta non conforme.
-    
+
      [Aggiungere azioni per dispositivi non conformi](actions-for-noncompliance.md) offre altre informazioni, tra cui come creare un messaggio di posta elettronica di notifica per gli utenti.
 
      Si supponga, ad esempio, di usare la funzionalità Percorsi e di aggiungere un percorso in un criterio di conformità. L'azione predefinita per la mancata conformità viene applicata quando si seleziona almeno un percorso. Se il dispositivo non è connesso ai percorsi selezionati, viene immediatamente considerato non conforme. È possibile concedere agli utenti un periodo di tolleranza, ad esempio un giorno.
@@ -112,8 +108,10 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 Una volta creato un criterio, il passaggio successivo consiste nell'assegnarlo ai propri gruppi:
 
-1. Scegliere un criterio precedentemente creato. I criteri esistenti sono in **Conformità del dispositivo** > **Criteri**.
-2. Selezionare il criterio e quindi **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
+1. Scegliere un criterio precedentemente creato. I criteri esistenti sono in **Dispositivi** > **Criteri di conformità** > **Criteri**.
+
+2. Selezionare il *criterio* > **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
+
 3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi a cui si vogliono applicare questi criteri > Scegliere **Salva** per distribuire i criteri.
 
 Gli utenti o i dispositivi ai quali sono applicati i criteri vengono valutati per la conformità durante la sincronizzazione con Intune.
@@ -122,8 +120,9 @@ Gli utenti o i dispositivi ai quali sono applicati i criteri vengono valutati pe
 
 Quando si assegna il criterio, è anche possibile usare la funzionalità **Valuta** per calcolare il numero di utenti interessati. Questa funzionalità calcola gli utenti, non i dispositivi.
 
-1. In Intune selezionare **Conformità del dispositivo** > **Criteri**.
-2. Selezionare un criterio e quindi **Assegnazioni** > **Valuta**. Viene visualizzato un messaggio che indica il numero di utenti interessati da questo criterio.
+1. In Intune selezionare **Dispositivi** > **Criteri di conformità** > **Criteri**.
+
+2. Selezionare un *criterio* > **Assegnazioni** > **Valuta**. Viene visualizzato un messaggio che indica il numero di utenti interessati da questo criterio.
 
 Se il pulsante **Valuta** è disattivato, verificare che il criterio sia assegnato a uno o più gruppi.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983972"
+ms.locfileid: "74059785"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -45,7 +45,7 @@ Esistono tre categorie di impostazioni dei criteri: impostazioni di protezione d
 | **Limita le operazioni taglia, copia e incolla tra altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. Scegliere tra: <ul><li>**Bloccato**:  non consente le azioni Taglia, Copia e Incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni Taglia, Copia e Incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni Taglia o Copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni Taglia, Copia e Incolla in e da questa app. | **Qualsiasi app** |
 | <ul><ui>**Limite di caratteri per copia e incolla per qualsiasi app** | Specificare il numero di caratteri che è possibile tagliare o copiare da account e dati dell'organizzazione.  Ciò consente la condivisione del numero specificato di caratteri in qualsiasi applicazione, indipendentemente dall'impostazione "Limita le operazioni taglia, copia e incolla con le altre app".<p>Valore predefinito = 0<p>**Nota**: è richiesta la versione 5.0.4364.0 o successiva del Portale aziendale Intune.  | **0** |
 | **Acquisizione di schermata e Assistente Google** | Selezionare **Disattiva** per bloccare l'acquisizione della schermata e le funzionalità dell'**Assistente Google** del dispositivo quando si usa questa app. Se si sceglie **Disattiva** verrà anche sfocata l'immagine di anteprima della funzione Switch quando si usa questa app con un account aziendale o dell'istituto di istruzione.| **Attiva** |
-
+| **Notifiche sui dati dell'organizzazione** | Specificare la quantità di dati dell'organizzazione condivisa tramite notifiche del sistema operativo con gli account dell'organizzazione. Questa impostazione dei criteri influisce sul dispositivo locale e su eventuali dispositivi connessi, ad esempio dispositivi indossabili e smart speaker. Le app possono offrire controlli aggiuntivi per personalizzare il comportamento delle notifiche o scegliere di non rispettare tutti i valori. È possibile scegliere tra: <ul><li>**Blocca**:  le notifiche non vengono condivise.</li><ul><li>Se questa opzione non è supportata dall'applicazione, le notifiche non saranno consentite.</li></ul><li>**Blocca i dati dell'organizzazione**: i dati dell'organizzazione non vengono condivisi nelle notifiche. Ad esempio "Nuovo messaggio di posta elettronica"; "Riunione"</li><UL><li>Se questa opzione non è supportata dall'applicazione, le notifiche verranno bloccate.</li></ul><li>**Consenti**: i dati dell'organizzazione vengono condivisi nelle notifiche</li><li>**Qualsiasi app**: nessuna restrizione per le azioni Taglia, Copia e Incolla in e da questa app.</ul> <p>**Nota**: *questa impostazione richiede il supporto dell'app. A questo punto, Outlook per Android versione 4.75.0 o versione successiva supporterà questa impostazione, il cui rilascio è previsto per la settimana del 16 dicembre 2019.* | **Consentito**   |
   
 ### <a name="encryption"></a>Crittografia
 | Impostazione | Uso | Valore predefinito |

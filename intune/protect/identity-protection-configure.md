@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 333b94bf3226c99ed50c4b433f4b477814b8e4bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509538"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188241"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Usare Windows Hello for Business nei dispositivi Windows 10 con Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Windows Hello for Business è un metodo per accedere ai dispositivi Windows che sostituisce password, smart card e smart card virtuali. Intune include delle impostazioni predefinite che consentono agli amministratori di configurare e usare Windows Hello for Business. Ad esempio, è possibile usare queste impostazioni per:
 
@@ -44,23 +42,33 @@ Questo articolo illustra come creare un profilo di configurazione del dispositiv
 
 ## <a name="create-the-device-profile"></a>Creare il profilo del dispositivo
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+
 3. Immettere le proprietà seguenti:
 
-    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
-    - **Piattaforma**: selezionare **Windows 10 e versioni successive**. Windows Hello for Business è supportato solo nei dispositivi che eseguono Windows 10 e versioni successive.
-    - **Tipo di profilo**: selezionare **Protezione dell'identità**.
-    - **Configurare Windows Hello for Business**: scegliere come configurare Windows Hello for Business. Le opzioni disponibili sono:
+   - **Nome**: immettere un nome descrittivo per il nuovo profilo.
+   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+   - **Piattaforma**: selezionare **Windows 10 e versioni successive**. Windows Hello for Business è supportato solo nei dispositivi che eseguono Windows 10 e versioni successive.
+   - **Tipo di profilo**: selezionare **Protezione dell'identità**.
 
-        - **Non configurata**: [effettua il provisioning di Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) nel dispositivo. Quando si assegnano i profili di Identity Protection solo agli utenti, per impostazione predefinita il contesto del dispositivo è **Non configurato**.
-        - **Disabilitato**: selezionare questa opzione se non si vuole usare Windows Hello for Business. Questa opzione disabilita Windows Hello for Business per tutti gli utenti.
-        - **Attivata**: scegliere questa opzione per [effettuare il provisioning](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) e configurare le impostazioni di Windows Hello for Business in Intune. Immettere le impostazioni da configurare. Per un elenco di tutte le impostazioni e delle operazioni corrispondenti, vedere:
+4. Nel riquadro *Windows Hello for Business* configurare le opzioni seguenti:
 
-            - [Impostazioni dei dispositivi Windows 10 per abilitare Windows Hello for Business](identity-protection-windows-settings.md)
+   - **Configurare Windows Hello for Business**: scegliere come configurare Windows Hello for Business:
 
-4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
+     - **Non configurato** (impostazione predefinita): [effettua il provisioning di Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) nel dispositivo. Quando si assegnano i profili di Identity Protection solo agli utenti, per impostazione predefinita il contesto del dispositivo è **Non configurato**.
+
+     - **Disabilitato**: selezionare questa opzione se non si vuole usare Windows Hello for Business. Questa opzione disabilita Windows Hello for Business per tutti gli utenti.
+
+     - **Attivata**: scegliere questa opzione per [effettuare il provisioning](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) e configurare le impostazioni di Windows Hello for Business in Intune. Immettere le impostazioni da configurare. Per un elenco di tutte le impostazioni e delle operazioni corrispondenti, vedere [Impostazioni dei dispositivi Windows 10 per abilitare Windows Hello for Business](identity-protection-windows-settings.md).
+
+   - **Usa le chiavi di sicurezza per l'accesso**: abilitare la chiave di sicurezza di Windows Hello come credenziale di accesso per tutti i PC nel tenant.
+
+     - **Attiva**
+     - **Non configurato** (impostazione predefinita)
+
+5. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
 Il profilo viene creato e visualizzato nell'elenco dei profili. Successivamente [assegnare](../configuration/device-profile-assign.md) questo profilo ai gruppi di utenti e dispositivi in base alle esigenze.
 

@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813262"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117890"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per macOS in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Usare le informazioni di questo articolo per aggiungere le app line-of-business per macOS in Microsoft Intune. È necessario scaricare uno strumento esterno per eseguire l'analisi preliminare dei file con estensione *pkg* prima di poter caricare il file line-of-business in Microsoft Intune. L'analisi preliminare dei file con estensione *pkg* deve essere eseguita in un dispositivo macOS.
+
+> [!NOTE]
+> A partire dalla versione di macOS Catalina 10.15, prima di aggiungere le app a Intune, verificare che le app LOB macOS siano autenticate. Se gli sviluppatori delle app LOB non hanno autenticato le app, non sarà possibile eseguirle nei dispositivi macOS degli utenti. Per altre informazioni su come verificare se un'app è autenticata, visitare [Autenticare le app macOS per poter usare macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
 
 > [!NOTE]
 > Anche se gli utenti dei dispositivi macOS possono rimuovere alcune delle app macOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti finali eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3cfcc4ac0c5125324102c55dc7bc887006df6b
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801431"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199144"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creare e assegnare profili di certificato SCEP in Intune
 
@@ -49,14 +49,9 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
 
    I profili di certificato SCEP per il profilo *Solo proprietario del dispositivo* presentano le limitazioni seguenti:
 
-   1. Le variabili seguenti non sono supportate:
+   1. In Monitoraggio la generazione di report per i certificati non è disponibile per i profili di certificato SCEP del proprietario del dispositivo.
 
-      - CN={{OnPrem_Distinguished_Name}}
-      - CN={{onPremisesSamAccountName}}
-
-   2. In Monitoraggio la generazione di report per i certificati non è disponibile per i profili di certificato SCEP del proprietario del dispositivo.
-
-   3. Non è possibile usare Intune per revocare i certificati di cui è stato effettuato il provisioning tramite profili certificato SCEP per i proprietari del dispositivo. È possibile gestire la revoca tramite un processo esterno o direttamente con l'autorità di certificazione. 
+   2. Non è possibile usare Intune per revocare i certificati di cui è stato effettuato il provisioning tramite profili certificato SCEP per i proprietari del dispositivo. È possibile gestire la revoca tramite un processo esterno o direttamente con l'autorità di certificazione. 
 
 7. Selezionare **Impostazioni** e quindi completare le configurazioni seguenti:
 
@@ -115,12 +110,11 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
 
         Le opzioni di formato per il formato del nome soggetto includono le variabili seguenti:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}** : è possibile usare una delle due variabili per identificare un dispositivo in base all'ID Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -157,12 +151,11 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
 
         Con il tipo di certificato *Dispositivo*, per il valore è possibile usare le variabili del certificato del dispositivo seguenti:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}** : è possibile usare una delle due variabili per identificare un dispositivo in base all'ID Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**

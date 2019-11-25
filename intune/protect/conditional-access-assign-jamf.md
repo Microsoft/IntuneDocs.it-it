@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502444"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161602"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
@@ -37,12 +37,11 @@ Le procedure descritte in questo articolo richiedono l'accesso alle console di I
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Impostare i criteri di conformità dei dispositivi in Intune
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionare **Conformità del dispositivo** > **Criteri**. 
-2. Se si usa un criterio creato in precedenza, selezionare il criterio nella console e quindi andare al passaggio successivo di questa procedura.  
-   
-   Selezionare **Crea criterio** e quindi specificare i dettagli per un criterio con *Piattaforma* impostata su **macOS**. Configurare *Impostazioni* e *Azioni per la non conformità* in modo da soddisfare i requisiti dell'organizzazione, quindi selezionare **Crea** per salvare il criterio.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-3. Nel riquadro *Panoramica* dei criteri selezionare **Assegnazioni**. Usare le opzioni disponibili per configurare quali utenti e gruppi di sicurezza di Azure Active Directory (Azure AD) ricevono questo criterio. L'integrazione di Jamf con Intune non supporta i criteri di conformità che fanno riferimento a gruppi di dispositivi. 
+2. Selezionare **Dispositivi** > **Criteri di conformità**. Se si usa un criterio creato in precedenza, selezionare il criterio nella console e quindi andare al passaggio successivo di questa procedura. Per creare un nuovo criterio, selezionare **Crea criterio**, quindi specificare i dettagli per un criterio con *Piattaforma* impostata su **macOS**. Configurare *Impostazioni* e *Azioni per la non conformità* in modo da soddisfare i requisiti dell'organizzazione, quindi selezionare **Crea** per salvare il criterio.
+
+3. Nel riquadro *Panoramica* dei criteri selezionare **Assegnazioni**. Usare le opzioni disponibili per configurare quali utenti e gruppi di sicurezza di Azure Active Directory (Azure AD) ricevono questo criterio. L'integrazione di Jamf con Intune non supporta i criteri di conformità che fanno riferimento a gruppi di dispositivi.
 
 4. Quando si seleziona **Salva** i criteri vengono distribuiti agli utenti.  
 
@@ -103,7 +102,7 @@ Per la registrazione del dispositivo è necessario che un utente del dispositivo
 
 Usare la console Jamf Pro per verificare che le comunicazioni tra Jamf Pro e Microsoft Intune funzionino correttamente. 
 
-- In Jamf Pro passare a **Settings** (Impostazioni) > **Global Management** (Gestione globale) > **Microsoft Intune Integration** (Integrazione con Microsoft Intune), quindi selezionare **Test**. 
+- In Jamf Pro passare a **Settings** (Impostazioni) > **Global Management** (Gestione globale) > **Microsoft Intune Integration** (Integrazione con Microsoft Intune), quindi selezionare **Test**.
 
     Nella console un messaggio indica l'esito positivo o negativo della connessione.  
 
@@ -112,7 +111,7 @@ Se il test della connessione dalla console Jamf Pro ha esito negativo, esaminare
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Rimozione di un dispositivo gestito da Jamf da Intune
 
-È possibile rimuovere un dispositivo gestito da Jamf dalla console di Intune selezionando **Elimina** nella vista **Tutti i dispositivi**. L'eliminazione in blocco dei dispositivi può essere abilitata selezionando più dispositivi e facendo clic su **Elimina**.
+Per rimuovere un dispositivo gestito da JAMF, aprire l'interfaccia di amministrazione di Microsoft Endpoint Manager e selezionare **Dispositivi** > **Tutti i dispositivi**, selezionare il dispositivo, quindi **Elimina**.  L'eliminazione in blocco dei dispositivi può essere abilitata selezionando più dispositivi e facendo clic su **Elimina**.
 
 Ottenere informazioni su come [rimuovere un dispositivo gestito da Jamf nella documentazione di Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Per altre informazioni, è anche possibile registrare un ticket di supporto presso il [supporto Jamf](https://www.jamf.com/support/). 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498325"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199241"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Come cancellare solo i dati aziendali dalle app gestite da Intune
 
@@ -44,23 +44,12 @@ I criteri di Windows Information Protection (WIP) possono essere distribuiti sen
 
 ## <a name="create-a-wipe-request"></a>Creare una richiesta di cancellazione
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-
-2. Scegliere **Tutti i servizi**, digitare **Intune** nella casella di testo di filtro e selezionare **Intune**. Viene aperto il riquadro di Intune. Scegliere il riquadro **App client**.
-
-    ![Screenshot del riquadro di Microsoft Intune](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. Nel **riquadro app client** scegliere **Cancellazione selettiva di app**.
-
-4. Scegliere **Nuova richiesta di cancellazione dati**. Si apre il riquadro **Nuova richiesta di cancellazione dati**.
-
-    ![Schermata del riquadro Nuova richiesta di cancellazione dati](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. Scegliere un utente e quindi scegliere **Seleziona** per selezionare l'utente di cui si vogliono cancellare i dati delle app.
-
-6. Scegliere quindi **Dispositivo** nel riquadro **Nuova richiesta di cancellazione dati**. Verrà aperto il riquadro **Seleziona dispositivo** che elenca tutti i dispositivi associati all'utente selezionato e include anche due colonne, ovvero il nome del dispositivo, che è un nome descrittivo definito dall'utente, e il tipo di dispositivo, che specifica la piattaforma del dispositivo. Selezionare il dispositivo da cancellare.
-
-7. Verrà visualizzato nuovamente il riquadro **Nuova richiesta di cancellazione dati**. Scegliere **OK** per eseguire una richiesta di cancellazione.
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Nel riquadro Intune selezionare **App client** > **Cancellazione selettiva di app** > **Crea una richiesta di cancellazione dati**.<br>
+   Viene visualizzato il riquadro **Crea una richiesta di cancellazione dati**.
+3. Fare clic su **Selezionare l'utente**, scegliere l'utente per cui si vogliono eliminare i dati dell'app e fare clic su **Seleziona** nella parte inferiore del riquadro **Utente**.
+4. Fare clic su **Selezionare il dispositivo**, scegliere il dispositivo e fare clic su **Seleziona** nella parte inferiore del riquadro **Seleziona dispositivo**.
+5. Fare clic su **Crea** per generare una richiesta di cancellazione.
 
 Il servizio crea e tiene traccia di una richiesta di cancellazione dati separata per ogni app protetta nel dispositivo e dell'utente associato alla richiesta di cancellazione dati.
 

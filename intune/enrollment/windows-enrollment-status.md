@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709318"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059699"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare una pagina relativa allo stato della registrazione
  
@@ -197,7 +197,7 @@ Di seguito sono riportati i problemi noti.
     - le credenziali utente non vengono mantenute
     - l'utente deve immettere di nuovo le credenziali prima di procedere dalla fase di configurazione del dispositivo alla fase di configurazione dell'account
 - ESP è bloccato per molto tempo o non completa mai la fase di "identificazione". Intune calcola i criteri di ESP durante la fase di identificazione. Un dispositivo non può mai completare l'elaborazione dei criteri ESP se all'utente corrente non è assegnata una licenza di Intune.  
-- La configurazione del controllo delle applicazioni di Windows Defender comporta una richiesta di riavvio durante la fase di Autopilot. Per la configurazione dell'applicazione Windows Defender (provider del servizio di crittografia AppLocker) è necessario un riavvio. Quando questo criterio è configurato, può causare il riavvio di un dispositivo durante la fase di Autopilot. Attualmente non è possibile impedire o posticipare il riavvio.
+- La configurazione del controllo di applicazioni di Microsoft Defender comporta una richiesta di riavvio durante la fase di Autopilot. Per la configurazione dell'applicazione Microsoft Defender (provider del servizio di crittografia AppLocker) è necessario un riavvio. Quando questo criterio è configurato, può causare il riavvio di un dispositivo durante la fase di Autopilot. Attualmente non è possibile impedire o posticipare il riavvio.
 - Quando il criterio DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) è abilitato come parte di un profilo ESP, il file OOBE o l'accesso automatico al desktop utente potrebbe non riuscire in modo inaspettato per due motivi.
   - Se il dispositivo non è stato riavviato prima di uscire dalla fase di configurazione del dispositivo di ESP, all'utente può essere richiesto di immettere le credenziali di Azure AD. Questa richiesta si verifica al posto di un accesso automatico con esito positivo in cui l'utente visualizza la prima animazione dell'accesso di Windows.
   - L'accesso automatico avrà esito negativo se il dispositivo è stato riavviato dopo che l'utente ha immesso le proprie credenziali di Azure AD ma prima di uscire dalla fase di configurazione del dispositivo di ESP. Questo errore si verifica perché la fase di configurazione del dispositivo di ESP non è mai stata completata. La soluzione alternativa consiste nel reimpostare il dispositivo.

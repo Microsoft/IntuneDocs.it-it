@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709716"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126160"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Esercitazione: Usare le funzionalità Corporate Device Enrollment di Apple in Apple Business Manager (ABM) per registrare i dispositivi iOS in Intune
 Le funzionalità Device Enrollment di Apple Business Manager semplificano la registrazione di dispositivi. Intune supporta anche il portale Device Enrollment Program precedente di Apple, ma è consigliabile iniziare da zero con Apple Business Manager. Con Microsoft Intune e Apple Corporate Device Enrollment, i dispositivi vengono registrati automaticamente in modo sicuro la prima volta che vengono accesi. È pertanto possibile spedire i dispositivi a più utenti senza dover configurare ogni singolo dispositivo. 
@@ -90,7 +90,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
 5. Stabilire se i dispositivi dovranno essere registrati con o senza **Affinità utente**. La funzionalità Affinità utente è destinata ai dispositivi che verranno usati da specifici utenti. Se gli utenti vogliono usare il portale aziendale per servizi come l'installazione di app, scegliere **Registra con affinità utente**. Se gli utenti non hanno bisogno del portale aziendale o si vuole eseguire il provisioning del dispositivo per molti utenti, scegliere **Registra senza affinità utente**.
 
-6. Se si sceglie la registrazione con Affinità utente, stabilire se si vuole eseguire l'autenticazione con il portale aziendale o con Apple Setup Assistant. Se si vuole usare Multi-Factor Authentication, consentire agli utenti di cambiare le password dopo il primo accesso o richiedere agli utenti di reimpostare le loro password durante la registrazione, scegliere **Sì** per **Autenticazione con il Portale aziendale invece di Apple Setup Assistant**. Se si vuole usare l'autenticazione HTTP di base fornita da Apple tramite Apple Setup Assistant, scegliere **No**.
+6. Se si sceglie la registrazione con Affinità utente, stabilire se si vuole eseguire l'autenticazione con il portale aziendale o con Apple Setup Assistant. Se si vuole usare Multi-Factor Authentication, consentire agli utenti di cambiare le password dopo il primo accesso o richiedere agli utenti di reimpostare le loro password durante la registrazione, scegliere **Sì** per **Autenticazione con il Portale aziendale invece di Apple Setup Assistant**. Se si vuole usare l'autenticazione HTTP di base fornita da Apple tramite Apple Setup Assistant, scegliere **No**. Se si sceglie **Sì** e si vuole che l'applicazione Portale aziendale venga aggiornata automaticamente nei dispositivi degli utenti finali, distribuire separatamente il Portale aziendale come app richiesta a questi utenti usando il programma Volume Purchase Program (VPP) di Apple.
 
 7. Se si sceglie la registrazione con Affinità utente e Autenticazione con il portale aziendale, stabilire se si vuole installare il portale aziendale con Apple Volume Purchase Program (VPP). Se si installa il portale aziendale con un token di VPP, l'utente non dovrà immettere un ID e una password Apple per scaricare il portale aziendale dallo store durante la registrazione. Scegliere **Usa il token** in **Installa il Portale aziendale con VPP** per selezionare un token di VPP con licenze gratuite del portale aziendale disponibili. Se non si vuole usare VPP per distribuire il portale aziendale, scegliere **Non usare VPP** in **Installa il Portale aziendale con VPP**. 
 

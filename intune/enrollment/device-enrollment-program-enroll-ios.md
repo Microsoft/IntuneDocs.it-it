@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b553c89704ca68ab6be261e74f1cc62ad58476ed
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713008"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164721"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -155,7 +155,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     >
     > Non sono supportate durante l'autenticazione con l'Assistente configurazione di Apple.
 
-6. Se si sceglie **Portale aziendale** per **Selezione della posizione per l'autenticazione degli utenti**, è possibile usare un token VPP per installare automaticamente il portale aziendale nel dispositivo. In questo caso, l'utente non deve specificare un ID Apple. Per installare il portale aziendale con un token VPP, scegliere un token in **Install Company Portal with VPP** (Installa il portale aziendale con VPP). Richiede che il portale aziendale sia già stato aggiunto al token VPP. Non configurare criteri per richiedere l'app per gli utenti. Intune installerà automaticamente l'app Portale aziendale nei dispositivi con questo profilo di registrazione applicato. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze dei dispositivi per l'app Portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune installa invece l'app Portale aziendale dall'App Store e richiede un ID Apple. 
+6. Se si sceglie **Portale aziendale** per **Selezione della posizione per l'autenticazione degli utenti**, è possibile usare un token VPP per installare automaticamente il portale aziendale nel dispositivo. In questo caso, l'utente non deve specificare un ID Apple. Per installare il portale aziendale con un token VPP, scegliere un token in **Install Company Portal with VPP** (Installa il portale aziendale con VPP). Richiede che il portale aziendale sia già stato aggiunto al token VPP. Per assicurarsi che l'app Portale aziendale continui a essere aggiornata dopo la registrazione, assicurarsi di aver configurato una distribuzione delle app in Intune (Intune>App client). Affinché non sia obbligatoria l'interazione dell'utente, l'app Portale aziendale sarà probabilmente un'app VPP iOS, sarà impostata come app obbligatoria e sarà necessario usare le licenze del dispositivo per l'assegnazione. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze dei dispositivi per l'app Portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune installa invece l'app Portale aziendale dall'App Store e richiede un ID Apple. 
 
     > [!NOTE]
     > Quando l'opzione **Selezione della posizione per l'autenticazione degli utenti** è impostata su **Portale aziendale**, assicurarsi che il processo di registrazione del dispositivo venga eseguito nelle prime 24 ore dal download dell'app Portale aziendale nel dispositivo DEP. In caso contrario, la registrazione potrebbe non riuscire e sarà necessario il ripristino delle impostazioni predefinite per registrare il dispositivo.

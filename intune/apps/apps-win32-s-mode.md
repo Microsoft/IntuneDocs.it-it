@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445274"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059763"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Abilitare app Win32 in dispositivi in modalità S
 
-La [modalità S di Windows 10](https://docs.microsoft.com/windows/deployment/s-mode) è un sistema operativo bloccato che esegue solo le app dello Store. Per impostazione predefinita, i dispositivi in modalità S di Windows non consentono l'installazione e l'esecuzione di app Win32. Questi dispositivi includono un singolo *criterio di base Win 10S* che impedisce l'esecuzione di app Win32 nel dispositivo in modalità S. Tuttavia, creando e usando un **criterio supplementare per la modalità S** in Intune è possibile installare ed eseguire app Win32 in dispositivi gestiti in modalità S di Windows 10. Usando gli strumenti di PowerShell del [Controllo delle applicazioni di Windows Defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) è possibile creare uno o più criteri supplementari per la modalità S di Windows. È necessario firmare i criteri supplementari con il [servizio Firma di Device Guard (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) o con [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) e quindi caricare e distribuire i criteri tramite Intune. In alternativa, è possibile firmare i criteri supplementari con un certificato di firma del codice dell'organizzazione, ma il metodo preferito consiste nell'usare il servizio Firma di Device Guard (DGSS). Nell'istanza in cui viene usato il certificato di firma del codice dell'organizzazione, il certificato radice a cui è concatenato il certificato di firma del codice deve essere presente nel dispositivo.
+La [modalità S di Windows 10](https://docs.microsoft.com/windows/deployment/s-mode) è un sistema operativo bloccato che esegue solo le app dello Store. Per impostazione predefinita, i dispositivi in modalità S di Windows non consentono l'installazione e l'esecuzione di app Win32. Questi dispositivi includono un singolo *criterio di base Win 10S* che impedisce l'esecuzione di app Win32 nel dispositivo in modalità S. Tuttavia, creando e usando un **criterio supplementare per la modalità S** in Intune è possibile installare ed eseguire app Win32 in dispositivi gestiti in modalità S di Windows 10. Usando gli strumenti di PowerShell del [Controllo di applicazioni di Microsoft Defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) è possibile creare uno o più criteri supplementari per la modalità S di Windows. È necessario firmare i criteri supplementari con il [servizio Firma di Device Guard (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) o con [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) e quindi caricare e distribuire i criteri tramite Intune. In alternativa, è possibile firmare i criteri supplementari con un certificato di firma del codice dell'organizzazione, ma il metodo preferito consiste nell'usare il servizio Firma di Device Guard (DGSS). Nell'istanza in cui viene usato il certificato di firma del codice dell'organizzazione, il certificato radice a cui è concatenato il certificato di firma del codice deve essere presente nel dispositivo.
 
 Assegnando il criterio supplementare per la modalità S in Intune, si consente al dispositivo di fare un'eccezione per il criterio per la modalità S esistente del dispositivo che consente di usare il catalogo delle app firmate corrispondenti. Il criterio imposta un elenco di app consentite (catalogo delle app) che possono essere usate nel dispositivo in modalità S.
 
@@ -40,7 +40,7 @@ I passaggi per consentire l'esecuzione delle app Win32 in un dispositivo Windows
 
 1. Abilitare i dispositivi in modalità S tramite Intune come parte del processo di registrazione di Windows 10 S.
 2. Creare un criterio supplementare per consentire l'esecuzione di app Win32:
-   - Per creare un criterio supplementare, è possibile usare gli strumenti del [Controllo delle applicazioni di Windows Defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control). L'ID criterio di base all'interno del criterio deve corrispondere all'ID criterio di base per la modalità S (hardcoded nel client). Assicurarsi anche che la versione dei criteri sia successiva alla versione precedente.
+   - Per creare un criterio supplementare, è possibile usare gli strumenti del [Controllo di applicazioni di Microsoft Defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control). L'ID criterio di base all'interno del criterio deve corrispondere all'ID criterio di base per la modalità S (hardcoded nel client). Assicurarsi anche che la versione dei criteri sia successiva alla versione precedente.
    - Usare il servizio Firma di Device Guard (DGSS) per firmare i criteri supplementari. Per altre informazioni, vedere [Firmare i criteri di integrità del codice con Firma di Device Guard](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing).
    - Per caricare il criterio supplementare firmato in Intune, è necessario creare un criterio supplementare per la modalità S di Windows 10 (vedere di seguito).
 3. L'uso dei cataloghi delle app Win32 viene consentito tramite Intune:
