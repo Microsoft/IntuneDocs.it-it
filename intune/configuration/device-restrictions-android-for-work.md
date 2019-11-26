@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143034"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390930"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -72,7 +72,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
   - **Finestra di manutenzione**: installa automaticamente gli aggiornamenti in una finestra di manutenzione giornaliera impostata in Intune. L'installazione viene tentata ogni giorno per 30 giorni e può non riuscire a causa di livelli di batteria o spazio insufficienti. Dopo 30 giorni, Android chiede all'utente di eseguire l'installazione. Questa finestra viene usata anche per installare gli aggiornamenti per le app di Play. Usare questa opzione per i dispositivi dedicati, ad esempio i chioschi multimediali, in quanto consente di aggiornare le app in primo piano dei dispositivi dedicati per app singola.
 
 - **Finestre di notifica**: se l'opzione è impostata su **Disabilita**, le notifiche, tra cui avvisi popup, chiamate in ingresso, chiamate in uscita, avvisi di sistema ed errori di sistema, non vengono visualizzate nel dispositivo. Se è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare le notifiche.
-- **Ignora suggerimenti al primo utilizzo**: scegliere **Abilita** per nascondere o ignorare i suggerimenti delle app che richiedono di eseguire le esercitazioni o leggere i suggerimenti iniziali quando viene avviata l'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
+- **Ignorare i primi suggerimenti**per l'uso: **abilitare** Nascondi o ignora i suggerimenti dalle app che passano attraverso le esercitazioni o gli hint all'avvio dell'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
 
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
@@ -150,13 +150,16 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
     Se abilitata, configurare anche:
 
-    - **Imposta immagine screen saver personalizzata**: immettere l'URL di un'immagine personalizzata. Ad esempio, immettere:
+    - **Imposta immagine screen saver personalizzata**: immettere l'URL di un file PNG, jpg, JPEG, gif, BMP, WebP o ICOimage personalizzato. Immettere ad esempio:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       Se non si immette un URL, viene utilizzata l'immagine predefinita del dispositivo, se è presente un'immagine predefinita.
+      
+      > [!TIP]
+      > È supportato qualsiasi URL di risorsa file che può essere trasformato in una bitmap.
 
     - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0 e 9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
     - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1 e 9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
@@ -199,12 +202,14 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 ### <a name="users-and-accounts-settings"></a>Impostazioni di utenti e account
 
-- **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurata** consente agli utenti di aggiungere altri utenti nel dispositivo.
-- **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurata** consente agli utenti di rimuovere altri utenti dal dispositivo.
-- **Modifiche all'account**: scegliere **Blocca** per impedire agli utenti di modificare gli account. **Non configurata** consente agli utenti di aggiornare gli account utente nel dispositivo.
+- **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere altri utenti nel dispositivo.
+- **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurato** (impostazione predefinita) consente agli utenti di rimuovere altri utenti dal dispositivo.
+- **Modifiche dell'account** (solo per dispositivi dedicati): scegliere **blocca** per impedire agli utenti di modificare gli account. **Non configurato** (impostazione predefinita) consente agli utenti di aggiornare gli account utente nel dispositivo.
 
   > [!NOTE]
   > Questa impostazione non è rispettata nei dispositivi proprietari del dispositivo (completamente gestiti). Se si configura questa impostazione, l'impostazione viene ignorata e non ha alcun effetto.
+
+- **Personal Google Accounts**: il **blocco** impedisce agli utenti di aggiungere il proprio account Google personale al dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere il proprio account Google personale.
 
 ### <a name="applications"></a>Applicazioni
 
@@ -314,7 +319,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   - **Almeno alfanumerico con simboli**
 - **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire agli utenti finali di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente agli utenti di sbloccare i dispositivi con un'impronta digitale nel profilo di lavoro.
-- **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
+- **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, chiamata anche agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 
 ### <a name="device-password"></a>Password del dispositivo
 
@@ -335,14 +340,14 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
   - **Almeno alfanumerico con simboli**
 - **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire all'utente finale di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente all'utente di sbloccare il dispositivo tramite impronta digitale.
-- **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
+- **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, chiamata anche agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 
 ### <a name="system-security"></a>Protezione del sistema
 
 - **Analisi delle minacce nelle app**: specificare **Rendi obbligatorio** per imporre l'abilitazione dell'impostazione **Verifica app** per i profili di lavoro e personali.
 
    > [!Note]
-   > Questa impostazione funziona solo per i dispositivi Android O e versioni successive.
+   > Questa impostazione funziona solo per i dispositivi Android 8 (Oreo) e versioni successive.
 
 - **Impedisci l'installazione di app da origini sconosciute nel profilo personale**: per impostazione predefinita, i dispositivi di profilo di lavoro Android Enterprise non possono installare le app da origini diverse dalla Play Store. Per natura, i dispositivi del profilo di lavoro sono progettati per essere a doppio profilo:
 

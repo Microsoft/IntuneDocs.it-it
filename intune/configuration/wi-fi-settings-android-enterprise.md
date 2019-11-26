@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585372"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390798"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android Enterprise e i dispositivi Android in modalità tutto schermo in Microsoft Intune
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi Android Enterprise dedicati e completamente gestiti in Microsoft Intune
 
-È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android Enterprise e ai dispositivi Android dedicati. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione nella rete, l'uso di una chiave precondivisa e altro ancora.
+È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android Enterprise completamente gestiti e dedicati. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione nella rete, l'uso di una chiave precondivisa e altro ancora.
 
 Questo articolo descrive queste impostazioni. [Usare le impostazioni Wi-Fi nei dispositivi](wi-fi-settings-configure.md) contiene altre informazioni sulla funzionalità Wi-Fi in Microsoft Intune.
 
@@ -35,7 +35,7 @@ Questo articolo descrive queste impostazioni. [Usare le impostazioni Wi-Fi nei d
 
 ## <a name="device-owner-only"></a>Solo proprietario del dispositivo
 
-Selezionare questa opzione se si usa un dispositivo Android Enterprise dedicato.
+Selezionare questa opzione se si esegue la distribuzione in un dispositivo Android Enterprise dedicato o completamente gestito.  I dispositivi Android Enterprise dedicati e completamente gestiti supportano attualmente la distribuzione del certificato SCEP, ma non PKCS.
 
 ### <a name="basic"></a>Basic
 
@@ -60,7 +60,7 @@ Selezionare questa opzione se si usa un dispositivo Android Enterprise dedicato.
 
     - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete e viene usato per autenticare la connessione.
 
-    - **Autenticazione client** - **Certificato client per l'autenticazione client (certificato di identità)** : scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
+    - **Autenticazione client** - **Certificato client per l'autenticazione client (certificato di identità)** : scegliere il profilo di certificato client SCEP che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
     - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
@@ -77,7 +77,7 @@ Selezionare questa opzione se si usa un dispositivo Android Enterprise dedicato.
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP versione 2 (MS-CHAP v2)**
 
-      - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
+      - **Certificati**: scegliere il profilo di certificato client SCEP che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
       - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
@@ -93,7 +93,7 @@ Selezionare questa opzione se si usa un dispositivo Android Enterprise dedicato.
           - **Nessuno**
           - **Microsoft CHAP versione 2 (MS-CHAP v2)**
 
-      - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
+      - **Certificati**: scegliere il profilo di certificato client SCEP che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
       - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 

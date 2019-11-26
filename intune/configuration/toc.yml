@@ -131,12 +131,14 @@
               href: device-restrictions-macos.md
             - name: Endpoint Protection
               href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
+            - name: Estensioni
+              href: kernel-extensions-settings-macos.md
+            - name: File delle preferenze
+              href: preference-file-settings-macos.md
             - name: Connessione
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Estensioni
-              href: kernel-extensions-settings-macos.md
             - name: Personalizzato
               href: custom-settings-macos.md
         - name: Windows 10 e versioni successive
