@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498601"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540756"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -94,35 +94,23 @@ Le informazioni nella tabella seguente consentono di conoscere la finalità risu
 | Finalità gruppo 1 | Finalità gruppo 2 | Finalità risultante |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Obbligatoria per l'utente|Disponibile per l'utente|Richiesto e disponibile|
-|Obbligatoria per l'utente|Non disponibile per l'utente|Richiesto|
 |Obbligatoria per l'utente|Disinstallazione utente|Richiesto|
-|Disponibile per l'utente|Non disponibile per l'utente|Non disponibile|
 |Disponibile per l'utente|Disinstallazione utente|Uninstall|
-|Non disponibile per l'utente|Disinstallazione utente|Uninstall
 |Obbligatoria per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria
 |Obbligatoria per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: obbligatoria
 |Disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria (obbligatoria e disponibile)
 |Disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: disponibile.<br><br>L'app viene visualizzata nel portale aziendale.<br><br>Se l'app è già installata perché la sua finalità precedente era "app obbligatoria", viene disinstallata.<br><br>Se l'utente seleziona **Installa dal portale aziendale**, l'app viene installata e la finalità di disinstallazione non viene rispettata.|
-|Non disponibile per l'utente|Obbligatoria per il dispositivo|Richiesto|
-|Non disponibile per l'utente|Disinstallazione dal dispositivo|Uninstall|
 |Disinstallazione utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria|
 |Disinstallazione utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: disinstallazione|
 |Obbligatoria per il dispositivo|Disinstallazione dal dispositivo|Richiesto|
 |Obbligatoria e disponibile per l'utente|Disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Disinstallazione utente|Richiesto e disponibile|
-|Obbligatoria e disponibile per l'utente|Non disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti, obbligatoria e disponibile
-|Obbligatoria e disponibile per l'utente|Non disponibile per il dispositivo|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: obbligatoria (obbligatoria e disponibile)
-|Non disponibile per l'utente|Non disponibile per il dispositivo|Non disponibile|
-|Disponibile per l'utente|Non disponibile per il dispositivo|Disponibile|
-|Obbligatoria per l'utente|Non disponibile per il dispositivo|Richiesto|
 |Disponibile per l'utente senza registrazione|Obbligatoria e disponibile per l'utente|Richiesto e disponibile
 |Disponibile per l'utente senza registrazione|Obbligatoria per l'utente|Richiesto
-|Disponibile per l'utente senza registrazione|Non disponibile per l'utente|Non disponibile
 |Disponibile per l'utente senza registrazione|Disponibile per l'utente|Disponibile|
 |Disponibile per l'utente senza registrazione|Obbligatoria per il dispositivo|Obbligatoria e disponibile senza registrazione|
-|Disponibile per l'utente senza registrazione|Non disponibile per il dispositivo|Disponibile senza registrazione|
 |Disponibile per l'utente senza registrazione|Disinstallazione dal dispositivo|Disinstallazione e disponibile senza registrazione.<br><br>Se l'utente non ha installato l'app dal portale aziendale, la finalità di disinstallazione viene rispettata.<br><br>Se l'utente installa l'app dal portale aziendale, l'installazione ha priorità più alta rispetto alla disinstallazione.|
 
 > [!NOTE]

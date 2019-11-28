@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72d3a16c5180b51fcc019d726a498e0d15ad1d3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503400"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547920"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registrazione di tipo amministratore di dispositivi Android
 
@@ -47,8 +47,6 @@ Per altre informazioni sulle funzionalità di Android Enterprise di Google, vede
 
 
 ## <a name="set-up-device-administrator-enrollment"></a>Configurare la registrazione di tipo amministratore di dispositivi
-
-Per impostazione predefinita, Intune consente la registrazione di dispositivi Android con funzionalità di amministratore di dispositivi.
 
 1. Per preparare la gestione dei dispositivi mobili è necessario impostare l'autorità per la gestione dei dispositivi mobili su **Microsoft Intune**. Vedere [Impostare l'autorità MDM](../fundamentals/mdm-authority-set.md) per le istruzioni. Questo elemento viene impostato una sola volta quando si configura Intune per la gestione dei dispositivi mobili per la prima volta.
 2. Accedere a **Intune** > **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi personali e di proprietà aziendale con privilegi di amministratore di dispositivi** > **Usa l'amministratore di dispositivi per gestire i dispositivi**.

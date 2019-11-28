@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
-ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
+ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73931020"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540822"
 ---
 # <a name="microsoft-intune-protected-apps"></a>App protette di Microsoft Intune  
 
@@ -72,7 +72,6 @@ Le tabelle seguenti contengono informazioni dettagliate sui partner supportati e
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | È possibile visualizzare e interagire ovunque e gratuitamente con i diagrammi di Visio su iPhone. Per poter ammirare i diagrammi di Visio su qualsiasi iPhone che esegue iOS 9.0 o versione successiva, è sufficiente accedere con l'account Microsoft o aprire un allegato di Visio da un messaggio di posta elettronica. È anche possibile condividere i diagrammi con qualsiasi utente, che potrà quindi visualizzare i diagrammi Visio sul proprio iPhone o in un Web browser anche se non ha Visio installato nel desktop Windows.| [Collegamento allo store iOS](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Si possono creare documenti di Word estremamente accattivanti per tablet e telefono. È possibile modificare o creare documenti con la certezza che saranno esattamente come si vuole in computer, Mac, tablet e telefoni. È possibile essere immediatamente operativi grazie al familiare aspetto di Office, oltre che a un'esperienza di tocco intuitiva.<p><p>Questa app può essere usata come app con supporto di più identità per Android e iOS. | [Collegamento allo store Android](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[Collegamento allo store iOS](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft Work Folders**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Consente ai singoli dipendenti di accedere in modo sicuro ai file sia dall'interno che dall'esterno dell'ambiente aziendale usando Work Folders, una funzionalità di Windows Server. | [Collegamento allo store iOS](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
-| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | L'app Microsoft Whiteboard offre un'area di disegno intelligente a mano libera in cui i team possono ideare, creare e collaborare visivamente tramite il cloud.  Migliora il lavoro di squadra consentendo a tutti i membri del team di apportare modifiche e aggiungere commenti direttamente nell'area di disegno in tempo reale, ovunque si trovino. Tutto il lavoro resta al sicuro nel cloud, pronto per essere ripreso da qualsiasi dispositivo. | [Collegamento allo store iOS](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Yammer elimina i comparti aziendali e facilita la collaborazione in team. Per aumentare la produttività, è sufficiente essere in contatto con le persone giuste nell'organizzazione, condividere e cercare informazioni nei team e mettere in ordine progetti e idee. | [Collegamento allo store Android](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[Collegamento allo store iOS](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>App dei partner 
