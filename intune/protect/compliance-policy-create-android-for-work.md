@@ -97,7 +97,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
   - **Tipo di password richiesto**: scegliere se una password deve essere composta solo da caratteri numerici oppure da una combinazione di numeri e altri caratteri. Le opzioni disponibili sono:
     - **Impostazione predefinita del dispositivo** : per valutare la conformità delle password, assicurarsi di selezionare un livello di attendibilità diverso da quello **predefinito del dispositivo**.  
     - **Password obbligatoria, nessuna restrizione**
-    - **Biometrica vulnerabile** - [biometrica complessa rispetto alla vulnerabile](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web Android)
+    - **Biometrica vulnerabile** - [Biometrica complessa e vulnerabile a confronto](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web Android)
     - **Numerica** (*impostazione predefinita*): la password deve contenere solo numeri, ad esempio `123456789`. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
     - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
     - **Alfabetica**: è obbligatorio usare le lettere dell'alfabeto. Numeri e simboli non sono richiesti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.

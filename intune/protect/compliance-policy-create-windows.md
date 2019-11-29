@@ -65,7 +65,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 Altre risorse:
 
 - Per informazioni dettagliate sul funzionamento del servizio di attestazione dell'integrità, vedere [CSP di attestazione dell'integrità](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
-- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643) (Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune)
+- [Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
