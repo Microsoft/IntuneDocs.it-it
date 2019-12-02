@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390851"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465645"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -244,6 +244,10 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione
 
 - **Visualizzazione dei documenti aziendali nelle app non gestite**: **Blocca** impedisce la visualizzazione di documenti aziendali nelle app non gestite. **Non configurato** (impostazione predefinita) consente di visualizzare documenti aziendali in qualsiasi app. Ad esempio, può essere necessario impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Configurare questa impostazione come **Blocca**. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consente più il salvataggio.
+
+
+  > [!NOTE]
+  > Quando questa impostazione è bloccata, vengono bloccate anche le tastiere di terze parti installate dall'App Store.
 
   - **Consenti alle app non gestite di leggere da account di contatti gestiti**: quando è impostato su **Consenti**, le app non gestite, ad esempio l'app Contatti iOS incorporata, possono leggere e accedere alle informazioni di contatto dalle app gestite, inclusa l'app Outlook per dispositivi mobili. **Non configurato** (impostazione predefinita) impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.  
   
