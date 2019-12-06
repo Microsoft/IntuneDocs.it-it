@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923359"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239210"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi in Intune usando un account del manager di registrazione dispositivi
 
@@ -36,7 +36,8 @@ Gli account utente di tipo manager di registrazione dispositivi e i dispositivi 
 - All'utente dell'account di manager di registrazione dispositivi deve essere assegnata una licenza di Intune.
 - La cancellazione non può essere eseguita dal portale aziendale. La cancellazione di un dispositivo registrato da un account di manager di registrazione dispositivi può essere eseguita da Intune nel portale di Azure.
 - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
-- Gli account utente di manager di registrazione dispositivi non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente VPP Apple poiché è necessario un ID Apple per utente per la gestione delle app.
+- Gli account utente manager di registrazione dispositivi non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente VPP Apple poiché è necessario un ID Apple per utente per la gestione delle app.
+- Non è possibile usare gli account utente manager di registrazione dispositivi durante la registrazione dei dispositivi tramite il programma Device Enrollment Program (DEP) di Apple.
 - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo VPP Apple.
 - I dispositivi sono bloccati per l'accesso condizionale ad eccezione di Windows 10 1803+
 - Tutti i dispositivi registrati con gli account di manager di registrazione dispositivi devono avere le licenze appropriate per la gestione da Intune. La licenza può essere una licenza utente di Intune o una licenza dispositivo di Intune.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507289"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547957"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Includere ed escludere assegnazioni di app in Microsoft Intune
 
@@ -31,9 +31,20 @@ In Intune è possibile determinare chi ha accesso a un'app assegnando i gruppi d
 
 Per impostare la disponibilità di un'app, è possibile includere ed escludere le assegnazioni di app a un gruppo di utenti o dispositivi usando una combinazione di assegnazioni di gruppi di inclusione ed esclusione. Questa funzionalità può essere utile quando si rende disponibile l'app includendo un gruppo numeroso e quindi si limitano gli utenti selezionati escludendo anche un gruppo più piccolo. Il gruppo più piccolo potrebbe essere un gruppo di test o un gruppo amministrativo. 
 
-Quando si escludono i gruppi da un'assegnazione di un'app, è necessario escludere solo gruppi di utenti o gruppi di dispositivi. Non è possibile escludere una combinazione di gruppi di utenti e gruppi di dispositivi. 
+È consigliabile creare e assegnare app specifiche per i gruppi di utenti e altre distinte per i gruppi di dispositivi. Per altre informazioni sui gruppi, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md).  
 
-Intune non considera l'associazione tra utente e dispositivo quando esclude i gruppi. L'inclusione di gruppi di utenti mentre si escludono i gruppi di dispositivi molto probabilmente non dà i risultati necessari. L'inclusione ha la precedenza sull'esclusione. Ad esempio, se si seleziona un'app iOS per **Tutti gli utenti** e si escludono **Tutti gli iPad**, il risultato finale è che tutti gli utenti che usano un iPad ricevono comunque l'app. Se tuttavia si seleziona l'app iOS per **Tutti i dispositivi** e si escludono **Tutti gli iPad**, la distribuzione sarà corretta.  
+Esistono scenari importanti quando si includono o si escludono assegnazioni di app:
+
+- L'esclusione ha la precedenza sull'inclusione negli scenari seguenti, relativi a gruppi dello stesso tipo:
+    - Inclusione ed esclusione di gruppi di utenti durante l'assegnazione di app
+    - Inclusione ed esclusione di gruppi di dispositivi durante l'assegnazione di app
+
+    Se ad esempio si assegna un gruppo di dispositivi al gruppo di utenti **Tutti gli utenti aziendali**, ma si escludono i membri del gruppo di utenti **Dirigenti**, **Tutti gli utenti aziendali**, ad eccezione dei **Dirigenti**, riceveranno l'assegnazione, perché entrambi i gruppi sono gruppi di utenti.
+- Intune non valuta le relazioni di gruppi di utenti e dispositivi. Se si assegnano app a gruppi misti, i risultati potrebbero non essere quelli voluti o previsti.
+
+    Si supponga ad esempio di assegnare un gruppo di dispositivi al gruppo di utenti **Tutti gli utenti**, escludendo però il gruppo di dispositivi **Tutti i dispositivi personali**. In questa assegnazione di app a gruppo misto il gruppo **Tutti gli utenti** riceverà l'app. L'esclusione non viene applicata.
+
+Non è quindi consigliabile assegnare app a gruppi misti.
 
 > [!NOTE]
 > Quando si imposta un'assegnazione di gruppo per un'app, il tipo **Non applicabile** è deprecato e viene sostituito con la funzionalità di esclusione di gruppi. 
@@ -41,7 +52,6 @@ Intune non considera l'associazione tra utente e dispositivo quando esclude i gr
 > Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console. Per praticità, i gruppi hanno ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi "tutti gli utenti" o "tutti i dispositivi" che potrebbero essere stati creati manualmente.  
 >
 > Android Enterprise supporta l'inclusione e l'esclusione di gruppi. È possibile usare i gruppi predefiniti **Tutti gli utenti** e **Tutti i dispositivi** per l'assegnazione di app Android Enterprise. 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Includere ed escludere gruppi durante l'assegnazione di app 
 Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione:

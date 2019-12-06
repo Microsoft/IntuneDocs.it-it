@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199299"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390759"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
@@ -39,7 +39,7 @@ L'amministratore di Intune può usare l'opzione **Guida e supporto tecnico** per
 
 ## <a name="help-and-support-experience"></a>Esperienza di Guida e supporto tecnico
 
-L’esperienza di Guida e supporto tecnico per Intune è disponibile nel [portale Gestione dispositivi di Microsoft 365](https://devicemanagement.microsoft.com) e in tutti i pannelli o tutte le pagine di Intune nel portale di Azure.
+L’esperienza di Guida e supporto tecnico per Intune è disponibile nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e in tutti i pannelli o tutte le pagine di Intune nel portale di Azure.
 
 L'esperienza *Guida e supporto tecnico* è simile a quella offerta dall'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) e sostituisce l'opzione *Guida e supporto* precedente che rimane disponibile per altri servizi in Azure.
 
@@ -48,16 +48,27 @@ L'esperienza *Guida e supporto tecnico* è simile a quella offerta dall'[interfa
 
 ### <a name="options-to-access-help-and-support"></a>Opzioni per accedere a Guida e supporto tecnico
 
-- **Nel portale di Azure:**
+Quando si usa un tenant appena creato per Intune, è possibile che *Guida e supporto tecnico* non si apra e un messaggio indichi che
+
+- *si è verificato un problema sconosciuto. In questo caso è necessario aggiornare la pagina e, se il problema persiste, creare un caso nell'[interfaccia di amministrazione di M365](https://admin.microsoft.com) facendo riferimento all'ID sessione specificato.*
+
+I dettagli dell'errore includono un *ID sessione*, i dettagli dell'*estensione* e altro ancora. 
+ 
+Questo problema si verifica quando l'account del nuovo tenant non è stato ancora autenticato nell'**interfaccia di amministrazione di M365** all'indirizzo https://admin.microsoft.com o nel **portale di Office 365** all'indirizzo https://portal.office.com. Per risolvere il problema, selezionare il collegamento all'*interfaccia di amministrazione di M365* nel messaggio o visitare https://portal.office.com e accedere. Dopo l'autenticazione in uno dei siti, *Guida e supporto tecnico* per Intune diventa accessibile.
+
+
+**Accedere a Guida e supporto tecnico**:
+
+- **Nel portale di Azure**
 
   - Selezionare **Guida e supporto** in qualsiasi pannello o pagina di Intune.
 
   > [!NOTE]  
   > Se l'istanza di Intune è ospitata nel cloud privato per enti pubblici, noto anche come cloud sovrano, ad esempio Azure per enti pubblici, vedere [Supporto di Intune per il cloud privato per enti pubblici](#intune-support-for-private-cloud-for-government) più avanti in questo articolo. L'esperienza *Guida e supporto tecnico* di Intune sarà disponibile nel cloud privato per enti pubblici non prima del prossimo anno.
 
-- **Dal dashboard Gestione dei dispositivi:**
+- **Nell'interfaccia di amministrazione di Microsoft Endpoint Manager**
   - Dopo aver selezionato un'area funzionale per Intune, selezionare l'opzione **Guida e supporto tecnico**.
-  - Da qualsiasi nodo nel portale Gestione dispositivi selezionare l'icona **?** nell'angolo superiore destro del portale e quindi usare l'elenco a discesa per selezionare il servizio per il quale si vuole ottenere assistenza. L'icona **?** nel portale Gestione dispositivi supporta più servizi ed è necessario selezionare il servizio specifico per il quale si vuole ottenere assistenza.  
+  - Da qualsiasi nodo dell'interfaccia di amministrazione di Microsoft Endpoint Manager selezionare l'icona **?** nell'angolo superiore destro del portale e quindi usare l'elenco a discesa per selezionare il servizio per il quale si vuole ottenere assistenza. L'icona **?** nell'interfaccia di amministrazione di Microsoft Endpoint Manager supporta più servizi ed è necessario selezionare il servizio specifico per il quale si vuole ottenere assistenza.  
 
     ![Selezionare il servizio](./media/get-support/select-a-service.png)
 

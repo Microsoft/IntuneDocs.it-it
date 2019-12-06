@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8bc7d5797a2ba6404331166e9d955bbb2fadf9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059587"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261696"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Dopo aver creato un profilo, completo di tutte le impostazioni specificate, il passaggio successivo consiste nel distribuire o "assegnare" il profilo ai gruppi di utenti o di dispositivi di Azure Active Directory (Azure AD). Con l'assegnazione, gli utenti e i dispositivi ricevono il profilo e vengono applicate le impostazioni specificate.
 
 Questo articolo illustra come assegnare un profilo e include alcune informazioni sull'uso dei tag di ambito nei profili.
 
 > [!NOTE]  
-> Quando un criterio viene rimosso o non è più assegnato a un dispositivo, l'impostazione potrebbe mantenere il valore esistente. L'impostazione non ripristina un valore predefinito. Per impostare un valore diverso, creare un nuovo criterio e assegnarlo.
+> Quando un profilo viene rimosso o non è più assegnato a un dispositivo, l'impostazione potrebbe mantenere il valore esistente. L'impostazione non ripristina un valore predefinito. Per impostare un valore diverso, creare un nuovo profilo e assegnarlo.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Assicurarsi di avere il ruolo appropriato per assegnare i criteri. Per altre informazioni, vedere [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](../fundamentals/role-based-access-control.md).
+Assicurarsi di avere il ruolo appropriato per assegnare i profili. Per altre informazioni, vedere [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Assegnare un profilo di dispositivo
 
@@ -63,17 +61,49 @@ Se il pulsante **Valuta** è disattivato, verificare che il profilo sia assegnat
 
 Durante la creazione o l'aggiornamento di un profilo è anche possibile aggiungere tag di ambito e regole di applicabilità.
 
-I **tag di ambito** sono un metodo molto efficiente per assegnare e filtrare criteri a gruppi specifici, ad esempio il reparto Risorse umane o i dipendenti di una filiale. Per altre informazioni, vedere [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
+I **tag di ambito** sono un metodo molto efficiente per filtrare e assegnare profili a gruppi specifici, ad esempio il reparto Risorse umane o i dipendenti di una filiale. Per altre informazioni, vedere [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 
 Nei dispositivi Windows 10 è possibile aggiungere **regole di applicabilità**, in modo che il profilo venga applicato solo a una versione specifica del sistema operativo o a un'edizione specifica di Windows. Per altre informazioni, vedere [Regole di applicabilità](device-profile-create.md#applicability-rules).
 
+## <a name="user-groups-vs-device-groups"></a>Gruppi di utenti e gruppi di dispositivi
+
+Molti utenti vogliono sapere quando usare i gruppi di utenti e quando usare i gruppi di dispositivi. La risposta dipende dall'obiettivo dell'utente. Ecco alcune indicazioni per iniziare.
+
+### <a name="device-groups"></a>Gruppi di dispositivi
+
+Se si vogliono applicare impostazioni in un dispositivo, indipendentemente dall'utente che esegue l'accesso, assegnare i profili a un gruppo di dispositivi. Le impostazioni applicate ai gruppi di dispositivi si riferiscono sempre al dispositivo e non all'utente.
+
+Ad esempio:
+
+- I gruppi di dispositivi sono utili per gestire i dispositivi che non hanno un utente dedicato. Si hanno ad esempio dispositivi che stampano ticket, analizzano l'inventario, vengono condivisi da dipendenti che lavorano a turni, sono assegnati a un magazzino specifico e così via. Inserire questi dispositivi in un gruppo di dispositivi e assegnare i profili a questo gruppo di dispositivi.
+
+- Si crea un [profilo di Intune DFCI (Device Firmware Configuration Interface, Interfaccia di configurazione del firmware del dispositivo](device-firmware-configuration-interface-windows.md)) che aggiorna le impostazioni nel BIOS. Si configura ad esempio questo profilo per disabilitare la fotocamera del dispositivo o bloccare le opzioni di avvio per impedire agli utenti di avviare un altro sistema operativo. Questo profilo è uno scenario valido da assegnare a un gruppo di dispositivi.
+
+- In alcuni dispositivi Windows specifici è sempre necessario controllare alcune impostazioni Microsoft Edge, indipendentemente dall'utente che usa il dispositivo. Si vuole ad esempio bloccare tutti i download, limitare tutti i cookie alla sessione di esplorazione corrente ed eliminare la cronologia esplorazioni. Per questo scenario, inserire questi dispositivi Windows specifici in un gruppo di dispositivi. Creare quindi un [modello amministrativo in Intune](administrative-templates-windows.md), aggiungere queste impostazioni dispositivo e assegnare questo profilo al gruppo di dispositivi.
+
+Per riepilogare, usare i gruppi di dispositivi quando non è importante chi esegue l'accesso o se qualcuno ha eseguito l'accesso al dispositivo. Si vuole che le impostazioni accompagnino sempre il dispositivo.
+
+### <a name="user-groups"></a>Gruppi di utenti
+
+Le impostazioni del profilo applicate ai gruppi di utenti si abbinano all'utente e lo accompagnano quando esegue l'accesso ai diversi dispositivi. È normale che gli utenti abbiano molti dispositivi, ad esempio un dispositivo Surface Pro per il lavoro e un dispositivo iOS per uso personale. È normale che un utente acceda alla posta elettronica e ad altre risorse dell'organizzazione da questi dispositivi.
+
+Ad esempio:
+
+- Si vuole inserire un'icona Help Desk in tutti i dispositivi di tutti gli utenti. In questo scenario inserire questi utenti in un gruppo di utenti e assegnare il profilo dell'icona Help Desk a questo gruppo di utenti.
+- Un utente riceve un nuovo dispositivo di proprietà dell'organizzazione. L'utente accede al dispositivo usando il proprio account di dominio. Il dispositivo viene registrato automaticamente in Azure AD e gestito automaticamente da Intune. Questo profilo è uno scenario valido da assegnare a un gruppo di utenti.
+- Ogni volta che un utente accede a un dispositivo, si vogliono controllare le funzionalità nelle app, ad esempio OneDrive oppure Office. In questo scenario assegnare le impostazioni del profilo di OneDrive o Office a un gruppo di utenti.
+
+  Si vuole ad esempio bloccare i controlli ActiveX non attendibili nelle app di Office. È possibile creare un [modello amministrativo in Intune](administrative-templates-windows.md), configurare questa impostazione e assegnare questo profilo al gruppo di utenti.
+
+Per riepilogare, usare i gruppi di utenti quando si vuole che le impostazioni siano applicate sempre all'utente, indipendentemente dal dispositivo usato.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Escludere gruppi da un'assegnazione di profilo
 
-I profili di configurazione dei dispositivi Intune consentono di includere ed escludere gruppi dall'assegnazione di criteri.
+I profili di configurazione dei dispositivi Intune consentono di includere ed escludere gruppi dall'assegnazione del profilo.
 
-Come procedura consigliata, creare e assegnare criteri specifici per i gruppi utenti e creare e assegnare criteri diversi specificamente per i gruppi di dispositivi. Per altre informazioni sui gruppi, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](../fundamentals/groups-add.md).
+Come procedura consigliata, creare e assegnare profili specifici per i gruppi di utenti e creare e assegnare profili diversi specificamente per i gruppi di dispositivi. Per altre informazioni sui gruppi, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](../fundamentals/groups-add.md).
 
-Quando si assegnano i criteri includendo ed escludendo gruppi, usare la tabella seguente. Un segno di spunta indica che l'assegnazione è supportata.
+Quando si assegnano i profili, usare la tabella seguente per includere ed escludere i gruppi. Un segno di spunta indica che l'assegnazione è supportata.
 
 ![Opzioni supportate per includere o escludere gruppi da un'assegnazione di profilo](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
@@ -84,13 +114,13 @@ Quando si assegnano i criteri includendo ed escludendo gruppi, usare la tabella 
   - Inclusione di gruppi utenti ed esclusione di gruppi utenti
   - Inclusione di gruppi di dispositivi ed esclusione di gruppi di dispositivi
 
-  Ad esempio si assegna un profilo di dispositivo al gruppo di utenti **Tutti gli utenti aziendali**, ma si escludono i membri del gruppo **Dirigenti**. Poiché entrambi i gruppi sono gruppi utenti, i criteri interessano **tutti gli utenti aziendali** ad eccezione dei **dirigenti**.
+  Ad esempio si assegna un profilo di dispositivo al gruppo di utenti **Tutti gli utenti aziendali**, ma si escludono i membri del gruppo **Dirigenti**. Poiché entrambi i gruppi sono gruppi di utenti, il profilo interessa **Tutti gli utenti aziendali** ad eccezione dei **Dirigenti**.
 
-- Intune non valuta le relazioni di gruppi di utenti e dispositivi. Se si assegnano criteri a gruppi misti, i risultati potrebbero non essere quelli voluti o previsti.
+- Intune non valuta le relazioni di gruppi di utenti e dispositivi. Se si assegnano profili a gruppi misti, i risultati potrebbero non essere quelli voluti o previsti.
 
-  Si supponga, ad esempio, di assegnare un profilo di dispositivo al gruppo utenti **Tutti gli utenti**, escludendo però il gruppo di dispositivi **Tutti i dispositivi personali**. In questa assegnazione di criteri di gruppo misto il gruppo **Tutti gli utenti** è interessato dai criteri. L'esclusione non viene applicata.
+  Si supponga, ad esempio, di assegnare un profilo di dispositivo al gruppo utenti **Tutti gli utenti**, escludendo però il gruppo di dispositivi **Tutti i dispositivi personali**. In questa assegnazione del profilo a un gruppo misto il gruppo **Tutti gli utenti** è interessato dal profilo. L'esclusione non viene applicata.
 
-  Non è quindi consigliabile assegnare criteri a gruppi misti.
+  Non è quindi consigliabile assegnare profili a gruppi misti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

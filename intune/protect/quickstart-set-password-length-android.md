@@ -1,12 +1,12 @@
 ---
 title: Avvio rapido - Criteri di conformità delle password per dispositivi Android
 titleSuffix: Microsoft Intune
-description: In questa guida introduttiva si userà Microsoft Intune per impostare la lunghezza della password obbligatoria per i dispositivi Android.
+description: In questo avvio rapido si userà Microsoft Intune per impostare la lunghezza della password obbligatoria per i dispositivi Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/21/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73bc84be46252cb99a47966b480e585545dde12
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 61fdf91d57ce5d187a0c43153f317b0b42c6b46c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504162"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409771"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Guida introduttiva: Creare un criterio di conformità della password per i dispositivi Android
 
-In questa guida introduttiva si userà Microsoft Intune per richiedere agli utenti della forza lavoro che usano Android di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei dispositivi Android. 
+In questo avvio rapido si userà Microsoft Intune per richiedere agli utenti del personale che usa Android di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei dispositivi Android.
 
 I criteri di conformità del dispositivo in Intune specificano le regole e le impostazioni che i dispositivi devono soddisfare per essere considerati conformi. È possibile usare criteri di conformità con l'accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità.
 
@@ -38,25 +38,33 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune. 
+Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) come [Amministratore globale](../fundamentals/users-add.md#types-of-administrators) o come [Amministratore del servizio](../fundamentals/users-add.md#types-of-administrators) Intune.
 
 ## <a name="create-a-device-compliance-policy"></a>Creare criteri di conformità dei dispositivi
 
-In questa guida introduttiva si userà Intune per richiedere agli utenti della forza lavoro che usano Android di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei dispositivi Android.
+Creare questi criteri per richiedere agli utenti di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei dispositivi Android.
 
-1. In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
+1. In Intune selezionare **Dispositivi** > **Criteri di conformità** > **Crea criterio**.
+
 2. Aggiungere **Conformità Android** come **Nome**. Aggiungere anche una **Descrizione**.
-3. Per **Piattaforma**, selezionare **Android**. 
-4. Selezionare **Impostazioni** > **Sicurezza del sistema** per visualizzare il pannello **Sicurezza del sistema** per Android.
-5. Fare clic su **Rendi obbligatorio** accanto a **Richiedi una password per sbloccare i dispositivi mobili**.
-6. Selezionare **Almeno numerico** accanto a **Tipo di password richiesto**.
-7. Immettere **6** accanto a **Lunghezza minima password**. 
+
+3. Per **Piattaforma** selezionare **Android Enterprise**.
+
+4. Per **Tipo di profilo** selezionare **Profilo di lavoro**.
+
+5. Selezionare **Impostazioni** > **Sicurezza del sistema** per visualizzare il pannello **Sicurezza del sistema** per Android.
+
+6. Per **Richiedi una password per sbloccare i dispositivi mobili** selezionare **Rendi obbligatorio**.
+
+7. In **Tipo di password richiesto** selezionare **Almeno numerico**.
+
+8. Per **Lunghezza minima password** immettere **6**.
 
     ![Screenshot della creazione di un gruppo in Microsoft Intune](./media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Al termine, fare clic su **OK** > **OK** > **Crea** per creare il criterio.
+9. Al termine, selezionare **OK** > **OK** > **Crea** per creare il criterio.
 
-Dopo averlo creato, il criterio comparirà nell'elenco dei criteri di conformità dei dispositivi. 
+Dopo averlo creato, il criterio sarà visualizzato nell'elenco dei criteri di conformità dei dispositivi.
 
 ## <a name="clean-up-resources"></a>Pulizia delle risorse
 

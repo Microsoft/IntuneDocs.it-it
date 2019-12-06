@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7624800b1f53c6e8dcdf0b37f9e352deb47563a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497511"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548032"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Aggiungere app di Microsoft Store a Microsoft Intune
 
@@ -43,7 +43,7 @@ Prima di poter assegnare, monitorare, configurare o proteggere le app è necessa
     - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Description**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
-    - **URL di App Store**: digitare l'URL dell'App Store per l'app da creare.
+    - **URL di App Store**: digitare l'URL dell'App Store per l'app da creare. È possibile trovare l'URL eseguendo una ricerca dell'app desiderata in [Microsoft Store](https://store.microsoft.com). Usare l'URL dalla barra degli indirizzi del browser.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.

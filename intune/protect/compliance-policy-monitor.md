@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844880"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410153"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -56,7 +57,7 @@ Quando si apre il dashboard, si ottiene una panoramica con tutti i report di con
 
 Se si esaminano in dettaglio questi report, si possono vedere anche tutte le impostazioni e i criteri di conformità specifici validi per un dispositivo specifico, incluso lo stato di conformità per ogni impostazione.
 
-### <a name="device-compliance-status-report"></a>Report sullo stato di conformità del dispositivo
+### <a name="device-compliance-status"></a>Stato di conformità del dispositivo
 
 Il grafico **Stato conformità dispositivo** illustra gli stati di conformità per tutti i dispositivi registrati in Intune. Gli stati di conformità dei dispositivi vengono mantenuti in due diversi database: Intune e Azure Active Directory.
 
@@ -119,7 +120,8 @@ Nel grafico **Dettagli dispositivi** selezionare un dispositivo specifico, quind
 
 Intune visualizza altri dettagli sulle impostazioni dei criteri di conformità applicati al dispositivo. Quando si seleziona il criterio specifico, vengono visualizzate tutte le impostazioni del criterio.
 
-### <a name="devices-without-compliance-policy"></a>Dispositivi senza criteri di conformità
+### <a name="devices-without-compliance"></a>Dispositivi senza conformità
+
 Nella pagina *Stato di conformità* accanto al grafico *Conformità dei criteri* è possibile selezionare il riquadro **Dispositivi senza criteri di conformità** per visualizzare le informazioni sui dispositivi a cui non sono assegnati criteri di conformità:
 
 ![Vedere i dispositivi senza criteri di conformità](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Quando si seleziona il riquadro vengono visualizzati tutti i dispositivi senza c
 
 - Gli utenti a cui è stato assegnato un criterio di conformità di qualsiasi tipo non vengono visualizzati nel report, indipendentemente dalla piattaforma del dispositivo. Ad esempio, se è stato assegnato un criterio di conformità di Windows a un utente con un dispositivo Android, il dispositivo non appare nel report. Tuttavia, Intune considera tale dispositivo Android come non conforme. Per evitare problemi, è consigliabile creare criteri per ogni piattaforma del dispositivo e distribuirli a tutti gli utenti.
 
-### <a name="per-policy-device-compliance-report"></a>Report di conformità dei dispositivi in base ai criteri
+### <a name="per-policy-device-compliance"></a>Conformità dei dispositivi in base ai criteri
 
 Il grafico **Conformità dei criteri** illustra i criteri e il numero di dispositivi conformi e non conformi. 
 
 ![Visualizzare un elenco di criteri e il numero di dispositivi conformi e non conformi per tale criterio](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>Report di conformità dell'impostazione
+### <a name="setting-compliance"></a>Conformità delle impostazioni
 
 Il grafico **Conformità dell'impostazione** visualizza tutte le impostazioni dei criteri di conformità dei dispositivi, le piattaforme a cui vengono applicate le impostazioni dei criteri e il numero di dispositivi non conformi.
 
@@ -152,6 +154,24 @@ Il grafico **Conformità dell'impostazione** visualizza tutte le impostazioni de
 > I criteri possono essere assegnati a un dispositivo e a un utente nello stesso dispositivo. In alcuni scenari, un dispositivo può essere sincronizzato prima che l'utente esegua l'accesso, ad esempio quando il dispositivo viene riavviato. La conformità può valutare l'utente e mostrare il dispositivo come non conforme. Questo comportamento può anche indicare l'account di sistema come utente non conforme.
 >
 > Si tratta di un problema noto con i dispositivi Windows 10 multiutente. Eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](../fundamentals/in-development.md) e/o [novità](../fundamentals/whats-new.md).
+
+## <a name="view-compliance-reports"></a>Visualizzare i report di conformità
+
+Oltre a usare i grafici sullo *stato di conformità*, è possibile visualizzare i report di conformità dalla pagina *Monitoraggio* dell'interfaccia di amministrazione.
+
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selezionare **Dispositivi** > **Monitoraggio**, quindi da **Conformità** selezionare il report che si vuole visualizzare. Alcuni dei report di conformità disponibili includono:
+
+   - Conformità del dispositivo
+   - Dispositivi non conformi
+   - Dispositivi senza criteri di conformità
+   - Conformità delle impostazioni
+   - Conformità ai criteri
+   - Report di attestazione dell'integrità di Windows
+   - Stato dell'agente delle minacce
+
+Per altre informazioni sui report, vedere [Report di Intune](../fundamentals/reports.md)
 
 ## <a name="view-status-of-device-policies"></a>Visualizzare lo stato dei criteri dei dispositivi
 

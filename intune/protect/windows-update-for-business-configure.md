@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199321"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291088"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gestire gli aggiornamenti software di Windows 10 in Intune
 
@@ -208,13 +208,18 @@ Quando un dispositivo riceve i criteri di aggiornamento delle funzionalità di W
 
 - Diversamente dall'uso di *Sospendi* con un anello di aggiornamento, che scade dopo 35 giorni, i criteri di aggiornamento delle funzionalità di Windows 10 restano attivi. I dispositivi non installano una nuova versione di Windows fino a quando non vengono modificati o rimossi i criteri di aggiornamento delle funzionalità di Windows 10. Se si modificano i criteri per specificare una versione più recente, i dispositivi potranno quindi installare le funzionalità della versione di Windows.
 
-> [!IMPORTANT]
-> Quando si distribuiscono un *aggiornamento delle funzionalità di Windows 10* e i criteri *Anello di aggiornamento di Windows 10* nello stesso dispositivo, verificare nell'anello di aggiornamento le configurazioni seguenti:
->
-> - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** deve essere impostato su **0**
-> - Gli aggiornamenti delle funzionalità per l'anello di aggiornamento devono essere *in esecuzione*. Non devono essere sospesi.
+### <a name="limitations-for-windows-10-feature-updates"></a>Limitazioni per gli aggiornamenti delle funzionalità di Windows 10
 
-Gli aggiornamenti delle funzionalità di Windows 10 non sono supportati con Windows Autopilot.
+- Quando si distribuiscono criteri di *aggiornamento delle funzionalità di Windows 10* in un dispositivo che riceve anche criteri *Fase di aggiornamento di Windows 10*, verificare nell'anello di aggiornamento le configurazioni seguenti:
+  - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** deve essere impostato su **0**.
+  - Gli aggiornamenti delle funzionalità per l'anello di aggiornamento devono essere *in esecuzione*. Non devono essere sospesi.
+
+- I criteri *Aggiornamenti delle funzionalità di Windows 10* non sono supportati con Autopilot. Intune non distribuirà i criteri in:
+  - Dispositivi sottoposti a provisioning da Autopilot.
+  - Dispositivi precedentemente sottoposti a provisioning da Autopilot.
+
+  Questa limitazione è in fase di esame per verificare se è possibile un supporto futuro.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Creare e assegnare gli aggiornamenti delle funzionalità di Windows 10
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c6e519f4f5f31a11bd2e762b9e33357825d783d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984163"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390383"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -46,6 +46,7 @@ Sono tre le categorie di impostazioni dei criteri: *Rilocazione dei dati*, *Requ
 | **Limita le operazioni taglia, copia e incolla tra altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. È possibile scegliere tra: <ul><li>**Bloccato**:  non consente le azioni taglia, copia e incolla tra questa e altre app.</li><li>**App gestite da criteri**: consente le azioni Taglia, Copia e Incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni Taglia o Copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni Taglia, Copia e Incolla in e da questa app.</ul> | **Qualsiasi app**   |
 | <ul><ui>**Limite di caratteri per copia e incolla per qualsiasi app** | Specificare il numero di caratteri che è possibile tagliare o copiare da account e dati dell'organizzazione.  Ciò consente la condivisione del numero specificato di caratteri in qualsiasi applicazione, indipendentemente dall'impostazione **Limita le operazioni taglia, copia e incolla con le altre app**.<p>Valore predefinito = 0<p>**Nota**: *l'app deve avere Intune SDK 9.0.14 o versione successiva.*  | **0**   |
 | **Notifiche sui dati dell'organizzazione** | Specificare la quantità di dati dell'organizzazione condivisa tramite notifiche del sistema operativo con gli account dell'organizzazione. Questa impostazione dei criteri influisce sul dispositivo locale e su eventuali dispositivi connessi, ad esempio dispositivi indossabili e smart speaker. Le app possono offrire controlli aggiuntivi per personalizzare il comportamento delle notifiche o scegliere di non rispettare tutti i valori. È possibile scegliere tra: <ul><li>**Blocca**:  le notifiche non vengono condivise.</li><ul><li>Se questa opzione non è supportata dall'applicazione, le notifiche non saranno consentite.</li></ul><li>**Blocca i dati dell'organizzazione**: i dati dell'organizzazione non vengono condivisi, ad esempio:</li><UL><li>"Nuovo messaggio di posta elettronica"; "Riunione"</li><li>Se questa opzione non è supportata dall'applicazione, le notifiche verranno bloccate.</li></ul><li>**Consenti**: i dati dell'organizzazione vengono condivisi nelle notifiche</li><li>**Qualsiasi app**: nessuna restrizione per le azioni Taglia, Copia e Incolla in e da questa app.</ul> <p>**Nota**: *questa impostazione richiede il supporto dell'app. A questo punto, Outlook per iOS versione 4.16.0 o successiva supporterà questa impostazione, il cui rilascio è previsto per la settimana del 16 dicembre 2019.* | **Consentito**   |
+| **Tastiere di terze parti** | Scegliere **Blocca** per impedire l'uso di tastiere di terze parti nelle applicazioni gestite.<p>Quando questa impostazione è abilitata, l'utente riceve un messaggio una tantum che informa che l'uso di tastiere di terze parti è bloccato. Questo messaggio viene visualizzato la prima volta che un utente interagisce con i dati dell'organizzazione per cui è necessario usare una tastiera. Solo la tastiera standard di iOS è disponibile quando si usano applicazioni gestite e tutte le altre opzioni di tastiera sono disabilitate. Questa impostazione avrà effetto sull'organizzazione e sugli account personali delle applicazioni con identità multiple. Questa impostazione non ha alcun effetto sull'uso di tastiere di terze parti in applicazioni non gestite.<p>**Nota:** questa funzionalità richiede che l'app usi Intune SDK versione 12.0.16 o successiva. Nelle app con SDK versione 8.0.14 e successive, tra cui 12.0.15, questa funzionalità non sarà applicata correttamente per le app con identità multiple. Per altri dettagli, vedere [Problemi noti: assenza del blocco delle tastiere di terze parti in iOS per gli account personali](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486). | **Consentito**  |
 
 ### <a name="encryption"></a>Crittografia
 | Impostazione | Uso | Valore predefinito |

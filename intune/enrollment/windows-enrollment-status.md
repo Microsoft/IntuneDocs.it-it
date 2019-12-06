@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059699"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548023"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare una pagina relativa allo stato della registrazione
  
@@ -64,14 +64,14 @@ La pagina relativa allo stato della registrazione consente agli utenti di conosc
 
 Per attivare la pagina relativa allo stato della registrazione, eseguire i passaggi descritti di seguito.
  
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Windows** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
 2. Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
 3. Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
 4. Scegliere le altre impostazioni che si vuole attivare e selezionare **Salva**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Creare il profilo della pagina relativa allo stato della registrazione e assegnarlo a un gruppo
 
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione** > **Crea profilo**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Windows** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione** > **Crea profilo**.
 2. Specificare un **nome** e una **descrizione**.
 3. Scegliere **Crea**.
 4. Scegliere il nuovo profilo nell'elenco **Pagina relativa allo stato della registrazione**.
@@ -82,7 +82,7 @@ Per attivare la pagina relativa allo stato della registrazione, eseguire i passa
 
 Un utente può appartenere a molti gruppi e avere molti profili della pagina relativa allo stato della registrazione. Per gestire questi conflitti, è possibile impostare le priorità per ogni profilo. Durante la registrazione, se un utente ha più di un profilo della pagina relativa allo stato della registrazione, verrà applicato solo il profilo con la priorità più alta.
 
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Windows** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
 2. Passare il mouse sul profilo nell'elenco.
 3. Usando i tre punti verticali, trascinare il profilo sulla posizione desiderata nell'elenco.
 
@@ -90,7 +90,7 @@ Un utente può appartenere a molti gruppi e avere molti profili della pagina rel
 
 È possibile specificare le app da installare prima che l'utente possa accedere al desktop.
 
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Windows** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione**.
 2. Scegliere un profilo > **Impostazioni**.
 3. Scegliere **Sì** per **Mostra lo stato dell'installazione di app e profili**.
 4. Scegliere **Sì** per **Impedisci l'uso del dispositivo fino al completamento dell'installazione di tutte le app e di tutti i profili**.
