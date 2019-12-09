@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: Esercitazioni
   items:
+    - name: Procedura dettagliata per Intune in Microsoft Endpoint Manager
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Procedura dettagliata per Microsoft Intune nel portale di Azure
       href: tutorial-walkthrough-intune-portal.md
 - name: Concetti
