@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390383"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781244"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi iOS. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure al momento della creazione di nuovi criteri.
+Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi iOS. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel riquadro **Impostazioni** del portale di Azure al momento della creazione di nuovi criteri.
 
 Sono tre le categorie di impostazioni dei criteri: *Rilocazione dei dati*, *Requisiti di accesso* e *Avvio condizionale*. In questo articolo il termine ***app gestite da criteri*** si riferisce alle app configurate con criteri di protezione delle app.
 
@@ -88,7 +88,7 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | <ul><ui> **Selezionare la lunghezza minima del PIN** | specificare il numero minimo di cifre in una sequenza di PIN.  | **4**  |
 | <ul><ui> **Touch ID invece del PIN per l'accesso (iOS 8 +)** | Selezionare **Consenti** per consentire all'utente di usare [Touch ID](https://support.apple.com/HT201371) anziché un PIN per accedere all'app.    | **Consentito**  |
 |<ul><ui><ul><ui>**Esegui l'override di Touch ID con il PIN dopo il timeout**|  Per usare questa impostazione, selezionare**Richiedi** e quindi configurare un timeout di inattività.  |**Richiedi**  |
-| <ul><ui><ul><ui><ul><ui>**Timeout (minuti di inattività)** |  specificare un tempo in minuti dopo il quale un passcode o il PIN numerico configurato sostituirà l'uso di un'impronta digitale. Questo valore di timeout deve essere maggiore del valore specificato in 'Controlla di nuovo i requisiti di accesso dopo (minuti di inattività)'.  |**30**  |
+| <ul><ui><ul><ui><ul><ui>**Timeout (minuti di inattività)** |  Specificare un tempo in minuti dopo il quale un passcode o il PIN numerico configurato sostituirà l'uso di un'impronta digitale o del viso come metodo di accesso. Questo valore di timeout deve essere maggiore del valore specificato in 'Controlla di nuovo i requisiti di accesso dopo (minuti di inattività)'.  |**30**  |
 | <ul><ui><ul><ui>**Face ID invece del PIN per l'accesso (iOS 11+)** | Selezionare **Consenti** per consentire all'utente di usare la tecnologia di riconoscimento facciale per autenticare gli utenti nei dispositivi iOS. Se consentito, Face ID deve essere usato per accedere all'app in un dispositivo in grado di supportare Face ID.    | **Consentito**  |
 | <ul><ui>**Numero di giorni di attesa prima della reimpostazione del PIN** | Selezionare **Sì** per richiedere agli utenti di modificare il PIN dell'app dopo un determinato periodo di tempo, in giorni.  <br><br>Se impostata su *Sì*, è possibile configurare il numero di giorni che precedono la richiesta di reimpostazione del PIN. |**No**  |  
 | <ul><ui><ul><ui> **Numero di giorni** | Configurare il numero di giorni che precedono la richiesta di reimpostazione del PIN.  |**90**  |

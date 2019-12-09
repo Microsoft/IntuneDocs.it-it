@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547727"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563863"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -157,7 +157,7 @@ Dopo aver caricato un dispositivo Autopilot, è possibile modificarne alcuni att
 
 Gli avvisi indicheranno quanti dispositivi con il programma Autopilot non hanno profili di distribuzione di Autopilot. Usare le informazioni contenute nell'avviso per creare i profili e assegnarli ai dispositivi non assegnati. Selezionando l'avviso, verrà visualizzato un elenco completo di dispositivi Windows AutoPilot e le relative informazioni dettagliate.
 
-Per visualizzare gli avvisi per i dispositivi non assegnati, in [Intune nel portale di Azure](https://aka.ms/intuneportal) scegliere **Dispositivi** > **Panoramica** > **Avvisi per la registrazione** > **Dispositivi non assegnati**.  
+Per visualizzare gli avvisi per i dispositivi non assegnati, nella [interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), scegliere **Dispositivi** > **Panoramica** > **Avvisi per la registrazione** > **Dispositivi non assegnati**.  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Assegnare un utente a un dispositivo Autopilot specifico
 

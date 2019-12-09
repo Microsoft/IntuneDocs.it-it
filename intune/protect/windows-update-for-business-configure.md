@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291088"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691782"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gestire gli aggiornamenti software di Windows 10 in Intune
 
@@ -214,9 +214,7 @@ Quando un dispositivo riceve i criteri di aggiornamento delle funzionalità di W
   - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** deve essere impostato su **0**.
   - Gli aggiornamenti delle funzionalità per l'anello di aggiornamento devono essere *in esecuzione*. Non devono essere sospesi.
 
-- I criteri *Aggiornamenti delle funzionalità di Windows 10* non sono supportati con Autopilot. Intune non distribuirà i criteri in:
-  - Dispositivi sottoposti a provisioning da Autopilot.
-  - Dispositivi precedentemente sottoposti a provisioning da Autopilot.
+- I criteri di aggiornamento delle funzionalità di Windows 10 non possono essere applicati durante la configurazione guidata e verranno applicati solo alla prima analisi del Windows Update dopo il completamento del provisioning di un dispositivo (in genere un giorno). Inoltre, i dispositivi di cui è stato effettuato il provisioning con Autopilot non riceveranno i criteri.
 
   Questa limitazione è in fase di esame per verificare se è possibile un supporto futuro.
 

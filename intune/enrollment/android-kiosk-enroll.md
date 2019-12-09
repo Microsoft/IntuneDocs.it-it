@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390712"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563866"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati
 
@@ -59,7 +59,7 @@ Per configurare la gestione di dispositivi dedicati Android Enterprise, seguire 
 
 Per poter registrare i dispositivi dedicati, è necessario creare un profilo di registrazione. Il profilo creato fornisce un token di registrazione (stringa casuale) e un codice a matrice (codice QR). A seconda del sistema operativo Android e della versione del dispositivo, per [registrare il dispositivo dedicato](#enroll-the-dedicated-devices) è possibile usare il token o un codice a matrice.
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Dispositivi** > **Android** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
 2. Scegliere **Crea** e compilare i campi obbligatori.
     - **Nome**: digitare un nome che verrà usato per l'assegnazione del profilo al gruppo di dispositivi dinamico.
     - **Data di scadenza del token**: data in cui il token scade. Google impone un massimo di 90 giorni.
@@ -92,7 +92,7 @@ Per poter registrare i dispositivi dedicati, è necessario creare un profilo di 
 
 La sostituzione o la revoca di un token o codice a matrice non avrà alcun effetto sui dispositivi già registrati.
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Dispositivi** > **Android** > **Registrazione Android** > **Dispositivi dedicati di proprietà aziendale**.
 2. Scegliere il profilo che si vuole usare.
 3. Scegliere **Token**.
 4. Per sostituire il token, scegliere **Sostituisci il token**.

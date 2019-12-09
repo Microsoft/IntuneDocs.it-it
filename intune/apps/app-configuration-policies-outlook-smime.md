@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411359"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564196"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configurare S/MIME con Outlook per iOS
 
@@ -62,14 +62,14 @@ Outlook per iOS supporta due modi per fornire i certificati ai dispositivi in mo
 Per configurare S/MIME per Outlook per iOS in Endpoint Manager, inclusa la distribuzione automatica dei certificati S/MIME che Outlook per iOS può usare, seguire questa procedura:
 
 ### <a name="add-the-microsoft-outlook-app"></a>Aggiungere l'app Microsoft Outlook
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Aggiungere l'app Microsoft Outlook per iOS dall'App Store in Endpoint Manager oppure sincronizzare Outlook per iOS dal Volume Purchase Program di Apple. Per altre informazioni, vedere [Aggiungere app dello Store iOS a Microsoft Intune](~/apps/store-apps-ios.md) oppure [Procedura per la gestione delle app iOS e macOS acquistate tramite Volume Purchase Program di Apple con Microsoft Intune](~/apps/vpp-apps-ios.md).
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>Creare i criteri di configurazione S/MIME di Outlook per iOS
 
 I passaggi seguenti consentono di creare e configurare i criteri S/MIME di Outlook per iOS in Endpoint Manager. Con queste impostazioni i certificati di firma e crittografia vengono forniti automaticamente.
 
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.<br>
+1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.<br>
 Verrà visualizzato il riquadro **Aggiungi i criteri di configurazione**.
 2. Immettere il **Nome** e la **Descrizione** del criterio di configurazione.
 3. Selezionare **Dispositivi gestiti** per **Tipo di registrazione del dispositivo**.

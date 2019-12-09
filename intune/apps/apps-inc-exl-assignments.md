@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547957"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563969"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Includere ed escludere assegnazioni di app in Microsoft Intune
 
@@ -55,34 +55,34 @@ Non è quindi consigliabile assegnare app a gruppi misti.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Includere ed escludere gruppi durante l'assegnazione di app 
 Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione:
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro **App client** selezionare **App**. Viene visualizzato l'elenco di app aggiunte.
-5. Selezionare l'app che si vuole assegnare. Un dashboard visualizza le informazioni sull'app. 
-6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**. 
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app**. Viene visualizzato l'elenco di app aggiunte.
+3. Selezionare l'app che si vuole assegnare. Un dashboard visualizza le informazioni sull'app. 
+4. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**. 
 
     ![Includere assegnazioni di app quando si assegnano app](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. Selezionare **Aggiungi gruppo** per aggiungere i gruppi di utenti assegnati all'app. 
-8. Nel riquadro **Aggiungi gruppo** selezionare un **tipo di assegnazione** tra quelli disponibili.
-9. Come tipo di assegnazione, selezionare **Disponibile con o senza registrazione**.
+
+5. Selezionare **Aggiungi gruppo** per aggiungere i gruppi di utenti assegnati all'app. 
+6. Nel riquadro **Aggiungi gruppo** selezionare un **tipo di assegnazione** tra quelli disponibili.
+7. Come tipo di assegnazione, selezionare **Disponibile con o senza registrazione**.
 
     ![Assegnazioni di app di Intune - Aggiungi gruppo](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. Selezionare **Gruppi inclusi** per selezionare il gruppo di utenti per cui si vuole rendere questa app disponibile.
+8. Selezionare **Gruppi inclusi** per selezionare il gruppo di utenti per cui si vuole rendere questa app disponibile.
 
     > [!NOTE]
     > Quando si aggiunge un gruppo, se sono già stati inclusi altri gruppi per un tipo di assegnazione specifico, l'app risulterà preselezionata e non potrà essere modificata per gli altri tipi di assegnazione di inclusione. Il gruppo usato non potrà essere usato come gruppo incluso.
 
-11. Selezionare **Sì** per rendere questa app disponibile a tutti gli utenti.
+9. Selezionare **Sì** per rendere questa app disponibile a tutti gli utenti.
 
     ![Assegnazioni di app di Intune - Includere gruppi](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Fare clic su **OK** per impostare il gruppo da includere.
-13. Selezionare **Gruppi esclusi** per selezionare il gruppo di utenti per cui si vuole rendere questa app non disponibile. 
-14. Selezionare i gruppi da escludere. Questa app verrà resa non disponibile per tali gruppi.
+10. Fare clic su **OK** per impostare il gruppo da includere.
+11. Selezionare **Gruppi esclusi** per selezionare il gruppo di utenti per cui si vuole rendere questa app non disponibile. 
+12. Selezionare i gruppi da escludere. Questa app verrà resa non disponibile per tali gruppi.
 
     ![Assegnazioni di app di Intune - Escludere gruppi](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. Selezionare **Seleziona** per completare la selezione dei gruppi.
-16. Nel riquadro **Aggiungi gruppo** selezionare **OK**. Verrà visualizzato l'elenco **Assegnazioni** dell'app.
-17. Fare clic su **Salva** per attivare le assegnazioni di gruppi per l'app.
+13. Selezionare **Seleziona** per completare la selezione dei gruppi.
+14. Nel riquadro **Aggiungi gruppo** selezionare **OK**. Verrà visualizzato l'elenco **Assegnazioni** dell'app.
+15. Fare clic su **Salva** per attivare le assegnazioni di gruppi per l'app.
 
 Quando si creano le assegnazioni di gruppi, i gruppi che sono già stati assegnati non sono disponibili per la modifica. Se si vuole selezionare un gruppo che non è attualmente disponibile, prima rimuovere l'app dall'elenco assegnato dell'app. 
 

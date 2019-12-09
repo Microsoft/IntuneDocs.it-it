@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 3c13d7960c0bb5c73908a0a574ab7d6c169d6460
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548032"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563429"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Aggiungere app di Microsoft Store a Microsoft Intune
 
@@ -34,12 +34,10 @@ Prima di poter assegnare, monitorare, configurare o proteggere le app è necessa
 ## <a name="add-an-app-to-intune"></a>Aggiungere un'app in Intune
 È possibile aggiungere un'app dello Store Microsoft in Intune seguendo questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
-5. Nel riquadro **App** selezionare **Aggiungi**.
-6. Nel riquadro **Aggiungi app** selezionare il **Tipo di app** **Windows** e scegliere **Informazioni sull'app**.
-7. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nel riquadro **Aggiungi app** selezionare il **Tipo di app** **Windows** e scegliere **Informazioni sull'app**.
+4. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
     - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Description**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
@@ -52,8 +50,8 @@ Prima di poter assegnare, monitorare, configurare o proteggere le app è necessa
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app (facoltativo).
     - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-8. Selezionare **OK**.
-9. Selezionare **Aggiungi**.
+5. Selezionare **OK**.
+6. Selezionare **Aggiungi**.
 
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. Le app di Microsoft Store possono essere assegnate ai gruppi solo con il tipo di assegnazione in cui l'app è **disponibile per i dispositivi registrati** (gli utenti installano l'app dall'app del portale aziendale o dal sito Web).
 

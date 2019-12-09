@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390401"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564011"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Come cancellare solo i dati aziendali dalle app gestite da Intune
 
@@ -44,8 +44,8 @@ I criteri di Windows Information Protection (WIP) possono essere distribuiti sen
 
 ## <a name="create-a-wipe-request"></a>Creare una richiesta di cancellazione
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro Intune selezionare **App client** > **Cancellazione selettiva di app** > **Crea una richiesta di cancellazione dati**.<br>
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Cancellazione selettiva di app** > **Crea una richiesta di cancellazione dati**.<br>
    Viene visualizzato il riquadro **Crea una richiesta di cancellazione dati**.
 3. Fare clic su **Selezionare l'utente**, scegliere l'utente per cui si vogliono cancellare i dati dell'app e fare clic su **Seleziona** nella parte inferiore del riquadro **Selezionare l'utente**.
 
@@ -65,7 +65,7 @@ Il servizio crea e tiene traccia di una richiesta di cancellazione dati separata
 
 È possibile avere un report di riepilogo che mostra lo stato generale della richiesta di cancellazione dati e indica il numero di richieste in sospeso ed errori. Per ottenere ulteriori dettagli, seguire questa procedura:
 
-1. Nel riquadro **App client** > **Cancellazione selettiva di app** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti. Dal momento che il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente. Lo stato indica se una richiesta di cancellazione dati è **in sospeso**, **non riuscita** o **completata**.
+1. Nel riquadro **App** > **Cancellazione selettiva di app** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti. Dal momento che il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente. Lo stato indica se una richiesta di cancellazione dati è **in sospeso**, **non riuscita** o **completata**.
 
     ![Screenshot dello stato della richiesta di cancellazione dati nel pannello Cancellazione selettiva di app](./media/apps-selective-wipe/wipe-request-status-1.png)
 
