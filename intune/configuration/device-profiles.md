@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059888"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694948"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare funzionalità e impostazioni nei dispositivi usando i profili dei dispositivi in Microsoft Intune
 
@@ -49,7 +49,7 @@ Questi modelli offrono agli amministratori una visualizzazione semplificata dell
 
 Questa funzionalità supporta:
 
-- Windows 10 1809 e versioni successive nel firmware supportato.
+- Windows 10 e versioni successive
 
 ## <a name="certificates"></a>Certificati
 
@@ -102,7 +102,7 @@ L'[interfaccia di configurazione del firmware del dispositivo](device-firmware-c
 
 Questa funzionalità supporta:
 
-- Windows 10 e versioni successive
+- Windows 10 1809 e versioni successive nel firmware supportato
 
 ## <a name="device-restrictions"></a>Limitazioni del dispositivo
 

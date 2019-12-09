@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813375"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564253"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -33,18 +33,18 @@ ms.locfileid: "72813375"
 
 Intune offre un elenco aggregato di app rilevate nei dispositivi registrati in Intune nel tenant dell'utente.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro **Intune** selezionare **App client** > **App individuate**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Monitoraggio** > **App individuate**.
 
 >[!NOTE]
->È possibile esportare l'elenco delle app individuate in un file con estensione csv selezionando **Esporta** nel pannello **App individuate**.
+>È possibile esportare l'elenco delle app individuate in un file con estensione csv selezionando **Esporta** nel riquadro **App individuate**.
 >
 >Per le app Win32 individuate, il conteggio aggregato non è attualmente disponibile. Questo tipo di dati può essere visualizzato solo per singolo dispositivo.
 
 Intune offre anche l'elenco delle app individuate per il singolo dispositivo presente nel tenant.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro Intune selezionare **Dispositivi** > **Tutti i dispositivi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Tutti i dispositivi**.
 3. Selezionare un dispositivo.
 4. Per visualizzare le app rilevate per questo dispositivo, selezionare **App individuate** nella sezione **Monitoraggio**.
 
@@ -69,7 +69,7 @@ L'elenco seguente include il tipo di piattaforma app, le app monitorate per i di
 
 Il numero di app individuate potrebbe non corrispondere al conteggio degli stati di installazione delle app. Le possibilità delle incoerenze includono:
 
-- Una modifica di destinazione di un'app gestita installata può far sì che il conteggio delle installazioni nel pannello di stato diminuisca, mentre rimane segnalato nelle app individuate.
+- Una modifica di destinazione di un'app gestita installata può far sì che il conteggio delle installazioni nel riquadro di stato diminuisca, mentre rimane segnalato nelle app individuate.
 - Più istanze di destinazione della stessa app in un tenant comporterà conteggi diversi a causa della potenziale sovrapposizione di utenti o dispositivi. Ogni istanza dell'app includerà nel conteggio utenti sovrapposti, mentre le app individuate avranno conteggi duplicati.
 - Le app individuate e lo stato delle app vengono raccolti con intervalli di tempo diversi causando una discrepanza nei conteggi delle app.
 

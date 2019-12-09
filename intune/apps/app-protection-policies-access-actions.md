@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984029"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564132"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
@@ -33,16 +33,16 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Creare criteri di protezione delle app usando azioni di avvio condizionale
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client** > **Criteri di protezione delle app**.
-4. Fare clic su **Aggiungi criteri**. È anche possibile modificare criteri esistenti. 
-5. Fare clic su **Configura le impostazioni obbligatorie** per visualizzare l'elenco di impostazioni configurabili per il criterio. 
-6. Se si scorre verso il basso il riquadro Impostazioni, verrà visualizzata la sezione **Avvio condizionale** con una tabella modificabile.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Criteri di protezione delle app**.
+3. Fare clic su **Crea criterio** e selezionare la piattaforma del dispositivo per il criterio. 
+4. Fare clic su **Configura le impostazioni obbligatorie** per visualizzare l'elenco di impostazioni configurabili per il criterio. 
+5. Se si scorre verso il basso il riquadro Impostazioni, verrà visualizzata la sezione **Avvio condizionale** con una tabella modificabile.
 
     ![Screenshot delle azioni di accesso per la protezione delle app di Intune](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. 
-8. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
+6. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. 
+7. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
 ## <a name="policy-settings"></a>Impostazioni criteri 
 

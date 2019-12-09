@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497555"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563443"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Aggiungere app dello Store iOS a Microsoft Intune
 
@@ -41,18 +41,16 @@ Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a
 >[!NOTE]
 >Quando si lavora con Microsoft Intune, è consigliabile usare il browser Microsoft Edge o Google Chrome.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
-5. Nel riquadro **App** selezionare **Aggiungi**.
-6. Nell'elenco **Tipo di app** selezionare **iOS** dai tipi di **app dello Store** disponibili.
-7. Selezionare **Cerca in App Store**.
-8. Nel riquadro **Cerca in App Store** selezionare le impostazioni locali del paese o dell'area geografica per App Store.
-9. Nella casella **Cerca** digitare il nome (o una parte del nome) dell'app.  
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nell'elenco **Tipo di app** selezionare **iOS** dai tipi di **app dello Store** disponibili.
+4. Selezionare **Cerca in App Store**.
+5. Nel riquadro **Cerca in App Store** selezionare le impostazioni locali del paese o dell'area geografica per App Store.
+6. Nella casella **Cerca** digitare il nome (o una parte del nome) dell'app.  
     Intune esegue la ricerca nello Store e restituisce un elenco di risultati pertinenti.
-10. Nell'elenco risultati selezionare l'app desiderata e quindi selezionare **Seleziona**.
-11. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
-12. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
+7. Nell'elenco risultati selezionare l'app desiderata e quindi selezionare **Seleziona**.
+8. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
+9. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
     - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Description**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
@@ -67,8 +65,8 @@ Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo). Questo campo è visibile solo per gli amministratori e non è visibile per gli utenti.
     - **Note**: immettere eventuali note da associare a questa app (facoltativo). Questo campo è visibile solo per gli amministratori e non per gli utenti.
     - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-13. Selezionare **OK**.
-14. Selezionare **Aggiungi**.
+10. Selezionare **OK**.
+11. Selezionare **Aggiungi**.
 
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4c1f3d8b6b7edbf51ca2aaa681909e6c220de3c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7567f0ee8c2bac5c3cf3c4e0fae027bdec35e27e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507224"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563558"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Android a Microsoft Intune
 
@@ -38,11 +38,9 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro **Intune** selezionare **App client**.
-3. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
-4. Sopra l'elenco delle app selezionare **Aggiungi**.
-5. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nel riquadro **Aggiungi app** selezionare **App line-of-business** come **Tipo di app**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Passaggio 2: Configurare il file del pacchetto dell'app
 

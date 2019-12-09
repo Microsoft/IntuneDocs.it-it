@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712934"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563745"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Come convalidare la configurazione dei criteri di protezione delle app in Microsoft Intune
 
@@ -43,8 +43,8 @@ Se dai test risulta che il comportamento dei criteri di protezione delle app è 
 - Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**.
 
 ### <a name="user-app-protection-status"></a>Stato di protezione dell'app dell'utente
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selezionare **App client** >  **Stato protezione app** e quindi selezionare il riquadro **Utenti assegnati**. 
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selezionare **App** >  **Stato protezione app** e quindi selezionare il riquadro **Utenti assegnati**. 
 4. Nella pagina **Segnalazione app** selezionare **Selezionare l'utente** per visualizzare un elenco di utenti e gruppi. 
 5. Cercare e selezionare un utente nell'elenco e quindi scegliere **Selezionare l'utente**. Nella parte superiore del riquadro **Segnalazione app** è possibile verificare se l'utente ha la licenza per la protezione delle app. È anche possibile visualizzare se l'utente ha una licenza per Office 365 e lo stato dell'app per tutti i dispositivi dell'utente.
 

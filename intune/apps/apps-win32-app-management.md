@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143206"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564032"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -101,17 +101,17 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selezionare **App** > **Tutte le app** > **Aggiungi**.
 4. Nel riquadro dell'app **Aggiungi** selezionare **App Windows (Win32)** nell'elenco a discesa.
 
-    ![Screenshot del pannello Aggiungi app - elenco a discesa Tipo di app](./media/apps-win32-app-management/apps-win32-app-01.png)
+    ![Screenshot del riquadro Aggiungi app - elenco a discesa dei tipi di app](./media/apps-win32-app-management/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Passaggio 2: Caricare il file del pacchetto dell'app
 
 1. Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app** per selezionare un file. Verrà visualizzato il riquadro File del pacchetto dell'app.
 
-    ![Screenshot del pannello File del pacchetto dell'app](./media/apps-win32-app-management/apps-win32-app-02.png)
+    ![Screenshot del riquadro File del pacchetto dell'app](./media/apps-win32-app-management/apps-win32-app-02.png)
 
 2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione *intunewin*.
 
@@ -180,7 +180,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
     - **Numero minimo di processori logici necessari**: aggiungere facoltativamente il numero minimo di processori logici necessari per installare l'app.
     - **Velocità di CPU minima necessaria (MHz)** : aggiungere facoltativamente la velocità di CPU minima necessaria per installare l'app.
 
-3. Fare clic su **Aggiungi** per visualizzare il pannello **Aggiungi una regola relativa ai requisiti** e configurare le regole relative ai requisiti aggiuntive. Selezionare un'opzione per **Tipo di requisito** per scegliere il tipo di regola che si userà per determinare come viene convalidato un requisito. Le regole relative ai requisiti possono essere basate su informazioni del file system, valori del Registro di sistema o script di PowerShell. 
+3. Fare clic su **Aggiungi** per visualizzare il riquadro **Aggiungi una regola relativa ai requisiti** e configurare le regole relative ai requisiti aggiuntive. Selezionare un'opzione per **Tipo di requisito** per scegliere il tipo di regola che si userà per determinare come viene convalidato un requisito. Le regole relative ai requisiti possono essere basate su informazioni del file system, valori del Registro di sistema o script di PowerShell. 
     - **File**: quando si sceglie **File** come **Tipo di requisito**, la regola relativa ai requisiti deve rilevare un file o una cartella, una data, una versione o una dimensione. 
         - **Percorso**: percorso completo della cartella contenente il file o la cartella da rilevare.
         - **File o cartella**: file o cartella da rilevare.
@@ -297,7 +297,7 @@ A questo punto, sono stati completati i passaggi per l'aggiunta di un'app Win32 
 
 ## <a name="app-dependencies"></a>Dipendenze dell'app
 
-Le dipendenze dell'app sono applicazioni che devono essere installate prima di poter installare l'app Win32. È possibile richiedere che altre app vengano installate come dipendenze. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. È previsto un massimo di 100 dipendenze, che include le dipendenze specificate e l'app stessa. È possibile aggiungere le dipendenze di un'app Win32 solo dopo aver aggiunto e caricato l'app Win32 in Intune. Una volta aggiunta l'app Win32, verrà visualizzata l'opzione **Dipendenze** nel pannello dell'app Win32. 
+Le dipendenze dell'app sono applicazioni che devono essere installate prima di poter installare l'app Win32. È possibile richiedere che altre app vengano installate come dipendenze. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. È previsto un massimo di 100 dipendenze, che include le dipendenze specificate e l'app stessa. È possibile aggiungere le dipendenze di un'app Win32 solo dopo aver aggiunto e caricato l'app Win32 in Intune. Una volta aggiunta l'app Win32, verrà visualizzata l'opzione **Dipendenze** nel riquadro dell'app Win32. 
 
 Anche tutte le dipendenze dell'app Win32 devono essere un'app Win32. Non sono supportate dipendenze da altri tipi di app, ad esempio singole app LOB MSI o app dello Store.
 
@@ -307,7 +307,7 @@ Quando si aggiunge una dipendenza tra app, è possibile eseguire ricerche in bas
 
 Per aggiungere una dipendenza tra app a un'app Win32, seguire questa procedura:
 
-1. In Intune selezionare **App client** > **App** per visualizzare l'elenco delle app client aggiunte. 
+1. In Intune selezionare **App** > **Tutte le app** per visualizzare l'elenco delle app client aggiunte. 
 2. Selezionare un'app di tipo **App Windows (Win32)** aggiunta. 
 3. Selezionare **Dipendenze** per aggiungere le app dipendenti che devono essere installate prima di poter installare l'app Win32. 
 4. Fare clic su **Aggiungi** per aggiungere una dipendenza tra app.
@@ -343,12 +343,12 @@ Nell'immagine seguente l'utente finale riceve una notifica indicante che sono in
 
 Impostare la disponibilità dell'app in base a una data e un'ora per un'app obbligatoria seguendo questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel pannello **Intune** selezionare **App client** > **App**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app**.
 3. Selezionare un'**App Windows (Win32)** esistente dall'elenco. 
-4. Nel pannello dell'app selezionare **Assegnazioni** > **Aggiungi gruppo**. 
+4. Nel riquadro dell'app selezionare **Assegnazioni** > **Aggiungi gruppo**. 
 5. Impostare **Tipo di assegnazione** su **Obbligatoria**. Si noti che la disponibilità dell'app può essere impostata in base al tipo di assegnazione. Il **Tipo di assegnazione** può essere **Obbligatorio**, **Disponibile per i dispositivi registrati** o **Disinstalla**.
-6. Selezionare **Gruppi inclusi** per determinare a quale gruppo di utenti verrà assegnata l'app. Verrà visualizzato il pannello **Assegna**.
+6. Selezionare **Gruppi inclusi** per determinare a quale gruppo di utenti verrà assegnata l'app. Verrà visualizzato il riquadro **Assegna**.
 7. Impostare **Rendi questa app obbligatoria per tutti gli utenti** su **Sì**.
 
     > [!NOTE]
@@ -358,7 +358,7 @@ Impostare la disponibilità dell'app in base a una data e un'ora per un'app obbl
     > - **Disinstalla**: È possibile scegliere ***Disinstalla questa app per tutti gli utenti** e/o **Disinstalla questa app per tutti i dispositivi**.
 
 8. Per modificare le opzioni **Esperienza dell'utente finale** selezionare **Modifica**.
-9. Nel pannello **Modifica assegnazione** impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**. Si noti che è possibile impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**, **Mostra le notifiche di tipo avviso popup per i riavvii dei computer** o **Nascondi tutte le notifiche di tipo avviso popup**.
+9. Nel riquadro **Modifica assegnazione** impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**. Si noti che è possibile impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**, **Mostra le notifiche di tipo avviso popup per i riavvii dei computer** o **Nascondi tutte le notifiche di tipo avviso popup**.
 10. Impostare **Disponibilità dell'app** su **Data o ora specifiche** e selezionare la data e l'ora. La data e l'ora specificano quando l'app viene scaricata nel dispositivo degli utenti finali. 
 11. Impostare **Scadenza dell'installazione app** su **Data o ora specifiche** e selezionare la data e l'ora. La data e l'ora specificano quando l'app viene installata nel dispositivo degli utenti finali. Quando viene effettuata più di un'assegnazione per lo stesso utente o dispositivo, viene selezionata l'ora di scadenza dell'installazione dell'app in base alla prima ora possibile.
 12. Fare clic su **Abilitato** accanto a **Periodo di tolleranza per il riavvio**. Il periodo di tolleranza per il riavvio viene avviato non appena l'installazione dell'app è stata completata nel dispositivo. Quando è disabilitato, il dispositivo può essere riavviato senza preavviso. <br>È possibile personalizzare le opzioni seguenti:
@@ -369,7 +369,7 @@ Impostare la disponibilità dell'app in base a una data e un'ora per un'app obbl
 13. Fare clic su **OK** > **OK** > **OK** > **Salva** per aggiungere l'assegnazione.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notifiche di tipo avviso popup per app Win32 
-Se necessario, è possibile eliminare la visualizzazione delle notifiche di tipo avviso popup degli utenti finali per ogni assegnazione di app. In Intune selezionare **App client** > **App** > selezionare l'app > **Assegnazioni** > **Includi gruppi**. 
+Se necessario, è possibile eliminare la visualizzazione delle notifiche di tipo avviso popup degli utenti finali per ogni assegnazione di app. In Intune selezionare **App** > **Tutte le app** > selezionare l'app > **Assegnazioni** > **Includi gruppi**. 
 
 > [!NOTE]
 > Le app Win32 installate dall'estensione di gestione di Intune non verranno disinstallate nei dispositivi di cui è stata annullata la registrazione. Gli amministratori possono sfruttare l'esclusione di assegnazione per non offrire l'app Win32 ai dispositivi BYOD.

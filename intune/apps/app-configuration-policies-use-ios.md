@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566188"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564155"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -51,8 +51,7 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 ## <a name="create-an-app-configuration-policy"></a>Creare criteri di configurazione delle app
 
 1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Scegliere il carico di lavoro **App client**.
-4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
+3. Scegliere **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 5. Impostare i dettagli seguenti:
     - **Nome** - Nome del profilo che viene visualizzato nel portale di Azure.
     - **Descrizione** - Descrizione del profilo che viene visualizzata nel portale di Azure.
@@ -74,7 +73,7 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 13. Selezionare la scheda **Escludi**. 
 14. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il riquadro correlato.
 
-    ![Screenshot delle assegnazioni dei criteri - Pannello Selezionare i gruppi da escludere](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Screenshot delle assegnazioni dei criteri - Riquadro Selezionare i gruppi da escludere](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Scegliere i gruppi da escludere e quindi fare clic su **Seleziona**.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
 
 Le registrazioni DEP (Device Enrollment Program, il programma di registrazione dei dispositivi di Apple) non sono compatibili con la versione di App Store dell'app Portale aziendale. La procedura seguente, tuttavia, consente di configurare l'app Portale aziendale in modo che supporti i dispositivi DEP iOS.
 
-1. In Intune nel portale di Azure:
-    - Aggiungere Portale aziendale Intune, se necessario. A tale scopo, passare a **Intune** > **App client** > **App** > **Aggiungi**.
-    - Passare ad **App client** > **Criteri di configurazione dell'app** per creare criteri di configurazione per l'app Portale aziendale.
-2. Creare criteri di configurazione dell'app con il codice XML che segue. Altre informazioni su come creare criteri di configurazione delle app e immettere dati XML sono disponibili in [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md) o, per la gestione dei dispositivi mobili ibrida, in [Applicare le impostazioni alle app iOS con i criteri di configurazione app in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. In Intune aggiungere l'app Portale aziendale di Intune, se necessario, selezionando **Intune** > **App** > **Tutte le app** > **Aggiungi**.
+2. Passare ad **App** > **Criteri di configurazione dell'app** per creare criteri di configurazione per l'app Portale aziendale.
+3. Creare criteri di configurazione dell'app con il codice XML che segue. Altre informazioni su come creare criteri di configurazione delle app e immettere dati XML sono disponibili in [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md) o, per la gestione dei dispositivi mobili ibrida, in [Applicare le impostazioni alle app iOS con i criteri di configurazione app in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ Le registrazioni DEP (Device Enrollment Program, il programma di registrazione d
 4. Indicare agli utenti finali di accedere all'app Portale aziendale quando viene installata automaticamente.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorare lo stato di configurazione delle app iOS per ogni dispositivo 
-Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo pannello. Nel pannello del dispositivo selezionare **Configurazione dell'app**.  
+Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo riquadro. Nel riquadro del dispositivo selezionare **Configurazione dell'app**.  
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 

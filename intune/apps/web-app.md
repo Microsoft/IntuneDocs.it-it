@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060050"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781227"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -33,21 +33,22 @@ Intune supporta un'ampia gamma di tipi di app, incluse le app Web. Un'app Web è
 
 Prima di poter gestire e assegnare un'app per gli utenti, è necessario aggiungerla in Intune. 
 
-Intune crea un collegamento all'app Web nel dispositivo dell'utente. Per i dispositivi iOS viene aggiunto un collegamento all'app Web nella schermata iniziale. Per i dispositivi Android, viene aggiunto un collegamento all'app Web nel widget del portale aziendale di Intune e il widget deve essere aggiunto manualmente dall'utente. Per i dispositivi Windows, viene aggiunto un collegamento all'app Web nel menu Start.
+Intune crea un collegamento all'app Web nel dispositivo dell'utente. Per i dispositivi iOS viene aggiunto un collegamento all'app Web nella schermata iniziale. Per i dispositivi gestiti con Amministratore di dispositivi Android, viene aggiunto un collegamento all'app Web nel widget del portale aziendale di Intune. Il widget deve essere aggiunto manualmente dall'utente. Per i dispositivi Windows, viene aggiunto un collegamento all'app Web nel menu Start.
 
 > [!Note]
 > Per avviare app Web, è necessario che nel dispositivo dell'utente sia installato un browser. 
 
+> [!Note]
+> Per i dispositivi gestiti da Amministratore di dispositivi Android, vedere [Collegamenti Web di Google Play gestito](apps-add-android-for-work.md#managed-google-play-web-links)
+
 ## <a name="add-a-web-app-to-intune"></a>Aggiungere un'app Web a Intune
 Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le operazioni seguenti:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
-5. Nel riquadro **App** selezionare **Aggiungi**.
-6. Nell'elenco a discesa **Tipo di app** del riquadro **Aggiungi app** selezionare il tipo **Collegamento Web**.
-7. Selezionare **Configura**.
-8. Nel riquadro **Informazioni sull'app** aggiungere le informazioni seguenti:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nell'elenco a discesa **Tipo di app** del riquadro **Aggiungi app** selezionare il tipo **Collegamento Web**.
+4. Selezionare **Configura**.
+5. Nel riquadro **Informazioni sull'app** aggiungere le informazioni seguenti:
     - **Nome**:  immettere il nome dell'app che deve essere visualizzato nel portale aziendale. 
 
         > [!NOTE]
@@ -60,12 +61,10 @@ Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le o
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **Richiedi un browser gestito per l'apertura del collegamento**: selezionare questa opzione per assegnare agli utenti un collegamento a un sito Web o a un'app Web che possono aprire in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.
     - **Logo**: Caricare un'icona che verrà associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-9. Selezionare **OK**.
-10. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.
+6. Selezionare **OK**.
+7. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.
 
 > [!Note]
-> Gli utenti devono aggiungere il widget di Intune nella schermata iniziale per visualizzare le app Web che sono state assegnate a dispositivi Android.
->
 > Attualmente, la distribuzione di app Web di Intune in dispositivi iOS è associata al profilo di gestione e non può essere rimossa manualmente. È possibile modificare il tipo di distribuzione impostando **Disinstalla** nel portale di Intune e in questo modo l'app Web può essere rimossa automaticamente. Tuttavia, se si rimuove la distribuzione prima di modificare la finalità dell'assegnazione di app in **Disinstalla**, l'app Web rimarrà in modo permanente nel dispositivo fino a quando non si annulla la registrazione del dispositivo da Intune.
 
 Gli utenti finali possono avviare app Web direttamente dall'app Windows Portale aziendale selezionando l'app Web e quindi scegliendo l'opzione **Apri nel browser**. L'URL Web pubblicato viene aperto direttamente nel Web browser. 

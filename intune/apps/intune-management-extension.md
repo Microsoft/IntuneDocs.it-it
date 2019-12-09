@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059713"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563472"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usare gli script di PowerShell nei dispositivi Windows 10 in Intune
 
@@ -62,7 +62,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
     
     - L'utente esegue l'accesso al dispositivo usando il proprio account Azure AD e quindi esegue la registrazione in Intune.
 
-  - Dispositivi con co-gestione che usano Configuration Manager e Intune. Assicurarsi che il carico di lavoro **App client** sia impostato su **Intune pilota** o **Intune**. Per indicazioni, vedere gli articoli seguenti: 
+  - Dispositivi con co-gestione che usano Configuration Manager e Intune. Assicurarsi che il carico di lavoro **App** sia impostato su **Pilot Intune** (Distribuzione pilota di Intune) o **Intune**. Per indicazioni, vedere gli articoli seguenti: 
   
     - [Informazioni sulla co-gestione](https://docs.microsoft.com/sccm/comanage/overview) 
     - [Carico di lavoro App client](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 
 ## <a name="create-a-script-policy-and-assign-it"></a>Creare e assegnare criteri di script
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Script di PowerShell** > **Aggiungi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi**  > **Script di PowerShell** > **Aggiungi**.
 
     ![Aggiungere e usare script di PowerShell in Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)
 

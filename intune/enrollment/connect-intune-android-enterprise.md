@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a89b94f098292bf44122d6d2d144c7f35967cd32
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709447"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563835"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Connettere l'account di Intune all'account di Google Play gestito
 
@@ -42,7 +42,7 @@ Per facilitare la configurazione e l'uso delle funzionalità di gestione di Andr
 > A causa dell'interazione tra i domini Google e Microsoft, questa procedura potrebbe richiedere la modifica delle impostazioni del browser.  Verificare che "portal.azure.com" e "play.google.com" si trovino nella stessa area di sicurezza del browser.
 
 1. Se non è stato ancora fatto, preparare la gestione dei dispositivi mobili [impostando l'autorità di gestione dei dispositivi mobili](../fundamentals/mdm-authority-set.md) come **Microsoft Intune**.
-2. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Google Play gestito**.  Se si usa un ruolo di amministratore di Intune personalizzato, l'accesso richiede le autorizzazioni di lettura e aggiornamento dell'organizzazione.
+2. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e scegliere **Dispositivi** > **Android** > **Registrazione Android** > **Google Play gestito**.  Se si usa un ruolo di amministratore di Intune personalizzato, l'accesso richiede le autorizzazioni di lettura e aggiornamento dell'organizzazione.
    
    ![Schermata di registrazione di Android Enterprise](./media/connect-intune-android-enterprise/android-work-bind.png)
 
@@ -64,7 +64,7 @@ Per facilitare la configurazione e l'uso delle funzionalità di gestione di Andr
 È possibile disattivare la registrazione e la gestione di Android Enterprise. A tale scopo, è innanzitutto necessario ritirare tutti i dispositivi Android Enterprise registrati, inclusi i dispositivi con profilo di lavoro, i dispositivi dedicati e i dispositivi completamente gestiti. Scegliere quindi **Disconnetti** nella console di amministrazione di Intune per rimuovere tutti i dispositivi con profilo di lavoro Android Enterprise registrati e i dispositivi completamente gestiti dalla registrazione. L'operazione rimuove anche la relazione tra l'account di Google Play gestito e Intune.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) come amministratore di Intune.
-2. Scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Google Play gestito** > **Disconnetti**.
+2. Scegliere **Dispositivi** > **Android** > **Registrazione Android** > **Google Play gestito** > **Disconnetti**.
 3. Scegliere **Sì** per disconnettere e annullare la registrazione di tutti i dispositivi Android Enterprise da Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi

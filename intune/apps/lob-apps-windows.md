@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 6f4c7b5e3cca06a3ec10ea1b3dfc5e45546c841f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601570"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563912"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -36,11 +36,9 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
-5. Sopra l'elenco delle app selezionare **Aggiungi**.
-6. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nel riquadro **Aggiungi app** selezionare **App line-of-business** come **Tipo di app**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Passaggio 2: Configurare il file del pacchetto dell'app
 

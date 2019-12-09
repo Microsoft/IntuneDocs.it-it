@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754847"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563579"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Aggiungere Microsoft Edge ai dispositivi macOS usando Microsoft Intune
 
@@ -40,15 +40,15 @@ Prima di poter distribuire, configurare, monitorare o proteggere le app è neces
 ## <a name="add-microsoft-edge-to-intune"></a>Aggiungere Microsoft Edge a Intune
 È possibile aggiungere Microsoft Edge versione 77 e successive seguendo questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
 3. Nell'elenco **Tipo di app** in **Microsoft Edge versione 77 e successive** selezionare **macOS**.
 
 ## <a name="configure-app-information"></a>Configurare le informazioni sull'app
 In questo passaggio verranno specificate le informazioni su questa distribuzione di app. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovarla nel portale aziendale.
 
-1. Fare clic su **Informazioni sull'app** per visualizzare il pannello **Informazioni sull'app**.
-2. Nel pannello **Informazioni sull'app** specificare le informazioni su questa distribuzione di app. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovarla nel portale aziendale.
+1. Fare clic su **Informazioni sull'app** per visualizzare il riquadro **Informazioni sull'app**.
+2. Nel riquadro **Informazioni sull'app** specificare le informazioni su questa distribuzione di app. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovarla nel portale aziendale.
     - **Nome**: Immettere il nome dell'app che verrà visualizzato nel portale aziendale. Assicurarsi che tutti i nomi siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
     - **Description**: Immettere una descrizione per l'app. Ad esempio, è possibile elencare gli utenti di destinazione nella descrizione.
     - **Autore**: come editore viene visualizzato Microsoft.
@@ -64,8 +64,8 @@ In questo passaggio verranno specificate le informazioni su questa distribuzione
 ## <a name="configure-microsoft-edge-settings"></a>Configurare le impostazioni di Microsoft Edge
 In questo passaggio configurare le opzioni di installazione per l'app.
 
-1. Nel pannello **Aggiungi app** selezionare **Impostazioni app**.
-2. Nel pannello **Impostazioni app** il canale **Beta** viene selezionato automaticamente e non può essere modificato.
+1. Nel riquadro **Aggiungi app** selezionare **Impostazioni dell'app**.
+2. Nel riquadro **Impostazioni app** il canale **Beta** viene selezionato automaticamente e non può essere modificato.
     - Il canale **Beta** corrisponde all'esperienza di anteprima di Microsoft Edge più stabile ed è la scelta migliore per un progetto pilota completo all'interno dell'organizzazione. Con aggiornamenti principali ogni sei settimane.
 
     > [!NOTE]
@@ -80,7 +80,7 @@ In questo passaggio configurare le opzioni di installazione per l'app.
 4.  Fare clic su **Seleziona** > **OK**.
 
 ## <a name="add-the-app"></a>Aggiungere l'app
-Al termine della configurazione, selezionare **Aggiungi** nel pannello **Aggiungi app**. 
+Al termine della configurazione, selezionare **Aggiungi** nel riquadro **Aggiungi app**. 
 
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. 
 

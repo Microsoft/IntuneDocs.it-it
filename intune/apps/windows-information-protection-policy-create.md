@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496426"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563780"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -71,53 +71,51 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 > Per informazioni correlate sulla creazione di criteri WIP per Intune, incluse le impostazioni disponibili e come configurarle, vedere [Creare criteri di Windows Information Protection (WIP) con il software MAM usando il portale di Azure per Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) nella raccolta di documenti sulla sicurezza di Windows. 
 
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**.
-3. Selezionare **App client** nel pannello **Microsoft Intune**.
-4. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
-5. Selezionare **Aggiungi criteri** per visualizzare il pannello **Aggiungi criteri**.
-6. Aggiungere i valori seguenti:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Criteri di protezione delle app** > **Crea criterio**.
+3. Aggiungere i valori seguenti:
     - **Nome:** digitare un nome (obbligatorio) per i nuovi criteri.
     - **Descrizione:** (facoltativo) digitare una descrizione.
     - **Piattaforma:** scegliere **Windows 10** come piattaforma supportata per i criteri di protezione delle app.
     - **Stato registrazione:** scegliere **Senza registrazione** come stato di registrazione per i criteri.
-7. Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel pannello **Criteri di protezione delle app**.
+4. Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel riquadro **Criteri di protezione delle app**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Per aggiungere app consigliate all'elenco delle app protette
 
-1. Selezionare **App client** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
-3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
-4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
-5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Criteri di protezione delle app**.
+3. Nel riquadro **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il riquadro **Protezione app di Intune**.
+4. Scegliere **App protette** nel riquadro **Protezione app di Intune**. Verrà aperto il riquadro **App protette** che visualizza tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del riquadro consente di modificare il filtro dell'elenco.
 6. Selezionare tutte le app a cui si vuole concedere l'accesso ai dati aziendali.
-7. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+7. Fare clic su **OK**. Il riquadro **App protette** viene aggiornato per visualizzare tutte le app selezionate.
 8. Fare clic su **Save**.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Aggiungere un'app dello Store all'elenco delle app protette
 
 **Per aggiungere un'app dello Store**
-1. Selezionare **App client** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
-3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
-4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
-5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Criteri di protezione delle app**.
+3. Nel riquadro **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il riquadro **Protezione app di Intune**.
+4. Scegliere **App protette** nel riquadro **Protezione app di Intune**. Verrà aperto il riquadro **App protette** che visualizza tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del riquadro consente di modificare il filtro dell'elenco.
 6. Nell'elenco selezionare **App Store**.
 7. Immettere i valori per **Nome**, **Editore**, **Nome prodotto** e **Azione**. Assicurarsi di impostare il valore di **Azione** su **Consenti**, in modo che l'app possa accedere ai dati aziendali.
-9. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+9. Fare clic su **OK**. Il riquadro **App protette** viene aggiornato per visualizzare tutte le app selezionate.
 10. Fare clic su **Save**.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Aggiungere un'app desktop all'elenco delle app protette
 
 **Per aggiungere un'app desktop**
-1. Selezionare **App client** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
-3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
-4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
-5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Criteri di protezione delle app**.
+3. Nel riquadro **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il riquadro **Protezione app di Intune**.
+4. Scegliere **App protette** nel riquadro **Protezione app di Intune**. Verrà aperto il riquadro **App protette** che visualizza tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del riquadro consente di modificare il filtro dell'elenco.
 6. Nell'elenco selezionare **App desktop**.
 7. Immettere i valori per **Nome**, **Editore**, **Nome prodotto**, **File**, **Versione minima**, **Versione massima** e **Azione**. Assicurarsi di impostare il valore di **Azione** su **Consenti**, in modo che l'app possa accedere ai dati aziendali.
-9. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+9. Fare clic su **OK**. Il riquadro **App protette** viene aggiornato per visualizzare tutte le app selezionate.
 10. Fare clic su **Save**.
 
 ## <a name="wip-learning"></a>Apprendimento WIP
@@ -150,7 +148,7 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 ### <a name="add-a-protection-mode"></a>Aggiungere una modalità di protezione
 
-1. Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
+1. Nel riquadro **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
 
     ![Screenshot del riquadro della modalità di apprendimento](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 1. Aprire il [portale di Azure](https://portal.azure.com). Scegliere **Tutti i servizi**. Digitare **Intune** nel filtro della casella di testo.
 
-3. Scegliere **Intune** > **App client**.
+3. Scegliere **Intune** > **App**.
 
 4. Scegliere **Stato di protezione dell'App** > **Report** > **Apprendimento Windows Information Protection**.  
 
@@ -188,9 +186,9 @@ Oltre a impostare l'opzione che **consente all'indicizzatore di ricerca di Windo
 
 Dopo aver creato i criteri di protezione delle app WIP, è necessario distribuirli all'organizzazione tramite MAM.
 
-1. Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere**Gruppi utenti** > **Aggiungi gruppo utenti**.
+1. Nel riquadro **Criteri per le app** scegliere il nuovo criterio di protezione per le app, **Gruppi di utenti** > **Aggiungi un gruppo di utenti**.
 
-    Nel pannello **Aggiungi un gruppo di utenti** verrà visualizzato un elenco dei gruppi di utenti composto da tutti i gruppi di sicurezza in Azure Active Directory.
+    Nel riquadro **Aggiungi un gruppo di utenti** verrà visualizzato un elenco dei gruppi di utenti composto da tutti i gruppi di sicurezza in Azure Active Directory.
 
 2. Scegliere il gruppo a cui si vuole applicare il criterio e quindi scegliere **Seleziona** per distribuire il criterio.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507474"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564352"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -76,14 +76,14 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 ## <a name="get-started"></a>Operazioni preliminari
 
-Il carico di lavoro **App client** contiene numerose informazioni sulle app ed è accessibile seguendo questa procedura:
+Il carico di lavoro **App** contiene numerose informazioni sulle app ed è accessibile seguendo questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Microsoft Intune** selezionare **App client**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selezionare **App**.
 
-    ![Riquadro del carico di lavoro "App client"](./media/app-management/apps-workload.png)
+    ![Riquadro del carico di lavoro App](./media/app-management/apps-workload.png)
 
-Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App client**.
+Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App**.
 
 ### <a name="manage"></a>Gestire
 - **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dal personale. Per altre informazioni, vedere:

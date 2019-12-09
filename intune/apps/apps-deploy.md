@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540756"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563989"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -55,13 +55,12 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 
 ## <a name="assign-an-app"></a>Assegnare un'app
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nella sezione **Gestisci** del menu selezionare **App**.
-5. Nel riquadro **App** selezionare l'app che si vuole assegnare.
-6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**.
-7. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
-8. Per l'app specifica, selezionare un **tipo di assegnazione**:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app**.
+3. Nel riquadro **App** selezionare l'app che si vuole assegnare.
+4. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**.
+5. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
+6. Per l'app specifica, selezionare un **tipo di assegnazione**:
    - **Disponibile per i dispositivi registrati**: assegnare l'app ai gruppi di utenti che possono installare l'app dall'app Portale aziendale o dal sito Web.
    - **Disponibile con o senza registrazione**: assegnare l'app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Agli utenti deve essere assegnata una licenza di Intune. Vedere [Licenze che includono Intune](../fundamentals/licenses.md).
    - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati. In alcune piattaforme potrebbero essere visualizzati messaggi di aggiuntivi per chiedere all'utente finale di confermare l'avvio dell'installazione dell'app.
@@ -76,13 +75,13 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
      >
      > **Disponibile per i dispositivi registrati**: l'app viene visualizzata come disponibile solo se l'utente che ha eseguito l'accesso al Portale aziendale è l'utente primario che ha registrato il dispositivo e se l'app è applicabile al dispositivo.
 
-9. Per selezionare i gruppi di utenti che sono interessati da questa assegnazione di app, selezionare **Gruppi inclusi**.
-10. Dopo avere selezionato uno o più gruppi da includere, selezionare **Seleziona**.
-11. Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
-12. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
-13. Se si è scelto di escludere alcuni gruppi in **Selezione gruppi** selezionare **Seleziona**.
-14. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
-15. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
+7. Per selezionare i gruppi di utenti che sono interessati da questa assegnazione di app, selezionare **Gruppi inclusi**.
+8. Dopo avere selezionato uno o più gruppi da includere, selezionare **Seleziona**.
+9. Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
+10. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
+11. Se si è scelto di escludere alcuni gruppi in **Selezione gruppi** selezionare **Seleziona**.
+12. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
+13. Nel riquadro **Assegnazioni** dell'app selezionare **Salva**.
 
 L'app è ora assegnata ai gruppi selezionati. Per altre informazioni sull'inclusione ed esclusione di assegnazioni di app, vedere [Includere ed escludere assegnazioni di app](apps-inc-exl-assignments.md).
 

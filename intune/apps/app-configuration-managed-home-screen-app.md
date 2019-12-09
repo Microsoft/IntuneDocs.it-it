@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813466"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564216"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurare l'app Microsoft Managed Home Screen per Android Enterprise
 
@@ -31,12 +31,12 @@ Managed Home Screen è l'applicazione usata per i dispositivi Android Enterprise
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Quando configurare l'app Microsoft Managed Home Screen
 
-In generale, configurare le impostazioni tramite Configurazione dispositivo, se sono disponibili. In questo modo si risparmia tempo, si riducono gli errori e si ottiene un'esperienza di supporto di Intune più efficace. Tuttavia, alcune impostazioni di Managed Home Screen sono attualmente disponibili solo tramite il pannello **Criteri di configurazione dell'app** nella console di Intune. Leggere questo documento per informazioni su come configurare le diverse impostazioni usando Progettazione configurazione o uno script JSON. 
+In generale, configurare le impostazioni tramite Configurazione dispositivo, se sono disponibili. In questo modo si risparmia tempo, si riducono gli errori e si ottiene un'esperienza di supporto di Intune più efficace. Tuttavia, alcune impostazioni di Managed Home Screen sono attualmente disponibili solo nel riquadro **Criteri di configurazione dell'app** nella console di Intune. Leggere questo documento per informazioni su come configurare le diverse impostazioni usando Progettazione configurazione o uno script JSON. 
 
 > [!NOTE]
-> È attualmente possibile (e consigliabile) impostare le applicazioni incluse nell'elenco elementi consentiti e i collegamenti Web aggiunti tramite **App client** e **Configurazione del dispositivo**. Per l'elenco completo di impostazioni disponibili in **Configurazione dispositivo** che influiscono su Managed Home Screen, vedere [Impostazioni di un dispositivo dedicato](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> È attualmente possibile (e consigliabile) impostare le applicazioni incluse nell'elenco elementi consentiti e i collegamenti Web aggiunti con **App** e **Configurazione del dispositivo**. Per l'elenco completo di impostazioni disponibili in **Configurazione dispositivo** che influiscono su Managed Home Screen, vedere [Impostazioni di un dispositivo dedicato](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Passare prima di tutto alla console di Intune nel portale di Azure, quindi selezionare **App client** > **Criteri di configurazione dell'app**. Aggiungere un criterio di configurazione per i **Dispositivi gestiti** che eseguono **Android** e scegliere **Managed Home Screen** come app associata. Fare clic su **Impostazioni di configurazione** per configurare le varie impostazioni di Managed Home Screen disponibili. 
+Per prima cosa, passare all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selezionare **App** > **Criteri di configurazione dell'app**. Aggiungere un criterio di configurazione per i **Dispositivi gestiti** che eseguono **Android** e scegliere **Managed Home Screen** come app associata. Fare clic su **Impostazioni di configurazione** per configurare le varie impostazioni di Managed Home Screen disponibili. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Scelta di un formato delle impostazioni di configurazione
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 31bad59c33a34d0b92d93979b20b58f70fd042ef
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584936"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564087"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usare i profili di provisioning per le app iOS per impedire la scadenza delle app
 
@@ -44,8 +44,8 @@ L'amministratore può includere ed escludere gruppi di sicurezza per assegnare l
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Come creare un profilo di provisioning per dispositivi mobili iOS
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel riquadro **Intune** scegliere **App client** > **Profili di provisioning delle app iOS** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Profili di provisioning delle app iOS** > **Crea profilo**.
 3. Nella pagina **Informazioni di base** aggiungere i valori seguenti:
     - **Nome**: specificare un nome per il profilo di provisioning per dispositivi mobili.
     - **Descrizione**: (facoltativo) specificare una descrizione per il criterio.

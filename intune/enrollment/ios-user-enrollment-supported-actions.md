@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445306"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562417"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Azioni e opzioni di Intune supportate con la registrazione utente Apple
 
@@ -57,13 +57,18 @@ Nei dispositivi di registrazione utente gli utenti finali possono eseguire le az
 - Blocco remoto
 - Controllo dello stato
 
+## <a name="app-deployment-options"></a>Opzioni per la distribuzione di app
+I tipi di app seguenti possono essere distribuiti nei dispositivi di registrazione utente:
+- App di Volume Purchasing Plan (VPP) con licenza utente, incluse le app personalizzate
+- App line-of-business
+- App Web
+
 ## <a name="other-supported-options"></a>Altre opzioni supportate
 
 Le opzioni seguenti sono supportate in Intune per i dispositivi registrati con la registrazione utente Apple:
 - VPN per singole app. Questo supporto esclude i domini Safari poiché la registrazione utente non supporta la configurazione delle impostazioni di Safari.
 - Wi-Fi 
 - Rimozione dell'app aziendale dopo l'annullamento della registrazione
-- Distribuzione di app tramite Volume Purchasing Plan (VPP) con licenza utente
 - Rilevamento jailbreak
 
 Sono supportate le restrizioni seguenti:
@@ -94,9 +99,10 @@ Le opzioni seguenti non sono supportate nei dispositivi registrati con la regist
 - Raccogliere UDID e altri identificatori di dispositivo permanenti.
 - Sebbene la registrazione utente supporti un ID registrazione univoco per ogni dispositivo registrato, questo ID non viene mantenuto dopo l'annullamento della registrazione.
 - Le funzionalità di Intune seguenti non sono supportate a causa di questa limitazione:
-- Profili utente SCEP con formato del nome soggetto Numero di serie.
+- Profili utente SCEP con formato del nome soggetto del numero di serie.
 - VPN a livello di dispositivo.
 - Distribuzione di app VPP con licenza dispositivo.
+- Installare app di App Store come app gestite.
 - Controllo MDM di applicazioni al di fuori del volume APFS gestito.
 - I criteri di protezione delle applicazioni verranno comunque applicati a queste app. Tuttavia, non sarà possibile assumere la gestione o distribuire una versione gestita di queste app a meno che l'utente non le elimini dal dispositivo.
 - Azioni, configurazioni, impostazioni e comandi che richiedono la supervisione. 

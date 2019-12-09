@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497686"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563493"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Aggiungere app di Android Store a Microsoft Intune
 
@@ -35,12 +35,10 @@ Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessari
 
 Seguire questa procedura per aggiungere un'app di Android Store a Intune dal portale di Azure:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
-5. Selezionare **Aggiungi**.
-6. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
-7. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti. Per le app Android, passare a [Google Play Store](https://play.google.com/store) e cercare l'app da distribuire. Selezionare l'app e annotare i dettagli dell'app. A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
+4. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti. Per le app Android, passare a [Google Play Store](https://play.google.com/store) e cercare l'app da distribuire. Selezionare l'app e annotare i dettagli dell'app. A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.
     - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Description**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
@@ -54,8 +52,8 @@ Seguire questa procedura per aggiungere un'app di Android Store a Intune dal por
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app (facoltativo).
     - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-8. Selezionare **OK**.
-9. Selezionare **Aggiungi**.
+5. Selezionare **OK**.
+6. Selezionare **Aggiungi**.
 
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. 
 

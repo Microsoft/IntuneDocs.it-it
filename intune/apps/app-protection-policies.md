@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592078"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563718"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -44,9 +44,9 @@ Per informazioni sull'aggiunta di app line-of-business (LOB) dell'organizzazione
 Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android, si segue un flusso di processo di Intune moderno che comporta la creazione di un nuovo criterio di protezione delle app.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Creare un criterio di protezione delle app iOS/iPadOS o Android
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel portale di Intune scegliere **App client** > **Criteri di protezione delle app**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
-3. Selezionare **Crea criteri** e selezionare **iOS/iPadOS** o **Android**. Viene visualizzato il pannello **Crea criteri**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Nel portale di Intune scegliere **App** > **Criteri di protezione delle app**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+3. Selezionare **Crea criteri** e selezionare **iOS/iPadOS** o **Android**. Viene visualizzato il riquadro **Crea criterio**.
 4. Nella pagina **Informazioni di base** aggiungere i valori seguenti:
 
     | Valore | Descrizione |
@@ -57,7 +57,7 @@ Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android,
 
     Il valore **Piattaforma** viene impostato in base alla scelta effettuata in precedenza.
 
-    ![Screenshot della pagina Informazioni di base del pannello Crea criteri](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![Screenshot della pagina Informazioni di base del riquadro Crea criterio](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. Fare clic su **Avanti** per visualizzare la pagina **App**.<br>
     La pagina **App** consente di scegliere come applicare questo criterio alle app su dispositivi diversi. È necessario aggiungere almeno un'app.<p>
@@ -171,7 +171,7 @@ In molte organizzazioni è consuetudine consentire agli utenti finali di usare s
 
 Poiché i criteri di protezione delle app di Intune usano come destinazione l'identità di un utente, le impostazioni di protezione per un utente possono essere applicate sia ai dispositivi registrati (dispositivi MDM gestiti) che ai dispositivi non registrati (non MDM). È quindi possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati che a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione di dispositivi MDM gestiti, in cui i controlli DLP possono essere meno severi. Per altre informazioni sul funzionamento in dispositivi Android Enterprise personali, vedere [Criteri di protezione delle app e profili di lavoro](android-deployment-scenarios-app-protection-work-profiles.md).
 
-Per creare questi criteri, passare a **App client** > **Criteri di protezione delle app** nella console di Intune e quindi selezionare **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che i criteri di protezione delle app vengano applicati sia ai dispositivi gestiti che non gestiti, passare alla pagina **App** e verificare che l'opzione **Specifica come destinatari le app in tutti i tipi di dispositivo** sia impostata su **Sì**, ovvero il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Specifica come destinatari le app in tutti i tipi di dispositivo** su **No**. 
+Per creare questi criteri, passare ad **App** > **Criteri di protezione delle app** nella console di Intune e quindi selezionare **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che i criteri di protezione delle app vengano applicati sia ai dispositivi gestiti che non gestiti, passare alla pagina **App** e verificare che l'opzione **Specifica come destinatari le app in tutti i tipi di dispositivo** sia impostata su **Sì**, ovvero il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Specifica come destinatari le app in tutti i tipi di dispositivo** su **No**. 
 
 ### <a name="device-types"></a>Tipi di dispositivi
 

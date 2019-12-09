@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507133"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563786"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guida introduttiva: Creare e assegnare un criterio di protezione delle app
 
@@ -43,7 +43,7 @@ Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o 
 
 Usare la procedura seguente per creare un criterio di protezione delle app:
 
-1. In [Intune](https://aka.ms/intuneportal) selezionare **App client** > **Criteri di protezione delle app** > **Crea criterio**. 
+1. In [Intune](https://aka.ms/intuneportal) selezionare **App** > **Criteri di protezione delle app** > **Crea criterio**. 
 2. Immettere le informazioni seguenti: 
 
     - **Nome**: *Protezione del contenuto Windows 10*
@@ -67,7 +67,7 @@ Dopo aver creato un criterio di protezione delle app in Intune, è possibile ass
 
 Usare la procedura seguente per assegnare il criterio di protezione delle app:
 
-1. In [Intune](https://aka.ms/intuneportal) selezionare **Intune** > **App client** > **Criteri di protezione delle app**. 
+1. In [Intune](https://aka.ms/intuneportal) selezionare **Intune** > **App** > **Criteri di protezione delle app**. 
 2. Selezionare il criterio di protezione delle app creato in precedenza. In questa guida introduttiva il criterio è **Protezione del contenuto Windows 10**.
 3. Selezionare **Assegnazioni**.
 4. Fare clic su **Selezionare i gruppi da includere** nella scheda **Includi**.

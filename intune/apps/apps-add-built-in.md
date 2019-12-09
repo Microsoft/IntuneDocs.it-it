@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712926"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563610"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Aggiungere app predefinite in Microsoft Intune
 
@@ -37,24 +37,20 @@ Nelle versioni precedenti della console di Intune, Intune forniva diverse app di
 ## <a name="add-a-built-in-app"></a>Aggiungere un'app predefinita
 
 Per aggiungere un'app predefinita alle app disponibili in Microsoft Intune, seguire questa procedura:
-1. Accedere al portale di Azure.
-2. Per visualizzare il riquadro di Microsoft Intune, scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel riquadro **Intune** selezionare **App client**.
-4. Nel riquadro **App client** in **Gestisci** selezionare **App**.
-5. Selezionare **Aggiungi**.
-6. Nel riquadro delle app **Aggiungi**, nell'elenco **Tipo di app** selezionare **App predefinita**.
-7. Selezionare **Selezionare l'app**.
-8. Nel riquadro **App predefinita** selezionare le app che si vuole includere.
-9. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
+3. Nel riquadro delle app **Aggiungi**, nell'elenco **Tipo di app** selezionare **App predefinita**.
+4. Selezionare **Selezionare l'app**.
+5. Nel riquadro **App predefinita** selezionare le app che si vuole includere.
+6. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.
 
 
 ## <a name="configure-app-information"></a>Configurare le informazioni sull'app
 
 È possibile modificare le informazioni sull'app predefinita. Queste informazioni consentono di identificare l'app in Intune e permettono agli utenti di trovare l'app nel portale aziendale.
-1. Nel riquadro **App client - App** selezionare l'app predefinita da modificare.  
-    Viene visualizzato un riquadro per l'app predefinita.
-2. Selezionare l'opzione **Proprietà** in **Gestisci**.
-3. Selezionare l'opzione **Configura** per modificare le informazioni sull'app predefinita.
+1. Selezionare **App** > **Tutte le app** e selezionare l'app predefinita da modificare.  
+   Viene visualizzato un riquadro per l'app predefinita.
+2. Selezionare **Proprietà** > **Configura**.
 4. Nel riquadro **Informazioni sull'app** è possibile modificare le informazioni seguenti:
     - **Nome**: immettere il nome dell'app predefinita che viene visualizzato nel portale aziendale. Verificare che tutti i nomi usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
     - **Description**: Immettere una descrizione per l'app. 

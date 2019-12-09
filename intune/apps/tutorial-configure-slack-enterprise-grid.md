@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496715"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563390"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -55,7 +55,7 @@ Aggiungere l'app iOS Slack per EMM al tenant di Intune e creare un criterio di c
 
 ### <a name="add-slack-for-emm-to-intune"></a>Aggiungere Slack per EMM a Intune
 Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi Android.
-1. In Intune selezionare **App client** > **App** > **Aggiungi**.
+1. In Intune selezionare **App** > **Tutte le app** > **Aggiungi**.
 2. In Tipo di applicazione selezionare **App dello Store - iOS**.
 3. Selezionare **Cerca in App Store**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
 4. Selezionare **Informazioni sull'app** e configurare le eventuali modifiche necessarie.
@@ -71,7 +71,7 @@ Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti d
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Aggiungere un criterio di configurazione dell'app per Slack per EMM
 Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi Android.
-1. In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
+1. In Intune selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 2. In Nome immettere Test criteri di configurazione dell'app Slack.
 3. In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
 4. In Piattaforma selezionare **iOS**.
@@ -107,7 +107,7 @@ Aggiungere l'app Slack di Google Play gestita al tenant di Intune e creare un cr
 
 ### <a name="add-slack-to-intune"></a>Aggiungere Slack a Intune
 Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi iOS.
-1. In Intune selezionare **App client** > **App** > **Aggiungi**.
+1. In Intune selezionare **App** > **Tutte le app** > **Aggiungi**.
 2. In Tipo di app selezionare **App dello Store - Google Play gestito**.
 3. Selezionare **Google Play gestito - Approva**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
 4. Selezionare **Approva**.
@@ -122,7 +122,7 @@ Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utent
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Aggiungere un criterio di configurazione dell'app per Slack
 Aggiungere un criterio di configurazione dell'app per Slack. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi iOS.
-1. In Intune selezionare **App client** > **Criteri di configurazione dell'app** > **Aggiungi**.
+1. In Intune selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 2. In Nome immettere Test criteri di configurazione dell'app Slack.
 3. In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
 4. In Piattaforma selezionare **Android**.
