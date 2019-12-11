@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510182"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune nella console di Azure e nel client PC Intune legacy
@@ -63,7 +63,7 @@ Per un confronto dettagliato tra il client PC e le funzionalità MDM, vedere [Co
 Per passare dalla gestione dei dispositivi Windows 10 con il client PC Intune alla gestione con MDM, seguire questi passaggi:
 
 1. Nella console di Silverlight, eseguire una **Cancellazione selettiva** per annullare la registrazione del dispositivo dal client PC.
-  ![Warning popup con il pulsante di opzione "cancellazione selettiva del dispositivo" selezionato ](./media/intune-legacy-pc-client/image02.png)
+  ![popup di avviso con il pulsante di opzione "cancellazione selettiva del dispositivo" selezionato](./media/intune-legacy-pc-client/image02.png)
 2. Registrare nuovamente il dispositivo tramite [MDM (e/o l'aggiunta ad Azure AD)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Passaggi successivi

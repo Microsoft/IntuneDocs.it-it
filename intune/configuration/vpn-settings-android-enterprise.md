@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491923"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946632"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Impostazioni del dispositivo Android Enterprise per configurare la VPN in Intune
 
@@ -31,6 +31,9 @@ Questo articolo elenca e descrive le diverse impostazioni di connessione VPN che
 L'amministratore di Intune può creare e assegnare impostazioni VPN a dispositivi Android Enterprise. 
 
 Per altre informazioni sui profili VPN in Intune, vedere [profili VPN](vpn-settings-configure.md).
+
+> [!NOTE]
+> Per configurare una VPN always on, è necessario creare un profilo VPN e creare anche un profilo di [restrizioni del dispositivo](device-restrictions-android-for-work.md#connectivity) con l'impostazione VPN always-on configurata.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 

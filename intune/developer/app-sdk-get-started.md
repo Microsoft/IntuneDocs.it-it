@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592013"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899395"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -164,7 +164,7 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 
   * Se si sta testando l'app in un dispositivo mobile usando l'account di un utente finale, assicurarsi che a tale account sia stata assegnata una licenza di Intune mediante il sito Web dell'interfaccia di amministrazione di Microsoft 365 dopo l'accesso con un account amministratore; vedere [Assegnare licenze di Microsoft Intune](../fundamentals/licenses-assign.md).
 
-* **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](../apps/app-protection-policy-settings-ios.md) e dei [criteri di protezione delle app Android](../apps/app-protection-policy-settings-android.md). Se Intune SDK è integrato nell'app senza essere elencato nel portale di Azure come app di destinazione, è possibile definirlo come destinazione tramite criteri selezionando l'opzione "+ Altre app" e specificando l'ID aggregazione (iOS) o il nome di pacchetto (Android) nella casella di testo.
+* **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](../apps/app-protection-policy-settings-ios.md) e dei [criteri di protezione delle app Android](../apps/app-protection-policy-settings-android.md). Se l'app ha integrato Intune SDK, ma non è elencato nell'elenco delle app destinabili, è possibile specificare l'ID bundle dell'app (iOS) o il nome del pacchetto (Android) nella casella di testo quando si seleziona "app personalizzate". 
 
 * **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente di installazione dell'app, vedere [Risolvere i problemi di installazione delle app](../apps/troubleshoot-app-install.md). 
 

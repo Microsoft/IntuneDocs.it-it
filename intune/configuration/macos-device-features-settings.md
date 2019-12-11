@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117858"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992905"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi macOS in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune include alcune impostazioni integrate per personalizzare le funzionalità nei dispositivi macOS. Ad esempio, gli amministratori possono aggiungere stampanti AirPrint, scegliere la modalità di accesso degli utenti, configurare i controlli di risparmio energia, usare Single Sign-On l'autenticazione e altro ancora.
 
@@ -85,7 +83,7 @@ Per aggiungere i server AirPrinter, sono necessari l'indirizzo IP della stampant
 
 ## <a name="login-window"></a>Finestra di accesso
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi 
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 #### <a name="window-layout"></a>Layout della finestra
 
@@ -131,33 +129,40 @@ Questa funzionalità si applica a:
 
 - **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Le opzioni disponibili sono:
 
-  - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app SSO, impostare il tipo di estensione dell'app SSO da **Kerberos** o **Credential** su **non configurato**.
-  - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per usare SSO. Assicurarsi di avere familiarità con l'ID estensione e l'ID del team per l'estensione dell'app SSO dell'organizzazione.  
+  - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app, impostare il tipo di estensione dell'app SSO su **non configurato**.
+  - **Reindirizzamento**: usare un'estensione di app di reindirizzamento generica e personalizzabile per eseguire l'accesso SSO con flussi di autenticazione moderni. Assicurarsi di conoscerne l'estensione e l'ID del team per l'estensione dell'app dell'organizzazione.
+  - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per eseguire l'accesso SSO con i flussi di autenticazione di richiesta-risposta. Assicurarsi di avere familiarità con l'ID estensione e l'ID del team per l'estensione dell'app SSO dell'organizzazione.  
   - **Kerberos**: usare l'estensione Kerberos predefinita di Apple, inclusa in macOS Catalina 10,15 e versioni successive. Questa opzione è una versione specifica di Kerberos dell'estensione dell'app per le **credenziali** .
 
   > [!TIP]
-  > Con il tipo di **credenziale** , è necessario aggiungere i propri valori di configurazione per passare attraverso l'estensione. In alternativa, è consigliabile usare le impostazioni di configurazione predefinite fornite da Apple nel tipo **Kerberos** .
+  > Con i tipi **Reindirizzamento** e **credenziali** è possibile aggiungere i propri valori di configurazione per passare attraverso l'estensione. Se si usano le **credenziali**, provare a usare le impostazioni di configurazione predefinite fornite da Apple nel tipo **Kerberos** .
 
-- **ID estensione** (solo credenziali): immettere l'identificatore del bundle che identifica l'estensione dell'app SSO, ad esempio `com.apple.ssoexample`.
-- **ID team** (solo credenziali): immettere l'identificatore del team dell'estensione dell'app SSO. Un identificatore del team è una stringa alfanumerica (numeri e lettere) di 10 caratteri generata da Apple, ad esempio `ABCDE12345`. 
+- **ID estensione** (Reindirizzamento e credenziali): immettere l'identificatore del bundle che identifica l'estensione dell'app SSO, ad esempio `com.apple.ssoexample`.
+- **ID team** (Reindirizzamento e credenziali): immettere l'identificatore del team dell'estensione dell'app SSO. Un identificatore del team è una stringa alfanumerica (numeri e lettere) di 10 caratteri generata da Apple, ad esempio `ABCDE12345`. 
 
   [Individuare l'ID del team](https://help.apple.com/developer-account/#/dev55c3c710c) (aprire il sito Web di Apple) con ulteriori informazioni.
 
-- **Area**di autenticazione: immettere il nome dell'area di autenticazione. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
-- **Domini**: immettere il dominio o i nomi host dei siti che possono eseguire l'autenticazione tramite SSO. Ad esempio, se il sito Web è `mysite.contoso.com`, `mysite` è il nome host e `contoso.com` è il nome di dominio. Quando gli utenti si connettono a uno di questi siti, l'estensione dell'app gestisce la richiesta di autenticazione. Questa autenticazione consente agli utenti di usare l'ID del viso, l'ID tocco o il pincode/codice Apple per accedere.
+- **Area** di autenticazione (credenziale e Kerberos): immettere il nome dell'area di autenticazione. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
+
+- **Domini** (Credential e Kerberos): immettere il dominio o i nomi host dei siti che possono eseguire l'autenticazione tramite SSO. Ad esempio, se il sito Web è `mysite.contoso.com`, `mysite` è il nome host e `contoso.com` è il nome di dominio. Quando gli utenti si connettono a uno di questi siti, l'estensione dell'app gestisce la richiesta di autenticazione. Questa autenticazione consente agli utenti di usare l'ID del viso, l'ID tocco o il pincode/codice Apple per accedere.
 
   - Tutti i domini nei profili di Intune dell'estensione dell'app Single Sign-On devono essere univoci. Non è possibile ripetere un dominio in nessun profilo di estensione dell'app di accesso, anche se si usano tipi diversi di estensioni di app SSO.
   - Questi domini non fanno distinzione tra maiuscole e minuscole.
 
-- **Configurazione aggiuntiva** (solo credenziali): immettere dati aggiuntivi specifici dell'estensione da passare all'estensione dell'app SSO:
-  - **Chiave di configurazione**: immettere il nome dell'elemento che si vuole aggiungere, ad esempio `user name`.
-  - **Tipo valore**: immettere il tipo di dati. Le opzioni disponibili sono:
+- **URL** (solo Reindirizzamento): immettere i prefissi URL dei provider di identità per conto del quale l'estensione di reindirizzamento app esegue l'accesso SSO. Quando un utente viene reindirizzato a questi URL, l'estensione dell'app SSO interviene e richiede l'accesso SSO.
+
+  - Tutti gli URL nei profili di estensione dell'app Single Sign-On di Intune devono essere univoci. Non è possibile ripetere un dominio in nessun profilo di estensione dell'app SSO, anche se si usano tipi diversi di estensioni di app SSO.
+  - Gli URL devono iniziare con http://o https://.
+
+- **Configurazione aggiuntiva** (Reindirizzamento e credenziali): immettere dati aggiuntivi specifici dell'estensione da passare all'estensione dell'app SSO:
+  - **Chiave**: immettere il nome dell'elemento che si vuole aggiungere, ad esempio `user name`.
+  - **Tipo**: immettere il tipo di dati. Le opzioni disponibili sono:
 
     - Stringa
     - Booleano: in **valore di configurazione**immettere `True` o `False`.
     - Integer: in **valore di configurazione**immettere un numero.
     
-  - **Valore di configurazione**: immettere i dati.
+  - **Valore**: immettere i dati.
   
   - **Aggiungi**: selezionare questa impostazione per aggiungere le chiavi di configurazione.
 
@@ -179,13 +184,19 @@ Questa funzionalità si applica a:
 - **Validità minima password** (solo Kerberos): immettere il numero di giorni per cui è necessario usare una password nel dominio prima che un utente possa modificarlo. **Non configurato** (impostazione predefinita) non impone una validità minima delle password prima che possano essere modificate.
 - **Notifica di scadenza password** (solo Kerberos): immettere il numero di giorni prima della scadenza di una password per la quale gli utenti riceveranno una notifica della scadenza della password. **Non configurato** (impostazione predefinita) USA `15` giorni.
 - **Scadenza password** (solo Kerberos): immettere il numero di giorni prima che sia necessario modificare la password del dispositivo. **Non configurato** (impostazione predefinita) indica che le password utente non scadono mai.
+- **URL di modifica password** (solo Kerberos): immettere l'URL che viene avviato quando l'utente avvia una modifica della password Kerberos.
 - **Nome entità** (solo Kerberos): immettere il nome utente dell'entità Kerberos. Non è necessario includere il nome dell'area di autenticazione. Ad esempio, in `user@contoso.com`, `user` è il nome dell'entità e `contoso.com` è il nome dell'area di autenticazione.
+
+  > [!TIP]
+  > - È anche possibile usare le variabili nel nome principale immettendo parentesi graffe `{{ }}`. Ad esempio, per visualizzare il nome utente, immettere `Username: {{username}}`. 
+  > - Tuttavia, prestare attenzione con la sostituzione delle variabili perché le variabili non vengono convalidate nell'interfaccia utente e fanno distinzione tra maiuscole e minuscole. Assicurarsi di immettere le informazioni corrette.
+  
 - **Active Directory codice sito** (solo Kerberos): immettere il nome del sito Active Directory che deve essere utilizzato dall'estensione Kerberos. Potrebbe non essere necessario modificare questo valore, perché l'estensione Kerberos potrebbe trovare automaticamente il codice del sito Active Directory.
 - **Nome cache** (solo Kerberos): immettere il nome GSS (Generic Security Services) della cache Kerberos. Probabilmente non è necessario impostare questo valore.  
 - **Messaggio requisiti password** (solo Kerberos): immettere una versione in formato testo dei requisiti per le password dell'organizzazione visualizzati dagli utenti. Il messaggio viene visualizzato se non sono richiesti i requisiti di complessità delle password di Active Directory o non si immette la lunghezza minima della password.  
 - **ID bundle dell'app** (solo Kerberos): **aggiungere** gli identificatori del bundle dell'app che devono usare Single Sign-on nei dispositivi. A queste app viene concesso l'accesso al ticket di concessione ticket Kerberos, il ticket di autenticazione e l'autenticazione degli utenti ai servizi a cui sono autorizzati ad accedere.
 - **Mapping dell'area di autenticazione del dominio** (solo Kerberos): **aggiungere** i suffissi DNS di dominio che devono essere mappati all'area di autenticazione. Usare questa impostazione quando i nomi DNS degli host non corrispondono al nome dell'area di autenticazione. Probabilmente non è necessario creare questo mapping da dominio a area di autenticazione personalizzato.
-- **Certificato PKINIT** (solo Kerberos): **selezionare** il certificato di crittografia a chiave pubblica per l'autenticazione iniziale (PKINIT) che può essere usato per rinnovare le credenziali Kerberos senza interazione dell'utente. Il certificato deve essere un certificato PKCS o SCEP aggiunto in precedenza a Intune.
+- **Certificato PKINIT** (solo Kerberos): **selezionare** il certificato di crittografia a chiave pubblica per l'autenticazione iniziale (PKINIT) che può essere usato per l'autenticazione Kerberos. È possibile scegliere tra i certificati [PKCS](../protect/certficates-pfx-configure.md) o [SCEP](../protect/certificates-scep-configure.md) aggiunti in Intune. Per altre informazioni sui certificati, vedere [usare i certificati per l'autenticazione in Microsoft Intune](../protect/certificates-configure.md).
 
 ## <a name="associated-domains"></a>Domini associati
 
@@ -202,7 +213,7 @@ Questa funzionalità si applica a:
 
 - **ID app**: immettere l'identificatore dell'app da associare a un sito Web. L'identificatore dell'app include l'ID del team e un ID bundle: `TeamID.BundleID`.
 
-  Il team ID è una stringa alfanumerica (lettere e numeri) a 10 caratteri generata da Apple per gli sviluppatori di app, ad esempio `ABCDE12345`. [Individuare l'ID Team](https://help.apple.com/developer-account/#/dev55c3c710c)   (apre il sito Web di Apple) con ulteriori informazioni.
+  Il team ID è una stringa alfanumerica (lettere e numeri) a 10 caratteri generata da Apple per gli sviluppatori di app, ad esempio `ABCDE12345`. [Individuare l'ID Team](https://help.apple.com/developer-account/#/dev55c3c710c) (apre il sito Web di Apple) con ulteriori informazioni.
 
   L'ID bundle identifica in modo univoco l'app ed è in genere formattato in notazione del nome di dominio inverso. Ad esempio, l'ID bundle di Finder viene `com.apple.finder`. Per trovare l'ID bundle, usare AppleScript nel terminale:
 
@@ -221,7 +232,7 @@ Questa funzionalità si applica a:
 - **Aggiungi**: selezionare questa aggiunta per aggiungere le app e i domini associati.
 
 > [!TIP]
-> Per risolvere i problemi, nel dispositivo macOS aprire **Preferenze di sistema**  > **profili**. Verificare che il profilo creato sia presente nell'elenco profili dispositivo. Se è elencato, assicurarsi che la **configurazione dei domini associati** sia nel profilo e che includa i domini e l'ID app corretti.
+> Per risolvere i problemi, nel dispositivo macOS aprire **Preferenze di sistema** > **profili**. Verificare che il profilo creato sia presente nell'elenco profili dispositivo. Se è elencato, assicurarsi che la **configurazione dei domini associati** sia nel profilo e che includa i domini e l'ID app corretti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

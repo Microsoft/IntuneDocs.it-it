@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508297"
 ---
 # <a name="sign-in-to-company-portal"></a>Accedi per Portale aziendale  
@@ -40,7 +40,7 @@ La procedura seguente Mostra gli screenshot del Portale aziendale per iOS.
 
 1. Aprire l'app nel dispositivo e toccare **Accedi**.  
 
-   [![Example screenshot della pagina di accesso Portale aziendale. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![screenshot di esempio della pagina di accesso Portale aziendale.](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Immettere l'**account aziendale o dell'istituto di istruzione** e toccare **Avanti**.

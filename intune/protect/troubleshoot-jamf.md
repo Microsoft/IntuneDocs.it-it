@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503575"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Risolvere i problemi di integrazione di JAMF Pro con Microsoft Intune
@@ -294,7 +294,7 @@ L'origine di questo errore può essere una delle seguenti cause:
 
 Durante la registrazione dell'app JAMF Pro in Azure, si è verificata una delle condizioni seguenti:  
 - L'app ha ricevuto più di un'autorizzazione.
-- L'opzione **Concedi amministratore per *\<your > dell'azienda***  non è stata selezionata.  
+- Il **consenso dell'amministratore di concessione per *\<l'opzione della > aziendale***  non è stato selezionato.  
 
 **Risoluzione**  
 Per la [registrazione dei dispositivi non è possibile eseguire la registrazione](#devices-fail-to-register), più indietro in questo articolo.

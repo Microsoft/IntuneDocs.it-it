@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5cd0183234a1b5f1e3c9a301e8ec1c8f4ca1e333
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "61509620"
 ---
 # <a name="required-metadata"></a>metadati obbligatori
@@ -17,7 +17,7 @@ title: [ARTICLE TITLE | SERVICE NAME] description: keywords: author: [GITHUB USE
 #<a name="msdevlang"></a>ms.devlang:
 #<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
 #<a name="mssuite-ems"></a>ms.Suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mstgt_pltfrm"></a>ms.tgt_pltfrm:
 #<a name="mscustom"></a>ms.custom:
 
 ---
@@ -27,15 +27,15 @@ Aenean porta sit amet nisl quis posuere. In ut magna felis. Nulla quis euismod o
 
 Etiam ac mauris in odio tincidunt tempor. Mauris vel orci dictum enim egestas sagittis sed eu mi. Nulla augue urna, tincidunt eu enim nec, scelerisque suscipit eros. Aliquam imperdiet diam sit amet dictum semper. Sed tincidunt diam id erat scelerisque, in sagittis nibh tempus. Ut pharetra leo vitae fringilla faucibus. Aliquam sem nisi, mattis eget sollicitudin non, suscipit quis magna. Vestibulum pulvinar auctor finibus. Praesent at sollicitudin elit, sed blandit diam. Cras non viverra velit, eu mattis ipsum. Fusce sed laoreet libero, vitae cursus nisl. Ut semper est eget felis lobortis tempus faucibus vitae libero. Sed lacus tellus, sagittis non vehicula vitae, ornare nec lacus.
 
-Proin metus mi, ullamcorper eu mollis eget, pulvinar ut enim. Ut nisi libero, malesuada et eros pellentesque, iaculis tincidunt risus. Nulla ut tincidunt nunc. Integer et rutrum nunc, a accumsan ante. Fusce nec neque sem. Phasellus quis purus et dui pharetra tempor nec pharetra erat. Integer vel quam quis nulla vestibulum maximus vitae vel nisi. In vitae rhoncus nibh. Ut in euismod erat. Phasellus a cursus ante. Fusce quis auctor erat.
+Proin metus mi, ullamcorper eu mollis eget, pulvinar ut enim. Ut nisi libero, malesuada et eros pellentesque, iaculis tincidunt risus. Nulla ut tincidunt nunc. Integer et rutrum nunc, a accumsan ante. Fusce nec neque sem. Phasellus quis purus et dui pharetra tempor nec pharetra erat. Integer vel quam quis nulla vestibulum maximus vitae vel nisi. In vitae rhoncus nibh. Ut at euismod erat. Phasellus a cursus ante. Fusce quis auctor erat.
 
-In cursus finibus metus vello bibendum. Mauris congue maximus metus vitae ultrices. Aenean tincidunt sapien id quam congue, eget pharetra velit mollis. Aenean eleifend ante sed nulla tempor, ut ullamcorper ante pulvinar. Proin ultricies mauris ut mi auctor rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam porttitor velit tortor, nec sagittis eros consectetur at. Etiam sit amet ultrices metus, non sagittis elit. Donec et dolor in nisl vehicula rutrum eu vel tellus.
+In cursus finibus metus vel bibendum. Mauris congue maximus metus vitae ultrices. Aenean tincidunt sapien id quam congue, eget pharetra velit mollis. Aenean eleifend ante sed nulla tempor, ut ullamcorper ante pulvinar. Proin ultricies mauris ut mi auctor rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam porttitor velit tortor, nec sagittis eros consectetur at. Etiam sit amet ultrices metus, non sagittis elit. Donec et dolor in nisl vehicula rutrum eu vel tellus.
 
 Cras vitae diam ac dui luctus tempus. Cras in eros vitae neque pretium consequat. Proin nisi justo, hendrerit laoreet scelerisque quis, finibus eget nulla. Sed a laoreet erat, ac molestie quam. Suspendisse et viverra nisi. Vivamus convallis interdum faucibus. Donec viverra ante sit amet massa consectetur blandit. Morbi id dolor enim. Aliquam sit amet mattis velit, sit amet rhoncus purus. Nam sodales, neque ac porttitor luctus, dui purus consequat dui, eu placerat mi felis venenatis dolor.
 
 Suspendisse potenti. Morbi vel cursus lacus, nec aliquam leo. Curabitur tempus porta aliquet. Mauris a ipsum nec justo tristique porta. In quis sodales ligula, ut tincidunt urna. Vivamus a ligula hendrerit, dictum sapien sit amet, molestie nisi. Donec quis ante vitae ligula mattis tincidunt. Praesent pharetra nisi ligula, quis scelerisque dui auctor at. Nam id iaculis ipsum. Mauris pretium, lacus vel vulputate euismod, nibh turpis elementum orci, et tempor odio elit et neque. Aenean dignissim interdum rutrum. Pellentesque feugiat volutpat neque vel dictum. Phasellus id convallis nisi. Quisque turpis sapien, pulvinar ut tortor a, gravida gravida arcu. Sed tempor malesuada odio ut ornare. Aenean a urna libero.
 
-Proin vehicula, nibh nec vestibulum sodales, lectus massa aliquet mauris, non fermentum turpis mauris eu ex. Fusce condimentum aliquam velit. Vivamus sit amet ante un dignissim tristique magna et in libero. Nulla sit amet sagittis diam. Vivamus sagittis mattis tincidunt. Phasellus convallis luctus purus, sit amet mattis urna tempor ut. Etiam lacinia eleifend risus sollicitudin euismod. Etiam non gravida ante. Mauris non justo ut elit laoreet volutpat ut eget velit. Donec sit amet bibendum mauris. Mauris quis odio ut mauris pellentesque blandit vel eget massa. Duis in venenatis tellus. Pellentesque quis sem nisi. Proin ut quam tristique, pharetra turpis ut, lacinia nisi.
+Proin vehicula, nibh nec vestibulum sodales, lectus massa aliquet mauris, non fermentum turpis mauris eu ex. Fusce condimentum aliquam velit. Vivamus sit amet ante a magna tristique dignissim et in libero. Nulla sit amet sagittis diam. Vivamus sagittis mattis tincidunt. Phasellus convallis luctus purus, sit amet mattis urna tempor ut. Etiam lacinia eleifend risus sollicitudin euismod. Etiam non gravida ante. Mauris non justo ut elit laoreet volutpat ut eget velit. Donec sit amet bibendum mauris. Mauris quis odio ut mauris pellentesque blandit vel eget massa. Duis in venenatis tellus. Pellentesque quis sem nisi. Proin ut quam tristique, pharetra turpis ut, lacinia nisi.
 
 Morbi dictum vel magna ac dictum. Proin ultricies gravida est, quis pulvinar erat accumsan ac. Aliquam euismod et mauris in semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam gravida semper mauris sollicitudin malesuada. Duis vitae placerat nisl. Sed luctus massa id dolor ultricies blandit. Mauris posuere congue auctor. Donec tincidunt lectus sit amet interdum convallis. Donec efficitur elit a lorem vulputate sollicitudin. Vestibulum sit amet elit sed ipsum mollis euismod mollis vel lectus. Donec bibendum nulla libero, eget fringilla arcu aliquet vel.
 

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506357"
 ---
 # <a name="encrypting-your-android-device"></a>Crittografia del dispositivo Android
@@ -45,7 +45,7 @@ Se Portale aziendale o l'app Microsoft Intune richiede di crittografare il dispo
     c. Seguire le istruzioni visualizzate per configurare il blocco dello schermo.  
 
 2. Tornare alla **schermata di blocco e alla sicurezza** e selezionare **avvio protetto**.
-3. Scegliere **Richiedi PIN quando il dispositivo si attiva**  > **OK**.
+3. Scegliere **Richiedi PIN quando il dispositivo si attiva** > **OK**.
 4. Immettere il PIN per confermare e crittografare il dispositivo.
 5. Aprire l'app Portale aziendale o Microsoft Intune.
     * Utenti del portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**. 
@@ -53,9 +53,9 @@ Se Portale aziendale o l'app Microsoft Intune richiede di crittografare il dispo
 
 I dispositivi che eseguono Android 4,4 e versioni precedenti potrebbero non avere l'opzione di **avvio protetto** . In tal caso, completare la procedura seguente per crittografare il dispositivo.
 
-1. Passare a **impostazioni**  > **sicurezza**  > **Crittografa dispositivo**. Le etichette sullo schermo variano tra i dispositivi Android. Se l'opzione **Encrypt Device** non è visibile, archiviare:
-    * **Archiviazione**  > **crittografia di archiviazione**
-    * **Archiviazione**  > **schermata di blocco e sicurezza**  > **altre impostazioni di sicurezza** 
+1. Passare a **impostazioni** > **sicurezza** > **Crittografa dispositivo**. Le etichette sullo schermo variano tra i dispositivi Android. Se l'opzione **Encrypt Device** non è visibile, archiviare:
+    * **Archiviazione** > **crittografia di archiviazione**
+    * **Archiviazione** > **schermata di blocco e sicurezza** > **altre impostazioni di sicurezza** 
 
 2. Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
 3. Aprire l'app Portale aziendale o Microsoft Intune.

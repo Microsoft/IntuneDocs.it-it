@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506705"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>impostazioni del dispositivo macOS per configurare e usare le estensioni del kernel in Intune
@@ -63,7 +63,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   > [!TIP]
   > Per ottenere l'ID bundle di un'estensione del kernel (kext) in un dispositivo macOS, è possibile:
   >
-  > 1. Nel terminale eseguire `kextstat | grep -v com.apple` e annotare l'output. Installare il software o il kext desiderato. Eseguire di nuovo `kextstat | grep -v com.apple` e cercare le modifiche.
+  > 1. Nel terminale eseguire `kextstat | grep -v com.apple`e annotare l'output. Installare il software o il kext desiderato. Eseguire di nuovo `kextstat | grep -v com.apple` e cercare le modifiche.
   >
   >    Nel terminale `kextstat` elenca tutte le estensioni del kernel nel sistema operativo. 
   >

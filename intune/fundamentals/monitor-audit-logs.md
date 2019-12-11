@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585250"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991987"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usare i log di controllo per tenere traccia degli eventi e monitorarli in Microsoft Intune
 
@@ -40,9 +40,14 @@ Gli utenti con le autorizzazioni seguenti possono esaminare i log di controllo:
 
 È possibile esaminare i log di controllo nel gruppo di monitoraggio per ogni carico di lavoro di Intune:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Scegliere il carico di lavoro per cui si vogliono esaminare i log di controllo. Selezionare, ad esempio, **Dispositivi**.
-3. In **Monitoraggio** scegliere **Log di controllo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Amministrazione Tenant** > **log di controllo**.
+3. Per filtrare i risultati, selezionare **Filtra** e perfezionare i risultati usando le opzioni seguenti.
+    - **Categoria**: come la **conformità**, il **dispositivo**e il **ruolo**.
+    - **Attività**: le opzioni elencate di seguito sono limitate dall'opzione scelta in **categoria**.
+    - **Intervallo di date**: è possibile scegliere i log per il mese, la settimana o il giorno precedente.
+4. Scegliere **Applica**.
+4. Selezionare un elemento nell'elenco per visualizzare i dettagli dell'attività.
 
 ## <a name="route-logs-to-azure-monitor"></a>Indirizzare i log a Monitoraggio di Azure
 
@@ -53,32 +58,10 @@ I log di controllo e i log operativi possono essere anche indirizzati a Monitora
 > [!NOTE]
 > Per altre informazioni su questa funzionalità e per esaminare i prerequisiti per usarla, vedere [inviare dati di log ad archiviazione, Hub eventi o log Analytics](review-logs-using-azure-monitor.md).
 
-## <a name="review-audit-events"></a>Esaminare gli eventi di controllo
-
-![Scegliere i log di controllo in Intune per visualizzare le azioni e le date in cui si sono verificati gli eventi](./media/monitor-audit-logs/monitor-audit-logs.png "Log di controllo")
-
-Per un log di controllo è disponibile una visualizzazione elenco predefinita che mostra gli elementi seguenti:
-
-- Data e ora in cui si è verificato l'evento
-- Azione avviata da (attore)
-- Nome applicazione
-- Attività
-- Destinazione/i
-- Categoria
-- Stato
-
-Per visualizzare informazioni più specifiche su un evento, selezionare un elemento nell'elenco:
-
-![Ottenere informazioni più specifiche su chi ha fatto cosa nei log di controllo in Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **Azione avviata da (attore)** include informazioni su chi ha eseguito l'attività e dove è stata eseguita. Ad esempio, se si esegue l'attività in Intune nel portale di Azure, in **Applicazione** è sempre indicato **Microsoft Intune portal extension** e **ID applicazione** usa sempre lo stesso GUID.
 >
 > La sezione **Destinazione/i** elenca più destinazioni e le proprietà che sono state modificate.  
-
-## <a name="filter-audit-events"></a>Filtrare gli eventi di controllo
-
-Ogni carico di lavoro include una voce di menu che pre-filtra la categoria di eventi di controllo associata a tale riquadro. Un'opzione di filtro separata consente di passare a categorie diverse e visualizzare i dettagli delle azioni di evento all'interno di tale categoria. È possibile eseguire ricerche in base all'UPN, ad esempio l'utente che ha eseguito l'azione. Un filtro di intervallo di date include le opzioni 24 ore, 7 giorni o 30 giorni. Per impostazione predefinita, vengono visualizzati gli ultimi 30 giorni di eventi di controllo.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Usare l'API Graph per recuperare gli eventi di controllo
 

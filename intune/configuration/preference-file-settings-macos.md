@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9acad2e8539da7210c349ffb254af62f370af5f6
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391498"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691686"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Aggiungere un file elenco di proprietà ai dispositivi macOS usando Microsoft Intune
 
@@ -29,7 +29,7 @@ Con Microsoft Intune è possibile aggiungere un file di elenco di proprietà (co
 
 Questa funzionalità si applica a:
 
-- dispositivi macOS che eseguono 10,7 e versioni successive
+- Dispositivi macOS che eseguono la versione 10.7 e successive
 
 I file dell'elenco di proprietà includono in genere informazioni sulle applicazioni macOS. Per ulteriori informazioni, vedere [About Information Property List files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (sito Web di Apple) e [impostazioni del payload personalizzate](https://support.apple.com/guide/mdm/custom-mdm9abbdbe7/1/web/1).
 
@@ -59,3 +59,5 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 ## <a name="next-steps"></a>Passaggi successivi
 
 Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
+
+Per altre informazioni sui file di preferenza per Microsoft Edge, vedere [configurare le impostazioni dei criteri Microsoft Edge in MacOS](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac).

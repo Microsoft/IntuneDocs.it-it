@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059850"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di posta elettronica in Microsoft Intune
@@ -63,7 +63,7 @@ Gli utenti con account di posta elettronica configurati automaticamente non poss
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Dispositivi** > **Profili di configurazione**.
-3. Selezionare il profilo di posta elettronica > **proprietà**  > **Impostazioni**.
+3. Selezionare il profilo di posta elettronica > **proprietà** > **Impostazioni**.
 4. Impostare l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** per **abilitare**.
 
 ## <a name="next-steps"></a>Passaggi successivi

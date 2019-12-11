@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117903"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992950"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per usare le funzionalità iOS comuni in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune include alcune impostazioni predefinite per consentire agli utenti di iOS di usare diverse funzionalità di Apple nei dispositivi. Gli amministratori, ad esempio, possono controllare come gli utenti di iOS usano le stampanti AirPrint, aggiungere app e cartelle al dock e alle pagine nella schermata iniziale, visualizzare le notifiche delle app, visualizzare i dettagli dei tag degli asset nella schermata di blocco, usare l'autenticazione Single Sign-On e autenticare gli utenti con i certificati.
 
@@ -280,36 +278,43 @@ Questa funzionalità si applica a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione
 
-- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO per le credenziali. Le opzioni disponibili sono:
+- **Tipo di estensione dell'app SSO**: scegliere il tipo di estensione dell'app SSO. Le opzioni disponibili sono:
 
-  - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app, è possibile impostare il tipo di estensione dell'app SSO da **Kerberos** o **Credential** su **non configurato**.
-  - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per eseguire l'accesso SSO. Assicurarsi di avere a conoscenza l'ID estensione per l'estensione dell'app SSO dell'organizzazione.
+  - **Non configurato**: non vengono usate le estensioni dell'app. Per disabilitare un'estensione dell'app, è possibile impostare il tipo di estensione dell'app SSO su **non configurato**.
+  - **Reindirizzamento**: usare un'estensione di app di reindirizzamento generica e personalizzabile per eseguire l'accesso SSO con flussi di autenticazione moderni. Assicurarsi di conoscerne l'ID estensione per l'estensione dell'app dell'organizzazione.
+  - **Credenziale**: usare un'estensione di app per le credenziali personalizzabile e generica per eseguire l'accesso SSO con i flussi di autenticazione di richiesta-risposta. Assicurarsi di conoscerne l'ID estensione per l'estensione dell'app dell'organizzazione.
   - **Kerberos**: usare l'estensione Kerberos predefinita di Apple, inclusa in iOS 13,0 (e versioni successive) e ipados 13,0 (e versioni successive). Questa opzione è una versione specifica di Kerberos dell'estensione dell'app per le **credenziali** .
 
   > [!TIP]
-  > Con il tipo di **credenziale** , è necessario aggiungere i propri valori di configurazione per passare attraverso l'estensione. In alternativa, è consigliabile usare le impostazioni di configurazione predefinite fornite da Apple nel tipo **Kerberos** .
+  > Con i tipi **Reindirizzamento** e **credenziali** è possibile aggiungere i propri valori di configurazione per passare attraverso l'estensione. Se si usano le **credenziali**, provare a usare le impostazioni di configurazione predefinite fornite da Apple nel tipo **Kerberos** .
 
-- **ID estensione** (solo credenziali): immettere l'identificatore del bundle che identifica l'estensione dell'app SSO, ad esempio `com.apple.extensiblesso`.
-- **ID team** (solo credenziali): immettere l'identificatore del team dell'estensione dell'app SSO. Un identificatore del team è una stringa alfanumerica (numeri e lettere) di 10 caratteri generata da Apple, ad esempio `ABCDE12345`. L'ID team non è obbligatorio.
+- **ID estensione** (Reindirizzamento e credenziali): immettere l'identificatore del bundle che identifica l'estensione dell'app SSO, ad esempio `com.apple.extensiblesso`.
+
+- **ID team** (Reindirizzamento e credenziali): immettere l'identificatore del team dell'estensione dell'app SSO. Un identificatore del team è una stringa alfanumerica (numeri e lettere) di 10 caratteri generata da Apple, ad esempio `ABCDE12345`. L'ID team non è obbligatorio.
 
   [Individuare l'ID del team](https://help.apple.com/developer-account/#/dev55c3c710c) (aprire il sito Web di Apple) con ulteriori informazioni.
 
-- **Area**di autenticazione: immettere il nome dell'area di autenticazione Kerberos. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
+- **Area** di autenticazione (credenziale e Kerberos): immettere il nome dell'area di autenticazione. Il nome dell'area di autenticazione deve essere in maiuscolo, ad esempio `CONTOSO.COM`. In genere, il nome dell'area di autenticazione corrisponde al nome di dominio DNS, ma in maiuscolo.
 
-- **Domini**: immettere il dominio o i nomi host dei siti che possono eseguire l'autenticazione tramite SSO. Ad esempio, se il sito Web è `mysite.contoso.com`, `mysite` è il nome host e `contoso.com` è il nome di dominio. Quando gli utenti si connettono a uno di questi siti, l'estensione dell'app gestisce la richiesta di autenticazione. Questa autenticazione consente agli utenti di usare l'ID del viso, l'ID tocco o il pincode/codice Apple per accedere.
+- **Domini** (Credential e Kerberos): immettere il dominio o i nomi host dei siti che possono eseguire l'autenticazione tramite SSO. Ad esempio, se il sito Web è `mysite.contoso.com`, `mysite` è il nome host e `contoso.com` è il nome di dominio. Quando gli utenti si connettono a uno di questi siti, l'estensione dell'app gestisce la richiesta di autenticazione. Questa autenticazione consente agli utenti di usare l'ID del viso, l'ID tocco o il pincode/codice Apple per accedere.
 
   - Tutti i domini nei profili di Intune dell'estensione dell'app Single Sign-On devono essere univoci. Non è possibile ripetere un dominio in nessun profilo di estensione dell'app di accesso, anche se si usano tipi diversi di estensioni di app SSO.
   - Questi domini non fanno distinzione tra maiuscole e minuscole.
 
-- **Configurazione aggiuntiva** (solo credenziali): immettere dati aggiuntivi specifici dell'estensione da passare all'estensione dell'app SSO:
-  - **Chiave di configurazione**: immettere il nome dell'elemento che si vuole aggiungere, ad esempio `user name`.
-  - **Tipo valore**: immettere il tipo di dati. Le opzioni disponibili sono:
+- **URL** (solo Reindirizzamento): immettere i prefissi URL dei provider di identità per conto del quale l'estensione di reindirizzamento app esegue l'accesso SSO. Quando un utente viene reindirizzato a questi URL, l'estensione dell'app SSO interviene e richiede l'accesso SSO.
+
+  - Tutti gli URL nei profili di estensione dell'app Single Sign-On di Intune devono essere univoci. Non è possibile ripetere un dominio in nessun profilo di estensione dell'app SSO, anche se si usano tipi diversi di estensioni di app SSO.
+  - Gli URL devono iniziare con http://o https://.
+
+- **Configurazione aggiuntiva** (Reindirizzamento e credenziali): immettere dati aggiuntivi specifici dell'estensione da passare all'estensione dell'app SSO:
+  - **Chiave**: immettere il nome dell'elemento che si vuole aggiungere, ad esempio `user name`.
+  - **Tipo**: immettere il tipo di dati. Le opzioni disponibili sono:
 
     - Stringa
     - Booleano: in **valore di configurazione**immettere `True` o `False`.
     - Integer: in **valore di configurazione**immettere un numero.
     
-  - **Valore di configurazione**: immettere i dati.
+  - **Valore**: immettere i dati.
 
   - **Aggiungi**: selezionare questa impostazione per aggiungere le chiavi di configurazione.
 
@@ -323,11 +328,16 @@ Questa funzionalità si applica a:
   > - Se si dispone solo di un'area di autenticazione, lasciarla **non configurata** (impostazione predefinita).
 
 - **Nome entità** (solo Kerberos): immettere il nome utente dell'entità Kerberos. Non è necessario includere il nome dell'area di autenticazione. Ad esempio, in `user@contoso.com`, `user` è il nome dell'entità e `contoso.com` è il nome dell'area di autenticazione.
+
+  > [!TIP]
+  > - È anche possibile usare le variabili nel nome principale immettendo parentesi graffe `{{ }}`. Ad esempio, per visualizzare il nome utente, immettere `Username: {{username}}`. 
+  > - Tuttavia, prestare attenzione con la sostituzione delle variabili perché le variabili non vengono convalidate nell'interfaccia utente e fanno distinzione tra maiuscole e minuscole. Assicurarsi di immettere le informazioni corrette.
+
 - **Active Directory codice sito** (solo Kerberos): immettere il nome del sito Active Directory che deve essere utilizzato dall'estensione Kerberos. Potrebbe non essere necessario modificare questo valore, perché l'estensione Kerberos potrebbe trovare automaticamente il codice del sito Active Directory.
 - **Nome cache** (solo Kerberos): immettere il nome GSS (Generic Security Services) della cache Kerberos. Probabilmente non è necessario impostare questo valore.
 - **ID bundle dell'app** (solo Kerberos): **aggiungere** gli identificatori del bundle dell'app che devono usare Single Sign-on nei dispositivi. A queste app viene concesso l'accesso al ticket di concessione ticket Kerberos, il ticket di autenticazione e l'autenticazione degli utenti ai servizi a cui sono autorizzati ad accedere.
 - **Mapping dell'area di autenticazione del dominio** (solo Kerberos): **aggiungere** i suffissi DNS di dominio che devono essere mappati all'area di autenticazione. Usare questa impostazione quando i nomi DNS degli host non corrispondono al nome dell'area di autenticazione. Probabilmente non è necessario creare questo mapping da dominio a area di autenticazione personalizzato.
-- **Certificato PKINIT** (solo Kerberos): **selezionare** il certificato di crittografia a chiave pubblica per l'autenticazione iniziale (PKINIT) che può essere usato per rinnovare le credenziali Kerberos senza interazione dell'utente. Il certificato deve essere un certificato PKCS o SCEP aggiunto in precedenza a Intune.
+- **Certificato PKINIT** (solo Kerberos): **selezionare** il certificato di crittografia a chiave pubblica per l'autenticazione iniziale (PKINIT) che può essere usato per l'autenticazione Kerberos. È possibile scegliere tra i certificati [PKCS](../protect/certficates-pfx-configure.md) o [SCEP](../protect/certificates-scep-configure.md) aggiunti in Intune. Per altre informazioni sui certificati, vedere [usare i certificati per l'autenticazione in Microsoft Intune](../protect/certificates-configure.md).
 
 ## <a name="wallpaper"></a>Wallpaper
 

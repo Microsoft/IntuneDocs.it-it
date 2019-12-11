@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508854"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Risolvere gli errori comuni per Intune Exchange Connector
@@ -77,7 +77,7 @@ Quando si tenta di configurare il Microsoft Intune Exchange Connector, viene vis
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Questo errore può verificarsi se si usa un server proxy per connettersi a Internet e si sta bloccando il traffico verso il servizio Intune. Per determinare se un proxy è in uso, passare a **Pannello di controllo**  > **Opzioni Internet**, selezionare la scheda **connessione** , quindi fare clic su **Impostazioni LAN**.
+Questo errore può verificarsi se si usa un server proxy per connettersi a Internet e si sta bloccando il traffico verso il servizio Intune. Per determinare se un proxy è in uso, passare a **Pannello di controllo** > **Opzioni Internet**, selezionare la scheda **connessione** , quindi fare clic su **Impostazioni LAN**.
 
 **Risoluzione**:  
 
@@ -132,11 +132,11 @@ Per assegnare il diritto utente **Accedi come servizio** all'account del servizi
 
 1. Accedere al computer come amministratore o come membro del gruppo Administrators.
 2. Eseguire **secpol. msc** per aprire i criteri di sicurezza locali.
-3. Passare a **impostazioni di sicurezza**  > **criteri locali**, quindi selezionare **assegnazione diritti utente**.
+3. Passare a **impostazioni di sicurezza** > **criteri locali**, quindi selezionare **assegnazione diritti utente**.
 4. Nel riquadro a destra fare doppio clic su **Accesso come servizio**.
-5. Selezionare **Aggiungi utente o gruppo**, aggiungere **WIEC_USER** al criterio e quindi selezionare **OK** due volte.
+5. Selezionare **Aggiungi utente o gruppo**, aggiungere **WIEC_USER** al criterio, quindi fare clic su **OK** due volte.
 
-Se il diritto utente **Accedi come servizio** è stato assegnato a **WIEC_User** ma è stato rimosso in seguito, contattare l'amministratore di dominio per determinare se un'impostazione di criteri di gruppo ne sta sovrascrivendo.  
+Se il diritto utente **Accedi come servizio** è stato assegnato a **WIEC_User** ma è stato rimosso in seguito, contattare l'amministratore di dominio per determinare se un'impostazione di criteri di gruppo la sovrascrittura.  
 
 ## <a name="next-steps"></a>Passaggi successivi  
 
