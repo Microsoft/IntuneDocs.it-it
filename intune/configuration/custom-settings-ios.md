@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a167fa4f0ddc9832ea70b4281a42b5c0aae5bb81
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495776"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74694931"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Usare le impostazioni personalizzate per i dispositivi iOS in Microsoft Intune
 
@@ -57,7 +57,7 @@ Questo articolo fornisce indicazioni sull'uso di Apple Configurator e Apple Prof
 ## <a name="custom-configuration-profile-settings"></a>Impostazioni del profilo di configurazione personalizzato
 
 - **Nome del profilo di configurazione personalizzato**: immettere un nome per i criteri. Questo nome viene visualizzato nel dispositivo e nello stato di Intune.
-- **File del profilo di configurazione**: passare al profilo di configurazione creato usando Apple Configurator o Apple Profile Manager. Il file importato è visualizzato nell'area **Contenuti del file**.
+- **File del profilo di configurazione**: passare al profilo di configurazione creato usando Apple Configurator o Apple Profile Manager. Le dimensioni massime del file sono pari a 1 milione byte (appena 1 MB). Il file importato è visualizzato nell'area **Contenuti del file**.
 
   È anche possibile aggiungere token di dispositivo ai file di configurazione personalizzati. I token del dispositivo vengono usati per aggiungere informazioni specifiche del dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `{{serialnumber}}`. Nel dispositivo il testo è simile a `123456789ABC`, che è univoco per ogni dispositivo. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceid` o qualsiasi altro valore specifico del dispositivo.
 

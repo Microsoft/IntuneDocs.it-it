@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059335"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691732"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo in Intune
 
@@ -83,16 +83,17 @@ Eseguire una sola app nel dispositivo.
 
     - **Aggiorna il browser dopo il tempo di inattività**: immettere la quantità di tempo di inattività (da 1 a 1440 minuti) trascorso il quale il browser in modalità tutto schermo viene riavviato. Il tempo di inattività è il numero di minuti dopo l'ultima interazione dell'utente. Per impostazione predefinita, il valore è vuoto, ovvero non è configurato alcun timeout di inattività.
 
-    - **Siti Web consentiti**: usare questa impostazione per consentire l'apertura di siti Web specifici. In altre parole, usare questa funzionalità per limitare o bloccare siti Web nel dispositivo. Ad esempio, è possibile consentire l'apertura di tutti i siti Web in `http://contoso.com*`. Per impostazione predefinita, sono consentiti tutti i siti Web.
+    - **Siti Web consentiti**: usare questa impostazione per consentire l'apertura di siti Web specifici. In altre parole, usare questa funzionalità per limitare o bloccare siti Web nel dispositivo. Ad esempio, è possibile consentire l'apertura di tutti i siti Web in `http://contoso.com`. Per impostazione predefinita, sono consentiti tutti i siti Web.
 
-      Per consentire siti Web specifici, caricare un file che include un elenco dei siti Web consentiti in righe distinte. Se non si aggiunge un file, sono consentiti tutti i siti Web. Intune supporta `*` (asterisco) come carattere jolly.
+      Per consentire siti Web specifici, caricare un file che include un elenco dei siti Web consentiti in righe distinte. Se non si aggiunge un file, sono consentiti tutti i siti Web. Per impostazione predefinita, Intune supporta Wild Card. Quindi, quando si immette il dominio, ad esempio `sharepoint.com`, i sottodomini sono consentiti automaticamente, ad esempio `contoso.sharepoint.com`, `my.sharepoint.com`e così via.
 
       Il file di esempio sarà simile all'elenco seguente:
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > I chioschi Windows 10 con accesso automatico abilitato tramite il browser Microsoft Kiosk devono usare una licenza offline di Microsoft Store for business. Questo requisito è dovuto al fatto che l'accesso automatico usa un account utente locale senza credenziali di Azure Active Directory (AD). Non è quindi possibile valutare le licenze online. Per altre informazioni, vedere [Distribuire app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).

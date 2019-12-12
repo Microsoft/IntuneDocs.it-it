@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490467"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784273"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creare un report di Intune dal feed OData con Power BI
 
@@ -58,7 +58,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 2. Aprire il riquadro **Data warehouse di Intune** selezionando il collegamento Data warehouse in **Altre attività** sul lato destro del pannello **Microsoft Intune - Panoramica**.
 3. Copiare l'URL del feed personalizzato. ad esempio `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Aprire Power BI Desktop.
-5. Dalla barra dei menu selezionare **File**  > **recuperare i dati**  > **feed OData**.
+5. Dalla barra dei menu selezionare **File** > **recuperare i dati** > **feed OData**.
 6. Incollare l'URL del feed personalizzato copiato dal passaggio precedente nella casella URL della finestra **feed OData** .
 7. Selezionare **Di base**.
 
@@ -111,7 +111,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 3. Espandere la tabella `ownerTypes` e selezionare il campo dati `ownerTypeName`.
 4. Trascinare il campo dati `onwerTypeName` dalla tabella `ownerTypes` al riquadro **filtri** e rilasciarlo nella sezione **filtri in questa pagina** della casella **Aggiungi campi dati qui**.  
 
-   Nella tabella `OwnerTypes` è presente un campo dati denominato `OwnerTypeKey`that contiene i dati relativi al fatto che un dispositivo sia di proprietà dell'azienda o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella `ownerTypes` e trascinare **ownerTypeName** nel filtro dei dati. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
+   Nella tabella `OwnerTypes` è presente un campo dati denominato `OwnerTypeKey`che contiene i dati relativi al fatto che un dispositivo sia di proprietà dell'azienda o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella `ownerTypes` e trascinare **ownerTypeName** nel filtro dei dati. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
 
 ![Mappa ad albero con filtro: supporto di relazioni tra tabelle](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

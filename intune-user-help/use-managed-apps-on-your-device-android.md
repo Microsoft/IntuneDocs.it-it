@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501890"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781210"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usare le app gestite nel dispositivo Android
 Le app gestite sono configurate per soddisfare i requisiti di sicurezza dell'organizzazione e proteggere i dati aziendali e dell'istituto di istruzione. Queste app vengono rese disponibili all'utente nel dispositivo per essere installate o usate automaticamente. 
@@ -39,9 +39,7 @@ Per ottimizzare la protezione dei dati, l'organizzazione può configurare divers
 Le organizzazioni possono richiedere l'uso di un'app gestita per eseguire un'operazione, ad esempio aprire un file di lavoro o accedere a un collegamento Web. Se l'utente non ha l'app, può non essere in grado di continuare l'operazione. Alcune app gestite vengono rese disponibili per l'installazione, ma non sono obbligatorie.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Come si capisce che si sta usando un'app gestita?
-Quando si accede per la prima volta a dati aziendali o dell'istituto di istruzione in un'app gestita, si riceve un messaggio simile a quello dello screenshot riportato di seguito. Il messaggio chiede di riavviare l'app per continuare.
-
-![Screenshot della finestra di messaggio visualizzato quando un utente apre un'app gestita in un dispositivo. Il messaggio dice: "L'organizzazione non protegge i propri dati in questa app. Per continuare è necessario riavviare l'app" ed è seguito dal pulsante OK.](./media/managed-apps-message.png)
+Quando si tenta di accedere ai dati aziendali o dell'Istituto di istruzione in un'app gestita, si riceverà un messaggio sullo schermo che l'app è protetta dall'organizzazione. 
 
 ## <a name="commonly-managed-apps"></a>App gestite comuni  
 Di seguito sono riportati esempi di app gestite normalmente obbligatorie o disponibili in aziende e istituti di istruzione:
