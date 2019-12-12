@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801402"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Android per contrassegnare un dispositivo come conforme o non conforme in Intune
@@ -149,7 +149,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 - **Blocca app da origini sconosciute**:
 
   - **Non configurato** (*impostazione predefinita*): questa impostazione non viene valutata per la conformità o la non conformità.
-  - **Bloccare i** dispositivi con **sicurezza > origini sconosciute** abilitate per le origini (*supportate in Android 4,0 tramite Android 7. x. Non supportato da Android 8.0 e versioni successive).
+  - **Bloccare i** dispositivi con **sicurezza > origini sconosciute** abilitate per le origini (*supportate in Android 4,0 tramite Android 7. x. Non supportato da Android 8.0 e versioni successive*).
 
   Per trasferire localmente le app, devono essere consentite le origini sconosciute. Se non si esegue il sideload di app Android, abilitare questi criteri di conformità impostando questa funzionalità su **Blocca**.
 
