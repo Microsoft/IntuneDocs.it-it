@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72776873"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi macOS per consentire o limitare l'uso delle funzionalità tramite Intune
@@ -163,7 +163,7 @@ Per aggiungere app a questi elenchi, è possibile:
 - **Block iCloud Bookmark Backup** (Blocca il backup di Preferiti di iCloud): **Blocca** impedisce a iCloud di sincronizzare i preferiti del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei preferiti con iCloud.
 - **Block iCloud Notes Backup** (Blocca il backup di Note di iCloud): **Blocca** impedisce a iCloud di sincronizzare le note del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione delle note con iCloud.
 - **Blocca la libreria foto iCloud**: il **blocco** Disabilita la libreria foto iCloud e impedisce a iCloud di sincronizzare le foto dei dispositivi. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud vengono rimosse dall'archivio locale nel dispositivo. **Non configurato** (impostazione predefinita) consente di sincronizzare le foto tra il dispositivo e la libreria foto iCloud.
-- **Consegna**: **non configurata** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo MacOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce la funzionalità di continuità sul dispositivo. 
+- **** Consegna: **non configurata** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo MacOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce la funzionalità di continuità sul dispositivo. 
 
   Questa funzionalità si applica a:  
   - macOS 10.15 e versioni successive

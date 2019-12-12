@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465645"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992941"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi iOS e iPadOS. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, impostare regole per le password, consentire o limitare l'uso di app specifiche e altro ancora.
 
@@ -52,7 +50,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: registrazione del dispositivo, registrazione automatica dei dispositivi (supervisione)
 
 - **Certificati TLS non attendibili**: scegliere **Blocca** per non consentire certificati TLS (Transport Layer Security) non attendibili nel dispositivo. **Non configurato** (impostazione predefinita) consente i certificati TLS.
-- **Consenti gli aggiornamenti PKI in modalità wireless**: **Consenti** consente agli utenti di ricevere gli aggiornamenti software senza dover connettere i propri dispositivi a un computer.
+- **Bloccare gli aggiornamenti dell'infrastruttura a chiave pubblica (PKI**): il **blocco** impedisce agli utenti di ricevere gli aggiornamenti software senza connettere i propri dispositivi a un computer. **Non configurato** (impostazione predefinita) non aggiorna questa impostazione nel dispositivo.
 - **Limita il rilevamento annunci**: scegliere **Limita** per disabilitare l'identificatore di annunci pubblicitari del dispositivo. **Non configurato** (impostazione predefinita) lo mantiene abilitato.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
@@ -95,7 +93,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Modifiche al profilo di configurazione**: **Blocca** impedisce modifiche al profilo di configurazione nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di installare profili di configurazione.
 - **Blocco attivazione**: scegliere **Consenti** per abilitare il blocco attivazione su dispositivi iOS con supervisione. Blocco attivazione rende più difficile la riattivazione di un dispositivo perso o rubato.
 - **Blocca la rimozione di app**: scegliere **Blocca** per impedire agli utenti di rimuovere le app. **Non configurato** (impostazione predefinita) consente agli utenti di rimuovere le app dal dispositivo.
-- **Blocca la modalità USB con restrizioni**: scegliere **Blocca** per disabilitare la modalità USB con restrizioni nei dispositivi con supervisione. La modalità USB con restrizioni impedisce agli accessori USB di scambiare dati con un dispositivo bloccato per più di un'ora. **Non configurato** (impostazione predefinita) consente la modalità USB con restrizioni.
+- **Consenti accessori USB quando il dispositivo è bloccato**: **Consenti** consente agli accessori USB di scambiare dati con un dispositivo bloccato per più di un'ora. **Non configurato** (impostazione predefinita) non aggiorna la modalità con restrizioni USB nel dispositivo.
 - **Imponi data e ora automatiche**: **Rendi obbligatorio** forza l'impostazione automatica di data e ora nei dispositivi con supervisione. Il fuso orario del dispositivo viene aggiornato quando il dispositivo dispone di connessioni alla rete cellulare o Wi-Fi con i servizi di posizione abilitati.
 - **Richiedi agli studenti di chiedere l'autorizzazione per lasciare un corso Classroom**: **Rendi obbligatorio** impone agli studenti registrati in un corso non gestito con l'app Classroom di richiedere l'autorizzazione al docente per lasciare il corso. **Non configurato** (impostazione predefinita) non impone agli studenti di richiedere l'autorizzazione.
 
@@ -538,7 +536,7 @@ Nota necessaria per il roaming dei dati (suggerimento o Nota importante per faci
 - **Sincronizzazione dello streaming foto in iCloud**: **Non configurato** (impostazione predefinita) consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto** per sincronizzare le foto in iCloud in modo che siano disponibili in tutti i dispositivi degli utenti. **Blocca** impedisce la sincronizzazione dello streaming foto in iCloud. Il blocco di questa funzionalità può causare la perdita di dati. 
 - **Libreria foto di iCloud**: impostare su **Blocca** per disabilitare l'uso della libreria foto di iCloud per archiviare foto e video nel cloud. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della libreria foto iCloud.
 - **Flusso di foto condivise**: scegliere **Blocca** per disabilitare **Condivisione foto di iCloud** nel dispositivo. **Non configurato** (impostazione predefinita) consente lo streaming di foto condivise.
-- **Consegna**: **non configurata** (impostazione predefinita) consente agli utenti di iniziare a lavorare su un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce l'handoff.
+- **** Consegna: **non configurata** (impostazione predefinita) consente agli utenti di iniziare a lavorare su un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce l'handoff.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
