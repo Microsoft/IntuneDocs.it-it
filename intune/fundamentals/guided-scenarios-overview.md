@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635356"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899136"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Panoramica degli scenari guidati di Intune 
 
@@ -33,7 +33,7 @@ Gli scenari guidati non sono uno spazio di gestione diverso dai flussi di lavoro
 
 ## <a name="types-of-guided-scenarios"></a>Tipi di scenari guidati 
 
-Per motivi di semplicità, tutti gli scenari guidati omettono le funzionalità di ambito complesse, ad esempio tag di ambito <link>, gruppi di esclusione e assegnazioni di gruppi virtuali <link>. Tutte le risorse create da uno scenario guidato erediteranno ogni tag di ambito dell'amministratore che completa lo scenario. Alcuni scenari offrono un certo livello di personalizzazione per l'impostazione comune per coprire scenari strettamente correlati. Questi scenari supportano solo l'assegnazione dei gruppi ai gruppi di inclusione. Per altri scenari guidati, l'intero scenario garantisce un'esperienza coerente non offrendo alcuna personalizzazione e genera automaticamente un nuovo gruppo che riceverà tutte le assegnazioni. Una volta completato lo scenario guidato, è possibile usare assegnazioni più elaborate direttamente tramite i carichi di lavoro esistenti per criteri, app e profili.  
+Per motivi di semplicità, tutti gli scenari guidati omettono le funzionalità di ambito complesse, ad esempio tag di ambito, gruppi di esclusione e assegnazioni di gruppi virtuali. Tutte le risorse create da uno scenario guidato erediteranno ogni tag di ambito dell'amministratore che completa lo scenario. Alcuni scenari offrono un certo livello di personalizzazione per l'impostazione comune per coprire scenari strettamente correlati. Questi scenari supportano solo l'assegnazione dei gruppi ai gruppi di inclusione. Per altri scenari guidati, l'intero scenario garantisce un'esperienza coerente non offrendo alcuna personalizzazione e genera automaticamente un nuovo gruppo che riceverà tutte le assegnazioni. Una volta completato lo scenario guidato, è possibile usare assegnazioni più elaborate direttamente tramite i carichi di lavoro esistenti per criteri, app e profili.  
 
 Sono disponibili gli scenari guidati seguenti: 
 - Distribuisci Microsoft Edge per dispositivi mobili 

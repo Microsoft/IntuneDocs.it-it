@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390930"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946655"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -31,6 +31,8 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 [Creare un profilo di configurazione del dispositivo](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Solo proprietario del dispositivo
+
+Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in cui Intune controlla l'intero dispositivo, ad esempio dispositivi Android Enterprise completamente gestiti o dedicati.
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -229,7 +231,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   Scegliere **Non configurata** per disabilitare la VPN sempre attiva per tutti i client VPN.
 
   > [!IMPORTANT]
-  > Assicurarsi di distribuire una sola policy VPN sempre attiva in un singolo dispositivo. La distribuzione di più policy VPN sempre attiva in un singolo dispositivo non è supportata.
+  > Assicurarsi di distribuire una sola policy VPN sempre attiva in un singolo dispositivo. La distribuzione di più policy VPN sempre attive in un singolo dispositivo non è supportata.
 
 - **VPN client** (Client VPN): scegliere un client VPN che supporta Always On. Le opzioni disponibili sono:
   - Cisco AnyConnect
@@ -242,6 +244,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   > [!IMPORTANT]
   > - Il client VPN scelto deve essere installato nel dispositivo e deve supportare la VPN per app nei profili di lavoro. In caso contrario si verificherà un errore. 
   > - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
+  > - È comunque necessario configurare il client VPN con un [profilo VPN](vpn-settings-android-enterprise.md)o tramite un profilo di [configurazione dell'app](../apps/app-configuration-policies-use-android.md).
   > - Possono esistere problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.4. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
 - **Lockdown mode** (Modalità di blocco): scegliere **Abilita** per forzare tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
@@ -264,6 +267,8 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
     Per altre informazioni sui file PAC, vedere [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (apre un sito non Microsoft).
 
 ## <a name="work-profile-only"></a>Solo profilo di lavoro
+
+Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in cui Intune controlla solo il profilo di lavoro, ad esempio la registrazione del profilo di lavoro di Android Enterprise in un dispositivo personale o Bring Your Own Device (BYOD).
 
 ### <a name="work-profile-settings"></a>Impostazioni del profilo di lavoro
 

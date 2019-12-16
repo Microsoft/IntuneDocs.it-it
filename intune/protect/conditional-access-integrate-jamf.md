@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390470"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946683"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
@@ -90,13 +90,21 @@ Per connettere Intune a Jamf Pro:
    > [!IMPORTANT]
    > Prima di uscire da questa pagina, copiare il valore del segreto client e annotarlo per usarlo in seguito. Questo valore sarà necessario nelle procedure successive. Questo valore non sarà più disponibile, senza ricreare la registrazione dell'app.
 
-6. Selezionare **Autorizzazioni API** in **Gestione**. Selezionare le autorizzazioni esistenti e quindi selezionare **Rimuovi l'autorizzazione** per eliminarle. È necessario rimuovere le autorizzazioni esistenti quando si aggiunge una nuova autorizzazione. L'applicazione funziona solo se è presente un'unica autorizzazione.
+6. Selezionare **Autorizzazioni API** in **Gestione**. 
 
-7. Per assegnare una nuova autorizzazione, selezionare **Aggiungi un'autorizzazione**. Nella pagina **Richiedi le autorizzazioni dell'API** selezionare **Intune** e quindi selezionare **Autorizzazioni applicazione**. Selezionare solo la casella di controllo per **update_device_attributes**.
+7. Nella pagina Autorizzazioni API selezionare **Aggiungi un'autorizzazione** per aggiungere una nuova autorizzazione. Nella pagina **Richiedi le autorizzazioni dell'API** selezionare **Intune** e quindi selezionare **Autorizzazioni applicazione**. Selezionare solo la casella di controllo per **update_device_attributes**.
 
-   Selezionare **Aggiungi l'autorizzazione** per salvare questa configurazione.
+8. Attendere alcuni minuti affinché la nuova autorizzazione diventi effettiva. Selezionare quindi **Concedi consenso amministratore per _\<tenant>_**. Autenticare l'account nella nuova finestra e concedere all'applicazione l'accesso seguendo le istruzioni riportate.  
 
-8. Nella pagina **Autorizzazioni API** selezionare **Concedi consenso amministratore per _\<tenant dell'utente>_** e quindi selezionare **Sì**.  Dopo che l'app è stata registrata correttamente, le autorizzazioni dell'API vengono visualizzate come segue:
+9. Potrebbe essere necessario attendere alcuni minuti, in modo che il consenso dell'amministratore possa essere applicato.
+
+10. Aggiornare la pagina facendo clic sul pulsante **Aggiorna** nella parte superiore della pagina. Verificare che sia stato concesso il consenso dell'amministratore per l'autorizzazione **update_device_attributes**. 
+
+11. Rimuovere il consenso dell'amministratore dall'autorizzazione **User.Read** selezionando il menu **...** e scegliendo **Revoca consenso amministratore**.
+
+12. Sarà inoltre necessario rimuovere l'autorizzazione **User. Read**. Selezionare il menu **...** per **User.Read** e selezionare **Rimuovi autorizzazione**. 
+
+8. Dopo la registrazione corretta dell'app, le autorizzazioni API devono contenere solo un'autorizzazione denominata **update_device_attributes** e devono essere visualizzate come segue:
 
    ![Autorizzazioni corrette](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

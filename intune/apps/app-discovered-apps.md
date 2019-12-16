@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564253"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899403"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -60,12 +60,13 @@ L'elenco seguente include il tipo di piattaforma app, le app monitorate per i di
 | Windows Phone 8 | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
 | Windows RT | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
 | iOS | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
-| macOS | Tutte le app installate nel dispositivo | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
+| macOS | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android Enterprise | Solo le app gestite | Solo le app installate nel profilo di lavoro | Ogni 7 giorni dalla registrazione del dispositivo |
 
 > [!NOTE]
-> I dispositivi aggiunti ad Azure AD ibrido in Windows 10, come indicato nel carico di lavoro di gestione delle app in Configuration Manager, attualmente non raccolgono l'inventario delle app con l'estensione di gestione di Intune in base alla pianificazione precedente. Per attenuare questo problema, il carico di lavoro di gestione delle app in Configuration Manager deve passare a Intune per consentire l'installazione di IME nel dispositivo. IME è necessario per l'inventario di Win32 e la distribuzione di PowerShell. Si noti che eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](../fundamentals/in-development.md) e/o [novità](../fundamentals/whats-new.md).
+> - I dispositivi aggiunti ad Azure AD ibrido in Windows 10, come indicato nel carico di lavoro di gestione delle app in Configuration Manager, attualmente non raccolgono l'inventario delle app con l'estensione di gestione di Intune in base alla pianificazione precedente. Per attenuare questo problema, il carico di lavoro di gestione delle app in Configuration Manager deve passare a Intune per consentire l'installazione di IME nel dispositivo. IME è necessario per l'inventario di Win32 e la distribuzione di PowerShell. Si noti che eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](../fundamentals/in-development.md) e/o [novità](../fundamentals/whats-new.md).
+> - I dispositivi macOS personali registrati prima di novembre 2019 possono continuare a mostrare tutte le app installate nel dispositivo fino a quando i dispositivi non vengono registrati nuovamente.
 
 Il numero di app individuate potrebbe non corrispondere al conteggio degli stati di installazione delle app. Le possibilità delle incoerenze includono:
 

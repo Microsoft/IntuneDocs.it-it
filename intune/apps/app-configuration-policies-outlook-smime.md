@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564196"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000415"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configurare S/MIME con Outlook per iOS
 
 Secure/Multipurpose Internet Mail Extensions (S/MIME) offre un livello aggiuntivo di sicurezza per i messaggi di posta elettronica inviati da e verso un account di Exchange ActiveSync (EAS). [Microsoft Outlook](https://aka.ms/omsmime) può usare il protocollo S/MIME per consentire agli utenti di crittografare sia i messaggi in uscita sia gli allegati, assicurando così che solo il destinatario previsto possa leggere e accedere al contenuto del messaggio quando si usano account di Office 365. Gli utenti possono anche firmare digitalmente un messaggio in modo che i destinatari possano verificare l'identità del mittente e confermare che il messaggio non è stato manomesso. Questa funzionalità è possibile tramite l'uso di certificati. Per altre informazioni, vedere [Informazioni su S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
+
+> [!NOTE]
+> Questa funzionalità è stata posticipata, ma verrà presto rilasciata.
 
 > [!NOTE]
 > In questo argomento viene descritto come distribuire certificati radice trusted tramite [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Microsoft Endpoint Manager è una singola piattaforma integrata per la gestione di tutti gli endpoint. L'interfaccia di amministrazione di Microsoft Endpoint Manager si integra con System Center Configuration Manager e Microsoft Intune.
@@ -78,9 +81,6 @@ Verrà visualizzato il riquadro **Aggiungi i criteri di configurazione**.
 6. Fare clic su **Impostazioni di configurazione** per aggiungere le impostazioni di configurazione. 
     - Selezionare **Usa progettazione configurazione** accanto a **Formato delle impostazioni di configurazione** e accettare le impostazioni predefinite. Per altre informazioni, vedere [Impostazioni di configurazione di Microsoft Outlook](~/apps/app-configuration-policies-outlook.md).
 7. Fare clic su **S/MIME** per visualizzare le **Impostazioni di S/MIME per Outlook**.
-
-    ![Screenshot delle impostazioni di S/MIME per Outlook per iOS](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. Impostare **Abilita S/MIME** su **Sì**.
 9. Impostare **Distribuisci certificati S/MIME da Intune** su **Sì**.
 10. In **Certificati di firma** scegliere una delle opzioni seguenti accanto a **Tipo di profilo di certificato**:

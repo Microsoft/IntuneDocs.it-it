@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712206"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991774"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -47,6 +47,8 @@ L'azione **Cancella** riporta un dispositivo alle impostazioni predefinite di fa
 
 L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
 
+L'opzione **Perform protected wipe** (Esegui cancellazione dei dati protetta) garantisce che l'azione di cancellazione dei dati non possa essere elusa spegnendo il dispositivo. Una cancellazione dei dati protetta continuerà a provare a reimpostare il dispositivo fino a quando non riesce. In alcune configurazioni questa azione potrebbe impedire il riavvio del dispositivo.
+
 I criteri MDM verranno riapplicati alla successiva connessione del dispositivo a Intune.
 
 La cancellazione è utile per reimpostare un dispositivo prima di assegnarlo a un nuovo utente o nel caso in cui il dispositivo sia stato smarrito o rubato. Scegliere l'azione **Cancella** con cautela. Non sarà possibile recuperare i dati nel dispositivo.
@@ -57,7 +59,7 @@ La cancellazione è utile per reimpostare un dispositivo prima di assegnarlo a u
 3. Selezionare **Dispositivi** > **Tutti i dispositivi**.
 4. Selezionare il nome del dispositivo di cui si vuole eseguire la cancellazione.
 5. Nel riquadro in cui appare il nome del dispositivo selezionare **Cancella**.
-6. Per Windows 10 versione 1709 o successiva è inoltre disponibile l'opzione **Mantieni lo stato della registrazione e l'account utente**. 
+6. Per Windows 10 versione 1709 o successiva, è anche disponibile l'opzione **Cancella i dati del dispositivo ma mantieni lo stato della registrazione e l'account utente associato**. 
     
     |Mantenuti durante una cancellazione |Non mantenuti|
     | -------------|------------|

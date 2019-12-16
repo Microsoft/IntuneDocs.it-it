@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889531"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946660"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Windows 10 e versioni successive per contrassegnare un dispositivo come conforme o non conforme in Intune
 
@@ -65,7 +65,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 Altre risorse:
 
 - Per informazioni dettagliate sul funzionamento del servizio di attestazione dell'integrità, vedere [CSP di attestazione dell'integrità](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
-- [Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
+- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643) (Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune)
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
@@ -161,6 +161,7 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 ### <a name="encryption"></a>Crittografia
 
 - **Crittografia dell'archivio dati nel dispositivo**:  
+  Questa impostazione si applica a tutte le unità in un dispositivo.
   - **Non configurato** (*impostazione predefinita*)
   - **Rendi obbligatorio**: usare *Rendi obbligatorio* per crittografare l'archivio dati nei dispositivi.
 
@@ -196,9 +197,9 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 
 *Con Windows 10 desktop sono supportate le seguenti impostazioni di conformità.*
 
-- **Antimalware di Microsoft Defender**:  
+- **Microsoft Defender Antimalware**:  
   - **Non configurato** (*impostazione predefinita*): Intune non controlla il servizio né modifica le impostazioni esistenti.
-  - **Richiedi** : attiva il servizio anti-malware di Microsoft Defender e impedisce agli utenti di disattivarlo. 
+  - **Richiedi** : attiva il servizio anti-malware di Microsoft Defender e impedisce agli utenti di disattivarlo.
 
 - **Versione minima di Microsoft Defender antimalware**:  
   Immettere la versione minima consentita del servizio Microsoft Defender anti-malware. Immettere ad esempio `4.11.0.0`. Quando viene lasciato vuoto, è possibile usare qualsiasi versione di Microsoft Defender anti-malware Service.  
@@ -206,10 +207,12 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
   *Per impostazione predefinita, non è configurata alcuna versione*.
 
 - **Microsoft Defender antimalware Security Intelligence**è aggiornato:  
-  Controlla gli aggiornamenti della protezione da virus e minacce per la protezione di Windows nei dispositivi.  
+  Controlla gli aggiornamenti della protezione da virus e minacce per la protezione di Windows nei dispositivi.
   - **Non configurato** (*impostazione predefinita*): Intune non impone alcun requisito.
-  - **Richiedi** : impone l'aggiornamento di Microsoft Defender Security Intelligence. 
+  - **Richiedi** : impone l'aggiornamento di Microsoft Defender Security Intelligence.
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Per ulteriori informazioni, vedere [Security Intelligence Updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 - **Protezione in tempo reale**:  

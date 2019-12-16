@@ -1,11 +1,11 @@
 ---
 title: Criteri di conformità dei dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Informazioni introduttive sull'uso dei criteri di conformità, panoramica dei livelli di stato e gravità, uso dello stato Periodo di tolleranza, uso dell'accesso condizionale, gestione dei dispositivi senza un criterio assegnato e differenze di conformità tra il portale di Azure e il portale classico in Microsoft Intune
+description: Informazioni introduttive sull'uso dei criteri di conformità, panoramica dei livelli di stato e gravità, uso dello stato InGracePeriod, uso dell'accesso condizionale e gestione dei dispositivi senza criteri assegnati.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749179"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860296"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Impostare regole sui dispositivi per consentire l'accesso alle risorse dell'organizzazione tramite Intune
 
@@ -100,7 +100,7 @@ Intune include anche un set di impostazioni dei criteri di conformità predefini
   - I dispositivi consentano al portale aziendale di usare servizi di posizione.
   - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri. Se il dispositivo non si sposta di 500 metri entro 72 ore, l'utente deve aprire l'app Portale aziendale per la valutazione avanzata dello stato jailbreak.
 
-- **Periodo di validità dello stato di conformità (giorni)** : immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
+- **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 
 È possibile usare i criteri predefiniti per monitorare queste impostazioni. Intune inoltre [aggiorna o verifica la presenza di aggiornamenti](create-compliance-policy.md#refresh-cycle-times) a diversi intervalli, a seconda della piattaforma del dispositivo. Per altre informazioni, vedere [Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune](../configuration/device-profile-troubleshoot.md).
 
@@ -130,21 +130,6 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 
 - Se all'utente si applica un criterio di accesso condizionale, il dispositivo viene bloccato.
 - L'app Portale aziendale segnala all'utente eventuali problemi di conformità.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Differenze tra portale di Azure classico e Portale di Azure
-
-La differenza principale rispetto all'uso dei criteri di conformità dei dispositivi nel portale di Azure:
-
-- Nel portale di Azure i criteri di conformità vengono creati separatamente per ogni piattaforma supportata
-- Nel portale di Azure classico un criterio di conformità è comune a tutte le piattaforme supportate
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-I criteri di conformità dei dispositivi creati nel [portale classico](https://manage.microsoft.com) non compaiono nel [portale di Azure](https://portal.azure.com). Tali criteri sono tuttavia destinati agli utenti e gestibili tramite il portale di classico.
-
-Per usare le funzionalità relative alla conformità dei dispositivi nel portale di Azure, è necessario creare nuovi criteri di conformità dei dispositivi nel portale stesso. Se si assegna un criterio di conformità dei dispositivi nel portale di Azure a un utente al quale è assegnato un criterio di conformità dei dispositivi anche dal portale classico, i criteri di conformità dei dispositivi dal portale di Azure avranno la precedenza rispetto a quelli creati nel portale classico.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

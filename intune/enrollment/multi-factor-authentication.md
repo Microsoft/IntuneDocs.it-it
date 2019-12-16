@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503117"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955389"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Richiedere l'autenticazione a più fattori per le registrazioni di dispositivi Intune
 
@@ -50,18 +50,17 @@ Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, segu
 >[!Important]
 >Non configurare le **regole di accesso in base al dispositivo** per la registrazione di Microsoft Intune.
 
-1. Accedere al [portale di Microsoft Azure](https://portal.azure.com) con le credenziali personali.
-2. Nel portale passare a **Intune** e scegliere **Accesso condizionale**. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.
-4. Scegliere **Nuovo criterio**.
-5. In **Nuovo** criterio digitare un nome descrittivo per il criterio.
-6. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**. 
-7. In **Utenti e gruppi** scegliere **Selezionare utenti o gruppi** e selezionare **Utenti e gruppi**. Quindi selezionare gli utenti e/o i gruppi che riceveranno questi criteri e scegliere **Fine**.
-8. Nella sezione **Assegnazioni** scegliere **App cloud**.
-9. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**. Scegliendo **Registrazione di Microsoft Intune**, l'autenticazione a più fattori dell'accesso condizionale viene applicata solo alla registrazione del dispositivo (richiesta di autenticazione a più fattori una sola volta).
-10. Nella sezione **Assegnazioni** in **Condizioni** non è necessario configurare impostazioni per MFA.
-11. Nella sezione **Controlli di accesso** scegliere **Concedi**.
-12. In **Concedi** scegliere **Concedi accesso** e quindi selezionare **Richiedi autenticazione a più fattori**. Non selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** perché non è possibile valutare la conformità di un dispositivo fino a quando non è registrato. Quindi scegliere **Seleziona**.
-13. In **Nuovo criterio** scegliere **Attiva criterio** > **Sì** e quindi scegliere **Crea**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), scegliere **Dispositivi** > **Accesso condizionale**. Il nodo di accesso condizionale accessibile da *Intune* è lo stesso nodo accessibile da *Azure AD*.
+2. Scegliere **Nuovo criterio**.
+3. In **Nuovo** criterio digitare un nome descrittivo per il criterio.
+4. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**. 
+5. In **Utenti e gruppi** scegliere **Selezionare utenti o gruppi** e selezionare **Utenti e gruppi**. Quindi selezionare gli utenti e/o i gruppi che riceveranno questi criteri e scegliere **Fine**.
+6. Nella sezione **Assegnazioni** scegliere **App cloud**.
+7. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**. Scegliendo **Registrazione di Microsoft Intune**, l'autenticazione a più fattori dell'accesso condizionale viene applicata solo alla registrazione del dispositivo (richiesta di autenticazione a più fattori una sola volta).
+8. Nella sezione **Assegnazioni** in **Condizioni** non è necessario configurare impostazioni per MFA.
+9. Nella sezione **Controlli di accesso** scegliere **Concedi**.
+10. In **Concedi** scegliere **Concedi accesso** e quindi selezionare **Richiedi autenticazione a più fattori**. Non selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** perché non è possibile valutare la conformità di un dispositivo fino a quando non è registrato. Quindi scegliere **Seleziona**.
+11. In **Nuovo criterio** scegliere **Attiva criterio** > **Sì** e quindi scegliere **Crea**.
 
 
 

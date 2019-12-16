@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498944"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899420"
 ---
 # <a name="app-protection-policies-overview"></a>Panoramica dei criteri di protezione app
 
@@ -177,7 +177,7 @@ Per poter usare le app [Word, Excel e PowerPoint](https://products.office.com/bu
   > Le app per dispositivi mobili di Office attualmente supportano solo SharePoint Online e SharePoint locale.
 
 ### <a name="managed-location-needed-for-office"></a>Percorso gestito per Office
-È un percorso gestito, ad esempio OneDrive, per Office. Intune contrassegna tutti i dati nell'app come "aziendali" o "personali". Quando hanno origine da una sede aziendale, i dati vengono considerati "aziendali". Per le app di Office, Intune considera come sedi aziendali la posta elettronica (Exchange) o l'archiviazione cloud (app OneDrive con un account OneDrive for Business).
+Per Office è necessario un percorso gestito, ad esempio OneDrive. Intune contrassegna tutti i dati nell'app come "aziendali" o "personali". Quando hanno origine da una sede aziendale, i dati vengono considerati "aziendali". Per le app di Office, Intune considera come sedi aziendali la posta elettronica (Exchange) o l'archiviazione cloud (app OneDrive con un account OneDrive for Business).
 
 ### <a name="skype-for-business"></a>Skype for Business
 Per poter usare Skype for Business, sono necessari requisiti aggiuntivi. Vedere i requisiti della licenza per [Skype for Business](https://products.office.com/skype-for-business/it-pros). Per le configurazioni ibride e locali di Skype for Business, vedere rispettivamente [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (Disponibilità generale pe l'autenticazione moderna ibrida per Skype for Business) [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (Autenticazione moderna per Skype for Business locale con AAD).
@@ -215,12 +215,12 @@ Il PIN è un codice di accesso usato per verificare che l'accesso ai dati dell'o
 **Richiesta di PIN**<br>
 Intune richiede l'immissione del PIN dell'app dell'utente quando quest'ultimo sta per accedere ai dati "aziendali". Nelle app a identità multipla, ad esempio Word,Excel o PowerPoint, all'utente viene richiesto il PIN quando tenta di aprire un file o un documento "aziendale". Nelle app a identità singola, ad esempio app line-of-business gestite tramite lo [strumento di wrapping delle app di Intune](../developer/apps-prepare-mobile-application-management.md), il PIN viene richiesto all'avvio, poiché [Intune App SDK](../developer/app-sdk.md) riconosce che l'esperienza dell'utente nell'app è sempre "aziendale".
 
-**Frequenza di richiesta del PIN**<br>
-L'amministratore IT può definire l'impostazione dei criteri di protezione delle app di Intune **Controlla di nuovo i requisiti di accesso dopo (minuti)** nella console di amministrazione di Intune. Questa impostazione specifica il periodo di tempo che deve trascorrere prima che i requisiti di accesso vengano controllati nel dispositivo e prima che venga nuovamente visualizzata la schermata del PIN dell'applicazione. Ecco tuttavia alcuni dettagli importanti sul PIN che influiscono sulla frequenza con cui viene richiesto il PIN all'utente:
+**Frequenza di richiesta del PIN o di richiesta delle credenziali aziendali**<br>
+L'amministratore IT può definire l'impostazione dei criteri di protezione delle app di Intune **Controlla di nuovo i requisiti di accesso dopo (minuti)** nella console di amministrazione di Intune. Questa impostazione specifica il periodo di tempo che deve trascorrere prima che i requisiti di accesso vengano controllati nel dispositivo e prima che venga nuovamente visualizzata la schermata del PIN dell'applicazione o di richiesta delle credenziali aziendali. Ecco tuttavia alcuni dettagli importanti sul PIN che influiscono sulla frequenza con cui viene richiesto il PIN all'utente:
 
-- **Il PIN viene condiviso tra le app dello stesso server di pubblicazione per migliorare l'usabilità:**<br> in iOS, un solo PIN viene condiviso da tutte le app **dello stesso server di pubblicazione**. In Android un solo PIN viene condiviso da tutte le app.
-  - **Il comportamento di *Controlla di nuovo i requisiti di accesso dopo (minuti)* dopo un riavvio del dispositivo:**<br> un "timer del PIN" tiene traccia del numero di minuti di inattività che determinano quando visualizzare di nuovo il PIN dell'app di Intune. In iOS, il timer del PIN è indipendente dal riavvio del dispositivo. Di conseguenza, il riavvio del dispositivo non ha effetto sul numero di minuti durante i quali l'utente è rimasto inattivo da un'app iOS con i criteri PIN di Intune. In Android, il timer del PIN viene reimpostato al riavvio del dispositivo. Di conseguenza, le app Android con criteri di Intune richiederanno probabilmente un PIN dell'app indipendentemente dal valore dell'impostazione 'Controlla di nuovo i requisiti di accesso dopo (minuti)' **dopo un riavvio del dispositivo**.  
-  - **Il timer associato al PIN è di natura sequenziale:**<br> quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia la posizione in primo piano (area di input principale) nel dispositivo, il timer del PIN immesso viene reimpostato. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto.
+- **Il PIN viene condiviso tra le app dello stesso server di pubblicazione per migliorare l'usabilità:**<br> in iOS, un solo PIN viene condiviso da tutte le app **dello stesso server di pubblicazione**. Ad esempio, tutte le app Microsoft condividono lo stesso PIN. In Android un solo PIN viene condiviso da tutte le app.
+- **Il comportamento di *Controlla di nuovo i requisiti di accesso dopo (minuti)* dopo un riavvio del dispositivo:**<br> un timer tiene traccia del numero di minuti di inattività che determinano quando visualizzare di nuovo il PIN dell'app di Intune o la richiesta delle credenziali aziendali. In iOS, il timer è indipendente dal riavvio del dispositivo. Di conseguenza, il riavvio del dispositivo non ha effetto sul numero di minuti durante i quali l'utente è rimasto inattivo da un'app iOS con criteri assegnati per il PIN di Intune o le credenziali aziendali. In Android, il timer viene reimpostato al riavvio del dispositivo. Di conseguenza, le app Android con criteri per il PIN di Intune (o le credenziali aziendali) richiederanno probabilmente un PIN dell'app o le credenziali aziendali indipendentemente dal valore dell'impostazione 'Controlla di nuovo i requisiti di accesso dopo (minuti)' **dopo un riavvio del dispositivo**.  
+- **Il timer associato al PIN è di natura sequenziale:**<br> quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia la posizione in primo piano (area di input principale) nel dispositivo, il timer immesso viene reimpostato per tale PIN. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto.
 
 Per i dispositivi iOS, anche se il PIN è condiviso tra app di diversi server di pubblicazione, la richiesta verrà nuovamente visualizzata quando il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** verrà nuovamente raggiunto per l'app che non è l'area di input principale. Quindi, ad esempio, un utente ha l'app _A_ dal server di pubblicazione _X_ e l'app _B_ dal server di pubblicazione _Y_ e queste due app condividono lo stesso PIN. L'utente è concentrato sull'app _A_ (in primo piano) e l'app _B_ è ridotta a icona. Quando si raggiunge il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** e si passa all'app _B_, è necessario il PIN.
 
@@ -262,7 +262,6 @@ Vengono crittografati solo i dati contrassegnati come "aziendali" in base ai cri
 Per le app line-of-business gestite dallo [strumento di wrapping delle app di Intune](../developer/apps-prepare-mobile-application-management.md), tutti i dati delle app vengono considerati "aziendali".
 
 **Cancellazione remota dei dati**<br>
-
 Intune può cancellare i dati dell'app in tre modi diversi: 
 - Cancellazione completa nel dispositivo
 - Cancellazione selettiva per MDM 

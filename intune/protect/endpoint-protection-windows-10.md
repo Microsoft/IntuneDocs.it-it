@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058418"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune
@@ -239,7 +239,7 @@ Le impostazioni seguenti sono elencate una sola volta in questo articolo, ma si 
   CSP del firewall: [DisableInboundNotifications](https://go.microsoft.com/fwlink/?linkid=8725630)  
 
   - **Non configurato**  
-  - **Blocca** -Nascondi notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
+  - **Blocca** Consente di nascondere le notifiche da usare quando un'app è bloccata dall'ascolto su una porta.  
   - **Consenti**: abilita questa impostazione e può visualizzare una notifica agli utenti quando un'app non è autorizzata all'ascolto su una porta.  
 
 - **Azione predefinita per le connessioni in ingresso**  
@@ -495,28 +495,28 @@ Le impostazioni di base sono impostazioni BitLocker universali per tutti i tipi 
     **Impostazione predefinita**: XTS-AES 128 bit  
    
     scegliere il metodo di crittografia per le unità del sistema operativo. È consigliabile usare l'algoritmo XTS-AES.  
-    - **AES-CBC 128 bit**  
-    - **AES-CBC 256 bit**  
-    - **XTS-AES 128 bit**  
-    - **XTS-AES 256 bit**  
+    - **AES-CBC a 128 bit**  
+    - **AES-CBC a 256 bit**  
+    - **XTS-AES a 128 bit**  
+    - **XTS-AES a 256 bit**  
 
   - **Crittografia per unità dati fisse**  
     **Impostazione predefinita**: AES-CBC 128 bit  
    
     scegliere il metodo di crittografia per le unità dati fisse (predefinite). È consigliabile usare l'algoritmo XTS-AES.  
-    - **AES-CBC 128 bit**  
-    - **AES-CBC 256 bit**  
-    - **XTS-AES 128 bit**  
-    - **XTS-AES 256 bit**  
+    - **AES-CBC a 128 bit**  
+    - **AES-CBC a 256 bit**  
+    - **XTS-AES a 128 bit**  
+    - **XTS-AES a 256 bit**  
 
   - **Crittografia per unità dati rimovibili**  
     **Impostazione predefinita**: AES-CBC 128 bit  
 
     scegliere il metodo di crittografia per le unità dati rimovibili. Se l'unità rimovibile viene usata con dispositivi che non eseguono Windows 10, è consigliabile usare l'algoritmo AES-CBC.  
-    - **AES-CBC 128 bit**  
-    - **AES-CBC 256 bit**  
-    - **XTS-AES 128 bit**  
-    - **XTS-AES 256 bit**  
+    - **AES-CBC a 128 bit**  
+    - **AES-CBC a 256 bit**  
+    - **XTS-AES a 128 bit**  
+    - **XTS-AES a 256 bit**  
 
 ### <a name="bitlocker-os-drive-settings"></a>Impostazioni delle unità del sistema operativo di BitLocker  
 
@@ -636,7 +636,7 @@ Queste impostazioni si applicano in modo specifico alle unità dati del sistema 
     - **Backup delle password di ripristino e dei pacchetti di chiavi**  
     - **Backup solo delle password di ripristino**  
 
-  - **Rotazione della password di ripristino basata su client**  
+  - **Rotazione delle password di ripristino basata su client**  
     **Impostazione predefinita**: rotazione delle chiavi abilitata per i dispositivi aggiunti a Azure ad  
     CSP BitLocker: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Queste impostazioni si applicano in modo specifico alle unità dati fisse.
     - **Backup delle password di ripristino e dei pacchetti di chiavi**  
     - **Backup solo delle password di ripristino**  
 
-  - **Rotazione della password di ripristino basata su client**  
+  - **Rotazione delle password di ripristino basata su client**  
     **Impostazione predefinita**: rotazione delle chiavi abilitata per i dispositivi aggiunti a Azure ad  
     CSP BitLocker: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -771,7 +771,7 @@ Queste impostazioni si applicano in modo specifico alle unità dati rimovibili.
     - **Blocca**: consente l'accesso in scrittura ai dispositivi configurati in un'altra organizzazione.  
     - **Non configurato** -Nega accesso in scrittura.  
  
-## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender Exploit Guard  
 
 Usare la [protezione dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) per gestire e ridurre la superficie di attacco delle app usate dai dipendenti.  
 

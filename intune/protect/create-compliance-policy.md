@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188271"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860231"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità in Microsoft Intune
 
@@ -92,7 +92,7 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
      - [Windows Phone 8.1, Windows 8.1 versioni successive](compliance-policy-create-windows-8-1.md)
      - [Windows 10 e versioni successive](compliance-policy-create-windows.md)  
 
-   - **Percorsi** *(Amministratore di dispositivi Android)* : Nei criteri è possibile forzare la conformità in base al percorso del dispositivo. Scegliere un percorso esistente. Se non si ha ancora una posizione, Vedere [Usare percorsi (limite della rete)](use-network-locations.md) in Intune per alcuni indicazioni.  
+   - **Percorsi** *(Amministratore di dispositivi Android)*: Nei criteri è possibile forzare la conformità in base al percorso del dispositivo. Scegliere un percorso esistente. Se non si ha ancora una posizione, Vedere [Usare percorsi (limite della rete)](use-network-locations.md) in Intune per alcuni indicazioni.  
 
    - **Azioni per la mancata conformità**: Per i dispositivi che non soddisfano i criteri di conformità, è possibile aggiungere una sequenza di azioni da applicare automaticamente. Se il dispositivo è contrassegnato come non conforme, è possibile modificare la pianificazione, ad esempio dopo un giorno. È anche possibile configurare una seconda azione con cui inviare un messaggio di posta elettronica all'utente se il dispositivo risulta non conforme.
 
@@ -100,7 +100,7 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
      Si supponga, ad esempio, di usare la funzionalità Percorsi e di aggiungere un percorso in un criterio di conformità. L'azione predefinita per la mancata conformità viene applicata quando si seleziona almeno un percorso. Se il dispositivo non è connesso ai percorsi selezionati, viene immediatamente considerato non conforme. È possibile concedere agli utenti un periodo di tolleranza, ad esempio un giorno.
 
-   - **Ambito (tag)** : I tag di ambito sono un metodo molto efficiente per assegnare e filtrare criteri a gruppi specifici, ad esempio ai reparti Vendite o Risorse umane, ai dipendenti di una filiale e così via. Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito ai criteri di conformità. Per altre informazioni, vedere [Filtrare i criteri con tag di ambito](../fundamentals/scope-tags.md).
+   - **Ambito (tag)**: i tag di ambito sono un ottimo modo per filtrare i profili in base a gruppi specifici, ad esempio `US-NC IT Team` o `JohnGlenn_ITDepartment`. Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito ai criteri di conformità. Per altre informazioni, vedere [Filtrare i criteri con tag di ambito](../fundamentals/scope-tags.md).
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche. Il criterio viene creato e visualizzato nell'elenco. Assegnare quindi il criterio ai gruppi.
 

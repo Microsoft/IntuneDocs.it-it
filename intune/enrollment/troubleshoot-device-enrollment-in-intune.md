@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713489"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832735"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Microsoft Intune
 
@@ -64,7 +64,7 @@ Questi problemi possono verificarsi in tutte le piattaforme di dispositivi.
 
 Verificare che all'utente non siano assegnati più dispositivi rispetto al numero massimo seguendo questa procedura:
 
-1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Registrazione del dispositivo** > **Restrizioni registrazione** > **Restrizione sul limite di dispositivi**. Prendere nota del valore nella colonna **Limite di dispositivi**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Restrizioni registrazione** > **Restrizione sul limite di dispositivi**. Prendere nota del valore nella colonna **Limite di dispositivi**.
 
 2. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Utenti** > **Tutti gli utenti** > selezionare l'utente > **Dispositivi**. Prendere nota del numero di dispositivi.
 
@@ -242,7 +242,7 @@ Per risolvere il problema, importare i certificati nei certificati personali del
 3. Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
 4. Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
 5. Per ogni certificato padre, scegliere **Visualizza certificato**.
-6. Scegliere **Dettagli** > **Copia su file...** .
+6. Scegliere **Dettagli** > **Copia su file...**.
 7. Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
 8. Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
 9. Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.
@@ -374,7 +374,7 @@ Questo problema può verificarsi se:
 4. Chiedere all'utente di riavviare il processo di registrazione.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Determinare se è presente un problema con il token VPP
-1. Passare a **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > nome del token > **Profili** > nome del profilo > **Gestisci** > **Proprietà**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **iOS** > **Registrazione di iOS** > **Token del programma di registrazione** > nome del token > **Profili** > nome del profilo > **Gestisci** > **Proprietà**.
 2. Esaminare le proprietà per controllare se vengono visualizzati errori simili al seguente:
     - Il token è scaduto.
     - Il token non rientra tra le licenze di Portale aziendale.
@@ -384,13 +384,13 @@ Questo problema può verificarsi se:
 3. Risolvere i problemi del token.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Identificare i dispositivi bloccati dal token VPP
-1. Passare a **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > nome del token > **Dispositivi**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivo** > **iOS** > **Registrazione di iOS** > **Token del programma di registrazione** > nome del token > **Dispositivi**.
 2. Filtrare la colonna dello **stato del profilo** in base a **Bloccato**.
 3. Prendere nota dei numeri di serie dei dispositivi con stato **Bloccato**.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>Cancellare in remoto i dati dei dispositivi bloccati
 Dopo aver risolto i problemi del token VPP, è necessario cancellare i dati dei dispositivi che sono bloccati.
-1. Passare a **Intune** > **Dispositivi** > **Tutti i dispositivi** > **Colonne**  >  **Numero di serie** > **Applica**. 
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Tutti i dispositivi** > **Colonne** > **Numero di serie** > **Applica**. 
 2. Selezionare ogni dispositivo bloccato nell'elenco **Tutti i dispositivi** e quindi scegliere **Cancella** > **Sì**.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Chiedere agli utenti di riavviare il processo di registrazione
@@ -414,8 +414,8 @@ Dopo aver cancellato i dispositivi bloccati, chiedere agli utenti di riavviare i
 - Se l'organizzazione ha attivato restrizioni di registrazione che bloccano i dispositivi macOS personali, è necessario procedere manualmente per [aggiungere il numero di serie del dispositivo personale](corporate-identifiers-add.md#manually-enter-corporate-identifiers) a Intune.  
 - Se il dispositivo è ancora assegnato a un altro utente in Intune, il proprietario precedente non ha usato l'app Portale aziendale per rimuoverlo o ripristinarlo. Per pulire il record del dispositivo non aggiornato da Intune:  
 
-    1. Andare a [Intune nel portale di Azure](https://portal.manage.microsoft.com) e accedere con le proprie credenziali amministrative.
-    2. Andare a Intune > **Dispositivi** > **Tutti i dispositivi**.  
+    1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) accedere con le credenziali amministrative.
+    2. Selezionare **Dispositivi** > **Tutti i dispositivi**.  
     3. Trovare il dispositivo che presenta il problema di registrazione. Eseguire la ricerca in base al nome del dispositivo o all'indirizzo MAC/HW per limitare i risultati.
     4. Selezionare il dispositivo > **Elimina**. Eliminare tutte le altre voci associate al dispositivo.  
 

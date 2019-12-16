@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74060032"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM per Intune  
@@ -1890,7 +1890,7 @@ Le impostazioni seguenti sono:
 - **Avvio di Adobe Reader in un processo figlio**  
 - **Avvio di app di comunicazione di Office in un processo figlio** 
 
-*[Nuovo]* [ **Microsoft Defender Firewall**](#microsoft-defender-firewall)
+*[New]* [**Microsoft Defender Firewall**](#microsoft-defender-firewall)
 - **Dominio del profilo firewall**  
   - **Connessioni in ingresso bloccate**  
   - **Connessioni in uscita obbligatorie**  

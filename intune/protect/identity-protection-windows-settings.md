@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502233"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Impostazioni dei dispositivi Windows 10 per abilitare Windows Hello for Business in Intune
@@ -129,7 +129,7 @@ Per altre informazioni sui profili di Windows Hello for Business in Intune, vede
 
   **Impostazione predefinita**: Non configurato
 
-- **Usare le chiavi di sicurezza per l'accesso**  
+- **Usa le chiavi di sicurezza per l'accesso**  
   Questa impostazione è disponibile per i dispositivi che eseguono Windows 10 versione 1903 o successiva. Usarlo per gestire il supporto per l'uso delle chiavi di sicurezza di Windows Hello per l'accesso.  
 
   - **Abilitato** : gli utenti possono usare una chiave di sicurezza di Windows Hello come credenziale di accesso per i PC assegnati a questi criteri. 

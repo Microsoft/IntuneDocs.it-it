@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410153"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992995"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -98,8 +98,7 @@ Selezionare uno stato nel grafico dello **stato di conformità del dispositivo**
 
 ![Scegliere lo stato non conforme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Questa azione apre la finestra **Conformità del dispositivo** e visualizza i dispositivi in un grafico **Stato del dispositivo**. Nel grafico vengono visualizzati altri dettagli sui dispositivi con tale stato, tra cui la piattaforma del sistema operativo, la data dell'ultima archiviazione e altro ancora. 
-
+Questa azione apre la finestra **Conformità del dispositivo** e visualizza i dispositivi in un grafico **Stato del dispositivo**. Nel grafico vengono visualizzati altri dettagli sui dispositivi con tale stato, tra cui la piattaforma del sistema operativo, la data dell'ultima archiviazione e altro ancora.
 ![Immagine del dashboard che visualizza altri dettagli sul dispositivo nello stato specifico](./media/compliance-policy-monitor/drill-down-details.png)
 
 Per visualizzare tutti i dispositivi di proprietà di un utente specifico, è anche possibile filtrare il report grafico digitando l'indirizzo di posta elettronica dell'utente.
@@ -132,7 +131,7 @@ Quando si seleziona il riquadro vengono visualizzati tutti i dispositivi senza c
 
 - Con l'impostazione di sicurezza **Contrassegna i dispositivi senza criteri di conformità assegnati come** è importante identificare i dispositivi senza criteri di conformità. Sarà quindi possibile assegnare loro almeno un criterio di conformità.
 
-  L'impostazione di sicurezza è configurabile nel portale di Intune. Passare a **Dispositivi** > **Criteri di conformità**  > **Impostazioni dei criteri di conformità**. Quindi impostare **Contrassegna i dispositivi senza criteri di conformità assegnati come** su **Conforme** o **Non conforme**. 
+  L'impostazione di sicurezza è configurabile nel portale di Intune. Passare a **Dispositivi** > **Criteri di conformità**  > **Impostazioni dei criteri di conformità**. Quindi impostare **Contrassegna i dispositivi senza criteri di conformità assegnati come** su **Conforme** o **Non conforme**.
 
   Leggere altre informazioni su questo [miglioramento alla sicurezza nel servizio Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -140,7 +139,7 @@ Quando si seleziona il riquadro vengono visualizzati tutti i dispositivi senza c
 
 ### <a name="per-policy-device-compliance"></a>Conformità dei dispositivi in base ai criteri
 
-Il grafico **Conformità dei criteri** illustra i criteri e il numero di dispositivi conformi e non conformi. 
+Il grafico **Conformità dei criteri** illustra i criteri e il numero di dispositivi conformi e non conformi.
 
 ![Visualizzare un elenco di criteri e il numero di dispositivi conformi e non conformi per tale criterio](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ Il grafico **Conformità dei criteri** illustra i criteri e il numero di disposi
 Il grafico **Conformità dell'impostazione** visualizza tutte le impostazioni dei criteri di conformità dei dispositivi, le piattaforme a cui vengono applicate le impostazioni dei criteri e il numero di dispositivi non conformi.
 
 ![Visualizzare un elenco di tutte le impostazioni nei vari criteri](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> I criteri possono essere assegnati a un dispositivo e a un utente nello stesso dispositivo. In alcuni scenari, un dispositivo può essere sincronizzato prima che l'utente esegua l'accesso, ad esempio quando il dispositivo viene riavviato. La conformità può valutare l'utente e mostrare il dispositivo come non conforme. Questo comportamento può anche indicare l'account di sistema come utente non conforme.
->
-> Si tratta di un problema noto con i dispositivi Windows 10 multiutente. Eventuali modifiche o aggiornamenti per questo comportamento vengono annunciati in [in fase di sviluppo](../fundamentals/in-development.md) e/o [novità](../fundamentals/whats-new.md).
 
 ## <a name="view-compliance-reports"></a>Visualizzare i report di conformità
 
@@ -183,14 +177,15 @@ Questa funzionalità è inclusa nei report di stato del dispositivo:
 2. Selezionare un criterio > **Panoramica**. In questa visualizzazione l'assegnazione del criterio include gli stati seguenti:
 
     - **Operazione completata**: i criteri sono stati applicati.
-    - **Errore**: non è stato possibile applicare i criteri. Il messaggio in genere viene visualizzato con un codice di errore collegato a una spiegazione. 
+    - **Errore**: non è stato possibile applicare i criteri. Il messaggio in genere viene visualizzato con un codice di errore collegato a una spiegazione.
     - **Conflitto**: due impostazioni sono applicate allo stesso dispositivo e Intune non è in grado di risolvere il conflitto. Un amministratore deve esaminare la situazione.
-    - **Pending**: il dispositivo non ha ancora contattato Intune per ricevere i criteri. 
-    - **Non applicabile**: il dispositivo non può ricevere i criteri. Ad esempio, i criteri aggiornano un'impostazione specifica di iOS 11.1, ma il dispositivo usa iOS 10. 
+    - **Pending**: il dispositivo non ha ancora contattato Intune per ricevere i criteri.
+    - **Non applicabile**: il dispositivo non può ricevere i criteri. Ad esempio, i criteri aggiornano un'impostazione specifica di iOS 11.1, ma il dispositivo usa iOS 10.
 
 3. Per visualizzare i dettagli sui dispositivi usando questo criterio, selezionare uno stato. Selezionare, ad esempio, **Operazione completata**. La finestra successiva conterrà i dettagli di un dispositivo specifico, tra cui il nome e lo stato di distribuzione.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Come vengono risolti i conflitti di criteri in Intune
+
 Possono verificarsi conflitti se vengono applicati più criteri di Intune a un dispositivo. Se le impostazioni dei criteri si sovrappongono, Intune risolve eventuali conflitti in base alle regole seguenti:
 
 - Se le impostazioni in conflitto hanno origine da criteri di configurazione di Intune e da criteri di conformità, le impostazioni nei criteri di conformità hanno la precedenza rispetto a quelle dei criteri di configurazione, anche se queste ultime sono più sicure.

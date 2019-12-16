@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713089"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907220"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Reimpostare il passcode nei dispositivi Windows con Intune
 
@@ -66,7 +66,7 @@ Impostare il valore per questo CSP su **True**.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
 2. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
-3. Selezionare il dispositivo per il quale si vuole reimpostare il passcode. Nelle proprietà del dispositivo selezionare **Nuovo passcode**.
+3. Selezionare il dispositivo per il quale si vuole reimpostare il passcode. Nelle proprietà del dispositivo selezionare **Reimposta passcode**.
 4. Selezionare **Sì** per confermare. Il passcode viene generato e visualizzato nel portale per sette giorni successivi.
 
 ## <a name="next-step"></a>Passaggio successivo

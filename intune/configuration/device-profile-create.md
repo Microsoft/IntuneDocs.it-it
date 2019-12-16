@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390878"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860384"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
@@ -93,7 +93,7 @@ Questo articolo:
 
 ## <a name="scope-tags"></a>Tag di ambito
 
-Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito al profilo. I tag di ambito assegnano e filtrano criteri a gruppi specifici, ad esempio il reparto Risorse umane o i dipendenti di una filiale.
+Dopo aver aggiunto le impostazioni, si può anche aggiungere un tag di ambito al profilo. I tag di ambito filtrano i profili per gruppi IT specifici, ad esempio `US-NC IT Team` o `JohnGlenn_ITDepartment`.
 
 Per altre informazioni sui tag di ambito e le relative procedure, vedere [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 
@@ -180,11 +180,13 @@ Durante la creazione dei profili, tenere presenti le indicazioni seguenti:
 
 - Separare i criteri utente dai criteri del dispositivo.
 
-  Ad esempio [Modelli amministrativi in Intune](administrative-templates-windows.md) contiene centinaia di impostazioni ADMX. Questo modello indica se le impostazioni si applicano a utenti o dispositivi. Quando si creano modelli amministrativi, assegnare le impostazioni degli utenti a un gruppo di utenti e assegnare le impostazioni dei dispositivi a un gruppo di dispositivi.
+  Ad esempio [Modelli amministrativi in Intune](administrative-templates-windows.md) contiene centinaia di impostazioni ADMX. Questi modelli indicano se le impostazioni si applicano a utenti o dispositivi. Quando si creano modelli amministrativi, assegnare le impostazioni degli utenti a un gruppo di utenti e assegnare le impostazioni dei dispositivi a un gruppo di dispositivi.
 
   Nell'immagine seguente viene illustrato un esempio di impostazione che può essere applicata agli utenti e/o ai dispositivi:
 
   ![Modello amministrativo di Intune applicato a utenti e dispositivi](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- Ogni volta che si creano criteri restrittivi, comunicare questa modifica agli utenti. Ad esempio, se si modifica il requisito per il passcode da 4 a 6 caratteri, informare gli utenti prima di assegnare i criteri.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
