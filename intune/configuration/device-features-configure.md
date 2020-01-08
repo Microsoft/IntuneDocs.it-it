@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992934"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206721"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Aggiungere impostazioni relative alle funzionalità dei dispositivi iOS e macOS in Intune
 
@@ -84,7 +84,7 @@ Si applica a:
 
 ## <a name="home-screen-layout"></a>Layout della schermata iniziale
 
-Queste impostazioni configurano il layout delle app e le cartelle nel dock e nelle schermate iniziali dei dispositivi iOS e iPadOS. È possibile scegliere le opzioni seguenti:
+Queste impostazioni configurano il layout delle app e le cartelle nel dock e nelle schermate iniziali dei dispositivi iOS e iPadOS. È possibile scegliere:
 
 - Usare le impostazioni del **dock** per aggiungere app o cartelle allo schermo. Ad esempio, per visualizzare Safari e l'app di posta elettronica sul dock del dispositivo.
 - Aggiungere le **pagine** che verranno visualizzate nella schermata iniziale e le app che verranno visualizzate in ogni pagina. Ad esempio, aggiungere una pagina **Contoso** e aggiungere l'app Impostazioni in questa pagina.
@@ -129,7 +129,7 @@ Si applica a:
 
 - macOS 10.7 e versioni successive
 
-## <a name="single-sign-on"></a>Accesso Single Sign-On
+## <a name="single-sign-on"></a>Single Sign-On
 
 La maggior parte delle app line-of-business (LOB) richiedono un certo livello di autenticazione utente per il supporto della sicurezza. In molti casi l'autenticazione richiede di immettere ripetutamente le stesse credenziali. Per migliorare l'esperienza utente, gli sviluppatori possono creare app che usano l'accesso Single Sign-On (SSO). L'uso dell'accesso Single Sign-On riduce il numero di volte in cui un utente deve immettere le credenziali.
 
@@ -210,7 +210,7 @@ Si applica a:
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **macOS: Configura la schermata di accesso**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:  
         - **iOS/iPadOS**
         - **macOS**

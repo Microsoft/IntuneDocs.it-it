@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860384"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206670"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
@@ -49,7 +49,7 @@ Questo articolo:
 3. Selezionare **Crea profilo**. Immettere le proprietà seguenti:
 
    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di profilo è **Profilo di posta elettronica WP per l'intera azienda**.
-   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+   - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:  
 
        - **Android**
@@ -61,7 +61,7 @@ Questo articolo:
        - **Windows 10 e versioni successive**
 
    - **Tipo di profilo**: selezionare il tipo di impostazioni da creare. L'elenco visualizzato dipende dalla **piattaforma** scelta.
-   - **Impostazioni**: Gli articoli seguenti descrivono le impostazioni per ogni tipo di profilo:
+   - **Settings** (Impostazioni): Gli articoli seguenti descrivono le impostazioni per ogni tipo di profilo:
 
        - [Modelli amministrativi](administrative-templates-windows.md)
        - [Personalizzato](../custom-settings-configure.md)

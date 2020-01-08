@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563673"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205973"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Installare app di Office 365 in dispositivi Windows 10 con Microsoft Intune
 
@@ -79,7 +79,7 @@ In questo passaggio si specificano le informazioni sulla suite di app. Queste in
 2. Nel riquadro **Informazioni sulla suite di app** seguire questa procedura:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
     - **Descrizione della suite** : immettere una descrizione per la suite di app. Ad esempio, è possibile elencare le app selezionate da includere.
-    - **Editore**: come editore viene visualizzato Microsoft.
+    - **Autore**: come editore viene visualizzato Microsoft.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
@@ -197,7 +197,7 @@ Quando è possibile concludere che sia Intune che l'infrastruttura di rete funzi
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Errori durante l'installazione della suite di app
 
-Vedere [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) (Come abilitare la registrazione del Servizio di registrazione unificato di Office 365 ProPlus) per informazioni su come visualizzare i log di installazione dettagliati.
+Vedere [How to enable Office 365 ProPlus ULS logging](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) (Come abilitare la registrazione del Servizio di registrazione unificato di Office 365 ProPlus) per informazioni su come visualizzare i log di installazione dettagliati.
 
 Le tabelle seguenti elencano i codici di errore comuni che possono essere visualizzati e il relativo significato.
 

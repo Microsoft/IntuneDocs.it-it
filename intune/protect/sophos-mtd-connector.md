@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503749"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564918"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Connettore Sophos Mobile Threat Defense con Intune
 È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Sophos Mobile, una soluzione MTD (Mobile Threat Defense) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Sophos Mobile.
@@ -45,7 +45,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 **Accesso concesso dopo la correzione**:  
 ![Immagine concettuale dell'accesso concesso dopo la correzione](./media/sophos-mtd-connector/sophos_malicious_apps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete  
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce per la rete  
 Rilevare le minacce per la rete, ad esempio attacchi Man-in-the-middle, e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.  
 
 **Bloccare l'accesso alla rete tramite Wi-Fi**:  
@@ -72,7 +72,7 @@ Rilevare le minacce per la rete, ad esempio attacchi Man-in-the-middle, e impedi
 - Sottoscrizione di Microsoft Intune 
 - Sottoscrizione di Sophos Mobile Threat Defense
 
-Per altre informazioni, vedere il [sito Web Sophos](https://www.sophos.com/products/mobile-control).  
+Per altre informazioni, vedere il [sito Web Sophos](https://www.sophos.com/en-us/products/mobile-control.aspx).
 
 ## <a name="next-steps"></a>Passaggi successivi  
 - [Integrare Sophos Mobile con Intune](sophos-mtd-connector-integration.md)

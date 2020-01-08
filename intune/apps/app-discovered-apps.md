@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899403"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205531"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -54,7 +54,7 @@ L'elenco seguente include il tipo di piattaforma app, le app monitorate per i di
 
 | Piattaforma | Per i dispositivi di proprietà personale | Per i dispositivi di proprietà dell'azienda | Ciclo di aggiornamento |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Nota per le app Windows 10 (app Win32): [Richiede l'estensione di gestione di Intune](intune-management-extension.md) nel dispositivo | Non applicabile | Tutte le app Win32 disponibili nell'elenco Installazione applicazioni | Ogni 24 ore dalla registrazione del dispositivo |
+| Nota per le app Windows 10 (app Win32): [Richiede l'estensione di gestione di Intune](intune-management-extension.md) nel dispositivo | Non applicabile | Solo le app gestite | Ogni 24 ore dalla registrazione del dispositivo |
 | Windows 10 (app moderne) | Solo app moderne gestite | Tutte le app moderne installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Windows 8.1 | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
 | Windows Phone 8 | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |

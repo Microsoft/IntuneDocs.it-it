@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.openlocfilehash: 83b2ffc7e942492be4560a56af0f3514cb1638a4
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74319847"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206857"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android
 
@@ -45,7 +45,7 @@ Dopo aver assegnato i criteri ai gruppi di utenti o ai dispositivi Android, gli 
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio un buon nome di profilo è **Profilo VPN Android per app per l'intera azienda**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: Selezionare **Android**.
     - **Tipo di profilo**: selezionare **VPN**.
 
@@ -60,14 +60,14 @@ Prendere nota del valore **Nome connessione** specificato quando si crea il prof
 3. Immettere le proprietà seguenti:
 
     - **Nome**: Immettere un nome descrittivo per il profilo personalizzato. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio un buon nome di profilo è **Profilo VPN Android OMA-URI personalizzato per l'intera azienda**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: Selezionare **Android**.
     - **Tipo di profilo**: Selezionare **Personalizzato**.
 
 4. Scegliere **Impostazioni** > **Configura**.
 5. Nel riquadro **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
     - **Nome**: Immettere un nome per l'impostazione.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **OMA-URI**: Immettere `./Vendor/MSFT/VPN/Profile/*Name*/PackageList` dove *Name* è il nome della connessione annotato nel passaggio 1. In questo esempio la stringa è `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
     - **Tipo di dati**: Immettere **String**.
     - **Valore**: Immettere un elenco separato da punti e virgola dei pacchetti da associare al profilo. Se ad esempio si vuole che Excel e il browser Google Chrome usino la connessione VPN, immettere `com.microsoft.office.excel;com.android.chrome`.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72499126"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692110"
 ---
 # <a name="protecting-application-extensions"></a>Protezione delle estensioni delle applicazioni
 
@@ -51,7 +51,7 @@ Le connessioni all'account LinkedIn consentono agli utenti di visualizzare le in
 > [!NOTE]
 > L'integrazione di LinkedIn non è attualmente disponibile per i clienti del governo degli Stati Uniti e per le organizzazioni con cassette postali di Exchange Online ospitate in Australia, Canada, Cina, Francia, Germania, India, Corea del Sud, Regno Unito, Giappone e Sudafrica.
 
-Intune SDK e i criteri di protezione delle app di Intune non includono il supporto per la gestione delle connessioni all'account LinkedIn. Esistono tuttavia altri modi per gestirle. È possibile disabilitare le connessioni all'account LinkedIn per l'intera organizzazione, oppure abilitare le connessioni all'account LinkedIn per gruppi di utenti selezionati all'interno dell'organizzazione. Queste impostazioni interessano le connessioni LinkedIn nelle app di Office 365 in tutte le piattaforme (web, dispositivi mobili e desktop). È possibile scegliere le opzioni seguenti:
+Intune SDK e i criteri di protezione delle app di Intune non includono il supporto per la gestione delle connessioni all'account LinkedIn. Esistono tuttavia altri modi per gestirle. È possibile disabilitare le connessioni all'account LinkedIn per l'intera organizzazione, oppure abilitare le connessioni all'account LinkedIn per gruppi di utenti selezionati all'interno dell'organizzazione. Queste impostazioni interessano le connessioni LinkedIn nelle app di Office 365 in tutte le piattaforme (web, dispositivi mobili e desktop). È possibile scegliere:
 
 - Abilitare o disabilitare le connessioni all'account LinkedIn per il tenant nel portale di Azure. 
 - Abilitare o disabilitare le connessioni all'account LinkedIn per le app di Office 2016 dell'organizzazione tramite criteri di gruppo.

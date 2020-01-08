@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059833"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206228"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Le chiavi precondivise (PSK) vengono in genere usate per autenticare gli utenti in reti Wi-Fi o in reti LAN wireless. Con Intune è possibile creare un profilo Wi-Fi con una chiave precondivisa. Per creare il profilo, usare la funzionalità per i **profili di dispositivo personalizzati** all'interno di Intune. Questo articolo include anche alcuni esempi di come creare un profilo Wi-Fi basato su EAP.
 
@@ -54,14 +54,14 @@ Questa funzionalità supporta:
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio un buon nome di criterio è **Impostazioni del profilo Wi-Fi OMA-URI personalizzato per dispositivi Android**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: Scegliere la piattaforma.
     - **Tipo di profilo**: Selezionare **Personalizzato**.
 
 4. In **Impostazioni** selezionare **Aggiungi**. Aggiungere una nuova impostazione OMA-URI con le proprietà seguenti:
 
     1. **Nome**: Immettere un nome per l'impostazione OMA-URI.
-    2. **Description**: Immettere una descrizione per l'impostazione OMA-URI. Questa impostazione è facoltativa ma consigliata.
+    2. **Descrizione**: Immettere una descrizione per l'impostazione OMA-URI. Questa impostazione è facoltativa ma consigliata.
     3. **OMA-URI**: Immettere una delle opzioni seguenti:
 
         - **Per Android**: `./Vendor/MSFT/WiFi/Profile/SSID/Settings`

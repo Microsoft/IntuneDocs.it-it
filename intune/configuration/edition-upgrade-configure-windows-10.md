@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059524"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206942"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Aggiornare le edizioni Windows 10 o disattivare la modalità S nei dispositivi con Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Come parte della soluzione di gestione di dispositivi mobili (MDM), può essere necessario aggiornare i dispositivi Windows 10. Ad esempio, aggiornare i dispositivi Windows 10 Professional a Windows 10 Enterprise. In alternativa, si vuole disattivare la modalità S del dispositivo.
 
@@ -101,10 +101,10 @@ La tabella seguente riporta i percorsi di aggiornamento supportati per il profil
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il nuovo profilo. Ad esempio, immettere `Windows 10 edition upgrade profile` o `Windows 10 switch off S mode`.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
     - **Tipo di profilo**: selezionare **Aggiornamento edizione**.
-    - **Impostazioni**: immettere le impostazioni da configurare. Per un elenco di tutte le impostazioni e delle operazioni corrispondenti, vedere:
+    - **Settings** (Impostazioni): immettere le impostazioni da configurare. Per un elenco di tutte le impostazioni e delle operazioni corrispondenti, vedere:
 
         - [Aggiornamento a Windows 10 e modalità S](edition-upgrade-windows-settings.md)
         - [Windows Holographic for Business](holographic-upgrade.md)

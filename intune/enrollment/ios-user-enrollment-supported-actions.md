@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562417"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324866"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Azioni e opzioni di Intune supportate con la registrazione utente Apple
 
@@ -38,15 +38,15 @@ Nei dispositivi di registrazione utente, se si configura qualsiasi impostazione 
 
 Si supponga ad esempio di configurare l'impostazione **Scadenza password** e di applicare questo criterio nei dispositivi registrati dall'utente. Nei dispositivi si verificherà quanto segue:
 - L'impostazione **Scadenza password** viene ignorata.
-- Le password semplici, ad esempio `1111` o `1234`, non sono consentite.
+- Le password semplici, ad esempio `111111` o `123456`, non sono consentite.
 - Viene applicato un PIN di 6 cifre.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Azioni e opzioni dell'amministratore nei dispositivi remoti
 Gli amministratori possono eseguire le azioni e le opzioni seguenti nei dispositivi di registrazione utente:
 - Ritiro
-- Eliminazione
+- Elimina
 - Blocco remoto
-- Sincronizzazione
+- Sincronizza
 
 Tutte le altre azioni non sono supportate.
 
