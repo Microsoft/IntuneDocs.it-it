@@ -5,10 +5,14 @@
   items:
     - name: Panoramica della configurazione del dispositivo
       href: device-profiles.md
-- name: Guida introduttiva
+- name: Guide introduttive
   items:
     - name: Creare un profilo di posta elettronica del dispositivo
       href: quickstart-email-profile.md
+- name: Esercitazioni
+  items:
+    - name: Creare un modello amministrativo
+      href: tutorial-walkthrough-administrative-templates.md
 - name: Guide pratiche
   items:
     - name: Creare un profilo
@@ -135,7 +139,7 @@
               href: macos-device-features-settings.md
             - name: Limitazioni del dispositivo
               href: device-restrictions-macos.md
-            - name: Endpoint Protection
+            - name: Protezione degli endpoint
               href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: Estensioni
               href: kernel-extensions-settings-macos.md
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Rete cablata
-              href: wired-network-settings-macos.md
             - name: Personalizzato
               href: custom-settings-macos.md
         - name: Windows 10 e versioni successive
@@ -161,7 +163,7 @@
               href: edition-upgrade-windows-settings.md
             - name: Posta elettronica
               href: email-settings-windows-10.md
-            - name: Endpoint Protection
+            - name: Protezione degli endpoint
               href: ../protect/endpoint-protection-windows-10.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: Protezione dell'identità
               href: ../protect/identity-protection-windows-settings.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
