@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e19cc606792c59d2f5676aeca41d862308f1ab32
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490454"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654142"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpoint dell'API data warehouse di Intune
 
@@ -78,7 +78,7 @@ I filtri di intervallo `DateKey` possono essere usati per limitare la quantità 
 > [!NOTE]
 > Gli esempi di filtro presuppongono che la data odierna sia il 21 febbraio 2019.
 
-|                             Filtra                             |           Ottimizzazione delle prestazioni           |                                          Descrizione                                          |
+|                             Filtro                             |           Ottimizzazione delle prestazioni           |                                          Descrizione                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Completo                                      |    Restituisce dati con `DateKey` tra 20180214 e 20180221.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Restituisce dati con `DateKey` uguale a 20180214.                                                    |
