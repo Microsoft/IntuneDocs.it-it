@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08da009d6c53b19ca18cae6b88e38eb475456b57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 5f8fca650d631b6e7df3d7e9c4d787f0ef7add51
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501558"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858727"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installare Mobile Threat Defense nel dispositivo iOS
 
@@ -39,7 +39,7 @@ Prima di poter accedere ai dati aziendali, viene richiesto dal supporto tecnico 
 
 Mobile Threat Defense protegge i dispositivi degli utenti aziendali dalle app che sottraggono informazioni riservate dell'azienda. Per fornire questo tipo di protezione il servizio Mobile Threat Defense usato dall'azienda deve disporre di informazioni aggiuntive sulle app presenti nei dispositivi. L'azienda non può visualizzare i dati presenti nelle app personali. Tutte le app sul dispositivo vengono aggiunte agli [elementi che l'azienda può visualizzare](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) se usa il servizio Mobile Threat Defense. Le parti dell'app che l'azienda può visualizzare sono:
 
-* Nome app
+* Nome dell'app
 * ID dell'app: nome univoco che identifica l'app nell'App Store
 * Numero di versione e versione breve dell'app: numeri di versione specifici di un'app
 * Bundle e dimensioni dinamiche dell'app: quantità di spazio usato dall'app nel dispositivo

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 89f54111258b5e628d9f83c381fde146bf996216
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506705"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206330"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>impostazioni del dispositivo macOS per configurare e usare le estensioni del kernel in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Questo articolo elenca e descrive le diverse impostazioni di estensione del kernel che è possibile controllare nei dispositivi macOS. Come parte della soluzione di gestione dei dispositivi mobili (MDM), usare queste impostazioni per aggiungere e gestire le estensioni del kernel nei dispositivi.
 

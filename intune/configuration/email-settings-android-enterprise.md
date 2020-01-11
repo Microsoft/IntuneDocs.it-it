@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72493566"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206432"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Impostazioni dei dispositivi Android Enterprise per configurare posta elettronica, autenticazione e sincronizzazione in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Questo articolo elenca e descrive le diverse impostazioni di posta elettronica che è possibile controllare nei dispositivi Android Enterprise. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per configurare un server di posta elettronica, usare SSL per crittografare i messaggi di posta elettronica a altro ancora.
 
@@ -40,21 +40,21 @@ Creare un [profilo di configurazione del dispositivo](email-settings-configure.m
 ## <a name="android-enterprise"></a>Android Enterprise
 
 - **App di posta elettronica**: selezionare **Gmail** o **Nine Work**
-- **Server di posta elettronica**: nome host del server Exchange dell'azienda. Immettere ad esempio `outlook.office365.com`.
+- **Server di posta elettronica**: immettere il nome host del server Exchange dell'azienda. Immettere ad esempio `outlook.office365.com`.
 - **Attributo nome utente da AAD**: questo nome è l'attributo che Intune ottiene da Azure Active Directory (Azure AD). Intune genera in modo dinamico il nome utente usato da questo profilo. Le opzioni disponibili sono:
 
-  - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
+  - **Nome entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
   - **Nome utente**: ottiene solo il nome, ad esempio `user1`
 
-- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo dell'indirizzo di posta elettronica che Intune ottiene da Azure AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
-  - **Nome dell'entità utente**: usa come indirizzo di posta elettronica il nome dell'entità completo, ad esempio `user1@contoso.com` o `user1`.
+- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo di posta elettronica che Intune ottiene da AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
+  - **Nome entità utente**:  usa come indirizzo di posta elettronica il nome dell'entità completo, ad esempio `user1@contoso.com` o `user1`.
   - **Indirizzo SMTP primario**: usa l'indirizzo SMTP primario, ad esempio `user1@contoso.com`, per accedere a Exchange.
 
-- **Metodo di autenticazione**: selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.
+- **Metodo di autenticazione**: Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.
   - Se si seleziona l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.
 - **SSL**: scegliere **Abilita** per usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
-- **Numero di messaggi di posta elettronica da sincronizzare**: scegliere il periodo di tempo di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Tipo di contenuto da sincronizzare** (solo Nine Work): scegliere quali dati sincronizzare nei dispositivi. Le opzioni disponibili sono:
+- **Numero di messaggi di posta elettronica da sincronizzare**: scegliere l'arco di tempo dei messaggi di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
+- **Tipo di contenuto da sincronizzare** (solo Nine Work): scegliere i dati da sincronizzare nei dispositivi. Le opzioni disponibili sono:
   - **Contatti**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare i contatti nei propri dispositivi.
   - **Calendario**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare il calendario nei propri dispositivi.
   - **Attività**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare qualsiasi attività nei propri dispositivi.

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a49db70d6b29167184e50f3499985a46a48fda1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501848"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857623"
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 Per ottenere l'accesso alle risorse aziendali o dell'Istituto di istruzione dal dispositivo, è necessario registrare il dispositivo con l'app Portale aziendale Intune o Microsoft Intune. 

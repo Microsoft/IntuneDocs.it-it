@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7674366cc0332afd8eba2a4f145f47e40d5472e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4cca8d649dbd64b0334dfbc83bbd75f2a0e36f3d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508444"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858257"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Rinominare il dispositivo dal sito Web del portale aziendale
 
@@ -38,7 +38,7 @@ Rinominare un dispositivo registrato e gestito dal sito Web del portale aziendal
 
 3. Selezionare **Rinomina**. Se l'opzione Rinomina non è visibile nella parte superiore della pagina, selezionare **Altro (...)**  > **Rinomina**.   
 
-   ![Pagina dei dettagli per un dispositivo selezionato nel sito Web del portale aziendale, con una serie di collegamenti nella parte superiore tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/rename-reset-device-1808.png)   
+   ![Pagina dei dettagli per un dispositivo selezionato nel sito Web Portale aziendale, con una serie di collegamenti nella parte superiore tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/rename-reset-device-1808.png)   
 
     ![Vista ingrandita dell'icona Altro, evidenziata con una freccia rossa.](./media/rename-reset-device-step3-more-1808.png)  
 

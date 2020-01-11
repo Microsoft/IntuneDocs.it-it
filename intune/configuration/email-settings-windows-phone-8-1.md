@@ -16,21 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 455d69328f8b70b1de73067c6290b6955df1e710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: aab4379e30397132cead64acbd8d43039b128e02
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506758"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206415"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono Windows Phone 8.1
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Questo articolo illustra le impostazioni del profilo di posta elettronica che è possibile configurare per i dispositivi che eseguono Windows Phone 8.1.
 
+>[!IMPORTANT]
+>I profili di posta elettronica Windows Phone 8,1 vengono applicati anche ai dispositivi Windows 10.
 
-- **Applica tutte le impostazioni solo a Windows Phone 8.1**: si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni vengono applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni vengono applicate anche ai dispositivi Windows 10 Mobile.
 - **Server di posta elettronica** - Il nome host del server Exchange dell'azienda.
 - **Nome account** - Il nome visualizzato dell'account di posta elettronica come appare agli utenti nei dispositivi.
 - **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che viene usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio **user1@contoso.com** o **Nome entità utente**, ad esempio **utente1** o **user1@contoso.com** .
@@ -52,5 +53,5 @@ Questo articolo illustra le impostazioni del profilo di posta elettronica che è
 
 - **Tipo di contenuto da sincronizzare** - Selezionare i tipi di contenuto da sincronizzare nei dispositivi da:
   - **Contatti**
-  - **Calendarioio**
+  - **Calendario**
   - **Attività**
