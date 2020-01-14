@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478920"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545933"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Abilitare il connettore Mobile Threat Defense in Intune per i dispositivi non registrati
 
 Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati criteri di classificazione delle minacce nella console del partner Mobile Threat Defense e sono stati creati i criteri di protezione delle app in Intune. Se il connettore Intune nella console del partner MTD è già stato configurato, è possibile abilitare la connessione MTD in Intune per le applicazioni del partner MTD.
 
 > [!NOTE]
-> Questo articolo si applica a tutti i partner Mobile Threat Defense che supportano i criteri di protezione delle app: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+> Questo articolo si applica a tutti i partner Mobile Threat Defense che supportano i criteri di protezione delle app: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Criteri di accesso condizionale classici per app MTD
 
@@ -62,11 +62,11 @@ Per visualizzare i criteri di accesso condizionale classici, in [Azure](https://
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. Abilitare le opzioni con interruttore di attivazione/disattivazione in base ai requisiti dell'organizzazione. Le opzioni di attivazione/disattivazione visibili variano a seconda del partner MTD.
+5. Abilitare le opzioni di attivazione/disattivazione in base ai requisiti dell'organizzazione. Le opzioni di attivazione/disattivazione visibili variano a seconda del partner MTD.
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Opzioni di attivazione/disattivazione di Mobile Threat Defense
 
-È possibile decidere quali opzioni di attivazione/disattivazione di MTD è necessario abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
+È possibile scegliere le opzioni di attivazione/disattivazione MTD da abilitare in base ai requisiti dell'organizzazione. Di seguito sono riportate informazioni dettagliate:
 
 **Impostazioni dei criteri di protezione delle app**
 

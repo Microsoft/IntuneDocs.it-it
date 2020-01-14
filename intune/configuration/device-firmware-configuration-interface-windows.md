@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059597"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206687"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usare i profili dell'interfaccia di configurazione del firmware del dispositivo nei dispositivi Windows in Microsoft Intune (anteprima pubblica)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Quando si usa Intune per gestire i dispositivi Autopilot, è possibile gestire le impostazioni UEFI (BIOS) dopo la registrazione dei dispositivi tramite l'interfaccia DFCI (Device Firmware Configuration Interface). Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Overview of DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) (Panoramica di PFCI).
 
@@ -54,7 +54,7 @@ Questa funzionalità si applica a:
 
 ## <a name="create-your-azure-ad-security-groups"></a>Creare i gruppi di sicurezza di Azure AD
 
-I profili di distribuzione Autopilot vengono assegnati ai gruppi di sicurezza Azure AD. Assicurarsi di creare gruppi che includano i dispositivi supportati da DFCI. Per i dispositivi DFCI, la maggior parte delle organizzazioni può creare gruppi di dispositivi anziché gruppi di utenti. Si considerino gli scenari seguenti:
+I profili di distribuzione Autopilot vengono assegnati ai gruppi di sicurezza Azure AD. Assicurarsi di creare gruppi che includano i dispositivi supportati da DFCI. Per i dispositivi DFCI, la maggior parte delle organizzazioni può creare gruppi di dispositivi anziché gruppi di utenti. Prendere in considerazione gli scenari seguenti:
 
 - Il personale del reparto Risorse umane dispone di diversi dispositivi Windows. Per motivi di sicurezza, si vuole che nessuno in questo gruppo usi la fotocamera nei dispositivi. In questo scenario è possibile creare un gruppo di sicurezza per gli utenti del reparto RU, in modo che i criteri vengano applicati agli utenti del gruppo RU, indipendentemente dal tipo di dispositivo.
 - Nell'impianto di produzione sono disponibili 10 dispositivi. In tutti i dispositivi si vuole impedire l'avvio da un dispositivo USB. In questo scenario è possibile creare un gruppo di sicurezza per i dispositivi e aggiungere questi 10 dispositivi al gruppo.
@@ -82,7 +82,7 @@ Questo profilo include le impostazioni DFCI configurate.
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Un nome di profilo valido, ad esempio, è **Windows: Configurare le impostazioni DFCI nei dispositivi Windows**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
     - **Tipo di profilo**: selezionare **Interfaccia di configurazione del firmware del dispositivo**.
 
@@ -90,7 +90,7 @@ Questo profilo include le impostazioni DFCI configurate.
 
     - **Consenti all'utente locale di modificare le impostazioni UEFI**: Le opzioni disponibili sono:
       - **Solo le impostazioni non configurate**: l'utente locale può modificare qualsiasi impostazione *ad eccezione* delle impostazioni esplicitamente impostate su **Abilita** o **Disabilita** da Intune.
-      - **Nessuna**: l'utente locale non può modificare le impostazioni UEFI (BIOS), incluse le impostazioni non visualizzate nel profilo DFCI.
+      - **Nessuno**: l'utente locale non può modificare le impostazioni UEFI (BIOS), incluse le impostazioni non visualizzate nel profilo DFCI.
 
     - **CPU e virtualizzazione di I/O**: Le opzioni disponibili sono:
         - **Non configurata**: Intune non modifica questa funzionalità e lascia le impostazioni così come sono.

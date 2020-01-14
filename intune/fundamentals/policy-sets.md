@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585657"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206126"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Usare i set di criteri per raggruppare raccolte di oggetti di gestione
 
@@ -56,8 +56,8 @@ Quando si crea un set di criteri, si crea una singola unità di assegnazione e s
 
 ## <a name="how-to-create-a-policy-set"></a>Come creare un set di criteri
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Nel pannello **Intune** scegliere **Set di criteri** > **Set di criteri** > **Crea**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Set di criteri** > **Set di criteri** > **Crea**.
 3. Nella pagina **Informazioni di base** aggiungere i valori seguenti:
     - **Nome set di criteri** - Specificare un nome per il set di criteri.
     - **Descrizione** - Specificare facoltativamente una descrizione per il set di criteri.

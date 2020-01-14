@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410077"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556403"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e i profili in Microsoft Intune
 
@@ -45,7 +45,11 @@ Il riquadro **Panoramica** offre due metodi per monitorare lo stato:
 Ogni dispositivo è rappresentato da uno degli stati seguenti, usati nelle visualizzazioni *dispositivo* e *per categoria*:
 
 - **Matches baseline** (Corrisponde alla baseline): tutte le impostazioni nella baseline corrispondono a quelle consigliate.
-- **Does not match baseline** (Non corrisponde alla baseline): almeno un'impostazione nella baseline non corrisponde a quelle consigliate.
+- **Non corrisponde alla baseline**: almeno un'impostazione nella baseline non corrisponde a quelle consigliate.
+
+  > [!NOTE]
+  > Quando si crea o si modifica un profilo baseline, qualsiasi modifica apportata a un valore predefinito o a un'impostazione di configurazione causa la generazione dello stato "Non corrisponde alla baseline". Per informazioni su come determinare quali impostazioni sono state modificate, contattare il supporto tecnico Microsoft. 
+
 - **Configurazione non valida**: almeno un'impostazione non è configurata correttamente. Questo stato indica che l'impostazione si trova in uno stato di conflitto, errore o in sospeso.
 - **Non applicabile**: almeno un'impostazione non è applicabile e non viene applicata.
 

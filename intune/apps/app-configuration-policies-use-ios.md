@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564155"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547981"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -50,35 +50,35 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 
 ## <a name="create-an-app-configuration-policy"></a>Creare criteri di configurazione delle app
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Scegliere **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
-5. Impostare i dettagli seguenti:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Scegliere **App** > **Criteri di configurazione dell'app** > **Aggiungi** > **Dispositivi gestiti**.
+3. Impostare i dettagli seguenti:
     - **Nome** - Nome del profilo che viene visualizzato nel portale di Azure.
     - **Descrizione** - Descrizione del profilo che viene visualizzata nel portale di Azure.
-    - **Tipo di registrazione del dispositivo** - Scegliere **Dispositivi gestiti** per i dispositivi che sono stati registrati in Intune.
-6. Selezionare **iOS** per **Piattaforma**.
-7. Scegliere **App associata**. Nel riquadro **App associata** scegliere l'app gestita alla quale applicare la configurazione e selezionare **OK**.
-8. Nel riquadro **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
-9. Selezionare **Formato delle impostazioni di configurazione**. Per aggiungere informazioni di configurazione, selezionare uno dei metodi seguenti:
+    - **Tipo di registrazione del dispositivo**: questo valore è impostato su **Dispositivi gestiti**.
+4. Selezionare **iOS** per **Piattaforma**.
+5. Scegliere **App associata**. Nel riquadro **App associata** scegliere l'app gestita alla quale applicare la configurazione e selezionare **OK**.
+6. Scegliere **Impostazioni di configurazione** per visualizzare il riquadro **Impostazioni di configurazione**.
+7. Selezionare **Formato delle impostazioni di configurazione**. Per aggiungere informazioni di configurazione, selezionare uno dei metodi seguenti:
     - **Usare la finestra di progettazione della configurazione**
     - **Immettere i dati XML**<br><br>
     Per informazioni dettagliate sull'uso della finestra di progettazione della configurazione, vedere [Usare Progettazione configurazione](#use-configuration-designer). Per informazioni dettagliate sull'immissione di dati XML, vedere [Immettere i dati XML](#enter-xml-data). 
-10. Dopo aver aggiunto le informazioni di configurazione, scegliere **OK** e quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Viene visualizzato il riquadro di panoramica dei criteri di configurazione.
-11. Selezionare **Assegnazioni** per visualizzare le opzioni di inclusione ed esclusione. 
+8. Dopo aver aggiunto le informazioni di configurazione, scegliere **OK** e quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Viene visualizzato il riquadro di panoramica dei criteri di configurazione.
+9. Selezionare **Assegnazioni** per visualizzare le opzioni di inclusione ed esclusione. 
 
     ![Screenshot della scheda Includi in Assegnazioni](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Selezionare **Tutti gli utenti** nella scheda **Includi**.
+10. Selezionare **Tutti gli utenti** nella scheda **Includi**.
 
     ![Screenshot delle assegnazioni dei criteri - opzione di elenco a discesa Tutti gli utenti](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Selezionare la scheda **Escludi**. 
-14. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il riquadro correlato.
+11. Selezionare la scheda **Escludi**. 
+12. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il riquadro correlato.
 
     ![Screenshot delle assegnazioni dei criteri - Riquadro Selezionare i gruppi da escludere](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Scegliere i gruppi da escludere e quindi fare clic su **Seleziona**.
+13. Scegliere i gruppi da escludere e quindi fare clic su **Seleziona**.
 
     >[!NOTE]
     >Quando si aggiunge un gruppo, se sono già stati inclusi altri gruppi per un tipo di assegnazione specifico, tale gruppo risulterà preselezionato e non potrà essere modificato per gli altri tipi di assegnazione di inclusione. Di conseguenza, tale gruppo non potrà essere usato come gruppo escluso.
-16. Fare clic su **Save**.
+14. Fare clic su **Save**.
 
 ## <a name="use-configuration-designer"></a>Usare Progettazione configurazione
 
@@ -164,7 +164,7 @@ Intune supporta i tipi di dati seguenti in un elenco di proprietà:
 
 ### <a name="tokens-used-in-the-property-list"></a>Token usati nell'elenco di proprietà
 
-Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
+Inoltre, Intune supporta i tipi di token seguenti nell'elenco di proprietà:
 - \{\{userprincipalname\}\}, ad esempio **John\@contoso.com**
 - \{\{mail\}\}, ad esempio **John\@contoso.com**
 - \{\{partialupn\}\}, ad esempio **John**
@@ -182,7 +182,7 @@ Le registrazioni DEP (Device Enrollment Program, il programma di registrazione d
 
 1. In Intune aggiungere l'app Portale aziendale di Intune, se necessario, selezionando **Intune** > **App** > **Tutte le app** > **Aggiungi**.
 2. Passare ad **App** > **Criteri di configurazione dell'app** per creare criteri di configurazione per l'app Portale aziendale.
-3. Creare criteri di configurazione dell'app con il codice XML che segue. Altre informazioni su come creare criteri di configurazione delle app e immettere dati XML sono disponibili in [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md) o, per la gestione dei dispositivi mobili ibrida, in [Applicare le impostazioni alle app iOS con i criteri di configurazione app in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Creare criteri di configurazione dell'app con il codice XML che segue. Altre informazioni su come creare criteri di configurazione delle app e immettere dati XML sono disponibili in [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md) o, per la gestione dei dispositivi mobili ibrida, in [Applicare le impostazioni alle app iOS con i criteri di configurazione app in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

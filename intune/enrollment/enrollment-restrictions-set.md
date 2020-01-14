@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955508"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547822"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -144,7 +144,7 @@ I metodi seguenti si qualificano per essere autorizzati come registrazione azien
 - Il dispositivo viene registrato con Windows Autopilot ma non è un'opzione di sola registrazione MDM dalle impostazioni di Windows.
 - Il numero IMEI del dispositivo è indicato in **Registrazione del dispositivo** >  **[Identificatori dei dispositivi aziendali](corporate-identifiers-add.md)** . (Funzionalità non supportata per Windows Phone 8.1.)
 - Il dispositivo viene registrato tramite un [pacchetto di provisioning in blocco](windows-bulk-enroll.md).
-- Il dispositivo viene registrato tramite un oggetto Criteri di gruppo o la [registrazione automatica da SCCM per la co-gestione](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
+- Il dispositivo viene registrato tramite un oggetto Criteri di gruppo o la [registrazione automatica da Configuration Manager per la co-gestione](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
  
 Le registrazioni seguenti sono contrassegnate come aziendali da Intune, ma dal momento che non offrono all'amministratore di Intune il controllo per ogni dispositivo, vengono bloccate:
 - La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con l'[aggiunta ad Azure Active Directory durante la configurazione di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

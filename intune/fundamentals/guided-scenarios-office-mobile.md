@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585709"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691813"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Scenario guidato - Proteggi le app di Office per dispositivi mobili 
 
@@ -46,7 +46,7 @@ Le app per dispositivi mobili di Office e Microsoft Edge per dispositivi mobili 
 I [criteri di protezione delle app di Intune](~/apps/app-protection-policy.md) consentono di proteggere i file di lavoro nei dispositivi registrati in Intune. I criteri di protezione delle app possono essere usati anche nei dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune. In questo caso, anche se il dispositivo non viene gestito dall'azienda, è comunque necessario assicurarsi che i file e le risorse di lavoro siano protetti.
 
 È possibile usare i criteri di protezione delle app per impedire agli utenti di salvare i file di lavoro in posizioni non protette. È anche possibile limitare lo spostamento dei dati ad altre app non protette dai criteri di protezione delle app. Le impostazioni dei criteri di protezione delle app includono:
-- Criteri di rilocazione dei dati, ad esempio Impedisci Salva con nome e Limita le operazioni taglia, copia e incolla.
+- Criteri di rilocazione dei dati, ad esempio **Salva copie dei dati dell'organizzazione** e **Limita le operazioni taglia, copia e incolla**.
 - Impostazioni dei criteri di accesso per richiedere un PIN semplice per l'accesso e per bloccare l'esecuzione delle app gestite nei dispositivi jailbroken o rooted.
 
 L'accesso condizionale basato su app e la gestione delle app client consentono di aggiungere un livello di sicurezza, garantendo che solo le app client che supportano i criteri di protezione delle app di Intune possano accedere a Exchange Online e agli altri servizi di Office 365.

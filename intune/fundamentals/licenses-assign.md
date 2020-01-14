@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414081"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207358"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Assegnare licenze agli utenti in modo che possano registrare i dispositivi in Intune
 
 Indipendentemente dal fatto che si decida di aggiungere gli utenti manualmente o di sincronizzarli da Active Directory locale, è necessario assegnare una licenza di Intune a ogni utente prima che gli utenti possano registrare i propri dispositivi in Intune. Per un elenco di licenze, vedere [Licenze che includono Intune](../licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Assegnare una licenza di Intune nell'interfaccia di amministrazione di Microsoft 365
+> [!NOTE]
+> Anche gli utenti a cui vengono assegnati criteri di protezione delle app di Intune e che non registrano i propri dispositivi in Microsoft Intune necessitano di una licenza di Intune per ricevere i criteri. 
 
-È possibile usare l'[interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) per aggiungere manualmente gli utenti basati sul cloud e assegnare licenze sia ad account utente basati sul cloud che ad account sincronizzati con Azure AD da Active Directory locale.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Assegnare una licenza di Intune con l'interfaccia di amministrazione di Microsoft Endpoint Manager
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) usando le credenziali di amministratore tenant e quindi scegliere **Utenti** > **Utenti attivi**.
+È possibile usare l'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) per aggiungere manualmente gli utenti basati sul cloud e assegnare licenze ad account utente basati sul cloud e account sincronizzati con Azure AD dall'istanza locale di Active Directory.
 
-2. Selezionare l'account utente a cui si vuole assegnare una licenza utente di Intune e quindi scegliere **Licenze di prodotto** > **Modifica**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **Utenti** > **Tutti gli utenti** > scegliere un utente > **Licenze** > **Assegnazioni**.
 
-3. Impostare sulla posizione **Attivato** l'interruttore per **Intune** o **Enterprise Mobility + Security** e scegliere **Salva**.
+2. Scegliere la casella per **Intune** > **Salva**.
 
-   ![Screenshot della sezione Licenze di prodotto dell'interfaccia di amministrazione di Microsoft 365.](./media/licenses-assign/office-assign-license.png)
+   ![Screenshot della sezione Licenze di prodotto dell'interfaccia di amministrazione di Microsoft 365.](./media/licenses-assign/mem-assign-license.png)
 
-4. L'account utente dispone ora delle autorizzazioni necessarie per usare il servizio e registrare dispositivi nella gestione.
+3. L'account utente dispone ora delle autorizzazioni necessarie per usare il servizio e registrare dispositivi nella gestione.
 
 > [!NOTE]
 > Gli utenti vengono visualizzati nel portale classico di Intune solo dopo che hanno registrato un dispositivo usando il client PC di Intune. È anche possibile selezionare un gruppo di utenti per modificare le licenze contemporaneamente, selezionando le opzioni per aggiungere o sostituire una licenza per tutti gli utenti selezionati.

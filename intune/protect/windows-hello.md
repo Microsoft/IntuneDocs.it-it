@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465765"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683783"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrare Windows Hello for Business in Microsoft Intune  
 
@@ -53,9 +53,9 @@ Usare questo articolo per creare criteri di Windows Hello for Business predefini
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Creare un criterio di Windows Hello for Business
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Passare a **Dispositivi** >  registrazione** > **Registra i dispositivi** > **Registrazione Windows** > **Windows Hello for Business**. Viene visualizzato il riquadro di Windows Hello for Business.
+2. Passare a **Dispositivi** >  **Registrazione** > **Registra i dispositivi** > **Registrazione Windows** > **Windows Hello for Business**. Viene visualizzato il riquadro di Windows Hello for Business.
 
 3. Selezionare una delle opzioni seguenti per **Configurare Windows Hello for Business**:
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445316"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207205"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Usare le credenziali derivate in Microsoft Intune
 
@@ -160,28 +160,30 @@ Evitare di richiedere l'uso di credenziali derivate per accedere a un processo c
 
 Prima di creare criteri che richiedono l'uso di credenziali derivate, configurare un emittente di credenziali nella console di Intune. L'emittente di credenziali derivate è un'impostazione a livello di tenant. I tenant supportano un solo emittente alla volta.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e passare a **Configurazione del dispositivo** > **Credenziali derivate**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Amministrazione del tenant** > **Connettori e token** > **Credenziali derivate**.
 
-   ![Configurare le credenziali derivate nella console](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![Configurare le credenziali derivate nella console](./media/derived-credentials/configure-provider.png)
 
-2. Specificare un **Nome visualizzato** descrittivo per i criteri dell'emittente di credenziali derivate.  Questo nome non viene visualizzato agli utenti del dispositivo.
+3. Specificare un **Nome visualizzato** descrittivo per i criteri dell'emittente di credenziali derivate.  Questo nome non viene visualizzato agli utenti del dispositivo.
 
-3. In **Emittente delle credenziali derivate** selezionare l'emittente di credenziali derivate scelto per il tenant:
+4. In **Emittente delle credenziali derivate** selezionare l'emittente di credenziali derivate scelto per il tenant:
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. Specificare un **URL della guida per le credenziali derivate** per fornire un collegamento a un percorso che includa istruzioni personalizzate per consentire agli utenti di ottenere le credenziali derivate per l'organizzazione. Le istruzioni devono essere specifiche per l'organizzazione e per il flusso di lavoro necessario per ottenere le credenziali dall'emittente prescelto. Il collegamento viene visualizzato nell'app Portale aziendale e deve essere accessibile dal dispositivo.
+5. Specificare un **URL della guida per le credenziali derivate** per fornire un collegamento a un percorso che includa istruzioni personalizzate per consentire agli utenti di ottenere le credenziali derivate per l'organizzazione. Le istruzioni devono essere specifiche per l'organizzazione e per il flusso di lavoro necessario per ottenere le credenziali dall'emittente prescelto. Il collegamento viene visualizzato nell'app Portale aziendale e deve essere accessibile dal dispositivo.
 
    Se non si specifica un URL personalizzato, Intune fornisce un collegamento a dettagli generici che non possono coprire tutti gli scenari. Queste linee guida generiche potrebbero non essere accurate per l'ambiente in uso.
 
-5. Selezionare una o più opzioni per **Tipo di notifica**. I tipi di notifica sono i metodi usati per informare gli utenti sugli scenari seguenti:
+6. Selezionare una o più opzioni per **Tipo di notifica**. I tipi di notifica sono i metodi usati per informare gli utenti sugli scenari seguenti:
 
    - Registrare un dispositivo con un emittente per ottenere nuove credenziali derivate.
    - Ottenere nuove credenziali derivate quando quelle correnti sono vicine alla scadenza.
    - Usare credenziali derivate con criteri per l'autenticazione Wi-Fi, VPN, di posta elettronica o di app e per la firma e la crittografia S/MIME.
 
-6. Quando si è pronti, selezionare **Salva** per completare la configurazione dell'emittente delle credenziali derivate.
+7. Quando si è pronti, selezionare **Salva** per completare la configurazione dell'emittente delle credenziali derivate.
 
 Dopo aver salvato la configurazione, è possibile apportare modifiche a tutti i campi, ad eccezione di *Emittente delle credenziali derivate*.  Per modificare l'emittente, vedere [Modificare l'emittente delle credenziali derivate](#change-the-derived-credential-issuer).
 
@@ -216,19 +218,20 @@ Oltre a distribuire l'app con Intune, configurare una rete VPN per app di Intune
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>Usare le credenziali derivate per l'autenticazione di app
 
-Usare le credenziali derivate per l'autenticazione basata su certificati per siti e applicazioni Web. Per recapitare le credenziali derivate per l'autenticazione di app, seguire questa procedura nella console di Intune:  
+Usare le credenziali derivate per l'autenticazione basata su certificati per siti e applicazioni Web. Per distribuire una credenziale derivata per l'autenticazione dell'app:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), passare a **Configurazione del dispositivo** > **Profili** e selezionare **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
+3. Immettere le impostazioni seguenti:
 
-2. Immettere un nome descrittivo per il profilo in **Nome**.
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di profilo valido è **Credenziali derivate per profilo dispositivi iOS**.
+    - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
+    - **Piattaforma**: Selezionare **iOS/iPadOS**.
+    - **Tipo di profilo**: Selezionare **Credenziali derivate**.
 
-3. Per **Piattaforma**, selezionare **iOS**.
-
-4. Per **Tipo di profilo** selezionare **Credenziale derivata**.
-
-5. Selezionare **OK** e quindi fare clic su **Crea**.
-
-6. Selezionare **Assegnazioni** per scegliere i gruppi che devono ricevere i criteri.
+4. Selezionare **OK** per salvare le modifiche.
+5. Al termine, selezionare **OK** > **Crea** per creare il profilo di Intune. Una volta completata l'operazione, il profilo viene visualizzato nell'elenco **Dispositivi - Profili di configurazione**.
+6. Selezionare il nuovo profilo > **Assegnazioni**. Selezionare i gruppi che devono ricevere i criteri.
  
 Gli utenti ricevono l'app o la notifica tramite posta elettronica in base alle impostazioni specificate durante la configurazione dell'emittente delle credenziali derivate. La notifica informa l'utente di avviare il Portale aziendale in modo che sia possibile elaborare i criteri delle credenziali derivate.
 
@@ -252,11 +255,10 @@ Dopo aver modificato l'emittente, viene richiesto agli utenti di ottenere nuove 
 > [!IMPORTANT]  
 > Se si elimina un emittente e si riconfigura immediatamente lo stesso emittente, sarà comunque necessario aggiornare i profili e i dispositivi per l'uso delle credenziali derivate da tale emittente. Le credenziali derivate ottenute prima dell'eliminazione dell'emittente non sono più valide.
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e passare a **Configurazione del dispositivo** > **Credenziali derivate**.
-
-2. Selezionare **Elimina** per rimuovere l'emittente delle credenziali derivate corrente.
-
-3. Configurare un nuovo emittente.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Amministrazione del tenant** > **Connettori e token** > **Credenziali derivate**.
+3. Selezionare **Elimina** per rimuovere l'emittente delle credenziali derivate corrente.
+4. Configurare un nuovo emittente.
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>Aggiornare i profili che usano le credenziali derivate
 
@@ -268,4 +270,4 @@ Dopo l'eliminazione di un emittente e l'aggiunta di uno nuovo, gli utenti del di
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Creare profili di configurazione dei dispositivi](../configuration/device-profile-create.md)
+[Creare profili di configurazione dei dispositivi](../configuration/device-profile-create.md).

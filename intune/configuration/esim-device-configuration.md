@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059368"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206398"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -95,7 +95,7 @@ Quando si usa il file con estensione csv con i codici di attivazione, assicurars
 
         ![File csv di esempio con codici di attivazione dell'operatore di telefonia mobile](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. Il nome del file con estensione csv diventa il nome del pool di sottoscrizione cellulare nel portale di Azure. Nell'immagine precedente il nome file è `UnlimitedDataSkynet.csv`. Pertanto il nome del pool di sottoscrizione in Intune è `UnlimitedDataSkynet.csv`:
+3. Il nome del file con estensione csv diventa il nome del pool di sottoscrizione cellulare nell'interfaccia di amministrazione di Endpoint Manager. Nell'immagine precedente il nome file è `UnlimitedDataSkynet.csv`. Pertanto il nome del pool di sottoscrizione in Intune è `UnlimitedDataSkynet.csv`:
 
     ![Il nome del pool di sottoscrizione cellulare è basato sul nome del file con estensione csv dei codici di attivazione](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 

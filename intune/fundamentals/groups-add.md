@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261590"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303066"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Aggiungere gruppi per organizzare utenti e dispositivi
 
@@ -47,7 +47,7 @@ Usare la procedura seguente per creare un nuovo gruppo.
 
 3. In **Tipo gruppo** selezionare una delle opzioni seguenti:
 
-    - **Sicurezza**: i gruppi di sicurezza definiscono gli utenti che possono accedere alle risorse e sono consigliati per i gruppi in Intune. Ad esempio, è possibile creare gruppi per gli utenti, ad esempio **Tutti i dipendenti di Charlotte** o **Tutte le donne a Contoso**. In alternativa, è possibile creare gruppi per i dispositivi, ad esempio **Tutti i dispositivi iOS** o **Tutti i dispositivi Windows 10 Student**.
+    - **Sicurezza**: i gruppi di sicurezza definiscono gli utenti che possono accedere alle risorse e sono consigliati per i gruppi in Intune. Ad esempio, è possibile creare gruppi per gli utenti, come **Tutti i dipendenti di Charlotte** o **Tutti i lavoratori remoti**. In alternativa, è possibile creare gruppi per i dispositivi, ad esempio **Tutti i dispositivi iOS** o **Tutti i dispositivi Windows 10 Student**.
 
         > [!TIP]
         > Gli utenti e i gruppi creati possono essere visualizzati anche nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com), nell'interfaccia di amministrazione di Azure Active Directory e in [Microsoft Intune nel portale di Azure](https://go.microsoft.com/fwlink/?linkid=2090973). Nel tenant dell'organizzazione è possibile creare e gestire i gruppi in tutte queste aree.

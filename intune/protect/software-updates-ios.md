@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984188"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207486"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Aggiungere criteri di aggiornamento software per iOS in Intune
 
@@ -32,8 +32,8 @@ Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornament
 
 ## <a name="configure-the-policy"></a>Configurare i criteri
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Aggiornamenti software** > **Criteri di aggiornamento per iOS** > **Crea**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Criteri di aggiornamento per iOS** > **Crea**.
 3. Nella scheda **Informazioni di base** specificare un nome per il criterio, specificare una descrizione (facoltativa) e quindi selezionare **Avanti**.
 
    ![Scheda Informazioni di base](./media/software-updates-ios/basics-tab.png) 
@@ -77,10 +77,10 @@ Per indicazioni a cura del team di supporto di Intune, vedere [Ritardare la visi
 ## <a name="edit-a-policy"></a>Modificare un criterio
 È possibile modificare un criterio esistente, inclusa la modifica delle limitazione di orario:
 
-1. In **Aggiornamenti software** selezionare **Criteri di aggiornamento per iOS** e quindi selezionare i criteri da modificare.
+1. Selezionare **Dispositivi** > **Criteri di aggiornamento per iOS**. Selezionare il criterio da modificare.
 
 2. Nella visualizzazione delle **Proprietà** dei criteri selezionare **Modifica** per la pagina dei criteri che si vuole modificare.  
-   ![Modificare criteri](./media/software-updates-ios/edit-policy.png)   
+   ![Modificare un criterio](./media/software-updates-ios/edit-policy.png)   
 
 3. Dopo aver introdotto una modifica, selezionare **Verifica e salva** > **Salva** per salvare le modifiche e tornare alle *Proprietà* dei criteri.  
  

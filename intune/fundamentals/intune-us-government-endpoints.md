@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000398"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207384"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Endpoint US Government per Microsoft Intune
 
@@ -37,6 +37,8 @@ Per gestire i dispositivi protetti da firewall e i server proxy, è necessario a
 È possibile modificare le impostazioni del server proxy nei singoli computer client. È anche possibile usare le impostazioni di Criteri di gruppo per modificare le impostazioni di tutti i computer client protetti da un server proxy specificato.
 
 I dispositivi gestiti richiedono configurazioni che consentono a **Tutti gli utenti** di accedere ai servizi tramite i firewall.
+
+Per altre informazioni sulla registrazione automatica di Windows 10 e sulla registrazione dei dispositivi per i clienti del governo degli Stati Uniti, vedere [Configurare la registrazione dei dispositivi Windows](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
 
 Nelle tabelle seguenti sono elencati i servizi e le porte a cui accede il client di Intune:
 
@@ -78,4 +80,3 @@ Per altre informazioni, vedere:
 ## <a name="next-steps"></a>Passaggi successivi
 [Endpoint di rete per Microsoft Intune](intune-endpoints.md)
 
-[Registrazione automatica di Windows 10 e registrazione dei dispositivi](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

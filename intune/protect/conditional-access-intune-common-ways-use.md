@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051968"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547046"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono le modalità d'uso comuni dell'accesso condizionale con Intune?
 
@@ -52,7 +52,7 @@ I criteri di accesso condizionale basato su dispositivo per Exchange Online e gl
 
 > [!NOTE]
 > Quando si abilita l'accesso in base al dispositivo per SharePoint Online o l’accesso in base al browser a Exchange Online sui dispositivi Android, gli utenti devono attivare l'opzione **Abilita l'accesso al browser** nel dispositivo registrato seguendo questa procedura:
-> 1. Avviare **l'app Portale aziendale**.
+> 1. Avviare l' **app Portale aziendale**.
 > 2. Passare alla pagina **Impostazioni** facendo clic sui punti di sospensione (...) o sul tasto di menu.
 > 3. Scegliere il pulsante **Abilita l'accesso al browser** . 
 > 4. Nel browser Chrome disconnettersi da Office 365 e riavviare Chrome.
@@ -83,11 +83,11 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 
 #### <a name="corporate-owned"></a>Dispositivi di proprietà dell'azienda
 
-- **Aggiunta a un dominio AD locale:** questa opzione viene usata generalmente dalle organizzazioni che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory o con System Center Configuration Manager.
+- **Aggiunta a un dominio AD locale:** questa opzione viene usata generalmente dalle organizzazioni che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory o con Configuration Manager.
 
 - **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è destinato alle organizzazioni che adottano un approccio cloud-first (ovvero usano principalmente i servizi cloud con l'obiettivo di ridurre l'uso di infrastrutture locali) o esclusivamente cloud (nessuna infrastruttura locale). Azure AD Join funziona in modo ottimale in un ambiente ibrido, consentendo l'accesso alle risorse e alle app sia cloud che locali. Il dispositivo viene aggiunto ad Azure AD e viene registrato in Intune. I criteri corrispondenti possono essere usati come criteri di accesso condizionale per l'accesso alle risorse aziendali.
 
-- **Aggiunta a un dominio AD e System Center Configuration Manager:** a partire dalla versione Current Branch, System Center Configuration Manager fornisce funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta del PC a un dominio:
+- **Aggiunta a un dominio AD e Configuration Manager:** a partire dalla versione Current Branch, Configuration Manager offre funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta del PC a un dominio:
 
   - Il PC è crittografato?
 

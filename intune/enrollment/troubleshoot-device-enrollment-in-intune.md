@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832735"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547810"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Microsoft Intune
 
@@ -113,7 +113,7 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 
     4. Attivare nuovamente DirSync e controllare se l'utente è ora sincronizzato correttamente.
 
-3. In uno scenario in cui si usa System Center Configuration Manager con Intune, verificare che l'utente disponga di un ID utente cloud valido:
+3. In uno scenario in cui si usa Configuration Manager con Intune, verificare che l'utente disponga di un ID utente cloud valido:
 
     1. Aprire SQL Management Studio.
 
@@ -242,7 +242,7 @@ Per risolvere il problema, importare i certificati nei certificati personali del
 3. Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
 4. Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
 5. Per ogni certificato padre, scegliere **Visualizza certificato**.
-6. Scegliere **Dettagli** > **Copia su file...**.
+6. Scegliere **Dettagli** > **Copia su file...** .
 7. Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
 8. Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
 9. Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.
@@ -332,7 +332,7 @@ Per altre informazioni, vedere [Procedure consigliate per la protezione di Activ
 
 5. Verificare che Safari per iOS sia configurato come browser predefinito e che i cookie siano abilitati.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Il dispositivo iOS registrato non viene visualizzato nella console quando si usa System Center Configuration Manager con Intune
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Il dispositivo iOS registrato non viene visualizzato nella console quando si usa Configuration Manager con Intune
 **Problema:** l'utente registra il dispositivo iOS, ma non viene visualizzato nella console di amministrazione di Configuration Manager. Il dispositivo non indica che è stato registrato. Cause possibili:
 
 - Microsoft Intune Connector nel sito di Configuration Manager non comunica con il servizio Intune.
@@ -419,7 +419,7 @@ Dopo aver cancellato i dispositivi bloccati, chiedere agli utenti di riavviare i
     3. Trovare il dispositivo che presenta il problema di registrazione. Eseguire la ricerca in base al nome del dispositivo o all'indirizzo MAC/HW per limitare i risultati.
     4. Selezionare il dispositivo > **Elimina**. Eliminare tutte le altre voci associate al dispositivo.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemi durante l'uso di System Center Configuration Manager con Intune
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemi durante l'uso di Configuration Manager con Intune
 
 ### <a name="mobile-devices-disappear"></a>I dispositivi mobili scompaiono
 
@@ -433,7 +433,7 @@ Per convalidare e verificare quale processo o account utente ha rimosso il dispo
 
 #### <a name="check-how-device-was-removed"></a>Controllare in che modo è stato rimosso il dispositivo
 
-1. Nella console di amministrazione di Configuration Manager selezionare **Monitoraggio** &gt; **Stato del sistema** &gt; **Query messaggi di stato**.
+1. Nella console di amministrazione di Configuration Manager selezionare **Monitoraggio** &gt; **Stato sistema** &gt; **Query messaggi di stato**.
 
 2. Fare clic con il pulsante destro del mouse su **Risorse dei membri raccolta eliminate manualmente** e scegliere **Mostra messaggi**.
 

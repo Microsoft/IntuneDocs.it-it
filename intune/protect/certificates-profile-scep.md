@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390294"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547067"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creare e assegnare profili di certificato SCEP in Intune
 
@@ -121,7 +121,7 @@ Dopo aver [configurato l'infrastruttura](certificates-scep-configure.md) per sup
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}** *(applicabile solo per Windows e i dispositivi aggiunti a un dominio)*
+        - **{{FullyQualifiedDomainName}}** *(applicabile solo per i dispositivi Windows e aggiunti a un dominio)*
         - **{{MEID}}**
 
         È possibile specificare queste variabili, seguite dal testo per la variabile, nella casella di testo. Ad esempio, il nome comune per un dispositivo denominato *Dispositivo1* può essere aggiunto come **CN={{DeviceName}}Dispositivo1**.
@@ -275,7 +275,7 @@ La procedura per assegnare i profili di certificato SCEP è uguale a quella per 
 
 - Per pubblicare rapidamente un certificato in un dispositivo dopo la registrazione del dispositivo, assegnare il profilo certificato a un gruppo di utenti invece che a un gruppo di dispositivi. Se si assegna il profilo certificato a un gruppo di dispositivi, è necessario eseguire una registrazione completa dei dispositivi prima che questi ricevano i criteri.
 
-- Se si usa la co-gestione per Intune e Configuration Manager, in Configuration Manager [impostare il dispositivo di scorrimento del carico di lavoro](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) per Criteri di accesso alle risorse su **Intune** o **Intune pilota**. Questa impostazione consente ai client Windows 10 di avviare il processo di richiesta del certificato.
+- Se si usa la co-gestione per Intune e Configuration Manager, in Configuration Manager [impostare il dispositivo di scorrimento del carico di lavoro](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) per Criteri di accesso alle risorse su **Intune** o **Intune pilota**. Questa impostazione consente ai client Windows 10 di avviare il processo di richiesta del certificato.
 
 - Anche se si creano e si assegnano separatamente il profilo di certificato attendibile e il profilo di certificato SCEP, è necessario assegnare entrambi. Se non sono entrambi installati in un dispositivo, i criteri per i certificati SCEP hanno esito negativo. Assicurarsi che tutti i profili di certificati radice attendibili vengano anche distribuiti negli stessi gruppi del profilo SCEP.
 

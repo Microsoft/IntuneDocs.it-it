@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465717"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731280"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Report di conformità di Intune per gli aggiornamenti
 
@@ -51,7 +51,7 @@ Per esaminare un report sui criteri sullo stato di distribuzione per gli anelli 
 
 Quando si usa questa soluzione, è possibile distribuire un ID commerciale in uno qualsiasi dei dispositivi Windows 10 gestiti da Intune per cui si vuole creare report di conformità degli aggiornamenti.  
 
-In Intune usare le impostazioni OMA-URI di un criterio personalizzato per configurare l'ID commerciale. Vedere [Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+In Intune usare le impostazioni OMA-URI di un criterio personalizzato per configurare l'ID commerciale. Vedere [Usare le impostazioni personalizzate per dispositivi Windows 10 in Intune](../configuration/custom-settings-windows-10.md).
 
 Il percorso OMA-URI (con distinzione tra maiuscole e minuscole) per configurare l'ID commerciale è: *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*  
 

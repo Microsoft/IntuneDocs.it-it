@@ -1,20 +1,36 @@
 ---
 title: includere il file
-description: includere il file
+description: Includere file
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828741"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323088"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Funzionalità aggiornata: Nuovo ruolo del controllo degli accessi in base al ruolo in Intune<!--4253397-->
+Nell'aggiornamento del servizio Intune di gennaio è previsto il rilascio di un nuovo ruolo di sicurezza in Intune. Questo ruolo verrà elencato come "Endpoint Security Manager" (Gestore sicurezza endpoint) in Intune ed è un'espansione del ruolo "Amministratore della sicurezza" di Azure Active Directory.
+ 
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+Attualmente in Azure Active Directory sono disponibili tre ruoli per i professionisti della sicurezza:
+- Ruolo con autorizzazioni di lettura per la sicurezza in Azure AD che consente l'accesso in sola lettura a Intune.
+- Ruolo Operatore per la sicurezza in Azure AD che consente l'accesso in sola lettura a Intune.
+- Amministratore della sicurezza in Azure AD. Nell'aggiornamento di gennaio di Intune, oltre alle autorizzazioni di sola lettura per Intune, le nuove autorizzazioni incluse nel ruolo Endpoint Security Manager (Gestione sicurezza endpoint) sono le seguenti:
+    - Read, Create, Update, Delete, and Assign Device Compliance Policies (Lettura, Creazione, Aggiornamento, Eliminazione e Assegnazione di criteri di conformità del dispositivo)
+    - Read, Delete, and Update Managed devices (Lettura, Eliminazione e Aggiornamento di dispositivi gestiti)
+    - Read, Create, Update, Delete, and Assign Security baselines (Lettura, Creazione, Aggiornamento, Eliminazione e Assegnazione di baseline di sicurezza)
+    - Read and Update Security tasks (Lettura e Aggiornamento delle attività di sicurezza)
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
+Esaminare oggi stesso i ruoli di controllo degli accessi in base al ruolo di Intune. Se al momento l'unico ruolo disponibile è Amministratori globali, non sono necessarie modifiche. Se si usano i ruoli e si vuole disporre della granularità offerta da Endpoint Security Manager (Gestore sicurezza endpoint), assegnare tale ruolo quando diventa disponibile. Per informazioni aggiornate sulla versione di Intune, vedere la pagina [Novità](../fundamentals/whats-new.md) di Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>È stata aggiornata l'informativa di supporto per l'app per dispositivi mobili 'Adobe Acrobat Reader per Intune'<!--5746776-->
 Nel documento MC188653 della fine di agosto è stato comunicato che l'app per dispositivi mobili Adobe Acrobat Reader per Intune stava avvicinandosi alla scadenza dell'1 dicembre 2019 e che Adobe prevedeva di includere il supporto dei criteri di protezione delle app di Intune all'interno dell'app Acrobat Reader principale. Da allora, abbiamo ricevuto il feedback dei clienti che richiedeva più tempo per continuare a consentire agli amministratori IT di impostare l'app come destinazione e agli utenti finali di iniziare a usare Adobe Acrobat Reader per Intune. Considerato l'utilizzo elevato di Adobe Acrobat Reader per Intune nei dispositivi degli utenti finali e la sua importanza negli scenari aziendali, vogliamo assicurarci che qualsiasi esperienza soddisfi le esigenze di protezione delle app dell'organizzazione. 
@@ -39,25 +55,6 @@ Dopo il 20 febbraio 2020 questi dispositivi non riceveranno aggiornamenti della 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 È possibile controllare i report di Intune per vedere quali dispositivi o utenti potrebbero essere interessati. Andare a Dispositivi > Tutti i dispositivi e filtrare in base al sistema operativo. È possibile aggiungere altre colonne per facilitare l'identificazione degli utenti dell'organizzazione che hanno dispositivi che eseguono Windows Phone 8.1. Richiedere agli utenti finali di aggiornare i dispositivi a una versione supportata del sistema operativo.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Aggiornare i criteri di protezione delle app di Outlook per Intune<!--2576686-->
-Se è stato ricevuto un messaggio MC195618 nel centro messaggi, può essere necessario intervenire. Come condiviso negli ID funzionalità della roadmap di Microsoft 365 56325 e 56326, Intune e Outlook per iOS e Android implementano il supporto per limitare i dati sensibili nelle notifiche di posta elettronica e nei promemoria del calendario. In seguito a questi miglioramenti, Outlook per iOS e Android eliminerà il supporto per diverse chiavi di configurazione delle app per la protezione dei dati che attualmente vengono usate per gestire le notifiche.
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Le nuove funzionalità non sono state ancora distribuite, ma quando lo saranno, le chiavi di configurazione dell'app seguenti non funzioneranno più in Outlook per iOS e Android:
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
-È consigliabile configurare l'impostazione di protezione dei dati per i criteri di protezione app di Intune "Notifiche sui dati dell'organizzazione" con il valore "Blocca i dati dell'organizzazione" in preparazione a questa nuova funzionalità. A partire dal 16 dicembre 2019, Outlook per iOS e Android rispetterà l'impostazione di protezione dei dati "Notifiche sui dati dell'organizzazione" e non supporterà più le chiavi menzionate in precedenza. La configurazione di questa nuova impostazione garantisce che i dati sensibili non vengano diffusi quando le chiavi di configurazione descritte in precedenza non saranno più supportate. Quando l'impostazione di protezione dei dati "Notifiche sui dati dell'organizzazione" è impostata su "Blocca i dati dell'organizzazione", Outlook offre anche una granularità maggiore con un'impostazione di configurazione dell'app aggiuntiva, "Notifiche del calendario". La combinazione dell'impostazione dei criteri di protezione delle app e di questa impostazione di configurazione dell'app limita le informazioni riservate nelle notifiche di posta elettronica, consentendone al tempo stesso l'esposizione nelle notifiche del calendario, in modo che gli utenti possano partecipare alle riunioni dando una rapida occhiata alle notifiche o al centro notifiche.
-
-#### <a name="additional-information"></a>Informazioni aggiuntive
-Per altre informazioni sulle impostazioni dei criteri di protezione delle app e di Outlook, vedere:
-- [Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune](../apps/app-protection-policy-settings-android.md)
-- [Impostazioni dei criteri di protezione delle app per iOS](../apps/app-protection-policy-settings-ios.md)
-- [Distribuzione delle impostazioni di configurazione delle app di Outlook per iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Modifica prevista per Intune: Scadenza del supporto per il Portale aziendale Windows 10, versione 1703<!--5026679-->

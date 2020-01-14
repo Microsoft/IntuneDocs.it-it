@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390319"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654261"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune
 
@@ -58,7 +58,7 @@ Per informazioni dettagliate sulle impostazioni di FileVault che è possibile ge
 3. Impostare le opzioni seguenti:
 
    - Piattaforma: macOS
-   - Tipo di profilo: Endpoint Protection
+   - Tipo di profilo: Protezione degli endpoint
 
 4. Selezionare **Impostazioni** > **FileVault**.
 
@@ -87,6 +87,10 @@ Dopo che Intune ha crittografato un dispositivo macOS con FileVault, è possibil
 
 Dopo che Intune ha crittografato un dispositivo macOS con FileVault, è possibile visualizzare la chiave di ripristino personale di tale dispositivo dal Portale aziendale Web in qualsiasi dispositivo. Nel Portale aziendale Web scegliere il dispositivo macOS crittografato e quindi scegliere "Ottieni la chiave di ripristino" come azione del dispositivo remoto.
 
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperare la chiave di ripristino personale dai dispositivi macOS crittografati MEM
+
+Gli utenti finali possono recuperare la propria chiave di ripristino personale (chiave di FileVault) usando l'app Portale aziendale iOS. Il dispositivo con la chiave di ripristino personale deve essere registrato in Intune e crittografato con FileVault in Intune. Con l'app Portale aziendale iOS l'utente finale può aprire una pagina Web che include la chiave di ripristino personale di FileVault. La chiave di ripristino può essere recuperata anche da Intune selezionando **Dispositivi** > *il dispositivo macOS crittografato e registrato* > **Ottieni la chiave di ripristino**. 
+
 ## <a name="bitlocker-encryption-for-windows-10"></a>Crittografia BitLocker per Windows 10
 
 Usare Intune per configurare Crittografia unità BitLocker nei dispositivi che eseguono Windows 10. Usare quindi il report di crittografia di Intune per visualizzare i dettagli sulla crittografia per tali dispositivi. È anche possibile accedere a informazioni importanti per BitLocker dai dispositivi, come indicato in Azure Active Directory (Azure AD).
@@ -106,7 +110,7 @@ Configurare BitLocker quando si crea un [profilo di configurazione del dispositi
 3. Impostare le opzioni seguenti:
 
    - Piattaforma: Windows 10 e versioni successive
-   - Tipo di profilo: Endpoint Protection
+   - Tipo di profilo: Protezione degli endpoint
 
 4. Selezionare **Impostazioni** > **Crittografia di Windows**.
 

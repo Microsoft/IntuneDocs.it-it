@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547979"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731525"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usare i modelli di Windows 10 per configurare le impostazioni di Criteri di gruppo in Microsoft Intune
 
@@ -48,20 +48,14 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome per il profilo.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
     - **Tipo di profilo**: selezionare **Modelli amministrativi**.
 
-4. Selezionare **Crea**. Nella nuova finestra selezionare **Impostazioni**. Vengono elencate tutte le impostazioni ed è possibile usare le frecce avanti e indietro per visualizzare più impostazioni:
+4. Selezionare **Crea**. Nella nuova finestra selezionare l'elenco a discesa e quindi **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo quelle di **Windows**, solo quelle di **Office** o solo quelle di **Edge versione 77 o successiva**:
 
-    ![Esempio di un elenco di impostazioni con le frecce avanti e indietro](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > Le impostazioni di Windows in Intune sono correlate al percorso dei Criteri di gruppo locali visualizzato in Editor Criteri di gruppo locali (`gpedit`).
-
-5. Nell'elenco a discesa selezionare **Tutti i prodotti**. Dall'elenco è anche possibile filtrare le impostazioni in modo da visualizzare solo quelle di **Windows**, solo quelle di **Office** o solo quelle di **Edge versione 77 o successiva**:
-
-    ![Filtrare l'elenco per visualizzare tutte impostazioni di Windows o di Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Filtrare l'elenco per visualizzare tutte le impostazioni di Windows o di Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Le impostazioni di Microsoft Edge si applicano a:
@@ -70,6 +64,14 @@ Questo articolo illustra i passaggi da eseguire per creare un modello per dispos
     > - Windows 10 RS4 e versioni successive con [KB 4512509](https://support.microsoft.com/kb/4512509) installato
     > - Windows 10 RS5 e versioni successive con [KB 4512534](https://support.microsoft.com/kb/4512534) installato
     > - Windows 10 19H1 e versioni successive con [KB 4512941](https://support.microsoft.com/kb/4512941) installato
+
+5. Vengono elencate tutte le impostazioni ed è possibile usare le frecce avanti e indietro per visualizzare più impostazioni:
+
+    > [!div class="mx-imgBorder"]
+    > ![Esempio di un elenco di impostazioni con le frecce avanti e indietro](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > Le impostazioni di Windows in Intune sono correlate al percorso dei Criteri di gruppo locali visualizzato in Editor Criteri di gruppo locali (`gpedit`).
 
 6. Selezionare un'impostazione qualsiasi, Ad esempio, filtrare in base a **Office** e selezionare **Attivazione esplorazione con restrizioni**. Viene visualizzata una descrizione dettagliata dell'impostazione. Scegliere **Abilitata**, **Disabilitata** oppure lasciare l'opzione **Non configurata** (impostazione predefinita). La descrizione dettagliata spiega anche cosa accade quando si sceglie **Abilitata**, **Disabilitata** o **Non configurata**.
 7. Selezionare **OK** per salvare le modifiche.
@@ -88,13 +90,15 @@ Continuare a scorrere l'elenco delle impostazioni e configurare quelle che si vo
 
 In questi modelli sono disponibili centinaia di impostazioni. Per trovare più facilmente determinate impostazioni, usare le funzionalità predefinite:
 
-- Nel modello selezionare la colonna **Impostazioni**, **Stato**, **Tipo di impostazione** o **Percorso** per ordinare l'elenco. Ad esempio, selezionare la colonna **Percorso** per visualizzare tutte le impostazioni disponibili nel percorso `Microsoft Excel`:
+- Nel modello selezionare la colonna **Impostazioni**, **Stato**, **Tipo di impostazione** o **Percorso** per ordinare l'elenco. Ad esempio, selezionare la colonna **Percorso** e usare la freccia avanti per visualizzare le impostazioni nel percorso `Microsoft Excel`:
 
-  ![Fare clic sul percorso per visualizzare tutte le impostazioni raggruppate in base ai Criteri di gruppo o al percorso ADMX nei modelli amministrativi in Intune.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Fare clic sul percorso per visualizzare tutte le impostazioni raggruppate in base ai criteri di gruppo o al percorso ADMX nei modelli amministrativi in Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Usare la **casella di ricerca** del modello per trovare impostazioni specifiche. È possibile eseguire la ricerca di impostazioni in base al titolo o al percorso. Ad esempio, cercare `copy`. Vengono visualizzate tutte le impostazioni che contengono `copy`:
+- Usare la **casella di ricerca** del modello per trovare impostazioni specifiche. È possibile eseguire la ricerca in base all'impostazione o al percorso. Ad esempio, cercare `copy`. Vengono visualizzate tutte le impostazioni che contengono `copy`:
 
-  ![Ricerca di copy per visualizzare tutte le impostazioni di Windows e Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Ricerca di copy per visualizzare tutte le impostazioni di Windows e Office nei modelli amministrativi in Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
   In un altro esempio cercare `microsoft word`. Vengono visualizzate tutte le impostazioni che è possibile configurare per l'applicazione Microsoft Word. Cercare `explorer` per visualizzare tutte le impostazioni di Internet Explorer che è possibile aggiungere al modello.
 
@@ -103,3 +107,5 @@ In questi modelli sono disponibili centinaia di impostazioni. Per trovare più f
 Il modello è stato creato, ma non è ancora operativo. [Assegnare il modello, detto anche profilo](device-profile-assign.md), e [monitorarne lo stato](device-profile-monitor.md).
 
 [Aggiornare Office 365 usando i modelli amministrativi](administrative-templates-update-office.md).
+
+[Esercitazione: Usare il cloud per configurare criteri di gruppo nei dispositivi Windows 10 con modelli ADMX e Microsoft Intune](tutorial-walkthrough-administrative-templates.md)

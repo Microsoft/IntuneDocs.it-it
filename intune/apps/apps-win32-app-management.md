@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564032"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622529"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -125,7 +125,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 1. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
 2. Nel riquadro **Informazioni sull'app** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Se il nome di un'app è usato due volte, ogni app verrà visualizzata nel portale aziendale.
-    - **Description**: Immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
+    - **Descrizione**: Immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
@@ -328,6 +328,9 @@ Ogni dipendenza dovrà rispettare la logica di ripetizione dei tentativi dell'ap
 
 I client Windows 10 1709 e versioni successive scaricheranno il contenuto dell'app Win32 di Intune mediante un componente di Ottimizzazione recapito nel client Windows 10. Ottimizzazione recapito offre funzionalità peer-to-peer attivate per impostazione predefinita. È possibile configurare Ottimizzazione recapito tramite Criteri di gruppo e tramite la configurazione dei dispositivi di Intune. Per altre informazioni, vedere [Ottimizzazione recapito per Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
+> [!NOTE]
+> È anche possibile installare un server Microsoft Connected Cache nei punti di distribuzione di Configuration Manager per memorizzare nella cache il contenuto dell'app Win32 di Intune. Per altre informazioni, vedere [Microsoft Connected Cache in Configuration Manager - Supporto per le app Win32 di Intune](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Installare le app obbligatorie e disponibili nei dispositivi
 
 L'utente finale riceverà le notifiche di tipo avviso popup di Windows per le installazioni delle app obbligatorie e disponibili. L'immagine seguente mostra un esempio di notifica di tipo avviso popup in cui l'installazione dell'app non risulta completa fino al riavvio del dispositivo. 
@@ -353,9 +356,9 @@ Impostare la disponibilità dell'app in base a una data e un'ora per un'app obbl
 
     > [!NOTE]
     > **Tipo di assegnazione** include le opzioni seguenti:<br>
-    > - **Obbligatoria**: È possibile scegliere **Rendi questa app obbligatoria per tutti gli utenti** e/o **Rendi questa app obbligatoria in tutti i dispositivi**.<br>
+    > - **Richiesto**: È possibile scegliere **Rendi questa app obbligatoria per tutti gli utenti** e/o **Rendi questa app obbligatoria in tutti i dispositivi**.<br>
     > - **Disponibile per i dispositivi registrati**: È possibile scegliere **Rendi questa app disponibile per tutti gli utenti con dispositivi registrati**.<br>
-    > - **Disinstalla**: È possibile scegliere ***Disinstalla questa app per tutti gli utenti** e/o **Disinstalla questa app per tutti i dispositivi**.
+    > - **Uninstall** (Disinstalla): È possibile scegliere ***Disinstalla questa app per tutti gli utenti** e/o **Disinstalla questa app per tutti i dispositivi**.
 
 8. Per modificare le opzioni **Esperienza dell'utente finale** selezionare **Modifica**.
 9. Nel riquadro **Modifica assegnazione** impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**. Si noti che è possibile impostare **Notifiche per l'utente finale** su **Mostra tutte le notifiche di tipo avviso popup**, **Mostra le notifiche di tipo avviso popup per i riavvii dei computer** o **Nascondi tutte le notifiche di tipo avviso popup**.
@@ -375,7 +378,7 @@ Se necessario, è possibile eliminare la visualizzazione delle notifiche di tipo
 > Le app Win32 installate dall'estensione di gestione di Intune non verranno disinstallate nei dispositivi di cui è stata annullata la registrazione. Gli amministratori possono sfruttare l'esclusione di assegnazione per non offrire l'app Win32 ai dispositivi BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Risolvere i problemi delle app Win32
-I log dell'agente nel computer client si trovano in genere in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare `CMTrace.exe` per visualizzare questi file di log. È possibile scaricare *CMTrace.exe* da [Strumenti di Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 
+I log dell'agente nel computer client si trovano in genere in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare `CMTrace.exe` per visualizzare questi file di log. Per altre informazioni, vedere [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
 
 ![Screenshot dei log dell'agente nel computer client](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

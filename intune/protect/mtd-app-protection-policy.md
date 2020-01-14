@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188505"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545957"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Creare criteri di protezione delle app Mobile Threat Defense con Intune
 
@@ -34,7 +34,7 @@ Intune con Mobile Threat Defense (MTD) consente di rilevare le minacce e valutar
 > Questo articolo si applica a tutti i partner Mobile Threat Defense che supportano i criteri di protezione delle app:
 >
 > - Better Mobile (Android)
-> - Zimperium (iOS)
+> - Zimperium (Android, iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
@@ -55,9 +55,9 @@ Usare la procedura per [creare i criteri di protezione delle app per iOS/iPadOS 
   Opzioni per **Valore** del livello di minaccia:
 
   - **Protetti**: questo livello è il più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme.
-  - **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
-  - **Medio**: il dispositivo è conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene determinato come non conforme.
-  - **Alto**: questo livello è il meno sicuro. Questa impostazione consente tutti i livelli di minaccia e usa Mobile Threat Defense solo a scopi di report. È necessario che nei dispositivi l'app MTD sia attivata con questa impostazione.
+  - **Bassa**: il dispositivo è conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
+  - **Media**: il dispositivo è conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene determinato come non conforme.
+  - **Alta**: questo livello è il meno sicuro. Questa impostazione consente tutti i livelli di minaccia e usa Mobile Threat Defense solo a scopi di report. È necessario che nei dispositivi l'app MTD sia attivata con questa impostazione.
 
   Opzioni per **Azione**:
 

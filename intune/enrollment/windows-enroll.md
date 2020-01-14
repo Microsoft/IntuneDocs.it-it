@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000432"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207435"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -37,7 +37,7 @@ L'amministratore di Intune può semplificare la registrazione nei modi seguenti:
 - [Registrazione CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Abilitare la registrazione in blocco](../windows-bulk-enroll.md) (sono necessari Azure AD Premium e Progettazione configurazione di Windows)
 
-La semplificazione della registrazione dei dispositivi Windows dipende da due fattori:
+Due fattori determinano in che modo è possibile semplificare la registrazione dei dispositivi Windows:
 
 - **Si usa Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) è incluso in Enterprise Mobility + Security e altri piani di licenze.
 - **Quali versioni dei client Windows richiedono la registrazione da parte degli utenti?** <br>I dispositivi Windows 10 possono essere registrati automaticamente mediante l'aggiunta di un account aziendale o dell'istituto di istruzione. Le versioni precedenti devono essere registrate con l'app del portale aziendale.
@@ -68,9 +68,9 @@ Quando gli utenti standard accedono con le proprie credenziali di Azure AD ricev
 Per semplificare la registrazione, creare un alias DNS (Domain Name Server), un tipo di record CNAME che reindirizza le richieste di registrazione ai server di Intune. In caso contrario, gli utenti che tentano di connettersi a Intune devono immettere il nome del server Intune durante la registrazione.
 
 **Passaggio 1: Creare CNAME** (facoltativo)<br>
-Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web della società è contoso.com, si creerà un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
+Creare record di risorse CNAME DNS per il dominio della società. Ad esempio, se il sito Web della società è contoso.com, si creerà un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
-Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
+Sebbene la creazione di voci DNS CNAME sia facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
 
 |Tipo|Nome dell'host|Punta a|TTL|
 |----------|---------------|---------------|---|
@@ -128,7 +128,10 @@ Azure Active Directory ha un CNAME diverso che usa per la registrazione dei disp
 Per altre informazioni sulla registrazione dei dispositivi, vedere [Gestire le identità dei dispositivi usando il portale di Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Registrazione automatica di Windows 10 e registrazione dei dispositivi
-Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.us.
+
+Questa sezione si applica ai clienti cloud di enti pubblici degli Stati Uniti.
+
+Sebbene la creazione di voci DNS CNAME sia facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.us.
 
 | Tipo | Nome dell'host | Punta a | TTL |
 | --- | --- | --- | --- |

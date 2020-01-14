@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563888"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548007"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gestire l'accesso Web usando Microsoft Edge con Microsoft Intune
 
@@ -199,6 +199,14 @@ Usare quindi le coppie chiave/valore seguenti per eseguire il pull degli element
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Visualizzare le notizie rilevanti sul settore in Pagina Nuova scheda
+
+È possibile configurare la nuova esperienza d'uso di Pagina Nuova scheda in Microsoft Edge per dispositivi mobili per visualizzare le notizie sul settore rilevanti per l'organizzazione. Quando si abilita questa funzionalità, Microsoft Edge per dispositivi mobili usa il nome di dominio dell'organizzazione per aggregare notizie dal Web in merito all'organizzazione, al settore dell'organizzazione e ai concorrenti, in modo che gli utenti possano trovare le notizie esterne pertinenti da Pagina Nuova scheda in Microsoft Edge. La funzionalità relativa alle notizie del settore è disattivata per impostazione predefinita ed è possibile usarla per acconsentire esplicitamente al servizio per la propria organizzazione. 
+
+|    Chiave    |    Valore    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.SohwIndustryNews'    |    **True** visualizza le notizie del settore nella Pagina Nuova scheda di Microsoft Edge per dispositivi mobili.<p>**False** (impostazione predefinita) nasconde le notizie del settore dalla Pagina Nuova scheda.    |
+
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurare segnalibri gestiti per Microsoft Edge
 
 Per semplificare l'accesso, è possibile configurare segnalibri da mettere a disposizione degli utenti quando usano Microsoft Edge. 
@@ -237,7 +245,7 @@ Usare le coppie chiave/valore seguenti per configurare un elenco di siti consent
 È possibile usare diversi formati di URL per creare gli elenchi dei siti consentiti e bloccati. I modelli che è possibile usare sono descritti in dettaglio nella tabella seguente. Di seguito sono indicate alcune note: 
 - Assicurarsi che tutte le URL abbiano con prefisso **http** o **https** quando immetterle nell'elenco.
 - È possibile usare il carattere jolly (\*) secondo le regole nell'elenco di modelli consentiti seguente.
-- Un carattere jolly può corrispondere solamente a un componente intero del nome host (separato da punti) o a parti intere del percorso (separate da barre). Ad esempio, `http://*contoso.com` **non** è supportato.
+- Un carattere jolly può corrispondere solamente a un componente intero del nome host (separato da punti) o a parti intere del percorso (separate da barre). Ad esempio, `http://*contoso.com`**non** è supportato.
 - È possibile specificare numeri di porta nell'indirizzo. Se non si specifica un numero di porta, i valori usati sono:
   - Porta 80 per http
   - Porta 443 per https
@@ -268,7 +276,7 @@ Usare le coppie chiave/valore seguenti per configurare un elenco di siti consent
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Definire il comportamento quando gli utenti cercano di accedere a un sito bloccato
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>Esegue la transizione degli utenti al contesto personale quando tentano di accedere a un sito bloccato
 
 Con il modello a doppia identità integrato in Microsoft Edge, è possibile offrire agli utenti finali un'esperienza più flessibile rispetto a quanto possibile con Intune Managed Browser. Quando gli utenti tentano di accedere a un sito bloccato in Microsoft Edge, è possibile richiedere loro di aprire il collegamento nel contesto personale anziché nel contesto aziendale. Ciò consente loro di rimanere protetti, mantenendo al sicuro le risorse aziendali. Ad esempio, se un utente riceve un collegamento a un articolo di notizie tramite Outlook, può aprire il collegamento nel contesto personale o in una scheda InPrivate. Il contesto aziendale non consente l'accesso a siti Web di notizie. Per impostazione predefinita, queste transizioni sono consentite.
 
@@ -276,7 +284,16 @@ Usare la coppia chiave/valore seguente per definire se abilitare o meno queste t
 
 |    Chiave    |    Valore    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    'com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True** causa l'apertura di collegamenti limitati direttamente in InPrivate Browsing.<p>**False** (impostazione predefinita) consente agli utenti di scegliere di aprire un collegamento con restrizioni con InPrivate Browsing o con l'account personale (account del servizio gestito).    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Aprire i collegamenti con restrizioni direttamente nelle pagine InPrivate
+
+È possibile configurare i collegamenti con restrizioni in modo che vengano aperti direttamente in InPrivate Browsing, che offre agli utenti un'esperienza di esplorazione più trasparente. Ciò consente agli utenti di evitare di passare al proprio contesto personale per visualizzare un sito. InPrivate Browsing viene considerato non gestito, quindi gli utenti non potranno accedere quando usano la modalità InPrivate Browsing. 
+
+|    Chiave    |    Valore    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** consente a Microsoft Edge di effettuare la transizione degli utenti al contesto personale per aprire i siti bloccati.<p>**Block** impedisce a Microsoft Edge di effettuare la transizione degli utenti. Per gli utenti viene semplicemente visualizzato un messaggio che informa che il sito a cui stanno tentando di accedere è bloccato.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Usare Microsoft Edge in iOS per accedere ai log delle app gestite 
 

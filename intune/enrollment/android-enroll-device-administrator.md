@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 678eb92bb6f5f23756092cd5d9cc1a645e1e8db3
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562362"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547849"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registrazione di tipo amministratore di dispositivi Android
 
@@ -39,7 +39,7 @@ Se si decide che gli utenti possano comunque registrare i propri dispositivi And
 
 
 > [!Note]  
-> Android 10 e versioni successive non saranno supportati nella gestione dei dispositivi mobili ibrida (MDM ibrido, Intune gestito con la console di System Center Configuration Manager) perché MDM ibrido non sarà più disponibile a partire dal 1° settembre 2019. Se si usa ancora MDM ibrido, è consigliabile eseguire la migrazione alla soluzione Intune autonoma appena possibile. Per ottenere assistenza per la migrazione, contattare il supporto. Per altre informazioni, vedere l'articolo relativo al [passaggio dalla gestione ibrida dei dispositivi mobili a Intune in Azure](https://aka.ms/hybrid_notification).
+> Android 10 e versioni successive non saranno supportati nella gestione dei dispositivi mobili ibrida (MDM ibrida, Intune gestito con la console di Configuration Manager) perché MDM ibrida non sarà più disponibile a partire dal 1° settembre 2019. Se si usa ancora MDM ibrido, è consigliabile eseguire la migrazione alla soluzione Intune autonoma appena possibile. Per ottenere assistenza per la migrazione, contattare il supporto. Per altre informazioni, vedere l'articolo relativo al [passaggio dalla gestione ibrida dei dispositivi mobili a Intune in Azure](https://aka.ms/hybrid_notification).
 
 Per altre informazioni sulle funzionalità di Android Enterprise di Google, vedere questi articoli:
 - [Indicazioni di Google per la migrazione da amministratore di dispositivi ad Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188241"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683800"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Usare Windows Hello for Business nei dispositivi Windows 10 con Microsoft Intune
 
@@ -49,7 +49,7 @@ Questo articolo illustra come creare un profilo di configurazione del dispositiv
 3. Immettere le proprietà seguenti:
 
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+   - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
    - **Piattaforma**: selezionare **Windows 10 e versioni successive**. Windows Hello for Business è supportato solo nei dispositivi che eseguono Windows 10 e versioni successive.
    - **Tipo di profilo**: selezionare **Protezione dell'identità**.
 
@@ -71,6 +71,9 @@ Questo articolo illustra come creare un profilo di configurazione del dispositiv
 5. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
 Il profilo viene creato e visualizzato nell'elenco dei profili. Successivamente [assegnare](../configuration/device-profile-assign.md) questo profilo ai gruppi di utenti e dispositivi in base alle esigenze.
+
+> [!IMPORTANT]
+> Per consentire il provisioning di più utenti in un dispositivo, specificare che i criteri di Windows Hello for business devono essere applicati ai dispositivi. Se i criteri vengono applicati solo agli utenti, è possibile eseguire il provisioning di un solo utente in un dispositivo.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

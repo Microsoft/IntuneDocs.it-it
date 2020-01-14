@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563472"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548021"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usare gli script di PowerShell nei dispositivi Windows 10 in Intune
 
@@ -64,9 +64,9 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 
   - Dispositivi con co-gestione che usano Configuration Manager e Intune. Assicurarsi che il carico di lavoro **App** sia impostato su **Pilot Intune** (Distribuzione pilota di Intune) o **Intune**. Per indicazioni, vedere gli articoli seguenti: 
   
-    - [Informazioni sulla co-gestione](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Carico di lavoro App client](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Passare i carichi di lavoro di Configuration Manager a Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [Informazioni sulla co-gestione](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Carico di lavoro App client](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Come trasferire i carichi di lavoro di Configuration Manager a Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Assicurarsi che i dispositivi siano [aggiunti](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) ad Azure AD. I dispositivi che sono solo [registrati](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD non riceveranno gli script.
@@ -80,7 +80,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti. Dopo che questi p
 
 3. In **Informazioni di base** immettere le proprietà seguenti e selezionare **Avanti**:
     - **Nome**: immettere un nome per lo script di PowerShell. 
-    - **Description**: immettere una descrizione per lo script di PowerShell. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: immettere una descrizione per lo script di PowerShell. Questa impostazione è facoltativa ma consigliata.
 4. In **Impostazioni script** immettere le proprietà seguenti e selezionare **Avanti**:
     - **Percorso dello script**: passare allo script di PowerShell. Lo script deve avere dimensioni inferiori a 200 KB (ASCII).
     - **Esegui lo script con le credenziali dell'utente connesso**: selezionare **Sì** per eseguire lo script con le credenziali dell'utente nel dispositivo. Scegliere **No** (impostazione predefinita) per eseguire lo script nel contesto di sistema. Molti amministratori scelgono **Sì**. Se è necessario eseguire lo script nel contesto di sistema, scegliere **No**.
@@ -134,7 +134,7 @@ In **Script di PowerShell** selezionare lo script da monitorare, scegliere **Mon
 
 ## <a name="intune-management-extension-logs"></a>Log dell'estensione di gestione di Intune
 
-I log dell'agente nel computer client si trovano in genere in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) per visualizzare questi file di log. 
+I log dell'agente nel computer client si trovano in genere in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) per visualizzare questi file di log.
 
 ![Screenshot di log dell'agente cmtrace di esempio in Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

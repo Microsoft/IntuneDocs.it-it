@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564258"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205038"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 
@@ -34,15 +34,15 @@ I criteri di configurazione delle app in Microsoft Intune specificano le imposta
 > [!NOTE]  
 > Non tutte le app supportano la configurazione delle app. Contattare lo sviluppatore dell'app per verificare se l'app supporta i criteri di configurazione.
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **App** > **Criteri di configurazione dell'app** >  **Aggiungi**.
-2. Immettere le proprietà seguenti:
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **App** > **Criteri di configurazione dell'app** >  **Aggiungi** > **Dispositivi gestiti**.
+2. Aggiungere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Criterio app Nine Work Android Enterprise per l'intera azienda**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
-    - **Tipo di registrazione del dispositivo**: Selezionare **Dispositivi gestiti**.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Tipo di registrazione del dispositivo**: Questo valore è impostato su **Dispositivi gestiti**.
     - **Piattaforma**: Selezionare **Android**.
 
-3. Selezionare **App associata**. Scegliere l'app per cui si vogliono definire i criteri di configurazione dell'app. Selezionare dall'elenco di app Google Play gestite che sono state approvate e sincronizzate con Intune.
+3. Selezionare **App associata**. Scegliere l'app Android a cui verranno associati questi criteri di configurazione dell'app. Selezionare dall'elenco di [app Google Play gestite che sono state approvate e sincronizzate con Intune](~/apps/apps-add-android-for-work.md).
 4. Selezionare **Autorizzazioni**. È possibile impostare le configurazioni usando quanto segue:
 
     - [Progettazione configurazione](#use-the-configuration-designer)
@@ -110,12 +110,12 @@ Quando l'app assegnata viene eseguita in un dispositivo, viene eseguita con le i
 
 Ad esempio, per un'app che usa il microfono del dispositivo, all'utente viene richiesto di concedere l'autorizzazione per l'uso del microfono.
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) selezionare **App** > **Criteri di configurazione dell'app** >  **Aggiungi**.
-2. Immettere le proprietà seguenti:
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **App** > **Criteri di configurazione dell'app** >  **Aggiungi** > **Dispositivi gestiti**.
+2. Aggiungere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Criterio app per richiesta autorizzazioni Android Enterprise per l'intera azienda**.
     - **Descrizione**. Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
-    - **Tipo di registrazione del dispositivo**: Selezionare **Dispositivi gestiti**.
+    - **Tipo di registrazione del dispositivo**: Questo valore è impostato su **Dispositivi gestiti**.
     - **Piattaforma**: Selezionare **Android**.
 
 3. Selezionare **App associata**. Scegliere l'app per cui si vogliono definire i criteri di configurazione. Selezionare dall'elenco di app con profilo di lavoro Android che sono state approvate e sincronizzate con Intune.

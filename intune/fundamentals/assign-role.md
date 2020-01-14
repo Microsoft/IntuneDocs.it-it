@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503018"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207163"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Assegnare un ruolo a un utente di Intune
 
@@ -32,27 +32,23 @@ Per creare, modificare o assegnare ruoli, l'account deve disporre di una delle s
 - **Amministratore globale**
 - **Amministratore del servizio Intune**
 
-1. Accedere al [portale Azure](https://portal.azure.com).
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Ruoli** > **Tutti i ruoli**.
 
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+2. Nel pannello **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
 
-3. Nel pannello **Intune** scegliere **Ruoli** > **Tutti i ruoli**.
+3. Nel pannello <*nome ruolo*> - **Panoramica** scegliere **Gestisci** > **Assegnazioni**.
 
-4. Nel pannello **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
+4. Nel pannello del ruolo personalizzato scegliere **Assegna**.
 
-5. Nel pannello <*nome ruolo*> - **Panoramica** scegliere **Gestisci** > **Assegnazioni**.
+5. Nel pannello **Assegnazioni di ruolo** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa per l'assegnazione.
 
-6. Nel pannello del ruolo personalizzato scegliere **Assegna**.
+6. Per **Membri (gruppi)** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
 
-7. Nel pannello **Assegnazioni di ruolo** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa per l'assegnazione.
+7. Per **Ambito (gruppi)** scegliere un gruppo contenente gli utenti/dispositivi che il membro indicato in precedenza è autorizzato a gestire.
 
-8. Per **Membri (gruppi)** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
+8. Per **Ambito (tag)** scegliere i tag in cui verrà applicata questa assegnazione di ruolo.
 
-9. Per **Ambito (gruppi)** scegliere un gruppo contenente gli utenti/dispositivi che il membro indicato in precedenza è autorizzato a gestire.
-
-10. Per **Ambito (tag)** scegliere i tag in cui verrà applicata questa assegnazione di ruolo.
-
-11. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
+9. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
 
 
 ## <a name="next-steps"></a>Passaggi successivi

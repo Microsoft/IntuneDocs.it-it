@@ -1,6 +1,6 @@
 ---
 title: Funzionalità e impostazioni dei dispositivi in Microsoft Intune - Azure | Microsoft Docs
-description: Panoramica dei diversi profili di dispositivo di Microsoft Intune. Informazioni su funzionalità, restrizioni, posta elettronica, WiFi, VPN, formazione, certificati, aggiornamento a Windows 10, BitLocker e Microsoft Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali.
+description: Panoramica dei diversi profili di dispositivo di Microsoft Intune. Informazioni su funzionalità, restrizioni, posta elettronica, WiFi, VPN, formazione, certificati, aggiornamento a Windows 10, BitLocker e Microsoft Defender, Windows Information Protection, modelli amministrativi e impostazioni di configurazione del dispositivo personalizzate nell'interfaccia di amministrazione di Microsoft Endpoint Manager. Usare questi profili per proteggere i dati e i dispositivi aziendali.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694948"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206619"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare funzionalità e impostazioni nei dispositivi usando i profili dei dispositivi in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono aggiunte ai "profili di configurazione". È possibile creare i profili per diversi dispositivi e diverse piattaforme, tra cui iOS, Android e Windows. Usare quindi Intune per applicare o "assegnare" il profilo ai dispositivi.
 
@@ -143,7 +143,7 @@ Questa funzionalità supporta:
 - Windows Phone 8.1
 - Windows 10 e versioni successive
 
-## <a name="endpoint-protection"></a>Endpoint Protection
+## <a name="endpoint-protection"></a>Protezione degli endpoint
 
 Con le [impostazioni di Endpoint Protection per Windows 10](../protect/endpoint-protection-windows-10.md) è possibile configurare le impostazioni di BitLocker e Microsoft Defender per i dispositivi Windows 10.
 

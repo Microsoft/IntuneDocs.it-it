@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992995"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206075"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -36,9 +36,9 @@ I report sulla conformità consentono di verificare la conformità dei dispositi
 
 Aprire il **dashboard della conformità dei dispositivi di Intune**:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selezionare **Conformità del dispositivo** > **Panoramica**. Verrà aperto il **dashboard della conformità dei dispositivi**.
+2. Selezionare **Dispositivi** > **Panoramica** >  scheda **Stato conformità**.
 
 > [!IMPORTANT]
 > Per ricevere i criteri di conformità, i dispositivi devono essere registrati in Intune.
@@ -151,7 +151,7 @@ Il grafico **Conformità dell'impostazione** visualizza tutte le impostazioni de
 
 ## <a name="view-compliance-reports"></a>Visualizzare i report di conformità
 
-Oltre a usare i grafici sullo *stato di conformità*, è possibile visualizzare i report di conformità dalla pagina *Monitoraggio* dell'interfaccia di amministrazione.
+Oltre a usare i grafici in *Stato conformità* è possibile accedere a **Report** > **Conformità del dispositivo**.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -191,3 +191,7 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 - Se le impostazioni in conflitto hanno origine da criteri di configurazione di Intune e da criteri di conformità, le impostazioni nei criteri di conformità hanno la precedenza rispetto a quelle dei criteri di configurazione, anche se queste ultime sono più sicure.
 
 - Se sono stati distribuiti più criteri di conformità, Intune usa quelli più sicuri.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+[Panoramica dei criteri di conformità](device-compliance-get-started.md)

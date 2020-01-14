@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563616"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204902"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Abilitare app Win32 in dispositivi in modalità S
 
@@ -57,11 +57,11 @@ I passaggi per consentire l'esecuzione delle app Win32 in un dispositivo Windows
 
 Per creare un criterio supplementare per la modalità S di Windows 10, seguire questa procedura:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Criteri supplementari per la modalità S** > **Crea criterio**.
 3. Prima di aggiungere il **file dei criteri**, è necessario crearlo e firmarlo. Per altre informazioni, vedere:
     - [Creare un criterio del Controllo di applicazioni di Windows Defender usando gli strumenti di PowerShell e convertirlo in un formato binario](https://go.microsoft.com/fwlink/?linkid=2095387)
-    - [Eseguire l'accesso con il servizio Firma di Device Guard](https://go.microsoft.com/fwlink/?linkid=2095629) **(opzione consigliata)**
+    - [Eseguire l'accesso con il servizio Firma di Device Guard](https://go.microsoft.com/fwlink/?linkid=2095629) **(Opzione consigliata)**
 
 4. Nella pagina **Informazioni di base** aggiungere i valori seguenti:
 

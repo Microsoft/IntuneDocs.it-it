@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691782"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207452"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gestire gli aggiornamenti software di Windows 10 in Intune
 
@@ -65,12 +65,9 @@ Per l'uso degli aggiornamenti di Windows per i dispositivi Windows 10 in Intune,
 
 - Nei dispositivi Windows, **Feedback e diagnostica** > **Dati di diagnostica e di utilizzo** deve essere impostato su **Base**, **Avanzato** o **Completo**.  
 
-  È possibile configurare manualmente l'impostazione dei *dati di diagnostica e utilizzo* per i dispositivi Windows 10 oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. Se si usa un profilo di restrizione dei dispositivi, impostare la [restrizione dei dispositivi](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) **Condividi i dati di utilizzo** almeno su **Base**. Questa impostazione si trova nella categoria **Creazione di report e telemetria** quando si configura un criterio di restrizione dei dispositivi per Windows 10 o versione successiva.
+  È possibile configurare manualmente l'impostazione dei *dati di diagnostica e utilizzo* per i dispositivi Windows 10 oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. Se si usa un profilo di restrizione dei dispositivi, impostare la [restrizione dei dispositivi](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)**Condividi i dati di utilizzo** almeno su **Base**. Questa impostazione si trova nella categoria **Creazione di report e telemetria** quando si configura un criterio di restrizione dei dispositivi per Windows 10 o versione successiva.
 
   Per altre informazioni sui profili di dispositivo, vedere la pagina che spiega come [configurare le impostazioni di restrizione dei dispositivi](../configuration/device-restrictions-configure.md).
-
-- Se si usa il portale di Azure classico, [eseguire la migrazione delle impostazioni nel portale di Azure](#migrate-update-settings-to-the-azure-portal).
-
 
 ## <a name="windows-10-update-rings"></a>Anelli di aggiornamento di Windows 10
 
@@ -111,7 +108,7 @@ In questa pagina è possibile visualizzare lo stato di assegnazione degli anelli
 
 ![Operazioni disponibili](./media/windows-update-for-business-configure/overview-actions.png)
 
-#### <a name="delete"></a>Eliminazione
+#### <a name="delete"></a>Elimina
 
 Selezionare **Elimina** per arrestare l'applicazione delle impostazioni dell'anello di aggiornamento di Windows 10 selezionato. L'eliminazione di un anello rimuove la relativa configurazione da Intune, in modo che tali impostazioni non vengano più applicate.
 
@@ -124,7 +121,7 @@ L'eliminazione di un anello da Intune non modifica le impostazioni nei dispositi
 
 #### <a name="pause"></a>Sospendi
 
-Selezionare **Sospendi** per impedire la ricezione di aggiornamenti qualitativi o delle funzionalità sui dispositivi per un periodo massimo di 35 giorni dall'inizio della sospensione dell'anello. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione scade automaticamente e il dispositivo esegue la ricerca degli aggiornamenti applicabili in Windows Update. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
+Selezionare **Sospendi** per impedire la ricezione di aggiornamenti qualitativi o delle funzionalità sui dispositivi per un periodo massimo di 35 giorni dall'inizio della sospensione dell'anello. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione scade automaticamente e il dispositivo esegue la ricerca degli aggiornamenti applicabili in Windows Update. Dopo questa analisi, è possibile sospendere nuovamente gli aggiornamenti.
 Se si ripristina un anello di aggiornamento sospeso e quindi si sospende di nuovo, il periodo di sospensione viene reimpostato su 35 giorni.
 
 ##### <a name="to-pause-a-ring"></a>Per sospendere un anello
@@ -138,7 +135,7 @@ Quando un tipo di aggiornamento viene sospeso, il riquadro Panoramica per tale a
 > [!IMPORTANT]
 > Dopo l'esecuzione di un comando Sospendi, i dispositivi ricevono tale comando al successivo controllo della disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato. Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
 
-#### <a name="resume"></a>Riprendere
+#### <a name="resume"></a>Riprendi
 
 Quando un anello di aggiornamento è stato sospeso, è possibile selezionare **Riprendi** per ripristinare lo stato attivo degli aggiornamenti qualitativi e delle funzionalità per tale anello. Dopo aver ripristinato un anello di aggiornamento è possibile sospenderlo di nuovo.
 
@@ -227,7 +224,7 @@ Quando un dispositivo riceve i criteri di aggiornamento delle funzionalità di W
 
 3. In **Informazioni di base** specificare un nome, una descrizione (facoltativa) e per **Aggiornamento delle funzionalità da distribuire** selezionare la versione di Windows con il set di funzionalità desiderato e quindi selezionare **Avanti**.
 
-4. In **Assegnazioni** scegliere **+ Selezionare i gruppi da includere** e quindi assegnare l'anello di aggiornamento a uno o più gruppi. Selezionare **Avanti** per continuare.
+4. In **Assegnazioni** scegliere **+ Selezionare i gruppi da includere** e assegnare la distribuzione degli aggiornamenti delle funzionalità a uno o più gruppi. Selezionare **Avanti** per continuare.
 
 5. In **Rivedi e crea** esaminare le impostazioni e selezionare **Crea** quando si è pronti per salvare i criteri di aggiornamento delle funzionalità di Windows 10.  
 
@@ -240,17 +237,6 @@ Da questa pagina è possibile effettuare le seguenti operazioni:
 - Selezionare **Elimina** per eliminare i criteri da Intune e rimuoverli dai dispositivi.
 - Selezionare **Proprietà** per modificare la distribuzione.  Nel riquadro *Proprietà* selezionare **Modifica** per aprire *Impostazioni di distribuzione o Assegnazioni* dove è possibile modificare la distribuzione.
 - Selezionare **Stato di aggiornamento dell'utente finale** per visualizzare le informazioni relative ai criteri.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Eseguire la migrazione delle impostazioni di aggiornamento nel portale di Azure
-
-Il portale di Azure classico include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata quando si esegue la migrazione al portale di Azure, è fortemente consigliata una delle azioni seguenti:
-
-1. Creare gli anelli di aggiornamento di Windows 10 nel portale di Azure con le impostazioni necessarie. L'impostazione **Consenti funzionalità di versioni non definitive** non è supportata nel portale di Azure perché non è più applicabile alle build più recenti di Windows 10. È possibile configurare le altre tre impostazioni e quelle relative agli aggiornamenti di Windows 10 quando si creano gli anelli di aggiornamento.
-
-   > [!NOTE]
-   > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nel portale classico non vengono visualizzate nel portale di Azure dopo la migrazione, Queste impostazioni vengono tuttavia applicate. Se si esegue la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione viene rimossa dai criteri.
-
-2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo aver eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Ad esempio, si verifica un conflitto quando la stessa impostazione viene configurata con valori diversi. Non esiste un modo semplice per scoprire il motivo per cui l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

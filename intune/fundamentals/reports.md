@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391942"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654227"
 ---
 # <a name="intune-reports"></a>Report di Intune
 I report di Microsoft Intune consentono di monitorare in modo più efficace e proattivo l'integrità e l'attività degli endpoint all'interno dell'organizzazione e offrono anche altri dati di reporting in Intune. Ad esempio, sarà possibile visualizzare i report su conformità del dispositivo, integrità del dispositivo e tendenze del dispositivo. Inoltre, è possibile creare report personalizzati per ottenere dati più specifici. 
@@ -53,16 +53,19 @@ Il report relativo ai dispositivi non conformi presenta i dati che in genere ven
 
 È possibile visualizzare il report relativo ai **dispositivi non conformi** attenendosi alla procedura seguente:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Conformità del dispositivo** > **Dispositivi non conformi**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Monitoraggio** > **Dispositivi non conformi**.
 
     ![Report sul dispositivo non conforme](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > Se Intune è stato usato in precedenza nel portale di Azure, i dettagli precedenti sono disponibili nel portale di Azure accedendo a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selezionando **Conformità del dispositivo** > **Dispositivi non conformi**.
 
 ## <a name="device-compliance-report-organizational"></a>Report di conformità del dispositivo (organizzativo)
 I report di conformità dei dispositivi sono ad ampio raggio e offrono una visualizzazione dei dati più tradizionale per identificare le metriche aggregate. Questo report è progettato per funzionare con grandi set di dati in modo da ottenere un'immagine completa della conformità del dispositivo. Ad esempio, nel report per la conformità dei dispositivi sono visualizzati tutti gli stati di conformità per i dispositivi, in modo da offrire una visualizzazione più ampia dei dati, indipendentemente dalla dimensione del set di dati. Questo report offre la suddivisione completa dei record oltre a una comoda visualizzazione delle metriche aggregate. Può essere generato applicando filtri e selezionando il pulsante "Genera report". I dati verranno aggiornati in modo da indicare lo stato più recente con la possibilità di visualizzare i singoli record che costituiscono i dati aggregati. Come la maggior parte dei report nel nuovo framework, questi record possono essere ordinati e sottoposti a ricerca per concentrarsi sulle informazioni necessarie. 
 
 Per visualizzare un report generato sullo stato del dispositivo, è possibile seguire questa procedura:
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Report** per visualizzare il riepilogo dei report.
 3. Selezionare **Conformità del dispositivo**.
 4. Selezionare lo **stato di conformità**, il **sistema operativo** e i filtri **proprietà** per perfezionare il report.
@@ -79,7 +82,7 @@ Per le informazioni correlate, vedere [Applicare la conformità per Microsoft De
 
 Il report di conformità del dispositivo è disponibile come report di riepilogo nel carico di lavoro **Report**. Per visualizzare il report di conformità del dispositivo, attenersi alla procedura seguente:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Report** per visualizzare il riepilogo dei report.
 
     ![Riepilogo dei report di Intune](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Un report per la tendenza di conformità del dispositivo può indicare la tenden
 
 È possibile visualizzare il report **Tendenze** attenendosi alla procedura seguente:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Report** > **Tendenze** per visualizzare la compatibilità del dispositivo in base a una tendenza di 60 giorni.
 
     ![Report tendenza di Intune](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Un report specialistico, ad esempio, può correlare i dati di proprietà del dis
 
 È possibile creare e visualizzare i report personalizzati attenendosi alla procedura seguente:
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Report** > **Impostazioni di diagnostica** Aggiungi [impostazione di diagnostica](reports.md#diagnostic-settings).
 
     ![Riepilogo dei report di Intune](./media/intune-reports/intune-reports-04.png)
@@ -143,7 +146,7 @@ Log Analytics è lo strumento principale nel portale di Azure per la scrittura d
 ### <a name="workbooks"></a>Cartelle di lavoro
 Le cartelle di lavoro combinano testo, query di Analytics, metriche di Azure e parametri all'interno di report interattivi avanzati. Le cartelle di lavoro possono essere modificate dagli altri membri del team che hanno accesso alle stesse risorse di Azure. Per altre informazioni sulle cartelle di lavoro, vedere [Cartelle di lavoro di Monitoraggio di Azure](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Inoltre, l'utente può usare i modelli di cartelle di lavoro e contribuire agli stessi. Per altre informazioni, vedere l'articolo relativo ai [modelli di cartella di lavoro di Monitoraggio di Azure](https://go.microsoft.com/fwlink/?linkid=867045).
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi 
 
 Altre informazioni sulle tecnologie seguenti:
 - [Blog - Post sul framework di reporting di Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)

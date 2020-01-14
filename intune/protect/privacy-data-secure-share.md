@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504339"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548109"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Sicurezza dei dati e condivisione in Intune
 
@@ -68,11 +68,11 @@ Per informazioni sui dati condivisi con alcune terze parti, vedere gli articoli 
 - [Dati inviati da Google a Intune](data-google-sends-to-intune.md)
 - [Dati inviati da Jamf Pro a Intune](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>Condivisione dei dati con System Center Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Condivisione dei dati con Microsoft Endpoint Configuration Manager
 
-Microsoft Intune non condivide dati con System Center Configuration Manager. System Center Configuration Manager è un prodotto locale distribuito, gestito e usato direttamente dal cliente. I dati di diagnostica e utilizzo raccolti da Configuration Manager vengono usati esclusivamente per migliorare l'esperienza, la qualità e la sicurezza di installazione delle versioni future.
+Microsoft Intune non condivide i dati con Configuration Manager. Configuration Manager è un prodotto locale distribuito, gestito e amministrato direttamente dal cliente. I dati di diagnostica e utilizzo raccolti da Configuration Manager vengono usati esclusivamente per migliorare l'esperienza, la qualità e la sicurezza di installazione delle versioni future.
 
-Per altre informazioni, vedere [Dati di diagnostica e di utilizzo per System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
+Per altre informazioni, vedere [Dati di diagnostica e di utilizzo per Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data). 
 
 
 ## <a name="next-steps"></a>Passaggi successivi

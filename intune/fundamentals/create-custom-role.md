@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390711"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207418"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Creare un ruolo personalizzato in Intune
 
@@ -34,36 +34,30 @@ Per creare, modificare o assegnare ruoli, l'account deve disporre di una delle s
 
 ## <a name="to-create-a-custom-role"></a>Per creare un ruolo personalizzato
 
-1. Accedere al [portale di Azure](https://portal.azure.com) con le credenziali di Intune.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Ruoli** > **Tutti i ruoli** > **Aggiungi**.
 
-2. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
 
-3. Scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > **Aggiungi**.
+3. Nel pannello **Autorizzazioni** scegliere le autorizzazioni da usare con questo ruolo.
 
-4. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
+4. Nel pannello **Ambito (tag)** scegliere i tag per il ruolo. Questo ruolo può accedere alle risorse che hanno questi tag.
 
-5. Nel pannello **Autorizzazioni** scegliere le autorizzazioni da usare con questo ruolo.
+5. Al termine, scegliere **OK**.
 
-6. Nel pannello **Ambito (tag)** scegliere i tag per il ruolo. Questo ruolo può accedere alle risorse che hanno questi tag.
-
-7. Al termine, scegliere **OK**.
-
-8. Nel pannello **Aggiungi ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo viene visualizzato nell'elenco del pannello **Ruoli di Intune- Tutti i ruoli**.
+6. Nel pannello **Aggiungi ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo viene visualizzato nell'elenco del pannello **Ruoli di Intune- Tutti i ruoli**.
 
 
 ## <a name="copy-a-role"></a>Copiare un ruolo
 
 È anche possibile copiare un ruolo esistente.
 
-1. Accedere al [portale di Azure](https://portal.azure.com) con le credenziali di Intune e selezionare **Intune**.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Ruoli** > **Tutti i ruoli** > selezionare un ruolo nell'elenco > **Duplicato**.
 
-2. Selezionare **Ruoli** > **Tutti i ruoli** > selezionare un ruolo nell'elenco > **Duplica**.
+2. In **Duplica ruolo** immettere un nome. Assicurarsi di usare un nome univoco.
 
-3. In **Duplica ruolo** immettere un nome. Assicurarsi di usare un nome univoco.
+3. Tutte le autorizzazioni e i tag di ambito del ruolo originale risulteranno già selezionati. Successivamente, è possibile modificare il **nome**, la **descrizione**, le **autorizzazioni** e **i tag di ambito** del ruolo duplicato.
 
-4. Tutte le autorizzazioni e i tag di ambito del ruolo originale risulteranno già selezionati. Successivamente, è possibile modificare il **nome**, la **descrizione**, le **autorizzazioni** e **i tag di ambito** del ruolo duplicato.
-
-5. Selezionare **Crea**. 
+4. Selezionare **Crea**. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Assegnare un ruolo a un utente](assign-role.md)
