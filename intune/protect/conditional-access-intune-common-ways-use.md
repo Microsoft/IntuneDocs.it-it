@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547046"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885992"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono le modalità d'uso comuni dell'accesso condizionale con Intune?
 
@@ -86,14 +86,6 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 - **Aggiunta a un dominio AD locale:** questa opzione viene usata generalmente dalle organizzazioni che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory o con Configuration Manager.
 
 - **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è destinato alle organizzazioni che adottano un approccio cloud-first (ovvero usano principalmente i servizi cloud con l'obiettivo di ridurre l'uso di infrastrutture locali) o esclusivamente cloud (nessuna infrastruttura locale). Azure AD Join funziona in modo ottimale in un ambiente ibrido, consentendo l'accesso alle risorse e alle app sia cloud che locali. Il dispositivo viene aggiunto ad Azure AD e viene registrato in Intune. I criteri corrispondenti possono essere usati come criteri di accesso condizionale per l'accesso alle risorse aziendali.
-
-- **Aggiunta a un dominio AD e Configuration Manager:** a partire dalla versione Current Branch, Configuration Manager offre funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta del PC a un dominio:
-
-  - Il PC è crittografato?
-
-  - Sono installate soluzioni anti-malware? È aggiornato?
-
-  - Il dispositivo è jailbroken o rooted?
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 

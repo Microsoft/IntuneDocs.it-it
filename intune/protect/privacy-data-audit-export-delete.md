@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504351"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885736"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Controllare, esportare o eliminare i dati personali in Intune
 
@@ -74,16 +74,6 @@ L'azione **Ritira** consente di rimuovere i dati di cui è stato eseguito il pro
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Eliminare un tenant da Microsoft Intune
 
 Se un cliente di tenant di Intune annulla il proprio account di Intune, tutti i dati del tenant vengono eliminati entro 180 giorni dopo la chiusura dell'account Intune da parte del cliente. Se il tenant AAD è associato ad altre sottoscrizioni aziendali Microsoft (Azure, Office 365), vengono eliminati solo i dati del cliente per Intune. La risorsa del tenant di AAD viene mantenuta per l'uso con altre sottoscrizioni. Se l'account di Intune è l'unica sottoscrizione associata al tenant di AAD, allora il tenant verrà eliminato insieme a tutte le risorse e ai dati del cliente.
-
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>Eliminare un utente in un ambiente di gestione dei dispositivi mobili (MDM) ibrido
-In presenza di un ambiente MDM ibrido (Intune integrato con Configuration Manager) è necessario completare le azioni seguenti (nell'ordine indicato) per eliminare un utente completamente e rimuoverlo del tutto da Active Directory locale, Configuration Manager e Intune.
-
-1. Eliminare l'utente dal servizio Active Directory (AD) locale. In questo modo l'utente non verrà più sincronizzato in Azure AD e non verrà più incluso nell'individuazione di Configuration Manager. 
-2. Eliminare l'utente dalla console di Configuration Manager per rimuovere l'utente e i dati associati da Configuration Manager. Nella console passare ad **Asset e conformità** > **Utenti**, fare clic con il pulsante destro del mouse sull'utente da eliminare e quindi scegliere **Elimina**.
-3. [Eliminare l'utente da AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user), operazione che rimuove contemporaneamente l'utente e i dati associati sia da Azure Active Directory che da Intune. Quando l'utente viene eliminato da AAD (eliminazione definitiva), Intune riceve il segnale di eliminazione da AAD e quindi avvia automaticamente l'eliminazione di tutti i dati personali dell'utente dal servizio Intune. Le informazioni dell'utente verranno eliminate dal servizio Intune entro 30 giorni dall'azione di rimozione.
-
-> [!Important]
->l'onboarding di nuovi clienti di MDM con configurazione ibrida è deprecato. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

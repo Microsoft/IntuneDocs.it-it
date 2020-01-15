@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563718"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885755"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -93,9 +93,6 @@ Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android,
 
 9. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.<br>
    La pagina **Assegnazioni** consente di assegnare i criteri di protezione delle app a gruppi di utenti.
-   
-    >[!IMPORTANT]
-    > Se si usa Intune con Configuration Manager per gestire i propri dispositivi, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato. I membri dei gruppi figlio annidati all'interno del gruppo selezionato non sono interessati.
 
 10. Fare clic su **Avanti: Rivedi e crea** per esaminare i valori e le impostazioni immessi per i criteri di protezione delle app.
 
@@ -192,7 +189,7 @@ Per iOS, sono necessarie impostazioni di configurazione delle app aggiuntive per
 > [!NOTE]
 > Per informazioni sul supporto iOS in merito ai criteri di protezione delle app sulla base dello stato di gestione del dispositivo, vedere [Criteri di protezione MAM mirati sulla base dello stato di gestione](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
 
-## <a name="policy-settings"></a>Impostazioni criteri
+## <a name="policy-settings"></a>Impostazioni dei criteri
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare uno dei collegamenti seguenti:
 
 - [Criteri iOS](app-protection-policy-settings-ios.md)

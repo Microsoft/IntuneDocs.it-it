@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414629"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839312"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 
@@ -45,7 +45,7 @@ Usare i criteri di protezione delle app con la funzionalità di **gestione Apri 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurare l'impostazione UPN dell'utente per Microsoft Intune o soluzioni EMM di terze parti
 La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i dispositivi gestiti da Intune o da una soluzione EMM di terze parti per identificare un account utente registrato. La configurazione UPN funziona con i criteri di protezione delle app distribuiti da Intune. La procedura seguente illustra il flusso generale per la configurazione dell'impostazione UPN, nonché l'esperienza utente risultante:
 
-1. Nel [portale di Azure](https://portal.azure.com) [creare e assegnare un criterio di protezione delle app](app-protection-policies.md) per iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app iOS che devono rispettare questi criteri.
+1. Nel [portale di Azure](https://portal.azure.com)[creare e assegnare un criterio di protezione delle app](app-protection-policies.md) per iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app iOS che devono rispettare questi criteri.
 
 2. Distribuire le app e il profilo di posta elettronica che si vuole gestire tramite Intune o la soluzione MDM di terze parti usando la procedura generalizzata descritta di seguito. Questa esperienza è illustrata anche dall'*esempio 1*.
 
@@ -84,7 +84,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 > Per Outlook in iOS, se si distribuiscono criteri di configurazione dell'app di dispositivi gestiti con l'opzione "Usa progettazione configurazione" e si abilita **Consenti solo account aziendali o dell'istituto di istruzione**, la chiave di configurazione IntuneMAMUPN viene configurata automaticamente in background per i criteri. Per altri dettagli, vedere la sezione delle domande frequenti in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nuova esperienza per i criteri di configurazione dell'app Outlook per iOS e Android - Configurazione app generale). 
 
 
-### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza dell'utente finale
+### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza utente finale
 
 *Condivisione da* un'*app gestita da criteri* in altre applicazioni con condivisione del sistema operativo
 

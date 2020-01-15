@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801566"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886003"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurare l'infrastruttura per il supporto di SCEP con Intune
 
@@ -123,7 +123,7 @@ Per le informazioni nelle sezioni seguenti è richiesta la conoscenza di Windows
 
 ### <a name="create-the-scep-certificate-template"></a>Creare il modello di certificato SCEP
 
-1. Creare un modello di certificato v2 (con compatibilità con Windows 2003) da usare come modello di certificato SCEP. È possibile scegliere le opzioni seguenti:
+1. Creare un modello di certificato v2 (con compatibilità con Windows 2003) da usare come modello di certificato SCEP. È possibile scegliere:
 
    - Usare lo snap-in *Modelli di certificato* per creare un nuovo modello personalizzato.
    - Copiare un modello esistente (ad esempio, il modello Utente) e quindi aggiornare la copia da usare come modello per il servizio Registrazione dispositivi di rete.
@@ -373,8 +373,7 @@ Connettore di certificati di Microsoft Intune viene installato nel server in cui
 
    2. Eseguire il programma di installazione (**NDESConnectorSetup.exe**). Il programma di installazione installa anche il modulo dei criteri per il servizio Registrazione dispositivi di rete e il servizio Web del punto di registrazione certificati di IIS. Il servizio Web del punto di registrazione certificati, *CertificateRegistrationSvc*, viene eseguito come applicazione in IIS.
 
-      - Quando si installa NDES per la configurazione autonoma di Intune, il servizio CRP viene installato automaticamente con Connettore di certificati.
-      - Quando si usa Intune con Configuration Manager, viene installato il punto di registrazione certificati come ruolo del sistema del sito di Configuration Manager.
+      Quando si installa NDES per la configurazione autonoma di Intune, il servizio CRP viene installato automaticamente con Connettore di certificati.
 
 5. Quando viene richiesto il certificato client per Connettore di certificati, scegliere **Seleziona** e selezionare il certificato di **autenticazione client** installato nel server del servizio Registrazione dispositivi di rete durante il passaggio 3 della procedura [Installare e associare i certificati nel server che ospita il servizio Registrazione dispositivi di rete](#install-and-bind-certificates-on-the-server-that-hosts-ndes) più indietro in questo articolo.
 
