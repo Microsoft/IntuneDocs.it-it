@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fbe2c7933d0d012a7c85df4e9c5b6e8e94fc9805
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506314"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856803"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrare un dispositivo macOS fornito dall'organizzazione per la gestione
 
@@ -52,11 +52,11 @@ Seguire questa procedura per registrare il dispositivo macOS nella gestione. Se 
 4. Selezionare la rete Wi-Fi. È necessario disporre di una connessione Internet per continuare con la configurazione. Se la rete non è visibile o se è necessario connettersi tramite una rete cablata, fare clic su **Other Network Options** (Altre opzioni di rete). Al termine dell'operazione fare clic su **Continua**.  
 
    ![Screenshot della schermata Select Your Wi-Fi Network (Seleziona rete Wi-Fi) dell'Assistente configurazione per il dispositivo macOS che mostra un elenco delle reti disponibili tra cui scegliere. Sono visibili anche i pulsanti Other Network Options (Altre opzioni di rete), Indietro e Continua.](./media/macos-dep-wifi-1808.png)  
-5. Dopo la connessione alla rete Wi-Fi, viene visualizzata la schermata **Gestione remota**. La gestione remota consente all'amministratore dell'organizzazione di configurare in remoto il dispositivo con gli account, le impostazioni, le app e le reti richiesti dall'organizzazione. Leggere la spiegazione di gestione remota per comprendere come il dispositivo viene gestito. Fare clic su **Continua**.  
+5. Dopo la connessione alla rete Wi-Fi, viene visualizzata la schermata **Gestione remota**. La gestione remota consente all'amministratore dell'organizzazione di configurare in remoto il dispositivo con gli account, le impostazioni, le app e le reti richiesti dall'organizzazione. Leggere la spiegazione di gestione remota per comprendere come il dispositivo viene gestito. Fare quindi clic su **Continua**.  
 
    ![Screenshot della schermata Gestione remota dell'Assistente configurazione per un dispositivo macOS, con il testo che descrive la gestione remota e un collegamento alla documentazione per altre informazioni. Sono visualizzati anche i pulsanti Indietro e Continua.](./media/macos-dep-remote-management-1-1808.png)  
 6. Quando richiesto, accedere con l'account aziendale o dell'istituto di istruzione. Dopo l'autenticazione, il dispositivo installerà un profilo di gestione. Il profilo configura e abilita l'accesso alle risorse dell'organizzazione.  
-7. Leggere le informazioni sulla privacy e sulla gestione dei dati Apple, in modo da poter identificare in seguito le situazioni in cui vengono raccolte informazioni personali. Fare clic su **Continua**.  
+7. Leggere le informazioni sulla privacy e sulla gestione dei dati Apple, in modo da poter identificare in seguito le situazioni in cui vengono raccolte informazioni personali. Fare quindi clic su **Continua**.  
 
    ![Screenshot della schermata Data & Privacy (Dati e privacy) dell'Assistente configurazione per un dispositivo macOS, che mostra un'illustrazione di due persone che si stringono la mano e descrivono l'uso delle informazioni personali da parte di Apple. Sono visualizzati anche i pulsanti Indietro e Continua.](./media/macos-dep-apple-data-privacy-1808.png)  
 8. Dopo aver registrato il dispositivo, potrebbe essere necessario eseguire altri passaggi. I passaggi illustrati variano a seconda di come l'organizzazione ha personalizzato l'esperienza di installazione. Potrebbe essere richiesto di:

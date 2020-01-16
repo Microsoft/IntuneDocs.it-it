@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992950"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206364"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per usare le funzionalità iOS comuni in Intune
 
@@ -87,21 +87,21 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
 - **Aggiungi**: consente di aggiungere app o cartelle al dock nel dispositivo.
 - **Tipo**: aggiungere un'**App** o una **Cartella**:
 
-  - **App**: scegliere questa opzione per aggiungere le app al dock nella schermata. Immettere
+  - **App**: scegliere questa opzione per aggiungere le app al dock nella schermata. Immettere:
 
-    - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-    - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
+    - **Nome app**: immettere un nome per l'app. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+    - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
 
   - **Cartella**: scegliere questa opzione per aggiungere una cartella al dock nella schermata.
 
     Le app aggiunte a una pagina in una cartella vengono disposte da sinistra a destra e nello stesso ordine dell'elenco. Se si aggiungono più app di quelle che può contenere una pagina, le app vengono spostate in un'altra pagina.
 
-    - **Nome della cartella**: immettere il nome della cartella. Questo nome viene visualizzato nel dispositivo degli utenti.
+    - **Nome cartella**: immettere il nome della cartella. Questo nome viene visualizzato nel dispositivo degli utenti.
     - **Elenco di pagine**: selezionare **Aggiungi** per aggiungere una pagina e immettere le proprietà seguenti:
 
-      - **Nome pagina** : immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-      - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-      - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
+      - **Nome della pagina**: Immettere un nome per la pagina. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+      - **Nome app**: immettere un nome per l'app. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+      - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
 
       È possibile aggiungere fino a **20** pagine per il dock del dispositivo.
 
@@ -129,7 +129,7 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
 
 - **Elenco di pagine**: selezionare **Aggiungi** per aggiungere una pagina e immettere le proprietà seguenti:
 
-  - **Nome pagina** : immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure e *non* viene visualizzato nel dispositivo iOS.
+  - **Nome della pagina**: Immettere un nome per la pagina. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager e *non* viene visualizzato nel dispositivo iOS.
 
   È possibile aggiungere fino a **60** elementi (app e cartelle in combinazione) in un dispositivo.
 
@@ -139,8 +139,8 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
 
       - **App**: scegliere questa opzione per aggiungere le app a una pagina nella schermata. Specificare anche:
 
-        - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-        - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
+        - **Nome app**: immettere un nome per l'app. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+        - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
 
       - **Cartella**: scegliere questa opzione per aggiungere una cartella al dock nella schermata.
 
@@ -149,9 +149,9 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
         - **Nome cartella**: immettere un nome per la cartella. Questo nome viene visualizzato agli utenti nel dispositivo.
         - **Aggiungi**: consente di aggiungere pagine alla cartella. Immettere anche le proprietà seguenti:
 
-          - **Nome pagina** : immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **Nome app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
+          - **Nome della pagina**: Immettere un nome per la pagina. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome app**: immettere un nome per l'app. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo iOS.
+          - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
 
 #### <a name="example"></a>Esempio
 
@@ -172,14 +172,14 @@ Quando si assegnano i criteri a un iPhone, la pagina è simile all'immagine segu
     ![Aggiungere la notifica dell'app nel profilo iOS in Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
   - **ID bundle dell'app**: immettere l'**ID bundle dell'app** che si vuole aggiungere. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](bundle-ids-built-in-ios-apps.md).
-  - **Nome app**: immettere il nome dell'app che si vuole aggiungere. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo.
-  - **Autore**: immettere l'autore dell'app da aggiungere. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo.
+  - **Nome app**: immettere il nome dell'app che si vuole aggiungere. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo.
+  - **Autore**: immettere l'autore dell'app da aggiungere. Questo nome viene usato per il riferimento nell'interfaccia di amministrazione di Microsoft Endpoint Manager. *Non* verrà visualizzato nel dispositivo.
   - **Notifiche**: **abilitare** o **disabilitare** l'invio di notifiche al dispositivo da parte dell'app.
-    - **Mostra nel centro notifiche**: **Abilita** consente all'app di visualizzare notifiche nel centro modifiche del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nel centro notifiche.
+    - **Mostra nel centro notifiche**: **Abilita** consente all'app di visualizzare notifiche nel centro notifiche del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nel centro notifiche.
     - **Mostra nella schermata di blocco**: selezionare **Abilita** per visualizzare le notifiche dall'app nella schermata di blocco del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nella schermata di blocco.
-    - **Tipo avviso**: quando il dispositivo è sbloccato, scegliere come visualizzare la notifica. Le opzioni disponibili sono:
+    - **Tipo di avviso**: quando il dispositivo è sbloccato, scegliere come visualizzare la notifica. Le opzioni disponibili sono:
       - **Nessuno**: non vengono visualizzate notifiche.
-      - **Banner**: viene brevemente visualizzato un banner con la notifica.
+      - **Banner**: viene brevemente viene visualizzato un banner con la notifica.
       - **Modale**: la notifica viene visualizzata e l'utente deve chiuderla manualmente prima di continuare a usare il dispositivo.
     - **Badge sull'icona dell'app**: selezionare **Abilita** per aggiungere un badge all'icona dell'app. Il badge indica che l'app ha inviato una notifica.
     - **Suoni**: selezionare **Abilita** per riprodurre un suono quando viene recapitata una notifica.
@@ -203,7 +203,7 @@ Questa funzionalità si applica a:
   > [!NOTE]
   > Le variabili non vengono convalidate nell'interfaccia utente e fanno distinzione tra maiuscole e minuscole. Di conseguenza possono essere visualizzati dei profili salvati con input non corretto. Ad esempio, se si immette `{{DeviceID}}` invece di `{{deviceid}}`, viene visualizzata la stringa letterale anziché l'ID univoco del dispositivo. Assicurarsi di immettere le informazioni corrette.
 
-## <a name="single-sign-on"></a>Accesso Single Sign-On
+## <a name="single-sign-on"></a>Single Sign-On
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: registrazione del dispositivo, registrazione automatica dei dispositivi (supervisione)
 
@@ -226,8 +226,8 @@ Questa funzionalità si applica a:
 
   - **ID dispositivo di Azure AD**
 
-- **Area autenticazione**: immettere la parte del dominio dell'URL. Immettere ad esempio `contoso.com`.
-- **Prefissi di URL che useranno l'accesso Single Sign-On**: **aggiungere** tutti gli URL dell'organizzazione che richiedono l'autenticazione Single Sign-On.
+- **Area di autenticazione**: immettere la parte del dominio dell'URL. Immettere ad esempio `contoso.com`.
+- **Prefissi di URL che useranno l'accesso Single Sign-On**: **aggiungere** tutti gli URL all'interno dell'organizzazione che richiedono l'autenticazione Single Sign-On per gli utenti.
 
   Quando un utente si connette a uno di questi siti, ad esempio, il dispositivo iOS usa le credenziali Single Sign-On. L'utente non deve immettere credenziali aggiuntive. Se è abilitata l'autenticazione a più fattori, gli utenti devono immettere la seconda autenticazione.
 
@@ -244,7 +244,7 @@ Questa funzionalità si applica a:
 
   Usare **Nome app** per immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle.
 
-- **Certificato di rinnovo delle credenziali**: se si usano i certificati per l'autenticazione (non le password), selezionare il certificato SCEP o PFX esistente come certificato di autenticazione. In genere, questo certificato è lo stesso distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
+- **Certificato di rinnovo delle credenziali**: Se si usano i certificati per l'autenticazione (non le password), selezionare il certificato SCEP o PFX esistente come certificato di autenticazione. In genere, questo certificato è lo stesso distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
 
 ## <a name="web-content-filter"></a>Filtro contenuto Web
 
@@ -252,7 +252,7 @@ Questa funzionalità si applica a:
 
 - **Tipo di filtro**: scegliere se consentire specifici siti Web. Le opzioni disponibili sono:
 
-  - **Configura gli URL**: usare il filtro Web predefinito di Apple che cerca termini per adulti, incluso un linguaggio volgare e sessualmente esplicito. Questa funzionalità valuta ogni pagina Web quando viene caricata e identifica e blocca i contenuti non appropriati. È anche possibile aggiungere gli URL che si preferisce non vengano controllati dal filtro oppure bloccare URL specifici, indipendentemente dalle impostazioni di filtro di Apple.
+  - **Configurare gli URL**: usare il filtro Web predefinito di Apple che cerca termini per adulti, incluso un linguaggio volgare e sessualmente esplicito. Questa funzionalità valuta ogni pagina Web quando viene caricata e identifica e blocca i contenuti non appropriati. È anche possibile aggiungere gli URL che si preferisce non vengano controllati dal filtro oppure bloccare URL specifici, indipendentemente dalle impostazioni di filtro di Apple.
 
     - **URL autorizzati**: **aggiungere** gli URL che si vuole consentire. Questi URL ignorano il filtro Web di Apple.
 
@@ -261,7 +261,7 @@ Questa funzionalità si applica a:
 
     - **URL bloccati**: **aggiungere** gli URL di cui si vuole impedire l'apertura, indipendentemente dalle impostazioni del filtro Web di Apple.
 
-  - **Specificare solo i siti Web** (solo per il Web browser Safari): questi URL vengono aggiunti ai segnalibri del browser Safari. Viene consentito all'utente di visitare **solo** questi siti e non è possibile aprire altri siti. Usare questa opzione solo se si conosce l'elenco esatto degli URL a cui gli utenti possono accedere.
+  - **Solo siti Web specifici** (solo per il Web browser Safari): questi URL vengono aggiunti ai segnalibri del browser Safari. Viene consentito all'utente di visitare **solo** questi siti e non è possibile aprire altri siti. Usare questa opzione solo se si conosce l'elenco esatto degli URL a cui gli utenti possono accedere.
 
     - **URL**: immettere l'URL del sito Web che si vuole consentire. Immettere ad esempio `https://www.contoso.com`.
     - **Percorso segnalibro**: Apple ha modificato questa impostazione. Tutti i segnalibri vengono inseriti nella cartella **siti approvati** . I segnalibri non passano al percorso del segnalibro immesso.
@@ -274,7 +274,7 @@ Questa funzionalità si applica a:
 Questa funzionalità si applica a:
 
 - iOS 13.0 e versioni successive
-- iPados 13,0 e versioni successive
+- iPadOS 13.0 e versioni successive
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Le impostazioni si applicano a: tutti i tipi di registrazione
 
@@ -345,10 +345,10 @@ Può verificarsi un comportamento imprevisto quando un profilo senza immagine vi
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Impostazioni applicabili a: registrazione automatica dei dispositivi (supervisione)
 
-- **Posizione di visualizzazione dello sfondo**: scegliere una posizione nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
+- **Posizione di visualizzazione dello sfondo**: Scegliere una posizione nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
   - **Non configurata**: un'immagine personalizzata non viene aggiunta al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.
   - **Schermata di blocco**: aggiunge l'immagine alla schermata di blocco.
-  - **Schermata iniziale**: aggiunge l'immagine alla schermata iniziale.
+  - **Home screen** (Schermata iniziale): aggiunge l'immagine alla schermata iniziale.
   - **Schermata di blocco e schermata iniziale**: usa la stessa immagine nella schermata di blocco e nella schermata iniziale.
 - **Immagine di sfondo**: caricare un'immagine PNG, JPG o JPEG esistente che si vuole usare. Assicurarsi che le dimensioni del file siano inferiori a 750 KB. È anche possibile **rimuovere** un'immagine aggiunta.
 

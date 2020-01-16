@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504951"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548133"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti
 
@@ -39,14 +39,15 @@ Ad esempio, si supponga che un amministratore della filiale di Milano abbia il r
 ## <a name="default-scope-tag"></a>Tag di ambito predefinito
 Il tag di ambito predefinito viene aggiunto automaticamente a tutti gli oggetti senza tag che supportano i tag di ambito.
 
-Il tag di ambito predefinito è simile alla funzionalità degli ambiti di sicurezza in System Center Configuration Manager. 
+La funzionalità per il tag di ambito predefinito è simile alla funzionalità degli ambiti di sicurezza in Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Per creare un tag di ambito
 
-1. In Intune scegliere **Ruoli** > **Ambito (tag)**  > **Crea**.
+1. Nell'interfaccia [di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **Amministrazione Tenant** > **ruoli** > **ambito (tag)**  > **Crea**.
 
     ![Screenshot della creazione di un tag di ambito.](./media/scope-tags/create-scope-tag.png)
 
+2. Specificare un **Nome** e una **Descrizione** facoltativa.
 3. Se si vogliono tutti i dispositivi in gruppi specifici, scegliere **Assegna tag ambito a tutti i dispositivi nei gruppi selezionati**.
     1. Nella pagina **Seleziona gruppi da includere** scegliere i gruppi che contengono i dispositivi a cui si vuole assegnare questo tag ambito.
     2. Scegliere **Seleziona**.
@@ -54,10 +55,7 @@ Il tag di ambito predefinito è simile alla funzionalità degli ambiti di sicure
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Per assegnare un tag di ambito a un ruolo
 
-1. In Intune, scegliere **Ruoli** > **Tutti i ruoli** > scegliere un ruolo > **Assegnazioni** > **Assegna**.
-
-    ![Screenshot dell'assegnazione dell'ambito a un ruolo.](./media/scope-tags/assign-scope-to-role.png)
-
+1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **amministrazione Tenant** **ruoli** >  > **tutti i ruoli** > scegliere un ruolo > **assegnazioni** > **assegna**.
 2. Specificare **Nome dell'assegnazione** e **Descrizione**.
 3. Scegliere **Membri (gruppi)**  > **Aggiungi** > scegliere i gruppi desiderati per questa assegnazione > **selezionare** > **OK**. Gli utenti di questo gruppo avranno le autorizzazioni per gestire utenti/dispositivi nell'ambito (gruppi).
 
@@ -81,9 +79,7 @@ Il tag di ambito predefinito è simile alla funzionalità degli ambiti di sicure
 
 Per gli oggetti che supportano i tag di ambito, i tag di ambito vengono in genere visualizzati in **Proprietà**. Ad esempio, per assegnare un tag scope a un profilo di configurazione, seguire questa procedura:
 
-1. In Intune scegliere **Configurazione del dispositivo** > **Profili** > scegliere un profilo.
-
-    ![Screenshot della selezione di un profilo.](./media/scope-tags/choose-profile.png)
+1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **dispositivi** > **profili di configurazione** > scegliere un profilo.
 
 2. Scegliere **Proprietà** > **Ambito (tag)**  > **Aggiungi**.
 

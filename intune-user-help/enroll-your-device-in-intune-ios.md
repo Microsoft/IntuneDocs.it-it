@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd9fd38fdc244bc48333496c2f266ff039e55585
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506241"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855564"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurare l'accesso del dispositivo iOS alle risorse aziendali  
 
@@ -41,6 +41,7 @@ Per mantenere l'accesso alle informazioni aziendali o dell'istituto di istruzion
 
 > [!NOTE]
 > Se si è provato ad accedere alla posta elettronica aziendale nell'app Posta ed è stata ricevuta una richiesta di impostare il dispositivo come gestito, questo è il posto giusto. Eseguire le istruzioni seguenti per accedere alla posta elettronica e ad altre risorse aziendali sul dispositivo iOS.  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Aspettative relative all'app Portale aziendale  
 
@@ -61,69 +62,121 @@ Passare all'App Store per scaricare e installare l'[app Portale aziendale Intune
 
 La sospensione per un periodo più lungo di qualche minuto durante la registrazione può determinare la chiusura dell'app o la fine della configurazione. Se ciò accade, aprire l'app Portale aziendale e riprovare.  
 
-1. Aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione. 
+1. Aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione.  
 
-    ![Screenshot di esempio dell'app Portale aziendale, accesso.](./media/ios-01-cp-enroll-1904.PNG)  
+2. Quando viene chiesto di indicare se si vuole ricevere notifiche dal Portale aziendale, toccare **Consenti**. Il Portale aziendale usa le notifiche per avvisare se, ad esempio, è necessario aggiornare le impostazioni del dispositivo.  
 
-2. Quando viene chiesto di indicare se si vuole ricevere notifiche dal Portale aziendale, toccare **Consenti**. Il Portale aziendale usa le notifiche per avvisare se, ad esempio, è necessario aggiornare le impostazioni del dispositivo. 
+3. Nella schermata di **configurazione dell'accesso** selezionare **Inizia**.   
 
-    ![Screenshot di esempio della home page del Portale aziendale, prompt "Notifiche".](./media/ios-02-cp-enroll-1904.PNG)  
+    ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso.](./media/ios-enrollment-checklist-1909.PNG)  
 
-3. Nella schermata di **configurazione dell'accesso** selezionare **Inizia**.  
+4. Viene visualizzata la schermata **selezionare il dispositivo e il tipo di registrazione** e viene richiesto il tipo di dispositivo.  
+    * Toccare **(Organization) possiede questo dispositivo** se il dispositivo è stato ricevuto dall'organizzazione. Per completare l'installazione, passare quindi a [proteggere l'intero dispositivo](###secure-entire-device) in questo articolo.  
+    * Toccare possiedo **questo dispositivo** se si usa un dispositivo personale che è stato portato dall'abitazione. Continuare quindi con il passaggio successivo.  
 
-     ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso.](./media/ios-03-cp-enroll-1904.PNG)  
+    Se questa schermata non viene visualizzata, passare alla pagina [Proteggi intero dispositivo](enroll-your-device-in-intune-ios.md#secure-entire-device) per completare l'installazione.  
+    
+    ![Screenshot di esempio di Portale aziendale, schermata "selezionare il tipo di dispositivo e di registrazione", opzioni del tipo di dispositivo.](./media/ios-device-type-1909.PNG)  
 
-4. Prendere visione dell'elenco di informazioni relative al dispositivo la cui visualizzazione è concessa o non concessa all'organizzazione. Quindi toccare **Continua**.  
 
-5. Leggere le istruzioni nella schermata **Passaggi successivi**. Quando si è pronti a scaricare e installare il profilo di gestione, toccare **Continua**.  
+5. Scegliere la modalità di protezione dei dati nel dispositivo dopo la registrazione.  
+    * Toccare **Proteggi intero dispositivo** per proteggere tutte le app e i dati nel dispositivo. Passare quindi a [proteggere l'intero dispositivo](enroll-your-device-in-intune-ios.md#secure-entire-device) per completare la configurazione.
+    * Toccare **solo i dati e le app sicure relative al lavoro** per proteggere solo le app e i dati a cui si accede con l'account aziendale. Passare quindi a [proteggere app e dati relativi al lavoro](enroll-your-device-in-intune-ios.md#secure-work-related-apps-and-data).  
+
+    ![Screenshot di esempio della schermata di Portale aziendale, "selezionare il tipo di dispositivo e di registrazione", opzioni del tipo di registrazione.](./media/ios-enrollment-type-1909.PNG)  
+
+
+### <a name="secure-entire-device"></a>Proteggi intero dispositivo  
+
+1. Nella schermata **gestione del dispositivo e privacy** leggere l'elenco delle informazioni sul dispositivo che l'organizzazione può e non può visualizzare. Quindi toccare **Continua**.  
+
 
  > [!IMPORTANT]
 > I passaggi e le schermate successivi variano a seconda della versione di iOS. Seguire i passaggi per la versione di iOS in uso. 
 
-6. Safari apre il sito Web del Portale aziendale nel dispositivo. Quando viene chiesto di scaricare il profilo di configurazione, toccare **Consenti**. In un dispositivo che esegue  
-    * iOS 12.2 e versioni successive: al termine del download, toccare **Fine**. Proseguire al passaggio 7 di questo articolo.
-    * iOS 12.1 e versioni precedenti: si verrà automaticamente reindirizzati all'app Impostazioni. Proseguire al passaggio 8 di questo articolo.  
+2. Safari apre il sito Web del Portale aziendale nel dispositivo. Quando viene chiesto di scaricare il profilo di configurazione, toccare **Consenti**. In un dispositivo che esegue  
+    * iOS 12.2 e versioni successive: al termine del download toccare **Chiudi**. Continuare quindi con il passaggio 3.  
+    * iOS 12,1 e versioni precedenti: una volta completato il download, viene automaticamente reindirizzato all'app Impostazioni. Andare al passaggio 4.  
+ 
+    Se si tocca accidentalmente **Ignora**, aggiornare la pagina. Verrà chiesto di aprire l'app Portale aziendale. Al termine, toccare di **nuovo Scarica**.
+
+  > [!NOTE]
+  > È necessario installare il profilo di gestione come descritto nei passaggi successivi entro 8 minuti dal download. In caso contrario, il profilo verrà rimosso e sarà necessario riavviare la registrazione.  
+
+3. Quando viene richiesto di aprire Portale aziendale, toccare **Apri**. Leggere le informazioni nella schermata **come installare il profilo di gestione** .  
+
+4. Passare all'app Impostazioni e toccare **registra in < nome organizzazione >** o **profilo scaricato**.  
+
+    ![Screenshot di esempio dell'app Impostazioni, registrazione nell'organizzazione.](./media/enroll-in-organization-ios-1909.PNG)  
+
+   Se nessuna delle due opzioni viene visualizzata, passare a **generale** > profili & **profilo di gestione**> gestione **dispositivi** . Se non è ancora visibile un profilo di gestione, potrebbe essere necessario scaricarlo di nuovo.  
+
+5. Toccare **Installa**.  
+    
+6. Immettere la password del dispositivo. Quindi toccare **Installa**.    
+
+7. La schermata successiva riporta un avviso di sistema standard sulla gestione dei dispositivi. Per continuare l'installazione, toccare **Installa**. Se viene chiesto di considerare attendibile la gestione remota, toccare **Considera attendibile**.  
+
+8. Al termine dell'installazione, toccare **Fine**. Per verificare che il dispositivo sia stato installato, passare alle impostazioni **Gestione di profili e dispositivi**. Il profilo dovrebbe essere visualizzato in **Gestione dispositivi mobili**.   
+
+    ![Screenshot di esempio dell'app Impostazioni, impostazioni Gestione di profili e dispositivi con il profilo di gestione.](./media/ios-12-cp-enroll-1904.PNG)  
+
+9. Tornare all'app Portale aziendale. Il Portale aziendale avvierà la sincronizzazione e la configurazione del dispositivo. Il Portale aziendale può richiedere di aggiornare altre impostazioni del dispositivo. Se ciò avviene, toccare **Continua**.  
+
+10. La configurazione sarà completa quando per tutti gli elementi dell'elenco viene visualizzato un segno di spunta verde. Toccare **Fine**.   
+
+> [!Note]
+> Se l'organizzazione monitora i limiti di voce e dati oppure mette a disposizione dell'utente un dispositivo di proprietà dell'azienda, potrebbe essere necessario completare altri passaggi. Se viene chiesto di installare l'app **Datalert**, vedere [Registrare il dispositivo nella gestione delle spese per telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione partecipa al programma DEP (Device Enrollment Program) di Apple, vedere [come registrare un dispositivo di proprietà dell'azienda](enroll-your-device-dep-ios.md).  
+
+### <a name="secure-work-related-apps-and-data"></a>Proteggere app e dati correlati al lavoro  
+1. Viene visualizzata la schermata **scarica Microsoft Authenticator** (se si dispone già di un autenticatore, questa schermata non verrà visualizzata, quindi andare al passaggio 2).  
+    1. Toccare **Scarica da App Store**.
+    2. Quando si apre l'App Store, installare l'app. 
+    3. Tornare a Portale aziendale e toccare **continua**.    
+    
+   Dopo l'installazione di Microsoft Authenticator, non sarà necessario eseguire altre operazioni con l'app. Deve essere presente solo sul dispositivo. 
+
+   ![Screenshot di esempio della schermata di Portale aziendale, "Scarica Microsoft Authenticator".](./media/download-ms-authenticator-1909.PNG)  
+
+2. Nella schermata **gestione del dispositivo e privacy** leggere l'elenco delle informazioni sul dispositivo che l'organizzazione può e non può visualizzare. Quindi toccare **Continua**.  
+
+
+ > [!IMPORTANT]
+> I passaggi e le schermate successivi variano a seconda della versione di iOS. Seguire i passaggi per la versione di iOS in uso. 
+
+3. Safari apre il sito Web del Portale aziendale nel dispositivo. Quando viene chiesto di scaricare il profilo di configurazione, toccare **Consenti**. In un dispositivo che esegue  
+    * iOS 12.2 e versioni successive: al termine del download toccare **Chiudi**. Continuare quindi con il passaggio 4.  
+    * iOS 12,1 e versioni precedenti: una volta completato il download, viene automaticamente reindirizzato all'app Impostazioni. Andare al passaggio 5.  
  
     Se si tocca accidentalmente **Ignora**, aggiornare la pagina. Verrà chiesto di aprire l'app Portale aziendale. Nell'app è possibile toccare **Ripetere il download**.
 
   > [!NOTE]
   > È necessario installare il profilo di gestione come descritto nei passaggi successivi entro 8 minuti dal download. In caso contrario, il profilo verrà rimosso e sarà necessario riavviare la registrazione.  
 
-7. Solo iOS 12.2 e versioni successive: quando viene chiesto di aprire il Portale aziendale, toccare **Apri**. La schermata di **installazione del profilo di gestione** elenca i passaggi necessari per installare il profilo.
+4. Quando viene richiesto di aprire Portale aziendale, toccare **Apri**. Leggere le informazioni nella schermata **come installare il profilo di gestione** . 
 
-    ![Screenshot di esempio del Portale aziendale, schermata di installazione del profilo di gestione.](./media/ios-07-cp-enroll-1904.PNG)  
+5. Passare all'app Impostazioni e toccare **registra in < nome organizzazione >** o **profilo scaricato**.  
 
-8. Passare all'app Impostazioni e toccare **Profile Downloaded** (Profilo scaricato).  
+    ![Screenshot di esempio dell'app Impostazioni, registrazione nell'organizzazione.](./media/enroll-in-organization-ios-1909.PNG)  
 
-    Se l'opzione **Profile Downloaded** (Profilo scaricato) non viene visualizzata, passare a **Generale** > **Profili**. Se il profilo non è visualizzato potrebbe essere necessario scaricarlo di nuovo.  
-
-    ![Screenshot di esempio dell'app Impostazioni, impostazione Profile Downloaded (Profilo scaricato).](./media/ios-1904-settings-badge.PNG)  
-
-9. Toccare **Installa**.  
-    
-10. Immettere la password del dispositivo. Quindi toccare **Installa**.    
-
-    ![Screenshot di esempio dell'app Impostazioni, schermata di installazione del profilo con il cursore sul pulsante **Installa**.](./media/ios-10-cp-enroll-1904.PNG)  
+   Se nessuna delle due opzioni viene visualizzata, passare a **generale** > profili & **profilo di gestione**> gestione **dispositivi** . Se non è ancora visibile un profilo di gestione, potrebbe essere necessario scaricarlo di nuovo.   
 
 
-11. La schermata successiva riporta un avviso di sistema standard per la gestione dei dispositivi. Per continuare l'installazione, toccare **Installa**. Se viene chiesto di considerare attendibile la gestione remota, toccare **Considera attendibile**.  
+6. Nella schermata registrazione **utente** toccare **registra iPhone**.  
 
-    ![Screenshot di esempio dell'app Impostazioni, schermata di avviso di sistema standard per il certificato radice e la gestione di dispositivi mobili.](./media/ios-11-cp-enroll-1904.PNG)  
+    ![Schermata di esempio dell'app Impostazioni, schermata Registrazione utente, che evidenzia il pulsante Registra.](./media/user-enrollment-information-1909.PNG)  
 
-12. Al termine dell'installazione, toccare **Fine**. Per verificare che il dispositivo sia stato installato, passare alle impostazioni **Gestione di profili e dispositivi**. Il profilo dovrebbe essere visualizzato in **Gestione dispositivi mobili**.   
+7. Immettere la password del dispositivo. Quindi toccare **Installa**.  
+
+8. Nella schermata di **accesso** immettere la password per l'ID Apple gestito. Nella maggior parte dei casi, queste credenziali saranno le stesse usate per accedere all'account aziendale o dell'Istituto di istruzione, a meno che l'organizzazione non abbia fornito un set di credenziali diverso. 
+9. Toccare **Accedi**.  
+10. Un messaggio di operazione completata verrà visualizzato sullo schermo brevemente dopo l'installazione del profilo. Per verificare che il profilo sia installato, passare a **profili & impostazioni gestione dispositivi** . Il profilo dovrebbe essere visualizzato in  **Gestione dispositivi mobili**.  
 
     ![Screenshot di esempio dell'app Impostazioni, impostazioni Gestione di profili e dispositivi con il profilo di gestione.](./media/ios-12-cp-enroll-1904.PNG)  
 
-13. Tornare all'app Portale aziendale. Il Portale aziendale avvierà la sincronizzazione e la configurazione del dispositivo. Il Portale aziendale può richiedere di aggiornare altre impostazioni del dispositivo. Se ciò avviene, toccare **Continua**.  
+11. Tornare all'app Portale aziendale. Il Portale aziendale avvierà la sincronizzazione e la configurazione del dispositivo. Il Portale aziendale può richiedere di aggiornare altre impostazioni del dispositivo. Se ciò avviene, toccare **Continua**.    
 
-    ![Screenshot di esempio del Portale aziendale, schermata di configurazione dell'accesso con un triangolo giallo accanto al requisito di impostazione.](./media/ios-13-cp-enroll-1904.PNG)  
-
-14. La configurazione sarà completa quando per tutti gli elementi dell'elenco viene visualizzato un cerchio verde. Toccare **Fine**.   
-    
-    ![Screenshot di esempio del Portale aziendale, schermata "La configurazione è completata." in cui sono visualizzati tutti cerchi verdi.](./media/ios-14-cp-enroll-1904.PNG)  
-
-> [!Note]
-> Se l'organizzazione monitora i limiti di voce e dati oppure mette a disposizione dell'utente un dispositivo di proprietà dell'azienda, potrebbe essere necessario completare altri passaggi. Se viene chiesto di installare l'app **Datalert**, vedere [Registrare il dispositivo nella gestione delle spese per telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione partecipa al programma DEP (Device Enrollment Program) di Apple, vedere [come registrare un dispositivo di proprietà dell'azienda](enroll-your-device-dep-ios.md).  
+12. La configurazione sarà completa quando per tutti gli elementi dell'elenco viene visualizzato un segno di spunta verde. Toccare **fine**.  
 
 ## <a name="it-administrator-support"></a>Supporto per amministratori IT  
 Gli amministratori IT che riscontrano problemi durante la registrazione dei dispositivi possono vedere [Risoluzione dei problemi di registrazione dei dispositivi iOS in Microsoft Intune](https://support.microsoft.com/en-us/help/4039809). Questo articolo elenca gli errori comuni, le cause e le procedure per risolverli.  

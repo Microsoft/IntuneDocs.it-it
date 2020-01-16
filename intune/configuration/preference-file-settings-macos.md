@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691686"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827786"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Aggiungere un file elenco di proprietà ai dispositivi macOS usando Microsoft Intune
 
@@ -53,6 +53,16 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Nome di dominio preferenza**: i file di elenco delle proprietà vengono in genere usati per i Web browser (Microsoft Edge), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)e le app personalizzate. Quando si crea un dominio di preferenza, viene creato anche un ID bundle. Immettere l'ID bundle, ad esempio `com.company.application`. Ad esempio, immettere `com.Contoso.applicationName`, `com.Microsoft.Edge` o `com.microsoft.wdav`.
 - **File elenco proprietà**: selezionare il file dell'elenco di proprietà associato all'app. Assicurarsi che sia un file `.plist` o `.xml`. Ad esempio, caricare un file di `YourApp-Manifest.plist` o `YourApp-Manifest.xml`.
 - **Contenuto del file**: vengono visualizzate le informazioni sulla chiave nel file dell'elenco delle proprietà. Se è necessario modificare le informazioni sulla chiave, aprire il file dell'elenco in un altro editor e quindi caricare nuovamente il file in Intune.
+
+Verificare che il file sia formattato correttamente. Il file deve contenere solo coppie chiave-valore e non deve essere racchiuso nei tag `<dict>`, `<plist>`o `<xml>`. Ad esempio, il file dell'elenco di proprietà dovrebbe essere simile al seguente:
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato e visualizzato nell'elenco dei profili.
 

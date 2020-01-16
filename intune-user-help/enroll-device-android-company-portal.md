@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414819"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856735"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Registrare il dispositivo in Portale aziendale  
 Registrare il dispositivo Android personale o aziendale per ottenere accesso sicuro alla posta elettronica, alle app e ai dati aziendali. Il portale aziendale supporta i dispositivi Android, incluso Samsung Knox, che eseguono Android 4.4 e versioni successive.  
@@ -91,7 +91,7 @@ Durante la registrazione potrebbe essere richiesto di scegliere la categoria che
 
 ## <a name="next-steps"></a>Passaggi successivi  
 
-Prima di provare a installare un'app School o di lavoro, passare a **impostazioni** > **sicurezza**e attivare **origini sconosciute**. Se non si attiva questa opzione, quando si tenta di installare un'app viene visualizzato il messaggio che indica che l'installazione è bloccata per motivi di sicurezza che impediscono di installare nel dispositivo app ottenute da origini sconosciute. È possibile toccare **Impostazioni** nel messaggio per passare direttamente a **origini sconosciute**.  
+Prima di provare a installare un'app School o di lavoro, passare a **impostazioni** > **sicurezza**e attivare **origini sconosciute**. Se non si attiva questa opzione, quando si tenta di installare un'app verrà visualizzato il messaggio seguente: "Installazione bloccata. per motivi di sicurezza che impediscono di installare nel dispositivo app ottenute da origini sconosciute. È possibile toccare **Impostazioni** nel messaggio per passare direttamente a **origini sconosciute**.  
 
 > [!Note]
 > Se la propria organizzazione usa software per la gestione delle spese per telecomunicazioni, sarà necessario eseguire alcuni passaggi aggiuntivi prima che la registrazione del dispositivo sia completata. Per altre informazioni, vedere [qui](enroll-your-device-with-telecom-expense-management-android.md).

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503482"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653921"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -37,14 +37,14 @@ Microsoft Intune App SDK per Android consente di integrare i criteri di protezio
 Intune App SDK è costituito dai file seguenti:
 
 * **Microsoft.Intune.MAM.SDK.aar**: componenti dell'SDK, a eccezione dei file JAR della libreria di supporto.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v4.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v7.
+* **Microsoft.Intune.MAM.SDK.Suppot.v4.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v4.
+* **Microsoft.Intune.MAM.SDK.Suppot.v7.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v7.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v17. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: classi necessarie per abilitare MAM nelle app che usano le classi della libreria di supporto Android nel pacchetto `android.support.text`.
-* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: questo file AAR contiene gli stub per le classi di sistema Android presenti solo nei dispositivi più recenti ma a cui viene fatto riferimento dai metodi in `MAMActivity`. I dispositivi più recenti ignorano queste classi stub. Il file AAR è necessario solo se l'app esegue la reflection sulle classi che derivano da `MAMActivity` e nella maggior parte delle app non è necessario. L'AAR contiene le regole Proguard per escludere tutte le classi.
-* **com.microsoft.intune.mam.build.jar**: plugin di Gradle [utile per l'integrazione dell'SDK](#build-tooling).
+* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: questo file AAR contiene gli stub per le classi di sistema Android presenti solo nei dispositivi più recenti, ma a cui viene fatto riferimento dai metodi in `MAMActivity`. I dispositivi più recenti ignorano queste classi stub. Il file AAR è necessario solo se l'app esegue la reflection sulle classi che derivano da `MAMActivity` e nella maggior parte delle app non è necessario. L'AAR contiene le regole Proguard per escludere tutte le classi.
+* **com.microsoft.intune.mam.build.jar**: plugin di Gradle che [facilita l'integrazione dell'SDK](#build-tooling).
 * **CHANGELOG.txt**: fornisce un record delle modifiche apportate in ogni versione dell'SDK.
-* **THIRDPARTYNOTICES.TXT**: comunicazione di attribuzione che riconosce la presenza di codice OSS e/o di terze parti che verrà compilato nell'app.
+* **THIRDPARTYNOTICES.TXT**:  avviso di attribuzione che riconosce la presenza di codice OSS e/o di terze parti che verrà compilato nell'app.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -155,7 +155,7 @@ Questo codice avrebbe gli effetti seguenti:
 * `:product:FooLib` non viene riscritto perché è incluso in `excludeProjects`
 * `:product:foo-project` viene riscritto, tranne `com.contoso.SplashActivity` che viene ignorato perché non è in `excludeClasses`
 * `bar.jar` viene riscritto perché è incluso in `includeExternalLibraries`
-* `zap.jar` **non** viene riscritto perché non è un progetto e non è incluso in `includeExternalLibraries`
+* `zap.jar`**non** viene riscritto perché non è un progetto e non è incluso in `includeExternalLibraries`
 * `com.contoso.foo:zap-artifact:1.0.0` viene riscritto perché è incluso in `includeExternalLibraries`
 * `com.microsoft.bar:baz:1.0.0` viene riscritto perché è incluso in `includeExternalLibraries` tramite un carattere jolly (`com.microsoft.*`).
 * `com.microsoft.qux:foo:2.0` non viene riscritto anche se corrisponde allo stesso carattere jolly dell'elemento precedente perché viene escluso in modo esplicito tramite un modello di negazione.
@@ -247,8 +247,8 @@ Questo codice avrebbe gli effetti seguenti:
 
 * la directory `product-foo-project` viene riscritta come `mam-build\product-foo-project`
 * `bar.jar` viene riscritto come `mam-build\libs\bar.jar`
-* `zap.jar` **non** viene riscritto perché è elencato solo in `--classpath`
-* La classe `com.contoso.SplashActivity` **non** viene riscritta anche se è in `--input`
+* `zap.jar`**non** viene riscritto perché è elencato solo in `--classpath`
+* La classe `com.contoso.SplashActivity`**non** viene riscritta anche se è in `--input`
 
 > [!NOTE] 
 > Lo strumento di compilazione non supporta attualmente i file AAR. Se il sistema di compilazione non estrae già `classes.jar` quando gestisce i file AAR, sarà necessario eseguire questa operazione prima di richiamare lo strumento di compilazione.
@@ -675,13 +675,13 @@ Le notifiche seguenti vengono inviate all'app e alcune possono richiedere la par
 
 * **WIPE_USER_DATA**: questa notifica viene inviata in una classe `MAMUserNotification`. Quando viene ricevuta questa notifica, l'app *deve* eliminare tutti i dati associati all'identità gestita (da `MAMUserNotification.getUserIdentity()`). La notifica può verificarsi per diversi motivi, ad esempio quando l'app chiama `unregisterAccountForMAM`, quando un amministratore IT avvia una cancellazione o quando i criteri di accesso condizionale richiesti dall'amministratore non vengono soddisfatti. Se l'app non esegue la registrazione per questa notifica, verrà eseguito il comportamento predefinito della cancellazione. Il comportamento predefinito eliminerà tutti i file per un'app a identità singola o tutti i file contrassegnati con l'identità gestita per un'app con identità diverse. Questa notifica non verrà mai inviata al thread UI.
 
-* **WIPE_USER_AUXILIARY_DATA**: le app possono eseguire la registrazione per questa notifica se vogliono che Intune App SDK usi il comportamento predefinito di cancellazione selettiva, ma vogliono comunque poter rimuovere alcuni dati ausiliari quando viene eseguita la cancellazione. Questa notifica non è disponibile per le app con identità singola e verrà inviata solo alle app con identità multiple. Questa notifica non verrà mai inviata al thread UI.
+* **WIPE_USER_AUXILIARY_DATA**: le app possono effettuare la registrazione per questa notifica se vogliono che Intune App SDK usi il comportamento predefinito di cancellazione selettiva, ma devono comunque rimuovere alcuni dati ausiliari quando viene eseguita la cancellazione. Questa notifica non è disponibile per le app con identità singola e verrà inviata solo alle app con identità multiple. Questa notifica non verrà mai inviata al thread UI.
 
-* **REFRESH_POLICY**: questa notifica viene inviata in un oggetto `MAMUserNotification`. Alla ricezione di questa notifica, qualsiasi decisione relativa ai criteri di Intune memorizzata nella cache deve essere invalidata e aggiornata. Se l'app non archivia alcun presupposto per i criteri, non occorre la registrazione per questa notifica. Non sono state apportate garanzie per il thread su cui verrà inviata la notifica.
+* **REFRESH_POLICY**: questa notifica viene inviata in una classe `MAMUserNotification`. Alla ricezione di questa notifica, qualsiasi decisione relativa ai criteri di Intune memorizzata nella cache deve essere invalidata e aggiornata. Se l'app non archivia alcun presupposto per i criteri, non occorre la registrazione per questa notifica. Non sono state apportate garanzie per il thread su cui verrà inviata la notifica.
 
-* **REFRESH_APP_CONFIG**: questa notifica viene inviata in una `MAMUserNotification`. Alla ricezione di questa notifica, gli eventuali dati di configurazione dell'applicazione memorizzati nella cache devono essere invalidati e aggiornati. Non sono state apportate garanzie per il thread su cui verrà inviata la notifica.
+* **REFRESH_APP_CONFIG**: questa notifica viene inviata in una classe `MAMUserNotification`. Alla ricezione di questa notifica, gli eventuali dati di configurazione dell'applicazione memorizzati nella cache devono essere invalidati e aggiornati. Non sono state apportate garanzie per il thread su cui verrà inviata la notifica.
 
-* **MANAGEMENT_REMOVED**: questa notifica viene inviata in un oggetto `MAMUserNotification` e informa l'app che sta per diventare non gestita. Quando non è gestita, l'app non può più leggere i file crittografati, leggere i dati crittografati con MAMDataProtectionManager, interagire con gli Appunti crittografati o partecipare in altro modo all'ecosistema di app gestite. Vedere altri dettagli di seguito. Questa notifica non verrà mai inviata al thread UI.
+* **MANAGEMENT_REMOVED**: questa notifica viene inviata in una classe `MAMUserNotification` e informa l'app che sta per diventare non gestita. Quando non è gestita, l'app non può più leggere i file crittografati, leggere i dati crittografati con MAMDataProtectionManager, interagire con gli Appunti crittografati o partecipare in altro modo all'ecosistema di app gestite. Vedere altri dettagli di seguito. Questa notifica non verrà mai inviata al thread UI.
 
 * **MAM_ENROLLMENT_RESULT**: questa notifica viene inviata in una `MAMEnrollmentNotification` per informare l'app che è stato eseguito un tentativo di registrazione APP-WE e per comunicare lo stato di tale tentativo. Non sono state apportate garanzie per il thread su cui verrà inviata la notifica.
 
@@ -1655,7 +1655,7 @@ Se l'app fornisce dati aziendali diversi da `ParcelFileDescriptor` tramite un og
 Se non si eredita `MAMContentProvider` in modo esplicito e invece si consente agli strumenti di compilazione di apportare tale modifica, è possibile chiamare una versione statica dello stesso metodo: `MAMContentProvider.isProvideContentAllowed(provider,
 contentIdentity)`.
 
-### <a name="selective-wipe"></a>Cancellazione selettiva
+### <a name="selective-wipe"></a>cancellazione selettiva
 Se si registra un'app con identità multiple per la notifica `WIPE_USER_DATA`, è responsabilità dell'app rimuovere tutti i dati per l'utente in corso di cancellazione, inclusi tutti i file la cui identità è stata contrassegnata come appartenente a tale utente. Se l'applicazione cancella i dati utente da un file ma gli altri dati devono rimanere, è *necessario* che l'app cambi l'identità del file tramite `MAMFileProtectionManager.protect` assegnandola a un utente personale o lasciando l'identità vuota. Se i criteri di crittografia sono in uso, tutti i file rimanenti che appartengono all'utente in corso di cancellazione non verranno decrittografati e non saranno più accessibili per l'app dopo la cancellazione.
 
 Se esegue la registrazione per `WIPE_USER_DATA`, un'app non potrà usufruire dei vantaggi del comportamento di cancellazione selettiva predefinito dell'SDK. Per le app che supportano identità multiple, questa perdita può essere più significativa in quanto la cancellazione selettiva predefinita di MAM cancellerà solo i file la cui identità è interessata da una cancellazione. Se un'applicazione che supporta identità multiple vuole che venga eseguita la cancellazione selettiva predefinita di MAM _**e**_ vuole eseguire operazioni personalizzate sulla cancellazione, deve eseguire la registrazione per le notifiche `WIPE_USER_AUXILIARY_DATA`. Questa notifica verrà inviata immediatamente dall'SDK prima di eseguire la cancellazione selettiva predefinita di MAM. Un'app non deve mai registrarsi sia per `WIPE_USER_DATA` che per `WIPE_USER_AUXILIARY_DATA`.

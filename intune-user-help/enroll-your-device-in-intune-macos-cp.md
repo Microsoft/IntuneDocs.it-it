@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098106"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855477"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrare il dispositivo macOS usando l'app Portale aziendale  
 
@@ -67,18 +67,17 @@ Usare la procedura seguente per registrare il dispositivo macOS con l'organizzaz
 
 1. Accedere al Portale aziendale con l'account aziendale o dell'istituto di istruzione.  
 2. Quando si apre l'app, selezionare **Begin**.  
-3. Esaminare le informazioni [che l'organizzazione può o meno visualizzare](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) nel dispositivo registrato. Selezionare quindi **Continua**.  
-4. Nella schermata **Installa profilo di gestione** selezionare **Scarica profilo**.   
+3. Esaminare le informazioni che l'organizzazione può o meno visualizzare nel dispositivo registrato. Selezionare quindi **Continua**.
+4.  Se richiesto, immettere la password del dispositivo nella schermata **Installa profilo di gestione** .
 
-    ![Screenshot di esempio di Portale aziendale, installare la schermata del profilo di gestione, evidenziando il pulsante "Scarica profilo".](./media/install-mgmt-profile-mac-1911.PNG)   
-5. Si apriranno le preferenze di sistema del dispositivo. Selezionare **Installa** , quindi fare di nuovo clic su **Installa** . Se viene richiesto, immettere la password del dispositivo.  
+    ![Screenshot di esempio di Portale aziendale, installare la schermata del profilo di gestione, evidenziando la richiesta della password.](./media/install-management-profile-macos-1912.PNG)   
+5. Nella schermata **conferma gestione dispositivo** selezionare **Apri preferenze di sistema**.  
 
-    ![Screenshot di esempio delle preferenze di sistema macOS, richiesta di installazione, evidenziando il pulsante "Installa".](./media/system-preference-install-1911.PNG)  
-6. Una volta installato, il profilo verrà visualizzato nell'elenco profili in profilo di **gestione.**  
-
-   ![Screenshot di esempio di preferenze di sistema macOS, schermata dei profili, che evidenzia il profilo di gestione installato.](./media/system-preference-verify-1911.PNG)   
-7. Tornare a Portale aziendale.   
-8. Per l'organizzazione potrebbe essere necessario aggiornare le impostazioni del dispositivo. Al termine dell'aggiornamento delle impostazioni, selezionare **Controlla impostazioni**.  
+    ![Schermata di esempio della schermata di conferma della gestione dei dispositivi, evidenziando il pulsante "Apri preferenze di sistema".](./media/confirm-device-management-macos-1912.PNG)  
+6. Si apriranno le preferenze di sistema del dispositivo. Selezionare **profilo di gestione** dall'elenco profili dispositivo, quindi selezionare **approva** > **approva**.  
+    ![screenshot di esempio delle preferenze di sistema, della schermata del profilo di gestione e dell'evidenziazione del pulsante "approva".](./media/management-profile-approve-macos-1912.PNG)   
+1. Tornare a Portale aziendale e selezionare **continua**.    
+2. Per l'organizzazione potrebbe essere necessario aggiornare le impostazioni del dispositivo. Al termine dell'aggiornamento delle impostazioni, selezionare **Controlla impostazioni**.  
 
     ![Screenshot di esempio di Portale aziendale, aggiornare la schermata delle impostazioni del dispositivo, evidenziando il pulsante "Verifica impostazioni".](./media/update-settings-mac-1911.PNG)  
 9. Al termine dell'installazione, selezionare **fine**.  
@@ -88,7 +87,7 @@ Usare la procedura seguente per registrare il dispositivo macOS con l'organizzaz
 
 Se si verificano problemi durante la registrazione, passare a **guida** > **inviare un report di diagnostica** per segnalare il problema agli sviluppatori di app Microsoft. Queste informazioni vengono usate per contribuire a migliorare l'app. Queste informazioni verranno utilizzate anche per risolvere il problema se il personale del supporto IT raggiunge il proprio aiuto.  
 
-Dopo aver segnalato il problema a Microsoft, è possibile inviare i dettagli dell'esperienza al personale del supporto IT. Selezionare **i dettagli della posta elettronica**. Digitare ciò che si è verificato nel corpo del messaggio di posta elettronica. Per trovare l'indirizzo di posta elettronica del personale di supporto, passare all'app Portale aziendale > **contatto**. In alternativa, controllare il [sito web portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Dopo aver segnalato il problema a Microsoft, è possibile inviare i dettagli dell'esperienza al personale del supporto IT. Selezionare **i dettagli della posta elettronica**. Digitare ciò che si è verificato nel corpo del messaggio di posta elettronica. Per trovare l'indirizzo di posta elettronica del personale di supporto, passare all'app Portale aziendale > **contatto**. Oppure vedere il [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
  
 
 Inoltre, il team di Microsoft Intune Portale aziendale sarebbe lieta di ricevere commenti e suggerimenti. Passare a **Help** > **inviare commenti** e suggerimenti per condividere pensieri e idee.  

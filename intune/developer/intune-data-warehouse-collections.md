@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899239"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547924"
 ---
 # <a name="intune-data-warehouse-collections"></a>Raccolte del data warehouse di Intune
 
@@ -163,7 +163,7 @@ L'entità **DeviceConfigurationProfileDeviceActivity** elenca il numero di dispo
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | Chiave della data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. | 20160703 |
 | Pending   | Numero di dispositivi univoci in sospeso.                                                    | 123      |
-| Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12       |
+| Operazione riuscita | Numero di dispositivi univoci in stato completato.                                                    | 12       |
 | Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10       |
 | Operazione non riuscita    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2        |
 
@@ -174,7 +174,7 @@ L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti 
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.  | 20160703  |
 | Pending  | Numero di utenti univoci in sospeso.  | 123  |
-| Operazione completata  | Numero di utenti univoci in stato completato.  | 12  |
+| Operazione riuscita  | Numero di utenti univoci in stato completato.  | 12  |
 | Errore  | Numero di utenti univoci in stato di errore.  | 10  |
 | Operazione non riuscita  | Numero di utenti univoci in stato non riuscito.  | 2  |
 
@@ -203,7 +203,7 @@ L'entità **DeviceRegistrationState** rappresenta il tipo di registrazione a cui
 | deviceRegistrationStateName | Stato di registrazione                                                                  |
 |    NotRegistered                     |    Non registrato                                                                                                                                                                  |
 |    Registrato                        |       Registrato                                                                                                                                                                   |
-|    Revoked                           |       Lo stato indica che l'amministratore IT ha bloccato il client e che il client può essere sbloccato. Un dispositivo può anche essere nello stato Revocato dopo la cancellazione o il ritiro.        |
+|    Revocato                           |       Lo stato indica che l'amministratore IT ha bloccato il client e che il client può essere sbloccato. Un dispositivo può anche essere nello stato Revocato dopo la cancellazione o il ritiro.        |
 |    KeyConflict                       |    Conflitto di chiave                                                                                                                                                                    |
 |    ApprovalPending                   |    Approvazione in sospeso                                                                                                                                                                |
 |    CertificateReset                  |    Reimpostazione certificato                                                                                                                                                               |
@@ -504,7 +504,7 @@ L'entità **MamPlatform** elenca i nomi e i tipi di piattaforma in cui è stata 
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Identificatore univoco della piattaforma nel data warehouse, chiave surrogata.      |                           123                           |
 |          Piattaforma          | Identificatore univoco della piattaforma, simile a PlatformKey ma è una chiave naturale. |                           123                           |
-|        PlatformName        |                                   Nome della piattaforma                                   | Non disponibile <br>Nessuno <br>Windows <br>iOS <br>Android. |
+|        PlatformName        |                                   Nome della piattaforma                                   | Non disponibile <br>Nessuno <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Data e ora in formato UTC dell'ultima modifica della piattaforma nel data warehouse.  |                 23/11/2016 12.00.00                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -525,7 +525,7 @@ L'entità **managementAgentType** rappresenta gli agenti usati per gestire un di
 | 3                     | EasMdm                            | Il dispositivo è gestito da Exchange Active Sync e un agente MDM        |
 | 4                     | IntuneClient                      | Il dispositivo è gestito dall'agente PC di Intune                               |
 | 5                     | EasIntuneClient                   | Il dispositivo è gestito da Exchange Active Sync e l'agente PC di Intune |
-| 8                     | ConfigManagerClient               | Il dispositivo è gestito dall'agente System Center Configuration Manager     |
+| 8                     | ConfigManagerClient               | Il dispositivo è gestito dall'agente di Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | Il dispositivo è gestito da Configuration Manager e MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | Il dispositivo è gestito da Configuration Manager, MDM ed Exchange Active Sync.               |
 | 16                    | Sconosciuto                           | Tipo di agente di gestione sconosciuto                                              |
@@ -586,7 +586,7 @@ L'entità **ownerType** indica se un dispositivo è aziendale, personale o scono
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificatore univoco del tipo di proprietario.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificatore univoco del tipo di proprietario nel data warehouse - chiave surrogata.                                                                                                       |                            |
-| ownerTypeName | Rappresenta il tipo di proprietario dei dispositivi: Corporate - il dispositivo è di proprietà aziendale.  Personal - il dispositivo è di proprietà personale (BYOD).   Unknown - nessuna informazione su questo dispositivo. | Corporate   Personal Unknown |
+| ownerTypeName | Rappresenta il tipo di proprietario dei dispositivi:  Corporate - il dispositivo è di proprietà dell'azienda.  Personal - il dispositivo è di proprietà personale (BYOD).   Unknown - nessuna informazione su questo dispositivo. | Corporate   Personal Unknown |
 
 > [!Note]  
 > Per la creazione di gruppi dinamici per i dispositivi in AzureAD, per il filtro `ownerTypeName` è necessario impostare il valore `deviceOwnership` su `Company`. Per altre informazioni, vedere [Regole per i dispositivi](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
@@ -612,7 +612,7 @@ La tabella seguente elenca il numero di dispositivi con stato completato, in sos
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | Chiave della data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. | 20160703              |
 | Pending   | Numero di dispositivi univoci in stato sospeso.                                                    | 123                   |
-| Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12                    |
+| Operazione riuscita | Numero di dispositivi univoci in stato completato.                                                    | 12                    |
 | PolicyKey | Chiave dei criteri, può essere unita a Policy per ottenere policyName.                                  | Baseline Windows 10 |
 | Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10                    |
 | Operazione non riuscita    | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                     |
@@ -634,7 +634,7 @@ L'entità **PolicyTypeActivity** elenca il numero cumulativo di dispositivi nell
 | PolicyKey     | Chiave dei criteri, può essere unita a Policy per ottenere policyName.                                | Windows 10 baseline         |
 | PolicyTypeKey | Tipo di chiave dei criteri, può essere unita al tipo di criterio per ottenere il nome del tipo di criterio.             | Criteri di conformità di Windows 10 |
 | Pending       | Numero di dispositivi univoci in sospeso.                                                    | 123                         |
-| Operazione completata     | Numero di dispositivi univoci in stato completato.                                                    | 12                          |
+| Operazione riuscita     | Numero di dispositivi univoci in stato completato.                                                    | 12                          |
 | Errore         | Numero di dispositivi univoci in stato di errore.                                                      | 10                          |
 | Operazione non riuscita        | Numero di dispositivi univoci in stato non riuscito.                                                     | 2                           |
 
@@ -654,7 +654,7 @@ La tabella seguente elenca il numero di utenti con stato completato, in sospeso,
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | Chiave della data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. | 20160703            |
 | Pending   | Numero di dispositivi univoci in sospeso.                                                    | 123                 |
-| Operazione completata | Numero di dispositivi univoci in stato completato.                                                    | 12                  |
+| Operazione riuscita | Numero di dispositivi univoci in stato completato.                                                    | 12                  |
 | PolicyKey | Chiave dei criteri, può essere unita a Policy per ottenere policyName.                                | Windows 10 baseline |
 | Errore     | Numero di dispositivi univoci in stato di errore.                                                      | 10                  |
 
@@ -686,7 +686,7 @@ L'entità **UserDeviceAssociation** contiene le associazioni utente-dispositivo 
 | IsDeleted          | Indica che l'utente ha annullato la registrazione del dispositivo e che l'associazione non è più aggiornata. | True/False      |
 | EndedDateTimeUTC   | Data e ora in formato UTC in cui IsDeleted è stato impostato su True.                                               | 23/06/2017 0:00  |
 
-## <a name="users"></a>utenti
+## <a name="users"></a>user
 L'entità **user** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
 
 La raccolta di entità **user** contiene i dati utente. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.

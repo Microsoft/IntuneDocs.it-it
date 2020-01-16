@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506357"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856683"
 ---
 # <a name="encrypting-your-android-device"></a>Crittografia del dispositivo Android
 
@@ -48,7 +48,7 @@ Se Portale aziendale o l'app Microsoft Intune richiede di crittografare il dispo
 3. Scegliere **Richiedi PIN quando il dispositivo si attiva** > **OK**.
 4. Immettere il PIN per confermare e crittografare il dispositivo.
 5. Aprire l'app Portale aziendale o Microsoft Intune.
-    * Utenti del portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**. 
+    * Utenti dell'app Portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**. 
     * Microsoft Intune utenti: è necessario attendere che la pagina venga aggiornata, ma, in questo caso, lo stato della crittografia deve essere modificato in conforme.  
 
 I dispositivi che eseguono Android 4,4 e versioni precedenti potrebbero non avere l'opzione di **avvio protetto** . In tal caso, completare la procedura seguente per crittografare il dispositivo.
@@ -59,7 +59,7 @@ I dispositivi che eseguono Android 4,4 e versioni precedenti potrebbero non aver
 
 2. Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
 3. Aprire l'app Portale aziendale o Microsoft Intune.
-    * Utenti del portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**.  
+    * Utenti dell'app Portale aziendale: selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**.  
     * Microsoft Intune utenti: è necessario attendere che la pagina venga aggiornata, ma, in questo caso, lo stato della crittografia deve essere modificato in conforme.
 
 ## <a name="troubleshoot"></a>Risoluzione dei problemi  

@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b976e9a47a56c7af1e754f5b5b0162410e278025
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415763"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856393"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>Configurare un dispositivo iOS o iPados con Portale aziendale e Entrust Datacard
 
@@ -56,7 +56,7 @@ Le credenziali derivate sono un'implementazione delle linee guida del National I
 
 * La tua scuola o la smart card fornita dal lavoro
 * Accesso a un computer o a un chiosco multimediale in cui è possibile accedere con la smart card
-* Il dispositivo mobile
+* Dispositivo mobile
 * L'app Portale aziendale Intune per iOS e iPados è installata nel dispositivo  
 
 

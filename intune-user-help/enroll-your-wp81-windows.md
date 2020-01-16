@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506159"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855442"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrare il dispositivo Windows Phone 8.1 in Intune  
 
@@ -44,7 +44,7 @@ Seguire questi passaggi se è possibile installare l'app Portale aziendale da Mi
 
     ![Risultati della ricerca del portale aziendale](./media/WP81-1-CP-search-store-v2.png)  
 
-4. Toccare **Portale aziendale**  &gt; **Installa**.  
+4. Toccare **Portale aziendale** &gt; **Installa**.  
 
 
     ![Installare il portale aziendale](./media/WP81-2-CP-install-v2.png)  
@@ -73,7 +73,7 @@ Registrare il dispositivo:
 
     ![Schermata delle impostazioni della rete aziendale](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.  
+7. Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencato nella pagina **Impostazioni** &gt; **Area di lavoro**.  
 
 
     ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)  

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5665ae7d8093decc8ef2ea4ab1911b27e20e25dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: edea807b8c71f519c28f19b0343fa8ea0977712a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505785"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855147"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Come impostare l'intervallo di tempo prima del blocco dello schermo del dispositivo Android
 
@@ -32,17 +32,17 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 
 ## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (non Samsung Knox)
 
-1. In **Settings** (Impostazioni) nel dispositivo toccare **Security** (Sicurezza) &gt; **Automatically Lock** (Blocco automatico), che in alcuni dispositivi corrisponde a **Lock phone after** (Blocca telefono dopo).
+1. In **Impostazioni** nel dispositivo toccare **Sicurezza** &gt; **Blocca automaticamente**, che in alcuni dispositivi corrisponde a **Blocca telefono dopo**.
 
-    Se l'opzione **Blocca automaticamente** (**Blocca telefono dopo** in alcuni dispositivi) non è visualizzata, verificare di aver impostato una password valida in **Impostazioni** &gt; **Blocco schermo** &gt; **Password**.
+    Se l'opzione **Blocca automaticamente** (**Blocca telefono** dopo in alcuni dispositivi) non è visualizzata, verificare di aver impostato una password valida in **Impostazioni** &gt; **Blocco schermo** &gt; **Password**.
 
 2. Selezionare il valore di timeout della password.
 
 ## <a name="samsung-knox-device"></a>Dispositivo Samsung Knox
 
-1. In **Settings** (Impostazioni) nel dispositivo toccare **Lock screen and security** (Schermata di blocco e sicurezza) &gt; **Lock automatically** (Blocca automaticamente).
+1. In **Impostazioni** nel dispositivo toccare **Schermata di blocco e sicurezza** &gt; **Blocca automaticamente**.
 
-    Se l'opzione **Lock automatically** (Blocca automaticamente), che in alcuni dispositivi corrisponde a **Lock phone after** (Blocca telefono dopo) non è visualizzata, verificare di aver impostato una password valida in **Settings** (Impostazioni) &gt; **Screen Lock** (Blocco schermo) &gt; **Password**.
+    Se l'opzione **Blocca automaticamente** (**Blocca telefono** dopo in alcuni dispositivi) non è visualizzata, verificare di aver impostato una password valida in **Impostazioni** &gt; **Blocco schermo** &gt; **Password**.
 
 2. Selezionare un valore di timeout della password.
 

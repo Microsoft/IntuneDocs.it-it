@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290941"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654244"
 ---
 # <a name="reference-for-application-entities"></a>Informazioni di riferimento per le entità della categoria Application
 
@@ -51,7 +51,7 @@ L'entità **appRevision** elenca tutte le versioni di un'app.
 | vppProgramTypeKey |Riferimento a VppProgramType descritto di seguito. | |
 | creationTime |Ora di creazione della revisione. |23/11/2016 12.00.00 |
 | modifiedTime |Ora dell'ultima modifica apportata a qualsiasi elemento relativo a questa revisione. |23/11/2016 12.00.00 |
-| dimensioni |Dimensioni del file binario. | |
+| size |Dimensioni del file binario. | |
 | startDateInclusiveUTC |Data e ora in formato UTC della creazione della revisione dell'app nel data warehouse. |23/11/2016 12.00.00 |
 | endDateExclusiveUTC |Data e ora in formato UTC in cui la revisione dell'app è diventata obsoleta. |23/11/2016 12.00.00 |
 | isCurrent |Indica se la versione dell'app è corrente nel data warehouse. |True/False |
@@ -114,7 +114,7 @@ L'entità **applicationInventory** elenca le applicazioni trovate nel dispositiv
 |---------|------------|
 | deviceKey | Si tratta di un riferimento alla tabella Device che contiene l'ID dispositivo Intune. |
 | dateKey | Riferimento alla tabella di data che indica il giorno dell'inventario. |
-| applicationName | Il nome dell'applicazione. |
+| applicationName | Nome dell'applicazione. |
 | applicationVersion | Versione dell'applicazione. |
 | bundleSize | Dimensione dell'app in byte. |
 
