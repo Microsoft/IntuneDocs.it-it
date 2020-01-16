@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72776873"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206551"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi macOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi macOS. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, impostare regole per le password, consentire o limitare l'uso di app specifiche e altro ancora.
 
@@ -43,7 +43,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Ricerca della definizione**: **Blocca** impedisce all'utente di evidenziare una parola e quindi di cercarne la definizione nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla funzionalità di ricerca della definizione.
-- **Blocca la dettatura**: **Blocca** impedisce all'utente di immettere testo con l'input vocale. **Non configurato** (impostazione predefinita) consente all'utente di usare l'input con dettatura.
+- **Dettatura**: **Blocca** impedisce all'utente di immettere testo con l'input vocale. **Non configurato** (impostazione predefinita) consente all'utente di usare l'input con dettatura.
 - **Memorizzazione nella cache dei contenuti**: scegliere **Non configurato** (impostazione predefinita) per abilitare la memorizzazione dei contenuti nella cache. La memorizzazione del contenuto nella cache consente di archiviare i dati di app e Web browser, download e altro ancora localmente nel dispositivo. Selezionare **Blocca** per impedire che questi dati siano archiviati nella cache.
 
   Per altre informazioni sulla memorizzazione del contenuto nella cache in macOS, vedere [Gestire la cache dei contenuti sul Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (viene aperto un altro sito Web).
@@ -51,7 +51,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   Questa funzionalità si applica a:  
   - macOS 10.13 e versioni successive
 
-- **Posticipa gli aggiornamenti software**: se impostato su **Non configurato** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena rilasciati da Apple. Ad esempio, se un aggiornamento macOS viene rilasciato da Apple in una data specifica, questo viene normalmente visualizzato nel dispositivo in prossimità della data di rilascio. Gli aggiornamenti della seed build sono consentiti senza posticipazioni.
+- **Rinvia gli aggiornamenti software**: se impostato su **Non configurato** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena rilasciati da Apple. Ad esempio, se un aggiornamento macOS viene rilasciato da Apple in una data specifica, questo viene normalmente visualizzato nel dispositivo in prossimità della data di rilascio. Gli aggiornamenti della seed build sono consentiti senza posticipazioni.
 
   **Abilita** consente di posticipare la visualizzazione degli aggiornamenti software nei dispositivi, da 0 a 90 giorni. Questa impostazione non controlla quando gli aggiornamenti vengono installati o meno. 
 
@@ -84,21 +84,21 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
-- **Password**: impostare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) non richiede una password. Non impone inoltre alcuna restrizione, ad esempio il blocco di password semplici o l'impostazione di una lunghezza minima.
-  - **Tipo di password richiesto**: specifica se la password può essere solo numerica o se deve essere di tipo alfanumerico, ovvero contenere lettere e numeri.
+- **Password**: selezionare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) non richiede una password. Non impone inoltre alcuna restrizione, ad esempio il blocco di password semplici o l'impostazione di una lunghezza minima.
+  - **Tipo di password richiesto**: specificare se la password può essere solo numerica o se deve essere di tipo alfanumerico, ovvero contenere lettere e numeri.
 
     Questa funzionalità si applica a:  
     - macOS 10.10.3 e versioni successive
 
-  - **Numero di caratteri non alfanumerici nella password**: specifica il numero di caratteri complessi che è necessario includere nella password (da **0** a **4**).<br>Un carattere complesso è un simbolo, ad esempio " **?** ".
-  - **Lunghezza minima password**: immettere la lunghezza minima della password che l'utente deve configurare, da **4** a **16** caratteri.
-  - **Password semplici**: consente l'uso di password semplici come **0000** o **1234**.
-  - **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**: specifica quanto tempo il computer deve rimanere inattivo prima che sia necessario inserire la password per sbloccarlo.
-  - **Numero massimo di minuti di inattività fino al blocco dello schermo**: specifica il periodo di tempo per cui il computer deve rimanere inattivo prima che lo schermo venga bloccato.
-  - **Scadenza password (giorni)** : specifica quanti giorni devono trascorrere prima che l'utente sia obbligato a cambiare la password, da **1** a **255** giorni.
+  - **Numero di caratteri non alfanumerici nella password**: Specificare il numero di caratteri complessi richiesti per la password, da **0** a **4**.<br>Un carattere complesso è un simbolo, ad esempio " **?** ".
+  - **Lunghezza minima password**: Immettere la lunghezza minima della password che l'utente deve configurare, compresa tra **4** e **16** caratteri.
+  - **Password semplici**: Consentire l'uso di password semplici come **0000** o **1234**.
+  - **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**: Specificare per quanto tempo il computer deve essere inattivo prima che sia richiesta una password per sbloccarlo.
+  - **Numero massimo di minuti di inattività fino al blocco dello schermo**: specificare per quanto tempo il computer deve rimanere inattivo prima che venga bloccato lo schermo.
+  - **Scadenza password (giorni)** : Specificare quanti giorni devono trascorrere prima che l'utente sia obbligato a cambiare la password, da **1** a **255** giorni.
   - **Impedisci riutilizzo delle password precedenti**: immettere il numero di password usate in precedenza che non possono essere riutilizzate, da **1** a **24**.
 
-- **Block User from Modifying Passcode** (Impedisci all'utente di modificare il passcode): scegliere **Blocca** per impedire la modifica, l'aggiunta o la rimozione del passcode. **Non configurato** (impostazione predefinita) consente l'aggiunta, la modifica o la rimozione dei passcode.
+- **Impedisci all'utente di modificare il passcode**: scegliere **Blocca** per impedire la modifica, l'aggiunta o la rimozione del passcode. **Non configurato** (impostazione predefinita) consente l'aggiunta, la modifica o la rimozione dei passcode.
 - **Impedisci lo sblocco tramite impronta digitale**: scegliere **Blocca** per impedire l'uso di un'impronta digitale per sbloccare il dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di sbloccare il dispositivo tramite impronta digitale.
 
 - **Blocca il riempimento automatico delle password**: scegliere **Blocca** per impedire l'uso della funzionalità di riempimento automatico delle password in macOS. La scelta di **Blocca** comporta anche le conseguenze seguenti:
@@ -116,11 +116,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
-- **Block Safari AutoFill** (Blocca riempimento automatico in Safari): **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare le impostazioni di completamento automatico nel Web browser.
+- **Blocca il riempimento automatico di Safari**: **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare le impostazioni di completamento automatico nel Web browser.
 - **Blocca la fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla fotocamera del dispositivo.
 - **Blocca Apple Music**: **Blocca** ripristina la modalità classica per l'app Music e disabilita il servizio Music. **Non configurato** (impostazione predefinita) consente l'uso dell'app Apple Music.
-- **Impedisci a Spotlight di restituire i risultati della ricerca Internet**: **Blocca** impedisce a Spotlight di restituire risultati da una ricerca in Internet. **Non configurato** (impostazione predefinita) consente alla ricerca Spotlight di connettersi a Internet per fornire i risultati della ricerca.
-- **Block File Transfer using iTunes** (Blocca il trasferimento di file tramite iTunes): **Blocca** disabilita i servizi di condivisione file dell'applicazione. **Non configurato** (impostazione predefinita) consente i servizi di condivisione file dell'applicazione.
+- **Blocca i risultati della ricerca Internet di Spotlight**: **Blocca** impedisce a Spotlight di restituire risultati da una ricerca su Internet. **Non configurato** (impostazione predefinita) consente alla ricerca Spotlight di connettersi a Internet per fornire i risultati della ricerca.
+- **Impedisci il trasferimento di file con iTunes**: **Blocca** disabilita i servizi di condivisione file dell'applicazione. **Non configurato** (impostazione predefinita) consente i servizi di condivisione file dell'applicazione.
 
   Questa funzionalità si applica a:  
   - macOS 10.13 e versioni successive
@@ -132,7 +132,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Tipo di elenco di app con restrizioni**: creare un elenco di app che gli utenti non sono autorizzati a installare o usare. Le opzioni disponibili sono:
 
   - **Non configurato** (impostazione predefinita): nessuna restrizione da Intune. Gli utenti hanno accesso alle app assegnate e alle app predefinite.
-  - **App non consentite**: app non gestite da Intune di cui si vuole evitare l'installazione nel dispositivo. Agli utenti non viene impedito di installare un'app vietata. Tuttavia, se un utente installa un'app da questo elenco, viene segnalata in Intune.
+  - **App non consentite**: elenco di app non gestite da Intune di cui si vuole evitare l'installazione nel dispositivo. Agli utenti non viene impedito di installare un'app vietata. Tuttavia, se un utente installa un'app da questo elenco, viene segnalata in Intune.
   - **App approvate**: app che gli utenti sono autorizzati a installare. Gli utenti non devono installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite. Agli utenti non viene impedito di installare un'app non inclusa nell'elenco approvato. Tuttavia, in caso affermativo, viene segnalato in Intune.
 - **ID bundle dell'app**: immettere l'[ID bundle](bundle-ids-built-in-ios-apps.md) dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
 - **Nome app**: immettere il nome dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
@@ -148,22 +148,22 @@ Per aggiungere app a questi elenchi, è possibile:
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Blocca AirDrop**: **Blocca** impedisce l'uso di AirDrop nel dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della funzionalità AirDrop per scambiare contenuti con dispositivi vicini.
-- **Block Apple Watch Auto Unlock** (Impedisci lo sblocco automatico con Apple Watch): **Blocca** impedisce agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch. **Non configurato** (impostazione predefinita) consente agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch.
+- **Blocca lo sbocco automatico di Apple Watch**: **Blocca** impedisce agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch. **Non configurato** (impostazione predefinita) consente agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
 
 - **Blocca la sincronizzazione Keychain con iCloud**: scegliere **Blocca** per disabilitare la sincronizzazione delle credenziali archiviate in Keychain su iCloud. **Non configurato** (impostazione predefinita) consente agli utenti di sincronizzare queste credenziali.
-- **Block iCloud Document Sync** (Blocca la sincronizzazione di documenti in iCloud): **Blocca** impedisce a iCloud di sincronizzare documenti e dati. **Non configurato** (impostazione predefinita) consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
-- **Block iCloud Mail Backup** (Blocca il backup di Mail di iCloud): **Blocca** impedisce a iCloud di sincronizzarsi con l'app Mail di macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione della posta con iCloud.
-- **Block iCloud Contact Backup** (Blocca il backup di Contatti di iCloud): **Blocca** impedisce a iCloud di sincronizzare i contatti del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei contatti tramite iCloud.
-- **Block iCloud Calendar Backup** (Blocca il backup di Calendario di iCloud): **Blocca** impedisce a iCloud di sincronizzarsi con l'app Calendario di macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione del calendario con iCloud.
-- **Block iCloud Reminder Backup** (Blocca il backup di Promemoria di iCloud): **Blocca** impedisce a iCloud di sincronizzarsi con l'app Promemoria di macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei promemoria con iCloud.
-- **Block iCloud Bookmark Backup** (Blocca il backup di Preferiti di iCloud): **Blocca** impedisce a iCloud di sincronizzare i preferiti del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei preferiti con iCloud.
-- **Block iCloud Notes Backup** (Blocca il backup di Note di iCloud): **Blocca** impedisce a iCloud di sincronizzare le note del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione delle note con iCloud.
+- **Blocca la sincronizzazione dei documenti di iCloud**: **Blocca** impedisce a iCloud di sincronizzare documenti e dati. **Non configurato** (impostazione predefinita) consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
+- **Blocca il backup della posta elettronica di iCloud**: **Blocca** impedisce la sincronizzazione di iCloud nell'app di posta macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione della posta con iCloud.
+- **Blocca il backup dei contatti iCloud**: **Blocca** impedisce a iCloud di sincronizzare i contatti del dispositivo. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei contatti tramite iCloud.
+- **Blocca il backup dei calendari di iCloud**: **Blocca** impedisce la sincronizzazione di iCloud nell'app calendario macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione del calendario con iCloud.
+- **Blocca il backup dei promemoria di iCloud**: **Blocca** impedisce la sincronizzazione di iCloud nell'app per i promemoria macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei promemoria con iCloud.
+- **Blocca il backup dei segnalibri di iCloud**: **Blocca** impedisce a iCloud di sincronizzare i segnalibri dei dispositivi. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei preferiti con iCloud.
+- **Blocca il backup delle note di iCloud**: **Blocca** impedisce a iCloud di sincronizzare le note dei dispositivi. **Non configurato** (impostazione predefinita) consente la sincronizzazione delle note con iCloud.
 - **Blocca la libreria foto iCloud**: il **blocco** Disabilita la libreria foto iCloud e impedisce a iCloud di sincronizzare le foto dei dispositivi. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud vengono rimosse dall'archivio locale nel dispositivo. **Non configurato** (impostazione predefinita) consente di sincronizzare le foto tra il dispositivo e la libreria foto iCloud.
-- **** Consegna: **non configurata** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo MacOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce la funzionalità di continuità sul dispositivo. 
+- **Consegna**: **non configurata** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo MacOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce la funzionalità di continuità sul dispositivo. 
 
   Questa funzionalità si applica a:  
   - macOS 10.15 e versioni successive

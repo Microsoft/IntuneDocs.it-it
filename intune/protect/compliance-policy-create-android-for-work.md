@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810250"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722607"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Android Enterprise per contrassegnare un dispositivo come conforme o non conforme in Intune
 
@@ -43,7 +43,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
 ## <a name="device-owner"></a>Proprietario del dispositivo
 
-### <a name="device-health"></a>Integrità del dispositivo
+### <a name="device-health"></a>Integrità dispositivi
 
 - **Richiedi che il dispositivo si trovi al**massimo al livello di minaccia del dispositivo: selezionare il livello di minaccia massimo consentito per il dispositivo valutato dal [servizio Mobile Threat Defense](mobile-threat-defense.md). I dispositivi che superano questo livello di minaccia vengono contrassegnati come non conformi. Per usare questa impostazione, scegliere il livello di minaccia consentito:
 
@@ -54,13 +54,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
   - **Alto**: questa opzione è la meno sicura poiché consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
   
 > [!NOTE] 
-> I provider di Mobile Threat Defense (MTD) seguenti supportano le distribuzioni del proprietario di dispositivi Android Enterprise usando la configurazione dell'app:
-> - Better Mobile 
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Rivolgersi al provider MTD per la configurazione esatta necessaria per supportare le piattaforme del proprietario di dispositivi Android Enterprise in Intune. Questo elenco viene aggiornato perché i MTD parters supportano gli scenari per i proprietari di dispositivi Android Enterprise. 
+> Tutti i provider di Mobile Threat Defense (MTD) sono supportati nelle distribuzioni di dispositivi Android Enterprise con la configurazione dell'app. Rivolgersi al provider MTD per la configurazione esatta necessaria per supportare le piattaforme del proprietario di dispositivi Android Enterprise in Intune.
 
 #### <a name="google-play-protect"></a>Protezione di Google Play
 
@@ -73,15 +67,15 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
 #### <a name="operating-system-version"></a>Versione del sistema operativo
 
-- **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può aggiornare il dispositivo e quindi accedere alle risorse dell'organizzazione.
+- **Versione minima del sistema operativo**: Quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può aggiornare il dispositivo e quindi accedere alle risorse dell'organizzazione.
 
   *Per impostazione predefinita, non è configurata alcuna versione*.
 
-- **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse dell'organizzazione viene bloccato. All'utente viene chiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse dell'organizzazione finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
+- **Versione massima del sistema operativo**: Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella nella regola, l'accesso alle risorse dell'organizzazione viene bloccato. All'utente viene chiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse dell'organizzazione finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
 
   *Per impostazione predefinita, non è configurata alcuna versione*.
 
-- **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato AAAA-MM-GG.
+- **Livello minimo di patch di protezione**:  selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato AAAA-MM-GG.
 
   *Per impostazione predefinita, non è configurata alcuna data*.
 
@@ -97,8 +91,8 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
   - **Tipo di password richiesto**: scegliere se una password deve essere composta solo da caratteri numerici oppure da una combinazione di numeri e altri caratteri. Le opzioni disponibili sono:
     - **Impostazione predefinita del dispositivo** : per valutare la conformità delle password, assicurarsi di selezionare un livello di attendibilità diverso da quello **predefinito del dispositivo**.  
     - **Password obbligatoria, nessuna restrizione**
-    - **Biometrica vulnerabile** - [biometrica complessa rispetto alla vulnerabile](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web Android)
-    - **Numerica** (*impostazione predefinita*): la password deve contenere solo numeri, ad esempio `123456789`. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+    - **Biometrica vulnerabile** - [Biometrica complessa e vulnerabile a confronto](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web Android)
+    - **Numerica** (*impostazione predefinita*): la password contiene solo numeri, ad esempio `123456789`. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
     - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
     - **Alfabetica**: è obbligatorio usare le lettere dell'alfabeto. Numeri e simboli non sono richiesti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
     - **Alfanumerica**: include lettere maiuscole, lettere minuscole e caratteri numerici. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
@@ -107,11 +101,11 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
     A seconda del *tipo di password* selezionato, sono disponibili le impostazioni seguenti:  
     - **Lunghezza minima password**: immettere la lunghezza minima per la password che deve essere compresa tra da 4 e 16 caratteri.  
 
-    - **Numero di caratteri richiesti**: immettere il numero di caratteri deve contenere la password, compreso tra 0 e 16 caratteri.
+    - **Numero di caratteri obbligatori**: immettere il numero di caratteri che deve contenere la password, compreso tra 0 e 16 caratteri.
 
-    - **Numero di caratteri minuscoli obbligatori**: immettere il numero di caratteri minuscoli compreso tra 0 e 16 che la password deve contenere.
+    - **Numero di caratteri minuscoli obbligatori**: immettere il numero di caratteri minuscoli che deve contenere la password, compreso tra 0 e 16 caratteri.
 
-    - **Numero di caratteri maiuscoli obbligatori**: immettere il numero di caratteri maiuscoli compreso tra 0 e 16 che la password deve contenere.
+    - **Numero di caratteri maiuscoli obbligatori**: immettere il numero di caratteri maiuscoli che deve contenere la password, compreso tra 0 e 16 caratteri.
 
     - **Numero di caratteri diversi da lettere obbligatori**: immettere il numero di caratteri (diversi dalle lettere dell'alfabeto) compreso tra 0 e 16 caratteri che la password deve contenere.
 
@@ -119,13 +113,13 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
     
     - **Numero di caratteri di tipo simbolo obbligatori**: immettere il numero di caratteri di tipo simbolo (`&`, `#`, `%` e così via) compreso tra 0 e 16 caratteri che la password deve contenere.
  
-- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password. Le opzioni includono il valore predefinito *non configurato*e da *1 minuto* a *8 ore*.
+- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password. Le opzioni includono il valore predefinito *non configurato*e da *1 minuto* a *8 ore*.
 
-- **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni che devono trascorrere tra 1 e 365 prima che sia necessario modificare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
+- **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni, compreso tra 1 e 365, che devono trascorrere prima che sia necessario cambiare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
 
    *Per impostazione predefinita, non è configurato alcun valore*.
 
-- **Numero di password obbligatorie prima che un utente possa riutilizzare una password**: immettere il numero di password recenti tra 1 e 24 che non può essere riutilizzato. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.  
+- **Numero di password obbligatorie prima che un utente possa riutilizzare una password**: immettere il numero di password recenti che non è possibile riutilizzare, compreso tra 1 e 24. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.  
 
     *Per impostazione predefinita, non è configurata alcuna versione*.
 
@@ -139,7 +133,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
 ## <a name="work-profile"></a>Profilo di lavoro
 
-### <a name="device-health"></a>Integrità del dispositivo
+### <a name="device-health"></a>Integrità dispositivi
 
 - **Dispositivi rooted**: 
   - **Non configurato** (*impostazione predefinita*): questa impostazione non viene valutata per la conformità o la non conformità.
@@ -175,11 +169,11 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
 #### <a name="operating-system-version"></a>Versione del sistema operativo
 
-- **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può aggiornare il dispositivo e quindi accedere alle risorse dell'organizzazione.
+- **Versione minima del sistema operativo**: Quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può aggiornare il dispositivo e quindi accedere alle risorse dell'organizzazione.
 
   *Per impostazione predefinita, non è configurata alcuna versione*.
 
-- **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse dell'organizzazione viene bloccato. All'utente viene chiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse dell'organizzazione finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
+- **Versione massima del sistema operativo**: Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella nella regola, l'accesso alle risorse dell'organizzazione viene bloccato. All'utente viene chiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse dell'organizzazione finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
 
   *Per impostazione predefinita, non è configurata alcuna versione*.
 
@@ -194,20 +188,20 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 - **Tipo di password richiesto**: scegliere se una password deve essere composta solo da caratteri numerici oppure da una combinazione di numeri e altri caratteri. Le opzioni disponibili sono:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
-  - **Almeno numerico** (*impostazione predefinita*): immettere la **lunghezza minima della password** che un utente deve immettere (da 4 a 16 caratteri).
-  - **Complessa numerica** (impostazione predefinita): immettere la **lunghezza minima della password** che un utente deve immettere (da 4 a 16 caratteri).
-  - **Almeno alfabetico**: immettere la **lunghezza minima della password** che un utente deve immettere (da 4 a 16 caratteri).
-  - **Almeno alfanumerico**: immettere la **lunghezza minima della password** che un utente deve immettere (da 4 a 16 caratteri).
-  - **Almeno alfanumerico con simboli**: immettere la **lunghezza minima della password** che un utente deve immettere (da 4 a 16 caratteri).
+  - **Almeno numerico** (*impostazione predefinita*): Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Complessa numerica**: Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Almeno alfabetico**: Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Almeno alfanumerico**: Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Almeno alfanumerico con simboli**: Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
 
   A seconda del *tipo di password* selezionato, sono disponibili le impostazioni seguenti:  
-  - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password. Le opzioni includono il valore predefinito *non configurato*e da *1 minuto* a *8 ore*.
+  - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password. Le opzioni includono il valore predefinito *non configurato*e da *1 minuto* a *8 ore*.
 
-  - **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni che devono trascorrere tra 1 e 365 prima che sia necessario modificare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
+  - **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni, compreso tra 1 e 365, che devono trascorrere prima che sia necessario cambiare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
 
   - **Lunghezza minima password**: immettere la lunghezza minima per la password che deve essere compresa tra da 4 e 16 caratteri. 
   
-  - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
+  - **Numero di password precedenti di cui impedire il riutilizzo**: immettere il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
 #### <a name="encryption"></a>Crittografia
 
@@ -244,7 +238,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
   Non è necessario configurare questa impostazione perché il debug USB è già disabilitato nei dispositivi Android Enterprise.
 
-- **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato AAAA-MM-GG.
+- **Livello minimo di patch di protezione**:  selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato AAAA-MM-GG.
 
   *Per impostazione predefinita, non è configurata alcuna data*.
 
