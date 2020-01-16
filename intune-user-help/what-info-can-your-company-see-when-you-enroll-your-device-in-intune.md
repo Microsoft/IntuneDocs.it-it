@@ -17,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 24601ef5c7a6451e2abfa64da37b21912d3cbace
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801471"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858795"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'organizzazione quando si registra il dispositivo?
 
@@ -46,14 +46,14 @@ L'organizzazione non può vedere le informazioni personali di un utente che regi
 - Sistema operativo e versione, ad esempio iOS 12.0.1
 - Inventario delle app e nomi delle app, ad esempio Microsoft Word. nei dispositivi personali l'organizzazione può visualizzare solo l'inventario delle app gestite. Nei dispositivi di proprietà dell'azienda l'organizzazione può visualizzare l'inventario di tutte le app.
 - Proprietario del dispositivo
-- Nome dispositivo
+- Nome del dispositivo
 - Numero di serie del dispositivo
 - IMEI
 
 **Informazioni che l'organizzazione potrebbe visualizzare:**
 
 - Numero di telefono: per i dispositivi di proprietà dell'azienda, può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà personale, l'organizzazione può visualizzare solo le ultime quattro cifre del numero di telefono. È possibile visualizzare il tipo di proprietà per ogni singolo dispositivo nella pagina dei **Dettagli del dispositivo** .
-- Spazio di archiviazione del dispositivo: se non è possibile installare un'app necessaria, l'organizzazione potrebbe esaminare lo spazio di archiviazione del dispositivo per determinare se lo spazio non è sufficiente.  
-- Posizione: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
-- Dettagli dell'inventario delle app: se l'organizzazione usa Mobile Threat Defense, può visualizzare dettagli sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md). Nei dispositivi personali l'organizzazione può visualizzare solo l'inventario delle app gestite. Nei dispositivi di proprietà dell'azienda l'organizzazione può visualizzare l'inventario di tutte le app.
-- Informazioni di rete: alcune informazioni sulle connessioni di rete per dispositivi Android possono essere disponibili per il supporto tecnico dell'organizzazione. Se l'organizzazione esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 
+- Spazio di archiviazione del dispositivo: se non è possibile installare un'app necessaria, l'organizzazione può esaminare lo spazio di archiviazione del dispositivo per determinare se lo spazio non è sufficiente.  
+- Percorso: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
+- Dettagli dell'inventario delle app: se la propria organizzazione usa Mobile Threat Defense, può visualizzare dettagli aggiuntivi sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md). Nei dispositivi personali l'organizzazione può visualizzare solo l'inventario delle app gestite. Nei dispositivi di proprietà dell'azienda l'organizzazione può visualizzare l'inventario di tutte le app.
+- Informazioni sulla rete: per il supporto tecnico dell'organizzazione possono essere disponibili alcune informazioni sulle connessioni di rete per dispositivi Android. Se l'organizzazione esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 

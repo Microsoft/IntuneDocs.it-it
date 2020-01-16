@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832583"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885925"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi iOS in Microsoft Intune
 
@@ -40,7 +40,7 @@ Raccogliere le seguenti informazioni sul problema:
 - Quale piattaforma (Android, iOS, Windows) presenta il problema?
 - Quanti utenti sono interessati? Tutti gli utenti sono interessati o solo alcuni?
 - Quanti dispositivi sono interessati? Tutti i dispositivi sono interessati o solo alcuni?
-- Che cos'è l'autorità MDM? Se è System Center Configuration Manager, quale versione di Configuration Manager si sta usando?
+- Che cos'è l'autorità MDM?
 - Come viene eseguita la registrazione? BYOD (Bring Your Own Device) o Apple Device Enrollment Program (DEP) con i profili di registrazione?
 
 ## <a name="error-messages"></a>Messaggi di errore
@@ -70,9 +70,9 @@ Raccogliere le seguenti informazioni sul problema:
 **Motivo:** I record CNAME necessari in DNS non esistono.
 
 #### <a name="resolution"></a>Soluzione
-Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il dominio della società è contoso.com, creare un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com.
+Creare record di risorse CNAME DNS per il dominio della società. Ad esempio, se il dominio della società è contoso.com, creare un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com.
 
-Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
+Sebbene la creazione di voci DNS CNAME sia facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
 
 Se è presente più di un dominio verificato, creare un record CNAME per ogni dominio. Il record di risorse CNAME deve contenere le informazioni seguenti:
 
@@ -186,7 +186,7 @@ Se la società usa più domini per le credenziali dell'utente, creare record CNA
 **Motivo:** Il certificato Apple Push Notification Service (APNs) è mancante, non valido o scaduto.
 
 #### <a name="resolution"></a>Soluzione
-Verificare che in Intune sia stato aggiunto un certificato APNs valido. Per altre informazioni, vedere [Configurare la gestione dei dispositivi iOS e Mac](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Verificare che in Intune sia stato aggiunto un certificato APNs valido. Per altre informazioni, vedere [configurare la registrazione iOS](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ Rinnovare il certificato APNs e quindi eseguire di nuovo la registrazione del di
 > Assicurarsi di rinnovare il certificato APNs. Non sostituire il certificato APNs. Se si sostituisce il certificato, è necessario registrare di nuovo tutti i dispositivi iOS in Intune. 
 
 - Per rinnovare il certificato APNs in Intune autonomo, vedere [rinnovare il certificato push MDM Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Per rinnovare il certificato APNs in Intune Hybrid con Configuration Manager, vedere [configurare la gestione di dispositivi ibridi iOS con System Center Configuration Manager e Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Per rinnovare il certificato APNs in Office 365, vedere [creare un certificato APNs per dispositivi iOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>Connessione XPC_TYPE_ERROR non valida
@@ -230,7 +229,7 @@ Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo 
 #### <a name="resolution"></a>Soluzione
 
 1. Modificare il profilo di registrazione. È possibile apportare qualsiasi modifica al profilo. Lo scopo è aggiornare l'ora di modifica del profilo.
-2. Sincronizzare i dispositivi gestiti da DEP: nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **iOS** > **iOS enrollment** >  (Registrazione di iOS)**Token del programma di registrazione** > scegliere un token **Sincronizza**. Viene inviata una richiesta di sincronizzazione ad Apple.
+2. Sincronizzare i dispositivi gestiti tramite DEP: Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **iOS** > **Registrazione di iOS** > **Token del programma di registrazione** > scegliere un token > **Sincronizza ora**. Viene inviata una richiesta di sincronizzazione ad Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registrazione DEP bloccata all'accesso dell'utente
 Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo di registrazione, il programma di installazione iniziale si inserisce dopo aver immesso le credenziali.

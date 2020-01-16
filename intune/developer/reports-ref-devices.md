@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503424"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654074"
 ---
 # <a name="reference-for-devices-entities"></a>Informazioni di riferimento per le entità della categoria Devices
 
@@ -218,7 +218,7 @@ L'entità **ManagementAgentType** rappresenta gli agenti usati per gestire un di
 | 3 |EasMdm | Il dispositivo è gestito da Exchange Active Sync e un agente MDM |
 | 4 |IntuneClient | Il dispositivo è gestito dall'agente PC di Intune |
 | 5 |EasIntuneClient | Il dispositivo è gestito da Exchange Active Sync e un agente PC di Intune |
-| 8 |ConfigManagerClient | Il dispositivo è gestito dall'agente System Center Configuration Manager |
+| 8 |ConfigManagerClient | Il dispositivo è gestito dall'agente di Configuration Manager |
 | 16 |Sconosciuto | Tipo di agente di gestione sconosciuto |
 
 ## <a name="devices"></a>devices

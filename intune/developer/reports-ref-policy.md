@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490270"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654125"
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
@@ -67,7 +67,7 @@ L'entità **deviceConfigurationProfileDeviceActivity** elenca il numero di **dis
 | dateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |20160703 |
 | in sospeso |Numero di dispositivi univoci in sospeso. |123 |
 | riuscito |Numero di dispositivi univoci in stato completato. |12 |
-| Errore |Numero di dispositivi univoci in stato di errore. |10 |
+| error |Numero di dispositivi univoci in stato di errore. |10 |
 | non riuscito |Numero di dispositivi univoci in stato non riuscito. |2 |
 
 L'entità **deviceConfigurationProfileUserActivity** elenca il numero di **utenti** con stato completato, in sospeso, non riuscito o di errore per ogni giorno. Il numero rispecchia i profili di configurazione dispositivo assegnati all'entità. Se ad esempio un **utente** è nello stato completato per tutti i criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno con stato completato e l'altro con stato di errore, viene considerato l'utente con lo stato di errore.  L'entità **deviceConfigurationProfileUserActivity** elenca il numero di utenti in ogni stato diverso in un giorno specifico degli ultimi 30 giorni.
@@ -77,7 +77,7 @@ L'entità **deviceConfigurationProfileUserActivity** elenca il numero di **utent
 | dateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |20160703 |
 | in sospeso |Numero di utenti univoci in sospeso. |123 |
 | riuscito |Numero di utenti univoci in stato completato. |12 |
-| Errore |Numero di utenti univoci in stato di errore. |10 |
+| error |Numero di utenti univoci in stato di errore. |10 |
 | non riuscito |Numero di utenti univoci in stato non riuscito. |2 |
 
 ## <a name="policytypeactivities"></a>policyTypeActivities
@@ -91,7 +91,7 @@ L'entità **policyTypeActivity** elenca il numero cumulativo di dispositivi nell
 | policyTypeKey |Tipo di chiave dei criteri, può essere unita con il tipo di criterio per ottenere il nome del tipo di criterio. |Criteri di conformità di Windows 10 |
 | in sospeso |Numero di dispositivi univoci in sospeso. |123 |
 | riuscito |Numero di dispositivi univoci in stato completato. |12 |
-| Errore |Numero di dispositivi univoci in stato di errore. |10 |
+| error |Numero di dispositivi univoci in stato di errore. |10 |
 | non riuscito |Numero di dispositivi univoci in stato non riuscito. |2 |
 
 ## <a name="compliance-policy"></a>Criteri di conformità
@@ -111,7 +111,7 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 |compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |4083 |
 |inGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |57|
 |nonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|43 |
-|Errore      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+|error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities 
 
@@ -129,7 +129,7 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 |compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |45|
 |inGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |3|
 |nonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|7|
-|Errore      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+|error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
 
 ### <a name="policyplatformtypes"></a>policyPlatformTypes
 
@@ -150,9 +150,9 @@ La tabella seguente elenca il numero di dispositivi con stato completato, in sos
 |---------|---------|---------|
 |dateKey|Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.|20160703|
 |in sospeso|Numero di dispositivi univoci in sospeso.|123|
-|Operazione completata|Numero di dispositivi univoci in stato completato.|12|
+|Operazione riuscita|Numero di dispositivi univoci in stato completato.|12|
 |policyKey|policyKey, può essere unita a policy per ottenere policyName.|Windows 10 baseline|
-|Errore|Numero di dispositivi univoci in stato di errore.|10|
+|error|Numero di dispositivi univoci in stato di errore.|10|
 |non riuscito|Numero di dispositivi univoci in stato non riuscito.|2|
 
 ### <a name="policyuseractivities"></a>policyUserActivities
@@ -166,5 +166,5 @@ La tabella seguente elenca il numero di utenti con stato completato, in sospeso,
 |  in sospeso  |                         Numero di dispositivi univoci in sospeso.                          |         123         |
 | riuscito |                         Numero di dispositivi univoci in stato completato.                          |         12          |
 | policyKey |                 policyKey, può essere unita a policy per ottenere policyName.                 | Windows 10 baseline |
-|   Errore   |                          Numero di dispositivi univoci in stato di errore.                           |         10          |
+|   error   |                          Numero di dispositivi univoci in stato di errore.                           |         10          |
 

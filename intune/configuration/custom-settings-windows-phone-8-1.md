@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1362f6c6453569d1c306cd16397cc9a7f83736e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6ed1f43e7c7e6f0580cb22513a489fb32c30e5f6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495340"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206755"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Usare le impostazioni personalizzate per i dispositivi Windows Phone 8.1 in Intune
 
@@ -33,36 +33,36 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 
 ## <a name="create-the-profile"></a>Creare il profilo
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le impostazioni seguenti:
 
-    - **Nome**: immettere un nome per il profilo, ad esempio `windows phone custom profile`.
-    - **Descrizione:** immettere una descrizione per il profilo.
-    - **Piattaforma**: scegliere **Windows Phone 8.1**.
-    - **Tipo di profilo**: scegliere **Personalizzato**.
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Un nome di profilo valido, ad esempio, è **profilo personalizzato di Windows Phone**.
+    - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
+    - **Piattaforma**: selezionare **Windows Phone 8,1**.
+    - **Tipo di profilo**: selezionare **personalizzato**.
 
 4. In **Impostazioni OMA-URI personalizzate** selezionare **Aggiungi**. Immettere le impostazioni seguenti:
 
-    - **Nome**: immettere un nome univoco per l'impostazione OMA-URI per identificarla nell'elenco delle impostazioni.
+    - **Nome**: Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.
     - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuare il profilo.
-    - **OMA-URI (maiuscole/minuscole)** : immettere il valore OMA-URI che si vuole usare come impostazione.
-    - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
+    - **OMA-URI (maiuscole/minuscole)**: immettere l'OMA-URI da usare come impostazione.
+    - **Tipo di dati**: selezionare il tipo di dati da usare per questa impostazione OMA-URI. Le opzioni disponibili sono:
 
         - Stringa
         - Stringa (file XML)
         - Data e ora
-        - Integer
+        - Intero
         - A virgola mobile
         - Boolean
         - Base64 (file)
 
-    - **Valore**: immettere il valore dati da associare all'impostazione OMA-URI immessa. Il valore varia a seconda del tipo di dati selezionato. Ad esempio, se si sceglie **Data e ora**, selezionare il valore dalla selezione data.
+    - **Valore**: immettere il valore dati da associare all'impostazione OMA-URI immessa. Il valore varia a seconda del tipo di dati selezionato. Ad esempio, se si seleziona **Data e ora**, selezionare il valore dalla selezione data.
 
     Dopo aver aggiunto alcune impostazioni, è possibile selezionare **Esporta**. **Esporta** crea un elenco di tutti i valori aggiunti in un file con valori delimitati da virgole (file con estensione csv).
 
 5. Selezionare **OK** per salvare le modifiche. Continuare ad aggiungere altre impostazioni in base alle esigenze.
-6. Al termine, scegliere **OK** > **Crea** per creare il profilo di Intune. Il profilo viene visualizzato nell'elenco **Configurazione del dispositivo - Profili**.
+6. Al termine, selezionare **OK** > **Crea** per creare il profilo di Intune. Una volta completata l'operazione, il profilo viene visualizzato nell'elenco **Dispositivi - Profili di configurazione**.
 
 ## <a name="example"></a>Esempio
 
@@ -71,11 +71,11 @@ Nell'esempio seguente Windows 8.1 dispositivi telefonici non possono modificare 
 - **Nome**: Consenti roaming dati cellulare
 - **Descrizione**: consente o impedisce il roaming dei dati cellulari
 - **URI OMA** (con distinzione tra maiuscole e minuscole):./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
-- **Tipo di dati:** Integer
+- **Tipo di dati**: Intero
 - **Valore**: 0
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Il profilo è stato creato, ma non è ancora operativo. È ora necessario [assegnare il profilo](device-profile-assign.md).
+Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](../device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-Vedere come creare un profilo personalizzato nei [dispositivi Windows 10](../custom-settings-windows-10.md).
+Creare un [profilo personalizzato nei dispositivi Windows 10](../custom-settings-windows-10.md).

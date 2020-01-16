@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946660"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547035"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di Windows 10 e versioni successive per contrassegnare un dispositivo come conforme o non conforme in Intune
 
@@ -39,7 +39,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 
 [Creare i criteri di conformità](create-compliance-policy.md#create-the-policy). In **Piattaforma** selezionare **Windows 10 e versioni successive**.
 
-## <a name="device-health"></a>Integrità del dispositivo
+## <a name="device-health"></a>Integrità dispositivi
 
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Regole di valutazione del servizio di attestazione dell'integrità di Windows
 
@@ -65,7 +65,7 @@ Come amministratore di Intune, usare queste impostazioni di conformità per prot
 Altre risorse:
 
 - Per informazioni dettagliate sul funzionamento del servizio di attestazione dell'integrità, vedere [CSP di attestazione dell'integrità](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
-- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643) (Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune)
+- [Suggerimento per il supporto: uso delle impostazioni per l'attestazione dell'integrità dei dispositivi come parte dei criteri di conformità di Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643).
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
@@ -102,9 +102,9 @@ Altre risorse:
 
 Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e versioni successive. I dispositivi solo Intune restituiscono uno stato non disponibile.
 
-- **Richiedi la conformità del dispositivo da System Center Configuration Manager**:  
+- **Richiedi la conformità del dispositivo da Configuration Manager**:  
   - **Non configurato** (*impostazione predefinita*): Intune non verifica la conformità delle impostazioni di Configuration Manager.
-  - **Rendi obbligatorio**: richiedere la conformità di tutte le impostazioni (elementi di configurazione) in System Center Configuration Manager.  
+  - **Rendi obbligatorio**: richiedere la conformità di tutte le impostazioni (elementi di configurazione) in Configuration Manager.  
 
     È possibile ad esempio richiedere che vengano installati nei dispositivi tutti gli aggiornamenti software. In Configuration Manager questo requisito ha lo stato "Installato". Se uno o più programmi nel dispositivo hanno uno stato sconosciuto, il dispositivo non è conforme in Intune.
 
@@ -145,13 +145,13 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 - **Numero massimo di minuti di inattività prima che venga richiesta la password**:  
   immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password.
 
-- **Scadenza password (giorni)** :  
+- **Scadenza password (giorni)**:  
   immettere il numero di giorni che mancano alla scadenza della password, quando l'utente deve creare una nuova password (da 1 a 730).
 
 - **Numero di password precedenti di cui impedire il riutilizzo**:  
   immettere il numero di password usate in precedenza che non è possibile usare.
 
-- **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)** :  
+- **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)**:  
   - **Non configurato** (*impostazione predefinita*)
   - **Rendi obbligatorio**: richiedere agli utenti di immettere la password ogni volta che il dispositivo torna attivo dopo uno stato di inattività.
 
@@ -179,14 +179,14 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
   > [!NOTE]
   > Se il dispositivo si sincronizza immediatamente dopo un riavvio o esegue immediatamente la sincronizzazione dalla sospensione, questa impostazione potrebbe indicare un **errore**. Questo scenario potrebbe non influire sullo stato di conformità generale del dispositivo. Per valutare nuovamente lo stato di conformità, [sincronizzare manualmente il dispositivo](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
-- **Trusted Platform Module (TPM)** :  
+- **Trusted Platform Module (TPM)**:  
   - **Non configurato** (*impostazione predefinita*): Intune non controlla la versione del chip TPM nel dispositivo.
   - **Richiedi** : Intune verifica la conformità della versione del chip TPM. Il dispositivo è conforme se la versione del chip TPM è maggiore di **0** (zero). Il dispositivo non è conforme se non è presente una versione del TPM nel dispositivo.  
 
   [DeviceStatus CSP-nodo DeviceStatus/TPM/SpecificationVersion](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
   
 - **Antivirus**:  
-  - **Non configurato** (*impostazione predefinita)* : Intune non verifica la presenza di soluzioni antivirus installate nel dispositivo. 
+  - **Non configurato** (*impostazione predefinita)*: Intune non verifica la presenza di soluzioni antivirus installate nel dispositivo. 
   - **Rendi obbligatorio**: verificare la conformità usando le soluzioni antivirus registrate nel [Centro sicurezza PC Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), ad esempio Symantec e Microsoft Defender.
 
 - **Antispyware**:  
@@ -229,7 +229,7 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
   usare questa impostazione per considerare la valutazione del rischio dei servizi Threat Defense come condizione di conformità. Scegliere il livello di minaccia massimo consentito:
   - **Non configurato** (*impostazione predefinita*)  
   - **Cancella**: questa opzione è la più sicura poiché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
-  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello superiore, il dispositivo verrà messo in stato di non conformità.
+  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. Se sono presenti minacce di livello più alto, lo stato del dispositivo passa a Non conforme.
   - **Medio**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato non conforme.
   - **Alto**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
   

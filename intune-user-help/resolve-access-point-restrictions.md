@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8aa54c5ed2a5121246f917a5b5306fab5d89edc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: eeb47c072a4f34098bdebfd8766ab51b941d0bd3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508410"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858099"
 ---
 # <a name="resolve-access-point-restrictions"></a>Risolvere le limitazioni dei punti di accesso
 
@@ -38,19 +38,19 @@ Quando si tenta di connettersi a una rete non riconosciuta o non approvata, si p
  Nelle tabelle riportate di seguito viene elencato ogni messaggio, il suo significato e viene spiegato come accedere nuovamente alle risorse di lavoro.
 
 ## <a name="access-point-restrictions-not-set-up"></a>Le limitazioni del punto di accesso non sono state configurate  
-| Messaggio del Portale aziendale | Significato del messaggio | Operazione da eseguire                                                               
+| Messaggio del Portale aziendale | Significato del messaggio | Possibile soluzione                                                               
 |------------------------|--------------------------|--------------------------|
 | **Le limitazioni del punto di accesso non sono state configurate - Le limitazioni ai punti di accesso sono attive e devono essere configurate.** | La società ha applicato limitazioni ai punti di accesso nel dispositivo. Questa impostazione richiede che l'app Portale aziendale verifichi alcune impostazioni di rete nel dispositivo. | Toccare **Risolvi** L'app Portale aziendale verificherà la presenza di una connessione a una rete aziendale approvata. |
 
 ## <a name="not-connected-to-an-approved-network"></a>Non si è connessi a una rete approvata  
 
-| Messaggio del Portale aziendale | Significato del messaggio | Operazione da eseguire                                                                   
+| Messaggio del Portale aziendale | Significato del messaggio | Possibile soluzione                                                                   
 |------------------------|-----------------------------------|--------------------------|
 | **Il dispositivo non è connesso a una rete approvata - Connessione a una rete wireless approvata.** | Si è connessi a una rete che non è stata approvata per l'accesso aziendale. Finché si resterà connessi a questa rete, non sarà possibile accedere alla posta elettronica di lavoro, alle app e alle altre risorse aziendali protette. | Connettersi a una rete aziendale approvata. Toccare **Risolvi** per riprovare. |
 
 ## <a name="restrictions-couldnt-be-enforced"></a>Non è stato possibile applicare le limitazioni  
 
-| Messaggio del Portale aziendale | Significato del messaggio | Operazione da eseguire                                                                      
+| Messaggio del Portale aziendale | Significato del messaggio | Possibile soluzione                                                                      
 |------------------------|-----------------------------------|--------------------------|
 | **Non è stato possibile applicare le limitazioni dei punti di accesso - Il Portale aziendale ha rilevato un errore.** | Intune non è in grado di stabilire se si sia connessi a una rete approvata. Questo errore potrebbe essere dovuto a una connettività di rete non adeguata, alla batteria in esaurimento, alla modalità di risparmio batteria o a un errore del Portale aziendale. | Verificare di avere una buona ricezione di rete. Disattivare la modalità di risparmio batteria e verificare che la batteria abbia una durata residua di almeno il 30%. Toccare **Risolvi** per riprovare. 
 

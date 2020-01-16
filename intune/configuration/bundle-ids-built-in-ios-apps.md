@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 01/06/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465642"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691856"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>ID bundle per le app iOS predefinite che è possibile utilizzare in Intune
 
@@ -31,7 +31,7 @@ Quando si configurano le funzionalità nei dispositivi iOS, è anche possibile a
 
 | ID bundle                   | Nome dell'app     | Pubblicazione |
 |-----------------------------|--------------|-----------|
-| com. Apple. Store             | App Store    | Apple     |
+| com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calcolatrice   | Apple     |
 | com.apple.mobilecal         | Calendario     | Apple     |
 | com.apple.camera            | Fotocamera       | Apple     |

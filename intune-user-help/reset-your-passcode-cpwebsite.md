@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0cf9b886733c117df0fca38bc94a601d1e9dd8fb
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502120"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858134"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Come reimpostare il passcode del dispositivo dal sito Web del portale aziendale
 
@@ -74,11 +74,11 @@ La reimpostazione del codice non è disponibile per i dispositivi che eseguono A
 
 In questa sezione viene descritto come reimpostare il passcode e il comportamento della password temporanea per ogni piattaforma del dispositivo.  
 
-**Android**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri.
+**Android**: rimuove il passcode esistente e crea un passcode temporaneo composto da lettere e numeri.
 
 **iOS**: rimuove il passcode esistente senza crearne uno temporaneo. Se si usa Touch ID per aprire il dispositivo o effettuare acquisti, è necessario configurarlo di nuovo.  
 
-**Windows 10 Mobile**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri. Se configurato, il riconoscimento facciale di Windows Hello funzionerà comunque con il dispositivo.
+**Windows 10 Mobile**: rimuove il passcode esistente e crea un passcode temporaneo composto da lettere e numeri. Se configurato, il riconoscimento facciale di Windows Hello funzionerà comunque con il dispositivo.
 
 **Windows Phone 8.1**: rimuove il passcode esistente e crea un passcode temporaneo con numeri.  
 

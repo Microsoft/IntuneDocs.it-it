@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899351"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547899"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Usare il data warehouse di Microsoft Intune
 
@@ -43,7 +43,7 @@ Il data warehouse permette di accedere ad altre informazioni sull'ambiente per d
 - Un modello di dati che usa lo standard OData
 
 > [!Note]
-> Se con System Center Configuration Manager e Microsoft Intune si usa una gestione di dispositivi mobili (MDM) con co-gestione, è necessario recuperare i dati da Configuration Manager. Il data warehouse di Intune contiene solo i dati di Intune. Per i report personalizzati, è possibile usare un dashboard di Power BI per Configuration Manager. Per altre informazioni, vedere "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Annuncio del modello di soluzione di Power BI per System Center Configuration Manager) e "[Contenuto di Power BI per Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
+> Se con Microsoft Endpoint Configuration Manager e Microsoft Intune si usa una gestione di dispositivi mobili (MDM) con co-gestione, è necessario recuperare i dati da Configuration Manager. Il data warehouse di Intune contiene solo i dati di Intune. Per i report personalizzati, è possibile usare un dashboard di Power BI per Configuration Manager. Per altre informazioni, vedere "[Announcing the Power BI solution template for Configuration Manager](https://powerbi.microsoft.com/blog/sccm-solution-template)" (Annuncio del modello di soluzione di Power BI per Configuration Manager) e "[Contenuto di Power BI per Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
 
 > [!Important]  
 > È ora possibile usare la versione v1.0 del data warehouse di Intune impostando il parametro di query `api-version=v1.0`. Gli aggiornamenti alle raccolte nel data warehouse sono additivi per progettazione e non causano interruzioni per gli scenari esistenti.<br><br>

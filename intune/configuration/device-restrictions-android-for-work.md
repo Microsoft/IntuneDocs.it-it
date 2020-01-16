@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946655"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206602"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -45,7 +45,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
   - **Nega automaticamente**: le autorizzazioni vengono negate automaticamente.
 - **Modifiche a data e ora**: scegliere **Blocca** per impedire agli utenti di impostare manualmente la data e ora. **Non configurata** consente agli utenti di impostare data e ora nel dispositivo.
 - **Modifiche del volume**: il **blocco** impedisce agli utenti di modificare il volume del dispositivo e disattiva anche il volume principale. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
-- **Ripristino delle impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
+- **Ripristino impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
 - **Modalità provvisoria**: scegliere **Blocca** per impedire agli utenti di riavviare il dispositivo in modalità provvisoria. **Non configurata** consente agli utenti di riavviare il dispositivo in modalità sicura.
 - **Barra di stato**: scegliere **Blocca** per impedire l'accesso alla barra di stato, incluse le notifiche e le impostazioni rapide. **Non configurata** consente agli utenti di accedere alla barra di stato.
 - **Servizi per dati in roaming**: scegliere **Blocca** per impedire il roaming dei dati nella rete cellulare. **Non configurata** consente il roaming dati quando il dispositivo si trova in una rete cellulare.
@@ -78,7 +78,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
-- **Analisi delle minacce nelle app**: **Richiedi** (impostazione predefinita) consente a Google Play Protect di analizzare le app prima e dopo la loro installazione. Se rileva una minaccia, può richiedere all'utente di rimuovere l'app dal dispositivo. **Non configurata** non attivare o esegue Google Play Protect per analizzare le app.
+- **Analisi delle minacce nelle app**: **Rendi obbligatorio** (impostazione predefinita) consente a Google Play Protect di analizzare le app prima e dopo la loro installazione. Se rileva una minaccia, può richiedere all'utente di rimuovere l'app dal dispositivo. **Non configurata** non attivare o esegue Google Play Protect per analizzare le app.
 
 ### <a name="dedicated-device-settings"></a>Impostazioni dedicate del dispositivo
 
@@ -86,7 +86,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 **Modalità tutto schermo**: scegliere se il dispositivo eseguirà una sola app o più app.
 
-- **App singola**: gli utenti possono accedere solo a un'app singola nel dispositivo. All'avvio del dispositivo viene avviata solo l'app specifica. Gli utenti non possono aprire nuove app o modificare l'app in esecuzione.
+- **App singola**: gli utenti possono accedere a un'app singola nel dispositivo. All'avvio del dispositivo viene avviata solo l'app specifica. Gli utenti non possono aprire nuove app o modificare l'app in esecuzione.
 
   - **Selezionare un'app gestita**: selezionare l'app Google Play gestita nell'elenco.
 
@@ -126,15 +126,15 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
       Se impostato su **non configurato**, gli amministratori non possono sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
 
-    - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4-6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
+    - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4 a 6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
 
   - **Imposta uno sfondo personalizzato per l'URL**: immettere un URL per personalizzare la schermata di sfondo nel dispositivo dedicato.
 
     > [!NOTE]
     > Nella maggior parte dei casi, è consigliabile iniziare almeno con immagini delle dimensioni seguenti:
     >
-    > - Telefono: 1920 x 1080 pixel
-    > - Tablet: 1920 x 1080 pixel
+    > - Telefono: 1080x1920 px
+    > - Tablet: 1920x1080 px
     >
     > Per ottenere la migliore esperienza e nitidezza dei dettagli, è consigliabile procedere alla creazione di asset per ogni immagine del dispositivo in base alle specifiche di visualizzazione.
     >
@@ -177,30 +177,30 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 - **Tipo di password richiesto**: definire il tipo di password richiesta per il dispositivo. Le opzioni disponibili sono:
   - **Impostazione predefinita dispositivo**
   - **Password obbligatoria, nessuna restrizione**
-  - **Biometria vulnerabile**: [biometrica complessa rispetto alla vulnerabile](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web di Android)
+  - **Biometrica vulnerabile**: [Biometrica complessa e vulnerabile a confronto](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (apre il sito Web Android)
   - **Numerica**: la password contiene solo numeri, ad esempio `123456789`. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
   - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
-  - **Alfabetica**: è obbligatorio utilizzare le lettere dell'alfabeto. Numeri e simboli non sono richiesti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
+  - **Alfabetica**: è obbligatorio usare le lettere dell'alfabeto. Numeri e simboli non sono richiesti. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
   - **Alfanumerica**: include lettere maiuscole, lettere minuscole e caratteri numerici. Immettere la **lunghezza minima password** che deve essere compresa tra 4 e 16 caratteri.
   - **Alfanumerico con simboli**: include lettere maiuscole, lettere minuscole, caratteri numerici, segni di punteggiatura e simboli. Specificare anche:
 
     - **Lunghezza minima password**: immettere la lunghezza minima per la password che deve essere compresa tra da 4 e 16 caratteri.
-    - **Numero di caratteri richiesti**: immettere il numero di caratteri deve contenere la password, compreso tra 0 e 16 caratteri.
-    - **Numero di caratteri minuscoli obbligatori**: immettere il numero di caratteri minuscoli compreso tra 0 e 16 che la password deve contenere.
-    - **Numero di caratteri maiuscoli obbligatori**: immettere il numero di caratteri maiuscoli compreso tra 0 e 16 che la password deve contenere.
+    - **Numero di caratteri obbligatori**: immettere il numero di caratteri che deve contenere la password, compreso tra 0 e 16 caratteri.
+    - **Numero di caratteri minuscoli obbligatori**: immettere il numero di caratteri minuscoli che deve contenere la password, compreso tra 0 e 16 caratteri.
+    - **Numero di caratteri maiuscoli obbligatori**: immettere il numero di caratteri maiuscoli che deve contenere la password, compreso tra 0 e 16 caratteri.
     - **Numero di caratteri diversi da lettere obbligatori**: immettere il numero di caratteri (diversi dalle lettere dell'alfabeto) compreso tra 0 e 16 caratteri che la password deve contenere.
     - **Numero di caratteri numerici obbligatori**: immettere il numero di caratteri numerici (`1`, `2`, `3` e così via) compreso tra 0 e 16 caratteri che la password deve contenere.
     - **Numero di caratteri di tipo simbolo obbligatori**: immettere il numero di caratteri di tipo simbolo (`&`, `#`, `%` e così via) compreso tra 0 e 16 caratteri che la password deve contenere.
 
-- **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni che devono trascorrere tra 1 e 365 prima che sia necessario modificare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
-- **Numero di password obbligatorie prima che un utente possa riutilizzare una password**: immettere il numero di password recenti tra 1 e 24 che non può essere riutilizzato. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero tra 4 e 11 di errori di accesso consentiti prima che i dati vengano cancellati dal dispositivo.
+- **Numero di giorni rimanenti prima della scadenza della password**: immettere il numero di giorni, compreso tra 1 e 365, che devono trascorrere prima che sia necessario cambiare la password del dispositivo. Ad esempio, per modificare la password dopo 60 giorni, immettere `60`. Quando la password scade, agli utenti viene chiesto di creare una nuova password.
+- **Numero di password obbligatorie prima che un utente possa riutilizzare una password**: immettere il numero di password recenti che non è possibile riutilizzare, compreso tra 1 e 24. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero, compreso tra 4 e 11, di accessi non riusciti consentiti prima della cancellazione del dispositivo.
 
 ### <a name="power-settings"></a>Impostazioni di risparmio energia
 
 - **Tempo di blocco della schermata**: immettere il tempo massimo che un utente può impostare fino al blocco del dispositivo. Se ad esempio si imposta questa impostazione su **10 minuti**, gli utenti possono impostare l'ora da 15 secondi fino a 10 minuti. Se impostato su **non configurato** (impostazione predefinita), Intune non modifica o controlla questa impostazione.
 
-- **Screen on while device plugged in** (Schermata attiva con dispositivo alimentato): scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo alimentato.
+- **Schermata attivata con dispositivo collegato**: scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo collegato.
 
 ### <a name="users-and-accounts-settings"></a>Impostazioni di utenti e account
 
@@ -211,12 +211,13 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   > [!NOTE]
   > Questa impostazione non è rispettata nei dispositivi proprietari del dispositivo (completamente gestiti). Se si configura questa impostazione, l'impostazione viene ignorata e non ha alcun effetto.
 
+- L' **utente può configurare le credenziali**: il **blocco** impedisce agli utenti di configurare i certificati assegnati ai dispositivi, anche i dispositivi non associati a un account utente. **Non configurato** potrebbe consentire agli utenti di configurare o modificare le proprie credenziali quando accedono all'archivio chiavi. 
 - **Personal Google Accounts**: il **blocco** impedisce agli utenti di aggiungere il proprio account Google personale al dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere il proprio account Google personale.
 
 ### <a name="applications"></a>Applicazioni
 
-- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** in modo che gli utenti possano attivare **Origini sconosciute**. Questa impostazione consente di installare app da origini sconosciute, tra cui origini diverse da Google Play Store. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
-- **Consenti l'accesso a tutte le app in Google Play Store**: se impostata su **Consenti**, gli utenti possono accedere a tutte le app in Google Play Store. Non possono accedere alle app bloccate dall'amministratore in [App client](../apps/apps-add-android-for-work.md). **Non configurata** impone agli utenti di accedere solo alle app che l'amministratore rende disponibile in Google Play Store o le app richieste in [App client](../apps/apps-add-android-for-work.md).
+- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** per permettere agli utenti di attivare le **origini sconosciute**. Questa impostazione consente di installare app da origini sconosciute, tra cui origini diverse da Google Play Store. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
+- **Consenti l'accesso a tutte le app in Google Play Store**: con l'impostazione **Consenti** gli utenti ottengono l'accesso a tutte le app in Google Play Store. Non possono accedere alle app bloccate dall'amministratore in [App client](../apps/apps-add-android-for-work.md). **Non configurata** impone agli utenti di accedere solo alle app che l'amministratore rende disponibile in Google Play Store o le app richieste in [App client](../apps/apps-add-android-for-work.md).
 - **Aggiornamenti automatici delle app**: scegliere se gli aggiornamenti automatici vengono installati. Le opzioni disponibili sono:
   - **Non configurato**
   - **Scelta utente**
@@ -274,15 +275,15 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 
 #### <a name="general"></a>Generale
 
-- **Copia e incolla tra il profilo di lavoro e il profilo personale**: scegliere **Blocca** per impedire le operazioni di copia e incolla tra app aziendali e personali. **Non configurata** consente agli utenti di condividere i dati tramite copia e incolla con le app nel profilo personale 
-- **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
+- **Copia e incolla tra il profilo di lavoro e il profilo personale**: scegliere **Blocca** per impedire le attività di tipo copia e incolla tra le app di lavoro e quelle personali. **Non configurata** consente agli utenti di condividere i dati tramite copia e incolla con le app nel profilo personale 
+- **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app del profilo di lavoro possono condividere i dati con le app del profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
   - **Impostazione predefinita dispositivo**: comportamento di condivisione predefinito del dispositivo che varia in base alla versione di Android. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Nei dispositivi che eseguono la versione 6.0 e successive Google non blocca la condivisione dal profilo personale al profilo di lavoro.
-  - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: questa opzione abilita la funzionalità Android predefinita che consente la condivisione dal profilo personale al profilo di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
+  - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: abilita la funzionalità di Android predefinita che consente la condivisione dal profilo personale a quello di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
   - **Impedisci la condivisione tra i limiti**: impedisce la condivisione tra i profili di lavoro e personali.
   - **Nessuna restrizione sulla condivisione**: Abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
 
 - **Notifiche del profilo di lavoro durante il blocco del dispositivo**: controlla se le app del profilo di lavoro possono visualizzare dati nelle notifiche quando il dispositivo è bloccato. **Blocca** impedisce la visualizzazione dei dati. **Non configurata** consente di visualizzare i dati.
-- **Autorizzazioni delle app predefinite**: imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
+- **Autorizzazioni delle app predefinite**: Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Messaggio di richiesta**
   - **Concedi automaticamente**
@@ -290,13 +291,16 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 
   È anche possibile usare un criterio di configurazione dell'app per concedere le autorizzazioni per le singole app (**App client** > **Criteri di configurazione dell'app**).
 
-- **Aggiungi e rimuovi account**: scegliere **Blocca** per impedire agli utenti finali di aggiungere o rimuovere manualmente account nel profilo di lavoro. Ad esempio, quando si distribuisce l'app Gmail in un profilo di lavoro Android, è possibile impedire agli utenti finali di aggiungere o rimuovere account in questo profilo di lavoro. **Non configurata** consente di aggiungere account nel profilo di lavoro.  
+- **Aggiungi o rimuovi account**: scegliere **Blocca** per impedire agli utenti finali di aggiungere o rimuovere manualmente account nel profilo di lavoro. Ad esempio, quando si distribuisce l'app Gmail in un profilo di lavoro Android, è possibile impedire agli utenti finali di aggiungere o rimuovere account in questo profilo di lavoro. **Non configurata** consente di aggiungere account nel profilo di lavoro.  
+
+  > [!NOTE]
+  > Non è possibile aggiungere account Google a un profilo di lavoro.
 
 - **Condivisione dei contatti tramite Bluetooth**: abilita l'accesso ai contatti di lavoro da un altro dispositivo, ad esempio un'automobile, che viene associato tramite Bluetooth. Per impostazione predefinita, questa impostazione non è configurata e i contatti dei profili di lavoro non sono visualizzati. Selezionare **Abilita** per consentire la condivisione e visualizzare i contatti dei profili di lavoro. Questa impostazione si applica ai dispositivi dei profili di lavoro Android in sistemi operativi Android 6.0 e versioni successive. L'abilitazione di questa impostazione può consentire a determinati dispositivi Bluetooth di memorizzare nella cache i contatti di lavoro al momento della prima connessione. Se si disabilita questo criterio dopo un'associazione/sincronizzazione iniziale, i contatti di lavoro potrebbero non essere rimossi da un dispositivo Bluetooth.
 
 - **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo nel profilo di lavoro. Impedisce anche la visualizzazione del contenuto nei dispositivi di visualizzazione privi di output video protetto. **Non configurata** consente l'acquisizione di screenshot.
 
-- **Visualizzare l'ID chiamante del contatto di lavoro nel profilo personale**: se abilitata (**Non configurata**), i dettagli del chiamante del contatto di lavoro vengono visualizzati nel profilo personale. Se impostata su **Blocca**, il numero del chiamante del contatto di lavoro non viene visualizzato nel profilo personale. Si applica ai sistemi operativi Android 6.0 e versioni successive.
+- **Mostra l'ID chiamante del contatto nel profilo personale**: se abilitati (**Non configurata**), i dettagli del chiamante del contatto di lavoro vengono visualizzati nel profilo personale. Se impostata su **Blocca**, il numero del chiamante del contatto di lavoro non viene visualizzato nel profilo personale. Si applica ai sistemi operativi Android 6.0 e versioni successive.
 
 - **Cerca contatti di lavoro dal profilo personale**: scegliere **Blocca** per impedire agli utenti di cercare i contatti di lavoro nelle app nel profilo personale. **Non necessario** consente di cercare i contatti di lavoro nel profilo personale.
 
@@ -310,9 +314,9 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 
 - **Richiedi la password del profilo di lavoro**: si applica ad Android 7.0 e versioni successive con il profilo di lavoro abilitato. Scegliere **Rendi obbligatorio** per immettere criteri di passcode validi solo per le app nel profilo di lavoro. Per impostazione predefinita, l'utente finale può usare i due PIN definiti separatamente oppure scegliere di combinarli nel PIN più complesso. **Non configurata** consente all'utente di usare le app di lavoro, senza immettere una password.
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**16**).
-- **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare la quantità di tempo che deve trascorrere prima che il profilo di lavoro si blocchi. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che il profilo di lavoro venga cancellato dal dispositivo.
-- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**) .
+- **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare l'intervallo di tempo che deve trascorrere prima che il profilo di lavoro venga bloccato. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che il profilo di lavoro venga cancellato dal dispositivo.
+- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**).
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -322,7 +326,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
-- **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
+- **Impedisci riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (**1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire agli utenti finali di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente agli utenti di sbloccare i dispositivi con un'impronta digitale nel profilo di lavoro.
 - **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, chiamata anche agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 
@@ -331,9 +335,9 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 Queste impostazioni per le password si applicano ai profili personali nei dispositivi che usano un profilo di lavoro.
 
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**14**).
-- **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare il periodo di tempo che deve trascorrere prima che un dispositivo inattivo si blocchi automaticamente
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che i dati vengano cancellati dal dispositivo
-- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**)
+- **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare l'intervallo di tempo prima che un dispositivo inattivo si blocchi automaticamente
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che tutti i dati vengano cancellati dal dispositivo
+- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**)
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -343,7 +347,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
-- **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
+- **Impedisci riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (**1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire all'utente finale di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente all'utente di sbloccare il dispositivo tramite impronta digitale.
 - **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, chiamata anche agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 

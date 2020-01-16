@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980358"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857875"
 ---
 # <a name="install-mobile-threat-defense"></a>Installare Mobile Threat Defense   
 
@@ -37,10 +37,10 @@ Se non si ha l'app MTD necessaria, verrà impedito l'accesso alle app protette c
 
 L'organizzazione non può visualizzare i dati, ad esempio testi, messaggi di posta elettronica e immagini, nelle app personali. L'app MTD segnala le informazioni sulle app, ad esempio il nome e la versione, per l'organizzazione. Le informazioni effettive restituite variano a seconda del fornitore di MTD usato dall'azienda. L'organizzazione potrebbe vedere:   
 
-* Nome app  
+* Nome dell'app  
 * ID dell'app: nome univoco che identifica l'app in Google Play.  
-* Numero di versione e versione breve dell'app: numeri di versione specifici di un'app.  
-* Bundle e dimensioni dinamiche dell'app: quantità di spazio usato dall'app nel dispositivo. 
+* Versione dell'app e numero di versione breve: Numeri di versione specifici per un'app.  
+* Bundle dell'app e dimensioni dinamiche: Quantità di spazio usata da un'app nel dispositivo. 
 
 
 ## <a name="install-app"></a>Installare l'app    

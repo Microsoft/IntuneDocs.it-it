@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059613"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206823"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizzare e gestire i dispositivi Zebra con Mobility Extensions di Zebra in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune include un'ampia gamma di funzionalità, tra cui la gestione delle app e la configurazione delle impostazioni del dispositivo. Queste funzionalità e impostazioni predefinite gestiscono i dispositivi Android prodotti da Zebra Technologies, noti anche come "dispositivi Zebra".
 
@@ -65,11 +65,11 @@ Se Google Play non è disponibile, scaricare [Portale aziendale di Microsoft Int
 
 I passaggi seguenti offrono una panoramica. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. [La registrazione a un sistema MDM tramite StageNow](http://techdocs.zebra.com/stagenow/3-1/Profiles/enrollmdm/) (si apre il sito Web di Zebra) può essere un'ottima risorsa.
 
-1. In StageNow, creare un profilo per **Enroll in an MDM (Registra in un MDM)** .
-2. In **Deployment (distribuzione)** , scegliere di scaricare il file dell'agente MDM.
+1. In StageNow, creare un profilo per **Enroll in an MDM (Registra in un MDM)**.
+2. In **Deployment (distribuzione)**, scegliere di scaricare il file dell'agente MDM.
 3. Impostare i passaggi **Support App (App di supporto)** e **Download Configuration (Scarica configurazione)** su **No**.
-4. In **Download MDM (Scarica MDM)** , selezionare **Transfer/Copy File (Trasferisci/copia file)** . Aggiungere l'origine e la destinazione del pacchetto Android (APK) Portale aziendale.
-5. In **Launch MDM (Avvia MDM)** , lasciare i valori predefiniti come sono. Aggiungere i dettagli seguenti:
+4. In **Download MDM (Scarica MDM)**, selezionare **Transfer/Copy File (Trasferisci/copia file)**. Aggiungere l'origine e la destinazione del pacchetto Android (APK) Portale aziendale.
+5. In **Launch MDM (Avvia MDM)**, lasciare i valori predefiniti come sono. Aggiungere i dettagli seguenti:
 
     - **Nome pacchetto**: `com.microsoft.windowsintune.companyportal`
     - **Nome classe**: `com.microsoft.windowsintune.companyportal.views.SplashActivity`
@@ -79,7 +79,7 @@ Continuare a pubblicare il profilo e utilizzarlo con l'app StageNow nel disposit
 > [!TIP]
 > Per altre informazioni su StageNow e il suo funzionamento, vedere [Staging dei dispositivi Android con StageNow](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (si apre il sito Web di Zebra).
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Passaggio 2: verificare che l’app Portale aziendale disponga del ruolo di amministratore del dispositivo
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Passaggio 2: verificare che l'app Portale aziendale disponga del ruolo di amministratore del dispositivo
 
 L'app Portale aziendale richiede il ruolo Amministratore dispositivo per gestire i dispositivi Android. Per attivare il ruolo Amministratore dispositivo, alcuni dispositivi Zebra includono un'interfaccia utente nel dispositivo. Se il dispositivo include un'interfaccia utente, l'app Portale aziendale chiede all'utente finale di concedere il ruolo Amministratore dispositivo durante la [registrazione](#step-3-enroll-the-device-in-to-intune) (in questo articolo).
 
@@ -88,9 +88,9 @@ Se non è disponibile un'interfaccia utente, utilizzare **DevAdmin Manager** in 
 I passaggi seguenti offrono una panoramica. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. 
 [L’impostazione della modalità di scambio della batteria come amministratore del dispositivo](https://zebratechnologies.force.com/s/article/Set-Battery-Swap-Mode-as-Device-Administrator-using-StageNow-Tool) (si apre il sito Web di Zebra) può essere un'ottima risorsa.
 
-1. In StageNow, creare un profilo e selezionare **Xpert Mode (Modalità esperto)** .
+1. In StageNow, creare un profilo e selezionare **Xpert Mode (Modalità esperto)**.
 2. Aggiungere **DevAdmin Manager** al profilo.
-3. Impostare **Device Administration Action (Azione amministrazione dispositivo)** su **Turn On as Device Administrator (Attiva come Amministratore dispositivo)** .
+3. Impostare **Device Administration Action (Azione amministrazione dispositivo)** su **Turn On as Device Administrator (Attiva come Amministratore dispositivo)**.
 4. Impostare **Device Admin Package Name (Nome pacchetto amministratore dispositivo)** su `com.microsoft.windowsintune.companyportal`.
 5. Impostare **Device Admin Class Name (Nome classe amministratore dispositivo)** su `com.microsoft.omadm.client.PolicyManagerReceiver`.
 
@@ -106,7 +106,7 @@ Dopo aver completato i primi due passaggi, l'app Portale aziendale viene install
 
 Utilizzare StageNow per creare un profilo che consente di configurare le impostazioni desiderate per la gestione del dispositivo. Per informazioni dettagliate specifiche, vedere la documentazione di Zebra. I [profili](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (si apre il sito Web di Zebra) possono rappresentare un'ottima risorsa.
 
-Quando si crea il profilo in StageNow, nell'ultimo passaggio, selezionare **Export to MDM (Esporta in MSM)** . Questo passaggio genera un file XML. Salvare questo file. Sarà necessario in un passaggio successivo.
+Quando si crea il profilo in StageNow, nell'ultimo passaggio, selezionare **Export to MDM (Esporta in MSM)**. Questo passaggio genera un file XML. Salvare questo file. Sarà necessario in un passaggio successivo.
 
 - È consigliabile testare il profilo prima di distribuirlo ai dispositivi nell'organizzazione. Per effettuare il test, durante l’ultimo passaggio per la creazione dei profili con StageNow nel computer, utilizzare le opzioni **Test**. Quindi, utilizzare il file generato da StageNow con l'app StageNow nel dispositivo.
 
@@ -129,7 +129,7 @@ Dopo avere testato il file, il passaggio successivo consiste nel distribuire il 
   >
   > Se la stessa proprietà viene configurata più volte in un singolo profilo MX, l'ultima configurazione prevale.
 
-## <a name="step-5-create-a-profile-in-intune"></a>Passaggio 5: creare un profilo iOS in Intune
+## <a name="step-5-create-a-profile-in-intune"></a>Passaggio 5: creare un profilo in Intune
 
 Creare un profilo di configurazione del dispositivo in Intune:
 
@@ -138,11 +138,11 @@ Creare un profilo di configurazione del dispositivo in Intune:
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-    - **Descrizione:** immettere una descrizione per il profilo. Questa impostazione è facoltativa ma consigliata.
-    - **Piattaforma**: selezionare **Android**.
-    - **Tipo di profilo**: selezionare il **profilo MX (solo Zebra)** .
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: Selezionare **Android**.
+    - **Tipo di profilo**: selezionare **Profilo MX (solo Zebra)**.
 
-4. In **MX profile in .xml format (Profilo MX in formato .xml)** , aggiungere il file del profilo XML [esportato da StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in questo articolo).
+4. In **MX profile in .xml format (Profilo MX in formato .xml)**, aggiungere il file del profilo XML [esportato da StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in questo articolo).
 5. Selezionare **OK** > **Crea** per salvare le modifiche. Il criterio viene creato e visualizzato nell'elenco.
 
     > [!TIP]

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899395"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691860"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -60,7 +60,7 @@ Microsoft userà gli indirizzi di posta elettronica specificati nelle risposte a
 
 4. Infine, verrà aggiunto un collegamento diretto dell'app al prossimo aggiornamento mensile dei servizi di Intune. Ad esempio, se le informazioni di registrazione vengono completate nel mese di luglio, il collegamento diretto sarà supportato a metà agosto.
 
-Se il collegamento diretto dell'app dovesse cambiare, sarà necessario registrare di nuovo l'app.
+Il collegamento Deep è il collegamento all'elenco dell'app nell'App Store pubblico. Se il collegamento diretto dell'app dovesse cambiare, sarà necessario registrare di nuovo l'app.
 
 > [!NOTE]
 > È necessario comunicare se l'app viene aggiornata con una nuova versione di Intune App SDK.
@@ -82,11 +82,11 @@ Si consiglia di registrarsi per un account GitHub utile per eseguire operazioni 
 
 Per integrare Intune App SDK nelle app, è necessario consultare una delle guide per gli sviluppatori seguenti:
 
-* **[Guida per gli sviluppatori di Microsoft Intune App SDK per iOS](app-sdk-ios.md)** : questo documento descrive in dettaglio come abilitare app iOS native con Intune App SDK.
+* **[Guida per gli sviluppatori di Microsoft Intune App SDK per iOS](app-sdk-ios.md)**: questo documento descrive in dettaglio come abilitare app iOS native con Intune App SDK.
 
-* **[Guida a Microsoft Intune App SDK per sviluppatori di Android](app-sdk-android.md)** : questo documento descrive in dettaglio come abilitare app Android native con Intune App SDK.
+* **[Guida a Microsoft Intune App SDK per sviluppatori di Android](app-sdk-android.md)**: questo documento descrive in dettaglio come abilitare app Android native con Intune App SDK.
 
-* **[Binding Xamarin per Microsoft Intune App SDK](app-sdk-xamarin.md)** : questo documento contiene informazioni per compilare app per iOS e Android usando Xamarin per i criteri di protezione delle app di Intune.
+* **[Binding Xamarin per Microsoft Intune App SDK](app-sdk-xamarin.md)**: questo documento contiene informazioni per creare app per iOS e Android usando Xamarin per i criteri di protezione delle app di Intune.
 
 
 
@@ -179,11 +179,11 @@ Dopo aver registrato l'app all'interno di un tenant di Azure e quando viene visu
 3. Fare clic su **Aggiungi un'autorizzazione**.
 4. Fare clic sui **API usate dall'organizzazione**. 
 5. Nella casella di ricerca immettere **Microsoft Mobile Application Management**.
-6. Sotto **Autorizzazioni delegate** selezionare la casella di controllo **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** (DeviceManagementManagedApps.ReadWrite: leggi e scrivi i dati di gestione app dell'utente).
+6. In **Autorizzazioni delegate**selezionare la casella di controllo **DeviceManagementManagedApps.ReadWrite: Read and Write the User's App Management Data** (Leggere e scrivere i dati di gestione delle app dell'utente).
 7. Fare clic su **Aggiungi autorizzazioni**.
 
 > [!NOTE]
-> Se l'app limita l'accesso a causa di un errore di accesso a questa risorsa: https://intunemam.microsoftonline.com, è necessario inviare una nota per msintuneappsdk@microsoft.com con l'ID client dell'app. Si tratta di un processo di approvazione manuale.
+> Se l'app limita l'accesso a causa di un errore di accesso a questa risorsa: https\://intunemam.microsoftonline.com, è necessario inviare una nota per msintuneappsdk@microsoft.com con l'ID client dell'app. Si tratta di un processo di approvazione manuale.
 
 ### <a name="badge-your-app-optional"></a>Aggiungere il logo all'app (facoltativo)
 

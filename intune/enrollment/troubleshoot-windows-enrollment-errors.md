@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991794"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885883"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune
 
@@ -40,7 +40,7 @@ Raccogliere le seguenti informazioni sul problema:
 - Quale piattaforma (Android, iOS, Windows) presenta il problema?
 - Quanti utenti sono interessati? Tutti gli utenti sono interessati o solo alcuni?
 - Quanti dispositivi sono interessati? Tutti i dispositivi sono interessati o solo alcuni?
-- Che cos'è l'autorità MDM? Se è System Center Configuration Manager, quale versione di Configuration Manager si sta usando?
+- Che cos'è l'autorità MDM?
 - Come viene eseguita la registrazione? BYOD (Bring Your Own Device) o Apple Device Enrollment Program (DEP) con i profili di registrazione?
 
 ## <a name="error-messages"></a>Messaggi di errore
@@ -50,7 +50,7 @@ Raccogliere le seguenti informazioni sul problema:
 Errore 0x801c003: "l'utente non è autorizzato a eseguire la registrazione. È possibile riprovare o contattare l'amministratore di sistema con il codice di errore (0x801c0003). "
 Errore 80180003: "Si è verificato un errore. Questo utente non è autorizzato a eseguire la registrazione. È possibile riprovare o contattare l'amministratore di sistema con il codice di errore 80180003 ".
 
-**Motivo:** Una delle condizioni seguenti: 
+**Causa:** una delle condizioni seguenti: 
 
 - L'utente ha già registrato il numero massimo di dispositivi consentiti in Intune.    
 - Il dispositivo è bloccato dalle restrizioni relative al tipo di dispositivo.    
@@ -105,9 +105,8 @@ Errore 0x801c0003: "l'utente non è autorizzato a eseguire la registrazione. È 
 
 Errore 8018000a: "si è verificato un problema. Il dispositivo è già registrato.  È possibile contattare l'amministratore di sistema con il codice di errore 8018000a. "
 
-**Motivo:** una delle condizioni seguenti è vera:
+**Causa:** una delle condizioni seguenti è vera:
 - Un altro utente ha già registrato il dispositivo in Intune o è stato aggiunto al dispositivo per Azure AD. Per determinare se questo è il caso, passare a **impostazioni** > **account** > **accesso lavoro**. Cercare un messaggio simile al seguente: "un altro utente del sistema è già connesso a un lavoro o a un'istituto di istruzione. Rimuovere la connessione aziendale o dell'Istituto di istruzione e riprovare ".    
-- L'agente client di Configuration Manager è installato nel computer.    
 
 #### <a name="resolution"></a>Soluzione
 
@@ -118,9 +117,6 @@ Per risolvere il problema, usare uno dei metodi seguenti:
 2. Passare a **impostazioni** > **account** > **accesso lavoro**, quindi rimuovere l'account aziendale o dell'Istituto di istruzione.
 3. Disconnettersi da Windows e quindi accedere con l'account.    
 4. Registrare il dispositivo in Intune o aggiungere il dispositivo a Azure AD. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Rimuovere il client di Configuration Manager
-Rimuovere il client di Configuration Manager, quindi registrare di nuovo il dispositivo.
 
 
 
@@ -136,7 +132,7 @@ Assegnare una licenza di Intune valida all'utente e quindi registrare il disposi
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>L'endpoint delle condizioni per l'utilizzo di MDM non è configurato correttamente.
 
-**Motivo:** una delle condizioni seguenti è vera: 
+**Causa:** una delle condizioni seguenti è vera: 
  - Si usa la gestione di dispositivi mobili (MDM) per Office 365 e Intune nel tenant e l'utente che prova a registrare il dispositivo non dispone di una licenza di Intune valida o di una licenza di Office 365.     
 - I termini e le condizioni MDM in Azure AD sono vuoti o non contengono l'URL corretto.    
 
@@ -160,7 +156,7 @@ Errore 80180026: "Si è verificato un errore. Confermare di usare le informazion
 
 **Motivo:** Questo errore può verificarsi quando si tenta di aggiungere un computer Windows 10 a Azure AD e sono soddisfatte entrambe le condizioni seguenti: 
 - La registrazione automatica di MDM è abilitata in Azure.    
-- Il client PC Intune (agente PC Intune) o l'agente client di Configuration Manager è installato nel computer Windows 10.
+- Il client PC Intune (agente PC Intune) viene installato nel computer Windows 10.
 
 #### <a name="resolution"></a>Soluzione
 Per risolvere il problema, usare uno dei metodi seguenti:
@@ -171,7 +167,7 @@ Per risolvere il problema, usare uno dei metodi seguenti:
 3. Impostare **ambito utente MDM** su **nessuno**, quindi fare clic su **Salva**.    
      
 ##### <a name="uninstall"></a>Uninstall
-Disinstallare il client PC Intune o Configuration Manager agente client dal computer.    
+Disinstallare l'agente client PC di Intune dal computer.    
 
 ### <a name="the-software-cannot-be-installed"></a>Impossibile installare il software.
 
@@ -208,13 +204,6 @@ Per risolvere il problema in un ambiente Intune autonomo, attenersi alla procedu
 1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **dispositivi** > **restrizioni di registrazione** > scegliere una restrizione del tipo di dispositivo.    
 2. Scegliere **proprietà** > **modifica** (accanto a **Impostazioni piattaforma**) > **Consenti** per **Windows (MDM)** .    
 3. Fare clic su **Verifica + Salva**.    
- 
-Per risolvere questo problema in MDM ibrido con Intune e Configuration Manager, seguire questa procedura: 
-1. Aprire la console di Configuration Manager.    
-2. Selezionare **Amministrazione**, quindi fare clic su **servizi cloud**.    
-3. Fare clic con il pulsante destro del mouse su **Microsoft Intune sottoscrizione**e quindi scegliere **Configura piattaforme > Windows**.    
-4. Selezionare **Abilita registrazione Windows** > **applica** > **OK**.  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Si è verificato un errore durante l'installazione durante la registrazione in blocco.
 
@@ -244,7 +233,7 @@ Quando si tenta di registrare automaticamente un dispositivo Windows 10 con Crit
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**Motivo:** una delle condizioni seguenti è vera: 
+**Causa:** una delle condizioni seguenti è vera: 
 - Il nome UPN contiene un dominio non verificato o non instradabile, ad esempio. local (come joe@contoso.local).    
 - L' **ambito utente MDM** è impostato su **None**. 
 
@@ -389,4 +378,4 @@ Questo problema è in genere causato dalla delega non corretta delle autorizzazi
 - [Controllare il blog del team di supporto di Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Controllare il blog di Microsoft Enterprise Mobility + Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Ottenere supporto per Microsoft Intune](../fundamentals/get-support.md)
-- [Individuare gli errori di registrazione di co-gestione](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Individuare gli errori di registrazione di co-gestione](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)
