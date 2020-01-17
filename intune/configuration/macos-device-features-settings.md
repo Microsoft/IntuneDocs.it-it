@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992905"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206347"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi macOS in Intune
 
@@ -44,7 +44,7 @@ L'articolo elenca queste impostazioni e descrive la funzione di ogni impostazion
 
 - **Indirizzo IP**: immettere l'indirizzo IPv4 o IPv6 della stampante. Se si usano i nomi host per identificare le stampanti, è possibile ottenere l'indirizzo IP effettuando il ping della stampante nell'app Terminale. Per informazioni più dettagliate, vedere [Ottenere l'indirizzo IP e il percorso](#get-the-ip-address-and-path) (in questo articolo).
 - **Percorso**: immettere il percorso della stampante. il percorso è in genere `ipp/print` per le stampanti di rete. Per informazioni più dettagliate, vedere [Ottenere l'indirizzo IP e il percorso](#get-the-ip-address-and-path) (in questo articolo).
-- **Porta** (iOS 11.0 eversioni successive): immettere la porta di ascolto della destinazione AirPrint. Se si omette questa proprietà, AirPrint usa la porta predefinita.
+- **Porta** (iOS 11.0 e versioni successive): immettere la porta di ascolto della destinazione AirPrint. Se si omette questa proprietà, AirPrint usa la porta predefinita.
 - **TLS** (iOS 11.0 e versioni successive): selezionare **Abilita** per proteggere le connessioni AirPrint con Transport Layer Security (TLS).
 
 - **Aggiungere** il server AirPrint. È possibile aggiungere più server AirPrint.
@@ -91,13 +91,13 @@ Per aggiungere i server AirPrinter, sono necessari l'indirizzo IP della stampant
 - **Banner**: immettere un messaggio che viene visualizzato nella schermata di accesso del dispositivo. Ad esempio, immettere le informazioni sull'organizzazione, un messaggio di benvenuto, le informazioni perse e trovate e così via.
 - **Scegliere il formato di accesso**: scegliere la modalità di accesso degli utenti al dispositivo. Le opzioni disponibili sono:
   - **Richiedi nome utente e password** (impostazione predefinita): richiede agli utenti di immettere un nome utente e una password.
-  - **Elenca tutti gli utenti e richiedi la password**: richiede agli utenti di selezionare il nome utente da un elenco di utenti e quindi immettere la password. Configurare inoltre:
+  - **Elenca tutti gli utenti e richiedi la password**: richiede agli utenti di selezionare il nome utente da un elenco di utenti e quindi di immettere la password. Configurare inoltre:
 
     - **Utenti locali**: **Nascondi** non mostra gli account utente locali nell'elenco degli utenti, che può includere gli account standard e amministratore. Vengono visualizzati solo gli account utente di rete e del sistema. **Non configurato** (impostazione predefinita) mostra gli account utente locali nell'elenco degli utenti.
     - **Account per dispositivi mobili**: **Nascondi** non mostra gli account per dispositivi mobili nell'elenco degli utenti. **Non configurato** (impostazione predefinita) mostra gli account utente per dispositivi mobili nell'elenco degli utenti. Alcuni account per dispositivi mobili possono essere visualizzati come utenti della rete.
     - **Utenti di rete**: selezionare **Mostra** per elencare gli utenti di rete nell'elenco degli utenti. **Non configurato** (impostazione predefinita) non mostra gli account degli utenti di rete nell'elenco degli utenti.
     - **Utenti amministratori**: **Nascondi** non mostra gli account utente amministratori nell'elenco degli utenti. **Non configurato** (impostazione predefinita) mostra gli account utente amministratori nell'elenco degli utenti.
-    - **Altri utenti**: selezionare **Mostra** per elencare **Altri...** utenti nell’elenco degli utenti. **Non configurato** (impostazione predefinita) non mostra gli altri account utente nell'elenco degli utenti.
+    - **Altri utenti**: selezionare **Mostra** per elencare **Altri...** utenti nell'elenco degli utenti. **Non configurato** (impostazione predefinita) non mostra gli altri account utente nell'elenco degli utenti.
 
 #### <a name="login-screen-power-settings"></a>Impostazioni di risparmio energia della schermata di accesso
 
@@ -107,17 +107,17 @@ Per aggiungere i server AirPrinter, sono necessari l'indirizzo IP della stampant
 
 #### <a name="other"></a>Altro
 
-- **Disabilita l'accesso utente dalla console**: **Disabilita** nasconde la riga di comando di macOS usata per l'accesso. Per gli utenti tipici **disabilitare** questa impostazione. **Non configurata** (impostazione predefinita) consente agli utenti esperti di accedere usando la riga di comando di macOS. Per passare alla modalità console, gli utenti immettono `>console` nel campo Nome utente e devono autenticarsi nella finestra della console.
+- **Disabilita l'accesso utente dalla console**: **Disabilitare** nasconde la riga di comando macOS usata per accedere. Per gli utenti tipici **disabilitare** questa impostazione. **Non configurata** (impostazione predefinita) consente agli utenti esperti di accedere usando la riga di comando di macOS. Per passare alla modalità console, gli utenti immettono `>console` nel campo Nome utente e devono autenticarsi nella finestra della console.
 
 #### <a name="apple-menu"></a>Apple Menu
 
 Dopo che gli utenti hanno effettuato l'accesso ai dispositivi, le impostazioni seguenti influiscono cosa possono fare.
 
-- **Disabilita Arresta**: **Disabilita** impedisce agli utenti di selezionare l’opzione **Arresta** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Arresta** sul dispositivo.
-- **Disabilita Riavvia**: **Disabilita** impedisce agli utenti di selezionare l’opzione **Riavvia** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Riavvia** sul dispositivo.
-- **Disabilita Spegni**: **Disabilita** impedisce agli utenti di selezionare l’opzione **Spegni** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Spegni** sul dispositivo.
-- **Disabilita Disconnetti** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l’opzione **Disconnetti** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Disconnetti** sul dispositivo.
-- **Disabilita la schermata di blocco** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l’opzione **Schermata di blocco** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Schermata di blocco** sul dispositivo.
+- **Disabilita Arresta**: **Disabilita** impedisce agli utenti di selezionare l'opzione **Arresta** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Arresta** sul dispositivo.
+- **Disabilita Riavvia**: **Disabilita** impedisce agli utenti di selezionare l'opzione **Riavvia** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Riavvia** sul dispositivo.
+- **Disabilita Spegni**: **Disabilita** impedisce agli utenti di selezionare l'opzione **Spegni** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Spegni** sul dispositivo.
+- **Disabilita Disconnetti** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l'opzione **Disconnetti** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Disconnetti** sul dispositivo.
+- **Disabilita la schermata di blocco** (macOS 10.13 e versioni successive): **Disabilita** impedisce agli utenti di selezionare l'opzione **Schermata di blocco** dopo aver effettuato l'accesso. **Non configurata** (impostazione predefinita) consente agli utenti di selezionare la voce di menu **Schermata di blocco** sul dispositivo.
 
 ## <a name="single-sign-on-app-extension"></a>Estensione dell'app Single Sign-On
 
@@ -183,7 +183,7 @@ Questa funzionalità si applica a:
 - **Limite di riutilizzo delle password** (solo Kerberos): immettere il numero di nuove password, da 1-24, che devono essere utilizzate fino a quando non sarà possibile riutilizzare una password precedente nel dominio. **Non configurato** (impostazione predefinita) non impone un limite di riutilizzo delle password.
 - **Validità minima password** (solo Kerberos): immettere il numero di giorni per cui è necessario usare una password nel dominio prima che un utente possa modificarlo. **Non configurato** (impostazione predefinita) non impone una validità minima delle password prima che possano essere modificate.
 - **Notifica di scadenza password** (solo Kerberos): immettere il numero di giorni prima della scadenza di una password per la quale gli utenti riceveranno una notifica della scadenza della password. **Non configurato** (impostazione predefinita) USA `15` giorni.
-- **Scadenza password** (solo Kerberos): immettere il numero di giorni prima che sia necessario modificare la password del dispositivo. **Non configurato** (impostazione predefinita) indica che le password utente non scadono mai.
+- **Scadenza password** (solo Kerberos): immettere il numero di giorni che devono trascorrere prima che sia necessario cambiare la password del dispositivo. **Non configurato** (impostazione predefinita) indica che le password utente non scadono mai.
 - **URL di modifica password** (solo Kerberos): immettere l'URL che viene avviato quando l'utente avvia una modifica della password Kerberos.
 - **Nome entità** (solo Kerberos): immettere il nome utente dell'entità Kerberos. Non è necessario includere il nome dell'area di autenticazione. Ad esempio, in `user@contoso.com`, `user` è il nome dell'entità e `contoso.com` è il nome dell'area di autenticazione.
 
@@ -219,13 +219,13 @@ Questa funzionalità si applica a:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Dominio**: immettere il dominio del sito Web da associare a un'app. Il dominio include un tipo di servizio e un nome host completo, ad esempio `webcredentials:www.contoso.com`.
+- **Dominio**: immettere il dominio del sito Web da associare a un'app. Il dominio include un tipo di servizio e un nome host completo, ad esempio `webcredentials: www.contoso.com`.
 
   È possibile trovare la corrispondenza con tutti i sottodomini di un dominio associato immettendo `*.` (un carattere jolly asterisco e un punto) prima dell'inizio del dominio. Il periodo è obbligatorio. I domini esatti hanno una priorità più alta rispetto ai domini con caratteri jolly. Di conseguenza, i modelli dei domini padre vengono confrontati *se* una corrispondenza non viene trovata nel sottodominio completo.
 
   Il tipo di servizio può essere:
 
-  - **authsrv**: estensione dell'app per l'accesso Single Sign-On
+  - **authsrv**: Estensione dell'app Single Sign-On
   - **AppLink**: collegamento universale
   - **webcredentials**: riempimento automatico password
 
