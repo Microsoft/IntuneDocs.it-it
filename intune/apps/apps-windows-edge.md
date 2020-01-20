@@ -68,7 +68,7 @@ In questo passaggio verranno specificate le informazioni su questa distribuzione
 In questo passaggio configurare le opzioni di installazione per l'app.
 
 1. Nel riquadro **Aggiungi app** selezionare **Impostazioni dell'app**.
-2. Nel riquadro **Impostazioni dell'app** selezionare **Beta** o **Sviluppo** nell'elenco **Canale** per determinare il canale di Edge da cui si vuole distribuire l'app.
+2. Nel riquadro **Impostazioni dell'app** selezionare **Beta** o **Sviluppo** nell'elenco **Canale** per determinare il canale di Microsoft Edge da cui si vuole distribuire l'app.
     - Il canale **Beta** corrisponde all'esperienza di anteprima di Microsoft Edge più stabile ed è la scelta migliore per un progetto pilota completo all'interno dell'organizzazione. Con gli aggiornamenti principali pubblicati ogni sei settimane, ogni versione include le esperienze e i miglioramenti dal canale Sviluppo.
     - Il canale **Sviluppo** è pensato per raccogliere commenti e suggerimenti dai clienti aziendali su Windows, Windows Server e macOS. Prevede aggiornamenti settimanali e contiene i miglioramenti e le correzioni più recenti.
 

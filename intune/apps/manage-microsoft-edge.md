@@ -101,7 +101,7 @@ Per creare la configurazione dell'app per Microsoft Edge:
 2. Selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 3. Nel riquadro **Aggiungi i criteri di configurazione** immettere **Nome** e **Descrizione** facoltativa per le impostazioni di configurazione dell'app.
 4. Per **Tipo di registrazione del dispositivo** scegliere **App gestite**.
-5. Scegliere **Selezionare l'app necessaria**. Nel riquadro **App di destinazione** scegliere quindi **Managed Browser** o **Edge** per iOS, Android o per entrambi.
+5. Scegliere **Selezionare l'app necessaria**. Nel riquadro **App di destinazione** scegliere quindi **Managed Browser** o **Microsoft Edge** per iOS, Android o per entrambi.
 6. Selezionare **OK** per tornare al riquadro **Aggiungi i criteri di configurazione**.
 7. Selezionare **Impostazioni di configurazione**. Nel riquadro **Configurazione** definire le coppie di chiavi e valori per specificare le configurazioni per Microsoft Edge. Vedere le sezioni più avanti in questo articolo per informazioni sulle varie coppie di chiavi e valori che è possibile definire.
 

@@ -30,7 +30,7 @@ Seguendo questo [scenario guidato](~/fundamentals/guided-scenarios-overview.md) 
 Microsoft Edge consente agli utenti di evitare la confusione del Web con funzionalità predefinite utili per consolidare, organizzare e gestire il contenuto aziendale. Gli utenti di dispositivi iOS e Android che eseguono l'accesso con gli account aziendali di Azure AD nell'applicazione Microsoft Edge troveranno il browser precaricato con i **Preferiti** aziendali e i filtri dei siti Web definiti dall'amministratore.
 
 > [!NOTE]
-> Se agli utenti non è consentita la registrazione di dispositivi iOS o Android, questo scenario non consentirà la registrazione e gli utenti dovranno installare Edge autonomamente.
+> Se agli utenti non è consentita la registrazione di dispositivi iOS o Android, questo scenario non consentirà la registrazione e gli utenti dovranno installare Microsoft Edge autonomamente.
 Le funzionalità aziendali di Microsoft Edge abilitate dai criteri di Intune includono: 
 
 - **Doppia identità**: gli utenti possono aggiungere sia un account aziendale che un account personale per l'esplorazione. Le due identità sono completamente separate, in modo analogo all'architettura e all'esperienza utente di Office 365 e Outlook. Gli amministratori di Intune potranno impostare i criteri desiderati per un'esperienza di esplorazione protetta nell'account aziendale. 
@@ -81,7 +81,7 @@ In questo passaggio è possibile scegliere i gruppi di utenti che si vuole inclu
 Il passaggio finale consente di esaminare un riepilogo delle impostazioni configurate. Dopo aver verificato le scelte, fare clic su **Crea** per completare lo scenario guidato. 
 
 > [!NOTE]
-> Per la ricezione della configurazione, Edge potrebbe richiedere fino a 12 ore. Per altre informazioni, vedere [Criteri di configurazione delle app per Microsoft Intune](~/apps/app-configuration-policies-overview.md).
+> Per la ricezione della configurazione, Microsoft Edge potrebbe richiedere fino a 12 ore. Per altre informazioni, vedere [Criteri di configurazione delle app per Microsoft Intune](~/apps/app-configuration-policies-overview.md).
 
 > [!IMPORTANT]
 > Una volta completato lo scenario guidato, verrà visualizzato un riepilogo. È possibile modificare le risorse elencate nel riepilogo in un secondo momento, ma la tabella che visualizza queste risorse non verrà salvata.
