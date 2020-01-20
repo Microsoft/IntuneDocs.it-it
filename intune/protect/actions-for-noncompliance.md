@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712908"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827837"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi in Intune
 
@@ -91,7 +91,7 @@ Per inviare il messaggio di posta elettronica agli utenti, creare un modello di 
 
 Quando si crea un criterio di conformità del dispositivo, Intune crea automaticamente un'azione per la non conformità. Se un dispositivo non soddisfa i criteri di conformità, questa azione lo contrassegna come non conforme. È possibile personalizzare il periodo di tempo in cui il dispositivo rimane contrassegnato come non conforme. Questa azione non può essere rimossa.
 
-È anche possibile aggiungere un'altra azione quando si crea un criterio di conformità o si aggiorna un criterio esistente.
+Oltre all'azione predefinita per contrassegnare i dispositivi come non conformi, è possibile aggiungere azioni facoltative quando si crea un criterio di conformità o se ne aggiorna uno esistente.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 

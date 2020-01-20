@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510024"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885845"
 ---
 # <a name="basic-setup"></a>Configurazione di base
 
@@ -74,9 +74,9 @@ Prima di poter eseguire la migrazione a Intune, è necessaria una sottoscrizione
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Attività 3: Impostare l'autorità MDM su Intune
 
-È possibile gestire Intune tramite il portale di Azure o la console di Configuration Manager Current Branch. A meno che non sia necessario integrare Intune con una distribuzione di Configuration Manager Current Branch, è consigliabile gestire Intune dal [portale di Azure](https://portal.azure.com).
+È consigliabile gestire Intune usando l'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Impostare l'autorità MDM su **Intune** per abilitare il portale di Azure per Intune. L'uso di un'autorità MDM diversa consente a Intune di trasferire la gestione MDM su console di gestione Microsoft alternative. Questi casi sono poco frequenti.
+Impostare l'autorità MDM su **Intune**. L'uso di un'autorità MDM diversa consente a Intune di trasferire la gestione MDM su console di gestione Microsoft alternative. Questi casi sono poco frequenti.
 
 > [!IMPORTANT]
 > Se è la prima volta che si trasferisce la gestione dei dispositivi mobili a Intune, è consigliabile impostare l'autorità MDM su Intune.

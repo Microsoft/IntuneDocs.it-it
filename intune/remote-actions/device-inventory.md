@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819787"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756027"
 ---
 # <a name="see-device-details-in-intune"></a>Visualizzare i dettagli del dispositivo in Intune
 
@@ -67,7 +67,7 @@ A seconda del gestore telefonico usato dai dispositivi, è possibile che non ven
 |Dispositivo condiviso|Se **Sì** il dispositivo è condiviso da più utenti.|Windows, iOS|
 |Registrazione approvata dall'utente|Se **Sì** il dispositivo include la registrazione approvata dall'utente, che consente agli amministratori di gestire alcune impostazioni di sicurezza nel dispositivo stesso.|Windows, iOS|
 |Sistema operativo|Sistema operativo presente nel dispositivo.|Windows, iOS|
-|Versione del sistema operativo|Versione del sistema operativo del dispositivo.|Windows, iOS|
+|Versione del sistema operativo|Versione del sistema operativo installato nel dispositivo.|Windows, iOS|
 |Lingua del sistema operativo|Lingua impostata per il sistema operativo nel dispositivo.|Windows, iOS|
 |Numero build|Numero di build del sistema operativo.|Android|
 |Livello di patch di protezione|Livello della patch di protezione per il dispositivo.|Android|
@@ -94,6 +94,9 @@ A seconda del gestore telefonico usato dai dispositivi, è possibile che non ven
 |Crittografato|Se **Sì** i dati archiviati nel dispositivo sono crittografati.|Windows, iOS, Android|
 
 \* Non disponibile in Android con Google Policy Manager, ad esempio dispositivi completamente gestiti e dedicati
+
+> [!Note]  
+> Il numero di telefono non è incluso nell'inventario dei dispositivi Android Enterprise dedicati o completamente gestiti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Vedere le altre operazioni possibili per [gestire i dispositivi](device-management.md) con Intune.

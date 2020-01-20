@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654261"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756010"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune
 
@@ -38,6 +38,8 @@ Intune offre anche un [report di crittografia](encryption-monitor.md) predefinit
 ## <a name="filevault-encryption-for-macos"></a>Crittografia FileVault per macOS
 
 Usare Intune per configurare la crittografia del disco FileVault nei dispositivi che eseguono macOS. Usare quindi il report di crittografia di Intune per visualizzare i dettagli di crittografia per tali dispositivi e per gestire le chiavi di ripristino per i dispositivi crittografati con FileVault.
+
+Si noti che la registrazione del dispositivo approvata dall'utente è necessaria per il funzionamento di FileVault nel dispositivo stesso. L'utente deve approvare manualmente il profilo di gestione dalle preferenze di sistema perché la registrazione sia considerata approvata dall'utente. 
 
 FileVault è un programma di crittografia per dischi interi incluso in macOS. È possibile usare Intune per configurare FileVault nei dispositivi che eseguono **macOS 10.13 o versione successiva**.
 
@@ -72,14 +74,7 @@ Per informazioni dettagliate sulle impostazioni di FileVault che è possibile ge
 
 7. Configurare le [impostazioni di FileVault](endpoint-protection-macos.md#filevault) rimanenti in base alle esigenze aziendali e quindi selezionare **OK**.
 
-   > [!IMPORTANT]
-   > Si verifica un problema noto quando **Disabilita la richiesta alla disconnessione** è impostato su *Abilita*. Quando è impostato su *Abilita*, **Numero di volte per cui è consentito ignorare** deve essere impostato su un valore e non su *Non configurato*. Se è impostato su *Non configurato*, si verifica un problema con il profilo nel dispositivo. In questo scenario **Riepilogo dello stato del profilo** è segnalato come **Errore** nel dispositivo, senza altri dettagli.
-   >
-   > Quando **Disabilita la richiesta alla disconnessione** è impostato su *Non configurato*, **Numero di volte per cui è consentito ignorare** può essere impostato su *Non configurato* o avere un valore.
-   >
-   > Il problema verrà risolto in un aggiornamento futuro.
-
-8. Completare la configurazione delle impostazioni aggiuntive e quindi salvare il profilo.  
+  8. Completare la configurazione delle impostazioni aggiuntive e quindi salvare il profilo.  
 
 ### <a name="manage-filevault"></a>Gestire FileVault
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955474"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956304"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
@@ -120,7 +120,7 @@ Per specifiche dettagliate sui codici IMEI, vedere [3GGPP TS 23.003](https://por
 
 ## <a name="change-device-ownership"></a>Modificare la proprietà del dispositivo
 
-Le proprietà dei dispositivi mostrano la **Proprietà** per ogni record di dispositivo in Intune. L'amministratore può specificare i dispositivi come **Personale** o **Aziendale**. Quando il tipo di proprietà di un dispositivo viene modificato da personale a aziendale, Intune elimina tutte le informazioni sulle app raccolte in precedenza dal dispositivo entro 7 giorni. Se applicabile, Intune eliminerà anche il numero di telefono in archivio. 
+Le proprietà dei dispositivi mostrano la **Proprietà** per ogni record di dispositivo in Intune. L'amministratore può specificare i dispositivi come **Personale** o **Aziendale**. Quando il tipo di proprietà di un dispositivo viene modificato da aziendale a personale, Intune elimina entro 7 giorni tutte le informazioni sulle app raccolte in precedenza dal dispositivo. Se applicabile, Intune eliminerà anche il numero di telefono in archivio. 
 
 **Per modificare la proprietà del dispositivo:**
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere il dispositivo.

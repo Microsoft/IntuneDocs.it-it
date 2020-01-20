@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784239"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956199"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune 
 
@@ -164,7 +164,7 @@ Quando si aggiunge un'app in Intune, è possibile selezionare la categoria desid
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selezionare **App** > **Categorie di app**.  
     Il riquadro **Categorie di app** contiene un elenco delle categorie correnti. 
-5. Effettuare una delle operazioni riportate di seguito:
+5. Eseguire una delle operazioni seguenti:
     - Per aggiungere una categoria, nel riquadro **Crea la categoria** selezionare **Aggiungi** e quindi immettere un nome per la categoria.  
     I nomi possono essere immessi in una sola lingua e non vengono tradotti da Intune.
     - Per modificare una categoria, selezionare i puntini di sospensione ( **...** ) accanto alla categoria, quindi selezionare **Aggiungi al dashboard** o **Elimina**.
@@ -189,7 +189,7 @@ Intune reinstallerà, aggiornerà o rimuoverà automaticamente l'app necessaria 
 
 ## <a name="app-installation-errors"></a>Errori di installazione delle app
 
-Per informazioni dettagliate sugli errori di installazione delle app di Intune, vedere [Errori di installazione delle app](troubleshoot-app-install.md#app-installation-errors).
+Per informazioni dettagliate sugli errori di installazione delle app di Intune, vedere [Errori di installazione delle app](troubleshoot-app-install.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -211,4 +211,4 @@ Per altre informazioni su come aggiungere app per ogni piattaforma in Intune, ve
 - [Microsoft Edge per macOS](apps-edge-macos.md)
 - [App predefinite](apps-add-built-in.md)
 - [App di sistema Android Enterprise](apps-ae-system.md)
-- [App Win32](app-management.md)
+- [App Win32](~/apps/apps-win32-app-management.md)

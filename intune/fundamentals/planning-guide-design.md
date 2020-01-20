@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547541"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885790"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -101,19 +101,11 @@ Durante la registrazione dell'ambiente MDM corrente, assicurarsi di prendere not
 | **SharePoint** | SharePoint locale | Nessun piano per la migrazione a SharePoint Online |  
 | **Soluzione MDM corrente** | Exchange ActiveSync |  |
 | **Soluzione per i certificati** | Microsoft Server 2012 R2, Servizi certificati Active Directory | Uso di PKI solo per i server del sito Web |
-| **Gestione dei sistemi** | Configuration Manager CB 1606 | Potrebbe essere utile valutare una soluzione ibrida Intune |
+| **Gestione dei sistemi** | Configuration Manager Current Branch | Potrebbe essere utile valutare una soluzione di co-gestione |
 | **Soluzione VPN** | Cisco AnyConnect |  |
 
 
 Per sviluppare il piano della progettazione di Intune, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
-
-## <a name="choose-an-intune-deployment-option"></a>Scegliere un'opzione di distribuzione per Intune
-
-Intune offre due opzioni di distribuzione: versione autonoma e configurazione ibrida. Per versione autonoma si intende il servizio Intune in esecuzione nel cloud, mentre il termine configurazione ibrida fa riferimento all'integrazione di Intune con Configuration Manager. Questa guida è destinata principalmente all'uso della versione autonoma. [Decidere quale opzione è più adatta per i requisiti aziendali](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
-
-> [!Important]
->l'onboarding di nuovi clienti di MDM con configurazione ibrida è deprecato. Per altre informazioni, vedere il post di blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Passare dalla gestione di dispositivi mobili ibrida a Intune in Azure).
-
 
 ## <a name="intune-tenant-location"></a>Posizione del tenant Intune
 

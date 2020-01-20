@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585284"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925831"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -95,7 +95,7 @@ Il provisioning deve essere usato su nuovi dispositivi Windows. La correzione de
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Registrazione in blocco con Wi-Fi 
 
-Non è possibile usare i dispositivi registrati in blocco per i certificati destinati agli utenti e la distribuzione Wi-Fi. È necessario usare [certificati a livello di dispositivo](../protect/certificates-configure.md) per gestire queste connessioni. 
+Quando non si usa una rete aperta, è necessario usare [certificati a livello di dispositivo](../protect/certificates-configure.md) per avviare le connessioni. Non è possibile usare i certificati destinati agli utenti per l'accesso alla rete di dispositivi registrati in blocco. 
 
 ### <a name="conditional-access"></a>Accesso condizionale
 L'accesso condizionale non è disponibile per i dispositivi Windows registrati con la registrazione in blocco.

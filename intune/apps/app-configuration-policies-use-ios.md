@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547981"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885760"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -108,7 +108,7 @@ Per i dispositivi iOS, usare le coppie chiave/valore seguenti:
 | **Valori** | <ul><li>**Attivata**: l'unico account consentito è l'account utente gestito definito dalla chiave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Disabled** (o qualsiasi valore che non corrisponda a **Enabled** senza distinzione di maiuscole/minuscole): è consentito qualsiasi account.</li></ul> |.
 
    > [!NOTE]
-   > Se si consentono solo account dell'organizzazione configurati con identità multiple, è necessario usare OneDrive per iOS 10.34 o versione successiva, Outlook per iOS 2.99.0 o versione successiva o Edge per iOS 44.8.7 o versione successiva e all'app devono essere destinati [criteri di protezione delle app Intune](app-protection-policy.md).
+   > Se si consentono solo account dell'organizzazione configurati con identità multiple, è necessario usare OneDrive per iOS 10.34 o versione successiva, Outlook per iOS 2.99.0 o versione successiva o Microsoft Edge per iOS 44.8.7 o versione successiva e all'app devono essere destinati [criteri di protezione delle app Intune](app-protection-policy.md).
 
 ## <a name="enter-xml-data"></a>Immettere i dati XML
 
@@ -182,7 +182,7 @@ Le registrazioni DEP (Device Enrollment Program, il programma di registrazione d
 
 1. In Intune aggiungere l'app Portale aziendale di Intune, se necessario, selezionando **Intune** > **App** > **Tutte le app** > **Aggiungi**.
 2. Passare ad **App** > **Criteri di configurazione dell'app** per creare criteri di configurazione per l'app Portale aziendale.
-3. Creare criteri di configurazione dell'app con il codice XML che segue. Altre informazioni su come creare criteri di configurazione delle app e immettere dati XML sono disponibili in [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md) o, per la gestione dei dispositivi mobili ibrida, in [Applicare le impostazioni alle app iOS con i criteri di configurazione app in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Creare criteri di configurazione dell'app con il codice XML che segue. Per altre informazioni sulla creazione di criteri di configurazione delle app e sull'immissione di dati XML, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
