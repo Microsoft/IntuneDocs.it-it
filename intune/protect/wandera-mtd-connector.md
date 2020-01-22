@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508812"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036633"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Connettore Wandera Mobile Threat Defense con Intune  
 
@@ -48,7 +48,7 @@ Wandera supporta le piattaforme seguenti per i dispositivi registrati in Intune:
 - Android 5.0 e versioni successive  
 - iOS 10.2 e versioni successive  
 
-Per altre informazioni sulla piattaforma e il dispositivo, vedere il [sito Web Wandera](https://www.wandera.com/why-wandera/features/device-support/).
+Per altre informazioni sulla piattaforma e il dispositivo, vedere il [sito Web Wandera](https://www.wandera.com/classic-help-center/).
 
 ## <a name="prerequisites"></a>Prerequisiti  
 
@@ -78,7 +78,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 ![Immagine concettuale dell'accesso concesso dopo la correzione](./media/wandera-mtd-connector/wandera-malicious-apps-unblocked.png)
 
 
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete  
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce per la rete  
 
 Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e proteggere l'accesso a reti Wi-Fi in base al livello di rischio del dispositivo.  
 
@@ -88,11 +88,11 @@ Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e protegg
 
 **Accesso concesso dopo la correzione**:  
 
-![Accesso concesso dopo la risoluzione](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+![Accesso concesso dopo la correzione](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
 ## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
-Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
+Rilevare le minacce alla rete, ad esempio attacchi di tipo man-in-the-middle, e impedire la sincronizzazione dei file aziendali in base al rischio per il dispositivo.
 
 **Bloccare SharePoint Online quando vengono rilevate minacce per la rete**:  
 
