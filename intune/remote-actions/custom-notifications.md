@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907288"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036605"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Inviare notifiche personalizzate in Intune  
 
@@ -38,7 +38,7 @@ I messaggi di notifica personalizzati includono un titolo breve e un corpo del m
 
 ## <a name="considerations-for-using-custom-notifications"></a>Considerazioni sull'uso delle notifiche personalizzate
 
-**Configurazione dei dispositivi** 
+**Configurazione del dispositivo** 
 
 - Prima che gli utenti possano ricevere notifiche personalizzate, è necessario che nei dispositivi sia installata l'app Portale aziendale o l'app Microsoft Intune. È anche necessario che siano configurate le autorizzazioni per consentire all'app Portale aziendale o all'app Microsoft Intune di inviare notifiche push. Se necessario, l'app Portale aziendale e l'app Microsoft Intune possono richiedere agli utenti di consentire le notifiche.  
 - In Android Google Play Services è una dipendenza obbligatoria.  
@@ -89,13 +89,13 @@ Intune non tiene traccia delle notifiche personalizzate inviate e i dispositivi 
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Inviare una notifica personalizzata a un singolo dispositivo  
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con un account che ha autorizzazioni per creare e inviare notifiche e passare a **Dispositivi** > **Tutti i dispositivi**.  
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con un account che ha autorizzazioni per creare e inviare notifiche e passare a **Dispositivi** > **Tutti i dispositivi**.
 
-2. Selezionare il dispositivo al quale si vuole inviare una notifica.  
+2. Fare doppio clic sul nome del dispositivo gestito a cui si vuole inviare una notifica per aprire la pagina *Panoramica* del dispositivo.
 
-3. Nella pagina **Panoramica** dei dispositivi selezionare l'opzione **...** (puntini di sospensione) dal lato superiore destro della pagina.  
+3. Nella pagina **Panoramica** selezionare l'azione **Invia una notifica personalizzata** per aprire il riquadro *Invia una notifica personalizzata*. Se questa opzione non è disponibile, selezionare l'opzione **...** (puntini di sospensione) nell'angolo superiore destro della pagina, quindi selezionare **Invia una notifica personalizzata**.
 
-4. Selezionare l'azione del dispositivo **Invia una notifica personalizzata** per aprire il riquadro *Invia una notifica personalizzata* in cui vengono specificati i dettagli del messaggio seguenti:  
+4. Nel riquadro **Invia una notifica personalizzata** specificare i dettagli del messaggio seguenti:  
 
    - **Titolo**: specificare un titolo per la notifica. Il testo dei titoli può avere una lunghezza massima di 50 caratteri.  
    - **Corpo**: specificare il messaggio. Il testo dei messaggi può avere una lunghezza massima di 500 caratteri.  

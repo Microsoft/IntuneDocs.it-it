@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558177"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125311"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Azure Active Directory ibrido. A tale scopo, eseguire i passaggi descritti in questo articolo.
@@ -209,17 +209,30 @@ Il passaggio dello stato del profilo del dispositivo da *Non assegnato* ad *Asse
 ## <a name="create-and-assign-a-domain-join-profile"></a>Creare e assegnare un profilo di aggiunta al dominio
 
 1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare**Dispositivi** > **Profili di configurazione** > **Crea profilo**.
-1. Immettere le proprietà seguenti:
+2. Immettere le proprietà seguenti:
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Description**: Immettere una descrizione del profilo.
+   - **Descrizione**: Immettere una descrizione del profilo.
    - **Piattaforma**: selezionare **Windows 10 e versioni successive**.
    - **Tipo di profilo**: selezionare **Aggiunta a un dominio (anteprima)** .
-1. Selezionare **Impostazioni** e specificare **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo) nel [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+3. Selezionare **Impostazioni** e quindi specificare **Prefisso nome computer** e **Nome dominio**.
+4. (Facoltativo) Specificare **Unità organizzativa** (OU) in [formato nome distinto (DN)](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). Alcune delle opzioni possibili sono:
+   - Specificare un'unità organizzativa in cui è stato delegato il controllo al dispositivo Windows 2016 che esegue Intune Connector.
+   - Specificare un'unità organizzativa in cui è stato delegato il controllo ai computer radice nell'implementazione Active Directory locale.
+   - Se questo campo viene lasciato vuoto, l'oggetto computer verrà creato nel contenitore predefinito Active Directory (CN=Computers se non è mai stato [modificato](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)).
+   
+   Ecco alcuni esempi validi:
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   Ecco alcuni esempi non validi:
+   - CN=Computers,DC=contoso,DC=com (non è possibile specificare un contenitore; lasciare il valore vuoto per usare l'impostazione predefinita per il dominio)
+   - OU=Mine (il dominio va specificato tramite gli attributi DC=)
+     
    > [!NOTE]
    > Non racchiudere tra virgolette il valore in **Unità organizzativa**.
-1. Selezionare **OK** > **Crea**.  
+5. Selezionare **OK** > **Crea**.  
     Il profilo viene creato e visualizzato nell'elenco.
-1. Per assegnare il profilo, seguire la procedura descritta in [Assegnare un profilo di dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e assegnare il profilo allo stesso gruppo usato nel passaggio [Creare un gruppo di dispositivi](windows-autopilot-hybrid.md#create-a-device-group)
+6. Per assegnare il profilo, seguire la procedura descritta in [Assegnare un profilo di dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e assegnare il profilo allo stesso gruppo usato nel passaggio [Creare un gruppo di dispositivi](windows-autopilot-hybrid.md#create-a-device-group)
    - Distribuzione di più profili aggiunti al dominio
    
      a. Creare un gruppo dinamico che include tutti i dispositivi Autopilot con uno specifico profilo di distribuzione di Autopilot. Immettere (device.enrollmentProfileName -eq "Nome profilo Autopilot"). 

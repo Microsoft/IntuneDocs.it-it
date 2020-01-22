@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956327"
+ms.locfileid: "76036640"
 ---
 # <a name="app-protection-policies-overview"></a>Panoramica dei criteri di protezione app
 
@@ -184,7 +184,7 @@ Per poter usare Skype for Business, sono necessari requisiti aggiuntivi. Vedere 
 
 ## <a name="app-protection-global-policy"></a>Criteri globali per la protezione delle app
 
-Un amministratore di OneDrive che passa ad **admin.office.com** e seleziona l'accesso **Dispositivo** può impostare i controlli **Gestione di applicazioni mobili** sulle app client di OneDrive e SharePoint. 
+Un amministratore di OneDrive che passa ad **admin.onedrive.com** e seleziona l'accesso **Dispositivo** può impostare i controlli **Gestione di applicazioni mobili** sulle app client di OneDrive e SharePoint. 
 
 Tali impostazioni, rese disponibili nella console di amministrazione di OneDrive, configurano uno speciale criterio di protezione delle app Intune denominato **globale**. Questi criteri globali si applicano a tutti gli utenti del tenant e non è possibile controllarne la destinazione. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548007"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258510"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gestire l'accesso Web usando Microsoft Edge con Microsoft Intune
 
@@ -205,7 +205,7 @@ Usare quindi le coppie chiave/valore seguenti per eseguire il pull degli element
 
 |    Chiave    |    Valore    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    **True** visualizza le notizie del settore nella Pagina Nuova scheda di Microsoft Edge per dispositivi mobili.<p>**False** (impostazione predefinita) nasconde le notizie del settore dalla Pagina Nuova scheda.    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** visualizza le notizie del settore nella Pagina Nuova scheda di Microsoft Edge per dispositivi mobili.<p>**False** (impostazione predefinita) nasconde le notizie del settore dalla Pagina Nuova scheda.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurare segnalibri gestiti per Microsoft Edge
 
@@ -217,6 +217,7 @@ Ecco alcune informazioni:
 - Questi segnalibri non possono essere eliminati o modificati dagli utenti.
 - I segnalibri vengono visualizzati nella parte superiore dell'elenco. Eventuali segnalibri creati dagli utenti vengono visualizzati sotto questi segnalibri.
 - Se è stato abilitato il reindirizzamento di Application Proxy, è possibile aggiungere le app Web di Application Proxy usando il relativo URL interno o esterno.
+- Quando si aggiungono gli URL all'elenco, farli precedere dal prefisso **http://** o **https://** .
 
 Per configurare i segnalibri gestiti, usare la coppia chiave/valore seguente:
 
@@ -243,7 +244,7 @@ Usare le coppie chiave/valore seguenti per configurare un elenco di siti consent
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formati di URL per gli elenchi dei siti consentiti e bloccati 
 È possibile usare diversi formati di URL per creare gli elenchi dei siti consentiti e bloccati. I modelli che è possibile usare sono descritti in dettaglio nella tabella seguente. Di seguito sono indicate alcune note: 
-- Assicurarsi che tutte le URL abbiano con prefisso **http** o **https** quando immetterle nell'elenco.
+- Quando si aggiungono gli URL all'elenco, farli precedere dal prefisso **http://** o **https://** .
 - È possibile usare il carattere jolly (\*) secondo le regole nell'elenco di modelli consentiti seguente.
 - Un carattere jolly può corrispondere solamente a un componente intero del nome host (separato da punti) o a parti intere del percorso (separate da barre). Ad esempio, `http://*contoso.com`**non** è supportato.
 - È possibile specificare numeri di porta nell'indirizzo. Se non si specifica un numero di porta, i valori usati sono:
