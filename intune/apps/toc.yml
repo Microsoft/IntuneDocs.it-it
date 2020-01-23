@@ -5,7 +5,7 @@
   items:
     - name: Panoramica di gestione delle app
       href: app-management.md
-- name: Guida introduttiva
+- name: Guide introduttive
   items:
     - name: Aggiungere e assegnare un'app
       href: quickstart-add-assign-app.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Configurare Outlook
               href: app-configuration-policies-outlook.md
-            - name: Configurare S/MIME per Outlook
-              href: app-configuration-policies-outlook-smime.md
             - name: Configurare Google Chrome per Android
               href: apps-configure-chrome-android.md
         - name: App e libri acquistati con Volume Purchase Program
@@ -190,6 +188,8 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Risolvere i problemi di installazione delle app
           href: troubleshoot-app-install.md
+        - name: Informazioni di riferimento sugli errori di installazione delle app
+          href: app-install-error-codes.md
         - name: Risolvere i problemi relativi alla gestione di applicazioni mobili
           href: troubleshoot-mam.md
         - name: Esaminare i log di protezione delle app
