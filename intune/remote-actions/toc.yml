@@ -33,13 +33,13 @@
           href: device-supervised-mode.md
         - name: Cancellare un dispositivo macOS
           href: device-erase.md
-        - name: Bypass del blocco attivazione
-          href: device-activation-lock-bypass.md
+        - name: Disabilitare Blocco attivazione
+          href: device-activation-lock-disable.md
     - name: Azioni utente
       items:
         - name: Disconnettere l'utente corrente
           href: device-logout-user.md
-        - name: Rimuovi utente
+        - name: Rimuovere un utente
           href: device-remove-user.md
         - name: Trovare l'utente primario
           href: find-primary-user.md

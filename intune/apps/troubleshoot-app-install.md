@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/14/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0786174ebb90352fa1a41923f9cfce305aece49f
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563476"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956323"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Risolvere i problemi di installazione delle app
 
@@ -33,7 +33,7 @@ Nei dispositivi gestiti da MDM di Microsoft Intune le installazioni di applicazi
 Intune offre informazioni dettagliate per la risoluzione dei problemi delle app in base alle app installate nel dispositivo di un utente specifico.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Selezionare **risoluzione dei problemi e supporto**.
+3. Selezionare **Risoluzione dei problemi e supporto tecnico**.
 4. Fare clic su **Seleziona utente** per selezionare un utente per risolvere i problemi. Verrà visualizzato il riquadro **Seleziona utenti**.
 5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona** nella parte inferiore del riquadro. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel riquadro **Risoluzione dei problemi**. 
 6. Selezionare il dispositivo per cui si vuole eseguire la risoluzione dei problemi nell'elenco **Dispositivi**.
@@ -47,22 +47,22 @@ Intune offre informazioni dettagliate per la risoluzione dei problemi delle app 
     > La stessa app potrebbe essere assegnata a più gruppi, ma con diverse azioni previste (finalità) per l'app. Ad esempio, la finalità risolta per un'app indicherà **esclusa** se l'app viene esclusa per un utente durante l'assegnazione di app. Per altre informazioni, vedere [Modalità di risoluzione dei conflitti tra finalità di app](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Se si verifica un errore di installazione per un'app obbligatoria, l'utente o il supporto tecnico sarà in grado di sincronizzare il dispositivo e ritentare l'installazione dell'app.
 
-I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Errori di installazione delle app](troubleshoot-app-install.md#app-installation-errors).
+I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Errori di installazione delle app Android](troubleshoot-app-install.md#android-app-installation-errors) ed [Errori di installazione delle app iOS](troubleshoot-app-install.md#ios-app-installation-errors).
 
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>L'installazione dell'app di destinazione del gruppo di utenti non raggiunge il dispositivo
-Quando si verificano problemi durante l'installazione delle app, è necessario prendere in considerazione le azioni seguenti:
-- Se l'app non viene visualizzata nel Portale aziendale, assicurarsi che l'app venga distribuita con finalità **disponibili** e che l'utente acceda al portale aziendale con il tipo di dispositivo supportato dall'app.
-- Per i dispositivi Windows BYOD, l'utente deve aggiungere un account aziendale al dispositivo.
-- Controllare se l'utente ha superato il limite di dispositivi AAD:
-  1. Passare a [Azure Active Directory impostazioni dispositivo](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
-  2. Prendere nota del valore impostato per il **numero massimo di dispositivi per utente**.
-  3. Passare a [Azure Active Directory utenti](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
-  4. Selezionare l'utente interessato e fare clic su **dispositivi**.
+In caso di problemi durante l'installazione delle app, è consigliabile prendere in considerazione le azioni seguenti:
+- Se l'app non viene visualizzata nel Portale aziendale, assicurarsi che sia distribuita con finalità **Available** e che l'utente acceda al Portale aziendale con il tipo di dispositivo supportato dall'app.
+- Per i dispositivi BYOD Windows, l'utente deve aggiungere un account aziendale al dispositivo.
+- Verificare se l'utente ha superato il limite di dispositivi di AAD:
+  1. Passare ad [Azure Active Directory - Impostazioni dispositivo](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
+  2. Prendere nota del valore impostato per **Numero max dispositivi per utente**.
+  3. Passare a [Utenti di Azure Active Directory](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
+  4. Selezionare l'utente interessato e fare clic su **Dispositivi**.
   5. Se l'utente supera il limite impostato, eliminare tutti i record obsoleti che non sono più necessari.
-- Per i dispositivi DEP iOS, assicurarsi che l'utente sia elencato come **registrato dall'utente** nel riquadro di panoramica del dispositivo Intune. Se viene visualizzato NA, distribuire un criterio di configurazione per il Portale aziendale Intune. Per altre informazioni, vedere [configurare l'app portale aziendale](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Per i dispositivi DEP iOS, assicurarsi che l'utente sia elencato come **Registrato dall'utente** nel riquadro di panoramica del dispositivo Intune. Se viene visualizzato NA, distribuire un criterio di configurazione per il Portale aziendale Intune. Per altre informazioni, vedere [Configurare l'app Portale aziendale](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Risoluzione dei problemi di installazione delle app Win32
 
@@ -102,16 +102,12 @@ Esistono regole specifiche da seguire per raccogliere i file di log:
   *.log, .txt, .dmp, .cab, .zip, .xml*
 - Il limite per il caricamento è 60 MB o 25 file, a seconda di quale condizione si verifica per prima. 
 - La raccolta dei log di installazione dell'app Win32 è abilitata per le app che rispettano la finalità di assegnazione obbligatoria, disponibile e disinstallazione dell'app.
-- I log archiviati sono crittografati per proteggere le informazioni personali contenute nei log.
+- I log archiviati sono crittografati per proteggere le informazioni personali che contengono.
 - Quando si aprono dei ticket di supporto per gli errori che si verificano nelle app Win32, allegare i relativi log di errore usando la procedura riportata sopra.
 
-## <a name="app-installation-errors"></a>Errori di installazione delle app
+## <a name="android-app-installation-errors"></a>Errori di installazione delle app Android
 
-I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di installazione di Android e iOS. 
-
-### <a name="android-errors"></a>Errori di Android
-
-Questa sezione menziona sia l'amministratore del dispositivo che la registrazione di Samsung Knox. Per altre informazioni, vedere registrazione [amministratore dispositivi Android](../enrollment/android-enroll-device-administrator.md) e [registrare automaticamente i dispositivi Android usando la registrazione di Samsung Knox per dispositivi mobili](../enrollment/android-samsung-knox-mobile-enroll.md). 
+Questa sezione menziona sia la registrazione di tipo amministratore di dispositivi che la registrazione Samsung Knox. Per altre informazioni, vedere [Registrazione di tipo amministratore di dispositivi Android](../enrollment/android-enroll-device-administrator.md) e [Registrare automaticamente i dispositivi Android usando Knox Mobile Enrollment di Samsung](../enrollment/android-samsung-knox-mobile-enroll.md). 
 
 | Messaggio di errore/codice | Descrizione |
 |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,16 +117,18 @@ Questa sezione menziona sia l'amministratore del dispositivo che la registrazion
 | Applicazione non rilevata dopo il completamento dell'installazione. (0x87D1041C) | L'utente ha disinstallato l'app in modo esplicito. Questo errore non viene restituito dal client. Si tratta di un errore generato quando l'app è già installata ma viene successivamente disinstallata dall'utente. Questo errore dovrebbe verificarsi solo per le applicazioni obbligatorie. Gli utenti possono disinstallare le app non obbligatorie. Questo errore si può verificare solo in DA. KNOX blocca la disinstallazione delle app gestite. Con la sincronizzazione successiva la notifica verrà ripubblicata nel dispositivo per indicare all'utente di eseguire l'installazione. L'utente può ignorare la notifica. Questo errore continuerà a essere segnalato finché l'utente non installa l'app. |
 | Non è stato possibile eseguire il download a causa di un errore sconosciuto. (0xC7D14FB2) | Questo errore si verifica quando il download ha esito negativo. In genere, questo errore può verificarsi a causa di problemi di Wi-Fi o connessioni lente. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Intune visualizza una notifica per invitare gli utenti a fare clic per riprovare. Se l'app è un'app disponibile, la notifica può essere ignorata. Se invece l'app è obbligatoria, non può essere ignorata. |
 | Non è stato possibile eseguire il download a causa di un errore sconosciuto. Il criterio verrà ritentato alla successiva sincronizzazione del dispositivo. (0xC7D15078) | Questo errore si verifica quando il download ha esito negativo. In genere, questo errore può verificarsi a causa di problemi di Wi-Fi o connessioni lente. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. |
-| L'utente finale ha annullato l'installazione dell'app. (0xC7D14FB1) | L'utente ha disinstallato l'app in modo esplicito. Questo errore viene restituito quando l'attività di installazione del sistema operativo Android viene annullata dall'utente. L'utente ha premuto il pulsante Annulla quando era visualizzata la richiesta di installazione del sistema operativo oppure ha fatto clic in un altro punto. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Intune visualizza una notifica per invitare gli utenti a fare clic per riprovare. Se l'app è un'app disponibile, la notifica può essere ignorata. Se invece l'app è obbligatoria, non può essere ignorata. Richiedere all'utente di non annullare l'installazione. |
+| L'utente finale ha annullato l'installazione dell'app. (0xC7D14FB1) | L'utente ha disinstallato l'app in modo esplicito. Questo errore viene restituito quando l'attività di installazione del sistema operativo Android viene annullata dall'utente. L'utente ha premuto il pulsante Annulla quando era visualizzata la richiesta di installazione del sistema operativo oppure ha fatto clic in un altro punto. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Intune visualizza una notifica per invitare gli utenti a fare clic per riprovare. Se l'app è un'app disponibile, la notifica può essere ignorata. Se invece l'app è obbligatoria, non può essere ignorata. Chiedere all'utente di non annullare l'installazione. |
 | Il processo di download di file è stato arrestato in modo imprevisto. (0xC7D15015) | Il sistema operativo ha arrestato il processo di download prima del completamento. Questo errore può verificarsi quando il dispositivo ha la batteria in esaurimento o il download richiede troppo tempo. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Intune visualizza una notifica per invitare gli utenti a fare clic per riprovare. Se l'app è un'app disponibile, la notifica può essere ignorata. Se invece l'app è obbligatoria, non può essere ignorata. Verificare che il dispositivo disponga di una connessione di rete affidabile.  |
 | Il servizio di download di file è stato arrestato in modo imprevisto. Il criterio verrà ritentato alla successiva sincronizzazione del dispositivo. (0xC7D1507C) | Il sistema operativo ha terminato il processo di download prima del completamento. Questo errore può verificarsi quando il dispositivo ha la batteria in esaurimento o il download richiede troppo tempo. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Sincronizzare manualmente il dispositivo o attendere 24 ore e verificare lo stato. |
-| Non è stato possibile disinstallare l'app. (0xc7d14fb8) | Si tratta di un errore di disinstallazione generico. Il sistema operativo non ha specificato perché la disinstallazione dell'app non è riuscita. Alcune app di amministrazione non possono semplicemente essere disinstallate. Verificare che l'app possa essere disinstallata manualmente e raccogliere i log Portale aziendale se la disinstallazione non riesce. |
-| Il file APK di installazione app usato per l'aggiornamento non corrisponde alla firma per l'app corrente nel dispositivo. (0xc7d14fb7) | Il sistema operativo Android ha la limitazione di richiedere che il certificato di firma per la versione di aggiornamento sia esattamente lo stesso del certificato usato per firmare la versione esistente. Se lo sviluppatore non può usare lo stesso certificato per firmare la nuova versione, sarà necessario disinstallare l'app esistente e ridistribuire la nuova app anziché aggiornare l'app esistente. |
+| Non è stato possibile disinstallare l'app. (0xc7d14fb8) | Si tratta di un errore di disinstallazione generico. Il sistema operativo non ha specificato perché non è stato possibile disinstallare l'app. Alcune app di amministrazione non possono semplicemente essere disinstallate. Verificare che l'app possa essere disinstallata manualmente e raccogliere i log del Portale aziendale se la disinstallazione ha esito negativo. |
+| Il file APK di installazione dell'app usato per l'aggiornamento non corrisponde alla firma per l'app corrente nel dispositivo. (0xc7d14fb7) | Il sistema operativo Android ha la limitazione di richiedere che il certificato di firma per la versione di aggiornamento sia esattamente lo stesso del certificato usato per firmare la versione esistente. Se lo sviluppatore non può usare lo stesso certificato per firmare la nuova versione, sarà necessario disinstallare l'app esistente e ridistribuire la nuova app anziché aggiornare quella esistente. |
 | L'utente finale ha annullato l'installazione dell'app. (0xc7d14fb9) | Informare l'utente di accettare l'app distribuita con Intune e installare l'app quando richiesto. |
-| La disinstallazione dell'app è stata annullata perché il processo è stato riavviato durante l'installazione. (0xc7d14fbc) | Il processo di installazione dell'app è stato terminato dal sistema operativo o il dispositivo è stato riavviato. Se l'errore si verifica di nuovo, riprovare l'installazione e raccogliere i registri Portale aziendale. |
+| La disinstallazione dell'app è stata annullata perché il processo è stato riavviato durante l'installazione. (0xc7d14fbc) | Il processo di installazione dell'app è stato terminato dal sistema operativo o il dispositivo è stato riavviato. Se l'errore si verifica di nuovo, ritentare l'installazione e raccogliere i log del Portale aziendale. |
 | Non è possibile installare il file APK di installazione dell'app perché non è firmato. (0xc7d14fb6) | Per impostazione predefinita, il sistema operativo Android richiede che le app siano firmate. Verificare che l'app sia firmata prima della distribuzione. |
 
-### <a name="ios-errors"></a>Errori iOS
+## <a name="ios-app-installation-errors"></a>Errori di installazione delle app iOS
+
+I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di installazione di iOS. 
 
 | Messaggio di errore/codice | Descrizione/Suggerimenti per la risoluzione dei problemi |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,7 +136,7 @@ Questa sezione menziona sia l'amministratore del dispositivo che la registrazion
 | (0x87D1313C) | Si è persa la connessione di rete mentre l'URL aggiornato del servizio di download veniva inviato al dispositivo. In particolare, non è stato possibile trovare un server con il nome host specificato. |
 | Il dispositivo iOS è attualmente occupato. (0x87D11388) | Il dispositivo iOS era occupato e ciò ha generato un errore. Il dispositivo è stato bloccato. L'utente deve sbloccare il dispositivo per installare l'app. |
 | Installazione app non riuscita. (0x87D13B64) | Si è verificato un errore di installazione dell'app. Sono necessari i log della Console iOS per risolvere questo errore. |
-| L'app è gestita, ma è scaduta o è stata rimossa dall'utente. (0x87D13B66) | L'utente ha disinstallato in modo esplicito l'app o l'app è scaduta ma non è stata scaricata o il rilevamento dell'app non corrisponde alla risposta del dispositivo. Inoltre, questo errore può verificarsi per un bug della piattaforma iOS 9.2.2. |
+| L'app è gestita, ma è scaduta o è stata rimossa dall'utente. (0x87D13B66) | L'utente ha disinstallato in modo esplicito l'app oppure l'app è scaduta ma non è stato possibile scaricarla o il rilevamento dell'app non corrisponde alla risposta del dispositivo. Inoltre, questo errore può verificarsi per un bug della piattaforma iOS 9.2.2. |
 | L'app viene pianificata per l'installazione, ma è necessario un codice di riscatto per completare la transazione. (0x87D13B60) | Questo errore si verifica in genere con le app di iOS Store a pagamento. |
 | Applicazione non rilevata dopo il completamento dell'installazione. (0x87D1041C) | Il processo di rilevamento dell'app non corrisponde alla risposta del dispositivo. |
 | L'utente ha rifiutato l'offerta di installazione dell'app. (0x87D13B62) | Durante l'installazione iniziale dell'app, l'utente ha fatto clic su Annulla. Chiedere all'utente di accettare la richiesta di installazione la volta successiva. |
@@ -154,17 +152,17 @@ Questa sezione menziona sia l'amministratore del dispositivo che la registrazion
 | L'utente deve eseguire l'accesso all'App Store (-2016330855). | L'utente deve eseguire l'accesso all'App Store prima di poter installare l'app. |
 | Processo sconosciuto. Riprovare (-2016330854). | L'installazione dell'app non è riuscita a causa di un motivo sconosciuto. Riprovare. |
 | L'installazione dell'app non è riuscita. Intune proverà nuovamente alla successiva sincronizzazione del dispositivo (-2016330853). | L'installazione dell'app ha rilevato un errore di dispositivo. Sincronizzare il dispositivo per provare a installare nuovamente l'app. |
-| L'assegnazione della licenza non è riuscita con errore Apple ' No VPP licenses rimanenti ' (0x87d13b7e) | Questo comportamento è da progettazione. Per risolvere questo problema, acquistare licenze VPP aggiuntive o recuperare licenze dagli utenti non più interessate. |
+| Non è stato possibile assegnare la licenza. Errore Apple: 'Nessuna licenza VPP rimanente' (0x87d13b7e) | Questo rientra nel normale comportamento del prodotto. Per risolvere questo problema, acquistare ulteriori licenze VPP o recuperare le licenze dagli utenti non più interessati. |
 | Errore di installazione dell'app 12024: motivo sconosciuto. (0x87d13b6e) | Apple non ha fornito informazioni sufficienti per determinare il motivo per cui l'installazione non è riuscita. Nessun elemento da segnalare. |
-| I criteri di configurazione delle app necessari non sono presenti, assicurarsi che i criteri siano assegnati agli stessi gruppi. (0x87d13b7f) | L'app richiede la configurazione dell'app, ma non è destinata alla configurazione dell'app. L'amministratore deve assicurarsi che i gruppi a cui è destinata l'app dispongano anche della configurazione dell'app necessaria indirizzata ai gruppi. |
-| Le licenze VPP del dispositivo sono applicabili solo ai dispositivi iOS 9.0 +. (0x87d13b69) | Aggiornare i dispositivi iOS interessati a iOS 9.0 +. |
-| L'applicazione è installata nel dispositivo, ma non è gestita. (0x87d13b8f) | Questo errore si verifica solo nelle app LOB. L'app è stata installata all'esterno di Intune. Per risolvere questo errore, disinstallare l'app dal dispositivo. Al successivo avvio della sincronizzazione del dispositivo, il dispositivo deve installare l'app da Intune. |
-| Gestione app rifiutata dall'utente (0x87d13b68) | Richiedere all'utente di accettare la gestione delle app. |
+| I criteri di configurazione dell'app necessari non sono presenti, assicurarsi che i criteri siano relativi agli stessi gruppi. (0x87d13b7f) | L'app richiede la configurazione dell'app, ma non è prevista alcuna configurazione dell'app. L'amministratore deve assicurarsi che i gruppi a cui è destinata l'app dispongano anche della configurazione dell'app necessaria prevista per i gruppi. |
+| Le licenze VPP dei dispositivi sono applicabili solo per dispositivi iOS 9.0+. (0x87d13b69) | Aggiornare i dispositivi iOS interessati a iOS 9.0+. |
+| L'applicazione è installata nel dispositivo, ma non è gestita. (0x87d13b8f) | Questo errore si verifica solo nelle app line-of-business. L'app è stata installata al di fuori di Intune. Per risolvere questo errore, disinstallare l'app dal dispositivo. Al successivo avvio della sincronizzazione del dispositivo, il dispositivo deve installare l'app da Intune. |
+| La gestione dell'app è stata rifiutata dall'utente (0x87d13b68) | Richiedere all'utente di accettare la gestione delle app. |
 | Errore sconosciuto. (0x87d1279d) | Questo errore si verifica nelle app dello store iOS, ma lo scenario di errore è sconosciuto. |
-| Non è stato possibile aggiornare la versione più recente dell'app da una versione precedente. (0x87D13B9D) | Questo messaggio di errore viene visualizzato se l'app è installata e gestita ma con la versione non corretta del dispositivo. Questa situazione include quando un dispositivo ha ricevuto un comando per aggiornare un'app, ma la nuova versione non è ancora stata installata e restituita. Questo errore viene segnalato per la prima archiviazione di un dispositivo dopo la distribuzione dell'aggiornamento e si verificherà fino a quando il dispositivo non segnala che la nuova versione è installata o non riesce a causa di un errore diverso.  |
+| Non è stato possibile eseguire l'aggiornamento alla versione più recente dell'app da una versione precedente. (0x87D13B9D) | Questo messaggio di errore viene visualizzato se l'app è installata e gestita ma con la versione non corretta nel dispositivo. Questa situazione include quando un dispositivo ha ricevuto un comando per aggiornare un'app, ma la nuova versione non è ancora stata installata e segnalata. Questo errore viene segnalato per la prima sincronizzazione di un dispositivo dopo la distribuzione dell'aggiornamento e si verificherà fino a quando il dispositivo non segnala che la nuova versione è installata o non riesce a causa di un errore diverso.  |
 
 
-### <a name="other-installation-errors"></a>Altri errori di installazione
+## <a name="other-installation-errors"></a>Altri errori di installazione
 
 |  Messaggio di errore/codice  |  Descrizione  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -173,7 +171,7 @@ Questa sezione menziona sia l'amministratore del dispositivo che la registrazion
 |  0x80073CF3  |  Non è stato possibile completare la convalida dell'aggiornamento, delle dipendenze o dei conflitti per il pacchetto. Cause possibili:<ul><li> Il pacchetto in arrivo è in conflitto con un pacchetto installato.</li><li> Non è possibile trovare una dipendenza pacchetto specificata.</li><li> Il pacchetto non supporta l'architettura del processore corretta.</li></ul> Per informazioni, controllare il registro eventi **AppXDeployment-Server**. Per altre informazioni, vedere [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Risoluzione dei problemi di creazione di pacchetti, distribuzione e query delle app di Windows Store).  |
 |  0x80073CFB  |  Il pacchetto fornito è già installato, pertanto la reinstallazione del pacchetto è stata bloccata. Questo errore può verificarsi se si installa un pacchetto che non è identico al pacchetto già installato. Verificare che anche la firma digitale faccia parte del pacchetto. Quando un pacchetto viene ricompilato o firmato di nuovo, nel confronto bit per bit tale pacchetto non è più identico a quello installato in precedenza. Per questo problema sono disponibili due soluzioni:<ul><li> Incrementare il numero di versione dell'app, quindi ricompilare e firmare nuovamente il pacchetto.</li><li> Rimuovere il pacchetto precedente per ogni utente del sistema prima di installare quello nuovo.</li></ul> Per altre informazioni, vedere [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Risoluzione dei problemi di creazione di pacchetti, distribuzione e query delle app di Windows Store).  |
 |  0x87D1041C  |  L'installazione dell'applicazione è stata completata ma non viene rilevata l'applicazione. L'app è stata distribuita da Intune e successivamente disinstallata. I motivi per cui l'app è stata disinstallata includono:<ul><li> L'utente finale ha disinstallato l'app.</li><li> Le informazioni sull'identità nel pacchetto non corrispondono a quelle segnalate dal dispositivo per le app non valide.</li><li>Per le app MSI con aggiornamento automatico, la versione del prodotto non corrisponde alle informazioni dell'app dopo l'aggiornamento al di fuori di Intune.</li></ul> Chiedere all'utente di reinstallare l'app dal portale aziendale. Si noti che le app necessarie verranno reinstallate automaticamente al successivo accesso del dispositivo.  |
-|  0x8000FFFF  |  Errore imprevisto durante l'installazione. Per ulteriori informazioni, controllare i registri di installazione.  |
+|  0x8000FFFF  |  Errore imprevisto durante l'installazione. Per altre informazioni, controllare i log di installazione.  |
 
 ## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Risoluzione dei problemi delle app da Microsoft Store
 
@@ -182,11 +180,11 @@ Le informazioni nell'argomento [Troubleshooting packaging, deployment, and query
 ## <a name="app-troubleshooting-resources"></a>Risorse per la risoluzione dei problemi delle app
 - [Distribuzione di Visio e Project nell'ambito della distribuzione di Office Pro Plus](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
 - [Eseguire un'azione per assicurarsi che le app MSfB distribuite tramite Intune siano installate in Windows 10 1903](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
-- [Risoluzione dei problemi relativi alle distribuzioni di app MSI in Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
-- [Procedure consigliate per la distribuzione del software a Intune classico agente PC Windows](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+- [Risoluzione dei problemi delle distribuzioni di app MSI in Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [Procedure consigliate per la distribuzione del software all'agente PC Windows classico di Intune](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Per altre informazioni sulla risoluzione dei problemi di Intune, vedere [Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali](../fundamentals/help-desk-operators.md). 
-- È possibile ottenere informazioni sui problemi noti in Microsoft Intune. Per ulteriori informazioni, vedere la pagina relativa all' [esito positivo del cliente Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
+- È possibile ottenere informazioni sui problemi noti in Microsoft Intune. Per altre informazioni, vedere il blog [Intune Customer Success](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
 - È possibile ottenere altre informazioni. Vedere [Come ottenere supporto per Microsoft Intune](../fundamentals/get-support.md).

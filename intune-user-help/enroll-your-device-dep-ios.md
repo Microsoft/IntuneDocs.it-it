@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855511"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951466"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrare il dispositivo iOS fornito dall'organizzazione per la gestione
 
@@ -44,11 +44,7 @@ Se si usa un dispositivo iOS personale invece di un dispositivo fornito dall'org
 
 1. Accendere il dispositivo iOS.
 2. Dopo avere selezionato la **lingua**, connettere il dispositivo al Wi-Fi.
-3. Nella schermata **Set up iOS device** (Configura dispositivo iOS) scegliere:
-   - **Set up as new device** (Configura come nuovo dispositivo)
-   - **Restore from iCloud Backup** (Ripristina da backup iCloud)
-   - **Restore from iTunes Backup** (Ripristina da backup iTunes)
-
+3. Nella schermata **Set up iOS device** (Configura dispositivo iOS) scegliere **Set up as new device** (Configura come nuovo dispositivo).  
 4. Dopo la connessione al Wi-Fi, verrà visualizzata la schermata **Configuration** (Configurazione) contenente il messaggio **[Your Company] will automatically configure your device** ([Società] configurerà automaticamente il dispositivo).
 
    **Configuration allows [Your Company] to manage this device over the air (La configurazione consente a [società] di gestire il dispositivo in modalità wireless). An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely (Un amministratore può consentire di configurare gli account di posta elettronica e di rete, installare e configurare le app e gestire le impostazioni in modalità remota). An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device** (Un amministratore può disattivare le funzionalità, installare e rimuovere app, monitorare e limitare il traffico Internet e cancellare in remoto il dispositivo).
