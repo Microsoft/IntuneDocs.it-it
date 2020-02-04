@@ -6,7 +6,7 @@
     - name: Panoramica sulla protezione del dispositivo
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Guida introduttiva
+- name: Guide introduttive
   items:
     - name: Creare criteri di conformità dei dispositivi
       href: quickstart-set-password-length-android.md
@@ -167,7 +167,7 @@
           href: security-baselines.md
         - name: Monitorare le baseline
           href: security-baselines-monitor.md
-    - name: Endpoint Protection
+    - name: Protezione degli endpoint
       href: endpoint-protection-configure.md
     - name: Controllo di accesso alla rete
       href: network-access-control-integrate.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Risolvere i problemi del connettore di certificati
           href: troubleshoot-certificate-connector-events.md
+        - name: Risolvere i problemi relativi ai profili di certificato SCEP
+          items:
+            - name: Risolvere i problemi relativi ai profili di certificato SCEP
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Distribuzione del profilo nei dispositivi
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Comunicazioni tra dispositivo e NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: Operazioni NDES
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Recapito dei certificati ai dispositivi
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Creazione di report per la distribuzione dei certificati
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Risolvere i problemi di Exchange Connector
           items:
             - name: Risolvere i problemi di Exchange Connector

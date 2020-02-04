@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760968"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912634"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
 
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 Il supporto Mainstream di Microsoft per Windows Phone 8.1 è terminato a luglio 2017 e il supporto "Extended" è terminato a giugno 2019. L'app Portale aziendale per Windows Phone 8.1 è inattiva da ottobre 2017. Microsoft Intune terminerà ora il supporto per Windows Phone 8.1 il 20 febbraio 2020.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Dopo il 20 febbraio 2020 questi dispositivi non riceveranno aggiornamenti della sicurezza e non sarà possibile registrare nuovi dispositivi. I dispositivi Windows Phone 8.1 esistenti rimarranno registrati (criteri, app, reporting). Si noti però che dopo tale data non sarà supportata la risoluzione dei problemi di una registrazione esistente, poiché molti componenti, ad esempio i certificati di terze parti, hanno già terminato il supporto per la piattaforma. Intune interromperà i test di compatibilità con Intune e Windows Phone 8.1.
+Dopo il 20 febbraio 2020 questi dispositivi non riceveranno aggiornamenti della sicurezza e non sarà possibile registrare nuovi dispositivi. I dispositivi Windows Phone 8.1 esistenti rimarranno registrati (criteri, app, report). Si noti però che dopo tale data non sarà supportata la risoluzione dei problemi di una registrazione esistente, poiché per molti componenti, ad esempio i certificati di terze parti, è già terminato il supporto per la piattaforma. Intune interromperà i test di compatibilità con Intune e Windows Phone 8.1.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 È possibile controllare i report di Intune per vedere quali dispositivi o utenti potrebbero essere interessati. Andare a Dispositivi > Tutti i dispositivi e filtrare in base al sistema operativo. È possibile aggiungere altre colonne per facilitare l'identificazione degli utenti dell'organizzazione che hanno dispositivi che eseguono Windows Phone 8.1. Richiedere agli utenti finali di aggiornare i dispositivi a una versione supportata del sistema operativo.
@@ -75,22 +75,8 @@ Per garantire una transizione ottimale da Intune Managed Browser a Microsoft Edg
 Il supporto delle clip Web in iOS e Android sarà disponibile a breve. Dopo il rilascio del supporto, sarà necessario reimpostare la destinazione delle clip Web preesistenti, per garantire che vengano aperte in Microsoft Edge anziché in Managed Browser. 
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
-Per altre informazioni vedere i documenti relativi all'[uso di Microsoft Edge con i criteri di protezione delle app](../apps/manage-microsoft-edge.md) o visualizzare il [post del blog sul supporto](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+Per altre informazioni vedere la documentazione relativa all'[uso di Microsoft Edge con i criteri di protezione delle app](../apps/manage-microsoft-edge.md) o visualizzare il [post del blog sul supporto](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Modifica prevista: Nuova esperienza di registrazione dei dispositivi Android Enterprise dedicati in Intune<!--5198878-->
-Con la versione di novembre o 1911 di Intune, viene aggiunto il supporto per la distribuzione del certificato dispositivo SCEP ai dispositivi Android Enterprise dedicati per abilitare l'accesso basato su certificati ai profili Wi-Fi. Questa modifica comporta anche alcune modifiche secondarie del flusso durante la registrazione dei dispositivi Android Enterprise dedicati.
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Se si gestiscono dispositivi Android Enterprise dedicati nell'ambiente in uso, si inizieranno a vedere alcune modifiche implementate a novembre.
-
-- Per le nuove registrazioni di dispositivi Android Enterprise dedicati: Gli utenti finali visualizzeranno una procedura diversa nei dispositivi durante la registrazione. La registrazione continuerà a essere eseguita nello stesso modo (con QR, NFC, Zero Touch o identificatore dispositivo), ma dopo la versione del servizio di novembre sarà presente un passaggio obbligatorio per l'installazione dell'app.
-- Per i dispositivi Android esistenti registrati come dispositivi dedicati: Intune avvierà l'installazione automatica dell'app Microsoft Intune nei dispositivi a partire dall'inizio di novembre. Non è necessario eseguire alcuna operazione. L'app verrà scaricata e installata automaticamente nei dispositivi. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Come prepararsi a questo cambiamento?
-È consigliabile pianificare l'aggiornamento delle linee guida per gli utenti finali e informare il supporto tecnico di questa modifica. Fare clic su Informazioni aggiuntive per altri dettagli e schermate. La pagina delle novità verrà aggiornata quando questa modifica inizierà a essere implementata.
-
-#### <a name="additional-information"></a>Informazioni aggiuntive
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Termine del supporto per la gestione dei PC legacy
 
