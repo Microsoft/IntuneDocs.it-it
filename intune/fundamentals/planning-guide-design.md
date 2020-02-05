@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885790"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886737"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -308,7 +308,10 @@ I profili Wi-Fi vengono usati per connettere automaticamente un dispositivo mobi
 
 Di seguito è riportato un esempio di progettazione di un profilo Wi-Fi:
 
-| **Digitare** | **Nome profilo** | **Piattaforma dispositivo** | **Casi d'uso** | | Wi-Fi | Profilo Asia Wi-Fi | Android | Aziendale, BYOD Area Asia | | Wi-Fi | Profilo Wi-Fi America del Nord | Android, iOS, Windows 10 Mobile | Aziendale, BYOD Area America del Nord |
+| **Tipo** | **Nome profilo** | **Piattaforma per i dispositivi** | **Casi d'uso** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | Profilo Wi-Fi Asia | Android | Aziendale, BYOD Asia|
+| Wi-Fi | Profilo Wi-Fi America del Nord | Android, iOS, Windows 10 Mobile | Aziendale, BYOD America del Nord |
 
 Per determinare le esigenze specifiche a livello di profili Wi-Fi, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 

@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912634"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966360"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Funzionalità aggiornata: Nuovo ruolo del controllo degli accessi in base al ruolo in Intune<!--4253397-->
-Nell'aggiornamento del servizio Intune di gennaio è previsto il rilascio di un nuovo ruolo di sicurezza in Intune. Questo ruolo verrà elencato come "Endpoint Security Manager" (Gestore sicurezza endpoint) in Intune ed è un'espansione del ruolo "Amministratore della sicurezza" di Azure Active Directory.
- 
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Attualmente in Azure Active Directory sono disponibili tre ruoli per i professionisti della sicurezza:
-- Ruolo con autorizzazioni di lettura per la sicurezza in Azure AD che consente l'accesso in sola lettura a Intune.
-- Ruolo Operatore per la sicurezza in Azure AD che consente l'accesso in sola lettura a Intune.
-- Amministratore della sicurezza in Azure AD. Nell'aggiornamento di gennaio di Intune, oltre alle autorizzazioni di sola lettura per Intune, le nuove autorizzazioni incluse nel ruolo Endpoint Security Manager (Gestione sicurezza endpoint) sono le seguenti:
-    - Read, Create, Update, Delete, and Assign Device Compliance Policies (Lettura, Creazione, Aggiornamento, Eliminazione e Assegnazione di criteri di conformità del dispositivo)
-    - Read, Delete, and Update Managed devices (Lettura, Eliminazione e Aggiornamento di dispositivi gestiti)
-    - Read, Create, Update, Delete, and Assign Security baselines (Lettura, Creazione, Aggiornamento, Eliminazione e Assegnazione di baseline di sicurezza)
-    - Read and Update Security tasks (Lettura e Aggiornamento delle attività di sicurezza)
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
-Esaminare oggi stesso i ruoli di controllo degli accessi in base al ruolo di Intune. Se al momento l'unico ruolo disponibile è Amministratori globali, non sono necessarie modifiche. Se si usano i ruoli e si vuole disporre della granularità offerta da Endpoint Security Manager (Gestore sicurezza endpoint), assegnare tale ruolo quando diventa disponibile. Per informazioni aggiornate sulla versione di Intune, vedere la pagina [Novità](../fundamentals/whats-new.md) di Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>È stata aggiornata l'informativa di supporto per l'app per dispositivi mobili 'Adobe Acrobat Reader per Intune'<!--5746776-->
 Nel documento MC188653 della fine di agosto è stato comunicato che l'app per dispositivi mobili Adobe Acrobat Reader per Intune stava avvicinandosi alla scadenza dell'1 dicembre 2019 e che Adobe prevedeva di includere il supporto dei criteri di protezione delle app di Intune all'interno dell'app Acrobat Reader principale. Da allora, abbiamo ricevuto il feedback dei clienti che richiedeva più tempo per continuare a consentire agli amministratori IT di impostare l'app come destinazione e agli utenti finali di iniziare a usare Adobe Acrobat Reader per Intune. Considerato l'utilizzo elevato di Adobe Acrobat Reader per Intune nei dispositivi degli utenti finali e la sua importanza negli scenari aziendali, vogliamo assicurarci che qualsiasi esperienza soddisfi le esigenze di protezione delle app dell'organizzazione. 
