@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920067"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754576"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -53,7 +53,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Blocca gli aggiornamenti PKI in modalità wireless**: **Blocca** impedisce agli utenti di ricevere gli aggiornamenti software a meno che il dispositivo non sia connesso a un computer. **Non configurato** (impostazione predefinita): consente a un dispositivo di ricevere gli aggiornamenti software senza essere connesso a un computer.
 - **Limita il rilevamento annunci**: scegliere **Limita** per disabilitare l'identificatore di annunci pubblicitari del dispositivo. **Non configurato** (impostazione predefinita) lo mantiene abilitato.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Modifica delle impostazioni di invio dei dati di diagnostica**: **Blocca** impedisce all'utente di modificare le impostazioni di invio dei dati di diagnostica e di analisi delle app in **Diagnostica e utilizzo** (impostazioni del dispositivo). **Non configurato** (impostazione predefinita) consente all'utente di modificare queste impostazioni del dispositivo.
 
@@ -93,7 +93,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Modifiche al profilo di configurazione**: **Blocca** impedisce di apportare modifiche al profilo di configurazione nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di installare profili di configurazione.
 - **Blocco attivazione**: scegliere **Consenti** per abilitare il blocco attivazione su dispositivi iOS con supervisione. Blocco attivazione rende più difficile la riattivazione di un dispositivo perso o rubato.
 - **Blocca la rimozione di app**: scegliere **Blocca** per impedire agli utenti di rimuovere app. **Non configurato** (impostazione predefinita) consente agli utenti di rimuovere le app dal dispositivo.
-- **Consenti gli accessori USB durante il blocco del dispositivo**: selezionando **Consenti** gli accessori USB sono autorizzati a scambiare dati con un dispositivo che è rimasto bloccato per più di un'ora. **Non configurato** (impostazione predefinita): la modalità con restrizioni USB non viene aggiornata nel dispositivo e agli accessori USB verrà impedito di trasferire i dati dal dispositivo se rimane bloccato per più di un'ora.
+- **Consenti gli accessori USB durante il blocco del dispositivo**: Selezionando **Consenti** gli accessori USB sono autorizzati a scambiare dati con un dispositivo che è rimasto bloccato per più di un'ora. **Non configurato** (impostazione predefinita): la modalità con restrizioni USB non viene aggiornata nel dispositivo e agli accessori USB verrà impedito di trasferire i dati dal dispositivo se rimane bloccato per più di un'ora.
 - **Imponi data e ora automatiche**: **Rendi obbligatorio** impone ai dispositivi con supervisione di impostare la data e l'ora automaticamente. Il fuso orario del dispositivo viene aggiornato quando il dispositivo dispone di connessioni alla rete cellulare o Wi-Fi con i servizi di posizione abilitati.
 - **Richiedi agli studenti di chiedere l'autorizzazione per lasciare un corso Classroom**: **Rendi obbligatorio** impone agli studenti registrati in un corso non gestito che usa l'app Classroom di richiedere l'autorizzazione al docente per lasciare il corso. **Non configurato** (impostazione predefinita) non impone agli studenti di richiedere l'autorizzazione.
 
@@ -167,7 +167,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   **Opzioni iOS**:  
 
-  - **Non configurato** (impostazione predefinita): Intune non modifica questa impostazione.
+  - **Non configurato** (impostazione predefinita): l'impostazione non viene considerata da Intune.
   - **Immediatamente**: lo schermo si blocca dopo 30 secondi di inattività.
   - **1**: lo schermo si blocca dopo 1 minuto di inattività.
   - **2**: lo schermo si blocca dopo 2 minuti di inattività.
@@ -177,7 +177,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
     
   **Opzioni iPadOS**:  
 
-  - **Non configurato** (impostazione predefinita): Intune non modifica questa impostazione.
+  - **Non configurato** (impostazione predefinita): l'impostazione non viene considerata da Intune.
   - **Immediatamente**: lo schermo si blocca dopo 2 minuti di inattività.
   - **2**: lo schermo si blocca dopo 2 minuti di inattività.
   - **5**: lo schermo si blocca dopo 5 minuti di inattività.
@@ -191,14 +191,14 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Scadenza password (giorni)** : immettere il numero di giorni che devono trascorrere prima che sia necessario cambiare la password del dispositivo.
 - **Impedisci riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo.
-- **Sblocco di Touch ID e Face ID**: scegliere **Blocca** per impedire l'uso di un'impronta digitale o del riconoscimento facciale per sbloccare il dispositivo. **Non configurato** consente all'utente di sbloccare il dispositivo con questi metodi.
+- **Sblocco di Touch ID e Face ID**: scegliere **Blocca** per impedire l'uso di un'impronta digitale o del riconoscimento del volto per sbloccare il dispositivo. **Non configurato** consente all'utente di sbloccare il dispositivo con questi metodi.
 
   Il blocco di questa impostazione impedisce anche l'uso dell'autenticazione FaceID per sbloccare il dispositivo.
 
   Face ID si applica a:  
   - iOS 11.0 e versioni successive
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Modifica del passcode**: scegliere **Blocca** per impedire la modifica, l'aggiunta o la rimozione del passcode. Le modifiche alle restrizioni del passcode vengono ignorate nei dispositivi con supervisione dopo il blocco di questa funzionalità. **Non configurato** (impostazione predefinita) consente l'aggiunta, la modifica o la rimozione dei passcode.
 
@@ -223,7 +223,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
   
-<sup>1</sup>Quando si configurano le impostazioni **Numero massimo di minuti di inattività fino al blocco dello schermo** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo cinque minuti e il dispositivo viene bloccato dopo altri cinque minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio il dispositivo viene bloccato cinque minuti dopo che l'utente spegne lo schermo.
+<sup>1</sup> Quando si configurano le impostazioni **Numero massimo di minuti di inattività fino al blocco dello schermo** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo cinque minuti e il dispositivo viene bloccato dopo altri cinque minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio il dispositivo viene bloccato cinque minuti dopo che l'utente spegne lo schermo.
 
 ## <a name="locked-screen-experience"></a>Esperienza della schermata di blocco
 
@@ -247,13 +247,13 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   > [!NOTE]
   > Quando questa impostazione è bloccata, vengono bloccate anche le tastiere di terze parti installate dall'App Store.
 
-  - **Consenti alle app non gestite di leggere da contatti in account di contatti gestiti**: quando questa opzione è impostata su **Consenti**, le app non gestite, come l'app Contatti di iOS predefinita, possono leggere e accedere alle informazioni dei contatti dalle app gestite, inclusa l'app per dispositivi mobili Outlook. **Non configurato** (impostazione predefinita) impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.  
+  - **Consenti alle app gestite di leggere da contatti in account di contatti non gestiti**: quando questa opzione è impostata su **Consenti**, le app non gestite, come l'app Contatti di iOS predefinita, possono leggere e accedere alle informazioni dei contatti dalle app gestite, inclusa l'app per dispositivi mobili Outlook. **Non configurato** (impostazione predefinita) impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.  
   
     Questa impostazione consente o impedisce la lettura delle informazioni dei contatti. Non controlla la sincronizzazione dei contatti tra le app.
   
     Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
 
-  Per altre informazioni su queste due impostazioni e sull'effetto sulla sincronizzazione per l'esportazione dei contatti di Outlook per iOS, vedere [Suggerimento per il supporto: usare le impostazioni del profilo personalizzato di Intune con l'app Contatti nativa di iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Per altre informazioni su queste due impostazioni e sull'effetto che producono sulla sincronizzazione per l'esportazione dei contatti di Outlook per iOS, vedere [Suggerimento per il supporto: usare le impostazioni del profilo personalizzato di Intune con l'app Contatti nativa di iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **Considera AirDrop come destinazione non gestita**: **Rendi obbligatorio** forza la considerazione di AirDrop come obiettivo di rilascio non gestito. Impedisce alle app gestite di inviare dati tramite Airdrop. 
 - **Visualizzazione di documenti non aziendali nelle app aziendali**: **Blocca** impedisce la visualizzazione di documenti non aziendali in app aziendali. **Non configurato** (impostazione predefinita) consente di visualizzare qualsiasi documento nelle app aziendali gestite.
@@ -271,7 +271,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Area classificazioni**: scegliere l'area di classificazioni da usare per i download consentiti. Scegliere quindi le classificazioni consentite per **Film**, **Programmi TV** e **App**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **App Store**: **Blocca** impedisce l'accesso all'App Store nei dispositivi con supervisione. L'impostazione **Non configurata** (predefinita) consente l'accesso.
 
@@ -289,11 +289,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Game Center**: **Blocca** impedisce l'uso dell'app Game Center. **Non configurato** (impostazione predefinita) consente l'uso dell'app Game Center nel dispositivo.
-- **Gioco multiplayer**: scegliere **Blocca** per impedire il gioco multiplayer. **Non configurato** (impostazione predefinita) consente all'utente di partecipare a giochi multiplayer nel dispositivo.
+- **Gioco multiplayer**: scegliere **Blocca** per bloccare la modalità di gioco multiplayer. **Non configurato** (impostazione predefinita) consente all'utente di partecipare a giochi multiplayer nel dispositivo.
 
   A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
-- **Accesso all'unità di rete nell'app File**: usando il protocollo SMB (Server Message Block), i dispositivi possono accedere a file o altre risorse in un server di rete. **Disabilita** impedisce l'accesso ai file in un'unità SMB di rete. L'impostazione **Non configurata** (predefinita) consente l'accesso.
+- **Accesso all'unità di rete nell'app File**: usando il protocollo SMB (Server Message Block), i dispositivi possono accedere a file o ad altre risorse in un server di rete. **Disabilita** impedisce l'accesso ai file in un'unità SMB di rete. L'impostazione **Non configurata** (predefinita) consente l'accesso.
 
   Questa funzionalità si applica a:  
   - iOS e iPadOS 13.0 e versioni successive
@@ -321,7 +321,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Popup di Safari**: **Blocca** disabilita il blocco popup nel Web browser. **Non configurato** (impostazione predefinita) consente il blocco popup.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla fotocamera del dispositivo.
 
@@ -355,7 +355,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   Questa funzionalità si applica a:  
   - iOS 13.0 e iPadOS 13.0 e versioni successive
 
-- **Trova i miei amici**: **Non configurato** (impostazione predefinita) consente di usare la funzionalità dell'app Trova il mio per individuare familiari e amici da un dispositivo Apple o da iCloud.com. **Blocca** impedisce questa funzionalità nell'app Trova il mio.
+- **Trova i miei amici**: **Non configurato** (impostazione predefinita) consente di usare la funzionalità dell'app Trova il mio per trovare familiari e amici da un dispositivo Apple o da iCloud.com. **Blocca** impedisce questa funzionalità nell'app Trova il mio.
 
   Questa funzionalità si applica a:  
   - iOS 13.0 e iPadOS 13.0 e versioni successive
@@ -401,7 +401,7 @@ Per aggiungere app a questi elenchi, è possibile:
 
 Si applica ai dispositivi che eseguono iOS 9.3 o versioni successive.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Tipo di elenco di app**: consente di creare un elenco di app da mostrare o nascondere. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094). Le opzioni disponibili sono:
 
@@ -454,7 +454,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
   - **Blocca l'uso della rete dati**: consente di bloccare l'uso della rete dati selezionando **Tutte le app gestite** oppure **Scegliere app specifiche**.
   - **Blocca l'uso della rete dati durante il roaming**: consente di bloccare l'uso della rete dati durante il roaming selezionando **Tutte le app gestite** oppure **Scegliere app specifiche**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Modifiche alle impostazioni dell'utilizzo della rete dati dell'app**: scegliere **Blocca** per impedire di apportare modifiche alle impostazioni di utilizzo della rete dati dell'app. **Non configurato** (impostazione predefinita) consente all'utente di controllare le app che possono usare la rete dati.
 - **Modifiche alle impostazioni del piano per telefoni cellulari**: **Blocca** impedisce agli utenti di modificare le impostazioni nel piano cellulare. **Non configurato** (impostazione predefinita) consente agli utenti di apportare modifiche.
@@ -492,7 +492,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
 - **Richiedi la password associata alle richieste AirPlay in uscita**: **Rendi obbligatorio** richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple. **Non configurato** (impostazione predefinita) consente all'utente di trasmettere i contenuti con AirPlay senza immettere una password.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **AirDrop**: **Blocca** impedisce l'uso di AirDrop nel dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della funzionalità AirDrop per scambiare contenuti con dispositivi vicini.
 - **Associazione di Apple Watch**: **Blocca** impedisce l'associazione con un Apple Watch. **Non configurato** (impostazione predefinita) consente al dispositivo l'associazione con un Apple Watch.
@@ -514,7 +514,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Ricerca della definizione della parola**: **Blocca** impedisce all'utente di evidenziare una parola e quindi di cercarne la definizione nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla funzionalità di ricerca della definizione.
 - **Tastiere predittive**: **Non configurato** (impostazione predefinita) consente l'uso di tastiere predittive per suggerire le parole che l'utente potrebbe voler scrivere. **Blocca** impedisce questa funzionalità.
@@ -543,7 +543,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 - **Flusso di foto condivise**: scegliere **Blocca** per disabilitare **Condivisione foto di iCloud** nel dispositivo. **Non configurato** (impostazione predefinita) consente lo streaming di foto condivise.
 - **Handoff**: **Non configurato** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o macOS. **Blocca** impedisce l'handoff.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Backup in iCloud**: **Non configurato** (impostazione predefinita) consente all'utente di eseguire il backup del dispositivo in iCloud. **Blocca** impedisce all'utente di eseguire il backup del dispositivo in iCloud.
 
@@ -561,7 +561,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
 Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano specifiche app in modalità app singola autonoma. Quando è configurata questa modalità e l'app viene eseguita, il dispositivo è bloccato e può eseguire solo tale app. Ad esempio, aggiungere un'app che consente agli utenti di eseguire un test nel dispositivo. Quando le azioni dell'app sono state completate o si rimuovono questi criteri, il dispositivo torna allo stato normale.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Nome app**: immettere il nome dell'app desiderata.
 - **ID bundle dell'app**: immettere l'[ID bundle](bundle-ids-built-in-ios-apps.md) dell'app desiderata.
@@ -571,7 +571,7 @@ Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano
 
 ## <a name="kiosk"></a>Modalità tutto schermo
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **App da eseguire in modalità tutto schermo**: scegliere il tipo di app da eseguire in modalità tutto schermo. Le opzioni disponibili sono:
   - **Non configurato** (impostazione predefinita): le impostazioni della modalità tutto schermo non vengono applicate. Il dispositivo non viene eseguito in modalità tutto schermo.
@@ -623,7 +623,7 @@ Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano
 
 - **Domini Web gestiti** > **URL del dominio Web**: aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dai domini immessi, sono considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (con supervisione)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Domini con compilazione automatica della password di Safari** > **URL del dominio**: Aggiungere uno o più URL all'elenco. Gli utenti possono salvare solo le password Web dagli URL in questo elenco. Questa impostazione si applica solo al browser Safari e ai dispositivi in modalità con supervisione. Se non si specificano URL, è possibile salvare le password da tutti i siti Web.
 
@@ -636,7 +636,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 
 - Blocco dell'app (modalità app singola) 
 - Proxy HTTP globale 
-- Bypass del blocco attivazione 
+- Disabilitare Blocco attivazione 
 - Modalità applicazione singola autonoma 
 - Filtro contenuto Web 
 - Impostazione dello sfondo e della schermata di blocco 

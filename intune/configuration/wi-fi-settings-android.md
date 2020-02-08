@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 01/24/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a9bd1691b7943f02c9577e962fb1bcd5d9cf40a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585323"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754559"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android in Microsoft Intune
 
 È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione in rete, l'aggiunta di un certificato PKS o SCEP e altro ancora.
 
-Queste impostazioni Wi-Fi sono divise in due categorie: impostazioni di base e impostazioni di livello enterprise.
+Queste impostazioni Wi-Fi sono suddivise in due categorie: impostazioni di base e impostazioni di livello enterprise.
 
 Questo articolo descrive queste impostazioni.
 
@@ -38,30 +38,43 @@ Questo articolo descrive queste impostazioni.
 
 ## <a name="basic"></a>Basic
 
-- **Tipo Wi-Fi**: scegliere **Base**.
-- **SSID**: immettere l' **identificatore del set di servizi**, ovvero il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il **nome di rete** configurato in precedenza.
+- **Tipo Wi-Fi**: Scegliere **Basic**.
+- **SSID**: immettere l'**identificatore del set di servizi**, ovvero il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il **nome di rete** configurato in precedenza.
 - **Rete nascosta**: scegliere **Abilita** per nascondere questa rete dall'elenco delle reti disponibili nel dispositivo. L'identificatore SSID non viene trasmesso. Scegliere **Disabilita** per visualizzare questa rete nell'elenco delle reti disponibili nel dispositivo.
 
 ## <a name="enterprise"></a>Enterprise
 
 - **Tipo Wi-Fi**: scegliere **Enterprise**.
-- **SSID**: immettere l' **identificatore del set di servizi**, ovvero il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il **nome di rete** configurato in precedenza.
+- **SSID**: immettere l'**identificatore del set di servizi**, ovvero il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il **nome di rete** configurato in precedenza.
 - **Rete nascosta**: scegliere **Abilita** per nascondere questa rete dall'elenco delle reti disponibili nel dispositivo. L'identificatore SSID non viene trasmesso. Scegliere **Disabilita** per visualizzare questa rete nell'elenco delle reti disponibili nel dispositivo.
-- **Tipo EAP**: scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette. Le opzioni disponibili sono: 
+- **Tipo EAP**: scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette. Le opzioni disponibili sono:
 
-  - **EAP-TLS**: immettere anche:
+  - **EAP-TLS**: Specificare anche:
 
-    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Autentica la connessione.
+    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo del certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Viene usato per autenticare la connessione.
 
     - **Autenticazione client** - **Certificato client per l'autenticazione client (certificato di identità)** : scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
-    - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+    - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
-  - **EAP-TTLS**: immettere anche:
+    - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
 
-    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Autentica la connessione.
+      - **Nessuno**: il server proxy non viene usato.
+      - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
 
-    - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
+    - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
+
+      - Un indirizzo IP. Ad esempio: `10.0.0.11`
+      - Un URL. Ad esempio, `http://proxyserver.contoso.com`
+      - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
+
+      Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
+
+  - **EAP-TTLS**: Specificare anche:
+
+    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo del certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Viene usato per autenticare la connessione.
+
+    - **Autenticazione client**: selezionare un **metodo di autenticazione**. Le opzioni disponibili sono:
 
       - **Nome utente e password**: richiedere all'utente di specificare nome utente e password per autenticare la connessione. Specificare anche:
         - **Metodo non EAP (identità interna)** : scegliere la modalità di autenticazione della connessione. Assicurarsi di scegliere lo stesso protocollo configurato nella rete Wi-Fi. Le opzioni disponibili sono:
@@ -73,13 +86,26 @@ Questo articolo descrive queste impostazioni.
 
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
-      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
-  - **PEAP**: immettere anche:
+    - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
 
-    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo di certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Autentica la connessione.
+      - **Nessuno**: il server proxy non viene usato.
+      - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
 
-    - **Autenticazione client**: scegliere un **metodo di autenticazione**. Le opzioni disponibili sono:
+    - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
+
+      - Un indirizzo IP. Ad esempio: `10.0.0.11`
+      - Un URL. Ad esempio, `http://proxyserver.contoso.com`
+      - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
+
+      Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
+
+  - **PEAP**: Specificare anche:
+
+    - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo del certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Viene usato per autenticare la connessione.
+
+    - **Autenticazione client**: selezionare un **metodo di autenticazione**. Le opzioni disponibili sono:
 
       - **Nome utente e password**: richiedere all'utente di specificare nome utente e password per autenticare la connessione. Specificare anche:
         - **Metodo non EAP per l'autenticazione (identità interna)** : scegliere la modalità di autenticazione della connessione. Assicurarsi di scegliere lo stesso protocollo configurato nella rete Wi-Fi. Le opzioni disponibili sono:
@@ -89,7 +115,20 @@ Questo articolo descrive queste impostazioni.
 
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
-      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato nella risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+      - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
+
+      - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
+
+        - **Nessuno**: il server proxy non viene usato.
+        - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
+
+      - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
+
+        - Un indirizzo IP. Ad esempio: `10.0.0.11`
+        - Un URL. Ad esempio, `http://proxyserver.contoso.com`
+        - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
+
+        Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653938"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912676"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -41,7 +41,6 @@ Per altre informazioni sullo strumento di wrapping delle app per i criteri di pr
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivi per usare lo strumento di wrapping delle app
 
 * L'app non ha funzionalità per la protezione dei dati incorporate
-* L'app è semplice
 * L'app è distribuita internamente
 * Non si ha accesso al codice sorgente dell'app.
 * Non si è lo sviluppatore dell'app
@@ -63,7 +62,6 @@ Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'intr
 ### <a name="reasons-to-use-the-sdk"></a>Motivi per usare l'SDK
 
 * L'app non ha funzionalità per la protezione dei dati incorporate
-* L'app è complessa e contiene numerose esperienze
 * L'app è distribuita a un App Store pubblico, ad esempio Google Play o l'App Store Apple
 * Si è uno sviluppatore di app e si ha il background tecnico per l'uso dell'SDK
 * L'app ha altre integrazioni dell'SDK
@@ -76,13 +74,13 @@ Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'intr
 |**iOS**|Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
 |**Android**| Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Se non si usa una piattaforma di sviluppo di app sopra indicata,
+## <a name="not-using-an-app-development-platform-listed-above"></a>Non si usa una di queste piattaforme per lo sviluppo di app?
 
 Il team di sviluppo di Intune SDK verifica e gestisce attivamente il supporto per le app compilate con la piattaforme native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Anche se alcuni clienti sono riusciti a integrare Intune SDK con altre piattaforme, ad esempio React Native e NativeScript, Microsoft non offre linee guida o plug-in specifici per gli sviluppatori di app che usano piattaforme diverse da quelle supportate da Microsoft. 
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
 
-Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
+Questa tabella elenca le impostazioni abilitate se un'app usa App SDK o App Wrapping Tool. Alcune funzionalità richiedono agli sviluppatori di app di applicare una logica esterna all'integrazione di base con Intune SDK e, pertanto, non sono abilitate se l'app usa App Wrapping Tool. 
 
 |Funzionalità|App SDK|Strumento di wrapping delle app|
 |-----------|---------------------|-----------|
@@ -107,7 +105,7 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Cancellazione completa dei dati delle app|X|X|
 |Cancellazione selettiva di dati aziendali e dell'istituto di istruzione in scenari con identità multiple <br><br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
 |Impedire "Salva con nome"|X||
-|Configurazione dell'applicazione di destinazione (o configurazione dell'app tramite il "canale MAM")|X||
+|Configurazione dell'applicazione di destinazione (o configurazione dell'app tramite il "canale MAM")|X|X|
 |Supportare più identità|X||
 |Stile personalizzabile |X|||
 |Connessioni VPN dell'applicazione su richiesta con Citrix mVPN|X|X| 
@@ -119,6 +117,11 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Richiedi un Intune SDK minimo per iOS (solo iOS)|X|X|
 |Attestazione del dispositivo SafetyNet (solo Android)|X|X|
 |Analisi delle minacce nelle app (solo Android)|X|X|
+|Richiedere il livello di rischio massimo di Mobile Threat Defense per il dispositivo del fornitore|X||
+|Configurare il contenuto delle notifiche dell'app per gli account dell'organizzazione|X|X|
+|Richiedere l'uso di tastiere approvate (solo Android)|X|X|
+|Richiedere i criteri di protezione dell'app (accesso condizionale)|X||
+|Richiedere l'approvazione dell'app client (accesso condizionale)|X||
 
 ## <a name="next-steps"></a>Passaggi successivi
 

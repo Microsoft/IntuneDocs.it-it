@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517559"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812324"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -39,8 +39,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 Queste impostazioni usano il [provider di servizi di configurazione dei criteri relativi ad ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), che elenca anche le edizioni di Windows supportate.
 
-- **App Store** (solo dispositivi mobili): l'impostazione predefinita **Non configurato** consente agli utenti finali di accedere all'App Store nei dispositivi mobili. **Blocca** impedisce l'uso dell'App Store.
-- **Aggiorna automaticamente le app dallo Store**: l'impostazione predefinita **Non configurato** consente l'aggiornamento automatico delle app installate da Microsoft Store. **Blocca** impedisce l'installazione automatica degli aggiornamenti.
+- **App Store** (solo dispositivi mobili): **Blocca** impedisce agli utenti finali di accedere all'App Store nei dispositivi mobili. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire agli utenti finali di accedere all'App Store.
+- **Aggiornamento automatico delle app dallo Store**: **Blocca** impedisce l'installazione automatica degli aggiornamenti da Microsoft Store. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire l'aggiornamento automatico delle app installate da Microsoft Store.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Installazione di app attendibile**: scegliere se è possibile installare app non Microsoft Store, operazione nota anche come sideload. Il termine sideload indica l'installazione e poi l'esecuzione e il test di un'app non certificata da Microsoft Store. Ad esempio, un'app interna usata solo dall'azienda. Le opzioni disponibili sono:
   - **Non configurato** (impostazione predefinita): Intune non modifica o aggiorna questa impostazione.
   - **Blocca**: impedisce il sideload. Non è possibile installare app non Microsoft Store.
@@ -51,16 +54,36 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
   - **Consenti**: consente la modalità sviluppatore e il sideload delle app.
 
   In [Abilitare il dispositivo per lo sviluppo](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) sono disponibili altre informazioni su questa funzionalità.
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Dati app utente condivisi**: scegliere **Consenti** per condividere i dati dell'applicazione tra utenti diversi dello stesso dispositivo e con altre istanze dell'app. L'impostazione **Non configurata** (predefinita) impedisce la condivisione dei dati con altri utenti e altre istanze della stessa app.
-- **Usa solo lo Store privato**: **Consenti** consente solo il download delle app da uno Store privato e non dallo Store pubblico, incluso un catalogo al dettaglio. L'impostazione **Non configurata** (predefinita) consente il download delle app da uno Store privato e da uno Store pubblico.
-- **Avvio di app originate dallo Store**: **Blocca** disabilita tutte le app preinstallate nel dispositivo o scaricate da Microsoft Store. L'impostazione **Non configurata** (predefinita) consente l'apertura di queste app.
-- **Installa i dati dell'app nel volume di sistema**: **Blocca** impedisce alle app di archiviare dati nel volume di sistema del dispositivo. L'impostazione **Non configurata** (predefinita) consente alle app di archiviare i dati nel volume del disco di sistema.
-- **Installa le app nell'unità di sistema**: **Blocca** impedisce l'installazione delle app nell'unità di sistema nel dispositivo. L'impostazione **Non configurata** (predefinita) consente l'installazione delle app nell'unità di sistema.
-- **Game DVR** (solo desktop): **Blocca** disabilita la registrazione e la trasmissione di giochi di Windows. L'impostazione **Non configurata** (predefinita) consente la registrazione e la trasmissione dei giochi.
+- **Dati app utente condivisi**: scegliere **Consenti** per condividere i dati dell'applicazione tra utenti diversi dello stesso dispositivo e con altre istanze dell'app. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe impedire la condivisione dei dati con altri utenti e altre istanze della stessa app.
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Usa solo lo Store privato**: **Consenti** consente solo il download delle app da uno Store privato e non dallo Store pubblico, incluso un catalogo al dettaglio. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire il download delle app da uno Store privato e da uno Store pubblico.
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Avvio di app originate dallo Store**: **Blocca** disabilita tutte le app preinstallate nel dispositivo o scaricate da Microsoft Store. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire l'apertura di queste app.
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **Installa i dati dell'app nel volume di sistema**: **Blocca** impedisce alle app di archiviare dati nel volume di sistema del dispositivo. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire alle app di archiviare i dati nel volume del disco di sistema.
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Installa le app nell'unità di sistema**: **Blocca** impedisce l'installazione delle app nell'unità di sistema nel dispositivo. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire l'installazione delle app nell'unità di sistema.
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR** (solo desktop): **Blocca** disabilita la registrazione e la trasmissione di giochi di Windows. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire la registrazione e la trasmissione di giochi.
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **App solo dallo Store**: questa impostazione determina l'esperienza utente quando gli utenti installano app da posizioni diverse da Microsoft Store. Le opzioni disponibili sono:
 
-  - **Non configurato** (impostazione predefinita): consente agli utenti finali di installare app da posizioni diverse da Microsoft Store, incluse le app definite in altre impostazioni di criteri.  
+  - **Non configurato** (impostazione predefinita): Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema operativo potrebbe consentire agli utenti finali di installare app da posizioni diverse da Microsoft Store, incluse le app definite in altre impostazioni di criteri.  
   - **Ovunque**: disattiva i consigli per le app e consente agli utenti di installare le app da qualsiasi percorso.  
   - **Solo Store**: impone agli utenti finali di installare le app solo da Microsoft Store.
   - **Consigli**: quando si installa un'app dal Web che è disponibile in Microsoft Store, gli utenti visualizzano un messaggio che consiglia il download dallo Store.  
@@ -68,11 +91,11 @@ Queste impostazioni usano il [provider di servizi di configurazione dei criteri 
 
   [Provider di servizi di configurazione SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Controllo utente sulle installazioni**: con l'impostazione predefinita **Non configurato**, Windows Installer impedisce agli utenti di cambiare le opzioni di installazione generalmente riservate agli amministratori di sistema, come l'immissione della directory in cui installare i file. **Blocca** consente agli utenti di cambiare queste opzioni di installazione. Alcune funzionalità di sicurezza di Windows Installer vengono inoltre ignorate.
+- **Controllo utente sulle installazioni**: **Blocca** impedisce agli utenti di modificare le opzioni di installazione generalmente riservate agli amministratori di sistema, ad esempio l'accesso alla directory per installare i file. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, Windows Installer potrebbe impedire agli utenti di modificare queste opzioni di installazione. Alcune delle funzionalità di sicurezza di Windows Installer vengono ignorate.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Installazione di app con privilegi elevati**: con l'impostazione predefinita **Non configurato**, il sistema applica le autorizzazioni dell'utente corrente quando installa programmi non distribuiti o offerti da un amministratore di sistema. **Blocca** indica a Windows Installer di usare le autorizzazioni elevate per installare qualsiasi programma nel sistema. Questi privilegi vengono estesi a tutti i programmi.
+- **Installazione di app con privilegi elevati**: **Blocca** indica a Windows Installer di usare autorizzazioni elevate quando installa qualsiasi programma nel sistema. Questi privilegi vengono estesi a tutti i programmi. Quando questa opzione è impostata su **Non configurato** (impostazione predefinita), Intune non modifica o aggiorna questa impostazione. Per impostazione predefinita, il sistema potrebbe applicare le autorizzazioni dell'utente corrente quando installa programmi non offerti o distribuiti da un amministratore di sistema. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Queste impostazioni usano il [provider di servizi di configurazione per i criter
 
 - **URL dell'immagine della schermata bloccata (solo desktop)** : immettere l'URL di un'immagine in formato JPG, JPEG o PNG da usare come sfondo della schermata di blocco di Windows. Immettere ad esempio `https://contoso.com/image.png`. Questa impostazione blocca l'immagine e non può essere modificata in un secondo momento.
 
-  [Provider di servizi di configurazione Personalization/LockScreenImageUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Provider di servizi di configurazione Personalization/LockScreenImageUrl](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Timeout dello schermo configurabile dall'utente (solo dispositivi mobili)** : **Consenti** consente agli utenti di configurare il timeout dello schermo. L'impostazione **Non configurata** (predefinita) non offre agli utenti questa opzione.
 
