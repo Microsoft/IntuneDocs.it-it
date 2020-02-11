@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563936"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912557"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
@@ -39,6 +39,26 @@ Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che 
 > Solo Windows 10 1803 e versioni successive supportano l'installazione di app quando non è associato alcun utente primario.
 >
 > La distribuzione di app line-of-business non è supportata nei dispositivi che eseguono Windows 10 Home Edition.
+
+## <a name="supported-windows-10-app-types"></a>Tipi di app Windows 10 supportati
+
+In base alla versione di Windows 10 eseguita dagli utenti vengono supportati tipi di app specifici. La tabella seguente specifica il tipo di app e il supporto di Windows 10.
+
+| Tipo di app | Home | Pro | Business | Enterprise | Education | Modalità S | HoloLens | SurfaceHub | WCOS | Cellulare |
+|----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
+|  .MSI | No | Sì | Sì | Sì | Sì | No | No | No | No | No |
+| .IntuneWin | No | Sì | Sì | Sì | Sì | 19H2+ | No | No | No | No |
+| Office C2R | No | Sì | Sì | Sì | Sì | No | No | No | No | No |
+| LOB: APPX/MSIX | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì |
+| MSFB Offline | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì |
+| MSFB Online | Sì | Sì | Sì | Sì | Sì | Sì | RS4+ | Sì | Sì | Sì |
+| App Web | Sì | Sì | Sì | Sì | Sì | Sì | Sì<sup>1 | Sì<sup>1 | Sì | Sì |
+| Collegamento allo Store | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì |
+
+<sup>1</sup> Avviare solo dal Portale aziendale.
+
+> [!NOTE]
+> Tutti i tipi di app Windows richiedono la registrazione.
 
 ## <a name="windows-10-lob-apps"></a>App line-of-business di Windows 10
 
@@ -60,22 +80,28 @@ Per categorizzare le app di Microsoft Store per le aziende:
 A seconda del tipo di app, è possibile installare app in un dispositivo Windows 10 in uno dei due modi seguenti:
 
 - **Contesto utente**: quando un'app viene distribuita nel contesto utente, l'app gestita viene installata per l'utente corrispondente nel momento in cui quest'ultimo accede al dispositivo. Si noti che l'installazione dell'app viene completata correttamente solo quando l'utente accede al dispositivo. 
-  - Possono essere distribuite nel contesto utente le app line-of-business moderne e le app di Microsoft Store per le aziende, sia online che offline. Queste app supportano sia la finalità obbligatoria che quella disponibile.
+  - Le app line-of-business moderne e le app di Microsoft Store per le aziende, sia online che offline, possono essere distribuite in un contesto utente. Queste app supportano sia la finalità obbligatoria che quella disponibile.
   - Le app Win32 create come app in modalità utente o in Dual Mode possono essere distribuite nel contesto utente e supportano sia la finalità obbligatoria che quella disponibile. 
 - **Contesto di dispositivo**: quando un'app viene distribuita nel contesto di dispositivo, Intune installa l'app gestita direttamente nel dispositivo.
-  - Solo le app line-of-business moderne e le app di Microsoft Store per le aziende con licenza offline possono essere distribuite nel contesto di dispositivo. Queste app supportano solo la finalità obbligatoria.
+  - Solo le app line-of-business moderne e le app di Microsoft Store per le aziende con licenza offline possono essere distribuite in un contesto di dispositivo. Queste app supportano solo la finalità obbligatoria.
   - Le app Win32 compilate come app in modalità computer o in Dual mode possono essere distribuite nel contesto di dispositivo e supportano solo la finalità obbligatoria.
 
 > [!NOTE]
 > Per le app Win32 compilate come app in Dual mode, l'amministratore deve scegliere se devono funzionare come app in modalità utente oppure in modalità computer per tutte le assegnazioni associate all'istanza attiva. Il contesto di distribuzione non può essere modificato per assegnazione.  
 
-Quando un'app viene distribuita nel contesto di dispositivo, l'installazione riesce solo se il dispositivo di destinazione supporta il contesto di dispositivo. Inoltre, la distribuzione nel contesto di dispositivo comporta le condizioni seguenti:
-- Se un'app viene distribuita in un contesto di dispositivo e viene destinata a un utente, l'installazione non riesce. Nella console di amministrazione vengono visualizzati lo stato e l'errore seguenti:
+Le app possono essere installate solo nel contesto di dispositivo se sono supportate dal dispositivo e dal tipo di app Intune. È possibile installare i tipi di app seguenti nel contesto di dispositivo e assegnare queste app a un gruppo di dispositivi:
+
+- App Win32
+- App Microsoft Store per le aziende con licenza online
+- App line-of-business (MSI, APPX e MSIX)
+- Office 365 ProPlus
+
+Le app line-of-business di Windows (in particolare APPX e MSIX) e le app Microsoft Store per le aziende (app offline) selezionate per l'installazione nel contesto di dispositivo devono essere assegnate a un gruppo di dispositivi. L'installazione non riesce se una di queste app viene distribuita nel contesto utente. Nella console di amministrazione vengono visualizzati lo stato e l'errore seguenti:
   - Stato: Operazione non riuscita.
   - Errore: Un utente non può fungere da destinazione di un'installazione nel contesto di dispositivo.
-- Se un'app viene distribuita nel contesto di dispositivo ma è destinata a un dispositivo che non supporta tale contesto, l'installazione non riesce. Nella console di amministrazione vengono visualizzati lo stato e l'errore seguenti:
-  - Stato: Operazione non riuscita.
-  - Errore: Questa piattaforma non supporta installazioni del contesto di dispositivo. 
+
+> [!IMPORTANT]
+> Se usate in combinazione con uno scenario di provisioning in modalità "White Glove" di Autopilot, non è necessario che le app line-of-business e le app Microsoft Store per le aziende distribuite in un contesto di dispositivo siano destinate a un gruppo di dispositivi. Per altre informazioni, vedere [Distribuzione in modalità "White Glove" di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove).
 
 > [!Note]
 > Dopo il salvataggio dell'assegnazione di un'app con una distribuzione specifica, non è possibile cambiare il contesto dell'assegnazione, fatta eccezione per le app moderne. Per le app moderne è possibile passare dal contesto utente al contesto di dispositivo. 

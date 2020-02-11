@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206636"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812353"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune
-
-
 
 Risposte a domande comuni quando si gestiscono i criteri e i profili dei dispositivi in Intune. Questo articolo elenca anche gli intervalli di tempo del controllo, fornisce altre informazioni sui conflitti e altro ancora.
 
@@ -83,6 +81,8 @@ Sono disponibili diverse azioni che attivano una notifica, ad esempio quando un'
 I dispositivi contattano Intune quando ricevono una notifica o durante il controllo pianificato. Quando si destina a un dispositivo o a un utente un'azione come ad esempio il blocco, la reimpostazione del passcode o l'assegnazione di un'app, di un profilo o di criteri, Intune invia immediatamente al dispositivo una notifica per contattare il servizio e ricevere gli aggiornamenti.
 
 Altre modifiche, ad esempio un aggiornamento delle informazioni di contatto nell'app Portale aziendale, non comportano una notifica immediata ai dispositivi.
+
+Le impostazioni nel criterio o nel profilo vengono applicate a ogni sincronizzazione. Il [post di Blog sull'aggiornamento dei criteri MDM di Windows 10](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) può essere una risorsa utile.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se vengono assegnati più criteri allo stesso utente o dispositivo, come si determina quali impostazioni vengono applicate?
 

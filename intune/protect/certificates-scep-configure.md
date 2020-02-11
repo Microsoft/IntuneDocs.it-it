@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886003"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966386"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurare l'infrastruttura per il supporto di SCEP con Intune
 
@@ -378,6 +378,32 @@ Connettore di certificati di Microsoft Intune viene installato nel server in cui
 5. Quando viene richiesto il certificato client per Connettore di certificati, scegliere **Seleziona** e selezionare il certificato di **autenticazione client** installato nel server del servizio Registrazione dispositivi di rete durante il passaggio 3 della procedura [Installare e associare i certificati nel server che ospita il servizio Registrazione dispositivi di rete](#install-and-bind-certificates-on-the-server-that-hosts-ndes) più indietro in questo articolo.
 
    Dopo aver selezionato il certificato di autenticazione client, si torna all'area **certificato client per Connettore di certificati di Microsoft Intune**. Anche se il certificato selezionato non viene visualizzato, selezionare **Avanti** per visualizzare le proprietà del certificato. Selezionare **Avanti** e quindi **Installa**.
+
+> [!NOTE]
+> Prima di avviare il connettore di certificati di Intune, è necessario apportare le modifiche seguenti per i tenant GCC High.
+> 
+> Apportare modifiche ai due file di configurazione indicati di seguito in modo da aggiornare gli endpoint di servizio per l'ambiente GCC High. Si noti che questi aggiornamenti modificano i suffissi degli URI da **.com** a **.us**. Sono disponibili in totale tre aggiornamenti degli URI, due aggiornamenti all'interno del file di configurazione NDESConnectorUI.exe.config e un aggiornamento nel file NDESConnector.exe.config.
+> 
+> - Nome file: <Percorso_installazione>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   Esempio: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - Nome file: <Percorso_installazione>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   Esempio: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> Se queste modifiche non vengono completate, i tenant GCC High riceveranno l'errore: "Accesso negato" "Non si è autorizzati a visualizzare questa pagina"
 
 6. Al termine della procedura guidata, prima di chiuderla, fare clic su **Launch the Certificate Connector UI** (Avvia l'interfaccia utente di Connettore di certificati).
 

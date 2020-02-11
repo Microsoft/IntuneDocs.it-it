@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564283"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755562"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi
 
@@ -33,16 +33,29 @@ ms.locfileid: "74564283"
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Scegliere **App** > **Criteri di configurazione dell'app** > **Aggiungi** > **App gestite**.
-3. Impostare i dettagli seguenti:
-    - **Nome**  
-      Il nome del profilo che verrà visualizzato nel portale di Azure.
-    - **Descrizione**  
-      La descrizione del profilo che verrà visualizzata nel portale di Azure.
+3. Nella pagina **Informazioni di base** impostare i dettagli seguenti:
+    - **Nome**: Il nome del profilo che verrà visualizzato nel portale di Azure.
+    - **Descrizione**: La descrizione del profilo che verrà visualizzata nel portale di Azure.
+    - **Tipo di registrazione del dispositivo**: sono selezionate le app gestite.
 4. Scegliere **Selezionare app pubbliche** o **Selezionare app personalizzate** per scegliere l'app che si intende configurare. Selezionare l'app dall'elenco di app già approvate e sincronizzate con Intune.
-5. Per ogni impostazione di configurazione supportata dall'app digitare **Nome** e **Valore**.  
+5. Fare clic su **Avanti** per visualizzare la pagina **Impostazioni**.
+6. Per ogni impostazione di configurazione supportata dall'app digitare **Nome** e **Valore**. 
+
+   Le app abilitate per Intune App SDK supportano le configurazioni in coppie chiave/valore. Per altre informazioni sulle configurazioni chiave-valore supportate, vedere la documentazione delle singole app. Si noti che è possibile usare token che verranno popolati in modo dinamico con i dati generati dall'applicazione. Per altre informazioni, vedere [Valori di configurazione per l'uso dei token](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). Per informazioni sulle impostazioni dei criteri di configurazione dell'app Outlook per iOS, vedere [Gestione della configurazione dell'app Outlook per iOS con Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
     Per eliminare una configurazione scegliere i puntini di sospensione ( **...** ) e selezionare **Elimina**.  
-    
-Le app abilitate per Intune App SDK supportano le configurazioni in coppie chiave/valore. Per altre informazioni sulle configurazioni chiave-valore supportate, vedere la documentazione delle singole app. Si noti che è possibile usare token che verranno popolati in modo dinamico con i dati generati dall'applicazione. Per informazioni sulle impostazioni dei criteri di configurazione dell'app Outlook per iOS, vedere [Gestione della configurazione dell'app Outlook per iOS con Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
+7. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
+8. Fare clic su **Selezionare i gruppi da includere**.
+9. Selezionare un gruppo nel riquadro **Selezionare i gruppi da includere** e fare clic su **Seleziona**.
+10. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il riquadro correlato.
+11. Scegliere i gruppi da escludere e quindi fare clic su **Seleziona**.
+
+    >[!NOTE]
+    >Quando si aggiunge un gruppo, se sono già stati inclusi altri gruppi per un tipo di assegnazione specifico, tale gruppo risulterà preselezionato e non potrà essere modificato per gli altri tipi di assegnazione di inclusione. Di conseguenza, tale gruppo non potrà essere usato come gruppo escluso.
+
+12. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**.
+13. Fare clic su **Crea** per aggiungere i criteri di configurazione dell'app a Intune.
 
 ## <a name="configuration-values-for-using-tokens"></a>Valori di configurazione per l'uso dei token
 
@@ -57,7 +70,6 @@ Intune supporta i tipi di token seguenti nelle impostazioni di configurazione. A
 - \{\{userid\}\}, ad esempio 3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\}, ad esempio John Doe
 - \{\{PrimarySMTPAddress\}\}, ad esempio testuser@ad.domain.com
-
 
 > [!Note]  
 > I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.

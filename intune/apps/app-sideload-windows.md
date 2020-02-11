@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691835"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755409"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firmare le app line-of-business per poterle distribuire nei dispositivi Windows con Intune
 
-L'amministratore di Intune ha la possibilità di distribuire app line-of-business (LOB) universali in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, inclusa l'app Portale aziendale. Per distribuire le app APPX in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, è possibile usare un certificato di firma codice di un'autorità di certificazione pubblica già considerata attendibile dai dispositivi Windows oppure usare la propria autorità di certificazione.
+L'amministratore di Intune ha la possibilità di distribuire app line-of-business (LOB) universali in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, inclusa l'app Portale aziendale. Per distribuire le app *con estensione appx* in dispositivi Windows 8.1 Desktop o Windows 10 Desktop e Mobile, è possibile usare un certificato di firma codice di un'autorità di certificazione pubblica già considerata attendibile dai dispositivi Windows oppure usare la propria autorità di certificazione.
 
  > [!NOTE]
  > Windows 8.1 Desktop richiede un criterio enterprise per abilitare il sideload o l'uso delle chiavi di sideload (abilitate automaticamente per i dispositivi aggiunti a un dominio). Per altre informazioni, vedere i [requisiti del sideload in Windows 8](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
@@ -52,10 +52,11 @@ Se si distribuisce l'app come richiesto agli utenti o ai dispositivi, l'app Port
 
 Se il dispositivo Windows 10 non considera attendibile l'autorità di certificazione, dopo aver firmato il pacchetto APPX e averlo caricato nel servizio Intune, è necessario caricare il certificato di firma codice nel portale di Intune:
 
-1. Fare clic su App client
-2. Fare clic su Certificati Windows Enterprise
-3. Scegliere "Selezionare un file" in Certificato di firma codice
-4. Selezionare il file CER e fare clic su Carica
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Fare clic su **Amministratore del tenant** > **Connettori e token** > **Certificato Windows Enterprise**.
+3. Selezionare un file in **File di certificato di firma codice**.
+4. Selezionare il file *con estensione cer* e fare clic su **Apri**.
+5. Fare clic su **Carica** per aggiungere il file del certificato a Intune.
 
 A questo punto, qualsiasi dispositivo Windows 10 Desktop e Mobile con una distribuzione APPX eseguita dal servizio Intune scaricherà automaticamente il certificato enterprise corrispondente e sarà possibile avviare l'applicazione dopo l'installazione.
 
@@ -94,7 +95,7 @@ Se non si vuole concedere l'accesso al Microsoft Store, è possibile distribuire
       ![Immagine della cartella Dependencies salvata con il file APPXBUN](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Inserire i nove pacchetti delle dipendenze nella cartella Dependencies.  
       Se le dipendenze non vengono inserite in questo formato, Intune non sarà in grado di riconoscerle e caricarle durante il caricamento del pacchetto. Pertanto questa operazione avrà esito negativo e restituirà l'errore seguente.  
-      ![Messaggio di errore: è necessario specificare la dipendenza delle app di Windows.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Tornare a Intune e caricare l'app Portale aziendale come una nuova app. Distribuirla come app necessaria al gruppo di utenti di destinazione desiderato.  
 
 Per altre informazioni sul modo in cui Intune gestisce le dipendenze per le app universali, vedere [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Distribuzione di un appxbundle con dipendenze tramite MDM di Microsoft Intune).  

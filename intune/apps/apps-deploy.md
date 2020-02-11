@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563989"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912659"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -63,8 +63,8 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 6. Per l'app specifica, selezionare un **tipo di assegnazione**:
    - **Disponibile per i dispositivi registrati**: assegnare l'app ai gruppi di utenti che possono installare l'app dall'app Portale aziendale o dal sito Web.
    - **Disponibile con o senza registrazione**: assegnare l'app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Agli utenti deve essere assegnata una licenza di Intune. Vedere [Licenze che includono Intune](../fundamentals/licenses.md).
-   - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati. In alcune piattaforme potrebbero essere visualizzati messaggi di aggiuntivi per chiedere all'utente finale di confermare l'avvio dell'installazione dell'app.
-   - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione "Disponibile per i dispositivi registrati" o "Obbligatoria" usando la stessa distribuzione. I collegamenti Web non possono essere rimossi dopo la distribuzione.
+   - **Richiesto**: l'app viene installata nei dispositivi nei gruppi selezionati. In alcune piattaforme potrebbero essere visualizzati messaggi di aggiuntivi per chiedere all'utente finale di confermare l'avvio dell'installazione dell'app.
+   - **Uninstall** (Disinstalla): l'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione "Disponibile per i dispositivi registrati" o "Obbligatoria" usando la stessa distribuzione. I collegamenti Web non possono essere rimossi dopo la distribuzione.
 
      > [!NOTE]
      > **Solo per le app iOS**:
@@ -132,7 +132,7 @@ Passaggi per assegnare un'app di Google Play gestito a dispositivi non gestiti:
 Quando viene eseguita una cancellazione selettiva di app nella console di Intune, l'account aziendale viene rimosso automaticamente dall'app Play Store. Da quel momento l'utente finale non visualizzerà più le app aziendali nel catalogo delle app di Play Store. Quando l'account aziendale viene rimosso da un dispositivo, le app installate da Play Store rimangono installate nel dispositivo e non vengono disinstallate. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Impostazione di disinstallazione per le app gestite iOS
-Per i dispositivi iOS è possibile scegliere cosa deve accadere alle app gestite al momento dell'annullamento della registrazione del dispositivo da Intune o alla rimozione del profilo di gestione tramite l'impostazione **Disinstalla alla rimozione del dispositivo**. Questa impostazione si applica alle app solo dopo che il dispositivo è stato registrato e le app sono state installate come gestite. Non è possibile configurare l'impostazione per le app Web o i collegamenti Web. 
+Per i dispositivi iOS è possibile scegliere cosa deve accadere alle app gestite al momento dell'annullamento della registrazione del dispositivo da Intune o alla rimozione del profilo di gestione tramite l'impostazione **Disinstalla alla rimozione del dispositivo**. Questa impostazione si applica alle app solo dopo che il dispositivo è stato registrato e le app sono state installate come gestite. Non è possibile configurare l'impostazione per le app Web o i collegamenti Web. Dopo il ritiro di una Cancellazione selettiva di app, vengono rimossi solo i dati protetti da Mobile Application Management (MAM).
 
 Per le nuove assegnazioni, vengono inseriti automaticamente i valori predefiniti per l'impostazione, come indicato di seguito:
 

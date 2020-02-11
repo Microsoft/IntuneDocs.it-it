@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563419"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755069"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guida introduttiva: Aggiungere e assegnare un'app client
 
@@ -45,20 +45,18 @@ Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o 
 
 Usare la procedura seguente per aggiungere un'app in Intune:
 1. In [Intune](https://aka.ms/intuneportal) selezionare **App** > **Tutte le app** > **Aggiungi**. 
-2. Selezionare **Windows 10** nella sezione **Famiglia di prodotti Office 365** della casella a discesa **Tipo di app**.
-3. Selezionare **Configura la suite di app** per selezionare le app di Office da assegnare all'utente di Intune.
-4. Fare clic su **OK** per accettare le app selezionate predefinite.
-5. Selezionare **Informazioni sulla suite di app**.
-6. Immettere **Suite di app Microsoft Office 365** come **Nome della suite**.
-7. Immettere **Suite di app Microsoft Office 365** come **Descrizione della suite**.
-8. Fare clic su **Sì** accanto a **Visualizza come app in primo piano nel portale aziendale**.
-9. Fare clic su **OK**.
-
-    ![Screenshot dell'aggiunta di informazioni sull'app](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. Selezionare **Impostazioni della suite di app**.
-11. Nella casella a discesa **Canale di aggiornamento** selezionare **Mensile**.
-12. Fare clic su **OK** > **Aggiungi**.
+2. Selezionare **Windows 10** nella sezione **Famiglia di prodotti Office 365** del riquadro **Seleziona il tipo di app**.
+3. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
+4. Confermare i dettagli predefiniti nella pagina **Informazioni sulla famiglia di prodotti dell'app**.
+5. Fare clic su **Avanti** per visualizzare la pagina **Configura la famiglia di prodotti dell'app**.
+6. Accanto a **Canale di aggiornamento** selezionare **Ogni mese** dalla casella a discesa.
+7. Confermare i dettagli predefiniti rimanenti nella pagina ***Configura la famiglia di prodotti dell'app**.
+8. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
+9. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. Per altre informazioni, vedere [Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti](~/fundamentals/scope-tags.md).
+10. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
+11. Selezionare le assegnazioni a gruppi per l'app. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md). 
+12. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. Verificare i valori e le impostazioni immesse per l'app.
+13. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
 
 ## <a name="assign-the-app-to-a-group"></a>Assegnare l'app a un gruppo
 
@@ -93,7 +91,7 @@ L'app è stata assegnata al gruppo **Contoso Testers** (Tester Contoso).
     > [!NOTE]
     > Se non sono state assegnate app all'utente di Intune, viene visualizzato il messaggio seguente: *L'amministratore IT non ha reso disponibile alcuna app.*
 
-5. Fare clic su **Install** (Installa).
+5. Fare clic su **Installa**.
 
 Se per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale alla forza lavoro, è possibile assegnare manualmente l'app Portale aziendale di Windows 10 direttamente da Intune. Per altre informazioni, vedere [Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune](../company-portal-app.md).
 

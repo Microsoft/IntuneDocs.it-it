@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781227"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754780"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -46,23 +46,29 @@ Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le o
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nell'elenco a discesa **Tipo di app** del riquadro **Aggiungi app** selezionare il tipo **Collegamento Web**.
-4. Selezionare **Configura**.
-5. Nel riquadro **Informazioni sull'app** aggiungere le informazioni seguenti:
+3. Nel riquadro**Seleziona il tipo di app** nei tipi disponibili denominati **Altro** selezionare **Collegamento Web**.
+4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
+5. Nella pagina **Informazioni sull'app** aggiungere le informazioni seguenti:
     - **Nome**:  immettere il nome dell'app che deve essere visualizzato nel portale aziendale. 
 
         > [!NOTE]
         > Se si modifica il nome dell'app tramite il portale di Azure di Intune dopo avere distribuito e installato l'app, l'app non potrà più essere usata come destinazione usando i comandi.
 
-    - **Description**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
+    - **Descrizione**: Immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
     - **URL app**: immettere l'URL del sito Web che ospita l'app da assegnare.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **Richiedi un browser gestito per l'apertura del collegamento**: selezionare questa opzione per assegnare agli utenti un collegamento a un sito Web o a un'app Web che possono aprire in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.
     - **Logo**: Caricare un'icona che verrà associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-6. Selezionare **OK**.
-7. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.
+6. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
+7. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. Per altre informazioni, vedere [Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti](~/fundamentals/scope-tags.md).
+8. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
+9. Selezionare le assegnazioni a gruppi per l'app. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md). 
+10. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. Verificare i valori e le impostazioni immessi per l'app.
+11. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
+
+    Verrà visualizzato il pannello **Panoramica** dell'app creata.
 
 > [!Note]
 > Attualmente, la distribuzione di app Web di Intune in dispositivi iOS è associata al profilo di gestione e non può essere rimossa manualmente. È possibile modificare il tipo di distribuzione impostando **Disinstalla** nel portale di Intune e in questo modo l'app Web può essere rimossa automaticamente. Tuttavia, se si rimuove la distribuzione prima di modificare la finalità dell'assegnazione di app in **Disinstalla**, l'app Web rimarrà in modo permanente nel dispositivo fino a quando non si annulla la registrazione del dispositivo da Intune.

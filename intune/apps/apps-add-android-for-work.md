@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564147"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755392"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Aggiungere app Google Play gestite a dispositivi Android Enterprise con Intune
 
@@ -59,19 +59,41 @@ Con Google Play gestito sono disponibili tre tipi di app:
 1. Direttamente nella console di Intune: esplorare e approvare le app dello Store in una vista ospitata in Intune. La vista viene aperta direttamente nella console di Intune e non richiede una nuova autenticazione con un account diverso.
 1. Nella console di Google Play gestito: è possibile aprire direttamente la console di Google Play gestito e approvare le app nella console. Per altre informazioni, vedere [Sincronizzare un'app della versione gestita di Google Play con Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune).  Questa operazione un accesso separato con l'account usato per connettere il tenant di Intune a Google Play gestito.
 
-
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Aggiungere un'app Google Play Store gestita direttamente nella console di Intune
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nella casella a discesa **Tipo di App** selezionare **Google Play gestito**.
-4. Selezionare **Google Play gestito - Apri** per aprire il catalogo di Google Play gestito.
-5. Selezionare **Search Play Store** (Cerca in Play Store) nel catalogo di Google Play.
-6. Usare la casella di ricerca per cercare le app da gestire.
-7. Fare clic su **Approva** per approvare l'app in Google Play gestito e fare clic su **Approva** per accettare le autorizzazioni dell'app.
-8. Selezionare **Keep approved when app requests new permissions** (Mantieni approvazione quando l'app richiede nuove autorizzazioni) nella finestra Impostazioni di approvazione e quindi fare clic su **Salva**. Se non si sceglie questa opzione e lo sviluppatore dell'app pubblica un aggiornamento, è necessario approvare manualmente eventuali nuove autorizzazioni. Ciò causerà l'arresto delle installazioni e degli aggiornamenti dell'app finché le autorizzazioni non vengono approvate. Per questo motivo, è consigliabile selezionare l'opzione per l'approvazione automatica delle nuove autorizzazioni. 
-9. Fare clic su **OK** per includere le app approvate.
-10. Fare clic su **Sincronizza** nel riquadro **Aggiungi app** per eseguire la sincronizzazione con il servizio Google Play gestito.
+3. Dai tipi disponibili in **App dello Store** nel riquadro **Seleziona il tipo di app** selezionare **App Google Play gestita**.
+4. Fare clic su **Seleziona**. Verrà visualizzato lo Store delle app di **Google Play gestito**.
+
+    > [!NOTE]
+    > Per esplorare le app di Google Play Store gestito, è necessario che l'account tenant di Intune sia connesso all'account di Android Enterprise. Per altre informazioni, vedere [Connettere l'account di Intune all'account di Google Play gestito](../enrollment/connect-intune-android-enterprise.md).
+
+5. Selezionare un'app per visualizzarne i dettagli.
+6. Nella pagina in cui è visualizzata l'app fare clic su **Approva**. Viene visualizzata una finestra per l'app in cui viene richiesto di concedere le autorizzazioni che consentono all'app di eseguire diverse operazioni.
+7. Selezionare **Approva** per accettare le autorizzazioni per l'app e continuare.
+8. Selezionare **Keep approved when app requests new permissions** (Mantieni approvazione quando l'app richiede nuove autorizzazioni) nella scheda **Impostazioni di approvazione** e fare clic su **Chiudi**. 
+
+    > [!IMPORTANT]
+    > Se non si sceglie questa opzione e lo sviluppatore dell'app pubblica un aggiornamento, è necessario approvare manualmente eventuali nuove autorizzazioni. Ciò causerà l'arresto delle installazioni e degli aggiornamenti dell'app finché le autorizzazioni non vengono approvate. Per questo motivo, è consigliabile selezionare l'opzione per l'approvazione automatica delle nuove autorizzazioni. 
+
+9. Fare clic su **Seleziona** per selezionare l'app.
+10. Fare clic su **Sincronizza** nella parte alta del pannello per eseguire la sincronizzazione dell'app con il servizio Google Play gestito.
+11. Fare clic su **Aggiorna** per aggiornare l'elenco delle app e visualizzare l'app appena aggiunta.
+
+### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Aggiungere le impostazioni aggiuntive dell'app a un'app di Google Play Store gestito
+1. Se è necessario aggiungere altri dettagli sull'app, selezionare l'app dall'elenco delle app.
+2. Fare clic su **Proprietà** > **Modifica** accanto a **Informazioni sull'app**. Verrà visualizzata la pagina **Informazioni sull'app**.
+3. Nella pagina **Informazioni sull'app** aggiungere i dettagli relativi all'app:
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo).
+    - **Note**: immettere eventuali note da associare a questa app (facoltativo).
+4. Fare clic su **Verifica e salva** per visualizzare la pagina **Verifica e salva**. 
+5. Al termine, fare clic su **Salva** per aggiornare l'app in Intune.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Aggiungere un'app Google Play Store gestita nella console di Google Play gestito (alternativa)
 Se si vuole sincronizzare un'app di Google Play gestita con Intune anziché aggiungerla direttamente con Intune, seguire questa procedura.
@@ -81,7 +103,7 @@ Se si vuole sincronizzare un'app di Google Play gestita con Intune anziché aggi
 
 1. Passare alla [versione gestita di Google Play Store](https://play.google.com/work). Accedere con lo stesso account usato per configurare la connessione tra Intune e Android Enterprise.
 2. Cercare nello store l'app che si vuole assegnare usando Intune e selezionarla.
-3. Nella pagina in cui è visualizzata l'app selezionare **Approva**.  
+3. Nella pagina in cui è visualizzata l'app fare clic su **Approva**.  
     Nell'esempio seguente è stata scelta l'app Microsoft Excel.
 
     ![Pulsante di approvazione nella versione gestita di Google Play Store](./media/apps-add-android-for-work/approve.png)
@@ -109,20 +131,22 @@ Le app line-of-business possono essere aggiunte a Google Play gestito in due mod
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nella casella a discesa **Tipo di App** selezionare **Google Play gestito**.
-4. Selezionare **Google Play gestito - Apri** per aprire il catalogo di Google Play gestito.
-5. Selezionare **Private Apps** (App private) nel catalogo di Google Play.
-6. Fare clic sul pulsante **"+"** per aggiungere una nuova app
-7. Inviare un titolo e un pacchetto APK per l'app
-8. Fare clic su **Crea**
-9. Chiudere il riquadro di Google Play gestito dopo aver aggiunto le app desiderate
-10. Fare clic su **Sincronizza** nel riquadro **Aggiungi app** per eseguire la sincronizzazione con il servizio Google Play gestito. Si noti che le app private potrebbero richiedere alcuni minuti per essere sincronizzate. Se non viene visualizzata la prima volta che si esegue una sincronizzazione, attendere qualche minuto e avviare una nuova sincronizzazione.
+3. Dai tipi disponibili in **App dello Store** nel riquadro **Seleziona il tipo di app** selezionare **App Google Play gestita**.
+4. Fare clic su **Seleziona**. Verrà visualizzato lo Store delle app di **Google Play gestito** in Intune.
+5. Selezionare **App private** accanto all'icona a forma di *lucchetto* nella finestra di Google Play. 
+6. Fare clic sul pulsante **"+"** in basso a destra per aggiungere una nuova app.
+7. Aggiungere **Titolo** dell'app e fare clic su **Upload APK** (Carica APK) per aggiungere il pacchetto dell'app APK.
+8. Scegliere **Crea**.
+9. Chiudere il riquadro Google Play gestito dopo aver aggiunto le app.
+10. Fare clic su **Sincronizza** nel riquadro **Aggiungi app** per eseguire la sincronizzazione con il servizio Google Play gestito. 
+
+    > [!NOTE]
+    > Le app private possono richiedere alcuni minuti per poter essere sincronizzate. Se l'app non viene visualizzata la prima volta che si esegue una sincronizzazione, attendere qualche minuto e avviare una nuova sincronizzazione.
 
 Per altre informazioni sulle app private di Google Play gestito, incluse le domande frequenti, vedere l'articolo del supporto tecnico di Google: https://support.google.com/googleplay/work/answer/9146439
 
->[!NOTE]
+>[!IMPORTANT]
 >Le app private aggiunte usando questo metodo non possono mai essere rese pubbliche. Usare questa opzione di pubblicazione solo se si è certi che questa app sarà sempre privata per l'organizzazione.
-  
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>Pubblicazione di app line-of-business private di Google Play gestito con Google Developer Console
 
@@ -151,13 +175,17 @@ I collegamenti Web vengono aperti con Microsoft Edge o qualsiasi altra app brows
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nella casella a discesa **Tipo di App** selezionare **Google Play gestito**.
-4. Selezionare **Google Play gestito - Apri** per aprire il catalogo di Google Play gestito.
-5. Selezionare **Web apps** (App Web) nel catalogo di Google Play.
-6. Fare clic sul pulsante **"+"** per aggiungere una nuova app
-7. Immettere le informazioni richieste, quindi fare clic su **Create** (Crea).
-8. Chiudere il riquadro di Google Play gestito dopo aver aggiunto le app desiderate
-9. Fare clic su **Sincronizza** nel riquadro **Aggiungi app** per eseguire la sincronizzazione con il servizio Google Play gestito. Si noti che le app private potrebbero richiedere alcuni minuti per essere sincronizzate. Se non viene visualizzata la prima volta che si esegue una sincronizzazione, attendere qualche minuto e avviare una nuova sincronizzazione.
+3. Dai tipi disponibili in **App dello Store** nel riquadro **Seleziona il tipo di app** selezionare **App Google Play gestita**.
+4. Fare clic su **Seleziona**. Verrà visualizzato lo Store delle app di **Google Play gestito** in Intune.
+5. Selezionare **App Web** accanto all'icona a forma di *globo* nella finestra di Google Play.
+6. Fare clic sul pulsante **"+"** in basso a destra per aggiungere una nuova app.
+7. Aggiungere un **Titolo** dell'app, l'**URL** dell'app Web, selezionare la modalità di visualizzazione dell'app e un'icona dell'app.
+8. Scegliere **Crea**.
+9. Chiudere il riquadro Google Play gestito dopo aver aggiunto le app.
+10. Fare clic su **Sincronizza** nel riquadro **Aggiungi app** per eseguire la sincronizzazione con il servizio Google Play gestito. 
+
+    > [!NOTE]
+    > Le app Web possono richiedere alcuni minuti per poter essere sincronizzate. Se l'app non viene visualizzata la prima volta che si esegue una sincronizzazione, attendere qualche minuto e avviare una nuova sincronizzazione.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizzare un'app della versione gestita di Google Play con Intune
 

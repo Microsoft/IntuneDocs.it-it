@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547067"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966301"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creare e assegnare profili di certificato SCEP in Intune
 
@@ -285,3 +285,5 @@ La procedura per assegnare i profili di certificato SCEP è uguale a quella per 
 ## <a name="next-steps"></a>Passaggi successivi
 
 [Assegnare profili](../configuration/device-profile-assign.md)
+
+[Risolvere i problemi di distribuzione dei profili certificato SCEP](../protect/troubleshoot-scep-certificate-profiles.md)

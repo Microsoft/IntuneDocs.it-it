@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3cf4c2abb5506f297af8a4e77145abea5360381b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564072"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755358"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Assegnare Office 365 a dispositivi macOS con Microsoft Intune
 
@@ -38,47 +38,52 @@ Prima di iniziare ad aggiungere Office 365 nei dispositivi macOS, tenere present
 - Intune supporta solo l'aggiunta delle app di Office incluse nella suite Office 2016 per Mac.
 - Se sono aperte app di Office quando Intune installa l'insieme di app, è possibile che gli utenti perdano i dati dei file non salvati.
 
-## <a name="create-and-configure-the-app-suite"></a>Creare e configurare la suite di app
+## <a name="select-the-office-365-suite-app-type"></a>Selezionare il tipo di app Famiglia di prodotti Office 365
 
-Aggiungere Office 365 dal riquadro **App**.
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nell'elenco **Tipo di app** selezionare **macOS** nel gruppo **Office 365 Suite**.
-4. Per ottenere informazioni sulla suite di app, selezionare **Informazioni sulla suite di app**.  
-    Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
-5. Immettere le informazioni seguenti:
+3. Selezionare **macOs** nella sezione **Famiglia di prodotti Office 365** del riquadro **Seleziona il tipo di app**.
+4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi la famiglia di prodotti Office 365**.
+
+## <a name="step-1---app-suite-information"></a>Passaggio 1: informazioni sulla famiglia di prodotti dell'app
+
+In questo passaggio si specificano le informazioni sulla suite di app. Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
+
+1. Nella pagina **Informazioni sulla famiglia di prodotti dell'app** è possibile confermare o modificare i valori predefiniti:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
-    - **Descrizione della suite** : immettere una descrizione per la suite di app.
+    - **Descrizione della suite** : immettere una descrizione per la suite di app. Ad esempio, è possibile elencare le app selezionate da includere.
     - **Autore**: come editore viene visualizzato Microsoft.
-    - **Categoria**: Selezionare uno o più categorie di app predefinite oppure una categoria creata. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **Sviluppatore**: come sviluppatore viene visualizzato Microsoft.
     - **Proprietario**: come proprietario viene visualizzato Microsoft.
-    - **Note**: immettere eventuali note da associare a questa app (facoltativo).
+    - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: quando gli utenti visitano il portale aziendale, il logo Office 365 viene visualizzato insieme all'app.
-6. Selezionare **OK**.
-7. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.  
-    La suite viene visualizzata nell'elenco delle app come singola voce.
+2. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
 
-## <a name="configure-app-assignments"></a>Configurare le assegnazioni di app
+## <a name="step-2---select-scope-tags-optional"></a>Passaggio 2: selezionare i tag di ambito (facoltativo)
+È possibile usare i tag di ambito per determinare chi può visualizzare le informazioni sull'app client in Intune. Per informazioni dettagliate complete sui tag di ambito, vedere [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 
-In questo passaggio configurare le assegnazioni per la suite di app. 
+1. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per la famiglia di prodotti dell'app. 
+2. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
 
-1. Nell'elenco delle app selezionare la suite di app **Office 365** per visualizzare il riquadro di panoramica **Office 365**.
-2. Nel riquadro **Office 365** selezionare **Assegnazioni**.
-3. Per aggiungere un gruppo che userà il gruppo di app, selezionare **Aggiungi gruppo**.  
-    Verrà visualizzato il riquadro **Aggiungi gruppo**.
-4. Impostare **Tipo di assegnazione** su **Obbligatoria** o **Disponibile**.
-5. Assegnare la suite ai gruppi selezionati. Per altre informazioni, vedere [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
+## <a name="step-3---assignments"></a>Passaggio 3: assegnazioni
+
+1. Per l'assegnazione della famiglia di prodotti dell'app a gruppi, selezionare **Obbligatoria** o **Disponibile per i dispositivi registrati**. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md) e [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
 
     >[!Note]
-    > Non è possibile disinstallare la suite di app Office 365 tramite Intune.
+    > Non è possibile disinstallare la famiglia di prodotti dell'app Office 365 per macOS tramite Intune.
 
-5. Nel riquadro **Assegna** selezionare **OK**.
-6. Nel riquadro **Aggiungi gruppo** selezionare **OK**.
-7. Per confermare le assegnazioni, selezionare **Salva**.
+2. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. 
+
+## <a name="step-4---review--create"></a>Passaggio 4 - Verifica e creazione
+
+1. Verificare i valori e le impostazioni immessi per la famiglia di prodotti dell'app.
+2. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
+
+    Verrà visualizzato il pannello **Panoramica** della famiglia di prodotti dell'app Office 365 per Window 10 creata. La suite viene visualizzata nell'elenco delle app come singola voce.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

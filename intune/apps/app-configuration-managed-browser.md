@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564297"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812506"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso Web usando un browser protetto con criteri di Microsoft Intune
 
@@ -33,9 +33,12 @@ L'uso di un browser protetto dai criteri di Intune (Microsoft Edge o Intune Mana
 
 - Criteri di protezione delle applicazioni
 - Accesso condizionale
-- Accesso Single Sign-On
+- Single Sign-On
 - Impostazioni di configurazione dell'applicazione
 - Integrazione del proxy di applicazione di Azure
+
+> [!IMPORTANT]
+> Intune Managed Browser verrà ritirato. Usare Microsoft Edge per l'esperienza protetta del browser di Intune. 
 
 ## <a name="microsoft-edge-support"></a>Supporto di Microsoft Edge
 

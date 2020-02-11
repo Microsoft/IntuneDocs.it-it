@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c7aa6af751e5ab3e1e3cdff6b1d2e3d6693f65df
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563932"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755171"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per macOS in Microsoft Intune
 
@@ -59,7 +59,9 @@ Prima di caricare il file line-of-business in Microsoft Intune, è necessario sc
 3. Usare il comando `IntuneAppUtil` nello **strumento di wrapping delle app di Intune per Mac** per eseguire il wrapping del file dell'app LOB con estensione *pkg* da un file con estensione *intunemac*.<br>
 
     Comandi di esempio da usare per lo strumento di wrapping delle app di Microsoft Intune per macOS:
-    
+    > [!IMPORTANT]
+    > Verificare che l'argomento `<source_file>` non contenga spazi prima di eseguire i comandi `IntuneAppUtil`.
+
     - `IntuneAppUtil -h`<br>
     Questo comando mostrerà le informazioni di utilizzo per lo strumento.
     
@@ -69,48 +71,63 @@ Prima di caricare il file line-of-business in Microsoft Intune, è necessario sc
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Questo comando estrarrà i parametri rilevati e la versione per il file con estensione *intunemac* creato.
 
-## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
+## <a name="select-the-app-type"></a>Selezionare il tipo di app
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nel riquadro **Aggiungi app** selezionare **App line-of-business** come **Tipo di app**.
+3. Tra i tipi di app in **Altro** nel riquadro **Seleziona il tipo di app** selezionare **App line-of-business**.
+4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
 
-## <a name="step-2---configure-the-app-package-file"></a>Passaggio 2: configurare il file del pacchetto dell'app
+## <a name="step-1---app-information"></a>Passaggio 1: informazioni sull'app
 
-1. Nel riquadro **Aggiungi app** scegliere **File del pacchetto dell'app**.
-2. Nel riquadro **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione macOS con estensione *intunemac*.
-3. Al termine, scegliere **OK**.
+### <a name="select-the-app-package-file"></a>Selezionare il file del pacchetto dell'app
 
+1. Nel riquadro **Aggiungi app** fare clic su **Selezionare il file del pacchetto di app**. 
+2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione macOS con estensione *intunemac*.
+   Verranno visualizzati i dettagli dell'app.
+3. Al termine, selezionare **OK** nel riquadro **File del pacchetto dell'app** per aggiungere l'app.
 
-## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
+### <a name="set-app-information"></a>Impostare le informazioni sull'app
 
-1. Nel riquadro **Aggiungi app** scegliere **Informazioni sull'app**.
-2. Nel riquadro **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
-    - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app verrà visualizzata agli utenti nel portale aziendale.
-    - **Descrizione**: immettere la descrizione dell'app che gli utenti visualizzeranno nel portale aziendale.
-    - **Autore**: immettere il nome dell'autore dell'app.
-    - **Sistema operativo minimo**: nell'elenco scegliere la versione minima del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
-    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. L'uso delle categorie consente agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, **reparto risorse umane** (facoltativo).
+1. Nella pagina **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente.
+    - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata nel portale aziendale.
+    - **Descrizione**: immettere la descrizione dell'app. La descrizione viene visualizzata nel portale aziendale.
+    - **Autore**: Immettere il nome dell'autore dell'app.
+    - **Sistema operativo minimo**: selezionare dall'elenco la versione minima del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
-    - **Logo**: caricare un'icona che viene associata all'app. Questa è l'icona visualizzata insieme all'app quando gli utenti visitano il portale aziendale.
-3. Al termine, scegliere **OK**.
+    - **Logo**: caricare un'icona che viene associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
+2. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
 
-## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
+## <a name="step-2---select-scope-tags-optional"></a>Passaggio 2: selezionare i tag di ambito (facoltativo)
+È possibile usare i tag di ambito per determinare chi può visualizzare le informazioni sull'app client in Intune. Per informazioni dettagliate complete sui tag di ambito, vedere [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 
-1. Nel riquadro **Aggiungi app** verificare che i dettagli dell'app siano corretti.
-2. Scegliere **Aggiungi** per caricare l'app in Intune.
+1. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. 
+2. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
+
+## <a name="step-3---assignments"></a>Passaggio 3: assegnazioni
+
+1. Per l'assegnazione dell'app a gruppi, selezionare **Obbligatoria**, **Disponibile per i dispositivi registrati** o **Disinstalla**. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md) e [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
+2. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. 
+
+## <a name="step-4---review--create"></a>Passaggio 4 - Verifica e creazione
+
+1. Verificare i valori e le impostazioni immesse per l'app.
+2. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
+
+    Verrà visualizzato il pannello **Panoramica** per l'app line-of-business.
 
 L'app creata compare nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
 
 > [!NOTE]
 > Se il file con estensione *pkg* contiene più app o programmi di installazione di app, Microsoft Intune segnalerà solo che l'*app* è installata correttamente quando tutte le app installate verranno rilevate nel dispositivo.
 
-## <a name="step-5---update-a-line-of-business-app"></a>Passaggio 5: aggiornare un'app line-of-business
+## <a name="update-a-line-of-business-app"></a>Aggiornare un'app line-of-business
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 

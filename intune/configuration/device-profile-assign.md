@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206704"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812378"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
@@ -31,7 +31,11 @@ Dopo aver creato un profilo, completo di tutte le impostazioni specificate, il p
 Questo articolo illustra come assegnare un profilo e include alcune informazioni sull'uso dei tag di ambito nei profili.
 
 > [!NOTE]  
-> Quando un profilo viene rimosso o non è più assegnato a un dispositivo, l'impostazione potrebbe mantenere il valore esistente. L'impostazione non ripristina un valore predefinito. Per impostare un valore diverso, creare un nuovo profilo e assegnarlo.
+> Quando un profilo viene rimosso o non è più assegnato a un dispositivo, si possono verificare situazioni diverse, a seconda delle impostazioni presenti nel profilo. Le impostazioni si basano sui provider di servizi di configurazione (CSP) e ogni CSP può gestire la rimozione del profilo in modo diverso. Ad esempio, un'impostazione potrebbe mantenere il valore esistente e non tornare a un valore predefinito. Il comportamento è controllato da ogni CSP nel sistema operativo. Per un elenco di CSP di Windows, vedere il [riferimento sui provider di servizi di configurazione (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+>
+> Per modificare un'impostazione e usare un valore diverso, creare un nuovo profilo, configurare l'impostazione su **Non configurato** e assegnare il profilo. Dopo l'applicazione al dispositivo, gli utenti devono essere in grado di modificare l'impostazione scegliendo il valore preferito.
+>
+> Quando si configurano queste impostazioni, è consigliabile distribuirle a un gruppo pilota. Per altre indicazioni sull'implementazione, vedere le [istruzioni per la creazione di un piano di implementazione](../fundamentals/planning-guide-rollout-plan.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 

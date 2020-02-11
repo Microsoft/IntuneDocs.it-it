@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756027"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754202"
 ---
 # <a name="see-device-details-in-intune"></a>Visualizzare i dettagli del dispositivo in Intune
 
@@ -84,7 +84,7 @@ A seconda del gestore telefonico usato dai dispositivi, è possibile che non ven
 |ICCID|Identificatore Integrated Circuit Card Identifier, numero di identificazione univoco di una scheda SIM.|Windows, iOS, Android|
 |Data registrazione|Data e ora in cui il dispositivo è stato registrato in Intune.|Windows, iOS, Android|
 |Ultimo contatto|Data e ora dell'ultimo collegamento del dispositivo a Intune.|Windows, iOS, Android|
-|Codice di bypass del blocco attivazione|Codice che può essere usato per ignorare il blocco attivazione.|iOS|
+|Codice di bypass del blocco attivazione|Codice che può essere usato per disabilitare il blocco attivazione.|iOS|
 |Registrato con AAD|Se **Sì** il dispositivo è registrato con Azure Active Directory.|Windows, iOS, Android|
 |Registrato in Intune|Se **Sì** il dispositivo è registrato in Intune.|Windows, iOS, Android|
 |Conformità|Stato di conformità del dispositivo.|Windows, iOS, Android|
@@ -92,8 +92,6 @@ A seconda del gestore telefonico usato dai dispositivi, è possibile che non ven
 |ID di attivazione EAS|Identificatore Exchange ActiveSync del dispositivo.|Windows, iOS, Android|
 |Sotto la supervisione|Se **Sì** gli amministratori dispongono di controllo avanzato sul dispositivo.|Windows, iOS, Android|
 |Crittografato|Se **Sì** i dati archiviati nel dispositivo sono crittografati.|Windows, iOS, Android|
-
-\* Non disponibile in Android con Google Policy Manager, ad esempio dispositivi completamente gestiti e dedicati
 
 > [!Note]  
 > Il numero di telefono non è incluso nell'inventario dei dispositivi Android Enterprise dedicati o completamente gestiti.

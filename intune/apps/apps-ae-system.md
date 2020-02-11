@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 613369070d847265f371a7b228a2b6d81bf813fe
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563649"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755256"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Aggiungere app di sistema Android Enterprise a Microsoft Intune
 
@@ -35,13 +35,20 @@ Seguire questa procedura per aggiungere un'app di sistema Android Enterprise a I
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nel riquadro **Aggiungi app** selezionare **App di sistema Android Enterprise** nell'elenco degli **altri tipi** disponibili.
-4. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti:
+3. Nel riquadro **Seleziona il tipo di app** selezionare **App di sistema Android Enterprise** tra i tipi disponibili in **Altro**.
+4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
+Nella pagina **Informazioni sull'app** aggiungere i dettagli relativi all'app:
     - **Nome app**: Immettere il nome dell'app.
     - **Autore**: Immettere il nome dell'autore dell'app.  
     - **Nome pacchetto**: Immettere un nome di pacchetto. Intune convaliderà la validità del nome del pacchetto.
-5. Selezionare **OK**.
-6. Selezionare **Aggiungi**.
+5. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
+8. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. Per altre informazioni, vedere [Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti](~/fundamentals/scope-tags.md).
+9. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
+10. Selezionare le assegnazioni a gruppi per l'app. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md). 
+11. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. Verificare i valori e le impostazioni immessi per l'app.
+12. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
+
+Verrà visualizzato il pannello **Panoramica** dell'app creata.
 
 > [!NOTE]
 > Sarà necessario collaborare con l'OEM del dispositivo per trovare il nome del pacchetto dell'app che si vuole abilitare o disabilitare.

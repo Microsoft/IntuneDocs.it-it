@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956278"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886792"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gestire gli aggiornamenti software di Windows 10 in Intune
 
@@ -205,20 +205,22 @@ Quando un dispositivo riceve i criteri di aggiornamento delle funzionalità di W
 
 - Diversamente dall'uso di *Sospendi* con un anello di aggiornamento, che scade dopo 35 giorni, i criteri di aggiornamento delle funzionalità di Windows 10 restano attivi. I dispositivi non installano una nuova versione di Windows fino a quando non vengono modificati o rimossi i criteri di aggiornamento delle funzionalità di Windows 10. Se si modificano i criteri per specificare una versione più recente, i dispositivi potranno quindi installare le funzionalità della versione di Windows.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Prerequisiti per gli aggiornamenti delle funzionalità di Windows 10
+
+Per l'uso degli aggiornamenti delle funzionalità di Windows 10 in Intune, devono essere soddisfatti i prerequisiti seguenti.
+
+- I dispositivi devono essere registrati nel software MDM di Intune e aggiunti ad Azure AD o registrati con Azure AD.
+- Per usare i criteri di aggiornamento delle funzionalità con Intune, è necessario che la telemetria sia attivata nei dispositivi, con un'impostazione minima [*Di base*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). La telemetria è configurata in *Creazione di report e telemetria* come parte dei [criteri di restrizione dei dispositivi](../configuration/device-restrictions-configure.md).
+  
+  I dispositivi che ricevono criteri per gli aggiornamenti delle funzionalità e i cui dati di telemetria sono impostati su *Non configurato*, il che significa che la telemetria è disattivata, possono installare una versione più recente di Windows rispetto a quella definita nei criteri di aggiornamento delle funzionalità. Il prerequisito per la richiesta di telemetria è attualmente sottoposto a revisione in quanto la funzionalità sta per passare alla disponibilità generale.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Limitazioni per gli aggiornamenti delle funzionalità di Windows 10
 
 - Quando si distribuiscono criteri di *aggiornamento delle funzionalità di Windows 10* in un dispositivo che riceve anche criteri *Fase di aggiornamento di Windows 10*, verificare nell'anello di aggiornamento le configurazioni seguenti:
   - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** deve essere impostato su **0**.
   - Gli aggiornamenti delle funzionalità per l'anello di aggiornamento devono essere *in esecuzione*. Non devono essere sospesi.
 
-- I criteri di aggiornamento delle funzionalità di Windows 10 non possono essere applicati durante la configurazione guidata e verranno applicati solo alla prima analisi del Windows Update dopo il completamento del provisioning di un dispositivo (in genere un giorno). Inoltre, i dispositivi di cui è stato effettuato il provisioning con Autopilot non riceveranno i criteri.
-
-  Questa limitazione è in fase di esame per verificare se è possibile un supporto futuro.
-
-> [!IMPORTANT]
-> Per usare i criteri di aggiornamento delle funzionalità con Intune, è necessario che la telemetria sia attivata nei dispositivi, con un'impostazione minima [*Di base*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). La telemetria è configurata in *Creazione di report e telemetria* come parte dei [criteri di restrizione dei dispositivi](../configuration/device-restrictions-configure.md).
->
-> I dispositivi che ricevono criteri per gli aggiornamenti delle funzionalità e i cui dati di telemetria sono impostati su *Non configurato*, il che significa che la telemetria è disattivata, possono installare una versione più recente di Windows rispetto a quella definita nei criteri di aggiornamento delle funzionalità. Il prerequisito per la richiesta di telemetria è attualmente sottoposto a revisione in quanto la funzionalità sta per passare alla disponibilità generale.
+- I criteri di aggiornamento delle funzionalità di Windows 10 non possono essere applicati durante la configurazione guidata di Autopilot e verranno applicati solo alla prima analisi di Windows Update dopo il completamento del provisioning di un dispositivo, che richiede in genere un giorno.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Creare e assegnare gli aggiornamenti delle funzionalità di Windows 10
 
@@ -242,10 +244,12 @@ Da questa pagina è possibile effettuare le seguenti operazioni:
 - Selezionare **Proprietà** per modificare la distribuzione.  Nel riquadro *Proprietà* selezionare **Modifica** per aprire *Impostazioni di distribuzione o Assegnazioni* dove è possibile modificare la distribuzione.
 - Selezionare **Stato di aggiornamento dell'utente finale** per visualizzare le informazioni relative ai criteri.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Convalida e creazione di report per gli aggiornamenti di Windows 10
+
+Sia per gli anelli di aggiornamento di Windows 10 che per gli aggiornamenti delle funzionalità di Windows 10 usare i [report sulla conformità di Intune per gli aggiornamenti](../windows-update-compliance-reports.md) per monitorare lo stato dell'aggiornamento dei dispositivi. Questa soluzione usa [Conformità aggiornamenti](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) con la sottoscrizione di Azure.
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 [Impostazioni di aggiornamento di Windows supportate da Intune](../windows-update-settings.md)
-
-[Report di conformità di Intune per gli aggiornamenti](../windows-update-compliance-reports.md)
 
 [Risoluzione dei problemi degli anelli di aggiornamento di Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

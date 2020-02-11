@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036640"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971887"
 ---
 # <a name="app-protection-policies-overview"></a>Panoramica dei criteri di protezione app
 
@@ -82,7 +82,7 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 Il supporto della piattaforma dei criteri di protezione delle app di Intune è allineato al supporto della piattaforma delle applicazioni per dispositivi mobili di Office per dispositivi Android e iOS. Per informazioni dettagliate, vedere la sezione **App per dispositivi mobili** in [Requisiti di sistema per Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
 > [!IMPORTANT]
-> Il portale aziendale di Intune deve essere presente nel dispositivo per ricevere i criteri di protezione delle app in Android. Per altre informazioni, vedere [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md#access-apps).
+> Il Portale aziendale Intune deve essere presente nel dispositivo per ricevere i criteri di protezione delle app in Android. Per altre informazioni, vedere [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Come i criteri di protezione delle app proteggono i dati dell'app
 

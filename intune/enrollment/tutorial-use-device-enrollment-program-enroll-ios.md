@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558175"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971789"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Esercitazione: Usare le funzionalità Corporate Device Enrollment di Apple in Apple Business Manager (ABM) per registrare i dispositivi iOS in Intune
 Le funzionalità Device Enrollment di Apple Business Manager semplificano la registrazione di dispositivi. Intune supporta anche il portale Device Enrollment Program precedente di Apple, ma è consigliabile iniziare da zero con Apple Business Manager. Con Microsoft Intune e Apple Corporate Device Enrollment, i dispositivi vengono registrati automaticamente in modo sicuro la prima volta che vengono accesi. È pertanto possibile spedire i dispositivi a più utenti senza dover configurare ogni singolo dispositivo. 
@@ -67,7 +67,7 @@ Per creare un token di Device Enrollment, usare il portale ABM o DEP. Usare ques
 
 8. In **Scegliere un'azione** scegliere **Assegna al server,** scegliere il &lt;nome del serve&gt;r specificato per Microsoft Intune e quindi scegliere **OK**. Il portale Apple assegna i dispositivi specificati al server di Intune per la gestione e quindi visualizza il messaggio **Assegnazione completata**.
 
-   Nel portale Apple passare a **Programmi di distribuzione** &gt; **Device Enrollment Program** &gt; **Visualizza cronologia di assegnazione** per visualizzare un elenco di dispositivi con la rispettiva assegnazione di server MDM.
+   Nel portale Apple passare a **Deployment Programs** (Programmi di distribuzione) &gt; **Device Enrollment Program** &gt; **View Assignment History** (Visualizza cronologia di assegnazione) per visualizzare un elenco di dispositivi con la rispettiva assegnazione di server MDM.
 
 9. Per riferimenti futuri, in Intune nel portale di Azure specificare l'ID Apple usato per creare il token.
 

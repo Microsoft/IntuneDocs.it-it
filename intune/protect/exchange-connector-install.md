@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,25 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7d00fec5efd9caa54c7f481389e3993e9797699c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164699"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755731"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Configurare Intune On-Premises Connector per Exchange
-Per proteggere l'accesso a Exchange, Intune si affida a un componente locale noto come Microsoft Intune Exchange Connector. Questo connettore è denominato anche *connettore locale per Exchange ActiveSync* in alcune posizioni della console di Intune. 
 
-Le informazioni contenute in questo articolo possono essere utili per installare e monitorare Intune Exchange Connector. È possibile usare il connettore con i [criteri di accesso condizionale](conditional-access-exchange-create.md) per consentire o bloccare l'accesso alle cassette postali locali di Exchange. 
+Per proteggere l'accesso a Exchange, Intune si affida a un componente locale noto come Microsoft Intune Exchange Connector. Questo connettore è denominato anche *connettore locale per Exchange ActiveSync* in alcune posizioni della console di Intune.
+
+Le informazioni contenute in questo articolo possono essere utili per installare e monitorare Intune Exchange Connector. È possibile usare il connettore con i [criteri di accesso condizionale](conditional-access-exchange-create.md) per consentire o bloccare l'accesso alle cassette postali locali di Exchange.
 
 Il connettore viene installato ed eseguito nell'hardware locale. Individua i dispositivi che si connettono a Exchange, comunicando le relative informazioni al servizio Intune. Il connettore consente o blocca i dispositivi a seconda se sono registrati e conformi. Queste comunicazioni usano il protocollo HTTPS.
 
-Quando un dispositivo tenta di accedere a Exchange Server locale, Exchange Connector esegue il mapping dei record di Exchange Active Sync (EAS) in Exchange Server ai record di Intune per verificare che il dispositivo sia registrato con Intune e conforme ai criteri del dispositivo. In base ai criteri di accesso condizionale, è possibile consentire o bloccare il dispositivo. Per altre informazioni, vedere [Quali sono i modi comuni per usare l'accesso condizionale con Intune?](conditional-access-intune-common-ways-use.md)
+Quando un dispositivo tenta di accedere a Exchange Server locale, Exchange Connector esegue il mapping dei record di Exchange Active Sync (EAS) in Exchange Server ai record di Intune per verificare che il dispositivo venga registrato con Intune e sia conforme ai criteri del dispositivo. In base ai criteri di accesso condizionale, è possibile consentire o bloccare il dispositivo. Per altre informazioni, vedere [Quali sono i modi comuni per usare l'accesso condizionale con Intune?](conditional-access-intune-common-ways-use.md)
 
-Le operazioni di *individuazione* e *consenso e blocco* vengono eseguite usando i cmdlet Exchange standard di PowerShell. Queste operazioni usano l'account del servizio specificato durante l'installazione iniziale di Exchange Connector. 
+Le operazioni di *individuazione* e *consenso e blocco* vengono eseguite usando i cmdlet Exchange standard di PowerShell. Queste operazioni usano l'account del servizio specificato durante l'installazione iniziale di Exchange Connector.
 
-Intune supporta l'installazione di più istanze di Intune Exchange Connector per ogni sottoscrizione. Se si hanno più organizzazioni di Exchange locali, è possibile configurare un connettore separato per ognuna di esse. Tuttavia, è possibile installare un solo connettore per ogni organizzazione di Exchange.  
+Intune supporta l'installazione di più istanze di Intune Exchange Connector per ogni sottoscrizione. Se si hanno più organizzazioni di Exchange locale, è possibile configurare un connettore separato per ognuna di esse. Tuttavia, è possibile installare un solo connettore per ogni organizzazione di Exchange.  
 
 Seguire questi passaggi generali per configurare una connessione che consente a Intune di comunicare con l'istanza di Exchange Server locale:
 
@@ -84,9 +85,12 @@ In un server Windows in grado di supportare Intune Exchange Connector:
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).  Usare un account che sia un amministratore nell'istanza di Exchange Server locale e abbia una licenza per l'uso di Exchange Server.
 
-2. Selezionare **Amministrazione del tenant** > **Accesso ad Exchange**.  
+2. Selezionare **Amministrazione del tenant** > **Accesso ad Exchange**.
 
 3. In **Installazione** scegliere **Connettore locale per Exchange ActiveSync** e quindi selezionare **Aggiungi**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Aggiungere un connettore locale per Exchange ActiveSync](./media/exchange-connector-install/add-connector.png)
 
 4. Nella pagina **Aggiungi il connettore** selezionare **Scaricare il connettore locale**. Intune Exchange Connector è contenuto in una cartella compressa (ZIP) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
 
@@ -127,9 +131,9 @@ Per installare Intune Exchange Connector, seguire questa procedura. Se sono pres
 
        1. Scegliere **OK**.
 
-4. Nei campi **Utente (dominio\utente)** e **Password** immettere le credenziali per la connessione a Exchange Server. L'account specificato deve avere una licenza per l'uso di Intune. 
+4. Nei campi **Utente (dominio\utente)** e **Password** immettere le credenziali per la connessione a Exchange Server. L'account specificato deve avere una licenza per l'uso di Intune.
 
-5. Specificare le credenziali per l'invio delle notifiche alla cassetta postale di Exchange Server di un utente. L'utente può essere dedicato solo alle notifiche. L'utente delle notifiche deve avere una cassetta postale di Exchange per inviare le notifiche tramite posta elettronica. È possibile configurare queste notifiche usando i criteri di accesso condizionale in Intune.  
+5. Specificare le credenziali per l'invio delle notifiche alla cassetta postale di Exchange Server di un utente. L'utente può essere dedicato solo alle notifiche. L'utente delle notifiche deve avere una cassetta postale di Exchange per inviare le notifiche tramite posta elettronica. È possibile configurare queste notifiche usando i criteri di accesso condizionale in Intune.
 
    Verificare che il servizio di individuazione automatica e i servizi Web Exchange siano configurati nel server CAS di Exchange. Per altre informazioni, vedere [Server Accesso client](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -152,7 +156,7 @@ Dopo che Exchange Connector imposta la connessione, i dispositivi mobili associa
 
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>Installare connettori per più organizzazioni di Exchange
 
-Intune supporta più istanze di Intune Exchange Connector per ogni sottoscrizione. Per un tenant con più organizzazioni di Exchange, è possibile impostare un solo connettore per ogni organizzazione di Exchange. 
+Intune supporta più istanze di Intune Exchange Connector per ogni sottoscrizione. Per un tenant con più organizzazioni di Exchange, è possibile impostare un solo connettore per ogni organizzazione di Exchange.
 
 Per installare i connettori per connettersi a più organizzazioni di Exchange, scaricare la cartella ZIP una volta. Riutilizzare lo stesso download per ogni connettore installato. Per ogni connettore aggiuntivo, seguire la procedura nella sezione precedente per estrarre ed eseguire il programma di installazione in un server nell'organizzazione di Exchange.
 
@@ -160,7 +164,7 @@ Ogni organizzazione di Exchange che si connette a Intune supporta la disponibili
 
 ## <a name="on-premises-intune-exchange-connector-high-availability-support"></a>Supporto a disponibilità elevata di Intune On-Premises Connector per Exchange  
 
-Per il connettore locale, disponibilità elevata significa che se il server CAS di Exchange usato dal connettore non è più disponibile, il connettore può passare a un altro server CAS per tale organizzazione di Exchange. Exchange Connector non supporta la disponibilità elevata. Se il connettore non riesce, non si verifica alcun failover automatico. È necessario [installare un nuovo connettore](#reinstall-the-intune-exchange-connector) per sostituire il connettore con errore.
+Per il connettore locale, disponibilità elevata significa che se il server CAS di Exchange usato dal connettore non è più disponibile, il connettore può passare a un altro server CAS per tale organizzazione di Exchange. Exchange Connector non supporta la disponibilità elevata. In caso di errore del connettore, non è previsto il failover automatico ed è necessario [installare un nuovo connettore](#reinstall-the-intune-exchange-connector) per sostituire quello con errore.
 
 Per failover il connettore usa il server CAS specificato per creare una connessione riuscita a Exchange. Individua quindi ulteriori server CAS per l'organizzazione di Exchange. L'individuazione consente al connettore di eseguire il failover a un altro server CAS, finché il server CAS primario non diventa disponibile.
 
@@ -204,21 +208,21 @@ Potrebbe essere necessario reinstallare Intune Exchange Connector. Poiché è po
 3. Continuare la procedura della sezione [Installare e configurare Intune Exchange Connector](#install-and-configure-the-intune-exchange-connector) e accedere di nuovo a Intune.
 
 4. Nella finestra finale selezionare **Chiudi** per completare l'installazione.
-   ![Completare la configurazione](./media/exchange-connector-install/successful-reinstall.png)
+   ![Completare l'installazione](./media/exchange-connector-install/successful-reinstall.png)
 
 ## <a name="monitor-an-exchange-connector"></a>Monitorare Exchange Connector
 
-Dopo aver configurato correttamente Exchange Connector, è possibile visualizzare lo stato delle connessioni e l'ultimo tentativo di sincronizzazione riuscito.
+Dopo aver configurato correttamente Exchange Connector, è possibile visualizzare lo stato delle connessioni e l'ultimo tentativo di sincronizzazione riuscito:
 
-Per convalidare la connessione di Exchange Connector:
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. Nel dashboard di Intune scegliere **Accesso ad Exchange**.
+2. Selezionare **Amministrazione del tenant** > **Accesso ad Exchange**.
 
-2. Selezionare **Accesso locale a Exchange** per verificare lo stato della connessione per ogni istanza di Exchange Connector.
+3. Selezionare **Connettore locale per Exchange ActiveSync** e quindi selezionare il connettore che si vuole visualizzare.
 
-È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
+4. Nella console vengono visualizzati i dettagli relativi al connettore selezionato ed è possibile visualizzare lo **stato** e la data e ora dell'ultima sincronizzazione eseguita.
 
-A partire dalla versione 1710 di Intune, è possibile usare [System Center Operations Manager Management Pack per Exchange Connector e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True), che consente di eseguire il monitoraggio di Exchange Connector in diversi modi quando è necessario risolvere i problemi.
+Oltre allo stato nella console, è possibile usare [System Center Operations Manager Management Pack per Exchange Connector e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). che consente di eseguire il monitoraggio di Exchange Connector in diversi modi quando è necessario risolvere i problemi.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forzare manualmente una sincronizzazione rapida o una sincronizzazione completa
 
@@ -230,11 +234,14 @@ Intune Exchange Connector sincronizza automaticamente EAS e i record dei disposi
 
 È possibile forzare un connettore a eseguire una sincronizzazione usando le opzioni **Sincronizzazione rapida** o **Sincronizzazione completa** nel dashboard di Intune:
 
-   1. Nel dashboard di Intune scegliere **Accesso ad Exchange**.
+   1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-   2. Selezionare **Accesso locale a Exchange**.
+   2. Selezionare **Amministrazione del tenant** > **Accesso ad Exchange** >  **Connettore locale per Exchange ActiveSync**.
 
-   3. Selezionare il connettore da sincronizzare e scegliere **Sincronizzazione rapida** o **Sincronizzazione completa**.
+   3. Selezionare il connettore da sincronizzare e quindi scegliere Sincronizzazione rapida o Sincronizzazione completa.
+
+   > [!div class="mx-imgBorder"]
+   > ![Schermata di esempio dei dettagli del connettore](./media/exchange-connector-install/connector-details.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

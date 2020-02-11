@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991774"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812454"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -88,7 +88,7 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 
 |Tipo di dati|iOS|
 |-------------|-------|
-|App aziendali e dati associati installati da Intune|**App installate tramite il Portale aziendale:** Per le app aggiunte al profilo di gestione, vengono rimossi tutti i dati, oltre alle app stesse. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** Per le app non gestite dal Portale aziendale, vengono rimossi i dati delle app aziendali protette da crittografia MAM (Mobile Application Management, gestione di applicazioni mobili) all'interno delle risorse di archiviazione locale delle app. I dati protetti da crittografia MAM all'esterno dell'app restano crittografati e inutilizzabili, ma non vengono rimossi. Le app personali e i relativi dati non vengono rimossi.|
+|App aziendali e dati associati installati da Intune|**App installate tramite il Portale aziendale:** Per le app aggiunte al profilo di gestione, vengono rimossi tutti i dati, oltre alle app stesse. Queste app includono le applicazioni installate in origine da App Store e successivamente gestite come app aziendali, a meno che non siano configurate in modo da non essere disinstallate in caso di rimozione del dispositivo. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** Per le app non gestite dal Portale aziendale, vengono rimossi i dati delle app aziendali protette da crittografia MAM (Mobile Application Management, gestione di applicazioni mobili) all'interno delle risorse di archiviazione locale delle app. I dati protetti da crittografia MAM all'esterno dell'app restano crittografati e inutilizzabili, ma non vengono rimossi. Le app personali e i relativi dati non vengono rimossi.|
 |Impostazioni|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|

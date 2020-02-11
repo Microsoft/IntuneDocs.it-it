@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036605"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517498"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Inviare notifiche personalizzate in Intune  
 
 Usare Microsoft Intune per inviare notifiche personalizzate agli utenti di dispositivi iOS e Android gestiti. Questi messaggi vengono visualizzati come notifiche push standard dall'app Portale aziendale e dall'app Microsoft Intune sul dispositivo di un utente nello stesso modo in cui vengono visualizzate sul dispositivo le notifiche provenienti da altre applicazioni. Le notifiche personalizzate di Intune non sono supportate dai dispositivi macOS e Windows.   
 
-I messaggi di notifica personalizzati includono un titolo breve e un corpo del messaggio di massimo 500 caratteri. Questi messaggi possono essere personalizzati per qualsiasi scopo di comunicazione generale.
+I messaggi di notifica personalizzati includono un titolo breve e un corpo del messaggio al massimo di 500 caratteri. Questi messaggi possono essere personalizzati per qualsiasi scopo di comunicazione generale.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Come appare la notifica in un dispositivo iOS
+
+Se l'app Portale aziendale è aperta in un dispositivo iOS, la notifica sarà simile alla schermata seguente:
+
+> [!div class="mx-imgBorder"]
+> ![Notifica di prova di Portale aziendale in iOS](./media/custom-notifications/105046-1.png)
+
+Se il dispositivo è bloccato, la notifica ha il seguente aspetto:
+
+> [!div class="mx-imgBorder"]
+> ![Notifica di prova per dispositivo bloccato in iOS](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Come appare la notifica in un dispositivo Android
+
+Se l'app Portale aziendale è aperta in un dispositivo Android, la notifica sarà simile alla schermata seguente:
+
+> [!div class="mx-imgBorder"]
+> ![Notifica di prova in Android](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Scenari comuni per l'invio di notifiche personalizzate  
 

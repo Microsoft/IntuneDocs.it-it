@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7664123e31a959849ae967d7e99847e1395609c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6a92863dc504d295d77029082b57090e55d7f743
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692203"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971844"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -197,7 +197,7 @@ Intune sfrutta le API SafetyNet di Google Play Protect per potenziare i controll
 
 Per informazioni tecniche, vedere la [documentazione di Google sull'attestazione SafetyNet](https://developer.android.com/training/safetynet/attestation).
 
-**Nella sezione Avvio condizionale sono disponibili due controlli simili quando si creano criteri di protezione delle app di Intune per dispositivi Android. È necessario scegliere l'impostazione "Attestazione del dispositivo SafetyNet" o l'impostazione "Dispositivi jailbroken/rooted"?** <br><br>
+**Nella sezione Avvio condizionale sono disponibili due controlli simili quando si creano criteri di protezione delle app di Intune per i dispositivi Android. È necessario scegliere l'impostazione "Attestazione del dispositivo SafetyNet" o l'impostazione "Dispositivi jailbroken/rooted"?** <br><br>
 I controlli delle API SafetyNet di Google Play Protect richiedono che l'utente finale sia online, almeno per l'intera durata dell'esecuzione del "round trip" per determinare i risultati di attestazione. Se l'utente finale è offline, l'amministratore IT può comunque aspettarsi l'applicazione di un risultato dall'impostazione "Dispositivi jailbroken/rooted". In ogni caso, se l'utente finale è rimasto offline per troppo tempo, entra in gioco il valore "Periodo di prova offline" e l'intero accesso ai dati aziendali o dell'istituto di istruzione viene bloccato una volta raggiunto il valore del timer, finché non è disponibile accesso di rete. L'attivazione di entrambe le impostazioni permette un approccio a più livelli per mantenere integri i dispositivi degli utenti finali, un aspetto importante quando questi accedono a dati aziendali o dell'istituto di istruzione su un dispositivo mobile. 
 
 **Le impostazioni dei criteri di protezione delle app che sfruttano le API di Google Play Protect richiedono il funzionamento di Google Play Services. Che cosa succede se Google Play Services non è consentito nella località in cui può trovarsi l'utente finale?**<br><br>

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547822"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971864"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -82,12 +82,13 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
    > Windows 10 non specifica il numero di revisione durante la registrazione, quindi se si immette ad esempio 10.0.17134.100 e il dispositivo è 10.0.17134.174, il dispositivo verrà bloccato durante la registrazione.
 
 6. In **Di proprietà personale** scegliere **Consenti** per le piattaforme da consentire come dispositivi personali.
-7. Scegliere **Avanti** per passare alla pagina **Assegnazioni**.
-8. Scegliere **Selezionare i gruppi da includere** e usare la casella di ricerca per trovare i gruppi da includere in questa restrizione. La restrizione si applica solo ai gruppi a cui è assegnata. La restrizione ha effetto solo se viene assegnata ad almeno un gruppo. Quindi scegliere **Seleziona**. 
+7. In **Produttore dispositivo** immettere un elenco di produttori delimitato da virgole che si vuole bloccare.
+8. Scegliere **Avanti** per passare alla pagina **Assegnazioni**.
+9. Scegliere **Selezionare i gruppi da includere** e usare la casella di ricerca per trovare i gruppi da includere in questa restrizione. La restrizione si applica solo ai gruppi a cui è assegnata. La restrizione ha effetto solo se viene assegnata ad almeno un gruppo. Quindi scegliere **Seleziona**. 
     ![Acquisizione schermo per la scelta delle impostazioni della piattaforma](./media/enrollment-restrictions-set/select-groups.png)
-9. Selezionare **Avanti** per passare alla pagina **Rivedi e crea**.
-10. Selezionare **Crea** per creare la restrizione.
-11. La nuova restrizione viene creata con una priorità di livello immediatamente superiore a quello dell'impostazione predefinita. È possibile [modificare la priorità](#change-enrollment-restriction-priority).
+10. Selezionare **Avanti** per passare alla pagina **Rivedi e crea**.
+11. Selezionare **Crea** per creare la restrizione.
+12. La nuova restrizione viene creata con una priorità di livello immediatamente superiore a quello dell'impostazione predefinita. È possibile [modificare la priorità](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Creare una restrizione sul limite di dispositivi

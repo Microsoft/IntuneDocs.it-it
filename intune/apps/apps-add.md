@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956199"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755273"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune 
 
@@ -74,10 +74,10 @@ La tabella seguente elenca i tipi di app specifici e descrive come aggiungerli n
 
 <sup>1</sup> Per altre informazioni su Android Enterprise e i profili di lavoro Android, vedere [Informazioni sulle app con licenza](apps-add.md#understanding-licensed-apps) più avanti.
 
-È possibile aggiungere un'app in Microsoft Intune selezionando **App** > **Tutte le app** > **Aggiungi**. Verrà visualizzato il riquadro **Aggiungi app** che consente di selezionare il **tipo di app**. 
+È possibile aggiungere un'app in Microsoft Intune selezionando **App** > **Tutte le app** > **Aggiungi**. Verrà visualizzato il riquadro **Seleziona il tipo di app** che consente di selezionare il **Tipo di app**. 
 
 >[!TIP]
-> Un'app line-of-business è un'app che viene aggiunta da un apposito file di installazione. Per installare un'app line-of-business iOS, ad esempio, aggiungere l'applicazione selezionando **App line-of-business** come **tipo di app** nel riquadro **Aggiungi app**. Selezionare quindi il file del pacchetto dell'app (con estensione ipa). Questi tipi di app vengono in genere sviluppati internamente.
+> Un'app line-of-business è un'app che viene aggiunta da un apposito file di installazione. Per installare ad esempio un'app line-of-business iOS, aggiungere l'applicazione selezionando **App line-of-business** come **Tipo di app** nel riquadro **Seleziona il tipo di app**. Selezionare quindi il file del pacchetto dell'app (con estensione ipa). Questi tipi di app vengono in genere sviluppati internamente.
 
 ## <a name="assess-app-requirements"></a>Valutare i requisiti delle app
 Il compito dell'amministratore IT non è soltanto quello di individuare le app che il gruppo deve usare, ma anche quello di determinare le funzionalità necessarie per ogni gruppo e sottogruppo. Per ogni app occorre determinare le piattaforme necessarie, i gruppi di utenti che necessitano dell'app, i criteri di configurazione per questi gruppi e i criteri di protezione da applicare.  

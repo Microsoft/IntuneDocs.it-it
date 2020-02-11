@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860296"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812178"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Impostare regole sui dispositivi per consentire l'accesso alle risorse dell'organizzazione tramite Intune
 
@@ -93,6 +93,10 @@ Intune include anche un set di impostazioni dei criteri di conformità predefini
 
   Per impostazione predefinita, un dispositivo a cui non è stato assegnato un criterio di conformità è considerato conforme. Se si usa l'accesso condizionale con i criteri di conformità, è consigliabile cambiare l'impostazione in **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato alcun criterio, nell'[app Portale aziendale](../apps/company-portal-app.md) viene visualizzato `No compliance policies have been assigned`.
 
+
+> [!NOTE]
+> Il rilevamento del jailbreak ottimizzato per i dispositivi iOS è stato temporaneamente disabilitato in Intune.
+
 - **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva un'archiviazione più frequente dei dispositivi iOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
 
   Per l'abilitazione di questa impostazione è necessario che:
@@ -100,7 +104,7 @@ Intune include anche un set di impostazioni dei criteri di conformità predefini
   - I dispositivi consentano al portale aziendale di usare servizi di posizione.
   - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri. Se il dispositivo non si sposta di 500 metri entro 72 ore, l'utente deve aprire l'app Portale aziendale per la valutazione avanzata dello stato jailbreak.
 
-- **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
+- **Periodo di validità dello stato di conformità (giorni)** : immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 
 È possibile usare i criteri predefiniti per monitorare queste impostazioni. Intune inoltre [aggiorna o verifica la presenza di aggiornamenti](create-compliance-policy.md#refresh-cycle-times) a diversi intervalli, a seconda della piattaforma del dispositivo. Per altre informazioni, vedere [Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune](../configuration/device-profile-troubleshoot.md).
 
@@ -112,7 +116,7 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 
 ---------------------------
 
-|**Impostazione di criteri**| **Piattaforma** |
+|**Impostazione di criteri**| **Platform** |
 | --- | ----|
 | **Configurazione di PIN o password** | - **Android 4.0 e versioni successive**: In quarantena<br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena<br>- **Android Enterprise**: In quarantena  <br>  <br>- **iOS 8.0 e versioni successive**: Corretto<br>- **macOS 10.11 e versioni successive**: Corretto  <br>  <br>- **Windows 8.1 e versioni successive**: Corretto<br>- **Windows Phone 8.1 e versioni successive**: Corretto|
 | **Crittografia dispositivo** | - **Android 4.0 e versioni successive**: In quarantena<br>- **Samsung KNOX Standard 4.0 e versioni successive**: In quarantena<br>- **Android Enterprise**: In quarantena<br><br>- **iOS 8.0 e versioni successive**: Corretto (impostando il PIN)<br>- **macOS 10.11 e versioni successive**: Corretto (impostando il PIN)<br><br>- **Windows 8.1 e versioni successive**: Non applicabile<br>- **Windows Phone 8.1 e versioni successive**: Corretto |
@@ -124,7 +128,7 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 
 ---------------------------
 
-**Con correzione**: il sistema operativo del dispositivo impone la conformità. Ad esempio, l'utente è obbligato a impostare un PIN.
+**Con correzione**: il sistema operativo del dispositivo impone la conformità. ad esempio, l'utente è obbligato a impostare un PIN.
 
 **In quarantena**: il sistema operativo del dispositivo non impone la conformità. Ad esempio, l'utente di dispositivi Android e Android Enterprise non è obbligato a crittografare il dispositivo. Se il dispositivo non è conforme, vengono eseguite le azioni seguenti:
 

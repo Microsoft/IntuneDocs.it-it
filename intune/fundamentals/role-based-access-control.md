@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509818"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754304"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo con Microsoft Intune
 
@@ -52,6 +52,7 @@ Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** 
 - **Application Manager** (Gestione applicazioni): consente di gestire le applicazioni per dispositivi mobili e gestite, di leggere le informazioni sui dispositivi e di visualizzare i profili di configurazione dei dispositivi.
 - **Intune Role Administrator** (Amministratore dei ruoli di Intune): consentire di gestire i ruoli di Intune personalizzati e di aggiungere assegnazioni per i ruoli di Intune predefiniti. È l'unico ruolo di Intune che può assegnare autorizzazioni agli amministratori.
 - **School Administrator** (Amministratore di istituto di istruzione): Gestisce i dispositivi Windows 10 in [Intune per Education](../introduction-intune-education.md).
+- **Endpoint Security Manager**: Gestisce le funzionalità di sicurezza e conformità, ad esempio le baseline di sicurezza, la conformità dei dispositivi, l'accesso condizionale e Microsoft Defender ATP.
 
 ### <a name="custom-roles"></a>Ruoli personalizzati
 È possibile creare ruoli personalizzati con autorizzazioni personalizzate. Per altre informazioni sui ruoli personalizzati, vedere [Creare un ruolo personalizzato](create-custom-role.md).
@@ -62,7 +63,7 @@ Per visualizzare un ruolo, scegliere **Intune** > **Ruoli** > **Tutti i ruoli** 
 | Amministratore globale | Lettura/Scrittura | Lettura/Scrittura |
 | Amministratore del servizio Intune | Lettura/Scrittura | Lettura/Scrittura |
 | Amministratore accesso condizionale | Nessuno | Nessuno |
-| Amministratore della protezione | Sola lettura | Sola lettura |
+| Amministratore della protezione | Sola lettura (autorizzazioni amministrative complete per il nodo Endpoint Security) | Sola lettura |
 | Operatore di sicurezza | Sola lettura | Sola lettura |
 | Ruolo con autorizzazioni di lettura per la sicurezza | Sola lettura | Sola lettura |
 | Amministratore di conformità | Nessuno | Sola lettura |

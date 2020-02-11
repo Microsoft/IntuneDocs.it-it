@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7567f0ee8c2bac5c3cf3c4e0fae027bdec35e27e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: cd3736a08f09fcb5ee953626c63e336ca7f9af81
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563558"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755205"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Android a Microsoft Intune
 
@@ -36,24 +36,27 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
 > [!Note]
 > Per i dispositivi Android for Work, vedere [Aggiungere app Google Play gestite a dispositivi Android Enterprise con Intune](apps-add-android-for-work.md). 
 
-## <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
+## <a name="select-the-app-type"></a>Selezionare il tipo di app
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
-3. Nel riquadro **Aggiungi app** selezionare **App line-of-business** come **Tipo di app**.
+3. Tra i tipi di app in **Altro** nel riquadro **Seleziona il tipo di app** selezionare **App line-of-business**.
+4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Passaggio 2: Configurare il file del pacchetto dell'app
+## <a name="step-1---app-information"></a>Passaggio 1: informazioni sull'app
 
-1. Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app**.
-2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione Android con l'estensione **apk**.
-3. Al termine, fare clic su **OK**.
+### <a name="select-the-app-package-file"></a>Selezionare il file del pacchetto dell'app
 
-## <a name="step-3-configure-app-information"></a>Passaggio 3: Configurare le informazioni sull'app
+1. Nel riquadro **Aggiungi app** fare clic su **Selezionare il file del pacchetto di app**. 
+2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione Android con estensione **apk**.
+   Verranno visualizzati i dettagli dell'app.
+3. Al termine, selezionare **OK** nel riquadro **File del pacchetto dell'app** per aggiungere l'app.
 
-1. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app**.
-2. Nel riquadro **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente.
+### <a name="set-app-information"></a>Impostare le informazioni sull'app
+
+1. Nella pagina **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente.
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata nel portale aziendale.
-    - **Description**: immettere la descrizione dell'app. La descrizione viene visualizzata nel portale aziendale.
+    - **Descrizione**: immettere la descrizione dell'app. La descrizione viene visualizzata nel portale aziendale.
     - **Autore**: Immettere il nome dell'autore dell'app.
     - **Sistema operativo minimo**: selezionare dall'elenco la versione minima del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
@@ -64,14 +67,25 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
     - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-3. Al termine, fare clic su **OK**.
+2. Fare clic su **Avanti** per visualizzare la pagina **Tag di ambito**.
 
-## <a name="step-4-finish-up"></a>Passaggio 4: Terminare
+## <a name="step-2---select-scope-tags-optional"></a>Passaggio 2: selezionare i tag di ambito (facoltativo)
+È possibile usare i tag di ambito per determinare chi può visualizzare le informazioni sull'app client in Intune. Per informazioni dettagliate complete sui tag di ambito, vedere [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Usare il controllo degli accessi in base al ruolo e i tag di ambito per l'IT distribuito).
 
-1. Nel riquadro **Aggiungi app** verificare che i dettagli dell'app siano corretti.
-2. Selezionare **Aggiungi** per caricare l'app in Intune.
+1. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. 
+2. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
 
-L'app creata viene ora visualizzata nell'elenco di app. Dall'elenco è possibile assegnare l'app ai gruppi scelti. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+## <a name="step-3---assignments"></a>Passaggio 3: assegnazioni
+
+1. Per l'assegnazione dell'app a gruppi, selezionare **Obbligatoria**, **Disponibile per i dispositivi registrati** o **Disinstalla**. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md) e [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
+2. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. 
+
+## <a name="step-4---review--create"></a>Passaggio 4 - Verifica e creazione
+
+1. Verificare i valori e le impostazioni immesse per l'app.
+2. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
+
+    Verrà visualizzato il pannello **Panoramica** per l'app line-of-business.
 
 ## <a name="step-5-update-a-line-of-business-app"></a>Passaggio 5: Aggiornare un'app line-of-business
 
