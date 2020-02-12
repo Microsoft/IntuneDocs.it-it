@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563835"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124827"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Connettere l'account di Intune all'account di Google Play gestito
 
@@ -69,4 +69,4 @@ Per facilitare la configurazione e l'uso delle funzionalità di gestione di Andr
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo la connessione all'account di Google Play gestito, è possibile [configurare i dispositivi con profilo di lavoro Android Enterprise](android-work-profile-enroll.md) e [configurare i dispositivi Android Enterprise dedicati](android-kiosk-enroll.md) e [configurare i dispositivi Android Enterprise completamente gestiti](android-kiosk-enroll.md)
+Dopo la connessione all'account di Google Play gestito, è possibile [configurare i dispositivi con profilo di lavoro Android Enterprise](android-work-profile-enroll.md) e [configurare i dispositivi Android Enterprise dedicati](android-kiosk-enroll.md) e [configurare i dispositivi Android Enterprise completamente gestiti](android-fully-managed-enroll.md)
