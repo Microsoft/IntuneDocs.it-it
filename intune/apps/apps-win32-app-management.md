@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755290"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075825"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autonomo - Gestione di app Win32
 
@@ -108,7 +108,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 
 4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
 
-## <a name="step-1---app-information"></a>Passaggio 1: informazioni sull'app
+## <a name="step-1---app-information"></a>Passaggio 1 - Informazioni sull'app
 
 ### <a name="select-the-app-package-file"></a>Selezionare il file del pacchetto dell'app
 
@@ -204,7 +204,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
         2. Dopo aver impostato le regole relative ai requisiti, selezionare **OK**.
 2. Fare clic su **Avanti** per visualizzare la pagina **Regole di rilevamento**.   
 
-### <a name="step-4-detection-rules"></a>Passaggio 4: Regole di rilevamento
+## <a name="step-4-detection-rules"></a>Passaggio 4: Regole di rilevamento
 
 1. Nella pagina **Regole di rilevamento** configurare le regole per rilevare la presenza dell'app:
     
@@ -268,7 +268,7 @@ I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app di Windows a 
 
 2. Dopo aver aggiunto le regole, selezionare **Avanti** per visualizzare la pagina **Dipendenze**.
 
-### <a name="step-5-dependencies"></a>Passaggio 5: Dipendenze
+## <a name="step-5-dependencies"></a>Passaggio 5: Dipendenze
 
 Le dipendenze dell'app sono applicazioni che devono essere installate prima di poter installare l'app Win32. È possibile richiedere che altre app vengano installate come dipendenze. In particolare, il dispositivo deve installare le app dipendenti prima di installare l'app Win32. È previsto un massimo di 100 dipendenze, che include le dipendenze specificate e l'app stessa. È possibile aggiungere le dipendenze di un'app Win32 solo dopo aver aggiunto e caricato l'app Win32 in Intune. Una volta aggiunta l'app Win32, verrà visualizzata l'opzione **Dipendenze** nel riquadro dell'app Win32. 
 

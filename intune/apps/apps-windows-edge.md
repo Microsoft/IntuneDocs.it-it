@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 8d5082376c42ff3b92e3979a53b6deac3e59c88e
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886674"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075808"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Aggiungere Microsoft Edge per Windows 10 a Microsoft Intune
 
 Prima di poter distribuire, configurare, monitorare o proteggere le app è necessario aggiungerle a Intune. Uno dei tipi di [app disponibili](~/apps/apps-add.md#app-types-in-microsoft-intune) è Microsoft Edge *versione 77 e successive*. Selezionando questo tipo di app in Intune, è possibile assegnare e installare Microsoft Edge *versione 77 e successive* nei dispositivi gestiti che eseguono Windows 10.
 
 > [!IMPORTANT]
-> Questo tipo di app è disponibile in **anteprima pubblica** e viene offerta nei canali stabile, beta e per sviluppatori per Windows 10. La distribuzione è solo in lingua inglese (EN), ma gli utenti finali possono modificare la lingua di visualizzazione nel browser in **Impostazioni** > **Lingue**. Microsoft Edge è un'app Win32 installata nel contesto di sistema e in architetture corrispondenti (app x86 in un sistema operativo x86 e app x64 in un sistema operativo x64). Intune rileverà tutte le installazioni di Microsoft Edge preesistenti. Se il browser è installato nel contesto utente, un'installazione del sistema lo sovrascriverà. Se è installato nel contesto di sistema, viene segnalato l'esito positivo dell'installazione. Inoltre gli aggiornamenti automatici di Microsoft Edge sono **attivati** per impostazione predefinita e non è possibile disinstallare Microsoft Edge.
+> Questo tipo di app è disponibile in **anteprima pubblica** e viene offerta nei canali stabile, beta e per sviluppatori per Windows 10. La distribuzione è solo in lingua inglese (EN), ma gli utenti finali possono modificare la lingua di visualizzazione nel browser in **Impostazioni** > **Lingue**. Microsoft Edge è un'app Win32 installata nel contesto di sistema e in architetture corrispondenti (app x86 in un sistema operativo x86 e app x64 in un sistema operativo x64). Intune rileverà tutte le installazioni di Microsoft Edge preesistenti. Se il browser è installato nel contesto utente, un'installazione del sistema lo sovrascriverà. Se è installato nel contesto di sistema, viene segnalato l'esito positivo dell'installazione. Inoltre, gli aggiornamenti automatici di Microsoft Edge sono **attivi** per impostazione predefinita.
 
 > [!NOTE]
 > Microsoft Edge *versione 77 e successive* è disponibile anche per macOS.
@@ -92,6 +92,28 @@ L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnar
 
 > [!NOTE]
 > Attualmente, se si annulla l'assegnazione della distribuzione di Microsoft Edge, il programma rimarrà nel dispositivo.
+
+## <a name="uninstall-the-app"></a>Disinstallare l'app
+
+Quando è necessario disinstallare Microsoft Edge dai dispositivi dell'utente, seguire questa procedura.
+
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **App** > **Tutte le app** > *Microsoft Edge* > **Assegnazioni** > **Aggiungi gruppo**.
+3. Nel riquadro **Aggiungi gruppo** selezionare **Disinstalla**.
+
+    > [!NOTE]
+    > L'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione **Disponibile per i dispositivi registrati** o **Obbligatoria** usando la stessa distribuzione.
+4. Selezionare **Gruppi inclusi** per selezionare i gruppi di utenti che sono interessati da questa assegnazione di app.
+5. Selezionare i gruppi a cui si vuole applicare l'assegnazione di disinstallazione.
+6. Fare clic su **Seleziona** nel riquadro **Seleziona gruppi**.
+7. Fare clic su **OK** nel riquadro **Assegna** per impostare l'assegnazione.
+8. Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
+9. Se si è scelto di escludere alcuni gruppi in **Selezione gruppi** selezionare **Seleziona**.
+10. Selezionare **OK** nel riquadro **Aggiungi gruppo**.
+11. Selezionare **Salva** nel riquadro **Assegnazioni** dell'app.
+
+> [!IMPORTANT]
+> Per disinstallare correttamente l'app, assicurarsi di rimuovere i membri o l'assegnazione di gruppo per l'installazione prima di assegnarli per la disinstallazione. Se un gruppo è assegnato sia all'installazione di un'app che alla disinstallazione, l'app rimarrà e non verrà rimossa.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 **Microsoft Edge versione 77 e successive per Windows 10:**<br>

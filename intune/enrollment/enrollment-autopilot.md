@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977802"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124844"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -100,6 +100,9 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
     - **Distribuzione automatica (anteprima)** (richiede Windows 10 versione 1809 o successive): i dispositivi con questo profilo non sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente non sono necessarie per effettuare la registrazione del dispositivo. Quando a un dispositivo non è associato alcun utente, i criteri di conformità basati sull'utente non sono applicabili. Quando si usa la modalità di distribuzione automatica, verranno applicati solo i criteri di conformità destinati al dispositivo.
 
     ![Screenshot della pagina Configurazione guidata](./media/enrollment-autopilot/create-profile-outofbox.png)
+
+   > [!NOTE]
+   > Le opzioni visualizzate in grigio o ombreggiate non sono attualmente supportate dalla modalità di distribuzione selezionata.
 
 6. Nella casella **Join to Azure AD as** (Connetti ad Azure AD come) scegliere **Aggiunto ad Azure AD**.
 7. Configurare le opzioni seguenti:
