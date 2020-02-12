@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754576"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051610"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -420,8 +420,6 @@ Si applica ai dispositivi che eseguono iOS 9.3 o versioni successive.
   Per trovare l'URL di un'app, aprire iTunes App Store e cercare l'app. Ad esempio, cercare `Microsoft Remote Desktop` o `Microsoft Word`. Selezionare l'app e copiare l'URL.
 
   È anche possibile usare iTunes per trovare l'app e quindi usare l'attività **Copia collegamento** per ottenere l'URL dell'app.
-  
-  Per altre informazioni su come individuare un ID bundle, vedere [Come trovare l'ID bundle per un'app iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - **ID bundle dell'app**: immettere l'[ID bundle](bundle-ids-built-in-ios-apps.md) dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
 - **Nome app**: immettere il nome dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
@@ -559,7 +557,9 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
 ## <a name="autonomous-single-app-mode"></a>Modalità applicazione singola autonoma
 
-Usare queste impostazioni per configurare i dispositivi iOS in modo che eseguano specifiche app in modalità app singola autonoma. Quando è configurata questa modalità e l'app viene eseguita, il dispositivo è bloccato e può eseguire solo tale app. Ad esempio, aggiungere un'app che consente agli utenti di eseguire un test nel dispositivo. Quando le azioni dell'app sono state completate o si rimuovono questi criteri, il dispositivo torna allo stato normale.
+Usare queste impostazioni per configurare i dispositivi iOS/iPadOS in modo che eseguano specifiche app in modalità app singola autonoma. Quando questa modalità è configurata e l'utente avvia una delle app configurate, il dispositivo viene bloccato per tale app. Il cambio di app/attività è disabilitato fino a quando l'utente non esce dall'app consentita.
+
+Ad esempio, in un ambiente scolastico o universitario, aggiungere un'app che consenta agli utenti di eseguire un test nel dispositivo. In alternativa, bloccare il dispositivo nell'app Portale aziendale fino all'autenticazione dell'utente finale. Quando l'utente completa le azioni dell'app o si rimuovono questi criteri, il dispositivo torna allo stato normale.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 

@@ -1,11 +1,11 @@
 ---
 title: Impostazioni delle baseline di sicurezza di Intune per MDM in Windows 10
 titleSuffix: Microsoft Intune
-description: Esaminare le impostazioni predefinite e le impostazioni disponibili per le diverse versioni della linea di base di sicurezza MDM di Windows che è possibile gestire con Microsoft Intune.
+description: Esaminare le impostazioni predefinite e le impostazioni disponibili per le diverse versioni della baseline di sicurezza MDM di Windows che è possibile gestire con Microsoft Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b2cb1b277f78ed81dea8c2d82eff6860182ea5d
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899261"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075791"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM in Windows per Intune
 
-Visualizzare le impostazioni di base della sicurezza MDM che Microsoft Intune supporta per i dispositivi che eseguono Windows 10 o versioni successive. I valori predefiniti per le impostazioni in questa linea di base rappresentano la configurazione consigliata per i dispositivi applicabili. Le impostazioni predefinite per una baseline potrebbero non corrispondere a quelle predefinite di altre linee di base di sicurezza o da altre versioni di questa linea di base.
+Visualizzare le impostazioni della baseline di sicurezza MDM supportate da Microsoft Intune per i dispositivi che eseguono Windows 10 o versioni successive. I valori predefiniti per le impostazioni in questa baseline rappresentano la configurazione consigliata per i dispositivi applicabili. Le impostazioni predefinite per una baseline potrebbero non corrispondere a quelle predefinite di altre baseline di sicurezza o di altre versioni di questa baseline.
 
-- Per informazioni sull'uso delle linee di base di sicurezza con Intune e su come aggiornare la versione di base nei profili di base di sicurezza, vedere [usare le linee di base di sicurezza](../security-baselines.md).
-- La versione di base più recente è la **baseline della sicurezza MDM per il 2019 maggio**
+- Per informazioni sull'uso delle baseline di sicurezza con Intune e su come aggiornare la versione delle baseline nei profili delle baseline di sicurezza, vedere [Usare le baseline di sicurezza](../security-baselines.md).
+- La versione della baseline più recente è la **Baseline della sicurezza MDM per maggio 2019**
 
-Assicurarsi di selezionare la versione della linea di base che si desidera visualizzare.
+Assicurarsi di selezionare la versione della baseline che si vuole visualizzare.
 <!-- Cookies might be required to enable some browsers to display the zone options -->
 
 ::: zone pivot="mdm-may-2019"
 **Baseline della sicurezza MDM per maggio 2019**:  
 > [!NOTE]
-> Nel giugno del 2019, la *baseline di sicurezza MDM per il modello di maggio 2019* è stata rilasciata come disponibile a livello generale (non in anteprima). Questa versione della linea di base di sicurezza sostituisce la baseline precedente, la *baseline della sicurezza MDM per il 2018 ottobre*.  I profili creati prima della disponibilità della linea di base di maggio 2019 non verranno aggiornati per riflettere le impostazioni e i valori nella versione di maggio 2019.  Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza che sono basati sul modello di anteprima.
+> Nel giugno del 2019 la *Baseline della sicurezza MDM per maggio 2019* è stata rilasciata come disponibile a livello generale (non in anteprima). Questa versione della baseline di sicurezza sostituisce la baseline precedente, ovvero la *Baseline della sicurezza MDM per ottobre 2018*.  I profili creati prima della disponibilità della baseline di maggio 2019 non verranno aggiornati per riflettere le impostazioni e i valori nella versione di maggio 2019.  Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza basati sul modello di anteprima.
 
-Per informazioni sulle modifiche apportate in questa versione della linea di base della versione precedente, vedere modifiche apportate al [nuovo modello](#whats-changed-in-the-new-template).
+Per informazioni sulle modifiche apportate in questa versione della baseline rispetto alla versione precedente, vedere [Modifiche apportate al nuovo modello](#whats-changed-in-the-new-template).
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
 **Anteprima - Baseline della sicurezza MDM per ottobre 2018**:  
 > [!NOTE]
-> Si tratta della versione di anteprima della linea di base di sicurezza MDM, rilasciata a ottobre 2018. Questa baseline di anteprima è stata sostituita nel giugno del 2019 dalla versione di *base della sicurezza MDM per* il modello di maggio 2019, disponibile a livello generale (non in anteprima). I profili creati prima della disponibilità della *linea di base di sicurezza MDM per* la baseline di maggio 2019 non verranno aggiornati in modo da riflettere le impostazioni e i valori presenti nella baseline della sicurezza MDM per la versione di maggio 2019. Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza che sono basati sul modello di anteprima.
+> Si tratta della versione di anteprima della baseline di sicurezza MDM, rilasciata a ottobre 2018. Questa baseline di anteprima è stata sostituita nel giugno del 2019 dalla versione del modello *Baseline della sicurezza MDM per maggio 2019*, disponibile a livello generale (non in anteprima). I profili creati prima della disponibilità della *Baseline della sicurezza MDM per maggio 2019* non verranno aggiornati in modo da riflettere le impostazioni e i valori presenti nella baseline di sicurezza MDM per maggio 2019. Sebbene non sia possibile creare nuovi profili in base al modello di anteprima, è possibile modificare e continuare a usare i profili creati in precedenza basati sul modello di anteprima.
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019,mdm-preview"
@@ -87,18 +87,18 @@ Per altre informazioni, vedere [Policy CSP - ApplicationManagement](https://docs
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Blocca il controllo utente sulle installazioni**:  
-  Questa impostazione di criteri consente agli utenti di modificare le opzioni di installazione che in genere sono disponibili solo per gli amministratori di sistema. Se si abilita questa impostazione di criteri, alcune delle funzionalità di sicurezza di Windows Installer verranno ignorate. Consente di completare le installazioni che altrimenti verrebbero interrotte a causa di una violazione della sicurezza. Se questa impostazione viene disabilitata o non configurata, le funzionalità di sicurezza di Windows Installer impediscono agli utenti di modificare le opzioni di installazione generalmente riservate agli amministratori di sistema, ad esempio la directory in cui vengono installati i file. Se Windows Installer rileva che un pacchetto di installazione ha consentito all'utente di modificare un'opzione protetta, l'installazione viene arrestata e viene visualizzato un messaggio. Queste funzionalità di sicurezza funzionano solo quando il programma di installazione è in esecuzione in un contesto di sicurezza con privilegi in cui ha accesso alle directory negate all'utente. Questa impostazione dei criteri è progettata per ambienti meno restrittivi. Può essere usato per aggirare gli errori in un programma di installazione che impedisce l'installazione del software.  
+- **Impedisci il controllo utente sulle installazioni**:  
+  Questa impostazione di criteri consente agli utenti di modificare le opzioni di installazione accessibili in genere solo agli amministratori di sistema. Se si abilita questa impostazione di criteri, alcune delle funzionalità di sicurezza di Windows Installer verranno ignorate. Consente di completare le installazioni che altrimenti verrebbero interrotte a causa di una violazione della sicurezza. Se questa impostazione viene disabilitata o non viene configurata, le funzionalità di sicurezza di Windows Installer impediscono agli utenti di modificare le opzioni di installazione generalmente riservate agli amministratori di sistema, ad esempio l'impostazione della directory in cui vengono installati i file. Se Windows Installer rileva che un pacchetto di installazione ha consentito all'utente di modificare un'opzione protetta, l'installazione viene arrestata e viene visualizzato un messaggio. Queste funzionalità di sicurezza funzionano solo quando il programma di installazione è in esecuzione in un contesto di sicurezza con privilegi in cui ha accesso alle directory negate all'utente. Questa impostazione dei criteri è progettata per ambienti meno restrittivi. Può essere usata per evitare gli errori in un programma di installazione che impedisce l'installazione di software.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067060)
 
   **Impostazione predefinita**: Sì
 
-- **Blocca le installazioni di app MSI con privilegi elevati**:  
+- **Impedisci le installazioni di app MSI con privilegi elevati**:  
   Questa impostazione dei criteri indica a Windows Installer di usare le autorizzazioni elevate per installare qualsiasi programma nel sistema.
 
-  - *Se si abilita questa impostazione di criteri*, i privilegi vengono estesi a tutti i programmi. In genere, questi privilegi sono riservati ai programmi assegnati all'utente (offerti sul desktop), assegnati al computer (installati automaticamente) o sono disponibili in Installazione applicazioni nel pannello di controllo. Questa impostazione del profilo consente agli utenti di installare programmi che richiedono l'accesso alle directory che l'utente potrebbe non disporre delle autorizzazioni per la visualizzazione o la modifica, incluse le directory su computer con restrizioni.
+  - *Se si abilita questa impostazione di criteri*, i privilegi vengono estesi a tutti i programmi. In genere, questi privilegi sono riservati ai programmi assegnati all'utente (offerti sul desktop), assegnati al computer (installati automaticamente) o sono disponibili in Installazione applicazioni nel Pannello di controllo. Questa impostazione del profilo consente agli utenti di installare programmi che richiedono l'accesso a directory per le quali l'utente potrebbe non avere le autorizzazioni per la visualizzazione o la modifica, incluse le directory in computer con restrizioni elevate.
 
-  - *Se questa impostazione viene disabilitata o non configurata*, il sistema applica le autorizzazioni dell'utente corrente durante l'installazione di programmi non distribuiti o offerti da un amministratore di sistema. Nota: l'impostazione di questo criterio è presente in entrambe le cartelle Configurazione computer e Configurazione utente. Per rendere effettiva questa impostazione dei criteri, è necessario abilitarla in entrambe le cartelle. Attenzione: gli utenti esperti possono sfruttare le autorizzazioni concesse da questa impostazione di criteri per modificare i privilegi e ottenere l'accesso permanente a file e cartelle con restrizioni. La versione di configurazione utente di questa impostazione dei criteri non è sicura.  
+  - *Se questa impostazione di criteri viene disabilitata o non configurata*, il sistema applica le autorizzazioni dell'utente corrente durante l'installazione di programmi che non vengono distribuiti o offerti da un amministratore di sistema. Nota: questa impostazione di criteri è presente in entrambe le cartelle Configurazione computer e Configurazione utente. Per rendere effettiva questa impostazione di criteri, è necessario abilitarla in entrambe le cartelle. Attenzione: gli utenti esperti possono sfruttare le autorizzazioni concesse da questa impostazione di criteri per modificare i loro privilegi e ottenere l'accesso permanente a file e cartelle con restrizioni. Non è garantita la sicurezza della versione di Configurazione utente di questa impostazione di criteri.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067134)
 
   **Impostazione predefinita**: Sì
@@ -168,7 +168,7 @@ Per altre informazioni, vedere [CSP dei criteri - BitLocker](https://docs.micros
   Per i criteri di unità fissa BitLocker, configurare le impostazioni seguenti:
 
   - **Metodo di crittografia**:  
-    **Impostazione predefinita**: AES-XTS a 256 bit  
+    **Impostazione predefinita**: XTS-AES a 256 bit  
 
 - **Criterio Unità di sistema BitLocker**:  
   L'impostazione di questo criterio viene usata per controllare il metodo di crittografia e il livello di codifica. I valori di questo criterio determinano il livello di codifica usato da BitLocker per la crittografia. Per una maggiore sicurezza, le aziende potrebbero voler controllare il livello di crittografia (AES-256 è un algoritmo più avanzato rispetto a AES-128). Se si abilita questa impostazione, è possibile configurare individualmente un algoritmo di crittografia e un livello di codifica per unità dati fisse, unità del sistema operativo e unità dati rimovibili. Per le unità fisse e del sistema operativo è consigliabile usare l'algoritmo XTS-AES. Per le unità rimovibili è consigliabile usare AES-CBC a 128 bit o AES-CBC a 256 bit se l'unità viene usata in altri dispositivi che non eseguono Windows 10 versione 1511 o successiva. La modifica del metodo di crittografia non produce alcun effetto se l'unità è già crittografata o se la crittografia è in corso. In questi casi, l'impostazione di questo criterio viene ignorata.
@@ -176,7 +176,7 @@ Per altre informazioni, vedere [CSP dei criteri - BitLocker](https://docs.micros
   Per i criteri di un'unità di sistema BitLocker, configurare le impostazioni seguenti:
 
   - **Metodo di crittografia**:  
-    **Impostazione predefinita**: AES-XTS a 256 bit
+    **Impostazione predefinita**: XTS-AES a 256 bit
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -209,7 +209,7 @@ Per altre informazioni, vedere [Policy CSP - Browser](https://docs.microsoft.com
   
   **Impostazione predefinita**: Sì
   
-- **Impedire di ignorare gli errori di certificato**:  
+- **Impedisci all'utente di eseguire l'override degli errori di certificati**:  
   L'impostazione di questo criterio impedisce all'utente di ignorare gli errori di certificato Secure Sockets Layer/Transport Layer Security (SSL/TLS) che interrompono l'esplorazione in Internet Explorer, ad esempio errori relativi a certificati "scaduti", "revocati" o con "nomi non corrispondenti". Se si abilita l'impostazione di questo criterio, l'utente non può continuare l'esplorazione. Se si disabilita o non si configura l'impostazione di questo criterio, l'utente può scegliere di ignorare gli errori di certificato e continuare l'esplorazione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067126)
   
@@ -228,15 +228,15 @@ Per altre informazioni, vedere [Policy CSP - Connectivity](https://docs.microsof
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Configurare l'accesso sicuro ai percorsi UNC**:  
-  Questa impostazione criterio consente di configurare l'accesso sicuro ai percorsi UNC. Se si Abilita questo criterio, Windows consente solo l'accesso ai percorsi UNC specificati dopo aver soddisfatto i requisiti di sicurezza aggiuntivi.  
+- **Configura l'accesso sicuro ai percorsi UNC**:  
+  Questa impostazione di criteri consente di configurare l'accesso sicuro ai percorsi UNC. Se si abilita questo criterio, Windows consente solo l'accesso ai percorsi UNC specificati dopo il superamento dei requisiti di sicurezza aggiuntivi.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067243)
 
-  **Impostazione predefinita**: configura Windows per consentire l'accesso solo ai percorsi UNC specificati dopo aver soddisfatto i requisiti di sicurezza aggiuntivi.
+  **Impostazione predefinita**: Configura Windows per consentire l'accesso solo ai percorsi UNC specificati dopo il superamento dei requisiti di sicurezza aggiuntivi.
 
-  Quando si seleziona *configura Windows in modo da consentire l'accesso solo ai percorsi UNC specificati dopo aver soddisfatto i requisiti di sicurezza aggiuntivi* , è possibile configurare l'elenco dei percorsi UNC con protezione *avanzata*.
+  Quando si seleziona *Configura Windows per consentire l'accesso solo ai percorsi UNC specificati dopo il superamento dei requisiti di sicurezza aggiuntivi*, è possibile configurare *Elenco di percorsi UNC con protezione avanzata*.
 
-  - **Elenco percorsi UNC con protezione avanzata**:  
+  - **Elenco di percorsi UNC con protezione avanzata**:  
     Selezionare **Aggiungi** per specificare i flag di sicurezza e i percorsi del server aggiuntivi.
 
 ::: zone-end
@@ -292,7 +292,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceGuard](https://docs.microsoft
 ::: zone pivot="mdm-may-2019"
 
 - **Sicurezza basata su virtualizzazione**:  
-  **Impostazione predefinita**: Abilita vbs con avvio protetto
+  **Impostazione predefinita**: Abilita VBS con avvio protetto
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -314,7 +314,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceInstallation](https://docs.mi
   L'impostazione di questo criterio consente di specificare un elenco di ID hardware Plug and Play e ID compatibili per i dispositivi la cui installazione non è consentita in Windows. L'impostazione di questo criterio ha la precedenza su qualsiasi altra impostazione di criteri che consente a Windows di installare un dispositivo. Se si abilita l'impostazione di questo criterio, Windows non potrà installare i dispositivi il cui ID hardware o ID compatibile sia presente nell'elenco creato. Se si abilita l'impostazione di questo criterio in un server desktop remoto, l'impostazione del criterio influirà sul reindirizzamento dei dispositivi specificati da un client desktop remoto al server desktop remoto. Se si disabilita o non si configura l'impostazione di questo criterio, è possibile installare e aggiornare i dispositivi in base a quanto consentito o impedito da altre impostazioni di criteri.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2066794)
 
-  **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware
+  **Impostazione predefinita**: Bloccare l'installazione del dispositivo hardware
 
   Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
 
@@ -332,7 +332,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceInstallation](https://docs.mi
   L'impostazione di questo criterio consente di specificare un elenco di identificatori univoci globali (GUID) della classe di installazione del dispositivo per i driver di dispositivo la cui installazione non è consentita in Windows. L'impostazione di questo criterio ha la precedenza su qualsiasi altra impostazione di criteri che consente a Windows di installare un dispositivo. Se si abilita l'impostazione di questo criterio, Windows non potrà installare o aggiornare i driver di dispositivo i cui GUID della classe di installazione del dispositivo sono inclusi nell'elenco creato. Se si abilita l'impostazione di questo criterio in un server desktop remoto, l'impostazione del criterio influirà sul reindirizzamento dei dispositivi specificati da un client desktop remoto al server desktop remoto. Se si disabilita o non si configura l'impostazione di questo criterio, Windows potrà installare e aggiornare i dispositivi in base a quanto consentito o impedito da altre impostazioni di criteri.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067048)
 
-  **Impostazione predefinita**: Blocca l'installazione del dispositivo hardware
+  **Impostazione predefinita**: Bloccare l'installazione del dispositivo hardware
 
   Quando l'opzione *Blocca l'installazione del dispositivo hardware* è selezionata, sono disponibili le impostazioni seguenti.
 
@@ -365,7 +365,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
   Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
 
   - **Numero minimo di set di caratteri per la password**:  
-    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. L'utilizzo di un PIN prevede le condizioni seguenti per dispositivi mobili e desktop: 1 - Solo cifre 2 - Cifre e caratteri minuscoli obbligatori 3 - Cifre e caratteri minuscoli e maiuscoli obbligatori. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1.  
+    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. Il PIN applica il comportamento seguente per i dispositivi desktop e mobili: 1 - Solo cifre 2 - Cifre e lettere minuscole obbligatorie 3 - Cifre, lettere minuscole e lettere maiuscole obbligatorie. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1.  
     [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Impostazione predefinita**: 3
@@ -386,7 +386,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
     Determina il tipo di PIN o password obbligatorio.  
     [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067027)
 
-    **Impostazione predefinita**: Caratteri alfanumerici
+    **Impostazione predefinita**: Alfanumerico
 
   - **Lunghezza minima password**:  
     L'impostazione del criterio Lunghezza minima password determina il numero minimo di caratteri della password di un account utente. È possibile impostare un valore compreso tra 1 e 14 caratteri oppure è possibile specificare che non è richiesta alcuna password impostando il numero di caratteri su 0.  
@@ -424,12 +424,12 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## <a name="dma-guard"></a>Protezione DMA
+## <a name="dma-guard"></a>DMA Guard
 
 Per altre informazioni, vedere [Provider di servizi di configurazione dei criteri - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) nella documentazione di Windows.
 
 - **Enumerazione di dispositivi esterni non compatibili con la protezione DMA del kernel**:  
-  Questo criterio ha lo scopo di fornire sicurezza aggiuntiva ai dispositivi compatibili con DMA esterno. Consente inoltre maggiore controllo sull'enumerazione di dispositivi esterni idonei per DMA non compatibili con il remapping e/o l'isolamento e il sandboxing della memoria del dispositivo. Questo criterio viene applicato solo quando la protezione DMA del kernel è supportata e abilitata dal firmware del sistema. Il kernel DMA Protection è una funzionalità della piattaforma che non può essere controllata tramite criteri o dall'utente finale. Deve essere supportata dal sistema in fase di produzione. Per verificare se il sistema supporta la protezione DMA del kernel, controllare il campo protezione DMA kernel nella pagina Riepilogo di MSINFO32. exe.  
+  Questo criterio ha lo scopo di fornire sicurezza aggiuntiva nei confronti dei dispositivi compatibili con DMA esterni. Consente inoltre maggiore controllo sull'enumerazione di dispositivi esterni idonei per DMA non compatibili con il remapping e/o l'isolamento e il sandboxing della memoria del dispositivo. Questo criterio viene applicato solo quando la protezione DMA del kernel è supportata e abilitata dal firmware del sistema. La protezione DMA del kernel è una funzionalità della piattaforma che non può essere controllata tramite criteri o dall'utente finale. Deve essere supportata dal sistema in fase di produzione. Per verificare se il sistema supporta la protezione DMA del kernel, controllare il campo della protezione DMA del kernel nella pagina di riepilogo di MSINFO32.exe.  
   [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Impostazione predefinita**: Blocca tutto
@@ -487,7 +487,7 @@ Per altre informazioni, vedere [Policy CSP - Experience](https://docs.microsoft.
 
 Per altre informazioni, vedere [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) (Provider di servizi di configurazione dei criteri - ExploitGuard) nella documentazione di Windows.
 
-- **XML di Protezione dagli exploit**:  
+- **Carica XML**:  
   Consente all'amministratore IT di distribuire una configurazione che rappresenta il sistema desiderato e le opzioni di mitigazione delle applicazioni a tutti i dispositivi nell'organizzazione. La configurazione è rappresentata da un XML. La Protezione dagli exploit consente di proteggere i dispositivi da malware che usa gli exploit per la diffusione e l'infezione. Usare l'app Sicurezza di Windows o PowerShell per creare un set di mitigazioni, chiamato configurazione. È quindi possibile esportare la configurazione come file XML e condividerla con più computer in rete in modo che abbiano lo stesso set di impostazioni di mitigazione. È anche possibile convertire e importare un file XML di configurazione EMET esistente in un file XML di configurazione di protezione dagli exploit.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067035)
 
@@ -508,6 +508,64 @@ Per altre informazioni, vedere [Policy CSP - FileExplorer](https://docs.microsof
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067107)
 
   **Impostazione predefinita**: Disabilitato
+
+## <a name="firewall"></a>Firewall
+
+Per altre informazioni, vedere [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) nella documentazione relativa ai protocolli di Windows.
+
+- **Profilo di dominio del firewall**:  
+  Specifica i profili a cui appartiene la regola: Dominio, Privato o Pubblico. Questo valore rappresenta il profilo per le reti connesse ai domini.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2066796)
+
+  - **Connessioni in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Connessioni in uscita obbligatorie**:  
+    **Impostazione predefinita**: Sì
+
+  - **Notifiche in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Firewall abilitato**:  
+    **Impostazione predefinita**: Consentito
+
+- **Profilo pubblico del firewall**:  
+  Specifica i profili a cui appartiene la regola: Dominio, Privato o Pubblico. Questo valore rappresenta il profilo per le reti pubbliche. Tali reti sono classificate come pubbliche dagli amministratori nell'host del server. La classificazione viene stabilita la prima volta che l'host si connette alla rete. Queste reti sono in genere quelle di aeroporti, bar e altri luoghi pubblici, in cui i peer nella rete o l'amministratore di rete non sono attendibili.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067143)
+
+  - **Connessioni in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Connessioni in uscita obbligatorie**:  
+    **Impostazione predefinita**: Sì
+
+  - **Notifiche in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Firewall abilitato**:  
+    **Impostazione predefinita**: Consentito
+
+  - **Regole di sicurezza connessione da Criteri di gruppo non unite**:  
+    **Impostazione predefinita**: Sì
+
+  - **Regole dei criteri da Criteri di gruppo non unite**:  
+    **Impostazione predefinita**: Sì
+
+- **Profilo privato del firewall**:  
+  Specifica i profili a cui appartiene la regola: Dominio, Privato o Pubblico. Questo valore rappresenta il profilo per le reti private.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067041)
+
+  - **Connessioni in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Connessioni in uscita obbligatorie**:  
+    **Impostazione predefinita**: Sì
+
+  - **Notifiche in ingresso bloccate**:  
+    **Impostazione predefinita**: Sì
+
+  - **Firewall abilitato**:  
+    **Impostazione predefinita**: Consentito
 
 ## <a name="internet-explorer"></a>Internet Explorer
 
@@ -554,7 +612,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area con restrizioni - Trascinare contenuto da domini diversi all'interno delle finestre**:  
-  Questa impostazione consente di specificare le opzioni per il trascinamento di contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Se si abilita questa impostazione e si fa clic su Attiva, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione nella finestra di dialogo Opzioni Internet.  
+  Questa impostazione di criteri consente di impostare le opzioni per trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Se si abilita questa impostazione e si fa clic su Abilita, gli utenti possono trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono nella stessa finestra. Gli utenti non possono modificare questa impostazione nella finestra di dialogo Opzioni Internet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067079)  
 
   **Impostazione predefinita**: Disabilitato
@@ -602,7 +660,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Disabilitare i processi in modalità protetta avanzata**:  
-  L'impostazione di questo criterio determina se Internet Explorer 11 usa i processi a 64 bit (per maggiore sicurezza) o a 32 bit (per maggiore compatibilità) durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Importante: alcuni controlli ActiveX e alcune barre degli strumenti potrebbero non essere disponibili quando vengono usati processi a 64 bit. Se si abilita l'impostazione di questo criterio, Internet Explorer 11 userà processi schede a 64 bit durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Se si disabilita l'impostazione di questo criterio, Internet Explorer 11 userà processi schede a 32 bit durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Se non si configura l'impostazione di questo criterio, gli utenti possono attivare o disattivare questa funzionalità tramite le impostazioni di Internet Explorer. Questa funzionalità è disattivata per impostazione predefinita.  
+  L'impostazione di questo criterio determina se Internet Explorer 11 usa i processi a 64 bit (per maggiore sicurezza) o a 32 bit (per maggiore compatibilità) durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Importante: Alcuni controlli ActiveX e alcune barre degli strumenti potrebbero non essere disponibili quando vengono usati processi a 64 bit. Se si abilita l'impostazione di questo criterio, Internet Explorer 11 userà processi schede a 64 bit durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Se si disabilita l'impostazione di questo criterio, Internet Explorer 11 userà processi schede a 32 bit durante l'esecuzione in modalità protetta avanzata nelle versioni di Windows a 64 bit. Se non si configura l'impostazione di questo criterio, gli utenti possono attivare o disattivare questa funzionalità tramite le impostazioni di Internet Explorer. Questa funzionalità è disattivata per impostazione predefinita.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067149)
 
   **Impostazione predefinita**: Abilitato
@@ -661,24 +719,24 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Supporto della crittografia di Internet Explorer**:  
-  Questa impostazione criterio consente di disattivare il supporto per Transport Layer Security (TLS) 1,0, TLS 1,1, TLS 1,2, Secure Sockets Layer (SSL) 2,0 o SSL 3,0 nel browser. TLS e SSL sono protocolli che consentono di proteggere la comunicazione tra il browser e il server di destinazione. Quando il browser tenta di configurare una comunicazione protetta con il server di destinazione, il browser e il server negoziano il protocollo e la versione da usare. Il browser e il server tentano di trovare la corrispondenza con l'elenco di protocolli e versioni supportati e selezionano la corrispondenza più desiderata. Se si abilita questa impostazione di criteri, il browser negozia o non negozia un tunnel di crittografia usando i metodi di crittografia selezionati dall'elenco a discesa. Se questa impostazione viene disabilitata o non configurata, l'utente può selezionare il metodo di crittografia supportato dal browser.  
+- **Internet Explorer - Supporto della crittografia**:  
+  Questa impostazione di criteri consente di disattivare il supporto per Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 o SSL 3.0 nel browser. TLS e SSL sono protocolli che consentono di proteggere le comunicazioni tra il browser e il server di destinazione. Quando il browser tenta di configurare una comunicazione protetta con il server di destinazione, il browser e il server negoziano il protocollo e la versione da usare. Il browser e il server tentano di trovare una corrispondenza nel rispettivo elenco di protocolli e versioni supportati e selezionano la corrispondenza preferita. Se si abilita questa impostazione di criteri, il browser negozia o non negozia un tunnel di crittografia usando i metodi di crittografia selezionati nell'elenco a discesa. Se questa impostazione di criteri viene disabilitata o non viene configurata, l'utente può selezionare il metodo di crittografia supportato dal browser.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Impostazione predefinita**: 2 elementi: TLS v 1.1 e TLS v 1.2  
+  **Impostazione predefinita**: 2 elementi: TLS v1.1 e TLS v1.2  
   *Selezionare la freccia rivolta verso il basso per visualizzare le opzioni che è possibile selezionare per questa impostazione.*
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Internet Explorer - Area Internet bloccata - SmartScreen**:  
-  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: in Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
+  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: In Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067059)
 
   **Impostazione predefinita**: Abilitato
 
 - **Internet Explorer - Area con restrizioni - Avviare programmi e file in un IFRAME**:  
-  L'impostazione di questo criterio consente di gestire l'esecuzione di applicazioni e il download di file da un riferimento IFRAME nel codice HTML delle pagine appartenenti all'area. Se si abilita l'impostazione di questo criterio, è possibile eseguire applicazioni e scaricare file da IFRAME nelle pagine dell'area senza intervento dell'utente. Se si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME nelle pagine dell'area. Se si disabilita questa impostazione di criteri, gli utenti non potranno eseguire le applicazioni e scaricare i file da IFRAME nelle pagine di questa zona. Se non si configura l'impostazione di questo criterio, gli utenti non potranno eseguire le applicazioni e scaricare file da IFRAME presenti nelle pagine dell'area.  
+  L'impostazione di questo criterio consente di gestire l'esecuzione di applicazioni e il download di file da un riferimento IFRAME nel codice HTML delle pagine appartenenti all'area. Se si abilita l'impostazione di questo criterio, è possibile eseguire applicazioni e scaricare file da IFRAME nelle pagine dell'area senza intervento dell'utente. Se si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME nelle pagine dell'area. Se si disabilita questa impostazione di criteri, gli utenti non possono eseguire le applicazioni e scaricare file da IFRAME presenti nelle pagine dell'area. Se non si configura l'impostazione di questo criterio, gli utenti non potranno eseguire le applicazioni e scaricare file da IFRAME presenti nelle pagine dell'area.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067061)
 
   **Impostazione predefinita**: Disabilitato
@@ -693,7 +751,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di gestire la visualizzazione di finestre popup indesiderate. Le finestre popup visualizzate quando l'utente finale fa clic su un collegamento non vengono bloccate. Se si abilita l'impostazione di questo criterio, viene impedita la visualizzazione della maggior parte delle finestre popup indesiderate. Se si disabilita l'impostazione di questo criterio, non viene impedita la visualizzazione delle finestre popup. Se non si configura l'impostazione di questo criterio, viene impedita la visualizzazione della maggior parte delle finestre popup.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067069)
 
-  **Impostazione predefinita**: Abilita
+  **Impostazione predefinita**: Abilitare
 
 - **Gestione MIME coerente dei processi di Internet Explorer**:  
   Internet Explorer contiene comportamenti binari dinamici, ovvero componenti che incapsulano funzionalità specifiche per gli elementi HTML a cui sono associati. L'impostazione di questo criterio determina se l'impostazione Restrizione di sicurezza comportamenti binari è consentita o meno. Se si abilita l'impostazione di questo criterio, i comportamenti binari non saranno consentiti per i processi di Esplora file e Internet Explorer. Se si disabilita l'impostazione di questo criterio, i comportamenti binari saranno consentiti per i processi di Esplora file e Internet Explorer. Se non si configura l'impostazione di questo criterio, i comportamenti binari non saranno consentiti per i processi di Esplora file e Internet Explorer.  
@@ -708,7 +766,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitare Java
 
 - **Internet Explorer - Controlli Active X in modalità protetta**:  
-  Questa impostazione consente di impedire l'esecuzione di controlli ActiveX in modalità protetta, quando è attivata la modalità protetta avanzata. Se un utente ha un controllo ActiveX installato non compatibile con la modalità protetta avanzata e un sito Web prova a caricare il controllo, Internet Explorer visualizza una notifica e offre la possibilità all'utente di eseguire il sito Web in modalità protetta normale. Questa impostazione disabilita la notifica e impone l'esecuzione in modalità protetta avanzata per tutti i siti Web. La modalità protetta avanzata offre maggiore protezione da siti Web dannosi utilizzando processi a 64 bit nelle versioni a 64 bit di Windows. Per i computer che eseguono almeno Windows 8, la modalità protetta avanzata limita anche i percorsi leggibili da Internet Explorer nel Registro di sistema e nel file system. Quando è abilitata la modalità protetta avanzata e un utente visita un sito Web che prova a caricare un controllo ActiveX non compatibile con la modalità protetta avanzata, Internet Explorer visualizza una notifica e offre la possibilità all'utente di disabilitare la modalità protetta avanzata per tale sito Web specifico. Se si abilita questa impostazione, Internet Explorer non offre all'utente la possibilità di disabilitare la modalità protetta avanzata. Tutti i siti Web in modalità protetta verranno eseguiti in modalità protetta avanzata. Se l'impostazione viene disabilitata o non configurata, Internet Explorer visualizza una notifica per gli utenti e offre la possibilità di eseguire i siti Web con controlli ActiveX non compatibili in modalità protetta normale.  
+  Questa impostazione di criteri impedisce l'esecuzione dei controlli ActiveX in modalità protetta quando è abilitata la modalità protetta avanzata. Se un utente ha un controllo ActiveX installato non compatibile con la modalità protetta avanzata e un sito Web prova a caricare il controllo, Internet Explorer visualizza una notifica e offre la possibilità all'utente di eseguire il sito Web in modalità protetta normale. Questa impostazione di criteri disabilita la notifica e impone l'esecuzione di tutti i siti Web in modalità protetta avanzata. La modalità protetta avanzata offre protezione aggiuntiva contro i siti Web dannosi usando processi a 64 bit nelle versioni di Windows a 64 bit. Per i computer che eseguono almeno Windows 8, la modalità protetta avanzata limita anche i percorsi leggibili da Internet Explorer nel Registro di sistema e nel file system. Quando è abilitata la modalità protetta avanzata e un utente visita un sito Web che prova a caricare un controllo ActiveX non compatibile con la modalità protetta avanzata, Internet Explorer visualizza una notifica e offre la possibilità all'utente di disabilitare la modalità protetta avanzata per tale sito Web specifico. Se si abilita questa impostazione, Internet Explorer non offre all'utente la possibilità di disabilitare la modalità protetta avanzata. Tutti i siti Web in modalità protetta vengono eseguiti in modalità protetta avanzata. Se l'impostazione viene disabilitata o non configurata, Internet Explorer visualizza una notifica per gli utenti e offre la possibilità di eseguire i siti Web con controlli ActiveX non compatibili in modalità protetta normale.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067145)
 
   **Impostazione predefinita**: Disabilitato
@@ -751,7 +809,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   Se si disabilita l'impostazione di questo criterio, viene impostata l'opzione *Accesso automatico solo nell'area Intranet*. Se non si configura l'impostazione di questo criterio, viene impostata l'opzione di accesso *Chiedi conferma* per nome utente e password.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067110)
 
-  **Impostazione predefinita**: Anonimo
+  **Impostazione predefinita**: Anonima
 
 - **Internet Explorer - Area attendibile - Inizializzare ed eseguire script di controlli ActiveX non contrassegnati come sicuri**:  
   L'impostazione di questo criterio consente di gestire i controlli ActiveX non contrassegnati come sicuri. Se si abilita l'impostazione di questo criterio, i controlli ActiveX vengono eseguiti, caricati con parametri ed eseguiti tramite script senza impostare la protezione degli oggetti per dati o script non considerati attendibili. Questa impostazione è sconsigliata, a meno che non si tratti di aree protette e amministrate. Questa impostazione causa l'inizializzazione e l'esecuzione tramite script di controlli sia sicuri che non sicuri, indipendentemente dall'opzione Esegui script controlli ActiveX contrassegnati come sicuri. Se si abilita l'impostazione di questo criterio e si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire il caricamento con parametri o l'esecuzione tramite script del controllo. Se si disabilita l'impostazione di questo criterio, i controlli ActiveX che non è possibile rendere sicuri non vengono caricati con parametri o eseguiti tramite script. Se non si configura l'impostazione di questo criterio, agli utenti viene chiesto di scegliere se consentire il caricamento con parametri o l'esecuzione tramite script del controllo.  
@@ -793,7 +851,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio impedisce all'utente di gestire il filtro SmartScreen, che avvisa l'utente se il sito Web visitato è noto per aver eseguito tentativi fraudolenti di raccogliere informazioni personali attraverso il "phishing" o per contenere malware. Se si abilita questa impostazione, all'utente non viene richiesto di attivare il filtro SmartScreen. Tutti gli indirizzi di siti Web non inclusi nell'elenco di quelli consentiti vengono inviati automaticamente a Microsoft senza richiedere conferma all'utente. Se si disabilita o non si configura l'impostazione di questo criterio, l'utente può scegliere se attivare il filtro SmartScreen alla prima esecuzione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067135)
 
-  **Impostazione predefinita**: Abilita
+  **Impostazione predefinita**: Abilitare
 
 - **Internet Explorer - Processi - Funzionalità di protezione analisi MIME**:  
   L'impostazione di questo criterio determina se l'analisi MIME di Internet Explorer impedisce l'innalzamento di livello di un file di un certo tipo a un tipo di file più pericoloso. Se si abilita l'impostazione di questo criterio, l'analisi MIME non innalzerà mai di livello un file di un certo tipo a un tipo di file più pericoloso. Se si disabilita l'impostazione di questo criterio, i processi di Internet Explorer consentiranno all'analisi MIME di innalzare di livello un file di un certo tipo a un tipo di file più pericoloso. Se non si configura l'impostazione di questo criterio, l'analisi MIME non innalzerà mai di livello un file di un certo tipo a un tipo di file più pericoloso.  
@@ -869,7 +927,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area con restrizioni - SmartScreen**:  
-  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: in Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
+  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: In Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067034)
 
   **Impostazione predefinita**: Abilitato
@@ -881,19 +939,19 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Abilitato
 
 - **Internet Explorer - Area Internet - Avviare programmi e file in un IFRAME**:  
-  L'impostazione di questo criterio consente di gestire l'esecuzione di applicazioni e il download di file da un riferimento IFRAME nel codice HTML delle pagine appartenenti all'area. Se si abilita l'impostazione di questo criterio, è possibile eseguire applicazioni e scaricare file da IFRAME nelle pagine dell'area senza intervento dell'utente. Se si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME nelle pagine dell'area. Se si disabilita questa impostazione di criteri, gli utenti non potranno eseguire le applicazioni e scaricare i file da IFRAME nelle pagine di questa zona. Se non si configura l'impostazione di questo criterio, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME presenti nelle pagine dell'area.  
+  L'impostazione di questo criterio consente di gestire l'esecuzione di applicazioni e il download di file da un riferimento IFRAME nel codice HTML delle pagine appartenenti all'area. Se si abilita l'impostazione di questo criterio, è possibile eseguire applicazioni e scaricare file da IFRAME nelle pagine dell'area senza intervento dell'utente. Se si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME nelle pagine dell'area. Se si disabilita questa impostazione di criteri, gli utenti non possono eseguire le applicazioni e scaricare file da IFRAME presenti nelle pagine dell'area. Se non si configura l'impostazione di questo criterio, agli utenti viene chiesto di scegliere se consentire l'esecuzione di applicazioni e il download di file da IFRAME presenti nelle pagine dell'area.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067020)
 
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area con restrizioni - Esplorare finestre e frame in domini diversi**:  
-  Questa impostazione consente di specificare le opzioni per il trascinamento di contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Attiva, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
+  Questa impostazione di criteri consente di impostare le opzioni per trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Abilita, gli utenti possono trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067050)
 
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area Internet - SmartScreen**:  
-  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: in Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
+  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: In Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067047)
 
   **Impostazione predefinita**: Abilitato
@@ -938,7 +996,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di controllare la visualizzazione dell'avviso "Apri file - Avviso di sicurezza" quando l'utente prova ad aprire file eseguibili o altri file potenzialmente non sicuri, ad esempio da una condivisione file Intranet usando Esplora file. Se si abilita l'impostazione di questo criterio e nella casella a discesa è selezionata Abilita, i file verranno aperti senza visualizzare l'avviso di sicurezza. Se nella casella a discesa è selezionata Chiedi conferma, prima dell'apertura dei file viene visualizzato un avviso di sicurezza. Se si disabilita l'impostazione di questo criterio, i file non verranno aperti. Se non si configura l'impostazione di questo criterio, l'utente può configurare la modalità di gestione di questi file. Per impostazione predefinita, questi file vengono bloccati nell'area con restrizioni, abilitati nell'area Intranet e del computer locale e impostati su Chiedi conferma nelle aree attendibili e Internet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067204)
 
-  **Impostazione predefinita**: Messaggio di richiesta
+  **Impostazione predefinita**: Prompt
 
 - **Internet Explorer - Area Intranet - Autorizzazioni Java**:  
   L'impostazione di questo criterio consente di gestire le autorizzazioni per le applet Java. Se si abilita l'impostazione di questo criterio, è possibile scegliere le opzioni dalla casella a discesa. Personalizza consente di controllare le impostazioni delle autorizzazioni singolarmente. Protezione bassa consente alle applet di eseguire tutte le operazioni. Protezione media abilita l'esecuzione delle applet nell'ambiente sandbox (area di memoria all'esterno della quale il programma non può eseguire chiamate) e funzionalità come lo spazio di lavoro (area di archiviazione protetta e sicura nel computer client) e l'I/O di file controllato dall'utente. Protezione alta abilita l'esecuzione delle applet nell'ambiente sandbox. Disabilitare Java per impedire l'esecuzione di tutte le applet. Se si disabilita l'impostazione di questo criterio, le applet Java non potranno essere eseguite. Se non si configura l'impostazione di questo criterio, l'autorizzazione viene impostata su Protezione media.  
@@ -956,7 +1014,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di gestire la visualizzazione di finestre popup indesiderate. Le finestre popup visualizzate quando l'utente finale fa clic su un collegamento non vengono bloccate. Se si abilita l'impostazione di questo criterio, viene impedita la visualizzazione della maggior parte delle finestre popup indesiderate. Se si disabilita l'impostazione di questo criterio, non viene impedita la visualizzazione delle finestre popup. Se non si configura l'impostazione di questo criterio, viene impedita la visualizzazione della maggior parte delle finestre popup.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067180)
 
-  **Impostazione predefinita**: Abilita
+  **Impostazione predefinita**: Abilitare
 
 - **Internet Explorer - Processi - Limitare il protocollo di sicurezza MK**:  
   L'impostazione del criterio Limitazione protocollo di sicurezza MK riduce la superficie di attacco in quanto disabilita il protocollo MK. Le risorse ospitate nel protocollo MK non funzioneranno. Se si abilita l'impostazione di questo criterio, il protocollo MK viene disabilitato per Esplora file e Internet Explorer e le risorse ospitate nel protocollo MK non funzioneranno. Se si disabilita l'impostazione di questo criterio, le applicazioni possono usare l'API del protocollo MK. Le risorse ospitate nel protocollo MK funzioneranno per i processi di Esplora file e Internet Explorer. Se non si configura l'impostazione di questo criterio, il protocollo MK viene disabilitato per Esplora file e Internet Explorer e le risorse ospitate nel protocollo MK non funzioneranno.  
@@ -998,7 +1056,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di attivare la modalità protetta. La modalità protetta consente di proteggere Internet Explorer da attacchi correlati ai rischi di sicurezza attraverso una riduzione delle posizioni in cui Internet Explorer può scrivere all'interno del Registro di sistema e del file system. Se si abilita l'impostazione di questo criterio, la modalità protetta viene attivata. L'utente non può disattivare la modalità protetta. Se si disabilita l'impostazione di questo criterio, la modalità protetta viene disattivata. L'utente non può attivare la modalità protetta. Se non si configura l'impostazione di questo criterio, l'utente può attivare o disattivare la modalità protetta.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067171)
 
-  **Impostazione predefinita**: Abilita
+  **Impostazione predefinita**: Abilitare
 
 - **Internet Explorer - Area Internet - Inizializzare ed eseguire script controlli ActiveX non contrassegnati come sicuri**:  
   L'impostazione di questo criterio consente di gestire i controlli ActiveX non contrassegnati come sicuri. Se si abilita l'impostazione di questo criterio, i controlli ActiveX vengono eseguiti, caricati con parametri ed eseguiti tramite script senza impostare la protezione degli oggetti per dati o script non considerati attendibili. Questa impostazione è sconsigliata, a meno che non si tratti di aree protette e amministrate. Questa impostazione causa l'inizializzazione e l'esecuzione tramite script di controlli sia sicuri che non sicuri, indipendentemente dall'opzione Esegui script controlli ActiveX contrassegnati come sicuri. Se si abilita l'impostazione di questo criterio e si seleziona Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire il caricamento con parametri o l'esecuzione tramite script del controllo. Se si disabilita l'impostazione di questo criterio, i controlli ActiveX che non è possibile rendere sicuri non vengono caricati con parametri o eseguiti tramite script. Se non si configura l'impostazione di questo criterio, i controlli ActiveX che non è possibile rendere sicuri non vengono caricati con parametri o eseguiti tramite script.  
@@ -1007,7 +1065,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area con restrizioni - Blocco SmartScreen**:  
-  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: in Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
+  L'impostazione di questo criterio consente di specificare se il filtro SmartScreen analizza le pagine in quest'area per rilevare eventuali contenuti pericolosi. Se si abilita l'impostazione di questo criterio, il filtro SmartScreen analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se si disabilita l'impostazione di questo criterio, il filtro SmartScreen non analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi. Se non si configura l'impostazione di questo criterio, l'utente può scegliere se il filtro SmartScreen analizza le pagine di quest'area e rileva eventuali contenuti pericolosi. Nota: In Internet Explorer 7 l'impostazione di questo criterio consente di specificare se il filtro anti-phishing analizza le pagine di quest'area per rilevare eventuali contenuti pericolosi.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067092)
 
   **Impostazione predefinita**: Abilitato
@@ -1034,7 +1092,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di gestire le impostazioni per le opzioni di accesso. Se si abilita l'impostazione di questo criterio, è possibile scegliere tra le opzioni di accesso seguenti. Accesso anonimo consente di disabilitare l'autenticazione HTTP e di usare l'account Guest solo per il protocollo Common Internet File System (CIFS). Richiedi nome utente e password consente di richiedere l'immissione degli ID utente e delle password da parte degli utenti. Dopo l'immissione, questi valori possono essere usati in modo invisibile all'utente per il resto della sessione. Accesso automatico solo nell'area Intranet consente di richiedere l'immissione degli ID utente e delle password da parte degli utenti in altre aree. Dopo l'immissione, questi valori possono essere usati in modo invisibile all'utente per il resto della sessione. Accesso automatico con nome utente e password correnti consente di provare a eseguire l'accesso tramite Windows NT Challenge Response, noto anche come autenticazione NTLM. Se il server supporta Windows NT Challenge Response, l'accesso usa il nome utente e la password validi nella rete. Se il server non supporta Windows NT Challenge Response, viene richiesto all'utente di specificare il nome utente e la password. Se si disabilita l'impostazione di questo criterio, viene impostata l'opzione Accesso automatico solo nell'area Intranet. Se si disabilita l'impostazione di questo criterio, viene impostata l'opzione Accesso automatico solo nell'area Intranet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067194)
 
-  **Impostazione predefinita**: Messaggio di richiesta
+  **Impostazione predefinita**: Prompt
 
 - **Internet Explorer - Area con restrizioni - Autorizzare l'esecuzione di VBscript**:  
   L'impostazione di questo criterio consente di stabilire se possono essere eseguiti VBScript nelle pagine dell'area specificata in Internet Explorer. Se è stato selezionato Abilita nella casella a discesa, VBScript viene eseguito senza richiedere l'intervento dell'utente. Se è stato selezionato Chiedi conferma nella casella a discesa, agli utenti viene chiesto di scegliere se consentire l'esecuzione di VBScript. Se è stato selezionato Disabilita nella casella a discesa, viene impedita l'esecuzione di VBScript. Se si disabilita o non si configura l'impostazione di questo criterio, viene impedita l'esecuzione di VBScript.  
@@ -1043,7 +1101,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area Internet - Trascinare contenuto da domini diversi tra finestre**:  
-  Questa impostazione consente di specificare le opzioni per il trascinamento di contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Attiva, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
+  Questa impostazione di criteri consente di impostare le opzioni per trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Abilita, gli utenti possono trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067093)
 
   **Impostazione predefinita**: Disabilitato
@@ -1078,7 +1136,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
 
   **Impostazione predefinita**: Abilitato
 
-- Internet **Explorer gli scriptlet area Internet**:  
+- **Internet Explorer - Scriptlet per l'area Internet**:  
   L'impostazione di questo criterio consente di specificare se l'utente può eseguire scriptlet. Se si abilita l'impostazione di questo criterio, l'utente potrà eseguire gli scriptlet. Se si disabilita l'impostazione di questo criterio, l'utente non potrà eseguire gli scriptlet. Se non si configura l'impostazione di questo criterio, l'utente potrà abilitare o disabilitare gli scriptlet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067176)
 
@@ -1103,13 +1161,13 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Area con restrizioni - Trascinare contenuto da domini diversi tra finestre**:  
-  Questa impostazione consente di specificare le opzioni per il trascinamento di contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Attiva, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
+  Questa impostazione di criteri consente di impostare le opzioni per trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Se si abilita questa impostazione e si fa clic su Abilita, gli utenti possono trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. Se si abilita questa impostazione e si fa clic su Disattiva, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione. In Internet Explorer 10, se questa impostazione viene disabilitata o non configurata, gli utenti non potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti possono modificare questa impostazione nella finestra di dialogo Opzioni Internet. In Internet Explorer 9 e versioni precedenti, se questa impostazione viene disabilitata o non configurata, gli utenti potranno trascinare contenuto da un dominio a un dominio diverso, quando l'origine e la destinazione sono in finestre diverse. Gli utenti non possono modificare questa impostazione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067166)
 
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Aggiunta di siti da parte degli utenti**:  
-  Impedisce agli utenti di aggiungere o eliminare siti nelle aree di sicurezza. Un'area di sicurezza è un gruppo di siti Web con lo stesso livello di sicurezza. Se si abilita questo criterio, le impostazioni di gestione dei siti per le aree di sicurezza verranno disabilitate. (Per visualizzare le impostazioni di gestione dei siti per le aree di sicurezza, nella finestra di dialogo Opzioni Internet fare clic sulla scheda Sicurezza e quindi sul pulsante Siti). Se si disabilita o non si configura questo criterio, gli utenti potranno aggiungere o eliminare siti Web nelle aree Siti attendibili e Siti con restrizioni nonché modificare le impostazioni relative all'area Intranet locale. Questo criterio impedisce agli utenti di modificare le impostazioni di gestione dei siti per le aree di sicurezza configurate dall'amministratore. Nota: il criterio "Disabilita la scheda Sicurezza", disponibile in Configurazione utente\Modelli amministrativi\Componenti di Windows\Internet Explorer\Pannello di controllo Internet, che rimuove la scheda Sicurezza dall'interfaccia, ha priorità rispetto al criterio appena descritto. Se il criterio "Disabilita la scheda Programmi" è abilitato, questo criterio verrà ignorato. Vedere anche il criterio "Aree di sicurezza: utilizza solo le impostazioni del computer".  
+  Impedisce agli utenti di aggiungere o eliminare siti nelle aree di sicurezza. Un'area di sicurezza è un gruppo di siti Web con lo stesso livello di sicurezza. Se si abilita questo criterio, le impostazioni di gestione dei siti per le aree di sicurezza verranno disabilitate. (Per visualizzare le impostazioni di gestione dei siti per le aree di sicurezza, nella finestra di dialogo Opzioni Internet fare clic sulla scheda Sicurezza e quindi sul pulsante Siti). Se si disabilita o non si configura questo criterio, gli utenti potranno aggiungere o eliminare siti Web nelle aree Siti attendibili e Siti con restrizioni nonché modificare le impostazioni relative all'area Intranet locale. Questo criterio impedisce agli utenti di modificare le impostazioni di gestione dei siti per le aree di sicurezza configurate dall'amministratore. Nota: Il criterio "Disabilita la scheda Sicurezza", disponibile in Configurazione utente\Modelli amministrativi\Componenti di Windows\Internet Explorer\Pannello di controllo Internet, che rimuove la scheda Sicurezza dall'interfaccia, ha priorità rispetto al criterio appena descritto. Se il criterio "Disabilita la scheda Programmi" è abilitato, questo criterio verrà ignorato. Vedere anche il criterio "Aree di sicurezza: Usare solo le impostazioni del computer".  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067167)
 
   **Impostazione predefinita**: Disabilitato
@@ -1217,7 +1275,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitato
 
 - **Internet Explorer - Modifica dei criteri da parte degli utenti**:  
-  Impedisce agli utenti di modificare le impostazioni dell'area di sicurezza. Un'area di sicurezza è un gruppo di siti Web con lo stesso livello di sicurezza. Se si abilita questo criterio, il pulsante Livello personalizzato e il cursore del livello di sicurezza nella scheda Sicurezza della finestra di dialogo Opzioni Internet sono disabilitati. Se si disabilita questo criterio o non lo si configura, gli utenti possono modificare le impostazioni delle aree di sicurezza. Questo criterio impedisce agli utenti di modificare le impostazioni dell'area di sicurezza stabilite dall'amministratore. Nota: il criterio "Disabilita la scheda Sicurezza", disponibile in Configurazione utente\Modelli amministrativi\Componenti di Windows\Internet Explorer\Pannello di controllo Internet, che rimuove la scheda Sicurezza da Internet Explorer nel Pannello di controllo, ha priorità rispetto al criterio appena descritto. Se il criterio "Disabilita la scheda Programmi" è abilitato, questo criterio verrà ignorato. Vedere anche il criterio "Aree di sicurezza: utilizza solo le impostazioni del computer".  
+  Impedisce agli utenti di modificare le impostazioni dell'area di sicurezza. Un'area di sicurezza è un gruppo di siti Web con lo stesso livello di sicurezza. Se si abilita questo criterio, il pulsante Livello personalizzato e il cursore del livello di sicurezza nella scheda Sicurezza della finestra di dialogo Opzioni Internet sono disabilitati. Se si disabilita questo criterio o non lo si configura, gli utenti possono modificare le impostazioni delle aree di sicurezza. Questo criterio impedisce agli utenti di modificare le impostazioni dell'area di sicurezza stabilite dall'amministratore. Nota: Il criterio "Disabilita la scheda Sicurezza", disponibile in Configurazione utente\Modelli amministrativi\Componenti di Windows\Internet Explorer\Pannello di controllo Internet, che rimuove la scheda Sicurezza da Internet Explorer nel Pannello di controllo, ha priorità rispetto al criterio appena descritto. Se il criterio "Disabilita la scheda Programmi" è abilitato, questo criterio verrà ignorato. Vedere anche il criterio "Aree di sicurezza: Usare solo le impostazioni del computer".  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067155)
 
   **Impostazione predefinita**: Disabilitato
@@ -1226,7 +1284,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   L'impostazione di questo criterio consente di attivare la modalità protetta. La modalità protetta consente di proteggere Internet Explorer da attacchi correlati ai rischi di sicurezza attraverso una riduzione delle posizioni in cui Internet Explorer può scrivere all'interno del Registro di sistema e del file system. Se si abilita l'impostazione di questo criterio, la modalità protetta viene attivata. L'utente non può disattivare la modalità protetta. Se si disabilita l'impostazione di questo criterio, la modalità protetta viene disattivata. L'utente non può attivare la modalità protetta. Se non si configura l'impostazione di questo criterio, l'utente può attivare o disattivare la modalità protetta.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067080)
 
-  **Impostazione predefinita**: Abilita
+  **Impostazione predefinita**: Abilitare
 
 - **Internet Explorer - Area Internet - Persistenza dei dati utente**:  
   L'impostazione di questo criterio consente di gestire il mantenimento di informazioni nella cronologia del browser, nei Preferiti, in un archivio XML o direttamente in una pagina Web salvata su disco. Quando un utente apre una pagina salvata localmente, se l'impostazione di questo criterio è stata configurata in modo appropriato sarà possibile ripristinare lo stato della pagina. Se si abilita questa impostazione, gli utenti potranno mantenere informazioni nella cronologia del browser, nei Preferiti, in un archivio XML o direttamente in una pagina Web salvata su disco. Se si disabilita questa impostazione, gli utenti non potranno mantenere informazioni nella cronologia del browser, nei Preferiti, in un archivio XML o direttamente in una pagina Web salvata su disco. Se non si configura l'impostazione di questo criterio, gli utenti potranno mantenere informazioni nella cronologia del browser, nei Preferiti, in un archivio XML o direttamente in una pagina Web salvata su disco.  
@@ -1253,7 +1311,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   **Impostazione predefinita**: Disabilitare Java
 
 - **Internet Explorer - Modalità protetta avanzata**:  
-  La modalità protetta avanzata offre maggiore protezione da siti Web dannosi utilizzando processi a 64 bit nelle versioni a 64 bit di Windows. Per i computer che eseguono almeno Windows 8, la modalità protetta avanzata limita anche i percorsi leggibili da Internet Explorer nel Registro di sistema e nel file system. Se si abilita questa impostazione, viene attivata la modalità protetta avanzata. Qualsiasi area per cui è abilitata la modalità protetta utilizzerà la modalità protetta avanzata. Gli utenti non possono disabilitare la modalità protetta avanzata. Se si disabilita questa impostazione, viene disattivata la modalità protetta avanzata. Qualsiasi area per cui è abilitata la modalità protetta utilizzerà la versione della modalità protetta introdotta in Internet Explorer 7 per Windows Vista. Se questa impostazione non viene configurata, gli utenti possono attivare o disattivare la modalità protetta avanzata nella scheda Avanzate della finestra di dialogo Opzioni Internet.  
+  La modalità protetta avanzata offre protezione aggiuntiva contro i siti Web dannosi usando processi a 64 bit nelle versioni di Windows a 64 bit. Per i computer che eseguono almeno Windows 8, la modalità protetta avanzata limita anche i percorsi leggibili da Internet Explorer nel Registro di sistema e nel file system. Se si abilita questa impostazione, viene attivata la modalità protetta avanzata. Per qualsiasi area in cui è abilitata la modalità protetta verrà usata la modalità protetta avanzata. Gli utenti non possono disabilitare la modalità protetta avanzata. Se si disabilita questa impostazione, viene disattivata la modalità protetta avanzata. Qualsiasi area in cui è abilitata la modalità protetta userà la versione della modalità protetta introdotta in Internet Explorer 7 per Windows Vista. Se questa impostazione non viene configurata, gli utenti possono attivare o disattivare la modalità protetta avanzata nella scheda Avanzate della finestra di dialogo Opzioni Internet.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067158)
 
   **Impostazione predefinita**: Abilitato
@@ -1275,25 +1333,25 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
 Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) (Provider di servizi di configurazione dei criteri - LocalPoliciesSecurityOptions) nella documentazione di Windows.
 
 - **Limitare l'accesso anonimo a named pipe e condivisioni**:  
-  Quando abilitata, questa impostazione di sicurezza limita l'accesso anonimo alle condivisioni e alle named pipe alle impostazioni per: (1) named pipe cui è possibile accedere in modo anonimo (2) condivisioni cui è possibile accedere in modo anonimo.  
+  Se abilitata, questa impostazione di sicurezza limita l'accesso anonimo alle condivisioni e alle named pipe specificate per le impostazioni: (1) named pipe a cui è possibile accedere in modo anonimo (2) condivisioni alle quali è possibile accedere in modo anonimo.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067212)
 
   **Impostazione predefinita**: Sì
 
 - **Sicurezza sessione minima per server basati su NTLM SSP**:  
-  Questa impostazione di sicurezza consente ai server di richiedere la negoziazione della crittografia a 128 bit e della sicurezza di sessione NTLMv2. Tali valori dipendono dal valore dell'impostazione di sicurezza Livello di autenticazione di LAN Manager. Opzioni disponibili: Richiedi protezione sessione NTLMv2: se l'integrità del messaggio non viene negoziata, la connessione non riesce. Richiedi crittografia a 128 bit. Se la crittografia avanzata (a 128 bit) non viene negoziata, la connessione non riesce.  
+  Questa impostazione di sicurezza consente ai server di richiedere la negoziazione della crittografia a 128 bit e della sicurezza di sessione NTLMv2. Tali valori dipendono dal valore dell'impostazione di sicurezza Livello di autenticazione di LAN Manager. Le opzioni disponibili sono: Richiedi sicurezza sessione NTLMv2: se l'integrità del messaggio non viene negoziata, la connessione non riesce. Richiedi crittografia a 128 bit. Se la crittografia avanzata (a 128 bit) non viene negoziata, la connessione non riesce.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067246)
 
   **Impostazione predefinita**: Richiedi NTLM V2 e crittografia a 128 bit
 
 - **Minuti di inattività della schermata di blocco prima dell'attivazione dello screen saver**:  
-  Il sistema rileva l'inattività di una sessione di accesso e, se il tempo di inattività supera il limite di inattività, verrà eseguito lo screen saver bloccando la sessione.  
+  Windows rileva l'inattività di una sessione di accesso e, se il tempo di inattività supera il limite di inattività, verrà eseguito lo screen saver bloccando la sessione.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067210)
 
   **Impostazione predefinita**: 15
 
-- **Richiedi ai client di firmare sempre digitalmente le comunicazioni**:  
-  Questa impostazione di sicurezza specifica se tutto il traffico inviato sul canale sicuro dal membro di dominio deve essere firmato o crittografato. Quando si aggiunge un computer a un dominio, viene creato un account computer. All'avvio il sistema usa quindi la password di tale account computer per creare un canale sicuro con un controller di dominio del proprio dominio. Il canale sicuro viene usato per eseguire operazioni come l'autenticazione pass-through NTLM, la ricerca dei nomi SID LSA e altre. Questa impostazione determina se tutto il traffico inviato sul canale sicuro dal membro di dominio soddisfa i requisiti di sicurezza minimi. In particolare, specifica se tutto il traffico inviato sul canale sicuro dal membro di dominio deve essere firmato o crittografato. Se questo criterio è abilitato, il canale sicuro viene creato esclusivamente se la firma o la crittografia di tutto il traffico sul canale sicuro viene negoziata. Se questo criterio è disabilitato, la firma o la crittografia di tutto il traffico sul canale sicuro viene negoziata con il controller di dominio. In tal caso, il livello di firma o crittografia dipende dalla versione del controller di dominio e dalle impostazioni dei due criteri seguenti, ovvero Membro di dominio: aggiunta crittografia o firma digitale ai dati del canale sicuro (quando possibile) e Membro di dominio: aggiunta firma digitale ai dati del canale sicuro (quando possibile).  
+- **Richiedi sempre al client la firma digitale delle comunicazioni**:  
+  Questa impostazione di sicurezza specifica se tutto il traffico inviato sul canale sicuro dal membro di dominio deve essere firmato o crittografato. Quando si aggiunge un computer a un dominio, viene creato un account computer. All'avvio il sistema usa quindi la password di tale account computer per creare un canale sicuro con un controller di dominio del proprio dominio. Il canale sicuro viene usato per eseguire operazioni come l'autenticazione pass-through NTLM, la ricerca dei nomi SID LSA e altre. Questa impostazione determina se tutto il traffico inviato sul canale sicuro dal membro di dominio soddisfa i requisiti di sicurezza minimi. In particolare, specifica se tutto il traffico inviato sul canale sicuro dal membro di dominio deve essere firmato o crittografato. Se questo criterio è abilitato, il canale sicuro viene creato esclusivamente se la firma o la crittografia di tutto il traffico sul canale sicuro viene negoziata. Se questo criterio è disabilitato, la firma o la crittografia di tutto il traffico sul canale sicuro viene negoziata con il controller di dominio. In tal caso, il livello di firma o crittografia dipende dalla versione del controller di dominio e dalle impostazioni dei due criteri seguenti. Membro di dominio: aggiunta crittografia o firma digitale ai dati del canale sicuro (quando possibile) Membro di dominio: aggiunta firma digitale ai dati del canale sicuro (quando possibile).  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067187)
 
   **Impostazione predefinita**: Sì
@@ -1303,15 +1361,15 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 
   - *Invia risposte LM e NTLM* - I client usano l'autenticazione LM e NTLM e non usano mai la sicurezza di sessione NTLMv2. I controller di dominio accettano l'autenticazione LM, NTLM e NTLMv2.
 
-  - *Inviare LM e NTLM-NTLMv2 se i client negoziati* utilizzano l'autenticazione LM e NTLM e utilizzano la sicurezza della sessione NTLMv2 se il server lo supporta. I controller di dominio accettano l'autenticazione LM, NTLM e NTLMv2.
+  - *Invia LM e NTLM - NTLMv2 se negoziata* - I client usano l'autenticazione LM e NTLM, nonché la sicurezza di sessione NTLMv2 se il server la supporta. I controller di dominio accettano l'autenticazione LM, NTLM e NTLMv2.
 
   - *Invia solo risposta NTLM* - I client usano solo l'autenticazione NTLM e la sicurezza di sessione NTLMv2, se il server la supporta. I controller di dominio accettano l'autenticazione LM, NTLM e NTLMv2.
 
   - *Invia solo risposta NTLMv2* - I client usano solo l'autenticazione NTLMv2 e la sicurezza di sessione NTLMv2, se il server la supporta. I controller di dominio accettano l'autenticazione LM, NTLM e NTLMv2.
 
-  - *Invia solo risposta NTLMv2, Rifiutare LM*: i client utilizzano solo l'autenticazione NTLMv2 e utilizzano la sicurezza della sessione NTLMv2 se il server lo supporta. I controller di dominio rifiutano LM (accetta solo l'autenticazione NTLM e NTLMv2).
+  - *Invia solo risposta NTLMv2, rifiuta LM* - I client usano solo l'autenticazione NTLMv2 e la sicurezza di sessione NTLMv2, se il server la supporta. I controller di dominio rifiutano LM (accettano solo l'autenticazione NTLM e NTLMv2).
 
-  - *Invia solo risposta NTLMv2, Rifiutare LM e NTLM*: i client utilizzano solo l'autenticazione NTLMv2 e utilizzano la sicurezza della sessione NTLMv2 se il server lo supporta. I controller di dominio rifiutano LM e NTLM (accetta solo l'autenticazione NTLMv2).
+  - *Invia solo risposta NTLMv2, rifiuta LM e NTLM* - I client usano solo l'autenticazione NTLMv2 e la sicurezza di sessione NTLMv2, se il server la supporta. I controller di dominio rifiutano LM e NTLM (accettano solo l'autenticazione NTLMv2).
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067189)
 
@@ -1334,11 +1392,11 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 
   - *Esegui con privilegi elevati senza chiedere conferma* - Consente di eseguire un'operazione che richiede l'elevazione dei privilegi senza richiedere consenso o credenziali. Nota: usare questa opzione solo in ambienti molto vincolati.
 
-  - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio più elevato disponibile.
+  - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà immettere il nome utente e la password di un utente con i privilegi necessari. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio massimo disponibile dell'utente.
 
   - *Richiedi il consenso nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente del desktop protetto dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.
 
-  - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente.
+  - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio applicabile.
 
   - *Richiedi il consenso* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà scegliere tra le opzioni Consenti o Nega. Se l'utente acconsente, l'operazione continuerà con il privilegio più elevato disponibile.
 
@@ -1346,7 +1404,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067215)
 
-  **Impostazione predefinita**: Richiedi il consenso nel desktop sicuro
+  **Impostazione predefinita**: Richiedi consenso sul desktop sicuro
 
 - **Sicurezza sessione minima per client basati su NTLM SSP**:  
   Questa impostazione di sicurezza consente ai client di richiedere la negoziazione della crittografia a 128 bit e della sicurezza di sessione NTLMv2. Tali valori dipendono dal valore dell'impostazione di sicurezza Livello di autenticazione di LAN Manager. Le opzioni disponibili sono:
@@ -1359,7 +1417,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067324)
 
-  **Impostazione predefinita**: Richiedi NTLM V2 e la crittografia a 128 bit
+  **Impostazione predefinita**: Richiedi NTLM V2 e crittografia a 128 bit
 
 - **Comportamento in caso di rimozione della smart card**:  
   Questa impostazione di sicurezza determina le conseguenze della rimozione della smart card di un utente connesso dal lettore di smart card. Le opzioni disponibili sono:
@@ -1395,20 +1453,20 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 - **Comportamento della richiesta di elevazione dei privilegi per gli utenti standard**:  
   L'impostazione di questo criterio specifica il comportamento della richiesta di elevazione dei privilegi per gli utente standard.
 
-  - *Rifiuta automaticamente le richieste di elevazione dei privilegi* - Quando un'operazione richiede l'elevazione dei privilegi, viene visualizzato un messaggio di errore di accesso negato che può essere configurato. In un'organizzazione in cui i desktop vengono eseguiti come account utente standard, questa impostazione può contribuire a ridurre le chiamate al supporto tecnico.
+  - *Rifiuta automaticamente le richieste di elevazione dei privilegi* - Quando un'operazione richiede l'elevazione dei privilegi, viene visualizzato un messaggio di errore di accesso negato che può essere configurato. Un'azienda che esegue i desktop come utente standard può scegliere questa impostazione per ridurre le chiamate all'help desk.
 
-  - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà immettere un nome utente e una password differenti. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente.
+  - *Richiedi le credenziali nel desktop protetto* - Quando un'operazione richiede l'elevazione dei privilegi, sul desktop protetto l'utente dovrà immettere un nome utente e una password differenti. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio applicabile.
 
-  - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente.
+  - *Richiedi credenziali* - Quando un'operazione richiede l'elevazione dei privilegi, l'utente dovrà inserire un nome utente e una password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio applicabile.
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067183)
 
-  **Impostazione predefinita**: Rifiuta automaticamente le richieste di elevazione dei privilegi
+  **Impostazione predefinita**: Nega automaticamente richieste di elevazione dei privilegi
 
 - **Richiedere la modalità Approvazione amministratore per gli amministratori**:  
-  L'impostazione di questo criterio specifica il comportamento di tutte le impostazioni dei criteri di Controllo dell'account utente per il computer. Se questa impostazione viene modificata, è necessario riavviare il computer. Le opzioni disponibili sono:
+  L'impostazione di questo criterio specifica il comportamento di tutte le impostazioni dei criteri di Controllo dell'account utente per il computer. Se si modifica questa impostazione di criteri, è necessario riavviare il computer. Le opzioni disponibili sono:
 
-  - *Non configurato* - La modalità Approvazione amministratore e i criteri correlati di Controllo dell'account utente sono disattivati. Nota: se questa impostazione è disattivata, Centro sicurezza PC segnala che la sicurezza complessiva del sistema operativo è ridotta.
+  - *Non configurato* - La modalità Approvazione amministratore e i criteri correlati di Controllo dell'account utente sono disattivati. Nota: se questa impostazione viene disabilitata, Centro sicurezza PC segnala che la sicurezza complessiva del sistema operativo è ridotta.
 
   - *Sì* - La modalità Approvazione amministratore è abilitata. Perché l'account predefinito Administrator e tutti gli altri utenti membri del gruppo Administrators possano essere eseguiti in modalità Approvazione amministratore, è necessario che questo criterio sia abilitato e che tutti i criteri di Controllo dell'account utente correlati siano impostati in modo appropriato.
 
@@ -1436,7 +1494,7 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 - **Usare la modalità Approvazione amministratore**:  
   L'impostazione di questo criterio specifica il comportamento della modalità Approvazione amministratore per l'account Administrator predefinito. Le opzioni disponibili sono:
 
-  - *Sì* - L'account predefinito Administrator usa la modalità Approvazione amministratore. Per impostazione predefinita, per qualunque operazione che richiede l'elevazione dei privilegi l'utente dovrà scegliere se autorizzare o rifiutare l'esecuzione.
+  - *Sì* - L'account predefinito Administrator usa la modalità Approvazione amministratore. Per impostazione predefinita, per qualunque operazione che richiede l'elevazione dei privilegi verrà richiesta l'approvazione dell'utente.
 
   - *Non configurato* - L'account predefinito Administrator esegue tutte le applicazioni con privilegi amministrativi completi.
 
@@ -1447,9 +1505,9 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 - **Consentire le applicazioni con accesso all'interfaccia utente per percorsi sicuri**:  
   L'impostazione di questo criterio specifica se i programmi con accesso all'interfaccia utente (UIAccess o UIA) possono disabilitare automaticamente il desktop protetto per le richieste di elevazione dei privilegi provenienti da un utente standard.
 
-  - *Sì* - I programmi con Automazione interfaccia utente, incluso Assistenza remota di Windows, disabilitano automaticamente il desktop protetto per le richieste di elevazione dei privilegi. Se non si disabilita l'impostazione del criterio "Controllo account utente: alla richiesta di elevazione passa al desktop sicuro", le richieste vengono visualizzate sul desktop dell'utente interattivo invece che sul desktop protetto.
+  - *Sì* - I programmi con Automazione interfaccia utente, incluso Assistenza remota di Windows, disabilitano automaticamente il desktop protetto per le richieste di elevazione dei privilegi. Se non si disabilita il criterio "Controllo dell'account utente: alla richiesta di elevazione dei privilegi, passa al desktop protetto", le richieste vengono visualizzate sul desktop interattivo dell'utente invece che sul desktop protetto.
 
-  - *Non configurato* - Il desktop protetto può essere disabilitato solo dall'utente del desktop interattivo oppure disabilitando l'impostazione del criterio "Controllo account utente: alla richiesta di elevazione passa al desktop sicuro".
+  - *Non configurato* - Il desktop protetto può essere disabilitato solo dall'utente del desktop interattivo o disabilitando il criterio "Controllo account utente: alla richiesta di elevazione dei privilegi, passa al desktop protetto".
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067185)
 
@@ -1458,9 +1516,9 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
 - **Rilevare installazioni di applicazioni e richiedere l'elevazione dei privilegi**:  
   L'impostazione di questo criterio specifica il comportamento del rilevamento di installazioni di applicazioni nel computer. Le opzioni disponibili sono:
 
-  - *Abilitato* - Per i pacchetti di installazione delle applicazioni che richiedono l'elevazione dei privilegi, l'utente dovrà immettere nome utente e password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio pertinente.
+  - *Abilitato* - Per i pacchetti di installazione delle applicazioni che richiedono l'elevazione dei privilegi, l'utente dovrà immettere nome utente e password amministrativi. Se l'utente immette credenziali valide, l'operazione continuerà con il privilegio applicabile.
 
-  - *Disabilitato* - I pacchetti di installazione delle applicazioni non vengono rilevati e non viene richiesta l'elevazione dei privilegi. È consigliabile disattivare questa impostazione nel caso di un'organizzazione che esegue desktop utente standard e utilizza tecnologie di installazione delegata, ad esempio Estensione dell'installazione software basata su Criteri di gruppo o Systems Management Server (SMS), in quanto il rilevamento dei programmi di installazione non è necessario.
+  - *Disabilitato* - I pacchetti di installazione delle applicazioni non vengono rilevati e non viene richiesta l'elevazione dei privilegi. Le organizzazioni che eseguono desktop utente standard e usano tecnologie di installazione delegata quali Estensione dell'installazione software basata su Criteri di gruppo o Systems Management Server (SMS) devono disabilitare questa impostazione di criteri. In questo caso, il rilevamento del programma di installazione non è necessario.
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067208)
 
@@ -1477,6 +1535,153 @@ Per altre informazioni, vedere [Policy CSP - LocalPoliciesSecurityOptions](https
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067321)
 
   **Impostazione predefinita**: Sì
+
+## <a name="microsoft-defender"></a>Microsoft Defender
+
+Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (Provider di servizi di configurazione dei criteri - Defender) nella documentazione di Windows.
+
+- **Analizza i messaggi di posta in arrivo**:  
+  Consente o impedisce l'analisi della posta elettronica.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067116)
+
+  **Impostazione predefinita**: Sì
+
+- **Avviare i processi di tipo figlio per le app di Office**:  
+  Alle app di Office non verrà consentito di creare processi figlio. Le app includono Word, Excel, PowerPoint, OneNote e Access. Si tratta di un comportamento tipico del malware, in particolare degli attacchi basati su macro che tentano di usare le app di Office per avviare o scaricare file eseguibili dannosi.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067121)
+
+  **Impostazione predefinita**: Blocca
+
+- **Tipo di consenso per l'invio di campioni di Defender**:  
+  Verifica il livello di consenso utente in Microsoft Defender per l'invio di dati. Se il consenso necessario è già stato concesso, Microsoft Defender esegue l'invio. In caso contrario, e se l'utente ha specificato di non chiedere mai, viene avviata l'interfaccia utente per la richiesta del consenso utente (se Defender/AllowCloudProtection è consentito) prima dell'invio di dati.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067131)
+
+  **Impostazione predefinita**: Invia automaticamente i campioni sicuri
+
+- **Intervallo di aggiornamento della firma (in ore)** :  
+  Intervallo di aggiornamento della firma di Defender in ore.
+
+  **Impostazione predefinita**: 4
+
+- **Tipo di esecuzione del payload scaricato tramite script**:  
+  Tipo di esecuzione del payload scaricato tramite script di Defender.
+
+  **Impostazione predefinita**: Blocca
+  
+- **Impedire il tipo di intercettazione delle credenziali**:  
+  Microsoft Defender Credential Guard usa la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. L'accesso non autorizzato a questi segreti può causare attacchi con furto di credenziali, ad esempio Pass-the-Hash o Pass-The-Ticket. Microsoft Defender Credential Guard impedisce questi attacchi proteggendo gli hash delle password NTLM, i Ticket Granting Ticket Kerberos e le credenziali archiviate dalle applicazioni come credenziali di dominio.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067065)
+  
+  **Impostazione predefinita**: Abilitare
+
+- **Tipo di esecuzione del contenuto del messaggio di posta elettronica**:  
+  Questa regola consente di bloccare l'esecuzione e l'avvio dei tipi di file seguenti da un messaggio di posta elettronica visualizzato in Microsoft Outlook o nella posta sul Web, ad esempio Gmail.com o Outlook.com: file eseguibili, ad esempio file con estensione exe, dll o scr, file di script, ad esempio file PowerShell con estensione ps, file VisualBasic con estensione vbs o file JavaScript con estensione js, e file archivio di script.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067063)
+
+  **Impostazione predefinita**: Blocca
+
+::: zone-end
+::: zone pivot="mdm-may-2019"
+
+- **Avvio di Adobe Reader in un processo figlio**:  
+  **Impostazione predefinita**: Abilitare
+
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
+
+- **Protezione di rete**:  
+  Questo criterio consente di attivare la protezione di rete (Blocca/Controlla) o di disattivarla in Microsoft Defender Exploit Guard. La protezione di rete è una funzionalità di Microsoft Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi. Il tipo di valore è un numero intero. Se si abilita questa impostazione, la protezione di rete verrà attivata e i dipendenti non potranno disattivarla. Il comportamento potrà essere controllato dalle opzioni seguenti: Blocca e Controlla. Se si abilita questo criterio impostando l'opzione "Blocca", gli utenti e le app non possono connettersi a domini dannosi. È possibile visualizzare questa attività in Microsoft Defender Security Center. Se si abilita questo criterio impostando l'opzione "Controlla", gli utenti e le app non potranno connettersi a domini dannosi. Tuttavia, sarà possibile visualizzare comunque questa attività in Microsoft Defender Security Center. Se si disabilita questo criterio, gli utenti e le app potranno connettersi a domini dannosi. Non sarà possibile visualizzare attività di rete in Microsoft Defender Security Center. Se non si configura questo criterio, il blocco di rete è disabilitato per impostazione predefinita.  
+  [Altre informazioni](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
+
+  **Impostazione predefinita**: Abilitare
+
+- **Giorno pianificato per l'analisi di Defender**:  
+  Giorno pianificato per l'analisi di Defender.
+
+  **Impostazione predefinita**: Ogni giorno
+
+- **Protezione fornita dal cloud**:  
+  Per proteggere al meglio il PC, Microsoft Defender invierà a Microsoft informazioni su qualsiasi problema che si verificherà. Le informazioni saranno analizzate, saranno raccolti altri dettagli sui problemi riscontrati dall'utente corrente e dagli altri clienti. Verranno quindi offerte soluzioni migliorate.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067039)
+
+  **Impostazione predefinita**:  Sì  
+
+- **Azione della Protezione da applicazioni potenzialmente di Defender**:  
+  La funzionalità di protezione da applicazioni potenzialmente indesiderate dell'antivirus Microsoft Defender consente di identificare e bloccare il download e l'installazione delle applicazioni potenzialmente indesiderate negli endpoint di rete. Queste applicazioni non sono considerate virus, malware o altri tipi di minaccia, ma potrebbero agire su endpoint compromettendo le prestazioni e l'uso. Possono essere considerate applicazioni potenzialmente indesiderate anche le applicazioni di dubbia reputazione. Sono applicazioni potenzialmente indesiderate: la creazione di bundle di diversi tipi di software, l'inserimento di annunci nei Web browser, gli strumenti di ottimizzazione per driver e Registro di sistema che rilevano errori e richiedono pagamenti per correggere gli errori, ma rimangono nell'endpoint e non apportano alcuna modifica né alcuna ottimizzazione (noti anche come programmi antivirus non autorizzati). Queste applicazioni possono aumentare il rischio di infezione della rete da parte di malware e incrementare la difficoltà di rilevamento delle infezioni malware e possono causare uno spreco di tempo delle risorse IT per rimuovere il malware dalle applicazioni.  
+  [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+  **Impostazione predefinita**: Blocca  
+
+- **Tipo di codice macro offuscato in script**:  
+  Il malware e altre minacce possono tentare di offuscare o nascondere il codice dannoso in alcuni file di script. Questa regola impedisce l'esecuzione degli script offuscati.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067026)
+
+  **Impostazione predefinita**: Blocca
+
+- **Analizza le unità rimovibili durante un'analisi completa**:  
+  Consente a Microsoft Defender di cercare software dannoso e indesiderato in unità rimovibili, ad esempio in unità flash USB, durante un'analisi completa. L'antivirus Microsoft Defender analizza tutti i file nei dispositivi USB prima dell'esecuzione.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067036)
+
+  **Impostazione predefinita**: Sì  
+
+- **Analizza file di archivio**:  
+  Analizza file di archivio di Defender.
+
+  **Impostazione predefinita**: Sì
+
+- **Monitoraggio del comportamento**:  
+  Consente o impedisce la funzionalità di monitoraggio del comportamento di Microsoft Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067111)
+
+  **Impostazione predefinita**: Sì
+
+- **Analizza file aperti da cartelle di rete**:  
+  Se i file sono di sola lettura, non sarà possibile rimuovere eventuale malware rilevato.
+
+  **Impostazione predefinita**: Sì
+
+- **Tipo di processo non attendibile in USB**:  
+  Questa regola consente agli amministratori di impedire l'esecuzione di file eseguibili non firmati o non attendibili da unità removibili USD, incluse le schede SD.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067100)
+
+  **Impostazione predefinita**: Blocca
+
+- **Tipo di inserimento in altri processi per app di Office**:  
+  Le app di Office, tra cui Word, Excel, PowerPoint e OneNote, non potranno inserire codice in altri processi. Si tratta di un tipico comportamento del malware per eseguire codice malware nel tentativo di nascondere l'attività ai motori di analisi antivirus.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067019)
+
+  **Impostazione predefinita**:  Blocca
+
+- **Consentire tipo di importazioni Win32 da codice macro in Office**:  
+  Il malware può usare il codice della macro in file di Office per importare e caricare le DLL Win32 che vengono usate per eseguire chiamate API e favorire altre infezioni in tutto il sistema. Questa regola tenta di bloccare i file di Office che contengono codice macro in grado di importare DLL Win32. Le app incluse sono Word, Excel, PowerPoint e OneNote.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067130)
+
+  **Impostazione predefinita**: Blocca
+
+- **Livello di blocco cloud di Defender**:  
+  Livello di blocco cloud di Defender.
+
+  **Impostazione predefinita**: Non configurato
+
+- **Monitoraggio in tempo reale**:  
+  Defender richiede il monitoraggio in tempo reale.
+
+  **Impostazione predefinita**: Sì
+
+::: zone-end
+::: zone pivot="mdm-may-2019"
+
+- **Avvio di app di comunicazione di Office in un processo figlio**:  
+  **Impostazione predefinita**:  Abilitare
+
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
+
+- **Tipo di contenuto per la creazione o l'avvio di eseguibile nelle app di Office**:  
+  Questa regola è rivolta ai tipici comportamenti usati da componenti aggiuntivi e script sospetti e dannosi (estensioni) che creano o avviano file eseguibili. Si tratta di una tipica tecnica malware. Le estensioni non possono essere usate dalle app di Office. Queste estensioni usano generalmente Windows Scripting Host (file con estensione WSH) per eseguire script che automatizzano determinate attività oppure aggiungono funzionalità create dall'utente.  
+  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067108)
+
+  **Impostazione predefinita**: Blocca
 
 ## <a name="ms-security-guide"></a>Guida alla sicurezza MS
 
@@ -1567,32 +1772,32 @@ Per altre informazioni, vedere [Policy CSP - Power](https://docs.microsoft.com/w
 Per altre informazioni, vedere [CSP criteri - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) nella documentazione di Windows.
 
 - **Assistenza remota richiesta**:  
-  Questa impostazione criterio consente di attivare o disattivare l'assistenza remota richiesta (Richiedi) in questo computer.
+  Questa impostazione di criteri consente di attivare o disattivare Assistenza remota su richiesta in questo computer.
   
-  - *Se si abilita questa impostazione*relativa ai criteri, gli utenti di questo computer possono utilizzare la posta elettronica o il trasferimento di file per chiedere assistenza a un utente. Inoltre, gli utenti possono utilizzare i programmi di messaggistica immediata per consentire le connessioni al computer ed è possibile configurare altre impostazioni di assistenza remota.
+  - *Se si abilita questa impostazione di criteri*, gli utenti di questo computer possono usare la posta elettronica o il trasferimento di file per chiedere assistenza a un utente. Gli utenti possono anche usare programmi di messaggistica istantanea per consentire le connessioni al computer ed è possibile configurare altre impostazioni di Assistenza remota.
 
-  - *Se si disabilita questa impostazione di criteri*, gli utenti di questo computer non potranno utilizzare la posta elettronica o il trasferimento di file per chiedere assistenza. Inoltre, gli utenti non possono utilizzare i programmi di messaggistica immediata per consentire le connessioni a questo computer.
+  - *Se si disabilita questa impostazione di criteri*, gli utenti di questo computer non possono usare la posta elettronica o il trasferimento di file per chiedere assistenza. Inoltre, gli utenti non possono usare i programmi di messaggistica istantanea per consentire le connessioni a questo computer.
 
-  - *Se questa impostazione di criteri non viene configurata*, gli utenti possono attivare o disattivare l'assistenza remota richiesta (Richiedi) in proprietà di sistema nel pannello di controllo. Gli utenti possono anche configurare le impostazioni di assistenza remota.
+  - *Se questa impostazione di criteri non viene configurata*, gli utenti possono attivare o disattivare Assistenza remota su richiesta nelle proprietà di sistema nel Pannello di controllo. Gli utenti possono anche configurare le impostazioni di Assistenza remota.
 
-  Se si abilita questa impostazione di criteri, sono disponibili due modi per consentire agli helper di fornire assistenza remota: "Consenti agli helper di visualizzare solo il computer" o "Consenti agli helper di controllare in remoto il computer". L'impostazione dei criteri "tempo massimo ticket" consente di impostare un limite per il periodo di tempo durante il quale un invito di assistenza remota creato tramite posta elettronica o trasferimento di file può rimanere aperto. L'impostazione "selezionare il metodo per l'invio di inviti tramite posta elettronica" specifica lo standard di posta elettronica da usare per inviare gli inviti di assistenza remota. A seconda del programma di posta elettronica, è possibile usare lo standard *mailto* (il destinatario dell'invito si connette tramite un collegamento a Internet) o lo standard SMAPI (Simple MAPI) (l'invito è allegato al messaggio di posta elettronica). Questa impostazione dei criteri non è disponibile in Windows Vista perché SMAPI è l'unico metodo supportato. Se si abilita questa impostazione di criteri, è necessario abilitare anche le eccezioni appropriate del firewall per consentire le comunicazioni di assistenza remota.  
+  Se si abilita questa impostazione di criteri, sono disponibili due modi per consentire ad altri utenti di fornire assistenza remota: "Consenti solo di visualizzare il computer" o "Consenti controllo remoto del computer". L'impostazione di criteri "Durata massima ticket" consente di impostare un limite per il periodo di tempo durante il quale può rimanere aperto un invito di assistenza remota creato tramite posta elettronica o trasferimento di file. L'impostazione "Selezionare il metodo di invio degli inviti via posta elettronica" specifica lo standard di posta elettronica da usare per inviare inviti di Assistenza remota. In base al programma di posta elettronica in uso, è possibile usare lo standard *Mailto*, nel qual caso il destinatario dell'invito si connetterà tramite un collegamento Internet, o lo standard SMAPI (Simple MAPI), nel qual caso l'invito sarà allegato al messaggio di posta elettronica. Questa impostazione di criteri non è disponibile in Windows Vista perché è supportato solo il metodo SMAPI. Se si abilita questa impostazione di criteri, sarà inoltre necessario abilitare le eccezioni del firewall appropriate per consentire le comunicazioni di Assistenza remota.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067198)
 
   **Impostazione predefinita**: Disabilita assistenza remota
 
-  Quando si imposta l' *Abilitazione dell'assistenza remota*, configurare le impostazioni aggiuntive seguenti:
+  Quando si imposta *Abilita Assistenza remota*, configurare le impostazioni aggiuntive seguenti:
 
-  - **Autorizzazione per assistenza remota richiesta**:  
+  - **Autorizzazione richiesta da Assistenza remota**:  
     **Impostazione predefinita**: Visualizza
 
   - **Durata massima ticket (valore)** :  
     **Impostazione predefinita**: *Non configurato*
 
   - **Maximum ticket time period** (Durata massima ticket):  
-    **Impostazione predefinita**: minuti
+    **Impostazione predefinita**: Minuti
 
   - **Metodo di invito tramite posta elettronica**:  
-    **Impostazione predefinita**: MAPI semplice
+    **Impostazione predefinita**: Simple MAPI
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -1684,13 +1889,13 @@ Per altre informazioni, vedere [Policy CSP - RemoteManagement](https://docs.micr
 Per altre informazioni, vedere [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) (Provider di servizi di configurazione dei criteri - RemoteProcedureCall) nella documentazione di Windows.
 
 - **Opzioni client RPC non autenticati**:  
-  L'impostazione di questo criterio controlla il modo in cui il runtime del server RPC gestisce i client RPC non autenticati che si connettono a server RPC. L'impostazione di questo criterio influisce su tutte le applicazioni RPC. In un ambiente di dominio usare con cautela l'impostazione di questo criterio perché può influire su una vasta gamma di funzionalità, inclusa l'elaborazione dei Criteri di gruppo stessi. Il ripristino del valore precedente dopo una modifica all'impostazione di questo criterio può richiedere un intervento manuale in ogni computer interessato. Non applicare questa impostazione dei criteri a un controller di dominio. Se si disabilita l'impostazione di questo criterio, il runtime del server RPC usa il valore "Autenticato" in Windows Client e il valore "Nessuno" nelle versioni di Windows Server che supportano questa impostazione. Se non si configura l'impostazione di questo criterio, questa rimane disabilitata. Il runtime del server RPC si comporta come se fosse abilitato con il valore "Autenticato" usato per il client Windows e il valore "Nessuno" usato per gli SKU dei server che supportano questa impostazione. Se si abilita l'impostazione di questo criterio, il runtime del server RPC limita i client RPC non autenticati che si connettono ai server RPC in esecuzione in un computer. Un client viene considerato autenticato se usa una named pipe per comunicare con il server o se usa la sicurezza RPC. Le interfacce RPC che hanno richiesto in modo specifico di essere accessibili per i client non autenticati possono essere esenti da questa limitazione, a seconda del valore selezionato per l'impostazione di questo criterio.
+  L'impostazione di questo criterio controlla il modo in cui il runtime del server RPC gestisce i client RPC non autenticati che si connettono a server RPC. L'impostazione di questo criterio influisce su tutte le applicazioni RPC. In un ambiente di dominio usare con cautela l'impostazione di questo criterio perché può influire su una vasta gamma di funzionalità, inclusa l'elaborazione dei Criteri di gruppo stessi. Il ripristino del valore precedente dopo una modifica all'impostazione di questo criterio può richiedere un intervento manuale in ogni computer interessato. Non applicare questa impostazione di criteri a un controller di dominio. Se si disabilita l'impostazione di questo criterio, il runtime del server RPC usa il valore "Autenticato" in Windows Client e il valore "Nessuno" nelle versioni di Windows Server che supportano questa impostazione. Se non si configura l'impostazione di questo criterio, questa rimane disabilitata. Il runtime del server RPC si comporta come se fosse abilitato con il valore "Autenticato" usato per il client Windows e il valore "Nessuno" usato per gli SKU dei server che supportano questa impostazione. Se si abilita l'impostazione di questo criterio, il runtime del server RPC limita i client RPC non autenticati che si connettono ai server RPC in esecuzione in un computer. Un client viene considerato autenticato se usa una named pipe per comunicare con il server o se usa la sicurezza RPC. Le interfacce RPC che hanno richiesto in modo specifico di essere accessibili per i client non autenticati possono essere esenti da questa limitazione, a seconda del valore selezionato per l'impostazione di questo criterio.
 
   - *Nessuno* consente a tutti i client RPC di connettersi ai server RPC in esecuzione nel computer in cui l'impostazione del criterio viene applicata.
 
   - *Autenticato* consente solo ai client RPC autenticati (in base alla definizione precedente) di connettersi ai server RPC in esecuzione nel computer in cui l'impostazione del criterio viene applicata. Vengono concesse esenzioni alle interfacce che le hanno richieste.
 
-  - *Autenticato senza eccezioni* consente solo ai client RPC autenticati (in base alla definizione precedente) di connettersi ai server RPC in esecuzione nel computer in cui l'impostazione del criterio viene applicata. Non sono consentite eccezioni. Nota: l'impostazione di questo criterio viene applicata solo dopo il riavvio del sistema.
+  - *Autenticato senza eccezioni* consente solo ai client RPC autenticati (in base alla definizione precedente) di connettersi ai server RPC in esecuzione nel computer in cui l'impostazione del criterio viene applicata. Non sono consentite eccezioni. Nota: questa impostazione di criteri verrà applicata solo dopo il riavvio del sistema.
 
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067225)
 
@@ -1745,7 +1950,7 @@ Per altre informazioni, vedere [Policy CSP - System](https://docs.microsoft.com/
   Se si abilita l'impostazione di questo criterio, è possibile scegliere quali driver di esecuzione avvio inizializzare all'avvio successivo del computer. Se si disabilita o non si configura l'impostazione di questo criterio, i driver di esecuzione avvio identificati come validi, sconosciuti o non validi ma critici per l'avvio vengono inizializzati, mentre l'inizializzazione dei driver identificati come non validi viene ignorata. Se l'applicazione di rilevamento di malware non include un driver di esecuzione avvio antimalware ad esecuzione anticipata o se quest'ultimo driver è stato disabilitato, questa impostazione non ha alcun effetto e tutti i driver di esecuzione avvio vengono inizializzati.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067307)
 
-  **Impostazione predefinita**: Validi, sconosciuti e dannosi ma fondamentali
+  **Impostazione predefinita**: Buono, Sconosciuto e Bad critical (Non valido ma critico)
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -1779,219 +1984,14 @@ Per altre informazioni, vedere [Policy CSP - WindowsConnectionManager](https://d
 
   **Impostazione predefinita**: Abilitato
 
-## <a name="microsoft-defender"></a>Microsoft Defender
-
-Per altre informazioni, vedere [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (Provider di servizi di configurazione dei criteri - Defender) nella documentazione di Windows.
-
-- **Analizza i messaggi di posta in arrivo**:  
-  Consente o impedisce l'analisi della posta elettronica.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067116)
-
-  **Impostazione predefinita**: Sì
-
-- **Avviare i processi di tipo figlio per le app di Office**:  
-  Alle app di Office non verrà consentito di creare processi figlio. Le app includono Word, Excel, PowerPoint, OneNote e Access. Si tratta di un comportamento tipico del malware, in particolare degli attacchi basati su macro che tentano di usare le app di Office per avviare o scaricare file eseguibili dannosi.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067121)
-
-  **Impostazione predefinita**: Blocca
-
-- **Tipo di consenso per l'invio di campioni di Defender**:  
-  Verifica il livello di consenso utente in Microsoft Defender per l'invio di dati. Se il consenso necessario è già stato concesso, Microsoft Defender esegue l'invio. In caso contrario, e se l'utente ha specificato di non chiedere mai, viene avviata l'interfaccia utente per la richiesta del consenso utente (se Defender/AllowCloudProtection è consentito) prima dell'invio di dati.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067131)
-
-  **Impostazione predefinita**: Invia i campioni sicuri automaticamente
-
-- **Intervallo di aggiornamento della firma (in ore)** :  
-  Intervallo di aggiornamento della firma di Defender in ore.
-
-  **Impostazione predefinita**: 4
-
-- **Tipo di esecuzione del payload scaricato tramite script**:  
-  Tipo di esecuzione del payload scaricato tramite script di Defender.
-
-  **Impostazione predefinita**: Blocca
-  
-- **Impedire il tipo di intercettazione delle credenziali**:  
-  Microsoft Defender Credential Guard usa la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. L'accesso non autorizzato a questi segreti può provocare attacchi di furto delle credenziali, ad esempio Pass-the-Hash o Pass-The-Ticket. Microsoft Defender Credential Guard impedisce questi attacchi proteggendo gli hash delle password NTLM, i Ticket Granting Ticket Kerberos e le credenziali archiviate dalle applicazioni come credenziali di dominio.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067065)
-  
-  **Impostazione predefinita**: Abilita
-
-- **Tipo di esecuzione del contenuto del messaggio di posta elettronica**:  
-  Questa regola consente di bloccare l'esecuzione e l'avvio dei tipi di file seguenti da un messaggio di posta elettronica visualizzato in Microsoft Outlook o nella posta sul Web, ad esempio Gmail.com oppure Outlook.com: file eseguibili (ad esempio con estensione exe, dll o scr), file di script (ad esempio file di PowerShell con estensione ps, file di VisualBasic con estensione vbs o file JavaScript con estensione js) e file di archivio di script.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067063)
-
-  **Impostazione predefinita**: Blocca
-
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-
-- **Avvio di Adobe Reader in un processo figlio**:  
-  **Impostazione predefinita**: Abilita
-
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-
-- **Protezione di rete**:  
-  Questo criterio consente di attivare la protezione di rete (Blocca/Controlla) o di disattivarla in Microsoft Defender Exploit Guard. La protezione di rete è una funzionalità di Microsoft Defender Exploit Guard che protegge i dipendenti che usano le app dall'accesso a tentativi di phishing, siti che ospitano exploit e contenuti dannosi in Internet. Impedisce anche ai browser di terze parti di connettersi a siti pericolosi. Il tipo di valore è un numero intero. Se si abilita questa impostazione, la protezione di rete verrà attivata e i dipendenti non potranno disattivarla. Il comportamento potrà essere controllato dalle opzioni seguenti: Blocca e Controlla. Se si abilita questo criterio impostando l'opzione "Blocca", gli utenti e le app non possono connettersi a domini dannosi. È possibile visualizzare questa attività in Microsoft Defender Security Center. Se si abilita questo criterio impostando l'opzione "Controlla", gli utenti e le app non potranno connettersi a domini dannosi. Tuttavia, sarà possibile visualizzare comunque questa attività in Microsoft Defender Security Center. Se si disabilita questo criterio, gli utenti e le app potranno connettersi a domini dannosi. Non sarà possibile visualizzare attività di rete in Microsoft Defender Security Center. Se non si configura questo criterio, il blocco di rete è disabilitato per impostazione predefinita.  
-  [Altre informazioni](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
-
-  **Impostazione predefinita**: Abilita
-
-- **Giorno pianificato per l'analisi di Defender**:  
-  Giorno pianificato per l'analisi di Defender.
-
-  **Impostazione predefinita**: Ogni giorno
-
-- **Protezione fornita dal cloud**:  
-  Per proteggere al meglio il PC, Microsoft Defender invierà a Microsoft informazioni su qualsiasi problema che si verificherà. Le informazioni saranno analizzate, saranno raccolti altri dettagli sui problemi riscontrati dall'utente corrente e dagli altri clienti. Verranno quindi offerte soluzioni migliorate.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067039)
-
-  **Impostazione predefinita**: Sì  
-
-- **Azione della Protezione da applicazioni potenzialmente di Defender**:  
-  La funzionalità di protezione da applicazioni potenzialmente indesiderate dell'antivirus Microsoft Defender consente di identificare e bloccare il download e l'installazione delle applicazioni potenzialmente indesiderate negli endpoint di rete. Queste applicazioni non sono considerate virus, malware o altri tipi di minaccia, ma potrebbero agire su endpoint compromettendo le prestazioni e l'uso. Possono essere considerate applicazioni potenzialmente indesiderate anche le applicazioni di dubbia reputazione. Sono applicazioni potenzialmente indesiderate la creazione di bundle di diversi tipi di software, l'inserimento di annunci nei Web browser, gli strumenti di ottimizzazione per driver e Registro di sistema che rilevano errori e richiedono pagamenti per correggere gli errori, ma rimangono nell'endpoint e non apportano alcuna modifica né alcuna ottimizzazione (noti anche come programmi antivirus non autorizzati). Queste applicazioni possono aumentare il rischio di infezione della rete da parte di malware e incrementare la difficoltà di rilevamento delle infezioni malware e possono causare uno spreco di tempo delle risorse IT per rimuovere il malware dalle applicazioni.  
-  [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
-
-  **Impostazione predefinita**: Blocca  
-
-- **Tipo di codice macro offuscato in script**:  
-  Il malware e altre minacce possono tentare di offuscare o nascondere il codice dannoso in alcuni file di script. Questa regola impedisce l'esecuzione degli script offuscati.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067026)
-
-  **Impostazione predefinita**: Blocca
-
-- **Analizza le unità rimovibili durante un'analisi completa**:  
-  Consente a Microsoft Defender di cercare software dannoso e indesiderato in unità rimovibili, ad esempio in unità flash USB, durante un'analisi completa. L'antivirus Microsoft Defender analizza tutti i file nei dispositivi USB prima dell'esecuzione.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067036)
-
-  **Impostazione predefinita**: Sì  
-
-- **Analizza file di archivio**:  
-  Analizza file di archivio di Defender.
-
-  **Impostazione predefinita**: Sì
-
-- **Monitoraggio del comportamento**:  
-  Consente o impedisce la funzionalità di monitoraggio del comportamento di Microsoft Defender. Integrati in Windows 10, questi sensori raccolgono ed elaborano i segnali comportamentali dal sistema operativo e inviano i dati dei sensori all'istanza cloud isolata privata di Microsoft Defender ATP.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067111)
-
-  **Impostazione predefinita**: Sì
-
-- **Analizza file aperti da cartelle di rete**:  
-  Se i file sono di sola lettura, non sarà possibile rimuovere eventuale malware rilevato.
-
-  **Impostazione predefinita**: Sì
-
-- **Tipo di processo non attendibile in USB**:  
-  Questa regola consente agli amministratori di impedire l'esecuzione di file eseguibili non firmati o non attendibili da unità removibili USD, incluse le schede SD.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067100)
-
-  **Impostazione predefinita**: Blocca
-
-- **Tipo di inserimento in altri processi per app di Office**:  
-  Le app di Office, tra cui Word, Excel, PowerPoint e OneNote, non potranno inserire codice in altri processi. Si tratta di un tipico comportamento del malware per eseguire codice malware nel tentativo di nascondere l'attività ai motori di analisi antivirus.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067019)
-
-  **Impostazione predefinita**: Blocca
-
-- **Consentire tipo di importazioni Win32 da codice macro in Office**:  
-  Il malware può usare il codice della macro in file di Office per importare e caricare le DLL Win32 che vengono usate per eseguire chiamate API e favorire altre infezioni in tutto il sistema. Questa regola tenta di bloccare i file di Office che contengono codice macro in grado di importare le DLL Win32. Le app incluse sono Word, Excel, PowerPoint e OneNote.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067130)
-
-  **Impostazione predefinita**: Blocca
-
-- **Livello di blocco cloud di Defender**:  
-  Livello di blocco cloud di Defender.
-
-  **Impostazione predefinita**: Non configurato
-
-- **Monitoraggio in tempo reale**:  
-  Defender richiede il monitoraggio in tempo reale.
-
-  **Impostazione predefinita**: Sì
-
-::: zone-end
-::: zone pivot="mdm-may-2019"
-
-- **Avvio di app di comunicazione di Office in un processo figlio**:  
-  **Impostazione predefinita**: Abilita
-
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-
-- **Tipo di contenuto per la creazione o l'avvio di eseguibile nelle app di Office**:  
-  Questa regola è rivolta ai tipici comportamenti usati da componenti aggiuntivi e script sospetti e dannosi (estensioni) che creano o avviano file eseguibili. Si tratta di una tipica tecnica malware. Le estensioni non possono essere usate dalle app di Office. Queste estensioni usano generalmente Windows Scripting Host (file con estensione WSH) per eseguire script che automatizzano determinate attività oppure aggiungono funzionalità create dall'utente.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067108)
-
-  **Impostazione predefinita**: Blocca
-
-::: zone-end
-::: zone pivot="mdm-may-2019"
-
-## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall
-
-Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) nella documentazione relativa ai protocolli di Windows.
-
-- **Dominio del profilo firewall**:  
-  Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti connesse ai domini.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2066796)
-
-  - **Connessioni in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Connessioni in uscita obbligatorie**:  
-    **Impostazione predefinita**: Sì
-
-  - **Notifiche in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Firewall abilitato**:  
-    **Impostazione predefinita**: Consentito
-
-- **Profilo del firewall pubblico**:  
-  Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti pubbliche. Tali reti sono classificate come pubbliche dagli amministratori nell'host del server. La classificazione viene stabilita la prima volta che l'host si connette alla rete. Queste reti sono in genere quelle di aeroporti, bar e altri luoghi pubblici, in cui i peer nella rete o l'amministratore di rete non sono attendibili.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067143)
-
-  - **Connessioni in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Connessioni in uscita obbligatorie**:  
-    **Impostazione predefinita**: Sì
-
-  - **Notifiche in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Firewall abilitato**:  
-    **Impostazione predefinita**: Consentito
-
-  - **Regole di sicurezza connessione da Criteri di gruppo non unite**:  
-    **Impostazione predefinita**: Sì
-
-  - **Regole dei criteri da Criteri di gruppo non unite**:  
-    **Impostazione predefinita**: Sì
-
-- **Privato del profilo firewall**:  
-  Specifica i profili a cui appartiene la regola, ovvero dominio, privato e pubblico. Questo valore rappresenta il profilo per le reti private.  
-  [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067041)
-
-  - **Connessioni in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Connessioni in uscita obbligatorie**:  
-    **Impostazione predefinita**: Sì
-
-  - **Notifiche in ingresso bloccate**:  
-    **Impostazione predefinita**: Sì
-
-  - **Firewall abilitato**:  
-    **Impostazione predefinita**: Consentito
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business
 
-- **Richiedi anti-spoofing avanzato, se disponibile**
+- **Consenti l'uso di anti-spoofing avanzato, se disponibile**
 
-  In caso affermativo, i dispositivi utilizzeranno l'anti-spoofing avanzato, se disponibile. Se no, l'anti-spoofing verrà bloccato. Non configurata rispetta le configurazioni eseguite sul client.  
+  Con l'impostazione Sì i dispositivi useranno l'anti-spoofing avanzato, se disponibile. Con l'impostazione No l'anti-spoofing verrà bloccato. Con l'impostazione Non configurato verranno rispettate le configurazioni eseguite nel client.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Impostazione predefinita**: Sì
@@ -2001,28 +2001,28 @@ Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPE]( https://docs.microso
   Windows Hello for Business è un metodo alternativo per l'accesso a Windows che prevede la sostituzione di password, smart card e smart card virtuali.
 
   > [!IMPORTANT]
-  > Le opzioni per questa impostazione sono invertite rispetto al significato implicito. Se invertito, il valore *Sì* non Abilita Windows Hello e viene invece considerato *non configurato*. Quando questa impostazione è impostata su *non configurata*, Windows Hello è abilitato nei dispositivi che ricevono questa linea di base.
+  > Le opzioni per questa impostazione sono invertite rispetto al significato implicito. Essendo invertito, il valore *Sì* non abilita Windows Hello e viene invece considerato come *Non configurato*. Con l'impostazione *Non configurato*, Windows Hello viene abilitato nei dispositivi che ricevono questa baseline.
   >
-  > Le descrizioni seguenti sono state rivedute per riflettere questo comportamento. L'inversione delle impostazioni verrà corretta in un aggiornamento futuro a questa linea di base di sicurezza.
+  > Le descrizioni seguenti sono state modificate per riflettere questo comportamento. L'inversione delle impostazioni verrà corretta in un aggiornamento futuro di questa baseline di sicurezza.
 
-  - Se impostato su *non configurato*, viene abilitato Windows Hello e il dispositivo esegue il provisioning di Windows Hello for business.
-  - Se impostato su *Sì*, la linea di base non influisce sull'impostazione dei criteri del dispositivo. Ciò significa che se Windows Hello for business è disabilitato in un dispositivo, rimane disabilitato. Se è abilitata, rimane abilitata.
+  - Con l'impostazione *Non configurato* Windows Hello viene abilitato e il dispositivo esegue il provisioning di Windows Hello for Business.
+  - Con l'impostazione *Sì* la baseline non influisce sull'impostazione di criteri del dispositivo. Ciò significa che se Windows Hello for Business è disabilitato in un dispositivo, rimane disabilitato. Se è abilitato, rimane abilitato.
   <!-- expected behavior 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
   -->
 
-  Non è possibile disabilitare Windows Hello for business tramite questa linea di base. È possibile disabilitare Windows Hello for business quando si configura la [registrazione di Windows](windows-hello.md)o come parte di un profilo di configurazione del dispositivo per [Identity Protection](identity-protection-configure.md).  
+  Non è possibile disabilitare Windows Hello for Business tramite questa baseline. È possibile disabilitare Windows Hello for Business quando si configura la [registrazione di Windows](windows-hello.md) o come parte di un profilo di configurazione del dispositivo per la [protezione delle identità](identity-protection-configure.md).  
 
   **Impostazione predefinita**: Sì
 
 - **Richiedi lettere minuscole nel PIN**:  
-  Se necessario, il PIN dell'utente deve includere almeno una lettera minuscola.
+  se richiesto, il PIN dell'utente deve includere almeno una lettera minuscola.
 
   **Impostazione predefinita**: Consentito
 
 - **Richiedi caratteri speciali nel PIN**:  
-  Se necessario, il PIN dell'utente deve includere almeno un carattere speciale.
+  se richiesto, il PIN dell'utente deve includere almeno un carattere speciale.
 
   **Impostazione predefinita**: Consentito
 
@@ -2032,7 +2032,7 @@ Per ulteriori informazioni, vedere [2.2.2 FW_PROFILE_TYPE]( https://docs.microso
   **Impostazione predefinita**: 6
 
 - **Richiedi lettere maiuscole nel PIN**:  
-  Se necessario, il PIN dell'utente deve includere almeno una lettera maiuscola.
+  se richiesto, il PIN dell'utente deve includere almeno una lettera maiuscola.
 
   **Impostazione predefinita**: Consentito
 
@@ -2071,89 +2071,89 @@ Per altre informazioni, vedere [Policy CSP - WindowsPowerShell](https://docs.mic
 
 ## <a name="whats-changed-in-the-new-template"></a>Modifiche apportate al nuovo modello
 
-La *linea di base di sicurezza MDM per il modello di maggio 2019* presenta le seguenti modifiche rispetto al modello di *Anteprima* .
+Il modello *Baseline della sicurezza MDM per maggio 2019* presenta le modifiche seguenti rispetto al modello di *anteprima*.
 
-### <a name="changes-to-the-baseline-settings"></a>Modifiche alle impostazioni di base
+### <a name="changes-to-the-baseline-settings"></a>Modifiche alle impostazioni della baseline
 
 Le impostazioni seguenti sono:
 
-- *Nuovo* in questa versione più recente della linea di base.
-- *Rimossi* da questa versione di base più recente, ma erano presenti nella versione precedente.
-- *Revisione* del modo in cui le impostazioni sono state visualizzate nella versione precedente.
+- *Nuove* in questa versione più recente della baseline.
+- *Rimosse* da questa versione più recente della baseline, ma presenti nella versione precedente.
+- *Modificate* in qualche modo rispetto alle impostazioni disponibili nella versione precedente.
 
-*[Nuovo]* [**blocco precedente**](#above-lock):
+*[Nuova]* [**Sopra la schermata di blocco**](#above-lock):
 
 - **Attiva tramite voce le app dalla schermata di blocco**
 
-*[Nuovo]* [**Gestione delle applicazioni**](#application-management):
+*[Nuova]* [**Gestione applicazioni**](#application-management):
 
-- **Blocca il controllo utente sulle installazioni**
-- **Blocca le installazioni di app MSI con privilegi elevati**
+- **Impedisci il controllo utente sulle installazioni**
+- **Impedisci le installazioni di app MSI con privilegi elevati**
 
-*[Rimosso]* [**BitLocker**](#bitlocker):
+*[Rimosse]* [**BitLocker**](#bitlocker):
 
-- Criteri dell'unità rimovibile BitLocker > **metodo di crittografia**
-- **Criteri unità fissa BitLocker** *(tutte le impostazioni)*
-- **Criteri unità di sistema BitLocker** *(tutte le impostazioni)*
+- BitLocker - Impostazioni dell'unità rimovibile > **Metodo di crittografia**
+- **BitLocker - Impostazioni dell'unità fissa** *(tutte le impostazioni)*
+- **BitLocker - Impostazioni dell'unità di sistema** *(tutte le impostazioni)*
 
-*[Nuovo]* [**Connettività**](#connectivity):
+*[Nuova]* [**Connettività**](#connectivity):
 
-- **Configurare l'accesso sicuro ai percorsi UNC**
+- **Configura l'accesso sicuro ai percorsi UNC**
 
-*[Nuovo]* [**Device Guard**](#device-guard):
+*[Nuova]* [**Device Guard**](#device-guard):
 
 - **Sicurezza basata sulla virtualizzazione**
 
-*[Nuovo]* [**Guard DMA**](#dma-guard):
+*[Nuova]* [**DMA Guard**](#dma-guard):
 
 - **Enumerazione di dispositivi esterni non compatibili con la protezione DMA del kernel**
 
-*[Nuovo]* [**Internet Explorer**](#internet-explorer):
+*[Nuova]* [**Internet Explorer**](#internet-explorer):
 
 - **Internet Explorer - Area Internet - Aggiornamenti alla barra di stato tramite script**
 - **Internet Explorer - Area Internet - Trascinare o copiare e incollare file**
 - **Internet Explorer - Area con restrizioni - Componenti basati su .NET Framework**
 - **Internet Explorer - Area computer locale - Non eseguire programmi antimalware su controlli ActiveX**
-- **Supporto per la crittografia di Internet Explorer**
+- **Internet Explorer - Supporto della crittografia**
 
-*[Modificato]* [**Internet Explorer**](#internet-explorer):
+*[Modificata]* [**Internet Explorer**](#internet-explorer):
 
-- La **richiesta automatica dell'area Internet di Internet Explorer per il download dei file** > il valore predefinito è **disabilitata**. In anteprima questa impostazione è stata impostata su abilitato.
+- **Internet Explorer - Area Internet - Richiesta automatica per il download di file** > il valore predefinito è ora **Disabilitata**. Nell'anteprima questa impostazione era impostata su Abilitata.
 
-*[Nuovo]* [**Assistenza remota**](#remote-assistance):
+*[Nuove]* [**Assistenza remota**](#remote-assistance):
 
 - **Assistenza remota richiesta**
-  - **Autorizzazione richiesta assistenza remota**
+  - **Autorizzazione richiesta da Assistenza remota**
   - **Durata massima ticket (valore)**
   - **Maximum ticket time period** (Durata massima ticket)
   - **Metodo di invito tramite posta elettronica**
 
-*[Nuovo]* [**Microsoft Defender**](#microsoft-defender):
+*[Nuova]* [**Microsoft Defender**](#microsoft-defender):
 
 - **Avvio di Adobe Reader in un processo figlio**
 - **Avvio di app di comunicazione di Office in un processo figlio**
 
-*[New]* [**Microsoft Defender Firewall**](#microsoft-defender-firewall)
+*[Nuova]* [ **Firewall**](#firewall)
 
-- **Dominio del profilo firewall**
+- **Profilo di dominio del firewall**
   - **Connessioni in ingresso bloccate**
   - **Connessioni in uscita obbligatorie**
   - **Notifiche in ingresso bloccate**
   - **Firewall abilitato**
-- **Profilo del firewall pubblico**
+- **Profilo pubblico del firewall**
   - **Connessioni in ingresso bloccate**
   - **Connessioni in uscita obbligatorie**
   - **Notifiche in ingresso bloccate**
   - **Firewall abilitato**
   - **Regole di sicurezza connessione da Criteri di gruppo non unite**
   - **Regole dei criteri da Criteri di gruppo non unite**
-- **Profilo del firewall privato**
+- **Profilo privato del firewall**
   - **Connessioni in ingresso bloccate**
   - **Connessioni in uscita obbligatorie**
   - **Notifiche in ingresso bloccate**
   - **Firewall abilitato**
 
-*[Nuovo]* [**Windows Hello for Business**](#windows-hello-for-business):
+*[Nuove]* [**Windows Hello for Business**](#windows-hello-for-business):
 
 - **Richiedi anti-spoofing avanzato, se disponibile**
 - **Configurare Windows Hello for Business**

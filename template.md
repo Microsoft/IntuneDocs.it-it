@@ -14,46 +14,46 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354400"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971813"
 ---
 # <a name="metadata-and-markdown-template"></a>I metadati e il modello markdown
 
-Questo modello docs.ms contiene esempi di sintassi markdown, nonché indicazioni su come impostare i metadati. È disponibile nella directory principale di ogni repository EM pilota (ad esempio ~/Azure-RMSDocs-pr /template.md) e deve essere letto come un file markdown, anche se è possibile fare riferimento alla [versione pubblicata](https://stage.docs.microsoft.com/en-us/rights-management/template) per vedere come viene reso l'esempio di markdown.
+Questo modello di Microsoft Docs contiene esempi della sintassi di markdown e indicazioni su come impostare i metadati. È disponibile nella directory principale di ogni repository EM pilota (ad esempio ~/Azure-RMSDocs-pr /template.md) e deve essere letto come un file markdown, anche se è possibile fare riferimento alla [versione pubblicata](https://stage.docs.microsoft.com/en-us/rights-management/template) per vedere come viene reso l'esempio di markdown.
 
 Quando si crea un file markdown, è necessario copiare il modello in un nuovo file, compilare i metadati come specificato di seguito, impostare l'intestazione H1 sopra il titolo dell'articolo ed eliminare il contenuto. 
 
 
 ## <a name="metadata"></a>Metadati 
 
-Il blocco di metadati completo è riportato qui sopra, suddiviso nei campi obbligatori e facoltativi; vedere il [foglio riassuntivo dei metadati OPS](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data) per ulteriori dettagli. Alcune note importanti:
+Il blocco di metadati completo è riportato qui sopra, suddiviso nei campi obbligatori e facoltativi; vedere il [foglio riassuntivo dei metadati OPS](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data) per ulteriori dettagli. Ecco alcuni punti importanti:
 
 - È **necessario** inserire uno spazio tra i due punti (:) e il valore di un elemento dei metadati.
 - Se un elemento facoltativo dei metadati non ha un valore, impostare come commento il simbolo # (non lasciare vuoto oppure usare "na"); se si aggiunge un valore a un elemento che è stato commentato, assicurarsi di rimuovere il simbolo #.
-- I due punti in un valore (ad esempio, un titolo) interrompono il parser di metadati. Al loro posto, utilizzare la codifica HTML di & #58; (ad esempio, "titolo: Azure Rights Management & #58; nozioni di base | Azure RMS").
-- **titolo**: questo titolo verrà visualizzato nei risultati dei motori di ricerca. Il titolo deve terminare con una barra verticale (|) seguita dal nome del servizio (ad esempio, vedere sopra). Non è necessario che il titolo debba essere identico al titolo dell'intestazione H1 (e probabilmente non deve esserlo). Deve includere approssimativamente 65 caratteri (compreso | NOME DEL SERVIZIO)
-- **autore**, **manager**, **revisore**: il campo dell'autore deve contenere il **nome utente Github** dell'autore, non il relativo alias.  I campi "manager" e "revisore", al contratio, devono contenere gli alias. ms.reviewer specifica il nome del PM associato all'articolo o servizio.
-- **ms.assetid**: si tratta del GUID dell'articolo da CAPS. Quando si crea un nuovo file markdown, ottenere un GUID da [https://www.guidgenerator.com](https://www.guidgenerator.com). 
-- **ms.Prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: i valori possibili per questi elementi sono reperibili [qui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
+- I due punti in un valore, ad esempio un titolo, causano interruzioni nel parser dei metadati. Usare invece la codifica HTML &#58; (ad esempio, "title: Azure Rights Management&#58; nozioni di base | Azure RMS").
+- **title**: questo titolo verrà visualizzato nei risultati dei motori di ricerca. Il titolo deve terminare con una barra verticale (|) seguita dal nome del servizio (vedere sopra). Il titolo non deve essere identico al titolo presente nell'intestazione H1. La lunghezza non deve superare 65 caratteri (incluso | NOME SERVIZIO)
+- **author**, **manager**, **reviewer**: il campo dell'autore deve contenere il **nome utente Github** dell'autore e non l'alias.  I campi "manager" e "reviewer" devono invece contenere alias. ms.reviewer indica il nome del PM associato all'articolo o al servizio.
+- **ms.assetid**: GUID dell'articolo generato dal sistema CAPS. Quando si crea un nuovo file markdown, ottenere un GUID da [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: è possibile trovare i valori possibili per questi elementi [qui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
-## <a name="basic-markdown-and-gfm"></a>GFM e markdown base
+## <a name="basic-markdown-and-gfm"></a>Markdown di base e GFM (GitHub Flavored Markdown)
 
-Sono supportati tutti i markdown di base e per Github. Per ulteriori informazioni, vedere:
+È supportato tutto il markdown di base e GFM. Per altre informazioni su questi argomenti, vedere:
 
-- [Sintassi di base del markdown](https://daringfireball.net/projects/markdown/syntax)
-- [Documentazione relativa al markdown di Github (GFM)](https://guides.github.com/features/mastering-markdown)
+- [Sintassi markdown di base](https://daringfireball.net/projects/markdown/syntax)
+- [Documentazione per GFM GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown)
 
 ## <a name="headings"></a>Intestazioni
 
-Esempi di intestazioni di primo e secondo livello sono riportati qui sopra. 
+Sopra sono riportati esempi di intestazioni di primo e secondo livello. 
 
-Vi **deve** essere solo un'intestazione di primo livello all'argomento, che verrà visualizzata come titolo nella pagina.  
+L'argomento **deve** includere una sola intestazione di primo livello che verrà visualizzata come titolo della pagina.  
 
-Le intestazioni di secondo livello generano il sommario della pagina che viene visualizzata nella sezione "In questo articolo" sotto il titolo della pagina.
+Le intestazioni di secondo livello genereranno il sommario della pagina visualizzato nella sezione "In questo articolo" sotto il titolo della pagina.
 
 ### <a name="third-level-heading"></a>Intestazione di terzo livello
 #### <a name="fourth-level-heading"></a>Intestazione di quarto livello
@@ -72,23 +72,23 @@ Le intestazioni di secondo livello generano il sommario della pagina che viene v
 
 ## <a name="links"></a>Collegamenti
 
-Per collegare un file markdown nello stesso repository, usare i [relativi collegamenti](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
+Per stabilire un collegamento a un file markdown nello stesso repository, usare [collegamenti relativi](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
 
-- Esempio: [Informazioni su Microsoft Azure Rights Management](./understand-explore/what-is-azure-rights-management.md)
+- Esempio: [Informazioni su Azure Rights Management](./understand-explore/what-is-azure-rights-management.md)
 
-Per creare un collegamento a un'intestazione nello stesso file markdown, visualizzare l'origine dell'articolo pubblicato, trovare l'id dell'intestazione (ad esempio `id="blockquote"`) e il collegamento utilizzando # + id (ad esempio `#blockquote`).
+Per stabilire un collegamento a un'intestazione nello stesso file markdown, visualizzare l'origine dell'articolo pubblicato, trovare l'ID dell'intestazione, ad esempio `id="blockquote"`, e creare il collegamento usando # + ID, ad esempio `#blockquote`.
 
-- Esempio: [Blockquotes](#blockquote)
+- Esempio: [Citazioni](#blockquote)
 
-Per creare un collegamento a un'intestazione in un file markdown nello stesso repository, usare i relativi collegamenti + hashtag.
+Per creare un collegamento a un'intestazione in un file markdown nello stesso repository, usare collegamenti relativi e collegamenti con hashtag.
 
-- Esempio: [panoramica tecnica del processo di registrazione](./understand-explore/rms-for-individuals-user-signup.md#technical-overview-of-the-sign-up-process)
+- Esempio: [Panoramica tecnica del processo di iscrizione](./understand-explore/rms-for-individuals-user-signup.md#technical-overview-of-the-sign-up-process)
 
 Per creare un collegamento a un file esterno, usare l'URL completo come collegamento.
 
 - Esempio: [Github](http://www.github.com)
 
-Se viene visualizzato un URL in un file markdown, questo verrà trasformato in un collegamento ipertestuale.
+Se in un file markdown viene visualizzato un URL, questo verrà trasformato in un collegamento selezionabile.
 
 - Esempio: http://www.github.com
 
@@ -96,7 +96,7 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
 
 ### <a name="ordered-lists"></a>Elenchi ordinati
 
-1. Questo parametro 
+1. Questo 
 1. è
 1. un
 1. Ordinato
@@ -105,35 +105,35 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
 
 #### <a name="ordered-list-with-an-embedded-list"></a>Elenco ordinato con un elenco incorporato
 
+1. Ecco
 1. qui
-1. viene fornito
 1. un
 1. elenco
     1. Miss Scarlett
-    1. Professore Plum
+    1. Professor Plum
 1. ordinato
-1. list
+1. elenco
 
 
 ### <a name="unordered-lists"></a>Elenchi non ordinati
 
-- Questo parametro
+- Questo
 - is
 - a
-- elenco puntato
-- list
+- elenco
+- elenco
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>Elenco non ordinato con elenchi incorporati
 
-- Questo parametro 
+- Questo 
 - elenco puntato 
-- list
+- elenco
   - Mrs. Peacock
   - Mr. Green
 - contains  
 - other
-    1. Senape Colonel
+    1. Colonel Mustard
     1. Mrs. White
 - elenchi
 
@@ -144,11 +144,11 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
 
 ## <a name="tables"></a>Tabelle
 
-| Tabelle        | Sono           | Interessanti  |
+| Tabelle        | Sono           | fantastiche  |
 | ------------- |:-------------:| -----:|
-| la colonna 3 è      | allineata a destra | $1600 |
-| la colonna 2 è      | centrata      |   $ 12 |
-| la colonna 1 è allineata a sinistra | per impostazione predefinita     |    $1 |
+| Colonna 3      | allineata a destra | $ 1600 |
+| Colonna 2      | allineata al centro      |   $ 12 |
+| Colonna 1 predefinita | allineata a sinistra     |    $1 |
 
 
 ## <a name="code"></a>Codice
@@ -161,13 +161,13 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
       }
     }
 
-### <a name="in-line-code"></a>Codice in linea
+### <a name="in-line-code"></a>Codice inline
 
-Questo è un esempio di `in-line code`.
+Esempio di `in-line code`.
 
-## <a name="blockquotes"></a>Blockquotes
+## <a name="blockquotes"></a>Citazioni
 
-> La siccità si protraeva ormai da dieci milioni di anni, e il regno delle terribili lucertole era finito da molto tempo. Qui sull'equatore, nel continente che un giorno sarà noto come Africa, la battaglia per l'esistenza ha raggiunto un nuovo apice di ferocia, e la vittoria è ancora lontana. In questa terra arida e secca, solo gli organismi più piccoli o rapidi o feroci possono progredire, o addirittura sperare di sopravvivere.
+> La siccità si protraeva ormai da dieci milioni di anni, e il regno delle terribili lucertole era finito da molto tempo. Lì, sull'Equatore, nel continente che un giorno sarebbe stato chiamato Africa, la lotta per la vita aveva raggiunto un nuovo diapason di ferocia, e il vincitore ancora non si intravedeva. In questa terra arida e secca, solo gli organismi più piccoli o rapidi o feroci possono progredire, o addirittura sperare di sopravvivere.
 
 ## <a name="images"></a>Immagini
 
@@ -179,7 +179,7 @@ Questo è un esempio di `in-line code`.
 
 [![testo alternativo per l'immagine collegata](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
-### <a name="animated-gif"></a>Gif animata
+### <a name="animated-gif"></a>GIF animata
 
 ![gif animata](./media/hololens.gif)
 
@@ -193,7 +193,7 @@ Questo è un esempio di `in-line code`.
 ### <a name="warning"></a>Avviso
 
 > [!WARNING]
-> Questo è AVVISO
+> Questo è un AVVISO
 
 ### <a name="tip"></a>Suggerimento
 
@@ -212,11 +212,11 @@ Questo è un esempio di `in-line code`.
 <iframe src="http://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-Active-Directory-Connect-Express-Settings/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 
-### <a name="youtube"></a>Youtube
+### <a name="youtube"></a>YouTube
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>estensioni docs.ms
+## <a name="docsms-extensions"></a>Estensioni docs.ms
 
 ### <a name="button"></a>Pulsante
 
@@ -227,9 +227,9 @@ Questo è un esempio di `in-line code`.
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
-- [barra](/rights-management/scratch.md)
+- [bar](/rights-management/scratch.md)
 
-### <a name="step-by-step"></a>Procedura dettagliata
+### <a name="step-by-step"></a>Passo passo
 
 >[!div class="step-by-step"]
 [Indietro](https://www.example.com)

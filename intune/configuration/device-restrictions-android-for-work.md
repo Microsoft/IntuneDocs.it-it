@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 122f0b0194a96b844e274ab39a73224eb23cc6b3
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206602"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051593"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -44,7 +44,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
   - **Concedi automaticamente**: le autorizzazioni vengono concesse automaticamente.
   - **Nega automaticamente**: le autorizzazioni vengono negate automaticamente.
 - **Modifiche a data e ora**: scegliere **Blocca** per impedire agli utenti di impostare manualmente la data e ora. **Non configurata** consente agli utenti di impostare data e ora nel dispositivo.
-- **Modifiche del volume**: il **blocco** impedisce agli utenti di modificare il volume del dispositivo e disattiva anche il volume principale. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
+- **Modifiche al volume**: **Blocca**  impedisce agli utenti di modificare il volume del dispositivo e disattiva anche il volume principale. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
 - **Ripristino impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
 - **Modalità provvisoria**: scegliere **Blocca** per impedire agli utenti di riavviare il dispositivo in modalità provvisoria. **Non configurata** consente agli utenti di riavviare il dispositivo in modalità sicura.
 - **Barra di stato**: scegliere **Blocca** per impedire l'accesso alla barra di stato, incluse le notifiche e le impostazioni rapide. **Non configurata** consente agli utenti di accedere alla barra di stato.
@@ -59,7 +59,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 - **Trasmetti dati con NFC**: scegliere **Blocca** per impedire l'uso della tecnologia NFC (Near Field Communication) per la trasmissione di dati dalle app. **Non configurata** consente l'uso di NFC per condividere dati tra i dispositivi.
 - **Funzionalità di debug**: scegliere **Consenti** per consentire agli utenti di usare le funzionalità di debug nel dispositivo. **Non configurata** impedisce agli utenti di usare le funzionalità di debug nel dispositivo.
 - **Regolazione del microfono**: scegliere **Blocca** per impedire agli utenti di riattivare il microfono e regolare il volume del microfono. **Non configurata** consente all'utente di usare il microfono nel dispositivo e regolarne il volume.
-- **Indirizzi di posta elettronica per la protezione dal ripristino delle impostazioni predefinite**: scegliere **Indirizzi di posta elettronica dell'account Google**. Immettere gli indirizzi di posta elettronica degli amministratori dei dispositivi che possono sbloccare il dispositivo dopo la cancellazione. Assicurarsi di separare gli indirizzi di posta elettronica con punti e virgola, ad esempio `admin1@gmail.com;admin2@gmail.com`. Se non viene immesso un indirizzo di posta elettronica, chiunque può sbloccare il dispositivo dopo il ripristino delle impostazioni predefinite. Questi messaggi di posta elettronica si applicano solo quando viene eseguito un ripristino delle impostazioni predefinite dell'utente, ad esempio l'esecuzione di un ripristino delle impostazioni predefinite tramite il menu ripristino.
+- **Indirizzi di posta elettronica per la protezione dal ripristino delle impostazioni predefinite**: scegliere **Indirizzi di posta elettronica dell'account Google**. Immettere gli indirizzi di posta elettronica degli amministratori dei dispositivi che possono sbloccare il dispositivo dopo la cancellazione. Assicurarsi di separare gli indirizzi di posta elettronica con punti e virgola, ad esempio `admin1@gmail.com;admin2@gmail.com`. Se non viene immesso un indirizzo di posta elettronica, chiunque può sbloccare il dispositivo dopo il ripristino delle impostazioni predefinite. Questi indirizzi di posta elettronica si applicano solo quando viene eseguito un ripristino delle impostazioni predefinite non dell'utente, ad esempio l'esecuzione di un ripristino delle impostazioni predefinite tramite il menu di ripristino.
 - **Rete di emergenza**: scegliere **Abilita** per consentire agli utenti di attivare la funzionalità di rete di emergenza. Se non è possibile creare una connessione di rete in fase di avvio del dispositivo, la rete di emergenza richiede all'utente di connettersi temporaneamente a una rete per aggiornare i criteri del dispositivo. Dopo aver applicato i criteri, la rete temporanea viene dimenticata e viene ripreso l'avvio del dispositivo. Questa funzionalità consente di connettere i dispositivi a una rete se:
   - Non è disponibile una rete idonea nei criteri più recenti.
   - Il dispositivo viene avviato in un'app in modalità di attività di blocco.
@@ -74,7 +74,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
   - **Finestra di manutenzione**: installa automaticamente gli aggiornamenti in una finestra di manutenzione giornaliera impostata in Intune. L'installazione viene tentata ogni giorno per 30 giorni e può non riuscire a causa di livelli di batteria o spazio insufficienti. Dopo 30 giorni, Android chiede all'utente di eseguire l'installazione. Questa finestra viene usata anche per installare gli aggiornamenti per le app di Play. Usare questa opzione per i dispositivi dedicati, ad esempio i chioschi multimediali, in quanto consente di aggiornare le app in primo piano dei dispositivi dedicati per app singola.
 
 - **Finestre di notifica**: se l'opzione è impostata su **Disabilita**, le notifiche, tra cui avvisi popup, chiamate in ingresso, chiamate in uscita, avvisi di sistema ed errori di sistema, non vengono visualizzate nel dispositivo. Se è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare le notifiche.
-- **Ignorare i primi suggerimenti**per l'uso: **abilitare** Nascondi o ignora i suggerimenti dalle app che passano attraverso le esercitazioni o gli hint all'avvio dell'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
+- **Ignora suggerimenti al primo utilizzo**: **Abilita** nasconde o ignora i suggerimenti dalle app che eseguono esercitazioni o i suggerimenti all'avvio dell'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
 
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
@@ -93,7 +93,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
     Se l'elenco non include alcuna app, [aggiungere alcune app Android](../apps/apps-add-android-for-work.md) al dispositivo. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](../apps/apps-deploy.md).
 
   > [!IMPORTANT]
-  > Quando si usa la modalità tutto schermo a app singola, le app del comparatore/telefono potrebbero non funzionare correttamente. 
+  > Quando si usa la modalità tutto schermo ad app singola, le app dialer o telefoniche potrebbero non funzionare correttamente. 
   
 - **Più app**: gli utenti possono accedere a un set di app limitato nel dispositivo. All'avvio del dispositivo vengono avviate solio le app aggiunte. È anche possibile aggiungere alcuni collegamenti Web che gli utenti possono aprire. Quando viene applicato il criterio, gli utenti visualizzano le icone delle app consentite nella schermata iniziale.
 
@@ -104,27 +104,27 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   >
   > Non è richiesto che l'app di **schermata iniziale gestita** sia inclusa nel profilo di configurazione, ma è necessario che venga aggiunta come app client. Quando l'app di **schermata iniziale gestita** viene aggiunta come app client, qualsiasi altra app aggiunta nel profilo di configurazione viene visualizzata come icona nell'app di **schermata iniziale gestita**.
   >
-  > Quando si usa la modalità tutto schermo per più app, le app del servizio di connessione/telefono potrebbero non funzionare correttamente. 
+  > Quando si usa la modalità tutto schermo con più app, le app dialer o telefoniche potrebbero non funzionare correttamente. 
 
-  - **Aggiungi**: selezionare le app dall'elenco.
+  - **Aggiungi**: selezionare le app nell'elenco.
 
     Se l'app di **schermata iniziale gestita** non è inclusa nell'elenco, [aggiungerla da Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Assicurarsi di [assegnare l'app](../apps/apps-deploy.md) al gruppo di dispositivi creato per i dispositivi dedicati.
 
     È anche possibile aggiungere al dispositivo altre [app Android](../apps/apps-add-android-for-work.md) e [app Web](../apps/web-app.md) create dall'organizzazione. Assicurarsi di [assegnare l'app al gruppo di dispositivi creato per i dispositivi dedicati](../apps/apps-deploy.md).
 
-  - **Pulsante Home virtuale**: un pulsante del tasto softkey che restituisce gli utenti alla schermata iniziale gestita in modo che gli utenti possano passare tra le app. Le opzioni disponibili sono:
+  - **Pulsante Pagina iniziale virtuale**: pulsante softkey che riporta gli utenti alla schermata iniziale gestita in modo da potersi spostare tra le app. Le opzioni disponibili sono:
 
-    - **Non configurato** (impostazione predefinita): non viene visualizzato un pulsante Home. Gli utenti devono usare il pulsante indietro per spostarsi tra le app.
-    - **Scorri verso l'alto**: un pulsante Home viene visualizzato quando un utente scorre il dispositivo.
-    - **Floating**: Mostra un pulsante Home permanente e mobile sul dispositivo.
+    - **Non configurato** (impostazione predefinita): non viene visualizzato un pulsante Pagina iniziale. Gli utenti devono usare il pulsante Indietro per spostarsi tra le app.
+    - **Scorrimento rapido verso l'alto**: viene visualizzato un pulsante Pagina iniziale quando un utente scorre verso l'alto nel dispositivo.
+    - **Mobile**: mostra un pulsante Pagina iniziale permanente e mobile nel dispositivo.
 
   - **Esci dalla modalità tutto schermo**: scegliere **Abilita** per consentire agli amministratori di sospendere temporaneamente la modalità tutto schermo per aggiornare il dispositivo. Per utilizzare questa funzionalità, l'amministratore esegue le operazioni seguenti:
   
     1. Continua a selezionare il pulsante Indietro fino a quando non viene visualizzato il pulsante **Exit kiosk** (Esci da modalità tutto schermo). 
     2. Seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo) e immette il PIN per **Codice di uscita dalla modalità tutto schermo**.
-    3. Al termine, selezionare l'app **Home Screen gestita** . Questo passaggio blocca di nuovo il dispositivo in modalità tutto schermo con più app.
+    3. Al termine, selezionare l'**app di schermata iniziale gestita**. Questo passaggio blocca di nuovo il dispositivo in modalità tutto schermo con più app.
 
-      Se impostato su **non configurato**, gli amministratori non possono sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
+      Con l'impostazione **Non configurato** gli amministratori non possono sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante **Exit kiosk** (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
 
     - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4 a 6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
 
@@ -140,32 +140,32 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
     >
     > Gli schermi moderni hanno maggiori densità di pixel e consentono di visualizzare immagini con definizione equivalente a 2K/4K.
 
-  - **Configurazione Wi-Fi**: **Abilita** Mostra il controllo Wi-Fi nella schermata iniziale gestita e consente agli utenti finali di connettere il dispositivo a diverse reti Wi-Fi. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non Visualizza il controllo Wi-Fi nella schermata iniziale gestita. Impedisce agli utenti di connettersi alle reti Wi-Fi usando la schermata iniziale gestita.
+  - **Configurazione Wi-Fi**: **Abilita** mostra il controllo Wi-Fi nella schermata iniziale gestita e consente agli utenti finali di connettere il dispositivo a diverse reti Wi-Fi. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non visualizza il controllo Wi-Fi nella schermata iniziale gestita. Impedisce agli utenti di connettersi alle reti Wi-Fi usando la schermata iniziale gestita.
 
-  - **Configurazione Bluetooth**: **Abilita** Mostra il controllo Bluetooth nella schermata iniziale gestita e consente agli utenti finali di associare i dispositivi tramite Bluetooth. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non Visualizza il controllo Bluetooth nella schermata iniziale gestita. Impedisce agli utenti di configurare i dispositivi Bluetooth e di associazione usando la schermata iniziale gestita.
+  - **Configurazione Bluetooth**: **Abilita** mostra il controllo Bluetooth nella schermata iniziale gestita e consente agli utenti finali di associare i dispositivi tramite Bluetooth. L’abilitazione di questa funzionalità attiva anche la posizione del dispositivo. **Non configurato** (impostazione predefinita) non visualizza il controllo Bluetooth nella schermata iniziale gestita. Impedisce agli utenti di configurare il Bluetooth e associare i dispositivi quando si trovano nella modalità schermata iniziale gestita.
 
-  - **Torcia Access**: **Abilita** Mostra il controllo torcia sulla schermata iniziale gestita e consente agli utenti finali di attivare o disattivare la torcia. **Non configurato** (impostazione predefinita) non Visualizza il controllo torcia nella schermata iniziale gestita. Impedisce agli utenti di usare la torcia durante l'uso della schermata iniziale gestita.
+  - **Accesso alla torcia**: **Abilita** mostra il controllo torcia nella schermata iniziale gestita e consente agli utenti finali di attivare o disattivare la torcia. **Non configurato** (impostazione predefinita) non visualizza il controllo torcia nella schermata iniziale gestita. Impedisce agli utenti di usare la torcia durante l'uso della schermata iniziale gestita.
 
-  - **Controllo volume multimediale**: **Abilita** Mostra il controllo volume multimediale nella schermata iniziale gestita e consente agli utenti finali di modificare il volume multimediale del dispositivo usando un dispositivo di scorrimento. **Non configurato** (impostazione predefinita) non Visualizza il controllo volume multimediale nella schermata iniziale gestita. Impedisce agli utenti di modificare il volume multimediale del dispositivo durante l'uso della schermata iniziale gestita, a meno che i pulsanti hardware non lo supportino. 
+  - **Controllo volume dei file multimediali**: **Abilita** mostra il controllo volume dei file multimediali nella schermata iniziale gestita e consente agli utenti finali di regolare il volume per i file multimediali del dispositivo usando un dispositivo di scorrimento. **Non configurato** (impostazione predefinita) non visualizza il controllo volume dei file multimediali nella schermata iniziale gestita. Impedisce agli utenti di regolare il volume dei file multimediali del dispositivo durante l'uso della schermata iniziale gestita, a meno che l'operazione non sia supportata tramite i pulsanti hardware. 
 
-  - **Modalità screen saver**: **Abilita** Mostra uno screensaver nella schermata iniziale gestita quando il dispositivo è bloccato o si verifica un timeout. **Non configurato** (impostazione predefinita) non mostra uno screen saver nella schermata iniziale gestita.
+  - **Modalità screen saver**: **Abilita** mostra uno screen saver nella schermata iniziale gestita quando il dispositivo è bloccato o si verifica un timeout. **Non configurato** (impostazione predefinita) non mostra uno screen saver nella schermata iniziale gestita.
 
     Se abilitata, configurare anche:
 
-    - **Imposta immagine screen saver personalizzata**: immettere l'URL di un file PNG, jpg, JPEG, gif, BMP, WebP o ICOimage personalizzato. Immettere ad esempio:
+    - **Imposta l'immagine personalizzata per lo screen saver**: immettere l'URL di un file PNG, JPG, JPEG, GIF, BMP, WebP o ICOimage. Immettere ad esempio:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
       - `https://www.contoso.com/image.webp`
 
-      Se non si immette un URL, viene utilizzata l'immagine predefinita del dispositivo, se è presente un'immagine predefinita.
+      Se non si immette un URL, viene usata l'immagine predefinita del dispositivo, se è presente un'immagine predefinita.
       
       > [!TIP]
-      > È supportato qualsiasi URL di risorsa file che può essere trasformato in una bitmap.
+      > È supportato qualsiasi URL di risorsa file che possa essere trasformato in una bitmap.
 
-    - **Numero di secondi durante i quali il dispositivo visualizza screen saver prima**della disattivazione dello schermo: scegliere per quanto tempo il dispositivo Visualizza lo screensaver. Immettere un valore compreso tra 0 e 9999999 secondi. Il valore predefinito è `0` secondi. Quando viene lasciato vuoto o impostato su zero (`0`), il screen saver è attivo fino a quando un utente interagisce con il dispositivo.
-    - **Numero di secondi di inattività del dispositivo prima di visualizzare screen saver**: scegliere per quanto tempo il dispositivo è inattivo prima di visualizzare lo screensaver. Immettere un valore compreso tra 1 e 9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
-    - **Rileva supporto prima di iniziare screen saver**: **Abilita** (impostazione predefinita) non Mostra l'screen saver se l'audio o il video è in riproduzione sul dispositivo. **Non configurata** mostra il screen saver, anche se la riproduzione audio o video viene eseguita.
+    - **Numero di secondi per cui viene visualizzato lo screen saver nel dispositivo prima dello spegnimento dello schermo**: scegliere per quanto tempo il dispositivo visualizza lo screen saver. Immettere un valore compreso tra 0 e 9999999 secondi. Il valore predefinito è `0` secondi. Se l'opzione viene lasciata vuota o viene impostata su zero (`0`), lo screen saver rimane attivo fino all'interazione di un utente con il dispositivo.
+    - **Numero di secondi di inattività del dispositivo prima della visualizzazione dello screen saver**: scegliere per quanto tempo il dispositivo deve rimanere inattivo prima di visualizzare lo screen saver. Immettere un valore compreso tra 1 e 9999999 secondi. Il valore predefinito è `30` secondi. È necessario immettere un numero maggiore di zero (`0`).
+    - **Rileva file multimediali prima di avviare lo screen saver**: **Abilita** (impostazione predefinita) non mostra lo screen saver se sono in riproduzione elementi audio o video nel dispositivo. **Non configurato** mostra lo screen saver, anche se sono in riproduzione elementi audio o video.
 
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
 
@@ -198,7 +198,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 ### <a name="power-settings"></a>Impostazioni di risparmio energia
 
-- **Tempo di blocco della schermata**: immettere il tempo massimo che un utente può impostare fino al blocco del dispositivo. Se ad esempio si imposta questa impostazione su **10 minuti**, gli utenti possono impostare l'ora da 15 secondi fino a 10 minuti. Se impostato su **non configurato** (impostazione predefinita), Intune non modifica o controlla questa impostazione.
+- **Tempo per la schermata di blocco**: immettere il tempo massimo che un utente può impostare fino al blocco del dispositivo. Ad esempio, con l'impostazione **10 minuti**, gli utenti possono impostare il tempo da 15 secondi fino a 10 minuti. Con l'impostazione predefinita **Non configurato**, Intune non modifica o controlla questa impostazione.
 
 - **Schermata attivata con dispositivo collegato**: scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo collegato.
 
@@ -206,13 +206,13 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 - **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere altri utenti nel dispositivo.
 - **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurato** (impostazione predefinita) consente agli utenti di rimuovere altri utenti dal dispositivo.
-- **Modifiche dell'account** (solo per dispositivi dedicati): scegliere **blocca** per impedire agli utenti di modificare gli account. **Non configurato** (impostazione predefinita) consente agli utenti di aggiornare gli account utente nel dispositivo.
+- **Modifiche all'account** (solo per dispositivi dedicati): scegliere **Blocca** per impedire agli utenti di modificare gli account. **Non configurato** (impostazione predefinita) consente agli utenti di aggiornare gli account utente nel dispositivo.
 
   > [!NOTE]
   > Questa impostazione non è rispettata nei dispositivi proprietari del dispositivo (completamente gestiti). Se si configura questa impostazione, l'impostazione viene ignorata e non ha alcun effetto.
 
-- L' **utente può configurare le credenziali**: il **blocco** impedisce agli utenti di configurare i certificati assegnati ai dispositivi, anche i dispositivi non associati a un account utente. **Non configurato** potrebbe consentire agli utenti di configurare o modificare le proprie credenziali quando accedono all'archivio chiavi. 
-- **Personal Google Accounts**: il **blocco** impedisce agli utenti di aggiungere il proprio account Google personale al dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere il proprio account Google personale.
+- **L'utente può configurare le credenziali**: **Blocca** impedisce agli utenti di configurare i certificati assegnati ai dispositivi, anche per i dispositivi non associati a un account utente. **Non configurato** potrebbe consentire agli utenti di configurare o modificare le proprie credenziali quando accedono all'archivio chiavi. 
+- **Account Google personale**: **Blocca** impedisce agli utenti di aggiungere il proprio account Google personale al dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di aggiungere il proprio account Google personale.
 
 ### <a name="applications"></a>Applicazioni
 
@@ -245,7 +245,7 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
   > [!IMPORTANT]
   > - Il client VPN scelto deve essere installato nel dispositivo e deve supportare la VPN per app nei profili di lavoro. In caso contrario si verificherà un errore. 
   > - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
-  > - È comunque necessario configurare il client VPN con un [profilo VPN](vpn-settings-android-enterprise.md)o tramite un profilo di [configurazione dell'app](../apps/app-configuration-policies-use-android.md).
+  > - È comunque necessario configurare il client VPN con un [profilo VPN](vpn-settings-android-enterprise.md) o tramite un [profilo di configurazione dell'app](../apps/app-configuration-policies-use-android.md).
   > - Possono esistere problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.4. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
 - **Lockdown mode** (Modalità di blocco): scegliere **Abilita** per forzare tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
@@ -254,18 +254,18 @@ Utilizzare queste impostazioni per configurare un'esperienza di tipo chiosco mul
 
 - **Proxy globale consigliato**: scegliere **Abilita** per aggiungere un proxy globale ai dispositivi. Se abilitata, il traffico HTTP e HTTPS, incluse alcune app nel dispositivo, usano il proxy immesso. Questo proxy è solo un suggerimento. È possibile che alcune app non usino il proxy. **Non configurato** (impostazione predefinita) non aggiunge un proxy globale consigliato.
 
-  Per ulteriori informazioni su questa funzionalità, vedere [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (apre un sito Android).
+  Per altre informazioni su questa funzionalità, vedere [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (apre un sito Android).
 
-  Se abilitata, immettere anche il **tipo** di proxy. Le opzioni disponibili sono:
+  Se abilitata, immettere anche il **Tipo** di proxy. Le opzioni disponibili sono:
 
-  - **Diretta**: scegliere questa opzione per immettere manualmente i dettagli del server proxy, tra cui:
+  - **Diretto**: scegliere questa opzione per immettere manualmente i dettagli del server proxy, tra cui:
     - **Host**: immettere il nome host o l'indirizzo IP del server proxy. Ad esempio, immettere `proxy.contoso.com` o `127.0.0.1`.
     - **Numero porta**: immettere il numero della porta TCP usato dal server proxy. Immettere ad esempio `8080`.
-    - **Host esclusi**: immettere un elenco di nomi host o indirizzi IP che non utilizzeranno il proxy. Questo elenco può includere un carattere jolly asterisco (`*`) e più host separati da punti e virgola (`;`) senza spazi. Immettere ad esempio `127.0.0.1;web.contoso.com;*.microsoft.com`.
+    - **Host esclusi**: immettere un elenco di nomi host o indirizzi IP che non useranno il proxy. Questo elenco può includere un carattere jolly asterisco (`*`) e più host separati da punti e virgola (`;`) senza spazi. Immettere ad esempio `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
-  - **Configurazione automatica del proxy**: immettere l' **URL PAC** per uno script di configurazione automatica del proxy. Immettere ad esempio `https://proxy.contoso.com/proxy.pac`.
+  - **Configurazione automatica del proxy**: immettere l'**URL PAC** per uno script di configurazione automatica del proxy. Immettere ad esempio `https://proxy.contoso.com/proxy.pac`.
 
-    Per altre informazioni sui file PAC, vedere [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (apre un sito non Microsoft).
+    Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
 
 ## <a name="work-profile-only"></a>Solo profilo di lavoro
 
@@ -279,8 +279,8 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 - **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app del profilo di lavoro possono condividere i dati con le app del profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
   - **Impostazione predefinita dispositivo**: comportamento di condivisione predefinito del dispositivo che varia in base alla versione di Android. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Nei dispositivi che eseguono la versione 6.0 e successive Google non blocca la condivisione dal profilo personale al profilo di lavoro.
   - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: abilita la funzionalità di Android predefinita che consente la condivisione dal profilo personale a quello di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
-  - **Impedisci la condivisione tra i limiti**: impedisce la condivisione tra i profili di lavoro e personali.
-  - **Nessuna restrizione sulla condivisione**: Abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
+  - **Impedisci qualsiasi condivisione tra i limiti**: impedisce la condivisione tra i profili di lavoro e personali.
+  - **Nessuna restrizione sulla condivisione**: abilita la condivisione oltre i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
 
 - **Notifiche del profilo di lavoro durante il blocco del dispositivo**: controlla se le app del profilo di lavoro possono visualizzare dati nelle notifiche quando il dispositivo è bloccato. **Blocca** impedisce la visualizzazione dei dati. **Non configurata** consente di visualizzare i dati.
 - **Autorizzazioni delle app predefinite**: Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
@@ -306,9 +306,9 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 
 - **Fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo nel profilo di lavoro. Questa impostazione non interessa la fotocamera nel profilo personale. **Non necessario** consente l'accesso alla fotocamera nel profilo di lavoro.
 
-- **Consenti i widget dalle app del profilo di lavoro**: **Abilita** consente agli utenti finali di inserire i widget esposti dalle app nella schermata iniziale. L'impostazione **Non configurata** (predefinita) disabilita questa funzionalità.
+- **Consenti i widget dalle app nel profilo di lavoro**: **Abilita** consente agli utenti finali di inserire i widget esposti dalle app nella schermata iniziale. L'impostazione **Non configurata** (predefinita) disabilita questa funzionalità.
 
-  Ad esempio, Outlook viene installato nei profili di lavoro degli utenti. Quando l'impostazione è **abilitata**, gli utenti possono inserire il widget agenda nella schermata iniziale del dispositivo.
+  Ad esempio, Outlook viene installato nei profili di lavoro degli utenti. Con l'impostazione **Abilitata** gli utenti possono inserire il widget dell'agenda nella schermata iniziale del dispositivo.
 
 #### <a name="work-profile-password"></a>Password del profilo di lavoro
 
@@ -316,7 +316,7 @@ Queste impostazioni si applicano ai tipi di registrazione Android Enterprise in 
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**16**).
 - **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare l'intervallo di tempo che deve trascorrere prima che il profilo di lavoro venga bloccato. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che il profilo di lavoro venga cancellato dal dispositivo.
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**).
+- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**).
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -336,8 +336,8 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
 
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**14**).
 - **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare l'intervallo di tempo prima che un dispositivo inattivo si blocchi automaticamente
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che tutti i dati vengano cancellati dal dispositivo
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**)
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che il profilo di lavoro venga cancellato dal dispositivo.
+- **Scadenza password (giorni)** : immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**)
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -358,12 +358,12 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
    > [!Note]
    > Questa impostazione funziona solo per i dispositivi Android 8 (Oreo) e versioni successive.
 
-- **Impedisci l'installazione di app da origini sconosciute nel profilo personale**: per impostazione predefinita, i dispositivi di profilo di lavoro Android Enterprise non possono installare le app da origini diverse dalla Play Store. Per natura, i dispositivi del profilo di lavoro sono progettati per essere a doppio profilo:
+- **Impedisci le installazioni di app da origini sconosciute nel profilo personale**: per impostazione predefinita, i dispositivi con profilo di lavoro Android Enterprise non possono installare le app da origini diverse da Play Store. Per definizione, i dispositivi con profilo di lavoro sono progettati per supportare due profili:
 
   - Un profilo di lavoro gestito tramite MDM.
-  - Profilo personale isolato dalla gestione MDM.
+  - Un profilo personale isolato dalla gestione MDM.
 
-  Questa impostazione consente agli amministratori di controllare maggiormente le installazioni di app da origini sconosciute. **Non configurato** (impostazione predefinita) consente l'installazione di app da origini sconosciute nel profilo personale. **Blocca** impedisce l'installazione di app da origini diverse da quelle Play Store nel profilo personale.
+  Questa impostazione consente agli amministratori di controllare maggiormente le installazioni di app da origini sconosciute. **Non configurato** (impostazione predefinita) consente l'installazione di app da origini sconosciute nel profilo personale. **Blocca** impedisce l'installazione di app da origini diverse da Play Store nel profilo personale.
 
 ### <a name="connectivity"></a>Connettività
 
