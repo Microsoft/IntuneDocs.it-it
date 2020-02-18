@@ -1,7 +1,7 @@
 ---
 title: Uso della documentazione di Intune
 titleSuffix: Microsoft Intune
-description: Informazioni su come eseguire ricerche nella documentazione di Intune, fornire commenti e suggerimenti e contribuire alla documentazione.
+description: Informazioni su come eseguire ricerche nella documentazione di Intune, aggiungere commenti e suggerimenti e contribuire alla documentazione.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -11,26 +11,26 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504811"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155344"
 ---
 # <a name="using-the-intune-docs"></a>Uso della documentazione di Intune
 
-Questo articolo fornisce informazioni che consentono di cercare informazioni nel Microsoft Intune docs, fornire commenti e suggerimenti per la documentazione di Intune e illustrare come è possibile contribuire in modo rapido e semplice ai documenti.
+Questo articolo include suggerimenti che consentono di cercare informazioni e aggiungere commenti nella documentazione di Microsoft Intune e illustrano come contribuire in modo semplice e rapido alla documentazione.
 
-Per assistenza generale e supporto per Intune, vedere [ottenere supporto per Intune](../get-support.md).
+Per l'assistenza generale e il supporto per Intune, vedere [Come ottenere supporto per Intune](../get-support.md).
 
-## <a name="search-the-docs"></a>Eseguire ricerche nei documenti
+## <a name="search-the-docs"></a>Eseguire ricerche nella documentazione
 
  Per trovare le informazioni necessarie, usare i seguenti suggerimenti per la ricerca:  
 
 - Quando si usa il motore di ricerca preferito per individuare il contenuto per Microsoft Intune, includere `Intune` con le parole chiave della ricerca.  
 
-  - Cercare i risultati di docs.microsoft.com. I risultati reperibili in technet.microsoft.com o msdn.microsoft.com riguardano le versioni precedenti del prodotto.  
+  - Cercare i risultati in docs.microsoft.com. I risultati reperibili in technet.microsoft.com o msdn.microsoft.com riguardano le versioni precedenti del prodotto.  
 
   - Per concentrare ulteriormente i risultati della ricerca sulla raccolta di contenuto corrente, includere `site:docs.microsoft.com` per definire l'ambito del motore di ricerca.  
 
@@ -42,19 +42,19 @@ Per assistenza generale e supporto per Intune, vedere [ottenere supporto per Int
 
   - **Cerca** nell'angolo superiore destro. Per cercare in tutti gli articoli immettere i termini in questo campo. La ricerca include automaticamente l'ambito di ricerca di Intune.
 
-  - **Filtra per titolo** sopra il sommario a sinistra. Per eseguire una ricerca nel sommario corrente, immettere i termini in questo campo. Il campo consente di individuare le corrispondenze solo con termini che appaiono nei titoli degli articoli per il nodo corrente. L'ultimo elemento nei risultati della ricerca offre la possibilità di cercare i termini in tutta la documentazione di Intune.
+  - **Filtra per titolo** sopra il sommario a sinistra. Per eseguire una ricerca nel sommario corrente, immettere i termini in questo campo. Il campo consente di individuare le corrispondenze solo con termini che appaiono nei titoli degli articoli per il nodo corrente. L'ultimo elemento nei risultati della ricerca consente di cercare i termini in tutta la documentazione di Intune.
 
 - In caso di problemi durante la ricerca, [inviare un feedback](#provide-doc-feedback). Quando si segnala il problema specificare il motore di ricerca in uso, le parole chiave che si è tentato di usare e l'articolo di destinazione. Questo feedback consente a Microsoft di ottimizzare il contenuto per migliorare la ricerca.  
 
-## <a name="provide-doc-feedback"></a>Fornire commenti e suggerimenti sui documenti
+## <a name="provide-doc-feedback"></a>Aggiungere commenti e suggerimenti sulla documentazione
 
-La sezione feedback si trova nella parte inferiore di ogni articolo. Fare clic sul collegamento **feedback** nella parte superiore destra di qualsiasi articolo per passare a questa sezione. Il feedback è integrato nei problemi di GitHub. Per altre informazioni sull'integrazione con Problemi di GitHub, vedere questo [post di blog sulla piattaforma di documentazione](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+La sezione Commenti e suggerimenti si trova nella parte inferiore di ogni articolo. Fare clic sul collegamento **Commenti e suggerimenti** in alto a destra di qualsiasi articolo per passare a questa sezione. La sezione Commenti e suggerimenti è integrata con Problemi di GitHub. Per altre informazioni sull'integrazione con Problemi di GitHub, vedere questo [post di blog sulla piattaforma di documentazione](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-Per condividere commenti e suggerimenti sul servizio Intune (non docs), fare clic su **commenti e suggerimenti sul prodotto**.
+Per condividere commenti e suggerimenti sul servizio Intune (non sulla documentazione), fare clic su **Commenti e suggerimenti sul prodotto**.
 
 Un [account GitHub](https://github.com/join) è un prerequisito per l'invio di un feedback sulla documentazione. Dopo aver effettuato l'accesso, viene richiesta un'autorizzazione monouso per MicrosoftDocs. Quando si fa clic su **Commenti sul contenuto** immettere un titolo e un commento e quindi scegliere **Invia commenti e suggerimenti**. Con questa azione si aggiunge un nuovo problema relativo all'articolo di destinazione al [repository di Intune GitHub](https://github.com/MicrosoftDocs/intunedocs/issues).
 
-Per l'articolo di destinazione vengono visualizzati anche i problemi aperti o chiusi esistenti. Se esistono altri problemi, esaminarli prima di inviare un nuovo problema. Se si trova un problema correlato, fare clic sull'icona del viso per aggiungere una reazione o espanderla per aggiungere un commento.
+Vengono visualizzati anche eventuali problemi chiusi o aperti esistenti per l'articolo di destinazione. Se esistono altri problemi, esaminarli prima di inviare un nuovo problema. Se si trova un problema correlato, fare clic sull'icona del viso per aggiungere una reazione o espanderla per aggiungere un commento.
 
 ### <a name="types-of-feedback"></a>Tipi di feedback
 
@@ -74,7 +74,7 @@ Per condividere commenti e suggerimenti sulla piattaforma docs.microsoft.com, ve
 
 ## <a name="contribute-to-docs"></a>Come contribuire alla documentazione
 
-La documentazione di Intune, come la maggior parte dei contenuti in docs.microsoft.com, è open source su GitHub. Questa raccolta accetta e incoraggia i contributi della community. Per altre informazioni su come iniziare, vedere la [guida per i collaboratori](https://docs.microsoft.com/contribute). Creare un [account GitHub](https://github.com/join) è l'unico prerequisito.
+La documentazione di Intune, come la maggior parte dei contenuti in docs.microsoft.com, è disponibile in modalità open source su GitHub. Questa raccolta accetta e incoraggia i contributi della community. Per altre informazioni su come iniziare, vedere la [guida per i collaboratori](https://docs.microsoft.com/contribute). Creare un [account GitHub](https://github.com/join) è l'unico prerequisito.
 
 ### <a name="basic-steps-to-contribute-to-docs"></a>Procedura di base per contribuire ai documenti
 
@@ -82,13 +82,13 @@ La documentazione di Intune, come la maggior parte dei contenuti in docs.microso
 
 2. Per modificare il file di origine, fare clic sull'icona a forma di matita.  
 
-3. Apportare le modifiche nel markdown. Per altre informazioni, vedere [How to use Markdown for writing Docs](https://docs.microsoft.com/contribute/how-to-write-use-markdown) (Come usare il markdown per scrivere documenti).  
+3. Apportare le modifiche nel markdown. Per altre informazioni, vedere [How to use Markdown for writing Docs](https://docs.microsoft.com/contribute/contribute-how-to-write-use-markdown) (Come usare il markdown per scrivere documenti).  
 
 4. Nella sezione di modifica del file immettere un commento di commit pubblico che descriva *cosa* è stato modificato. Quindi fare clic su **Propose file change** (Proponi modifica file).  
 
 5. Scorrere verso il basso e verificare le modifiche apportate. Fare clic su **Crea richiesta pull** per aprire il modulo. Indicare *perché* è stata apportata la modifica. Fare clic su **Crea richiesta pull**.
 
-Il team di scrittura riceverà la richiesta pull, assegnerà l'elemento al writer appropriato, verificherà il testo ed effettuerà un passaggio di modifica rapida e approverà e unirà le modifiche o contatterà per ottenere ulteriori informazioni sull'aggiornamento.  
+Il team di scrittura riceve la richiesta pull, assegna l'elemento all'autore appropriato, verifica il testo ed esegue un passaggio di revisione rapida, quindi approva e integra le modifiche o contatta l'utente per richiedere ulteriori informazioni sull'aggiornamento.  
 
 ### <a name="what-to-contribute"></a>In che modo si contribuisce
 
@@ -101,7 +101,7 @@ Se si è interessati a collaborare, ma non si sa come iniziare, vedere i suggeri
 - Correggere le traduzioni in una lingua diversa dall'inglese. Questo contributo migliora l'usabilità del contenuto localizzato.  
 
 > [!Note]  
-> Chi non è un dipendente di Microsoft deve firmare un contratto di licenza per contributi per inviare contributi consistenti. GitHub richiede automaticamente di firmare questo contratto quando un contributo raggiunge la soglia. È sufficiente firmare il contratto una sola volta.
+> Chi non è un dipendente di Microsoft deve firmare un contratto di licenza per contributi per inviare contributi consistenti. GitHub richiede automaticamente di firmare questo contratto quando un contributo raggiunge la soglia. È sufficiente firmare questo contratto una sola volta.
 
 ### <a name="tips"></a>Suggerimenti
 
