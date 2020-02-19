@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857044"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415013"
 ---
 # <a name="intune-discovered-apps"></a>App individuate da Intune
 
@@ -59,7 +59,7 @@ L'elenco seguente include il tipo di piattaforma app, le app monitorate per i di
 | Windows 8.1 | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
 | Windows Phone 8 | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
 | Windows RT | Solo le app gestite | Solo le app gestite | Ogni 7 giorni dalla registrazione del dispositivo |
-| iOS | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
+| iOS/iPadOS | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | macOS | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android | Solo le app gestite | Tutte le app installate nel dispositivo | Ogni 7 giorni dalla registrazione del dispositivo |
 | Android Enterprise | Solo le app gestite | Solo le app installate nel profilo di lavoro | Ogni 7 giorni dalla registrazione del dispositivo |

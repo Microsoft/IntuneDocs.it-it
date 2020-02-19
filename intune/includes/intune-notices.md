@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77156108"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415083"
 ---
 Questi avvisi forniscono importanti informazioni utili per prepararsi per le modifiche e le funzionalità di Intune future.
 
@@ -126,23 +126,5 @@ Di seguito è riportato un elenco di dispositivi comuni registrati in Intune che
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
 Eseguire il wrapping delle app con la versione più recente di Intune App SDK. È anche possibile configurare l'impostazione di avvio condizionale "Richiedi una versione minima del sistema operativo (solo avviso)" in modo da informare gli utenti finali sui dispositivi personali da aggiornare.
-
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Modifica prevista per Intune: fine del supporto per Windows 7<!-- 3042987 -->
-Come indicato nelle comunicazioni MC148476, pubblicata nel settembre 2018, e MC176794 del marzo 2019, si avvicina la fine del supporto esteso per Windows 7, prevista per il 14 gennaio 2020. In tale data Intune ritirerà il supporto per i dispositivi che eseguono Windows 7, per concentrare gli investimenti sul supporto di tecnologie più recenti e offrire esperienze nuove e ottimali agli utenti finali. Dopo tale data l'assistenza tecnica e gli aggiornamenti automatici che consentono di proteggere i PC con Windows 7 non saranno più disponibili tramite Intune. Microsoft consiglia vivamente di passare a Windows 10 prima di gennaio 2020, per evitare uno scenario in cui un servizio o un supporto necessario non è più disponibile. Altre informazioni sul ciclo di vita di supporto di Windows sono disponibili [qui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Questo messaggio viene ricevuto quando si gestiscono PC Windows 7 con l'agente software per PC Intune legacy. Dato che manca meno di un anno alla fine del supporto esteso di Windows 7, è vivamente consigliabile che l'organizzazione inizi l'aggiornamento a Windows 10 prima possibile.  
-
-Le funzionalità di gestione dei PC sono incorporate direttamente nel sistema operativo Windows 10 e non è più necessario installare un agente client come il client software Intune per Windows 7. A partire da Windows 8.1 Microsoft usa l'architettura di gestione di dispositivi mobili (MDM) per eseguire il provisioning, la configurazione, l'aggiornamento e la gestione dei PC Windows. Dopo aver configurato Intune, è possibile semplificare la registrazione Windows [registrando i PC Windows 10 in Intune](..\windows-enroll.md) tramite il canale MDM. È consigliabile usare questa soluzione di gestione MDM "senza agente" per gestire i PC Windows 10.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
-È consigliabile che l'organizzazione consideri immediatamente questo piano di azione:
-
-- Pianificare e aggiornare i computer con Windows 7 a Windows 10 prima del 14 gennaio 2020.
-- Per altre informazioni su come aggiornare i PC con Windows 7 a Windows 10, vedere la pagina di[ supporto della distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/).
-- Esaminare l'offerta [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) tramite FastTrack, che supporta la promessa di compatibilità delle applicazioni Microsoft.
-- Eseguire la transizione dei dispositivi gestiti da client software di Intune legacy esistenti alla soluzione Microsoft consigliata per gestire Windows 10 con MDM. Registrare tutti i nuovi PC Windows 10 usando la gestione MDM per Intune nel portale di Azure.
-
-Per altre informazioni, vedere [questo post di blog](https://aka.ms/Windows7_Intune).
 
 
