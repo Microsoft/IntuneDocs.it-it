@@ -10,7 +10,7 @@
       href: device-management-capabilities.md
     - name: Opzioni di registrazione
       href: enrollment-options.md
-- name: Guida introduttiva
+- name: Guide introduttive
   items:
     - name: Configurare la registrazione automatica
       href: quickstart-setup-auto-enrollment.md
@@ -20,7 +20,7 @@
   items:
     - name: Usare AutoPilot per registrare i dispositivi Windows
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: Usare il programma DEP per registrare i dispositivi iOS
+    - name: Usare DEP per registrare dispositivi iOS/iPadOS
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Concetti
   items:
@@ -84,7 +84,7 @@
         - name: Registrazione per dispositivi mobili Samsung KNOX
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: Configurare la registrazione di iOS
+    - name: Configurare la registrazione di dispositivi iOS/iPadOS
       href: ios-enroll.md
       items:
         - name: Programma di registrazione dispositivi
@@ -109,7 +109,7 @@
         - name: Risolvere i problemi di registrazione dei dispositivi
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: Risolvere i problemi di registrazione dei dispositivi iOS
+        - name: Risolvere i problemi di registrazione dei dispositivi iOS/iPadOS
           href: troubleshoot-ios-enrollment-errors.md
         - name: Risolvere i problemi di registrazione dei dispositivi Windows
           href: troubleshoot-windows-enrollment-errors.md

@@ -12,12 +12,12 @@ metadata:
   ms.author: dougeby
   manager: dougeby
   ms.date: 08/07/2019
-  ms.openlocfilehash: 20bdfb02f0a8dda4b9578fd7bc30cb72c7250adf
-  ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+  ms.openlocfilehash: be5cae95460064287fa347d1ca42626ab75a2809
+  ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/24/2019
-  ms.locfileid: "72892598"
+  ms.lasthandoff: 02/17/2020
+  ms.locfileid: "77414178"
 landingContent:
 - title: Informazioni sulla registrazione
   linkLists:
@@ -73,29 +73,29 @@ landingContent:
       url: android-kiosk-enroll.md
     - text: Configurare la registrazione in Intune di dispositivi Android Enterprise completamente gestiti (anteprima)
       url: android-fully-managed-enroll.md
-- title: Registrazione iOS
+- title: Registrazione di iOS/iPadOS
   linkLists:
   - linkListType: overview
     links:
-    - text: Informazioni sulla registrazione iOS
+    - text: Informazioni sulla registrazione di iOS/iPadOS
       url: ios-enroll.md
   - linkListType: tutorial
     links:
-    - text: Usare le funzionalità Corporate Device Enrollment di Apple per la registrazione di dispositivi iOS
+    - text: Usare le funzionalità Corporate Device Enrollment di Apple per la registrazione di dispositivi iOS/iPadOS
       url: tutorial-use-device-enrollment-program-enroll-ios.md
   - linkListType: how-to-guide
     links:
-    - text: Configurare la registrazione di iOS
+    - text: Configurare la registrazione di dispositivi iOS/iPadOS
       url: ios-enroll.md
-    - text: Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
+    - text: Registrare automaticamente i dispositivi iOS/iPadOS con il programma Device Enrollment Program di Apple
       url: device-enrollment-program-enroll-ios.md
     - text: Configurare la registrazione utente iOS e iPadOS
       url: ios-user-enrollment.md
     - text: Azioni e opzioni supportate per la registrazione utente
       url: ios-user-enrollment-supported-actions.md
-    - text: Configurare la registrazione di dispositivi iOS con Apple School Manager
+    - text: Configurare la registrazione di dispositivi iOS/iPadOS con Apple School Manager
       url: apple-school-manager-set-up-ios.md
-    - text: Configurare la registrazione di dispositivi iOS con Apple Configurator
+    - text: Configurare la registrazione di dispositivi iOS/iPadOS con Apple Configurator
       url: apple-configurator-enroll-ios.md
 - title: Registrazione macOS
   linkLists:
@@ -105,7 +105,7 @@ landingContent:
       url: macos-enroll.md
   - linkListType: tutorial
     links:
-    - text: Usare le funzionalità Corporate Device Enrollment di Apple per la registrazione di dispositivi iOS
+    - text: Usare le funzionalità Corporate Device Enrollment di Apple per la registrazione di dispositivi iOS/iPadOS
       url: tutorial-use-device-enrollment-program-enroll-ios.md
   - linkListType: how-to-guide
     links:
@@ -113,5 +113,5 @@ landingContent:
       url: macos-enroll.md
     - text: Registrare automaticamente i dispositivi macOS con Device Enrollment Program o Apple School Manager
       url: device-enrollment-program-enroll-macos.md
-    - text: Configurare la registrazione di dispositivi iOS con Apple Configurator
+    - text: Configurare la registrazione di dispositivi iOS/iPadOS con Apple Configurator
       url: apple-configurator-enroll-ios.md
