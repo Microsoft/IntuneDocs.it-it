@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Azioni del dispositivo Apple
       items:
-        - name: Individuare un dispositivo iOS perso
+        - name: Individuare un dispositivo iOS/iPadOS perso
           href: device-locate.md
-        - name: Abilitare la modalità di dispositivo perso iOS
+        - name: Abilitare la modalità di dispositivo perso iOS/iPadOS
           href: device-lost-mode.md
-        - name: Attivare la modalità di supervisione di iOS
+        - name: Attivare la modalità con supervisione di iOS/iPadOS
           href: device-supervised-mode.md
         - name: Cancellare un dispositivo macOS
           href: device-erase.md
