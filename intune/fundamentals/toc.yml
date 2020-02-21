@@ -18,12 +18,12 @@
           href: in-development.md
         - name: Avvisi importanti
           href: 'whats-new.md#notices'
-- name: Guida introduttiva
+- name: Guide introduttive
   items:
     - name: Provare Intune gratuitamente
       href: free-trial-sign-up.md
       displayName: 'tenant; trial; get started, start; help'
-    - name: Creazione di un utente
+    - name: Creare un utente
       href: quickstart-create-user.md
     - name: Creare un gruppo
       href: quickstart-create-group.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Come ottenere le app Android
               href: end-user-apps-android.md
-            - name: Come ottenere le app iOS
+            - name: Come ottenere le app iOS/iPadOS
               href: end-user-apps-ios.md
             - name: Come ottenere le app di Windows
               href: end-user-apps-windows.md
@@ -201,18 +201,18 @@
           href: tenant-status.md
         - name: Aiutare gli utenti nella risoluzione dei problemi
           href: help-desk-operators.md
-        - name: Log di controllo per le attività di Intune
-          href: monitor-audit-logs.md
-        - name: Esaminare i log con Monitoraggio di Azure
-          href: review-logs-using-azure-monitor.md
         - name: Uso della documentazione di Intune
           href: use-docs.md
         - name: Ottenere supporto
           href: get-support.md
-    - name: Reports
+    - name: Report
       items:
         - name: Report di Intune
           href: reports.md
+        - name: Log di controllo per le attività di Intune
+          href: monitor-audit-logs.md
+        - name: Esaminare i log con Monitoraggio di Azure
+          href: review-logs-using-azure-monitor.md
 - name: Riferimento
   items:
     - name: Codici di errore e descrizioni
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Gruppi classici di Intune
           href: groups-get-started.md
-        - name: Impostazioni di Education per iOS
+        - name: Impostazioni di iOS/iPadOS per la formazione
           items:
             - name: iPad
               href: education-settings-configure-ios.md

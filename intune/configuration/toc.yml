@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: Aggiornare Office usando i modelli amministrativi
           href: administrative-templates-update-office.md
-    - name: Funzionalità dei dispositivi in iOS e macOS
+    - name: Funzionalità dei dispositivi in iOS/iPadOS e macOS
       href: device-features-configure.md
     - name: Limitare le impostazioni del dispositivo e le funzionalità
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: VPN per app per Android
           href: android-pulse-secure-per-app-vpn.md
-        - name: VPN per app per iOS
+        - name: VPN per app per iOS/iPadOS
           href: vpn-setting-configure-per-app.md
     - name: Rete Wi-Fi
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: Personalizzato
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: Funzionalità del dispositivo
               href: ios-device-features-settings.md

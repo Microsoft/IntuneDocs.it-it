@@ -27,7 +27,7 @@
       items:
         - name: Individuare un dispositivo iOS/iPadOS perso
           href: device-locate.md
-        - name: Abilitare la modalità di dispositivo perso iOS/iPadOS
+        - name: Abilitare la modalità di dispositivo perso di iOS/iPadOS
           href: device-lost-mode.md
         - name: Attivare la modalità con supervisione di iOS/iPadOS
           href: device-supervised-mode.md
