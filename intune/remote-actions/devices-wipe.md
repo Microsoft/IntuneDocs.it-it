@@ -1,6 +1,6 @@
 ---
 title: Disattivare o cancellare i dispositivi con Microsoft Intune - Azure | Microsoft Docs
-description: Disattivare o cancellare un dispositivo in un dispositivo Android, profilo di lavoro Android, dispositivo iOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
+description: Disattivare o cancellare un dispositivo in un dispositivo Android, profilo di lavoro Android, dispositivo iOS/iPadOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812454"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415523"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -43,7 +43,7 @@ L'azione **Cancella** riporta un dispositivo alle impostazioni predefinite di fa
 
 
 > [!NOTE]
-> L'azione Cancella non è disponibile per i dispositivi iOS registrati con Registrazione utente.
+> L'azione Cancella non è disponibile per i dispositivi iOS/iPadOS registrati con Registrazione utente.
 
 L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
 

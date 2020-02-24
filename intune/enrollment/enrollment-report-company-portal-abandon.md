@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503187"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414215"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Report Registrazioni utente incomplete
 
@@ -44,7 +44,7 @@ Se un utente sceglie di arrestare e riavviare la registrazione più volte, quest
 
 ## <a name="what-does-the-report-show"></a>Che cosa visualizza il report?
 
-Il report include i dati per i dispositivi iOS e Android.
+Il report include i dati per i dispositivi iOS/iPadOS e Android.
 
 I report visualizzano i dati delle ultime due settimane, ma è possibile filtrare il report in modo da visualizzare qualsiasi periodo entro gli ultimi 30 giorni.
 
@@ -74,7 +74,7 @@ Le tabelle seguenti illustrano l'elenco delle azioni utente che vengono consider
 
 #### <a name="setup-checklist-section"></a>Sezione Elenco di controllo per l'installazione
 
-| Nome azione | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Action |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Richiesta di apertura di una pagina nel Portale aziendale | iOS/Android | **Annulla** |
 | EnrollmentWrapUp | Schermata Registrazione del dispositivo in corso fino al completamento di **Caricamento delle risorse aziendali** | iOS/Android | Tempo richiesto > 30 minuti |
@@ -84,12 +84,12 @@ Le tabelle seguenti illustrano l'elenco delle azioni utente che vengono consider
 
 #### <a name="platform-screens-section"></a>Sezione Schermate della piattaforma
 
-| Nome azione | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Action |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | Richiesta di visualizzazione di un profilo di configurazione | iOS | **Ignora** |
-| iOSProfileLaunch | Schermata Installa profilo | iOS | **Annulla** |
-| iOSProfileLaunch | Richiesta per considerare attendibile l'origine del profilo e registrare il dispositivo | iOS | **Annulla** |
-| iOSProfileLaunch | Schermata Installa profilo fino all'installazione del profilo | iOS | Tempo richiesto > 30 minuti |
+| iOSProfileLaunch | Richiesta di visualizzazione di un profilo di configurazione | iOS/iPadOS | **Ignora** |
+| iOSProfileLaunch | Schermata Installa profilo | iOS/iPadOS | **Annulla** |
+| iOSProfileLaunch | Richiesta per considerare attendibile l'origine del profilo e registrare il dispositivo | iOS/iPadOS | **Annulla** |
+| iOSProfileLaunch | Schermata Installa profilo fino all'installazione del profilo | iOS/iPadOS | Tempo richiesto > 30 minuti |
 | AndroidPermissions | Schermata di attivazione dell'amministratore del dispositivo | Android | **Annulla** |
 | AndroidPermissions | Dalla richiesta di approvazione per effettuare e gestire chiamate telefoniche fino alla selezione di **Attiva** per l'amministratore del dispositivo | Android | Tempo richiesto > 30 minuti |
 | KnoxActivation | Attivazione dell'agente KLMS (solo Samsung) | Android| **Annulla** |
@@ -97,14 +97,14 @@ Le tabelle seguenti illustrano l'elenco delle azioni utente che vengono consider
 
 #### <a name="terms-of-use-section"></a>Sezione Condizioni per l'utilizzo
 
-| Nome azione | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Action |
 | ---- |---- |---- |---- |
 | TermsofUse | Condizioni per l'utilizzo (se configurate dall'amministratore) | iOS/Android | **Rifiuta tutto** |
 | TermsofUse | Condizioni per l'utilizzo fino a **Accetta tutto** | iOS/Android | Tempo richiesto > 30 minuti |
 
 #### <a name="complianceactivation-section"></a>Sezione Conformità/Attivazione
 
-| Nome azione | Schermata o flusso | Piattaforma | Azione |
+| Nome azione | Schermata o flusso | Piattaforma | Action |
 | ---- |---- |---- |---- |
 | Conformità | Conformità del dispositivo (se configurata dall'amministratore) appare con un colore diverso dal verde al momento della configurazione dell'accesso dopo la registrazione| iOS/Android | **Rimanda** |
 | Conformità | Conformità del dispositivo appare con un colore diverso dal verde fino a quando non viene aggiornata e diventa verde | iOS/Android | Tempo richiesto > 30 minuti |

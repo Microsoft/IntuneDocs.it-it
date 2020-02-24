@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812412"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414973"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Panoramica del ciclo di vita dell'app in Microsoft Intune
 
@@ -42,7 +42,7 @@ Dopo aver aggiunto l'app a Intune è possibile [assegnarla agli utenti e ai disp
 
 Come parte del ciclo di vita, vengono rilasciate regolarmente nuove versioni delle app. Intune offre strumenti con cui è possibile [aggiornare facilmente le app](apps-add.md) distribuite a una versione più recente. Alcune app consentono anche di configurare funzionalità aggiuntive, ad esempio:
 
-- I [criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md) applicano le impostazioni per le app iOS compatibili usate quando si esegue l'app. Ad esempio, un'app può richiedere impostazioni di personalizzazione specifiche o il nome di un server a cui deve connettersi.
+- I [criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md) applicano le impostazioni per le app iOS/iPadOS compatibili usate quando si esegue l'app. Ad esempio, un'app può richiedere impostazioni di personalizzazione specifiche o il nome di un server a cui deve connettersi.
 - I [criteri di Managed Browser](app-configuration-managed-browser.md) consentono di configurare le impostazioni per [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps) che sostituisce il browser predefinito del dispositivo e consente di limitare i siti Web che gli utenti possono visitare.
 
 ## <a name="protect"></a>Protezione

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692110"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414603"
 ---
 # <a name="protecting-application-extensions"></a>Protezione delle estensioni delle applicazioni
 
@@ -31,7 +31,7 @@ Questo articolo descrive i criteri di protezione delle app per le estensioni in 
 
 ## <a name="add-ins-for-outlook-app"></a>Componenti aggiuntivi per l'app Outlook
 
-I componenti aggiuntivi di Outlook consentono di integrare app comuni con il client di posta elettronica. I componenti aggiuntivi per Outlook sono disponibili per Outlook per Android e iOS, sul Web e per Windows e Mac. Intune App SDK e i criteri di protezione app di Intune non includono il supporto per la gestione dei componenti aggiuntivi per Outlook, ma esistono altri modi per limitare il loro uso. Poiché i componenti aggiuntivi vengono gestiti tramite Microsoft Exchange, gli utenti saranno in grado di condividere i dati e i messaggi in Outlook e le applicazioni aggiuntive non gestite a meno che i componenti aggiuntivi non vengano disattivati per l'utente dall'istanza di Exchange.
+I componenti aggiuntivi di Outlook consentono di integrare app comuni con il client di posta elettronica. I componenti aggiuntivi per Outlook sono disponibili sul Web, per Windows, Mac, Outlook per Android e iOS/iPadOS. Intune App SDK e i criteri di protezione app di Intune non includono il supporto per la gestione dei componenti aggiuntivi per Outlook, ma esistono altri modi per limitare il loro uso. Poiché i componenti aggiuntivi vengono gestiti tramite Microsoft Exchange, gli utenti saranno in grado di condividere i dati e i messaggi in Outlook e le applicazioni aggiuntive non gestite a meno che i componenti aggiuntivi non vengano disattivati per l'utente dall'istanza di Exchange.
 
 Per impedire agli utenti finali di accedere e installare componenti aggiuntivi di Outlook con effetto su tutti i client Outlook, assicurarsi di applicare le seguenti modifiche ai ruoli nell'interfaccia di amministrazione di Exchange:
 

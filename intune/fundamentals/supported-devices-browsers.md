@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415053"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437920"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemi operativi e browser supportati in Intune
 
@@ -87,16 +87,16 @@ L'elenco seguente riporta i modelli di dispositivi Samsung che non supportano Kn
 
 ### <a name="windows-pc-software-client"></a>Client software PC Windows
 
-Un [client software Intune](manage-windows-pcs-with-microsoft-intune.md) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. Questa funzionalità è disponibile solo nel portale classico di Intune. È possibile usare il client software di Intune per gestire PC con Windows 7 e versioni successive, ad eccezione dell'edizione Windows 10 Home.
+Un [client software Intune](manage-windows-pcs-with-microsoft-intune.md) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. Questa funzionalità è disponibile solo nel portale classico di Intune. È possibile usare il client software di Intune per gestire PC con Windows 10 e versioni successive, ad eccezione dell'edizione Windows 10 Home.
 
 > [!Note]
 > Microsoft ha annunciato che il supporto di Windows 7 terminerà il 14 gennaio 2020. In questa data, terminerà anche il supporto di Intune per i dispositivi che eseguono Windows 7.
 >
-> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto prossima per Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto per Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-).
 >
-> Microsoft Intune ritirerà il supporto per la console di Intune basata su Silverlight il 15 ottobre 2020. Questo ritiro include l'interruzione del supporto per il client software PC configurato della console Silverlight (chiamato anche agente PC)
+> Microsoft Intune ritirerà il supporto per la console di Intune basata su Silverlight il 15 ottobre 2020. Questo ritiro include l'interruzione del supporto per il client software PC configurato della console Silverlight (chiamato anche agente del computer).
 >
-> Per altre informazioni, vedere [Microsoft Intune ending support for the Silverlight-based admin console](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) (Fine del supporto di Microsoft Intune per la console di amministrazione basata su Silverlight)
+> Per altre informazioni, vedere [Fine del supporto di Microsoft Intune per la console di amministrazione basata su Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249).
 
 <!--  ### Exchange ActiveSync management
 

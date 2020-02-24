@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907220"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413620"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Reimpostare il passcode nei dispositivi Windows con Intune
 
@@ -60,7 +60,7 @@ Sostituire *ID tenant* con l'ID directory di Azure AD elencato in **Proprietà**
 Impostare il valore per questo CSP su **True**.
 
 > [!TIP]
-> Dopo aver creato i criteri, assegnare (o distribuire) i criteri a un gruppo. I criteri possono essere assegnati a gruppi di utenti o a gruppi di dispositivi. Se vengono assegnati a un gruppo di utenti, è possibile che nel gruppo siano inclusi utenti con altri dispositivi, ad esempio IOS. Tecnicamente, i criteri non vengono applicabili. Questi dispositivi sono comunque inclusi nei dettagli relativi allo stato.
+> Dopo aver creato i criteri, assegnare (o distribuire) i criteri a un gruppo. I criteri possono essere assegnati a gruppi di utenti o a gruppi di dispositivi. Se vengono assegnati a un gruppo di utenti, è possibile che nel gruppo siano inclusi utenti con altri dispositivi, ad esempio iOS/iPadOS. Tecnicamente, i criteri non vengono applicabili. Questi dispositivi sono comunque inclusi nei dettagli relativi allo stato.
 
 ## <a name="reset-the-passcode"></a>Reimpostare il passcode
 

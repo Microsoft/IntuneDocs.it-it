@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971864"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415314"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -44,11 +44,11 @@ Le restrizioni di registrazione specifiche che è possibile creare includono:
 - Piattaforme per dispositivi che possono registrare:
   - Amministratore dispositivo Android
   - Profilo di lavoro di Android Enterprise
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- Versione del sistema operativo della piattaforma per iOS, amministratore di dispositivi Android, profilo di lavoro Android Enterprise, Windows e Windows Mobile. (È possibile usare solo le versioni di Windows 10. Lasciare questo campo vuoto se è consentito Windows 8.1.)
+- Versione del sistema operativo della piattaforma per iOS/iPadOS, amministratore di dispositivi Android, profilo di lavoro Android Enterprise, Windows e Windows Mobile. (È possibile usare solo le versioni di Windows 10. Lasciare questo campo vuoto se è consentito Windows 8.1.)
   - Versione minima.
   - Versione massima.
 - Limitare i [dispositivi di proprietà personale](device-enrollment.md#bring-your-own-device) (solo iOS, amministratore di dispositivi Android, profilo di lavoro Android Enterprise, macOS, Windows e Windows Mobile).
@@ -67,7 +67,7 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 5. In **Versioni** scegliere le versioni minima e massima che si vuole vengano supportate dalle piattaforme consentite. Le restrizioni di versione si applicano solo ai dispositivi registrati con il Portale aziendale.
      I formati delle versioni supportate includono:
     - L'amministratore dei dispositivi Android e il profilo di lavoro Android Enterprise supportano major.minor.rev.build.
-    - iOS supporta il formato di versione maggiore.minore.revisione. Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
+    - iOS/iPadOS supporta la versione major.minor.rev. Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
     - Windows supporta il formato major.minor.build.rev solo per Windows 10.
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ Verranno bloccati anche i seguenti metodi di registrazione personale:
 \* Questi elementi non verranno bloccati se la registrazione avviene con Autopilot.
 
 
-## <a name="blocking-personal-ios-devices"></a>Blocco dei dispositivi iOS personali
-Per impostazione predefinita, Intune classifica i dispositivi iOS come dispositivi di proprietà personale. Per essere classificato come di proprietà dell'azienda, un dispositivo iOS deve soddisfare una delle condizioni seguenti:
+## <a name="blocking-personal-iosipados-devices"></a>Blocco dei dispositivi iOS/iPadOS personali
+Per impostazione predefinita, Intune classifica i dispositivi iOS/iPadOS come dispositivi di proprietà personale. Per essere classificato come di proprietà dell'azienda, un dispositivo iOS/iPadOS deve soddisfare una delle condizioni seguenti:
 - Deve essere registrato con un numero di serie o IMEI.
 - Deve essere registrato con la registrazione automatica dei dispositivi (in precedenza DEP, Device Enrollment Program)
 

@@ -1,7 +1,7 @@
 ---
-title: Attivare la modalità di supervisione di iOS con Microsoft Intune
+title: Attivare la modalità di supervisione di iOS/iPadOS con Microsoft Intune
 titleSuffix: ''
-description: Informazioni su come attivare la modalità di supervisione di iOS con Intune.
+description: Informazioni su come attivare la modalità di supervisione di iOS/iPadOS con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713404"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413657"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>Attivare la modalità di supervisione di iOS
+# <a name="turn-on-iosipados-supervised-mode"></a>Attivare la modalità con supervisione di iOS/iPadOS
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-La modalità di supervisione di Apple iOS offre agli amministrazioni più opzioni per la gestione dei dispositivi Apple ed è utile per i dispositivi di proprietà dell'azienda distribuiti su vasta scala. Ad esempio, è possibile limitare AirDrop o impedire agli utenti di modificare il nome del dispositivo. Per un elenco di impostazioni che richiedono la modalità di supervisione, vedere [Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune](../configuration/device-restrictions-ios.md).
+La modalità di supervisione di Apple iOS/iPadOS offre agli amministrazioni più opzioni per la gestione dei dispositivi Apple ed è utile per i dispositivi di proprietà dell'azienda distribuiti su vasta scala. Ad esempio, è possibile limitare AirDrop o impedire agli utenti di modificare il nome del dispositivo. Per un elenco di impostazioni che richiedono la modalità di supervisione, vedere [Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune](../configuration/device-restrictions-ios.md).
 
 Intune supporta la modalità di supervisione nell'ambito del programma [Device Enrollment Program (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) di Apple.
 
@@ -41,7 +41,7 @@ Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.m
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Attivare la modalità di supervisione dopo la registrazione
 
-Dopo la registrazione, l'unico modo per attivare la modalità di supervisione è connettere un dispositivo iOS a un computer Mac e [usare Apple Configurator](../enrollment/apple-configurator-enroll-ios.md) (che reimposta il dispositivo). Non è possibile configurare un dispositivo per la modalità di supervisione in Intune dopo la registrazione.
+Dopo la registrazione, l'unico modo per attivare la modalità di supervisione è connettere un dispositivo iOS/iPadOS a un computer Mac e [usare Apple Configurator](../enrollment/apple-configurator-enroll-ios.md), che reimposta il dispositivo. Non è possibile configurare un dispositivo per la modalità di supervisione in Intune dopo la registrazione.
 
 ## <a name="identify-a-supervised-device"></a>Identificare un dispositivo supervisionato
 

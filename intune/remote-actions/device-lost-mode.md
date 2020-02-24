@@ -1,6 +1,6 @@
 ---
-title: Attivare la modalità di dispositivo perso iOS con Microsoft Intune - Azure | Microsoft Docs
-description: Usare Microsoft Intune per attivare o avviare la modalità di dispositivo perso per personalizzare un messaggio da visualizzare nella schermata di blocco di un dispositivo iOS perso o rubato. Ottenere inoltre informazioni dettagliate sulla sicurezza e la privacy quando si usa l'azione Modalità di dispositivo perso.
+title: Attivare la modalità di dispositivo perso iOS/iPadOS con Microsoft Intune - Azure | Microsoft Docs
+description: Usare Microsoft Intune per attivare o avviare la modalità di dispositivo perso per personalizzare un messaggio da visualizzare nella schermata di blocco di un dispositivo iOS/iPadOS perso o rubato. Ottenere inoltre informazioni dettagliate sulla sicurezza e la privacy quando si usa l'azione Modalità di dispositivo perso.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712240"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415608"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Abilitare la modalità di dispositivo perso nei dispositivi iOS con Intune
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Abilitare la modalità di dispositivo perso nei dispositivi iOS/iPadOS con Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-L'azione del dispositivo **Modalità di dispositivo perso** consente di abilitare la modalità di dispositivo perso nei dispositivi iOS smarriti o rubati. Questa modalità consente di immettere un messaggio e un numero di telefono da visualizzare nella schermata di blocco del dispositivo. Per usare la modalità di dispositivo perso, il dispositivo deve essere un dispositivo iOS di proprietà dell'azienda in cui è attiva la modalità con supervisione.
+L'azione del dispositivo **Modalità di dispositivo perso** consente di abilitare la modalità di dispositivo perso nei dispositivi iOS/iPadOS persi o rubati. Questa modalità consente di immettere un messaggio e un numero di telefono da visualizzare nella schermata di blocco del dispositivo. Per usare la modalità di dispositivo perso, il dispositivo deve essere un dispositivo iOS/iPadOS di proprietà dell'azienda in cui è attiva la modalità con supervisione.
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
-- iOS 9.3 e versioni successive
+- iOS/iPadOS 9.3 e versioni successive
 
 Questa funzionalità non è supportata per le piattaforme seguenti: 
 - Windows
@@ -43,7 +43,7 @@ Questa funzionalità non è supportata per le piattaforme seguenti:
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
-4. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS e quindi scegliere **Modalità di dispositivo perso (solo con supervisione)** .
+4. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS/iPadOS, quindi scegliere **Modalità di dispositivo perso (solo con supervisione)** .
 5. In **Modalità di dispositivo perso** selezionare **Abilita**.
 6. In **Messaggi da visualizzare nella schermata di blocco** digitare un messaggio da visualizzare nella schermata di blocco del dispositivo.
 7. Facoltativamente, immettere un numero di telefono nella casella **Numero di telefono da visualizzare**.

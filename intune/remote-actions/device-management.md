@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754253"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413784"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
@@ -36,7 +36,7 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selezionare **Dispositivi**. Questa visualizzazione contiene informazioni dettagliate sui singoli dispositivi e come utilizzarli, tra cui:
 
-   - **Panoramica** contiene uno snapshot dei dispositivi registrati e indica quanti dispositivi usano le diverse piattaforme, tra cui Android, iOS e altro.
+   - **Panoramica** contiene uno snapshot dei dispositivi registrati e indica quanti dispositivi usano le diverse piattaforme, tra cui Android, iOS/iPadOS e altro.
    - **Tutti i dispositivi** elenca i dispositivi registrati gestiti.
 
      Usare la funzione **Esporta** per creare un elenco in formato CSV di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Microsoft Edge, Chrome).
@@ -70,7 +70,7 @@ Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla config
   - [Controllo remoto per Android](teamviewer-support.md)
   - [Sincronizzare il dispositivo](device-sync.md)
   - [Rinominare il dispositivo](device-rename.md)
-  - [Inviare notifiche personalizzate](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [Inviare notifiche personalizzate](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS/iPadOS)
   - [Rotazione delle chiavi BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (solo Windows)
 
 ## <a name="next-steps"></a>Passaggi successivi

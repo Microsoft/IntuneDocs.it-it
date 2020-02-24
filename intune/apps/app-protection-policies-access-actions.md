@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564132"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437886"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
@@ -44,12 +44,12 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 6. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. 
 7. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
-## <a name="policy-settings"></a>Impostazioni criteri 
+## <a name="policy-settings"></a>Impostazioni dei criteri 
 
 La tabella delle impostazioni dei criteri di protezione delle app contiene le colonne **Impostazione**, **Valore** e **Azione**.
 
 ### <a name="ios-policy-settings"></a>Impostazioni dei criteri di iOS
-Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa della colonna **Impostazione**:
+Per iOS/iPadOS è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa **Impostazione**:
 - Numero massimo di tentativi di PIN
 - Periodo di prova offline
 - Dispositivi jailbroken/rooted
@@ -59,7 +59,7 @@ Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'el
 - Modello/i dispositivo
 - Livello di minaccia massimo consentito del dispositivo
 
-Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. I valori non fanno distinzione tra maiuscole e minuscole. Oltre a trovare l'input "Modello di dispositivi" nei report di Intune, è possibile individuare un identificatore di modello iOS nella colonna Tipo di dispositivo nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) o in questo [repository GitHub di terze parti](https://gist.github.com/adamawolf/3048717).<br>
+Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS/iPadOS separati da punto e virgola. I valori non fanno distinzione tra maiuscole e minuscole. Oltre a trovare l'input "Modello/i dispositivi" nella creazione report di Intune, è possibile individuare un identificatore di modello iOS/iPadOS nella colonna Tipo di dispositivo nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) o in questo [repository GitHub di terze parti](https://gist.github.com/adamawolf/3048717).<br>
 Input di esempio: *iPhone5,2;iPhone5,3*
 
 Nei dispositivi degli utenti finali il client Intune eseguirà un'azione in base a una semplice corrispondenza di stringhe relative a modelli di dispositivo specificate in Intune per i criteri di protezione delle applicazioni. La corrispondenza dipende completamente da quanto segnalato dal dispositivo. È consigliabile che l'amministratore IT si assicuri che si verifichi il comportamento previsto, testando questa impostazione con produttori e modelli di dispositivo diversi e usando come destinazione un piccolo gruppo di utenti. Il valore predefinito è **Non configurato**.<br>
@@ -67,8 +67,8 @@ Impostare una delle azioni seguenti:
 - Consenti specificati (blocca non specificati)
 - Consenti specificati (cancella non specificati)
 
-**Cosa accade se l'amministratore IT inserisce un elenco diverso di identificatori di modello iOS tra i criteri destinati alla stessa app per lo stesso utente di Intune?**<br>
-Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione degli identificatori di modello iOS elencati in *Criterio A* e in *Criterio B* specifica per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "iPhone5,2;iPhone5,3", e *Criterio B* specifichi "iPhone5,3". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "iPhone5,3". 
+**Cosa accade se l'amministratore IT inserisce un elenco diverso di identificatori di modello iOS/iPadOS tra i criteri destinati alle stesse app per lo stesso utente di Intune?**<br>
+Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione degli identificatori di modello iOS/iPadOS elencati in *Criterio A* e in *Criterio B* specificati per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "iPhone5,2;iPhone5,3", e *Criterio B* specifichi "iPhone5,3". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "iPhone5,3". 
 
 ### <a name="android-policy-settings"></a>Impostazione dei criteri di Android
 

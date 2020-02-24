@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059787"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415100"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Criteri di protezione delle applicazioni e profili di lavoro in Intune su dispositivi Android Enterprise
 
@@ -106,7 +106,7 @@ Le applicazioni Office, come Outlook e OneDrive, hanno un comportamento a identi
 
 Quando si usano i profili di lavoro, può essere utile disabilitare questo comportamento con identità multiple. Se lo si disabilita, le istanze con badge dell'app nel profilo di lavoro possono essere configurate solo con un'identità dell'organizzazione. Usare l'impostazione di configurazione app Account consentiti per il supporto delle app Office per Android.
 
-Per altre informazioni, vedere [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Distribuzione di impostazioni di configurazione app per iOS e Android).
+Per altre informazioni, vedere [Distribuire impostazioni di configurazione app per iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="when-to-use-intune-app"></a>Quando usare i criteri APP di Intune
 

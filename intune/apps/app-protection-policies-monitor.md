@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205259"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437971"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. 
 - **Utenti contrassegnati**: Numero di utenti che riscontrano problemi con il proprio dispositivo. Gli utenti con dispositivi jailbroken (iOS) e rooted (Android) vengono indicati in **Utenti contrassegnati**. Vengono segnalati qui anche gli utenti con dispositivi contrassegnati dal controllo dell'attestazione del dispositivo SafetyNet di Google, se attivato dall'amministratore IT. 
 - **Utenti con app potenzialmente dannose**: numero di utenti che possono avere un'app dannosa nel dispositivo Android rilevato da Google Play Protect. 
 - **Stato utente per iOS** e **Stato utente per Android**: numero di utenti che hanno usato un'app e ai quali è associato un criterio in un contesto aziendale per la relativa piattaforma. Questa informazione mostra il numero di utenti gestiti dal criterio e il numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
-- **Principali app protette di iOS** e **Principali app protette di Android**: in base alle app iOS e Android più usate, questa informazione indica il numero di app protette e non protette dalla piattaforma.
-- **Prime app iOS configurate senza registrazione** e **Prime app Android configurate senza registrazione**: in base alle app iOS e Android più usate per i dispositivi non registrati, questa informazione indica il numero di app configurate dalla piattaforma (come se si usassero i criteri di configurazione dell'app).
+- **Principali app protette di iOS/iPadOS** e **Principali app protette di Android**: in base alle app iOS/iPadOS e Android più usate, questa informazione indica il numero di app protette e non protette in base alla piattaforma.
+- **Prime app iOS/iPadOS configurate senza registrazione** e **Prime app Android configurate senza registrazione**: in base alle app iOS/iPadOS e Android più usate per i dispositivi non registrati, questa informazione indica il numero di app configurate in base alla piattaforma, come se si usassero i criteri di configurazione dell'app.
 
     > [!NOTE]
     > Se esistono più criteri per ogni piattaforma, un utente viene considerato gestito da criteri quando ha almeno un criterio assegnato.
@@ -170,9 +170,9 @@ Seguire questa procedura per generare un file con estensione csv di Protezione a
     ![Schermata della finestra di conferma Salva report](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune offre campi aggiuntivi per i report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. È possibile accedere a questi campi in Intune selezionando **App** > **Stato protezione app** > **Report sulla protezione dell'app: iOS, Android**. Questi parametri consentono anche di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della **versione minima della patch di sicurezza per Android**.   
+> Intune offre campi aggiuntivi per la creazione di report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS/iPadOS. È possibile accedere a questi campi in Intune selezionando **App** > **Stato di protezione dell'app** > **Report sulla protezione dell'app: iOS/iPadOS, Android**. Questi parametri consentono anche di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della **versione minima della patch di sicurezza per Android**.   
  
 ## <a name="see-also"></a>Vedere anche
-- [Gestire il trasferimento di dati tra app iOS](data-transfer-between-apps-manage-ios.md)
+- [Gestire il trasferimento di dati tra app iOS/iPadOS](data-transfer-between-apps-manage-ios.md)
 - [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md)
-- [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
+- [Aspettative dalla gestione dell'app per iOS/iPadOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)

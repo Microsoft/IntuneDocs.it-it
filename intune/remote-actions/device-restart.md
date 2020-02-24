@@ -1,6 +1,6 @@
 ---
 title: Riavviare i dispositivi con Microsoft Intune - Azure | Microsoft Docs
-description: È possibile riavviare i dispositivi Windows e iOS con Microsoft Intune nel portale di Azure usando l'azione Riavvia in remoto.
+description: È possibile riavviare i dispositivi Windows e iOS/iPadOS con Microsoft Intune nel portale di Azure usando l'azione remota Riavvia.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517542"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415623"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Riavviare i dispositivi in remoto con Intune
 
@@ -35,10 +35,10 @@ L'azione del dispositivo **Riavvia** causa il riavvio del dispositivo scelto (en
 - Windows: funzionalità supportata in Windows 8.1 e versioni successive
 - Windows Phone: funzionalità supportata in Windows Phone 8.1 e versioni successive
 - Dispositivi in modalità tutto schermo Android: supportati in Android 7.0 e versioni successive
-- iOS: funzionalità supportata
+- iOS/iPadOS: supportata
 
     > [!Note]  
-    > Per eseguire questo comando sono necessari un dispositivo supervisionato e il diritto di accesso **Device Lock** (Blocco dispositivo). Il dispositivo viene riavviato immediatamente. I dispositivi iOS bloccati con passcode non vengono di nuovo aggiunti a una rete Wi-Fi dopo il riavvio. Dopo il riavvio il dispositivo potrebbe non essere in grado di comunicare con il server.
+    > Per eseguire questo comando sono necessari un dispositivo supervisionato e il diritto di accesso **Device Lock** (Blocco dispositivo). Il dispositivo viene riavviato immediatamente. I dispositivi iOS/iPadOS bloccati con passcode non vengono di nuovo aggiunti a una rete Wi-Fi dopo il riavvio. Dopo il riavvio il dispositivo potrebbe non essere in grado di comunicare con il server.
 - macOS: funzionalità non supportata
 - Dispositivi Android e del profilo di lavoro Android: funzionalità non supportata
 

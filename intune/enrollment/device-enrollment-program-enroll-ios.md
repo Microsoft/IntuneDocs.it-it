@@ -1,7 +1,7 @@
 ---
-title: Registrare i dispositivi iOS - Device Enrollment Program
+title: Registrare i dispositivi iOS/iPadOS - Device Enrollment Program
 titleSuffix: Microsoft Intune
-description: Informazioni su come registrare i dispositivi iOS di proprietà dell'azienda usando Device Enrollment Program.
+description: Informazioni su come registrare i dispositivi iOS/iPadOS di proprietà dell'azienda usando Device Enrollment Program.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074666"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415366"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS/iPadOS con il programma Device Enrollment Program di Apple
 
-È possibile configurare la registrazione di Intune per i dispositivi iOS acquistati tramite il programma [Device Enrollment Program (DEP)](https://deploy.apple.com) di Apple. DEP consente di registrare un numero elevato di dispositivi senza interventi diretti. Dispositivi come iPhone, iPad e MacBook possono essere spediti direttamente agli utenti. Quando l'utente accende il dispositivo, Assistente configurazione, che include la tipica esperienza di configurazione guidata per i prodotti Apple, viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
+È possibile configurare la registrazione di Intune per i dispositivi iOS/iPadOS acquistati con il programma [Device Enrollment Program (DEP)](https://deploy.apple.com) di Apple. DEP consente di registrare un numero elevato di dispositivi senza interventi diretti. Dispositivi come iPhone, iPad e MacBook possono essere spediti direttamente agli utenti. Quando l'utente accende il dispositivo, Assistente configurazione, che include la tipica esperienza di configurazione guidata per i prodotti Apple, viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
 
 Per abilitare la registrazione DEP, si usano sia il portale di Intune che il portale di Apple Business Manager (ABM) o Apple School Manager (ASM). È necessario un elenco di numeri di serie o un numero di ordine di acquisto per poter assegnare i dispositivi a Intune per la gestione in ABM/ASM. Si creano profili di registrazione DEP in Intune contenenti le impostazioni da applicare ai dispositivi durante la registrazione. Si noti che la registrazione DEP non può essere usata con un account [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
 
@@ -38,15 +38,15 @@ Per abilitare la registrazione DEP, si usano sia il portale di Intune che il por
 
 Le registrazioni DEP non sono compatibili con la versione di App Store dell'app Portale aziendale. È possibile concedere agli utenti l'accesso all'app Portale aziendale in un dispositivo DEP. È possibile fornire questo accesso per consentire agli utenti di scegliere le app aziendali che vogliono usare nel dispositivo o di usare l'autenticazione moderna per completare il processo di registrazione. 
 
-Per abilitare l'autenticazione moderna durante la registrazione, eseguire il push dell'app al dispositivo usando **Installa il Portale aziendale con VPP** (Volume Purchase Program) nel profilo DEP. Per altre informazioni, vedere [Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+Per abilitare l'autenticazione moderna durante la registrazione, eseguire il push dell'app al dispositivo usando **Installa il Portale aziendale con VPP** (Volume Purchase Program) nel profilo DEP. Per altre informazioni, vedere [Registrare automaticamente i dispositivi iOS/iPadOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 Per consentire l'aggiornamento automatico del Portale aziendale e fornire l'app Portale aziendale nei dispositivi già registrati in DEP, distribuire l'app Portale aziendale tramite Intune come app Volume Purchase Program (VPP) obbligatoria con un [criterio di configurazione dell'applicazione](../apps/app-configuration-policies-use-ios.md) applicato.
 
 ## <a name="what-is-supervised-mode"></a>Che cos'è la modalità con supervisione?
 
-Apple ha introdotto la modalità con supervisione in iOS 5. Un dispositivo iOS nella modalità con supervisione può essere gestito con più controlli, ad esempio Blocca acquisizione schermo e Blocca l'installazione di app con App Store. Questa modalità è quindi particolarmente utile per dispositivi di proprietà dell'azienda. Intune supporta la configurazione di dispositivi per la modalità con supervisione nell'ambito del programma Apple Device Enrollment Program (DEP).
+Apple ha introdotto la modalità con supervisione in iOS/iPadOS 5. Un dispositivo iOS/iPadOS nella modalità con supervisione può essere gestito con più controlli, ad esempio Blocca acquisizione schermo e Blocca l'installazione di app con App Store. Questa modalità è quindi particolarmente utile per dispositivi di proprietà dell'azienda. Intune supporta la configurazione di dispositivi per la modalità con supervisione nell'ambito del programma Apple Device Enrollment Program (DEP).
 
-Il supporto per i dispositivi DEP senza supervisione è stato deprecato in iOS 11. In iOS 11 e versioni successive, i dispositivi DEP configurati devono essere sempre con supervisione. Il flag is_supervised DEP verrà ignorato in una versione futura di iOS.
+Il supporto per i dispositivi DEP senza supervisione è stato deprecato in iOS/iPadOS 11. In iOS/iPadOS 11 e versioni successive, i dispositivi DEP configurati devono essere sempre con supervisione. Il flag is_supervised DEP verrà ignorato in una versione futura di iOS/iPadOS.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -63,7 +63,7 @@ Il supporto per i dispositivi DEP senza supervisione è stato deprecato in iOS 1
 
 ## <a name="get-an-apple-dep-token"></a>Ottenere un token DEP Apple
 
-Per registrare i dispositivi iOS in DEP, è necessario un file di token DEP (con estensione p7m) da Apple. Questo token consente a Intune di sincronizzare le informazioni sui dispositivi DEP di proprietà dell'azienda. Consente inoltre di caricare i profili di registrazione in Apple e assegnare i dispositivi a tali profili.
+Per registrare i dispositivi iOS/iPadOS in DEP, è necessario un file di token DEP (P7M) da Apple. Questo token consente a Intune di sincronizzare le informazioni sui dispositivi DEP di proprietà dell'azienda. Consente inoltre di caricare i profili di registrazione in Apple e assegnare i dispositivi a tali profili.
 
 Per creare un token, è possibile usare il portale Apple Business Manager o Apple School Manager. Il portale ABM/ASM viene usato anche per assegnare i dispositivi a Intune per la gestione.
 
@@ -117,7 +117,7 @@ Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.m
 2. Per applicare [tag di ambito](../fundamentals/scope-tags.md) a questo token DEP, scegliere **Ambito (tag)** e selezionare i tag di ambito desiderati. I tag di ambito applicati a un token verranno ereditati dai profili e dai dispositivi aggiunti a questo token.
 3. Scegliere **Crea**.
 
-Con il certificato push, Intune può registrare e gestire i dispositivi iOS eseguendo il push dei criteri nei dispositivi mobili registrati. Intune si sincronizza automaticamente con Apple per verificare l'account DEP.
+Con il certificato push, Intune può registrare e gestire i dispositivi iOS/iPadOS eseguendo il push dei criteri nei dispositivi mobili registrati. Intune si sincronizza automaticamente con Apple per verificare l'account DEP.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Creare un profilo di registrazione di Apple
 
@@ -155,7 +155,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     >
     > Non sono supportate durante l'autenticazione con l'Assistente configurazione di Apple.
 
-6. Se si sceglie **Portale aziendale** per **Selezione della posizione per l'autenticazione degli utenti**, è possibile usare un token VPP per installare automaticamente il portale aziendale nel dispositivo. In questo caso, l'utente non deve specificare un ID Apple. Per installare il portale aziendale con un token VPP, scegliere un token in **Install Company Portal with VPP** (Installa il portale aziendale con VPP). Richiede che il portale aziendale sia già stato aggiunto al token VPP. Per assicurarsi che l'app Portale aziendale continui a essere aggiornata dopo la registrazione, assicurarsi di aver configurato una distribuzione delle app in Intune (Intune>App client). Affinché non sia obbligatoria l'interazione dell'utente, l'app Portale aziendale sarà probabilmente un'app VPP iOS, sarà impostata come app obbligatoria e sarà necessario usare le licenze del dispositivo per l'assegnazione. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze dei dispositivi per l'app Portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune installa invece l'app Portale aziendale dall'App Store e richiede un ID Apple. 
+6. Se si sceglie **Portale aziendale** per **Selezione della posizione per l'autenticazione degli utenti**, è possibile usare un token VPP per installare automaticamente il portale aziendale nel dispositivo. In questo caso, l'utente non deve specificare un ID Apple. Per installare il portale aziendale con un token VPP, scegliere un token in **Install Company Portal with VPP** (Installa il portale aziendale con VPP). Richiede che il portale aziendale sia già stato aggiunto al token VPP. Per assicurarsi che l'app Portale aziendale continui a essere aggiornata dopo la registrazione, assicurarsi di aver configurato una distribuzione delle app in Intune (Intune>App client). Per fare in modo che l'interazione dell'utente non sia obbligatoria, è opportuno che l'app Portale aziendale sia un'app VPP iOS/iPadOS, impostata come app obbligatoria, e che vengano usate le licenze del dispositivo per l'assegnazione. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze dei dispositivi per l'app Portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune installa invece l'app Portale aziendale dall'App Store e richiede un ID Apple. 
 
     > [!NOTE]
     > Quando l'opzione **Selezione della posizione per l'autenticazione degli utenti** è impostata su **Portale aziendale**, assicurarsi che il processo di registrazione del dispositivo venga eseguito nelle prime 24 ore dal download dell'app Portale aziendale nel dispositivo DEP. In caso contrario, la registrazione potrebbe non riuscire e sarà necessario il ripristino delle impostazioni predefinite per registrare il dispositivo.
@@ -168,7 +168,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
     L'autenticazione a più fattori non è supportata per un singolo dispositivo bloccato in modalità app singola. Questa limitazione esiste perché il dispositivo non può passare a un'altra app per completare il secondo fattore di autenticazione. Pertanto, se si vuole usare l'autenticazione a più fattori in un singolo dispositivo in modalità app singola, il secondo fattore deve trovarsi in un dispositivo diverso.
 
-    Questa funzionalità è supportata solo per iOS 11.3.1 e versioni successive.
+    Questa funzionalità è supportata solo per iOS/iPadOS 11.3.1 e versioni successive.
 
    ![Screenshot della modalità applicazione singola.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -176,7 +176,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
     ![Screenshot di Impostazioni di gestione dei dispositivi.](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
-    I dispositivi **con supervisione** offrono più opzioni di gestione e il blocco attivazione viene disabilitato per impostazione predefinita. È consigliabile usare il programma DEP come meccanismo per l'abilitazione della modalità con supervisione, soprattutto per la distribuzione di un numero elevato di dispositivi iOS.
+    I dispositivi **con supervisione** offrono più opzioni di gestione e il blocco attivazione viene disabilitato per impostazione predefinita. È consigliabile usare il programma DEP come meccanismo per l'abilitazione della modalità con supervisione, soprattutto per la distribuzione di un numero elevato di dispositivi iOS/iPadOS.
 
     Gli utenti vengono informati che i dispositivi sono inclusi nella supervisione in due modi:
 
@@ -184,9 +184,9 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
    - Nella schermata **Settings** (Impostazioni)  > **General** (Generale)  > **About** (Informazioni) viene visualizzato l'avviso: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo)
 
      > [!NOTE]
-     > Per reimpostare un dispositivo registrato senza supervisione in modo da includerlo nella supervisione, è possibile usare solo Apple Configurator. Per reimpostare il dispositivo in questo modo, è necessario connettere un dispositivo iOS a un computer Mac con un cavo USB. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3).
+     > Per reimpostare un dispositivo registrato senza supervisione in modo da includerlo nella supervisione, è possibile usare solo Apple Configurator. Per reimpostare il dispositivo in questo modo, è necessario connettere un dispositivo iOS/iPadOS a un computer Mac con un cavo USB. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3).
 
-10. Scegliere se usare la registrazione bloccata per i dispositivi con questo profilo. La **registrazione bloccata** disabilita le impostazioni di iOS che consentono la rimozione del profilo di gestione dal menu **Impostazioni**. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza cancellare il dispositivo. Per tali dispositivi, la modalità di gestione **Supervisione eseguita** deve essere impostata su *Sì*. 
+10. Scegliere se usare la registrazione bloccata per i dispositivi con questo profilo. La **registrazione bloccata** disabilita le impostazioni di iOS/iPadOS che consentono la rimozione del profilo di gestione dal menu **Impostazioni**. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza cancellare il dispositivo. Per tali dispositivi, la modalità di gestione **Supervisione eseguita** deve essere impostata su *Sì*. 
 
 11. Scegliere se si vuole che i dispositivi con questo profilo possano **eseguire la sincronizzazione con i computer**. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario selezionare un certificato in **Certificati di Apple Configurator**.
 
@@ -270,7 +270,7 @@ Prima della registrazione è necessario assegnare ai dispositivi un profilo DEP.
 ## <a name="distribute-devices"></a>Distribuire i dispositivi
 Fino a questo punto sono state abilitate la gestione e la sincronizzazione tra Apple e Intune ed è stato assegnato un profilo per consentire la registrazione dei dispositivi DEP. È ora possibile distribuire i dispositivi agli utenti. I dispositivi con affinità utente richiedono che a ogni utente sia assegnata una licenza di Intune. Per i dispositivi senza affinità utente è necessaria una licenza dispositivo. Un dispositivo attivato non può applicare un profilo di registrazione fino a quando non viene cancellato.
 
-Vedere [Registrare il dispositivo iOS in Intune con Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
+Vedere [Registrare il dispositivo iOS/iPadOS in Intune con Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
 
 ## <a name="renew-a-dep-token"></a>Rinnovare un token DEP  
 1. Passare a deploy.apple.com.  

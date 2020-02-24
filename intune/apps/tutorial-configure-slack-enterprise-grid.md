@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206908"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415474"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -69,7 +69,7 @@ Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti d
 10. Fare clic su **Save**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Aggiungere un criterio di configurazione dell'app per Slack per EMM
-Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi Android.
+Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS/iPadOS. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi Android.
 1. Nell'interfaccia di amministrazione selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi** > **Dispositivi gestiti**.
 2. In Nome immettere Test criteri di configurazione dell'app Slack.
 3. In Tipo di registrazione del dispositivo verificare che l'opzione **Dispositivi gestiti** sia impostata.

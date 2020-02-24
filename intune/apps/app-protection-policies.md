@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885755"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437903"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -65,7 +65,7 @@ Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android,
     | Valore/opzione | Descrizione |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Specifica come destinatari le app in tutti i tipi di dispositivo | Usare questa opzione per destinare i criteri alle app nei dispositivi con qualsiasi stato di gestione. Scegliere **No** per destinare i criteri ad app su tipi di dispositivi specifici. Per altre informazioni, vedere [Assegnare i criteri di protezione delle app in base allo stato di gestione del dispositivo](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipi di dispositivi | Usare questa opzione per specificare se i criteri di applicano ai dispositivi gestiti MDM o ai dispositivi non gestiti. Per i criteri di protezione delle app iOS selezionare **Non gestito** o **Gestito** per i dispositivi. Per i criteri di protezione delle app Android selezionare **Non gestito**, **Amministratore di dispositivi Android** e **Android Enterprise**.  |
+    |     Tipi di dispositivi | Usare questa opzione per specificare se i criteri di applicano ai dispositivi gestiti MDM o ai dispositivi non gestiti. Per i criteri di protezione delle app iOS/iPadOS selezionare **Non gestito** o **Gestito** per i dispositivi. Per i criteri di protezione delle app Android selezionare **Non gestito**, **Amministratore di dispositivi Android** e **Android Enterprise**.  |
     | App pubbliche | Fare clic su **Select public apps** (Selezionare le app pubbliche) per scegliere le app di destinazione. |
     | App personalizzate | Fare clic su **Select custom apps** (Selezionare le app personalizzate) per selezionare le app personalizzate di destinazione in base a un ID di bundle. |
     
@@ -103,7 +103,7 @@ Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android,
 
 Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per altre informazioni, vedere:
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
+* [Aspettative dalla gestione dell'app per iOS/iPadOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Modificare i criteri esistenti
 È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Quando tuttavia si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di otto ore.
@@ -123,7 +123,7 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
     | Valore/opzione | Descrizione |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Specifica come destinatari le app in tutti i tipi di dispositivo | Usare questa opzione per destinare i criteri alle app nei dispositivi con qualsiasi stato di gestione. Scegliere **No** per destinare i criteri ad app su tipi di dispositivi specifici. Per altre informazioni, vedere [Assegnare i criteri di protezione delle app in base allo stato di gestione del dispositivo](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipi di dispositivi | Usare questa opzione per specificare se i criteri di applicano ai dispositivi gestiti MDM o ai dispositivi non gestiti. Per i criteri di protezione delle app iOS selezionare **Non gestito** o **Gestito** per i dispositivi. Per i criteri di protezione delle app Android selezionare **Non gestito**, **Amministratore di dispositivi Android** e **Android Enterprise**.  |
+    |     Tipi di dispositivi | Usare questa opzione per specificare se i criteri di applicano ai dispositivi gestiti MDM o ai dispositivi non gestiti. Per i criteri di protezione delle app iOS/iPadOS selezionare **Non gestito** o **Gestito** per i dispositivi. Per i criteri di protezione delle app Android selezionare **Non gestito**, **Amministratore di dispositivi Android** e **Android Enterprise**.  |
     | App pubbliche | Fare clic su **Select public apps** (Selezionare le app pubbliche) per scegliere le app di destinazione. |
     | App personalizzate | Fare clic su **Select custom apps** (Selezionare le app personalizzate) per selezionare le app personalizzate di destinazione in base a un ID di bundle. |
 
@@ -166,7 +166,7 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Assegnare i criteri di protezione delle app in base allo stato di gestione del dispositivo
 In molte organizzazioni è consuetudine consentire agli utenti finali di usare sia i dispositivi gestiti Intune Mobile Device Management (MDM), ad esempio i dispositivi di proprietà aziendale, sia i dispositivi non gestiti protetti solo con criteri di protezione delle app di Intune. I dispositivi non gestiti sono spesso noti come dispositivi Bring Your Own Device (BYOD).
 
-Poiché i criteri di protezione delle app di Intune usano come destinazione l'identità di un utente, le impostazioni di protezione per un utente possono essere applicate sia ai dispositivi registrati (dispositivi MDM gestiti) che ai dispositivi non registrati (non MDM). È quindi possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati che a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione di dispositivi MDM gestiti, in cui i controlli DLP possono essere meno severi. Per altre informazioni sul funzionamento in dispositivi Android Enterprise personali, vedere [Criteri di protezione delle app e profili di lavoro](android-deployment-scenarios-app-protection-work-profiles.md).
+Poiché i criteri di protezione delle app di Intune usano come destinazione l'identità di un utente, le impostazioni di protezione per un utente possono essere applicate sia ai dispositivi registrati (dispositivi MDM gestiti) che ai dispositivi non registrati (non MDM). È quindi possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati che a dispositivi non registrati iOS/iPadOS e Android. È possibile avere criteri di protezione per dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione di dispositivi MDM gestiti, in cui i controlli DLP possono essere meno severi. Per altre informazioni sul funzionamento in dispositivi Android Enterprise personali, vedere [Criteri di protezione delle app e profili di lavoro](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Per creare questi criteri, passare ad **App** > **Criteri di protezione delle app** nella console di Intune e quindi selezionare **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che i criteri di protezione delle app vengano applicati sia ai dispositivi gestiti che non gestiti, passare alla pagina **App** e verificare che l'opzione **Specifica come destinatari le app in tutti i tipi di dispositivo** sia impostata su **Sì**, ovvero il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Specifica come destinatari le app in tutti i tipi di dispositivo** su **No**. 
 
@@ -182,15 +182,15 @@ Per creare questi criteri, passare ad **App** > **Criteri di protezione delle ap
 
 Per iOS, sono necessarie impostazioni di configurazione delle app aggiuntive per assegnare le impostazioni dei criteri di protezione delle app alle app nei dispositivi registrati in Intune:
 
-- È necessario configurare **IntuneMAMUPN** per tutte le applicazioni gestite da MDM. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- È necessario configurare **IntuneMAMDeviceID** per tutte le applicazioni gestite di terze parti e line-of-business. È necessario impostare **IntuneMAMDeviceID** sul token dell'ID del dispositivo. Ad esempio, `key=IntuneMAMDeviceID, value={{deviceID}}` Per altre informazioni, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
+- È necessario configurare **IntuneMAMUPN** per tutte le applicazioni gestite da MDM. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS/iPadOS in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- È necessario configurare **IntuneMAMDeviceID** per tutte le applicazioni gestite di terze parti e line-of-business. È necessario impostare **IntuneMAMDeviceID** sul token dell'ID del dispositivo. Ad esempio, `key=IntuneMAMDeviceID, value={{deviceID}}` Per altre informazioni, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](app-configuration-policies-use-ios.md).
 - Se si configura solo **IntuneMAMDeviceID**, l'app di Intune considererà il dispositivo come non gestito.
 
 > [!NOTE]
-> Per informazioni sul supporto iOS in merito ai criteri di protezione delle app sulla base dello stato di gestione del dispositivo, vedere [Criteri di protezione MAM mirati sulla base dello stato di gestione](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
+> Per informazioni sul supporto iOS/iPadOS in merito ai criteri di protezione delle app sulla base dello stato di gestione del dispositivo, vedere [Criteri di protezione MAM assegnati sulla base dello stato di gestione](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
 
 ## <a name="policy-settings"></a>Impostazioni dei criteri
-Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare uno dei collegamenti seguenti:
+Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS/iPadOS e Android, selezionare uno dei collegamenti seguenti:
 
 - [Criteri iOS](app-protection-policy-settings-ios.md)
 - [Criteri Android](app-protection-policy-settings-android.md)
@@ -200,4 +200,4 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 
 ## <a name="see-also"></a>Vedere anche
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
+* [Aspettative dalla gestione dell'app per iOS/iPadOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)

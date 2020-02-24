@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755375"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414440"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Aggiungere app predefinite in Microsoft Intune
 
-Il tipo di app *predefinito* semplifica l'assegnazione di app gestite dedicate, ad esempio le app di Office 365, ai dispositivi iOS e Android. È possibile assegnare app specifiche per questo tipo di app, come Excel, OneDrive, Outlook, Skype e altre ancora. Dopo aver aggiunto un'app, viene visualizzato il tipo di app, ovvero *App iOS predefinita* o *App Android predefinita*. Con il tipo di app predefinito, è possibile scegliere quali di queste app pubblicare nei dispositivi degli utenti.
+Il tipo di app *predefinito* semplifica l'assegnazione di app gestite dedicate, ad esempio le app di Office 365, ai dispositivi iOS/iPadOS e Android. È possibile assegnare app specifiche per questo tipo di app, come Excel, OneDrive, Outlook, Skype e altre ancora. Dopo aver aggiunto un'app, viene visualizzato il tipo di app, ovvero *App iOS predefinita* o *App Android predefinita*. Con il tipo di app predefinito, è possibile scegliere quali di queste app pubblicare nei dispositivi degli utenti.
 
 Nelle versioni precedenti della console di Intune, Intune forniva diverse app di Office 365 gestite predefinite, ad esempio Outlook e OneDrive. I tipi di app per queste app gestite erano contrassegnati come *App dello Store iOS gestita* o *App di Android Store gestita*. Invece di usare questi tipi di app, è consigliabile usare il tipo di app predefinito. Il tipo di app predefinito offre una maggiore flessibilità per modificare ed eliminare le app di Office 365.
 

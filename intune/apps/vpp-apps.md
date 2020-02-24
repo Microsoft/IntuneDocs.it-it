@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692145"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415428"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gestire le app e i libri acquistati con Volume Purchase Program con Microsoft Intune
 
@@ -39,6 +39,6 @@ Microsoft Intune consente di gestire le app e i libri acquistati tramite questo 
 
 Intune attualmente consente di gestire le app e i libri acquistati con contratti multilicenza dallo store iOS e di gestire le app acquistate da Microsoft Store per le aziende. Per informazioni su come gestire le app concesse in licenza da ognuno degli store, scegliere uno degli argomenti seguenti:
 
-- [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md) (Gestire le app iOS acquistate tramite Volume Purchase Program con Microsoft Intune)
+- [Gestire le app acquistate con Volume Purchase Program con Microsoft Intune](vpp-apps-ios.md)
 - [Gestire le app acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
-- [Come gestire eBook per iOS](vpp-ebooks-ios.md)
+- [Come gestire eBook per iOS/iPadOS](vpp-ebooks-ios.md)

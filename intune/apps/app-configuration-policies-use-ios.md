@@ -1,7 +1,7 @@
 ---
-title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
+title: Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti
 titleSuffix: Microsoft Intune
-description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione per un'app iOS in fase di esecuzione.
+description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione in un'app iOS/iPadOS in esecuzione.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755766"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438005"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare impostazioni di configurazione personalizzate per un'app iOS. Queste impostazioni di configurazione consentono di personalizzare un'app in base alle indicazioni del fornitore dell'app stessa. È necessario ottenere queste impostazioni di configurazione (chiavi e valori) dal fornitore dell'app. Per configurare l'app, specificare le impostazioni come chiavi e valori oppure come file XML contenente le chiavi e valori.
+Usare i criteri di configurazione delle app in Microsoft Intune per specificare impostazioni di configurazione personalizzate per un'app iOS/iPadOS. Queste impostazioni di configurazione consentono di personalizzare un'app in base alle indicazioni del fornitore dell'app stessa. È necessario ottenere queste impostazioni di configurazione (chiavi e valori) dal fornitore dell'app. Per configurare l'app, specificare le impostazioni come chiavi e valori oppure come file XML contenente le chiavi e valori.
 
 L'amministratore di Microsoft Intune può controllare gli account utente che vengono aggiunti alle applicazioni di Microsoft Office nei dispositivi gestiti. Può limitare l'accesso agli account utente consentiti dell'organizzazione e bloccare gli account personali nei dispositivi registrati. Le applicazioni di supporto elaborano la configurazione dell'app e rimuovono e bloccano gli account non approvati. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
@@ -41,7 +41,7 @@ Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostar
 Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'applicazione, è anche possibile scegliere i gruppi specifici da escludere. Per altre informazioni, vedere [Includere ed escludere assegnazioni di app in Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
-> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
+> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS/iPadOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
 >
 > - **App iOS gestita dall'App Store**
 > - **Pacchetto app per iOS**
@@ -106,7 +106,7 @@ I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Consentire solo gli account dell'organizzazione configurati nelle app con identità multiple 
 
-Per i dispositivi iOS, usare le coppie chiave/valore seguenti:
+Per i dispositivi iOS/iPadOS, usare le coppie chiave/valore seguenti:
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Inoltre, Intune supporta i tipi di token seguenti nell'elenco di proprietà:
 - \{\{deviceid\}\}, ad esempio **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\}, ad esempio **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\}, ad esempio **John Doe**
-- \{\{serialnumber\}\}, ad esempio **F4KN99ZUG5V2** (per dispositivi iOS)
-- \{\{serialnumberlast4digits\}\}, ad esempio **G5V2** (per dispositivi iOS)
+- \{\{serialnumber\}\}, ad esempio **F4KN99ZUG5V2** (per dispositivi iOS/iPadOS)
+- \{\{serialnumberlast4digits\}\}, ad esempio **G5V2** (per dispositivi iOS/iPadOS)
 - \{\{aaddeviceid\}\}, ad esempio, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configurare l'app Portale aziendale per supportare i dispositivi DEP iOS
 
-Le registrazioni DEP (Device Enrollment Program, il programma di registrazione dei dispositivi di Apple) non sono compatibili con la versione di App Store dell'app Portale aziendale. La procedura seguente, tuttavia, consente di configurare l'app Portale aziendale in modo che supporti i dispositivi DEP iOS.
+Le registrazioni DEP (Device Enrollment Program, il programma di registrazione dei dispositivi di Apple) non sono compatibili con la versione di App Store dell'app Portale aziendale. La procedura seguente, tuttavia, consente di configurare l'app Portale aziendale in modo che supporti i dispositivi DEP iOS/iPadOS.
 
 1. In Intune aggiungere l'app Portale aziendale di Intune, se necessario, selezionando **Intune** > **App** > **Tutte le app** > **Aggiungi**.
 2. Passare ad **App** > **Criteri di configurazione dell'app** per creare criteri di configurazione per l'app Portale aziendale.
-3. Creare criteri di configurazione dell'app con il codice XML che segue. Per altre informazioni sulla creazione di criteri di configurazione delle app e sull'immissione di dati XML, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
+3. Creare criteri di configurazione dell'app con il codice XML che segue. Per altre informazioni sulla creazione di criteri di configurazione delle app e sull'immissione di dati XML, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ Le registrazioni DEP (Device Enrollment Program, il programma di registrazione d
 4. Indicare agli utenti finali di accedere all'app Portale aziendale quando viene installata automaticamente.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorare lo stato di configurazione delle app iOS per ogni dispositivo 
-Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo riquadro. Nel riquadro del dispositivo selezionare **Configurazione dell'app**.  
+Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS/iPadOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo riquadro. Nel riquadro del dispositivo selezionare **Configurazione dell'app**.  
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 
-- [Distribuzione delle impostazioni di configurazione delle app di Outlook per iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Distribuzione delle impostazioni di configurazione delle app di Outlook per iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

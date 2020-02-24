@@ -1,7 +1,7 @@
 ---
 title: Criteri di configurazione delle app per Microsoft Intune
 titleSuffix: ''
-description: Informazioni su come usare i criteri di configurazione delle app in un dispositivo iOS o Android in Microsoft Intune.
+description: Informazioni su come usare i criteri di configurazione delle app in un dispositivo iOS/iPadOS o Android in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812471"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414849"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
 I criteri di configurazione delle app consentono di evitare i problemi di configurazione delle app, permettendo di assegnare le impostazioni di configurazione a criteri assegnati agli utenti finali prima dell'esecuzione dell'app. Le impostazioni vengono quindi fornite automaticamente quando l'app viene configurata nel dispositivo degli utenti finali e gli utenti finali non devono eseguire alcuna azione. Le impostazioni di configurazione sono univoche per ogni app. 
 
-È possibile creare e usare i criteri di configurazione delle app per specificare le impostazioni di configurazione sia per app iOS che Android. Queste impostazioni di configurazione consentono di personalizzare un'app tramite la gestione e la configurazione delle app. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione. 
+È possibile creare e usare i criteri di configurazione delle app per specificare le impostazioni di configurazione sia per app iOS/iPadOS che Android. Queste impostazioni di configurazione consentono di personalizzare un'app tramite la gestione e la configurazione delle app. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione. 
 
 Ad esempio, un'impostazione di configurazione dell'app potrebbe richiedere di specificare i dettagli seguenti:
 
@@ -71,7 +71,7 @@ Selezionando **App gestite** come **Tipo di registrazione del dispositivo** si f
 ![Tipo di registrazione del dispositivo](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Per le app con più identità, come Microsoft Outlook, è possibile prendere in considerazione le preferenze dell'utente. L'opzione Posta in arrivo evidenziata, ad esempio, rispetta l'impostazione dell'utente e non modifica la configurazione. Altri parametri consentono di controllare se un utente può o meno modificare l'impostazione. Per altre informazioni, vedere [Distribuzione delle impostazioni di configurazione delle app di Outlook per iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+> Per le app con più identità, come Microsoft Outlook, è possibile prendere in considerazione le preferenze dell'utente. L'opzione Posta in arrivo evidenziata, ad esempio, rispetta l'impostazione dell'utente e non modifica la configurazione. Altri parametri consentono di controllare se un utente può o meno modificare l'impostazione. Per altre informazioni, vedere [Distribuzione delle impostazioni di configurazione delle app di Outlook per iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Convalidare i criteri di configurazione delle app applicati
 
@@ -93,7 +93,7 @@ Selezionando **App gestite** come **Tipo di registrazione del dispositivo** si f
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>Configurazione di iOS in dispositivi non gestiti
 
-È possibile convalidare la configurazione di iOS con il **log di diagnostica Intune** in dispositivi non gestiti per la configurazione di app gestite. Oltre che con la procedura seguente è possibile accedere ai log delle app gestite usando Microsoft Edge. Per altre informazioni, vedere [Usare Microsoft Edge in iOS per accedere ai log delle app gestite](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
+È possibile convalidare la configurazione di iOS/iPadOS con il **log di diagnostica Intune** in dispositivi non gestiti per la configurazione di app gestite. Oltre che con la procedura seguente è possibile accedere ai log delle app gestite usando Microsoft Edge. Per altre informazioni, vedere [Usare Microsoft Edge in iOS/iPadOS per accedere ai log delle app gestite](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Se non è già installato nel dispositivo, scaricare e installare **Microsoft Edge** dall'App Store. Per altre informazioni, vedere [App protette di Microsoft Intune](apps-supported-intune-apps.md).
 2. Avviare **Microsoft Edge** e selezionare **informazioni** > **guidaintune** dalla barra di spostamento.
@@ -137,7 +137,7 @@ I dettagli di configurazione dell'applicazione devono corrispondere ai criteri d
 
 ### <a name="ios-configuration-on-managed-devices"></a>Configurazione di iOS in dispositivi gestiti
 
-È possibile convalidare la configurazione di iOS con il **log di diagnostica Intune** in dispositivi gestiti per la configurazione di app gestite.
+È possibile convalidare la configurazione di iOS/iPadOS con il **log di diagnostica Intune** in dispositivi gestiti per la configurazione di app gestite.
 
 1. Se non è già installato nel dispositivo, scaricare e installare **Microsoft Edge** dall'App Store. Per altre informazioni, vedere [App protette di Microsoft Intune](apps-supported-intune-apps.md).
 2. Avviare **Microsoft Edge** e selezionare **informazioni** > **guidaintune** dalla barra di spostamento.
@@ -149,7 +149,7 @@ I dettagli di configurazione dell'applicazione devono corrispondere ai criteri d
 
 ### <a name="android-configuration-on-managed-devices"></a>Configurazione di Android in dispositivi gestiti
 
-È possibile convalidare la configurazione di iOS con il **log di diagnostica Intune** in dispositivi gestiti per la configurazione di app gestite.
+È possibile convalidare la configurazione di iOS/iPadOS con il **log di diagnostica Intune** in dispositivi gestiti per la configurazione di app gestite.
 
 Per raccogliere i log da un dispositivo Android, l'utente o l'utente finale deve scaricare i log dal dispositivo tramite una connessione USB (o tramite l'**Esplora file**  equivalente nel dispositivo). Seguire questa procedura:
 
@@ -173,7 +173,7 @@ Quando i log mostrano un parametro di configurazione confermato per l'applicazio
 
 ### <a name="managed-devices"></a>Dispositivi gestiti
 
-- Informazioni sull'uso della configurazione delle app con i dispositivi iOS.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti](app-configuration-policies-use-ios.md).
+- Informazioni sull'uso della configurazione delle app con i dispositivi iOS/iPadOS.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](app-configuration-policies-use-ios.md).
 - Informazioni sull'uso della configurazione delle app con i dispositivi Android.  Vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>App gestite

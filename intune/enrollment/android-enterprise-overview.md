@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503369"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415410"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gestire i dispositivi del profilo di lavoro Android con Intune
 
@@ -55,7 +55,7 @@ Android Enterprise offre un'infrastruttura per distribuire i valori di configura
 
 ## <a name="email-configuration"></a>Configurazione della posta elettronica
 
-Android Enterprise non offre un'app di posta elettronica predefinita o un oggetto profilo di posta elettronica nativo simile a quelli forniti da iOS. Le configurazioni per la posta elettronica possono essere invece impostate tramite l'applicazione di impostazioni di configurazione delle app alle app di posta elettronica che le supportano. Gmail e Nine Work sono due app client Exchange ActiveSync (EAS) disponibili in Play Store che supportano l'uso della configurazione delle app Android Enterprise.
+Android Enterprise non offre un'app di posta elettronica predefinita o un oggetto profilo di posta elettronica nativo simile a quelli offerti da iOS/iPadOS. Le configurazioni per la posta elettronica possono essere invece impostate tramite l'applicazione di impostazioni di configurazione delle app alle app di posta elettronica che le supportano. Gmail e Nine Work sono due app client Exchange ActiveSync (EAS) disponibili in Play Store che supportano l'uso della configurazione delle app Android Enterprise.
 
 Intune offre modelli di configurazione per le app Gmail e Nine Work gestite come app di lavoro. Altre app di posta elettronica che supportano i profili di configurazione delle app possono essere configurate con i criteri di configurazione delle app per dispositivi mobili.
 

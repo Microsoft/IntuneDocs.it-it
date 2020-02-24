@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207435"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415130"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -119,7 +119,7 @@ Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registra
 Per altre informazioni sulle attività per gli utenti finali, vedere [Informazioni sull'uso di Microsoft Intune per gli utenti finali](../fundamentals/end-user-educate.md).
 
 ## <a name="registration-and-enrollment-cnames"></a>CNAME di registrazione
-Azure Active Directory ha un CNAME diverso che usa per la registrazione dei dispositivi iOS, Android e Windows. L'accesso condizionale di Intune richiede la registrazione dei dispositivi, chiamata anche"aggiunta all'area di lavoro". Se si prevede di usare l'accesso condizionale, è necessario configurare anche il CNAME EnterpriseRegistration per ogni nome di società.
+Azure Active Directory ha un CNAME diverso che usa per la registrazione dei dispositivi iOS/iPadOS, Android e Windows. L'accesso condizionale di Intune richiede la registrazione dei dispositivi, chiamata anche"aggiunta all'area di lavoro". Se si prevede di usare l'accesso condizionale, è necessario configurare anche il CNAME EnterpriseRegistration per ogni nome di società.
 
 | Tipo | Nome dell'host | Punta a | TTL |
 | --- | --- | --- | --- |

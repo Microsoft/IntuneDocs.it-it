@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754780"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415454"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -33,7 +33,7 @@ Intune supporta un'ampia gamma di tipi di app, incluse le app Web. Un'app Web è
 
 Prima di poter gestire e assegnare un'app per gli utenti, è necessario aggiungerla in Intune. 
 
-Intune crea un collegamento all'app Web nel dispositivo dell'utente. Per i dispositivi iOS viene aggiunto un collegamento all'app Web nella schermata iniziale. Per i dispositivi gestiti con Amministratore di dispositivi Android, viene aggiunto un collegamento all'app Web nel widget del portale aziendale di Intune. Il widget deve essere aggiunto manualmente dall'utente. Per i dispositivi Windows, viene aggiunto un collegamento all'app Web nel menu Start.
+Intune crea un collegamento all'app Web nel dispositivo dell'utente. Per i dispositivi iOS/iPadOS viene aggiunto un collegamento all'app Web nella schermata iniziale. Per i dispositivi gestiti con Amministratore di dispositivi Android, viene aggiunto un collegamento all'app Web nel widget del portale aziendale di Intune. Il widget deve essere aggiunto manualmente dall'utente. Per i dispositivi Windows, viene aggiunto un collegamento all'app Web nel menu Start.
 
 > [!Note]
 > Per avviare app Web, è necessario che nel dispositivo dell'utente sia installato un browser. 
@@ -71,7 +71,7 @@ Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le o
     Verrà visualizzato il pannello **Panoramica** dell'app creata.
 
 > [!Note]
-> Attualmente, la distribuzione di app Web di Intune in dispositivi iOS è associata al profilo di gestione e non può essere rimossa manualmente. È possibile modificare il tipo di distribuzione impostando **Disinstalla** nel portale di Intune e in questo modo l'app Web può essere rimossa automaticamente. Tuttavia, se si rimuove la distribuzione prima di modificare la finalità dell'assegnazione di app in **Disinstalla**, l'app Web rimarrà in modo permanente nel dispositivo fino a quando non si annulla la registrazione del dispositivo da Intune.
+> Attualmente, la distribuzione di app Web di Intune in dispositivi iOS/iPadOS è associata al profilo di gestione e non può essere rimossa manualmente. È possibile modificare il tipo di distribuzione impostando **Disinstalla** nel portale di Intune e in questo modo l'app Web può essere rimossa automaticamente. Tuttavia, se si rimuove la distribuzione prima di modificare la finalità dell'assegnazione di app in **Disinstalla**, l'app Web rimarrà in modo permanente nel dispositivo fino a quando non si annulla la registrazione del dispositivo da Intune.
 
 Gli utenti finali possono avviare app Web direttamente dall'app Windows Portale aziendale selezionando l'app Web e quindi scegliendo l'opzione **Apri nel browser**. L'URL Web pubblicato viene aperto direttamente nel Web browser. 
 

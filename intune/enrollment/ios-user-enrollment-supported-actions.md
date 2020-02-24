@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324866"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414140"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Azioni e opzioni di Intune supportate con la registrazione utente Apple
 
 La registrazione utente supporta un subset di opzioni di gestione dei dispositivi. Se un profilo di configurazione preesistente viene applicato a un dispositivo di registrazione utente, solo le impostazioni supportate dalla registrazione utente verranno applicate al dispositivo.
 
 > [!NOTE]
-> Il supporto per la registrazione utente di Apple in Intune è attualmente in versione di anteprima.
+> Il supporto per la registrazione utente di Apple in Intune è attualmente in versione di anteprima per iOS e iPadOS.
 
 ## <a name="password-settings"></a>Impostazioni della password
 
@@ -107,19 +107,15 @@ Le opzioni seguenti non sono supportate nei dispositivi registrati con la regist
 - I criteri di protezione delle applicazioni verranno comunque applicati a queste app. Tuttavia, non sarà possibile assumere la gestione o distribuire una versione gestita di queste app a meno che l'utente non le elimini dal dispositivo.
 - Azioni, configurazioni, impostazioni e comandi che richiedono la supervisione. 
 
-## <a name="options-not-supported-in-preview"></a>Opzioni non supportate nell'anteprima
-- Restrizioni del tipo di dispositivo di registrazione per consentire o bloccare i dispositivi di proprietà personale 
 
 ## <a name="known-issues-in-preview"></a>Problemi noti nell'anteprima
 - Revoca della licenza VPP: non viene visualizzata una notifica che informa che la licenza è stata revocata. Nel comportamento corrente la revoca viene eseguita correttamente ma l'utente finale non riceve alcuna notifica. 
 - Segnalazione applicazioni VPP: Nel report presente in App client > App > [Nome app] > Stato dell'installazione del dispositivo le applicazioni VPP distribuite nei dispositivi registrati dall'utente vengono segnalate come "non riuscite", anche quando l'applicazione viene distribuita correttamente nel dispositivo. 
 - Segnalazione applicazioni: per i tipi di app non supportati dalla registrazione utenti, i report possono inviare messaggi di errore irrilevanti. 
 - Esperienza dell'app Portale aziendale: gli utenti visualizzano tutte le applicazioni che sono loro destinate indipendentemente dal fatto che tali tipi di applicazioni siano supportati per i dispositivi registrati dall'utente. 
-- Esperienza dell'app Portale aziendale: gli utenti visualizzano lo stesso testo che indica ciò che le organizzazioni possono e non possono vedere per la registrazione di utenti e dispositivi.
-- Se un utente seleziona "My organization owns this device" (La mia organizzazione è proprietaria di questo dispositivo) durante la registrazione, il dispositivo viene comunque identificato come personale in Intune se non diversamente modificato nella console di amministrazione o tramite Graph. 
-- Destinazione della registrazione: iPadOs non è elencato nel selettore di piattaforma. iPadOS è supportato nella versione di anteprima, ma non è dichiarato in modo esplicito nella console di amministrazione. 
+- Esperienza dell'app Portale aziendale: Gli utenti visualizzano lo stesso testo che specifica quali elementi relativi alla registrazione di utenti e dispositivi possono essere visualizzati dalle organizzazioni se l'amministratore ha personalizzato il testo che specifica gli elementi che le organizzazioni non possono visualizzare.
 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Configurare la registrazione utente iOS e iPadOS](ios-user-enrollment.md)
+[Configurare la registrazione utente iOS/iPadOS e iPadOS](ios-user-enrollment.md)

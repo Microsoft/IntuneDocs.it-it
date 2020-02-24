@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812486"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415553"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
@@ -35,8 +35,8 @@ Questo documento illustra sia la reimpostazione del passcode a livello di dispos
 | ---- | ---- |
 | Dispositivi Android versione 6.x o precedenti | Sì |
 | Dispositivi Android Enterprise registrati come Proprietario del dispositivo | Sì |
-| Dispositivi iOS | Sì |
-| Dispositivi iOS registrati con la registrazione utenti | No |
+| Dispositivi iOS/iPadOS | Sì |
+| Dispositivi iOS/iPadOS registrati con Registrazione utente | No |
 | Dispositivi Android registrati con un profilo di lavoro | No |
 | Dispositivi Android versione 7.0 o successive | No |
 | macOS | No |
@@ -68,9 +68,9 @@ I dispositivi Android Enterprise supportati registrati con un profilo di lavoro 
 Nei dispositivi Android Enterprise che eseguono la versione 8. x o successive, e registrati con un profilo di lavoro, gli utenti finali vengono avvisati di attivare la reimpostazione del passcode non appena la registrazione viene completata. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
 
 
-## <a name="remove-ios-passcodes"></a>Rimuovere i passcode iOS
+## <a name="remove-iosipados-passcodes"></a>Rimuovere i passcode iOS/iPadOS
 
-Anziché reimpostati, i passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di definire un nuovo passcode nelle impostazioni.
+Anziché essere reimpostati, i passcode vengono rimossi dai dispositivi iOS/iPadOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di definire un nuovo passcode nelle impostazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

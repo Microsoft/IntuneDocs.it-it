@@ -1,7 +1,7 @@
 ---
 title: Che cos'è la registrazione dei dispositivi di Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Informazioni sulla registrazione di dispositivi iOS, Android e Windows.
+description: Informazioni sulla registrazione di dispositivi iOS/iPadOS, Android e Windows.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547843"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415339"
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Come si può vedere nelle tabelle seguenti, sono disponibili diversi metodi per 
 
 Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autorizzati alla registrazione in Intune. Tuttavia, è possibile [limitare i dispositivi in base alla piattaforma](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>Metodi di registrazione per iOS
+## <a name="iosipados-enrollment-methods"></a>Metodi di registrazione iOS/iPadOS
 
 | **Metodo** | **Ripristino necessario** | [**Affinità utente**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Bloccato** | **Informazioni dettagliate** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autoriz
 Il metodo Bring Your Own Device (BYOD) è applicabile a telefoni, tablet e PC di proprietà personale. Per registrare i dispositivi BYOD, gli utenti installano ed eseguono l'app Portale aziendale. Questo programma consente agli utenti di accedere a risorse aziendali come la posta elettronica.
 
 ## <a name="corporate-owned-device"></a>Dispositivo di proprietà dell'azienda
-I [dispositivi di proprietà dell'azienda](corporate-identifiers-add.md) includono telefoni, tablet e PC di proprietà dell'organizzazione distribuiti al personale. La registrazione dei dispositivi di proprietà dell'azienda rende possibili scenari di gestione come la registrazione automatica, i dispositivi condivisi o i requisiti di registrazione pre-autorizzati. Un metodo comunemente usato dagli amministratori o dai manager per la registrazione dei dispositivi di proprietà dell'azienda è l'uso del manager di registrazione dispositivi. I dispositivi iOS possono essere registrati direttamente tramite gli strumenti DEP (Device Enrollment Program) offerti da Apple. È possibile identificare e contrassegnare come dispositivi di proprietà dell'azienda anche i dispositivi con numero IMEI.
+I [dispositivi di proprietà dell'azienda](corporate-identifiers-add.md) includono telefoni, tablet e PC di proprietà dell'organizzazione distribuiti al personale. La registrazione dei dispositivi di proprietà dell'azienda rende possibili scenari di gestione come la registrazione automatica, i dispositivi condivisi o i requisiti di registrazione pre-autorizzati. Un metodo comunemente usato dagli amministratori o dai manager per la registrazione dei dispositivi di proprietà dell'azienda è l'uso del manager di registrazione dispositivi. I dispositivi iOS/iPadOS possono essere registrati direttamente tramite gli strumenti DEP (Device Enrollment Program) offerti da Apple. È possibile identificare e contrassegnare come dispositivi di proprietà dell'azienda anche i dispositivi con numero IMEI.
 
 ### <a name="device-enrollment-manager"></a>Manager di registrazione dispositivi
 Il manager di registrazione dispositivi (DEM, Device Enrollment Manager) è un account utente speciale usato per registrare e gestire più dispositivi di proprietà dell'azienda. I manager possono installare il Portale aziendale e registrare molti dispositivi senza utente associato. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Altre informazioni su [DEM](device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programma di registrazione del dispositivo mobile di Apple
-La gestione di Apple Device Enrollment Program (DEP) consente di creare e distribuire i criteri in modalità wireless ai dispositivi iOS e macOS acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione. Questo metodo supporta la modalità con supervisione iOS, che abilita la configurazione del dispositivo con funzionalità specifiche.
+La gestione DEP di Apple (Device Enrollment Program) consente di creare e distribuire i criteri in modalità wireless ai dispositivi iOS/iPadOS e macOS acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione. Questo metodo supporta la modalità con supervisione iOS/iPadOS, che abilita la configurazione del dispositivo con funzionalità specifiche.
 
-Per altre informazioni sulla registrazione DEP iOS, vedere:
+Altre informazioni sulla registrazione DEP iOS/iPadOS:
 
-- [Scegliere come registrare i dispositivi iOS](ios-enroll.md)
-- [Registrare dispositivi iOS con Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+- [Scegliere come registrare i dispositivi iOS/iPadOS](ios-enroll.md)
+- [Registrare i dispositivi iOS con Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 Gli amministratori IT usano Apple Configurator, tramite USB, per preparare manualmente ogni dispositivo di proprietà dell'azienda per la registrazione con Assistente configurazione. L'amministratore IT crea un profilo di registrazione e lo esporta in Apple Configurator. Quando gli utenti ricevono i dispositivi, devono eseguire Assistente configurazione per registrarli. Questo metodo supporta la modalità **con supervisione iOS**, che a sua volta abilita le funzionalità seguenti:
 - Registrazione bloccata
 - Modalità tutto schermo e altre configurazioni avanzate e limitazioni
 
-Per altre informazioni sulla registrazione di iOS Apple Configurator con Assistente configurazione, vedere:
+Altre informazioni sulla registrazione di iOS/iPadOS Apple Configurator con Assistente configurazione:
 
-- [Stabilire come registrare i dispositivi iOS](ios-enroll.md)
-- [Registrare dispositivi iOS con Configurator e Assistente configurazione](apple-configurator-enroll-ios.md)
+- [Decidere come registrare i dispositivi iOS/iPadOS](ios-enroll.md)
+- [Registrare i dispositivi iOS/iPadOS con Configurator e Assistente configurazione](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 Per la registrazione diretta, l'amministratore deve registrare manualmente ogni dispositivo creando criteri di registrazione ed esportandoli in Apple Configurator. I dispositivi di proprietà dell'azienda connessi tramite USB vengono registrati direttamente e non richiedono la cancellazione. I dispositivi vengono gestiti come dispositivi senza utente associato. Non vengono bloccati né supervisionati e non possono supportare l'accesso condizionale, il rilevamento jailbreak o la gestione di applicazioni mobili.
 
-Per altre informazioni sulla registrazione di iOS, vedere:
+Per altre informazioni sulla registrazione iOS/iPadOS, vedere:
 
-- [Stabilire come registrare i dispositivi iOS](ios-enroll.md)
-- [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-enroll-ios.md) (Registrare dispositivi iOS con Configurator e registrazione diretta)
+- [Decidere come registrare i dispositivi iOS/iPadOS](ios-enroll.md)
+- [Registrare i dispositivi iOS/iPadOS con Configurator e la registrazione diretta](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Pulizia dei dispositivi mobili dopo la scadenza del certificato MDM
 

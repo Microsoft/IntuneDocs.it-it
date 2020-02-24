@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955372"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414250"
 ---
 # <a name="categorize-devices-into-groups"></a>Raggruppare i dispositivi in categorie
 
@@ -32,7 +32,7 @@ Per semplificare la gestione dei dispositivi, è possibile usare le categorie di
 
 Le categorie dei dispositivi usano il flusso di lavoro seguente:
 1. Creare categorie che gli utenti possano scegliere quando registrano i dispositivi.
-2. Quando gli utenti registrano il loro dispositivo iOS e Android, devono scegliere una categoria nell'elenco delle categorie configurate. Per assegnare una categoria a un dispositivo Windows, gli utenti devono utilizzare il sito Web Portale aziendale.
+2. Quando gli utenti registrano un dispositivo iOS/iPadOS e Android, devono scegliere una categoria nell'elenco delle categorie configurate. Per assegnare una categoria a un dispositivo Windows, gli utenti devono utilizzare il sito Web Portale aziendale.
 3. È quindi possibile distribuire app e criteri a tali gruppi.
 
 È possibile creare qualsiasi categoria di dispositivi desiderata. Ad esempio:
@@ -76,13 +76,13 @@ Se la colonna **Categoria del dispositivo** non è visualizzata, selezionare **C
 
 ## <a name="after-you-configure-device-groups"></a>Dopo la configurazione dei gruppi di dispositivi
 
-Quando gli utenti registrano il loro dispositivo iOS e Android devono scegliere una categoria nell'elenco delle categorie configurate. Dopo che hanno scelto una categoria e completato la registrazione, il loro dispositivo viene aggiunto al gruppo di dispositivi di Intune o al gruppo di sicurezza di Active Directory corrispondente alla categoria selezionata.
+Quando gli utenti registrano il dispositivo iOS/iPadOS e Android, devono scegliere una categoria nell'elenco delle categorie configurate. Dopo che hanno scelto una categoria e completato la registrazione, il loro dispositivo viene aggiunto al gruppo di dispositivi di Intune o al gruppo di sicurezza di Active Directory corrispondente alla categoria selezionata.
 
 Gli utenti in Windows devono usare il sito Web Portale aziendale per selezionare una categoria.
 
 Indipendentemente dalla piattaforma, gli utenti possono sempre passare a portal.manage.microsoft.com dopo la registrazione del dispositivo. Richiedere all'utente di accedere al sito Web Portale aziendale e passare a **Dispositivi personali**. L'utente potrà scegliere un dispositivo registrato elencato nella pagina e quindi selezionare una categoria.
 
-Dopo la scelta della categoria, il dispositivo viene automaticamente aggiunto al gruppo corrispondente creato. Se un dispositivo è già registrato prima che vengano configurate le categorie, l'utente visualizza una notifica sul dispositivo nel sito Web Portale aziendale. Ciò comunica all'utente di selezionare una categoria la volta successiva che accede all'app Portale aziendale su iOS o Android.
+Dopo la scelta della categoria, il dispositivo viene automaticamente aggiunto al gruppo corrispondente creato. Se un dispositivo è già registrato prima che vengano configurate le categorie, l'utente visualizza una notifica sul dispositivo nel sito Web Portale aziendale. Viene così comunicato all'utente che la volta successiva che eseguirà l'accesso all'app Portale aziendale in iOS/iPadOS o Android dovrà selezionare una categoria.
 
 ## <a name="further-information"></a>Altre informazioni
 - È possibile modificare una categoria di dispositivo nel portale di Azure, ma è necessario aggiornare manualmente i gruppi di sicurezza di Azure AD che fanno riferimento a questa categoria.
