@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: Aggiungere app specifiche
           items:
-            - name: App Portale aziendale
+            - name: App Portale aziendale - Autopilot
+              href: store-apps-company-portal-autopilot.md
+            - name: App Portale aziendale - Download
               href: store-apps-company-portal-app.md
             - name: Microsoft Edge per Windows 10
               href: apps-windows-edge.md
             - name: Microsoft Edge per macOS
               href: apps-edge-macos.md
+            - name: Microsoft Defender ATP per macOS
+              href: apps-advanced-threat-protection-macos.md
         - name: Script PowerShell
           href: intune-management-extension.md
     - name: Assegnare le app
