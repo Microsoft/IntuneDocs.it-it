@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414050"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514694"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app
 
@@ -53,7 +53,7 @@ Quando in un'applicazione è presente un account gestito:
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio seguente.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** ottiene i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y venga gestito dai criteri di protezione delle app, è necessario rimuovere l'account utente associato all'Azienda X e aggiungere l'account associato all'Azienda Y.
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima**  dell'**Azienda Y**. L'account associato all'**Azienda X** ottiene i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y venga gestito dai criteri di protezione delle app, è necessario rimuovere l'account utente associato all'Azienda X e aggiungere l'account associato all'Azienda Y.
 
 ### <a name="add-a-second-account"></a>Aggiungere un secondo account
 
@@ -81,4 +81,4 @@ Sono supportati i tipi di file seguenti:
 |Il formato pfile è un formato "wrapper" generico per i file protetti che incapsula il contenuto crittografato e le licenze Azure Information Protection e può essere usato per proteggere qualsiasi tipo di file.|
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](end-user-mam-apps-ios.md)
+[Aspettative dalla gestione dell'app per iOS/iPadOS con criteri di protezione delle app](end-user-mam-apps-ios.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505132"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514932"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinare i requisiti degli scenari per i casi d'uso
 
@@ -35,13 +35,13 @@ Possono anche essere presenti gruppi dell'organizzazione per lo scenario relativ
 
 Di seguito sono riportati alcuni esempi di requisiti per i casi d'uso di un'organizzazione, con diversi set di requisiti per ogni caso d'uso e caso d'uso secondario, gruppo dell'organizzazione e piattaforma per dispositivi mobili. È anche possibile usare la tabella seguente per immettere i requisiti per i casi d'uso della propria organizzazione:
 
-| **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** | **Requisiti** |
+| **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| Aziendale | Information Worker | HR, finanza | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                          
-| Aziendale | Dirigenti | HR, finanza | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                         
+| Aziendale | Information Worker | HR, finanza | iOS/iPadOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                          
+| Aziendale | Dirigenti | HR, finanza | iOS/iPadOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                         
 | Aziendale | Modalità tutto schermo | Vendita al dettaglio | Android | Impostazioni del dispositivo, profili, app |
-| BYOD | Information Worker | Marketing, vendite | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                         
-| BYOD | Dirigenti | Marketing, vendite | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |
+| BYOD | Information Worker | Marketing, vendite | iOS/iPadOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                         
+| BYOD | Dirigenti | Marketing, vendite | iOS/iPadOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |
 
 È anche possibile [scaricare un modello della tabella precedente](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) per immettere i requisiti dei casi d'uso e dei casi d'uso secondari della propria organizzazione.
 
