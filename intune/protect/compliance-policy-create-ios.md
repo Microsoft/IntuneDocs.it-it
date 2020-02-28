@@ -1,6 +1,6 @@
 ---
-title: Impostazioni di conformità di iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione della conformità per i dispositivi iOS in Microsoft Intune. Richiedere un indirizzo di posta elettronica, controllare dispositivi jailbroken o rooted, impostare la versione minima e massima del sistema consentita, impostare le restrizioni relative alla password, inclusa la lunghezza della password e il periodo di inattività del dispositivo, creare restrizioni per le app e così via.
+title: Impostazioni di conformità di iOS/iPadOS in Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare un elenco di tutte le impostazioni che è possibile usare durante l'impostazione della conformità per i dispositivi iOS/iPadOS in Microsoft Intune. Richiedere un indirizzo di posta elettronica, controllare dispositivi jailbroken o rooted, impostare la versione minima e massima del sistema consentita, impostare le restrizioni relative alla password, inclusa la lunghezza della password e il periodo di inattività del dispositivo, creare restrizioni per le app e così via.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074632"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514031"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di iOS per contrassegnare un dispositivo come conforme o non conforme in Intune
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Impostazioni di iOS/iPadOS per contrassegnare un dispositivo come conforme o non conforme in Intune
 
-Questo articolo elenca e descrive le diverse impostazioni di conformità che è possibile configurare nei dispositivi iOS in Intune. Nella soluzione di gestione di dispositivi mobili (MDM), usare queste impostazioni per richiedere un indirizzo di posta elettronica, contrassegnare i dispositivi rooted (Jailbroken) come non conformi, impostare un livello di rischio consentito, impostare la scadenza delle password e così via.
+Questo articolo elenca e descrive le diverse impostazioni di conformità che è possibile configurare nei dispositivi iOS/iPadOS in Intune. Nella soluzione di gestione di dispositivi mobili (MDM), usare queste impostazioni per richiedere un indirizzo di posta elettronica, contrassegnare i dispositivi rooted (Jailbroken) come non conformi, impostare un livello di rischio consentito, impostare la scadenza delle password e così via.
 
 Questa funzionalità si applica a:
 
@@ -86,11 +86,11 @@ Per informazioni dettagliate sui profili di posta elettronica, vedere [Configura
 ### <a name="password"></a>Password
 
 > [!NOTE]
-> Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode. Quando viene impostato un passcode per il dispositivo iOS, viene avviato automaticamente il processo di crittografia. Il dispositivo resta crittografato fino a quando non viene disabilitato il passcode.
+> Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS/iPadOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode. Quando viene impostato un passcode per il dispositivo iOS/iPadOS, viene avviato automaticamente il processo di crittografia. Il dispositivo resta crittografato fino a quando non viene disabilitato il passcode.
 
 - **Richiedi una password per sbloccare i dispositivi mobili**:  
   - **Non configurato** (*impostazione predefinita*): questa impostazione non viene valutata per la conformità o la non conformità.  
-  - **Rendi obbligatorio**: gli utenti devono immettere una password prima di accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
+  - **Rendi obbligatorio**: gli utenti devono immettere una password prima di accedere al dispositivo. I dispositivi iOS/iPadOS che usano una password vengono crittografati.
 
 - **Password semplici**:  
   - **Non configurato** (*impostazione predefinita*) - Gli utenti possono creare password semplici, ad esempio **1234** o **1111**.
@@ -125,7 +125,7 @@ Per informazioni dettagliate sui profili di posta elettronica, vedere [Configura
   È possibile creare restrizioni per le app aggiungendo i relativi ID bundle ai criteri. Se in un dispositivo è installata l'app, il dispositivo verrà contrassegnato come non conforme.
 
   - **Nome app**: immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle.
-  - **ID bundle dell'app**: immettere l'identificatore univoco del bundle assegnato dal provider dell'app. Per trovare l'ID bundle, vedere [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (Come trovare l'ID bundle per app iOS). Si aprirà un altro sito Web Microsoft.  
+  - **ID bundle dell'app**: immettere l'identificatore univoco del bundle assegnato dal provider dell'app. Per trovare l'ID bundle, vedere [Come trovare l'ID bundle per app iOS/iPadOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app). Si aprirà un altro sito Web Microsoft.  
 
 ## <a name="next-steps"></a>Passaggi successivi
 

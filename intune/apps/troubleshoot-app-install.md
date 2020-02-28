@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540980"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511652"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Risolvere i problemi di installazione delle app
 
@@ -50,7 +50,7 @@ Intune offre informazioni dettagliate per la risoluzione dei problemi delle app 
     > La stessa app potrebbe essere assegnata a più gruppi, ma con diverse azioni previste (finalità) per l'app. Ad esempio, la finalità risolta per un'app indicherà **esclusa** se l'app viene esclusa per un utente durante l'assegnazione di app. Per altre informazioni, vedere [Modalità di risoluzione dei conflitti tra finalità di app](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Se si verifica un errore di installazione per un'app obbligatoria, l'utente o il supporto tecnico sarà in grado di sincronizzare il dispositivo e ritentare l'installazione dell'app.
 
-I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Errori di installazione delle app Android](app-install-error-codes.md#android-app-installation-errors) ed [Errori di installazione delle app iOS](app-install-error-codes.md#ios-app-installation-errors).
+I dettagli dell'errore di installazione dell'app indicheranno il problema. È possibile usare questi dettagli per determinare l'azione migliore da intraprendere per risolvere il problema. Per altre informazioni sulla risoluzione dei problemi di installazione delle app, vedere [Errori di installazione delle app Android](app-install-error-codes.md#android-app-installation-errors) ed [Errori di installazione delle app iOS](app-install-error-codes.md#ios-and-ipados-app-installation-errors).
 
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -65,7 +65,7 @@ In caso di problemi durante l'installazione delle app, è consigliabile prendere
   3. Passare a [Utenti di Azure Active Directory](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Selezionare l'utente interessato e fare clic su **Dispositivi**.
   5. Se l'utente supera il limite impostato, eliminare tutti i record obsoleti che non sono più necessari.
-- Per i dispositivi DEP iOS, assicurarsi che l'utente sia elencato come **Registrato dall'utente** nel riquadro di panoramica del dispositivo Intune. Se viene visualizzato NA, distribuire un criterio di configurazione per il Portale aziendale Intune. Per altre informazioni, vedere [Configurare l'app Portale aziendale](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Per i dispositivi DEP iOS/iPadOS, assicurarsi che l'utente sia elencato come **Registrato dall'utente** nel riquadro Panoramica del dispositivo Intune. Se viene visualizzato NA, distribuire un criterio di configurazione per il Portale aziendale Intune. Per altre informazioni, vedere [Configurare l'app Portale aziendale](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Risoluzione dei problemi di installazione delle app Win32
 

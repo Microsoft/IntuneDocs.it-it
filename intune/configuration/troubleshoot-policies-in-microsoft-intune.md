@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 9acb934cdf67aae9c18091a0340f27de635b5399
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059279"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511018"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Risolvere problemi relativi a criteri e profili in Intune
 
@@ -31,13 +31,13 @@ Microsoft Intune include alcune funzioni predefinite per la risoluzione dei prob
 
 Questo articolo elenca alcune tecniche di risoluzione dei problemi comuni e descrive alcuni problemi che possono verificarsi.
 
-## <a name="check-tenant-status"></a>Verificare lo stato del tenant
+## <a name="check-tenant-status"></a>Controllare lo stato del tenant
 
-Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare che la sottoscrizione sia attiva. È inoltre possibile visualizzare i dettagli per gli eventi imprevisti e gli avvisi attivi che potrebbero influisca sulla distribuzione del profilo o del criterio.
+Controllare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare che la sottoscrizione sia attiva. È anche possibile visualizzare gli avvisi e i dettagli degli eventi imprevisti attivi che potrebbero influire sulla distribuzione del profilo o dei criteri.
 
 ## <a name="use-built-in-troubleshooting"></a>Usare la risoluzione dei problemi predefinita
 
-1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)selezionare **risoluzione dei problemi e supporto**:
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) selezionare **Risoluzione dei problemi e supporto**:
 
     ![In Intune passare a Guida e supporto tecnico e selezionare Risoluzione dei problemi](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -59,15 +59,15 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
         - I criteri di protezione delle app, per la gestione delle applicazioni per dispositivi mobili, non richiedono che i dispositivi siano registrati. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](../apps/app-protection-policies.md).
 
-    - **Tipo di join per Azure AD**: deve essere impostato su **Area di lavoro** oppure **AzureAD**.
+    - **Tipo di join per Azure AD**: deve essere impostato su **Area di lavoro** oppure su **AzureAD**.
  
         - Se la colonna ha valore **Non registrato**, potrebbe esserci un problema con la registrazione. In genere, il problema si risolve annullando ed eseguendo nuovamente la registrazione del dispositivo.
 
-    - **Conforme con Intune**: deve essere **Sì**. Se viene visualizzato **No**, potrebbe esserci un problema con i criteri di conformità o il dispositivo non si connette al servizio Intune. Ad esempio, il dispositivo potrebbe essere spento o non avere una connessione di rete. Infine, dopo 30 giorni il dispositivo diventa non conforme.
+    - **Conforme con Intune**: deve essere impostato su **Sì**. Se viene visualizzato **No**, potrebbe esserci un problema con i criteri di conformità o il dispositivo non si connette al servizio Intune. Ad esempio, il dispositivo potrebbe essere spento o non avere una connessione di rete. Infine, dopo 30 giorni il dispositivo diventa non conforme.
 
         Per altre informazioni, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](../protect/device-compliance-get-started.md).
 
-    - **Conforme con Azure AD**: deve essere **Sì**. Se viene visualizzato **No**, potrebbe esserci un problema con i criteri di conformità o il dispositivo non si connette al servizio Intune. Ad esempio, il dispositivo potrebbe essere spento o non avere una connessione di rete. Infine, dopo 30 giorni il dispositivo diventa non conforme.
+    - **Conforme con Azure AD**: deve essere impostato su **Sì**. Se viene visualizzato **No**, potrebbe esserci un problema con i criteri di conformità o il dispositivo non si connette al servizio Intune. Ad esempio, il dispositivo potrebbe essere spento o non avere una connessione di rete. Infine, dopo 30 giorni il dispositivo diventa non conforme.
 
         Per altre informazioni, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](../protect/device-compliance-get-started.md).
 
@@ -77,7 +77,7 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
         - Per forzare la sincronizzazione:
             - Nei dispositivi Android aprire l'app Portale aziendale > **Dispositivi** > scegliere il dispositivo dall'elenco > **Controlla le impostazioni del dispositivo**.
-            - Nei dispositivi iOS aprire l'app Portale aziendale > **Dispositivi** > scegliere il dispositivo dall'elenco > **Verifica le impostazioni**.
+            - Nei dispositivi iOS/iPadOS aprire l'app Portale aziendale > **Dispositivi** > scegliere il dispositivo dall'elenco > **Verifica le impostazioni**.
 
         - Nei dispositivi Windows aprire **Impostazioni** > **Account** > **Access Work or School (Accedi all'azienda o all'istituto di istruzione)** > selezionare l'account o la registrazione MDM > **Informazioni** > **Sincronizzazione**.
 
@@ -91,9 +91,9 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
         **Stati dei criteri**:
 
-        - **Non applicabile**: questi criteri non sono supportati in questa piattaforma. Ad esempio, i criteri iOS non funzionano in Android. I criteri Samsung KNOX non funzionano nei dispositivi Windows.
+        - **Non applicabile**: i criteri non sono supportati nella piattaforma. Ad esempio i criteri iOS/iPadOS non funzionano in Android. I criteri Samsung KNOX non funzionano nei dispositivi Windows.
         - **Conflitto**: nel dispositivo è presente un'impostazione di cui Intune non può eseguire l'override. Oppure, sono stati distribuiti due criteri con la stessa impostazione che usa valori diversi.
-        - **In sospeso**: il dispositivo non è stato sincronizzato in Intune per ottenere i criteri. Oppure, il dispositivo ha ricevuto i criteri, ma non ha segnalato lo stato a Intune.
+        - **Pending**: il dispositivo non è stato sincronizzato in Intune per ottenere i criteri. Oppure, il dispositivo ha ricevuto i criteri, ma non ha segnalato lo stato a Intune.
         - **Errori**: cercare gli errori e le risoluzioni possibili in [Risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune](../fundamentals/troubleshoot-company-resource-access-problems.md).
 
         **Collegamenti utili**: 
@@ -108,11 +108,11 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
     Vengono elencati i profili di tutti i dispositivi. Ogni profilo ha uno **Stato**. Lo stato si applica quando tutti i profili assegnati, tra cui le restrizioni e i requisiti hardware e del sistema operativo, vengono considerati insieme. Gli stati possibili comprendono:
 
-    - **Conforme**: il dispositivo ha ricevuto il profilo e segnala a Intune che è conforme all'impostazione.
+    - **Conforme**: il dispositivo riceve il profilo e segnala a Intune che è conforme all'impostazione.
 
-    - **Non applicabile**: l'impostazione del profilo non è applicabile. Ad esempio, è possibile che le impostazioni di posta elettronica per i dispositivi iOS non si applichino a un dispositivo Android.
+    - **Non applicabile**: l'impostazione del profilo non è applicabile. È ad esempio possibile che le impostazioni di posta elettronica per i dispositivi iOS/iPadOS non si applichino a un dispositivo Android.
 
-    - **In sospeso**: il profilo viene inviato al dispositivo, ma lo stato non viene segnalato a Intune. Ad esempio, la crittografia in Android richiede l'abilitazione da parte dell'utente e può quindi comparire come in sospeso.
+    - **Pending**: il profilo viene inviato al dispositivo, ma lo stato non viene segnalato a Intune. Ad esempio, la crittografia in Android richiede l'abilitazione da parte dell'utente e può quindi comparire come in sospeso.
 
 **Collegamento utile**: [Monitorare i profili di configurazione dei dispositivi in Microsoft Intune](../configuration/device-profile-monitor.md)
 
@@ -121,14 +121,14 @@ Verificare lo [stato del tenant](../fundamentals/tenant-status.md) e verificare 
 
 ## <a name="policy-troubleshooting-resources"></a>Risorse per la risoluzione dei problemi relativi ai criteri
 
-- [Risoluzione dei problemi relativi ai criteri iOS o Android che non si applicano ai dispositivi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (apre un altro sito Microsoft)
-- [Risoluzione degli errori dei criteri di Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (apre un Blog)
-- [Risolvere i problemi delle impostazioni personalizzate CSP per Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (apre un altro sito Microsoft)
-- [Criteri MDM di Windows 10 criteri di gruppo vs Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (apre un altro sito Microsoft)
+- [Risoluzione dei problemi relativi ai criteri iOS/iPadOS o Android che non si applicano ai dispositivi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (apre un altro sito Microsoft)
+- [Risoluzione degli errori relativi ai criteri di Intune in Windows 10](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (apre un blog)
+- [Risolvere i problemi relativi alle impostazioni personalizzate CSP per Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (apre un altro sito Microsoft)
+- [Criteri di gruppo di Windows 10 e criteri MDM di Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (apre un altro sito Microsoft)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Avviso: Il salvataggio delle regole di accesso in Exchange non è riuscito
 
-**Problema**: viene visualizzato l'avviso **Il salvataggio delle regole di accesso in Exchange non è riuscito**  nella console di amministrazione.
+**Problema**: viene visualizzato l'avviso **Il salvataggio delle regole di accesso in Exchange non è riuscito** nella console di amministrazione.
 
 Se sono stati creati criteri nell'area di lavoro Criteri di Exchange locale con la console di amministrazione ma si usa Office 365, le impostazioni dei criteri configurate non vengono applicate da Intune. Si noti l'origine dei criteri nell'avviso. Nell'area di lavoro Criteri di Exchange locale eliminare le regole precedenti. Le regole precedenti sono regole globali di Exchange in Intune per Exchange locale e non sono rilevanti per Office 365. In seguito, creare nuovi criteri per Office 365.
 
@@ -138,13 +138,13 @@ L'articolo [Risolvere i problemi di Intune Exchange Connector locale](../protect
 
 I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo che i criteri sono stati configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 e poi si prova a ridurlo a 4. Vengono applicati al dispositivo i criteri più restrittivi.
 
-I dispositivi Windows 10 non possono rimuovere i criteri di sicurezza quando si annulla l'assegnazione del criterio (Arresta distribuzione). Potrebbe essere necessario lasciare i criteri assegnati, quindi modificare di nuovo le impostazioni di sicurezza sui valori predefiniti.
+I dispositivi Windows 10 non possono rimuovere i criteri di sicurezza quando si annulla l'assegnazione dei criteri (arresto della distribuzione). Potrebbe essere necessario lasciare i criteri assegnati, quindi modificare di nuovo le impostazioni di sicurezza sui valori predefiniti.
 
 A seconda della piattaforma del dispositivo, se si vogliono modificare i criteri in un valore meno sicuro, può essere necessario reimpostare i criteri di sicurezza.
 
 Ad esempio, in Windows 8.1, sul desktop scorrere verso destra per aprire la barra **Accessi**. Scegliere **Impostazioni** > **Pannello di controllo** > **Account utente**. A sinistra, selezionare il collegamento **Reimposta criteri di sicurezza** e scegliere **Reimposta criteri**.
 
-È possibile che altre piattaforme, ad esempio dispositivi Android, iOS e Windows Phone 8.1, debbano essere ritirati e registrati nuovamente per applicare criteri meno restrittivi.
+È possibile che altre piattaforme, ad esempio dispositivi Android, iOS/iPadOS e Windows Phone 8.1, debbano essere ritirate e registrate nuovamente per applicare criteri meno restrittivi.
 
 [Risolvere i problemi di registrazione dei dispositivi in Intune](../enrollment/troubleshoot-device-enrollment-in-intune.md) può rivelarsi una risorsa utile.
 

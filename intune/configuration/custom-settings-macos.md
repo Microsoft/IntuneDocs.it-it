@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506915"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511447"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Usare le impostazioni personalizzate per i dispositivi macOS in Microsoft Intune
 
@@ -34,7 +34,7 @@ Quando si usano dispositivi macOS, è possibile ottenere le impostazioni persona
 
 È possibile usare questi strumenti per esportare le impostazioni in un profilo di configurazione. In Intune si importa il file e quindi si assegna il profilo agli utenti e ai dispositivi macOS. Una volta assegnate, le impostazioni vengono distribuite. Creano anche una linea di base o standard per macOS nell'organizzazione.
 
-Questo articolo fornisce indicazioni sull'uso di Apple Configurator e Apple Profile Manager e descrive le proprietà che è possibile configurare.
+Questo articolo offre indicazioni sull'uso di Apple Configurator e Apple Profile Manager e descrive le proprietà che è possibile configurare.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -56,10 +56,10 @@ Questo articolo fornisce indicazioni sull'uso di Apple Configurator e Apple Prof
 
 ## <a name="custom-configuration-profile-settings"></a>Impostazioni del profilo di configurazione personalizzato
 
-- **Nome del profilo di configurazione personalizzato**: immettere un nome per i criteri. Questo nome viene visualizzato nel dispositivo e nello stato di Intune.
+- **Nome del profilo di configurazione personalizzato**: Immettere un nome per il criterio. Questo nome viene visualizzato nel dispositivo e nello stato di Intune.
 - **File del profilo di configurazione**: passare al profilo di configurazione creato usando Apple Configurator o Apple Profile Manager. Il file importato è visualizzato nell'area **Contenuti del file**.
 
-  È anche possibile aggiungere token di dispositivo ai file di `.mobileconfig`. I token del dispositivo vengono usati per aggiungere informazioni specifiche del dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `{{serialnumber}}`. Nel dispositivo il testo è simile a `123456789ABC`, che è univoco per ogni dispositivo. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceid` o qualsiasi altro valore specifico del dispositivo.
+  È anche possibile aggiungere token di dispositivo ai file `.mobileconfig`. I token del dispositivo vengono usati per aggiungere informazioni specifiche del dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `{{serialnumber}}`. Nel dispositivo il testo è simile a `123456789ABC`, che è univoco per ogni dispositivo. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceid` o qualsiasi altro valore specifico del dispositivo.
 
   > [!NOTE]
   > Le variabili non vengono convalidate nell'interfaccia utente e fanno distinzione tra maiuscole e minuscole. Di conseguenza possono essere visualizzati dei profili salvati con input non corretto. Ad esempio, se si immette `{{DeviceID}}` invece di `{{deviceid}}`, viene visualizzata la stringa letterale anziché l'ID univoco del dispositivo. Assicurarsi di immettere le informazioni corrette.
@@ -70,4 +70,4 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 
 Il profilo è stato creato, ma non è ancora operativo. È ora necessario [assegnare il profilo](device-profile-assign.md).
 
-Vedere come [creare il profilo nei dispositivi iOS](../custom-settings-ios.md).
+Vedere come [creare il profilo nei dispositivi iOS/iPadOS](../custom-settings-ios.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207061"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512501"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Impostazioni dei dispositivi Windows 10 e Windows Holographic per l'aggiunta di connessioni VPN con Intune
 
@@ -143,7 +143,7 @@ Per altre informazioni sulla creazione di XML EAP personalizzato, vedere [EAP co
 
   ![Selezionare i tre puntini e fare clic e trascinare per spostare il suffisso DNS](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Regole della tabella dei criteri di risoluzione**dei nomi: le regole della tabella dei criteri di risoluzione dei nomi definiscono il modo in cui DNS risolve i nomi quando si è connessi alla VPN. Dopo che è stata stabilita la connessione VPN, scegliere i server DNS usati dalla connessione.
+- **Regole della tabella dei criteri di risoluzione dei nomi**: le regole della tabella dei criteri di risoluzione dei nomi definiscono il modo in cui il DNS risolve i nomi quando si è connessi alla VPN. Dopo che è stata stabilita la connessione VPN, scegliere i server DNS usati dalla connessione.
 
   È possibile aggiungere alla tabella regole che includono il dominio, il server DNS, il proxy e altri dettagli per la risoluzione del dominio immesso. La connessione VPN usa queste regole quando gli utenti si connettono ai domini immessi.
 
@@ -185,4 +185,4 @@ Ad esempio, se l'utente è già connesso a un suffisso DNS attendibile, le attiv
 
 Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-Configurare le impostazioni VPN nei dispositivi [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md) e [macOS](vpn-settings-macos.md).
+Configurare le impostazioni VPN nei dispositivi [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md) e [macOS](vpn-settings-macos.md).

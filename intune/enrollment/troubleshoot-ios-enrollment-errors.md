@@ -1,7 +1,7 @@
 ---
-title: Risoluzione dei problemi di registrazione dei dispositivi iOS in Microsoft Intune
+title: Risoluzione dei problemi di registrazione dei dispositivi iOS/iPadOS in Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Suggerimenti per la risoluzione di alcuni dei problemi più comuni quando si registrano i dispositivi iOS in Intune.
+description: Suggerimenti per la risoluzione di alcuni dei problemi più comuni quando si registrano i dispositivi iOS/iPadOS in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,57 +17,57 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
-ms.translationtype: MTE75
+ms.openlocfilehash: a29fab4be6e2046b2c6757505001a7ba3455b8d6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885925"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514320"
 ---
-# <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Risolvere i problemi di registrazione dei dispositivi iOS in Microsoft Intune
+# <a name="troubleshoot-iosipados-device-enrollment-problems-in-microsoft-intune"></a>Risoluzione dei problemi di registrazione dei dispositivi iOS/iPadOS in Microsoft Intune
 
-Questo articolo aiuta gli amministratori di Intune a comprendere e risolvere i problemi durante la registrazione dei dispositivi iOS in Intune.
+Questo articolo aiuta gli amministratori di Intune a comprendere e risolvere i problemi durante la registrazione dei dispositivi iOS/iPadOS in Intune.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di iniziare la risoluzione dei problemi, è importante raccogliere alcune informazioni di base. Queste informazioni possono essere utili per comprendere meglio il problema e ridurre il tempo necessario per trovare una soluzione.
+Prima di iniziare la risoluzione dei problemi, è importante raccogliere alcune informazioni di base che possono essere utili per comprendere meglio il problema e ridurre il tempo necessario per trovare una soluzione.
 
-Raccogliere le seguenti informazioni sul problema:
+Raccogliere le informazioni seguenti sul problema:
 
 - Qual è il messaggio di errore esatto?
 - Dove viene visualizzato il messaggio di errore?
-- Quando è iniziato il problema? La registrazione è già stata elaborata?
-- Quale piattaforma (Android, iOS, Windows) presenta il problema?
-- Quanti utenti sono interessati? Tutti gli utenti sono interessati o solo alcuni?
-- Quanti dispositivi sono interessati? Tutti i dispositivi sono interessati o solo alcuni?
+- Quando è iniziato il problema? La registrazione ha mai funzionato?
+- Quale piattaforma (Android, iOS/iPadOS, Windows) presenta il problema?
+- Quanti utenti sono interessati? Sono interessati tutti gli utenti o solo alcuni?
+- Quanti dispositivi sono interessati? Sono interessati tutti i dispositivi o solo alcuni?
 - Che cos'è l'autorità MDM?
-- Come viene eseguita la registrazione? BYOD (Bring Your Own Device) o Apple Device Enrollment Program (DEP) con i profili di registrazione?
+- Come viene eseguita la registrazione? Si tratta di profili di registrazione BYOD (Bring Your Own Device) o Apple Device Enrollment Program (DEP)?
 
 ## <a name="error-messages"></a>Messaggi di errore
 
 ### <a name="profile-installation-failed-a-network-error-has-occurred"></a>Installazione profilo non riuscita. Si è verificato un errore di rete.
 
-**Motivo:** Si è verificato un problema non specificato con iOS nel dispositivo.
+**Motivo:** si è verificato un problema non specificato con iOS/iPadOS nel dispositivo.
 
 #### <a name="resolution"></a>Soluzione
 
-1. Per evitare la perdita di dati nei passaggi seguenti (il ripristino di iOS Elimina tutti i dati nel dispositivo), assicurarsi di eseguire il backup dei dati.
-2. Impostare il dispositivo in modalità di ripristino e quindi ripristinarlo. Assicurarsi di configurarlo come nuovo dispositivo. Per ulteriori informazioni su come ripristinare i dispositivi iOS, vedere [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
+1. Il ripristino di iOS/iPadOS elimina tutti i dati nel dispositivo. Per evitare quindi la perdita dei dati nei passaggi seguenti, assicurarsi di eseguire il backup dei dati.
+2. Impostare il dispositivo in modalità di ripristino, quindi ripristinarlo. Controllare che sia configurato come nuovo dispositivo. Per altre informazioni su come ripristinare i dispositivi iOS/iPadOS, vedere [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
 3. Registrare nuovamente il dispositivo.
 
 ### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>Installazione profilo non riuscita. Non è stato possibile stabilire una connessione al server.
 
-**Motivo:** Il tenant di Intune è configurato per consentire solo i dispositivi di proprietà dell'azienda. 
+**Motivo:** il tenant di Intune è configurato per consentire solo i dispositivi di proprietà dell'azienda. 
 
 #### <a name="resolution"></a>Soluzione
 1. Accedere al portale di Azure.
 2. Selezionare **Altri servizi**, cercare Intune e quindi selezionare **Intune**.
 3. Selezionare **Registrazione del dispositivo** > **Restrizioni registrazione**.
-4. In **restrizioni sul tipo di dispositivo**selezionare la restrizione che si vuole impostare > **Proprietà** > **selezionare le piattaforme** > selezionare **Consenti** per **iOS**, quindi fare clic su **OK**.
-5. Selezionare **Configura piattaforme**, selezionare **Consenti** per i dispositivi iOS di proprietà personale, quindi fare clic su **OK**.
+4. In **Restrizioni dei tipi di dispositivo** selezionare la restrizione che si vuole impostare > **Proprietà** > **Seleziona le piattaforme**> selezionare **Consenti** per**iOS**, quindi fare clic su **OK**.
+5. Selezionare **Configura le piattaforme**, selezionare **Consenti** per i dispositivi iOS/iPadOS di proprietà personale, quindi fare clic su **OK**.
 6. Registrare nuovamente il dispositivo.
 
-**Motivo:** I record CNAME necessari in DNS non esistono.
+**Motivo:** i record CNAME necessari in DNS non esistono.
 
 #### <a name="resolution"></a>Soluzione
 Creare record di risorse CNAME DNS per il dominio della società. Ad esempio, se il dominio della società è contoso.com, creare un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com.
@@ -86,66 +86,66 @@ Se la società usa più domini per le credenziali dell'utente, creare record CNA
 > [!NOTE]
 > La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non è stato propagato.
 
-**Motivo:** Si registra un dispositivo registrato in precedenza con un account utente diverso e l'utente precedente non è stato rimosso in modo appropriato da Intune.
+**Motivo:** si registra un dispositivo registrato precedentemente con un account utente diverso e l'utente precedente non è stato rimosso in modo appropriato da Intune.
 
 #### <a name="resolution"></a>Soluzione
-1. Annulla l'installazione del profilo corrente.
+1. Annullare l'installazione del profilo corrente.
 2. Aprire [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) in Safari.
 3. Registrare nuovamente il dispositivo.
 
 > [!NOTE]
-> Se la registrazione non riesce ancora, rimuovere i cookie in Safari (non bloccare i cookie), quindi registrare nuovamente il dispositivo.
+> Se il dispositivo non viene ancora registrato, rimuovere i cookie in Safari (non bloccare i cookie), quindi registrare nuovamente il dispositivo.
 
-**Motivo:** Il dispositivo è già registrato con un altro provider MDM.
+**Motivo:** il dispositivo è già registrato con un altro provider MDM.
 
 #### <a name="resolution"></a>Soluzione
-1. Aprire **Impostazioni** nel dispositivo iOS, passare a **Generale > Gestione dispositivi**.
+1. Aprire **Impostazioni** nel dispositivo iOS/iPadOS, passare a **Generale > Gestione dei dispositivi**.
 2. Rimuovere qualsiasi profilo di gestione esistente.
 3. Registrare nuovamente il dispositivo.
 
-**Motivo:** L'utente che sta provando a registrare il dispositivo non dispone di una licenza di Microsoft Intune.
+**Motivo:** l'utente che tenta di registrare il dispositivo non dispone di una licenza di Microsoft Intune.
 
 #### <a name="resolution"></a>Soluzione
-1. Passare all'interfaccia di [amministrazione di Office 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **utenti > utenti attivi**.
+1. Passare all'[interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **Utenti > Utenti attivi**.
 2. Selezionare l'account utente a cui si vuole assegnare una licenza utente di Intune e quindi scegliere **Licenze di prodotto > Modifica**.
-3. Passare alla posizione **on** per la licenza che si desidera assegnare all'utente e quindi scegliere **Salva**.
+3. **Attivare** la licenza che si vuole assegnare all'utente, quindi scegliere **Salva**.
 4. Registrare nuovamente il dispositivo.
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Questo servizio non è supportato. Nessun criterio di registrazione.
 
-**Motivo**: un certificato push MDM Apple non è configurato in Intune o il certificato non è valido. 
+**Motivo**: un certificato per le notifiche push MDM Apple non è configurato in Intune o il certificato non è valido. 
 
 #### <a name="resolution"></a>Soluzione
 
-- Se il certificato push MDM non è configurato, seguire i passaggi in [ottenere un certificato push MDM Apple](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
-- Se il certificato push MDM non è valido, attenersi alla procedura descritta in [rinnovo del certificato push MDM Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- Se il certificato per le notifiche push MDM non è configurato, attenersi alla procedura descritta in [Ottenere un certificato per le notifiche push MDM Apple](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
+- Se il certificato per le notifiche push MDM non è valido, attenersi alla procedura descritta in [Rinnovare il certificato per le notifiche push Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
 
 ### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Portale aziendale temporaneamente non disponibile. Si è verificato un problema nell'app Portale aziendale. Se il problema persiste, contattare l'amministratore del sistema.
 
-**Motivo:** L'app Portale aziendale non è aggiornata o è danneggiata.
+**Motivo:** l'app Portale aziendale non è aggiornata o è danneggiata.
 
 #### <a name="resolution"></a>Soluzione
 1. Rimuovere l'app Portale aziendale dal dispositivo.
 2. Scaricare e installare l'app **Portale aziendale Microsoft Intune** da **App Store**.
 3. Registrare nuovamente il dispositivo.
  > [!NOTE]
-    > Questo errore può verificarsi anche se l'utente tenta di registrare più dispositivi rispetto alla configurazione della registrazione del dispositivo. Seguire i passaggi di risoluzione per il **limite di dispositivo raggiunto** di seguito se questa procedura non risolve il problema.
+    > Questo errore può verificarsi anche se l'utente tenta di registrare più dispositivi rispetto a quanto consentito dalla registrazione dei dispositivi. Seguire i passaggi per la risoluzione descritti nella sezione **Numero massimo dispositivi raggiunto** riportata sotto, se questa procedura non risolve il problema.
 
 ### <a name="device-cap-reached"></a>Numero massimo dispositivi raggiunto
 
-**Motivo:** L'utente tenta di registrare più dispositivi rispetto al limite di registrazione del dispositivo.
+**Motivo:** l'utente tenta di registrare più dispositivi rispetto al limite di registrazione dei dispositivi.
 
 #### <a name="resolution"></a>Soluzione
-1. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **dispositivi** > **tutti i dispositivi**e verificare il numero di dispositivi registrati dall'utente.
+1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager ](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **Dispositivi** > **Tutti i dispositivi** e verificare il numero di dispositivi registrati dall'utente.
     > [!NOTE]
-    > È anche necessario avere l'accesso utente interessato al portale per gli [utenti di Intune](https://portal.manage.microsoft.com/) e controllare i dispositivi registrati. Potrebbero essere presenti dispositivi che vengono visualizzati nel [portale](https://portal.manage.microsoft.com/) per gli utenti di Intune ma non nel [portale di amministrazione di Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). tali dispositivi vengono conteggiati anche per il limite di registrazione del dispositivo.
-2. Nell'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)scegliere **dispositivi** > **restrizioni di registrazione** > verificare il limite di registrazione del dispositivo. Per impostazione predefinita, il limite è impostato su 15. 
-3. Se il numero di dispositivi registrati ha raggiunto il limite, rimuovere i dispositivi non necessari o aumentare il limite di registrazione del dispositivo. Poiché ogni dispositivo registrato usa una licenza di Intune, è consigliabile rimuovere sempre i dispositivi non necessari.
+    > È anche consigliabile accedere con l'utente interessato al [portale utenti di Intune](https://portal.manage.microsoft.com/) e controllare i dispositivi registrati. Potrebbero essere presenti dispositivi che vengono visualizzati nel [portale utenti di Intune](https://portal.manage.microsoft.com/) ma non nel [portale di amministrazione di Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Questi dispositivi vengono comunque conteggiati nel limite di registrazione dispositivi.
+2. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **Restrizioni registrazione** > verificare il limite di registrazione dispositivi. Per impostazione predefinita, il limite è impostato su 15. 
+3. Se il numero di dispositivi registrati ha raggiunto il limite, rimuovere i dispositivi non necessari o aumentare il limite di registrazione dispositivi. Poiché ogni dispositivo registrato usa una licenza di Intune, è consigliabile rimuovere sempre i dispositivi non necessari.
 4. Registrare nuovamente il dispositivo.
 
 ### <a name="workplace-join-failed"></a>Workplace Join non riuscito
 
-**Motivo:** L'app Portale aziendale non è aggiornata o è danneggiata.  
+**Motivo:** l'app Portale aziendale non è aggiornata o è danneggiata.  
 
 #### <a name="resolution"></a>Soluzione
 1. Rimuovere l'app Portale aziendale dal dispositivo.
@@ -154,56 +154,56 @@ Se la società usa più domini per le credenziali dell'utente, creare record CNA
 
 ### <a name="user-license-type-invalid"></a>Tipo di licenza utente non valido
 
-**Motivo:** L'utente che sta provando a registrare il dispositivo non dispone di una licenza di Intune valida.
+**Motivo:** l'utente che tenta di registrare il dispositivo non dispone di una licenza di Intune valida.
 
 #### <a name="resolution"></a>Soluzione
-1. Passare all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **utenti** > **utenti attivi**.
-2. Selezionare l'account utente interessato > **licenze prodotto** > **modifica**.
+1. Passare all'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **Utenti** > **Utenti attivi**.
+2. Selezionare l'account utente interessato > **Licenze di prodotto** > **Modifica**.
 3. Verificare che all'utente sia assegnata una licenza di Intune valida.
 4. Registrare nuovamente il dispositivo.
 
-### <a name="user-name-not-recognized-this-user-account-is-not-authorized-to-use-microsoft-intune-contact-your-system-administrator-if-you-think-you-have-received-this-message-in-error"></a>Nome utente non riconosciuto. Questo account utente non è autorizzato a utilizzare Microsoft Intune. Se si ritiene di aver ricevuto questo messaggio in errore, contattare l'amministratore di sistema.
+### <a name="user-name-not-recognized-this-user-account-is-not-authorized-to-use-microsoft-intune-contact-your-system-administrator-if-you-think-you-have-received-this-message-in-error"></a>Nome utente non riconosciuto. Questo account utente non è autorizzato a usare Microsoft Intune. Se si ritiene di aver ricevuto questo messaggio per errore, contattare l'amministratore di sistema.
 
-**Motivo:** L'utente che sta provando a registrare il dispositivo non dispone di una licenza di Intune valida.
+**Motivo:** l'utente che tenta di registrare il dispositivo non dispone di una licenza di Intune valida.
 
-1. Passare all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **utenti** > **utenti attivi**.
-2. Selezionare l'account utente interessato, quindi scegliere **licenze prodotto** > **modifica**.
+1. Passare all'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/homepage), quindi scegliere **Utenti** > **Utenti attivi**.
+2. Selezionare l'account utente interessato, quindi scegliere **Licenze di prodotto** > **Modifica**.
 3. Verificare che all'utente sia assegnata una licenza di Intune valida.
 4. Registrare nuovamente il dispositivo.
 
-### <a name="profile-installation-failed-the-new-mdm-payload-does-not-match-the-old-payload"></a>Installazione profilo non riuscita. Il nuovo payload MDM non corrisponde al payload precedente.
+### <a name="profile-installation-failed-the-new-mdm-payload-does-not-match-the-old-payload"></a>Installazione profilo non riuscita. Il nuovo payload di MDM non corrisponde al payload precedente.
 
-**Motivo:** Un profilo di gestione è già installato nel dispositivo.
+**Motivo:** nel dispositivo è già installato un profilo di gestione.
 
 #### <a name="resolution"></a>Soluzione
 
-1. Aprire **Impostazioni** nel dispositivo iOS > **generale** > la **gestione dei dispositivi**.
-2. Toccare il profilo di gestione esistente e toccare **Rimuovi Gestione**.
+1. Aprire **Impostazioni** nel dispositivo iOS/iPadOS > **Generale** >  **Gestione dei dispositivi**.
+2. Toccare il profilo di gestione esistente, quindi **Remove Management** (Rimuovi gestione).
 3. Registrare nuovamente il dispositivo.
 
 ### <a name="noenrollmentpolicy"></a>NoEnrollmentPolicy
 
-**Motivo:** Il certificato Apple Push Notification Service (APNs) è mancante, non valido o scaduto.
+**Motivo:** il certificato APN (Apple Push Notification Service) manca, non è valido o è scaduto.
 
 #### <a name="resolution"></a>Soluzione
-Verificare che in Intune sia stato aggiunto un certificato APNs valido. Per altre informazioni, vedere [configurare la registrazione iOS](ios-enroll.md).
+Verificare che in Intune sia stato aggiunto un certificato APN valido. Per altre informazioni, vedere [Configurare la registrazione di dispositivi iOS/iPadOS](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
-**Motivo:** Si è verificato un problema con il certificato del servizio Apple Push Notification (APNs) configurato in Intune.
+**Motivo:** si è verificato un problema con il certificato APN (Apple Push Notification Service) configurato in Intune.
 
 #### <a name="resolution"></a>Soluzione
-Rinnovare il certificato APNs e quindi eseguire di nuovo la registrazione del dispositivo.
+Rinnovare il certificato APN, quindi eseguire di nuovo la registrazione del dispositivo.
 
 > [!IMPORTANT]
-> Assicurarsi di rinnovare il certificato APNs. Non sostituire il certificato APNs. Se si sostituisce il certificato, è necessario registrare di nuovo tutti i dispositivi iOS in Intune. 
+> Assicurarsi di rinnovare il certificato APN. Non sostituire il certificato APN. Se si sostituisce il certificato, è necessario registrare di nuovo tutti i dispositivi iOS/iPadOS in Intune. 
 
-- Per rinnovare il certificato APNs in Intune autonomo, vedere [rinnovare il certificato push MDM Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Per rinnovare il certificato APNs in Office 365, vedere [creare un certificato APNs per dispositivi iOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
+- Per rinnovare il certificato APN in Intune autonomo, vedere [Rinnovare il certificato per le notifiche push MDM Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- Per rinnovare il certificato APN in Office 365, vedere [Creare un certificato APN per dispositivi iOS/iPadOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>Connessione XPC_TYPE_ERROR non valida
 
-Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo di registrazione, la registrazione ha esito negativo e viene visualizzato il messaggio di errore seguente:
+Quando si attiva un dispositivo gestito da DEP a cui è assegnato un profilo di registrazione, la registrazione ha esito negativo e viene visualizzato il messaggio di errore seguente:
 
 ```
 asciidoc
@@ -213,18 +213,18 @@ iPhone com.apple.accessibility.AccessibilityUIServer(MobileAsset)[288] <Notice>:
 iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR Connection invalid <error: 0x1a49aebc0> { count = 1, transaction: 0, voucher = 0x0, contents = "XPCErrorDescription" => <string: 0x1a49aee18> { length = 18, contents = "Connection invalid" }
 ```
 
-**Motivo:** Si è verificato un problema di connessione tra il dispositivo e il servizio DEP di Apple.
+**Motivo:** si è verificato un problema di connessione tra il dispositivo e il servizio DEP di Apple.
 
 #### <a name="resolution"></a>Soluzione
-Risolvere il problema di connessione oppure usare una connessione di rete diversa per registrare il dispositivo. Se il problema persiste, potrebbe essere necessario contattare Apple.
+Risolvere il problema di connessione oppure usare una connessione di rete diversa per registrare il dispositivo. Se il problema persiste, potrebbe essere anche necessario contattare Apple.
 
 
 ## <a name="other-issues"></a>Altri problemi
 
 ### <a name="dep-enrollment-doesnt-start"></a>La registrazione DEP non viene avviata
-Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo di registrazione, il processo di registrazione di Intune non viene avviato.
+Quando si attiva un dispositivo gestito da DEP a cui è assegnato un profilo di registrazione, il processo di registrazione di Intune non viene avviato.
 
-**Motivo:** Il profilo di registrazione viene creato prima che il token DEP venga caricato in Intune.
+**Motivo:** si crea il profilo di registrazione prima di aver caricato il token DEP in Intune.
 
 #### <a name="resolution"></a>Soluzione
 
@@ -232,12 +232,13 @@ Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo 
 2. Sincronizzare i dispositivi gestiti tramite DEP: Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) scegliere **Dispositivi** > **iOS** > **Registrazione di iOS** > **Token del programma di registrazione** > scegliere un token > **Sincronizza ora**. Viene inviata una richiesta di sincronizzazione ad Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registrazione DEP bloccata all'accesso dell'utente
-Quando si attiva un dispositivo gestito da DEP a cui viene assegnato un profilo di registrazione, il programma di installazione iniziale si inserisce dopo aver immesso le credenziali.
+Quando si attiva un dispositivo gestito da DEP a cui è assegnato un profilo di registrazione, la configurazione iniziale si blocca dopo che l'utente immette le credenziali.
 
-**Motivo:** Multi-factor authentication è abilitato. Attualmente, l'autenticazione a più fattori non funziona durante la registrazione nei dispositivi DEP.
+**Motivo:** è abilitata l'autenticazione a più fattori (MFA). Attualmente l'autenticazione a più fattori non funziona durante la registrazione nei dispositivi DEP.
 
 #### <a name="resolution"></a>Soluzione
-Disabilitare l'autenticazione a più fattori e quindi eseguire di nuovo la registrazione del dispositivo.
+Disabilitare l'autenticazione a più fattori, quindi eseguire di nuovo la registrazione del dispositivo.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

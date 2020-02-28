@@ -1,6 +1,6 @@
 ---
 title: Codici di errore e di stato in Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare un elenco di errori, codici di stato, descrizioni e soluzioni quando si usano dispositivi gestiti MDM, ottenere l'accesso a risorse aziendali, errori nei dispositivi iOS ed errori di risposta OMA in Microsoft Intune.
+description: Visualizzare un elenco di errori, codici di stato, descrizioni e soluzioni quando si usano dispositivi gestiti MDM, ottenere l'accesso a risorse aziendali, errori nei dispositivi iOS/iPadOS ed errori di risposta OMA in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509798"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510589"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Codici di errore comuni e descrizioni in Microsoft Intune
 
@@ -36,7 +36,7 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Installazione in corso||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|In attesa del contenuto||
-|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Recupero del contenuto|Causa probabile: Lo stato del processo 30 indica che il download utente di un'app non è riuscito.<br /><br />Le cause probabili potrebbero essere:<br /><br />Il dispositivo ha perso la connettività Internet mentre il download era in corso.<br /><br />Il certificato emesso per il dispositivo al momento della registrazione potrebbe essere scaduto.<br /><br />Attenuazione:<br /><br />Avviare le applicazioni aziendali dal Pannello di controllo sul dispositivo per verificare che il certificato del dispositivo non sia scaduto. Se scaduto, sarà necessario registrare nuovamente il dispositivo.<br /><br />Verificare che il dispositivo sia connesso a Internet e provare a richiedere nuovamente l'applicazione.|
+|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Recupero del contenuto|Causa probabile: lo stato del processo 30 indica che il download utente di un'app non è riuscito.<br /><br />Le cause probabili potrebbero essere:<br /><br />Il dispositivo ha perso la connettività Internet mentre il download era in corso.<br /><br />Il certificato emesso per il dispositivo al momento della registrazione potrebbe essere scaduto.<br /><br />Attenuazione:<br /><br />Avviare le applicazioni aziendali dal Pannello di controllo sul dispositivo per verificare che il certificato del dispositivo non sia scaduto. Se scaduto, sarà necessario registrare nuovamente il dispositivo.<br /><br />Verificare che il dispositivo sia connesso a Internet e provare a richiedere nuovamente l'applicazione.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download del contenuto completato||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installazione in corso||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Si è verificato un errore di installazione|L'installazione dell'app non è riuscita dopo il download.<br /><br />Il certificato di firma del codice con cui è stata firmata l'app non è presente nel dispositivo.<br /><br />Una dipendenza del framework da cui dipende l'applicazione non è stata trovata nel dispositivo.<br /><br />Assicurarsi che il certificato di firma del codice con cui è stata firmata l'applicazione sia presente nel dispositivo e verificare con l'amministratore che tale certificato sia destinato a tutti i dispositivi Windows RT registrati nell'organizzazione.<br /><br />Nel caso in cui l'errore di installazione sia dovuto a una dipendenza del framework mancante, l'amministratore dovrà pubblicare nuovamente l'applicazione assemblando il framework insieme al pacchetto dell'applicazione.<br /><br />Il pacchetto dell'applicazione scaricato non è un pacchetto valido, potrebbe essere danneggiato o potrebbe non essere compatibile con la versione del sistema operativo del dispositivo.|
@@ -78,7 +78,7 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |-2016341111|0x87D11389|Il dispositivo iOS ha restituito uno stato Inattivo imprevisto|
 |-2016341112|0x87D11388|Il dispositivo iOS è attualmente occupato|
 
-## <a name="errors-returned-by-ios-devices"></a>Errori restituiti da dispositivi iOS
+## <a name="errors-returned-by-iosipados-devices"></a>Errori restituiti da dispositivi iOS/iPadOS
 
 ### <a name="company-portal-errors"></a>Errori nel Portale aziendale
 
@@ -87,7 +87,7 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |__Problema interno del server__ <br>Non è stato possibile contattarci a causa di un problema interno del server. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Errore 500|Questo errore è probabilmente causato da un problema nel servizio Intune. Il problema deve essere risolto sul lato del servizio Intune ed è probabile che non sia causato da problemi sul lato del cliente.|
 |__Temporaneamente non disponibile__ <br>Non è stato possibile contattarci perché il servizio non è temporaneamente disponibile. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Errore 503|L'errore è probabilmente causato da un problema temporaneo del servizio Intune, ad esempio se è in corso la manutenzione del servizio. Il problema deve essere risolto sul lato del servizio Intune ed è probabile che non sia causato da problemi sul lato del cliente.|
 |__Non è possibile connettersi al server__ <br>Non è stato possibile contattarci. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Non associato a un codice di stato HTTP|Non è stato possibile stabilire una connessione protetta al server, probabilmente a causa di un problema SSL con i certificati in uso. Questo problema potrebbe dipendere da configurazioni del cliente non conformi ai requisiti di Apple per ATS (App Transport Security).|
-|__Si è verificato un errore__ <br>Non è stato possibile caricare il client del portale aziendale. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Errore 400|Qualsiasi errore con codice di stato HTTP nel gruppo 400 che non ha un messaggio di errore più specifico visualizzerà questo messaggio. Si tratta di un errore sul lato del client che si verifica nell'app Portale aziendale per iOS.|
+|__Si è verificato un errore__ <br>Non è stato possibile caricare il client del portale aziendale. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Errore 400|Qualsiasi errore con codice di stato HTTP nel gruppo 400 che non ha un messaggio di errore più specifico visualizzerà questo messaggio. Si tratta di un errore sul lato del client che si verifica nell'app Portale aziendale per iOS/iPadOS.|
 |__Non è stato possibile raggiungere il server__ <br>Non è stato possibile contattarci. Riprovare e quindi contattare l'amministratore IT se il problema persiste.|Errore 500|Qualsiasi errore con codice di stato HTTP nel gruppo 500 che non ha un messaggio di errore più specifico visualizzerà questo messaggio. Si tratta di un errore sul lato del servizio che si verifica nel servizio Intune.|
 
 ### <a name="service-errors"></a>Errori del servizio
@@ -308,20 +308,20 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |-2016344009|0x87D10837|(1403): certificato non trovato|
 |-2016344010|0x87D10836|DCMO(1402): operazione non riuscita|
 |-2016344011|0x87D10835|DCMO(1401): l'utente ha scelto di non accettare l'operazione, quando richiesto|
-|-2016344012|0x87D10834|DCMO(1400): errore client|
-|-2016344108|0x87D107D4|DCMO(1204): la funzionalità di dispositivo è disabilitata e l'utente dispone dell'autorizzazione per riabilitarla|
+|-2016344012|0x87D10834|DCMO(1400): Errore del client|
+|-2016344108|0x87D107D4|DCMO(1204): La funzionalità del dispositivo è disattivata e l'utente è autorizzato a riabilitarla|
 |-2016344109|0x87D107D3|DCMO(1203): la funzionalità di dispositivo è disabilitata e l'utente non dispone dell'autorizzazione per riabilitarla|
 |-2016344110|0x87D107D2|DCMO(1202): l'abilitazione è stata eseguita correttamente, ma la funzionalità di dispositivo è attualmente scollegata|
 |-2016344111|0xF3FB4D95|DCMO(1201): l'abilitazione è stata eseguita correttamente e la funzionalità di dispositivo è attualmente collegata|
 |-2016344112|0x87D107D0|DCMO(1200): operazione completata correttamente|
 |-2016345595|0x87D10205|Syncml(517): la risposta a un comando atomico è troppo lunga per essere contenuta in un solo messaggio.|
-|-2016345596|0x87D10204|Syncml(516): il comando era incluso in un elemento atomico non riuscito. Il rollback di questo comando non è stato eseguito correttamente.|
+|-2016345596|0x87D10204|Syncml(516): un comando era incluso in un elemento atomico non riuscito. Il rollback di questo comando non è stato eseguito correttamente.|
 |-2016345598|0x87D10202|Syncml(514): il comando SyncML non è stato completato correttamente poiché l'operazione è stata annullata prima dell'elaborazione del comando.|
 |-2016345599|0x87D10201|Syncml(513): il destinatario non supporta o rifiuta di supportare la versione specificata del protocollo di sincronizzazione SyncML usato nel messaggio di richiesta SyncML.|
-|-2016345600|0x87D10200|Syncml(512): si è verificato un errore dell'applicazione durante la sessione di sincronizzazione.|
-|-2016345601|0x87D101FF|Syncml(511): si è verificato un errore grave nel server durante l'elaborazione della richiesta.|
+|-2016345600|0x87D10200|Syncml(512): Si è verificato un errore di applicazione durante la sessione di sincronizzazione.|
+|-2016345601|0x87D101FF|Syncml(511): si è verificato un errore dell'applicazione durante la sessione di sincronizzazione.|
 |-2016345602|0x87D101FE|Syncml(510): si è verificato un errore durante l'elaborazione della richiesta. L'errore è correlato a un guasto nell'archivio dati del destinatario.|
-|-2016345603|0x87D101FD|Syncml(509): riservato per un uso futuro.|
+|-2016345603|0x87D101FD|Syncml(509): Riservato per utilizzo futuro.|
 |-2016345604|0x87D101FC|Syncml(508): si è verificato un errore che richiede un aggiornamento dello stato di sincronizzazione corrente tra client e server.|
 |-2016345605|0x87D101FB|Syncml(507): l'errore ha impedito il completamento di tutti i comandi SyncML all'interno di un tipo di elemento atomico.|
 |-2016345606|0x87D101FA|Syncml(506): si è verificato un errore dell'applicazione durante l'elaborazione della richiesta.|
@@ -339,10 +339,10 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |-2016345689|0x87D101A7|Syncml(423): il comando richiesto non è riuscito perché l'elemento con eliminazione reversibile nel server figurava precedentemente come eliminato definitivamente.|
 |-2016345690|0x87D101A6|Syncml(422): il comando richiesto non è riuscito nel server perché lo script CGI in LocURI era formato in modo errato.|
 |-2016345691|0x87D101A5|Syncml(421): il comando richiesto non è riuscito nel server perché la grammatica di ricerca specificata non era nota.|
-|-2016345692|0x87D101A4|Syncml(420): il destinatario non dispone di ulteriore spazio di archiviazione per i dati di sincronizzazione rimanenti.|
+|-2016345692|0x87D101A4|Syncml(420):  il destinatario non dispone di ulteriore spazio di archiviazione per i dati di sincronizzazione rimanenti.|
 |-2016345693|0x87D101A3|Syncml(419): la richiesta client ha creato un conflitto risolto dal comando server dominante.|
 |-2016345694|0x87D101A2|Syncml(418): il comando Put o Add richiesto non è riuscito perché la destinazione esiste già.|
-|-2016345695|0x87D101A1|Syncml(417): la richiesta non è riuscita. L'iniziatore deve riprovare in un secondo momento.|
+|-2016345695|0x87D101A1|Syncml(417): La richiesta non è riuscita al momento e il mittente deve ripeterla successivamente.|
 |-2016345696|0x87D101A0|Syncml(416): la richiesta non è riuscita perché le dimensioni in byte specificate nella richiesta erano troppo elevate.|
 |-2016345697|0x87D1019F|Syncml(415): tipo o formato del supporto non supportato.|
 |-2016345698|0x87D1019E|Syncml(414): il comando richiesto non è riuscito perché l'URI di destinazione era troppo lungo per le capacità di elaborazione del destinatario.|
@@ -357,7 +357,7 @@ Se è necessaria assistenza, vedere [Come ottenere supporto per Microsoft Intune
 |-2016345707|0x87D10195|Syncml(405): il comando richiesto non è consentito nella destinazione.|
 |-2016345708|0x87D10194|Syncml(404): la destinazione richiesta non è stata trovata.|
 |-2016345709|0x87D10193|Syncml(403): il comando richiesto non è riuscito, ma è stato compreso dal destinatario.|
-|-2016345710|0x87D10192|Syncml(402): il comando richiesto non è riuscito perché è necessario il pagamento corretto.|
+|-2016345710|0x87D10192|Syncml(402): il comando richiesto non è riuscito, ma è stato compreso dal destinatario.|
 |-2016345711|0x87D10191|Syncml(401): il comando richiesto non è riuscito perché il richiedente deve fornire l'autenticazione necessaria.|
 |-2016345712|0x87D10190|Syncml(400): il comando richiesto non è riuscito a causa di una sintassi errata del comando.|
 |-2016345807|0x87D10131|Syncml(305): la destinazione richiesta deve essere accessibile dall'URI del proxy specificato.|

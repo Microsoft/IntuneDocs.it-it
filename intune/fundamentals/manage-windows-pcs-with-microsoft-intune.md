@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414399"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415249"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414399"
 > [!WARNING]
 > Microsoft ha annunciato che il [supporto di Windows 7 terminerà il 14 gennaio 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). In questa data, terminerà anche il supporto di Intune per i dispositivi che eseguono Windows 7. Microsoft consiglia vivamente di passare a Windows 10 per impedire eventuali interruzioni di servizio o supporto.
 > 
-> Per altre informazioni, vedere [Modifica prevista per Intune: fine del supporto prossima per Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Per altre informazioni, vedere il [post di Blog relativo al piano di modifica](https://aka.ms/Windows7_Intune).
 
 > [!NOTE]
 > È possibile usare Microsoft Intune per gestire i PC Windows [come dispositivi mobili con la soluzione di gestione dei dispositivi mobili (MDM)](../enrollment/windows-enroll.md) o come computer con il software client di Intune come descritto di seguito. Microsoft consiglia tuttavia ai clienti di [usare la soluzione di gestione MDM](../enrollment/windows-enroll.md) laddove possibile. Per altre informazioni, vedere [Confrontare la gestione dei PC Windows come computer o come dispositivi mobili](pc-management-comparison.md) 

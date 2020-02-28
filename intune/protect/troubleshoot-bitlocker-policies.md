@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886788"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556500"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Risolvere i problemi relativi ai criteri di BitLocker in Microsoft Intune
 
@@ -35,11 +35,13 @@ Con Microsoft Intune, sono disponibili i metodi seguenti per gestire BitLocker n
 
 - **Criteri di configurazione del dispositivo** - Alcune opzioni predefinite dei criteri sono disponibili in Intune quando si crea un profilo di configurazione del dispositivo per gestire Endpoint Protection. Per trovare queste opzioni, [creare un profilo di dispositivo per Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), selezionare **Windows 10 e versioni successive** per *Piattaforma* e quindi selezionare la categoria **Crittografia di Windows** per *Impostazioni*. 
 
-   Per informazioni sulle opzioni e sulle funzionalità disponibili, vedere [Crittografia di Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+   Per informazioni sulle opzioni e sulle funzionalità disponibili, vedere quanto riportato di seguito: [Crittografia di Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
 - **Baseline di sicurezza** - le [baseline di sicurezza](security-baselines.md) sono gruppi noti di impostazioni e valori predefiniti consigliati dal team di sicurezza competente per proteggere i dispositivi Windows. Diverse origini di baseline, come *Baseline di sicurezza di MDM* o *Baseline di Microsoft Defender ATP* possono gestire le stesse impostazioni e anche impostazioni diverse tra di loro. Possono inoltre gestire le stesse impostazioni gestite con i criteri di configurazione del dispositivo. 
 
-Oltre a Intune, sono disponibili altri modi per gestire le impostazioni di BitLocker, ad esempio Criteri di gruppo o l'impostazione manuale eseguita dall'utente del dispositivo.
+Oltre a Intune, per hardware conforme a standby moderno e HSTI, quando si usa una di queste funzionalità, la Crittografia dispositivo di BitLocker viene attivata automaticamente ogni volta che l'utente aggiunge un dispositivo ad Azure AD. Azure AD offre un portale in cui viene anche eseguito il backup delle chiavi di ripristino, in modo che gli utenti possano recuperare la chiave di ripristino per la modalità self-service, se necessario.
+
+È anche possibile che le impostazioni di BitLocker siano gestite diversamente, ad esempio tramite Criteri di gruppo oppure manualmente dall'utente del dispositivo.
 
 Indipendentemente dalla modalità di applicazione delle impostazioni a un dispositivo, i criteri di BitLocker usano il [CSP di BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) per configurare la crittografia sul dispositivo. Il CSP di BitLocker è integrato in Windows e quando Intune distribuisce un criterio di BitLocker a un dispositivo assegnato, è il CSP di BitLocker nel dispositivo a scrivere i valori appropriati nel Registro di sistema di Windows per rendere effettive le impostazioni del criterio.
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>Esaminare la configurazione della chiave del Registro di sistema del dispositivo
 
-Dopo la distribuzione del criterio di BitLocker in un dispositivo, visualizzare la chiave seguente del Registro di sistema del dispositivo, in cui è possibile esaminare la configurazione delle impostazioni di BitLocker: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Ad esempio:
+Dopo aver distribuito i criteri di BitLocker in un dispositivo, visualizzare la chiave del Registro di sistema seguente nel dispositivo ed esaminare la configurazione delle impostazioni di BitLocker:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Ad esempio:
 
 ![Chiave del Registro di sistema di BitLocker](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ A questo punto dovrebbe essere chiaro come verificare che il criterio di BitLock
 
   2. **Non tutti i componenti hardware includono il supporto per BitLocker**.
      Anche se si dispone della versione corretta di Windows, è possibile che l'hardware del dispositivo sottostante non soddisfi i requisiti per la crittografia BitLocker. I [requisiti di sistema per BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) sono riportati nella documentazione di Windows, ma è soprattutto importante verificare che il dispositivo disponga di un chip TPM compatibile (1.2 o versione successiva) e di un BIOS conforme a Trusted Computing Group (TCG) o di un firmware UEFI.
+     
+La **crittografia BitLocker non viene eseguita automaticamente**: i criteri di Endpoint Protection sono stati configurati, l'opzione "Avviso per la crittografia dischi di altro tipo" è stata impostata sul blocco e viene ancora visualizzata la crittografia guidata:
+
+- **Verificare che la versione di Windows supporti la crittografia automatica** Questa operazione richiede almeno la versione 1803. Se l'utente non è un amministratore nel dispositivo, la versione minima richiesta è 1809. Nella versione 1809 è stato anche aggiunto il supporto per i dispositivi che non supportano la modalità di standby moderno
+
+Il **dispositivo crittografato con BitLocker viene visualizzato come non conforme ai criteri di conformità di Intune**: il problema si verifica quando la crittografia BitLocker non viene completata. In base ad alcuni fattori, ad esempio le dimensioni del disco, il numero di file e le impostazioni di BitLocker, la crittografia BitLocker può richiedere molto tempo. Al termine della crittografia, il dispositivo verrà visualizzato come conforme. I dispositivi possono anche diventare temporaneamente non conformi immediatamente dopo un'installazione recente degli aggiornamenti di Windows.
+
+**I dispositivi vengono crittografati con un algoritmo a 128 bit quando il criterio specifica 256 bit**: per impostazione predefinita, Windows 10 crittografa un'unità con la crittografia XTS-AES a 128 bit. Vedere questa guida per l' [Impostazione della crittografia a 256 bit per BitLocker durante l'Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#).
+
 
 **Esempio di indagine**
 

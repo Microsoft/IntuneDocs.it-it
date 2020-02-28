@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977751"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514566"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>In fase di sviluppo per Microsoft Intune - Febbraio 2020
 
@@ -65,8 +65,8 @@ L'app Portale aziendale nei dispositivi Windows verrà aggiornata in modo da vis
 L'app Portale aziendale mostrerà i messaggi aggiuntivi sullo stato dell'installazione dell'app per gli utenti finali. Alle nuove funzionalità di dipendenza Win32 verranno applicate le condizioni seguenti:
 - Non è stato possibile installare l'app. Le dipendenze definite dall'amministratore non sono state soddisfatte.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Ridestinare le clip Web a Microsoft Edge nei dispositivi iOS<!-- 5455276 -->
-Le clip Web, che fungono da app Web bloccate sui dispositivi iOS, dovranno essere aggiornate. Le clip Web appena distribuite verranno aperte in Microsoft Edge anziché in Intune Managed Browser, se devono essere aperte in un browser protetto. È necessario ridestinare le clip Web preesistenti per assicurarsi che per l'apertura venga usato Microsoft Edge invece di Managed Browser.
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>Ridestinare le clip Web a Microsoft Edge nei dispositivi iOS/iPadOS<!-- 5455276 -->
+Le clip Web, che fungono da app Web bloccate nei dispositivi iOS/iPadOS, dovranno essere aggiornate. Le clip Web appena distribuite verranno aperte in Microsoft Edge anziché in Intune Managed Browser, se devono essere aperte in un browser protetto. È necessario ridestinare le clip Web preesistenti per assicurarsi che per l'apertura venga usato Microsoft Edge invece di Managed Browser.
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>Miglioramenti dell'esperienza utente per Portale aziendale macOS<!-- 5568987 -->
 Sono stati apportati miglioramenti all'esperienza di registrazione dei dispositivi macOS e all'app Portale aziendale per Mac. I miglioramenti previsti sono i seguenti:
@@ -92,22 +92,22 @@ Sarà disponibile un nuovo profilo di configurazione del dispositivo macOS che c
 Si applica a:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>I profili VPN con connessioni VPN IKEv2 possono usare Always On con i dispositivi iOS <!-- 1947932 idready -->
-Nei dispositivi iOS è possibile creare un profilo VPN che usa una connessione IKEv2 (**Configurazione dispositivo** > **Profili** > **Crea profilo** > **iOS/iPadOS** per la piattaforma > **VPN** per il tipo di profilo). In un aggiornamento futuro sarà possibile configurare Always On con IKEv2. Quando sono configurati, i profili VPN IKEv2 si connettono automaticamente e rimangono connessi (o si riconnettono rapidamente) alla rete VPN. Rimangono connessi anche quando si passa da una rete a un'altra o si riavviano i dispositivi.
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>I profili VPN con connessioni VPN IKEv2 possono usare Always On con i dispositivi iOS/iPadOS <!-- 1947932 idready -->
+Nei dispositivi iOS/iPadOS è possibile creare un profilo VPN che usa una connessione IKEv2 (**Configurazione dispositivo** > **Profili** > **Crea profilo** > **iOS/iPadOS** per la piattaforma > **VPN** per il tipo di profilo). In un aggiornamento futuro sarà possibile configurare Always On con IKEv2. Quando sono configurati, i profili VPN IKEv2 si connettono automaticamente e rimangono connessi (o si riconnettono rapidamente) alla rete VPN. Rimangono connessi anche quando si passa da una rete a un'altra o si riavviano i dispositivi.
 
-In iOS la VPN Always On è limitata ai profili IKEv2.
+In iOS/iPadOS la VPN Always On è limitata ai profili IKEv2.
 
-Per visualizzare le impostazioni IKEv2 correnti che è possibile configurare, vedere [Aggiungere impostazioni VPN in dispositivi iOS in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
+Per visualizzare le impostazioni IKEv2 correnti che è possibile configurare, vedere [Aggiungere impostazioni VPN in dispositivi iOS/iPadOS in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
 
 Si applica a:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Esperienza migliorata dell'interfaccia utente per la creazione dei profili di configurazione nei dispositivi iOS e macOS<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-L'esperienza per la creazione di un profilo per i dispositivi iOS o macOS nell'interfaccia di amministrazione di Endpoint Manager verrà aggiornata. Questa modifica ha effetto sui profili di configurazione dei dispositivi elencati di seguito (**Dispositivi** > **Profili di configurazione** > **Crea profilo** > **iOS** o **macOS** per la piattaforma):
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Esperienza migliorata dell'interfaccia utente per la creazione dei profili di configurazione nei dispositivi iOS/iPadOS e macOS<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+L'esperienza per la creazione di un profilo per i dispositivi iOS/iPadOS o macOS nell'interfaccia di amministrazione di Endpoint Manager verrà aggiornata. Questa modifica ha effetto sui profili di configurazione dei dispositivi elencati di seguito (**Dispositivi** > **Profili di configurazione** > **Crea profilo** > **iOS** o **macOS** per la piattaforma):
 
-- Personalizzato: iOS, macOS
-- Funzionalità del dispositivo: iOS, macOS
-- Limitazioni del dispositivo: iOS, macOS
+- Personalizzata: iOS/iPadOS, macOS
+- Funzionalità del dispositivo: iOS/iPadOS, macOS
+- Limitazioni del dispositivo: iOS/iPadOS, macOS
 - Endpoint Protection: macOS
 - Estensioni: macOS
 - File delle preferenze: macOS
@@ -182,8 +182,8 @@ Sarà possibile usare credenziali derivate nei dispositivi Android Enterprise co
 ### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Usare i criteri antivirus per gestire le impostazioni per Microsoft Defender Antivirus e l'esperienza di Sicurezza di Windows<!--6131401 -->
 Dal nodo *Sicurezza degli endpoint* sarà possibile configurare le impostazioni per l'**antivirus**. Quando si configurano i criteri per l'antivirus, si definiscono le impostazioni per i dispositivi Windows 10 tramite due tipi di profilo:
 
-- Microsoft Defender Antivirus: gestire le impostazioni per la protezione del cloud, le esclusioni dell'antivirus, la correzione, le opzioni di analisi e altro ancora.
-- Esperienza di Sicurezza di Windows: gestire il modo in cui gli utenti usano le impostazioni di Sicurezza di Windows nei dispositivi. Sarà possibile configurare gli elementi visualizzabili dagli utenti finali in Microsoft Defender Security Center e le notifiche ricevute. 
+- Microsoft Defender Antivirus: consente di gestire le impostazioni per la protezione del cloud, le esclusioni dell'antivirus, la correzione, le opzioni di analisi e altro ancora.
+- Esperienza di Sicurezza di Windows: consente di gestire il modo in cui gli utenti usano le impostazioni di Sicurezza di Windows nei dispositivi. Sarà possibile configurare gli elementi visualizzabili dagli utenti finali in Microsoft Defender Security Center e le notifiche ricevute. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Notifiche

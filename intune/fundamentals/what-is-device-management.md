@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058536"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510385"
 ---
 # <a name="device-management-overview"></a>Panoramica della gestione dei dispositivi
 
@@ -33,7 +33,7 @@ Tramite un provider per la gestione dei dispositivi, le organizzazioni possono a
 
 La risposta è [Microsoft Intune](what-is-intune.md). Intune mette a disposizione servizi di gestione dei dispositivi mobili (MDM) e di gestione delle app mobili (MAM). Alcune attività chiave che deve poter svolgere qualsiasi soluzione MDM o MAM sono:
 
-- Supportare un ambiente di dispositivi mobili eterogeneo e gestire i dispositivi iOS, Android, Windows e macOS in modo sicuro.
+- Supportare un ambiente per dispositivi mobili eterogeneo e gestire i dispositivi iOS/iPadOS, Android, Windows e macOS in modo sicuro.
 - Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza aziendali.
 - Creare criteri che consentano di proteggere i dati aziendali nei dispositivi personali e di proprietà dell'organizzazione.
 - Usare una soluzione mobile singola e unificata per applicare questi criteri e facilitare la gestione di dispositivi, app, utenti e gruppi.
@@ -47,7 +47,7 @@ Molte organizzazioni, come Microsoft, usano Intune per proteggere i dati proprie
 
 È consueto per le persone utilizzare più dispositivi che usano piattaforme diverse. Ad esempio, un dipendente potrebbe usare Surface Pro per il lavoro e un dispositivo mobile Android per la vita privata. Ed è consueto per una persona accedere alle risorse aziendali, ad esempio Microsoft Outlook e SharePoint, da questi vari dispositivi.
 
-Intune consente di gestire più dispositivi per ogni persona e le piattaforme diverse in esecuzione su ogni dispositivo, tra cui iOS, macOS, Android e Windows. Intune separa i criteri e le impostazioni in base alla piattaforma del dispositivo. Pertanto è facile gestire e visualizzare i dispositivi di una piattaforma specifica.
+Intune consente di gestire più dispositivi per ogni persona e le diverse piattaforme in esecuzione in ogni dispositivo, tra cui iOS/iPadOS, macOS, Android e Windows. Intune separa i criteri e le impostazioni in base alla piattaforma del dispositivo. Pertanto è facile gestire e visualizzare i dispositivi di una piattaforma specifica.
 
 **[Scenari comuni](common-scenarios.md)** è un'ottima risorsa per capire come Intune gestisce situazioni comuni in cui sono coinvolti dispositivi mobili. Sono disponibili scenari su:  
 
@@ -55,7 +55,7 @@ Intune consente di gestire più dispositivi per ogni persona e le piattaforme di
 - Accesso protetto e sicuro a Office 365
 - Uso di dispositivi personali per accedere a risorse aziendali
 
-Per altre informazioni su Intune, vedere [che cos'è Intune](what-is-intune.md).
+Per altre informazioni su Intune, vedere [informazioni su Intune](what-is-intune.md).
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integrazione con servizi di sicurezza e protezione
 
@@ -63,7 +63,7 @@ Fornire sicurezza e protezione è un compito fondamentale che deve svolgere qual
 
 - **Microsoft 365** è un componente chiave per semplificare le attività IT più comuni. Dall'interfaccia di amministrazione di Microsoft 365 è possibile creare utenti, gestire gruppi e accedere ad altri servizi, ad esempio Intune, Azure AD e così via.
 
-  Ad esempio, creare un gruppo di dispositivi iOS in Microsoft 365. Quindi, con Intune si possono distribuire i criteri tramite push al gruppo di dispositivi iOS che usano le funzionalità iOS, ad esempio l'accesso all'app store, l'uso di AirDrop, l'esecuzione di backup in iCloud, l'uso del filtro Web di Apple e altro ancora.
+  È ad esempio possibile creare un gruppo di dispositivi iOS/iPadOS in Microsoft 365 e usare Intune per eseguire il push dei criteri nel gruppo di dispositivi iOS/iPadOS che usano le funzionalità iOS, ad esempio l'accesso all'App Store, l'uso di AirDrop, il backup in iCloud, l'uso del filtro Web di Apple e così via.
 
 - **Windows Defender** include molte funzionalità di sicurezza per proteggere i dispositivi Windows 10. Ad esempio, usando Intune e Windows Defender insieme, è possibile:
 
@@ -86,7 +86,7 @@ Quando si configura Intune, è possibile scegliere di gestire i dispositivi escl
 
 Il [centro di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) è una risorsa centralizzata per gestire e completare le attività relative ai dispositivi mobili. Questa area di lavoro include i servizi usati per la gestione dei dispositivi, tra cui Intune e Azure Active Directory, e per la gestione delle app client.
 
-Nel centro di amministrazione Gestione dispositivi è possibile:
+Nell'interfaccia di amministrazione di Gestione dei dispositivi è possibile eseguire le operazioni seguenti:
 
 - [Registrare i dispositivi](../enrollment/device-enrollment.md)
 - [Impostare la conformità dei dispositivi](../protect/device-compliance-get-started.md)
@@ -97,7 +97,7 @@ Nel centro di amministrazione Gestione dispositivi è possibile:
 - [Gestire i ruoli](role-based-access-control.md)  
 - Gestire gli aggiornamenti software
   - [Gestire gli aggiornamenti di Windows 10](../protect/windows-update-for-business-configure.md)  
-  - [Gestire gli aggiornamenti di iOS](../protect/software-updates-ios.md)  
+  - [Gestire gli aggiornamenti di iOS/iPadOS](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Gestire gli utenti](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Gestire gruppi e membri](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)

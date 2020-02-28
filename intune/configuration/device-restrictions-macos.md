@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206551"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511173"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi macOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -36,11 +36,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 [Creare un profilo di configurazione delle restrizioni del dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Queste impostazioni si applicano a diversi tipi di registrazione. Per ulteriori informazioni sui diversi tipi di registrazione, vedere la pagina relativa alla [registrazione MacOS](../macos-enroll.md).
+> Queste impostazioni si applicano a diversi tipi di registrazione. Per altre informazioni sui diversi tipi di registrazione, vedere [Registrazione di macOS](../macos-enroll.md).
 
 ## <a name="general"></a>Generale
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
 - **Ricerca della definizione**: **Blocca** impedisce all'utente di evidenziare una parola e quindi di cercarne la definizione nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla funzionalità di ricerca della definizione.
 - **Dettatura**: **Blocca** impedisce all'utente di immettere testo con l'input vocale. **Non configurato** (impostazione predefinita) consente all'utente di usare l'input con dettatura.
@@ -62,29 +62,29 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
     Questa funzionalità si applica a:  
     - macOS 10.13.4 e versioni successive
 
-- **Schermate**: il dispositivo deve essere registrato nella registrazione automatica dei dispositivi (DEP) di Apple. Quando è impostato su **blocca**, gli utenti non possono salvare una schermata dello schermo. Impedisce anche all'app per le aule di osservare le schermate remote. **Non configurato** (impostazione predefinita) consente agli utenti di acquisire schermate e consente all'app per le classi di visualizzare le schermate remote.
+- **Screenshot**: il dispositivo deve essere registrato con la registrazione automatica dei dispositivi (DEP) di Apple. Se l'impostazione è **Blocca**, gli utenti non possono salvare uno screenshot dello schermo. Inoltre, l'app Classroom non è in grado di osservare le schermate remote. **Non configurato** (impostazione predefinita) consente agli utenti di acquisire gli screenshot e consente all'app Classroom di visualizzare le schermate remote.
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>Impostazioni applicabili a: registrazione automatica del dispositivo
+### <a name="settings-apply-to-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi
 
-- **Osservazione dello schermo remoto tramite l'app**per le aule: **Disabilita** impedisce agli insegnanti di usare l'app per le aule per visualizzare gli schermi degli studenti. **Non configurato** (impostazione predefinita) consente agli insegnanti di visualizzare le schermate degli studenti.
+- **Osservazione dello schermo remoto con l'app Classroom**: **Disabilita** impedisce agli insegnanti di usare l'app Classroom per visualizzare le schermate degli studenti. **Non configurato** (impostazione predefinita) consente agli insegnanti di visualizzare le schermate degli studenti.
 
-  Per usare questa impostazione, impostare l'impostazione **screenshot** su **non configurato** (sono consentite schermate).
+  Per usare questa impostazione, impostare **Screenshot** su **Non configurato** (gli screenshot sono consentiti).
 
-- **Osservazione dello schermo non richiesta da parte dell'app per le classi**: **Allow** consente agli insegnanti di visualizzare le schermate degli studenti senza richiedere che lo studente accetti. **Non configurato** (impostazione predefinita) richiede che lo studente accetti prima che l'insegnante possa visualizzare le schermate.
+- **Osservazione schermo non richiesta da parte dell'app Classroom**: selezionando **Consenti** gli insegnanti possono visualizzare le schermate degli studenti anche senza il loro consenso. **Non configurato** (impostazione predefinita) richiede il consenso dello studente prima che l'insegnante possa visualizzare le schermate.
 
-  Per usare questa impostazione, impostare l'impostazione **screenshot** su **non configurato** (sono consentite schermate).
+  Per usare questa impostazione, impostare **Screenshot** su **Non configurato** (gli screenshot sono consentiti).
 
-- **Gli studenti devono richiedere l'autorizzazione per lasciare la classe della classe**: **richiedere** forza agli studenti iscritti a un corso della classe non gestita per ottenere l'approvazione del docente per uscire dal corso. **Non configurato** (impostazione predefinita) consente agli studenti di uscire dal corso ogni volta che lo studente sceglie.
+- **Gli studenti devono richiedere l'autorizzazione per abbandonare la lezione di Classroom**: **Richiedi** impone agli studenti iscritti a un corso di Classroom non gestito di avere l'approvazione dell'insegnante per lasciare il corso. **Non configurato** (impostazione predefinita) consente allo studente di uscire dal corso quando vuole.
 
-- Gli **insegnanti possono bloccare automaticamente i dispositivi o le app nell'app per le aule**: **Allow** consente agli insegnanti di bloccare il dispositivo o l'app di uno studente senza l'approvazione dello studente. **Non configurato** (impostazione predefinita) richiede che lo studente accetti prima che l'insegnante possa bloccare il dispositivo o l'app.
+- **Gli insegnanti possono bloccare automaticamente i dispositivi o le app nell'app Classroom**: **Consenti** permette agli insegnanti di bloccare il dispositivo o l'app di uno studente senza la sua approvazione. **Non configurato** (impostazione predefinita) richiede il consenso dello studente prima che l'insegnante possa bloccare il dispositivo o l'app.
 
-- **Gli studenti possono partecipare automaticamente alla classe class**: **Allow** consente agli studenti di partecipare a una classe senza richiedere l'insegnante. **Non configurato** (impostazione predefinita) richiede l'approvazione del docente per l'aggiunta a una classe.
+- **Gli studenti possono partecipare automaticamente a una lezione di Classroom**: **Consenti** permette agli studenti di partecipare a una lezione senza chiedere conferma all'insegnante. **Non configurato** (impostazione predefinita) richiede l'approvazione dell'insegnante per consentire la partecipazione a una lezione.
 
 ## <a name="password"></a>Password
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
-- **Password**: selezionare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) non richiede una password. Non impone inoltre alcuna restrizione, ad esempio il blocco di password semplici o l'impostazione di una lunghezza minima.
+- **Password**: selezionare **Rendi obbligatorio** per richiedere all'utente finale di immettere una password per accedere al dispositivo. **Non configurato** (impostazione predefinita) non richiede una password. Non impone inoltre alcuna restrizione, ad esempio il blocco delle password semplici o l'impostazione di una lunghezza minima.
   - **Tipo di password richiesto**: specificare se la password può essere solo numerica o se deve essere di tipo alfanumerico, ovvero contenere lettere e numeri.
 
     Questa funzionalità si applica a:  
@@ -114,7 +114,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="built-in-apps"></a>App predefinite
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
 - **Blocca il riempimento automatico di Safari**: **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare le impostazioni di completamento automatico nel Web browser.
 - **Blocca la fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla fotocamera del dispositivo.
@@ -127,32 +127,32 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
-- **Tipo di elenco di app con restrizioni**: creare un elenco di app che gli utenti non sono autorizzati a installare o usare. Le opzioni disponibili sono:
+- **Elenco di tipi di app con restrizioni**: consente di creare un elenco di app che gli utenti non sono autorizzati a installare o usare. Le opzioni disponibili sono:
 
-  - **Non configurato** (impostazione predefinita): nessuna restrizione da Intune. Gli utenti hanno accesso alle app assegnate e alle app predefinite.
-  - **App non consentite**: elenco di app non gestite da Intune di cui si vuole evitare l'installazione nel dispositivo. Agli utenti non viene impedito di installare un'app vietata. Tuttavia, se un utente installa un'app da questo elenco, viene segnalata in Intune.
-  - **App approvate**: app che gli utenti sono autorizzati a installare. Gli utenti non devono installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite. Agli utenti non viene impedito di installare un'app non inclusa nell'elenco approvato. Tuttavia, in caso affermativo, viene segnalato in Intune.
+  - **Non configurato** (impostazione predefinita): non sono previste restrizioni da Intune. Gli utenti hanno accesso alle app assegnate e alle app predefinite.
+  - **App non consentite**: elenco di app non gestite da Intune di cui si vuole evitare l'installazione nel dispositivo. Agli utenti non viene impedito di installare un'app vietata. Tuttavia, se un utente installa un'app da questo elenco, verrà segnalato in Intune.
+  - **App approvate**: app che gli utenti sono autorizzati a installare. Gli utenti non devono installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite. Agli utenti non viene impedito di installare un'app non inclusa nell'elenco approvato. Tuttavia, se lo fanno, verrà segnalato in Intune.
 - **ID bundle dell'app**: immettere l'[ID bundle](bundle-ids-built-in-ios-apps.md) dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
 - **Nome app**: immettere il nome dell'app desiderata. È possibile mostrare o nascondere le app predefinite e le app line-of-business. Il sito Web di Apple include un elenco di [app Apple predefinite](https://support.apple.com/HT208094).
 - **Autore**: immettere l'autore dell'app desiderata.
 
 Per aggiungere app a questi elenchi, è possibile:
 
-- **Aggiungi**: selezionare questa pagina per creare un elenco di app.
-- Scegliere **Importa** per importare un file CSV con i dettagli sull'app, incluso l'URL. Usare il formato `<app bundle ID>, <app name>, <app publisher>`. In alternativa, **Esporta** per creare un elenco di app aggiunte, nello stesso formato.
+- **Aggiungi**: selezionare questa opzione per creare un elenco di app.
+- Scegliere **Importa** per importare un file CSV con i dettagli sull'app, incluso l'URL. Usare il formato `<app bundle ID>, <app name>, <app publisher>`. Oppure **Esporta** per creare un elenco delle app aggiunte, nello stesso formato.
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
 - **Blocca AirDrop**: **Blocca** impedisce l'uso di AirDrop nel dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della funzionalità AirDrop per scambiare contenuti con dispositivi vicini.
 - **Blocca lo sbocco automatico di Apple Watch**: **Blocca** impedisce agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch. **Non configurato** (impostazione predefinita) consente agli utenti di sbloccare il proprio dispositivo macOS con Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
 - **Blocca la sincronizzazione Keychain con iCloud**: scegliere **Blocca** per disabilitare la sincronizzazione delle credenziali archiviate in Keychain su iCloud. **Non configurato** (impostazione predefinita) consente agli utenti di sincronizzare queste credenziali.
 - **Blocca la sincronizzazione dei documenti di iCloud**: **Blocca** impedisce a iCloud di sincronizzare documenti e dati. **Non configurato** (impostazione predefinita) consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
@@ -162,15 +162,15 @@ Per aggiungere app a questi elenchi, è possibile:
 - **Blocca il backup dei promemoria di iCloud**: **Blocca** impedisce la sincronizzazione di iCloud nell'app per i promemoria macOS. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei promemoria con iCloud.
 - **Blocca il backup dei segnalibri di iCloud**: **Blocca** impedisce a iCloud di sincronizzare i segnalibri dei dispositivi. **Non configurato** (impostazione predefinita) consente la sincronizzazione dei preferiti con iCloud.
 - **Blocca il backup delle note di iCloud**: **Blocca** impedisce a iCloud di sincronizzare le note dei dispositivi. **Non configurato** (impostazione predefinita) consente la sincronizzazione delle note con iCloud.
-- **Blocca la libreria foto iCloud**: il **blocco** Disabilita la libreria foto iCloud e impedisce a iCloud di sincronizzare le foto dei dispositivi. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud vengono rimosse dall'archivio locale nel dispositivo. **Non configurato** (impostazione predefinita) consente di sincronizzare le foto tra il dispositivo e la libreria foto iCloud.
-- **Consegna**: **non configurata** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo MacOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o MacOS. **Blocca** impedisce la funzionalità di continuità sul dispositivo. 
+- **Blocca la Libreria foto di iCloud**: **Blocca** disabilita la Libreria foto di iCloud e impedisce a iCloud di sincronizzare le foto dei dispositivi. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud vengono rimosse dall'archivio locale nel dispositivo. **Non configurato** (impostazione predefinita) consente di sincronizzare le foto tra il dispositivo e la Libreria foto di iCloud.
+- **Handoff**: **Non configurato** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo macOS e quindi continuare il lavoro avviato in un altro dispositivo iOS/iPadOS o macOS. **Blocca** impedisce la funzionalità di consegna nel dispositivo. 
 
   Questa funzionalità si applica a:  
   - macOS 10.15 e versioni successive
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: registrazione del dispositivo e registrazione automatica dei dispositivi
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Le impostazioni si applicano a: Registrazione dei dispositivi e registrazione automatica dei dispositivi
 
 - **URL del dominio di posta elettronica**: **Aggiungi** consente di aggiungere uno o più URL all'elenco. Quando gli utenti ricevono un messaggio di posta elettronica da un dominio diverso da quello configurato, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in macOS.
 
@@ -178,4 +178,4 @@ Per aggiungere app a questi elenchi, è possibile:
 
 [Assegnare il profilo](../device-profile-assign.md) e [monitorarne lo stato](../device-profile-monitor.md).
 
-È possibile limitare funzionalità e impostazioni anche in dispositivi [iOS](../device-restrictions-ios.md).
+È possibile limitare funzionalità e impostazioni anche nei dispositivi [iOS/iPadOS](../device-restrictions-ios.md).

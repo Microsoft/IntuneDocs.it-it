@@ -1,12 +1,12 @@
 ---
-title: Impostazioni dei dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
+title: Impostazioni dei dispositivi iOS/iPadOS in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Aggiungere, configurare o creare le impostazioni nei dispositivi iOS per limitare l'uso delle funzionalità, tra cui impostare i requisiti per le password, controllare la schermata di blocco, usare le app predefinite, aggiungere app con restrizioni o approvate, gestire i dispositivi Bluetooth, connettersi al cloud per backup e archiviazione, abilitare la modalità a schermo intero, aggiungere domini e controllare il modo in cui gli utenti interagiscono con il Web browser Safari in Microsoft Intune.
+description: Aggiungere, configurare o creare le impostazioni nei dispositivi iOS/iPadOS per limitare l'uso delle funzionalità, tra cui impostare i requisiti per le password, controllare la schermata di blocco, usare le app predefinite, aggiungere app con restrizioni o approvate, gestire i dispositivi Bluetooth, connettersi al cloud per backup e archiviazione, abilitare la modalità tutto schermo, aggiungere domini e controllare il modo in cui gli utenti interagiscono con il Web browser Safari in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/04/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
-ms.translationtype: MTE75
+ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513069"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS e iPadOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
 Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi iOS e iPadOS. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, impostare regole per le password, consentire o limitare l'uso di app specifiche e altro ancora.
 
-Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo in Intune e quindi assegnate o distribuite ai dispositivi iOS.
+Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo in Intune e quindi assegnate o distribuite ai dispositivi iOS/iPadOS.
 
 > [!TIP]
 > Queste impostazioni usano le impostazioni MDM di Apple. Per altre informazioni su queste impostazioni, vedere [Impostazioni per la gestione dei dispositivi mobili](https://support.apple.com/guide/mdm/welcome/web). Si aprirà il sito Web di Apple.
@@ -37,7 +37,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 [Creare un profilo di configurazione delle restrizioni del dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Queste impostazioni si applicano a diversi tipi di registrazione, con alcune impostazioni che si applicano a tutte le opzioni di registrazione. Per altre informazioni sui diversi tipi di registrazione, vedere [Registrazione di iOS](../ios-enroll.md).
+> Queste impostazioni si applicano a diversi tipi di registrazione, con alcune impostazioni che si applicano a tutte le opzioni di registrazione. Per altre informazioni sui diversi tipi di registrazione, vedere [Registrazione di iOS/iPadOS](../ios-enroll.md).
 
 ## <a name="general"></a>Generale
 
@@ -45,7 +45,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Condividi i dati di utilizzo**: scegliere **Blocca** per impedire al dispositivo di inviare dati di diagnostica e di utilizzo ad Apple. **Non configurato** (impostazione predefinita) consente l'invio di questi dati.
 
-- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. In iOS 9.0 e versioni successive blocca anche le registrazioni dello schermo. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine o come video.
+- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. In iOS/iPadOS 9.0 e versioni successive blocca anche le registrazioni dello schermo. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine o come video.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione del dispositivo, Registrazione automatica dei dispositivi (con supervisione)
 
@@ -61,6 +61,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 9.3.2 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Osservazione schermo remoto da parte dell'app Classroom**: scegliere **Blocca** per impedire all'app Classroom di visualizzare lo schermo del dispositivo da remoto. **Non configurato** (impostazione predefinita) consente all'app Classroom di Apple di visualizzare lo schermo.
 
@@ -68,15 +69,16 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 9.3 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
-- **Osservazione schermo non richiesta da parte dell'app Classroom**: se impostata su **Consenti**, gli insegnanti possono osservare lo schermo dei dispositivi iOS degli studenti con l'app Classroom senza che questi ne siano a conoscenza. I dispositivi degli studenti registrati in una classe con l'app Classroom concedono automaticamente l'autorizzazione al docente del corso. **Non configurato** (impostazione predefinita) impedisce l'uso di questa funzionalità.
+- **Osservazione schermo non richiesta da parte dell'app Classroom**: Se impostata su **Consenti**, gli insegnanti possono osservare lo schermo dei dispositivi iOS/iPadOS degli studenti con l'app Classroom senza che questi ne siano a conoscenza. I dispositivi degli studenti registrati in una classe con l'app Classroom concedono automaticamente l'autorizzazione al docente del corso. **Non configurato** (impostazione predefinita) impedisce l'uso di questa funzionalità.
 
   Per usare questa impostazione, impostare l'opzione **Acquisizione schermo** su **Blocca**.
 
 - **Attendibilità dell'app aziendale**: scegliere **Blocca** per rimuovere il pulsante **Attendibilità di Enterprise Developer** in Impostazioni > Generale > Gestione di profili e dispositivi nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di scegliere di considerare attendibili le app che non vengono scaricate da App Store.
-- **Modifica dell'account**: se impostata su **Blocca**, l'utente non può aggiornare le impostazioni specifiche del dispositivo dall'app delle impostazioni iOS. Ad esempio, l'utente non può creare nuovi account di dispositivo o modificare il nome utente o la password. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
+- **Modifica dell'account**: Se impostata su **Blocca**, l'utente non può aggiornare le impostazioni specifiche del dispositivo dall'app delle impostazioni iOS/iPadOS. Ad esempio, l'utente non può creare nuovi account di dispositivo o modificare il nome utente o la password. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
 
-  Questa funzionalità si applica anche alle impostazioni accessibili dall'app delle impostazioni iOS, ad esempio Posta elettronica, Contatti, Calendario, Twitter e altro ancora. Non si applica alle app con impostazioni dell'account non configurabili dall'app delle impostazioni iOS, ad esempio Microsoft Outlook.
+  Questa funzionalità si applica anche alle impostazioni accessibili dall'app delle impostazioni iOS/iPadOS, ad esempio Posta elettronica, Contatti, Calendario, Twitter e altro ancora. Non si applica alle app con impostazioni dell'account non configurabili dall'app delle impostazioni iOS/iPadOS, ad esempio Microsoft Outlook.
 
 - **Orario schermo**: scegliere **Blocca** per impedire agli utenti di impostare le proprie restrizioni in Orario schermo (impostazioni del dispositivo). **Non configurato** consente all'utente di configurare restrizioni nel dispositivo, ad esempio il controllo genitori o le restrizioni relative a contenuti e privacy.
 
@@ -91,7 +93,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Modifica dello sfondo**: **Blocca** impedisce di cambiare lo sfondo. **Non configurato** (impostazione predefinita) consente all'utente di modificare lo sfondo del dispositivo.
 - **Modifica delle impostazioni di attendibilità delle app aziendali**: **Blocca** impedisce all'utente di modificare le impostazioni di attendibilità delle app aziendali nei dispositivi con supervisione. **Non configurato** (impostazione predefinita) consente all'utente di considerare attendibili le app che non vengono scaricate da App Store.
 - **Modifiche al profilo di configurazione**: **Blocca** impedisce di apportare modifiche al profilo di configurazione nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di installare profili di configurazione.
-- **Blocco attivazione**: scegliere **Consenti** per abilitare il blocco attivazione su dispositivi iOS con supervisione. Blocco attivazione rende più difficile la riattivazione di un dispositivo perso o rubato.
+- **Blocco attivazione**: Scegliere **Consenti** per abilitare il blocco attivazione su dispositivi iOS/iPadOS con supervisione. Blocco attivazione rende più difficile la riattivazione di un dispositivo perso o rubato.
 - **Blocca la rimozione di app**: scegliere **Blocca** per impedire agli utenti di rimuovere app. **Non configurato** (impostazione predefinita) consente agli utenti di rimuovere le app dal dispositivo.
 - **Consenti gli accessori USB durante il blocco del dispositivo**: Selezionando **Consenti** gli accessori USB sono autorizzati a scambiare dati con un dispositivo che è rimasto bloccato per più di un'ora. **Non configurato** (impostazione predefinita): la modalità con restrizioni USB non viene aggiornata nel dispositivo e agli accessori USB verrà impedito di trasferire i dati dal dispositivo se rimane bloccato per più di un'ora.
 - **Imponi data e ora automatiche**: **Rendi obbligatorio** impone ai dispositivi con supervisione di impostare la data e l'ora automaticamente. Il fuso orario del dispositivo viene aggiornato quando il dispositivo dispone di connessioni alla rete cellulare o Wi-Fi con i servizi di posizione abilitati.
@@ -99,24 +101,28 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 11.3 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Consenti a Classroom di bloccare un'app e bloccare il dispositivo senza prompt**: **Abilita** consente al docente di bloccare le app o bloccare il dispositivo usando l'app Classroom senza richiedere conferma allo studente. Con il blocco delle app, il dispositivo può accedere solo alle app specificate dal docente. **Non configurato** (impostazione predefinita) impedisce ai docenti di bloccare app o dispositivi usando l'app Classroom senza chiedere conferma allo studente.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Partecipa automaticamente alle lezioni di Classroom senza prompt**: **Abilita** consente automaticamente agli studenti di partecipare a una lezione nell'app Classroom senza chiedere conferma al docente. **Non configurato** (impostazione predefinita) chiede conferma al docente quando gli studenti vogliono partecipare a una lezione nell'app Classroom.
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Blocca la creazione di VPN**: **Blocca** impedisce agli utenti di creare le impostazioni di configurazione VPN. **Non configurato** (impostazione predefinita) consente agli utenti di creare VPN nel dispositivo.
 - **Modifica delle impostazioni di eSIM**: **Blocca** impedisce agli utenti di rimuovere o aggiungere un piano per telefoni cellulari alla eSIM presente nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare queste impostazioni.
 
   Questa funzionalità si applica a:  
   - iOS 12.1 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
-- **Rinvia gli aggiornamenti software**: se impostato su **Non configurato** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena rilasciati da Apple. Ad esempio, se un aggiornamento iOS viene rilasciato da Apple in una data specifica, questo viene normalmente visualizzato nel dispositivo in prossimità della data di rilascio.
+- **Rinvia gli aggiornamenti software**: se impostato su **Non configurato** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena rilasciati da Apple. Ad esempio, se un aggiornamento iOS/iPadOS viene rilasciato da Apple in una data specifica, questo viene normalmente visualizzato nel dispositivo in prossimità della data di rilascio.
 
   **Abilita** consente di posticipare la visualizzazione degli aggiornamenti software nei dispositivi, da 0 a 90 giorni. Questa impostazione non controlla quando gli aggiornamenti vengono installati o meno. 
 
@@ -126,6 +132,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
     Questa impostazione si applica a:  
     - iOS 11.3 e versioni successive
+    - iPadOS 13.0 e versioni successive
 
 ## <a name="password"></a>Password
 
@@ -159,13 +166,13 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di accessi non riusciti consentiti prima della cancellazione del dispositivo (da 4 a 11).
   
-  iOS dispone di una funzionalità di sicurezza incorporata che può influire su questa impostazione. Ad esempio, iOS può ritardare l'attivazione del criterio a seconda del numero di errori di accesso. Immettere ripetutamente lo stesso passcode può essere considerato un solo tentativo. La [Guida di sicurezza iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) di Apple è una valida risorsa e fornisce dettagli più specifici sui passcode. Si aprirà il sito Web di Apple.
+  iOS/iPadOS ha una funzionalità di sicurezza incorporata che può influire su questa impostazione. Ad esempio, iOS/iPadOS può ritardare l'attivazione del criterio a seconda del numero di errori di accesso. Immettere ripetutamente lo stesso passcode può essere considerato un solo tentativo. La [Guida di sicurezza iOS/iPadOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) di Apple è una valida risorsa e offre dettagli più specifici sui passcode (apre il sito Web di Apple).
   
-- **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**<sup>1</sup>: specificare per quanto tempo il dispositivo rimane inattivo prima che l'utente debba immettere di nuovo la password. Se il tempo immesso è più lungo dell'impostazione corrente nel dispositivo, il dispositivo ignora il tempo immesso. Supportata in iOS 8.0 e nei dispositivi più recenti.
+- **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**<sup>1</sup>: specificare per quanto tempo il dispositivo rimane inattivo prima che l'utente debba immettere di nuovo la password. Se il tempo immesso è più lungo dell'impostazione corrente nel dispositivo, il dispositivo ignora il tempo immesso. Supportato nei dispositivi che eseguono iOS 8.0+ e iPadOS 13.0+.
 
 - **Numero massimo di minuti di inattività fino al blocco dello schermo**<sup>1</sup>: immettere il numero massimo di minuti di inattività consentiti nel dispositivo prima del blocco dello schermo.
 
-  **Opzioni iOS**:  
+  **Opzioni iOS/iPadOS**:  
 
   - **Non configurato** (impostazione predefinita): l'impostazione non viene considerata da Intune.
   - **Immediatamente**: lo schermo si blocca dopo 30 secondi di inattività.
@@ -174,7 +181,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   - **3**: lo schermo si blocca dopo 3 minuti di inattività.
   - **4**: lo schermo si blocca dopo 4 minuti di inattività.
   - **5**: lo schermo si blocca dopo 5 minuti di inattività.
-    
+
   **Opzioni iPadOS**:  
 
   - **Non configurato** (impostazione predefinita): l'impostazione non viene considerata da Intune.
@@ -184,7 +191,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   - **10**: lo schermo si blocca dopo 10 minuti di inattività.
   - **15**: lo schermo si blocca dopo 15 minuti di inattività.
 
-  Se un valore non è applicabile a iOS o iPadOS, Apple userà il valore *minimo* più vicino. Se ad esempio si immette `4` minuti, i dispositivi iPadOS useranno il valore `2` minuti. Se si immette `10` minuti, i dispositivi iOS useranno il valore `5` minuti. Questa è una limitazione Apple.
+  Se un valore non è applicabile a iOS e iPadOS, Apple userà il valore *minimo* più prossimo. Se ad esempio si immette `4` minuti, i dispositivi iPadOS useranno il valore `2` minuti. Se si immette `10` minuti, i dispositivi iOS useranno il valore `5` minuti. Questa è una limitazione Apple.
   
   > [!NOTE]
   > L'interfaccia utente di Intune per questa impostazione non separa i valori supportati da iOS e iPadOS. L'interfaccia utente potrebbe essere aggiornata in una delle prossime versioni.
@@ -197,6 +204,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Face ID si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
@@ -208,8 +216,9 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
     Face ID si applica a:  
     - iOS 11.0 e versioni successive
+    - iPadOS 13.0 e versioni successive
 
-- **Blocca il riempimento automatico delle password**: scegliere **Blocca** per impedire l'uso della funzionalità di riempimento automatico delle password in iOS. La scelta di **Blocca** comporta anche le conseguenze seguenti:
+- **Blocca il riempimento automatico delle password**: Scegliere **Blocca** per impedire l'uso della funzionalità di riempimento automatico delle password in iOS/iPadOS. La scelta di **Blocca** comporta anche le conseguenze seguenti:
 
   - Agli utenti non viene richiesto di usare una password salvata in Safari o in qualsiasi app.
   - Le password complesse automatiche sono disabilitate e non vengono consigliate password complesse agli utenti.
@@ -222,6 +231,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
   
 <sup>1</sup> Quando si configurano le impostazioni **Numero massimo di minuti di inattività fino al blocco dello schermo** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo cinque minuti e il dispositivo viene bloccato dopo altri cinque minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio il dispositivo viene bloccato cinque minuti dopo che l'utente spegne lo schermo.
 
@@ -247,25 +257,25 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   > [!NOTE]
   > Quando questa impostazione è bloccata, vengono bloccate anche le tastiere di terze parti installate dall'App Store.
 
-  - **Consenti alle app gestite di leggere da contatti in account di contatti non gestiti**: quando questa opzione è impostata su **Consenti**, le app non gestite, come l'app Contatti di iOS predefinita, possono leggere e accedere alle informazioni dei contatti dalle app gestite, inclusa l'app per dispositivi mobili Outlook. **Non configurato** (impostazione predefinita) impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.  
+  - **Consenti alle app gestite di leggere da contatti in account di contatti non gestiti**: Quando questa opzione è impostata su **Consenti**, le app non gestite, ad esempio l'app Contatti di iOS/iPadOS predefinita, possono leggere e accedere alle informazioni dei contatti dalle app gestite, inclusa l'app per dispositivi mobili Outlook. **Non configurato** (impostazione predefinita) impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.  
   
     Questa impostazione consente o impedisce la lettura delle informazioni dei contatti. Non controlla la sincronizzazione dei contatti tra le app.
   
     Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
 
-  Per altre informazioni su queste due impostazioni e sull'effetto che producono sulla sincronizzazione per l'esportazione dei contatti di Outlook per iOS, vedere [Suggerimento per il supporto: usare le impostazioni del profilo personalizzato di Intune con l'app Contatti nativa di iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Per altre informazioni su queste due impostazioni e sull'effetto che producono sulla sincronizzazione per l'esportazione dei contatti di Outlook per iOS/iPadOS, vedere [Suggerimento per il supporto: Usare le impostazioni del profilo personalizzato di Intune con l'app Contatti nativa di iOS/iPadOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **Considera AirDrop come destinazione non gestita**: **Rendi obbligatorio** forza la considerazione di AirDrop come obiettivo di rilascio non gestito. Impedisce alle app gestite di inviare dati tramite Airdrop. 
 - **Visualizzazione di documenti non aziendali nelle app aziendali**: **Blocca** impedisce la visualizzazione di documenti non aziendali in app aziendali. **Non configurato** (impostazione predefinita) consente di visualizzare qualsiasi documento nelle app aziendali gestite.
 
-  L'impostazione di questa opzione su **Blocca** impedisce anche la sincronizzazione per l'esportazione dei contatti in Outlook per iOS. Per altre informazioni, vedere [Suggerimento per il supporto: abilitazione della sincronizzazione dei contatti di Outlook per iOS con i controlli MDM di iOS12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
+  L'impostazione di questa opzione su **Blocca** impedisce anche la sincronizzazione per l'esportazione dei contatti in Outlook per iOS/iPadOS. Per altre informazioni, vedere [Suggerimento per il supporto: Abilitazione della sincronizzazione dei contatti di Outlook per iOS/iPadOS con i controlli MDM di iOS12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione del dispositivo, Registrazione automatica dei dispositivi (con supervisione)
 
 - **Richiedi la password di iTunes Store per tutti gli acquisti**: se si seleziona **Rendi obbligatorio**, l'utente dovrà immettere la password dell'ID Apple per ogni acquisto in-app o su iTunes. **Non configurato** (impostazione predefinita) consente l'acquisto senza richiedere ogni volta una password.
 - **Acquisti in-app**: scegliere **Blocca** per impedire gli acquisti in-app dallo Store. **Non configurato** (impostazione predefinita) consente gli acquisti dallo Store dall'interno di un'app in esecuzione.
 - **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'** : scegliere **Blocca** per impedire agli utenti di scaricare da iBook Store contenuti multimediali contrassegnati come erotici. **Non configurato** (impostazione predefinita) consente all'utente di scaricare libri della categoria "Erotici".
-- **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: quando questa opzione è impostata su **Consenti**, le app gestite, come l'app per dispositivi mobili Outlook, possono salvare o sincronizzare le informazioni dei contatti, inclusi i contatti commerciali e aziendali, con l'app Contatti di iOS predefinita. Quando è impostata su **Non configurato** (impostazione predefinita), le app gestite non possono salvare o sincronizzare le informazioni dei contatti con l'app Contatti di iOS predefinita sul dispositivo.
+- **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: Quando questa opzione è impostata su **Consenti**, le app gestite, ad esempio l'app per dispositivi mobili Outlook, possono salvare o sincronizzare le informazioni dei contatti, inclusi i contatti commerciali e aziendali, con l'app Contatti di iOS/iPadOS predefinita. Quando è impostata su **Non configurato** (impostazione predefinita), le app gestite non possono salvare o sincronizzare le informazioni dei contatti con l'app Contatti di iOS/iPadOS predefinita nel dispositivo.
   
   Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
 
@@ -275,28 +285,29 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **App Store**: **Blocca** impedisce l'accesso all'App Store nei dispositivi con supervisione. L'impostazione **Non configurata** (predefinita) consente l'accesso.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
   - **Installazione di app dall'App Store**: scegliere **Blocca** per bloccare l'App Store nella schermata iniziale del dispositivo. Gli utenti finali possono continuare a usare iTunes o Apple Configurator per installare le app. **Non configurato** (impostazione predefinita) consente App Store nella schermata iniziale.
-  - **Download automatici delle app**: scegliere **Blocca** per impedire il download automatico delle app acquistate in altri dispositivi. Non influisce sugli aggiornamenti delle app esistenti. **Non configurato** (impostazione predefinita) consente di scaricare nel dispositivo app acquistate in altri dispositivi iOS.
+  - **Download automatici delle app**: scegliere **Blocca** per impedire il download automatico delle app acquistate in altri dispositivi. Non influisce sugli aggiornamenti delle app esistenti. **Non configurato** (impostazione predefinita) consente di scaricare nel dispositivo app acquistate in altri dispositivi iOS/iPadOS.
 
-- **Musica di iTunes, podcast o notizie con contenuti espliciti**: scegliere **Blocca** per bloccare musica di iTunes, podcast o notizie con contenuti espliciti. **Non configurato** (impostazione predefinita) consente al dispositivo di accedere ai contenuti classificati come per adulti dallo Store. iOS 13 e versioni successive possono richiedere dispositivi solo con supervisione. 
+- **Musica di iTunes, podcast o notizie con contenuti espliciti**: scegliere **Blocca** per bloccare musica di iTunes, podcast o notizie con contenuti espliciti. **Non configurato** (impostazione predefinita) consente al dispositivo di accedere ai contenuti classificati come per adulti dallo Store.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Aggiunta di amici al Game Center**: **Blocca** impedisce agli utenti di aggiungere amici al Game Center. **Non configurato** (impostazione predefinita) consente all'utente di aggiungere amici in Game Center.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Game Center**: **Blocca** impedisce l'uso dell'app Game Center. **Non configurato** (impostazione predefinita) consente l'uso dell'app Game Center nel dispositivo.
 - **Gioco multiplayer**: scegliere **Blocca** per bloccare la modalità di gioco multiplayer. **Non configurato** (impostazione predefinita) consente all'utente di partecipare a giochi multiplayer nel dispositivo.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Accesso all'unità di rete nell'app File**: usando il protocollo SMB (Server Message Block), i dispositivi possono accedere a file o ad altre risorse in un server di rete. **Disabilita** impedisce l'accesso ai file in un'unità SMB di rete. L'impostazione **Non configurata** (predefinita) consente l'accesso.
 
   Questa funzionalità si applica a:  
-  - iOS e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ## <a name="built-in-apps"></a>App predefinite
 
@@ -325,11 +336,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Fotocamera**: scegliere **Blocca** per impedire l'accesso alla fotocamera nel dispositivo. **Non configurato** (impostazione predefinita) consente l'accesso alla fotocamera del dispositivo.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
   - **FaceTime**: **Blocca** impedisce l'accesso all'app FaceTime. **Non configurato** (impostazione predefinita) consente l'accesso all'app FaceTime nel dispositivo.
 
-    A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+    A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Filtro di Siri per le espressioni volgari**: **Rendi obbligatorio** impedisce a Siri di usare espressioni volgari.
 
@@ -349,16 +360,19 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
   Questa funzionalità si applica a:  
   - iOS 4.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Trova il mio iPhone**: **Non configurato** (impostazione predefinita) consente di usare la funzionalità dell'app Trova il mio per ottenere la posizione approssimativa del dispositivo. **Blocca** impedisce questa funzionalità nell'app Trova il mio. 
 
   Questa funzionalità si applica a:  
-  - iOS 13.0 e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Trova i miei amici**: **Non configurato** (impostazione predefinita) consente di usare la funzionalità dell'app Trova il mio per trovare familiari e amici da un dispositivo Apple o da iCloud.com. **Blocca** impedisce questa funzionalità nell'app Trova il mio.
 
   Questa funzionalità si applica a:  
-  - iOS 13.0 e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Modifiche alle impostazioni dell'app Trova i miei amici**: **Blocca** impedisce di apportare modifiche alle impostazioni dell'app Find My Friends. **Non configurato** (impostazione predefinita) consente all'utente di modificare le impostazioni per l'app Trova i miei amici.
 
@@ -368,11 +382,11 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 
 - **Safari**: **Blocca** impedisce l'uso del browser Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di usare il browser Safari.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Riempimento automatico di Safari**: **Blocca** disabilita la funzionalità di riempimento automatico in Safari nel dispositivo. **Non configurato** (impostazione predefinita) consente agli utenti di modificare le impostazioni di completamento automatico nel Web browser.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
@@ -399,7 +413,7 @@ Per aggiungere app a questi elenchi, è possibile:
 
 ## <a name="show-or-hide-apps"></a>Mostrare o nascondere app
 
-Si applica ai dispositivi che eseguono iOS 9.3 o versioni successive.
+Si applica ai dispositivi che eseguono iOS 9.3+ e iPadOS 13.0+.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
@@ -459,6 +473,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Modifica utente dell'hotspot personale**: quando questa opzione è impostata su **Blocca**, l'utente non può modificare l'impostazione dell'hotspot personale. **Non configurato** (impostazione predefinita) consente agli utenti finali di abilitare o disabilitare l'hotspot personale.
 
@@ -466,6 +481,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
   Questa funzionalità si applica a:  
   - iOS 12.2 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Aggiungi reti Wi-Fi solo tramite profili di configurazione**: **Rendi obbligatorio** forza il dispositivo a usare solo reti Wi-Fi configurate tramite profili di configurazione di Intune. **Non configurato** (impostazione predefinita) consente al dispositivo di usare altre reti Wi-Fi.
 
@@ -478,7 +494,8 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
   La configurazione di questa impostazione non impedisce agli utenti di selezionare una rete Wi-Fi.
 
   Questa funzionalità si applica a:  
-  - iOS e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 
@@ -495,7 +512,7 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 - **AirDrop**: **Blocca** impedisce l'uso di AirDrop nel dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della funzionalità AirDrop per scambiare contenuti con dispositivi vicini.
 - **Associazione di Apple Watch**: **Blocca** impedisce l'associazione con un Apple Watch. **Non configurato** (impostazione predefinita) consente al dispositivo l'associazione con un Apple Watch.
 - **Modifica Bluetooth**: **Blocca** impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di modificare queste impostazioni.
-- **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS**: **Non configurato** (impostazione predefinita) imposta l'associazione di host in modo che l'amministratore possa controllare a quali dispositivi può essere associato un dispositivo iOS. **Blocca** impedisce l'associazione di host.
+- **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS/iPadOS**: **Non configurato** (impostazione predefinita) imposta l'associazione di host in modo che l'amministratore possa stabilire a quali dispositivi può essere associato un dispositivo iOS/iPadOS. **Blocca** impedisce l'associazione di host.
 - **Blocca AirPrint**: scegliere **Blocca** per impedire l'uso della funzionalità AirPrint nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di usare AirPrint.
   - **Impedisci l'archiviazione di credenziali AirPrint in Keychain**: **Blocca** impedisce l'archiviazione Keychain di nome utente e password nel dispositivo. **Non configurato** (impostazione predefinita) consente l'archiviazione di nome utente e password per AirPrint nell'app Keychain.
   - **Richiedi un certificato TLS attendibile per AirPrint**: **Rendi obbligatorio** forza il dispositivo a usare certificati attendibili per le comunicazioni di stampa TLS.
@@ -504,11 +521,13 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 - **Accesso ai file in un'unità USB**: i dispositivi possono connettersi e aprire i file in un'unità USB. **Disabilita** impedisce l'accesso del dispositivo all'unità USB nell'app File quando un'unità USB è connessa al dispositivo. La disabilitazione di questa funzionalità impedisce inoltre agli utenti finali di trasferire file in un'unità USB connessa a un iPad. **Non configurato** (impostazione predefinita) consente l'accesso a un'unità USB nell'app File.
 
   Questa funzionalità si applica a:  
-  - iOS e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario
 
@@ -523,7 +542,8 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 - **QuickPath**: **Non configurato** (impostazione predefinita) consente agli utenti di usare QuickPath, che permette un input continuo sulla tastiera del dispositivo. Gli utenti possono digitare scorrendo il dito sui tasti per creare le parole. **Blocca** impedisce agli utenti di usare QuickPath. 
 
   Questa funzionalità si applica a:  
-  - iOS 13.0 e iPadOS 13.0 e versioni successive
+  - iOS 13.0 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 
@@ -539,21 +559,21 @@ Nota necessaria per il roaming dei dati (suggerimento o nota importante per non 
 - **Sincronizzazione dello streaming foto in iCloud**: **Non configurato** (impostazione predefinita) consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto** per sincronizzare le foto in iCloud in modo che siano disponibili in tutti i dispositivi degli utenti. **Blocca** impedisce la sincronizzazione dello streaming foto in iCloud. Il blocco di questa funzionalità può causare la perdita di dati. 
 - **Libreria foto di iCloud**: impostare su **Blocca** per disabilitare l'uso della libreria foto di iCloud per archiviare foto e video nel cloud. Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo. **Non configurato** (impostazione predefinita) consente l'uso della libreria foto iCloud.
 - **Flusso di foto condivise**: scegliere **Blocca** per disabilitare **Condivisione foto di iCloud** nel dispositivo. **Non configurato** (impostazione predefinita) consente lo streaming di foto condivise.
-- **Handoff**: **Non configurato** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo iOS e quindi continuare il lavoro avviato in un altro dispositivo iOS o macOS. **Blocca** impedisce l'handoff.
+- **Handoff**: **Non configurato** (impostazione predefinita) consente agli utenti di avviare il lavoro in un dispositivo iOS/iPadOS e quindi continuare il lavoro avviato in un altro dispositivo iOS/iPadOS o macOS. **Blocca** impedisce l'handoff.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione automatica dei dispositivi (supervisione)
 
 - **Backup in iCloud**: **Non configurato** (impostazione predefinita) consente all'utente di eseguire il backup del dispositivo in iCloud. **Blocca** impedisce all'utente di eseguire il backup del dispositivo in iCloud.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Blocca la sincronizzazione dei documenti di iCloud**: **Non configurato** (impostazione predefinita) consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud. **Blocca** impedisce a iCloud di sincronizzare documenti e dati.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 - **Blocca la sincronizzazione Keychain con iCloud**: scegliere **Blocca** per disabilitare la sincronizzazione delle credenziali archiviate in Keychain su iCloud. **Non configurato** (impostazione predefinita) consente agli utenti di sincronizzare queste credenziali.
 
-  A partire da iOS 13.0, questa impostazione richiede dispositivi con supervisione.
+  A partire da iOS/iPadOS 13.0, questa impostazione richiede dispositivi con supervisione.
 
 ## <a name="autonomous-single-app-mode"></a>Modalità applicazione singola autonoma
 
@@ -612,14 +632,14 @@ Ad esempio, in un ambiente scolastico o universitario, aggiungere un'app che con
 - **Controllo dello zoom**: **Consenti** permette all'utente di modificare lo zoom. **Non configurata** impedisce la modifica dello zoom.
 
 > [!NOTE]
-> Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo strumento Apple Configurator o il programma di registrazione dispositivi di Apple per attivare la modalità con supervisore del dispositivo. Vedere la Guida di Apple sull'uso dello strumento Apple Configurator.
-> Se l'app per iOS specificata viene installata dopo aver assegnato il profilo, il dispositivo attiva la modalità tutto schermo solo dopo il riavvio.
+> Prima di poter configurare un dispositivo iOS/iPadOS per la modalità tutto schermo, è necessario usare lo strumento Apple Configurator o il programma di registrazione del dispositivo di Apple per attivare la modalità con supervisore del dispositivo. Vedere la Guida di Apple sull'uso dello strumento Apple Configurator.
+> Se l'app per iOS/iPadOS specificata viene installata dopo aver assegnato il profilo, il dispositivo attiva la modalità tutto schermo solo dopo il riavvio.
 
 ## <a name="domains"></a>Domains
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Le impostazioni si applicano a: Registrazione del dispositivo, Registrazione automatica dei dispositivi (con supervisione)
 
-- **Domini di posta elettronica non contrassegnati** > **URL del dominio di posta elettronica**: Aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli immessi, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
+- **Domini di posta elettronica non contrassegnati** > **URL del dominio di posta elettronica**: Aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli immessi, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS/iPadOS.
 
 - **Domini Web gestiti** > **URL del dominio Web**: aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dai domini immessi, sono considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
 
@@ -629,10 +649,11 @@ Ad esempio, in un ambiente scolastico o universitario, aggiungere un'app che con
 
   Questa impostazione si applica a:  
   - iOS 9.3 e versioni successive
+  - iPadOS 13.0 e versioni successive
 
 ## <a name="settings-that-require-supervised-mode"></a>Impostazioni che richiedono la modalità di supervisione
 
-La modalità con supervisione iOS può essere abilitata solo durante l'installazione iniziale del dispositivo tramite Device Enrollment Program di Apple o Apple Configurator. Dopo aver abilitato la modalità di supervisione, Intune può configurare un dispositivo con le funzionalità seguenti:
+La modalità con supervisione iOS/iPadOS può essere abilitata solo durante l'installazione iniziale del dispositivo usando Device Enrollment Program di Apple o Apple Configurator. Dopo aver abilitato la modalità di supervisione, Intune può configurare un dispositivo con le funzionalità seguenti:
 
 - Blocco dell'app (modalità app singola) 
 - Proxy HTTP globale 

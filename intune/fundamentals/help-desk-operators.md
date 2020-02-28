@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510260"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514592"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -59,7 +59,7 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 
 È possibile usare il riquadro **Risoluzione dei problemi** per esaminare le informazioni dell'utente.
 
-![Dashboard di risoluzione dei problemi, con aree numerate descritte dalla tabella seguente](./media/help-desk-operators/troubleshooting-dash.png)
+![Dashboard per la risoluzione dei problemi, con aree numerate descritte dalla tabella seguente](./media/help-desk-operators/troubleshooting-dash.png)
 
 | Area | Name | Descrizione |
 | ---  | ---  | ---         |
@@ -67,7 +67,7 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
 | 4.   | Informazioni sull'utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App client<li>Criteri di conformità<li> Criteri di configurazione<li>Criteri di protezione delle app <li>Restrizioni di registrazione</ul>      |
-| 5.   | Appartenenza al gruppo  | Mostra i gruppi correnti di cui l'utente selezionato è membro.       |
+| 5.   | Appartenenza a gruppi  | Mostra i gruppi correnti di cui l'utente selezionato è membro.       |
 
 <!-- this section needs to be updated
 
@@ -269,7 +269,7 @@ Quando si sceglie la riga di un errore, vengono forniti ulteriori dettagli.
 
 | Errore | Dettagli |
 |-------------|----------|
-| iOS Timeout or Failure (Timeout o errore iOS) | Si è verificato un timeout tra il dispositivo e Intune perché l'utente ha impiegato troppo tempo a completare la registrazione. |
+| Timeout o errore di iOS/iPadOS | Si è verificato un timeout tra il dispositivo e Intune perché l'utente ha impiegato troppo tempo a completare la registrazione. |
 | L'utente non è stato trovato o non ha la licenza | L'utente non ha una licenza o è stato rimosso dal servizio. |
 | Il dispositivo è già registrato | Qualcuno ha tentato di registrare un dispositivo usando il Portale aziendale su un dispositivo che risulta ancora registrato da un altro utente. |
 | Nessun onboarding in Intune | È stata tentata una registrazione ma l'autorità di gestione dei dispositivi mobili (MDM) di Intune non era configurata. |
@@ -286,14 +286,14 @@ Quando si sceglie la riga di un errore, vengono forniti ulteriori dettagli.
 | Metodo di registrazione di Autopilot imprevisto | Il dispositivo ha cercato di registrarsi con un metodo non consentito. |
 | Dispositivo di AutoPilot rimosso | Il dispositivo che ha eseguito un tentativo di registrazione è stato rimosso da Autopilot per questo account. |
 | Numero massimo dispositivi raggiunto | Questa registrazione è stata bloccata a causa di una restrizione del limite di dispositivi configurata dall'amministratore. |
-| Onboarding di Apple | La registrazione di tutti i dispositivi iOS è stata bloccata a causa di un certificato push MDM Apple mancante o scaduto in Intune. |
+| Onboarding di Apple | La registrazione di tutti i dispositivi iOS/iPadOS è stata bloccata a causa di un certificato per le notifiche push MDM Apple mancante o scaduto in Intune. |
 | Il dispositivo non è preregistrato | Il dispositivo non è stato preregistrato come aziendale e tutte le registrazioni personali sono state bloccate da un amministratore. |
 | La funzionalità non è supportata | L'utente ha probabilmente tentato di eseguire la registrazione con un metodo non compatibile con la configurazione di Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Raccogliere i dati disponibili dal dispositivo mobile
 
 Usare le risorse seguenti per raccogliere i dati del dispositivo durante la risoluzione dei problemi dei dispositivi dell'utente:
-- [Send iOS enrollment errors to your IT administrator (Inviare gli errori di registrazione iOS all'amministratore IT)](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Inviare gli errori di registrazione iOS/iPadOS all'amministratore IT](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Aiutare il supporto tecnico dell'azienda a risolvere i problemi dei dispositivi con la registrazione dettagliata](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [Inviare i log di Android al supporto tecnico dell'azienda usando un cavo USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Send Android diagnostic data logs to your IT administrator using email (Inviare i log dei dati Android di diagnostica all'amministratore IT tramite posta elettronica)](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

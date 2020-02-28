@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a19830130f992a002b73402f5e13a8f062539917
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059850"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512671"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di posta elettronica in Microsoft Intune
 
@@ -31,17 +31,17 @@ Esaminare alcuni problemi comuni relativi ai profili di posta elettronica e le r
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
-- I profili di posta elettronica vengono distribuiti per l'utente che ha registrato il dispositivo. Per configurare il profilo di posta elettronica, Intune usa le proprietà Azure Active Directory (AD) nel profilo di posta elettronica dell'utente durante la registrazione. L' [aggiunta delle impostazioni di posta elettronica ai dispositivi](email-settings-configure.md) può essere una risorsa efficace.
-- Per Android Enterprise, distribuire Gmail o Nine for Work usando il Google Play Store gestito. [Aggiungi app Google Play gestite](../apps/apps-add-android-for-work.md) elenca i passaggi.
-- Microsoft Outlook per iOS e Android non supporta i profili di posta elettronica. Distribuire invece un criterio di configurazione delle app. Per altre informazioni, vedere [impostazione di configurazione di Outlook](../apps/app-configuration-policies-outlook.md).
-- I profili di posta elettronica assegnati ai gruppi di dispositivi (non gruppi di utenti) non possono essere recapitati al dispositivo. Quando il dispositivo ha un utente primario, la destinazione del dispositivo dovrebbe funzionare. Se il profilo di posta elettronica include certificati utente, assicurarsi di fare riferimento ai gruppi di utenti.
-- È possibile che agli utenti venga ripetutamente richiesto di immettere la password per il profilo di posta elettronica. In questo scenario, controllare tutti i certificati a cui viene fatto riferimento nel profilo di posta elettronica. Se uno dei certificati non è destinato a un utente, Intune tenta di distribuire il profilo di posta elettronica.
+- I profili di posta elettronica vengono distribuiti per l'utente che ha registrato il dispositivo. Per configurare il profilo di posta elettronica, Intune usa le proprietà di Azure Active Directory (AD) nel profilo di posta elettronica dell'utente durante la registrazione. L' [aggiunta delle impostazioni di posta elettronica ai dispositivi](email-settings-configure.md) può essere un'utile risorsa.
+- Per Android Enterprise, distribuire Gmail o Nine for Work usando Google Play Store gestito. In [Aggiungere app Google Play gestite](../apps/apps-add-android-for-work.md) sono illustrati i passaggi.
+- Microsoft Outlook per iOS/iPadOS e Android non supportano i profili di posta elettronica. Distribuire invece i criteri di configurazione delle app. Per altre informazioni, vedere [Impostazioni di configurazione di Outlook](../apps/app-configuration-policies-outlook.md).
+- I profili di posta elettronica destinati ai gruppi di dispositivi (non ai gruppi di utenti) non possono essere ricevuti dal dispositivo. Quando il dispositivo ha un utente primario, la destinazione del dispositivo dovrebbe funzionare. Se il profilo di posta elettronica include certificati utente, assicurarsi che si faccia riferimento ai gruppi di utenti.
+- È possibile che agli utenti venga ripetutamente richiesto di immettere la password per il profilo di posta elettronica. In questo scenario controllare tutti i certificati a cui viene fatto riferimento nel profilo di posta elettronica. Se uno dei certificati non fa riferimento a un utente, Intune ritenta di distribuire il profilo di posta elettronica.
 
 ## <a name="device-already-has-an-email-profile-installed"></a>Nel dispositivo è già installato un profilo di posta elettronica
 
-Se gli utenti creano un profilo di posta elettronica prima della registrazione in Intune o in Office 365 MDM, il profilo di posta elettronica distribuito da Intune potrebbe non funzionare come previsto:
+Se gli utenti creano un profilo di posta elettronica prima di registrarsi in Intune o in Office 365 MDM, il profilo di posta elettronica distribuito da Intune potrebbe non funzionare nel modo previsto:
 
-- **iOS**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Il profilo di posta elettronica creato dall'utente blocca la distribuzione del profilo creato da Intune. Si tratta di un problema comune, poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. L'app Portale aziendale indica che l'utente non è conforme e potrebbe richiedergli di rimuovere il profilo di posta elettronica.
+- **iOS/iPadOS**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Il profilo di posta elettronica creato dall'utente blocca la distribuzione del profilo creato da Intune. Si tratta di un problema comune, poiché gli utenti di iOS/iPadOS in genere creano un profilo di posta elettronica, poi eseguono la registrazione. L'app Portale aziendale indica che l'utente non è conforme e potrebbe richiedergli di rimuovere il profilo di posta elettronica.
 
   L'utente deve rimuovere il proprio profilo di posta elettronica in modo che il profilo di Intune possa essere distribuito. Per evitare questo problema, richiedere agli utenti di registrarsi e consentire a Intune di distribuire il profilo di posta elettronica. Gli utenti possono quindi creare il proprio profilo di posta elettronica.
 
@@ -53,7 +53,7 @@ Samsung KNOX non usa il nome host per identificare il profilo. È consigliabile 
 
 ## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Errore 0x87D1FDE8 per il dispositivo KNOX Standard
 
-**Problema**: dopo la creazione e la distribuzione di un profilo di posta elettronica di Exchange Active Sync per Samsung KNOX Standard per diversi dispositivi Android, l'errore **0x87D1FDE8** o **Correzione non riuscita** viene visualizzato nella scheda Criteri delle proprietà del dispositivo.
+**Problema**: dopo aver creato e distribuito un profilo di posta elettronica di Exchange Active Sync per Samsung KNOX Standard per diversi dispositivi Android, l'errore **0x87D1FDE8** o **Correzione non riuscita** viene visualizzato nella scheda Proprietà > Criteri del dispositivo.
 
 Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di origine. L'opzione di sincronizzazione Samsung Notes non è più supportata e non deve essere selezionata nel profilo. Assicurarsi che i dispositivi abbiano tempo sufficiente per elaborare i criteri, fino a 24 ore.
 
@@ -63,8 +63,8 @@ Gli utenti con account di posta elettronica configurati automaticamente non poss
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **Dispositivi** > **Profili di configurazione**.
-3. Selezionare il profilo di posta elettronica > **proprietà** > **Impostazioni**.
-4. Impostare l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** per **abilitare**.
+3. Selezionare il profilo di posta elettronica > **Proprietà** > **Impostazioni**.
+4. Impostare l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** su **Abilita**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

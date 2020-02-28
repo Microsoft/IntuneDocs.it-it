@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502266"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515204"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Proteggere Office 365 Exchange Online senza richiedere la gestione dei dispositivi
 
-Se si vuole, è possibile concedere ai dipendenti l'accesso alla posta elettronica aziendale senza dover configurare un sistema di gestione dei dispositivi. È possibile concedere l'accesso a Office 365 Exchange Online tramite Intune. Per completare la procedura necessaria, confermare di avere licenze per Microsoft 365 o Azure Active Directory (Premium) e Intune. I dipendenti devono avere un [dispositivo iOS o Android supportato](../fundamentals/supported-devices-browsers.md). 
+Se si vuole, è possibile concedere ai dipendenti l'accesso alla posta elettronica aziendale senza dover configurare un sistema di gestione dei dispositivi. È possibile concedere l'accesso a Office 365 Exchange Online tramite Intune. Per completare la procedura necessaria, confermare di avere licenze per Microsoft 365 o Azure Active Directory (Premium) e Intune. I dipendenti devono avere un [dispositivo iOS/iPadOS o Android supportato](../fundamentals/supported-devices-browsers.md). 
 
 Se si decide di configurare un sistema di gestione dei dispositivi, è possibile farlo. Questo tipo di protezione delle app è indipendente dalla gestione dei dispositivi. 
 
@@ -41,7 +41,7 @@ Se si decide di configurare un sistema di gestione dei dispositivi, è possibile
 
 ## <a name="what-to-tell-employees-and-students"></a>Informazioni da comunicare a dipendenti e studenti
 
-* È necessario richiedere ai dipendenti e agli studenti di scaricare e installare Microsoft Outlook o Microsoft SharePoint per iOS dall'App Store di Apple o per Android da Google Play Store. 
+* È necessario richiedere ai dipendenti e agli studenti di scaricare e installare Microsoft Outlook o Microsoft SharePoint per iOS/iPadOS dall'App Store di Apple o per Android da Google Play Store. 
 * Se si impedisce l'accesso alle app che non usano l'autenticazione moderna, è necessario segnalare tale limitazione a dipendenti e studenti. 
 
 ## <a name="next-steps"></a>Passaggi successivi

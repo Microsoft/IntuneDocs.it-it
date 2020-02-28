@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
-ms.translationtype: MTE75
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812450"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513900"
 ---
 # <a name="intune-app-installation-error-reference"></a>Informazioni di riferimento sugli errori di installazione delle app di Intune
 
@@ -51,17 +51,17 @@ Questa sezione menziona sia la registrazione di tipo amministratore di dispositi
 | 0xC7D14FB1  | -942583887 | L'utente finale ha annullato l'installazione dell'app. | L'utente ha disinstallato l'app in modo esplicito. Questo errore viene restituito quando l'attività di installazione del sistema operativo Android viene annullata dall'utente. L'utente ha premuto il pulsante Annulla quando era visualizzata la richiesta di installazione del sistema operativo oppure ha fatto clic in un altro punto. Questo errore viene restituito solo per gli scenari DA. Per gli scenari KNOX, all'utente non viene richiesto di eseguire l'installazione, che può essere eseguita automaticamente. Intune visualizza una notifica per invitare gli utenti a fare clic per riprovare. Se l'app è un'app disponibile, la notifica può essere ignorata. Se invece l'app è obbligatoria, non può essere ignorata. Richiedere all'utente di non annullare l'installazione. |
 | 0xC7D14FB9 | -942583879 | L'utente finale ha annullato l'installazione dell'app. (Alla richiesta di accettazione) | Informare l'utente di accettare l'app distribuita con Intune e installare l'app quando richiesto. |
 
-## <a name="ios-app-installation-errors"></a>Errori di installazione delle app iOS
+## <a name="ios-and-ipados-app-installation-errors"></a>Errori di installazione di app iOS e iPadOS
 
-I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di installazione di iOS. 
+I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di installazione di iOS/iPadOS. 
 
 | Codice di errore (esadecimale) | Codice di errore (decimale) | Messaggio di errore/codice | Descrizione/Suggerimenti per la risoluzione dei problemi |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x87D12906 | -2016335610 | Errore dell'agente MDM di Apple: il comando di installazione dell'app non è riuscito senza che sia stato specificato un motivo di errore. Riprovare a installare l'app. | L'agente MDM di Apple ha segnalato che il comando di installazione ha avuto esito negativo. |
 | 0x87D1313C | -2016333508 | La connessione di rete nel client è stata persa o interrotta. I tentativi successivi dovrebbero avere esito positivo in un ambiente di rete migliore. | Si è persa la connessione di rete mentre l'URL aggiornato del servizio di download veniva inviato al dispositivo. In particolare, non è stato possibile trovare un server con il nome host specificato. |
-| 0x87D11388 | -2016341112 | Il dispositivo iOS è attualmente occupato.  | Il dispositivo iOS era occupato e ciò ha provocato un errore. Il dispositivo è stato bloccato. L'utente deve sbloccare il dispositivo per installare l'app. |
-| 0x87D13B64 | -2016330908 | Installazione app non riuscita.  | Si è verificato un errore di installazione dell'app. Sono necessari i log della Console iOS per risolvere questo errore. |
-| 0x87D13B66 | -2016330906 | L'app è gestita, ma è scaduta o è stata rimossa dall'utente.  | L'utente ha disinstallato in modo esplicito l'app o l'app è scaduta ma non è stata scaricata o il rilevamento dell'app non corrisponde alla risposta del dispositivo.   Inoltre, questo errore può verificarsi per un bug della piattaforma iOS 9.2.2. |
+| 0x87D11388 | -2016341112 | Il dispositivo iOS/iPadOS è attualmente occupato.  | Il dispositivo iOS/iPadOS era occupato e ciò ha generato un errore. Il dispositivo è stato bloccato. L'utente deve sbloccare il dispositivo per installare l'app. |
+| 0x87D13B64 | -2016330908 | Installazione app non riuscita.  | Si è verificato un errore di installazione dell'app. Sono necessari i log della console iOS/iPadOS per risolvere questo errore. |
+| 0x87D13B66 | -2016330906 | L'app è gestita, ma è scaduta o è stata rimossa dall'utente.  | L'utente ha disinstallato in modo esplicito l'app o l'app è scaduta ma non è stata scaricata o il rilevamento dell'app non corrisponde alla risposta del dispositivo.   Questo errore può verificarsi anche per un bug della piattaforma iOS/iPadOS 9.2.2. |
 | 0x87D13B60 | -2016330912 | L'app viene pianificata per l'installazione, ma è necessario un codice di riscatto per completare la transazione.  | Questo errore si verifica in genere con le app di iOS Store a pagamento. |
 | 0x87D1041C | -2016345060 | Applicazione non rilevata dopo il completamento dell'installazione.  | Il processo di rilevamento dell'app non corrisponde alla risposta del dispositivo. |
 | 0x87D13B62 | -2016330910 | L'utente ha rifiutato l'offerta di installazione dell'app.  | Durante l'installazione iniziale dell'app, l'utente ha fatto clic su Annulla. Chiedere all'utente di accettare la richiesta di installazione la volta successiva. |
@@ -70,7 +70,7 @@ I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di 
 | 0x87D13B93 | -2016330861 | È possibile installare le app VPP solo in modalità iPad condiviso. | È necessario ottenere le app tramite Volume Purchase Program di Apple per installare in un iPad condiviso. |
 | 0x87D13B94 | -2016330860 | Non è possibile installare app quando App Store è disabilitato. | Affinché l'app possa essere installata, App Store deve essere abilitato. |
 | 0x87D13B95 | -2016330859 | Non è possibile trovare la licenza VPP per l'app. | Provare a revocare la licenza dell'app e a riassegnarla. |
-| 0x87D13B96 | -2016330858 | Non è possibile installare app di sistema con il provider MDM. | L'installazione di app che vengono pre-installate dal sistema operativo iOS non è supportata. |
+| 0x87D13B96 | -2016330858 | Non è possibile installare app di sistema con il provider MDM. | L'installazione di app che vengono pre-installate dal sistema operativo iOS/iPadOS non è supportata. |
 | 0x87D13B97 | -2016330857 | Non è possibile installare app quando il dispositivo è in modalità di dispositivo perso. | In modalità di dispositivo perso viene bloccato qualsiasi uso del dispositivo. Disabilitare la modalità di dispositivo perso per installare le app. |
 | 0x87D13B98 | -2016330856 | Non è possibile installare app quando il dispositivo è in modalità tutto schermo. | Provare ad aggiungere questo dispositivo a un gruppo di esclusione dei criteri di configurazione per la modalità tutto schermo per installare le app. |
 | 0x87D13B9C | -2016330852 | Non è possibile installare le app a 32 bit nel dispositivo. | Il dispositivo non supporta l'installazione di app a 32 bit. Provare a distribuire la versione a 64 bit dell'app. |
@@ -80,7 +80,7 @@ I seguenti messaggi di errore e descrizioni contengono dettagli sugli errori di 
 | 0x87d13b7e | -2016330882 | Non è stato possibile assegnare la licenza. Errore Apple: Nessuna licenza VPP rimanente  | Questo comportamento è predefinito. Per risolvere il problema, acquistare altre licenze VPP o riscattare licenze da utenti non più interessati. |
 | 0x87d13b6e | -2016330898 | Errore di installazione dell'app 12024: motivo sconosciuto.  | Apple non ha fornito informazioni sufficienti per determinare i motivi dell'installazione non riuscita.   Non sono disponibili elementi da segnalare. |
 | 0x87d13b7f | -2016330881 | I criteri di configurazione dell'app necessari non sono presenti, assicurarsi che i criteri siano relativi agli stessi gruppi.  | L'app richiede una configurazione di app ma non è stata specificata come destinazione alcuna configurazione di app. L'amministratore deve assicurarsi che per i gruppi a cui è destinata l'app sia specificata come destinazione anche la configurazione di app. |
-| 0x87d13b69 | -2016330903 | Le licenze VPP dei dispositivi sono applicabili solo per dispositivi iOS 9.0+.  | Aggiornare i dispositivi iOS interessati a iOS 9.0 +. |
+| 0x87d13b69 | -2016330903 | Le licenze VPP dei dispositivi sono applicabili solo per dispositivi iOS/iPadOS 9.0+.  | Aggiornare i dispositivi iOS/iPadOS interessati a iOS/iPadOS 9.0+. |
 | 0x87d13b8f | -2016330865 | L'applicazione è installata nel dispositivo, ma non è gestita.  | Questo errore si verifica solo nelle app line-of-business. L'app è stata installata al di fuori di Intune. Per risolvere questo errore, disinstallare l'app dal dispositivo. Al successivo avvio della sincronizzazione del dispositivo, il dispositivo deve installare l'app da Intune. |
 | 0x87d13b68 | -2016330904 | La gestione dell'app è stata rifiutata dall'utente  | Richiedere all'utente di accettare la gestione delle app. |
 | 0x87d1279d | -2016335971 | Errore sconosciuto.  | Questo errore si verifica nelle app dello store iOS, ma lo scenario di errore è sconosciuto. |

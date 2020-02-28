@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755596"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514745"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Risolvere i problemi delle azioni dei dispositivi in Intune
 
@@ -34,7 +34,7 @@ In Microsoft Intune sono disponibili molte azioni che consentono di gestire i di
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>È stato fatto clic sull'azione "Disabilita il blocco attivazione" nel portale, ma non è accaduto nulla sul dispositivo.
 Si tratta di un comportamento previsto. Dopo l'avvio dell'azione Disabilita il blocco attivazione, Apple richiede a Intune un codice aggiornato. Il codice deve essere immesso manualmente nel campo del codice di accesso quando sul dispositivo è attivata la schermata Blocco attivazione. Il codice è valido solo per 15 giorni. È pertanto necessario assicurarsi di fare clic sull'azione e copiare il codice prima di eseguire l'azione di cancellazione dei dati.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Per quale motivo il codice Disabilita il blocco attivazione non viene visualizzato nel pannello di panoramica Hardware del dispositivo iOS?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>Per quale motivo il codice Disabilita il blocco attivazione non viene visualizzato nel pannello di panoramica Hardware del dispositivo iOS/iPadOS?
 I motivi più probabili includono:
 - Il codice è scaduto ed è stato cancellato dal servizio.
 - Il dispositivo non è supervisionato con i criteri di limitazione dei dispositivi in modo da consentire il blocco attivazione.
@@ -43,7 +43,7 @@ I motivi più probabili includono:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Per quale motivo l'azione Disabilita il blocco attivazione è disattivata per il dispositivo iOS?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>Per quale motivo l'azione Disabilita il blocco attivazione è disattivata per il dispositivo iOS/iPadOS?
 I motivi più probabili includono: 
 - Il codice è scaduto ed è stato cancellato dal servizio.
 - Il dispositivo non è supervisionato con i criteri di limitazione dei dispositivi in modo da consentire il blocco attivazione.
@@ -90,8 +90,22 @@ Perché nel dispositivo non è stato attivato il token di reimpostazione. Per at
 3. Per consentire la reimpostazione del passcode, l'utente finale deve accettare la richiesta secondaria.
 Una volta completati questi passaggi, il messaggio non dovrebbe essere più visualizzato.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Per quale motivo viene chiesto di impostare un nuovo passcode nel dispositivo iOS quando si esegue l'azione Rimuovi il passcode?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Per quale motivo viene chiesto di impostare un nuovo passcode nel dispositivo iOS/iPadOS quando si esegue l'azione Rimuovi il passcode?
 Perché uno dei criteri di conformità richiede l'impostazione di un passcode.
+
+
+## <a name="wipe-action"></a>Azione di cancellazione
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>Non è possibile riavviare un dispositivo Windows 10 dopo aver usato l'azione di cancellazione
+Questo problema può verificarsi se si usa l'opzione **Cancella i dati del dispositivo e continua a cancellare anche in caso di perdita di alimentazione del dispositivo. Se si seleziona questa opzione, occorre notare che potrebbe impedire il riavvio di alcuni dispositivi Windows 10** in un dispositivo Windows 10.
+
+Questo problema può verificarsi quando l'installazione di Windows presenta un danneggiamento importante che impedisce la reinstallazione del sistema operativo. In tal caso, il processo ha esito negativo e lascia il sistema nell'[Ambiente ripristino Windows]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>Non è possibile riavviare un dispositivo crittografato con BitLocker dopo aver usato l'azione di cancellazione
+Questo problema può verificarsi se si usa l'opzione **Cancella i dati del dispositivo e continua a cancellare anche in caso di perdita di alimentazione del dispositivo. Se si seleziona questa opzione, occorre notare che potrebbe impedire il riavvio di alcuni dispositivi Windows 10** in dispositivo crittografato con BitLocker.
+
+Per risolvere questo problema, usare i supporti di avvio per reinstallare Windows 10 nel dispositivo.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

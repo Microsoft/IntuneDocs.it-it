@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71732698"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514201"
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 Questo articolo descrive cosa fare quando gli utenti non riescono ad accedere alle risorse protette con l'accesso condizionale o quando gli utenti possono accedere alle risorse protette mentre in realtà dovrebbero essere bloccati.
 
-Con Intune e l'accesso condizionale è possibile proteggere l'accesso ai servizi, ad esempio:
-- Servizi di Office 365 come Exchange Online, SharePoint Online e Skype for business online
+Con Intune e l'accesso condizionale è possibile proteggere l'accesso a servizi, come ad esempio i seguenti:
+- Servizi di Office 365, ad esempio Exchange Online, SharePoint Online e Skype for business Online
 - Exchange locale
 - Diversi altri servizi
 
@@ -48,21 +48,21 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 
 - Per Exchange locale, Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Risoluzione dei problemi di Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
-- Per Skype on-premise, è necessario configurare l'autenticazione moderna ibrida. Vedere [Panoramica di autenticazione moderna ibrida](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
+- Per Skype locale, è necessario configurare l'autenticazione moderna ibrida. Vedere [Panoramica dell'autenticazione moderna ibrida](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 È possibile visualizzare queste condizioni per ogni dispositivo nel portale di Azure e nel report di inventario dei dispositivi.
 
 ## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>I dispositivi vengono visualizzati come conformi, ma gli utenti sono comunque bloccati
 
-- Verificare che all'utente sia assegnata una licenza di Intune per una valutazione di conformità corretta.
+- Verificare che all'utente sia assegnata una licenza di Intune per una valutazione corretta della conformità.
 
 - I dispositivi Android non Knox non potranno accedere fino a quando l'utente non fa clic sul collegamento **Per iniziare** nel messaggio di quarantena ricevuto. Questo vale anche se l'utente è già registrato in Intune. Se l'utente non riceve il messaggio di posta elettronica con il collegamento sul telefono, può usare un PC per accedere alla posta elettronica e inoltrare il messaggio a un account di posta elettronica nel proprio dispositivo.
 
 - In occasione della prima registrazione del dispositivo, la registrazione delle informazioni di conformità può richiedere tempo. Attendere qualche minuto e riprovare.
 
-- Nei dispositivi iOS un profilo di posta elettronica esistente potrebbe bloccare la distribuzione di un profilo di posta elettronica creato dall'amministratore di Intune assegnato all'utente, rendendo il dispositivo non conforme. In questo caso il Portale aziendale comunicherà all'utente che esiste un problema di mancata conformità, perché il profilo di posta elettronica è stato configurato manualmente, e richiederà all'utente di rimuovere il profilo. Dopo che l'utente rimuove il profilo di posta elettronica esistente, il profilo di posta elettronica di Intune viene distribuito correttamente. Per prevenire questo problema, indicare agli utenti di rimuovere i profili di posta elettronica esistenti nel dispositivo prima della registrazione.
+- Nei dispositivi iOS/iPadOS un profilo di posta elettronica esistente potrebbe bloccare la distribuzione di un profilo di posta elettronica creato dall'amministratore di Intune assegnato all'utente, rendendo il dispositivo non conforme. In questo caso il Portale aziendale comunicherà all'utente che esiste un problema di mancata conformità, perché il profilo di posta elettronica è stato configurato manualmente, e richiederà all'utente di rimuovere il profilo. Dopo che l'utente rimuove il profilo di posta elettronica esistente, il profilo di posta elettronica di Intune viene distribuito correttamente. Per prevenire questo problema, indicare agli utenti di rimuovere i profili di posta elettronica esistenti nel dispositivo prima della registrazione.
 
-- Un dispositivo può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Se si dispone di un dispositivo in questo stato:
+- Un dispositivo può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Se un dispositivo è in questo stato:
   - Assicurarsi che il dispositivo usi la versione più recente dell'app Portale aziendale.
   - Riavviare il dispositivo.
   - Vedere se il problema esiste su altre reti, ad esempio cellulare, Wi-Fi e così via.
@@ -76,7 +76,7 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 
 - Un dispositivo Android registrato e conforme può comunque essere bloccato e ricevere un avviso di quarantena quando prova ad accedere alle risorse aziendali. In questo caso assicurarsi che l'app Portale aziendale non sia in esecuzione, quindi selezionare il collegamento **Per iniziare** nel messaggio di posta elettronica di quarantena per attivare la valutazione. Questa operazione è necessaria solo quando l'accesso condizionale viene abilitato per la prima volta.
 
-- Un dispositivo Android registrato potrebbe richiedere all'utente di "non sono stati trovati certificati" e non è stato concesso l'accesso alle risorse di O365. L'utente deve abilitare l'opzione *Abilita l'accesso al browser* nel dispositivo registrato come indicato di seguito:
+- L'utente di un dispositivo Android registrato potrebbe visualizzare il messaggio "Non sono stati trovati certificati" e non potere accedere alle risorse di O365. L'utente deve abilitare l'opzione *Abilita l'accesso al browser* nel dispositivo registrato come indicato di seguito:
   1. Aprire l'app Portale aziendale.
   2. Passare alla pagina Impostazioni facendo clic sui punti di sospensione (...) o sul tasto di menu.
   3. Selezionare il pulsante *Abilita l'accesso al browser*.
@@ -97,9 +97,9 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 
 - Se viene cancellato o ritirato da Intune in modo selettivo, il dispositivo potrebbe continuare ad avere accesso per alcune ore dopo il ritiro. Questo avviene perché Exchange memorizza nella cache i diritti di accesso per 6 ore. Prendere in considerazione altri metodi di protezione dei dati nei dispositivi ritirati in questo scenario.
 
-- Surface Hub, i dispositivi Windows registrati con registrazione minima delle operazioni bulk e DEM possono supportare l'accesso condizionale quando un utente a cui è stata assegnata una licenza per Intune è connesso. Tuttavia, per una corretta valutazione è necessario distribuire i criteri di conformità ai gruppi di dispositivi (non ai gruppi di utenti).
+- I dispositivi Surface Hub, i dispositivi con registrazione in blocco e i dispositivi DEM registrati in Windows possono supportare l'accesso condizionale quando ha eseguito l'accesso un utente a cui è stata assegnata una licenza per Intune. Tuttavia, per eseguire una corretta valutazione, è necessario distribuire i criteri di conformità ai gruppi di dispositivi e non ai gruppi di utenti.
 
-- Controllare le assegnazioni per i criteri di conformità e i criteri di accesso condizionale. Se un utente non è incluso nel gruppo a cui sono assegnati i criteri oppure si trova in un gruppo escluso, l'utente non è bloccato. Viene verificata la conformità solo dei dispositivi di utenti che fanno parte di un gruppo di destinazione.
+- Controllare le assegnazioni per i criteri di conformità e i criteri di accesso condizionale. Se un utente non è incluso nel gruppo a cui sono assegnati i criteri oppure si trova in un gruppo escluso, l'utente non viene bloccato. Viene verificata la conformità solo dei dispositivi di utenti che fanno parte di un gruppo di destinazione.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Il dispositivo non conforme non è bloccato
 
@@ -110,7 +110,7 @@ Se un dispositivo non è conforme ma continua ad avere accesso, intraprendere le
 - Assicurarsi che il dispositivo venga individuato. Exchange Connector punta a un server Accesso client di Exchange 2010 mentre l'utente è su un server di Exchange 2013? In questo caso, se la regola predefinita di Exchange è Consenti, anche se l'utente è incluso nel gruppo di destinazione, Intune non può riconoscere la connessione del dispositivo a Exchange.
 
 - Verificare l'esistenza o lo stato di accesso del dispositivo in Exchange:
-  - Usare il cmdlet PowerShell seguente per visualizzare un elenco di tutti i dispositivi mobili relativi a una cassetta postale: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Se il dispositivo non è incluso nell'elenco, non accede a Exchange.
+  - Usare il cmdlet PowerShell seguente per visualizzare un elenco di tutti i dispositivi mobili relativi a una cassetta postale: 'Get-ActiveSyncDeviceStatistics -mailbox mbx'. Se il dispositivo non è incluso nell'elenco, non accede a Exchange.
   
   - Se il dispositivo è incluso nell'elenco, usare il cmdlet "Get-CASmailbox -identity:'upn' | fl" per ottenere informazioni dettagliate sullo stato di accesso del dispositivo e passare tali informazioni al supporto tecnico Microsoft.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502402"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514439"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Evitare perdite di dati nei dispositivi non gestiti usando Microsoft Intune
 
@@ -47,7 +47,7 @@ Il piano di azione descritto di seguito può essere usato quando sono soddisfatt
 
 ## <a name="action-plan"></a>Piano di azione
 
-Per i dispositivi iOS e Android:
+Per i dispositivi iOS/iPadOS e Android:
 
 1. Sapere come funzionano i [criteri di protezione app](../apps/app-protection-policy.md).
 2. Scoprire come [creare e distribuire i criteri di protezione app](../apps/app-protection-policies.md) per le app per dispositivi mobili di Office.
@@ -63,7 +63,7 @@ Per i dispositivi Windows 10:
 
 In base alle esigenze, condividere i collegamenti per consentire l'accesso ad altre informazioni:
 
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
+* [Aspettative dalla gestione dell'app per iOS/iPadOS con criteri di protezione delle app](../fundamentals/end-user-mam-apps-ios.md)
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
