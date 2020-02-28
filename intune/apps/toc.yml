@@ -13,6 +13,8 @@
       href: quickstart-create-assign-app-policy.md
 - name: Esercitazioni
   items:
+    - name: Proteggere la posta elettronica nei dispositivi gestiti
+      href: ../protect/tutorial-protect-email-on-enrolled-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: Proteggere la posta elettronica nei dispositivi non gestiti
       href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: Configurare Slack per l'uso di Intune
