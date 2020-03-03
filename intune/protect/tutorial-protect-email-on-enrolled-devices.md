@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409872"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576281"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 
@@ -45,7 +45,7 @@ Per questa esercitazione sarà necessario un tenant di test con le sottoscrizion
 
 - Abbonamento a Office 365 Business che include Exchange ([versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Prima di iniziare, creare un profilo di dispositivo di test per i dispositivi iOS, seguendo le procedure descritte in [Avvio rapido: Creare un profilo di posta elettronica del dispositivo per iOS](../configuration/quickstart-email-profile.md).
+Prima di iniziare, creare un profilo di dispositivo di test per i dispositivi iOS, seguendo le procedure descritte in [Avvio rapido: Creare un profilo di posta elettronica del dispositivo per iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
@@ -156,13 +156,13 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
 
 8. In **Abilita criterio** selezionare **Sì**.
 
-   ![Abilitare un criterio](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+   ![Abilitare il criterio](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Selezionare **Crea**.
 
 ## <a name="try-it-out"></a>Procedura
 
-Con i criteri creati, qualsiasi dispositivo iOS che tenta di accedere alla posta elettronica di Office 365 dovrà essere registrato in Intune e usare l'app per dispositivi mobili Outlook per iOS. Per testare questo scenario in un dispositivo iOS, provare ad accedere a Exchange Online usando le credenziali di un utente nel tenant di test. Verrà richiesto di registrare il dispositivo e installare l'app per dispositivi mobili Outlook.
+Con i criteri creati, qualsiasi dispositivo iOS che tenta di accedere alla posta elettronica di Office 365 dovrà essere registrato in Intune e usare l'app per dispositivi mobili Outlook per iOS/iPadOS. Per testare questo scenario in un dispositivo iOS, provare ad accedere a Exchange Online usando le credenziali di un utente nel tenant di test. Verrà richiesto di registrare il dispositivo e installare l'app per dispositivi mobili Outlook.
 
 1. Per testare in un iPhone, passare a **Impostazioni** > **Password e account** > **Aggiungi account** > **Exchange**.
 
@@ -181,11 +181,11 @@ Quando i criteri di test non sono più necessari, è possibile rimuoverli.
 
 2. Selezionare **Dispositivi** > **Criteri di conformità**.
 
-3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
+3. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per i criteri di test e quindi selezionare **Elimina**. Selezionare **OK** per confermare.
 
 4. Selezionare **Endpoint Security** (Sicurezza degli endpoint) > **Accesso condizionale**.
 
-5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida ( **...** ) per i criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
+5. Nell'elenco **Nome criteri** selezionare il menu di scelta rapida (**...**) per i criteri di test e quindi selezionare **Elimina**. Selezionare **Sì** per confermare.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

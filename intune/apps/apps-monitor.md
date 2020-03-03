@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2bd5b26073611d9ff974d4a53f7794919e8672c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563708"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513538"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -50,7 +50,7 @@ La sezione **Informazioni di base** contiene le seguenti informazioni sull'app:
  | **Dettagli dell'app**            | **Descrizione**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Autore**          | Autore della pubblicazione dell'app.                                            |
-| **Sistema operativo**   | Sistema operativo dell'app (Windows, iOS, Android e così via). |
+| **Sistema operativo**   | Sistema operativo dell'app (Windows, iOS/iPadOS, Android e così via). |
 | **Creato**             | Data e ora di creazione della revisione. <b>**Nota**: questo valore di data viene aggiornato quando un amministratore IT modifica i metadati dell'app, ad esempio cambiando la categoria o la descrizione dell'app.                        |
 | **Assegnato**           | Indica se l'app è stata assegnata (**Sì** o **No**).                  |
 
@@ -76,7 +76,7 @@ Quando si seleziona **Stato dell'installazione del dispositivo** nella sezione *
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nome dispositivo**      | Nome del dispositivo su piattaforme che consentono la denominazione di un dispositivo. Su altre piattaforme, Intune crea un nome da altre proprietà. Questo attributo non è disponibile per altri dispositivi.                                                                       |
 | **Nome utente**        | Nome dell'utente.                                                                                                                                                                                                                                      |
-| **Piattaforma**         | Sistema operativo del dispositivo (Windows, iOS, Android e così via).                                                                                                                                                                                           |
+| **Platform**         | Sistema operativo del dispositivo (Windows, iOS/iPadOS, Android e così via).                                                                                                                                                                                           |
 | **Versione**          | Numero di versione dell'app. Per le app line-of-business e le app di Microsoft Store per le aziende viene visualizzato il numero di versione completo dell'app. Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800). Per le app dello Store standard la versione non viene visualizzata. |
 | **Stato**           | Stato dell'app.                                                                                                                                                                                                                                     |
 | **Dettagli stato**   | Dettagli dello stato.                                                                                                                                                                                                                                     |

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4ff350bd8c1c16eedd30a6b7af4f3927bce3c3e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508762"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515238"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "72508762"
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>In che modo Intune e Zimperium consentono di proteggere le risorse aziendali?
 
-L'app Zimperium per Android e iOS acquisisce i dati di telemetria, se disponibili, relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Zimperium per la valutazione del livello di rischio delle minacce per dispositivi mobili.
+L'app Zimperium per Android e iOS/iPadOS acquisisce i dati di telemetria, se disponibili, relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Zimperium per la valutazione del livello di rischio delle minacce per dispositivi mobili.
 
 I criteri di conformità dei dispositivi di Intune includono una regola per Zimperium Mobile Threat Defense basata sulla valutazione dei rischi eseguita da Zimperium. Quando questa regola è abilitata, Intune valuta la conformità del dispositivo in base ai criteri abilitati. Se il dispositivo risulta non conforme, l'accesso degli utenti a risorse aziendali come Exchange Online e SharePoint Online viene bloccato. Gli utenti ricevono inoltre istruzioni dall'app Zimperium installata nei relativi dispositivi per risolvere il problema e ottenere nuovamente l'accesso alle risorse aziendali.
 
@@ -59,7 +59,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ![Immagine concettuale dell'accesso concesso dopo la correzione](./media/zimperium-mobile-threat-defense-connector/maliciousapps_unblocked_Zimperium.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce per la rete
 
 Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 

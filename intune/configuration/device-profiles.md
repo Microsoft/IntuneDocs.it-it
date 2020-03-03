@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206619"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513072"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Applicare funzionalità e impostazioni nei dispositivi usando i profili dei dispositivi in Microsoft Intune
 
 
 
-Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono aggiunte ai "profili di configurazione". È possibile creare i profili per diversi dispositivi e diverse piattaforme, tra cui iOS, Android e Windows. Usare quindi Intune per applicare o "assegnare" il profilo ai dispositivi.
+Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono aggiunte ai "profili di configurazione". È possibile creare i profili per diversi dispositivi e diverse piattaforme, tra cui iOS/iPadOS, Android e Windows. Usare quindi Intune per applicare o "assegnare" il profilo ai dispositivi.
 
 Nell'ambito della soluzione di gestione di dispositivi mobili (MDM), usare questi profili di configurazione per completare diverse attività. Di seguito sono riportati alcuni esempi di profili:
 
 - Nei dispositivi Windows 10 usare un modello di profilo che blocca i controlli ActiveX in Internet Explorer.
-- Nei dispositivi iOS e macOS consentire agli utenti di usare stampanti AirPrint nell'organizzazione.
+- Nei dispositivi iOS/iPadOS e macOS consentire agli utenti di usare stampanti AirPrint nell'organizzazione.
 - Consentire o impedire l'accesso al Bluetooth nel dispositivo.
 - Creare un profilo Wi-Fi o VPN che consente a dispositivi diversi l'accesso alla rete aziendale.
 - Gestire gli aggiornamenti software, incluso quando installarli.
@@ -67,7 +67,7 @@ Questa funzionalità supporta:
 
 ## <a name="custom-profile"></a>Profilo personalizzato
 
-Le [impostazioni personalizzate](custom-settings-configure.md) consentono agli amministratori di assegnare impostazioni dei dispositivi non incluse in Intune. Nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator.
+Le [impostazioni personalizzate](custom-settings-configure.md) consentono agli amministratori di assegnare impostazioni dei dispositivi non incluse in Intune. Nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS/iPadOS è possibile importare un file di configurazione creato in Apple Configurator.
 
 Questa funzionalità supporta:
 
@@ -89,7 +89,7 @@ Questa funzionalità supporta:
 
 ## <a name="device-features"></a>Funzionalità del dispositivo
 
-[Funzionalità del dispositivo](device-features-configure.md) consente di gestire le funzionalità dei dispositivi iOS e macOS, come AirPrint, le notifiche e i messaggi della schermata di blocco.
+[Funzionalità del dispositivo](device-features-configure.md) consente di gestire le funzionalità dei dispositivi iOS/iPadOS e macOS, come AirPrint, le notifiche e i messaggi della schermata di blocco.
 
 Questa funzionalità supporta:
 
@@ -106,7 +106,7 @@ Questa funzionalità supporta:
 
 ## <a name="device-restrictions"></a>Limitazioni del dispositivo
 
-[Limitazioni del dispositivo](device-restrictions-configure.md) consente di gestire la protezione, l'hardware, la condivisione dei dati e altre impostazioni nei dispositivi. Ad esempio è possibile creare un profilo di limitazioni del dispositivo che impedisce agli utenti di dispositivi iOS di usare la fotocamera. 
+[Limitazioni del dispositivo](device-restrictions-configure.md) consente di gestire la protezione, l'hardware, la condivisione dei dati e altre impostazioni nei dispositivi. Ad esempio è possibile creare un profilo di limitazioni del dispositivo che impedisce agli utenti di dispositivi iOS/iPadOS di usare la fotocamera. 
 
 Questa funzionalità supporta:
 
@@ -129,7 +129,7 @@ Questa funzionalità supporta:
 
 Le [impostazioni di Education - Windows 10](education-settings-configure.md) consentono di configurare le opzioni per l'[app Test ed esami di Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
 
-Le [impostazioni di Education - iOS](../fundamentals/education-settings-configure-ios-shared.md) usano l'app Classroom iOS, progettata per gestire l'insegnamento e controllare i dispositivi degli studenti in aula. È possibile configurare i dispositivi iPad in modo che molti studenti possano condividere un unico dispositivo.
+Le [impostazioni di Education - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) usano l'app Classroom iOS/iPadOS, progettata per gestire l'insegnamento e controllare i dispositivi degli studenti in aula. È possibile configurare i dispositivi iPad in modo che molti studenti possano condividere un unico dispositivo.
 
 ## <a name="email"></a>Posta elettronica
 
@@ -186,7 +186,7 @@ Questa funzionalità supporta:
 
 - Windows 10 e versioni successive
 
-Impostazioni per la modalità tutto schermo disponibili anche come restrizioni del dispositivo per [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), e [iOS](device-restrictions-ios.md#kiosk).
+Impostazioni per la modalità tutto schermo disponibili anche come restrizioni del dispositivo per [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS/iPadOS](device-restrictions-ios.md#kiosk).
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Questa funzionalità supporta:
 
 ## <a name="update-policies"></a>Criteri di aggiornamento
 
-I [criteri di aggiornamento di iOS](../protect/software-updates-ios.md) spiegano come creare e assegnare i criteri di iOS per installare gli aggiornamenti software nei dispositivi iOS. È anche possibile rivedere lo stato dell'installazione.
+I [criteri di aggiornamento di iOS/iPadOS](../protect/software-updates-ios.md) spiegano come creare e assegnare i criteri di iOS/iPadOS per installare gli aggiornamenti software nei dispositivi iOS/iPadOS. È anche possibile rivedere lo stato dell'installazione.
 
 Per i criteri di aggiornamento nei dispositivi Windows, vedere [Ottimizzazione recapito](delivery-optimization-windows.md). 
 

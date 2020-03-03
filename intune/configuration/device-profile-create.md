@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206670"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511428"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
@@ -87,7 +87,7 @@ Questo articolo:
 
      Se ad esempio si seleziona come piattaforma **iOS/iPadOS**, le opzioni del tipo di profilo sono simili a quelle del profilo seguente:
 
-     ![Creare un profilo iOS in Intune](./media/device-profile-create/create-device-profile.png)
+     ![Creare un profilo iOS/iPadOS in Intune](./media/device-profile-create/create-device-profile.png)
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche. Il profilo viene creato e visualizzato nell'elenco.
 
@@ -99,7 +99,7 @@ Per altre informazioni sui tag di ambito e le relative procedure, vedere [Use RB
 
 ### <a name="add-a-scope-tag"></a>Aggiungere un tag di ambito
 
-1. Selezionare **Ambito (tag)** .
+1. Selezionare **Ambito (tag)**.
 2. Selezionare **Aggiungi** per creare un nuovo tag di ambito. Oppure selezionare un tag di ambito esistente dall'elenco.
 3. Selezionare **OK** per salvare le modifiche.
 
@@ -171,10 +171,10 @@ Durante la creazione dei profili, tenere presenti le indicazioni seguenti:
   **Nome profilo**: Modello amministrativo: profilo di configurazione OneDrive per tutti gli utenti di Windows 10  
   **Descrizione profilo**: Profilo del modello amministrativo di OneDrive che include le impostazioni minime e di base per tutti gli utenti di Windows 10. Creato da user@contoso.com per impedire agli utenti di condividere i dati dell'organizzazione con account OneDrive personali.
 
-  **Nome profilo**: Profilo VPN per tutti gli utenti iOS  
-  **Descrizione profilo**: Profilo VPN che include le impostazioni minime e di base per tutti gli utenti iOS per connettersi alla VPN Contoso. Creato da user@contoso.com in modo che gli utenti eseguano automaticamente l'autenticazione alla VPN, anziché richiedere loro nome utente e password.
+  **Nome profilo**: Profilo VPN per tutti gli utenti iOS/iPadOS  
+  **Descrizione profilo**: Profilo VPN che include le impostazioni minime e di base per tutti gli utenti iOS/iPadOS per connettersi alla VPN Contoso. Creato da user@contoso.com in modo che gli utenti eseguano automaticamente l'autenticazione alla VPN, anziché richiedere loro nome utente e password.
 
-- Creare il profilo in base all'attività, ad esempio configurare le impostazioni di Microsoft Edge, abilitare le impostazioni antivirus di Microsoft Defender, bloccare i dispositivi iOS jailbroken e così via.
+- Creare il profilo in base all'attività, ad esempio configurare le impostazioni di Microsoft Edge, abilitare le impostazioni antivirus di Microsoft Defender, bloccare i dispositivi iOS/iPadOS jailbroken e così via.
 
 - Creare profili che si applicano a gruppi specifici, ad esempio marketing, vendite, amministratori IT o in base alla posizione o al sistema dell'istituto di istruzione.
 

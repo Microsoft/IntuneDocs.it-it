@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755035"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576438"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Aggiungere l'app Portale aziendale di Windows 10 usando Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Per gestire dispositivi e installare app, gli utenti possono installare l'app Portale aziendale da Microsoft Store. Se per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale, è comunque possibile assegnare manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se Intune non è integrato con Windows Store per le aziende.
+Per gestire dispositivi e installare app, gli utenti possono installare l'app Portale aziendale da Microsoft Store. Se per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale, è comunque possibile assegnare l'app Portale aziendale di Windows 10 direttamente da Intune, anche se Intune non è integrato con Windows Store per le aziende.
 
- > [!NOTE]
- > Per l'opzione descritta in questo articolo è necessario che gli aggiornamenti manuali siano assegnati ogni volta che viene rilasciato un aggiornamento dell'app.
+ > [!IMPORTANT]
+ > Se si scarica l'app Portale aziendale, per l'opzione descritta in questo articolo è necessario che gli aggiornamenti manuali siano assegnati ogni volta che viene rilasciato un aggiornamento dell'app. Per distribuire l'app Portale aziendale per i dispositivi Windows 10 con provisioning tramite Autopilot, vedere [Aggiungere dispositivi Autopilot all'app Portale aziendale di Windows 10](~/apps/store-apps-company-portal-autopilot.md).
 
 ## <a name="configure-settings-to-show-offline-apps"></a>Configurare le impostazioni per visualizzare le app offline
 1. Accedere a [Microsoft Store per le aziende](https://www.microsoft.com/business-store) con l'account amministratore.

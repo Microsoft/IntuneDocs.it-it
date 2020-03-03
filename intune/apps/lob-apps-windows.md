@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: ceb4d2354ca073cf05f526df7638aebf8f16d5b7
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755129"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569490"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "76755129"
 Un'app line-of-business è un'app che viene aggiunta da un apposito file di installazione. Questo tipo di app viene in genere scritto internamente. I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app LOB per Windows a Microsoft Intune.
 
 > [!IMPORTANT]
-> Quando si distribuiscono app Win32 usando un file di installazione con l'estensione *msi*, provare a usare l'[estensione di gestione di Intune](../apps/intune-management-extension.md). Se vengono installate sia app Win32 sia app line-of-business durante la registrazione di Autopilot, l'installazione dell'app potrebbe non riuscire.  
+> Quando si distribuiscono app Win32 usando un file di installazione con estensione msi (incluso in un file con estensione intunewin tramite lo strumento di preparazione del contenuto), provare a usare l'[estensione di gestione di Intune](../apps/intune-management-extension.md). Se vengono installate sia app Win32 sia app line-of-business durante la registrazione di Autopilot, l'installazione dell'app potrebbe non riuscire.  
 
 ## <a name="select-the-app-type"></a>Selezionare il tipo di app
 
@@ -41,7 +41,7 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 3. Tra i tipi di app in **Altro** nel riquadro **Seleziona il tipo di app** selezionare **App line-of-business**.
 4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
 
-## <a name="step-1---app-information"></a>Passaggio 1: informazioni sull'app
+## <a name="step-1---app-information"></a>Passaggio 1 - Informazioni sull'app
 
 ### <a name="select-the-app-package-file"></a>Selezionare il file del pacchetto dell'app
 
@@ -84,7 +84,7 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 ## <a name="step-4---review--create"></a>Passaggio 4 - Verifica e creazione
 
-1. Verificare i valori e le impostazioni immesse per l'app.
+1. Verificare i valori e le impostazioni immessi per l'app.
 2. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
 
     Verrà visualizzato il pannello **Panoramica** per l'app line-of-business.

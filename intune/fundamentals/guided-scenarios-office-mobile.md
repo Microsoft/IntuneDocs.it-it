@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691813"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514609"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Scenario guidato - Proteggi le app di Office per dispositivi mobili 
 
-Seguendo questo scenario guidato nel portale di gestione dei dispositivi, è possibile abilitare la protezione delle app di Intune di base nei dispositivi iOS e Android.
+Seguendo questo scenario guidato nel portale di gestione dei dispositivi, è possibile abilitare la protezione delle app di Intune di base nei dispositivi iOS/iPadOS e Android.
 
 La protezione delle app abilitata applicherà le azioni seguenti: 
 - Crittografare i file di lavoro.
@@ -51,7 +51,7 @@ I [criteri di protezione delle app di Intune](~/apps/app-protection-policy.md) c
 
 L'accesso condizionale basato su app e la gestione delle app client consentono di aggiungere un livello di sicurezza, garantendo che solo le app client che supportano i criteri di protezione delle app di Intune possano accedere a Exchange Online e agli altri servizi di Office 365.
 
-Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è possibile bloccare le app di posta elettronica predefinite in iOS e Android. È inoltre possibile impedire di accedere a SharePoint Online alle app a cui non sono applicati criteri di protezione delle app di Intune.
+Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è possibile bloccare le app di posta elettronica predefinite in iOS/iPadOS e Android. È inoltre possibile impedire di accedere a SharePoint Online alle app a cui non sono applicati criteri di protezione delle app di Intune.
 
 In questo esempio, l'amministratore ha applicato criteri di protezione delle app all'app Outlook, seguiti da una regola di accesso condizionale che aggiunge l'app Outlook a un elenco approvato di app che possono essere usate per l'accesso alla posta elettronica aziendale.
 
@@ -69,7 +69,7 @@ Saranno necessarie le autorizzazioni di amministrazione di Intune seguenti:
 
 Seguendo lo scenario guidato di **Protezione app di Intune** si eviteranno condivisioni o perdite dei dati all'esterno dell'organizzazione. 
 
-Gli utenti iOS e Android assegnati devono immettere un PIN ogni volta che aprono un'app di Office. Dopo 5 tentativi di immissione del PIN non riusciti, gli utenti devono reimpostare il PIN. Se è già richiesto un PIN del dispositivo, questa impostazione non avrà effetto sugli utenti.
+Gli utenti iOS/iPadOS e Android assegnati devono immettere un PIN ogni volta che aprono un'app di Office. Dopo 5 tentativi di immissione del PIN non riusciti, gli utenti devono reimpostare il PIN. Se è già richiesto un PIN del dispositivo, questa impostazione non avrà effetto sugli utenti.
 
 ### <a name="what-you-will-need-to-continue"></a>Cosa serve per continuare
 
@@ -86,7 +86,7 @@ In questo passaggio è necessario immettere un **Prefisso** e una **Descrizione*
 
 ## <a name="step-3---apps"></a>Passaggio 3 - App
 
-Per iniziare, questo scenario guidato consente di pre-selezionare le app per dispositivi mobili seguenti per la protezione nei dispositivi iOS e Android:
+Per iniziare, questo scenario guidato consente di pre-selezionare le app per dispositivi mobili seguenti per la protezione nei dispositivi iOS/iPadOS e Android:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

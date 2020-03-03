@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473747"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS/iPadOS con il programma Device Enrollment Program di Apple
 
@@ -77,6 +77,9 @@ Per creare un token, è possibile usare il portale Apple Business Manager o Appl
     ![Ottenere un token del programma di registrazione.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Concedere a Microsoft l'autorizzazione per l'invio di informazioni su utenti e dispositivi ad Apple selezionando **Accetto**.
+
+> [!NOTE]
+> Una volta superato il passaggio 2 per il download del certificato di chiave pubblica di Intune, non chiudere la procedura guidata né uscire da questa pagina. Così facendo si invaliderebbe il certificato scaricato e sarebbe necessario ripetere il processo. Se si verifica questa situazione, si noterà che il pulsante Crea nella scheda Rivedi e crea è disattivato e non è possibile completare il processo.
 
    ![Schermata del pannello Token DEP nell'area di lavoro dei certificati Apple per scaricare la chiave pubblica.](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

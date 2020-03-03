@@ -1,6 +1,6 @@
 ---
 title: Descrizione del servizio Microsoft Intune
-description: Microsoft Intune è un servizio basato su cloud che consente di gestire i dispositivi Windows, iOS, Mac OS X, Android e Windows Mobile.
+description: Microsoft Intune è un servizio basato sul cloud che consente di gestire i dispositivi Windows, iOS/iPadOS, Mac OS X, Android e Windows Mobile.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7744fe217f39436e91f90fdf567f469c01986da4
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 2b65276ed2da827017406c67838afd89a766b2dc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885644"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515068"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrizione del servizio Microsoft Intune
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966386"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514099"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurare l'infrastruttura per il supporto di SCEP con Intune
 
@@ -63,7 +63,7 @@ Per consentire ai dispositivi su Internet di ottenere i certificati, è necessar
 
 - **Azure AD Application Proxy** (facoltativo) - È possibile usare Azure AD Application Proxy invece di un server proxy applicazione Web dedicato per pubblicare l'URL del servizio Registrazione dispositivi di rete in Internet. In questo modo, sia i dispositivi Intranet che i dispositivi con connessione Internet possono ottenere i certificati. Per altre informazioni, vedere [Come fornire l'accesso remoto sicuro alle applicazioni locali](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-- **Server proxy applicazione Web**  (facoltativo) - Usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web per pubblicare l'URL del servizio Registrazione dispositivi di rete in Internet.  In questo modo, sia i dispositivi Intranet che i dispositivi con connessione Internet possono ottenere i certificati.
+- **Server proxy applicazione Web ** (facoltativo) - Usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web per pubblicare l'URL del servizio Registrazione dispositivi di rete in Internet.  In questo modo, sia i dispositivi Intranet che i dispositivi con connessione Internet possono ottenere i certificati.
 
   Il server che ospita WAP [deve installare un aggiornamento](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) che abilita il supporto per gli URL lunghi usati dal servizio Registrazione dispositivi di rete. Questo aggiornamento è incluso nell' [aggiornamento cumulativo di dicembre 2014](https://support.microsoft.com/kb/3013769)oppure può essere scaricato singolarmente da [KB3011135](https://support.microsoft.com/kb/3011135).
 
@@ -148,7 +148,7 @@ Per le informazioni nelle sezioni seguenti è richiesta la conoscenza di Windows
        > [!IMPORTANT]
        > Aggiungere solo i criteri di applicazione necessari. Verificare le scelte effettuate con gli amministratori della sicurezza.
 
-     - Per i modelli di certificato iOS e macOS, modificare anche **Utilizzo chiavi** e assicurarsi che l'opzione **Firma come prova dell'origine** non sia selezionata.
+     - Per i modelli di certificato iOS/iPadOS e macOS, modificare anche **Utilizzo chiavi** e assicurarsi che l'opzione **Firma come prova dell'origine** non sia selezionata.
 
      ![Modello, scheda delle estensioni](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Dopo aver [creato il modello di certificato SCEP](#create-the-scep-certificate-t
 Per impostazione predefinita, Intune usa il valore configurato nel modello. È tuttavia possibile configurare la CA per consentire al richiedente di immettere un valore diverso, che può essere impostato dalla console di Intune.
 
 > [!IMPORTANT]
-> Per iOS e macOS, usare sempre un valore impostato nel modello.
+> Per iOS/iPadOS e macOS, usare sempre un valore impostato nel modello.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Per configurare un valore che può essere impostato dalla console di Intune
 

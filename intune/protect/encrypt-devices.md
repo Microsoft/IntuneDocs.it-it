@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756010"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609308"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usare la crittografia dei dispositivi con Intune
 
@@ -39,17 +39,30 @@ Intune offre anche un [report di crittografia](encryption-monitor.md) predefinit
 
 Usare Intune per configurare la crittografia del disco FileVault nei dispositivi che eseguono macOS. Usare quindi il report di crittografia di Intune per visualizzare i dettagli di crittografia per tali dispositivi e per gestire le chiavi di ripristino per i dispositivi crittografati con FileVault.
 
-Si noti che la registrazione del dispositivo approvata dall'utente è necessaria per il funzionamento di FileVault nel dispositivo stesso. L'utente deve approvare manualmente il profilo di gestione dalle preferenze di sistema perché la registrazione sia considerata approvata dall'utente. 
+La registrazione del dispositivo approvata dall'utente è necessaria per il funzionamento di FileVault nel dispositivo stesso. L'utente deve approvare manualmente il profilo di gestione dalle preferenze di sistema perché la registrazione sia considerata approvata dall'utente.
 
 FileVault è un programma di crittografia per dischi interi incluso in macOS. È possibile usare Intune per configurare FileVault nei dispositivi che eseguono **macOS 10.13 o versione successiva**.
 
 Per configurare FileVault, creare un [profilo di configurazione del dispositivo](../configuration/device-profile-create.md) per Endpoint Protection per la piattaforma macOS. Le impostazioni di FileVault sono una delle categorie di impostazioni disponibili per Endpoint Protection di macOS.
 
-È quindi necessario creare criteri di crittografia dei dispositivi con FileVault. Tali criteri vengono applicati ai dispositivi in due fasi. Prima il dispositivo viene preparato in modo da consentire a Intune di recuperare la chiave di ripristino ed eseguirne il backup. Questa operazione è detta deposito. Dopo il deposito della chiave, è possibile avviare la crittografia del disco.
+È quindi necessario creare criteri di crittografia dei dispositivi con FileVault. Tali criteri vengono applicati ai dispositivi in due fasi. Prima il dispositivo viene preparato in modo da consentire a Intune di recuperare la chiave di ripristino ed eseguirne il backup. Questa azione è detta deposito. Dopo il deposito della chiave, è possibile avviare la crittografia del disco.
 
 ![Impostazioni di FileVault](./media/encrypt-devices/filevault-settings.png)
 
 Per informazioni dettagliate sulle impostazioni di FileVault che è possibile gestire con Intune, vedere [FileVault](endpoint-protection-macos.md#filevault) nell'articolo su Intune relativo alle impostazioni di Endpoint Protection per macOS.
+
+### <a name="permissions-to-manage-filevault"></a>Autorizzazioni per la gestione di FileVault
+
+Per gestire FileVault in Intune, l'account deve disporre delle autorizzazioni di [controllo degli accessi in base al ruolo](../fundamentals/role-based-access-control.md) di Intune applicabili.
+
+Di seguito sono riportati le autorizzazioni di FileVault, che fanno parte della categoria **Attività remote**, e i ruoli predefiniti di controllo degli accessi in base al ruolo che concedono l'autorizzazione:
+ 
+- **Get FileVault key**:
+  - Help Desk Operator
+  - Endpoint security manager
+
+- **Rotate FileVault key**
+  - Help Desk Operator
 
 ### <a name="how-to-configure-macos-filevault"></a>Come configurare macOS FileVault
 
@@ -84,7 +97,7 @@ Dopo che Intune ha crittografato un dispositivo macOS con FileVault, è possibil
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperare la chiave di ripristino personale dai dispositivi macOS crittografati MEM
 
-Gli utenti finali possono recuperare la propria chiave di ripristino personale (chiave di FileVault) usando l'app Portale aziendale iOS. Il dispositivo con la chiave di ripristino personale deve essere registrato in Intune e crittografato con FileVault in Intune. Con l'app Portale aziendale iOS l'utente finale può aprire una pagina Web che include la chiave di ripristino personale di FileVault. La chiave di ripristino può essere recuperata anche da Intune selezionando **Dispositivi** > *il dispositivo macOS crittografato e registrato* > **Ottieni la chiave di ripristino**. 
+Gli utenti finali recuperano la propria chiave di ripristino personale (chiave di FileVault) usando l'app Portale aziendale iOS. Il dispositivo con la chiave di ripristino personale deve essere registrato in Intune e crittografato con FileVault in Intune. Con l'app Portale aziendale iOS l'utente finale può aprire una pagina Web che include la chiave di ripristino personale di FileVault. La chiave di ripristino può essere recuperata anche da Intune selezionando **Dispositivi** > *il dispositivo macOS crittografato e registrato* > **Ottieni la chiave di ripristino**. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Crittografia BitLocker per Windows 10
 
@@ -131,7 +144,7 @@ Per supportare la rotazione della chiave di ripristino di BitLocker, è necessar
 
   - **Rotazione delle password di ripristino basata su client**
 
-  Questa impostazione è disponibile nella *crittografia di Windows* come parte di un criterio di configurazione del dispositivo per Windows 10 Endpoint Protection.
+  Questa impostazione si trova in *Crittografia di Windows* come parte di un criterio di configurazione del dispositivo per Windows 10 Endpoint Protection.
   
 #### <a name="to-rotate-the-bitlocker-recovery-key"></a>Per ruotare la chiave di ripristino di BitLocker
 

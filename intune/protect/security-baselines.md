@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548137"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569269"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usare le baseline di sicurezza per configurare i dispositivi Windows 10 in Intune
 
@@ -75,7 +75,7 @@ Sono disponibili le istanze di baseline di sicurezza seguenti per l'uso con Intu
   - [Anteprima: Baseline della sicurezza MDM per ottobre 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Baseline di Microsoft Defender ATP**
-   *(Per usare questa baseline, l'ambiente deve soddisfare i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
+   *(Per usare questa baseline, l'ambiente deve soddisfare i prerequisiti per l'uso di [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
   - [Baseline di Microsoft Defender ATP](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
@@ -142,7 +142,7 @@ Le attività comuni per l'uso delle baseline di sicurezza includono:
 
    ![Rivedere la baseline](./media/security-baselines/review.png)
 
-9. Dopo aver creato il profilo, è possibile modificarlo passando a **Sicurezza dei dispositivi** > **Baseline di sicurezza**, selezionare il tipo di baseline configurato e quindi selezionare **Profili**. Selezionare il profilo nell'elenco dei profili disponibili e quindi selezionare **Proprietà**. È possibile modificare le impostazioni da tutte le schede di configurazione disponibili e quindi selezionare **Verifica e salva** per eseguire il commit delle modifiche.
+9. Dopo aver creato il profilo, è possibile modificarlo passando a **Sicurezza degli endpoint** > **Baseline di sicurezza**, selezionare il tipo di baseline configurato e quindi selezionare **Profili**. Selezionare il profilo nell'elenco dei profili disponibili e quindi selezionare **Proprietà**. È possibile modificare le impostazioni da tutte le schede di configurazione disponibili e quindi selezionare **Verifica e salva** per eseguire il commit delle modifiche.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Modificare la versione della baseline per un profilo
 
@@ -214,7 +214,7 @@ In senso stretto, no. Il team di sicurezza di Microsoft si consulta con varie or
 
 - Microsoft continua a pubblicare baseline di sicurezza per Criteri di gruppo (GPO) e [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), come ha fatto per molti anni. Queste baseline sono usate da molte organizzazioni. Le raccomandazioni incluse nelle baseline derivano dalla collaborazione del team di sicurezza Microsoft con clienti aziendali e agenzie esterne, tra le quali il Dipartimento della difesa (DoD, Department of Defense), NIST (National Institute of Standards e Technology) e altri. Microsoft condivide sia le raccomandazioni che le baseline con queste organizzazioni. Anche queste organizzazioni pubblicano raccomandazioni proprie, molto vicine a quelle di Microsoft. In concomitanza con la continua crescita delle soluzioni di gestione dei dispositivi mobili (MDM) nel cloud, Microsoft ha creato raccomandazioni MDM equivalenti per queste baseline di Criteri di gruppo. Queste baseline aggiuntive sono integrate in Microsoft Intune e includono report di conformità per utenti, gruppi e dispositivi che seguono (o non seguono) la baseline.
 
-- Molti clienti usano le raccomandazioni delle baseline di Intune come punto di partenza e quindi le personalizzano in base alle esigenze specifiche per IT e sicurezza. La **baseline di sicurezza MDM** per Windows 10 RS5 di Microsoft è la prima baseline rilasciata. Questa baseline è realizzata come infrastruttura generica che consente ai clienti di importare altre baseline di sicurezza basate su CIS, NIST e altri standard. Attualmente, è disponibile per Windows ed è previsto che includerà anche iOS e Android.
+- Molti clienti usano le raccomandazioni delle baseline di Intune come punto di partenza e quindi le personalizzano in base alle esigenze specifiche per IT e sicurezza. La **baseline di sicurezza MDM** per Windows 10 RS5 di Microsoft è la prima baseline rilasciata. Questa baseline è realizzata come infrastruttura generica che consente ai clienti di importare altre baseline di sicurezza basate su CIS, NIST e altri standard. Attualmente, è disponibile per Windows ed è previsto che includerà anche iOS/iPadOS e Android.
 
 - La migrazione da Criteri di gruppo Active Directory locali a una soluzione cloud pura usando Azure Active Directory (AD) con Microsoft Intune è un viaggio. Per semplificare, sono disponibili modelli di Criteri di gruppo inclusi in [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) che possono agevolare la gestione di dispositivi AD ibridi o aggiunti ad Azure AD. Questi dispositivi possono ottenere le impostazioni MDM dal cloud (Intune) e le impostazioni di Criteri di gruppo dal controller di dominio locale, in base alle esigenze.
 

@@ -1,7 +1,7 @@
 ---
 title: Report di crittografia per i dispositivi crittografati in Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Visualizzare un report sullo stato della crittografia dei dispositivi iOS o Windows e accedere alle chiavi di ripristino di FileVault e BitLocker all'interno del portale di Microsoft Intune.
+description: Visualizzare un report sullo stato della crittografia dei dispositivi iOS/iPadOS o Windows e accedere alle chiavi di ripristino di FileVault e BitLocker all'interno del portale di Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164670"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510504"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorare la crittografia dei dispositivi con Intune
 
@@ -48,7 +48,7 @@ Il riquadro Report sulla crittografia visualizza l'elenco dei dispositivi gestit
 - **Nome dispositivo**: nome del dispositivo.
 - **Sistema operativo**: piattaforma del dispositivo, ad esempio Windows o macOS.
 - **Versione del sistema operativo**: versione di Windows o di macOS del dispositivo.
-- **Versione TPM**  *(solo per Windows 10)* : versione del chip TPM (Trusted Platform Module) nel dispositivo Windows 10.
+- **Versione TPM** *(solo per Windows 10)*: versione del chip TPM (Trusted Platform Module) nel dispositivo Windows 10.
 - **Conformità con la crittografia**: valutazione della conformità dei dispositivi per il supporto di una tecnologia di crittografia applicabile, ad esempio BitLocker o FileVault. I dispositivi vengono identificati come:
   - **Pronto**: Il dispositivo può essere crittografato usando i criteri MDM, in base ai quali il dispositivo deve soddisfare i requisiti seguenti:
 

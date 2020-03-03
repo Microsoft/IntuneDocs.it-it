@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 2a1ba4a5e6096f77c87560554fd2c9cd601a33e4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414893"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511719"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 
@@ -81,7 +81,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Stringa | %upn% |
 
 > [!NOTE]  
-> Per Outlook in iOS, se si distribuiscono criteri di configurazione dell'app di dispositivi gestiti con l'opzione "Usa progettazione configurazione" e si abilita **Consenti solo account aziendali o dell'istituto di istruzione**, la chiave di configurazione IntuneMAMUPN viene configurata automaticamente in background per i criteri. Per altri dettagli, vedere la sezione delle domande frequenti in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nuova esperienza per i criteri di configurazione dell'app Outlook per iOS e Android - Configurazione app generale). 
+> Per Outlook in iOS/iPadOS, se si distribuiscono criteri di configurazione dell'app di dispositivi gestiti con l'opzione "Usa progettazione configurazione" e si abilita **Consenti solo account aziendali o dell'istituto di istruzione**, la chiave di configurazione IntuneMAMUPN viene configurata automaticamente in background per i criteri. Per altri dettagli, vedere la sezione delle domande frequenti in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nuova esperienza per i criteri di configurazione dell'app Outlook per iOS e Android - Configurazione app generale). 
 
 
 ### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza utente finale
@@ -96,7 +96,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 4. Il trasferimento dei dati ha esito positivo e i dati sono ora protetti dalla **gestione Apri in** nell'app iOS gestita.  L'APP Intune non viene applicata alle applicazioni che non sono *app gestite da criteri*.
 
-*Condivisione da un'* app iOS gestita *in un'* app gestita da criteri *con dati dell'organizzazione in ingresso*
+*Condivisione da un'* app iOS gestita* in un'* app gestita da criteri* con dati dell'organizzazione in ingresso*
 
 1. Un utente apre la posta elettronica nativa in un dispositivo iOS registrato usando un profilo di posta elettronica gestito.  
 

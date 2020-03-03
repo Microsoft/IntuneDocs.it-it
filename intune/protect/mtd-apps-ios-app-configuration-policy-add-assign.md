@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188490"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576282"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Aggiungere e assegnare app Mobile Threat Defense (MTD) con Intune
 
@@ -71,7 +71,7 @@ Scegliere la sezione corrispondente al provider MTD:
   - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](../apps/store-apps-ios.md). Usare questo [URL dell'App Store iOS per l'app Lookout for Work](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) per **URL di App Store**.
 
 - **App Lookout for Work al di fuori dell'Apple Store**
-  - Firmare di nuovo l'app Lookout for Work per iOS. Lookout distribuisce l'app Lookout for Work per iOS all'esterno dell'App Store di iOS. Prima di distribuire l'app, è necessario firmare di nuovo l'app usando il proprio iOS Enterprise Developer Certificate.  
+  - Firmare di nuovo l'app Lookout for Work per iOS. Lookout distribuisce la sua app Lookout for Work per iOS esternamente all'App Store iOS. Prima di distribuire l'app, è necessario firmare di nuovo l'app usando il proprio iOS Enterprise Developer Certificate.  
   - Per istruzioni dettagliate su come firmare di nuovo l'app Lookout for Work per iOS, vedere [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) (Processo per firmare di nuovo l'app Lookout for Work per iOS) nel sito Web Lookout.
 
   - **Abilitare l'autenticazione di Azure AD per gli utenti dell'app Lookout for Work per iOS.**
@@ -80,7 +80,7 @@ Scegliere la sezione corrispondente al provider MTD:
 
     2. Aggiungere l'**app Lookout for Work per iOS** come **applicazione client nativa**.
 
-    3. Sostituire **com.lookout.enterprise.nomesocietà** con l'ID bundle del cliente selezionato durante l'accesso a IPA.
+    3. Sostituire a **com.lookout.enterprise.nomeazienda** l'ID bundle cliente selezionato alla firma dell'IPA.
 
     4. Aggiungere l'URI di reindirizzamento aggiuntivo: **&lt;portaleaziendale://code/>** seguito da una versione con codifica URL dell'URI di reindirizzamento originale.
 
@@ -96,7 +96,7 @@ Scegliere la sezione corrispondente al provider MTD:
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Configurare app di Symantec Endpoint Protection Mobile
 
 - **Android**
-  - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](../apps/store-apps-android.md). Usare questo [URL dell'App Store per l'app SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure) per **URL di App Store**.  Per **Sistema operativo minimo** selezionare **Android 4.0 (Ice Cream Sandwich)** .
+  - Vedere le istruzioni per [aggiungere app di Android Store a Microsoft Intune](../apps/store-apps-android.md). Usare questo [URL dell'App Store per l'app SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure) per **URL di App Store**.  Per **Sistema operativo minimo** selezionare **Android 4.0 (Ice Cream Sandwich)**.
 
 - **iOS**
   - Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](../apps/store-apps-ios.md). Usare questo [URL dell'App Store per l'app SEP Mobile](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) per **URL di App Store**.
@@ -164,7 +164,7 @@ Usare lo stesso account di Azure AD configurato in precedenza nella [console di 
 
   - Andare a **Settings** (Impostazioni) e sotto **Integrations** (Integrazioni) scegliere **Intune**. Scegliere **EMM Integration Selection** (Selezione integrazione EMM). Scegliere **Microsoft** e quindi salvare la selezione.
 
-  - Fare clic sul collegamento **Integration setup files** (File di installazione dell'integrazione) e salvare il file \*.zip generato. Il file con estensione zip contiene il file * **.plist** che verrà usato per creare i criteri di configurazione dell'app iOS in Intune.
+  - Fare clic sul collegamento **Integration setup files** (File di installazione dell'integrazione) e salvare il file \*.zip generato. Il file con estensione zip contiene il file ***.plist** che verrà usato per creare i criteri di configurazione dell'app iOS in Intune.
 
   - Vedere le istruzioni per [l'uso di criteri di configurazione di app Microsoft Intune per iOS](../apps/app-configuration-policies-use-ios.md) per aggiungere i criteri di configurazione dell'app SEP Mobile per iOS.
 
@@ -203,7 +203,7 @@ Vedere le istruzioni per [l'uso di criteri di configurazione di app Microsoft In
 
 ### <a name="pradeo-app-configuration-policy"></a>Criteri di configurazione delle app Pradeo
 
-Pradeo non supporta i criteri di configurazione delle applicazioni in iOS.  In alternativa, per ottenere un'app configurata, collaborare con Pradeo per implementare file IPA o APK personalizzati e preconfigurati con le impostazioni desiderate.
+Pradeo non supporta i criteri di configurazione delle applicazioni in iOS/iPadOS.  In alternativa, per ottenere un'app configurata, collaborare con Pradeo per implementare file IPA o APK personalizzati e preconfigurati con le impostazioni desiderate.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Criteri di configurazione delle app Better Mobile
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886737"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514966"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -188,7 +188,7 @@ Esaminiamo queste aree più in dettaglio.
 
 ### <a name="determine-supported-device-platforms"></a>Determinare le piattaforme per dispositivi supportate
 
-Durante la creazione della progettazione, è necessario sapere quali dispositivi saranno presenti nell'ambiente e verificare se sono supportati o meno da Intune. Intune supporta le piattaforme iOS, Android e Windows.
+Durante la creazione della progettazione, è necessario sapere quali dispositivi saranno presenti nell'ambiente e verificare se sono supportati o meno da Intune. Intune supporta le piattaforme iOS/iPadOS, Android e Windows.
 
 [Elenco completo dei dispositivi supportati da Intune](supported-devices-browsers.md).
 
@@ -296,8 +296,8 @@ Di seguito è riportato un esempio di come documentare i certificati durante la 
 
 | **Tipo** | **Nome profilo** | **Piattaforma per i dispositivi** | **Casi d'uso** |   
 |:---:|:---:|:---:|:---:|
-| CA radice | CA radice aziendale | Android, iOS, Windows Mobile | Aziendale, BYOD  |                                                           
-| SCEP | Certificato utente | Android, iOS, Windows Mobile | Aziendale, BYOD |                                                           
+| CA radice | CA radice aziendale | Android, iOS/iPadOS, Windows Mobile | Aziendale, BYOD  |                                                           
+| SCEP | Certificato utente | Android, iOS/iPadOS, Windows Mobile | Aziendale, BYOD |                                                           
 
 
 Per determinare le esigenze specifiche a livello di profili di certificato, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -311,7 +311,7 @@ Di seguito è riportato un esempio di progettazione di un profilo Wi-Fi:
 | **Tipo** | **Nome profilo** | **Piattaforma per i dispositivi** | **Casi d'uso** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Profilo Wi-Fi Asia | Android | Aziendale, BYOD Asia|
-| Wi-Fi | Profilo Wi-Fi America del Nord | Android, iOS, Windows 10 Mobile | Aziendale, BYOD America del Nord |
+| Wi-Fi | Profilo Wi-Fi America del Nord | Android, iOS/iPadOS, Windows 10 Mobile | Aziendale, BYOD America del Nord |
 
 Per determinare le esigenze specifiche a livello di profili Wi-Fi, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -323,7 +323,7 @@ Di seguito è riportato un esempio di come documentare la progettazione di un pr
 
 | **Tipo** | **Nome profilo** | **Piattaforma per i dispositivi** | **Casi d'uso** |
 |:---:|:---:|:---:|:---:|
-| Connessione | Profilo VPN Cisco AnyConnect | Android, iOS, Windows 10 Mobile | Aziendale, BYOD America del Nord e Germania|
+| Connessione | Profilo VPN Cisco AnyConnect | Android, iOS/iPadOS, Windows 10 Mobile | Aziendale, BYOD America del Nord e Germania|
 | Connessione | Pulse Secure | Android | Aziendale, BYOD Asia |
 
 Per determinare le esigenze specifiche a livello di profili VPN, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -374,7 +374,7 @@ I criteri di protezione delle app consentono di ridurre al minimo le perdite di 
 | **Applicazione** | **Scopo** | **Piattaforme** | **Caso d'uso** | **Criterio di protezione dell'app** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponibile | iOS | Aziendale - Dirigenti | Non può essere jailbroken, crittografia dei file |                                                         
-| Word | Disponibile | iOS, Android - Samsung Knox, non Knox, Windows 10 Mobile | Aziendale, BYOD | Non può essere jailbroken, crittografia dei file |                                                         
+| Word | Disponibile | iOS/iPadOS, Android - Samsung Knox, non Knox, Windows 10 Mobile | Aziendale, BYOD | Non può essere jailbroken, crittografia dei file |                                                         
 
 
 Per determinare le esigenze specifiche a livello di criteri di protezione delle app, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -388,7 +388,7 @@ Di seguito è riportato un esempio di come progettare i criteri di conformità:
 
 | **Nome criterio** | **Piattaforma per i dispositivi** | **Impostazioni** | **Gruppo di destinazione** |
 |:---:|:---:|:---:|:---:|
-| Criteri di conformità | iOS, Android - Samsung Knox, non Knox, Windows 10 Mobile | PIN - obbligatorio, non può essere jailbroken | Aziendale, BYOD |
+| Criteri di conformità | iOS/iPadOS, Android - Samsung Knox, non Knox, Windows 10 Mobile | PIN - obbligatorio, non può essere jailbroken | Aziendale, BYOD |
 
 
 Per determinare le esigenze specifiche a livello di criteri di conformità, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -404,8 +404,8 @@ Di seguito è riportato un esempio di come documentare i criteri di accesso cond
 
 | **Servizio** | **Piattaforme per l'autenticazione moderna** | **Autenticazione base** | **Casi d'uso** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Blocca i dispositivi non conformi sulle piattaforme supportate da Microsoft Intune | Aziendale, BYOD |
-| SharePoint Online | iOS, Android |  | Aziendale, BYOD |
+| Exchange Online | iOS/iPadOS, Android | Blocca i dispositivi non conformi sulle piattaforme supportate da Microsoft Intune | Aziendale, BYOD |
+| SharePoint Online | iOS/iPadOS, Android |  | Aziendale, BYOD |
 
 Per determinare le esigenze specifiche a livello di criteri di accesso condizionale, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 

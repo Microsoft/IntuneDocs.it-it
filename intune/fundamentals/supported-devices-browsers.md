@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437920"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609263"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemi operativi e browser supportati in Intune
 
@@ -32,6 +32,9 @@ Prima di installare Microsoft Intune, controllare quali sistemi operativi e brow
 Per informazioni sull'installazione di Intune nel proprio dispositivo, vedere [Usare dispositivi gestiti per lo svolgimento del lavoro](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) e [Requisiti di configurazione di rete di Intune e larghezza di banda](network-bandwidth-use.md).
 
 Per altre informazioni sul supporto del provider di servizi di configurazione, vedere [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (Informazioni di riferimento sul provider di servizi di configurazione).
+
+> [!NOTE]
+> Intune richiede ora Android 5.x (Lollipop) o versioni successive per l'accesso alle risorse aziendali da applicazioni e dispositivi tramite l'app Portale aziendale per Android e Intune App SDK per Android. Questo requisito NON si applica ai dispositivi Teams basati su Polycom Android che eseguono la versione 4.4. Questi dispositivi continueranno a essere supportati. 
 
 ## <a name="intune-supported-operating-systems"></a>Sistemi operativi supportati di Intune
 

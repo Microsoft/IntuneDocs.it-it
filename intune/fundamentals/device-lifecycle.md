@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 57a1e1c9c8a03fae67f2a4a25b6b4f16a20a8ec7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414042"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514456"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Panoramica del ciclo di vita di gestione di dispositivi mobili (MDM) di Microsoft Intune
 
@@ -30,7 +30,7 @@ Tutti i dispositivi gestiti hanno un *ciclo di vita*. Intune può aiutare a gest
 
 ## <a name="enroll"></a>Registrazione
 
-Le moderne strategie di gestione dei dispositivi mobili (MDM) riguardano una vasta gamma di telefoni, tablet e PC (iOS, Android, Windows e Mac OS X). Se si deve poter gestire il dispositivo, come nel caso dei dispositivi aziendali, il primo passaggio consiste nella [registrazione del dispositivo](../enrollment/device-enrollment.md). È anche possibile gestire i PC Windows registrandoli con Intune (MDM) oppure [installando il software client di Intune](../manage-windows-pcs-with-microsoft-intune.md).
+Le moderne strategie di gestione di dispositivi mobili (MDM) riguardano una vasta gamma di telefoni, tablet e PC (iOS/iPadOS, Android, Windows e Mac OS X). Se si deve poter gestire il dispositivo, come nel caso dei dispositivi aziendali, il primo passaggio consiste nella [registrazione del dispositivo](../enrollment/device-enrollment.md). È anche possibile gestire i PC Windows registrandoli con Intune (MDM) oppure [installando il software client di Intune](../manage-windows-pcs-with-microsoft-intune.md).
 
 ## <a name="configure"></a>Configura
 
@@ -38,7 +38,7 @@ La registrazione dei dispositivi costituisce il primo passaggio. Per poter usufr
 
 - [**Configurazione del dispositivo**](../configuration/device-profiles.md). Questi criteri consentono di configurare le caratteristiche e le funzionalità dei dispositivi gestiti. Ad esempio, può essere necessario usare una password nei telefoni Windows o disabilitare l'uso della fotocamera negli iPhone.
 - [**Accesso alle risorse aziendali**](../configuration/device-profiles.md). Quando si consente agli utenti di accedere ai dati aziendali da un dispositivo personale, possono emergere alcuni rischi. Ad esempio, come è possibile garantire che tutti i dispositivi che devono accedere alla posta elettronica aziendale siano configurati correttamente? Come si può garantire l'accesso degli utenti alla rete aziendale con una connessione VPN senza conoscere le complesse impostazioni sottostanti? Con Intune è possibile semplificare il processo configurando automaticamente i dispositivi gestiti per l'accesso alle risorse aziendali comuni.
-- [**Criteri di gestione di PC Windows (con il software client di Intune)** ](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Mentre la registrazione dei PC Windows con Intune fornisce la maggior parte delle funzionalità di gestione dei dispositivi, Intune continua a supportare la gestione dei PC Windows con il software client di Intune. Per altre informazioni su alcune delle attività che è possibile eseguire con i PC, iniziare da qui.
+- [**Criteri di gestione di PC Windows (con il software client di Intune)**](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Mentre la registrazione dei PC Windows con Intune fornisce la maggior parte delle funzionalità di gestione dei dispositivi, Intune continua a supportare la gestione dei PC Windows con il software client di Intune. Per altre informazioni su alcune delle attività che è possibile eseguire con i PC, iniziare da qui.
 
 ## <a name="protect"></a>Protezione
 
@@ -46,7 +46,7 @@ Al giorno d'oggi la protezione dei dispositivi da accessi non autorizzati è una
 
 - [**Multi-Factor Authentication**](../enrollment/multi-factor-authentication.md). L'aggiunta di un ulteriore livello di autenticazione agli accessi dell'utente contribuisce a rendere i dispositivi ancora più sicuri. Molti dispositivi supportano l'autenticazione a più fattori che richiede un secondo livello di autenticazione per l'accesso, ad esempio una telefonata o un SMS.
 - [**Impostazioni di Windows Hello for Business**](../protect/windows-hello.md). Windows Hello for Business è un metodo di accesso alternativo che consente agli utenti di usare un *movimento*, ad esempio un'impronta digitale o Windows Hello, per eseguire l'accesso senza dover immettere una password.
-- [**Criteri per proteggere i PC Windows (con il software client di Intune)** ](../policies-to-protect-windows-pcs-in-microsoft-intune.md). Quando si gestiscono i PC Windows con il software client di Intune, sono disponibili criteri che consentono di controllare le impostazioni per Endpoint Protection, gli aggiornamenti software e Windows Firewall nei PC gestiti.
+- [**Criteri per proteggere i PC Windows (con il software client di Intune)**](../policies-to-protect-windows-pcs-in-microsoft-intune.md). Quando si gestiscono i PC Windows con il software client di Intune, sono disponibili criteri che consentono di controllare le impostazioni per Endpoint Protection, gli aggiornamenti software e Windows Firewall nei PC gestiti.
 
 ## <a name="retire"></a>Ritiro
 

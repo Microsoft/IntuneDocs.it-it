@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125048"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576539"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 
@@ -59,7 +59,7 @@ Il Portale aziendale per l'esperienza di registrazione di macOS prevede un proce
 ## <a name="week-of-october-28-2019"></a>Settimana del 28 ottobre 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Progettazione dell'elenco di controllo migliorata nell'app Portale aziendale per Android <!-- 5550857 -->  
-L'elenco di controllo della configurazione nell'app Portale aziendale per Android è stato aggiornato con una progettazione semplificata e nuove icone. Le modifiche sono in linea con gli aggiornamenti recenti dell'app Portale aziendale per iOS. Per informazioni sulla procedura di registrazione aggiornata, vedere [Registrare un dispositivo con profilo di lavoro Android](/intune-user-help/enroll-device-android-work-profile) e [Registrare il dispositivo in Portale aziendale](/intune-user-help/enroll-device-android-company-portal).  
+L'elenco di controllo della configurazione nell'app Portale aziendale per Android è stato aggiornato con una progettazione semplificata e nuove icone. Le modifiche sono in linea con gli aggiornamenti recenti dell'app Portale aziendale per iOS/iPadOS. Per informazioni sulla procedura di registrazione aggiornata, vedere [Registrare un dispositivo con profilo di lavoro Android](/intune-user-help/enroll-device-android-work-profile) e [Registrare il dispositivo in Portale aziendale](/intune-user-help/enroll-device-android-company-portal).  
 
 Le schermate seguenti illustrano l'elenco di controllo aggiornato per la registrazione del profilo di lavoro Android:
 
@@ -216,7 +216,7 @@ L'app Portale aziendale Intune per Windows 10 è stata aggiornata con la [visual
 ## <a name="week-of-april-2-2018"></a>Settimana del 2 aprile 2018
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS <!-- 1412866 -->
-È stato rilasciato un aggiornamento dell'esperienza utente principale per l'app Portale aziendale per iOS. L'aggiornamento include una riprogettazione visuale completa con un aspetto modernizzato. La funzionalità dell'app è stata mantenuta, ma migliorandone il livello di usabilità e accessibilità.  
+È stato rilasciato un aggiornamento dell'esperienza utente principale per l'app Portale aziendale per iOS/iPadOS. L'aggiornamento include una riprogettazione visuale completa con un aspetto modernizzato. La funzionalità dell'app è stata mantenuta, ma migliorandone il livello di usabilità e accessibilità.  
 
 L'aggiornamento include anche:
 - Supporto per iPhone X.
@@ -267,7 +267,7 @@ Se è stato abilitato il [mapping del gruppo di dispositivi](../enrollment/devic
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Miglioramenti al flusso di lavoro di configurazione dei dispositivi in Portale aziendale per iOS (versione 2.9.0) <!-- 1417174 -->
 
-È stato migliorato il flusso di lavoro di configurazione dei dispositivi nell'app Portale aziendale per iOS. Il linguaggio è più semplice e, dove possibile, sono state inserite schermate. Il linguaggio è stato inoltre reso più specifico per ogni azienda, usandone il nome in tutto il testo del programma di installazione.
+È stato migliorato il flusso di lavoro di configurazione dei dispositivi nell'app Portale aziendale per iOS/iPadOS. Il linguaggio è più semplice e, dove possibile, sono state inserite schermate. Il linguaggio è stato inoltre reso più specifico per ogni azienda, usandone il nome in tutto il testo del programma di installazione.
 
 > [!NOTE]
 > Viene usato il nome della società impostato nel portale di Azure in **Microsoft Intune** > **App client** > **Personalizzazione del portale aziendale** > **Nome società**. Se questo valore non è stato impostato, verrà usato il nome del tenant impostato in **Azure Active Directory** > **Proprietà** > **Nome**. Se nella personalizzazione dell'app Portale aziendale non è stato impostato il nome della società e non si vuole che venga visualizzato il nome del tenant, è consigliabile impostare il nome della società nella scheda Personalizzazione del portale aziendale. Se si preferisce che questa stringa non venga visualizzata nell'intestazione dell'app Portale aziendale, è possibile deselezionare la casella di controllo "Mostra il nome della società accanto al logo".
@@ -303,7 +303,7 @@ Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Miglioramenti della ricerca per il sito Web del Portale aziendale <!-- 1331697 -->
 Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
 
-Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app del Portale aziendale per iOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi.
+Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app Portale aziendale per iOS/iPadOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi.
 
 Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. Per comunicarci come sta andando, usare il collegamento "Commenti e suggerimenti" nella parte inferiore del sito Web del Portale aziendale.
 
@@ -407,7 +407,7 @@ La pagina dei dettagli nell'app Portale aziendale per Android visualizza le cate
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Migliorata l'esperienza di accesso nelle app Portale aziendale per tutte le piattaforme <!--User Story 1132123-->
 
-Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.  
+Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS/iPadOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.  
 
 Di seguito sono illustrate l'esperienza di accesso precedente, la nuova esperienza di accesso con credenziali e la nuova esperienza di accesso da un altro dispositivo.
 

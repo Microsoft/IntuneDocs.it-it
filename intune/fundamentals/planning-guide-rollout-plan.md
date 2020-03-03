@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509953"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514915"
 ---
 # <a name="develop-a-rollout-plan"></a>Elaborare un piano di implementazione
 
@@ -58,7 +58,7 @@ Dopo il progetto pilota, si è pronti per avviare un'implementazione completa in
 
 - **Area geografica** <br/>Questo approccio prevede la distribuzione per tutti gli utenti in una specifica area geografica (un continente, un paese/area geografica o un edificio della stessa società). Questo tipo di distribuzione graduale consente di concentrarsi sulla specifica posizione degli utenti. In questo modo, è possibile adottare un approccio basato su un [trattamento esclusivo](#user-assisted-enrollment), perché si riduce il numero di posizioni in cui eseguire la distribuzione di Intune contemporaneamente. Poiché è possibile che siano presenti diversi reparti o casi d'uso nella stessa posizione, può essere necessario distribuire diversi casi d'uso nello stesso momento.
 
-- **Piattaforma** <br/>Questo tipo di distribuzione consiste nella distribuzione di piattaforme simili nello stesso momento. Un esempio potrebbe essere: tutti i dispositivi iOS durante il primo mese, seguiti dai dispositivi Android e quindi dai dispositivi Windows. Questo tipo di distribuzione graduale consente di semplificare il supporto help desk, perché sarebbe sufficiente supportare un'unica piattaforma alla volta.
+- **Platform** <br/>Questo tipo di distribuzione consiste nella distribuzione di piattaforme simili nello stesso momento. Un esempio potrebbe essere: tutti i dispositivi iOS/iPadOS durante il primo mese, seguiti dai dispositivi Android e quindi dai dispositivi Windows. Questo tipo di distribuzione graduale consente di semplificare il supporto help desk, perché sarebbe sufficiente supportare un'unica piattaforma alla volta.
 
 Di seguito è riportato un esempio di un piano di implementazione di Intune che include i gruppi di destinazione e le sequenze temporali:
 

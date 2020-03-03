@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504380"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514881"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Connettore Mobile Threat Defense Pradeo con Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72504380"
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>In che modo Intune e Pradeo consentono di proteggere le risorse aziendali?
 
-L'app Pradeo per Android e iOS acquisisce i dati di telemetria, se disponibili, relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Pradeo per la valutazione del livello di rischio delle minacce per dispositivi mobili.
+L'app Pradeo per Android e iOS/iPadOS acquisisce i dati di telemetria, se disponibili, relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Pradeo per la valutazione del livello di rischio delle minacce per dispositivi mobili.
 
 I criteri di conformità dei dispositivi di Intune includono una regola per Pradeo Mobile Threat Defense, basata sulla valutazione dei rischi eseguita da Pradeo. Quando questa regola è abilitata, Intune valuta la conformità del dispositivo in base ai criteri abilitati. Se il dispositivo risulta non conforme, l'accesso degli utenti a risorse aziendali come Exchange Online e SharePoint Online viene bloccato. Gli utenti ricevono inoltre istruzioni dall'app Pradeo installata nei relativi dispositivi per risolvere il problema e ottenere nuovamente l'accesso alle risorse aziendali.
 
@@ -56,7 +56,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 
 ![App dannose rilevate e accesso consentito](./media/pradeo-mobile-threat-defense-connector/pradeo_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce per la rete
 
 Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle** e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 

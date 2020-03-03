@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438005"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513963"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti
 
@@ -43,7 +43,7 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 > [!TIP]
 > Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS/iPadOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
 >
-> - **App iOS gestita dall'App Store**
+> - **App iOS/iPadOS gestita dall'App Store**
 > - **Pacchetto app per iOS**
 >
 > Per altre informazioni sui tipi di installazione delle app, vedere [How to add an app to Microsoft Intune](apps-add.md) (Come aggiungere un'app a Microsoft Intune). Per altre informazioni sull'incorporamento della configurazione dell'app nel pacchetto dell'app con estensione IPA per i dispositivi gestiti, vedere Managed App Configuration (Configurazione delle app gestite) nella [documentazione per sviluppatori iOS](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html).
@@ -99,7 +99,7 @@ Microsoft Intune fornisce impostazioni di configurazione univoche per un'app. È
 
 ### <a name="delete-a-setting"></a>Eliminare un'impostazione
 
-1. Scegliere i puntini di sospensione ( **...** ) accanto all'impostazione.
+1. Scegliere i puntini di sospensione (**...**) accanto all'impostazione.
 2. Selezionare **Elimina**.
 
 I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
@@ -108,9 +108,10 @@ I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere
 
 Per i dispositivi iOS/iPadOS, usare le coppie chiave/valore seguenti:
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valori** | <ul><li>**Attivata**: l'unico account consentito è l'account utente gestito definito dalla chiave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Disabled** (o qualsiasi valore che non corrisponda a **Enabled** senza distinzione di maiuscole/minuscole): è consentito qualsiasi account.</li></ul> |.
+| **Key** | **Valori** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**Attivata**: l'unico account consentito è l'account utente gestito definito dalla chiave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Disabled** (o qualsiasi valore che non corrisponda a **Enabled** senza distinzione di maiuscole/minuscole): è consentito qualsiasi account.</li></ul> |
+| IntuneMAMUPN | <ul><li>UPN dell'account a cui è consentito l'accesso all'app.</li><li> Per i dispositivi registrati in Intune, è possibile usare il token <code>{{userprincipalname}}</code> per rappresentare l'account utente registrato.</li></ul>  |
 
    > [!NOTE]
    > Se si consentono solo account dell'organizzazione configurati con identità multiple, è necessario usare OneDrive per iOS 10.34 o versione successiva, Outlook per iOS 2.99.0 o versione successiva o Microsoft Edge per iOS 44.8.7 o versione successiva e all'app devono essere destinati [criteri di protezione delle app Intune](app-protection-policy.md).
@@ -181,7 +182,7 @@ Inoltre, Intune supporta i tipi di token seguenti nell'elenco di proprietà:
 - \{\{serialnumberlast4digits\}\}, ad esempio **G5V2** (per dispositivi iOS/iPadOS)
 - \{\{aaddeviceid\}\}, ad esempio, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configurare l'app Portale aziendale per supportare i dispositivi DEP iOS
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>Configurare l'app Portale aziendale per supportare i dispositivi DEP iOS e iPadOS
 
 Le registrazioni DEP (Device Enrollment Program, il programma di registrazione dei dispositivi di Apple) non sono compatibili con la versione di App Store dell'app Portale aziendale. La procedura seguente, tuttavia, consente di configurare l'app Portale aziendale in modo che supporti i dispositivi DEP iOS/iPadOS.
 
@@ -204,7 +205,7 @@ Le registrazioni DEP (Device Enrollment Program, il programma di registrazione d
 3. Distribuire l'app Portale aziendale a dispositivi con criteri di configurazione mirati per i gruppi desiderati. Assicurarsi di distribuire i criteri solo a gruppi di dispositivi già registrati nel programma DEP.
 4. Indicare agli utenti finali di accedere all'app Portale aziendale quando viene installata automaticamente.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorare lo stato di configurazione delle app iOS per ogni dispositivo 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>Monitorare lo stato di configurazione delle app iOS/iPadOS per ogni dispositivo 
 Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS/iPadOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo riquadro. Nel riquadro del dispositivo selezionare **Configurazione dell'app**.  
 
 ## <a name="additional-information"></a>Informazioni aggiuntive

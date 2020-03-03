@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946683"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515085"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
@@ -43,7 +43,7 @@ Per configurare l'accesso condizionale con Jamf Pro, è necessario quanto segue:
 - [App Portale aziendale per macOS](https://aka.ms/macoscompanyportal)
 - Dispositivi macOS con OS X 10.12 Yosemite o versioni successive
 
-### <a name="network-ports"></a>Porte rete
+### <a name="network-ports"></a>Porte di rete
 
 <!-- source: https://support.microsoft.com/en-us/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune -->
 Le seguenti porte devono essere accessibili per garantire l'integrazione corretta di Jamf e Intune:
@@ -92,19 +92,17 @@ Per connettere Intune a Jamf Pro:
 
 6. Selezionare **Autorizzazioni API** in **Gestione**. 
 
-7. Nella pagina Autorizzazioni API selezionare **Aggiungi un'autorizzazione** per aggiungere una nuova autorizzazione. Nella pagina **Richiedi le autorizzazioni dell'API** selezionare **Intune** e quindi selezionare **Autorizzazioni applicazione**. Selezionare solo la casella di controllo per **update_device_attributes**.
+7. Nella pagina Autorizzazioni API rimuovere tutte le autorizzazioni da questa app selezionando l'icona **...** accanto a ogni autorizzazione esistente. Si noti che questa operazione è obbligatoria. L'integrazione avrà esito negativo se sono presenti autorizzazioni aggiuntive impreviste nella registrazione dell'app.
 
-8. Attendere alcuni minuti affinché la nuova autorizzazione diventi effettiva. Selezionare quindi **Concedi consenso amministratore per _\<tenant>_**. Autenticare l'account nella nuova finestra e concedere all'applicazione l'accesso seguendo le istruzioni riportate.  
+8. Successivamente, si aggiungeranno le autorizzazioni per aggiornare gli attributi del dispositivo. In alto a sinistra nella pagina **Autorizzazioni API** selezionare **Aggiungi un'autorizzazione** per aggiungere una nuova autorizzazione. 
 
-9. Potrebbe essere necessario attendere alcuni minuti, in modo che il consenso dell'amministratore possa essere applicato.
+9. Nella pagina **Richiedi le autorizzazioni dell'API** selezionare **Intune** e quindi selezionare **Autorizzazioni applicazione**. Selezionare solo la casella di controllo per **update_device_attributes** e salvare la nuova autorizzazione.
 
-10. Aggiornare la pagina facendo clic sul pulsante **Aggiorna** nella parte superiore della pagina. Verificare che sia stato concesso il consenso dell'amministratore per l'autorizzazione **update_device_attributes**. 
+10. A questo punto, fornire il consenso amministratore per questa app selezionando **Fornisci il consenso amministratore per _\<tenant>_** in alto a sinistra nella pagina **Autorizzazioni API**. Potrebbe essere necessario autenticare nuovamente l'account nella nuova finestra e concedere all'applicazione l'accesso seguendo le istruzioni riportate.  
 
-11. Rimuovere il consenso dell'amministratore dall'autorizzazione **User.Read** selezionando il menu **...** e scegliendo **Revoca consenso amministratore**.
+11. Aggiornare la pagina facendo clic sul pulsante **Aggiorna** nella parte superiore della pagina. Verificare che sia stato concesso il consenso dell'amministratore per l'autorizzazione **update_device_attributes**. 
 
-12. Sarà inoltre necessario rimuovere l'autorizzazione **User. Read**. Selezionare il menu **...** per **User.Read** e selezionare **Rimuovi autorizzazione**. 
-
-8. Dopo la registrazione corretta dell'app, le autorizzazioni API devono contenere solo un'autorizzazione denominata **update_device_attributes** e devono essere visualizzate come segue:
+12. Dopo la registrazione corretta dell'app, le autorizzazioni API devono contenere solo un'autorizzazione denominata **update_device_attributes** e devono essere visualizzate come segue:
 
    ![Autorizzazioni corrette](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

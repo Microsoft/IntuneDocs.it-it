@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438056"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576020"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Disabilitare Blocco attivazione in dispositivi iOS/iPadOS con supervisione con Intune
 
@@ -63,7 +63,7 @@ Intune può richiedere lo stato di Blocco attivazione per i dispositivi con supe
 Per poter disabilitare il blocco attivazione nei dispositivi, è necessario abilitarlo seguendo queste istruzioni:
 
 1. Configurare un profilo di restrizione del dispositivo di Intune per iOS/iPadOS seguendo le informazioni disponibili in [Come configurare le impostazioni relative alle restrizioni dei dispositivi](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Nelle [impostazioni relative alle restrizioni dei dispositivi iOS](../configuration/device-restrictions-ios.md), in **Generale**, abilitare l'opzione **Blocco attivazione**.
+2. Nelle [impostazioni relative alle restrizioni dei dispositivi iOS/iPadOS](../configuration/device-restrictions-ios.md), in **Generale** abilitare l'opzione **Blocco attivazione**.
 3. Salvare il profilo e quindi [assegnarlo](../configuration/device-profile-assign.md) ai dispositivi in cui si vuole gestire Disabilita il blocco attivazione.
 
 

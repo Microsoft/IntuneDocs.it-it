@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801499"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515153"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Panoramica di S/MIME per firmare e crittografare la posta elettronica in Intune
 
 I certificati di posta elettronica, noti anche come certificati S/MIME, forniscono sicurezza aggiuntiva per le comunicazioni di posta elettronica tramite la crittografia e la decrittografia. Microsoft Intune può usare i certificati S/MIME per firmare e crittografare i messaggi di posta elettronica destinati a dispositivi mobili che eseguono le piattaforme seguenti:
 
 - Android
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 e versioni successive
 - Windows Phone
 
-Nei dispositivi iOS è possibile creare un profilo di posta elettronica gestito da Intune che usa S/MIME e certificati per firmare e crittografare i messaggi di posta elettronica in ingresso e in uscita. Per altre piattaforme, S/MIME può essere supportato o meno. Se è supportato, installare certificati che usano la firma e la crittografia S/MIME. L'utente finale può quindi abilitare S/MIME nella propria applicazione di posta elettronica.
+Nei dispositivi iOS/iPadOS è possibile creare un profilo di posta elettronica gestito da Intune che usa S/MIME e certificati per firmare e crittografare i messaggi di posta elettronica in ingresso e in uscita. Per altre piattaforme, S/MIME può essere supportato o meno. Se è supportato, installare certificati che usano la firma e la crittografia S/MIME. L'utente finale può quindi abilitare S/MIME nella propria applicazione di posta elettronica.
 
 Per ulteriori informazioni sulla firma e la crittografia dei messaggi di posta elettronica tramite S/MIME con Exchange, vedere [S/MIME per la crittografia e firma dei messaggi](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
 
@@ -77,7 +77,7 @@ Per distribuire un certificato PKCS importato in Intune da usare per la crittogr
 
 ## <a name="smime-email-profiles"></a>Profili di posta elettronica S/MIME
 
-Dopo aver creato profili certificato di firma e crittografia S/MIME, è possibile [abilitare S/MIME per la posta elettronica nativa di iOS](../configuration/email-settings-ios.md).
+Dopo aver creato profili certificato di firma e crittografia S/MIME, è possibile [abilitare S/MIME per la posta elettronica nativa di iOS/iPadOS](../configuration/email-settings-ios.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

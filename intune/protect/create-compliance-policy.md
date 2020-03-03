@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860231"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514014"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità in Microsoft Intune
 
@@ -67,9 +67,9 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 3. Specificare le proprietà seguenti:
 
-   - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un buon nome di criterio è **Dispositivi iOS jailbroken di Marco non conformi**.
+   - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Dispositivi iOS/iPadOS jailbroken di Marco non conformi**.
 
-   - **Description**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.
+   - **Descrizione**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.
 
    - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
      - **Amministratore di dispositivi Android**
@@ -84,7 +84,7 @@ Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
      - **Proprietario del dispositivo**
      - **Profilo di lavoro**
 
-   - **Impostazioni**: gli articoli seguenti elencano e descrivono le impostazioni per ogni piattaforma:
+   - **Settings** (Impostazioni): gli articoli seguenti elencano e descrivono le impostazioni per ogni piattaforma:
      - [Amministratore di dispositivi Android](compliance-policy-create-android.md)
      - [Android Enterprise](compliance-policy-create-android-for-work.md)
      - [iOS/iPadOS](compliance-policy-create-ios.md)

@@ -1,12 +1,12 @@
 ---
 title: Configurare le impostazioni di posta elettronica in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Creare un profilo di posta elettronica in Microsoft Intune e distribuire questo profilo nei dispositivi Windows, iOS e Android Enterprise. Usare un profilo di posta elettronica per configurare le impostazioni di posta elettronica comuni, tra cui un server di posta elettronica e il metodo di autenticazione per la connessione alla posta elettronica aziendale nei dispositivi gestiti.
+description: Creare un profilo di posta elettronica in Microsoft Intune e distribuire questo profilo nei dispositivi Windows, iOS, iPadOS e Android Enterprise. Usare un profilo di posta elettronica per configurare le impostazioni di posta elettronica comuni, tra cui un server di posta elettronica e il metodo di autenticazione per la connessione alla posta elettronica aziendale nei dispositivi gestiti.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059420"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511086"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Aggiungere impostazioni di posta elettronica ai dispositivi con Intune
 
@@ -32,6 +32,7 @@ Microsoft Intune include impostazioni di posta elettronica diverse che è possib
 - Android Samsung Knox Standard 4.0 e versioni successive
 - Android Enterprise
 - iOS 8.0 e versioni successive
+- iPadOS 13.0 e versioni successive
 - Windows Phone 8.1 e versioni successive
 - Windows 10 (Desktop) e Windows 10 Mobile
 
@@ -44,7 +45,7 @@ Questo articolo illustra come creare un profilo di posta elettronica in Microsof
 3. Immettere le proprietà seguenti:
 
     - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **Impostazioni di posta elettronica per tutti i dispositivi Windows**.
-    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Descrizione**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:
 
         - **Android** (solo Samsung Android Knox Standard)
@@ -89,7 +90,7 @@ I profili di posta elettronica vengono assegnati ai gruppi di dispositivi, non a
 
 Se l'utente ha già configurato un account di posta elettronica, il profilo di posta elettronica viene assegnato in modo diverso, a seconda della piattaforma.
 
-- **iOS**: Un profilo di posta elettronica duplicato esistente viene individuato in base al nome host e all'indirizzo di posta elettronica. Il profilo di posta elettronica duplicato blocca l'assegnazione di un profilo di Intune. In questo caso l'app Portale aziendale notifica all'utente finale che esiste un problema di conformità e richiede quindi di rimuovere il profilo. Per evitare questo scenario, indicare agli utenti finali di eseguire la registrazione *prima* di installare un profilo di posta elettronica e di consentire a Intune di impostarlo.
+- **iOS/iPadOS**: Un profilo di posta elettronica duplicato esistente viene individuato in base al nome host e all'indirizzo di posta elettronica. Il profilo di posta elettronica duplicato blocca l'assegnazione di un profilo di Intune. In questo caso l'app Portale aziendale notifica all'utente finale che esiste un problema di conformità e richiede quindi di rimuovere il profilo. Per evitare questo scenario, indicare agli utenti finali di eseguire la registrazione *prima* di installare un profilo di posta elettronica e di consentire a Intune di impostarlo.
 
 - **Windows:** Un profilo di posta elettronica duplicato esistente viene individuato in base al nome host e all'indirizzo di posta elettronica. Intune sovrascrive il profilo di posta elettronica esistente creato dall'utente finale.
 

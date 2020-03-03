@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413638"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515170"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Impostare regole sui dispositivi per consentire l'accesso alle risorse dell'organizzazione tramite Intune
 
@@ -95,16 +95,16 @@ Intune include anche un set di impostazioni dei criteri di conformità predefini
 
 
 > [!NOTE]
-> Il rilevamento del jailbreak ottimizzato per i dispositivi iOS è stato temporaneamente disabilitato in Intune.
+> Il rilevamento del jailbreak ottimizzato per i dispositivi iOS/iPadOS è stato temporaneamente disabilitato in Intune.
 
-- **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva un'archiviazione più frequente dei dispositivi iOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
+- **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva una sincronizzazione più frequente dei dispositivi iOS/iPadOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
 
   Per l'abilitazione di questa impostazione è necessario che:
   - Nei dispositivi siano abilitati i servizi di posizione a livello di sistema operativo.
   - I dispositivi consentano al portale aziendale di usare servizi di posizione.
   - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri. Se il dispositivo non si sposta di 500 metri entro 72 ore, l'utente deve aprire l'app Portale aziendale per la valutazione avanzata dello stato jailbreak.
 
-- **Periodo di validità dello stato di conformità (giorni)** : immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni. Il valore minimo è 1 giorno.
+- **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni. Il valore minimo è 1 giorno.
 
   In questa impostazione viene visualizzato il criterio di conformità predefinito **È attivo** (**Dispositivi** > **Monitor** > **Conformità dell'impostazione**). L'attività in background per questo criterio viene eseguita una volta al giorno.
 

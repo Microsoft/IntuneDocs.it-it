@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413686"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569456"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Trovare l'utente primario di un dispositivo Intune
 
 Utente primario, o Affinità utente-dispositivo, è una proprietà di ogni dispositivo Intune. A un dispositivo Intune può essere assegnato da zero a un utente primario. Quando non è assegnato alcun utente primario, il dispositivo è detto "dispositivo condiviso".
 
-## <a name="how-to-find-a-devices-primary-user"></a>Come trovare l'utente primario di un dispositivo
+## <a name="find-a-devices-primary-user"></a>Trovare l'utente primario di un dispositivo
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Scegliere **Dispositivi** e selezionare un dispositivo.
@@ -38,7 +38,7 @@ Utente primario, o Affinità utente-dispositivo, è una proprietà di ogni dispo
 La proprietà utente primario viene usata per eseguire il mapping di un utente con licenza di Intune ai propri dispositivi nelle posizioni seguenti:
 - L'app Portale aziendale.
 - Il sito Web dell'utente finale.
-- Esperienze dei professionisti IT, come le pagine per la risoluzione dei problemi nel portale di Azure. Queste pagine mappano gli account utente ai dispositivi usando l'utente primario.    
+- Esperienze dei professionisti IT, come le pagine per la risoluzione dei problemi nel portale di Azure. Queste pagine mappano gli account utente ai dispositivi usando l'utente primario. 
 
 ### <a name="company-portal-app"></a>App Portale aziendale
 L'app Portale aziendale presuppone che l'account utente connesso al portale aziendale sia l'utente primario del dispositivo. Se come utente primario è stato assegnato un altro utente, nel portale aziendale viene visualizzato un avviso simile al seguente:

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437903"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513725"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -74,21 +74,21 @@ Quando si crea un criterio di protezione delle app per app iOS/iPadOS e Android,
     Questa pagina fornisce le impostazioni per i controlli di prevenzione della perdita dei dati (DLP), incluse le limitazioni per le operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano il modo in cui gli utenti interagiscono con i dati nelle app a cui vengono applicati questi criteri di protezione delle app.
 
     **Impostazioni di protezione dati**:<br>
-    - **Protezione dati iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Protezione dati](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Protezione dati iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS/iPadOS - Protezione dati](~/apps/app-protection-policy-settings-ios.md#data-protection).
     - **Protezione dati Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Protezione dati](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. Fare clic su **Avanti** per visualizzare la pagina **Requisiti di accesso**.<br>
     Questa pagina fornisce le impostazioni che consentono di configurare i requisiti di PIN e credenziali che gli utenti devono soddisfare per accedere alle app in un contesto aziendale. 
  
     **Impostazioni dei requisiti di accesso**:<br>
-    - **Requisiti di accesso per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Requisiti di accesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Requisiti di accesso per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS/iPadOS - Requisiti di accesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
     - **Requisiti di accesso per Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Requisiti di accesso](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. Fare clic su **Avanti** per visualizzare la pagina **Avvio condizionale**.<br>
     Questa pagina fornisce le impostazioni per impostare i requisiti di sicurezza per l'accesso per i criteri di protezione delle app. Selezionare una **impostazione** e immettere il **valore** che gli utenti devono soddisfare per accedere all'app aziendale. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione.
 
     **Impostazioni di avvio condizionale**:<br>
-    - **Avvio condizionale per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS - Avvio condizionale](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Avvio condizionale per iOS/iPadOS** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per iOS/iPadOS - Avvio condizionale](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
     - **Avvio condizionale per Android** - Per informazioni, vedere [Impostazioni dei criteri di protezione delle app per Android - Avvio condizionale](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 9. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.<br>
@@ -180,7 +180,7 @@ Per creare questi criteri, passare ad **App** > **Criteri di protezione delle ap
 > [!NOTE]
 > I dispositivi Android richiederanno di installare l'app Portale aziendale Intune indipendentemente dal tipo di dispositivo scelto. Ad esempio, se si seleziona "Android Enterprise", la richiesta verrà visualizzata anche agli utenti con dispositivi Android non gestiti.
 
-Per iOS, sono necessarie impostazioni di configurazione delle app aggiuntive per assegnare le impostazioni dei criteri di protezione delle app alle app nei dispositivi registrati in Intune:
+Per iOS/iPadOS, sono necessarie impostazioni di configurazione delle app aggiuntive per assegnare le impostazioni dei criteri di protezione delle app alle app nei dispositivi registrati in Intune:
 
 - È necessario configurare **IntuneMAMUPN** per tutte le applicazioni gestite da MDM. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS/iPadOS in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - È necessario configurare **IntuneMAMDeviceID** per tutte le applicazioni gestite di terze parti e line-of-business. È necessario impostare **IntuneMAMDeviceID** sul token dell'ID del dispositivo. Ad esempio, `key=IntuneMAMDeviceID, value={{deviceID}}` Per altre informazioni, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](app-configuration-policies-use-ios.md).
@@ -192,7 +192,7 @@ Per iOS, sono necessarie impostazioni di configurazione delle app aggiuntive per
 ## <a name="policy-settings"></a>Impostazioni dei criteri
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS/iPadOS e Android, selezionare uno dei collegamenti seguenti:
 
-- [Criteri iOS](app-protection-policy-settings-ios.md)
+- [Criteri iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Criteri Android](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Passaggi successivi

@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414079"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514728"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Consentire agli utenti finali di comprendere i messaggi dell'app Portale aziendale
 
@@ -43,7 +43,7 @@ Informazioni sui diversi messaggi dell'app che possono vedere gli utenti finali 
 
 Il testo del messaggio **Allow Company Portal to make and manage phone calls?** (Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?) viene visualizzato quando gli utenti toccano **Registra** nell'app Portale aziendale durante la registrazione del dispositivo.
 
-### <a name="what-it-means"></a>Che cosa significa
+### <a name="what-it-means"></a>Significato
 
 Accettando questa richiesta, gli utenti acconsentono all'invio del numero di telefono e del codice IMEI del proprio dispositivo al servizio Intune. Questi valori verranno visualizzati nella pagina __Hardware__ della console di amministrazione.
 
@@ -70,7 +70,7 @@ Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Androi
 
 Il messaggio **Allow Company Portal to access your contacts?** (Consentire a Portale aziendale di accedere ai contatti?) viene visualizzato quando l'utente tocca **Registra** nell'app Portale aziendale durante la registrazione del dispositivo.
 
-### <a name="what-it-means"></a>Che cosa significa
+### <a name="what-it-means"></a>Significato
 
 Accettando questa richiesta, gli utenti consentono a Intune di creare il proprio account aziendale e gestire l'identità di Azure Active Directory registrata per l'utente nel dispositivo.
 
@@ -95,7 +95,7 @@ Suggerire agli utenti di consultare l'articolo [Registrare il dispositivo Androi
 
 Il messaggio **Allow Company Portal to access photos, media, and files on your device?** (Consentire a Portale aziendale di accedere a foto, elementi multimediali e file nel dispositivo?) viene visualizzato quando gli utenti toccano **Invia dati** per inviare i log all'amministratore IT.
 
-### <a name="what-it-means"></a>Che cosa significa
+### <a name="what-it-means"></a>Significato
 
 Accettando questa richiesta, gli utenti consentono al dispositivo di scrivere i log di dati nella scheda SD e viene anche abilitato lo spostamento dei log tramite un cavo USB.   
 
@@ -117,16 +117,16 @@ Suggerire agli utenti di consultare l'articolo [Inviare i log all'amministratore
 
 ### <a name="where-it-appears"></a>Dove viene visualizzato
 
-Se l'app Portale aziendale non è stata aggiunta all'elenco **App consentite** o **Escludi le app** e un utente tenta di accedere, l'accesso avrà esito negativo. Verrà visualizzato il messaggio seguente:
+Se l'app Portale aziendale non è stata aggiunta all'elenco **App consentite** o **Escludi le app** e un utente tenta di accedere, l'accesso avrà esito negativo. Viene visualizzato il messaggio seguente:
 
 > **È necessario che il supporto aziendale garantisca l'accesso alle risorse aziendali**  
 > L'azienda usa i criteri di Windows Information Protection per proteggere il dispositivo. Il supporto aziendale dovrà assicurarsi di consentire all'app Portale aziendale di accedere a queste risorse.
 
-### <a name="what-it-means"></a>Che cosa significa
+### <a name="what-it-means"></a>Significato
 
 Aggiungere il Portale aziendale all'elenco **App consentite** o **Escludi le app** tra i criteri di protezione delle app di Windows Information Protection (WIP). Per altre informazioni, vedere [Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Approvare un'app aziendale iOS (app line-of-business) nel dispositivo iOS 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Approvare un'app aziendale iOS/iPadOS (app line-of-business) nel dispositivo iOS/iPadOS 
 
 ### <a name="where-it-appears"></a>Dove viene visualizzato
 
@@ -134,9 +134,9 @@ Le app iOS sviluppate dall'organizzazione e non disponibili nell'App Store non s
 
 ![Messaggio dell'app iOS - Sviluppatore interno non attendibile](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
-### <a name="what-it-means"></a>Che cosa significa
+### <a name="what-it-means"></a>Significato
 
-Questo messaggio indica che è necessario modificare le impostazioni del dispositivo iOS per approvare e installare un'app sviluppata dall'azienda nel dispositivo iOS.
+Questo messaggio indica che è necessario modificare le impostazioni del dispositivo iOS/iPadOS per approvare e installare un'app sviluppata dall'azienda nel dispositivo iOS/iPadOS.
 
 Quando si installa un'app di questo tipo usando il portale aziendale e la si avvia, seguire questa procedura per approvare l'app dopo il download:
 
@@ -148,7 +148,7 @@ Quando si installa un'app di questo tipo usando il portale aziendale e la si avv
 
 3. Selezionare **Gestione profilo** > **App aziendale**.
 4. Selezionare il nome dello sviluppatore.
-5. Selezionare **Considera attendibile _nome sviluppatore_** .
+5. Selezionare **Considera attendibile _nome sviluppatore_**.
 6. Confermare l'app selezionando **Considera attendibile** nel messaggio popup di installazione dell'app.
 
    ![Interfaccia utente del dispositivo iOS - Messaggio di attendibilità dell'app](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)

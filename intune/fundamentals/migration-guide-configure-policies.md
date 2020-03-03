@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505336"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515034"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune
 
@@ -60,11 +60,11 @@ I profili di accesso alle risorse forniscono i certificati e le configurazioni d
 
 È necessario creare un profilo di configurazione del dispositivo per applicare le impostazioni a livello di dispositivo, ad esempio disabilitare la fotocamera o l'accesso allo store per le app, configurare la modalità applicazione singola e la schermata iniziale e così via. Informazioni sui [profili di dispositivo](../configuration/device-profiles.md).
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>Importare direttamente i profili di configurazione iOS (facoltativo)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>Importare direttamente i profili di configurazione iOS/iPadOS (facoltativo)
 
 - **Profili iOS di Apple Configurator (iOS 7.1 e versioni successive):** se la soluzione MDM esistente usa profili di Apple Configurator (file con estensione mobileconfig), Intune può importarli direttamente come criteri di configurazione personalizzati.
 
-- **Criteri di configurazione delle applicazioni per dispositivi mobili iOS:** se la soluzione MDM esistente usa criteri di configurazione delle applicazioni per dispositivi mobili iOS, Intune può importarli direttamente, a condizione che siano conformi al formato XML specificato da Apple per gli elenchi di proprietà.
+- **Criteri di configurazione delle applicazioni per dispositivi mobili iOS:** se la soluzione MDM esistente usa criteri di configurazione delle applicazioni per dispositivi mobili iOS/iPadOS, Intune può importarli direttamente, a condizione che siano conformi al formato XML specificato da Apple per gli elenchi di proprietà.
 
 - Informazioni su come aggiungere criteri personalizzati per [iOS](../configuration/custom-settings-ios.md).
 

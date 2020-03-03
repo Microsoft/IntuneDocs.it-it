@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410194"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576535"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usare i certificati per l'autenticazione in Microsoft Intune
 
@@ -38,7 +38,7 @@ Usare i certificati con Intune per autenticare gli utenti in applicazioni e riso
 
 Per distribuire questi certificati, verranno creati e assegnati profili di certificato ai dispositivi.
 
-Ogni singolo profilo di certificato creato supporta un'unica piattaforma. Ad esempio, se si usano i certificati PKCS, verrà creato un profilo di certificato PKCS per Android e un profilo di certificato PKCS separato per iOS. Se si usano anche i certificati SCEP per queste due piattaforme, verrà creato un profilo di certificato SCEP per Android e un altro per iOS.
+Ogni singolo profilo di certificato creato supporta un'unica piattaforma. Ad esempio, se si usano i certificati PKCS, verrà creato un profilo di certificato PKCS per Android e un profilo di certificato PKCS separato per iOS/iPadOS. Se si usano anche i certificati SCEP per queste due piattaforme, verrà creato un profilo di certificato SCEP per Android e un altro per iOS/iPadOS.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Considerazioni generali se si usa un'autorità di certificazione Microsoft
 
@@ -83,7 +83,7 @@ Quando si usa un'autorità di certificazione (CA) di terze parti (non Microsoft)
 | Android Enterprise <br> - Dispositivi completamente gestiti (proprietario del dispositivo)   | ![Supportato](./media/certificates-configure/green-check.png) |   | ![Supportato](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> - Dedicato (proprietario del dispositivo)   | ![Supportato](./media/certificates-configure/green-check.png)  |   | ![Supportato](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - Profilo di lavoro    | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |
-| iOS                   | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) | ![Supportato](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Supportato](./media/certificates-configure/green-check.png) |  ![Supportato](./media/certificates-configure/green-check.png) |![Supportato](./media/certificates-configure/green-check.png)|![Supportato](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Supportato](./media/certificates-configure/green-check.png)  |  | ![Supportato](./media/certificates-configure/green-check.png)| ![Supportato](./media/certificates-configure/green-check.png) |
 | Windows 8.1 e versioni successive |![Supportato](./media/certificates-configure/green-check.png)  |  |![Supportato](./media/certificates-configure/green-check.png) |   |

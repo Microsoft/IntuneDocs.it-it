@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258097"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609350"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS con Intune
 
@@ -66,7 +66,7 @@ Per usare i certificati PKCS con Intune, è necessaria l'infrastruttura seguente
   Il connettore di certificati di Microsoft Intune supporta anche la modalità FIPS (Federal Information Processing Standard). FIPS non è obbligatorio, ma è possibile emettere e revocare i certificati quando è abilitato.
 
 - **Connettore di certificati PFX per Microsoft Intune**:  
-  Se si prevede di usare la crittografia S/MIME per la posta elettronica, usare il portale di Intune per scaricare il *Connettore dei certificati PFX* che supporta l'importazione di certificati PFX.  Passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per certificati PFX importati*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione **PfxCertificateConnectorBootstrapper.exe**. 
+  Se si prevede di usare la crittografia S/MIME per la posta elettronica, usare il portale di Intune per scaricare il *Connettore dei certificati PFX* che supporta l'importazione di certificati PFX.  Passare a **Configurazione dispositivo** > **Connettori di certificati** > **Aggiungi** e seguire le indicazioni in *Passaggi per l'installazione del connettore per certificati PFX importati*. Usare il collegamento per il download nel portale per avviare il download del programma di installazione **PfxCertificateConnectorBootstrapper.exe**.
 
   Ogni tenant di Intune supporta una sola istanza di questo connettore. È possibile installare questo connettore nello stesso server di un'istanza del connettore di certificati di Microsoft Intune.
 
@@ -79,10 +79,12 @@ Per usare i certificati PKCS con Intune, è necessaria l'infrastruttura seguente
   Per altre informazioni, vedere [Endpoint di rete per Microsoft Intune](../fundamentals/intune-endpoints.md) e [Requisiti di configurazione di rete di Intune e larghezza di banda](../fundamentals/network-bandwidth-use.md).
 
 - **Windows Server**:  
-  Si usa un server Windows per ospitare:
+  Usare un server Windows per ospitare:
 
   - Connettore di certificati di Microsoft Intune: per scenari di autenticazione e firma S/MIME della posta elettronica
   - Connettore di certificati PFX per Microsoft Intune: per scenari di crittografia S/MIME della posta elettronica.
+
+  I connettori richiedono l'accesso alle stesse porte descritte in dettaglio per i dispositivi gestiti, come indicato nel [contenuto per l'endpoint del dispositivo](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune supporta l'installazione del *connettore di certificati PFX* nello stesso server del *connettore di certificati di Microsoft Intune*.
   
@@ -124,7 +126,7 @@ Per l'autenticazione di un dispositivo con una VPN, una rete Wi-Fi o altre risor
 9. In **Estensioni** verificare che nell'area **Criteri di applicazione** siano presenti Crittografia file system, Posta elettronica sicura e Autenticazione client.
 
     > [!IMPORTANT]
-    > Per i modelli di certificato iOS, accedere alla scheda **Estensioni**, aggiornare **Utilizzo chiavi** e verificare che l'opzione **Firma come prova dell'origine** non sia selezionata.
+    > Per i modelli di certificato iOS/iPadOS, accedere alla scheda **Estensioni**, aggiornare **Utilizzo chiavi** e verificare che l'opzione **Firma come prova dell'origine** non sia selezionata.
 
 10. In **Sicurezza** aggiungere l'account computer relativo al server in cui si installa il connettore di certificati di Microsoft Intune. Assegnare all'account le autorizzazioni **Lettura** e **Registrazione**.
 11. Selezionare **Applica** > **OK** per salvare il modello di certificato. Chiudere la **console Modelli di certificato**.
@@ -144,7 +146,7 @@ Per l'autenticazione di un dispositivo con una VPN, una rete Wi-Fi o altre risor
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selezionare **Amministrazione del tenant** > **Connettori e token** > **Connettori di certificati** >  **+Aggiungi**.
+2. Selezionare **Amministrazione del tenant** > **Connettori e token** > **Connettori di certificati** > **+Aggiungi**.
 
 3. Fare clic su *Scaricare il software del connettore del certificato* per il connettere per PKCS #12 e salvare il file in un percorso a cui è possibile accedere dal server in cui si installerà il connettore.
 
@@ -157,7 +159,7 @@ Per l'autenticazione di un dispositivo con una VPN, una rete Wi-Fi o altre risor
     3. Per impostazione predefinita, il servizio Connector viene eseguito con l'account di sistema locale. Se è necessario un proxy per l'accesso a Internet, verificare che l'account del servizio locale possa accedere alle impostazioni del proxy nel server.
 
 5. Il connettore di certificati di Microsoft Intune apre la scheda **Registrazione**. Per abilitare la connessione a Intune, selezionare **Accedi** e specificare un account con autorizzazioni amministrative globali.
-6. Nella scheda **Avanzate** è consigliabile lasciare selezionata l'opzione **Usa l'account di sistema del computer (impostazione predefinita)** .
+6. Nella scheda **Avanzate** è consigliabile lasciare selezionata l'opzione **Usa l'account di sistema del computer (impostazione predefinita)**.
 7. **Applica** > **Chiudi**
 8. Tornare al portale di Intune (**Intune** > **Configurazione dispositivo** > **Connettori di certificati**). Dopo alcuni istanti, viene visualizzato un segno di spunta verde e lo **stato della connessione** è **attivo**. Il server del connettore ora può comunicare con Intune.
 9. Se si ha un proxy web nel proprio ambiente di rete, possono essere necessarie operazioni di configurazione aggiuntive per abilitare il funzionamento del connettore. Per altre informazioni, vedere [Usare server proxy locali esistenti](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) nella documentazione di Azure Active Directory.
@@ -208,12 +210,13 @@ Per l'autenticazione di un dispositivo con una VPN, una rete Wi-Fi o altre risor
    |------------|------------|------------|
    |**Soglia di rinnovo (%)**        |<ul><li>All         |il valore consigliato è 20%  | 
    |**Periodo di validità del certificato**  |<ul><li>All         |se il modello di certificato non è stato cambiato, questa opzione può essere impostata su un anno. |
-   |**Provider di archiviazione chiavi (KSP)**   |<ul><li>Windows 10  | per Windows, selezionare la posizione in cui archiviare le chiavi nel dispositivo. |
+   |**Provider di archiviazione chiavi (KSP)**   |<ul><li>Windows 10  |per Windows, selezionare la posizione in cui archiviare le chiavi nel dispositivo. |
    |**Autorità di certificazione**      |<ul><li>All         |visualizza il nome di dominio completo (FQDN, Fully Qualified Domain Name) interno dell'autorità di certificazione globale (enterprise).  |
    |**Nome dell'autorità di certificazione** |<ul><li>All         |specifica il nome dell'autorità di certificazione globale (enterprise), ad esempio "Contoso Certification Authority" (Autorità di certificazione Contoso). |
+   |**Nome modello di certificato**    |<ul><li>All         |Elenca il nome del modello di certificato. |
    |**Tipo di certificato**             |<ul><li>Android Enterprise (*Profilo di lavoro*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e versioni successive|Selezionare un tipo: <ul><li> i certificati di tipo **Utente** possono contenere attributi sia relativi agli utenti che ai dispositivi nel soggetto e nel nome alternativo del soggetto del certificato. </il><li>I certificati di tipo **Dispositivo** possono contenere solo attributi relativi ai dispositivi nel soggetto e nel nome alternativo del soggetto del certificato. Usare il tipo Dispositivo per scenari quali i dispositivi senza utente, ad esempio i chioschi multimediali o altri dispositivi condivisi.  <br><br> Questa selezione influisce sul formato del nome soggetto. |
-   |**Formato nome soggetto**          |<ul><li>All         |Per la maggior parte delle piattaforme impostare questa opzione su **Nome comune**, se non diversamente richiesto.<br><br>Per le piattaforme seguenti, il formato del nome soggetto è determinato dal tipo di certificato: <ul><li>Android Enterprise (*Profilo di lavoro*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e versioni successive</li></ul>  <p> Vedere [Formato del nome soggetto](#subject-name-format) più avanti in questo articolo. |
-   |**Nome alternativo soggetto**     |<ul><li>All         |impostare questa opzione su **Nome dell'entità utente (UPN)** , se non diversamente richiesto. |
+   |**Formato nome soggetto**          |<ul><li>All         |Per informazioni dettagliate su come configurare il formato del nome soggetto, vedere [Formato del nome soggetto](#subject-name-format) più avanti in questo articolo.  <br><br> Per la maggior parte delle piattaforme usare l'opzione **Nome comune**, se non diversamente richiesto. <br><br>Per le piattaforme seguenti, il formato del nome soggetto è determinato dal tipo di certificato: <ul><li>Android Enterprise (*Profilo di lavoro*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e versioni successive</li></ul>  <p>  |
+   |**Nome alternativo soggetto**     |<ul><li>All         |Per *Attributo* selezionare **Nome dell'entità utente (UPN)** se non diversamente richiesto, configurare un *Valore* corrispondente e quindi fare clic su **Aggiungi**. <br><br>Per altre informazioni, vedere [Formato del nome soggetto](#subject-name-format) più avanti in questo articolo.|
    |**Utilizzo chiavi avanzato**           |<ul><li> Amministratore dispositivo Android </li><li>Android Enterprise (*Proprietario del dispositivo*, *Profilo di lavoro*) </li><li>Windows 10 |I certificati richiedono in genere l'*Autenticazione Client* in modo che l'utente o il dispositivo possa eseguire l'autenticazione a un server. |
    |**Consenti a tutte le app l'accesso alla chiave privata** |<ul><li>macOS  |Impostare su **Abilita** per concedere alle app configurate per l'accesso al dispositivo Mac associato la chiave privata dei certificati PKCS. <br><br> Per altre informazioni su questa impostazione, vedere *AllowAllAppsAccess* nella sezione Certificate Payload (Payload del certificato) del documento [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) (Informazioni di riferimento sui profili di configurazione) nella documentazione per sviluppatori Apple. |
    |**Certificato radice**             |<ul><li>Amministratore dispositivo Android </li><li>Android Enterprise (*Proprietario del dispositivo*, *Profilo di lavoro*) |Selezionare un profilo del certificato CA radice assegnato in precedenza. |
@@ -244,19 +247,19 @@ Piattaforme:
 > - =
 
 - **Tipo di certificato utente**  
-  Le opzioni di formato per *Formato nome soggetto* includono due variabili: **CN (Nome comune)** ed **E (Posta elettronica)** . **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
+  Le opzioni di formato per *Formato nome soggetto* includono due variabili: **CN (Nome comune)** ed **E (Posta elettronica)**. **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
 
-  - **CN={{UserName}}** : nome dell'entità utente (UPN) dell'utente, ad esempio janedoe@contoso.com.
-  - **CN={{AAD_Device_ID}}** : ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
-  - **CN={{SERIALNUMBER}}** : numero di serie (SN) univoco usato in genere dal produttore per identificare un dispositivo.
-  - **CN={{IMEINumber}}** : numero IMEI (International Mobile Equipment Identity) univoco usato per identificare un telefono cellulare.
-  - **CN={{OnPrem_Distinguished_Name}}** : sequenza di nomi distinti relativi separati da virgola, ad esempio *CN=Giorgia Fanucci,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+  - **CN={{UserName}}**: nome dell'entità utente (UPN) dell'utente, ad esempio janedoe@contoso.com.
+  - **CN={{AAD_Device_ID}}**: ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
+  - **CN={{SERIALNUMBER}}**: numero di serie (SN) univoco usato in genere dal produttore per identificare un dispositivo.
+  - **CN={{IMEINumber}}**: numero IMEI (International Mobile Equipment Identity) univoco usato per identificare un telefono cellulare.
+  - **CN={{OnPrem_Distinguished_Name}}**: sequenza di nomi distinti relativi separati da virgola, ad esempio *CN=Giorgia Fanucci,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
 
-    Per usare la variabile *{{OnPrem_Distinguished_Name}}* , assicurarsi di sincronizzare l'attributo utente *onpremisesdistinguishedname* usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
+    Per usare la variabile *{{OnPrem_Distinguished_Name}}*, assicurarsi di sincronizzare l'attributo utente *onpremisesdistinguishedname* usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
 
-  - **CN={{onPremisesSamAccountName}}** : gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato *onPremisesSamAccountName*. Intune può sostituire tale variabile come parte di una richiesta di emissione di certificati nel soggetto di un certificato. L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso dell'utente è: *NomeDomino\utenteTest* o solo *utenteTest*.
+  - **CN={{onPremisesSamAccountName}}**: gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato *onPremisesSamAccountName*. Intune può sostituire tale variabile come parte di una richiesta di emissione di certificati nel soggetto di un certificato. L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso dell'utente è: *NomeDomino\utenteTest* o solo *utenteTest*.
 
-    Per usare la variabile *{{onPremisesSamAccountName}}* , assicurarsi di sincronizzare l'attributo utente *onPremisesSamAccountName* usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
+    Per usare la variabile *{{onPremisesSamAccountName}}*, assicurarsi di sincronizzare l'attributo utente *onPremisesSamAccountName* usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
 
   Usando una combinazione di una o più variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato, ad esempio:  
   - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
@@ -284,8 +287,6 @@ Piattaforme:
   > - Le proprietà del dispositivo usate nel *soggetto* o nel *nome alternativo del soggetto* di un certificato del dispositivo, ad esempio **IMEI**, **SerialNumber** e **FullyQualifiedDomainName**, sono proprietà soggette a spoofing da parte di un utente con accesso al dispositivo.
   > - Un dispositivo deve supportare tutte le variabili specificate in un profilo di certificato, affinché tale profilo possa essere installato nel dispositivo.  Ad esempio, se si usa **{{IMEI}}** nel nome del soggetto di un profilo SCEP e il profilo viene assegnato a un dispositivo che non ha un numero IMEI, l'installazione del profilo avrà esito negativo.  
  
-
-
 ## <a name="whats-new-for-connectors"></a>Novità dei connettori
 
 Periodicamente vengono rilasciati aggiornamenti per i due connettori di certificati. Quando un connettore viene aggiornato, le modifiche vengono illustrate qui.
@@ -303,7 +304,7 @@ Il *connettore di certificati PFX per Microsoft Intune* [supporta gli aggiorname
 - **Connettore dei certificati PFX per Microsoft Intune - versione 6.1905.0.402**  
   Modifiche in questa versione:  
   - L'intervallo di polling per il connettore è stato ridotto da 5 minuti a 30 secondi.
- 
+
 ### <a name="april-2-2019"></a>2 aprile 2019
 
 - **Connettore di certificati di Intune - versione 6.1904.1.0**  

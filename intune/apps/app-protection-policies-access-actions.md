@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437886"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513909"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di avvio condizionale per i criteri di protezione delle app in Intune
 
@@ -85,7 +85,7 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 - Versione minima del Portale aziendale
 - Livello di minaccia massimo consentito del dispositivo
 
-Usando la **Versione minima del Portale aziendale** è possibile indicare una versione minima definita specifica del Portale aziendale da applicare a un dispositivo di un utente finale. Questa impostazione di avvio condizionale consente di impostare i valori **Blocca accesso**, **Cancella i dati** e **Avvisa** come azioni possibili quando non tutti i valori sono soddisfatti. I formati possibili per questo valore seguono il criterio *[Major].[Minor]* , *[Major].[Minor].[Build]* o *[Major].[Minor].[Build].[Revision]* . Dato che alcuni utenti finali potrebbero voler evitare un aggiornamento immediato forzato delle app, l'opzione Avvisa potrebbe essere la scelta ideale per la configurazione di questa impostazione. Per gli aggiornamenti delle app, Google Play Store ha avuto la buona idea di inviare solo i byte delta, ma questi possono comunque costituire una grande quantità di dati e l'utente potrebbe non voler usare questa procedura se al momento dell'aggiornamento è connesso alla rete mobile. La forzatura di un aggiornamento e il download immediato di un'app aggiornata possono comportare addebiti imprevisti per i dati al momento dell'aggiornamento. L'impostazione **Versione minima del Portale aziendale**, se configurata, influisce su tutti gli utenti finali che ottengono la versione 5.0.4560.0 e le versioni future del Portale aziendale. Questa impostazione non influisce sugli utenti che usano una versione del Portale aziendale precedente alla versione con la quale questa funzionalità viene rilasciata. Gli utenti finali che usano gli aggiornamenti automatici delle app nel proprio dispositivo probabilmente non visualizzeranno alcuna finestra di dialogo di questa funzionalità, dal momento che probabilmente avranno la versione del Portale aziendale più recente. Questa impostazione è presente solo in Android con la protezione delle app per i dispositivi registrati e non registrati.
+Usando la **Versione minima del Portale aziendale** è possibile indicare una versione minima definita specifica del Portale aziendale da applicare a un dispositivo di un utente finale. Questa impostazione di avvio condizionale consente di impostare i valori **Blocca accesso**, **Cancella i dati** e **Avvisa** come azioni possibili quando non tutti i valori sono soddisfatti. I formati possibili per questo valore seguono il criterio *[Major].[Minor]*, *[Major].[Minor].[Build]* o *[Major].[Minor].[Build].[Revision]*. Dato che alcuni utenti finali potrebbero voler evitare un aggiornamento immediato forzato delle app, l'opzione Avvisa potrebbe essere la scelta ideale per la configurazione di questa impostazione. Per gli aggiornamenti delle app, Google Play Store ha avuto la buona idea di inviare solo i byte delta, ma questi possono comunque costituire una grande quantità di dati e l'utente potrebbe non voler usare questa procedura se al momento dell'aggiornamento è connesso alla rete mobile. La forzatura di un aggiornamento e il download immediato di un'app aggiornata possono comportare addebiti imprevisti per i dati al momento dell'aggiornamento. L'impostazione **Versione minima del Portale aziendale**, se configurata, influisce su tutti gli utenti finali che ottengono la versione 5.0.4560.0 e le versioni future del Portale aziendale. Questa impostazione non influisce sugli utenti che usano una versione del Portale aziendale precedente alla versione con la quale questa funzionalità viene rilasciata. Gli utenti finali che usano gli aggiornamenti automatici delle app nel proprio dispositivo probabilmente non visualizzeranno alcuna finestra di dialogo di questa funzionalità, dal momento che probabilmente avranno la versione del Portale aziendale più recente. Questa impostazione è presente solo in Android con la protezione delle app per i dispositivi registrati e non registrati.
 
 Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. I valori non fanno distinzione tra maiuscole e minuscole. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo e nei report di Intune. <br>
 Esempio di input: *Produttore A;Produttore B* 
@@ -122,5 +122,5 @@ Al termine della configurazione di un'impostazione, la riga sarà posta nella vi
 
 Per altre informazioni sui criteri di protezione delle app di Intune, vedere:
 - [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md) (How to create and assign app protection policies)
-- [Impostazioni dei criteri di protezione delle app per iOS](app-protection-policy-settings-ios.md)
+- [Impostazioni dei criteri di protezione delle app per iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune](app-protection-policy-settings-android.md) 

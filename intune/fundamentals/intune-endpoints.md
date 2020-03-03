@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c3ff190509de08be0c900dbd1540408ea3532e10
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502715"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609213"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Endpoint di rete per Microsoft Intune  
 
@@ -95,27 +95,9 @@ Se si usa Intune per distribuire script di PowerShell o app Win32, è necessario
 
 |ASU | Nome archiviazione | Rete CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
-| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
-| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
-| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
-| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
-| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
-| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
-| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
-| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
-| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
-| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
-| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
-| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
-| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
-| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
-| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
-| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
-| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
-| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
-| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
-| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
+|AMSUA0601<br>AMSUA0602<br>AMSUA0101<br>AMSUA0102<br>AMSUA0201<br>AMSUA0202<br>AMSUA0401<br>AMSUA0402<br>AMSUA0501<br>AMSUA0502<br>AMSUA0701<br>AMSUA0702 | naprodimedatapri<br>naprodimedatasec<br>naprodimedatahotfix | naprodimedatapri.azureedge.net<br>naprodimedatasec.azureedge.net<br>naprodimedatahotfix.azureedge.net |
+| AMSUB0101<br>AMSUB0102<br>AMSUB0201<br>AMSUB0202<br>AMSUB0301<br>AMSUB0302<br>AMSUB0501<br>AMSUB0502 | euprodimedatapri<br>euprodimedatasec<br>euprodimedatahotfix | euprodimedatapri.azureedge.net<br>euprodimedatasec.azureedge.net<br>euprodimedatahotfix.azureedge.net |
+| AMSUC0101<br>AMSUC0201<br>AMSUC0301<br>AMSUC0501<br>AMSUD0101| approdimedatapri<br>approdimedatasec<br>approdimedatahotifx | approdimedatapri.azureedge.net<br>approdimedatasec.azureedge.net<br>approdimedatahotfix.azureedge.net |
 
 ## <a name="windows-push-notification-services-wns"></a>Servizi notifica push Windows (WNS)  
 
@@ -127,7 +109,7 @@ Per i dispositivi Windows gestiti da Intune che vengono gestiti tramite Gestione
 
 Per il traffico peer-to-peer, Ottimizzazione recapito usa la porta 7680 per TCP/IP o 3544 per l'attraversamento NAT (facoltativamente Teredo). Per la comunicazione tra client e servizio, usa il protocollo HTTP o HTTPS sulla porta 80 o 443.
 
-### <a name="proxy-requirements"></a>Requisiti di proxy  
+### <a name="proxy-requirements"></a>Requisiti del proxy  
 
 Per usare Ottimizzazione recapito, è necessario consentire le richieste di intervalli di byte. Per altre informazioni, vedere [Requisiti proxy per Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
 
@@ -149,4 +131,4 @@ Per i metadati di Ottimizzazione recapito:
 |Comunicazioni con i server del servizio APN|#-courier.push.apple.com<br>'#' è un numero casuale compreso tra 0 e 50.|    TCP     |  5223 e 443  |
 |Diverse funzionalità, tra cui acceso al World Wide Web, iTunes Store, App Store macOS, iCloud, messaggistica e così via. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 o 443   |
 
-Per altre informazioni, vedere gli articoli di Apple [Porte TCP e UDP usate dai prodotti software Apple](https://support.apple.com/en-us/HT202944), [Informazioni sui processi in background e le connessioni host ai server macOS, iOS e iTunes](https://support.apple.com/en-us/HT201999) e [Se i tuoi client macOS e iOS non ricevono le notifiche push di Apple](https://support.apple.com/en-us/HT203609).  
+Per altre informazioni, vedere gli articoli di Apple [Porte TCP e UDP usate dai prodotti software Apple](https://support.apple.com/HT202944), [Informazioni sui processi in background e le connessioni host ai server macOS, iOS/iPadOS e iTunes](https://support.apple.com/HT201999) e [Se i tuoi client macOS e iOS/iPadOS non ricevono le notifiche push di Apple](https://support.apple.com/HT203609).  

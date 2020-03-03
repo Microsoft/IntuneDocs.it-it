@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562503"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609154"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate con Volume Purchase Program da Microsoft Store per le aziende con Microsoft Intune
 
@@ -48,7 +48,7 @@ Prima di iniziare la sincronizzazione e l'assegnazione di app da Microsoft Store
 - Le app concesse in licenza sia online che offline acquistate da Microsoft Store per le aziende vengono sincronizzate nel portale di Intune. Sarà quindi possibile quindi distribuire le app ai gruppi di dispositivi o ai gruppi di utenti. 
 - Le installazioni di app online vengono gestite dallo Store.
 - Anche le app offline gratuite possono essere sincronizzate con Intune. Queste app vengono installate da Intune, non dallo Store.
-- Per usare questa funzionalità i dispositivi devono essere aggiunti ad Active Directory Domain Services o all'area di lavoro.
+- Per usare questa funzionalità, i dispositivi devono essere aggiunti ad Active Directory Domain Services, ad Azure AD o all'area di lavoro.
 - I dispositivi registrati devono usare la versione 1511 di Windows 10 o successive.
 
 Inoltre, i set correlati e le app con licenza offline sincronizzate da Microsoft Store per le aziende ora verranno consolidati in un'unica voce di app nell'interfaccia utente. I dettagli relativi alla distribuzione dei singoli pacchetti verranno migrati in quell'unica voce. Per visualizzare i set correlati nel portale di Azure, selezionare **Licenze dell'app** dal riquadro **App**.

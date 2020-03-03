@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415474"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511549"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Esercitazione: Configurare Slack per l'uso di Intune per EMM e la configurazione delle app
 
@@ -32,8 +32,8 @@ Slack è un'app di collaborazione che può essere usata con Microsoft Intune.
 In questa esercitazione:
 > [!div class="checklist"]
 > - Impostare Intune come provider di Enterprise Mobility Management (EMM) in Slack Enterprise Grid. Si potrà limitare ai dispositivi gestiti di Intune l'accesso alle aree di lavoro del piano Grid.
-> - Creare criteri di configurazione delle app per gestire l'app Slack per EMM in iOS e l'app Slack per i dispositivi del profilo di lavoro Android.
-> - Creare criteri di conformità per i dispositivi Intune per impostare le condizioni che i dispositivi Android e iOS devono soddisfare per essere considerati conformi.
+> - Creare criteri di configurazione delle app per gestire l'app Slack per EMM in iOS/iPadOS e l'app Slack per i dispositivi del profilo di lavoro Android.
+> - Creare criteri di conformità per i dispositivi Intune per impostare le condizioni che i dispositivi Android e iOS/iPadOS devono soddisfare per essere considerati conformi.
 
 Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ottenere un account di prova gratuito](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Attivare EMM per il piano Slack Enterprise Grid seguendo le [istruzioni di Slack
 Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) come Amministratore globale o come Amministratore del servizio Intune. Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configurare Slack per EMM nei dispositivi iOS
-Aggiungere l'app iOS Slack per EMM al tenant di Intune e creare un criterio di configurazione dell'app per consentire agli utenti iOS dell'organizzazione di accedere a Slack con Intune come provider EMM.
+Aggiungere l'app iOS/iPadOS Slack per EMM al tenant di Intune e creare un criterio di configurazione dell'app per consentire agli utenti iOS/iPadOS dell'organizzazione di accedere a Slack con Intune come provider EMM.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Aggiungere Slack per EMM a Intune
-Aggiungere Slack per EMM come app iOS gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi Android.
+Aggiungere Slack per EMM come app iOS/iPadOS gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi Android.
 1. Nell'interfaccia di amministrazione selezionare **App** > **Tutte le app** > **Aggiungi**.
 2. In **Tipo di app** selezionare l'App Store **iOS**.
 3. Selezionare **Cerca in App Store**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app. Fare clic su **Seleziona** nel riquadro **Cerca in App Store**.
@@ -84,7 +84,7 @@ Aggiungere un criterio di configurazione dell'app per Slack per EMM su iOS/iPadO
 12. Fare clic su **Save**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Facoltativo) Creare un criterio di conformità per i dispositivi iOS
-Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verranno creati criteri di conformità per i dispositivi iOS. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack su dispositivi Android.
+Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verranno creati criteri di conformità per i dispositivi iOS/iPadOS. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack su dispositivi Android.
 1. Nell'interfaccia di amministrazione selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
 2. In Nome immettere "Test criteri di conformità iOS".
 3. In Descrizione immettere "Test criteri di conformità iOS".
@@ -105,7 +105,7 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
 Aggiungere l'app Slack di Google Play gestita al tenant di Intune e creare un criterio di configurazione dell'app per consentire agli utenti Android dell'organizzazione di accedere a Slack con Intune come provider EMM.
 
 ### <a name="add-slack-to-intune"></a>Aggiungere Slack a Intune
-Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi iOS.
+Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utenti di Slack. Le app sono specifiche della piattaforma, quindi è necessario aggiungere un'app di Intune separata per gli utenti di Slack nei dispositivi iOS/iPadOS.
 1. In Intune selezionare **App** > **Tutte le app** > **Aggiungi**.
 2. In Tipo di app selezionare **App dello Store - Google Play gestito**.
 3. Selezionare **Google Play gestito - Approva**. Immettere il termine di ricerca "Slack per EMM" e selezionare l'app.
@@ -120,7 +120,7 @@ Aggiungere Slack come app di Google Play gestita in Intune e assegnare gli utent
 10. Fare clic su **Save**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Aggiungere un criterio di configurazione dell'app per Slack
-Aggiungere un criterio di configurazione dell'app per Slack. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack su dispositivi iOS.
+Aggiungere un criterio di configurazione dell'app per Slack. I criteri di configurazione dell'app per i dispositivi gestiti sono specifici della piattaforma, quindi è necessario aggiungere un criterio separato per gli utenti di Slack nei dispositivi iOS/iPadOS.
 1. In Intune selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 2. In Nome immettere Test criteri di configurazione dell'app Slack.
 3. In Tipo di registrazione del dispositivo selezionare **Dispositivi gestiti**.
@@ -136,7 +136,7 @@ Aggiungere un criterio di configurazione dell'app per Slack. I criteri di config
 12. Fare clic su **Save**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Facoltativo) Creare un criterio di conformità per i dispositivi Android
-Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verrà creato un criterio di conformità per i dispositivi Android. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack su dispositivi iOS.
+Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verrà creato un criterio di conformità per i dispositivi Android. I criteri di conformità sono specifici della piattaforma, quindi è necessario creare un criterio separato per gli utenti di Slack nei dispositivi iOS/iPadOS.
 1. In Intune selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
 2. In Nome immettere "Test criteri di conformità Android".
 3. In Descrizione immettere "Test criteri di conformità Android".
@@ -155,13 +155,13 @@ Configurare i criteri di conformità del dispositivo di Intune per impostare le 
 
 ## <a name="launch-slack"></a>Avviare Slack
 
-Con i criteri appena creati, i dispositivi del profilo di lavoro Android o iOS che cercano di accedere a una delle aree di lavoro dovranno essere registrati con Intune. Per testare questo scenario, provare ad avviare Slack per EMM in un dispositivo iOS registrato con Intune o ad avviare Slack in un dispositivo del profilo di lavoro Android registrato con Intune. 
+Con i criteri appena creati, i dispositivi del profilo di lavoro Android o iOS/iPadOS che cercano di accedere a una delle aree di lavoro dovranno essere registrati con Intune. Per testare questo scenario, provare ad avviare Slack per EMM in un dispositivo iOS/iPadOS registrato con Intune o ad avviare Slack in un dispositivo del profilo di lavoro Android registrato con Intune. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 In questa esercitazione:
 - Si è impostato Intune come provider di Enterprise Mobility Management (EMM) in Slack Enterprise Grid. 
-- Sono stati creati criteri di configurazione delle app per gestire l'app Slack per EMM in iOS e l'app Slack per i dispositivi del profilo di lavoro Android.
-- Sono stati creati criteri di conformità per i dispositivi Intune per impostare le condizioni che i dispositivi Android e iOS devono soddisfare per essere considerati conformi.
+- Sono stati creati criteri di configurazione delle app per gestire l'app Slack per EMM in iOS/iPadOS e l'app Slack per i dispositivi del profilo di lavoro Android.
+- Sono stati creati criteri di conformità per i dispositivi Intune per impostare le condizioni che i dispositivi Android e iOS/iPadOS devono soddisfare per essere considerati conformi.
 
 Per altre informazioni sui criteri di configurazione delle app, vedere [Criteri di configurazione delle app per Microsoft Intune](app-configuration-policies-overview.md). Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Impostare regole sui dispositivi per consentire l'accesso alle risorse dell'organizzazione tramite Intune](../protect/device-compliance-get-started.md).

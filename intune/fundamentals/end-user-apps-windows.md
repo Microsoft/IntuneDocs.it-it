@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ba79260891c1a26fcb9a92c25b46277c08c92908
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414587"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514371"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di Windows
 
@@ -39,4 +39,4 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 ## <a name="see-also"></a>Vedere anche
 
 [Modalità di recupero delle app per gli utenti di Android](end-user-apps-android.md)
-[Modalità di recupero delle app per gli utenti di iOS](end-user-apps-android.md)
+[Modalità di recupero delle app per gli utenti di iOS/iPadOS](end-user-apps-android.md)

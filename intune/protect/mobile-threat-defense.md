@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057572"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514847"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integrazione di Mobile Threat Defense in Intune
 
@@ -50,7 +50,7 @@ Se abilitato, Intune raccoglie le informazioni degli inventari delle app dei dis
 Per l'uso di questo servizio è richiesto il consenso esplicito. Nessuna informazione di inventario di app viene condivisa per impostazione predefinita. Un amministratore di Intune deve abilitare la **sincronizzazione delle app per dispositivi iOS** nelle impostazioni del connettore Mobile Threat Defense prima che vengano condivise informazioni di inventario delle app.
 
 **Inventario delle app**  
-Se si abilita la sincronizzazione delle app per dispositivi iOS, gli inventari dei dispositivi iOS aziendali e personali vengono inviati al provider del servizio MTD. I dati dell'inventario delle app includono:
+Se si abilita la sincronizzazione delle app per dispositivi iOS/iPadOS, gli inventari dei dispositivi iOS/iPadOS aziendali e personali vengono inviati al provider del servizio MTD. I dati dell'inventario delle app includono:
 
 - ID dell'app
 - Versione dell'app

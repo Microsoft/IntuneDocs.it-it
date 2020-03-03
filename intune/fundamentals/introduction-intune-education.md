@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ccea34694bde8ea80a779b36ef612fcefb1add
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97177f91edea1205f6e8349ee1a7194d0f5300e5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510206"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514541"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Informazioni sulle differenze di Intune per Education rispetto all'esperienza di gestione completa in Intune.
 
@@ -29,7 +29,7 @@ Intune per Education consente a docenti e studenti di essere produttivi, mantene
 
 ![Console di Intune per Education a confronto con la console di Intune.](./media/introduction-intune-education/intune-azure-vs-intuneEDU.png)
 
-Intune per Education consente di gestire i dispositivi Windows 10 e iOS con le funzionalità MDM complete disponibili in Intune. L'esperienza completa di gestione del dispositivo consente di gestire dispositivi Android, iOS e Windows.  
+Intune per Education consente di gestire i dispositivi Windows 10 e iOS/iPadOS con le funzionalità MDM complete disponibili in Intune. L'esperienza completa di gestione dei dispositivi consente di gestire dispositivi Android, iOS/iPadOS e Windows.  
 
 È possibile usare Intune per Education da solo o in integrazione con l'[esperienza completa di gestione dei dispositivi disponibile in Intune](what-is-intune.md). È anche possibile usare questo servizio insieme al resto degli strumenti disponibili in [Microsoft Education](https://microsoft.com/education), in modo da poter usare facilmente Intune per Education con altri utili strumenti didattici da Microsoft.  
 

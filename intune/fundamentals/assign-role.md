@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 780a248f16a8a5028875c9c2401921ea23d0af24
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
+ms.openlocfilehash: 19fff092f7eccfc6de2a027c7834c52698176cbf
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540929"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569167"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Assegnare un ruolo a un utente di Intune
 
@@ -34,23 +34,20 @@ Per creare, modificare o assegnare ruoli, l'account deve disporre di una delle s
 
 1. Nell'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), scegliere **Amministrazione del tenant** > **Ruoli** > **Tutti i ruoli**.
 
-2. Nel pannello **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
+2. Nel pannello **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare > **Assegnazioni** > **Assegna**.
 
-3. Nel pannello <*nome ruolo*> - **Panoramica** scegliere **Gestisci** > **Assegnazioni**.
+5. Nella pagina **Informazioni di base** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa e quindi scegliere **Avanti**.
 
-4. Nel pannello del ruolo personalizzato scegliere **Assegna**.
+6. Nella pagina **Gruppi amministrativi** scegliere il gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni. Scegliere **Avanti**
 
-5. Nel pannello **Assegnazioni di ruolo** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa per l'assegnazione.
+7. Nella pagina **Ambito (gruppi)** scegliere un gruppo contenente gli utenti/dispositivi che il membro indicato in precedenza è autorizzato a gestire. Scegliere **Avanti**.
 
-6. Per **Membri (gruppi)** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
+8. Nella pagina **Ambito (tag)** scegliere i tag in cui verrà applicata questa assegnazione di ruolo. Scegliere **Avanti**.
 
-7. Per **Ambito (gruppi)** scegliere un gruppo contenente gli utenti/dispositivi che il membro indicato in precedenza è autorizzato a gestire.
-
-8. Per **Ambito (tag)** scegliere i tag in cui verrà applicata questa assegnazione di ruolo.
-
-9. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
-
+9. Al termine, nella pagina **Rivedi e crea** scegliere **Crea**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Informazioni sul controllo degli accessi in base al ruolo in Intune](role-based-access-control.md)
 - [Creare un ruolo personalizzato](create-custom-role.md)
+
+

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207205"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510521"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Usare le credenziali derivate in Microsoft Intune
 
@@ -31,13 +31,13 @@ In un ambiente in cui sono richieste smart card per l'autenticazione o la critto
 
 Le credenziali derivate sono un'implementazione delle linee guida del National Institute of Standards and Technology (NIST) per le credenziali derivate di verifica dell'identità personale (PIV) come parte della Pubblicazione speciale 800-157.
 
-**Con l'implementazione di Intune** :
+**Con l'implementazione di Intune **:
 
 - L'amministratore di Intune configura il tenant in modo che funzioni con un emittente di credenziali derivate supportato. Non è necessario configurare impostazioni specifiche di Intune nel sistema dell'emittente di credenziali derivate.
 
 - L'amministratore di Intune specifica le **credenziali derivate** come *metodo di autenticazione* per gli oggetti seguenti:
 
-  - Tipi di profili comuni come Wi-Fi, VPN e posta elettronica, inclusa l'app di posta elettronica nativa iOS
+  - Tipi di profili comuni come Wi-Fi, VPN e posta elettronica, inclusa l'app di posta elettronica nativa iOS/iPadOS
 
   - Autenticazione delle app
 
@@ -76,7 +76,7 @@ Per informazioni dettagliate importanti sull'uso dei diversi emittenti, rivedere
 
 Pianificare la distribuzione dell'app Portale aziendale Intune nei dispositivi che si registreranno per le credenziali derivate. Gli utenti del dispositivo usano l'app Portale aziendale per avviare il processo di registrazione delle credenziali.
 
-Per i dispositivi iOS, vedere [Aggiungere app dello Store iOS a Microsoft Intune](../apps/store-apps-ios.md).
+Per i dispositivi iOS/iPadOS, vedere [Aggiungere app dello Store iOS/iPadOS a Microsoft Intune](../apps/store-apps-ios.md).
 
 ## <a name="plan-for-derived-credentials"></a>Pianificare l'uso delle credenziali derivate
 
@@ -198,7 +198,7 @@ Oltre a distribuire l'app con Intune, configurare una rete VPN per app di Intune
 **Completare le attività seguenti**:
   
 1. Scaricare l'[applicazione DISA Purebred](https://cyber.mil/pki-pke/purebred/).
-2. Distribuire l'applicazione DISA Purebred in Intune.  Vedere [Aggiungere un'app line-of-business per iOS a Microsoft Intune](../apps/lob-apps-ios.md).
+2. Distribuire l'applicazione DISA Purebred in Intune.  Vedere [Aggiungere un'app line-of-business per iOS/iPadOS a Microsoft Intune](../apps/lob-apps-ios.md).
 3. [Creare una VPN per app](../configuration/vpn-settings-configure.md) per l'applicazione DISA Purebred.
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Usare credenziali derivate per l'autenticazione e per la firma e la crittografia S/MIME
@@ -224,7 +224,7 @@ Usare le credenziali derivate per l'autenticazione basata su certificati per sit
 2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le impostazioni seguenti:
 
-    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di profilo valido è **Credenziali derivate per profilo dispositivi iOS**.
+    - **Nome**: immettere un nome descrittivo per il profilo. Assegnare ai profili nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di profilo valido è **Credenziali derivate per profilo dispositivi iOS/iPadOS**.
     - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
     - **Piattaforma**: Selezionare **iOS/iPadOS**.
     - **Tipo di profilo**: Selezionare **Credenziali derivate**.

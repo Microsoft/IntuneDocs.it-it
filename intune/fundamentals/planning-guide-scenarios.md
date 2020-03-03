@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505166"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514898"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificare gli scenari dei casi d'uso per la gestione di dispositivi mobili
 
@@ -79,15 +79,15 @@ A questo punto, è necessario identificare i gruppi dell'organizzazione che sono
 
 Il passaggio successivo è identificare le piattaforme per dispositivi mobili associate a ogni scenario dei casi d'uso. Possono essere più di una.
 
-Lo scenario relativo al caso d'uso aziendale può ad esempio supportare le piattaforme per dispositivi iOS e Android Samsung Knox. I criteri BYOD possono includere il supporto per piattaforme per dispositivi mobili aggiuntive, come Android (non Samsung Knox) e Windows 10 Mobile. Sulla base degli esempi precedenti, sono state associate le piattaforme per dispositivi mobili a ogni scenario dei casi d'uso.
+Lo scenario relativo al caso d'uso aziendale può ad esempio supportare le piattaforme per dispositivi iOS/iPadOS e Android Samsung Knox. I criteri BYOD possono includere il supporto per piattaforme per dispositivi mobili aggiuntive, come Android (non Samsung Knox) e Windows 10 Mobile. Sulla base degli esempi precedenti, sono state associate le piattaforme per dispositivi mobili a ogni scenario dei casi d'uso.
 
 | **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** |   
 |:---:|:---:|:---:|:---:|
-| Aziendale | Information Worker | HR, finanza | iOS |                                                           
-| Aziendale | Dirigenti | HR, finanza | iOS |                                                           
+| Aziendale | Information Worker | HR, finanza | iOS/iPadOS |                                                           
+| Aziendale | Dirigenti | HR, finanza | iOS/iPadOS |                                                           
 | Aziendale | Modalità tutto schermo | Vendita al dettaglio | Android |
-| BYOD | Information Worker | Marketing, vendite | iOS |                                                           
-| BYOD | Dirigenti | Marketing, vendite | iOS |
+| BYOD | Information Worker | Marketing, vendite | iOS/iPadOS |                                                           
+| BYOD | Dirigenti | Marketing, vendite | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

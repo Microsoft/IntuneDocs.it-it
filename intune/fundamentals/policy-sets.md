@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206126"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514830"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Usare i set di criteri per raggruppare raccolte di oggetti di gestione
 
@@ -52,7 +52,7 @@ I set di criteri non sostituiscono concetti o oggetti esistenti. È possibile co
 Quando si crea un set di criteri, si crea una singola unità di assegnazione e si gestiscono le associazioni tra oggetti diversi. Un set di criteri sarà un riferimento a oggetti esterni. Eventuali modifiche apportate agli oggetti inclusi influenzeranno anche il set di criteri. Dopo aver creato un set di criteri, è possibile visualizzarne e modificarne ripetutamente gli oggetti e le assegnazioni. 
 
 > [!NOTE]
-> I set di criteri supportano le impostazioni di Windows, Android, macOS e iOS e possono essere assegnati tra piattaforme diverse.
+> I set di criteri supportano le impostazioni di Windows, Android, macOS e iOS/iPadOS e possono essere assegnati tra piattaforme diverse.
 
 ## <a name="how-to-create-a-policy-set"></a>Come creare un set di criteri
 
@@ -82,15 +82,15 @@ I set di criteri, una novità della versione 1910, presentano i seguenti problem
 - Quando si crea un set di criteri, se un amministratore con ambito tenta di creare un set di criteri senza tag di ambito selezionati, quando si raggiunge la pagina **Rivedi e crea**, la convalida avrà esito negativo e verrà visualizzato un errore nella barra di stato. L'amministratore deve passare a una pagina diversa del processo e quindi tornare alla pagina **Rivedi e crea**. In questo modo verrà abilitata l'opzione **Crea**.  
  
 - I tipi di app seguenti sono attualmente supportati dai set di criteri:
-    - App di iOS Store
-    - App line-of-business iOS
-    - App line-of-business iOS gestite
+    - App di iOS/iPadOS Store
+    - App line-of-business iOS/iPadOS
+    - App line-of-business iOS/iPadOS gestite
     - App di Android Store
     - App line-of-business Android
     - App line-of-business Android gestite
     - Office 365 ProPlus Suite (Windows 10)
     - Collegamento Web
-    - App iOS predefinita
+    - App iOS/iPadOS predefinita
     - App Android predefinita
 
 - L'impostazione dell'assegnazione di un set di criteri **Tutti gli utenti** su **Profilo Autopilot** non è supportata.
@@ -103,18 +103,18 @@ I set di criteri, una novità della versione 1910, presentano i seguenti problem
 
 - I tipi di criteri MAM che supportano i set di criteri includono quanto segue: 
     - Protezione delle app gestite con destinazione MDM MAM WIP (Windows) 
-    - Protezione delle app gestite con destinazione iOS MAM
+    - Protezione delle app gestite con destinazione iOS/iPadOS MAM
     - Protezione delle app gestite con destinazione Android MAM
-    - Configurazione delle app gestite con destinazione iOS MAM
+    - Configurazione delle app gestite con destinazione iOS/iPadOS MAM
     - Configurazione delle app gestite con destinazione Android MAM
 
 - I tipi di criteri MAM che non supportano i set di criteri includono quanto segue: 
     - Protezione delle app gestite con destinazione MAM WIP (Windows)
 
 - MAM elabora le assegnazioni dei set di criteri come assegnazioni dirette per i tipi di criteri seguenti:
-    - Protezione delle app gestite con destinazione iOS MAM
+    - Protezione delle app gestite con destinazione iOS/iPadOS MAM
     - Protezione delle app gestite con destinazione Android MAM
-    - Configurazione delle app gestite con destinazione iOS MAM
+    - Configurazione delle app gestite con destinazione iOS/iPadOS MAM
     - Configurazione delle app gestite con destinazione Android MAM
 
     Se un criterio viene aggiunto a un set di criteri distribuito a un gruppo, il gruppo viene visualizzato come assegnato direttamente nel carico di lavoro e non come "assegnato tramite il set di criteri". Di conseguenza, MAM non elabora le eliminazioni di assegnazione dei gruppi provenienti da set di criteri.

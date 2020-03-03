@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801615"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515136"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Connettore Check Point SandBlast Mobile Threat Defense con Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "73801615"
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>In che modo Intune e Check Point SandBlast Mobile consentono di proteggere le risorse aziendali?
 
-L'app Check Point SandBlast Mobile per Android e iOS acquisisce (se disponibili) i dati di telemetria relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Check Point SandBlast per la valutazione del livello di rischio delle minacce per dispositivi mobili.
+L'app Check Point SandBlast Mobile per Android e iOS/iPadOS acquisisce, se disponibili, i dati di telemetria relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Check Point SandBlast per la valutazione del livello di rischio delle minacce per dispositivi mobili.
 
 I criteri di conformità dei dispositivi di Intune includono una regola per Check Point SandBlast Mobile Threat Defense, basata sulla valutazione dei rischi eseguita da Check Point SandBlast. Quando questa regola è abilitata, Intune valuta la conformità del dispositivo in base ai criteri abilitati. Se il dispositivo risulta non conforme, l'accesso degli utenti a risorse aziendali come Exchange Online e SharePoint Online viene bloccato. Gli utenti ricevono inoltre istruzioni dall'app Check Point SandBlast Mobile installata nei relativi dispositivi per risolvere il problema e ottenere nuovamente l'accesso alle risorse aziendali.
 

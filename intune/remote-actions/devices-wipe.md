@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415523"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609385"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -47,7 +47,7 @@ L'azione **Cancella** riporta un dispositivo alle impostazioni predefinite di fa
 
 L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
 
-L'opzione **Perform protected wipe** (Esegui cancellazione dei dati protetta) garantisce che l'azione di cancellazione dei dati non possa essere elusa spegnendo il dispositivo. Una cancellazione dei dati protetta continuerà a provare a reimpostare il dispositivo fino a quando non riesce. In alcune configurazioni questa azione potrebbe impedire il riavvio del dispositivo.
+L'opzione **Perform protected wipe** (Esegui cancellazione dei dati protetta) garantisce che l'azione di cancellazione dei dati non possa essere elusa spegnendo il dispositivo. Una cancellazione dei dati protetta continuerà a provare a reimpostare il dispositivo fino a quando non riesce. In alcune configurazioni questa azione potrebbe impedire il [riavvio del dispositivo](troubleshoot-device-actions.md#wipe-action).
 
 I criteri MDM verranno riapplicati alla successiva connessione del dispositivo a Intune.
 
@@ -196,6 +196,9 @@ Se si vuole rimuovere completamente un dispositivo DEP Apple dalla gestione con 
 5. Scegliere **Reassign** (Riassegna).
 
     ![Schermata per la riassegnazione di un dispositivo Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>Stati del dispositivo
+Per una descrizione degli stati dei dispositivi, vedere la [raccolta managementStates](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates).
 
 ## <a name="fresh-start"></a>Fresh Start
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504969"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510746"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Inviare i dati dei log alla risorsa di archiviazione, agli hub eventi o a Log Analytics in Intune (anteprima)
 
 Microsoft Intune include log predefiniti che forniscono informazioni sull'ambiente:
 
-- I **log di controllo** mostrano i dettagli su diversi eventi o attività che si verificano in Intune.
+- I **log di controllo** mostrano un record delle attività che generano una modifica in Intune, incluse le operazioni di creazione, aggiornamento (modifica), eliminazione e assegnazione e le azioni remote.
 - I **log operativi (anteprima)** mostrano i dettagli su utenti e dispositivi che hanno eseguito la registrazione (o per cui la registrazione non è riuscita), nonché i dettagli sui dispositivi non conformi.
 - I **log dell'organizzazione di conformità del dispositivo (anteprima)** mostrano un report dell'organizzazione per la conformità dei dispositivi in Intune e informazioni dettagliate sui dispositivi non conformi.
 
@@ -59,10 +59,11 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 
 ## <a name="send-logs-to-azure-monitor"></a>Inviare i log a Monitoraggio di Azure
 
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In **Monitoraggio** selezionare **Impostazioni di diagnostica**. Alla prima apertura, attivare la funzionalità. In caso contrario, aggiungere un'impostazione.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selezionare **Report** > **Impostazioni di diagnostica**. Alla prima apertura, attivare la funzionalità. In caso contrario, aggiungere un'impostazione.
 
-    ![Attivare Impostazioni di diagnostica in Intune per inviare i log a Monitoraggio di Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Attivare Impostazioni di diagnostica in Intune per inviare i log a Monitoraggio di Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. Immettere le proprietà seguenti:
 
@@ -104,7 +105,8 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 
     Al termine, le impostazioni saranno simili alle seguenti: 
 
-    ![Immagine di esempio che mostra l'invio dei log di controllo di Intune a un account di archiviazione di Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Immagine di esempio che mostra l'invio dei log di controllo di Intune a un account di archiviazione di Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. **Salvare** le modifiche. L'impostazione viene visualizzata nell'elenco. Dopo aver creato le impostazioni, è possibile modificarle selezionando **Modifica l'impostazione** > **Salva**.
 
@@ -112,14 +114,7 @@ A seconda della destinazione scelta per instradare i dati dei log di controllo, 
 
 È anche possibile esportare i log di controllo in altre parti di Intune, tra cui registrazione, conformità, configurazione, dispositivi, app client e altro ancora.
 
-Ad esempio, per esportare i log di controllo quando si usa la conformità dei dispositivi:
-
-1. Accedere a [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selezionare **Conformità del dispositivo** > **Monitoraggio** > **Log di controllo**:
-
-    ![Scegliere i log di controllo per indirizzare i dati di Intune all'archiviazione di Monitoraggio di Azure, a hub eventi o all'analisi](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. Selezionare **Esporta impostazioni dati**. Se non è abilitata, è possibile attivare l'opzione **Impostazioni di diagnostica**. È anche possibile scegliere dove inviare i log, come descritto in [Inviare i log a Monitoraggio di Azure](#send-logs-to-azure-monitor) (in questo articolo).
+Per altre informazioni, vedere [Usare i log di controllo per tenere traccia degli eventi e monitorarli](monitor-audit-logs.md). È possibile scegliere dove inviare i log di controllo, come descritto in [Inviare i log a Monitoraggio di Azure](#send-logs-to-azure-monitor) (in questo articolo).
 
 ## <a name="cost-considerations"></a>Considerazioni sui costi
 
@@ -162,7 +157,7 @@ La tabella seguente contiene i costi stimati al mese per un hub eventi di base n
 | | |
 |---|---|
 |Eventi al secondo| 18|
-|Eventi per ogni intervallo di cinque minuti| 5\.400|
+|Eventi per ogni intervallo di cinque minuti| 5.400|
 |Volume per intervallo| 10,8 MB|
 |Messaggi per intervallo| 43|
 |Messaggi al mese| 371.520|
@@ -176,7 +171,7 @@ La tabella seguente contiene i costi stimati al mese per un hub eventi di base n
 |Eventi per ogni intervallo di cinque minuti| 52|
 |Volume per intervallo|104 KB |
 |Messaggi per intervallo|1 |
-|Messaggi al mese|8\.640 |
+|Messaggi al mese|8.640 |
 |Costo stimato al mese (USD)|$ 10,80 |
 
 ### <a name="log-analytics-cost-considerations"></a>Considerazioni sui costi di Log Analytics

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912659"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511855"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -49,7 +49,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 | Installazione di app disponibili sul portale aziendale basato sul Web da parte degli utenti finali | Sì | Sì |
 
 > [!NOTE]
-> Attualmente, è possibile assegnare app iOS e Android (app line-of-business e acquistate nello store) a dispositivi non registrati con Intune.
+> Attualmente, è possibile assegnare app iOS/iPadOS e Android (app line-of-business e acquistate nello store) a dispositivi non registrati con Intune.
 >
 > Per ricevere gli aggiornamenti delle app nei dispositivi che non sono registrati con Intune, gli utenti devono accedere al portale aziendale dell'organizzazione e installare manualmente gli aggiornamenti delle app.
 
@@ -67,9 +67,9 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
    - **Uninstall** (Disinstalla): l'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione "Disponibile per i dispositivi registrati" o "Obbligatoria" usando la stessa distribuzione. I collegamenti Web non possono essere rimossi dopo la distribuzione.
 
      > [!NOTE]
-     > **Solo per le app iOS**:
-     > - Per configurare cosa accade alle app gestite quando i dispositivi non sono più gestiti, è possibile selezionare l'impostazione desiderata in **Disinstalla alla rimozione del dispositivo**. Per altre informazioni, vedere [Impostazione di disinstallazione per le app gestite iOS](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - se è stato creato un profilo VPN iOS contenente le impostazioni VPN per app, è possibile selezionare il profilo VPN in **VPN**. Quando l'app viene eseguita, viene aperta la connessione VPN. Per altre informazioni, vedere [Impostazioni VPN per dispositivi iOS in Microsoft Intune](../vpn-settings-ios.md).
+     > **Solo per le app iOS/iPadOS**:
+     > - Per configurare cosa accade alle app gestite quando i dispositivi non sono più gestiti, è possibile selezionare l'impostazione desiderata in **Disinstalla alla rimozione del dispositivo**. Per altre informazioni, vedere [Impostazione di disinstallazione per le app gestite iOS/iPadOS](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - Se è stato creato un profilo VPN iOS/iPadOS contenente le impostazioni VPN per app, è possibile selezionare il profilo VPN in **VPN**. Quando l'app viene eseguita, viene aperta la connessione VPN. Per altre informazioni, vedere [Impostazioni VPN per dispositivi iOS/iPadOS](../vpn-settings-ios.md).
      >
      > **Solo per le app Android**: se si distribuisce un'app per Android come **Disponibile con o senza registrazione**, la segnalazione dello stato sarà disponibile solo nei dispositivi registrati.
      >
@@ -114,7 +114,7 @@ Le informazioni nella tabella seguente consentono di conoscere la finalità risu
 
 > [!NOTE]
 > Solo per le app dello Store iOS gestite, quando si aggiungono queste app in Microsoft Intune assegnandole come **obbligatorie**, le app vengono create automaticamente con entrambe le finalità **Obbligatoria** e **Disponibile**.<br><br>
-> Le app dello Store iOS (non le app VPP per iOS) di destinazione con scopo obbligatorio verranno applicate sul dispositivo al momento della connessione di quest'ultimo e verranno visualizzate anche nell'app Portale aziendale.<br><br>
+> Le app dello Store iOS (non le app VPP per iOS/iPadOS) di destinazione con scopo obbligatorio verranno applicate sul dispositivo al momento della connessione di quest'ultimo e verranno visualizzate anche nell'app Portale aziendale.<br><br>
 > In caso di conflitti relativi all'impostazione **Disinstalla alla rimozione del dispositivo**, l'app non viene rimossa dal dispositivo quando quest'ultimo non è più gestito.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Distribuzione di app di Google Play gestito a dispositivi non gestiti
@@ -132,7 +132,7 @@ Passaggi per assegnare un'app di Google Play gestito a dispositivi non gestiti:
 Quando viene eseguita una cancellazione selettiva di app nella console di Intune, l'account aziendale viene rimosso automaticamente dall'app Play Store. Da quel momento l'utente finale non visualizzerà più le app aziendali nel catalogo delle app di Play Store. Quando l'account aziendale viene rimosso da un dispositivo, le app installate da Play Store rimangono installate nel dispositivo e non vengono disinstallate. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Impostazione di disinstallazione per le app gestite iOS
-Per i dispositivi iOS è possibile scegliere cosa deve accadere alle app gestite al momento dell'annullamento della registrazione del dispositivo da Intune o alla rimozione del profilo di gestione tramite l'impostazione **Disinstalla alla rimozione del dispositivo**. Questa impostazione si applica alle app solo dopo che il dispositivo è stato registrato e le app sono state installate come gestite. Non è possibile configurare l'impostazione per le app Web o i collegamenti Web. Dopo il ritiro di una Cancellazione selettiva di app, vengono rimossi solo i dati protetti da Mobile Application Management (MAM).
+Per i dispositivi iOS/iPadOS è possibile scegliere cosa deve accadere alle app gestite al momento dell'annullamento della registrazione del dispositivo da Intune o alla rimozione del profilo di gestione tramite l'impostazione **Disinstalla alla rimozione del dispositivo**. Questa impostazione si applica alle app solo dopo che il dispositivo è stato registrato e le app sono state installate come gestite. Non è possibile configurare l'impostazione per le app Web o i collegamenti Web. Dopo il ritiro di una Cancellazione selettiva di app, vengono rimossi solo i dati protetti da Mobile Application Management (MAM).
 
 Per le nuove assegnazioni, vengono inseriti automaticamente i valori predefiniti per l'impostazione, come indicato di seguito:
 

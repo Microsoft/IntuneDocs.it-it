@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258131"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569524"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS importati con Intune
 
@@ -31,6 +31,17 @@ Microsoft Intune supporta l'uso di certificati PKCS importati, comunemente usati
 La crittografia S/MIME è complessa perché la posta elettronica è crittografata con un certificato specifico. È necessario avere la chiave privata del certificato che ha crittografato il messaggio di posta elettronica nel dispositivo in cui si sta leggendo il messaggio, in modo che possa essere decrittografato. I certificati di crittografia vengono rinnovati regolarmente, quindi potrebbe essere necessario avere la cronologia della crittografia in tutti i dispositivi per assicurarsi di poter leggere i messaggi più datati.  Poiché si deve usare lo stesso certificato nei vari dispositivi, non è possibile usare i profili dei certificati [SCEP](certificates-scep-configure.md) o [PKCS](certficates-pfx-configure.md) per questo scopo, poiché i meccanismi di recapito dei certificati inviano un unico certificato per dispositivo.
 
 Per altre informazioni sull'uso di s/MIME con Intune, vedere [Usare s/MIME per crittografare la posta elettronica](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Piattaforme supportate
+
+Intune supporta l'importazione di certificati PFX per le piattaforme seguenti:
+
+- Android - Amministratore di dispositivi
+- Android Enterprise - Completamente gestito
+- Android Enterprise - Profilo di lavoro
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,6 +60,8 @@ Per usare i certificati PKCS importati con Intune, è necessaria l'infrastruttur
 - **Windows Server**:
 
   Usare Windows Server per ospitare il connettore di certificati PFX per Microsoft Intune.  Il connettore viene usato per elaborare le richieste per i certificati importati in Intune.
+  
+  Il connettore richiede l'accesso alle stesse porte descritte in dettaglio per i dispositivi gestiti, come indicato nel [contenuto per l'endpoint del dispositivo](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune supporta l'installazione del *connettore di certificati di Microsoft Intune* nello stesso server del *connettore di certificati PFX per Microsoft Intune*.
 
@@ -207,7 +220,7 @@ Dopo aver importato i certificati in Intune, creare un profilo **certificato PKC
 
    - **Scopo designato**: Specificare lo scopo designato dei certificati importati per questo profilo. Gli amministratori possono importare certificati con scopi designati diversi, ad esempio firma S/MIME o crittografia S/MIME. Lo scopo designato selezionato nel profilo certificato corrisponde al profilo certificato con i certificati importati corretti. Lo scopo designato è un tag usato per raggruppare i certificati importati e non garantisce che i certificati importati con tale tag soddisfino lo scopo designato.  
    - **Periodo di validità del certificato**: A meno che non sia stato modificato il periodo di validità nel modello di certificato, il valore predefinito di questa opzione è un anno.
-   - **Provider di archiviazione chiavi (KSP)** : per Windows, selezionare la posizione in cui archiviare le chiavi nel dispositivo.
+   - **Provider di archiviazione chiavi (KSP)**: per Windows, selezionare la posizione in cui archiviare le chiavi nel dispositivo.
 
 5. Selezionare **OK** > **Crea** per salvare il profilo.
 

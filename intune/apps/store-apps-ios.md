@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755001"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511736"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Aggiungere app dello Store iOS a Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.locfileid: "76755001"
 Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a Microsoft Intune. Le app dello Store iOS sono app installate da Intune nei dispositivi degli utenti. Un utente fa parte della forza lavoro della società. Le app dello Store iOS vengono aggiornate automaticamente.
 
 >[!NOTE]
->Anche se gli utenti dei dispositivi iOS possono rimuovere alcune app iOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
+>Anche se gli utenti dei dispositivi iOS/iPadOS possono rimuovere alcune app iOS/iPadOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-È possibile assegnare le app con questo metodo solo se sono gratuite nell'App Store. Per assegnare app a pagamento con Intune, valutare la possibilità di usare [Volume Purchase Program iOS](vpp-apps-ios.md).
+È possibile assegnare le app con questo metodo solo se sono gratuite nell'App Store. Per assegnare app a pagamento con Intune, valutare la possibilità di usare [Volume Purchase Program per iOS/iPadOS](vpp-apps-ios.md).
 
 >[!NOTE]
 >Quando si lavora con Microsoft Intune, è consigliabile usare il browser Microsoft Edge o Google Chrome.
@@ -73,7 +73,7 @@ Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a
 11. Fare clic su **Selezionare i tag di ambito** per aggiungere facoltativamente tag di ambito per l'app. Per altre informazioni, vedere [Usare il controllo degli accessi in base al ruolo e i tag di ambito per ambienti IT distribuiti](~/fundamentals/scope-tags.md).
 12. Fare clic su **Avanti** per visualizzare la pagina **Assegnazioni**.
 13. Selezionare le assegnazioni a gruppi per l'app. Per altre informazioni, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](~/fundamentals/groups-add.md). 
-14. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. Verificare i valori e le impostazioni immesse per l'app.
+14. Fare clic su **Avanti** per visualizzare la pagina **Rivedi e crea**. Verificare i valori e le impostazioni immessi per l'app.
 15. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
 
 Verrà visualizzato il pannello **Panoramica** dell'app creata.

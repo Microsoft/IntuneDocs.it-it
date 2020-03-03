@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437971"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512212"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -48,7 +48,7 @@ Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. 
    ![Screenshot del riquadro di riepilogo del riquadro di gestione di applicazioni per dispositivi mobili di Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Utenti assegnati**: numero totale di utenti assegnati dell'azienda che usano un'app associata a un criterio in un contesto aziendale. Comprende sia gli utenti protetti e con licenza, sia gli utenti non protetti e senza licenza.
-- **Utenti contrassegnati**: Numero di utenti che riscontrano problemi con il proprio dispositivo. Gli utenti con dispositivi jailbroken (iOS) e rooted (Android) vengono indicati in **Utenti contrassegnati**. Vengono segnalati qui anche gli utenti con dispositivi contrassegnati dal controllo dell'attestazione del dispositivo SafetyNet di Google, se attivato dall'amministratore IT. 
+- **Utenti contrassegnati**: Numero di utenti che riscontrano problemi con il proprio dispositivo. Gli utenti con dispositivi jailbroken (iOS/iPadOS) e rooted (Android) vengono indicati in **Utenti contrassegnati**. Vengono segnalati qui anche gli utenti con dispositivi contrassegnati dal controllo dell'attestazione del dispositivo SafetyNet di Google, se attivato dall'amministratore IT. 
 - **Utenti con app potenzialmente dannose**: numero di utenti che possono avere un'app dannosa nel dispositivo Android rilevato da Google Play Protect. 
 - **Stato utente per iOS** e **Stato utente per Android**: numero di utenti che hanno usato un'app e ai quali è associato un criterio in un contesto aziendale per la relativa piattaforma. Questa informazione mostra il numero di utenti gestiti dal criterio e il numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
 - **Principali app protette di iOS/iPadOS** e **Principali app protette di Android**: in base alle app iOS/iPadOS e Android più usate, questa informazione indica il numero di app protette e non protette in base alla piattaforma.
@@ -61,7 +61,7 @@ Il periodo di conservazione per i dati di protezione delle app è di 90 giorni. 
 Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquadro **Utenti contrassegnati** e il riquadro **Utenti con app potenzialmente dannose**.
 
 ### <a name="flagged-users"></a>Utenti contrassegnati
-Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp. L'errore si verifica in genere per dispositivi jailbroken (iOS) o rooted (Android). In più, gli utenti con dispositivi contrassegnati dal controllo di avvio condizionale 'Attestazione del dispositivo SafetyNet' vengono indicati qui con il motivo segnalato da Google. Perché un utente possa essere rimosso dal report, è necessario che lo stato del dispositivo stesso sia cambiato. Questo si verifica dopo che il controllo di rilevamento radice (o controllo jailbreak/SafetyNet) successivo ha indicato un risultato positivo. Se il dispositivo è stato effettivamente corretto, l'aggiornamento del report Utenti contrassegnati avviene quando il riquadro viene ricaricato.
+Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp. L'errore si verifica in genere per dispositivi jailbroken (iOS/iPadOS) o rooted (Android). In più, gli utenti con dispositivi contrassegnati dal controllo di avvio condizionale 'Attestazione del dispositivo SafetyNet' vengono indicati qui con il motivo segnalato da Google. Perché un utente possa essere rimosso dal report, è necessario che lo stato del dispositivo stesso sia cambiato. Questo si verifica dopo che il controllo di rilevamento radice (o controllo jailbreak/SafetyNet) successivo ha indicato un risultato positivo. Se il dispositivo è stato effettivamente corretto, l'aggiornamento del report Utenti contrassegnati avviene quando il riquadro viene ricaricato.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Utenti con app potenzialmente dannose
 Gli utenti con dispositivi contrassegnati dal controllo di avvio condizionale **Rendi obbligatoria l'analisi delle minacce nelle app** vengono indicati qui con la categoria di minaccia segnalata da Google. Se nel report sono elencate app in corso di distribuzione tramite Intune, contattare lo sviluppatore dell'app o rimuovere l'app dall'assegnazione agli utenti. La visualizzazione dettagliata indica:
@@ -170,7 +170,7 @@ Seguire questa procedura per generare un file con estensione csv di Protezione a
     ![Schermata della finestra di conferma Salva report](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune offre campi aggiuntivi per la creazione di report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS/iPadOS. È possibile accedere a questi campi in Intune selezionando **App** > **Stato di protezione dell'app** > **Report sulla protezione dell'app: iOS/iPadOS, Android**. Questi parametri consentono anche di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della **versione minima della patch di sicurezza per Android**.   
+> Intune offre campi aggiuntivi per la creazione di report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS/iPadOS. È possibile accedere a questi campi in Intune selezionando **App** > **Stato di protezione dell'app** > **Report sulla protezione dell'app: iOS/iPadOS, Android**. Questi parametri consentono anche di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS/iPadOS) e l'impostazione della **versione minima della patch di sicurezza per Android**.   
  
 ## <a name="see-also"></a>Vedere anche
 - [Gestire il trasferimento di dati tra app iOS/iPadOS](data-transfer-between-apps-manage-ios.md)

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206058"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575991"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Aggiungere un'autorità di certificazione partner in Intune tramite SCEP
 
-Usare autorità di certificazione (CA) di terze parti con Intune. Le autorità di certificazione di terze parti possono effettuare il provisioning di dispositivi mobili con certificati nuovi o rinnovati usando il protocollo SCEP (Simple Certificate Enrollment Protocol) e possono supportare i dispositivi Windows, iOS, Android e macOS.
+Usare autorità di certificazione (CA) di terze parti con Intune. Le autorità di certificazione di terze parti possono effettuare il provisioning di dispositivi mobili con certificati nuovi o rinnovati usando il protocollo SCEP (Simple Certificate Enrollment Protocol) e possono supportare i dispositivi Windows, iOS/iPadOS, Android e macOS.
 
 Questa funzionalità è costituita da due parti: uso di un'API open source e attività dell'amministratore di Intune.
 
@@ -89,7 +89,7 @@ Assicurarsi di avere le autorizzazioni necessarie per registrare un'app di Azure
    > [!IMPORTANT]  
    > Prima di uscire da questa pagina, copiare il valore del segreto client e annotarlo per usarlo in seguito durante l'implementazione dell'autorità di certificazione di terze parti. Questo valore non viene più visualizzato. Assicurarsi di rivedere il materiale sussidiario per l'autorità di certificazione di terze parti per informazioni sulla configurazione dell'ID applicazione, della chiave di autenticazione e dell'ID tenant.  
 
-6. Prendere nota dell'**ID tenant**. L'ID tenant è il testo del dominio che segue il simbolo @ nell'account. Se ad esempio l'account è *admin@name.onmicrosoft.com* , l'ID tenant è **name.onmicrosoft.com**.  
+6. Prendere nota dell'**ID tenant**. L'ID tenant è il testo del dominio che segue il simbolo @ nell'account. Se ad esempio l'account è *admin@name.onmicrosoft.com*, l'ID tenant è **name.onmicrosoft.com**.  
 
 7. Nel riquadro di spostamento per l'app passare ad **Autorizzazioni API** in **Gestione** e quindi selezionare **Aggiungi un'autorizzazione**.  
 

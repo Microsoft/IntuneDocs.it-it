@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502437"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576469"
 ---
 # <a name="data-intune-sends-to-apple"></a>Dati inviati da Intune ad Apple
 
@@ -59,7 +59,7 @@ La tabella seguente elenca i dati che Microsoft Intune invia da un dispositivo a
 | ASM/DEP | profile_status | Stato dell'installazione del profilo. Valori possibili: **empty**, **assigned**, **pushed** o **removed**. |
 | ASM/DEP | profile_uuid | ID univoco del profilo assegnato. |
 | ASM/DEP | device_assigned_by | Indirizzo di posta elettronica della persona che ha assegnato il dispositivo. |
-| ASM/DEP | os | Sistema operativo del dispositivo: iOS, OSX, o tvOS. Questa chiave è valida in X-Server-Protocol-Version 2 e versioni successive. |
+| ASM/DEP | os | Sistema operativo del dispositivo: iOS/iPadOS, OSX o tvOS. Questa chiave è valida in X-Server-Protocol-Version 2 e versioni successive. |
 | ASM/DEP | device_family | Famiglia di prodotti Apple del dispositivo: iPad, iPhone, iPod, Mac o AppleTV. Questa chiave è valida in X-Server-Protocol-Version 2 e versioni successive. |
 | ASM/DEP | profile_name | Stringa. Nome leggibile del profilo. |
 | ASM/DEP | support_phone_number | Facoltativo. Stringa. Numero di telefono di supporto dell'organizzazione. |

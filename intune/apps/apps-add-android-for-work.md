@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755392"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609194"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Aggiungere app Google Play gestite a dispositivi Android Enterprise con Intune
 
@@ -80,20 +80,6 @@ Con Google Play gestito sono disponibili tre tipi di app:
 9. Fare clic su **Seleziona** per selezionare l'app.
 10. Fare clic su **Sincronizza** nella parte alta del pannello per eseguire la sincronizzazione dell'app con il servizio Google Play gestito.
 11. Fare clic su **Aggiorna** per aggiornare l'elenco delle app e visualizzare l'app appena aggiunta.
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Aggiungere le impostazioni aggiuntive dell'app a un'app di Google Play Store gestito
-1. Se è necessario aggiungere altri dettagli sull'app, selezionare l'app dall'elenco delle app.
-2. Fare clic su **Proprietà** > **Modifica** accanto a **Informazioni sull'app**. Verrà visualizzata la pagina **Informazioni sull'app**.
-3. Nella pagina **Informazioni sull'app** aggiungere i dettagli relativi all'app:
-    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
-    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo).
-    - **Note**: immettere eventuali note da associare a questa app (facoltativo).
-4. Fare clic su **Verifica e salva** per visualizzare la pagina **Verifica e salva**. 
-5. Al termine, fare clic su **Salva** per aggiornare l'app in Intune.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Aggiungere un'app Google Play Store gestita nella console di Google Play gestito (alternativa)
 Se si vuole sincronizzare un'app di Google Play gestita con Intune anziché aggiungerla direttamente con Intune, seguire questa procedura.
@@ -238,6 +224,9 @@ Per le app Google Play gestite distribuite nei dispositivi del profilo di lavoro
 
 ## <a name="delete-managed-google-play-apps"></a>Eliminare le app di Google Play gestite
 Se necessario, è possibile eliminare da Microsoft Intune le app di Google Play gestite. Per eliminare un'app Google Play gestita, aprire Microsoft Intune nel portale di Azure e selezionare **App** > **Tutte le app**. Nell'elenco di app selezionare i puntini di sospensione (...) a destra dell'app di Google Play gestita e quindi selezionare **Elimina** nell'elenco visualizzato. Quando si elimina un'app di Google Play gestita dall'elenco di app, l'app risulta automaticamente non approvata.
+
+> [!NOTE]
+> Se un'app non è approvata o viene eliminata da Google Play Store gestito, non verrà rimossa dall'elenco delle app client di Intune. In questo modo è ancora possibile indirizzare un criterio di disinstallazione agli utenti anche se l'app non è approvata.
 
 ## <a name="android-enterprise-system-apps"></a>App di sistema Android Enterprise
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755579"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510470"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteggere i dispositivi con Microsoft Intune
 
@@ -43,7 +43,7 @@ Quando un dispositivo deve essere [rimosso dalla gestione Intune](../remote-acti
 
 ## <a name="require-devices-to-be-compliant"></a>Richiedere la conformità dei dispositivi
 Intune offre [criteri di conformità dei dispositivi](device-compliance-get-started.md) che consentono di valutare (e in alcuni casi correggere) i dispositivi non conformi alle regole specificate. Ad esempio, è possibile ottenere report per:
-- dispositivi iOS jailbroken
+- dispositivi iOS/iPadOS jailbroken
 - dispositivi crittografati o non crittografati
 - l'integrità dei dispositivi Windows 10 (come stabilito dal servizio di attestazione dell'integrità).
 
@@ -60,7 +60,7 @@ Windows Intune offre una gamma di funzionalità che consentono di proteggere le 
 Con Intune è possibile eseguire l'integrazione con [Windows Hello for Business](windows-hello.md), un metodo di accesso alternativo per Windows 10 e versioni successive che usa Active Directory o un account di Azure Active Directory in sostituzione di una password, una smart card o una smart card virtuale.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>Disabilitare il blocco attivazione sui dispositivi iOS
-Blocco attivazione è una funzionalità che consente di proteggere i dispositivi degli utenti. La funzionalità richiede agli utenti di immettere l'ID e la password Apple prima che chiunque possa cancellare o riattivare il dispositivo. Tuttavia questa funzionalità può causare problemi, ad esempio se l'utente lascia l'azienda senza rimuovere il blocco. [Disabilitare il blocco attivazione di iOS](../remote-actions/device-activation-lock-disable.md) consente di rimuovere il blocco dai dispositivi iOS supervisionati e quindi di riallocarli o cancellarli.
+Blocco attivazione è una funzionalità che consente di proteggere i dispositivi degli utenti. La funzionalità richiede agli utenti di immettere l'ID e la password Apple prima che chiunque possa cancellare o riattivare il dispositivo. Tuttavia questa funzionalità può causare problemi, ad esempio se l'utente lascia l'azienda senza rimuovere il blocco. [Disabilitare il blocco attivazione di iOS/iPadOS](../remote-actions/device-activation-lock-disable.md) consente di rimuovere il blocco dai dispositivi iOS/iPadOS con supervisione e quindi di riallocarli o cancellarli.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

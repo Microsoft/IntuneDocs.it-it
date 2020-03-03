@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034244"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515221"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Panoramica della risoluzione dei problemi di distribuzione dei profili certificato SCEP con Microsoft Intune
 
@@ -123,9 +123,9 @@ Per raccogliere il file OMADM.log da un dispositivo, vedere [Caricare e inviare 
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Log per i dispositivi iOS e iPadOS
 
-Per i dispositivi che eseguono iOS o iPadOS si usano i log di debug e **Xcode** eseguito in un computer Mac:
+Per i dispositivi che eseguono iOS/iPadOS si usano i log di debug e **Xcode** eseguito in un computer Mac:
 
-1. Connettere il dispositivo iOS al Mac, quindi passare a **Applicazioni** > **Utility** per aprire l'app Console. 
+1. Connettere il dispositivo iOS/iPadOS al Mac, quindi passare ad **Applicazioni** > **Utility** per aprire l'app Console. 
 
 2. In **Azione** selezionare **Includi messaggi di informazioni** e **Includi messaggi di debug**.
 

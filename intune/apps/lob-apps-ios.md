@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755188"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609169"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per iOS a Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755188"
 
 Usare le informazioni di questo articolo per aggiungere un'app line-of-business per iOS in Microsoft Intune. Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di installazione di un'app IPA. Questo tipo di app viene in genere scritto internamente. Per prima cosa è necessario entrare nel programma iOS Developer Enterprise Program. Per altre informazioni su come eseguire questa operazione, vedere [il sito Web Apple](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->Gli utenti dei dispositivi iOS possono rimuovere alcune delle app iOS predefinite, ad esempio Borsa e Mappe. Non è possibile usare Intune per ridistribuire queste app. Se gli utenti eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
+> [!NOTE]
+> Gli utenti dei dispositivi iOS possono rimuovere alcune delle app iOS predefinite, ad esempio Borsa e Mappe. Non è possibile usare Intune per ridistribuire queste app. Se gli utenti eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
 >
->Le app line-of-business iOS hanno un limite massimo di dimensioni di 4 GB per app.
+> Le app line-of-business iOS hanno un limite massimo di dimensioni di 4 GB per app.
+
+> [!NOTE]
+> Gli identificatori del bundle, ad esempio *com.contoso.app*, sono progettati per essere identificatori univoci di un'app. Ad esempio, per installare una versione beta di un'app line-of-business accanto alla versione di produzione a scopo di test, la versione beta deve avere un identificatore univoco diverso (ad esempio *com.contoso.app-beta*). In caso contrario, la versione beta si sovrapporrà a quella di produzione e verrà considerata un aggiornamento. La ridenominazione del file con estensione ipa non ha alcun effetto su questo comportamento.
 
 ## <a name="select-the-app-type"></a>Selezionare il tipo di app
 
@@ -43,7 +46,7 @@ Usare le informazioni di questo articolo per aggiungere un'app line-of-business 
 3. Tra i tipi di app in **Altro** nel riquadro **Seleziona il tipo di app** selezionare **App line-of-business**.
 4. Fare clic su **Seleziona**. Verrà visualizzata la procedura **Aggiungi app**.
 
-## <a name="step-1---app-information"></a>Passaggio 1: informazioni sull'app
+## <a name="step-1---app-information"></a>Passaggio 1 - Informazioni sull'app
 
 ### <a name="select-the-app-package-file"></a>Selezionare il file del pacchetto dell'app
 
@@ -82,7 +85,7 @@ Usare le informazioni di questo articolo per aggiungere un'app line-of-business 
 
 ## <a name="step-4---review--create"></a>Passaggio 4 - Verifica e creazione
 
-1. Verificare i valori e le impostazioni immesse per l'app.
+1. Verificare i valori e le impostazioni immessi per l'app.
 2. Al termine, fare clic su **Crea** per aggiungere l'app a Intune.
 
     Verrà visualizzato il pannello **Panoramica** per l'app line-of-business.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505196"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514949"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementare il piano di Microsoft Intune
 
@@ -39,7 +39,7 @@ I requisiti principali per la configurazione autonoma di Intune sono:
 
 - Sottoscrizione Office 365 (per le app di Office e le app gestite con criteri di protezione delle app)
 
-- Certificato APN Apple (per consentire la gestione della piattaforma per dispositivi iOS)
+- Certificato APN Apple (per consentire la gestione della piattaforma per dispositivi iOS/iPadOS)
 
 - Azure AD Connect (per la sincronizzazione della directory)
 
@@ -88,7 +88,7 @@ Prima di iniziare a impostare, configurare, gestire e registrare i dispositivi c
 
 ### <a name="task-6-enable-device-platforms"></a>Attività 6: Abilitare le piattaforme per i dispositivi
 
-Per impostazione predefinita, è abilitata la maggior parte delle piattaforme per i dispositivi, ad eccezione dei dispositivi Apple (iOS e Mac). Per poter registrare e gestire in Intune i dispositivi iOS, è prima necessario abilitare la piattaforma del dispositivo. A tale scopo, è necessario creare un certificato push MDM Apple e aggiungerlo a Intune.
+Per impostazione predefinita, è abilitata la maggior parte delle piattaforme per i dispositivi, ad eccezione dei dispositivi Apple (iOS/iPadOS e Mac). Per poter registrare e gestire in Intune i dispositivi iOS/iPadOS, è prima necessario abilitare la piattaforma del dispositivo. A tale scopo, è necessario creare un certificato push MDM Apple e aggiungerlo a Intune.
 
 - Altre informazioni su [come abilitare i dispositivi Apple per la registrazione](../enrollment/apple-mdm-push-certificate-get.md).
 
@@ -130,7 +130,7 @@ Intune supporta l'accesso condizionale per Exchange Online, Exchange locale, Sha
 
 ### <a name="task-13-enroll-devices"></a>Attività 13: Registrare i dispositivi
 
-Intune supporta le piattaforme per dispositivi mobili iOS, Mac OS, Android, Windows desktop e Windows Mobile. Registrare le piattaforme per dispositivi mobili a seconda delle esigenze, in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
+Intune supporta le piattaforme per dispositivi mobili iOS/iPadOS, Mac OS, Android, Windows desktop e Windows Mobile. Registrare le piattaforme per dispositivi mobili a seconda delle esigenze, in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 - Altre informazioni su [come registrare i dispositivi](../enrollment/device-enrollment.md).
 

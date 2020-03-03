@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b9fe275be3f7eccee7f60dc27e5068e5b91ca93d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713289"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514150"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
 
@@ -34,7 +34,7 @@ L'accesso condizionale basato su app e la gestione delle app client consentono d
 > [!NOTE]
 > Un'app gestita è un'app a cui sono applicati criteri di protezione delle app e che può essere gestita da Intune.
 
-Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è possibile bloccare le app di posta elettronica predefinite in iOS e Android. È inoltre possibile impedire di accedere a SharePoint Online alle app a cui non sono applicati criteri di protezione delle app di Intune.
+Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è possibile bloccare le app di posta elettronica predefinite in iOS/iPadOS e Android. È inoltre possibile impedire di accedere a SharePoint Online alle app a cui non sono applicati criteri di protezione delle app di Intune.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

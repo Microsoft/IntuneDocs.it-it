@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509076"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514235"
 ---
 # <a name="data-collection-in-intune"></a>Raccolta di dati in Intune
 
@@ -50,7 +50,7 @@ I dati identificati raccolti da Intune possono includere, a titolo di esempio:
   - Nome dell'entità utente o indirizzo di posta elettronica
   - Identificatore dell'utente di terze parti (ad esempio ID Apple)
 - Informazioni sull'inventario hardware
-  - Nome dispositivo
+  - Nome del dispositivo
   - Produttore
   - Sistema operativo
   - Numero di serie
@@ -63,8 +63,8 @@ I dati identificati raccolti da Intune possono includere, a titolo di esempio:
   - Gestire
   - Creazione
   - Aggiornamento (modifica)
-  - Eliminazione
-  - Assegna
+  - Elimina
+  - Assegnazione
   - Attività remote
 - Informazioni di supporto
   - Informazioni di contatto (nome, numero di telefono, indirizzo di posta elettronica)
@@ -85,7 +85,7 @@ I dati identificati raccolti da Intune possono includere, a titolo di esempio:
   - nome dell'app
   - Versione
   - ID dell'app
-  - dimensioni
+  - size
   - percorso di installazione
   - I dati di inventario dell'applicazione vengono raccolti solo quando contrassegnati dall'amministratore come dispositivo aziendale o quando è attivata la funzionalità per le app conformi.  
 - ID tenant di terze parti del cliente, ad esempio l'ID Apple. 
@@ -112,7 +112,7 @@ I dati pseudonimizzati raccolti da Intune possono includere, a titolo di esempio
   - ID account
   - ID dispositivo EAS
   - ID specifici della piattaforma
-  - ID Apple per dispositivi iOS
+  - ID Apple per dispositivi iOS/iPadOS
   - Indirizzo Mac per dispositivi Mac
   - ID Windows per dispositivi Windows
 - Informazioni sulle applicazioni gestite

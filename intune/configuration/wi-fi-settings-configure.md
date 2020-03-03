@@ -1,11 +1,11 @@
 ---
 title: Creare un profilo Wi-Fi per i dispositivi in Microsoft Intune - Azure | Microsoft Docs
-description: Vedere la procedura per creare un profilo di configurazione Wi-Fi per i dispositivi in Microsoft Intune. Creare profili per dispositivi Android, Android Enterprise, Android in modalità tutto schermo, iOS, macOS, Windows 10 e versioni successive e Windows Holographic for Business. Usare questi profili per creare una connessione Wi-Fi per usare i certificati, scegliere un tipo EAP, selezionare un metodo di autenticazione, abilitare un proxy e altro ancora.
+description: Vedere la procedura per creare un profilo di configurazione Wi-Fi per i dispositivi in Microsoft Intune. Creare profili per dispositivi Android, Android Enterprise, Android in modalità tutto schermo, iOS, iPadOS, macOS, Windows 10 e versioni successive e Windows Holographic for Business. Usare questi profili per creare una connessione Wi-Fi per usare i certificati, scegliere un tipo EAP, selezionare un metodo di autenticazione, abilitare un proxy e altro ancora.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47eae4d2e662be85de2831666f944e57ba674417
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3110998970eeaf654ab57397ec827090a4103f34
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206109"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512331"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Aggiungere e usare le impostazioni Wi-Fi nei dispositivi in Microsoft Intune
 
 Il Wi-Fi è una rete wireless usata da molti dispositivi mobili per ottenere accesso alla rete. Microsoft Intune include delle impostazioni Wi-Fi predefinite che possono essere distribuite agli utenti e ai dispositivi dell'organizzazione. Questo gruppo di impostazioni è denominato "profilo" e può essere assegnato a diversi utenti e gruppi. Quando viene assegnato, gli utenti ottengono l'accesso alla rete Wi-Fi dell'organizzazione senza configurarla autonomamente.
 
-Si supponga, ad esempio, di installare una nuova rete Wi-Fi denominata Contoso Wi-Fi. Si vogliono quindi configurare tutti i dispositivi iOS per la connessione a questa rete. Questa è la procedura:
+Si supponga, ad esempio, di installare una nuova rete Wi-Fi denominata Contoso Wi-Fi. Si vogliono quindi configurare tutti i dispositivi iOS/iPadOS per la connessione a questa rete. Questa è la procedura:
 
 1. Creare un profilo Wi-Fi contenente le impostazioni per connettersi alla rete wireless Contoso Wi-Fi.
-2. Assegnare il profilo a un gruppo contenente tutti gli utenti dei dispositivi iOS.
+2. Assegnare il profilo a un gruppo contenente tutti gli utenti dei dispositivi iOS/iPadOS.
 3. Gli utenti visualizzeranno la nuova rete Contoso Wi-Fi nell'elenco delle reti wireless sul proprio dispositivo. Gli utenti potranno quindi connettersi alla rete usando il metodo di autenticazione scelto.
 
 Questo articolo illustra la procedura per creare un profilo Wi-Fi e include i collegamenti che descrivono le diverse impostazioni per ogni piattaforma.
@@ -42,6 +42,7 @@ I profili Wi-Fi supportano le piattaforme per dispositivi seguenti:
 - Android 4 e versioni successive
 - Android Enterprise e modalità tutto schermo
 - iOS 8.0 e versioni successive
+- iPadOS 13.0 e versioni successive
 - macOS X 10.11 e versioni successive
 - Windows 10 e versioni successive, Windows 10 Mobile e Windows Holographic for Business
 

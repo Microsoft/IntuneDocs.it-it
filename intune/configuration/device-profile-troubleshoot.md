@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812353"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511328"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Domande e problemi comuni e soluzioni per i criteri e i profili dei dispositivi in Microsoft Intune
 
@@ -36,11 +36,11 @@ Per evitare questo problema impostare l'accesso Wi-Fi guest. In caso di errori c
 
 Suggerimenti aggiuntivi:  
 
-- Se la rete Wi-Fi alla quale ci si connette richiede una password o passphrase, verificare che sia possibile connettersi direttamente al router Wi-Fi. È possibile eseguire il test con un dispositivo iOS.
+- Se la rete Wi-Fi alla quale ci si connette richiede una password o passphrase, verificare che sia possibile connettersi direttamente al router Wi-Fi. È possibile eseguire il test con un dispositivo iOS/iPadOS.
 - Dopo aver stabilito correttamente la connessione all'endpoint Wi-Fi (router Wi-Fi), prendere nota dell'identificatore SSID e delle credenziali usate, che sono la password o passphrase.
 - Immettere l'identificatore SSID e le credenziali (password o passphrase) nel campo Chiave precondivisa. 
 - Eseguire la distribuzione a un gruppo di test con un numero di utenti limitato, preferibilmente solo al team IT. 
-- Sincronizzare il proprio dispositivo iOS con Intune. Se non lo si è ancora fatto, procedere alla registrazione. 
+- Sincronizzare il proprio dispositivo iOS/iPadOS con Intune. Se non lo si è ancora fatto, procedere alla registrazione. 
 - Provare a connettersi nuovamente allo stesso endpoint Wi-Fi (come indicato nel primo passaggio).
 - Eseguire la distribuzione a gruppi di dimensioni maggiori e infine a tutti gli utenti previsti nell'organizzazione. 
 
@@ -54,7 +54,7 @@ Frequenze **stimate**:
 
 | Piattaforma | Ciclo di aggiornamento|
 | --- | --- |
-| iOS | Ogni 8 ore circa |
+| iOS/iPadOS | Ogni 8 ore circa |
 | macOS | Ogni 8 ore circa |
 | Android | Ogni 8 ore circa |
 | PC Windows 10 registrati come dispositivi | Ogni 8 ore circa |
@@ -65,7 +65,7 @@ Se il dispositivo è stato registrato di recente, il controllo della conformità
 
 | Piattaforma | Frequenza |
 | --- | --- |
-| iOS | Ogni 15 minuti per 1 ora, quindi ogni 8 ore |  
+| iOS/iPadOS | Ogni 15 minuti per 1 ora, quindi ogni 8 ore |  
 | macOS | Ogni 15 minuti per 1 ora, quindi ogni 8 ore | 
 | Android | Ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
 | PC Windows 10 registrati come dispositivi | Ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore circa | 
@@ -102,7 +102,7 @@ I conflitti si verificano quando due impostazioni del profilo sono uguali. Ad es
 
 Un criterio viene distribuito all'app e diventa effettivo. Viene distribuito un secondo criterio. In questo scenario ha la precedenza il primo criterio, che rimane applicato. Il secondo criterio risulta in conflitto. Se entrambi vengono applicati contemporaneamente, ovvero non esiste un criterio precedente, saranno entrambi in conflitto. Le impostazioni in conflitto vengono impostate sui valori più restrittivi.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>Cosa accade quando sono in conflitto i criteri personalizzati iOS?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>Cosa accade quando sono in conflitto i criteri personalizzati iOS/iPadOS?
 
 Intune non valuta il payload dei file di configurazione Apple o del criterio personalizzato URI OMA (Open Mobile Alliance Uniform Resource Identifier), ma funge semplicemente da meccanismo di recapito.
 
@@ -144,7 +144,7 @@ Quando si elimina un profilo o si rimuove un dispositivo da un gruppo che includ
     - Consenti NFC
     - Consenti Wi-Fi
 
-  - **iOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
+  - **iOS/iPadOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
   
     - Consenti roaming vocale
     - Consenti dati in roaming
@@ -156,7 +156,7 @@ Una volta configurati, i dispositivi Windows Phone non consentono che la sicurez
 
 Per modificare il profilo impostando un valore meno sicuro, è necessario reimpostare i criteri di sicurezza. Ad esempio, nel desktop di Windows 8.1 scorrere rapidamente da destra e selezionare **Impostazioni** > **Pannello di controllo**. Selezionare l'applet **Account utente** . Nella parte inferiore del menu di spostamento visualizzato a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza**. Selezionarlo e quindi scegliere **Reimposta criteri**.
 
-È possibile che altri dispositivi MDM, ad esempio dispositivi Android, Windows Phone 8.1 e versione successiva, iOS e Windows 10 debbano essere ritirati e registrati nuovamente in Intune per applicare un profilo meno restrittivo.
+È possibile che altri dispositivi MDM, ad esempio dispositivi Android, Windows Phone 8.1 e versione successiva, iOS/iPadOS e Windows 10, debbano essere ritirati e registrati nuovamente in Intune per applicare un profilo meno restrittivo.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Alcune impostazioni in un profilo Windows 10 restituiscono "Non applicabile"
 

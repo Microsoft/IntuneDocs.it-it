@@ -1,6 +1,6 @@
 ---
-title: Modalità di recupero delle app per gli utenti di iOS
-description: Metodi per rendere disponibili le app iOS per gli utenti finali
+title: Modalità di recupero delle app per gli utenti di iOS/iPadOS
+description: Metodi per rendere disponibili le app iOS/iPadOS per gli utenti finali
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 344c2e3f3ed53852aa6b749c9ebf6d451dd313ff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73413989"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514388"
 ---
-# <a name="how-your-ios-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di iOS
+# <a name="how-your-iosipados-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di iOS/iPadOS
 
 Usare queste informazioni per comprendere come e dove gli utenti possono ottenere le app che vengono distribuite tramite Microsoft Intune.
 
@@ -34,9 +34,9 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 
 **App gestite**: app che possono essere gestite usando i criteri e sono state sottoposte a "wrapping" in Intune o sono state compilate con Intune App Software Development Kit (SDK). Queste app possono essere gestite da Intune ed è possibile applicarvi criteri di protezione delle app.
 
-**App non gestite**: app che gli utenti possono scaricare dall'App Store iOS che non sono integrate con Intune App SDK. Intune non ha alcun controllo sulla distribuzione, sulla gestione o sulla cancellazione selettiva di queste app.  
+**App non gestite**: app che gli utenti possono scaricare dall'App Store iOS/iPadOS che non sono integrate con Intune App SDK. Intune non ha alcun controllo sulla distribuzione, sulla gestione o sulla cancellazione selettiva di queste app.  
 
-Le restrizioni di Apple impediscono alle app line-of-business e alle app di App Store gestite di essere elencate nell'app Portale aziendale. Per risolvere questo problema, i riquadri nell'app Portale aziendale per iOS indirizzano gli utenti a visualizzazioni diverse in un'unica posizione, il sito Web del portale aziendale, per tutte le app.
+Le restrizioni di Apple impediscono alle app line-of-business e alle app di App Store gestite di essere elencate nell'app Portale aziendale. Per risolvere questo problema, i riquadri nell'app Portale aziendale per iOS/iPadOS indirizzano gli utenti a visualizzazioni diverse in un'unica posizione, il sito Web del portale aziendale, per tutte le app.
 
 Gli utenti registrati possono ottenere le app toccando i riquadri seguenti nella schermata App dell'app Portale aziendale:
 

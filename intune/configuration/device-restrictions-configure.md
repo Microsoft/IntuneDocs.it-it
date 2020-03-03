@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206568"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511222"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
 
 
 
-Intune include criteri di limitazioni dei dispositivi che consentono agli amministratori di controllare i dispositivi Android, iOS, macOS e Windows. Queste limitazioni consentono di controllare una vasta gamma di impostazioni e funzionalità per proteggere le risorse dell'organizzazione. Gli amministratori sono ad esempio in grado di:
+Intune include criteri di limitazioni dei dispositivi che consentono agli amministratori di controllare i dispositivi Android, iOS/iPadOS, macOS e Windows. Queste limitazioni consentono di controllare una vasta gamma di impostazioni e funzionalità per proteggere le risorse dell'organizzazione. Gli amministratori sono ad esempio in grado di:
 
 - Consentire o bloccare l'uso della fotocamera del dispositivo
 - Controllare l'accesso a Google Play, App Store, visualizzazione di documenti e giochi
@@ -44,7 +44,7 @@ Questo articolo illustra come creare un profilo di limitazioni del dispositivo. 
 2. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**.
 3. Immettere le proprietà seguenti:
 
-    - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **iOS: Blocca fotocamera nei dispositivi**.
+    - **Nome**: immettere un nome descrittivo per il criterio. Assegnare ai criteri nomi che possano essere identificati facilmente in un secondo momento. Ad esempio, un nome di criterio valido è **iOS/iPadOS: Blocca fotocamera nei dispositivi**.
     - **Descrizione**: immettere una descrizione del criterio. Questa impostazione è facoltativa ma consigliata.
     - **Piattaforma**: scegliere la piattaforma dei dispositivi. Le opzioni disponibili sono:  
 
@@ -58,7 +58,7 @@ Questo articolo illustra come creare un profilo di limitazioni del dispositivo. 
 
     - **Tipo di profilo**: Selezionare **Limitazioni del dispositivo**.
 
-        Per creare un profilo di restrizione per dispositivi Windows 10 Team come Surface Hub, scegliere **Limitazioni del dispositivo (Windows 10 Team)** .
+        Per creare un profilo di restrizione per dispositivi Windows 10 Team come Surface Hub, scegliere **Limitazioni del dispositivo (Windows 10 Team)**.
 
 4. Le impostazioni configurabili variano in base alla piattaforma scelta. Scegliere la piattaforma per le impostazioni dettagliate:
 
