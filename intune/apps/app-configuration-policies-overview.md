@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414849"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513997"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
@@ -91,7 +91,7 @@ Selezionando **App gestite** come **Tipo di registrazione del dispositivo** si f
 
 ## <a name="diagnostic-logs"></a>Log di diagnostica
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>Configurazione di iOS in dispositivi non gestiti
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>Configurazione di iOS/iPadOS in dispositivi non gestiti
 
 È possibile convalidare la configurazione di iOS/iPadOS con il **log di diagnostica Intune** in dispositivi non gestiti per la configurazione di app gestite. Oltre che con la procedura seguente è possibile accedere ai log delle app gestite usando Microsoft Edge. Per altre informazioni, vedere [Usare Microsoft Edge in iOS/iPadOS per accedere ai log delle app gestite](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
@@ -135,7 +135,7 @@ I dettagli di configurazione dell'applicazione devono corrispondere ai criteri d
 
 ![Configurazione dell'app interessata](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>Configurazione di iOS in dispositivi gestiti
+### <a name="iosipados-configuration-on-managed-devices"></a>Configurazione di iOS/iPadOS in dispositivi gestiti
 
 È possibile convalidare la configurazione di iOS/iPadOS con il **log di diagnostica Intune** in dispositivi gestiti per la configurazione di app gestite.
 

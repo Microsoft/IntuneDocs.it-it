@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556403"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569286"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e i profili in Microsoft Intune
 
@@ -106,6 +106,18 @@ Il monitoraggio del profilo offre informazioni dettagliate sullo stato di distri
 
    ![Visualizzare le diverse opzioni di monitoraggio per un profilo di baseline di sicurezza](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Visualizzare le configurazioni della sicurezza degli endpoint per dispositivo
+
+Visualizzare i dettagli sulle configurazioni della sicurezza applicabili a un singolo dispositivo, che consentono di isolare le impostazioni che non sono configurate correttamente.
+
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Passare a **Dispositivi**  > **Tutti i dispositivi** e selezionare il dispositivo da visualizzare.
+
+3. Nella categoria *Monitor* selezionare **Configurazione della sicurezza degli endpoint** per visualizzare l'elenco delle configurazioni della sicurezza applicabili al dispositivo.
+
+4. È possibile selezionare una configurazione della sicurezza degli endpoint per eseguire il drill-down e visualizzare altri dettagli sulla valutazione di tale configurazione della sicurezza nel dispositivo.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Risolvere i problemi con lo stato per singola impostazione
 
 Si supponga di aver distribuito una baseline di sicurezza, ma che lo stato di distribuzione indichi un errore. La procedura seguente offre alcune indicazioni per la risoluzione dell'errore.
@@ -135,6 +147,7 @@ Nei dispositivi Windows 10 è disponibile un report di informazioni diagnostiche
 In [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnosticare gli errori MDM in Windows 10) sono disponibili altre informazioni su questo report predefinito.
 
 > [!TIP]
+>
 > - Per alcune impostazioni viene elencato anche il GUID. È possibile cercare questo GUID nel Registro di sistema locale (regedit) per verificare gli eventuali valori impostati.
 > - Anche i log di Visualizzatore eventi potrebbero includere alcune informazioni sull'errore dell'impostazione problematica (**Visualizzatore eventi** > **Registri applicazioni e servizi** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Amministratore**).
 

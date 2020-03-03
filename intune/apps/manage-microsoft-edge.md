@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125014"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609129"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gestire l'accesso Web usando Microsoft Edge con Microsoft Intune
 
@@ -101,7 +101,7 @@ Per creare la configurazione dell'app per Microsoft Edge:
 2. Selezionare **App** > **Criteri di configurazione dell'app** > **Aggiungi**.
 3. Nel riquadro **Aggiungi i criteri di configurazione** immettere **Nome** e **Descrizione** facoltativa per le impostazioni di configurazione dell'app.
 4. Per **Tipo di registrazione del dispositivo** scegliere **App gestite**.
-5. Scegliere **Selezionare l'app necessaria**. Nel riquadro **App di destinazione** scegliere quindi **Managed Browser** o **Microsoft Edge** per iOS, Android o per entrambi.
+5. Scegliere **Selezionare l'app necessaria**. Nel riquadro **App di destinazione** scegliere quindi **Managed Browser** o **Microsoft Edge** per iOS/iPadOS, per Android o per entrambi.
 6. Selezionare **OK** per tornare al riquadro **Aggiungi i criteri di configurazione**.
 7. Selezionare **Impostazioni di configurazione**. Nel riquadro **Configurazione** definire le coppie di chiavi e valori per specificare le configurazioni per Microsoft Edge. Vedere le sezioni più avanti in questo articolo per informazioni sulle varie coppie di chiavi e valori che è possibile definire.
 
@@ -136,7 +136,7 @@ In Android:
 - Microsoft Edge viene avviato solo se è l'unico browser scaricato nel dispositivo e vi sono assegnati criteri di Intune.
 - Managed Browser viene avviato solo se è l'unico browser installato nel dispositivo e vi sono assegnati criteri di Intune.
 
-In iOS, per le app in cui è integrato Intune SDK per iOS versione 9.0.9+:
+In iOS/iPadOS, per le app in cui è integrato Intune SDK per iOS versione 9.0.9+:
 - Se nel dispositivo sono presenti sia Intune Managed Browser che Microsoft Edge, viene avviato Intune Managed Browser.  
 - Microsoft Edge viene avviato solo se è l'unico browser presente nel dispositivo e vi sono assegnati criteri di Intune.
 - Managed Browser viene avviato solo se è l'unico browser installato nel dispositivo e vi sono assegnati criteri di Intune.
@@ -188,7 +188,7 @@ Usare la coppia chiave/valore seguente per configurare un collegamento alla home
 Queste impostazioni consentono di personalizzare la pagina Nuova scheda per Microsoft Edge per visualizzare il logo e il colore del marchio dell'organizzazione come sfondo della pagina.
 
 Per caricare il logo e il colore dell'organizzazione, seguire prima di tutto questa procedura:
-- All'interno del portale di Azure passare a Intune-> App client-> Personalizzazione -> Company Identity Branding (Personalizzazione dell'identità aziendale)
+- All'interno del portale di Azure passare all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) -> **Amministrazione del tenant** -> **Personalizzazione** -> **Personalizzazione dell'identità aziendale**.
 - Per impostare il logo del marchio, in "Display" (Visualizza) scegliere "Company Logo only" (Solo logo aziendale). Sono consigliati logo con sfondo trasparente. 
 - Per impostare il colore di sfondo del marchio, in "Display" (Visualizza) scegliere "Theme Color" (Colore del tema). Microsoft Edge applica una sfumatura più chiara del colore nella pagina Nuova scheda, che garantisce una maggiore leggibilità della pagina. 
 
@@ -201,7 +201,7 @@ Usare quindi le coppie chiave/valore seguenti per eseguire il pull degli element
 
 ## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Visualizzare le notizie rilevanti sul settore in Pagina Nuova scheda
 
-È possibile configurare la nuova esperienza d'uso di Pagina Nuova scheda in Microsoft Edge per dispositivi mobili per visualizzare le notizie sul settore rilevanti per l'organizzazione. Quando si abilita questa funzionalità, Microsoft Edge per dispositivi mobili usa il nome di dominio dell'organizzazione per aggregare notizie dal Web in merito all'organizzazione, al settore dell'organizzazione e ai concorrenti, in modo che gli utenti possano trovare le notizie esterne pertinenti da Pagina Nuova scheda in Microsoft Edge. La funzionalità relativa alle notizie del settore è disattivata per impostazione predefinita ed è possibile usarla per acconsentire esplicitamente al servizio per la propria organizzazione. 
+È possibile configurare la nuova esperienza d'uso di Pagina Nuova scheda in Microsoft Edge per dispositivi mobili per visualizzare le notizie sul settore rilevanti per l'organizzazione. Quando si abilita questa funzionalità, Microsoft Edge per dispositivi mobili usa il nome di dominio dell'organizzazione per aggregare notizie dal Web in merito all'organizzazione, al settore dell'organizzazione e ai concorrenti, in modo che gli utenti possano trovare le notizie esterne pertinenti dalle pagine Nuova scheda centralizzate in Microsoft Edge. La funzionalità relativa alle notizie del settore è disattivata per impostazione predefinita ed è possibile usarla per acconsentire esplicitamente al servizio per la propria organizzazione. 
 
 |    Chiave    |    Valore    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -293,19 +293,48 @@ Usare la coppia chiave/valore seguente per definire se abilitare o meno queste t
 
 |    Chiave    |    Valore    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** consente a Microsoft Edge di effettuare la transizione degli utenti al contesto personale per aprire i siti bloccati.<p>**Block** impedisce a Microsoft Edge di effettuare la transizione degli utenti. Per gli utenti viene semplicemente visualizzato un messaggio che informa che il sito a cui stanno tentando di accedere è bloccato.    |
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** aprirà automaticamente i siti direttamente in una scheda InPrivate, senza chiedere all'utente di passare al proprio account personale. <p> **False** (impostazione predefinita) bloccherà il sito in Microsoft Edge e all'utente verrà chiesto di passare al proprio account personale per la visualizzazione.    |
 
-## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Disabilitare la richiesta di Microsoft Edge per salvare le password
+## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>Disabilitare le funzionalità di Microsoft Edge per personalizzare l'esperienza dell'utente finale per le esigenze dell'organizzazione
+
+### <a name="disable-prompts-to-share-usage-data-for-personalization"></a>Disabilitare le richieste di condivisione dei dati di utilizzo per la personalizzazione 
+
+Per impostazione predefinita, Microsoft Edge chiede agli utenti di raccogliere i dati di utilizzo per personalizzare l'esperienza di esplorazione. È possibile disabilitare la condivisione dei dati evitando che questa richiesta venga visualizzata agli utenti finali. 
 
 |    Chiave    |    Valore    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** causa l'apertura di collegamenti limitati direttamente in InPrivate Browsing.<p>**False** (impostazione predefinita) consente agli utenti di scegliere di aprire un collegamento con restrizioni con InPrivate Browsing o con l'account personale (account del servizio gestito).    |
+|    `com.microsoft.intune.mam.managedbrowser.disableShareUsageData`    |     **true** disabilita la visualizzazione della richiesta agli utenti finali.    |
 
+### <a name="disable-prompts-to-share-browsing-history"></a>Disabilitare le richieste di condivisione della cronologia esplorazioni 
+
+Per impostazione predefinita, Microsoft Edge chiede agli utenti di raccogliere i dati della cronologia esplorazioni per personalizzare l'esperienza di esplorazione. È possibile disabilitare la condivisione dei dati evitando che questa richiesta venga visualizzata agli utenti finali.
+
+|    Chiave    |    Valore    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     `com.microsoft.intune.man.managedbrowser.disableShareBrowsingHistory`    |     **true** disabilita la visualizzazione della richiesta agli utenti finali.     |
+
+### <a name="disable-prompts-that-offer-to-save-passwords"></a>Disabilitare le richieste di salvataggio delle password
 Per impostazione predefinita, Microsoft Edge in iOS consente di salvare le password degli utenti nel keychain. Se si desidera disabilitare questa richiesta per l'organizzazione, configurare l'impostazione seguente:
 
 |    Chiave    |    Valore    |
+|-----------------------|-----------------------|
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **password** disabilita le richieste che consentono di salvare le password per l'utente finale.    |
+
+### <a name="disable-inprivate-browsing-and-microsoft-accounts-to-restrict-browsing-to-work-only-contexts"></a>Disabilitare InPrivate Browsing e gli account Microsoft per limitare l'esplorazione ai contesti di solo lavoro
+
+Se l'organizzazione opera in un settore altamente regolamentato o usa una VPN per app per consentire agli utenti di accedere alle risorse di lavoro con Microsoft Edge, è possibile scegliere di definire l'ambito dell'uso di Microsoft Edge esclusivamente in un contesto protetto da MAM. Questa funzionalità è disponibile solo per i dispositivi registrati in MDM.
+
+|    Chiave    |    Valore    |
 |-----------|-------------|
-|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **password** disabiliterà la richiesta di salvataggio delle password.    |
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **inprivate** disabilita InPrivate Browsing. <br> **msa** impedisce agli utenti di aggiungere account Microsoft personali (MSA) alle app Microsoft Edge. <br> Per disabilitare più funzionalità, separare i valori con `|`. Ad esempio, `inprivate|msa` bloccherà sia gli account InPrivate che quelli personali.   |
+
+### <a name="restrict-microsoft-edge-use-to-allowed-accounts-only"></a>Limitare l'uso di Microsoft Edge solo agli account consentiti
+
+Oltre a bloccare InPrivate Browsing e l'esplorazione MSA, è possibile consentire l'uso di Microsoft Edge solo quando l'utente è connesso con il proprio account AAD. Questa funzionalità è disponibile solo per gli utenti registrati in MDM. Per altre informazioni sulla configurazione di questa impostazione, vedere:
+
+- [Impostazione Android](~/apps/app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+- [Impostazione iOS](~/apps/app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Usare Microsoft Edge in iOS per accedere ai log delle app gestite 
 
@@ -322,7 +351,7 @@ Per informazioni su come visualizzare i log nei dispositivi Android, vedere [Inv
 
 Di seguito sono riportate alcune altre considerazioni su sicurezza e privacy per Microsoft Edge:
 
-- Microsoft Edge non utilizza le impostazioni che gli utenti definiscono per il browser nativo nei propri dispositivi, perché Microsoft Edge non può accedere a tali impostazioni.
+- Microsoft Edge non utilizza le impostazioni che gli utenti definiscono per il browser nativo https://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps nei propri dispositivi, perché Microsoft Edge non può accedere a tali impostazioni.
 - È possibile configurare l'opzione **Richiedi PIN semplice per l'accesso** oppure **Richiedi credenziali aziendali per l'accesso** nei criteri di protezione delle app associati a Microsoft Edge. Se un utente seleziona il collegamento alla Guida nella pagina di autenticazione, può esplorare tutti i siti Internet, indipendentemente dal fatto che siano stati aggiunti a un elenco di siti bloccati nei criteri.
 - Microsoft Edge può bloccare l'accesso ai siti solo quando vi si accede direttamente. Non blocca l'accesso quando gli utenti usano servizi intermedi (ad esempio, un servizio di traduzione) per accedere al sito.
 - Per consentire l'autenticazione e l'accesso alla documentazione di Intune, il sito * **.microsoft.com** non è interessato dalle impostazioni degli elenchi di elementi consentiti o bloccati. È sempre consentito.

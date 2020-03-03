@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206075"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515119"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -77,7 +77,7 @@ Descrizioni dei diversi stati dei criteri di conformità dei dispositivi:
   - Dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità
   - Dispositivi che non si sono connessi dall'ultimo aggiornamento dei criteri di conformità
   - Dispositivi non associati a un utente specifico, come:
-    - Dispositivi iOS acquistati tramite il programma Device Enrollment Program (DEP) di Apple che non hanno affinità utente
+    - Dispositivi iOS/iPadOS acquistati tramite il programma Device Enrollment Program (DEP) di Apple che non hanno affinità utente
     - Dispositivi dedicati Android Enterprise o Android in modalità tutto schermo
   - Dispositivi registrati con un account del manager di registrazione dispositivi
 
