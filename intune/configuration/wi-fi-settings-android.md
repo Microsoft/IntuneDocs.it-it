@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754559"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652403"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android in Microsoft Intune
 
@@ -57,19 +57,6 @@ Questo articolo descrive queste impostazioni.
 
     - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
-    - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
-
-      - **Nessuno**: il server proxy non viene usato.
-      - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
-
-    - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
-
-      - Un indirizzo IP. Ad esempio: `10.0.0.11`
-      - Un URL. Ad esempio, `http://proxyserver.contoso.com`
-      - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
-
-      Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
-
   - **EAP-TTLS**: Specificare anche:
 
     - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo del certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Viene usato per autenticare la connessione.
@@ -88,19 +75,6 @@ Questo articolo descrive queste impostazioni.
 
       - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
 
-    - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
-
-      - **Nessuno**: il server proxy non viene usato.
-      - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
-
-    - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
-
-      - Un indirizzo IP. Ad esempio: `10.0.0.11`
-      - Un URL. Ad esempio, `http://proxyserver.contoso.com`
-      - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
-
-      Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
-
   - **PEAP**: Specificare anche:
 
     - **Server trust** - **Certificato radice per la convalida server**: scegliere un profilo del certificato radice attendibile esistente. Questo certificato viene presentato al server quando il client si connette alla rete. Viene usato per autenticare la connessione.
@@ -116,19 +90,6 @@ Questo articolo descrive queste impostazioni.
       - **Certificati**: scegliere il profilo di certificato client SCEP o PKCS che viene distribuito nel dispositivo. Questo certificato corrisponde all'identità presentata dal dispositivo al server per autenticare la connessione.
 
       - **Privacy dell'identità (identità esterna)** : immettere il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore, ad esempio `anonymous`. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.
-
-      - **Impostazioni proxy**: specificare la configurazione proxy usata dall'organizzazione. Le opzioni disponibili sono:
-
-        - **Nessuno**: il server proxy non viene usato.
-        - **Automatico**: selezionare questa opzione per rendere disponibile l'impostazione *URL server proxy*, che viene usata per specificare il server proxy o un file di configurazione automatica proxy (PAC) contenente un elenco dei server proxy.
-
-      - **URL server proxy**: questa impostazione è disponibile quando per *Impostazioni proxy* è selezionata l'opzione *Automatico*. Specificare una delle opzioni seguenti per indirizzare i dispositivi al server proxy:
-
-        - Un indirizzo IP. Ad esempio: `10.0.0.11`
-        - Un URL. Ad esempio, `http://proxyserver.contoso.com`
-        - L'URL di un file di configurazione automatica proxy (PAC). Ad esempio: `http://proxy.contoso.com/proxy.pac`.
-
-        Per altre informazioni, vedere l'articolo sul [file di configurazione automatica proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (viene aperto un sito non Microsoft).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

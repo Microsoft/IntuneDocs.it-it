@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886792"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181722"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gestire gli aggiornamenti software di Windows 10 in Intune
 
@@ -77,14 +77,14 @@ Gli anelli di aggiornamento di Windows 10 supportano i [tag di ambito](../fundam
 
 ### <a name="create-and-assign-update-rings"></a>Creare e assegnare anelli di aggiornamento
 
-1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager]( https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selezionare **Dispositivi** > **Windows** > **Anelli di aggiornamento di Windows 10** > **Crea**.
 
 3. In *Informazioni di base* specificare un nome, una descrizione (facoltativa) e quindi selezionare **Avanti**.
-  ![Creare un anello di aggiornamento]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. In **Impostazioni per la fase di aggiornamento** configurare le impostazioni per le proprie esigenze aziendali. Per informazioni sulle impostazioni disponibili, vedere Impostazioni di aggiornamento di Windows. Dopo aver configurato le impostazioni *Aggiorna ed Esperienza utente* selezionare **Avanti**.
+  ![Creare un anello di aggiornamento](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. In **Impostazioni per la fase di aggiornamento** configurare le impostazioni per le proprie esigenze aziendali. Per informazioni sulle impostazioni disponibili, vedere [Impostazioni di aggiornamento di Windows](../protect/windows-update-settings.md). Dopo aver configurato le impostazioni *Aggiorna ed Esperienza utente* selezionare **Avanti**.
 
 5. In **Tag di ambito** selezionare **+ Selezionare i tag di ambito** per aprire il riquadro *Selezionare i tag* per applicarli all'anello di aggiornamento. Scegliere uno o più tag, quindi fare clic su **Seleziona** per aggiungerli all'anello di aggiornamento e tornare alla pagina *Tag di ambito*.
 

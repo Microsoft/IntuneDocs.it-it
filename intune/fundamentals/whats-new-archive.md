@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886774"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181815"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novità di Microsoft Intune - mesi precedenti
 
@@ -187,7 +187,7 @@ L'iscrizione e il Portale aziendale di Intune supportano ora le versioni 11 e su
 Quando si rinomina un dispositivo Windows è necessario seguire nuove regole:
 - Massimo 15 caratteri (deve essere minore o uguale a 63 byte, escluso il valore NULL finale)
 - Non è Null o una stringa vuota
-- Caratteri ASCII consentiti: lettere (a-z, A-Z), numeri (0-9) e trattini
+- Caratteri ASCII consentiti: lettere (a-z, A-Z), numeri (0-9) e segni meno
 - Caratteri Unicode consentiti: >= 0x80, devono essere caratteri UTF8 validi, devono essere mappabili a IDN (ovvero RtlIdnToNameprepUnicode ha esito positivo; vedere RFC 3492)
 - I nomi non possono essere composti esclusivamente da numeri
 - Non sono consentiti spazi nel nome
@@ -407,7 +407,7 @@ Si applica a:
 ### <a name="device-enrollment"></a>Registrazione del dispositivo
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Per impostazione predefinita i nuovi tenant non vengono gestiti dagli amministratori dei dispositivi Android<!-- 4869790   -->
-Le funzionalità di amministratore dei dispositivi Android sono state sostituite da Android Enterprise. È quindi consigliabile usare Android Enterprise per le nuove registrazioni. In un aggiornamento futuro, i nuovi tenant dovranno completare la procedura seguente come prerequisito per la registrazione in Android in modo che i dispositivi siano gestiti dagli amministratori: passare a **Intune** > **Registrazione dispositivi** > **Registrazione Android** > **Consenti dispositivi personali e di proprietà aziendale con privilegi di amministratore di dispositivi** > **Usa l'amministratore di dispositivi per gestire i dispositivi**.
+Le funzionalità di amministratore dei dispositivi Android sono state sostituite da Android Enterprise. È quindi consigliabile usare Android Enterprise per le nuove registrazioni. In un aggiornamento futuro i nuovi tenant dovranno completare la procedura seguente come prerequisito per la registrazione in Android perché i dispositivi siano gestiti dagli amministratori: Accedere a **Intune** > **Registrazione dispositivi** > **Registrazione Android** > **Dispositivi personali e di proprietà aziendale con privilegi di amministratore di dispositivi** > **Usa l'amministratore di dispositivi per gestire i dispositivi**.
 
 Gli ambienti dei tenant esistenti non subiranno alcuna modifica.
 
@@ -526,7 +526,7 @@ In Intune è possibile controllare le funzionalità e le impostazioni in un'espe
 In questo aggiornamento sono state aggiunte le funzionalità seguenti:
 
 - **Dispositivi dedicati** > **Più app**: è possibile visualizzare il **pulsante Pagina iniziale virtuale** scorrendo verso l'alto nel dispositivo oppure rendendolo mobile sullo schermo in modo che gli utenti possano spostarlo.
-- **Dispositivi dedicati** > **Più app**: **Accesso alla torcia** consente agli utenti di usare la torcia. 
+- **Dispositivi dedicati** > **Più app**: **Accesso a Flashlight** consente agli utenti di usare la torcia. 
 - **Dispositivi dedicati** > **Più app**: **Controllo volume dei file multimediali** consente agli utenti di controllare il volume dei file multimediali del dispositivo usando un dispositivo di scorrimento. 
 - **Dispositivi dedicati** > **Più app**:  **Abilitare uno screen saver**, caricare un'immagine personalizzata e controllare quando viene visualizzato lo screen saver.
 
@@ -581,10 +581,10 @@ Per usare più connettori, non è necessario eseguire l'aggiornamento alla versi
 - In **iOS** > **Limitazioni del dispositivo** sono presenti alcune modifiche:
 
   - **App predefinite** > **Trova il mio iPhone (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità dell'app Trova il mio. 
-  - **App predefinite** > **Trova i miei amici (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità dell'app Trova il mio. 
+  - **App predefinite** > **Trova amici (solo con supervisione)** : nuova impostazione che blocca questa funzionalità nella funzionalità dell'app Trova il mio. 
   - **Wireless** > **Modifica dello stato del Wi-Fi (solo con supervisione)** : nuova impostazione che impedisce agli utenti di attivare o disattivare il Wi-Fi nel dispositivo.
   - **Tastiera e dizionario** > **QuickPath (solo con supervisione)** : nuova impostazione che blocca la funzionalità QuickPath.
-  - **Cloud e archiviazione**: l'impostazione **Continuazione dell'attività** è stata rinominata **Handoff**.
+  - **Cloud e risorse di archiviazione**: l'impostazione **Continuazione dell'attività** è stata rinominata **Handoff**.
 
   Per visualizzare le impostazioni correnti, vedere [Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune](../configuration/device-restrictions-ios.md).
 
@@ -1002,7 +1002,7 @@ Si applica a: Windows 10 e versioni successive
 #### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices---4097904-----"></a>Impedire agli utenti finali di modificare l'hotspot personale e disabilitare la registrazione nel server Siri nei dispositivi iOS<!-- 4097904   -->  
 Creare un profilo di limitazioni del dispositivo nel dispositivo iOS (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo). Questo aggiornamento include nuove impostazioni, che è possibile configurare:
 
-- **App predefinite**: Registrazione lato server per comandi Siri
+- **App predefinite**: Registrazione lato server per i comandi di Siri
 - **Wireless**: Modifica dell'utente dell'hotspot personale (solo con supervisione)
 
 Per visualizzare queste impostazioni, passare alle [impostazioni predefinite dell'app per iOS](../configuration/device-restrictions-ios.md#built-in-apps) e alle [impostazioni wireless per iOS](../configuration/device-restrictions-ios.md#wireless).
@@ -1444,7 +1444,7 @@ Per un elenco di queste impostazioni, vedere:
 
 - [Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo](../configuration/kiosk-settings-windows.md)
 - [Limitazioni del dispositivo per il browser Microsoft Edge](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Limitazioni del dispositivo per Preferiti e ricerca](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [Limitazioni del dispositivo per Preferiti e ricerca](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 Si applica a: Windows 10 e versioni successive
 
@@ -1639,7 +1639,7 @@ Quando si crea un profilo di configurazione per i dispositivi iOS, è possibile 
 Le impostazioni sono elencate in [Aggiungere messaggi personalizzati alla schermata di blocco e alla finestra di accesso nei dispositivi iOS con Microsoft Intune](../configuration/ios-device-features-settings.md#lock-screen-message).
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Nuove impostazioni di limitazione dei dispositivi App Store, visualizzazione documenti, giochi aggiunte ai dispositivi iOS<!-- 2827760-->
-In **Configurazione dispositivo** > **Profili** > **Crea profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo > **App Store, visualizzazione documenti, giochi**, sono state aggiunte le impostazioni seguenti: Consenti alle app gestite di scrivere contatti in account di contatti non gestiti, Consenti alle app non gestite di leggere da contatti in account di contatti gestiti. Per visualizzare queste impostazioni, passare a [Restrizioni dei dispositivi iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
+In **Configurazione del dispositivo** > **Profili** > **Crea profilo** > **iOS** per la piattaforma > **Limitazioni del dispositivo** per il tipo di profilo > **App Store, visualizzazione documenti, giochi** sono state aggiunte le impostazioni seguenti: Allow managed apps to write contacts to unmanaged contacts accounts (Consenti alle app gestite di scrivere contatti in account di contatti non gestiti), Allow unmanaged apps to read from managed contacts accounts (Consenti alle app non gestite di leggere da account di contatti gestiti). Per vedere queste impostazioni, consultare le [limitazioni per i dispositivi iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Nuove impostazioni di notifica, hint e protezione della tastiera per i dispositivi Android Enterprise in modalità proprietario del dispositivo<!-- 3201839 3201843 -->
 Questo aggiornamento include numerose nuove funzionalità per i dispositivi aziendali Android quando vengono eseguiti come proprietario del dispositivo. Per usare queste funzionalità, passare a **Configurazione del dispositivo** > **Profili** > **Crea profilo** > in **Piattaforma**, scegliere **Android Enterprise** > in **Tipo di profilo**, scegliere **Solo proprietario del dispositivo** > **Limitazioni del dispositivo**.
@@ -1702,7 +1702,7 @@ L'impostazione **Condivisione contatti tramite Bluetooth** non è supportata per
 
 Per un elenco delle impostazioni attualmente disponibili, vedere [Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune](../configuration/device-restrictions-android-for-work.md).
 
-Si applica a: Proprietario del dispositivo Android Enterprise
+Si applica a: Proprietario dispositivo Android Enterprise
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->

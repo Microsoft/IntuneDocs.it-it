@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 816968d512b73a8592c7a86b39c41057aa99e827
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514813"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782059"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Connettore Sophos Mobile Threat Defense con Intune
 È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Sophos Mobile, una soluzione MTD (Mobile Threat Defense) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Sophos Mobile.
 È possibile configurare criteri di accesso condizionale in base alla valutazione dei rischi di Sophos Mobile abilitata tramite i criteri di conformità dei dispositivi di Intune, che possono essere usati per consentire o impedire ai dispositivi non conformi di accedere alle risorse aziendali a seconda delle minacce rilevate.
+
+> [!NOTE]
+> Questo fornitore di Mobile Threat Defense non è supportato per i dispositivi non registrati.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>In che modo Intune e Sophos Mobile consentono di proteggere le risorse aziendali?
 L'app Sophos Mobile per Android e iOS/iPadOS acquisisce i dati di telemetria, se disponibili, relativi al file system, allo stack di rete, al dispositivo e alle applicazioni e li invia al servizio cloud Sophos Mobile per la valutazione del livello di rischio delle minacce per dispositivi mobili.

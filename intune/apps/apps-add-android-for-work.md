@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609194"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256459"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Aggiungere app Google Play gestite a dispositivi Android Enterprise con Intune
 
@@ -155,9 +155,6 @@ Per altre informazioni sulle app private di Google Play gestito, incluse le doma
 I collegamenti Web di Google Play gestito possono essere installati e gestiti in modo analogo alle altre app Android. Dopo essere stati installati in un dispositivo, vengono visualizzati nell'elenco di app dell'utente insieme alle altre app installate. Toccare il collegamento per avviarlo nel browser del dispositivo.
 
 I collegamenti Web vengono aperti con Microsoft Edge o qualsiasi altra app browser selezionata per la distribuzione. Assicurarsi di distribuire almeno un'app browser nei dispositivi affinché i collegamenti Web possano essere aperti correttamente. Tuttavia, tutte le opzioni di **visualizzazione** disponibili per i collegamenti Web (schermo intero, autonomo e interfaccia utente minima) funzioneranno solo con il browser Chrome. 
-
-> [!IMPORTANT]
-> Al momento della pubblicazione di questo documento, esiste un bug noto di Google che impedisce l'apertura dei collegamenti Web nei dispositivi con browser diversi da Chrome. Google si è impegnato a correggere questo bug.  Questa comunicazione verrà rimossa quando Microsoft avrà la conferma che Google ha pubblicato la correzione.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selezionare **App** > **Tutte le app** > **Aggiungi**.
