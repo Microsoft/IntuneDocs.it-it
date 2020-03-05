@@ -161,6 +161,8 @@
             - name: Panoramica dei criteri di protezione app
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: Framework di protezione dei dati con criteri di protezione delle app
+              href: app-protection-framework.md
             - name: Creare criteri di protezione delle app
               items:
                 - name: Impostazioni generali
