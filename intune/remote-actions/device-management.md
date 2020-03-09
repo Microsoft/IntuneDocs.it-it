@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413784"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256391"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
@@ -39,7 +39,7 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
    - **Panoramica** contiene uno snapshot dei dispositivi registrati e indica quanti dispositivi usano le diverse piattaforme, tra cui Android, iOS/iPadOS e altro.
    - **Tutti i dispositivi** elenca i dispositivi registrati gestiti.
 
-     Usare la funzione **Esporta** per creare un elenco in formato CSV di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Microsoft Edge, Chrome).
+     Usare la funzione **Esporta** per creare un elenco in formato ZIP di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Microsoft Edge, Chrome).
 
      Selezionare un qualsiasi dispositivo per [visualizzare ulteriori dettagli su di esso](device-inventory.md), inclusi i dettagli sull'hardware, le app installate, lo stato dei criteri di conformità e altro ancora.
 
@@ -61,7 +61,7 @@ Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla config
   - [Cancellazione](devices-wipe.md#wipe)
   - [Blocco remoto](device-remote-lock.md)
   - [Reimposta passcode](device-passcode-reset.md)
-  - [Disabilitare il blocco attivazione](device-activation-lock-bypass.md) (solo iOS)
+  - [Disabilitare il blocco attivazione](device-activation-lock-disable.md) (solo iOS)
   - [Fresh Start](device-fresh-start.md) (solo Windows)
   - [Modalità di dispositivo perso](device-lost-mode.md) (solo iOS)
   - [Individua il dispositivo](device-locate.md) (solo iOS)

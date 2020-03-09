@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514439"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575929"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Evitare perdite di dati nei dispositivi non gestiti usando Microsoft Intune
 
@@ -31,7 +31,7 @@ Se si consente l'accesso ai dati aziendali ospitati in Office 365, è possibile 
 
 I criteri di protezione app impostati con Intune funzionano anche nei dispositivi gestiti con una soluzione di gestione non Microsoft. I dati personali nei dispositivi non vengono modificati, il reparto IT gestisce solo i dati aziendali. 
 
-È possibile impostare criteri di protezione app per le app per dispositivi mobili di Office nei dispositivi che eseguono Windows, iOS o Android per proteggere i dati aziendali. Questi criteri consentono di impostare un PIN basato sulle app o la crittografia dei dati aziendali oppure impostazioni più avanzate per limitare l'uso delle funzionalità taglia, copia, incolla e salva con nome da parte degli utenti tra le app gestite e non gestite. È anche possibile cancellare i dati aziendali in remoto senza richiedere agli utenti di registrare i propri dispositivi.
+È possibile impostare criteri di protezione app per le app per dispositivi mobili di Office nei dispositivi che eseguono Windows, iOS/iPadOS o Android per proteggere i dati aziendali. Questi criteri consentono di impostare un PIN basato sulle app o la crittografia dei dati aziendali oppure impostazioni più avanzate per limitare l'uso delle funzionalità taglia, copia, incolla e salva con nome da parte degli utenti tra le app gestite e non gestite. È anche possibile cancellare i dati aziendali in remoto senza richiedere agli utenti di registrare i propri dispositivi.
 
 I criteri di protezione app di Intune sono indipendenti dalla gestione dei dispositivi. I criteri di protezione app consentono di gestire le app per dispositivi mobili di Office nei dispositivi non gestiti e in quelli gestiti da Intune, nonché nei dispositivi gestiti da soluzioni MDM non Microsoft.
 
@@ -42,7 +42,7 @@ Il piano di azione descritto di seguito può essere usato quando sono soddisfatt
 * L'azienda è pronta per eseguire la transizione al cloud in modo sicuro.
 * L'azienda usa Office 365 Exchange Online, SharePoint Online, OneDrive for Business o Yammer.
 * L'azienda ha le licenze per Microsoft 365, Enterprise Mobility + Security (EMS) o Azure Information Protection.
-* L'azienda consente agli utenti di accedere ai dati aziendali da dispositivi Windows, iOS o Android aziendali o personali.
+* L'azienda consente agli utenti di accedere ai dati aziendali da dispositivi Windows, iOS/iPadOS o Android aziendali o personali.
 * L'azienda non vuole richiedere la registrazione dei dispositivi personali in un servizio di gestione dei dispositivi.
 
 ## <a name="action-plan"></a>Piano di azione

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509646"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781207"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Connettore Better Mobile Threat Defense con Intune
 
 È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Better Mobile, una soluzione Mobile Threat Defense (MTD) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Better Mobile.
 
-È possibile configurare criteri di accesso condizionale in base alla valutazione dei rischi di Better Mobile abilitata tramite i criteri di conformità dei dispositivi di Intune, che possono essere usati per consentire o impedire ai dispositivi non conformi di accedere alle risorse aziendali a seconda delle minacce rilevate.
+È possibile configurare criteri di accesso condizionale in base alla valutazione dei rischi di Better Mobile abilitata tramite i criteri di conformità dei dispositivi di Intune per i dispositivi registrati, che possono essere usati per consentire o impedire ai dispositivi non conformi di accedere alle risorse aziendali a seconda delle minacce rilevate. Per i dispositivi non registrati, è possibile usare i criteri di protezione delle app per applicare un blocco o una cancellazione selettiva in base alle minacce rilevate.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>In che modo Intune e Better Mobile consentono di proteggere le risorse aziendali?
 
@@ -56,7 +56,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 
 ![App dannose rilevate e accesso consentito](./media/better-mobile-threat-defense-connector/better_mobile_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce per la rete
 
 Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle** e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 
@@ -105,3 +105,5 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle**, e im
 - [Creare criteri di conformità dei dispositivi Better Mobile](mtd-device-compliance-policy-create.md)
 
 - [Abilitare il connettore Better Mobile MTD](mtd-connector-enable.md)
+
+- [Creare un criterio di protezione delle app MTD](mtd-app-protection-policy.md) 

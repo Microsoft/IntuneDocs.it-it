@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576063"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169298"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
+# <a name="configure-exchange-on-premises-access-for-intune"></a>Configurare l'accesso locale a Exchange per Intune
 
 Questo articolo illustra come configurare l'accesso condizionale per Exchange locale in base alla conformità del dispositivo.
 
@@ -62,10 +62,29 @@ Prima di configurare l'accesso condizionale, verificare che siano presenti le co
 
 ### <a name="support-for-mobile-devices"></a>Supporto per dispositivi mobili
 
-- Windows Phone 8.1 e versioni successive
-- App di posta elettronica nativa in iOS/iPadOS.
-- Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva.
-- Client di posta EAS, **dispositivi del profilo di lavoro Android:** per i dispositivi del profilo di lavoro Android sono supportati solo **Gmail** e **Nine Work for Android Enterprise** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work for Android Enterprise. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
+- **Windows Phone 8.1 e versioni successive** - Per creare i criteri di accesso condizionale, vedere [Creare criteri di accesso condizionale](../protect/create-conditional-access-intune.md)
+- **App di posta elettronica nativa in iOS/iPadOS** - Per creare i criteri di accesso condizionale, vedere [Creare criteri di accesso condizionale](../protect/create-conditional-access-intune.md)
+- **Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva** - Per creare i criteri di accesso condizionale, vedere [Creare criteri di accesso condizionale](../protect/create-conditional-access-intune.md)
+
+- **Client di posta EAS in dispositivi con profilo di lavoro Android** - Per i dispositivi con profilo di lavoro Android sono supportati solo *Gmail* e *Nine Work for Android Enterprise*. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app *Gmail* o *Nine Work for Android Enterprise*. È anche necessario distribuire tali app come installazioni obbligatorie. Dopo aver distribuito l'app, è possibile configurare l'accesso condizionale basato sul dispositivo.
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>Per configurare l'accesso condizionale per i dispositivi con profilo di lavoro Android
+
+  1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+  
+  2. Distribuire l'app Gmail o Nine Work come **Obbligatoria**.
+
+  3. Selezionare **Dispositivi** > **Profili di configurazione** > **Crea profilo**, immettere **Nome** e **Descrizione** per il profilo.
+
+  4. Selezionare **Android Enterprise** in **Piattaforma** e selezionare **Posta elettronica** in **Tipo di profilo**.
+
+  5. Configurare le [impostazioni del profilo di posta elettronica](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise).
+
+  6. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
+
+  7. Dopo aver creato il profilo di posta elettronica, [assegnarlo ai gruppi](https://docs.microsoft.com/intune/device-profile-assign).
+
+  8. Configurare l'[accesso condizionale basato sul dispositivo](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access).
 
 > [!NOTE]
 > Microsoft Outlook per Android e iOS/iPadOS non è supportato tramite il connettore Exchange locale. Se si vogliono usare i criteri di accesso condizionale di Azure Active Directory e i criteri di Protezione app di Intune con Outlook per iOS/iPadOS e Android per le cassette postali in locale, vedere [Uso dell'autenticazione moderna ibrida con Outlook per iOS/iPadOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).

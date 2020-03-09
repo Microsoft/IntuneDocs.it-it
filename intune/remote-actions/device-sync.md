@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: ee3020c2a1dfadb21b55ca29a2295498bf893080
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415537"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781976"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti con Intune
 
@@ -43,7 +43,7 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo per aprire il relativo riquadro *Panoramica*, quindi selezionare **Sincronizza**.
 5. Selezionare **Sì** per confermare.
 
-Per visualizzare lo stato dell'azione di sincronizzazione, scegliere **Dispositivi** > **Azioni del dispositivo**.
+Per visualizzare lo stato dell'azione di sincronizzazione, scegliere **Dispositivi** > **Monitoraggio** > **Azioni del dispositivo**.
 
 Le frequenze di controllo standard dei criteri di Intune sono disponibili in [Frequenza dei cicli di aggiornamento](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 9481e25a3d9aa48e21c4e01194dfa7ee1ad1bd38
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415553"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782153"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
@@ -59,7 +59,7 @@ Per creare un nuovo passcode del profilo di lavoro, usare l'azione di Reimposta 
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con uno dei ruoli seguenti: Amministratore globale di Azure Active Directory, amministratore del servizio Intune per Azure Active Directory, operatore del supporto tecnico o amministratore dei ruoli.
 2. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
-3. Nell'elenco dei dispositivi gestiti selezionare un dispositivo e scegliere **...Altre informazioni**. Quindi scegliere l'azione remota del dispositivo **Rimuovi il passcode**.
+3. Nell'elenco dei dispositivi gestiti selezionare un dispositivo e scegliere **Rimuovi passcode**.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Reimpostare i passcode dei profili di lavoro Android
 

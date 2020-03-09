@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886698"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256323"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usare e gestire i dispositivi Android Enterprise con OEMConfig in Microsoft Intune
 
@@ -83,7 +83,7 @@ Assicurarsi che il dispositivo supporti OEMConfig, che l'app OEMConfig corretta 
 3. Immettere le proprietà seguenti:
 
     - **Piattaforma**: selezionare **Android Enterprise**.
-    - **Tipo di profilo**: selezionare **OEMConfig**.
+    - **Tipo di profilo**: Selezionare **OEMConfig**.
 
 4. Selezionare **Crea**.
 5. In **Informazioni di base** immettere le proprietà seguenti:
@@ -161,7 +161,8 @@ Rispetto alle app standard, le app OEMConfig espandono i privilegi delle configu
 | SpectraLink - Dispositivo | com.spectralink.slnkdevicesettings  |  |
 | SpectraLink - Registrazione | com.spectralink.slnklogger |  |
 | SpectraLink - VQO | com.spectralink.slnkvqo |  |
-| HMD Global | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
+| Unitech Electronics | com.unitech.oemconfig | |
 
 -----------------
 
@@ -169,6 +170,8 @@ Se per il dispositivo esiste un'applicazione OEMConfig, ma non è presente nella
 
 > [!NOTE]
 > Le app OEMConfig devono essere caricate da Intune prima di poter essere configurate con i profili OEMConfig. Quando un'app è supportata, non è necessario contattare Microsoft per la relativa configurazione nel tenant. È sufficiente seguire le istruzioni riportate in questa pagina.
+>
+> Se si riscontra un comportamento non corretto dell'app OEMConfig, contattare gli sviluppatori dell'app OEMConfig. Intune non è responsabile per i problemi tecnici delle singole app OEMConfig.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

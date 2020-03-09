@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
-ms.translationtype: MTE75
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075791"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256527"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Impostazioni della baseline di sicurezza MDM in Windows per Intune
 
@@ -365,7 +365,7 @@ Per altre informazioni, vedere [Policy CSP - DeviceLock](https://docs.microsoft.
   Quando *Richiedi password* è impostata su *Yes*, sono disponibili le impostazioni seguenti.
 
   - **Numero minimo di set di caratteri per la password**:  
-    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. Il PIN applica il comportamento seguente per i dispositivi desktop e mobili: 1 - Solo cifre 2 - Cifre e lettere minuscole obbligatorie 3 - Cifre, lettere minuscole e lettere maiuscole obbligatorie. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop. Il valore predefinito è 1.  
+    Numero di tipi di elementi complessi (lettere maiuscole e minuscole, numeri e punteggiatura) richiesto per un PIN o una password complessa. Il PIN applica il comportamento seguente per i dispositivi desktop e mobili: 1 - Solo cifre 2 - Cifre e lettere minuscole obbligatorie 3 - Cifre, lettere minuscole e lettere maiuscole obbligatorie. Non supportato negli account Microsoft desktop e negli account di dominio. 4 - Cifre, lettere minuscole, lettere maiuscole e caratteri speciali obbligatori. Non supportato nei dispositivi desktop.  
     [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Impostazione predefinita**: 3
@@ -723,7 +723,7 @@ Per altre informazioni, vedere [Policy CSP - InternetExplorer](https://docs.micr
   Questa impostazione di criteri consente di disattivare il supporto per Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 o SSL 3.0 nel browser. TLS e SSL sono protocolli che consentono di proteggere le comunicazioni tra il browser e il server di destinazione. Quando il browser tenta di configurare una comunicazione protetta con il server di destinazione, il browser e il server negoziano il protocollo e la versione da usare. Il browser e il server tentano di trovare una corrispondenza nel rispettivo elenco di protocolli e versioni supportati e selezionano la corrispondenza preferita. Se si abilita questa impostazione di criteri, il browser negozia o non negozia un tunnel di crittografia usando i metodi di crittografia selezionati nell'elenco a discesa. Se questa impostazione di criteri viene disabilitata o non viene configurata, l'utente può selezionare il metodo di crittografia supportato dal browser.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Impostazione predefinita**: 2 elementi: TLS v1.1 e TLS v1.2  
+  **Impostazione predefinita**: 2 elementi:  TLS v1.1 e TLS v1.2  
   *Selezionare la freccia rivolta verso il basso per visualizzare le opzioni che è possibile selezionare per questa impostazione.*
 
 ::: zone-end
@@ -1780,10 +1780,10 @@ Per altre informazioni, vedere [CSP criteri - RemoteAssistance](https://docs.mic
 
   - *Se questa impostazione di criteri non viene configurata*, gli utenti possono attivare o disattivare Assistenza remota su richiesta nelle proprietà di sistema nel Pannello di controllo. Gli utenti possono anche configurare le impostazioni di Assistenza remota.
 
-  Se si abilita questa impostazione di criteri, sono disponibili due modi per consentire ad altri utenti di fornire assistenza remota: "Consenti solo di visualizzare il computer" o "Consenti controllo remoto del computer". L'impostazione di criteri "Durata massima ticket" consente di impostare un limite per il periodo di tempo durante il quale può rimanere aperto un invito di assistenza remota creato tramite posta elettronica o trasferimento di file. L'impostazione "Selezionare il metodo di invio degli inviti via posta elettronica" specifica lo standard di posta elettronica da usare per inviare inviti di Assistenza remota. In base al programma di posta elettronica in uso, è possibile usare lo standard *Mailto*, nel qual caso il destinatario dell'invito si connetterà tramite un collegamento Internet, o lo standard SMAPI (Simple MAPI), nel qual caso l'invito sarà allegato al messaggio di posta elettronica. Questa impostazione di criteri non è disponibile in Windows Vista perché è supportato solo il metodo SMAPI. Se si abilita questa impostazione di criteri, sarà inoltre necessario abilitare le eccezioni del firewall appropriate per consentire le comunicazioni di Assistenza remota.  
+  Se si abilita questa impostazione dei criteri saranno disponibili due opzioni per fornire assistenza remota, ovvero "Consenti solo di visualizzare il computer" o "Consenti controllo remoto del computer" L'impostazione di criteri "Durata massima ticket" consente di impostare un limite per il periodo di tempo durante il quale può rimanere aperto un invito di assistenza remota creato tramite posta elettronica o trasferimento di file. L'impostazione "Selezionare il metodo di invio degli inviti via posta elettronica" specifica lo standard di posta elettronica da usare per inviare inviti di Assistenza remota. In base al programma di posta elettronica in uso, è possibile usare lo standard *Mailto*, nel qual caso il destinatario dell'invito si connetterà tramite un collegamento Internet, o lo standard SMAPI (Simple MAPI), nel qual caso l'invito sarà allegato al messaggio di posta elettronica. Questa impostazione di criteri non è disponibile in Windows Vista perché è supportato solo il metodo SMAPI. Se si abilita questa impostazione di criteri, sarà inoltre necessario abilitare le eccezioni del firewall appropriate per consentire le comunicazioni di Assistenza remota.  
   [Altre informazioni](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Impostazione predefinita**: Disabilita assistenza remota
+  **Impostazione predefinita**: Disabilita Assistenza remota
 
   Quando si imposta *Abilita Assistenza remota*, configurare le impostazioni aggiuntive seguenti:
 

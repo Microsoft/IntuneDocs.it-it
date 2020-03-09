@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515238"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782036"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
 È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Zimperium, una soluzione Mobile Threat Defense (MTD) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Zimperium.
 
-È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Zimperium e abilitati usando i criteri di conformità dei dispositivi di Intune. I criteri di valutazione dei rischi possono consentire o bloccare l'accesso alle risorse aziendali dai dispositivi non conformi in base alle minacce rilevate.
+È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Zimperium abilitata con i criteri di conformità dei dispositivi di Intune per i dispositivi registrati, che possono essere usati per consentire o impedire ai dispositivi non conformi di accedere alle risorse aziendali a seconda delle minacce rilevate. Per i dispositivi non registrati, è possibile usare i criteri di protezione delle app per applicare un blocco o una cancellazione selettiva in base alle minacce rilevate.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>In che modo Intune e Zimperium consentono di proteggere le risorse aziendali?
 
@@ -108,3 +108,5 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impe
 - [Creare criteri di conformità dei dispositivi di Zimperium](mtd-device-compliance-policy-create.md)
 
 - [Abilitare il connettore Zimperium MTD](mtd-connector-enable.md)
+
+- [Creare un criterio di protezione delle app MTD](../protect/mtd-app-protection-policy.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 25d7c357c0ea313891f80433f33cd4ac57cfad2c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545933"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782096"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Abilitare il connettore Mobile Threat Defense in Intune per i dispositivi non registrati
 
 Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati criteri di classificazione delle minacce nella console del partner Mobile Threat Defense e sono stati creati i criteri di protezione delle app in Intune. Se il connettore Intune nella console del partner MTD è già stato configurato, è possibile abilitare la connessione MTD in Intune per le applicazioni del partner MTD.
 
 > [!NOTE]
-> Questo articolo si applica a tutti i partner Mobile Threat Defense che supportano i criteri di protezione delle app: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
+> Questo articolo si applica a tutti i partner Mobile Threat Defense che supportano i criteri di protezione delle app:
+>
+> - Better Mobile (Android,iOS/iPadOS)
+> - Zimperium (Android,iOS/iPadOS)
+> - Lookout for Work (Android,iOS/iPadOS)
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Criteri di accesso condizionale classici per app MTD
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: f4a1d0575ce4c46c56fd1b3d2a7526a18a076fcf
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514201"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576117"
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 Questo articolo descrive cosa fare quando gli utenti non riescono ad accedere alle risorse protette con l'accesso condizionale o quando gli utenti possono accedere alle risorse protette mentre in realtà dovrebbero essere bloccati.
@@ -44,7 +44,7 @@ Il funzionamento dell'accesso condizionale è subordinato al rispetto dei requis
 
 - Per impostazione predefinita, all'utente deve essere assegnato un criterio di conformità del dispositivo. Ciò può dipendere dalla configurazione dell'impostazione **Contrassegna i dispositivi senza criteri di conformità assegnati come** in **Conformità del dispositivo** > **Impostazioni dei criteri di conformità** nel portale di amministrazione di Intune.
 
-- È necessario attivare Exchange ActiveSync sul dispositivo se l'utente usa il client di posta elettronica nativo del dispositivo anziché Outlook. Tale attivazione avviene automaticamente per dispositivi iOS, Windows Phone e Android/Knox.
+- È necessario attivare Exchange ActiveSync sul dispositivo se l'utente usa il client di posta elettronica nativo del dispositivo anziché Outlook. Tale attivazione avviene automaticamente per dispositivi iOS/iPadOS, Windows Phone e Android Knox.
 
 - Per Exchange locale, Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Risoluzione dei problemi di Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 

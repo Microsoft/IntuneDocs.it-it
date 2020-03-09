@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609154"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256374"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate con Volume Purchase Program da Microsoft Store per le aziende con Microsoft Intune
 
@@ -51,7 +51,8 @@ Prima di iniziare la sincronizzazione e l'assegnazione di app da Microsoft Store
 - Per usare questa funzionalità, i dispositivi devono essere aggiunti ad Active Directory Domain Services, ad Azure AD o all'area di lavoro.
 - I dispositivi registrati devono usare la versione 1511 di Windows 10 o successive.
 
-Inoltre, i set correlati e le app con licenza offline sincronizzate da Microsoft Store per le aziende ora verranno consolidati in un'unica voce di app nell'interfaccia utente. I dettagli relativi alla distribuzione dei singoli pacchetti verranno migrati in quell'unica voce. Per visualizzare i set correlati nel portale di Azure, selezionare **Licenze dell'app** dal riquadro **App**.
+> [!NOTE]
+Se si disabilita lo Store nei dispositivi gestiti (manualmente, tramite criteri o Criteri di gruppo), le app con licenza online non verranno installate.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associare l'account Microsoft Store per le aziende a Intune
 Prima di abilitare la sincronizzazione nella console di Intune, è necessario configurare l'account dello Store per usare Intune come strumento di gestione:

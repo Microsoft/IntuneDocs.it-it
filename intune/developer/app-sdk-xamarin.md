@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10f3d4c54d9a8fcb797ae3359b1a833ac9080548
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: 183cc5ed233de4a3285cf5cfd3290aead9c1de72
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912700"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181909"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -108,7 +108,7 @@ Per altre informazioni, vedere l'articolo sull'[installazione dei pacchetti firm
 Su [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) sono disponibili applicazioni di esempio che illustrano la funzionalità MAM nelle app Xamarin.iOS.
 
 > [!NOTE] 
-> Non è disponibile alcun remapper per iOS. L'integrazione in un'app Xamarin.Forms deve essere identica a quella di un progetto Xamarin.iOS regolare. 
+> Non è disponibile alcun remapper per iOS/iPadOS. L'integrazione in un'app Xamarin.Forms deve essere identica a quella di un progetto Xamarin.iOS regolare. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Abilitazione dei criteri di protezione delle app di Intune nell'app per dispositivi mobili Android
 1. Aggiungere il [pacchetto Microsoft.Intune.MAM.Xamarin.Android NuGet](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) al progetto Xamarin.Android.
@@ -133,10 +133,10 @@ Per escludere una classe dal processo del remapper, è possibile aggiungere la p
 > [!NOTE]
 > Il remapper attualmente impedisce il debug nelle app Xamarin.Android. Per il debug dell'applicazione è consigliabile eseguire l'integrazione manuale.
 
-#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Metodi rinominati](app-sdk-android.md#renamed-methods)
+#### <a name="renamed-methods"></a>[Metodi rinominati](app-sdk-android.md#renamed-methods)
 In molti casi, un metodo disponibile nella classe Android è stato contrassegnato come finale nella classe sostitutiva MAM. In questo caso, la classe sostitutiva MAM fornisce un metodo denominato in modo analogo (con suffisso `MAM`), che deve essere sostituito al suo posto. Ad esempio, quando si deriva da `MAMActivity`, invece di sostituire `OnCreate()` e chiamare `base.OnCreate()`, la classe `Activity` deve sostituire `OnMAMCreate()` e chiamare `base.OnMAMCreate()`.
 
-#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Applicazione MAM](app-sdk-android.md#mamapplication)
+#### <a name="mam-application"></a>[Applicazione MAM](app-sdk-android.md#mamapplication)
 L'app deve definire una classe `Android.App.Application`. Se MAM viene integrato manualmente, deve ereditare da `MAMApplication`. Assicurarsi che la sottoclasse sia decorata correttamente con l'attributo `[Application]` ed esegua l'override del costruttore `(IntPtr, JniHandleOwnership)`.
 
 ```csharp
@@ -150,7 +150,7 @@ L'app deve definire una classe `Android.App.Application`. Se MAM viene integrato
 > [!NOTE]
 > In caso di problema con i binding Xamarin MAM, l'applicazione potrebbe arrestarsi in modo anomalo quando viene distribuita in modalità di debug. Per risolvere il problema, aggiungere l'attributo `Debuggable=false` alla classe `Application` e rimuovere il flag `android:debuggable="true"` dal manifesto se è stato impostato manualmente.
 
-#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Abilitare le funzionalità che richiedono la partecipazione dell'app](app-sdk-android.md#enable-features-that-require-app-participation)
+#### <a name="enable-features-that-require-app-participation"></a>[Abilitare le funzionalità che richiedono la partecipazione dell'app](app-sdk-android.md#enable-features-that-require-app-participation)
 Esempio: determinare se è necessario il PIN per l'app
 
 ```csharp
@@ -170,7 +170,7 @@ Esempio: determinare se il salvataggio nel dispositivo o in un servizio di archi
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
-#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[Eseguire la registrazione per le notifiche dall'SDK](app-sdk-android.md#register-for-notifications-from-the-sdk)
+#### <a name="register-for-notifications-from-the-sdk"></a>[Eseguire la registrazione per le notifiche dall'SDK](app-sdk-android.md#register-for-notifications-from-the-sdk)
 L'app deve eseguire la registrazione per le notifiche dall'SDK creando un oggetto `MAMNotificationReceiver` e registrandolo con `MAMNotificationReceiverRegistry`. Ciò avviene specificando il ricevente e il tipo di notifica desiderato in `App.OnMAMCreate`, come nell'esempio seguente:
 
 ```csharp
@@ -185,7 +185,7 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[Manager di registrazione MAM](app-sdk-android.md#mamenrollmentmanager)
+#### <a name="mam-enrollment-manager"></a>[Manager di registrazione MAM](app-sdk-android.md#mamenrollmentmanager)
 
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();

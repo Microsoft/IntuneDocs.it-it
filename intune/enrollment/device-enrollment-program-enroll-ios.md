@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473747"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260317"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS/iPadOS con il programma Device Enrollment Program di Apple
 
@@ -41,6 +41,8 @@ Le registrazioni DEP non sono compatibili con la versione di App Store dell'app 
 Per abilitare l'autenticazione moderna durante la registrazione, eseguire il push dell'app al dispositivo usando **Installa il Portale aziendale con VPP** (Volume Purchase Program) nel profilo DEP. Per altre informazioni, vedere [Registrare automaticamente i dispositivi iOS/iPadOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 Per consentire l'aggiornamento automatico del Portale aziendale e fornire l'app Portale aziendale nei dispositivi già registrati in DEP, distribuire l'app Portale aziendale tramite Intune come app Volume Purchase Program (VPP) obbligatoria con un [criterio di configurazione dell'applicazione](../apps/app-configuration-policies-use-ios.md) applicato.
+
+Nota: durante la registrazione automatizzata dei dispositivi, mentre il portale aziendale è in esecuzione in modalità app singola, se si fa clic sul collegamento "Altre informazioni", viene visualizzato un messaggio di errore a causa della modalità app singola. Al termine della registrazione, è possibile visualizzare altre informazioni nel portale aziendale quando il dispositivo non è più in modalità app singola. 
 
 ## <a name="what-is-supervised-mode"></a>Che cos'è la modalità con supervisione?
 

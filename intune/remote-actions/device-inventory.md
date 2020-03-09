@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413755"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781924"
 ---
 # <a name="see-device-details-in-intune"></a>Visualizzare i dettagli del dispositivo in Intune
 
@@ -39,11 +39,16 @@ Questo articolo illustra come visualizzare tutti i dispositivi e le relative pro
    - **Panoramica** visualizza il nome del dispositivo ed elenca alcune delle proprietà chiave, ad esempio se è un dispositivo Bring Your Own Device (BYOD), quando è stato registrato e altro ancora. È possibile eseguire le seguenti attività sul dispositivo:
       - [Ritira](devices-wipe.md#retire)
       - [Cancellazione](devices-wipe.md#wipe)
+      - [Eliminazione](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [Blocco remoto](device-remote-lock.md)
-      - [Sincronizzare il dispositivo](device-sync.md)
+      - [Sincronizzazione](device-sync.md)
       - [Reimposta passcode](device-passcode-reset.md)
       - [Riavvia](device-restart.md) (solo Windows)
       - [Fresh Start](device-fresh-start.md) (solo Windows)
+      - [Reimpostazione di Autopilot]() (solo Windows)
+      - [Analisi veloce](../configuration/device-restrictions-windows-10.md) (solo Windows 10)
+      - [Analisi completa](../configuration/device-restrictions-windows-10.md) (solo Windows 10)
+       - [Rinominare il dispositivo](device-rename.md)
       - Avviare una sessione di assistenza remota
    - Usare **Proprietà** per assegnare una [categoria del dispositivo creata](../enrollment/device-group-mapping.md) e modificare la proprietà del dispositivo scegliendo dispositivo personale o dispositivo aziendale.
    - **Hardware** include vari dettagli sul dispositivo, ad esempio l'ID del dispositivo, il sistema operativo e la versione, lo spazio di archiviazione e così via.

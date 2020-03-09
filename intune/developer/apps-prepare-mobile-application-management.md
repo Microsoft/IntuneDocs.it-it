@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912676"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575829"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -103,7 +103,7 @@ Questa tabella elenca le impostazioni abilitate se un'app usa App SDK o App Wrap
 |Bloccare l'acquisizione schermo (solo Android)|X|X|
 |Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo|X|X|
 |Cancellazione completa dei dati delle app|X|X|
-|Cancellazione selettiva di dati aziendali e dell'istituto di istruzione in scenari con identità multiple <br><br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
+|Cancellazione selettiva di dati aziendali e dell'istituto di istruzione in scenari con identità multiple <br><br>**Nota:** per iOS/iPadOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
 |Impedire "Salva con nome"|X||
 |Configurazione dell'applicazione di destinazione (o configurazione dell'app tramite il "canale MAM")|X|X|
 |Supportare più identità|X||

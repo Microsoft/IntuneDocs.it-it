@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653666"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576337"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -198,15 +198,15 @@ Con lo strumento di wrapping delle app è possibile usare i parametri della riga
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Mostra informazioni d'uso dettagliate per le proprietà della riga di comando disponibili per lo strumento di wrapping delle app. |
-|**-aa**|(Facoltativo) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ad esempio `login.windows.net/common` |
-|**-ac**|(Facoltativo) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` questo è il GUID nel campo ID client è dall'elenco dell'app nel pannello registrazione app. |
-|**-ar**|(Facoltativo) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` questo è l'URI di reindirizzamento configurato nella registrazione dell'app. In genere si tratta del protocollo URL dell'applicazione a cui l'app Microsoft Authenticator restituirà dopo l'autenticazione negoziata. |
+|**-aa**|(Facoltativo) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, ad esempio `login.windows.net/common` |
+|**-ac**|(Facoltativo) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` GUID nel campo dell'ID client dalla presentazione dell'app nel pannello Registrazione app. |
+|**-ar**|(Facoltativo) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` URI di reindirizzamento configurato nella registrazione dell'app. In genere si tratta del protocollo URL dell'applicazione a cui tornerà l'app Microsoft Authenticator dopo l'autenticazione negoziata. |
 |**-v**| (Facoltativo) Mostra messaggi dettagliati nella console. È consigliabile usare questo flag per il debug di eventuali errori. |
 |**-e**| (Facoltativo) Usare questo flag per fare in modo che lo strumento di wrapping delle app rimuova i diritti mancanti durante l'elaborazione dell'app. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
 |**-xe**| (Facoltativo) Visualizza informazioni sulle estensioni iOS nell'app e sui diritti necessari per usarle. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements). |
 |**-x**| (Facoltativo) `<An array of paths to extension provisioning profiles>`. Usare questa opzione se l'app richiede profili di provisioning estensioni.|
 |**-b**|(Facoltativo) Usare -b senza argomento se si vuole che l'applicazione di output con wrapper abbia la stessa versione di bundle dell'app di input (scelta non consigliata). <br/><br/> Usare `-b <custom bundle version>` se si vuole che l'app con wrapper abbia un valore CFBundleVersion personalizzato. Se si sceglie di specificare un valore CFBundleVersion personalizzato, è consigliabile incrementare il componente meno significativo del valore CFBundleVersion dell'app nativa, ad esempio 1.0.0 -> 1.0.1. |
-|**-citrix**|Opzionale Includere Citrix XenMobile App SDK (variante solo di rete). Per usare questa opzione, è necessario che sia installato [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) . |
+|**-citrix**|(Facoltativo) Includere Citrix XenMobile App SDK (variante solo per la rete). Per usare questa opzione, è necessario che sia installato il [toolkit Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html). |
 |**-f**|(Facoltativo) `<Path to a plist file specifying arguments.>` Usare questo flag prima del file [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se si sceglie di usare il modello plist per specificare le altre proprietà IntuneMAMPackager, come: -i, -o e -p. Vedere Usare un file plist per l'input di argomenti. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Usare un file plist per l'input di argomenti
@@ -221,14 +221,14 @@ Nella cartella IntuneMAMPackager/Contents/MacOS aprire `Parameters.plist`, un mo
 | Output Application Package Path |Stringa|empty| Uguale a -o|
 | Provisioning Profile Path |Stringa|empty| Uguale a -p|
 | SHA-1 Certificate Hash |Stringa|empty| Uguale a -c|
-| Autorità ADAL |Stringa|empty| Uguale a -aa|
-| ID client ADAL |Stringa|empty| Uguale a -ac|
-| URI di risposta ADAL |Stringa|empty| Uguale a -ar|
+| ADAL Authority |Stringa|empty| Uguale a -aa|
+| ADAL Client ID |Stringa|empty| Uguale a -ac|
+| ADAL Reply URI |Stringa|empty| Uguale a -ar|
 | Verbose Enabled |Boolean|false| Uguale a -v|
 | Remove Missing Entitlements |Boolean|false| Uguale a -c|
-| Prevent Default Build Update |Booleano|false| Equivalente all'uso di -b senza argomenti|
+| Prevent Default Build Update |Boolean|false| Equivalente all'uso di -b senza argomenti|
 | Build String Override |Stringa|empty| Versione personalizzata di CFBundleVersion dell'app di output con wrapper|
-| Includere Citrix XenMobile App SDK (variante solo di rete)|Boolean|false| Uguale a-Citrix|
+| Include Citrix XenMobile App SDK (network-only variant)|Boolean|false| Uguale a -citrix|
 | Extension Provisioning Profile Paths |Matrice di stringhe|empty| Matrice di profili di provisioning estensioni per l'app.
 
 Eseguire IntuneMAMPackager con il file plist come unico argomento:
@@ -255,7 +255,7 @@ Gli scenari principali in cui è necessario eseguire nuovamente il wrapping dell
 * L'applicazione ha rilasciato una nuova versione. La versione precedente dell'app è stata sottoposta a wrapping e caricata nella console di Intune.
 * Lo strumento di wrapping delle app di Intune per iOS ha rilasciato una nuova versione che consente di eseguire le principali correzioni di bug o che dispone di nuove e specifiche funzionalità con criteri di protezione per applicazioni Intune. Ciò avviene dopo 6-8 settimane tramite il repository GitHub per lo [strumento di wrapping delle app di Microsoft Intune per iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-Per iOS, sebbene sia possibile eseguire il wrapping con un profilo di certificato/provisioning diverso rispetto a quello originale usato per firmare l'app, se i diritti specificati nell'app non sono inclusi nel nuovo profilo di provisioning, l'operazione di wrapping avrà esito negativo. L'uso dell'opzione della riga di comando "-e", che rimuove i diritti mancanti dall'app, per imporre la corretta esecuzione del wrapping in questo scenario può determinare problemi di funzionamento nell'app.
+Per iOS/iPadOS, nonostante sia possibile eseguire il wrapping con un profilo di certificato/provisioning diverso rispetto a quello originale usato per firmare l'app, se gli entitlement specificati nell'app non sono inclusi nel nuovo profilo di provisioning, l'operazione di wrapping avrà esito negativo. L'uso dell'opzione della riga di comando "-e", che rimuove i diritti mancanti dall'app, per imporre la corretta esecuzione del wrapping in questo scenario può determinare problemi di funzionamento nell'app.
 
 Alcune procedure consigliate per eseguire nuovamente il wrapping comprendono:
 
@@ -289,7 +289,7 @@ Se lo strumento di wrapping delle app non viene eseguito correttamente, nella co
 |È già stato eseguito il wrapping dell'app di input specificata e la versione del modello di criteri è la più recente.|Lo strumento di wrapping delle app non eseguirà nuovamente il wrapping di un'app esistente di cui è già stato eseguito il wrapping con la versione più recente del modello di criteri.|
 |AVVISO: non è stato specificato un hash SHA1 del certificato. Verificare che l'applicazione di cui è stato eseguito il wrapping è firmata prima della distribuzione.|Verificare di avere specificato un hash SHA1 valido dopo il flag della riga di comando -c. |
 
-### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Raccolta dei log per le applicazioni di cui è stato eseguito il wrapper dal dispositivo
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Raccolta dei log per le applicazioni di cui è stato eseguito il wrapping dal dispositivo
 Usare questa procedura per ottenere i log per le applicazioni di cui è stato eseguito il wrapping durante la risoluzione dei problemi.
 
 1. Passare all'app Impostazioni iOS nel dispositivo e selezionare l'app LOB.
@@ -301,9 +301,9 @@ Usare questa procedura per ottenere i log per le applicazioni di cui è stato es
 > [!NOTE]
 > La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
 
-### <a name="collecting-crash-logs-from-the-system"></a>Raccolta dei log di arresto anomalo del sistema
+### <a name="collecting-crash-logs-from-the-system"></a>Raccolta dei log di arresto anomalo dal sistema
 
-È possibile che l'app stia registrando informazioni utili sulla console del dispositivo client iOS. Queste informazioni sono utili quando si riscontrano problemi con l'applicazione ed è necessario determinare se il problema è correlato allo strumento di wrapping delle app o all'app stessa. Per recuperare queste informazioni, usare i passaggi seguenti:
+È possibile che l'app stia registrando informazioni utili nella console del dispositivo client iOS. Queste informazioni sono utili quando si riscontrano problemi con l'applicazione ed è necessario determinare se il problema è correlato allo strumento di wrapping delle app o all'app stessa. Per recuperare queste informazioni, usare i passaggi seguenti:
 
 1. Riprodurre il problema eseguendo l'app.
 
@@ -419,7 +419,7 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Strumento di wrapping delle app di Intune per iOS con tecnologia mVPN MDX di Citrix
 
-Questa funzionalità è un'integrazione con il wrapper di app Citrix MDX per iOS. L'integrazione è semplicemente un flag della riga di comando facoltativo aggiuntivo, `-citrix` per gli strumenti di wrapping delle app di Intune generali.
+Questa funzionalità è un'integrazione con il wrapper di app Citrix MDX per iOS/iPadOS. L'integrazione è semplicemente un flag della riga di comando facoltativo aggiuntivo, `-citrix` per gli strumenti di wrapping delle app di Intune generali.
 
 ### <a name="requirements"></a>Requisiti
 

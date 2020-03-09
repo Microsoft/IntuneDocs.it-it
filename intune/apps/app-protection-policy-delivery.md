@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839233"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216160"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Informazioni sui tempi di recapito dei criteri di protezione delle app
 
@@ -38,6 +38,7 @@ Il recapito dei criteri di protezione delle applicazioni varia a seconda dello s
 |    Onboarding del tenant non eseguito    |    Viene atteso il successivo intervallo tra tentativi.  La protezione delle app non è attiva per l'utente.    |    24 ore    |    Si verifica quando non è stato configurato il tenant per Intune.    |
 |    Utente senza licenza     |    Viene atteso il successivo intervallo tra tentativi.  La protezione delle app non è attiva per l'utente.     |    12 ore. Nei dispositivi Android, tuttavia, questo intervallo richiede Intune App SDK versione 5.6.0 o successiva. In caso contrario, per i dispositivi Android l'intervallo è 24 ore.   |    Si verifica quando non è stata concessa all'utente la licenza per Intune.    |
 |    Criteri di protezione delle app non assegnati all'utente    |    Viene atteso il successivo intervallo tra tentativi.  La protezione delle app non è attiva per l'utente.    |    12 ore        |    Si verifica quando all'utente non sono state assegnate impostazioni delle app.    |
+|    Criteri di protezione delle app assegnati dall'utente, ma l'app non è definita nei criteri di protezione delle app   |    Viene atteso il successivo intervallo tra tentativi.  La protezione delle app non è attiva per l'utente.    |    12 ore        |    Si verifica quando l'app non è stata aggiunta ai criteri di protezione delle app.    |
 |    Registrazione del software MAM di Intune per l'utente eseguita correttamente    |    La protezione delle app viene applicata in base ai criteri di protezione delle app.    Gli aggiornamenti vengono eseguiti in base all'intervallo tra tentativi    |    Valore definito dal servizio Intune in base al carico utente.    In genere, 30 minuti.     |    Si verifica quando è stata eseguita correttamente la registrazione dell'utente nel servizio Intune per la configurazione MAM.    |
 
 > [!NOTE]
